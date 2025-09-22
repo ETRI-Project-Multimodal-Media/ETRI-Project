@@ -260,44 +260,6 @@ class LongVALELLMMetaForCausalLM(ABC):
         if _position_ids is None:
             position_ids = None
 
-        #divprune
-        ########
-        if 'LAYER_INDEX' in os.environ:
-            #print("I am called without layer 0")
-            if type(image_features) == list: #this is for LLaVA 1.6
-                img_feature_len = image_features[0].shape[0] #example is 2340x4096
-            else: #for LLaVa 1.5
-                img_feature_len = image_features.shape[1] 
-
-            if hasattr(self.config, 'img_feature_len'):
-                self.config.img_feature_len = img_feature_len
-            else:
-                setattr(self.config, 'img_feature_len', img_feature_len)
-
-        if 'LAYER_INDEX' in os.environ and os.environ['LAYER_INDEX']=='0':
-            SYS_TOKEN_LEN = 35 
-            diverse_ratio = float(os.environ['SUBSET_RATIO']) #define the subset selection ratio
-            cosine_matrix = None
-            if type(image_features) == list: #this is for LLaVA 1.6
-                img_feature_len = image_features[0].shape[0] #example is 2340x4096
-            else: #for LLaVa 1.5
-                img_feature_len = image_features.shape[1] #example is 2340x4096
-
-            visual_tokens =new_input_embeds[0][SYS_TOKEN_LEN:SYS_TOKEN_LEN+img_feature_len]
-            selected_visual_tokens, cosine_matrix = self.DivPrune(visual_tokens, img_feature_len,cosine_matrix,threshold_ratio=diverse_ratio)
-                      
-            selected_visual_tokens += SYS_TOKEN_LEN
-            keep_indexs = torch.cat((torch.arange(SYS_TOKEN_LEN,device=new_input_embeds.device), selected_visual_tokens, torch.arange(SYS_TOKEN_LEN+img_feature_len,new_input_embeds.shape[1],device=new_input_embeds.device)))
-            keep_indexs = keep_indexs.sort().values
-
-            new_input_embeds = new_input_embeds[:,keep_indexs]
-            if position_ids is not None:
-                position_ids = position_ids[:,keep_indexs,:]
-            if attention_mask is not None:
-                attention_mask = attention_mask[:,keep_indexs]
-        ########
-
-
         if self.get_model().config.model_type == 'chatglm':
             fake_input_ids = torch.full((new_input_embeds.shape[0], new_input_embeds.shape[1]), -10000, 
                                         dtype=new_input_embeds.dtype, device=new_input_embeds.device)
