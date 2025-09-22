@@ -1,11 +1,13 @@
 import os
-root_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
+root_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..") # add project root dir to sys.path
 import sys
 sys.path.append(root_dir)
 
 import re
 import argparse
 import torch
+import wandb
+import time
 import json
 import numpy as np
 from tqdm import tqdm
@@ -16,13 +18,14 @@ from longvalellm.inference import inference
 try:
     from torchvision.transforms import InterpolationMode
     BICUBIC = InterpolationMode.BICUBIC
-except ImportError:
+except ImportError: 
     from PIL import Image
     BICUBIC = Image.BICUBIC
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=str, default=None, help="Path to config JSON file")
     parser.add_argument("--pretrain_mm_mlp_adapter", type=str, default="checkpoints/vtimellm_stage1_mm_projector.bin")
     parser.add_argument("--pretrain_audio_mlp_adapter", type=str, default=None)
     parser.add_argument("--pretrain_asr_mlp_adapter", type=str, default=None) 
@@ -36,9 +39,19 @@ def parse_args():
     parser.add_argument("--task", type=str, default='all', choices=['all', 'grounding', 'captioning', 'seg_captioning'])
     parser.add_argument("--log_path", type=str, default='longvalellm/eval/log/example_log.txt')
     args = parser.parse_args()
+    
+    # config 
+    if args.config is not None:
+        with open(args.config, "r") as f:
+            cfg_dict = json.load(f)
+        for k,v in cfg_dict.items():
+            setattr(args, k, v)
     return args
 
 def iou(outputs, gt):
+    '''
+    find IoU grounding 
+    '''
     matches = re.search(r"(\d{2}) (to|and) (\d{2})", outputs)
     if not matches:
         return 0
@@ -72,6 +85,8 @@ questions = {
 if __name__ == "__main__":
     args = parse_args()
     disable_torch_init()
+    wandb.init(project="longvale-eval", config=vars(args))
+
     tokenizer, model, context_len = load_pretrained_model(args, args.stage2, args.stage3)
     model = model.cuda()
     model.to(torch.float16)
@@ -102,24 +117,51 @@ if __name__ == "__main__":
             continue
  
         if args.task in ['captioning', 'all']:
+            start = time.time()
             for query_id, query in enumerate(questions['captioning']):
                 answer = inference(model, video_features, audio_features, asr_features, "<video>\n " + query, tokenizer)
                 write_log(args.log_path, id, 'captioning', query_id, answer)
+                
+                # GPU 메모리 체크
+                gpu_memory = torch.cuda.memory_allocated() / 1024**2   # MB 단위
+                gpu_max_memory = torch.cuda.max_memory_allocated() / 1024**2
+                
+            end = time.time()
+            elapsed = end-start
+            wandb.log({
+                "video_id": id,
+                "gpu/memory_MB": gpu_memory,
+                "task": "captioning",
+                "elapsed_time per video": elapsed
+            })
       
         if args.task in ['grounding', 'all']:
             for sentence_id, (timestamps, sentence) in enumerate(zip(data['timestamps'], data['sentences'])):
                 sentence = sentence.strip().lower()
                 if sentence.endswith("."):
                     sentence = sentence[:-1]
-
+                
+                start = time.time()
                 for query_id, query in enumerate(questions['grounding']):
                     answer = inference(model, video_features, audio_features, asr_features, "<video>\n" + query.format(sentence), tokenizer)
                     gt = (timestamps[0] / data['duration'], timestamps[1] / data['duration'])
                     u = iou(answer, gt)
                     write_log(args.log_path, id, 'grounding', query_id, answer, info={"sentence_id": sentence_id, 'iou': u})
-        
+                    
+                    # GPU 메모리 체크
+                    gpu_memory = torch.cuda.memory_allocated() / 1024**2   # MB 단위
+                    gpu_max_memory = torch.cuda.max_memory_allocated() / 1024**2
+                end = time.time()
+                elapsed = end-start
+                wandb.log({
+                    "video_id": id,
+                    "gpu/memory_MB": gpu_memory,
+                    "task": "grounding",
+                    "elapsed_time per video": elapsed
+                })
+                
         if args.task in ['seg_captioning', 'all']:
-            def convert(duration, x):
+            def convert(duration, x): # convert  to 0~100
                 x = x / duration * 100
                 x = str(min(round(x), 99))
                 if len(x) == 1:
@@ -129,8 +171,28 @@ if __name__ == "__main__":
                 start_time = convert(data['duration'], timestamps[0])
                 end_time = convert(data['duration'], timestamps[1])
 
+                start = time.time() # for logging
                 for query_id, query in enumerate(questions['seg_captioning']):
                     query = query.replace('<start>', start_time)
                     query = query.replace('<end>', end_time)
                     answer = inference(model, video_features, audio_features, asr_features, "<video>\n " + query, tokenizer)
                     write_log(args.log_path, id, 'seg_captioning', query_id, answer, info={"sentence_id": sentence_id})
+                    
+                    # GPU 메모리 체크
+                    gpu_memory = torch.cuda.memory_allocated() / 1024**2   # MB 단위
+                    gpu_max_memory = torch.cuda.max_memory_allocated() / 1024**2
+                end = time.time()
+                elapsed = end-start
+                wandb.log({
+                    "video_id": id,
+                    "gpu/memory_MB": gpu_memory,
+                    "task": "seg_captioning",
+                    "elapsed_time per video": elapsed
+                })
+                
+        gpu_memory = torch.cuda.max_memory_allocated() / 1024**2
+
+        wandb.log({
+            "video_id": id,
+            "gpu/memory_MB": gpu_memory
+        })

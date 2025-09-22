@@ -37,7 +37,7 @@ class LongVALELLMMetaModel:
             self.audio_mm_projector.load_state_dict(get_w(mm_projector_weights, 'audio_mm_projector'))
             print("load audio mlp:", pretrain_audio_mlp_adapter)
 
-        if pretrain_asr_mlp_adapter is not None:
+        if pretrain_asr_mlp_adapter is not None: # if path exists, load weights for adapter
             mm_projector_weights = torch.load(pretrain_asr_mlp_adapter, map_location='cpu')
             def get_w(weights, keyword):
                 return {k.split(keyword + '.')[1]: v for k, v in weights.items() if keyword in k}
@@ -88,17 +88,17 @@ class LongVALELLMMetaForCausalLM(ABC):
             else:
                 asr_features = self.get_model().asr_mm_projector(asr.to(torch.float16)) ##改过
 
-        if type(images) is list:
-            concat_images = torch.cat([image for image in images], dim=0)
-            image_features = self.get_model().mm_projector(concat_images)
+        if type(images) is list: # if input is batch
+            concat_images = torch.cat([image for image in images], dim=0) # concat
+            image_features = self.get_model().mm_projector(concat_images) # project
             split_sizes = [image.shape[0] for image in images]
-            image_features = torch.split(image_features, split_sizes, dim=0)
+            image_features = torch.split(image_features, split_sizes, dim=0) # split again
             # image_features = [x.flatten(0, 1) for x in image_features]
         else:
             image_features = self.get_model().mm_projector(images)
         # print([image.shape for image in image_features])
 
-        concated_features = []
+        concated_features = [] # feature concatenation
         for (audio_feat, image_feat, asr_feat) in zip(audio_features, image_features, asr_features):
         # for (audio_feat, image_feat) in zip(audio_features, image_features):    
             assert not (audio_feat == None and image_feat == None and asr_features == None) 
