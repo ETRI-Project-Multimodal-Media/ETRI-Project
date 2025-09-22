@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 from longvalellm.constants import IMAGE_TOKEN_INDEX, IGNORE_INDEX
 from abc import ABC, abstractmethod
+import os
 
 class LongVALELLMMetaModel:
 
@@ -50,7 +51,35 @@ class LongVALELLMMetaForCausalLM(ABC):
     @abstractmethod
     def get_model(self):
         pass
+    
+        # divprune
+    def pairwise_cosine_similarity(self, matrix):
+        norm_matrix = matrix / matrix.norm(dim=1, keepdim=True)
+        cosine_similarity = torch.mm(norm_matrix, norm_matrix.t())
+        return cosine_similarity
 
+    def DivPrune(self, visual_feature_vectors, image_feature_length, cosine_matrix=None, threshold_ratio=0.1):            
+        threshold_terms = int(round(threshold_ratio*image_feature_length))
+        if cosine_matrix is None:
+            cosine_matrix = 1.0 - (self.pairwise_cosine_similarity(visual_feature_vectors))
+
+        s = torch.empty(threshold_terms, dtype=torch.long, device=visual_feature_vectors.device)
+        for i in range(threshold_terms):
+            if i==0:
+                m2 = cosine_matrix
+            else:
+                m2 = torch.index_select(cosine_matrix, 0, torch.index_select(s,0,torch.arange(0,i,device=cosine_matrix.device)))
+
+            if i==0:
+                scores = torch.topk(m2, 2,dim=0,largest=False).values[1,:] #for distance
+            else:
+                scores = torch.min(m2, dim=0).values #for distance 
+
+            phrase_to_add_idx = torch.argmax(scores)
+            s[i] = phrase_to_add_idx
+        return s, cosine_matrix
+    
+    
     def prepare_inputs_labels_for_multimodal(
         self, input_ids, position_ids, attention_mask, past_key_values, labels, images, audio=None, asr=None
     ):
@@ -61,6 +90,9 @@ class LongVALELLMMetaForCausalLM(ABC):
         # if past_key_values:
         #     print(past_key_values[-1][-1].shape)
         # print(input_ids.shape, position_ids.shape, attention_mask.shape, past_key_values.shape, images)
+        
+        ## image or audio None  / one token step  -> return text input
+        ##  original llama
         if (images is None and audio is None) or input_ids.shape[1] == 1:
             if past_key_values is not None and (images is not None or audio is not None) and input_ids.shape[1] == 1:
                 if self.get_model().config.model_type == 'chatglm':
@@ -99,6 +131,7 @@ class LongVALELLMMetaForCausalLM(ABC):
         # print([image.shape for image in image_features])
 
         concated_features = [] # feature concatenation
+        # concat for same frame
         for (audio_feat, image_feat, asr_feat) in zip(audio_features, image_features, asr_features):
         # for (audio_feat, image_feat) in zip(audio_features, image_features):    
             assert not (audio_feat == None and image_feat == None and asr_features == None) 
@@ -111,7 +144,7 @@ class LongVALELLMMetaForCausalLM(ABC):
             if asr_feat is not None:
                 concat_feat.append(asr_feat)
 
-            concat_feat = torch.cat(concat_feat, dim=-2)
+            concat_feat = torch.cat(concat_feat, dim=-2) # [133,4096] every modality is projected to 4096 channels
             concated_features.append(concat_feat)
 
         image_features = concated_features
@@ -129,6 +162,7 @@ class LongVALELLMMetaForCausalLM(ABC):
             labels = torch.full_like(input_ids, IGNORE_INDEX)
 
         # remove the padding using attention_mask -- TODO: double check
+        ## output new input embeeds (replace image token to real image embedding)
         input_ids = [cur_input_ids[cur_attention_mask] for cur_input_ids, cur_attention_mask in zip(input_ids, attention_mask)]
         labels = [cur_labels[cur_attention_mask] for cur_labels, cur_attention_mask in zip(labels, attention_mask)]
 
@@ -136,7 +170,7 @@ class LongVALELLMMetaForCausalLM(ABC):
         new_labels = []
         cur_image_idx = 0
         for batch_idx, cur_input_ids in enumerate(input_ids):
-            num_images = (cur_input_ids == IMAGE_TOKEN_INDEX).sum()
+            num_images = (cur_input_ids == IMAGE_TOKEN_INDEX).sum() # num of [IMAGE] in a sample
             if num_images == 0:
                 cur_image_features = image_features[cur_image_idx]
                 cur_input_embeds_1 = self.get_model().get_input_embeddings()(cur_input_ids)
@@ -155,7 +189,7 @@ class LongVALELLMMetaForCausalLM(ABC):
                 cur_labels_noim.append(cur_labels[image_token_indices[i]+1:image_token_indices[i+1]])
             split_sizes = [x.shape[0] for x in cur_labels_noim]
             cur_input_embeds = self.get_model().get_input_embeddings()(torch.cat(cur_input_ids_noim))
-            cur_input_embeds_no_im = torch.split(cur_input_embeds, split_sizes, dim=0)
+            cur_input_embeds_no_im = torch.split(cur_input_embeds, split_sizes, dim=0) # only text embeddings
             cur_new_input_embeds = []
             cur_new_labels = []
 
@@ -175,6 +209,7 @@ class LongVALELLMMetaForCausalLM(ABC):
             new_labels.append(cur_new_labels)
 
         # Truncate sequences to max length as image embeddings can make the sequence longer
+        ## cut embeddings/labels to max_length
         tokenizer_model_max_length = getattr(self.config, 'tokenizer_model_max_length', None)
         if tokenizer_model_max_length is not None:
             new_input_embeds = [x[:tokenizer_model_max_length] for x in new_input_embeds]
@@ -211,7 +246,7 @@ class LongVALELLMMetaForCausalLM(ABC):
                     position_ids[i, :cur_len] = torch.arange(0, cur_len, dtype=position_ids.dtype, device=position_ids.device)
 
         new_input_embeds = torch.stack(new_input_embeds_padded, dim=0)
-
+        
         if _labels is None:
             new_labels = None
         else:
@@ -224,6 +259,44 @@ class LongVALELLMMetaForCausalLM(ABC):
 
         if _position_ids is None:
             position_ids = None
+
+        #divprune
+        ########
+        if 'LAYER_INDEX' in os.environ:
+            #print("I am called without layer 0")
+            if type(image_features) == list: #this is for LLaVA 1.6
+                img_feature_len = image_features[0].shape[0] #example is 2340x4096
+            else: #for LLaVa 1.5
+                img_feature_len = image_features.shape[1] 
+
+            if hasattr(self.config, 'img_feature_len'):
+                self.config.img_feature_len = img_feature_len
+            else:
+                setattr(self.config, 'img_feature_len', img_feature_len)
+
+        if 'LAYER_INDEX' in os.environ and os.environ['LAYER_INDEX']=='0':
+            SYS_TOKEN_LEN = 35 
+            diverse_ratio = float(os.environ['SUBSET_RATIO']) #define the subset selection ratio
+            cosine_matrix = None
+            if type(image_features) == list: #this is for LLaVA 1.6
+                img_feature_len = image_features[0].shape[0] #example is 2340x4096
+            else: #for LLaVa 1.5
+                img_feature_len = image_features.shape[1] #example is 2340x4096
+
+            visual_tokens =new_input_embeds[0][SYS_TOKEN_LEN:SYS_TOKEN_LEN+img_feature_len]
+            selected_visual_tokens, cosine_matrix = self.DivPrune(visual_tokens, img_feature_len,cosine_matrix,threshold_ratio=diverse_ratio)
+                      
+            selected_visual_tokens += SYS_TOKEN_LEN
+            keep_indexs = torch.cat((torch.arange(SYS_TOKEN_LEN,device=new_input_embeds.device), selected_visual_tokens, torch.arange(SYS_TOKEN_LEN+img_feature_len,new_input_embeds.shape[1],device=new_input_embeds.device)))
+            keep_indexs = keep_indexs.sort().values
+
+            new_input_embeds = new_input_embeds[:,keep_indexs]
+            if position_ids is not None:
+                position_ids = position_ids[:,keep_indexs,:]
+            if attention_mask is not None:
+                attention_mask = attention_mask[:,keep_indexs]
+        ########
+
 
         if self.get_model().config.model_type == 'chatglm':
             fake_input_ids = torch.full((new_input_embeds.shape[0], new_input_embeds.shape[1]), -10000, 

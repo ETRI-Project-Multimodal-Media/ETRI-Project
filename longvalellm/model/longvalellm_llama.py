@@ -32,6 +32,10 @@ class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
     def get_model(self):
         return self.model
 
+        # super().forward used by  LlamaForCausalLM  / well constructed 
+            ## inside of super().forward there is self.model which is LongVALELLMLlamaModel
+            ## so use LlamaForCausalLM's forward but change only model to LongVALELLMLlamaModel
+        # use LLM forward but make input_embeds(concat multimodal embedding)  and use it for inputs
     def forward(
         self,
         input_ids: torch.LongTensor = None,
@@ -48,10 +52,7 @@ class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
         asr = None,
         return_dict: Optional[bool] = None,
     ) -> Union[Tuple, CausalLMOutputWithPast]:
-        # super().forward used by  LlamaForCausalLM  / well constructed 
-        ## inside of super().forward there is self.model which is LongVALELLMLlamaModel
-        ## so use LlamaForCausalLM's forward but change only model to LongVALELLMLlamaModel
-        # use LLM forward but make input_embeds(concat multimodal embedding)  and use it for inputs 
+         
         if inputs_embeds is None:
             (
                 input_ids,
@@ -99,5 +100,5 @@ class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
             _inputs["asr"] = asr
         return _inputs
 
-AutoConfig.register("LongVALE-LLM", LongVALELLMConfig) # Q: to where?
+AutoConfig.register("LongVALE-LLM", LongVALELLMConfig)  # 
 AutoModelForCausalLM.register(LongVALELLMConfig, LongVALELLMLlamaForCausalLM)
