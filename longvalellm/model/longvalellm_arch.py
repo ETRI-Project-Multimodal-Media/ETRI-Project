@@ -131,23 +131,23 @@ class LongVALELLMMetaForCausalLM(ABC):
             # assert not (audio_feat == None and image_feat == None)
             
             # --- DivPrune # 
-            if image_feat is not None and 'LAYER_INDEX' in os.environ:
-                orig_img_len = image_feat.shape[0]
-                try:
-                    setattr(self.config, 'img_feature_len', int(orig_img_len))
-                except Exception:
-                    print('image feature len setattr has problem')
-            # only try divprune before decoder
-            if os.environ.get('LAYER_INDEX') == '0' and 'SUBSET_RATIO' in os.environ:
-                ratio = float(os.environ['SUBSET_RATIO'])
-                selected_visual_index, _ = self.DivPrune(
-                    visual_feature_vectors=image_feat,
-                    image_feature_length=orig_img_len,
-                    cosine_matrix=None,
-                    threshold_ratio=ratio
-                )
-                selected_visual_index, _ = torch.sort(selected_visual_index) # sort by visual token order
-                image_feat = image_feat.index_select(0, selected_visual_index) # pruned visual tokens
+            # if image_feat is not None and 'LAYER_INDEX' in os.environ:
+            #     orig_img_len = image_feat.shape[0]
+            #     try:
+            #         setattr(self.config, 'img_feature_len', int(orig_img_len))
+            #     except Exception:
+            #         print('image feature len setattr has problem')
+            # # only try divprune before decoder
+            # if os.environ.get('LAYER_INDEX') == '0' and 'SUBSET_RATIO' in os.environ:
+            #     ratio = float(os.environ['SUBSET_RATIO'])
+            #     selected_visual_index, _ = self.DivPrune(
+            #         visual_feature_vectors=image_feat,
+            #         image_feature_length=orig_img_len,
+            #         cosine_matrix=None,
+            #         threshold_ratio=ratio
+            #     )
+            #     selected_visual_index, _ = torch.sort(selected_visual_index) # sort by visual token order
+            #     image_feat = image_feat.index_select(0, selected_visual_index) # pruned visual tokens
                         
             concat_feat = []
             if image_feat is not None:

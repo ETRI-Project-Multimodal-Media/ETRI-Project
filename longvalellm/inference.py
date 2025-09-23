@@ -2,6 +2,7 @@ import os
 import sys
 import argparse
 import torch
+import json
 from longvalellm.constants import IMAGE_TOKEN_INDEX
 from longvalellm.conversation import conv_templates, SeparatorStyle
 from longvalellm.model.builder import load_pretrained_model, load_lora
@@ -61,7 +62,17 @@ def inference(model, image, audio, asr, query, tokenizer):
     outputs = outputs.strip()
     return outputs
 
-
+def write_log(log_path, video_id, task, query_id, answer, info=None):
+    log = {
+        'video_id': video_id,
+        'task': task,
+        'query_id': query_id,
+        'answer': answer
+    }
+    if info is not None:
+        log['info'] = info
+    with open(log_path, 'a') as f:
+        f.write(json.dumps(log) + '\n')
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Demo")
@@ -71,6 +82,8 @@ def parse_args():
     parser.add_argument("--stage2", type=str, default="checkpoints/longvale-vicuna-v1-5-7b-bp")
     parser.add_argument("--stage3", type=str, default="checkpoints/longvale-vicuna-v1-5-7b-it")
     parser.add_argument("--video_path", type=str, default="images/demo.mp4")
+    parser.add_argument("--log_path", type=str, default='longvalellm/eval/log/example_log.txt')
+
     args = parser.parse_args()
 
     return args
@@ -103,7 +116,10 @@ if __name__ == "__main__":
         features = clip_model.encode_image(images.to('cuda'))
 
     query = "describe the video."
+    # query = ['Could you please detail the events that took place during different time segments in the video? List the events in the json format including start_time, end_time, visual, audio, speech information, actors \n  ...']
     print("query: ", query)
     print("answer: ", inference(model, features, "<video>\n " + query, tokenizer))
+    # write_log(args.log_path, id, 'captioning', args.video_path)
+    
 
 
