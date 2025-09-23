@@ -100,5 +100,5 @@ class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
             _inputs["asr"] = asr
         return _inputs
 
-AutoConfig.register("LongVALE-LLM", LongVALELLMConfig)  # 
+AutoConfig.register("LongVALE-LLM", LongVALELLMConfig) 
 AutoModelForCausalLM.register(LongVALELLMConfig, LongVALELLMLlamaForCausalLM)

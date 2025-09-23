@@ -29,7 +29,8 @@ def inference(model, image, audio, asr, query, tokenizer):
     conv.append_message(conv.roles[1], None) # add ASSISTANT prompt
     prompt = conv.get_prompt() # get prompt from Conversation object
     input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()# change image prompt to token number (image token index = -200 , BOS token )
-
+    ## input_ids.shape [1,88]
+    
     stop_str = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2 # Define stop_str by conv instacne ex) conv.sep = ' ' , conv.sep2= </s>  
     keywords = [stop_str]
     stopping_criteria = KeywordsStoppingCriteria(keywords, tokenizer, input_ids) # custom end class for generate(huggingface), model stops generation when meets stop_str
@@ -46,7 +47,7 @@ def inference(model, image, audio, asr, query, tokenizer):
             # no_repeat_ngram_size=3,
             max_new_tokens=1024,
             use_cache=True)
-
+        # max_new_tokens : max generation token except prompt
         # https://github.com/huggingface/transformers/blob/main/src/transformers/generation/utils.py#L1295
 
     input_token_len = input_ids.shape[1] 
