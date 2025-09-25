@@ -117,30 +117,11 @@ if __name__ == "__main__":
             print(f'Can not find video {id}')
             continue
 
-        if args.task in ['sample_captioning', 'all']:
-            start = time.time()
-            for query_id, query in enumerate(questions['sample_captioning']):
-                answer = inference(model, video_features, audio_features, asr_features, "<video>\n " + query, tokenizer)
-                write_log(args.log_path, id, 'sample_captioning', query_id, answer)
-                
-                # GPU 메모리 체크
-                gpu_memory = torch.cuda.memory_allocated() / 1024**2   # MB 단위
-                gpu_max_memory = torch.cuda.max_memory_allocated() / 1024**2
-                
-            end = time.time()
-            elapsed = end-start
-            wandb.log({
-                "video_id": id,
-                "gpu/memory_MB": gpu_memory,
-                "task": "sample_captioning",
-                "elapsed_time per video": elapsed
-            })
- 
-        # if args.task in ['captioning', 'all']:
+        # if args.task in ['sample_captioning', 'all']:
         #     start = time.time()
-        #     for query_id, query in enumerate(questions['captioning']):
+        #     for query_id, query in enumerate(questions['sample_captioning']):
         #         answer = inference(model, video_features, audio_features, asr_features, "<video>\n " + query, tokenizer)
-        #         write_log(args.log_path, id, 'captioning', query_id, answer)
+        #         write_log(args.log_path, id, 'sample_captioning', query_id, answer)
                 
         #         # GPU 메모리 체크
         #         gpu_memory = torch.cuda.memory_allocated() / 1024**2   # MB 단위
@@ -151,9 +132,28 @@ if __name__ == "__main__":
         #     wandb.log({
         #         "video_id": id,
         #         "gpu/memory_MB": gpu_memory,
-        #         "task": "captioning",
+        #         "task": "sample_captioning",
         #         "elapsed_time per video": elapsed
         #     })
+ 
+        if args.task in ['captioning', 'all']:
+            start = time.time()
+            for query_id, query in enumerate(questions['captioning']):
+                answer = inference(model, video_features, audio_features, asr_features, "<video>\n " + query, tokenizer)
+                write_log(args.log_path, id, 'captioning', query_id, answer)
+                
+                # GPU 메모리 체크
+                gpu_memory = torch.cuda.memory_allocated() / 1024**2   # MB 단위
+                gpu_max_memory = torch.cuda.max_memory_allocated() / 1024**2
+                
+            end = time.time()
+            elapsed = end-start
+            wandb.log({
+                "video_id": id,
+                "gpu/memory_MB": gpu_memory,
+                "task": "captioning",
+                "elapsed_time per video": elapsed
+            })
       
         # if args.task in ['grounding', 'all']:
         #     for sentence_id, (timestamps, sentence) in enumerate(zip(data['timestamps'], data['sentences'])):

@@ -1,0 +1,44 @@
+{
+  "os":  "Linux-6.14.0-29-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.10.18",
+  "startedAt":  "2025-09-23T14:39:24.953529Z",
+  "args":  [
+    "--config",
+    "/home/kylee/LongVALE/configs/zeroshot_llm.json"
+  ],
+  "program":  "/home/kylee/LongVALE/longvalellm/eval/eval_llm.py",
+  "codePath":  "longvalellm/eval/eval_llm.py",
+  "codePathLocal":  "longvalellm/eval/eval_llm.py",
+  "git":  {
+    "remote":  "git@github.com:Yooonlee/LongVALE.git",
+    "commit":  "cc4811f43a6dd241a663df50cb7bc71a2fa07fec"
+  },
+  "email":  "lky3685@gmail.com",
+  "root":  "/home/kylee/LongVALE",
+  "host":  "kylee-gpu5090",
+  "executable":  "/home/kylee/anaconda3/envs/longvale/bin/python",
+  "cpu_count":  16,
+  "cpu_count_logical":  32,
+  "gpu":  "NVIDIA GeForce RTX 5090",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "97829425152",
+      "used":  "28268183552"
+    }
+  },
+  "memory":  {
+    "total":  "64940847104"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 5090",
+      "memoryTotal":  "34190917632",
+      "cudaCores":  21760,
+      "architecture":  "Blackwell",
+      "uuid":  "GPU-8c696531-3ec2-bd8a-86ac-6438db1ac4c8"
+    }
+  ],
+  "cudaVersion":  "12.9",
+  "writerId":  "hxd1c7xs1kvvucc42pnep4qamgv5lvri"
+}
