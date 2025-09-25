@@ -6,7 +6,7 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
 from huggingface_hub import login
-login(token=os.environ["HUGGINGFACE_TOKEN"])
+login(token=os.environ["HUGGINGFACE_HUB_TOKEN"])
 
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 
@@ -277,7 +277,7 @@ def process_txt_file(input_file, output_file):
             result_entry = {
                 "video_id" : video_id,
                 "event_id": idx,
-                "original_answer": segments,
+                "original_answer": text,
                 "llm_result" : result,
                 "split_caption": split_result
             }
@@ -293,6 +293,6 @@ def process_txt_file(input_file, output_file):
 # === 실행 예시 ===
 if __name__ == "__main__":
     input_file = "/home/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
-    output_file = "/home/kylee/LongVALE/logs/Structured_output.txt"   # 결과 저장 파일
+    output_file = "/home/kylee/LongVALE/logs/Structured_output_rev2.txt"   # 결과 저장 파일
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     process_txt_file(input_file, output_file)

@@ -25,7 +25,7 @@ def prepare_model(checkpoint, gpu_id):
     return model, device
 
 
-class AudioDataset(Dataset):
+class AudioDataset(Dataset): # Actually VisualDataset
     def __init__(self, annotation, video_dir):
         with open(annotation, 'r') as f:
             self.data = json.load(f)
