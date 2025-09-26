@@ -13,6 +13,8 @@ import time
 import json
 import numpy as np
 from tqdm import tqdm
+from collections import Counter
+
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -24,7 +26,8 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
     # wandb.init(project="longvale-eval", config=vars(args))
-
+    lengths = []
+    dims = set()
 
     js = json.load(open(args.data_path))
     for id, data in tqdm(js.items()):
@@ -34,6 +37,28 @@ if __name__ == "__main__":
             asr_feat_path = os.path.join(args.asr_feat_folder, f"{id}.npy")
             if os.path.isfile(asr_feat_path):
                 asr_features = torch.from_numpy(np.load(asr_feat_path)).cuda()
+                
+                if asr_features.ndim == 1:
+                    seq_len, hidden_dim = 1, asr_features.shape[0]
+                elif asr_features.ndim == 2:
+                    seq_len, hidden_dim = asr_features.shape
+                else:
+                    print(f"[Warning] : unexpected shape {asr_features.shape}")
+                    continue
+
+                lengths.append(seq_len)
+                dims.add(hidden_dim)
+    # 길이 분포 요약
+    counter = Counter(lengths)
+    print("\n=== Sequence length distribution ===")
+    for l, c in counter.most_common():
+        print(f"Length {l:4d}: {c} files")
+
+    print("\n=== Hidden dim set ===")
+    print(dims)
+
+    print(f"\nTotal files checked: {len(lengths)}")
+    print(f"Min length: {min(lengths)}, Max length: {max(lengths)}")
 
 
     model = WhisperForConditionalGeneration.from_pretrained("openai/whisper-large-v2")

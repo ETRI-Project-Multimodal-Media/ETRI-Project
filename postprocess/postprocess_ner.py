@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import ast
 import torch
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
@@ -9,6 +10,8 @@ from huggingface_hub import login
 login(token=os.environ["HUGGINGFACE_HUB_TOKEN"])
 
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+# model_id = "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8"
+
 
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
@@ -30,7 +33,7 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
     Output:
     Visual: "A woman is playing the piano."
     Audio: "Applause can be heard."
-
+    
     Input: "A man is playing the guitar while singing 'I love you.' The acoustic guitar sound resonates in the background."
     Output:
     Visual: "A man is playing the guitar."
@@ -42,10 +45,12 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
     
     Input: "{}"
     Output:
-    Visual:""".format(caption_text)
+    
+    Start with Visual:
+    """.format(caption_text)
 
     messages = [
-        {"role": "system", "content": "You are an assistant that classifies captions into Visual, Audio, and Speech."},
+        {"role": "system", "content": "You are an assistant that classifies captions into Visual, Audio."},
         {"role": "user", "content": prompt},
     ]
 
@@ -101,7 +106,7 @@ def extract_answer_from_line(line: str) -> str:
 
     return line[start + 1:end]
 
-# answer 추출
+# video_id 추출
 def extract_videoid_from_line(line: str) -> str:
     """
     한 줄 문자열에서 "video_id": "..." 부분만 뽑아냄
@@ -245,10 +250,131 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text):
 
     return parsed
 
+def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str) -> str:
+    """
+    LLaMA를 이용해 특정 시간대 caption + 전체 speech summary를 기반으로
+    그 시간대의 speech 내용을 추출
+    """
+    prompt = f"""
+    You are a helpful assistant that extracts the spoken speech at a given time segment.
+
+    - You are given:
+      1. The multimodal caption for a time segment of video.
+      2. The overall speech summary of the whole video.
+
+    - Your task:
+      Extract only the speech content (what is said) in the given time segment.
+      If the caption has no speech, output "None".
+
+    ---
+
+    ### Example
+    Caption: "Visual: A woman is playing the piano. Audio: Applause can be heard. Speech: 'I love you,' she sings."
+    Speech summary: "A woman plays the piano and sings 'I love you.'"
+    Output: "I love you"
+
+    ### Example
+    Caption: "Visual: A car is driving fast. Audio: Engine noise is loud."
+    Speech summary: "No speech content in this scene."
+    Output: "None"
+
+    ---
+
+    ### Now process this input:
+
+    Caption: "{caption_text}"
+    Speech summary: "{speech_summary}"
+
+    Output (speech only):
+    """
+
+    messages = [
+        {"role": "system", "content": "You are an assistant that extracts speech lines from multimodal captions using video-level speech summary as additional context."},
+        {"role": "user", "content": prompt},
+    ]
+
+    input_ids = tokenizer.apply_chat_template(
+        messages,
+        add_generation_prompt=True,
+        return_tensors="pt"
+    ).to(model.device)
+
+    terminators = [
+        tokenizer.eos_token_id,
+        tokenizer.convert_tokens_to_ids("<|eot_id|>")
+    ]
+
+    outputs = model.generate(
+        input_ids,
+        max_new_tokens=512,
+        eos_token_id=terminators,
+        do_sample=True,
+        temperature=0.6,
+        top_p=0.9,
+    )
+
+    response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
+    return response.strip()
+
+
+# 기존 BART 대신 Pegasus 사용
+# summarizer = pipeline("summarization", model="google/pegasus-cnn_dailymail")
+summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+
+def chunk_text(text, max_chars=1500):
+    return [text[i:i+max_chars] for i in range(0, len(text), max_chars)]
+
+def summarize_text(text, max_len=80):
+    chunks = chunk_text(text)
+    summaries = []
+    for chunk in chunks:
+        inputs = summarizer.tokenizer(
+            chunk, return_tensors="pt", truncation=True, max_length=1024
+        ).to(summarizer.model.device)
+
+        summary_ids = summarizer.model.generate(
+            **inputs,
+            max_length=max_len,
+            min_length=min(20, max_len-1),
+            do_sample=False
+        )
+        summaries.append(summarizer.tokenizer.decode(summary_ids[0], skip_special_tokens=True))
+    return " ".join(summaries)
+
+
+def translate_speech(video_id, speech_json_dir):
+    # speech json 경로
+    speech_json_path = os.path.join(speech_json_dir, f"{video_id}.json")
+    if not os.path.isfile(speech_json_path):
+        return
+
+    # transcription 읽기
+    with open(speech_json_path, "r", encoding="utf-8") as sf:
+        speech_data = json.load(sf)
+    transcription = speech_data.get("transcription", "")
+
+    # 요약
+    summary = summarize_text(transcription)
+
+    return summary
+
+
+def parse_split_caption_to_dict(split_caption: str, speech_timesplit : str) -> dict:
+    """
+    'Visual: "..." Audio: "..." Speech: "..."' 형태의 문자열을 dict로 변환
+    """
+    result = {}
+    # Visual:, Audio:, Speech: 뒤 따옴표 안 내용을 추출
+    matches = re.findall(r'(Visual|Audio):\s*"?([^"]+)"?', split_caption)
+    for key, value in matches:
+        result[key] = value.strip()
+    result["Speech"] = speech_timesplit
+    return result
+
 
 
 # 전체 
-def process_txt_file(input_file, output_file):
+def process_txt_file(input_file, output_file, speech_json_dir):
     results = []
 
     with open(input_file, "r", encoding="utf-8") as f:
@@ -259,7 +385,7 @@ def process_txt_file(input_file, output_file):
         if not line:
             continue
 
-        # ✅ answer만 추출
+        # answer만 추출
         caption_text = extract_answer_from_line(line)
         if not caption_text:
             continue
@@ -268,18 +394,27 @@ def process_txt_file(input_file, output_file):
         segments = split_segments(caption_text)
         video_id = extract_videoid_from_line(line)
         
+        # speech translation
+        speech_translation = translate_speech(video_id, speech_json_dir)       
+         
         for idx, (start, end, text) in enumerate(segments):
             result = extract_info_with_llm(video_id, idx, start, end, text)
 
-            # modality split
+            # Visual, Audio modality split
             split_result = split_modality_caption_with_llm(text)
+            
+            # speech summary 
+            speech_timesplit = extract_speech_from_caption_with_llm(text, speech_translation)
+            # modality to dict
+            split_result_dict = parse_split_caption_to_dict(split_result, speech_timesplit)
+                        
             # 결과 저장
             result_entry = {
                 "video_id" : video_id,
                 "event_id": idx,
                 "original_answer": text,
                 "llm_result" : result,
-                "split_caption": split_result
+                "split_caption": split_result_dict
             }
             results.append(result_entry)
         
@@ -293,6 +428,6 @@ def process_txt_file(input_file, output_file):
 # === 실행 예시 ===
 if __name__ == "__main__":
     input_file = "/home/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
-    output_file = "/home/kylee/LongVALE/logs/Structured_output_rev2.txt"   # 결과 저장 파일
+    output_file = "/home/kylee/LongVALE/logs/modality_split.txt"   # 결과 저장 파일
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    process_txt_file(input_file, output_file)
+    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/LongVALE/data/speech_asr_1171")

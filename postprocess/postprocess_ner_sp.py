@@ -86,54 +86,6 @@ def summarize_text(text, max_len=80):
     return " ".join(summaries)
 
 
-# def summarize_with_llm(caption_text: str) -> str:
-#     """LLM을 이용해 Visual/Audio/Speech로 분리"""
-#     # Few-shot 프롬프트
-#     prompt = """
-#     You are a helpful assistant that summarizes text: 
-    
-#     Example:
-#     Input: "a man and a woman are discussing how to grow garlic in their garden, as they stand amidst the vibrant greenery of their raised garden bed filled with various plants."
-#     Output: "A man and a woman discuss how to grow garlic in their garden."
-
-#     ---
-
-#     Now summarize the following:
-    
-#     Input: "{}"
-#     Output:
-#     Visual:""".format(caption_text)
-
-#     messages = [
-#         {"role": "system", "content": "You are an assistant that summarizes text."},
-#         {"role": "user", "content": prompt},
-#     ]
-
-#     input_ids = tokenizer.apply_chat_template(
-#         messages,
-#         add_generation_prompt=True,
-#         return_tensors="pt"
-#     ).to(model.device)
-
-#     terminators = [
-#     tokenizer.eos_token_id,
-#     tokenizer.convert_tokens_to_ids("<|eot_id|>")
-#     ]
-
-#     outputs = model.generate(
-#         input_ids,
-#         max_new_tokens=256,
-#         eos_token_id=terminators,
-#         do_sample=True,
-#         temperature=0.6,
-#         top_p=0.9,
-#     )
-
-#     response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
-#     return response.strip()
-
-
-
 def add_speech_to_split_caption(input_txt, speech_json_dir, output_txt):
     results = []
 
