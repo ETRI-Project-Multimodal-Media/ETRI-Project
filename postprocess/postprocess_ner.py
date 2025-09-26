@@ -253,44 +253,47 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text):
 
     return parsed
 
-def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str) -> str:
+def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str, start: str, end: str) -> str:
     """
     LLaMA를 이용해 특정 시간대 caption + 전체 speech summary를 기반으로
     그 시간대의 speech 내용을 추출
     """
+
     prompt = f"""
-    You are a helpful assistant that extracts the spoken speech at a given time segment.
+    You are a helpful assistant that extracts spoken speech at a given video time segment.
 
     - You are given:
-    1. The multimodal caption for a time segment of video.
-    2. The overall speech summary of the whole video.
+      1. The time range of the segment (start to end).
+      2. The multimodal caption for a specific time segment of the video.
+      3. The overall speech summary of the entire video.
 
-    - Your task:
-    From the speech summary, extract the part that best matches or is most relevant
-    to the given caption segment. 
-    If there is no relevant speech in the summary, output "None".
+    - Your tasks:
+      1. From the overall speech summary, extract the part that is most relevant
+      to the given caption and time range ({start}-{end}).
+      Total Range is (00 - 90).
+      2. Then summarize that extracted speech into a concise form.
+      3. If there is no relevant speech, output "None".
+
 
     ---
 
-    ### Example
-    Caption: "a man in a red jacket and a woman in a black coat stand in front of a snow-covered house, holding a large box as the woman excitedly announces to someone off-camera that they are about to surprise Santa Claus."
-    Speech summary: "Oh my gosh, thank you so much! Well thank you so much! Merry Christmas to you! Hi! Say hi to Santa! She skipped in so she could see you! Oh my gosh! Don't! Merry Christmas! Oh, you don't even know!  Would you like me to bring that inside?  I  I'm gonna put a generator and then on Black Friday, they had a sale on generators He's like we really need a generator because every time the power goes out here our basement floods So we bought a generator. I'm like snowblower, snowblower, we really need a snowblower He's like, okay, okay, well good luck with that. I'm like no, I'm serious, every day I ran out to get the newspaper and I was like And then I told our neighbors, I'm like you'll benefit from this too because they're both older He's like, oh, let's get that snowblower  I was like, did you get our newspaper too? Are you cutting them out of our newspaper? And I go, no, just ours. But every day since you started. That's awesome. We had about 6,000 entries. So you were one of the first. Oh, you're kidding me. Oh my god. That feels so good. Thank you again. Thank you very much. Merry Christmas. Did you see Santa? We'll see everybody next Wednesday. Oh my gosh.  you"
-    Output: " Oh my gosh, thank you so much! Well thank you so much! Merry Christmas to you! Hi! Say hi to Santa!"
 
     ### Example
+    Time: 00–10
     Caption: "the man in the suit continues his speech, gesturing with his hands as he addresses the audience in the well-lit room."
     Speech summary: "Taking a picture of miles of it. There's old Tommy right there. Tommy Wilson. Okay, here we are. Mandatory picture of a picture being taken. Oregon and the Rose Bowl. We did that. Oh well.  All right, yeah, that's a good one who's the guy the what All righty  Tom Wilson we work together at KWU.  across the English Channel, the pill or hovercraft? Guess which one? The science prize that year.
-   Thank you.  or even shorter shifts there at that time. But anyway, for about six months I would play the song, Isaac Brothers,
+    Thank you.  or even shorter shifts there at that time. But anyway, for about six months I would play the song, Isaac Brothers,
     Don't Let Go, Hear the Whistle, It's 10 O'Clock, and I'd play it every night. 
     And finally, one time I got a call, hotline, didn't I hear you play that song like last week? And I was, 
     I'd been playing it every night for about six months. So yeah, we would try to get away with whatever we could and have fun. 
     Now Dave, you served a stint after being a music director in Disc Jockey at KFRC, coming out of San Jose and SF State.
-     Was your style or did you  you encountered his style as well. No, that wasn't mine. I'd love to listen, but I wouldn't take it to, you know,
-      Paul took it to another."
+    Was your style or did you  you encountered his style as well. No, that wasn't mine. I'd love to listen, but I wouldn't take it to, you know,
+    Paul took it to another."
     Output: " Taking a picture of miles of it. There's old Tommy right there. Tommy Wilson. Okay, here we are. Mandatory picture of a picture being taken. Oregon and the Rose Bowl. We did that. Oh well.  All right, yeah, that's a good one who's the guy the what All righty  Tom Wilson we work together at KWU.  across the English Channel, the pill or hovercraft? Guess which one? The science prize that year.
-   Thank you.  or even shorter shifts there at that time. But anyway, for about six months I would play the song, Isaac Brothers"
+    Thank you.  or even shorter shifts there at that time. But anyway, for about six months I would play the song, Isaac Brothers"
 
     ### Example
+    Time : 70-90
     Caption: "Visual: A car is driving fast. Audio: Engine noise is loud."
     Speech summary: "No speech content in this scene."
     Output: "None"
@@ -298,7 +301,8 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str)
     ---
 
     ### Now process this input:
-
+    
+    Time: {start}-{end}
     Caption: "{caption_text}"
     Speech summary: "{speech_summary}"
 
