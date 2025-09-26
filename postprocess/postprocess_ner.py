@@ -22,11 +22,15 @@ model = AutoModelForCausalLM.from_pretrained(
 
 # 
 def split_modality_caption_with_llm(caption_text: str) -> str:
-    """LLM을 이용해 Visual/Audio/Speech로 분리"""
+    """LLM을 이용해 Visual/Audio로 분리"""
     # Few-shot 프롬프트
     prompt = """
-    You are a helpful assistant that splits a multimodal caption into three parts: 
-    Visual, Audio, and Speech.
+    You are a helpful assistant that splits a multimodal caption into two parts:  
+    Visual, Audio.
+    
+    - Your task:
+      Extract Visual and Audio part in the given caption.
+      If the caption has no Audio, output "None".
 
     Examples:
     Input: "A woman is playing the piano while singing 'I love you.' Applause can be heard."
@@ -46,7 +50,6 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
     Input: "{}"
     Output:
     
-    Start with Visual:
     """.format(caption_text)
 
     messages = [
@@ -259,19 +262,33 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str)
     You are a helpful assistant that extracts the spoken speech at a given time segment.
 
     - You are given:
-      1. The multimodal caption for a time segment of video.
-      2. The overall speech summary of the whole video.
+    1. The multimodal caption for a time segment of video.
+    2. The overall speech summary of the whole video.
 
     - Your task:
-      Extract only the speech content (what is said) in the given time segment.
-      If the caption has no speech, output "None".
+    From the speech summary, extract the part that best matches or is most relevant
+    to the given caption segment. 
+    If there is no relevant speech in the summary, output "None".
 
     ---
 
     ### Example
-    Caption: "Visual: A woman is playing the piano. Audio: Applause can be heard. Speech: 'I love you,' she sings."
-    Speech summary: "A woman plays the piano and sings 'I love you.'"
-    Output: "I love you"
+    Caption: "a man in a red jacket and a woman in a black coat stand in front of a snow-covered house, holding a large box as the woman excitedly announces to someone off-camera that they are about to surprise Santa Claus."
+    Speech summary: "Oh my gosh, thank you so much! Well thank you so much! Merry Christmas to you! Hi! Say hi to Santa! She skipped in so she could see you! Oh my gosh! Don't! Merry Christmas! Oh, you don't even know!  Would you like me to bring that inside?  I  I'm gonna put a generator and then on Black Friday, they had a sale on generators He's like we really need a generator because every time the power goes out here our basement floods So we bought a generator. I'm like snowblower, snowblower, we really need a snowblower He's like, okay, okay, well good luck with that. I'm like no, I'm serious, every day I ran out to get the newspaper and I was like And then I told our neighbors, I'm like you'll benefit from this too because they're both older He's like, oh, let's get that snowblower  I was like, did you get our newspaper too? Are you cutting them out of our newspaper? And I go, no, just ours. But every day since you started. That's awesome. We had about 6,000 entries. So you were one of the first. Oh, you're kidding me. Oh my god. That feels so good. Thank you again. Thank you very much. Merry Christmas. Did you see Santa? We'll see everybody next Wednesday. Oh my gosh.  you"
+    Output: " Oh my gosh, thank you so much! Well thank you so much! Merry Christmas to you! Hi! Say hi to Santa!"
+
+    ### Example
+    Caption: "the man in the suit continues his speech, gesturing with his hands as he addresses the audience in the well-lit room."
+    Speech summary: "Taking a picture of miles of it. There's old Tommy right there. Tommy Wilson. Okay, here we are. Mandatory picture of a picture being taken. Oregon and the Rose Bowl. We did that. Oh well.  All right, yeah, that's a good one who's the guy the what All righty  Tom Wilson we work together at KWU.  across the English Channel, the pill or hovercraft? Guess which one? The science prize that year.
+   Thank you.  or even shorter shifts there at that time. But anyway, for about six months I would play the song, Isaac Brothers,
+    Don't Let Go, Hear the Whistle, It's 10 O'Clock, and I'd play it every night. 
+    And finally, one time I got a call, hotline, didn't I hear you play that song like last week? And I was, 
+    I'd been playing it every night for about six months. So yeah, we would try to get away with whatever we could and have fun. 
+    Now Dave, you served a stint after being a music director in Disc Jockey at KFRC, coming out of San Jose and SF State.
+     Was your style or did you  you encountered his style as well. No, that wasn't mine. I'd love to listen, but I wouldn't take it to, you know,
+      Paul took it to another."
+    Output: " Taking a picture of miles of it. There's old Tommy right there. Tommy Wilson. Okay, here we are. Mandatory picture of a picture being taken. Oregon and the Rose Bowl. We did that. Oh well.  All right, yeah, that's a good one who's the guy the what All righty  Tom Wilson we work together at KWU.  across the English Channel, the pill or hovercraft? Guess which one? The science prize that year.
+   Thank you.  or even shorter shifts there at that time. But anyway, for about six months I would play the song, Isaac Brothers"
 
     ### Example
     Caption: "Visual: A car is driving fast. Audio: Engine noise is loud."
@@ -285,8 +302,9 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str)
     Caption: "{caption_text}"
     Speech summary: "{speech_summary}"
 
-    Output (speech only):
+    Output (speech only, extracted from the summary):
     """
+
 
     messages = [
         {"role": "system", "content": "You are an assistant that extracts speech lines from multimodal captions using video-level speech summary as additional context."},
@@ -394,7 +412,7 @@ def process_txt_file(input_file, output_file, speech_json_dir):
         segments = split_segments(caption_text)
         video_id = extract_videoid_from_line(line)
         
-        # speech translation
+        # speech translation with summarized
         speech_translation = translate_speech(video_id, speech_json_dir)       
          
         for idx, (start, end, text) in enumerate(segments):
