@@ -113,7 +113,36 @@ SCHEMA = {
     }
     }
 
- 
+def llm(system_prompt,user_prompt ):
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
+    ]
+
+    input_ids = tokenizer.apply_chat_template(
+        messages,
+        add_generation_prompt=True,
+        return_tensors="pt"
+    ).to(model.device)
+
+    terminators = [
+    tokenizer.eos_token_id,
+    tokenizer.convert_tokens_to_ids("<|eot_id|>")
+    ]
+
+    outputs = model.generate(
+        input_ids,
+        max_new_tokens=2048,
+        eos_token_id=terminators,
+        do_sample=False,
+        temperature=0.0,
+        top_p=1.0,
+    )
+
+    response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
+    response = response.strip()
+    return response
+
 def split_modality_caption_with_llm(caption_text: str) -> str:
     """LLM을 이용해 Visual/Audio로 분리"""
     # Few-shot 프롬프트
@@ -266,113 +295,75 @@ def extract_videoid_from_line(line: str) -> str:
         return ""
 
     return line[start + 1:end]
-    
-def llm(system_prompt, user_prompt):
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt},
-    ]
-
-    input_ids = tokenizer.apply_chat_template(
-        messages,
-        add_generation_prompt=True,
-        return_tensors="pt"
-    ).to(model.device)
-
-    terminators = [
-    tokenizer.eos_token_id,
-    tokenizer.convert_tokens_to_ids("<|eot_id|>")
-    ]
-
-    outputs = model.generate(
-        input_ids,
-        max_new_tokens=2048,
-        eos_token_id=terminators,
-        do_sample=False,
-        temperature=0.6,
-        top_p=0.9,
-    )
-
-    response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
-    response = response.strip()
-    return response
 
 # === LLM 호출 프롬프트 ===
 def extract_info_with_llm(video_id, seg_idx, start, end, text):
-    
-    system_prompt = "You are an assistant that classifies captions into Visual, Audio, and Speech."
+    system_prompt = """
+    You are a structured information extraction engine that outputs ONLY valid JSON for an MPEG-7–style schema.
+    Follow ALL rules strictly:
+
+    GENERAL
+    - Output JSON ONLY. No code fences, no explanations, no trailing text.
+    - Use double quotes for all keys/strings. No comments. No trailing commas.
+    - If a field is unknown, use "" (empty string) or [] (empty array). Do NOT invent facts.
+    - Keep key order exactly as the schema lists. Do not add extra keys.
+
+    ID & REFERENTIAL INTEGRITY
+    - "event_id" must be "E_<video_id>_<start>_<end>".
+    - Sanitize <video_id> by replacing non-alphanumeric chars with "_" (keep case).
+    - "objects[].object_id" must be unique like "O001", "O002", … (3 digits).
+    - "objects[].attributes" MUST be a flat JSON object of string values only.
+    - "actors[].actor_id" must be unique like "A001", "A002", … (3 digits).
+    - "actors[].ref_object" must reference an existing objects[].object_id.
+    - "event.actors" and "event.objects" are arrays of IDs that must exist above.
+
+    TYPES & ENUMS
+    - "time.start" and "time.end" are strings echoing the given inputs (no reformat).
+    - "policy.audience_filter" is an array containing one of: ["adult_mode"] or ["child_mode"] (choose one or empty if unknown).
+    - "policy.priority" is one of: "high" | "mid" | "low".
+    - "LOD.abstract_topic" is an array of strings; "scene_topic", "summary", "implications" are strings.
+
+    SCHEMA (required keys in this exact order)
+    {
+        "video_id": string,
+        "event_id": string,
+        "tags": string[],
+        "objects": [
+        {
+        "object_id": string,
+        "name": string,
+        "attributes": { string: string }
+        }
+        ],
+        "actors": [
+            {
+            "actor_id": string,
+            "ref_object": string,
+            "role": string,
+            "entity": string
+            }
+        ],
+        "event": {
+            "event_id": string,
+            "name": string,
+            "type": string,
+            "time": { "start": string, "end": string },
+            "actors": string[],
+            "objects": string[]
+        },
+        "policy": {
+            "audience_filter": string[],
+            "priority": "high" | "mid" | "low"
+        },
+        "LOD": {
+            "abstract_topic": string[],
+            "scene_topic": string,
+            "summary": string,
+            "implications": string
+        }
+    }
+    """
     user_prompt = f"""
-    You are an information extraction model following MPEG-7 style schema.
-    Return ONLY valid JSON (no explanations).  
-
-    Here is the required JSON structure:
-    - video_id
-    - event_id: use format E_<video_id>_<start>_<end>
-    - tags: topic keywords
-    - objects: object_id, name, attributes
-    - actors: actor_id, ref_object, role, entity
-    - event: event_id, name, type, time, actors, objects
-    - policy: audience_filter (adult_mode/child_mode), priority (high/mid/low)
-    - LOD: abstract_topic, scene_topic, summary, implications
-
-    ---
-
-    ### Example
-    Input segment:
-    Video vHTfzg4dBsY, time 00-99, description: "On a sunny day at the track and field stadium, a female athlete in a red and white uniform stands poised, holding a javelin, as the crowd cheers and the announcer describes the event."
-
-    Output JSON:
-    {{
-    "video_id": "vHTfzg4dBsY",
-    "event_id": "E_vHTfzg4dBsY_00_99",
-    "tags": ["sports", "javelin", "athletics"],
-    "objects": [
-        {{
-        "object_id": "O001",
-        "name": "javelin",
-        "attributes": {{"type": "equipment"}}
-        }},
-        {{
-        "object_id": "O002",
-        "name": "stadium",
-        "attributes": {{"type": "location", "environment": "outdoor"}}
-        }}
-    ],
-    "actors": [
-        {{
-        "actor_id": "A001",
-        "ref_object": "O001",
-        "role": "athlete",
-        "entity": "female athlete in red and white uniform"
-        }},
-        {{
-        "actor_id": "A002",
-        "ref_object": "O002",
-        "role": "audience",
-        "entity": "crowd"
-        }}
-    ],
-    "event": {{
-        "event_id": "E_vHTfzg4dBsY_00_99",
-        "name": "javelin throw preparation",
-        "type": "sports_event",
-        "time": {{"start": "00", "end": "99"}},
-        "actors": ["A001","A002"],
-        "objects": ["O001","O002"]
-    }},
-    "policy": {{
-        "audience_filter": ["child_mode"],
-        "priority": "high"
-    }},
-    "LOD": {{
-        "abstract_topic": ["sports"],
-        "scene_topic": "athlete preparing for javelin throw",
-        "summary": "A female athlete prepares to throw the javelin as the crowd cheers.",
-        "implications": "Highlights a competitive sports moment."
-    }}
-    }}
-
-    ---
 
     Now process the following input:
 
@@ -382,26 +373,27 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text):
     Output JSON:
     """
 
+
     response = llm(system_prompt, user_prompt)
-    
+    SCHEMA_TEXT = json.dumps(SCHEMA, ensure_ascii=False, separators=(",", ":"))  # JSON 문자열로(토큰 절약)
+
     try:
         obj = json.loads(response)
         validate(obj, SCHEMA)
         return obj
     except (json.JSONDecodeError, ValidationError):
-        # 리페어 프롬프트
-        repair = f"""You returned invalid JSON (or schema mismatch):
-        ORIGINAL:
-        {response}
-
-        Fix it to match this JSON Schema exactly. Return JSON ONLY.
-        SCHEMA:
-        {json.dumps(SCHEMA)}
-        """
-        text2 = llm(system_prompt, repair)
+        # 리페어는 system을 그대로 두고, user에 'ORIGINAL+SCHEMA'를 넣습니다.
+        repair_user = (
+            "The previous output was invalid JSON or did not match the schema. "
+            "Fix it to match the JSON Schema EXACTLY. Return JSON ONLY.\n\n"
+            f"SCHEMA:\n{SCHEMA_TEXT}\n\n"
+            f"ORIGINAL:\n{response}\n"
+        )
+        text2 = llm(system_prompt, repair_user)
         obj2 = json.loads(text2)
         validate(obj2, SCHEMA)
         return obj2
+
 
 def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str, start: str, end: str) -> str:
     """
