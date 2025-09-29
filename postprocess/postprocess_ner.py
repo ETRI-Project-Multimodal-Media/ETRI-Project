@@ -140,20 +140,72 @@ def extract_videoid_from_line(line: str) -> str:
 
 # === LLM 호출 프롬프트 ===
 def extract_info_with_llm(video_id, seg_idx, start, end, text):
-    prompt = f"""
-    You are an information extraction model following MPEG-7 style schema.
-    Return ONLY valid JSON (no explanations).  
+    system_prompt = """"
+    You are a structured information extraction engine that outputs ONLY valid JSON for an MPEG-7–style schema.
+    Follow ALL rules strictly:
 
-    Here is the required JSON structure:
-    - video_id
-    - event_id: use format E_<video_id>_<start>_<end>
-    - tags: topic keywords
-    - objects: object_id, name, attributes
-    - actors: actor_id, ref_object, role, entity
-    - event: event_id, name, type, time, actors, objects
-    - policy: audience_filter (adult_mode/child_mode), priority (high/mid/low)
-    - LOD: abstract_topic, scene_topic, summary, implications
+    GENERAL
+    - Output JSON ONLY. No code fences, no explanations, no trailing text.
+    - Use double quotes for all keys/strings. No comments. No trailing commas.
+    - If a field is unknown, use "" (empty string) or [] (empty array). Do NOT invent facts.
+    - Keep key order exactly as the schema lists. Do not add extra keys.
 
+    ID & REFERENTIAL INTEGRITY
+    - "event_id" must be "E_<video_id>_<start>_<end>".
+    - Sanitize <video_id> by replacing non-alphanumeric chars with "_" (keep case).
+    - "objects[].object_id" must be unique like "O001", "O002", … (3 digits).
+    - "actors[].actor_id" must be unique like "A001", "A002", … (3 digits).
+    - "actors[].ref_object" must reference an existing objects[].object_id.
+    - "event.actors" and "event.objects" are arrays of IDs that must exist above.
+
+    TYPES & ENUMS
+    - "time.start" and "time.end" are strings echoing the given inputs (no reformat).
+    - "policy.audience_filter" is an array containing one of: ["adult_mode"] or ["child_mode"] (choose one or empty if unknown).
+    - "policy.priority" is one of: "high" | "mid" | "low".
+    - "LOD.abstract_topic" is an array of strings; "scene_topic", "summary", "implications" are strings.
+
+    SCHEMA (required keys in this exact order)
+    {
+    "video_id": string,
+    "event_id": string,
+    "tags": string[],
+    "objects": [
+        {
+        "object_id": string,
+        "name": string,
+        "attributes": { string: string }
+        }
+    ],
+    "actors": [
+        {
+        "actor_id": string,
+        "ref_object": string,
+        "role": string,
+        "entity": string
+        }
+    ],
+    "event": {
+        "event_id": string,
+        "name": string,
+        "type": string,
+        "time": { "start": string, "end": string },
+        "actors": string[],
+        "objects": string[]
+    },
+    "policy": {
+        "audience_filter": string[],
+        "priority": "high" | "mid" | "low"
+    },
+    "LOD": {
+        "abstract_topic": string[],
+        "scene_topic": string,
+        "summary": string,
+        "implications": string
+    }
+    }
+    """
+    user_prompt = f"""
+    
     ---
 
     ### Example
@@ -213,18 +265,24 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text):
 
     ---
 
-    Now process the following input:
+    You must fill the schema from the following segment ONLY. Do not include content outside this segment.
 
     Input segment:
     Video {video_id}, time {start}-{end}, description: {text}
 
-    Output JSON:
+    Output JSON ONLY:
+    
+    ID hints:
+    - First object_id should start at "O001", first actor_id at "A001".
+    - Use only these IDs inside "event.actors" and "event.objects".
+
+    Produce 3-6 "tags" that best represent the segment.
     """
 
 
     messages = [
-        {"role": "system", "content": "You are an assistant that classifies captions into Visual, Audio, and Speech."},
-        {"role": "user", "content": prompt},
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
     ]
 
     input_ids = tokenizer.apply_chat_template(
@@ -242,8 +300,8 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text):
         input_ids,
         max_new_tokens=2048,
         eos_token_id=terminators,
-        do_sample=True,
-        temperature=0.6,
+        do_sample=False,
+        temperature=0.0,
         top_p=0.9,
     )
 
