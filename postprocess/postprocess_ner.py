@@ -6,6 +6,8 @@ import torch
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from jsonschema import validate, ValidationError
+import torch, re, textwrap
+
 
 from huggingface_hub import login
 login(token=os.environ["HUGGINGFACE_HUB_TOKEN"])
@@ -113,7 +115,7 @@ SCHEMA = {
     }
     }
 
-def llm(system_prompt,user_prompt ):
+def llm(system_prompt,user_prompt):
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
@@ -449,28 +451,26 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str,
     return response.strip()
 
 
-# 기존 BART 대신 Pegasus 사용
-# summarizer = pipeline("summarization", model="google/pegasus-cnn_dailymail")
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
-
 def chunk_text(text, max_chars=1500):
     return [text[i:i+max_chars] for i in range(0, len(text), max_chars)]
 
 def summarize_text(text, max_len=80):
     chunks = chunk_text(text)
     summaries = []
-    for chunk in chunks:
-        inputs = summarizer.tokenizer(
-            chunk, return_tensors="pt", truncation=True, max_length=1024
-        ).to(summarizer.model.device)
+    system_prompt = textwrap.dedent("""
+    You summarize speech transcripts into a single plain-text string.
+    RULES:
+    - Output only the summary text. No labels, no quotes, no bullets, no JSON, no code fences.
+    - Keep the input language (do not translate).
+    - Be faithful to the transcript; do not add facts that are not present.
+    - Make it concise but complete.
+    """)
 
-        summary_ids = summarizer.model.generate(
-            **inputs,
-            max_length=max_len,
-            min_length=min(20, max_len-1),
-            do_sample=False
-        )
-        summaries.append(summarizer.tokenizer.decode(summary_ids[0], skip_special_tokens=True))
+    
+    for chunk in chunks:
+        user_prompt = f"Transcript:\n{chunk}\n\nSummarize in one concise paragraph (1–2 sentences):"
+        chunk_summary = llm(system_prompt, user_prompt)
+        summaries.append(chunk_summary)
     return " ".join(summaries)
 
 
