@@ -22,9 +22,7 @@ model = AutoModelForCausalLM.from_pretrained(
 
 # 
 def split_modality_caption_with_llm(caption_text: str) -> str:
-    """
-    LLM을 이용해 Visual/Audio 로 분리
-    If Audio is None Then Use Captioning  """
+    """LLM을 이용해 Visual/Audio로 분리"""
     # Few-shot 프롬프트
     prompt = """
     You are a helpful assistant that splits a multimodal caption into two parts:  
@@ -34,21 +32,16 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
       Extract Visual and Audio part in the given caption.
       If the caption has no Audio, output "None".
 
-    Definitions:
-    - "visual": what is seen.
-    - "audio": non-speech sounds (music, beep, engine, crowd noise, etc.). If no audio, use "".
-
     Examples:
     Input: "A woman is playing the piano while singing 'I love you.' Applause can be heard."
     Output:
     Visual: "A woman is playing the piano."
-    Audio: "A woman is singing 'I love you.'. Applause can be heard."
+    Audio: "Applause can be heard."
     
     Input: "A man is playing the guitar while singing 'I love you.' The acoustic guitar sound resonates in the background."
     Output:
     Visual: "A man is playing the guitar."
-    Audio: "A man is singing 'I love you.'. The acoustic guitar sound resonates in the background."
-
+    Audio: "The acoustic guitar sound resonates in the background."
 
     ---
 
