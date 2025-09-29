@@ -5,6 +5,7 @@ import ast
 import torch
 from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+from jsonschema import validate, ValidationError
 
 from huggingface_hub import login
 login(token=os.environ["HUGGINGFACE_HUB_TOKEN"])
@@ -173,9 +174,131 @@ def extract_videoid_from_line(line: str) -> str:
         return ""
 
     return line[start + 1:end]
+    
+def llm(system_prompt, user_prompt):
+    messages = [
+    {"role": "system", "content": system_prompt},
+    {"role": "user", "content": user_prompt},
+    ]
+
+    input_ids = tokenizer.apply_chat_template(
+        messages,
+        add_generation_prompt=True,
+        return_tensors="pt"
+    ).to(model.device)
+
+    terminators = [
+    tokenizer.eos_token_id,
+    tokenizer.convert_tokens_to_ids("<|eot_id|>")
+    ]
+
+    outputs = model.generate(
+        input_ids,
+        max_new_tokens=2048,
+        eos_token_id=terminators,
+        do_sample=False,
+        temperature=0.0,
+        top_p=1.0,
+    )
+
+    response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
+    response = response.strip()
+    return response
 
 # === LLM 호출 프롬프트 ===
 def extract_info_with_llm(video_id, seg_idx, start, end, text):
+    SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "required": ["video_id", "event_id", "tags", "objects", "actors", "event", "policy", "LOD"],
+    "properties": {
+        "video_id": {"type": "string"},
+        "event_id": {
+        "type": "string",
+        "pattern": r"^E_.+$"
+        },
+        "tags": {
+        "type": "array",
+        "items": {"type": "string"},
+        },
+        "objects": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["object_id", "name", "attributes"],
+            "properties": {
+            "object_id": {"type": "string", "pattern": r"^O\d{3,}$"},
+            "name": {"type": "string"},
+            "attributes": {
+                "type": "object",
+                "additionalProperties": {"type": "string"}
+            }
+            }
+        }
+        },
+        "actors": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["actor_id", "ref_object", "role", "entity"],
+            "properties": {
+            "actor_id": {"type": "string", "pattern": r"^A\d{3,}$"},
+            "ref_object": {"type": "string"},
+            "role": {"type": "string"},
+            "entity": {"type": "string"}
+            }
+        }
+        },
+        "event": {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["event_id", "name", "type", "time", "actors", "objects"],
+        "properties": {
+            "event_id": {"type": "string"},
+            "name": {"type": "string"},
+            "type": {"type": "string"},
+            "time": {
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["start", "end"],
+            "properties": {
+                "start": {"type": "string"},
+                "end": {"type": "string"}
+            }
+            },
+            "actors": {"type": "array", "items": {"type": "string"}},
+            "objects": {"type": "array", "items": {"type": "string"}}
+        }
+        },
+        "policy": {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["audience_filter", "priority"],
+        "properties": {
+            "audience_filter": {
+            "type": "array",
+            "items": {"type": "string", "enum": ["adult_mode", "child_mode"]},
+            "uniqueItems": True,
+            },
+            "priority": {"type": "string", "enum": ["high", "mid", "low"]}
+        }
+        },
+        "LOD": {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["abstract_topic", "scene_topic", "summary", "implications"],
+        "properties": {
+            "abstract_topic": {"type": "array", "items": {"type": "string"}},
+            "scene_topic": {"type": "string"},
+            "summary": {"type": "string"},
+            "implications": {"type": "string"}
+        }
+        }
+    }
+    }
+
     system_prompt = """
     You are a structured information extraction engine that outputs ONLY valid JSON for an MPEG-7–style schema.
     Follow ALL rules strictly:
@@ -237,7 +360,7 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text):
         "scene_topic": string,
         "summary": string,
         "implications": string
-    }
+        }
     }
     """
     user_prompt = f"""
@@ -257,44 +380,26 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text):
     Produce 3-6 "tags" that best represent the segment.
     """
 
-
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt},
-    ]
-
-    input_ids = tokenizer.apply_chat_template(
-        messages,
-        add_generation_prompt=True,
-        return_tensors="pt"
-    ).to(model.device)
-
-    terminators = [
-    tokenizer.eos_token_id,
-    tokenizer.convert_tokens_to_ids("<|eot_id|>")
-    ]
-
-    outputs = model.generate(
-        input_ids,
-        max_new_tokens=2048,
-        eos_token_id=terminators,
-        do_sample=False,
-        temperature=0.0,
-        top_p=1.0,
-    )
-
-    response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
-    response = response.strip()
+    response = llm(system_prompt, user_prompt)
     
     try:
-        json_start = response.index("{")
-        json_str = response[json_start:]
-        parsed = json.loads(json_str)
-    except Exception as e:
-        print(f"[Warning] JSON parse error at segment {seg_idx}: {e}")
-        parsed = {"raw_output": response}
+        obj = json.loads(response)
+        validate(obj, SCHEMA)
+        return obj
+    except (json.JSONDecodeError, ValidationError):
+        # 리페어 프롬프트
+        repair = f"""You returned invalid JSON (or schema mismatch):
+        ORIGINAL:
+        {response}
 
-    return parsed
+        Fix it to match this JSON Schema exactly. Return JSON ONLY.
+        SCHEMA:
+        {json.dumps(SCHEMA)}
+        """
+        text2 = llm(system_prompt, repair)
+        obj2 = json.loads(text2)
+        validate(obj2, SCHEMA)
+        return obj2
 
 def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str, start: str, end: str) -> str:
     """
@@ -492,7 +597,7 @@ def process_txt_file(input_file, output_file, speech_json_dir):
 
 # === 실행 예시 ===
 if __name__ == "__main__":
-    input_file = "/home/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
-    output_file = "/home/kylee/LongVALE/logs/modality_split.txt"   # 결과 저장 파일
+    input_file = "/home/kylee/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
+    output_file = "/home/kylee/kylee/LongVALE/logs/modality_split.txt"   # 결과 저장 파일
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/LongVALE/data/speech_asr_1171")
+    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171")
