@@ -146,54 +146,38 @@ def llm(system_prompt,user_prompt ):
 def split_modality_caption_with_llm(caption_text: str) -> str:
     """LLM을 이용해 Visual/Audio로 분리"""
     # Few-shot 프롬프트
-    system_prompt = (
-    "You are an extraction engine. Output ONLY valid JSON with exactly two keys:\n"
-    '{"visual": string, "audio": string}\n'
-    "- visual: strictly what is seen.\n"
-    "- audio: ONLY non-speech sounds (music, noise, sfx). EXCLUDE speech/lyrics/dialogue.\n"
-    '- If no audio cues exist, set "audio" to "".\n'
-    "- Use the same language as the input.\n"
-    "- Do not invent unseen/inaudible details.\n"
-    "- JSON only. No extra text, no code fences, no trailing commas."
-    )
+    system_prompt = """
+    You output ONLY valid JSON with exactly two keys:
+    {"visual": string, "audio": string}
+
+    DEFINITIONS
+    - visual: strictly what is seen.
+    - audio: ANY audible content explicitly mentioned in the text, including
+    speech/dialogue/announcer/narration, crowd reactions (cheer, boo, applause),
+    music/singing, environmental/FX (engine, footsteps, wind, beep, whistle, horn), alarms.
+
+    EXTRACTION RULES
+    - Find ALL sound mentions; do not drop any. Preserve the order in the input.
+    - Convert each sound mention to a concise phrase (noun/verb). Keep quotes for speech if present.
+    - Join multiple audio mentions with "; " (semicolon+space).
+    - Do NOT invent unheard details. If none, set "audio" to "".
+    - Keep the same language as the input.
+    - JSON only. No extra text, no code fences, no trailing commas.
+    """
 
     # 예시를 빼고 돌려도 되지만, 안정성 위해 초소형 예시 1개(≤120 tokens) 권장
-    user_prompt = (
-        'Example:\n'
-        'Input: "A woman plays piano while singing. Applause is heard."\n'
-        '{"visual":"A woman plays the piano.","audio":"Applause is heard."}\n'
-        '---\n'
-        f'Input: "{caption_text}"\n'
-        "Output JSON:"
-    )
+    user_prompt = f"""
+        Example:
+        Input: "A woman plays the piano while singing 'I love you'. Applause erupts and a bell rings."
+        Output:
+        {{"visual":"A woman plays the piano.","audio":"Singing 'I love you'; applause; bell rings."}}
+        ---
+        Now process the segment below.
 
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt},
-    ]
-
-    input_ids = tokenizer.apply_chat_template(
-        messages,
-        add_generation_prompt=True,
-        return_tensors="pt"
-    ).to(model.device)
-
-    terminators = [
-    tokenizer.eos_token_id,
-    tokenizer.convert_tokens_to_ids("<|eot_id|>")
-    ]
-
-    outputs = model.generate(
-        input_ids,
-        max_new_tokens=512,
-        eos_token_id=terminators,
-        do_sample=False,
-        temperature=0.0,
-        top_p=1.0,
-    )
-
-    text = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True).strip()
-
+        Input: {caption_text}
+        Output JSON:
+        """
+    text = llm(system_prompt, user_prompt)
     # 1차 파싱
     import json, re
     def try_parse_json(s: str):
@@ -213,23 +197,7 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
             f"Previous:\n{text}\n"
             "Output JSON only:"
         )
-        messages2 = [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": repair_prompt},
-        ]
-        input_ids2 = tokenizer.apply_chat_template(
-            messages2, add_generation_prompt=True, return_tensors="pt"
-        ).to(model.device)
-
-        outputs2 = model.generate(
-            input_ids2,
-            max_new_tokens=512,
-            eos_token_id=terminators,
-            do_sample=False,
-            temperature=0.0,
-            top_p=1.0,
-        )
-        text2 = tokenizer.decode(outputs2[0][input_ids2.shape[-1]:], skip_special_tokens=True).strip()
+        text2 = llm(system_prompt, repair_prompt)
         obj = try_parse_json(text2)
 
     # 최종 후처리: 키 보정 & 타입 보장
@@ -567,8 +535,8 @@ def process_txt_file(input_file, output_file, speech_json_dir):
             # Visual, Audio modality split
             split_result = split_modality_caption_with_llm(text)
             
-            # speech summary 
-            speech_timesplit = extract_speech_from_caption_with_llm(text, speech_translation)
+            # speech summary and extract time speech
+            speech_timesplit = extract_speech_from_caption_with_llm(text, speech_translation, start, end)
             # modality to dict
             split_result_dict = parse_split_caption_to_dict(split_result, speech_timesplit)
                         
