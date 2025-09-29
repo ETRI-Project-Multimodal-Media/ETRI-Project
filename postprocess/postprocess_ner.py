@@ -24,37 +24,30 @@ model = AutoModelForCausalLM.from_pretrained(
 def split_modality_caption_with_llm(caption_text: str) -> str:
     """LLM을 이용해 Visual/Audio로 분리"""
     # Few-shot 프롬프트
-    prompt = """
-    You are a helpful assistant that splits a multimodal caption into two parts:  
-    Visual, Audio.
-    
-    - Your task:
-      Extract Visual and Audio part in the given caption.
-      If the caption has no Audio, output "None".
+    system_prompt = (
+    "You are an extraction engine. Output ONLY valid JSON with exactly two keys:\n"
+    '{"visual": string, "audio": string}\n'
+    "- visual: strictly what is seen.\n"
+    "- audio: ONLY non-speech sounds (music, noise, sfx). EXCLUDE speech/lyrics/dialogue.\n"
+    '- If no audio cues exist, set "audio" to "".\n'
+    "- Use the same language as the input.\n"
+    "- Do not invent unseen/inaudible details.\n"
+    "- JSON only. No extra text, no code fences, no trailing commas."
+    )
 
-    Examples:
-    Input: "A woman is playing the piano while singing 'I love you.' Applause can be heard."
-    Output:
-    Visual: "A woman is playing the piano."
-    Audio: "Applause can be heard."
-    
-    Input: "A man is playing the guitar while singing 'I love you.' The acoustic guitar sound resonates in the background."
-    Output:
-    Visual: "A man is playing the guitar."
-    Audio: "The acoustic guitar sound resonates in the background."
-
-    ---
-
-    Now split the following:
-    
-    Input: "{}"
-    Output:
-    
-    """.format(caption_text)
+    # 예시를 빼고 돌려도 되지만, 안정성 위해 초소형 예시 1개(≤120 tokens) 권장
+    user_prompt = (
+        'Example:\n'
+        'Input: "A woman plays piano while singing. Applause is heard."\n'
+        '{"visual":"A woman plays the piano.","audio":"Applause is heard."}\n'
+        '---\n'
+        f'Input: "{caption_text}"\n'
+        "Output JSON:"
+    )
 
     messages = [
-        {"role": "system", "content": "You are an assistant that classifies captions into Visual, Audio."},
-        {"role": "user", "content": prompt},
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
     ]
 
     input_ids = tokenizer.apply_chat_template(
@@ -70,15 +63,65 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
 
     outputs = model.generate(
         input_ids,
-        max_new_tokens=2048,
+        max_new_tokens=512,
         eos_token_id=terminators,
-        do_sample=True,
-        temperature=0.6,
-        top_p=0.9,
+        do_sample=False,
+        temperature=0.0,
+        top_p=1.0,
     )
 
-    response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
-    return response.strip()
+    text = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True).strip()
+
+    # 1차 파싱
+    import json, re
+    def try_parse_json(s: str):
+        # 응답 앞에 잡음이 섞였을 때 첫 '{'부터 추출
+        i = s.find("{")
+        if i != -1:
+            s = s[i:]
+        return json.loads(s)
+
+    try:
+        obj = try_parse_json(text)
+    except Exception:
+        # 자동 리페어 프롬프트(간단)
+        repair_prompt = (
+            "The previous output was not valid JSON with keys {\"visual\",\"audio\"}.\n"
+            "Fix it to valid JSON now. Do not add extra keys.\n"
+            f"Previous:\n{text}\n"
+            "Output JSON only:"
+        )
+        messages2 = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": repair_prompt},
+        ]
+        input_ids2 = tokenizer.apply_chat_template(
+            messages2, add_generation_prompt=True, return_tensors="pt"
+        ).to(model.device)
+
+        outputs2 = model.generate(
+            input_ids2,
+            max_new_tokens=512,
+            eos_token_id=terminators,
+            do_sample=False,
+            temperature=0.0,
+            top_p=1.0,
+        )
+        text2 = tokenizer.decode(outputs2[0][input_ids2.shape[-1]:], skip_special_tokens=True).strip()
+        obj = try_parse_json(text2)
+
+    # 최종 후처리: 키 보정 & 타입 보장
+    visual = obj.get("visual", "")
+    audio  = obj.get("audio", "")
+    if not isinstance(visual, str): visual = str(visual)
+    if not isinstance(audio, str):  audio  = str(audio)
+
+    # 규칙 준수 보정: 스피치 흔적이 audio에 들어오면 제거(간단한 패턴 예시)
+    speech_markers = [r"\bsaid\b", r"\bsays\b", r"\bquote\b", r"\".+?\""]
+    if any(re.search(p, audio, flags=re.IGNORECASE) for p in speech_markers):
+        audio = ""  # 필요시 더 정교한 필터 로직 적용
+
+    return {"visual": visual.strip(), "audio": audio.strip()}
 
 
 # 시간 구간 추출
@@ -133,91 +176,91 @@ def extract_videoid_from_line(line: str) -> str:
 
 # === LLM 호출 프롬프트 ===
 def extract_info_with_llm(video_id, seg_idx, start, end, text):
-    prompt = f"""
-    You are an information extraction model following MPEG-7 style schema.
-    Return ONLY valid JSON (no explanations).  
+    system_prompt = """
+    You are a structured information extraction engine that outputs ONLY valid JSON for an MPEG-7–style schema.
+    Follow ALL rules strictly:
 
-    Here is the required JSON structure:
-    - video_id
-    - event_id: use format E_<video_id>_<start>_<end>
-    - tags: topic keywords
-    - objects: object_id, name, attributes
-    - actors: actor_id, ref_object, role, entity
-    - event: event_id, name, type, time, actors, objects
-    - policy: audience_filter (adult_mode/child_mode), priority (high/mid/low)
-    - LOD: abstract_topic, scene_topic, summary, implications
+    GENERAL
+    - Output JSON ONLY. No code fences, no explanations, no trailing text.
+    - Use double quotes for all keys/strings. No comments. No trailing commas.
+    - If a field is unknown, use "" (empty string) or [] (empty array). Do NOT invent facts.
+    - Keep key order exactly as the schema lists. Do not add extra keys.
 
-    ---
+    ID & REFERENTIAL INTEGRITY
+    - "event_id" must be "E_<video_id>_<start>_<end>".
+    - Sanitize <video_id> by replacing non-alphanumeric chars with "_" (keep case).
+    - "objects[].object_id" must be unique like "O001", "O002", … (3 digits).
+    - "actors[].actor_id" must be unique like "A001", "A002", … (3 digits).
+    - "actors[].ref_object" must reference an existing objects[].object_id.
+    - "event.actors" and "event.objects" are arrays of IDs that must exist above.
 
-    ### Example
-    Input segment:
-    Video vHTfzg4dBsY, time 00-99, description: "On a sunny day at the track and field stadium, a female athlete in a red and white uniform stands poised, holding a javelin, as the crowd cheers and the announcer describes the event."
+    TYPES & ENUMS
+    - "time.start" and "time.end" are strings echoing the given inputs (no reformat).
+    - "policy.audience_filter" is an array containing one of: ["adult_mode"] or ["child_mode"] (choose one or empty if unknown).
+    - "policy.priority" is one of: "high" | "mid" | "low".
+    - "LOD.abstract_topic" is an array of strings; "scene_topic", "summary", "implications" are strings.
 
-    Output JSON:
-    {{
-    "video_id": "vHTfzg4dBsY",
-    "event_id": "E_vHTfzg4dBsY_00_99",
-    "tags": ["sports", "javelin", "athletics"],
+    SCHEMA (required keys in this exact order)
+    {
+    "video_id": string,
+    "event_id": string,
+    "tags": string[],
     "objects": [
-        {{
-        "object_id": "O001",
-        "name": "javelin",
-        "attributes": {{"type": "equipment"}}
-        }},
-        {{
-        "object_id": "O002",
-        "name": "stadium",
-        "attributes": {{"type": "location", "environment": "outdoor"}}
-        }}
+        {
+        "object_id": string,
+        "name": string,
+        "attributes": { string: string }
+        }
     ],
     "actors": [
-        {{
-        "actor_id": "A001",
-        "ref_object": "O001",
-        "role": "athlete",
-        "entity": "female athlete in red and white uniform"
-        }},
-        {{
-        "actor_id": "A002",
-        "ref_object": "O002",
-        "role": "audience",
-        "entity": "crowd"
-        }}
+        {
+        "actor_id": string,
+        "ref_object": string,
+        "role": string,
+        "entity": string
+        }
     ],
-    "event": {{
-        "event_id": "E_vHTfzg4dBsY_00_99",
-        "name": "javelin throw preparation",
-        "type": "sports_event",
-        "time": {{"start": "00", "end": "99"}},
-        "actors": ["A001","A002"],
-        "objects": ["O001","O002"]
-    }},
-    "policy": {{
-        "audience_filter": ["child_mode"],
-        "priority": "high"
-    }},
-    "LOD": {{
-        "abstract_topic": ["sports"],
-        "scene_topic": "athlete preparing for javelin throw",
-        "summary": "A female athlete prepares to throw the javelin as the crowd cheers.",
-        "implications": "Highlights a competitive sports moment."
-    }}
-    }}
+    "event": {
+        "event_id": string,
+        "name": string,
+        "type": string,
+        "time": { "start": string, "end": string },
+        "actors": string[],
+        "objects": string[]
+    },
+    "policy": {
+        "audience_filter": string[],
+        "priority": "high" | "mid" | "low"
+    },
+    "LOD": {
+        "abstract_topic": string[],
+        "scene_topic": string,
+        "summary": string,
+        "implications": string
+    }
+    }
+    """
+    user_prompt = f"""
 
-    ---
-
-    Now process the following input:
+    You must fill the schema from the following segment ONLY. Do not include content outside this segment.
 
     Input segment:
     Video {video_id}, time {start}-{end}, description: {text}
 
-    Output JSON:
+    Output JSON ONLY:
+
+    ----
+    ID hints:
+    - First object_id should start at "O001", first actor_id at "A001".
+    - Use only these IDs inside "event.actors" and "event.objects".
+
+    Produce 3-6 "tags" that best represent the segment.
     """
 
 
     messages = [
-        {"role": "system", "content": "You are an assistant that classifies captions into Visual, Audio, and Speech."},
-        {"role": "user", "content": prompt},
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
     ]
 
     input_ids = tokenizer.apply_chat_template(
@@ -235,9 +278,9 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text):
         input_ids,
         max_new_tokens=2048,
         eos_token_id=terminators,
-        do_sample=True,
-        temperature=0.6,
-        top_p=0.9,
+        do_sample=False,
+        temperature=0.0,
+        top_p=1.0,
     )
 
     response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
