@@ -21,7 +21,99 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map="auto"
 )
 
-# 
+SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "required": ["video_id", "event_id", "tags", "objects", "actors", "event", "policy", "LOD"],
+    "properties": {
+        "video_id": {"type": "string"},
+        "event_id": {
+        "type": "string",
+        "pattern": r"^E_.+$"
+        },
+        "tags": {
+        "type": "array",
+        "items": {"type": "string"},
+        },
+        "objects": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["object_id", "name", "attributes"],
+            "properties": {
+            "object_id": {"type": "string", "pattern": r"^O\d{3,}$"},
+            "name": {"type": "string"},
+            "attributes": {
+                "type": "object",
+                "additionalProperties": {"type": "string"}
+            }
+            }
+        }
+        },
+        "actors": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["actor_id", "ref_object", "role", "entity"],
+            "properties": {
+            "actor_id": {"type": "string", "pattern": r"^A\d{3,}$"},
+            "ref_object": {"type": "string"},
+            "role": {"type": "string"},
+            "entity": {"type": "string"}
+            }
+        }
+        },
+        "event": {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["event_id", "name", "type", "time", "actors", "objects"],
+        "properties": {
+            "event_id": {"type": "string"},
+            "name": {"type": "string"},
+            "type": {"type": "string"},
+            "time": {
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["start", "end"],
+            "properties": {
+                "start": {"type": "string"},
+                "end": {"type": "string"}
+            }
+            },
+            "actors": {"type": "array", "items": {"type": "string"}},
+            "objects": {"type": "array", "items": {"type": "string"}}
+        }
+        },
+        "policy": {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["audience_filter", "priority"],
+        "properties": {
+            "audience_filter": {
+            "type": "array",
+            "items": {"type": "string", "enum": ["adult_mode", "child_mode"]},
+            "uniqueItems": True,
+            },
+            "priority": {"type": "string", "enum": ["high", "mid", "low"]}
+        }
+        },
+        "LOD": {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["abstract_topic", "scene_topic", "summary", "implications"],
+        "properties": {
+            "abstract_topic": {"type": "array", "items": {"type": "string"}},
+            "scene_topic": {"type": "string"},
+            "summary": {"type": "string"},
+            "implications": {"type": "string"}
+        }
+        }
+    }
+    }
+
+ 
 def split_modality_caption_with_llm(caption_text: str) -> str:
     """LLM을 이용해 Visual/Audio로 분리"""
     # Few-shot 프롬프트
@@ -177,8 +269,8 @@ def extract_videoid_from_line(line: str) -> str:
     
 def llm(system_prompt, user_prompt):
     messages = [
-    {"role": "system", "content": system_prompt},
-    {"role": "user", "content": user_prompt},
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_prompt},
     ]
 
     input_ids = tokenizer.apply_chat_template(
@@ -197,8 +289,8 @@ def llm(system_prompt, user_prompt):
         max_new_tokens=2048,
         eos_token_id=terminators,
         do_sample=False,
-        temperature=0.0,
-        top_p=1.0,
+        temperature=0.6,
+        top_p=0.9,
     )
 
     response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
@@ -207,177 +299,87 @@ def llm(system_prompt, user_prompt):
 
 # === LLM 호출 프롬프트 ===
 def extract_info_with_llm(video_id, seg_idx, start, end, text):
-    SCHEMA = {
-    "type": "object",
-    "additionalProperties": False,
-    "required": ["video_id", "event_id", "tags", "objects", "actors", "event", "policy", "LOD"],
-    "properties": {
-        "video_id": {"type": "string"},
-        "event_id": {
-        "type": "string",
-        "pattern": r"^E_.+$"
-        },
-        "tags": {
-        "type": "array",
-        "items": {"type": "string"},
-        },
-        "objects": {
-        "type": "array",
-        "items": {
-            "type": "object",
-            "additionalProperties": False,
-            "required": ["object_id", "name", "attributes"],
-            "properties": {
-            "object_id": {"type": "string", "pattern": r"^O\d{3,}$"},
-            "name": {"type": "string"},
-            "attributes": {
-                "type": "object",
-                "additionalProperties": {"type": "string"}
-            }
-            }
-        }
-        },
-        "actors": {
-        "type": "array",
-        "items": {
-            "type": "object",
-            "additionalProperties": False,
-            "required": ["actor_id", "ref_object", "role", "entity"],
-            "properties": {
-            "actor_id": {"type": "string", "pattern": r"^A\d{3,}$"},
-            "ref_object": {"type": "string"},
-            "role": {"type": "string"},
-            "entity": {"type": "string"}
-            }
-        }
-        },
-        "event": {
-        "type": "object",
-        "additionalProperties": False,
-        "required": ["event_id", "name", "type", "time", "actors", "objects"],
-        "properties": {
-            "event_id": {"type": "string"},
-            "name": {"type": "string"},
-            "type": {"type": "string"},
-            "time": {
-            "type": "object",
-            "additionalProperties": False,
-            "required": ["start", "end"],
-            "properties": {
-                "start": {"type": "string"},
-                "end": {"type": "string"}
-            }
-            },
-            "actors": {"type": "array", "items": {"type": "string"}},
-            "objects": {"type": "array", "items": {"type": "string"}}
-        }
-        },
-        "policy": {
-        "type": "object",
-        "additionalProperties": False,
-        "required": ["audience_filter", "priority"],
-        "properties": {
-            "audience_filter": {
-            "type": "array",
-            "items": {"type": "string", "enum": ["adult_mode", "child_mode"]},
-            "uniqueItems": True,
-            },
-            "priority": {"type": "string", "enum": ["high", "mid", "low"]}
-        }
-        },
-        "LOD": {
-        "type": "object",
-        "additionalProperties": False,
-        "required": ["abstract_topic", "scene_topic", "summary", "implications"],
-        "properties": {
-            "abstract_topic": {"type": "array", "items": {"type": "string"}},
-            "scene_topic": {"type": "string"},
-            "summary": {"type": "string"},
-            "implications": {"type": "string"}
-        }
-        }
-    }
-    }
+    
+    system_prompt = "You are an assistant that classifies captions into Visual, Audio, and Speech."
+    user_prompt = f"""
+    You are an information extraction model following MPEG-7 style schema.
+    Return ONLY valid JSON (no explanations).  
 
-    system_prompt = """
-    You are a structured information extraction engine that outputs ONLY valid JSON for an MPEG-7–style schema.
-    Follow ALL rules strictly:
+    Here is the required JSON structure:
+    - video_id
+    - event_id: use format E_<video_id>_<start>_<end>
+    - tags: topic keywords
+    - objects: object_id, name, attributes
+    - actors: actor_id, ref_object, role, entity
+    - event: event_id, name, type, time, actors, objects
+    - policy: audience_filter (adult_mode/child_mode), priority (high/mid/low)
+    - LOD: abstract_topic, scene_topic, summary, implications
 
-    GENERAL
-    - Output JSON ONLY. No code fences, no explanations, no trailing text.
-    - Use double quotes for all keys/strings. No comments. No trailing commas.
-    - If a field is unknown, use "" (empty string) or [] (empty array). Do NOT invent facts.
-    - Keep key order exactly as the schema lists. Do not add extra keys.
+    ---
 
-    ID & REFERENTIAL INTEGRITY
-    - "event_id" must be "E_<video_id>_<start>_<end>".
-    - Sanitize <video_id> by replacing non-alphanumeric chars with "_" (keep case).
-    - "objects[].object_id" must be unique like "O001", "O002", … (3 digits).
-    - "actors[].actor_id" must be unique like "A001", "A002", … (3 digits).
-    - "actors[].ref_object" must reference an existing objects[].object_id.
-    - "event.actors" and "event.objects" are arrays of IDs that must exist above.
+    ### Example
+    Input segment:
+    Video vHTfzg4dBsY, time 00-99, description: "On a sunny day at the track and field stadium, a female athlete in a red and white uniform stands poised, holding a javelin, as the crowd cheers and the announcer describes the event."
 
-    TYPES & ENUMS
-    - "time.start" and "time.end" are strings echoing the given inputs (no reformat).
-    - "policy.audience_filter" is an array containing one of: ["adult_mode"] or ["child_mode"] (choose one or empty if unknown).
-    - "policy.priority" is one of: "high" | "mid" | "low".
-    - "LOD.abstract_topic" is an array of strings; "scene_topic", "summary", "implications" are strings.
-
-    SCHEMA (required keys in this exact order)
-    {
-    "video_id": string,
-    "event_id": string,
-    "tags": string[],
+    Output JSON:
+    {{
+    "video_id": "vHTfzg4dBsY",
+    "event_id": "E_vHTfzg4dBsY_00_99",
+    "tags": ["sports", "javelin", "athletics"],
     "objects": [
-        {
-        "object_id": string,
-        "name": string,
-        "attributes": { string: string }
-        }
+        {{
+        "object_id": "O001",
+        "name": "javelin",
+        "attributes": {{"type": "equipment"}}
+        }},
+        {{
+        "object_id": "O002",
+        "name": "stadium",
+        "attributes": {{"type": "location", "environment": "outdoor"}}
+        }}
     ],
     "actors": [
-        {
-        "actor_id": string,
-        "ref_object": string,
-        "role": string,
-        "entity": string
-        }
+        {{
+        "actor_id": "A001",
+        "ref_object": "O001",
+        "role": "athlete",
+        "entity": "female athlete in red and white uniform"
+        }},
+        {{
+        "actor_id": "A002",
+        "ref_object": "O002",
+        "role": "audience",
+        "entity": "crowd"
+        }}
     ],
-    "event": {
-        "event_id": string,
-        "name": string,
-        "type": string,
-        "time": { "start": string, "end": string },
-        "actors": string[],
-        "objects": string[]
-    },
-    "policy": {
-        "audience_filter": string[],
-        "priority": "high" | "mid" | "low"
-    },
-    "LOD": {
-        "abstract_topic": string[],
-        "scene_topic": string,
-        "summary": string,
-        "implications": string
-        }
-    }
-    """
-    user_prompt = f"""
+    "event": {{
+        "event_id": "E_vHTfzg4dBsY_00_99",
+        "name": "javelin throw preparation",
+        "type": "sports_event",
+        "time": {{"start": "00", "end": "99"}},
+        "actors": ["A001","A002"],
+        "objects": ["O001","O002"]
+    }},
+    "policy": {{
+        "audience_filter": ["child_mode"],
+        "priority": "high"
+    }},
+    "LOD": {{
+        "abstract_topic": ["sports"],
+        "scene_topic": "athlete preparing for javelin throw",
+        "summary": "A female athlete prepares to throw the javelin as the crowd cheers.",
+        "implications": "Highlights a competitive sports moment."
+    }}
+    }}
 
-    You must fill the schema from the following segment ONLY. Do not include content outside this segment.
+    ---
+
+    Now process the following input:
 
     Input segment:
     Video {video_id}, time {start}-{end}, description: {text}
 
-    Output JSON ONLY:
-
-    ----
-    ID hints:
-    - First object_id should start at "O001", first actor_id at "A001".
-    - Use only these IDs inside "event.actors" and "event.objects".
-
-    Produce 3-6 "tags" that best represent the segment.
+    Output JSON:
     """
 
     response = llm(system_prompt, user_prompt)
