@@ -58,9 +58,10 @@ SCHEMA = {
         "items": {
             "type": "object",
             "additionalProperties": False,
-            "required": ["actor_id", "ref_object", "role", "entity"],
+            "required": ["actor_id","name", "ref_object", "role", "entity"],
             "properties": {
             "actor_id": {"type": "string", "pattern": r"^A\d{3,}$"},
+            "name": {"type": "string"},
             "ref_object": {"type": "string"},
             "role": {"type": "string"},
             "entity": {"type": "string"}
@@ -70,11 +71,10 @@ SCHEMA = {
         "event": {
         "type": "object",
         "additionalProperties": False,
-        "required": ["event_id", "name", "type", "time", "actors", "objects"],
+        "required": ["event_id", "name",  "time", "actors", "objects"],
         "properties": {
             "event_id": {"type": "string"},
             "name": {"type": "string"},
-            "type": {"type": "string"},
             "time": {
             "type": "object",
             "additionalProperties": False,
@@ -114,6 +114,38 @@ SCHEMA = {
         }
     }
     }
+
+#clean
+META_PREFIX_RE = re.compile(
+    r"""^\s*
+        (?:
+          (?:[Tt]he\s+)?(?:speaker|narrator|host|video|segment|scene|clip)\s+
+          (?:says|says\s+that|mentions|talks\s+about|discusses|describes|announces|states|explains)\s*:?\s*
+        )
+    """, re.X)
+
+def clean_meta(text: str) -> str:
+    text = text.strip()
+    text = META_PREFIX_RE.sub("", text)          # 메타 프리픽스 제거
+    text = re.sub(r"^(```|Output\s*:|Answer\s*:)\s*", "", text, flags=re.I).strip()
+    text = text.strip().strip('“”"\'')           # 양끝 따옴표 제거(내부 인용은 유지)
+    text = text.splitlines()[0].strip()          # 한 줄만
+    return text or "None"
+
+# # bad word 
+# BAD_PREFIXES = [
+#     "The speaker", "the speaker",
+#     "The narrator", "the narrator",
+#     "The host", "the host",
+#     "This segment", "this segment",
+#     "In this segment", "in this segment",
+#     "The video", "the video",
+#     "The scene", "the scene",
+#     "The clip", "the clip",
+# ]
+
+# bad_words_ids = [tokenizer(bw, add_special_tokens=False)["input_ids"] for bw in BAD_PREFIXES]
+
 
 def llm(system_prompt,user_prompt):
     messages = [
@@ -370,12 +402,12 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
             f"ORIGINAL:\n{response}\n"
         )
         text2 = llm(system_prompt, repair_user)
-        obj2 = json.loads(text2)
         try:
+            obj2 = json.loads(text2)
             validate(obj2, SCHEMA)
         except Exception as e:
             # append 저장
-            error_dict = {'obj':obj2, 'error': getattr(e, 'message', None) or str(e)}
+            error_dict = {'obj':text2, 'error': getattr(e, 'message', None) or str(e)}
             with open(not_json_dir, "a", encoding="utf-8") as out_f:
                 out_f.write(str(error_dict) + "\n")
             return obj2
@@ -390,11 +422,12 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str,
     system_prompt = f"""
     You are a structured information extraction engine that extracts spoken speech at a given video time segment.
     RULES:
-    - Output ONLY the speech text as one plain line. No labels, no quotes, no JSON, no code fences, no explanations.
+    - Output ONLY the speech text as one plain line. No labels, no quotes, no JSON, no code fences, no preambles (e.g., "The speaker ..."), no explanations.
     - Use only content present in the given speech summary; do NOT invent.
     - Select the portion most relevant to the segment {start}-{end} and its caption. Total Range is (00 - 90).
     - If no relevant speech exists, output: None
     - Keep the input language and keep it concise.
+    - Preserve inner quotes if present. Output must NOT start with meta phrases.
     """
 
     user_prompt = f"""
@@ -408,11 +441,8 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str,
     """
     output = llm(system_prompt, user_prompt)
 
-    # --- 최소 후처리: 라벨/따옴표/코드펜스/여분 공백 제거, 한 줄로 제한 ---
-    output = output.strip()
-    output = re.sub(r"^(```|Output\s*:|Answer\s*:)\s*", "", output, flags=re.I).strip()
-    output = output.strip('"\''"“”‘’").strip()
-
+    output = clean_meta(output)
+    
     if not output or output.lower() in {"none", "(none)"}:
         return "None"
     return output
@@ -510,19 +540,6 @@ def parse_split_caption_to_dict(split_caption, speech_timesplit=None):
 
     return {"visual": visual, "audio": audio, 'speech':speech_timesplit}
 
-# def parse_split_caption_to_dict(split_caption: str, speech_timesplit : str) -> dict:
-#     """
-#     'Visual: "..." Audio: "..." Speech: "..."' 형태의 문자열을 dict로 변환
-#     """
-#     result = {}
-#     # Visual:, Audio:, Speech: 뒤 따옴표 안 내용을 추출
-#     matches = re.findall(r'(visual|audio):\s*"?([^"]+)"?', split_caption)
-#     for key, value in matches:
-#         result[key] = value.strip()
-#     result["Speech"] = speech_timesplit
-#     return result
-
-
 
 # 전체 
 def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
@@ -579,6 +596,6 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
 # === 실행 예시 ===
 if __name__ == "__main__":
     input_file = "/home/kylee/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
-    output_file = "/home/kylee/kylee/LongVALE/logs/modality_split_0929.txt"   # 결과 저장 파일
+    output_file = "/home/kylee/kylee/LongVALE/logs/modality_split_0930.txt"   # 결과 저장 파일
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample.txt")
