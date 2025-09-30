@@ -373,9 +373,9 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
         obj2 = json.loads(text2)
         try:
             validate(obj2, SCHEMA)
-        except (json.JSONDecodeError, ValidationError):
+        except Exception as e:
             # append 저장
-            error_dict = {'video_id':video_id, 'seg_idx':seg_idx, 'start':start, 'end':end}
+            error_dict = {'obj':obj2, 'error': getattr(e, 'message', None) or str(e)}
             with open(not_json_dir, "a", encoding="utf-8") as out_f:
                 out_f.write(str(error_dict) + "\n")
             return obj2
@@ -387,48 +387,18 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str,
     그 시간대의 speech 내용을 추출
     """
 
-    prompt = f"""
-    You are a helpful assistant that extracts spoken speech at a given video time segment.
+    system_prompt = f"""
+    You are a structured information extraction engine that extracts spoken speech at a given video time segment.
+    RULES:
+    - Output ONLY the speech text as one plain line. No labels, no quotes, no JSON, no code fences, no explanations.
+    - Use only content present in the given speech summary; do NOT invent.
+    - Select the portion most relevant to the segment {start}-{end} and its caption. Total Range is (00 - 90).
+    - If no relevant speech exists, output: None
+    - Keep the input language and keep it concise.
+    """
 
-    - You are given:
-      1. The time range of the segment (start to end).
-      2. The multimodal caption for a specific time segment of the video.
-      3. The overall speech summary of the entire video.
-
-    - Your tasks:
-      1. From the overall speech summary, extract the part that is most relevant
-      to the given caption and time range ({start}-{end}).
-      Total Range is (00 - 90).
-      2. Then summarize that extracted speech into a concise form.
-      3. If there is no relevant speech, output "None".
-
-
-    ---
-
-
-    ### Example
-    Time: 00–10
-    Caption: "the man in the suit continues his speech, gesturing with his hands as he addresses the audience in the well-lit room."
-    Speech summary: "Taking a picture of miles of it. There's old Tommy right there. Tommy Wilson. Okay, here we are. Mandatory picture of a picture being taken. Oregon and the Rose Bowl. We did that. Oh well.  All right, yeah, that's a good one who's the guy the what All righty  Tom Wilson we work together at KWU.  across the English Channel, the pill or hovercraft? Guess which one? The science prize that year.
-    Thank you.  or even shorter shifts there at that time. But anyway, for about six months I would play the song, Isaac Brothers,
-    Don't Let Go, Hear the Whistle, It's 10 O'Clock, and I'd play it every night. 
-    And finally, one time I got a call, hotline, didn't I hear you play that song like last week? And I was, 
-    I'd been playing it every night for about six months. So yeah, we would try to get away with whatever we could and have fun. 
-    Now Dave, you served a stint after being a music director in Disc Jockey at KFRC, coming out of San Jose and SF State.
-    Was your style or did you  you encountered his style as well. No, that wasn't mine. I'd love to listen, but I wouldn't take it to, you know,
-    Paul took it to another."
-    Output: " Taking a picture of miles of it. There's old Tommy right there. Tommy Wilson. Okay, here we are. Mandatory picture of a picture being taken. Oregon and the Rose Bowl. We did that. Oh well.  All right, yeah, that's a good one who's the guy the what All righty  Tom Wilson we work together at KWU.  across the English Channel, the pill or hovercraft? Guess which one? The science prize that year.
-    Thank you.  or even shorter shifts there at that time. But anyway, for about six months I would play the song, Isaac Brothers"
-
-    ### Example
-    Time : 70-90
-    Caption: "Visual: A car is driving fast. Audio: Engine noise is loud."
-    Speech summary: "No speech content in this scene."
-    Output: "None"
-
-    ---
-
-    ### Now process this input:
+    user_prompt = f"""
+    Now process this input:
     
     Time: {start}-{end}
     Caption: "{caption_text}"
@@ -436,35 +406,16 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str,
 
     Output (speech only, extracted from the summary):
     """
+    output = llm(system_prompt, user_prompt)
 
+    # --- 최소 후처리: 라벨/따옴표/코드펜스/여분 공백 제거, 한 줄로 제한 ---
+    output = output.strip()
+    output = re.sub(r"^(```|Output\s*:|Answer\s*:)\s*", "", output, flags=re.I).strip()
+    output = output.strip('"\''"“”‘’").strip()
 
-    messages = [
-        {"role": "system", "content": "You are an assistant that extracts speech lines from multimodal captions using video-level speech summary as additional context."},
-        {"role": "user", "content": prompt},
-    ]
-
-    input_ids = tokenizer.apply_chat_template(
-        messages,
-        add_generation_prompt=True,
-        return_tensors="pt"
-    ).to(model.device)
-
-    terminators = [
-        tokenizer.eos_token_id,
-        tokenizer.convert_tokens_to_ids("<|eot_id|>")
-    ]
-
-    outputs = model.generate(
-        input_ids,
-        max_new_tokens=512,
-        eos_token_id=terminators,
-        do_sample=True,
-        temperature=0.6,
-        top_p=0.9,
-    )
-
-    response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
-    return response.strip()
+    if not output or output.lower() in {"none", "(none)"}:
+        return "None"
+    return output
 
 
 def chunk_text(text, max_chars=1500):
@@ -557,7 +508,7 @@ def parse_split_caption_to_dict(split_caption, speech_timesplit=None):
     # 쉼표들을 세미콜론으로 정리(선호 시)
     audio = re.sub(r"\s*,\s*", "; ", audio).strip(" ;")
 
-    return {"visual": visual, "audio": audio}
+    return {"visual": visual, "audio": audio, 'speech':speech_timesplit}
 
 # def parse_split_caption_to_dict(split_caption: str, speech_timesplit : str) -> dict:
 #     """
@@ -630,4 +581,4 @@ if __name__ == "__main__":
     input_file = "/home/kylee/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
     output_file = "/home/kylee/kylee/LongVALE/logs/modality_split_0929.txt"   # 결과 저장 파일
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs")
+    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample.txt")
