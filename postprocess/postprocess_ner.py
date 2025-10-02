@@ -88,19 +88,6 @@ SCHEMA = {
             "objects": {"type": "array", "items": {"type": "string"}}
         }
         },
-        "policy": {
-        "type": "object",
-        "additionalProperties": False,
-        "required": ["audience_filter", "priority"],
-        "properties": {
-            "audience_filter": {
-            "type": "array",
-            "items": {"type": "string", "enum": ["adult_mode", "child_mode",""]},
-            "uniqueItems": True,
-            },
-            "priority": {"type": "string", "enum": ["high", "mid", "low",""]}
-        }
-        },
         "LOD": {
         "type": "object",
         "additionalProperties": False,
@@ -321,8 +308,6 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
 
     TYPES & ENUMS
     - "time.start" and "time.end" are strings echoing the given inputs (no reformat).
-    - "policy.audience_filter" is an array containing one of: ["adult_mode"] or ["child_mode"] (choose one or empty if unknown).
-    - "policy.priority" is one of: "high" | "mid" | "low".
     - "LOD.abstract_topic" is an array of strings; "scene_topic", "summary", "implications" are strings.
 
     SCHEMA (required keys in this exact order)
@@ -352,10 +337,6 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
             "time": { "start": string, "end": string },
             "actors": string[],
             "objects": string[]
-        },
-        "policy": {
-            "audience_filter": string[],
-            "priority": "high" | "mid" | "low"
         },
         "LOD": {
             "abstract_topic": string[],
