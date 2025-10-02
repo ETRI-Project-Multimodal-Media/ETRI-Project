@@ -27,7 +27,7 @@ model = AutoModelForCausalLM.from_pretrained(
 SCHEMA = {
     "type": "object",
     "additionalProperties": False,
-    "required": ["video_id", "event_id", "tags", "objects", "actors", "event", "policy", "LOD"],
+    "required": ["video_id", "event_id", "tags", "objects", "actors", "event",  "LOD"],
     "properties": {
         "video_id": {"type": "string"},
         "event_id": {
