@@ -4,6 +4,7 @@ import json
 import ast
 import torch
 from tqdm import tqdm
+from collections import defaultdict
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from jsonschema import validate, ValidationError
 import torch, re, textwrap
@@ -521,10 +522,22 @@ def parse_split_caption_to_dict(split_caption, speech_timesplit=None):
 
     return {"visual": visual, "audio": audio, 'speech':speech_timesplit}
 
+def save_video_results(video_results, output_file):
+    output_data = []
+    for video_id, events in video_results.items():
+        output_data.append({
+            "video_id": video_id,
+            "results": events
+        })
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(output_data, f, ensure_ascii=False, indent=2)
+
+    print(f"총 {len(output_data)}개 video 결과 저장 완료 → {output_file}")
 
 # 전체 
 def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
-    # results = []
+    video_results = defaultdict(list)
 
     with open(input_file, "r", encoding="utf-8") as f:
         lines = f.readlines()
@@ -560,23 +573,19 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
             result['LOD']['modalities'] = split_result_dict
             # 결과 저장
             result_entry = {
-                "video_id" : video_id,
                 "event_id": idx,
                 "original_answer": text,
                 "postprocess" : result,
             }
-            # results.append(result_entry)
-        
-            # append 저장
-            with open(output_file, "a", encoding="utf-8") as out_f:
-                out_f.write(str(result_entry) + "\n")
+            video_results[video_id].append(result_entry)
 
-    # return results
+    save_video_results(video_results, output_file)
+
 
 
 # === 실행 예시 ===
 if __name__ == "__main__":
     input_file = "/home/kylee/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
-    output_file = "/home/kylee/kylee/LongVALE/logs/result.txt"   # 결과 저장 파일
+    output_file = "/home/kylee/kylee/LongVALE/logs/result_1002.json"   # 결과 저장 json
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample.txt")
