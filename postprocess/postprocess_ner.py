@@ -582,7 +582,7 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
                 "video_id" : video_id,
                 "event_id": idx,
                 "original_answer": text,
-                "result" : result,
+                "postprocess" : result,
             }
             # results.append(result_entry)
         
@@ -596,6 +596,6 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
 # === 실행 예시 ===
 if __name__ == "__main__":
     input_file = "/home/kylee/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
-    output_file = "/home/kylee/kylee/LongVALE/logs/modality_split_0930.txt"   # 결과 저장 파일
+    output_file = "/home/kylee/kylee/LongVALE/logs/result.txt"   # 결과 저장 파일
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample.txt")
