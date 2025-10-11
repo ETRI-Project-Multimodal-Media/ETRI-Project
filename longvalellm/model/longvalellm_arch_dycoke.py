@@ -7,7 +7,7 @@ import torch.nn.functional as F
 import numpy as np
 
 # DyCoke 
-def dycole_ttm(image_feature, num_tokens_per_frame = 196, merging_ratio = 0.7):
+def dycole_ttm(image_feature, num_tokens_per_frame = 100, merging_ratio = 0.7):
     # Split frames into tokens
     num_frames = image_feature.shape[0] // num_tokens_per_frame
     merging_ratio = 1 - merging_ratio
