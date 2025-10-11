@@ -11,7 +11,7 @@ import time
 import json
 import numpy as np
 from tqdm import tqdm
-from longvalellm.model.builder import load_pretrained_model
+from longvalellm.model.builder_dycoke import load_pretrained_model
 from longvalellm.utils import disable_torch_init
 from longvalellm.inference import inference
 
@@ -86,7 +86,7 @@ questions = {
 if __name__ == "__main__":
     args = parse_args()
     disable_torch_init()
-    wandb.init(project="origin-longvale-eval", config=vars(args))
+    wandb.init(project="dycoke-longvale-eval", config=vars(args))
 
     tokenizer, model, context_len = load_pretrained_model(args, args.stage2, args.stage3)
     model = model.cuda()

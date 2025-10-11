@@ -31,7 +31,7 @@ def load_pretrained_model(args, stage2=None, stage3=None):
     print('Loading LongVALE-LLM from base model...')
 
     tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False)
-    model = LongVALELLMLlamaForCausalLM.from_pretrained(model_base, low_cpu_mem_usage=True, **kwargs)
+    model = longvalellm_llama_dycoke.DyLongVALELLMLlamaForCausalLM.from_pretrained(model_base, low_cpu_mem_usage=True, **kwargs)
     token_num, tokem_dim = model.lm_head.out_features, model.lm_head.in_features
     if model.lm_head.weight.shape[0] != token_num:
         model.lm_head.weight = torch.nn.Parameter(torch.empty(token_num, tokem_dim, device=model.device, dtype=model.dtype))
