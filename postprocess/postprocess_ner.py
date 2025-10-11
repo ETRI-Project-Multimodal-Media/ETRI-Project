@@ -387,11 +387,13 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
         try:
             obj2 = json.loads(text2)
             validate(obj2, SCHEMA)
+            return obj2
         except Exception as e:
             # append 저장
             error_dict = {'obj':text2, 'error': getattr(e, 'message', None) or str(e)}
             with open(not_json_dir, "a", encoding="utf-8") as out_f:
                 out_f.write(str(error_dict) + "\n")
+            obj2 = json.loads(text2)
             return obj2
 
 
@@ -588,4 +590,4 @@ if __name__ == "__main__":
     input_file = "/home/kylee/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
     output_file = "/home/kylee/kylee/LongVALE/logs/result_1002.json"   # 결과 저장 json
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample.txt")
+    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample_1002.txt")

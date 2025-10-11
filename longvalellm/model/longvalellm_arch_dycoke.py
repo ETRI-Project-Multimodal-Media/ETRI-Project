@@ -188,30 +188,19 @@ class LongVALELLMMetaForCausalLM(ABC):
 
         concated_features = [] # feature concatenation
         # concat for same frame
-        for (audio_feat, image_feat, asr_feat) in zip(audio_features, image_features, asr_features):
-        # for (audio_feat, image_feat) in zip(audio_features, image_features):    
+        for (audio_feat, image_feat, asr_feat) in zip(audio_features, image_features, asr_features):    
             assert not (audio_feat == None and image_feat == None and asr_features == None) 
-            # assert not (audio_feat == None and image_feat == None)
-            
-            # --- DivPrune # 
-            # if image_feat is not None and 'LAYER_INDEX' in os.environ:
-            #     orig_img_len = image_feat.shape[0]
-            #     try:
-            #         setattr(self.config, 'img_feature_len', int(orig_img_len))
-            #     except Exception:
-            #         print('image feature len setattr has problem')
-            # # only try divprune before decoder
-            # if os.environ.get('LAYER_INDEX') == '0' and 'SUBSET_RATIO' in os.environ:
-            #     ratio = float(os.environ['SUBSET_RATIO'])
-            #     selected_visual_index, _ = self.DivPrune(
-            #         visual_feature_vectors=image_feat,
-            #         image_feature_length=orig_img_len,
-            #         cosine_matrix=None,
-            #         threshold_ratio=ratio
-            #     )
-            #     selected_visual_index, _ = torch.sort(selected_visual_index) # sort by visual token order
-            #     image_feat = image_feat.index_select(0, selected_visual_index) # pruned visual tokens
-                        
+            # self.dycoke == True
+            # self.dycoke_num_tokens_per_frame , self.dycoke_p 사용
+            if getattr(self, "dycoke", False):
+                image_feat = dycole_ttm(
+                    image_feat, 
+                    num_tokens_per_frame = self.dycoke_num_tokens_per_frame,
+                    keep_ratio = self.dycoke_p
+                )
+            # save image token length (for KV Pruning)
+            if hasattr(self, "model") and hasattr(self.model, "DycokeConfig"):
+                self.model.DycokeConfig.image_token_length = image_feat.size(0) # check
             concat_feat = []
             if image_feat is not None:
                 concat_feat.append(image_feat) 

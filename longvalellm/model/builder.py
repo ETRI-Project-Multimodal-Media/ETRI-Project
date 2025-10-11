@@ -5,6 +5,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, BitsAn
 import torch
 from longvalellm.model import *
 from peft import PeftModel
+# override dycoke ver. longvale llm
+from longvalellm.model import longvalellm_llama_dycoke, longvalellm_arch_dycoke  
 
 def load_lora(model, lora_path):
     non_lora_trainables_path = os.path.join(lora_path, 'non_lora_trainables.bin')
