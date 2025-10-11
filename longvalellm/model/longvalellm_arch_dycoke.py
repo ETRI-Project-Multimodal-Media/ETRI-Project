@@ -67,7 +67,7 @@ def dycole_ttm(image_feature, num_tokens_per_frame = 100, merging_ratio = 0.7):
 
 
 
-class LongVALELLMMetaModel:
+class DyLongVALELLMMetaModel:
 
     def initialize_vision_modules(self, model_args):
         pretrain_mm_mlp_adapter = model_args.pretrain_mm_mlp_adapter
@@ -109,39 +109,12 @@ class LongVALELLMMetaModel:
             self.asr_mm_projector.load_state_dict(get_w(mm_projector_weights, 'asr_mm_projector'))
             print("load mlp:", pretrain_asr_mlp_adapter)
 
-class LongVALELLMMetaForCausalLM(ABC):
+class DyLongVALELLMMetaForCausalLM(ABC):
 
     @abstractmethod
     def get_model(self):
         pass
-    
-        # divprune
-    def pairwise_cosine_similarity(self, matrix):
-        norm_matrix = matrix / matrix.norm(dim=1, keepdim=True)
-        cosine_similarity = torch.mm(norm_matrix, norm_matrix.t())
-        return cosine_similarity
 
-    def DivPrune(self, visual_feature_vectors, image_feature_length, cosine_matrix=None, threshold_ratio=0.1):            
-        threshold_terms = int(round(threshold_ratio*image_feature_length))
-        if cosine_matrix is None:
-            cosine_matrix = 1.0 - (self.pairwise_cosine_similarity(visual_feature_vectors))
-
-        s = torch.empty(threshold_terms, dtype=torch.long, device=visual_feature_vectors.device)
-        for i in range(threshold_terms):
-            if i==0:
-                m2 = cosine_matrix
-            else:
-                m2 = torch.index_select(cosine_matrix, 0, torch.index_select(s,0,torch.arange(0,i,device=cosine_matrix.device)))
-
-            if i==0:
-                scores = torch.topk(m2, 2,dim=0,largest=False).values[1,:] #for distance
-            else:
-                scores = torch.min(m2, dim=0).values #for distance 
-
-            phrase_to_add_idx = torch.argmax(scores) # index by visual_feature_vector 
-            s[i] = phrase_to_add_idx
-        return s, cosine_matrix
-    
     
     def prepare_inputs_labels_for_multimodal(
         self, input_ids, position_ids, attention_mask, past_key_values, labels, images, audio=None, asr=None

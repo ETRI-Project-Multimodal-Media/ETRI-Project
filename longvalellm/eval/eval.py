@@ -86,7 +86,7 @@ questions = {
 if __name__ == "__main__":
     args = parse_args()
     disable_torch_init()
-    wandb.init(project="longvale-eval", config=vars(args))
+    wandb.init(project="dycoke-longvale-eval", config=vars(args))
 
     tokenizer, model, context_len = load_pretrained_model(args, args.stage2, args.stage3)
     model = model.cuda()

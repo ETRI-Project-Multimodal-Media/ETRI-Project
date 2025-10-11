@@ -21,7 +21,7 @@ def load_lora(model, lora_path):
     return model
 
 def load_pretrained_model(args, stage2=None, stage3=None):
-    kwargs = {'torch_dtype': torch.float16}
+    kwargs = {'torch_dtype': torch.float16, 'weights_only' : False} # weights_only=False for pytorch ver issue. 
 
     # model_path = os.path.expanduser(args.model_path)
     model_base = args.model_base
@@ -31,7 +31,8 @@ def load_pretrained_model(args, stage2=None, stage3=None):
     print('Loading LongVALE-LLM from base model...')
 
     tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False)
-    model = LongVALELLMLlamaForCausalLM.from_pretrained(model_base, low_cpu_mem_usage=True, **kwargs)
+    model = DyLongVALELLMLlamaForCausalLM.from_pretrained(model_base, low_cpu_mem_usage=True, **kwargs)
+    # model = LongVALELLMLlamaForCausalLM.from_pretrained(model_base, low_cpu_mem_usage=True, **kwargs)
     token_num, tokem_dim = model.lm_head.out_features, model.lm_head.in_features
     if model.lm_head.weight.shape[0] != token_num:
         model.lm_head.weight = torch.nn.Parameter(torch.empty(token_num, tokem_dim, device=model.device, dtype=model.dtype))

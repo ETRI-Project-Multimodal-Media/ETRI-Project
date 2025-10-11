@@ -4,7 +4,7 @@ from typing import List, Optional, Tuple, Union
 from transformers import AutoConfig, AutoModelForCausalLM, LlamaConfig, LlamaModel, LlamaForCausalLM
 from transformers.modeling_outputs import CausalLMOutputWithPast, BaseModelOutputWithPast
 # from .longvalellm_arch import LongVALELLMMetaModel, LongVALELLMMetaForCausalLM
-from .longvalellm_arch_dycoke import LongVALELLMMetaModel, LongVALELLMMetaForCausalLM
+from .longvalellm_arch_dycoke import DyLongVALELLMMetaModel, DyLongVALELLMMetaForCausalLM
 
 # longvalellm_llama.py (상단 import에 추가)
 from transformers.cache_utils import DynamicCache, Cache, StaticCache
@@ -125,6 +125,10 @@ class PrunableDynamicCache(DynamicCache):
     
 class LongVALELLMConfig(LlamaConfig): # inherit llama and register  "LongVALE-LLM" model # used for AutoConfig.from_pretrained()
     model_type = "LongVALE-LLM"
+
+    
+class DyLongVALELLMConfig(LongVALELLMConfig):
+    model_type = "LongVALE-LLM-DyCoke" # check
     # --- DyCoke defaults ---
     dycoke: bool = False            # 활성화 여부
     dycoke_l: int = 3               # 적용 레이어 index (0-based)
@@ -132,19 +136,19 @@ class LongVALELLMConfig(LlamaConfig): # inherit llama and register  "LongVALE-LL
     dycoke_num_tokens_per_frame: int = 100
     image_token_start_index: int = 0
     
-class LongVALELLMLlamaModel(LlamaModel, LongVALELLMMetaModel): # inherit LlamaModel + LongVALELLMMetaModel(Custom Model)
-    config_class = LongVALELLMConfig
+class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit LlamaModel + LongVALELLMMetaModel(Custom Model)
+    config_class = DyLongVALELLMConfig # check
 
-    def __init__(self, config: LlamaConfig):
-        super(LongVALELLMLlamaModel, self).__init__(config)
+    def __init__(self, config: DyLongVALELLMConfig):
+        super(DyLongVALELLMLlamaModel, self).__init__(config)
         # DyCoke flags / configs
-        self.dycoke = getattr(config, "dycoke", False)
+        self.dycoke = getattr(config, "dycoke", False) # config from DyLongVALELLMConfig
         self.dycoke_l = getattr(config, "dycoke_l", 3)
         self.dycoke_p = getattr(config, "dycoke_p", 0.8)
         self.dycoke_num_tokens_per_frame = getattr(config, "dycoke_num_tokens_per_frame", 100)
         self.image_token_start_index = getattr(config, "image_token_start_index", 0)
-
-        self.DycokeConfig = DycokeConfigs()
+        # insert DyLongVALELLMConfig into config variable
+        self.DycokeConfig = DycokeConfigs() 
         self.DycokeConfig.dycoke_layer_idx = self.dycoke_l
         self.DycokeConfig.dycoke_radio = self.dycoke_p
         self.DycokeConfig.image_token_start_index = self.image_token_start_index
@@ -295,14 +299,14 @@ class LongVALELLMLlamaModel(LlamaModel, LongVALELLMMetaModel): # inherit LlamaMo
             attentions=all_self_attns,
         )
     
-class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):  # inherit LlamaForCausalLM(Llama + LM head) + LongVALELLMMetaForCausalLM(Custom, prepare_inputs_labels_for_multimodal)
+class DyLongVALELLMLlamaForCausalLM(LlamaForCausalLM, DyLongVALELLMMetaForCausalLM):  # inherit LlamaForCausalLM(Llama + LM head) + LongVALELLMMetaForCausalLM(Custom, prepare_inputs_labels_for_multimodal)
     # LlamaForCausalLM used for generating text (forward, prepare_inputs_for_generation)
     # LongVALELLMMetaForCausalLM used for embedding multimodal input (prepare_inputs_labels_for_multimodal)
-    config_class = LongVALELLMConfig 
+    config_class = DyLongVALELLMConfig 
 
     def __init__(self, config):
         super(LlamaForCausalLM, self).__init__(config) # if use super().__init__(config) then LlamaForCausalLM.__init__ (parent) / we want to set model (LongVALELLMLlamaModel/custom head) not (llamamodel/head)
-        self.model = LongVALELLMLlamaModel(config) # backbone = llama + multimodal 
+        self.model = DyLongVALELLMLlamaModel(config) # backbone = llama + multimodal 
         self.pretraining_tp = config.pretraining_tp
         self.vocab_size = config.vocab_size
         self.lm_head = nn.Linear(config.hidden_size, config.vocab_size, bias=False) # lm head
@@ -381,5 +385,5 @@ class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
             _inputs["asr"] = asr
         return _inputs
 
-AutoConfig.register("LongVALE-LLM", LongVALELLMConfig) 
-AutoModelForCausalLM.register(LongVALELLMConfig, LongVALELLMLlamaForCausalLM)
+AutoConfig.register("LongVALE-LLM-DyCoke", DyLongVALELLMConfig) # add config 
+AutoModelForCausalLM.register(DyLongVALELLMConfig, DyLongVALELLMLlamaForCausalLM) # add model to config
