@@ -126,6 +126,11 @@ class DyLongVALELLMMetaForCausalLM(ABC):
             if past_key_values is not None and (images is not None or audio is not None) and input_ids.shape[1] == 1:
                 if self.get_model().config.model_type == 'chatglm':
                     target_shape = past_key_values[-1][-1].shape[0] + 1
+                # DynamicCache(ver 4.57)
+                elif hasattr(past_key_values, "key_cache") and len(past_key_values.key_cache) > 0:
+                    last_kv = past_key_values.key_cache[-1]
+                    target_shape = last_kv.shape[-2] + 1
+                # 구버전 (tuple of tuples)
                 else:
                     target_shape = past_key_values[-1][-1].shape[-2] + 1
                 attention_mask = torch.cat((attention_mask, torch.ones(

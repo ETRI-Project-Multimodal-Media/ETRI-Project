@@ -39,8 +39,8 @@ class PrunableDynamicCache(DynamicCache):
     - layer별 key/value 캐시 유지
     - self.kv_cache: 유지할 token 인덱스(list[int]); None이면 전체 유지
     """
-    def __init__(self) -> None:
-        super().__init__()
+    def __init__(self, config=None,*args, **kwargs) -> None:
+        super().__init__(config=config, *args, **kwargs)
         self.key_cache: List[torch.Tensor] = []
         self.value_cache: List[torch.Tensor] = []
         self._seen_tokens = 0
@@ -131,7 +131,7 @@ class LongVALELLMConfig(LlamaConfig): # inherit llama and register  "LongVALE-LL
 class DyLongVALELLMConfig(LongVALELLMConfig):
     model_type = "LongVALE-LLM-DyCoke" # check
     # --- DyCoke defaults ---
-    dycoke: bool = False            # 활성화 여부
+    dycoke: bool = True            # 활성화 여부
     dycoke_l: int = 3               # 적용 레이어 index (0-based)
     dycoke_p: float = 0.8           # keep ratio for image tokens
     dycoke_num_tokens_per_frame: int = 100
@@ -144,7 +144,7 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
     def __init__(self, config: DyLongVALELLMConfig):
         super(DyLongVALELLMLlamaModel, self).__init__(config)
         # DyCoke flags / configs
-        self.dycoke = getattr(config, "dycoke", False) # config from DyLongVALELLMConfig
+        self.dycoke = getattr(config, "dycoke", True) # config from DyLongVALELLMConfig
         self.dycoke_l = getattr(config, "dycoke_l", 3)
         self.dycoke_p = getattr(config, "dycoke_p", 0.8)
         self.dycoke_num_tokens_per_frame = getattr(config, "dycoke_num_tokens_per_frame", 100)
@@ -178,9 +178,13 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
                 past_key_values = PrunableDynamicCache.from_legacy_cache(past_key_values)
             else:
                 # 최신 DynamicCache 방식
-                if past_key_values is None:
-                    past_key_values = PrunableDynamicCache()
+                if self.dycoke:
+                    past_key_values = PrunableDynamicCache(config=self.config)
         
+        # always add past_seen_tokens 
+        past_seen_tokens = (
+            past_key_values.get_seq_length() if past_key_values is not None else 0
+        )
         # past_seen_tokens : 기존 cache의 길이 = prefill + decoding length
         # layer 별 length인지 확인 필요 -> 일단 layer별로 동일할거라 생각하고 skip
         # token 기준으로 length 수정 
@@ -232,19 +236,19 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
                     **kwargs,
                 )
             hidden_states = layer_outputs # check layer_outputs shape
-            # added
-            if use_cache:
-                next_decoder_cache = layer_outputs[1]
+            # before transformer ver.
+            # if use_cache:
+            #     next_decoder_cache = layer_outputs[1]
         hidden_states = self.norm(hidden_states)
         
-        # added 
-        next_cache = None
-        if use_cache:
-            next_cache = (
-                next_decoder_cache.to_legacy_cache() if isinstance(next_decoder_cache, Cache) else next_decoder_cache
-            )
+        # before transformer ver.
+        # next_cache = None
+        # if use_cache:
+        #     next_cache = (
+        #         next_decoder_cache.to_legacy_cache() if isinstance(next_decoder_cache, Cache) else next_decoder_cache
+        #     )
         return BaseModelOutputWithPast(
-            last_hidden_state=next_cache,
+            last_hidden_state=hidden_states,
             past_key_values=past_key_values,
         )
 
