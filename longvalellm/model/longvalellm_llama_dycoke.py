@@ -27,7 +27,7 @@ class DycokeConfigs:
         self.dycoke_layer_idx: int = 3         # DyCoke를 적용할 layer index (0-based)
         self.dycoke_radio: float = 0.8         # keep ratio (이미지 토큰 유지 비율)
         self.image_token_start_index: int = 0  # 이미지 시작 위치(프리필에서 확정)
-        self.image_token_length: Optional[int] = None  # 이미지 블록 길이 (arch에서 채움)
+        self.image_token_length: Optional[int] = None  # 이미지 token 개수 (arch에서 채움)
         self.similarity: Optional[torch.Tensor] = None
         self.attention_score: Optional[torch.Tensor] = None
         self.seq_length_with_past: Optional[int] = None
@@ -38,7 +38,7 @@ class PrunableDynamicCache(DynamicCache):
     - layer별 key/value 캐시 유지
     - self.kv_cache: 유지할 token 인덱스(list[int]); None이면 전체 유지
     """
-    def __init__(self, config=None,) -> None:
+    def __init__(self, config=None) -> None:
         super().__init__()
         self.key_cache: List[torch.Tensor] = []
         self.value_cache: List[torch.Tensor] = []
@@ -92,15 +92,16 @@ class PrunableDynamicCache(DynamicCache):
         
         # Create ranges efficiently using single arange call
         device = image_attention.device
-        full_range = torch.arange(config.seq_length_with_past, device=device)
+        full_range = torch.arange(config.seq_length_with_past, device=device) # prefill + 생성된 길이
         keep_indexs = torch.cat([
             full_range[:start_idx],
             top_indices,
             full_range[start_idx + img_len:]
         ]) # text token + 이미지 pruning index + text token
 
-        # Convert to list once at end
-        self.kv_cache = keep_indexs.tolist()
+        # # Convert to list once at end
+        # self.kv_cache = keep_indexs.tolist()
+        return keep_indexs
     
     # dycoke pruning 조건
     # 이전 iteration에서 L번째 layer의 attention과의 유사도 높으면 =>  update_cache => kv cache update
@@ -108,22 +109,46 @@ class PrunableDynamicCache(DynamicCache):
         # 구버전, decoder output[1] = attention 이었을때의 code 
         # attention_avg : [B, H, L_q, L_k]
         attention_avg = attn[1].mean(1)[0, -1] # 마지막 query token = 지금 막 생성된 token에 높은 중요도를 주는 key token을 추출
-        start_idx = config.image_token_start_index
-        img_len = config.image_token_length
-        image_attention = attention_avg[start_idx:start_idx + img_len]
-        
-        if config.attention_score is not None:
-            config.similarity = F.cosine_similarity(
-                image_attention, 
-                config.attention_score,
-                dim=0
-            )
-        else:
-            config.similarity = 0
-        config.attention_score = image_attention
+        # start_idx = config.image_token_start_index
+        # img_len = config.image_token_length
+
+        all_keep_indices = []        
+        # before
+        # image_attention = attention_avg[start_idx:start_idx + img_len]
+        # revised 
+        for start_idx, img_len in zip(config.image_token_start_index, config.image_token_length):
+            image_attention = attention_avg[start_idx:start_idx + img_len]
+            if config.attention_score is not None:
+                config.similarity = F.cosine_similarity(
+                    image_attention, 
+                    config.attention_score[start_idx:start_idx + img_len],
+                    dim=0
+                )
+            else:
+                config.similarity = 0
+            
+            # update stored attention
+            if config.attention_score is None:
+                config.attention_score = torch.zeros_like(attention_avg)
+            config.attention_score[start_idx:start_idx + img_len] = image_attention
+            
+            # if config.similarity < 0.9:
+            #     self.update_cache(image_attention, config)
                 
-        if config.similarity < 0.9:
-            self.update_cache(image_attention, config)
+            # 조건 만족 시 pruning
+            if config.similarity < 0.9:
+                keep_indices = self.update_cache(image_attention, 
+                                                config=DycokeSubConfig(config, start_idx, img_len))
+                all_keep_indices.append(keep_indices)
+
+        # 여러 블록에서 얻은 keep_indices 병합
+        if len(all_keep_indices) > 0:
+            merged = torch.unique(torch.cat(all_keep_indices)).sort()[0]
+        else:
+            merged = torch.arange(config.seq_length_with_past, device=device)
+
+        # 리스트로 저장
+        self.kv_cache = merged.tolist()
     
 class LongVALELLMConfig(LlamaConfig): # inherit llama and register  "LongVALE-LLM" model # used for AutoConfig.from_pretrained()
     model_type = "LongVALE-LLM"
@@ -134,8 +159,8 @@ class DyLongVALELLMConfig(LongVALELLMConfig):
     # --- DyCoke defaults ---
     dycoke: bool = True            # 활성화 여부
     dycoke_l: int = 3               # 적용 레이어 index (0-based)
-    dycoke_p: float = 0.8           # keep ratio for image tokens
-    dycoke_num_tokens_per_frame: int = 100
+    dycoke_p: float = 0.8           # deletion ratio
+    dycoke_num_tokens_per_frame: int = 1
     image_token_start_index: int = 0
     output_attentions : bool = True
     def __init__(self, **kwargs):
@@ -143,7 +168,7 @@ class DyLongVALELLMConfig(LongVALELLMConfig):
         self.dycoke = kwargs.get("dycoke", True)
         self.dycoke_l = kwargs.get("dycoke_l", 3)
         self.dycoke_p = kwargs.get("dycoke_p", 0.8)
-        self.dycoke_num_tokens_per_frame = kwargs.get("dycoke_num_tokens_per_frame", 100)
+        self.dycoke_num_tokens_per_frame = kwargs.get("dycoke_num_tokens_per_frame", 1)
         self.image_token_start_index = kwargs.get("image_token_start_index", 0)
 
         # 이 부분 반드시 __init__ 안에 넣어야 인스턴스 필드로 인식됨
@@ -159,7 +184,7 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         self.dycoke = getattr(config, "dycoke", True) # config from DyLongVALELLMConfig
         self.dycoke_l = getattr(config, "dycoke_l", 3)
         self.dycoke_p = getattr(config, "dycoke_p", 0.8)
-        self.dycoke_num_tokens_per_frame = getattr(config, "dycoke_num_tokens_per_frame", 100)
+        self.dycoke_num_tokens_per_frame = getattr(config, "dycoke_num_tokens_per_frame", 1)
         self.image_token_start_index = getattr(config, "image_token_start_index", 0)
         # insert DyLongVALELLMConfig into config variable
         self.DycokeConfig = DycokeConfigs() 
@@ -210,6 +235,7 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         if inputs_embeds is None:
             inputs_embeds = self.embed_tokens(input_ids)
 
+        past_key_values_length = 0 # decode output tokens length
         
         if use_cache:  # kept for PrunableDynamicCache (cache positions)
             use_legacy_cache = not isinstance(past_key_values, Cache)
@@ -217,14 +243,6 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
                 past_key_values = PrunableDynamicCache.from_legacy_cache(past_key_values)
             elif use_legacy_cache:
                 past_key_values = PrunableDynamicCache.from_legacy_cache(past_key_values)
-            #  Compatibility patch for newer transformers (4.42+)
-            # if hasattr(past_key_values, "seen_tokens"):
-            #     past_key_values_length = past_key_values.seen_tokens
-            # else:
-            #     try:
-            #         past_key_values_length = past_key_values.get_usable_length(seq_length)
-            #     except AttributeError:
-            #         past_key_values_length = 0
             # before ver.
             past_key_values_length = past_key_values.get_usable_length(seq_length)
 

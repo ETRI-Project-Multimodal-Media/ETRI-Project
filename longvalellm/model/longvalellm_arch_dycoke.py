@@ -7,7 +7,7 @@ import torch.nn.functional as F
 import numpy as np
 
 # DyCoke 
-def dycole_ttm(image_feature, num_tokens_per_frame = 100, merging_ratio = 0.7):
+def dycole_ttm(image_feature, num_tokens_per_frame = 1, merging_ratio = 0.7):
     # Split frames into tokens
     num_frames = image_feature.shape[0] // num_tokens_per_frame
     merging_ratio = 1 - merging_ratio
@@ -170,15 +170,15 @@ class DyLongVALELLMMetaForCausalLM(ABC):
             assert not (audio_feat == None and image_feat == None and asr_features == None) 
             # self.dycoke == True
             # self.dycoke_num_tokens_per_frame , self.dycoke_p 사용
-            if getattr(self, "dycoke", False):
+            if self.config.dycoke:
                 image_feat = dycole_ttm(
                     image_feat, 
-                    num_tokens_per_frame = self.dycoke_num_tokens_per_frame,
-                    keep_ratio = self.dycoke_p
+                    num_tokens_per_frame = self.config.dycoke_num_tokens_per_frame,
+                    merging_ratio = self.config.dycoke_p
                 )
             # save image token length (for KV Pruning)
             if hasattr(self, "model") and hasattr(self.model, "DycokeConfig"):
-                self.model.DycokeConfig.image_token_length = image_feat.size(0) # check
+                self.model.DycokeConfig.image_token_length = [len(img_feat) for img_feat in image_features] # check
             concat_feat = []
             if image_feat is not None:
                 concat_feat.append(image_feat) 
@@ -214,6 +214,13 @@ class DyLongVALELLMMetaForCausalLM(ABC):
         cur_image_idx = 0
         for batch_idx, cur_input_ids in enumerate(input_ids):
             num_images = (cur_input_ids == IMAGE_TOKEN_INDEX).sum() # num of [IMAGE] in a sample
+            # dycoke 
+            image_pos = (cur_input_ids == IMAGE_TOKEN_INDEX).nonzero(as_tuple=True)[0] # index, starts from zero
+            if len(image_pos) > 0:
+                # 마지막 [IMAGE]의 실제 삽입 위치를 기준으로
+                self.model.DycokeConfig.image_token_start_index = [int(pos) for pos in image_pos.tolist()]
+            else:
+                self.model.DycokeConfig.image_token_start_index = 0
             if num_images == 0:
                 cur_image_features = image_features[cur_image_idx]
                 cur_input_embeds_1 = self.get_model().get_input_embeddings()(cur_input_ids)
