@@ -106,7 +106,8 @@ class PrunableDynamicCache(DynamicCache):
     # dycoke pruning 조건
     # 이전 iteration에서 L번째 layer의 attention과의 유사도 높으면 =>  update_cache => kv cache update
     def dycoke_pruning(self, attn, layer_idx, config):
-        attention_avg = attn[1].mean(1)[0, -1] # check
+        # 구버전, decoder output[1] = attention 이었을때의 code 
+        # attention_avg = attn[1].mean(1)[0, -1] 
         start_idx = config.image_token_start_index
         img_len = config.image_token_length
         image_attention = attention_avg[start_idx:start_idx + img_len]
