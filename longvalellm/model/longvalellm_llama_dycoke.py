@@ -5,7 +5,6 @@ from transformers import AutoConfig, AutoModelForCausalLM, LlamaConfig, LlamaMod
 from transformers.modeling_outputs import CausalLMOutputWithPast, BaseModelOutputWithPast
 # from .longvalellm_arch import LongVALELLMMetaModel, LongVALELLMMetaForCausalLM
 from .longvalellm_arch_dycoke import DyLongVALELLMMetaModel, DyLongVALELLMMetaForCausalLM
-from transformers.masking_utils import create_causal_mask
 
 # longvalellm_llama.py (상단 import에 추가)
 from transformers.cache_utils import DynamicCache, Cache, StaticCache
@@ -39,8 +38,8 @@ class PrunableDynamicCache(DynamicCache):
     - layer별 key/value 캐시 유지
     - self.kv_cache: 유지할 token 인덱스(list[int]); None이면 전체 유지
     """
-    def __init__(self, config=None,*args, **kwargs) -> None:
-        super().__init__(config=config, *args, **kwargs)
+    def __init__(self, config=None,) -> None:
+        super().__init__()
         self.key_cache: List[torch.Tensor] = []
         self.value_cache: List[torch.Tensor] = []
         self._seen_tokens = 0
@@ -107,7 +106,8 @@ class PrunableDynamicCache(DynamicCache):
     # 이전 iteration에서 L번째 layer의 attention과의 유사도 높으면 =>  update_cache => kv cache update
     def dycoke_pruning(self, attn, layer_idx, config):
         # 구버전, decoder output[1] = attention 이었을때의 code 
-        attention_avg = attn[1].mean(1)[0, -1] 
+        # attention_avg : [B, H, L_q, L_k]
+        attention_avg = attn[1].mean(1)[0, -1] # 마지막 query token = 지금 막 생성된 token에 높은 중요도를 주는 key token을 추출
         start_idx = config.image_token_start_index
         img_len = config.image_token_length
         image_attention = attention_avg[start_idx:start_idx + img_len]
@@ -137,7 +137,18 @@ class DyLongVALELLMConfig(LongVALELLMConfig):
     dycoke_p: float = 0.8           # keep ratio for image tokens
     dycoke_num_tokens_per_frame: int = 100
     image_token_start_index: int = 0
+    output_attentions : bool = True
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.dycoke = kwargs.get("dycoke", True)
+        self.dycoke_l = kwargs.get("dycoke_l", 3)
+        self.dycoke_p = kwargs.get("dycoke_p", 0.8)
+        self.dycoke_num_tokens_per_frame = kwargs.get("dycoke_num_tokens_per_frame", 100)
+        self.image_token_start_index = kwargs.get("image_token_start_index", 0)
 
+        # 이 부분 반드시 __init__ 안에 넣어야 인스턴스 필드로 인식됨
+        self.output_attentions = True
+    
 # revised by modelling_llama dycoke.
 class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit LlamaModel + LongVALELLMMetaModel(Custom Model)
     config_class = DyLongVALELLMConfig # check
@@ -156,103 +167,7 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         self.DycokeConfig.dycoke_radio = self.dycoke_p
         self.DycokeConfig.image_token_start_index = self.image_token_start_index
         
-    def forward(
-        self,
-        input_ids: Optional[torch.LongTensor] = None,
-        attention_mask: Optional[torch.Tensor] = None,
-        position_ids: Optional[torch.LongTensor] = None,
-        past_key_values: Optional[Cache] = None,
-        inputs_embeds: Optional[torch.FloatTensor] = None,
-        cache_position: Optional[torch.LongTensor] = None,
-        use_cache: Optional[bool] = None,
-        **kwargs,
-    ) -> BaseModelOutputWithPast:
-        if (input_ids is None) ^ (inputs_embeds is not None):
-            raise ValueError("You must specify exactly one of input_ids or inputs_embeds")
-
-        if inputs_embeds is None:
-            inputs_embeds: torch.Tensor = self.embed_tokens(input_ids)
-
-        if use_cache:
-            use_legacy_cache = not isinstance(past_key_values, Cache)
-            if use_legacy_cache: # if not cache
-                past_key_values = PrunableDynamicCache.from_legacy_cache(past_key_values)
-            else:
-                # 최신 DynamicCache 방식
-                if self.dycoke:
-                    past_key_values = PrunableDynamicCache(config=self.config)
-        
-        # always add past_seen_tokens 
-        past_seen_tokens = (
-            past_key_values.get_seq_length() if past_key_values is not None else 0
-        )
-        # past_seen_tokens : 기존 cache의 길이 = prefill + decoding length
-        # layer 별 length인지 확인 필요 -> 일단 layer별로 동일할거라 생각하고 skip
-        # token 기준으로 length 수정 
-        if cache_position is None:
-            past_seen_tokens = past_key_values.get_seq_length() if past_key_values is not None else 0
-            cache_position: torch.Tensor = torch.arange(
-                past_seen_tokens, past_seen_tokens + inputs_embeds.shape[1], device=inputs_embeds.device
-            )
-
-        if position_ids is None:
-            position_ids = cache_position.unsqueeze(0)
-
-        causal_mask = create_causal_mask(
-            config=self.config,
-            input_embeds=inputs_embeds,
-            attention_mask=attention_mask,
-            cache_position=cache_position,
-            past_key_values=past_key_values,
-            position_ids=position_ids,
-        )
-
-        hidden_states = inputs_embeds
-        position_embeddings = self.rotary_emb(hidden_states, position_ids)
-
-        for layer_idx, decoder_layer in enumerate(self.layers[: self.config.num_hidden_layers]):
-            if self.dycoke:
-                self.DycokeConfig.seq_length_with_past = inputs_embeds.shape[1] + past_seen_tokens
-                if layer_idx < self.dycoke_l:
-                    past_key_values.kv_cache = None
-                elif layer_idx == self.dycoke_l and past_key_values.kv_cache is None and position_ids.shape[1] == 1:
-                    # 구버전
-                    past_key_values.dycoke_pruning(layer_outputs, layer_idx, self.DycokeConfig)
-                layer_outputs = decoder_layer(
-                    hidden_states,
-                    attention_mask=causal_mask,
-                    position_ids=position_ids,
-                    past_key_values=past_key_values,
-                    cache_position=cache_position,
-                    position_embeddings=position_embeddings,
-                    **kwargs,
-                )
-            else:
-                layer_outputs = decoder_layer(
-                    hidden_states,
-                    attention_mask=causal_mask,
-                    position_ids=position_ids,
-                    past_key_values=past_key_values,
-                    cache_position=cache_position,
-                    position_embeddings=position_embeddings,
-                    **kwargs,
-                )
-            hidden_states = layer_outputs # check layer_outputs shape
-            # before transformer ver.
-            # if use_cache:
-            #     next_decoder_cache = layer_outputs[1]
-        hidden_states = self.norm(hidden_states)
-        
-        # before transformer ver.
-        # next_cache = None
-        # if use_cache:
-        #     next_cache = (
-        #         next_decoder_cache.to_legacy_cache() if isinstance(next_decoder_cache, Cache) else next_decoder_cache
-        #     )
-        return BaseModelOutputWithPast(
-            last_hidden_state=hidden_states,
-            past_key_values=past_key_values,
-        )
+        self.output_attentions = True
 
     def forward(
         self,
@@ -268,7 +183,7 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         return_dict=None,
         **kwargs,
     ):
-        output_attentions = output_attentions if output_attentions is not None else self.config.output_attentions
+        output_attentions = output_attentions if output_attentions is not None and output_attentions is not False else self.config.output_attentions # changed
         output_hidden_states = (
             output_hidden_states if output_hidden_states is not None else self.config.output_hidden_states
         )
@@ -295,31 +210,30 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         if inputs_embeds is None:
             inputs_embeds = self.embed_tokens(input_ids)
 
-        ##########
-        past_seen_tokens = 0
+        
         if use_cache:  # kept for PrunableDynamicCache (cache positions)
             use_legacy_cache = not isinstance(past_key_values, Cache)
             if use_legacy_cache and past_key_values is None:
                 past_key_values = PrunableDynamicCache.from_legacy_cache(past_key_values)
             elif use_legacy_cache:
                 past_key_values = PrunableDynamicCache.from_legacy_cache(past_key_values)
-        ##########    
             #  Compatibility patch for newer transformers (4.42+)
-            if hasattr(past_key_values, "seen_tokens"):
-                past_key_values_length = past_key_values.seen_tokens
-            else:
-                try:
-                    past_key_values_length = past_key_values.get_usable_length(seq_length)
-                except AttributeError:
-                    past_key_values_length = 0
+            # if hasattr(past_key_values, "seen_tokens"):
+            #     past_key_values_length = past_key_values.seen_tokens
+            # else:
+            #     try:
+            #         past_key_values_length = past_key_values.get_usable_length(seq_length)
+            #     except AttributeError:
+            #         past_key_values_length = 0
             # before ver.
-            # past_key_values_length = past_key_values.get_usable_length(seq_length)
+            past_key_values_length = past_key_values.get_usable_length(seq_length)
 
+        # check when decoding 
         if cache_position is None:
             if isinstance(past_key_values, StaticCache):
                 raise ValueError("cache_position is a required argument when using StaticCache.")
             cache_position = torch.arange(
-                past_seen_tokens, past_seen_tokens + inputs_embeds.shape[1], device=inputs_embeds.device
+                past_key_values_length, past_key_values_length + inputs_embeds.shape[1], device=inputs_embeds.device
             )
 
         # change position_ids for changed pruning
@@ -332,7 +246,7 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         else:
             position_ids = position_ids.view(-1, seq_length).long()
 
-        causal_mask = self._update_causal_mask(attention_mask, inputs_embeds, cache_position)
+        causal_mask = self._update_causal_mask(attention_mask, inputs_embeds, cache_position, past_key_values_length)
 
         # embed positions
         hidden_states = inputs_embeds

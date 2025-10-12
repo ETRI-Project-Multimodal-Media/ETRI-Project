@@ -1,0 +1,104 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            w5r9betl9g7y81gku0qxawzacczv66wa:
+                args:
+                    - --config
+                    - /home/kylee/kylee/LongVALE/configs/zeroshot_llm_dycoke.json
+                cpu_count: 16
+                cpu_count_logical: 32
+                cudaVersion: "12.0"
+                disk:
+                    /:
+                        total: "982820896768"
+                        used: "667927236608"
+                email: lky3685@gmail.com
+                executable: /root/datasets/kylee/anaconda3/envs/long_dy/bin/python
+                git:
+                    commit: 9594d8c7e6213774f1ed539d7da5c24a2a3d19cf
+                    remote: https://github.com/Yooonlee/LongVALE.git
+                gpu: NVIDIA GeForce RTX 4090
+                gpu_count: 4
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-394012c6-06d9-b402-a23e-096fecd123ae
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-7b870cdd-1087-f895-27f8-21dc2c7876f2
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-dbc1d489-d30f-64e6-80d3-77ec0bc25809
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-6f54b116-0908-f130-860f-5ae07adf85df
+                host: 58e7ff6a5163
+                memory:
+                    total: "270071074816"
+                os: Linux-5.15.0-46-generic-x86_64-with-glibc2.31
+                program: /home/kylee/kylee/LongVALE/longvalellm/eval/eval_dycoke.py
+                python: CPython 3.10.18
+                root: /root/workspace/kylee/LongVALE
+                startedAt: "2025-10-12T10:14:46.564173Z"
+                writerId: w5r9betl9g7y81gku0qxawzacczv66wa
+        m: []
+        python_version: 3.10.18
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 98
+                - 105
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 98
+                - 105
+            "3":
+                - 16
+            "4": 3.10.18
+            "5": 0.22.2
+            "6": 4.40.0
+            "12": 0.22.2
+            "13": linux-x86_64
+asr_feat_folder:
+    value: /home/kylee/kylee/LongVALE/data/eval/speech_features_1171
+audio_feat_folder:
+    value: /home/kylee/kylee/LongVALE/data/eval/audio_features_1171
+config:
+    value: /home/kylee/kylee/LongVALE/configs/zeroshot_llm_dycoke.json
+data_path:
+    value: /home/kylee/kylee/LongVALE/data/eval/longvale-annotations-eval.json
+log_path:
+    value: /home/kylee/kylee/LongVALE/logs/dycoke_zeroshot_llm_json.txt
+model_base:
+    value: checkpoints/vicuna-7b-v1.5
+pretrain_asr_mlp_adapter:
+    value: null
+pretrain_audio_mlp_adapter:
+    value: null
+pretrain_mm_mlp_adapter:
+    value: checkpoints/vtimellm_stage1_mm_projector.bin
+stage2:
+    value: checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp
+stage3:
+    value: checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it
+task:
+    value: sample_captioning
+video_feat_folder:
+    value: /home/kylee/kylee/LongVALE/data/eval/video_features_1171
