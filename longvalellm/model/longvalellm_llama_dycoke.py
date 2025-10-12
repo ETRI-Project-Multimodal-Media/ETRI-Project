@@ -155,9 +155,6 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         self.DycokeConfig.dycoke_radio = self.dycoke_p
         self.DycokeConfig.image_token_start_index = self.image_token_start_index
         
-
-    @check_model_inputs
-    @auto_docstring
     def forward(
         self,
         input_ids: Optional[torch.LongTensor] = None,
@@ -175,9 +172,18 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         if inputs_embeds is None:
             inputs_embeds: torch.Tensor = self.embed_tokens(input_ids)
 
-        if use_cache and past_key_values is None:
-            past_key_values = DynamicCache(config=self.config)
-
+        if use_cache:
+            use_legacy_cache = not isinstance(past_key_values, Cache)
+            if use_legacy_cache: # if not cache
+                past_key_values = PrunableDynamicCache.from_legacy_cache(past_key_values)
+            else:
+                # 최신 DynamicCache 방식
+                if past_key_values is None:
+                    past_key_values = PrunableDynamicCache()
+        
+        # past_seen_tokens : 기존 cache의 길이 = prefill + decoding length
+        # layer 별 length인지 확인 필요 -> 일단 layer별로 동일할거라 생각하고 skip
+        # token 기준으로 length 수정 
         if cache_position is None:
             past_seen_tokens = past_key_values.get_seq_length() if past_key_values is not None else 0
             cache_position: torch.Tensor = torch.arange(
@@ -199,22 +205,49 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         hidden_states = inputs_embeds
         position_embeddings = self.rotary_emb(hidden_states, position_ids)
 
-        for decoder_layer in self.layers[: self.config.num_hidden_layers]:
-            hidden_states = decoder_layer(
-                hidden_states,
-                attention_mask=causal_mask,
-                position_ids=position_ids,
-                past_key_values=past_key_values,
-                cache_position=cache_position,
-                position_embeddings=position_embeddings,
-                **kwargs,
-            )
-
+        for layer_idx, decoder_layer in enumerate(self.layers[: self.config.num_hidden_layers]):
+            if self.dycoke:
+                self.DycokeConfig.seq_length_with_past = inputs_embeds.shape[1] + past_seen_tokens
+                if layer_idx < self.dycoke_l:
+                    past_key_values.kv_cache = None
+                elif layer_idx == self.dycoke_l and past_key_values.kv_cache is None and position_ids.shape[1] == 1:
+                    past_key_values.dycoke_pruning(layer_outputs, layer_idx, self.DycokeConfig)
+                layer_outputs = decoder_layer(
+                    hidden_states,
+                    attention_mask=causal_mask,
+                    position_ids=position_ids,
+                    past_key_values=past_key_values,
+                    cache_position=cache_position,
+                    position_embeddings=position_embeddings,
+                    **kwargs,
+                )
+            else:
+                layer_outputs = decoder_layer(
+                    hidden_states,
+                    attention_mask=causal_mask,
+                    position_ids=position_ids,
+                    past_key_values=past_key_values,
+                    cache_position=cache_position,
+                    position_embeddings=position_embeddings,
+                    **kwargs,
+                )
+            hidden_states = layer_outputs # check layer_outputs shape
+            # added
+            if use_cache:
+                next_decoder_cache = layer_outputs[1]
         hidden_states = self.norm(hidden_states)
+        
+        # added 
+        next_cache = None
+        if use_cache:
+            next_cache = (
+                next_decoder_cache.to_legacy_cache() if isinstance(next_decoder_cache, Cache) else next_decoder_cache
+            )
         return BaseModelOutputWithPast(
-            last_hidden_state=hidden_states,
+            last_hidden_state=next_cache,
             past_key_values=past_key_values,
         )
+
     # def forward(
     #     self,
     #     input_ids=None,
