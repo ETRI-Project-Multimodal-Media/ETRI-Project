@@ -165,6 +165,7 @@ class DyLongVALELLMMetaForCausalLM(ABC):
         # print([image.shape for image in image_features])
 
         concated_features = [] # feature concatenation
+        image_token_length = []
         # concat for same frame
         for (audio_feat, image_feat, asr_feat) in zip(audio_features, image_features, asr_features):    
             assert not (audio_feat == None and image_feat == None and asr_features == None) 
@@ -178,7 +179,7 @@ class DyLongVALELLMMetaForCausalLM(ABC):
                 )
             # save image token length (for KV Pruning)
             if hasattr(self, "model") and hasattr(self.model, "DycokeConfig"):
-                self.model.DycokeConfig.image_token_length = [len(img_feat) for img_feat in image_features] # check
+                image_token_length.append(len(image_feat)) 
             concat_feat = []
             if image_feat is not None:
                 concat_feat.append(image_feat) 
@@ -189,7 +190,8 @@ class DyLongVALELLMMetaForCausalLM(ABC):
 
             concat_feat = torch.cat(concat_feat, dim=-2) # [133,4096] every modality is projected to 4096 channels
             concated_features.append(concat_feat)
-
+        # dycoke
+        self.config.image_token_length = image_token_length
         image_features = concated_features # replace image_features to concated_features
         
         _labels = labels
@@ -211,16 +213,19 @@ class DyLongVALELLMMetaForCausalLM(ABC):
 
         new_input_embeds = []
         new_labels = []
+        # dycoke
+        image_spans_batch = []  # [(start, length), ...]
         cur_image_idx = 0
         for batch_idx, cur_input_ids in enumerate(input_ids):
             num_images = (cur_input_ids == IMAGE_TOKEN_INDEX).sum() # num of [IMAGE] in a sample
-            # dycoke 
-            image_pos = (cur_input_ids == IMAGE_TOKEN_INDEX).nonzero(as_tuple=True)[0] # index, starts from zero
-            if len(image_pos) > 0:
-                # 마지막 [IMAGE]의 실제 삽입 위치를 기준으로
-                self.model.DycokeConfig.image_token_start_index = [int(pos) for pos in image_pos.tolist()]
-            else:
-                self.model.DycokeConfig.image_token_start_index = 0
+
+            cur_new_input_embeds = []
+            cur_new_labels = []
+            image_spans = []  # <-- 이미지의 실제 위치 저장용
+            
+            cursor = 0 # 현재까지 쌓인 토큰 길이
+
+            
             if num_images == 0:
                 cur_image_features = image_features[cur_image_idx]
                 cur_input_embeds_1 = self.get_model().get_input_embeddings()(cur_input_ids)
@@ -244,20 +249,37 @@ class DyLongVALELLMMetaForCausalLM(ABC):
             cur_new_labels = []
 
             for i in range(num_images + 1):
-                cur_new_input_embeds.append(cur_input_embeds_no_im[i]) # append text embeddings
+                txt = cur_input_embeds_no_im[i]
+                cur_new_input_embeds.append(txt) # append text embeddings
                 cur_new_labels.append(cur_labels_noim[i])
+                cursor += txt.shape[0]
+                
                 if i < num_images:
                     cur_image_features = image_features[cur_image_idx]
                     cur_image_idx += 1
+                    
+                    # dycoke
+                    start = cursor
+                    length = cur_image_features.shape[0]
+                    image_spans.append((start, length))  #  실제 위치 기록
+                    
                     cur_new_input_embeds.append(cur_image_features) # append image embeddings
                     cur_new_labels.append(torch.full((cur_image_features.shape[0],), IGNORE_INDEX, device=cur_labels.device, dtype=cur_labels.dtype))
-
+                    cursor += length
+                    
             cur_new_input_embeds = torch.cat(cur_new_input_embeds) # concat text + image embeddings
             cur_new_labels = torch.cat(cur_new_labels)
 
             new_input_embeds.append(cur_new_input_embeds)
             new_labels.append(cur_new_labels)
+            image_spans_batch.append(image_spans) # dycoke
 
+            if hasattr(self, "model") and hasattr(self.model, "DycokeConfig"):
+                start_indices = [int(s) for s, l in image_spans_batch[0]]
+                # lengths = [int(l) for s, l in image_spans_batch[0]]
+                self.config.image_token_start_index = start_indices
+                # self.config.image_token_length = lengths
+            
         # Truncate sequences to max length as image embeddings can make the sequence longer
         ## cut embeddings/labels to max_length
         tokenizer_model_max_length = getattr(self.config, 'tokenizer_model_max_length', None)

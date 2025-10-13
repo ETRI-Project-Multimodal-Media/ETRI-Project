@@ -31,7 +31,14 @@ class DycokeConfigs:
         self.similarity: Optional[torch.Tensor] = None
         self.attention_score: Optional[torch.Tensor] = None
         self.seq_length_with_past: Optional[int] = None
-        
+
+class DycokeSubConfig:
+    def __init__(self, base_config, start_idx, img_len):
+        self.image_token_start_index = start_idx
+        self.image_token_length = img_len
+        self.seq_length_with_past = base_config.seq_length_with_past
+        self.dycoke_radio = base_config.dycoke_radio
+
 # ---- KV 캐시를 프루닝할 수 있게 확장 ----
 class PrunableDynamicCache(DynamicCache):
     """
@@ -86,22 +93,21 @@ class PrunableDynamicCache(DynamicCache):
         start_idx = config.image_token_start_index
         img_len = config.image_token_length
         num_keep = int(img_len * (1 - config.dycoke_radio)) # dycoke_ratio = 삭제할 비율 # num_keep : 유지할 token 수 
-        
+        if num_keep <= 0:
+            num_keep = 1
+
         # Get top indices in one operation
         top_indices = torch.topk(image_attention, num_keep, sorted=False)[1] + start_idx
         
         # Create ranges efficiently using single arange call
-        device = image_attention.device
-        full_range = torch.arange(config.seq_length_with_past, device=device) # prefill + 생성된 길이
-        keep_indexs = torch.cat([
+        full_range = torch.arange(config.seq_length_with_past, device=image_attention.device) # prefill + 생성된 길이
+        keep_indices = torch.cat([
             full_range[:start_idx],
             top_indices,
             full_range[start_idx + img_len:]
         ]) # text token + 이미지 pruning index + text token
 
-        # # Convert to list once at end
-        # self.kv_cache = keep_indexs.tolist()
-        return keep_indexs
+        return keep_indices
     
     # dycoke pruning 조건
     # 이전 iteration에서 L번째 layer의 attention과의 유사도 높으면 =>  update_cache => kv cache update
@@ -109,12 +115,9 @@ class PrunableDynamicCache(DynamicCache):
         # 구버전, decoder output[1] = attention 이었을때의 code 
         # attention_avg : [B, H, L_q, L_k]
         attention_avg = attn[1].mean(1)[0, -1] # 마지막 query token = 지금 막 생성된 token에 높은 중요도를 주는 key token을 추출
-        # start_idx = config.image_token_start_index
-        # img_len = config.image_token_length
 
+        device = attention_avg.device
         all_keep_indices = []        
-        # before
-        # image_attention = attention_avg[start_idx:start_idx + img_len]
         # revised 
         for start_idx, img_len in zip(config.image_token_start_index, config.image_token_length):
             image_attention = attention_avg[start_idx:start_idx + img_len]
@@ -131,9 +134,7 @@ class PrunableDynamicCache(DynamicCache):
             if config.attention_score is None:
                 config.attention_score = torch.zeros_like(attention_avg)
             config.attention_score[start_idx:start_idx + img_len] = image_attention
-            
-            # if config.similarity < 0.9:
-            #     self.update_cache(image_attention, config)
+        
                 
             # 조건 만족 시 pruning
             if config.similarity < 0.9:
@@ -149,6 +150,7 @@ class PrunableDynamicCache(DynamicCache):
 
         # 리스트로 저장
         self.kv_cache = merged.tolist()
+        return merged
     
 class LongVALELLMConfig(LlamaConfig): # inherit llama and register  "LongVALE-LLM" model # used for AutoConfig.from_pretrained()
     model_type = "LongVALE-LLM"
@@ -193,6 +195,22 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         self.DycokeConfig.image_token_start_index = self.image_token_start_index
         
         self.output_attentions = True
+
+    def _apply_dycoke_mask(self, causal_mask, keep_indices):
+        if causal_mask is None or not torch.is_tensor(causal_mask):
+            return causal_mask
+        keep_tensor = keep_indices if torch.is_tensor(keep_indices) else torch.as_tensor(keep_indices, device=causal_mask.device)
+        keep_tensor = keep_tensor.to(device=causal_mask.device, dtype=torch.long)
+        if keep_tensor.numel() == causal_mask.shape[-1]:
+            return causal_mask
+        return causal_mask.index_select(-1, keep_tensor)
+
+    def _apply_dycoke_attention_mask(self, attention_mask, keep_indices):
+        keep_tensor = keep_indices if torch.is_tensor(keep_indices) else torch.as_tensor(keep_indices, device=attention_mask.device)
+        keep_tensor = keep_tensor.to(device=attention_mask.device, dtype=torch.long)
+        if keep_tensor.numel() == attention_mask.shape[1]:
+            return attention_mask
+        return attention_mask.index_select(1, keep_tensor)
 
     def forward(
         self,
@@ -246,6 +264,9 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
             # before ver.
             past_key_values_length = past_key_values.get_usable_length(seq_length)
 
+        if self.dycoke and isinstance(past_key_values, PrunableDynamicCache):
+            past_key_values.kv_cache = None
+
         # check when decoding 
         if cache_position is None:
             if isinstance(past_key_values, StaticCache):
@@ -290,24 +311,22 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
                     cache_position,
                 )
             else:
-                # l번째 layer이고 kv cache가 존재하면  dycoke 적용 
                 if self.dycoke:
                     self.DycokeConfig.seq_length_with_past = seq_length + past_key_values_length
                     if layer_idx < self.dycoke_l:
                         past_key_values.kv_cache = None
-                    elif layer_idx == self.dycoke_l and past_key_values.kv_cache is None and position_ids.shape[1] == 1:
-                        past_key_values.dycoke_pruning(layer_outputs, layer_idx, self.DycokeConfig)
-                    layer_outputs = decoder_layer(
-                        hidden_states,
-                        attention_mask=causal_mask,
-                        position_ids=position_ids,
-                        past_key_value=past_key_values,
-                        output_attentions=output_attentions,
-                        use_cache=use_cache,
-                        cache_position=cache_position,
-                    )
-                else:
-                    layer_outputs = decoder_layer(
+                    elif (
+                        self.dycoke
+                        and past_key_values.kv_cache is None
+                        and layer_idx == self.dycoke_l
+                        and position_ids.shape[1] == 1
+                    ):
+                        keep_indices = past_key_values.dycoke_pruning(layer_outputs, layer_idx, self.DycokeConfig)
+                        if keep_indices is not None:
+                            causal_mask = self._apply_dycoke_mask(causal_mask, keep_indices)
+                            if attention_mask is not None and attention_mask.ndim == 2:
+                                causal_mask = self._apply_dycoke_attention_mask(attention_mask, keep_indices)
+                layer_outputs = decoder_layer(
                     hidden_states,
                     attention_mask=causal_mask,
                     position_ids=position_ids,
@@ -315,7 +334,7 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
                     output_attentions=output_attentions,
                     use_cache=use_cache,
                     cache_position=cache_position,
-                    )
+                )
             hidden_states = layer_outputs[0]
 
             if use_cache:
@@ -402,7 +421,7 @@ class DyLongVALELLMLlamaForCausalLM(LlamaForCausalLM, DyLongVALELLMMetaForCausal
                 images,
                 audio=audio,
                 asr=asr
-            ) 
+            ) # multimodal embedding - dycoke ttm
 
         return super().forward(
             input_ids=input_ids,
@@ -416,7 +435,7 @@ class DyLongVALELLMLlamaForCausalLM(LlamaForCausalLM, DyLongVALELLMMetaForCausal
             output_hidden_states=output_hidden_states,
             cache_position=cache_position, # added for transformers 4.43
             return_dict=return_dict
-        )
+        ) # LlamaForCausalLM.forward() -> model = DyLongVALELLMLlamaModel
 
     def prepare_inputs_for_generation(self, input_ids, past_key_values=None, inputs_embeds=None, **kwargs):
         images = kwargs.pop("images", None)
