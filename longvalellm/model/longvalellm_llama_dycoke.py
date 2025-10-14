@@ -69,23 +69,32 @@ class PrunableDynamicCache(DynamicCache):
         if len(self.key_cache) <= layer_idx:
             self.key_cache.append(key_states)
             self.value_cache.append(value_states)
-        # 두번째 decoding step부터 각 layer에 더해줌
         else:
-            self.key_cache[layer_idx]  = torch.cat([self.key_cache[layer_idx],  key_states ], dim=-2)
-            self.value_cache[layer_idx]= torch.cat([self.value_cache[layer_idx],value_states], dim=-2)
+            if key_states.shape[-2] > 1: # decoding 할때 keystates가 1이 아니라서 맨 마지막만 가져와서 cache에 붙여줌 
+                key_states = key_states[..., -1:, :]
+                value_states = value_states[..., -1:, :]
+            self.key_cache[layer_idx] = torch.cat([self.key_cache[layer_idx], key_states], dim=-2)
+            self.value_cache[layer_idx] = torch.cat([self.value_cache[layer_idx], value_states], dim=-2)
 
-        # 2) 프루닝 인덱스가 없으면 전체 반환
         if self.kv_cache is None:
             return self.key_cache[layer_idx], self.value_cache[layer_idx]
 
-        else: # if prune return only pruned cache
-            # kv_cache : index임,  view로 차원 맞추고 expand로 broadcast (B, H, L_keep 그대로, D)
-            K_index = torch.tensor(self.kv_cache, device=self.key_cache[layer_idx].device).view(1, 1, -1, 1).expand(self.key_cache[layer_idx].size(0),self.key_cache[layer_idx].size(1), -1, self.key_cache[layer_idx].size(3))
-            K_used = torch.gather(self.key_cache[layer_idx], dim=2, index=K_index)
-            
-            V_index = torch.tensor(self.kv_cache, device=self.value_cache[layer_idx].device).view(1, 1, -1, 1).expand(self.value_cache[layer_idx].size(0), self.value_cache[layer_idx].size(1), -1, self.value_cache[layer_idx].size(3))
-            V_used = torch.gather(self.value_cache[layer_idx], dim=2, index=V_index)  # (B, H_kv, L_keep, D), 저장은 decoding token을 붙여서 하되 prune된 token을 반환해서 attention 계산량을 줄임
-            return K_used, V_used 
+        K_index = torch.tensor(self.kv_cache, device=self.key_cache[layer_idx].device).view(1, 1, -1, 1).expand(
+            self.key_cache[layer_idx].size(0),
+            self.key_cache[layer_idx].size(1),
+            -1,
+            self.key_cache[layer_idx].size(3),
+        )
+        K_used = torch.gather(self.key_cache[layer_idx], dim=2, index=K_index)
+
+        V_index = torch.tensor(self.kv_cache, device=self.value_cache[layer_idx].device).view(1, 1, -1, 1).expand(
+            self.value_cache[layer_idx].size(0),
+            self.value_cache[layer_idx].size(1),
+            -1,
+            self.value_cache[layer_idx].size(3),
+        )
+        V_used = torch.gather(self.value_cache[layer_idx], dim=2, index=V_index)
+        return K_used, V_used
 
     # kv_cache에 attention 값이 높은 index를 return
     def update_cache(self, image_attention, config):
@@ -253,8 +262,8 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
         if inputs_embeds is None:
             inputs_embeds = self.embed_tokens(input_ids)
 
-        past_key_values_length = 0 # decode output tokens length
-        
+        # past_key_values_length = 0 # decode output tokens length
+        past_seen_tokens= 0
         if use_cache:  # kept for PrunableDynamicCache (cache positions)
             use_legacy_cache = not isinstance(past_key_values, Cache)
             if use_legacy_cache and past_key_values is None:
@@ -262,30 +271,33 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
             elif use_legacy_cache:
                 past_key_values = PrunableDynamicCache.from_legacy_cache(past_key_values)
             # before ver.
-            past_key_values_length = past_key_values.get_usable_length(seq_length)
-
-        if self.dycoke and isinstance(past_key_values, PrunableDynamicCache):
-            past_key_values.kv_cache = None
+            # past_key_values_length = past_key_values.get_usable_length(seq_length)
+            past_seen_tokens = past_key_values.get_seq_length()
 
         # check when decoding 
         if cache_position is None:
             if isinstance(past_key_values, StaticCache):
                 raise ValueError("cache_position is a required argument when using StaticCache.")
             cache_position = torch.arange(
-                past_key_values_length, past_key_values_length + inputs_embeds.shape[1], device=inputs_embeds.device
+                past_seen_tokens, past_seen_tokens + inputs_embeds.shape[1], device=inputs_embeds.device
             )
+            # cache_position = torch.arange(
+            #     past_key_values_length, past_key_values_length + inputs_embeds.shape[1], device=inputs_embeds.device
+            # )
 
-        # change position_ids for changed pruning
         if position_ids is None:
-            device = input_ids.device if input_ids is not None else inputs_embeds.device
-            position_ids = torch.arange(
-                past_key_values_length, seq_length + past_key_values_length, dtype=torch.long, device=device
-            )
-            position_ids = position_ids.unsqueeze(0).view(-1, seq_length)
-        else:
-            position_ids = position_ids.view(-1, seq_length).long()
+            position_ids = cache_position.unsqueeze(0)
+        # change position_ids for changed pruning
+        # if position_ids is None:
+        #     device = input_ids.device if input_ids is not None else inputs_embeds.device
+        #     position_ids = torch.arange(
+        #         past_key_values_length, seq_length + past_key_values_length, dtype=torch.long, device=device
+        #     )
+        #     position_ids = position_ids.unsqueeze(0).view(-1, seq_length)
+        # else:
+        #     position_ids = position_ids.view(-1, seq_length).long()
 
-        causal_mask = self._update_causal_mask(attention_mask, inputs_embeds, cache_position, past_key_values_length)
+        causal_mask = self._update_causal_mask(attention_mask, inputs_embeds, cache_position, past_seen_tokens)
 
         # embed positions
         hidden_states = inputs_embeds
@@ -312,7 +324,7 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
                 )
             else:
                 if self.dycoke:
-                    self.DycokeConfig.seq_length_with_past = seq_length + past_key_values_length
+                    self.DycokeConfig.seq_length_with_past = seq_length + past_seen_tokens
                     if layer_idx < self.dycoke_l:
                         past_key_values.kv_cache = None
                     elif (
@@ -322,10 +334,10 @@ class DyLongVALELLMLlamaModel(LlamaModel, DyLongVALELLMMetaModel): # inherit Lla
                         and position_ids.shape[1] == 1
                     ):
                         keep_indices = past_key_values.dycoke_pruning(layer_outputs, layer_idx, self.DycokeConfig)
-                        if keep_indices is not None:
-                            causal_mask = self._apply_dycoke_mask(causal_mask, keep_indices)
-                            if attention_mask is not None and attention_mask.ndim == 2:
-                                causal_mask = self._apply_dycoke_attention_mask(attention_mask, keep_indices)
+                        # if keep_indices is not None:
+                        #     causal_mask = self._apply_dycoke_mask(causal_mask, keep_indices)
+                        #     if attention_mask is not None and attention_mask.ndim == 2:
+                        #         causal_mask = self._apply_dycoke_attention_mask(attention_mask, keep_indices)
                 layer_outputs = decoder_layer(
                     hidden_states,
                     attention_mask=causal_mask,
@@ -437,6 +449,7 @@ class DyLongVALELLMLlamaForCausalLM(LlamaForCausalLM, DyLongVALELLMMetaForCausal
             return_dict=return_dict
         ) # LlamaForCausalLM.forward() -> model = DyLongVALELLMLlamaModel
 
+    # prepare_inputs_for_generation -> prepare_inputs_labels_for_multimodal -> super().forward
     def prepare_inputs_for_generation(self, input_ids, past_key_values=None, inputs_embeds=None, **kwargs):
         images = kwargs.pop("images", None)
         audio = kwargs.pop("audio", None)
