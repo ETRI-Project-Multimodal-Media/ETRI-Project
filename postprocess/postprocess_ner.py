@@ -2,9 +2,11 @@ import os
 import re
 import json
 import ast
+import math
 import torch
+from typing import Optional, Tuple
 from tqdm import tqdm
-from collections import defaultdict
+from collections import Counter, defaultdict
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from jsonschema import validate, ValidationError
 import torch, re, textwrap
@@ -120,21 +122,6 @@ def clean_meta(text: str) -> str:
     text = text.splitlines()[0].strip()          # 한 줄만
     return text or "None"
 
-# # bad word 
-# BAD_PREFIXES = [
-#     "The speaker", "the speaker",
-#     "The narrator", "the narrator",
-#     "The host", "the host",
-#     "This segment", "this segment",
-#     "In this segment", "in this segment",
-#     "The video", "the video",
-#     "The scene", "the scene",
-#     "The clip", "the clip",
-# ]
-
-# bad_words_ids = [tokenizer(bw, add_special_tokens=False)["input_ids"] for bw in BAD_PREFIXES]
-
-
 def llm(system_prompt,user_prompt):
     messages = [
         {"role": "system", "content": system_prompt},
@@ -237,10 +224,283 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
 
 
 # 시간 구간 추출
+MIN_SEGMENT_REPEAT = 2
+MIN_NGRAM_REPEAT = 3
+NGRAM_OVERLAP_THRESHOLD = 0.8
+KL_SIMILARITY_THRESHOLD = 0.01
+KL_EPS = 1e-8
+
 def split_segments(caption: str):
-    pattern = r'From (\d+) to (\d+), (.*?)(?=From \d+ to \d+|$)'
+    # pattern = r'From (\d+) to (\d+), (.*?)(?=From \d+ to \d+|$)' # 정수 
+    pattern = r'From (\d+(?:\.\d+)?) to (\d+(?:\.\d+)?), (.*?)(?=From \d+(?:\.\d+)? to \d+(?:\.\d+)?|$)'
     matches = re.findall(pattern, caption, flags=re.S)
     return [(m[0], m[1], m[2].strip()) for m in matches]
+
+def merge_segments_by_text(segments, min_repeat_count=MIN_SEGMENT_REPEAT):
+    if not segments:
+        return []
+
+    merged = []
+    idx = 0
+    total = len(segments)
+
+    while idx < total:
+        start, end, text = segments[idx]
+        repeat_count = 1
+        last_end = end
+        next_idx = idx + 1
+
+        while next_idx < total and segments[next_idx][2] == text:
+            repeat_count += 1
+            last_end = segments[next_idx][1]
+            next_idx += 1
+
+        if repeat_count >= min_repeat_count:
+            merged.append((start, last_end, text))
+        else:
+            merged.extend(segments[idx:next_idx])
+
+        idx = next_idx
+
+    return merged
+
+def _ngram_overlap_ratio(text_a: str, text_b: str, n: int) -> float:
+    tokens_a = text_a.split()
+    tokens_b = text_b.split()
+    if len(tokens_a) < n or len(tokens_b) < n:
+        return 0.0
+
+    ngrams_a = {tuple(tokens_a[i:i+n]) for i in range(len(tokens_a) - n + 1)}
+    ngrams_b = {tuple(tokens_b[i:i+n]) for i in range(len(tokens_b) - n + 1)}
+    if not ngrams_a or not ngrams_b:
+        return 0.0
+
+    overlap = ngrams_a & ngrams_b
+    denom = min(len(ngrams_a), len(ngrams_b))
+    return len(overlap) / denom if denom else 0.0
+
+def repeated_ngram_ratio(segments, min_ngram_repeat=MIN_NGRAM_REPEAT, overlap_threshold=NGRAM_OVERLAP_THRESHOLD):
+    if not segments:
+        return []
+
+    merged = []
+    idx = 0
+    total = len(segments)
+
+    while idx < total:
+        start, end, text = segments[idx]
+        first_text = text
+        prev_text = text
+        last_end = end
+        next_idx = idx + 1
+
+        while next_idx < total:
+            next_text = segments[next_idx][2]
+            ratio = _ngram_overlap_ratio(prev_text, next_text, min_ngram_repeat)
+            if ratio < overlap_threshold:
+                break
+            last_end = segments[next_idx][1]
+            prev_text = next_text
+            next_idx += 1
+
+        merged_text = first_text.strip()
+        merged.append((start, last_end, merged_text))
+        idx = next_idx
+
+    return merged
+
+def _token_distribution(text: str) -> dict[str, float]:
+    tokens = text.split()
+    if not tokens:
+        return {}
+
+    counter = Counter(tokens)
+    total = sum(counter.values())
+    if total == 0:
+        return {}
+
+    return {token: count / total for token, count in counter.items()}
+
+def _kl_divergence(p: dict[str, float], q: dict[str, float], eps: float = KL_EPS) -> float:
+    if not p:
+        return 0.0
+
+    tokens = set(p) | set(q)
+    divergence = 0.0
+    for token in tokens:
+        p_val = p.get(token, eps)
+        q_val = q.get(token, eps)
+        divergence += p_val * math.log((p_val + eps) / (q_val + eps))
+    return divergence
+
+def merge_segments_by_kl(segments, similarity_threshold=KL_SIMILARITY_THRESHOLD):
+    if not segments:
+        return []
+
+    merged = []
+    idx = 0
+    total = len(segments)
+
+    while idx < total:
+        start, end, text = segments[idx]
+        first_text = text
+        prev_dist = _token_distribution(text)
+        last_end = end
+        next_idx = idx + 1
+
+        while next_idx < total:
+            next_text = segments[next_idx][2]
+            next_dist = _token_distribution(next_text)
+            divergence = _kl_divergence(prev_dist, next_dist)
+            if divergence >= similarity_threshold:
+                break
+            last_end = segments[next_idx][1]
+            prev_dist = next_dist
+            next_idx += 1
+
+        merged.append((start, last_end, first_text.strip()))
+        idx = next_idx
+
+    return merged
+
+
+# JSON 보정 유틸
+def _has_colon_outside_quotes(text: str) -> bool:
+    in_string = False
+    escape = False
+    for ch in text:
+        if escape:
+            escape = False
+            continue
+        if ch == '\\' and in_string:
+            escape = True
+            continue
+        if ch == '"':
+            in_string = not in_string
+            continue
+        if not in_string and ch == ':':
+            return True
+    return False
+
+def _fix_attribute_content(content: str) -> str:
+    lines = content.splitlines(keepends=True)
+    fixed_lines = []
+    attr_counter = 1
+
+    for line in lines:
+        if not line.strip():
+            fixed_lines.append(line)
+            continue
+
+        body = line.rstrip("\r\n")
+        newline = line[len(body):]
+        stripped = body.strip()
+        if not stripped:
+            fixed_lines.append(line)
+            continue
+
+        has_trailing_comma = stripped.endswith(',')
+        base = stripped[:-1].strip() if has_trailing_comma else stripped
+
+        if base and not _has_colon_outside_quotes(base):
+            indent = body[:len(body) - len(body.lstrip())]
+            try:
+                value_obj = json.loads(base)
+            except Exception:
+                value_obj = base.strip('"')
+            value_json = json.dumps(value_obj, ensure_ascii=False)
+            new_body = f'{indent}"attr_{attr_counter:03d}": {value_json}'
+            if has_trailing_comma:
+                new_body += ','
+            fixed_lines.append(new_body + newline)
+            attr_counter += 1
+        else:
+            fixed_lines.append(line)
+
+    return "".join(fixed_lines)
+
+def _find_matching_brace(text: str, open_brace_index: int) -> int:
+    depth = 0
+    in_string = False
+    escape = False
+
+    for idx in range(open_brace_index, len(text)):
+        ch = text[idx]
+        if escape:
+            escape = False
+            continue
+        if ch == '\\' and in_string:
+            escape = True
+            continue
+        if ch == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if ch == '{':
+            depth += 1
+        elif ch == '}':
+            depth -= 1
+            if depth == 0:
+                return idx
+    return -1
+
+def _fix_attributes_in_json(text: str) -> str:
+    pattern = re.compile(r'"attributes"\s*:\s*\{', re.IGNORECASE)
+    idx = 0
+    result = text
+
+    while True:
+        match = pattern.search(result, idx)
+        if not match:
+            break
+
+        content_start = match.end()
+        closing_index = _find_matching_brace(result, match.end() - 1)
+        if closing_index == -1:
+            idx = content_start
+            continue
+
+        content = result[content_start:closing_index]
+        fixed_content = _fix_attribute_content(content)
+        result = result[:content_start] + fixed_content + result[closing_index:]
+        idx = content_start + len(fixed_content)
+
+    return result
+
+def _normalize_object_attributes(obj: dict) -> None:
+    objects = obj.get("objects")
+    if not isinstance(objects, list):
+        obj["objects"] = []
+        return
+
+    for item in objects:
+        if not isinstance(item, dict):
+            continue
+
+        attrs = item.get("attributes")
+        if isinstance(attrs, dict):
+            normalized = {}
+            for key, value in attrs.items():
+                key_str = str(key)
+                if isinstance(value, str):
+                    normalized[key_str] = value
+                elif isinstance(value, (int, float, bool)):
+                    normalized[key_str] = str(value)
+                elif value is None:
+                    continue
+                else:
+                    normalized[key_str] = json.dumps(value, ensure_ascii=False)
+            item["attributes"] = normalized
+        elif isinstance(attrs, list):
+            normalized = {}
+            for idx, value in enumerate(attrs, start=1):
+                normalized[f"attr_{idx:03d}"] = str(value)
+            item["attributes"] = normalized
+        elif isinstance(attrs, str):
+            item["attributes"] = {"description": attrs}
+        else:
+            item["attributes"] = {}
 
 # answer 추출
 def extract_answer_from_line(line: str) -> str:
@@ -265,26 +525,32 @@ def extract_answer_from_line(line: str) -> str:
     return line[start + 1:end]
 
 # video_id 추출
-def extract_videoid_from_line(line: str) -> str:
+def extract_videoinform_from_line(line: str) -> Optional[Tuple[str, str]]:
     """
-    한 줄 문자열에서 "video_id": "..." 부분만 뽑아냄
+    한 줄 문자열에서 "video_id"와 "duration" 값을 추출해 (video_id, duration) 튜플로 반환한다.
+    두 필드 중 하나라도 없으면 None을 반환한다.
     """
-    key = '"video_id":'
-    start = line.find(key)
-    if start == -1:
-        return ""
+    def _find_value(key: str) -> Optional[str]:
+        idx = line.find(key)
+        if idx == -1:
+            return None
 
-    # video_id 뒤 첫 따옴표
-    start = line.find('"', start + len(key))
-    if start == -1:
-        return ""
+        start = line.find('"', idx + len(key))
+        if start == -1:
+            return None
 
-    # video_id 끝 따옴표
-    end = line.find('"', start + 1)
-    if end == -1:
-        return ""
+        end = line.find('"', start + 1)
+        if end == -1:
+            return None
 
-    return line[start + 1:end]
+        return line[start + 1:end]
+
+    video_id = _find_value('"video_id":')
+    duration = _find_value('"duration":')
+    if video_id is None or duration is None:
+        return None
+
+    return video_id, duration
 
 # === LLM 호출 프롬프트 ===
 def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
@@ -372,7 +638,9 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
     SCHEMA_TEXT = json.dumps(SCHEMA, ensure_ascii=False, separators=(",", ":"))  # JSON 문자열로(토큰 절약)
 
     try:
+        response = _fix_attributes_in_json(response)
         obj = json.loads(response)
+        _normalize_object_attributes(obj)
         validate(obj, SCHEMA)
         return obj
     except (json.JSONDecodeError, ValidationError):
@@ -385,7 +653,9 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
         )
         text2 = llm(system_prompt, repair_user)
         try:
+            text2 = _fix_attributes_in_json(text2)
             obj2 = json.loads(text2)
+            _normalize_object_attributes(obj2)
             validate(obj2, SCHEMA)
             return obj2
         except Exception as e:
@@ -393,11 +663,10 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
             error_dict = {'obj':text2, 'error': getattr(e, 'message', None) or str(e)}
             with open(not_json_dir, "a", encoding="utf-8") as out_f:
                 out_f.write(str(error_dict) + "\n")
-            obj2 = json.loads(text2)
-            return obj2
+            raise
 
 
-def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str, start: str, end: str) -> str:
+def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str, start: str, end: str, duration:str) -> str:
     """
     LLaMA를 이용해 특정 시간대 caption + 전체 speech summary를 기반으로
     그 시간대의 speech 내용을 추출
@@ -408,7 +677,7 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str,
     RULES:
     - Output ONLY the speech text as one plain line. No labels, no quotes, no JSON, no code fences, no preambles (e.g., "The speaker ..."), no explanations.
     - Use only content present in the given speech summary; do NOT invent.
-    - Select the portion most relevant to the segment {start}-{end} and its caption. Total Range is (00 - 90).
+    - Select the portion most relevant to the segment {start}-{end} and its caption. Total Range is (00.00 - {duration}).
     - If no relevant speech exists, output: None
     - Keep the input language and keep it concise.
     - Preserve inner quotes if present. Output must NOT start with meta phrases.
@@ -556,11 +825,18 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
         
         # time split
         segments = split_segments(caption_text)
-        video_id = extract_videoid_from_line(line)
+        # merge time split 
+        segments = repeated_ngram_ratio(segments)
+        segments = merge_segments_by_kl(segments)
+        # segments = merge_segments_by_text(segments)
+        video_info = extract_videoinform_from_line(line)
+        if not video_info:
+            continue
+        video_id, duration = video_info
         
         # speech translation with summarized
         speech_translation = translate_speech(video_id, speech_json_dir)       
-         
+        
         for idx, (start, end, text) in enumerate(segments):
             result = extract_info_with_llm(video_id, idx, start, end, text, not_json_dir)
 
@@ -568,7 +844,7 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
             split_result = split_modality_caption_with_llm(text)
             
             # speech summary and extract time speech
-            speech_timesplit = extract_speech_from_caption_with_llm(text, speech_translation, start, end)
+            speech_timesplit = extract_speech_from_caption_with_llm(text, speech_translation, start, end, duration)
             # modality to dict
             split_result_dict = parse_split_caption_to_dict(split_result, speech_timesplit)
             
@@ -577,7 +853,7 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
             result_entry = {
                 "event_id": idx,
                 "original_answer": text,
-                "postprocess" : result,
+                "result" : result,
             }
             video_results[video_id].append(result_entry)
 
@@ -587,7 +863,7 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
 
 # === 실행 예시 ===
 if __name__ == "__main__":
-    input_file = "/home/kylee/kylee/LongVALE/logs/eval.txt"      # 처리할 TXT 파일
-    output_file = "/home/kylee/kylee/LongVALE/logs/result_1002.json"   # 결과 저장 json
+    input_file = "/home/kylee/kylee/LongVALE/logs/zeroshot_json_time.txt"      # 처리할 TXT 파일
+    output_file = "/home/kylee/kylee/LongVALE/logs/result_1014.json"   # 결과 저장 json
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample_1002.txt")
+    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample_1014.txt")
