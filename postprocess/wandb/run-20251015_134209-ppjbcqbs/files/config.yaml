@@ -1,0 +1,86 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            w5yuursn0ogpxozaecqy60drxkee7rt4:
+                codePath: postprocess/postprocess_ner_merge.py
+                codePathLocal: postprocess_ner_merge.py
+                cpu_count: 16
+                cpu_count_logical: 32
+                cudaVersion: "12.0"
+                disk:
+                    /:
+                        total: "982820896768"
+                        used: "667868913664"
+                email: lky3685@gmail.com
+                executable: /root/datasets/kylee/anaconda3/envs/mistral/bin/python
+                git:
+                    commit: c523031203b3a163d2b8298b832b2b65de2854f2
+                    remote: https://github.com/Yooonlee/LongVALE.git
+                gpu: NVIDIA GeForce RTX 4090
+                gpu_count: 4
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-394012c6-06d9-b402-a23e-096fecd123ae
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-7b870cdd-1087-f895-27f8-21dc2c7876f2
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-dbc1d489-d30f-64e6-80d3-77ec0bc25809
+                    - architecture: Ada
+                      cudaCores: 16384
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 4090
+                      uuid: GPU-6f54b116-0908-f130-860f-5ae07adf85df
+                host: 58e7ff6a5163
+                memory:
+                    total: "270071074816"
+                os: Linux-5.15.0-46-generic-x86_64-with-glibc2.31
+                program: /root/workspace/kylee/LongVALE/postprocess/postprocess_ner_merge.py
+                python: CPython 3.10.18
+                root: /root/workspace/kylee/LongVALE/postprocess
+                startedAt: "2025-10-15T13:42:09.256652Z"
+                writerId: w5yuursn0ogpxozaecqy60drxkee7rt4
+        m: []
+        python_version: 3.10.18
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+            "3":
+                - 13
+                - 15
+                - 16
+            "4": 3.10.18
+            "5": 0.22.2
+            "6": 4.56.2
+            "12": 0.22.2
+            "13": linux-x86_64
+description:
+    value: NER version with merge optimization
+features:
+    value:
+        - ner_processing
+        - merge_optimization
+        - llm_calls
+model:
+    value: meta-llama/Meta-Llama-3-8B-Instruct
+version:
+    value: ner_merge
