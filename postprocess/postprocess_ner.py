@@ -3,7 +3,9 @@ import re
 import json
 import ast
 import math
-import torch
+import time
+import psutil
+import wandb
 from typing import Optional, Tuple
 from tqdm import tqdm
 from collections import Counter, defaultdict
@@ -18,6 +20,49 @@ login(token=os.environ["HUGGINGFACE_HUB_TOKEN"])
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 # model_id = "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8"
 
+
+# wandb 초기화 (파일 상단에 추가)
+wandb.init(
+    project="postprocess_comparison2",
+    name=f"plain_{int(time.time())}",
+    config={
+        "version": "plain",
+        "model": model_id,
+        "description": "Plain version without NER processing",
+        "features": ["basic_processing", "llm_calls"]
+    },
+    tags=["plain", "baseline", "comparison"]
+)
+
+def get_gpu_memory():
+    """GPU 메모리 사용량 반환 (MB)"""
+    if torch.cuda.is_available():
+        return torch.cuda.memory_allocated() / 1024 / 1024
+    return 0
+
+def log_function_performance(func_name, start_time, end_time, start_memory, end_memory):
+    """함수 실행 시간과 메모리 사용량을 wandb와 로그 파일에 기록"""
+    duration = end_time - start_time
+    memory_used = end_memory - start_memory
+    
+    # wandb 로깅
+    wandb.log({
+        f"{func_name}_duration": duration,
+        f"{func_name}_memory_used": memory_used,
+        f"{func_name}_end_memory": end_memory
+    })
+    
+    # 로그 파일에 기록
+    log_entry = {
+        "function": func_name,
+        "duration_seconds": duration,
+        "memory_used_mb": memory_used,
+        "end_memory_mb": end_memory,
+        "timestamp": time.time()
+    }
+    
+    with open("/home/kylee/kylee/LongVALE/logs/performance_log.jsonl", "a", encoding="utf-8") as f:
+        f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
 
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
@@ -123,6 +168,8 @@ def clean_meta(text: str) -> str:
     return text or "None"
 
 def llm(system_prompt,user_prompt):
+    start_time = time.time()
+    start_memory = get_gpu_memory()
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
@@ -150,9 +197,15 @@ def llm(system_prompt,user_prompt):
 
     response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
     response = response.strip()
+    end_time = time.time()
+    end_memory = get_gpu_memory()
+    log_function_performance("llm", start_time, end_time, start_memory, end_memory)
     return response
 
 def split_modality_caption_with_llm(caption_text: str) -> str:
+    start_time = time.time()
+    start_memory = get_gpu_memory()
+    
     """LLM을 이용해 Visual/Audio로 분리"""
     # Few-shot 프롬프트
     system_prompt = """
@@ -220,6 +273,9 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
     if any(re.search(p, audio, flags=re.IGNORECASE) for p in speech_markers):
         audio = ""  # 필요시 더 정교한 필터 로직 적용
 
+    end_time = time.time()
+    end_memory = get_gpu_memory()
+    log_function_performance("split_modality_caption_with_llm", start_time, end_time, start_memory, end_memory)
     return {"visual": visual.strip(), "audio": audio.strip()}
 
 
@@ -229,7 +285,7 @@ MIN_NGRAM_REPEAT = 3
 NGRAM_OVERLAP_THRESHOLD = 0.8
 KL_SIMILARITY_THRESHOLD = 0.01
 KL_EPS = 1e-8
-
+JSD_SIMILARITY_THRESHOLD = 0.02
 def split_segments(caption: str):
     # pattern = r'From (\d+) to (\d+), (.*?)(?=From \d+ to \d+|$)' # 정수 
     pattern = r'From (\d+(?:\.\d+)?) to (\d+(?:\.\d+)?), (.*?)(?=From \d+(?:\.\d+)? to \d+(?:\.\d+)?|$)'
@@ -333,6 +389,25 @@ def _kl_divergence(p: dict[str, float], q: dict[str, float], eps: float = KL_EPS
         divergence += p_val * math.log((p_val + eps) / (q_val + eps))
     return divergence
 
+def _js_divergence(p: dict[str, float], q: dict[str, float], eps: float = KL_EPS) -> float:
+    # p,q가 모두 빈 분포면 0
+    if not p and not q:
+        return 0.0
+
+    tokens = set(p) | set(q)
+    # 공통 토큰 집합 기준으로 확률 벡터 구성
+    P = {t: p.get(t, eps) for t in tokens}
+    Q = {t: q.get(t, eps) for t in tokens}
+    M = {t: 0.5 * (P[t] + Q[t]) for t in tokens}
+
+    def _kl(A, B):
+        s = 0.0
+        for t in tokens:
+            s += A[t] * math.log((A[t] + eps) / (B[t] + eps))
+        return s
+
+    return 0.5 * _kl(P, M) + 0.5 * _kl(Q, M)
+
 def merge_segments_by_kl(segments, similarity_threshold=KL_SIMILARITY_THRESHOLD):
     if not segments:
         return []
@@ -363,6 +438,35 @@ def merge_segments_by_kl(segments, similarity_threshold=KL_SIMILARITY_THRESHOLD)
 
     return merged
 
+def merge_segments_by_jsd(segments, similarity_threshold=JSD_SIMILARITY_THRESHOLD):
+    if not segments:
+        return []
+
+    merged = []
+    idx = 0
+    total = len(segments)
+
+    while idx < total:
+        start, end, text = segments[idx]
+        first_text = text
+        prev_dist = _token_distribution(text)
+        last_end = end
+        next_idx = idx + 1
+
+        while next_idx < total:
+            next_text = segments[next_idx][2]
+            next_dist = _token_distribution(next_text)
+            divergence = _js_divergence(prev_dist, next_dist)
+            if divergence >= similarity_threshold:
+                break
+            last_end = segments[next_idx][1]
+            prev_dist = next_dist
+            next_idx += 1
+
+        merged.append((start, last_end, first_text.strip()))
+        idx = next_idx
+
+    return merged
 
 # JSON 보정 유틸
 def _has_colon_outside_quotes(text: str) -> bool:
@@ -503,7 +607,40 @@ def _normalize_object_attributes(obj: dict) -> None:
             item["attributes"] = {}
 
 # answer 추출
+# def extract_answer_from_line(line: str) -> str:
+#     """
+#     한 줄에서 answer 텍스트만 추출.
+#     - JSONL: {"answer": "..."} 형식 우선 지원
+#     - 기존 문자열 라인: "answer": "..." 패턴 파싱
+#     """
+#     # 1) JSON 우선
+#     try:
+#         obj = json.loads(line)
+#         if isinstance(obj, dict) and "answer" in obj:
+#             ans = obj.get("answer")
+#             return ans if isinstance(ans, str) else str(ans)
+#     except Exception:
+#         pass
+
+#     # 2) 기존 문자열 파서
+#     key = '"answer":'
+#     start = line.find(key)
+#     if start == -1:
+#         return ""
+
+#     start = line.find('"', start + len(key))
+#     if start == -1:
+#         return ""
+
+#     end = line.find('"', start + 1)
+#     if end == -1:
+#         return ""
+
+#     return line[start + 1:end]
 def extract_answer_from_line(line: str) -> str:
+    start_time = time.time()
+    start_memory = get_gpu_memory()
+    
     """
     한 줄 문자열에서 "answer": "..." 부분만 뽑아냄
     """
@@ -522,9 +659,52 @@ def extract_answer_from_line(line: str) -> str:
     if end == -1:
         return ""
 
+    end_time = time.time()
+    end_memory = get_gpu_memory()
+    log_function_performance("extract_answer_from_line", start_time, end_time, start_memory, end_memory)
     return line[start + 1:end]
 
 # video_id 추출
+# def extract_videoinform_from_line(line: str) -> Optional[Tuple[str, str]]:
+#     """
+#     한 줄에서 "video_id"와 "duration" 값을 추출해 (video_id, duration) 튜플로 반환.
+#     - JSONL: {"video_id": "...", "duration": "..."} 우선 지원
+#       * duration이 없으면 보수적으로 "99" 같은 기본값 지정(필요시 바꾸세요)
+#     - 기존 문자열 라인: "video_id": "...", "duration": "..." 패턴 파싱
+#     """
+#     # 1) JSON 우선
+#     try:
+#         obj = json.loads(line)
+#         if isinstance(obj, dict) and "video_id" in obj:
+#             video_id = obj.get("video_id")
+#             duration = (
+#                 obj.get("duration")
+#                 or obj.get("video_duration")
+#                 or "99"  # 기본값(필요시 수정)
+#             )
+#             return str(video_id), str(duration)
+#     except Exception:
+#         pass
+
+#     # 2) 기존 문자열 파서
+#     def _find_value(key: str) -> Optional[str]:
+#         idx = line.find(key)
+#         if idx == -1:
+#             return None
+#         start = line.find('"', idx + len(key))
+#         if start == -1:
+#             return None
+#         end = line.find('"', start + 1)
+#         if end == -1:
+#             return None
+#         return line[start + 1:end]
+
+#     video_id = _find_value('"video_id":')
+#     duration = _find_value('"duration":')
+#     if video_id is None and duration is None:
+#         return None
+
+#     return video_id or "", duration or ""
 def extract_videoinform_from_line(line: str) -> Optional[Tuple[str, str]]:
     """
     한 줄 문자열에서 "video_id"와 "duration" 값을 추출해 (video_id, duration) 튜플로 반환한다.
@@ -554,6 +734,8 @@ def extract_videoinform_from_line(line: str) -> Optional[Tuple[str, str]]:
 
 # === LLM 호출 프롬프트 ===
 def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
+    start_time = time.time()
+    start_memory = get_gpu_memory()
     system_prompt = """
     You are a structured information extraction engine that outputs ONLY valid JSON for an MPEG-7–style schema.
     Follow ALL rules strictly:
@@ -642,6 +824,9 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
         obj = json.loads(response)
         _normalize_object_attributes(obj)
         validate(obj, SCHEMA)
+        end_time = time.time()
+        end_memory = get_gpu_memory()
+        log_function_performance("extract_info_with_llm", start_time, end_time, start_memory, end_memory)
         return obj
     except (json.JSONDecodeError, ValidationError):
         # 리페어는 system을 그대로 두고, user에 'ORIGINAL+SCHEMA'를 넣습니다.
@@ -657,6 +842,9 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
             obj2 = json.loads(text2)
             _normalize_object_attributes(obj2)
             validate(obj2, SCHEMA)
+            end_time = time.time()
+            end_memory = get_gpu_memory()
+            log_function_performance("extract_info_with_llm", start_time, end_time, start_memory, end_memory)
             return obj2
         except Exception as e:
             # append 저장
@@ -667,6 +855,8 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
 
 
 def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str, start: str, end: str, duration:str) -> str:
+    start_time = time.time()
+    start_memory = get_gpu_memory()
     """
     LLaMA를 이용해 특정 시간대 caption + 전체 speech summary를 기반으로
     그 시간대의 speech 내용을 추출
@@ -698,6 +888,10 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str,
     
     if not output or output.lower() in {"none", "(none)"}:
         return "None"
+    
+    end_time = time.time()
+    end_memory = get_gpu_memory()
+    log_function_performance("extract_speech_from_caption_with_llm", start_time, end_time, start_memory, end_memory)
     return output
 
 
@@ -705,6 +899,8 @@ def chunk_text(text, max_chars=1500):
     return [text[i:i+max_chars] for i in range(0, len(text), max_chars)]
 
 def summarize_text(text, max_len=80):
+    start_time = time.time()
+    start_memory = get_gpu_memory()
     chunks = chunk_text(text)
     summaries = []
     system_prompt = textwrap.dedent("""
@@ -721,10 +917,15 @@ def summarize_text(text, max_len=80):
         user_prompt = f"Transcript:\n{chunk}\n\nSummarize in one concise paragraph (1–2 sentences):"
         chunk_summary = llm(system_prompt, user_prompt)
         summaries.append(chunk_summary)
+    end_time = time.time()
+    end_memory = get_gpu_memory()
+    log_function_performance("summarize_text", start_time, end_time, start_memory, end_memory)
     return " ".join(summaries)
 
 
 def translate_speech(video_id, speech_json_dir):
+    start_time = time.time()
+    start_memory = get_gpu_memory()
     # speech json 경로
     speech_json_path = os.path.join(speech_json_dir, f"{video_id}.json")
     if not os.path.isfile(speech_json_path):
@@ -737,7 +938,9 @@ def translate_speech(video_id, speech_json_dir):
 
     # 요약
     summary = summarize_text(transcription)
-
+    end_time = time.time()
+    end_memory = get_gpu_memory()
+    log_function_performance("translate_speech", start_time, end_time, start_memory, end_memory)
     return summary
 
 import json, re
@@ -806,8 +1009,15 @@ def save_video_results(video_results, output_file):
 
     print(f"총 {len(output_data)}개 video 결과 저장 완료 → {output_file}")
 
+def append_result(output_file, video_id, result_entry):
+    rec = {"video_id": video_id, "result": result_entry}
+    with open(output_file, "a", encoding="utf-8") as f:
+        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
 # 전체 
 def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
+    start_time = time.time()
+    start_memory = get_gpu_memory()
     video_results = defaultdict(list)
 
     with open(input_file, "r", encoding="utf-8") as f:
@@ -826,9 +1036,10 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
         # time split
         segments = split_segments(caption_text)
         # merge time split 
-        segments = repeated_ngram_ratio(segments)
-        segments = merge_segments_by_kl(segments)
-        # segments = merge_segments_by_text(segments)
+        # segments = repeated_ngram_ratio(segments)
+        # segments = merge_segments_by_kl(segments)
+        # unused
+        # segments = merge_segments_by_text(segments) 
         video_info = extract_videoinform_from_line(line)
         if not video_info:
             continue
@@ -839,6 +1050,11 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
         
         for idx, (start, end, text) in enumerate(segments):
             result = extract_info_with_llm(video_id, idx, start, end, text, not_json_dir)
+
+            # LLM 결과에 관계없이 실제 start/end로 덮어쓰기
+            result.setdefault('event', {}).setdefault('time', {})
+            result['event']['time']['start'] = str(start)
+            result['event']['time']['end'] = str(end)
 
             # Visual, Audio modality split
             split_result = split_modality_caption_with_llm(text)
@@ -857,13 +1073,21 @@ def process_txt_file(input_file, output_file, speech_json_dir, not_json_dir):
             }
             video_results[video_id].append(result_entry)
 
-    save_video_results(video_results, output_file)
+            # 추가: 나오자마자 JSONL로 저장
+            # append_result(output_file, video_id, result_entry)
+
+
+    save_video_results(video_results, output_file) # save at once
+    
+    end_time = time.time()
+    end_memory = get_gpu_memory()
+    log_function_performance("save_video_results", start_time, end_time, start_memory, end_memory)
 
 
 
 # === 실행 예시 ===
 if __name__ == "__main__":
-    input_file = "/home/kylee/kylee/LongVALE/logs/zeroshot_json_time.txt"      # 처리할 TXT 파일
-    output_file = "/home/kylee/kylee/LongVALE/logs/result_1014.json"   # 결과 저장 json
+    input_file = "/home/kylee/kylee/LongVALE/logs/inference_dvc_time.txt"      # 처리할 TXT 파일
+    output_file = "/home/kylee/kylee/LongVALE/logs/result_1015_before_time2.json"   # 결과 저장 json
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample_1014.txt")
+    process_txt_file(input_file, output_file, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample_1015.txt")
