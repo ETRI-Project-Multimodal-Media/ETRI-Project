@@ -242,12 +242,24 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
     text = llm(system_prompt, user_prompt)
     # 1차 파싱
     import json, re
+    BAD_ESCAPE_RE = re.compile(r'(?<!\\)\\(?!["\\/bfnrtu])')
+
+    def _sanitize_invalid_escapes(raw: str) -> str:
+        # 단일 백슬래시 다음에 허용되지 않은 문자가 오면 '\\'로 바꿉니다.
+        return BAD_ESCAPE_RE.sub(lambda m: "\\\\" + m.group(0)[1:], raw)
+
     def try_parse_json(s: str):
         # 응답 앞에 잡음이 섞였을 때 첫 '{'부터 추출
         i = s.find("{")
         if i != -1:
             s = s[i:]
-        return json.loads(s)
+        try:
+            return json.loads(s)
+        except json.JSONDecodeError as e:
+            if "Invalid \\escape" not in str(e):
+                raise
+            cleaned = _sanitize_invalid_escapes(s)
+            return json.loads(cleaned)
 
     try:
         obj = try_parse_json(text)
@@ -607,37 +619,6 @@ def _normalize_object_attributes(obj: dict) -> None:
         else:
             item["attributes"] = {}
 
-# answer 추출
-# def extract_answer_from_line(line: str) -> str:
-#     """
-#     한 줄에서 answer 텍스트만 추출.
-#     - JSONL: {"answer": "..."} 형식 우선 지원
-#     - 기존 문자열 라인: "answer": "..." 패턴 파싱
-#     """
-#     # 1) JSON 우선
-#     try:
-#         obj = json.loads(line)
-#         if isinstance(obj, dict) and "answer" in obj:
-#             ans = obj.get("answer")
-#             return ans if isinstance(ans, str) else str(ans)
-#     except Exception:
-#         pass
-
-#     # 2) 기존 문자열 파서
-#     key = '"answer":'
-#     start = line.find(key)
-#     if start == -1:
-#         return ""
-
-#     start = line.find('"', start + len(key))
-#     if start == -1:
-#         return ""
-
-#     end = line.find('"', start + 1)
-#     if end == -1:
-#         return ""
-
-#     return line[start + 1:end]
 def extract_answer_from_line(line: str) -> str:
     start_time = time.time()
     start_memory = get_gpu_memory()
@@ -665,47 +646,6 @@ def extract_answer_from_line(line: str) -> str:
     log_function_performance("extract_answer_from_line", start_time, end_time, start_memory, end_memory)
     return line[start + 1:end]
 
-# video_id 추출
-# def extract_videoinform_from_line(line: str) -> Optional[Tuple[str, str]]:
-#     """
-#     한 줄에서 "video_id"와 "duration" 값을 추출해 (video_id, duration) 튜플로 반환.
-#     - JSONL: {"video_id": "...", "duration": "..."} 우선 지원
-#       * duration이 없으면 보수적으로 "99" 같은 기본값 지정(필요시 바꾸세요)
-#     - 기존 문자열 라인: "video_id": "...", "duration": "..." 패턴 파싱
-#     """
-#     # 1) JSON 우선
-#     try:
-#         obj = json.loads(line)
-#         if isinstance(obj, dict) and "video_id" in obj:
-#             video_id = obj.get("video_id")
-#             duration = (
-#                 obj.get("duration")
-#                 or obj.get("video_duration")
-#                 or "99"  # 기본값(필요시 수정)
-#             )
-#             return str(video_id), str(duration)
-#     except Exception:
-#         pass
-
-#     # 2) 기존 문자열 파서
-#     def _find_value(key: str) -> Optional[str]:
-#         idx = line.find(key)
-#         if idx == -1:
-#             return None
-#         start = line.find('"', idx + len(key))
-#         if start == -1:
-#             return None
-#         end = line.find('"', start + 1)
-#         if end == -1:
-#             return None
-#         return line[start + 1:end]
-
-#     video_id = _find_value('"video_id":')
-#     duration = _find_value('"duration":')
-#     if video_id is None and duration is None:
-#         return None
-
-#     return video_id or "", duration or ""
 def extract_videoinform_from_line(line: str) -> Optional[Tuple[str, str]]:
     """
     한 줄 문자열에서 "video_id"와 "duration" 값을 추출해 (video_id, duration) 튜플로 반환한다.
@@ -899,7 +839,7 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str,
 def chunk_text(text, max_chars=1500):
     return [text[i:i+max_chars] for i in range(0, len(text), max_chars)]
 
-def summarize_text(text, max_len=80):
+def summarize_text(text):
     start_time = time.time()
     start_memory = get_gpu_memory()
     chunks = chunk_text(text)
@@ -997,18 +937,6 @@ def parse_split_caption_to_dict(split_caption, speech_timesplit=None):
 
     return {"visual": visual, "audio": audio, 'speech':speech_timesplit}
 
-# def save_video_results(video_results, output_file):
-#     output_data = []
-#     for video_id, events in video_results.items():
-#         output_data.append({
-#             "video_id": video_id,
-#             "results": events
-#         })
-
-#     with open(output_file, "w", encoding="utf-8") as f:
-#         json.dump(output_data, f, ensure_ascii=False, indent=2)
-
-#     print(f"총 {len(output_data)}개 video 결과 저장 완료 → {output_file}")
 
 
 def _format_timestamp(value):
@@ -1071,7 +999,24 @@ def _iter_video_payloads(raw_data):
     else:
         raise ValueError("Unsupported input format: expected dict or list.")
 
+# 자식 node의 caption을 재귀 탐색 후 summary
+def _aggregate_child_captions(node):
+    children = node.get("children") or []
+    if not children:
+        return (node.get("caption") or "").strip()
 
+    child_captions = []
+    for child in children:
+        child_summary = _aggregate_child_captions(child)
+        if child_summary:
+            child_captions.append(child_summary)
+
+
+    before_summary = " ".join(child_captions).strip()
+    summary = summarize_text(before_summary)
+    if summary:
+        node["summary"] = summary  # 또는 node["caption"] = summary
+    return summary or (node.get("caption") or "").strip()
 
 
 # 전체 
@@ -1106,6 +1051,7 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
 
         # time split
         # segments = split_segments(caption_text)
+        
         # merge time split 
         # segments = repeated_ngram_ratio(segments)
         # segments = merge_segments_by_kl(segments)
@@ -1135,12 +1081,6 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
             split_result_dict = parse_split_caption_to_dict(split_result, speech_timesplit)
             
             result['LOD']['modalities'] = split_result_dict
-            # 결과 저장
-            # result_entry = {
-            #     "event_id": idx,
-            #     "original_answer": text,
-            #     "postprocess" : result,
-            # }
             
             # node에 저장 
             node["postprocess"] = {
@@ -1148,6 +1088,8 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
                 "original_answer": text,
                 "result": result,
             }
+        # summarize child node's caption 
+        _aggregate_child_captions(video_tree)
         # save result
         output_path = os.path.join(output_dir, f"{video_id}.json")
         with open(output_path, "w", encoding="utf-8") as out_f:
@@ -1156,7 +1098,7 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
     
     end_time = time.time()
     end_memory = get_gpu_memory()
-    # log_function_performance("pipeline", start_time, end_time, start_memory, end_memory)
+    log_function_performance("pipeline", start_time, end_time, start_memory, end_memory)
 
 
 
