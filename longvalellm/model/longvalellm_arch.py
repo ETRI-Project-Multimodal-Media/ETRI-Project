@@ -2,9 +2,12 @@ import torch
 import torch.nn as nn
 from longvalellm.constants import IMAGE_TOKEN_INDEX, IGNORE_INDEX
 from abc import ABC, abstractmethod
+from torch.nn.utils.rnn import pad_sequence
 import os
 import torch.nn.functional as F
 import numpy as np
+import math
+
 
 # DyCoke 
 def dycole_ttm(image_feature, num_tokens_per_frame = 196, merging_ratio = 0.7):
@@ -114,6 +117,43 @@ class LongVALELLMMetaForCausalLM(ABC):
     @abstractmethod
     def get_model(self):
         pass
+
+    def _build_sinusoidal_temporal_embedding(self, sequence_length, hidden_size, device, dtype):
+        if sequence_length <= 0:
+            return None
+
+        position = torch.arange(sequence_length, device=device, dtype=torch.float32).unsqueeze(1)
+        div_term = torch.exp(
+            torch.arange(0, hidden_size, 2, device=device, dtype=torch.float32)
+            * (-math.log(10000.0) / max(hidden_size, 1))
+        )
+        embeddings = torch.zeros(sequence_length, hidden_size, device=device, dtype=torch.float32)
+        embeddings[:, 0::2] = torch.sin(position * div_term)
+        embeddings[:, 1::2] = torch.cos(position * div_term)
+
+        if hidden_size % 2 == 1:
+            embeddings[:, -1] = 0.0
+
+        return embeddings.to(dtype=dtype)
+
+    def _apply_temporal_embedding(self, feature):
+        if feature is None or feature.numel() == 0:
+            return feature
+        if feature.dim() < 2:
+            return feature
+
+        sequence_length = feature.shape[-2]
+        hidden_size = feature.shape[-1]
+        positional_emb = self._build_sinusoidal_temporal_embedding(
+            sequence_length, hidden_size, feature.device, feature.dtype
+        )
+        if positional_emb is None:
+            return feature
+
+        if feature.dim() == 2:
+            return feature + positional_emb
+        else:
+            return feature + positional_emb.unsqueeze(0)
     
         # divprune
     def pairwise_cosine_similarity(self, matrix):
@@ -214,10 +254,13 @@ class LongVALELLMMetaForCausalLM(ABC):
                         
             concat_feat = []
             if image_feat is not None:
+                image_feat = self._apply_temporal_embedding(image_feat)
                 concat_feat.append(image_feat) 
             if audio_feat is not None:
+                audio_feat = self._apply_temporal_embedding(audio_feat)
                 concat_feat.append(audio_feat)
             if asr_feat is not None:
+                asr_feat = self._apply_temporal_embedding(asr_feat)
                 concat_feat.append(asr_feat)
 
             concat_feat = torch.cat(concat_feat, dim=-2) # [133,4096] every modality is projected to 4096 channels
