@@ -21,7 +21,7 @@ def load_lora(model, lora_path):
     return model
 
 def load_pretrained_model(args, stage2=None, stage3=None):
-    kwargs = {'torch_dtype': torch.float16, 'weights_only' : False} # weights_only=False for pytorch ver issue. 
+    kwargs = {'torch_dtype': torch.float16} # weights_only=False for pytorch ver issue. 
 
     # model_path = os.path.expanduser(args.model_path)
     model_base = args.model_base
