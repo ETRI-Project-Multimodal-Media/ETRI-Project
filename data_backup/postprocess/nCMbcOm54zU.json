@@ -1,0 +1,1076 @@
+{
+  "video_id": "nCMbcOm54zU",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 139.166667,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 16.5,
+        "caption": "The camera pans across a lush green forest, following a path through the undergrowth as a woman's voice can be heard, though her words are unclear.",
+        "children": [],
+        "postprocess": {
+          "event_id": 0,
+          "original_answer": "The camera pans across a lush green forest, following a path through the undergrowth as a woman's voice can be heard, though her words are unclear.",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_0_16.5",
+            "tags": [
+              "forest",
+              "path",
+              "voice"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "forest",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "path",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "",
+                "role": "",
+                "entity": ""
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_0_16.5",
+              "name": "camera pans across forest",
+              "time": {
+                "start": "0",
+                "end": "16.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "nature"
+              ],
+              "scene_topic": "The camera pans across a lush green forest, following a path through the undergrowth as a woman's voice can be heard, though her words are unclear.",
+              "summary": "The camera pans across a forest, following a path.",
+              "implications": "Nature, environment",
+              "modalities": {
+                "visual": "The camera pans across a lush green forest, following a path through the undergrowth as a woman's voice can be heard.",
+                "audio": "woman's voice",
+                "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 16.5,
+        "end_time": 24.5,
+        "children": [],
+        "caption": "A black and white dog, its tail wagging, walks along a dirt path through a lush forest, its paws kicking up dust as a woman's voice can be heard, though she is not visible.",
+        "postprocess": {
+          "event_id": 1,
+          "original_answer": "A black and white dog, its tail wagging, walks along a dirt path through a lush forest, its paws kicking up dust as a woman's voice can be heard, though she is not visible.",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_16.5_24.5",
+            "tags": [
+              "animal",
+              "nature",
+              "dog",
+              "forest",
+              "voice"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "black and white dog",
+                "attributes": {
+                  "species": "dog",
+                  "color": "black and white",
+                  "action": "walking"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "dirt path",
+                "attributes": {
+                  "type": "dirt",
+                  "location": "forest"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "lush forest",
+                "attributes": {
+                  "type": "forest",
+                  "location": "nature"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O001",
+                "role": "voice",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_16.5_24.5",
+              "name": "dog walking in forest",
+              "time": {
+                "start": "16.5",
+                "end": "24.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "nature scene"
+              ],
+              "scene_topic": "A woman's voice can be heard as a dog walks through a forest.",
+              "summary": "A dog walks through a forest while a woman's voice is heard.",
+              "implications": "Minor entertainment event",
+              "modalities": {
+                "visual": "A black and white dog, its tail wagging, walks along a dirt path through a lush forest, its paws kicking up dust as a woman's voice can be heard.",
+                "audio": "woman's voice",
+                "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 24.5,
+        "end_time": 32.5,
+        "children": [],
+        "caption": "A black and white dog, its tail wagging, walks along a dirt path in a lush green forest, its paws kicking up dust as it follows a person who is walking ahead.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "A black and white dog, its tail wagging, walks along a dirt path in a lush green forest, its paws kicking up dust as it follows a person who is walking ahead.",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_24.5_32.5",
+            "tags": [
+              "animal",
+              "dog",
+              "forest",
+              "path",
+              "person"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "black and white dog",
+                "attributes": {
+                  "color": "black and white",
+                  "breed": "",
+                  "size": "",
+                  "age": ""
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "person",
+                "attributes": {
+                  "gender": "",
+                  "age": "",
+                  "clothing": "",
+                  "accessories": ""
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "person",
+                "ref_object": "O002",
+                "role": "walker",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_24.5_32.5",
+              "name": "dog walking with person",
+              "time": {
+                "start": "24.5",
+                "end": "32.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "animal behavior"
+              ],
+              "scene_topic": "A person walks ahead of a dog in a forest.",
+              "summary": "A dog walks along a path in a forest, following a person.",
+              "implications": "Minor entertainment news event",
+              "modalities": {
+                "visual": "A black and white dog, its tail wagging, walks along a dirt path in a lush green forest, its paws kicking up dust as it follows a person who is walking ahead.",
+                "audio": "",
+                "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 32.5,
+        "end_time": 40.5,
+        "caption": "A black and white dog, its tail wagging, walks along a dirt path through a lush green forest, its paws kicking up dust as a woman's voice can be heard saying \"Bye, bye.\"",
+        "children": [],
+        "postprocess": {
+          "event_id": 3,
+          "original_answer": "A black and white dog, its tail wagging, walks along a dirt path through a lush green forest, its paws kicking up dust as a woman's voice can be heard saying \"Bye, bye.\"",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_32.5_40.5",
+            "tags": [
+              "animal",
+              "nature",
+              "dog",
+              "forest",
+              "voice"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "black and white dog",
+                "attributes": {
+                  "color": "black and white",
+                  "breed": "unknown",
+                  "action": "walking"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "dirt path",
+                "attributes": {
+                  "material": "dirt",
+                  "width": "unknown",
+                  "length": "unknown"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "lush green forest",
+                "attributes": {
+                  "type": "forest",
+                  "color": "green",
+                  "density": "lush"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O001",
+                "role": "voice",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_32.5_40.5",
+              "name": "dog walking in forest",
+              "time": {
+                "start": "32.5",
+                "end": "40.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "animal behavior"
+              ],
+              "scene_topic": "A woman's voice can be heard saying 'Bye, bye' as a dog walks in a forest.",
+              "summary": "A dog walks along a dirt path in a lush green forest.",
+              "implications": "Minor entertainment event",
+              "modalities": {
+                "visual": "A black and white dog, its tail wagging, walks along a dirt path through a lush green forest, its paws kicking up dust as a woman's voice can be heard saying 'Bye, bye'.",
+                "audio": "woman's voice saying 'Bye; bye'",
+                "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 40.5,
+        "end_time": 46.5,
+        "children": [],
+        "caption": "A black and white dog walks along a dirt path, its tail wagging excitedly as a woman's voice excitedly exclaims \"Oh my god!\" and \"Oh my god, look at that!\"",
+        "postprocess": {
+          "event_id": 4,
+          "original_answer": "A black and white dog walks along a dirt path, its tail wagging excitedly as a woman's voice excitedly exclaims \"Oh my god!\" and \"Oh my god, look at that!\"",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_40.5_46.5",
+            "tags": [
+              "animal",
+              "dog",
+              "path",
+              "voice",
+              "excitement"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "black and white dog",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "dirt path",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O002",
+                "role": "speaker",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_40.5_46.5",
+              "name": "woman excitedly exclaims",
+              "time": {
+                "start": "40.5",
+                "end": "46.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "animal behavior"
+              ],
+              "scene_topic": "A woman excitedly exclaims while a dog walks along a dirt path.",
+              "summary": "A woman excitedly exclaims while a dog walks along a dirt path.",
+              "implications": "Minor entertainment event",
+              "modalities": {
+                "visual": "A black and white dog walks along a dirt path, its tail wagging excitedly as a woman's voice excitedly exclaims.",
+                "audio": "woman's voice; 'Oh my god'; 'Oh my god; look at that!'",
+                "speech": "Oh my god, look at that!"
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 46.5,
+        "end_time": 50.5,
+        "children": [],
+        "caption": "A black and white dog walks along a dirt path, its tail wagging excitedly as a woman's voice can be heard in the background, saying \"Oh, I'm sorry.\"",
+        "postprocess": {
+          "event_id": 5,
+          "original_answer": "A black and white dog walks along a dirt path, its tail wagging excitedly as a woman's voice can be heard in the background, saying \"Oh, I'm sorry.\"",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_46.5_50.5",
+            "tags": [
+              "animal",
+              "dog",
+              "path",
+              "voice",
+              "apology"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "black and white dog",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_46.5_50.5",
+              "name": "apology",
+              "time": {
+                "start": "46.5",
+                "end": "50.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "animal behavior"
+              ],
+              "scene_topic": "A woman apologizes while a dog walks by",
+              "summary": "A woman apologizes as a dog walks by",
+              "implications": "Minor social interaction",
+              "modalities": {
+                "visual": "A black and white dog walks along a dirt path, its tail wagging excitedly as a woman's voice can be heard in the background.",
+                "audio": "woman's voice 'Oh; I'm sorry'",
+                "speech": "I'm enjoying the beautiful scenery and fresh air after a long rainy spring."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 50.5,
+        "end_time": 61.5,
+        "caption": "A man and a woman are walking their two dogs, a black and white one and a brown and white one, through a sunny forest, the dogs sniffing at the ground as they walk.",
+        "children": [],
+        "postprocess": {
+          "event_id": 6,
+          "original_answer": "A man and a woman are walking their two dogs, a black and white one and a brown and white one, through a sunny forest, the dogs sniffing at the ground as they walk.",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_50.5_61.5",
+            "tags": [
+              "nature",
+              "dogs",
+              "walking",
+              "forest",
+              "sunny"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "woman",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "black and white dog",
+                "attributes": {}
+              },
+              {
+                "object_id": "O004",
+                "name": "brown and white dog",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "actor",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "woman",
+                "ref_object": "O002",
+                "role": "actor",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_50.5_61.5",
+              "name": "Walking with dogs",
+              "time": {
+                "start": "50.5",
+                "end": "61.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "nature scene"
+              ],
+              "scene_topic": "A man and a woman are walking their two dogs through a sunny forest.",
+              "summary": "A man and a woman walk their dogs in a sunny forest.",
+              "implications": "Minor entertainment news event",
+              "modalities": {
+                "visual": "A man and a woman are walking their two dogs, a black and white one and a brown and white one, through a sunny forest, the dogs sniffing at the ground as they walk.",
+                "audio": "",
+                "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 61.5,
+        "end_time": 95.5,
+        "caption": "The two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a lush forest, their paws kicking up dust as they follow their human companion.",
+        "children": [],
+        "postprocess": {
+          "event_id": 7,
+          "original_answer": "The two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a lush forest, their paws kicking up dust as they follow their human companion.",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_61.5_95.5",
+            "tags": [
+              "forest",
+              "dogs",
+              "hiking",
+              "companion",
+              "path"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "black and white dog",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "smaller brown and white dog",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "human companion",
+                "attributes": {}
+              },
+              {
+                "object_id": "O004",
+                "name": "dirt path",
+                "attributes": {}
+              },
+              {
+                "object_id": "O005",
+                "name": "lush forest",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "human companion",
+                "ref_object": "O003",
+                "role": "companion",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_61.5_95.5",
+              "name": "Dogs walking with human companion",
+              "time": {
+                "start": "61.5",
+                "end": "95.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004",
+                "O005"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "animals",
+                "outdoor"
+              ],
+              "scene_topic": "Two dogs walking with their human companion in a forest.",
+              "summary": "The two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a lush forest, their paws kicking up dust as they follow their human companion.",
+              "implications": "A peaceful and serene scene",
+              "modalities": {
+                "visual": "The two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a lush forest, their paws kicking up dust as they follow their human companion.",
+                "audio": "",
+                "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 95.5,
+        "end_time": 109.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 95.5,
+            "end_time": 99.5,
+            "children": [],
+            "caption": "The two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a forest, their paws kicking up dust as they follow their human companion.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "The two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a forest, their paws kicking up dust as they follow their human companion.",
+              "result": {
+                "video_id": "nCMbcOm54zU",
+                "event_id": "E_nCMbcOm54zU_95.5_99.5",
+                "tags": [
+                  "animal",
+                  "nature",
+                  "outdoor"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "black and white dog",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "brown and white dog",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "human companion",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "dirt path",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "forest",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "human companion",
+                    "ref_object": "O003",
+                    "role": "companion",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_nCMbcOm54zU_95.5_99.5",
+                  "name": "Dogs walking with human companion",
+                  "time": {
+                    "start": "95.5",
+                    "end": "99.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "animal behavior"
+                  ],
+                  "scene_topic": "Two dogs walking with their human companion in a forest.",
+                  "summary": "The two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a forest, their paws kicking up dust as they follow their human companion.",
+                  "implications": "Minor entertainment news event",
+                  "modalities": {
+                    "visual": "The two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a forest, their paws kicking up dust as they follow their human companion.",
+                    "audio": "",
+                    "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 99.5,
+            "end_time": 104.5,
+            "children": [],
+            "caption": "A man and a woman are walking their two dogs, a black and white one and a brown and white one, through a sunny forest, the dogs sniffing at the ground as they walk.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "A man and a woman are walking their two dogs, a black and white one and a brown and white one, through a sunny forest, the dogs sniffing at the ground as they walk.",
+              "result": {
+                "video_id": "nCMbcOm54zU",
+                "event_id": "E_nCMbcOm54zU_99.5_104.5",
+                "tags": [
+                  "nature",
+                  "dogs",
+                  "walking",
+                  "forest",
+                  "sunny"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "black and white dog",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "brown and white dog",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "actor",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_nCMbcOm54zU_99.5_104.5",
+                  "name": "Walking with dogs",
+                  "time": {
+                    "start": "99.5",
+                    "end": "104.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "nature scene"
+                  ],
+                  "scene_topic": "A man and a woman are walking their two dogs through a sunny forest.",
+                  "summary": "A man and a woman walk their dogs in a sunny forest.",
+                  "implications": "Minor entertainment news event",
+                  "modalities": {
+                    "visual": "A man and a woman are walking their two dogs, a black and white one and a brown and white one, through a sunny forest, the dogs sniffing at the ground as they walk.",
+                    "audio": "",
+                    "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 104.5,
+            "end_time": 109.5,
+            "children": [],
+            "caption": "Two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a forest, their paws kicking up dust as they follow a man's voice calling out \"Hey, guys!\"",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "Two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a forest, their paws kicking up dust as they follow a man's voice calling out \"Hey, guys!\"",
+              "result": {
+                "video_id": "nCMbcOm54zU",
+                "event_id": "E_nCMbcOm54zU_104.5_109.5",
+                "tags": [
+                  "forest",
+                  "dogs",
+                  "man",
+                  "voice",
+                  "path"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "black and white dog",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "brown and white dog",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_nCMbcOm54zU_104.5_109.5",
+                  "name": "Two dogs walking with a man in a forest",
+                  "time": {
+                    "start": "104.5",
+                    "end": "109.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "nature scene"
+                  ],
+                  "scene_topic": "Two dogs and a man walking in a forest",
+                  "summary": "A man is calling out to two dogs walking along a dirt path in a forest.",
+                  "implications": "A peaceful outdoor scene",
+                  "modalities": {
+                    "visual": "Two dogs, a black and white one and a smaller brown and white one, are walking along a dirt path through a forest, their paws kicking up dust as they follow a man's voice.",
+                    "audio": "man's voice calling out 'Hey; guys!'",
+                    "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man and a woman are walking their two dogs through a sunny forest . The two dogs, a black and white one and a smaller brown and white ones, are walking along a dirt path through a forest, their paws kicking up dust as they follow their human companion .",
+        "summary": "A man and a woman are walking their two dogs, a black and white one and a brown and white one, through a sunny forest, with the dogs sniffing at the ground as they walk. The dogs, a black and white one and a smaller brown and white one, follow their human companion along a dirt path through the forest, kicking up dust with their paws."
+      },
+      {
+        "level": 1,
+        "start_time": 109.5,
+        "end_time": 123.5,
+        "children": [],
+        "caption": "Two dogs playfully running and jumping in a grassy field, their joyful barks echoing in the air . A woman's voice can be heard saying \"Bye, bye\" Two dogs walk side by side on a dirt path through a forest, their tails wagging as they enjoy",
+        "postprocess": {
+          "event_id": 11,
+          "original_answer": "Two dogs playfully running and jumping in a grassy field, their joyful barks echoing in the air . A woman's voice can be heard saying \"Bye, bye\" Two dogs walk side by side on a dirt path through a forest, their tails wagging as they enjoy",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_109_123",
+            "tags": [
+              "dogs",
+              "play",
+              "grass",
+              "forest",
+              "path"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "dogs",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O001",
+                "role": "voice",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_109_123",
+              "name": "Two dogs playfully running and jumping in a grassy field",
+              "time": {
+                "start": "109.5",
+                "end": "123.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "animals",
+                "outdoor"
+              ],
+              "scene_topic": "Two dogs playfully running and jumping in a grassy field, their joyful barks echoing in the air",
+              "summary": "Two dogs playfully running and jumping in a grassy field",
+              "implications": "Cute and joyful scene",
+              "modalities": {
+                "visual": "Two dogs playfully running and jumping in a grassy field, their joyful barks echoing in the air. A woman's voice can be heard saying 'Bye, bye'. Two dogs walk side by side on a dirt path through a forest, their tails wagging as they enjoy.",
+                "audio": "joyful barks; woman's voice saying 'Bye; bye'",
+                "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 123.5,
+        "end_time": 139.166667,
+        "children": [],
+        "caption": "Two dogs, a black and white one and a smaller brown and white one, walk side by side on a dirt path through a forest, their tails wagging as they enjoy the sunny day.",
+        "postprocess": {
+          "event_id": 12,
+          "original_answer": "Two dogs, a black and white one and a smaller brown and white one, walk side by side on a dirt path through a forest, their tails wagging as they enjoy the sunny day.",
+          "result": {
+            "video_id": "nCMbcOm54zU",
+            "event_id": "E_nCMbcOm54zU_123_139",
+            "tags": [
+              "forest",
+              "dogs",
+              "walk",
+              "sunny"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "black and white dog",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "brown and white dog",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "dirt path",
+                "attributes": {}
+              },
+              {
+                "object_id": "O004",
+                "name": "forest",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "black and white dog",
+                "ref_object": "O001",
+                "role": "actor",
+                "entity": "dog"
+              },
+              {
+                "actor_id": "A002",
+                "name": "brown and white dog",
+                "ref_object": "O002",
+                "role": "actor",
+                "entity": "dog"
+              }
+            ],
+            "event": {
+              "event_id": "E_nCMbcOm54zU_123_139",
+              "name": "Two dogs walking in the forest",
+              "time": {
+                "start": "123.5",
+                "end": "139.17"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "animals",
+                "nature"
+              ],
+              "scene_topic": "Two dogs walk side by side in a forest",
+              "summary": "Two dogs, a black and white one and a smaller brown and white one, walk side by side on a dirt path through a forest, their tails wagging as they enjoy the sunny day.",
+              "implications": "A peaceful and joyful scene",
+              "modalities": {
+                "visual": "Two dogs, a black and white one and a smaller brown and white one, walk side by side on a dirt path through a forest, their tails wagging as they enjoy the sunny day.",
+                "audio": "",
+                "speech": "enjoying the beautiful scenery and fresh air after a long rainy spring"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "The camera pans across a lush green forest, following a path through the undergrowth as a woman's voice can be heard, though her words are unclear . A man and a woman are walking their two dogs through a sunny forest, the dogs sniffing at the ground as they walk .",
+    "summary": "A woman's voice is heard throughout a forest scene, accompanied by the sound of a black and white dog's paws kicking up dust as it walks along a dirt path with its human companion. The scene features multiple shots of the dog and its human, as well as a second dog, a brown and white one, and the humans' interactions with the dogs. Two dogs, a black and white one and a smaller brown and white one, accompany their human companion on a dirt path through the forest, playing and enjoying the sunny day. They also run and jump in a grassy field, their joyful barks filling the air."
+  }
+}

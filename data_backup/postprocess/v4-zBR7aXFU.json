@@ -1,0 +1,792 @@
+{
+  "video_id": "v4-zBR7aXFU",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 46.92,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 9.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 4.5,
+            "children": [],
+            "caption": "A police officer, standing beside a parked car, hands a red key to a driver, who is about to start the car.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "A police officer, standing beside a parked car, hands a red key to a driver, who is about to start the car.",
+              "result": {
+                "video_id": "v4_zBR7aXFU",
+                "event_id": "E_v4_zBR7aXFU_0_4.5",
+                "tags": [
+                  "police",
+                  "car",
+                  "key",
+                  "driver"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "police officer",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "parked car",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "driver",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "police officer",
+                    "ref_object": "O001",
+                    "role": "giver",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "driver",
+                    "ref_object": "O003",
+                    "role": "receiver",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_v4_zBR7aXFU_0_4.5",
+                  "name": "Key handover",
+                  "time": {
+                    "start": "0",
+                    "end": "4.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human activity"
+                  ],
+                  "scene_topic": "A police officer hands a key to a driver.",
+                  "summary": "A police officer hands a key to a driver.",
+                  "implications": "Major news event",
+                  "modalities": {
+                    "visual": "A police officer, standing beside a parked car, hands a red key to a driver, who is about to start the car.",
+                    "audio": "",
+                    "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 4.5,
+            "end_time": 9.5,
+            "children": [],
+            "caption": "A man, standing in front of a red and white \"LOCKSMITH KIT\" truck, smiles at the camera as he explains that he's a locksmith and can help customers with any lock-related issues.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A man, standing in front of a red and white \"LOCKSMITH KIT\" truck, smiles at the camera as he explains that he's a locksmith and can help customers with any lock-related issues.",
+              "result": {
+                "video_id": "v4_zBR7aXFU",
+                "event_id": "E_v4_zBR7aXFU_4_9",
+                "tags": [
+                  "locksmith",
+                  "lock",
+                  "service"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "LOCKSMITH KIT truck",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "locksmith",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_v4_zBR7aXFU_4_9",
+                  "name": "Locksmith introduction",
+                  "time": {
+                    "start": "4.5",
+                    "end": "9.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "locksmith",
+                    "service"
+                  ],
+                  "scene_topic": "A man introduces himself as a locksmith and explains his services.",
+                  "summary": "A locksmith introduces himself and his services.",
+                  "implications": "Major service event",
+                  "modalities": {
+                    "visual": "A man stands in front of a red and white 'LOCKSMITH KIT' truck, smiling at the camera, as he explains he's a locksmith and can help customers with any lock-related issues.",
+                    "audio": "",
+                    "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A police officer hands a key to a driver, who is about to start the car . A man explains that he's a locksmith and can help customers with lock-related issues .",
+        "summary": "A police officer hands a red key to a driver, while a locksmith standing nearby explains that he can assist with any lock-related issues."
+      },
+      {
+        "level": 1,
+        "start_time": 9.5,
+        "end_time": 14.5,
+        "children": [],
+        "caption": "A man, standing in front of a red door with the word \"MARKET\" on it, smiles at the camera as he explains that he's a locksmith and can help customers with any lock-related issues.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "A man, standing in front of a red door with the word \"MARKET\" on it, smiles at the camera as he explains that he's a locksmith and can help customers with any lock-related issues.",
+          "result": {
+            "video_id": "v4_zBR7aXFU",
+            "event_id": "E_v4_zBR7aXFU_9_14",
+            "tags": [
+              "locksmith",
+              "lock",
+              "door",
+              "market"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "red door",
+                "attributes": {
+                  "label": "MARKET"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "explainer",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_v4_zBR7aXFU_9_14",
+              "name": "locksmith explains services",
+              "time": {
+                "start": "9.5",
+                "end": "14.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "person",
+                "locksmith"
+              ],
+              "scene_topic": "A man explains his locksmith services in front of a red door.",
+              "summary": "A locksmith explains his services to customers.",
+              "implications": "Major news event for customers seeking lock-related services.",
+              "modalities": {
+                "visual": "A man stands in front of a red door with the word 'MARKET' on it, smiling at the camera.",
+                "audio": "",
+                "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 14.5,
+        "end_time": 25.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 14.5,
+            "end_time": 18.5,
+            "children": [],
+            "caption": "A pair of hands, wearing a dark jacket, carefully fold a pair of blue jeans on a bed as a man's voice continues to promote the security of Master Locks.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "A pair of hands, wearing a dark jacket, carefully fold a pair of blue jeans on a bed as a man's voice continues to promote the security of Master Locks.",
+              "result": {
+                "video_id": "v4_zBR7aXFU",
+                "event_id": "E_v4_zBR7aXFU_14.5_18.5",
+                "tags": [
+                  "security",
+                  "master_locks",
+                  "product_promotion",
+                  "advertising",
+                  "folding"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "blue jeans",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "bed",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "dark jacket",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_v4_zBR7aXFU_14.5_18.5",
+                  "name": "Master Locks product promotion",
+                  "time": {
+                    "start": "14.5",
+                    "end": "18.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "product promotion"
+                  ],
+                  "scene_topic": "A man promotes Master Locks while folding blue jeans on a bed.",
+                  "summary": "A man promotes Master Locks while folding blue jeans on a bed.",
+                  "implications": "Major product promotion event",
+                  "modalities": {
+                    "visual": "A pair of hands, wearing a dark jacket, carefully fold a pair of blue jeans on a bed as a man's voice continues to promote the security of Master Locks.",
+                    "audio": "man's voice",
+                    "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 22.5,
+            "children": [],
+            "caption": "A man, standing in front of a red door with the word \"STORE\" on it, continues his speech about the importance of securing car doors, his voice echoing slightly in the room.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "A man, standing in front of a red door with the word \"STORE\" on it, continues his speech about the importance of securing car doors, his voice echoing slightly in the room.",
+              "result": {
+                "video_id": "v4_zBR7aXFU",
+                "event_id": "E_v4_zBR7aXFU_18.5_22.5",
+                "tags": [
+                  "car_security",
+                  "door_locks",
+                  "safety_tips"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "red door",
+                    "attributes": {
+                      "label": "STORE"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_v4_zBR7aXFU_18.5_22.5",
+                  "name": "speech about car door security",
+                  "time": {
+                    "start": "18.5",
+                    "end": "22.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "safety_tips"
+                  ],
+                  "scene_topic": "A man gives a speech about securing car doors in front of a red door.",
+                  "summary": "A man emphasizes the importance of securing car doors in his speech.",
+                  "implications": "Major safety and security news event",
+                  "modalities": {
+                    "visual": "A man standing in front of a red door with the word 'STORE' on it.",
+                    "audio": "his voice echoing; speech",
+                    "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 22.5,
+            "end_time": 25.5,
+            "children": [],
+            "caption": "A man in a red shirt, standing in front of a brick wall with a company logo, continues his speech about the importance of securing car doors, his voice echoing slightly in the room.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "A man in a red shirt, standing in front of a brick wall with a company logo, continues his speech about the importance of securing car doors, his voice echoing slightly in the room.",
+              "result": {
+                "video_id": "v4_zBR7aXFU",
+                "event_id": "E_v4_zBR7aXFU_22.5_25.5",
+                "tags": [
+                  "car_security",
+                  "speech",
+                  "importance"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "color": "red",
+                      "clothing": "shirt",
+                      "location": "front_of_brick_wall",
+                      "company_logo": "present"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "brick_wall",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "company_logo",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_v4_zBR7aXFU_22.5_25.5",
+                  "name": "speech_on_car_security",
+                  "time": {
+                    "start": "22.5",
+                    "end": "25.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "speech"
+                  ],
+                  "scene_topic": "A man in a red shirt continues his speech about car security",
+                  "summary": "The man emphasizes the importance of securing car doors",
+                  "implications": "Major car security news event",
+                  "modalities": {
+                    "visual": "A man in a red shirt, standing in front of a brick wall with a company logo.",
+                    "audio": "his voice echoing",
+                    "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A pair of hands, wearing a dark jacket, carefully fold a pair of blue jeans on a bed as a man's voice continues to promote the security of Master Locks . A man, standing in front of a red door with the word \"STORE\" on it, continues his",
+        "summary": "A man promotes the security of Master Locks while demonstrating the importance of securing car doors, speaking from different locations in a room. He emphasizes the need for protection, using examples of folding blue jeans and standing in front of a red door with a \"STORE\" sign."
+      },
+      {
+        "level": 1,
+        "start_time": 25.5,
+        "end_time": 32.5,
+        "children": [],
+        "caption": "A man in a red shirt, standing in front of a brick wall with a company logo, continues his speech about the importance of securing car doors, his voice echoing slightly in the room.",
+        "postprocess": {
+          "event_id": 6,
+          "original_answer": "A man in a red shirt, standing in front of a brick wall with a company logo, continues his speech about the importance of securing car doors, his voice echoing slightly in the room.",
+          "result": {
+            "video_id": "v4_zBR7aXFU",
+            "event_id": "E_v4_zBR7aXFU_25.5_32.5",
+            "tags": [
+              "car_security",
+              "importance",
+              "speech",
+              "company_logo"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "color": "red",
+                  "clothing": "shirt",
+                  "location": "front_of_brick_wall"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "brick_wall",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "company_logo",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_v4_zBR7aXFU_25.5_32.5",
+              "name": "speech_about_car_security",
+              "time": {
+                "start": "25.5",
+                "end": "32.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "speech"
+              ],
+              "scene_topic": "A man in a red shirt, standing in front of a brick wall with a company logo, continues his speech about the importance of securing car doors, his voice echoing slightly in the room.",
+              "summary": "The man continues his speech about car security.",
+              "implications": "Major news event in the field of car security",
+              "modalities": {
+                "visual": "A man in a red shirt, standing in front of a brick wall with a company logo.",
+                "audio": "his voice echoing",
+                "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 32.5,
+        "end_time": 36.5,
+        "children": [],
+        "caption": "Two men, one in a red shirt and the other in a black shirt, stand side by side, smiling at the camera as a woman's voice encourages viewers to \"give them a call\" for their locksmith services.",
+        "postprocess": {
+          "event_id": 7,
+          "original_answer": "Two men, one in a red shirt and the other in a black shirt, stand side by side, smiling at the camera as a woman's voice encourages viewers to \"give them a call\" for their locksmith services.",
+          "result": {
+            "video_id": "v4_zBR7aXFU",
+            "event_id": "E_v4_zBR7aXFU_32.5_36.5",
+            "tags": [
+              "locksmith",
+              "services",
+              "advertising",
+              "marketing",
+              "business"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man in red shirt",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "man in black shirt",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "woman's voice",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man in red shirt",
+                "ref_object": "O001",
+                "role": "spokesperson",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "man in black shirt",
+                "ref_object": "O002",
+                "role": "spokesperson",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_v4_zBR7aXFU_32.5_36.5",
+              "name": "Locksmith Services Advertisement",
+              "time": {
+                "start": "32.5",
+                "end": "36.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "advertising",
+                "marketing"
+              ],
+              "scene_topic": "Two men, one in a red shirt and the other in a black shirt, stand side by side, smiling at the camera as a woman's voice encourages viewers to 'give them a call' for their locksmith services.",
+              "summary": "Locksmith services advertisement",
+              "implications": "Major business news event",
+              "modalities": {
+                "visual": "Two men, one in a red shirt and the other in a black shirt, stand side by side, smiling at the camera.",
+                "audio": "woman's voice; 'give them a call'",
+                "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 36.5,
+        "end_time": 40.5,
+        "children": [],
+        "caption": "Three men in matching red shirts and black ties stand in front of a brick wall, smiling and waving at the camera as a woman's voice encourages viewers to contact them for their locksmith needs.",
+        "postprocess": {
+          "event_id": 8,
+          "original_answer": "Three men in matching red shirts and black ties stand in front of a brick wall, smiling and waving at the camera as a woman's voice encourages viewers to contact them for their locksmith needs.",
+          "result": {
+            "video_id": "v4_zBR7aXFU",
+            "event_id": "E_v4_zBR7aXFU_36.5_40.5",
+            "tags": [
+              "locksmith",
+              "locksmith_services",
+              "advertising",
+              "marketing",
+              "business"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "brick_wall",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "camera",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Three men",
+                "ref_object": "",
+                "role": "actors",
+                "entity": "people"
+              },
+              {
+                "actor_id": "A002",
+                "name": "woman",
+                "ref_object": "",
+                "role": "voice",
+                "entity": "people"
+              }
+            ],
+            "event": {
+              "event_id": "E_v4_zBR7aXFU_36.5_40.5",
+              "name": "Locksmith advertisement",
+              "time": {
+                "start": "36.5",
+                "end": "40.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "advertising"
+              ],
+              "scene_topic": "Three men in matching red shirts and black ties stand in front of a brick wall, smiling and waving at the camera as a woman's voice encourages viewers to contact them for their locksmith needs.",
+              "summary": "Locksmith advertisement",
+              "implications": "Major marketing event",
+              "modalities": {
+                "visual": "Three men in matching red shirts and black ties stand in front of a brick wall, smiling and waving at the camera.",
+                "audio": "woman's voice; encouraging voice",
+                "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 40.5,
+        "end_time": 46.92,
+        "children": [],
+        "caption": "The video transitions from a close-up of a man's face to a wider shot of him standing in front of a brick wall, as a woman's voice encourages viewers to contact a locksmith for assistance.",
+        "postprocess": {
+          "event_id": 9,
+          "original_answer": "The video transitions from a close-up of a man's face to a wider shot of him standing in front of a brick wall, as a woman's voice encourages viewers to contact a locksmith for assistance.",
+          "result": {
+            "video_id": "v4_zBR7aXFU",
+            "event_id": "E_v4_zBR7aXFU_40.5_46.92",
+            "tags": [
+              "locksmith",
+              "brick_wall",
+              "man",
+              "woman",
+              "voice"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "brick_wall",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "actor",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "woman",
+                "ref_object": "",
+                "role": "voice",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_v4_zBR7aXFU_40.5_46.92",
+              "name": "man standing in front of brick wall",
+              "time": {
+                "start": "40.5",
+                "end": "46.92"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "non-violent scene"
+              ],
+              "scene_topic": "The video transitions from a close-up of a man's face to a wider shot of him standing in front of a brick wall, as a woman's voice encourages viewers to contact a locksmith for assistance.",
+              "summary": "The video shows a man standing in front of a brick wall, with a woman's voice in the background.",
+              "implications": "Major scene change event",
+              "modalities": {
+                "visual": "The video transitions from a close-up of a man's face to a wider shot of him standing in front of a brick wall.",
+                "audio": "woman's voice",
+                "speech": "If you accidentally put your fog keys in the washing machine, the transponder may be damaged, but a qualified locksmith can replace it and have you back on the road quickly."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "A police officer hands a key to a driver, who is about to start the car . A man explains that he's a locksmith and can help customers with lock-related issues . A woman's voice encourages viewers to \"give them a call\" for their locksmith services .",
+    "summary": "A locksmith promotes the importance of securing car doors, using examples and demonstrations to emphasize the need for protection, while also highlighting the services offered by Master Locks. The video features various individuals, including locksmiths and company representatives, encouraging viewers to contact them for assistance with lock-related issues."
+  }
+}

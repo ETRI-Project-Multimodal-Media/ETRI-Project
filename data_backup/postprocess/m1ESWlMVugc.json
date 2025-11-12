@@ -1,0 +1,694 @@
+{
+  "video_id": "m1ESWlMVugc",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 171.037533,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 39.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 16.5,
+            "caption": "The video showcases a sleek black Chevrolet Cruze parked in a lot, its modern design and shiny exterior highlighted as a woman's voice describes its features.",
+            "children": [],
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "The video showcases a sleek black Chevrolet Cruze parked in a lot, its modern design and shiny exterior highlighted as a woman's voice describes its features.",
+              "result": {
+                "video_id": "m1ESWlMVugc",
+                "event_id": "E_m1ESWlMVugc_0_16.5",
+                "tags": [
+                  "car",
+                  "chevrolet",
+                  "cruze",
+                  "design",
+                  "exterior"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Chevrolet Cruze",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_m1ESWlMVugc_0_16.5",
+                  "name": "",
+                  "time": {
+                    "start": "0",
+                    "end": "16.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "product presentation"
+                  ],
+                  "scene_topic": "A woman describes the features of a sleek black Chevrolet Cruze.",
+                  "summary": "The video showcases a Chevrolet Cruze's design and exterior.",
+                  "implications": "Major product presentation event",
+                  "modalities": {
+                    "visual": "The video showcases a sleek black Chevrolet Cruze parked in a lot, its modern design and shiny exterior highlighted as a woman's voice describes its features.",
+                    "audio": "",
+                    "speech": "The 2019 Chevrolet Cruze offers a range of great options, including a bucket seat and MP3 player, and provides reliability and good looks at an affordable price."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 29.5,
+            "caption": "The sleek black sedan, parked in a lot with other cars in the background, gleams under the sunlight as a woman's voice advertises its features, including a backup camera and Bluetooth connectivity.",
+            "children": [],
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "The sleek black sedan, parked in a lot with other cars in the background, gleams under the sunlight as a woman's voice advertises its features, including a backup camera and Bluetooth connectivity.",
+              "result": {
+                "video_id": "m1ESWlMVugc",
+                "event_id": "E_m1ESWlMVugc_16.5_29.5",
+                "tags": [
+                  "car",
+                  "advertising",
+                  "features",
+                  "backup_camera",
+                  "bluetooth"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "sleek black sedan",
+                    "attributes": {
+                      "color": "black",
+                      "type": "sedan"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "parked cars",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "advertiser",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_m1ESWlMVugc_16.5_29.5",
+                  "name": "Car advertisement",
+                  "time": {
+                    "start": "16.5",
+                    "end": "29.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "product advertisement"
+                  ],
+                  "scene_topic": "A woman advertises the features of a sleek black sedan.",
+                  "summary": "The woman promotes the car's features, including a backup camera and Bluetooth connectivity.",
+                  "implications": "Major consumer goods news event",
+                  "modalities": {
+                    "visual": "The sleek black sedan, parked in a lot with other cars in the background, gleams under the sunlight as a woman's voice advertises its features.",
+                    "audio": "woman's voice; backup camera; Bluetooth connectivity",
+                    "speech": "The 2019 Chevrolet Cruze offers a range of great options, including a bucket seat and MP3 player, and provides reliability and good looks at an affordable price."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 39.5,
+            "caption": "The video showcases a sleek black Chevrolet Spark parked in a lot, its modern design and shiny exterior highlighted as a woman's voice describes its features.",
+            "children": [],
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "The video showcases a sleek black Chevrolet Spark parked in a lot, its modern design and shiny exterior highlighted as a woman's voice describes its features.",
+              "result": {
+                "video_id": "m1ESWlMVugc",
+                "event_id": "E_m1ESWlMVugc_29.5_39.5",
+                "tags": [
+                  "car",
+                  "design",
+                  "features",
+                  "parking",
+                  "lot"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Chevrolet Spark",
+                    "attributes": {
+                      "color": "black",
+                      "exterior": "shiny"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Woman",
+                    "ref_object": "O001",
+                    "role": "narrator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_m1ESWlMVugc_29.5_39.5",
+                  "name": "Chevrolet Spark showcase",
+                  "time": {
+                    "start": "29.5",
+                    "end": "39.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "product showcase"
+                  ],
+                  "scene_topic": "The video showcases a sleek black Chevrolet Spark parked in a lot, its modern design and shiny exterior highlighted as a woman's voice describes its features.",
+                  "summary": "The video showcases a sleek black Chevrolet Spark parked in a lot, its modern design and shiny exterior highlighted as a woman's voice describes its features.",
+                  "implications": "Major product showcase event",
+                  "modalities": {
+                    "visual": "The video showcases a sleek black Chevrolet Spark parked in a lot, its modern design and shiny exterior highlighted as a woman's voice describes its features.",
+                    "audio": "",
+                    "speech": "The 2019 Chevrolet Cruze offers a range of great options, including a bucket seat and MP3 player, and provides reliability and good looks at an affordable price."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The video showcases a sleek black Chevrolet Cruze parked in a lot . The sleek black sedan gleams under the sunlight as a woman's voice advertises its features, including backup camera and Bluetooth connectivity .",
+        "summary": "The video features a sleek black Chevrolet Cruze and Spark parked in a lot, showcasing their modern design and shiny exteriors as a woman's voice highlights their features, including a backup camera and Bluetooth connectivity."
+      },
+      {
+        "level": 1,
+        "start_time": 39.5,
+        "end_time": 64.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 39.5,
+            "end_time": 47.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 39.5,
+                "end_time": 43.5,
+                "children": [],
+                "caption": "The video showcases a sleek black sedan parked in a lot, highlighting its modern design and shiny exterior under the bright sunlight.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The video showcases a sleek black sedan parked in a lot, highlighting its modern design and shiny exterior under the bright sunlight.",
+                  "result": {
+                    "video_id": "m1ESWlMVugc",
+                    "event_id": "E_m1ESWlMVugc_39.5_43.5",
+                    "tags": [
+                      "car",
+                      "design",
+                      "parking",
+                      "lot",
+                      "sunlight"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "sedan",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_m1ESWlMVugc_39.5_43.5",
+                      "name": "Car Showcase",
+                      "time": {
+                        "start": "39.5",
+                        "end": "43.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product presentation"
+                      ],
+                      "scene_topic": "The video showcases a sleek black sedan parked in a lot, highlighting its modern design and shiny exterior under the bright sunlight.",
+                      "summary": "The video showcases a sleek black sedan parked in a lot, highlighting its modern design and shiny exterior under the bright sunlight.",
+                      "implications": "Product presentation",
+                      "modalities": {
+                        "visual": "The video showcases a sleek black sedan parked in a lot, highlighting its modern design and shiny exterior under the bright sunlight.",
+                        "audio": "",
+                        "speech": "The 2019 Chevrolet Cruze offers a range of great options, including a bucket seat and MP3 player, and provides reliability and good looks at an affordable price."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 43.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features, while a woman's voice describes its impressive fuel efficiency.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features, while a woman's voice describes its impressive fuel efficiency.",
+                  "result": {
+                    "video_id": "m1ESWlMVugc",
+                    "event_id": "E_m1ESWlMVugc_43.5_47.5",
+                    "tags": [
+                      "car",
+                      "design",
+                      "features",
+                      "fuel_efficiency",
+                      "parking"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Chevrolet Spark",
+                        "attributes": {
+                          "make": "Chevrolet",
+                          "model": "Spark",
+                          "color": "black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_m1ESWlMVugc_43.5_47.5",
+                      "name": "Car showcase",
+                      "time": {
+                        "start": "43.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product review"
+                      ],
+                      "scene_topic": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features.",
+                      "summary": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features.",
+                      "implications": "Major product review event",
+                      "modalities": {
+                        "visual": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features, a woman's voice describes its impressive fuel efficiency.",
+                        "audio": "",
+                        "speech": "The 2019 Chevrolet Cruze offers a range of great options, including a bucket seat and MP3 player, and provides reliability and good looks at an affordable price."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases a sleek black sedan parked in a lot, highlighting its modern design and shiny exterior under the bright sunlight . A woman's voice describes its impressive fuel efficiency .",
+            "summary": "A sleek black sedan, likely a Chevrolet Spark, is showcased in a lot, highlighting its modern design and features, including impressive fuel efficiency. The vehicle's shiny exterior is displayed under bright sunlight, emphasizing its sleek appearance."
+          },
+          {
+            "level": 2,
+            "start_time": 47.5,
+            "end_time": 64.5,
+            "caption": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features, while a woman's voice describes its impressive fuel efficiency.",
+            "children": [],
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features, while a woman's voice describes its impressive fuel efficiency.",
+              "result": {
+                "video_id": "m1ESWlMVugc",
+                "event_id": "E_m1ESWlMVugc_47.5_64.5",
+                "tags": [
+                  "car",
+                  "design",
+                  "features",
+                  "fuel_efficiency",
+                  "parking"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Chevrolet Spark",
+                    "attributes": {
+                      "make": "Chevrolet",
+                      "model": "Spark",
+                      "color": "black"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Woman",
+                    "ref_object": "O001",
+                    "role": "narrator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_m1ESWlMVugc_47.5_64.5",
+                  "name": "Chevrolet Spark showcase",
+                  "time": {
+                    "start": "47.5",
+                    "end": "64.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "product showcase"
+                  ],
+                  "scene_topic": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features.",
+                  "summary": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features.",
+                  "implications": "Major product showcase event",
+                  "modalities": {
+                    "visual": "The video showcases a black Chevrolet Spark parked in a lot, highlighting its sleek design and modern features, a woman's voice describes its impressive fuel efficiency.",
+                    "audio": "",
+                    "speech": "The 2019 Chevrolet Cruze offers a range of great options, including a bucket seat and MP3 player, and provides reliability and good looks at an affordable price."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The video showcases a sleek black sedan parked in a lot, highlighting its modern design and shiny exterior under the bright sunlight . A woman's voice describes its impressive fuel efficiency .",
+        "summary": "A sleek black Chevrolet Spark is showcased in a lot, highlighting its modern design and impressive fuel efficiency, with its shiny exterior displayed under bright sunlight. The vehicle's features are described by a woman's voice, emphasizing its sleek appearance and fuel-efficient capabilities."
+      },
+      {
+        "level": 1,
+        "start_time": 64.5,
+        "end_time": 130.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 64.5,
+            "end_time": 85.5,
+            "caption": "The camera pans across the sleek, black sedan, highlighting its shiny exterior and modern design, as a woman's voice continues to describe its features.",
+            "children": [],
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "The camera pans across the sleek, black sedan, highlighting its shiny exterior and modern design, as a woman's voice continues to describe its features.",
+              "result": {
+                "video_id": "m1ESWlMVugc",
+                "event_id": "E_m1ESWlMVugc_64.5_85.5",
+                "tags": [
+                  "car",
+                  "sedan",
+                  "design"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "sedan",
+                    "attributes": {
+                      "color": "black",
+                      "design": "modern"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": "woman"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_m1ESWlMVugc_64.5_85.5",
+                  "name": "",
+                  "time": {
+                    "start": "64.5",
+                    "end": "85.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "product presentation"
+                  ],
+                  "scene_topic": "The camera pans across the sleek, black sedan, highlighting its shiny exterior and modern design, as a woman's voice continues to describe its features.",
+                  "summary": "The camera shows a black sedan's design features.",
+                  "implications": "Major product presentation event",
+                  "modalities": {
+                    "visual": "The camera pans across the sleek, black sedan, highlighting its shiny exterior and modern design.",
+                    "audio": "",
+                    "speech": "The 2019 Chevrolet Cruze offers a range of great options, including a bucket seat and MP3 player, and provides reliability and good looks at an affordable price."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 85.5,
+            "end_time": 130.5,
+            "caption": "The camera pans across the sleek, modern interior of the car, showcasing the spacious backseat and the dashboard with its digital display and various controls, while upbeat pop music plays on the car stereo.",
+            "children": [],
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "The camera pans across the sleek, modern interior of the car, showcasing the spacious backseat and the dashboard with its digital display and various controls, while upbeat pop music plays on the car stereo.",
+              "result": {
+                "video_id": "m1ESWlMVugc",
+                "event_id": "E_m1ESWlMVugc_85_130",
+                "tags": [
+                  "car",
+                  "interior",
+                  "dashboard",
+                  "music",
+                  "pop"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "car",
+                    "attributes": {
+                      "type": "vehicle",
+                      "interior": "sleek",
+                      "modern": "true"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "backseat",
+                    "attributes": {
+                      "type": "seating",
+                      "spacious": "true"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "dashboard",
+                    "attributes": {
+                      "type": "control_panel",
+                      "digital_display": "true",
+                      "various_controls": "true"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "car_stereo",
+                    "attributes": {
+                      "type": "audio_system",
+                      "plays_music": "true"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_m1ESWlMVugc_85_130",
+                  "name": "",
+                  "time": {
+                    "start": "85.5",
+                    "end": "130.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "car interior"
+                  ],
+                  "scene_topic": "The camera pans across the sleek, modern interior of the car, showcasing the spacious backseat and the dashboard with its digital display and various controls, while upbeat pop music plays on the car stereo.",
+                  "summary": "The camera shows the interior of a car.",
+                  "implications": "Major automotive, design news event",
+                  "modalities": {
+                    "visual": "The camera pans across the sleek, modern interior of the car, showcasing the spacious backseat and the dashboard with its digital display and various controls.",
+                    "audio": "upbeat pop music",
+                    "speech": "The 2019 Chevrolet Cruze offers a range of great options, including a bucket seat and MP3 player, and provides reliability and good looks at an affordable price."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The camera pans across the sleek, black sedan, highlighting its shiny exterior and modern design, as a woman's voice continues to describe its features .",
+        "summary": "The camera showcases the sleek, black sedan's exterior and interior, highlighting its modern design, spacious backseat, and digital dashboard with various controls. Upbeat pop music plays in the background as the camera pans across the car's features."
+      },
+      {
+        "level": 1,
+        "start_time": 130.5,
+        "end_time": 171.037533,
+        "children": [],
+        "caption": "The camera pans across the sleek, modern interior of the car, showcasing the dashboard with its digital display and various controls, while upbeat pop music plays on the car stereo.",
+        "postprocess": {
+          "event_id": 8,
+          "original_answer": "The camera pans across the sleek, modern interior of the car, showcasing the dashboard with its digital display and various controls, while upbeat pop music plays on the car stereo.",
+          "result": {
+            "video_id": "m1ESWlMVugc",
+            "event_id": "E_m1ESWlMVugc_130.5_171.04",
+            "tags": [
+              "car",
+              "dashboard",
+              "digital_display",
+              "car_stereo",
+              "pop_music"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "car",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "dashboard",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "digital_display",
+                "attributes": {}
+              },
+              {
+                "object_id": "O004",
+                "name": "car_stereo",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "",
+                "ref_object": "O001",
+                "role": "",
+                "entity": ""
+              }
+            ],
+            "event": {
+              "event_id": "E_m1ESWlMVugc_130.5_171.04",
+              "name": "",
+              "time": {
+                "start": "130.5",
+                "end": "171.04"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "car"
+              ],
+              "scene_topic": "The camera pans across the sleek, modern interior of the car, showcasing the dashboard with its digital display and various controls, while upbeat pop music plays on the car stereo.",
+              "summary": "The camera pans across the car's interior, showing the dashboard and car stereo.",
+              "implications": "Major car, automotive news event",
+              "modalities": {
+                "visual": "The camera pans across the sleek, modern interior of the car, showcasing the dashboard with its digital display and various controls.",
+                "audio": "upbeat pop music",
+                "speech": "The 2019 Chevrolet Cruze offers a range of great options, including a bucket seat and MP3 player, and provides reliability and good looks at an affordable price."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "The video showcases a sleek black Chevrolet Cruze parked in a lot . The sleek black sedan gleams under the sunlight as a woman's voice advertises its features, including backup camera and Bluetooth connectivity .",
+    "summary": "The video showcases the sleek design and features of a black Chevrolet Cruze and Spark, highlighting their modern exteriors, fuel efficiency, and interior amenities such as a backup camera, Bluetooth connectivity, and digital dashboard. Upbeat pop music plays in the background as the camera pans across the cars' features, emphasizing their sleek appearance and capabilities."
+  }
+}

@@ -1,0 +1,2105 @@
+{
+  "video_id": "tNeWPZw0Igw",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 327.633333,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 36.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 13.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "The news broadcast opens with a split-screen showing two female anchors at their desks, one in a white blouse and the other in a black top, as they introduce the story of flooding in the region.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The news broadcast opens with a split-screen showing two female anchors at their desks, one in a white blouse and the other in a black top, as they introduce the story of flooding in the region.",
+                  "result": {
+                    "video_id": "tNeWPZw0Igw",
+                    "event_id": "E_tNeWPZw0Igw_0_3.5",
+                    "tags": [
+                      "news",
+                      "flood",
+                      "anchors",
+                      "split_screen"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "anchors",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "female anchors",
+                        "ref_object": "O001",
+                        "role": "anchor",
+                        "entity": "people"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_tNeWPZw0Igw_0_3.5",
+                      "name": "news broadcast",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "news"
+                      ],
+                      "scene_topic": "The news broadcast opens with a split-screen showing two female anchors at their desks, one in a white blouse and the other in a black top, as they introduce the story of flooding in the region.",
+                      "summary": "The news broadcast opens with a split-screen showing two female anchors at their desks, one in a white blouse and the other in a black top, as they introduce the story of flooding in the region.",
+                      "implications": "Major news event",
+                      "modalities": {
+                        "visual": "The news broadcast opens with a split-screen showing two female anchors at their desks, one in a white blouse and the other in a black top, as they introduce the story of flooding in the region.",
+                        "audio": "",
+                        "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 13.5,
+                "children": [],
+                "caption": "The news anchor, dressed in a white shirt and black blazer, sits at her desk in the studio, reporting on the flooding in Mogadishu, Somalia, as the scene transitions to show the flooded streets and buildings.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The news anchor, dressed in a white shirt and black blazer, sits at her desk in the studio, reporting on the flooding in Mogadishu, Somalia, as the scene transitions to show the flooded streets and buildings.",
+                  "result": {
+                    "video_id": "tNeWPZw0Igw",
+                    "event_id": "E_tNeWPZw0Igw_3_13",
+                    "tags": [
+                      "flood",
+                      "mogadishu",
+                      "somalia",
+                      "news",
+                      "reporting"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "news anchor",
+                        "attributes": {
+                          "clothing": "white shirt and black blazer",
+                          "location": "studio"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "flooded streets and buildings",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "news anchor",
+                        "ref_object": "O001",
+                        "role": "reporter",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_tNeWPZw0Igw_3_13",
+                      "name": "reporting on flooding in Mogadishu",
+                      "time": {
+                        "start": "3.5",
+                        "end": "13.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "news"
+                      ],
+                      "scene_topic": "The news anchor reports on flooding in Mogadishu, Somalia, as the scene transitions to show the flooded streets and buildings.",
+                      "summary": "The news anchor reports on flooding in Mogadishu, Somalia.",
+                      "implications": "Major news event",
+                      "modalities": {
+                        "visual": "The news anchor sits at her desk in the studio, the scene transitions to show the flooded streets and buildings.",
+                        "audio": "",
+                        "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes. Residents are calling for the county and national governments to take more action to address the long-standing issue, as the current situation is causing concern and disrupting daily life."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The news broadcast opens with a split-screen showing two female anchors at their desks . They introduce the story of flooding in the region as they report on the flooding in Mogadishu .",
+            "summary": "A news broadcast reports on flooding in Mogadishu, Somalia, with footage showing flooded streets and buildings. The news anchor describes the situation, providing a visual representation of the devastation."
+          },
+          {
+            "level": 2,
+            "start_time": 13.5,
+            "end_time": 26.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 13.5,
+                "end_time": 17.5,
+                "children": [],
+                "caption": "The camera pans across a flooded landscape, showing a man in a yellow vest standing in the water, his face etched with concern as he speaks to someone off-camera about the rising water levels.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The camera pans across a flooded landscape, showing a man in a yellow vest standing in the water, his face etched with concern as he speaks to someone off-camera about the rising water levels.",
+                  "result": {
+                    "video_id": "tNeWPZw0Igw",
+                    "event_id": "E_tNeWPZw0Igw_13.5_17.5",
+                    "tags": [
+                      "flood",
+                      "water_level",
+                      "concern",
+                      "warning",
+                      "emergency"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "yellow vest",
+                          "expression": "concern"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_tNeWPZw0Igw_13.5_17.5",
+                      "name": "Flood warning",
+                      "time": {
+                        "start": "13.5",
+                        "end": "17.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "natural disaster"
+                      ],
+                      "scene_topic": "The camera pans across a flooded landscape, showing a man in a yellow vest standing in the water, his face etched with concern as he speaks to someone off-camera about the rising water levels.",
+                      "summary": "A man warns about rising water levels in a flooded landscape.",
+                      "implications": "Major emergency news event",
+                      "modalities": {
+                        "visual": "The camera pans across a flooded landscape, showing a man in a yellow vest standing in the water, his face etched with concern as he speaks to someone off-camera about the rising water levels.",
+                        "audio": "speaks",
+                        "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 17.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "The camera pans across a flooded street, showing the aftermath of heavy rainfall, with debris and water covering the ground and buildings in the background.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The camera pans across a flooded street, showing the aftermath of heavy rainfall, with debris and water covering the ground and buildings in the background.",
+                  "result": {
+                    "video_id": "tNeWPZw0Igw",
+                    "event_id": "E_tNeWPZw0Igw_17.5_21.5",
+                    "tags": [
+                      "weather",
+                      "flood",
+                      "rainfall",
+                      "debris",
+                      "aftermath"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "flooded street",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "debris",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "water",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "buildings",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_tNeWPZw0Igw_17.5_21.5",
+                      "name": "Heavy rainfall aftermath",
+                      "time": {
+                        "start": "17.5",
+                        "end": "21.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "weather news"
+                      ],
+                      "scene_topic": "The camera pans across a flooded street, showing the aftermath of heavy rainfall, with debris and water covering the ground and buildings in the background.",
+                      "summary": "The camera shows the aftermath of heavy rainfall, with a flooded street and debris.",
+                      "implications": "Major weather news event",
+                      "modalities": {
+                        "visual": "The camera pans across a flooded street, showing the aftermath of heavy rainfall, with debris and water covering the ground and buildings in the background.",
+                        "audio": "",
+                        "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 26.5,
+                "children": [],
+                "caption": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground, as a man's voice narrates the devastating impact of the floods.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground, as a man's voice narrates the devastating impact of the floods.",
+                  "result": {
+                    "video_id": "tNeWPZw0Igw",
+                    "event_id": "E_tNeWPZw0Igw_21.5_26.5",
+                    "tags": [
+                      "flood",
+                      "natural_disaster",
+                      "weather",
+                      "environment",
+                      "damage"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "flooded_street",
+                        "attributes": {
+                          "water_depth": "",
+                          "debris": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_tNeWPZw0Igw_21.5_26.5",
+                      "name": "Flood damage",
+                      "time": {
+                        "start": "21.5",
+                        "end": "26.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "natural_disaster"
+                      ],
+                      "scene_topic": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground, as a man's voice narrates the devastating impact of the floods.",
+                      "summary": "The camera shows the devastating impact of the floods on a street.",
+                      "implications": "Major environmental and infrastructure damage",
+                      "modalities": {
+                        "visual": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground.",
+                        "audio": "man's voice narration",
+                        "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The camera pans across a flooded landscape, showing a man in a yellow vest standing in the water, his face etched with concern as he speaks to someone off-camera about the rising water levels .",
+            "summary": "A man in a yellow vest stands in floodwaters, expressing concern about rising levels, as the camera shows the aftermath of heavy rainfall with debris and water covering the ground and buildings. The devastating impact of the floods is narrated, highlighting the depth of the water and scattered debris on the ground."
+          },
+          {
+            "level": 2,
+            "start_time": 26.5,
+            "end_time": 36.5,
+            "caption": "The camera pans across a flooded field, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods.",
+            "children": [],
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "The camera pans across a flooded field, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_26.5_36.5",
+                "tags": [
+                  "flood",
+                  "damage",
+                  "field",
+                  "voiceover",
+                  "foreign_language"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "flooded_field",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_26.5_36.5",
+                  "name": "Flood damage description",
+                  "time": {
+                    "start": "26.5",
+                    "end": "36.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "natural_disaster"
+                  ],
+                  "scene_topic": "The camera pans across a flooded field, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods.",
+                  "summary": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                  "implications": "Major economics,finance news event",
+                  "modalities": {
+                    "visual": "The camera pans across a flooded field, showing the extent of the damage.",
+                    "audio": "Man's voice; speaking in a foreign language; crowd reactions.",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The news broadcast opens with a split-screen showing two female anchors at their desks . They introduce the story of flooding in the region as they report on the flooding in Mogadishu . The camera pans across a flooded landscape, showing the extent of the damage .",
+        "summary": "Heavy rainfall has caused widespread flooding in Mogadishu, Somalia, with footage showing streets and buildings submerged in water and debris scattered across the ground. The devastating impact of the floods is evident, with the water reaching significant depths and the extent of the damage visible in a flooded field."
+      },
+      {
+        "level": 1,
+        "start_time": 36.5,
+        "end_time": 55.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 36.5,
+            "end_time": 41.5,
+            "children": [],
+            "caption": "The camera pans across a flooded field, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "The camera pans across a flooded field, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_36.5_41.5",
+                "tags": [
+                  "flood",
+                  "damage",
+                  "field",
+                  "voiceover",
+                  "foreign_language"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "flooded_field",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_36.5_41.5",
+                  "name": "Flood damage description",
+                  "time": {
+                    "start": "36.5",
+                    "end": "41.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "natural_disaster"
+                  ],
+                  "scene_topic": "The camera pans across a flooded field, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods.",
+                  "summary": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                  "implications": "Major economics,finance news event",
+                  "modalities": {
+                    "visual": "The camera pans across a flooded field, showing the extent of the damage.",
+                    "audio": "Man's voice; speaking in a foreign language; crowd reactions.",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 41.5,
+            "end_time": 49.5,
+            "caption": "As the news report continues, the camera focuses on a woman in a yellow raincoat, standing in the floodwaters, her face etched with concern as she listens to the man's report about the rising water levels.",
+            "children": [],
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "As the news report continues, the camera focuses on a woman in a yellow raincoat, standing in the floodwaters, her face etched with concern as she listens to the man's report about the rising water levels.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_41.5_49.5",
+                "tags": [
+                  "flood",
+                  "water_levels",
+                  "news_report",
+                  "weather"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "report_listener",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "reporter",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_41.5_49.5",
+                  "name": "News Report on Rising Water Levels",
+                  "time": {
+                    "start": "41.5",
+                    "end": "49.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather news"
+                  ],
+                  "scene_topic": "A woman listens to a man's report about rising water levels in a flood.",
+                  "summary": "A news report about rising water levels in a flood.",
+                  "implications": "Major weather news event",
+                  "modalities": {
+                    "visual": "As the news report continues, the camera focuses on a woman in a yellow raincoat, standing in the floodwaters, her face etched with concern.",
+                    "audio": "",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 49.5,
+            "end_time": 55.5,
+            "children": [],
+            "caption": "A woman, wearing a bright yellow raincoat and a wide-brimmed hat, stands in the rain, her umbrella held high as she speaks to the camera about the heavy rainfall and its impact on the area.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "A woman, wearing a bright yellow raincoat and a wide-brimmed hat, stands in the rain, her umbrella held high as she speaks to the camera about the heavy rainfall and its impact on the area.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_49.5_55.5",
+                "tags": [
+                  "weather",
+                  "rainfall",
+                  "raincoat",
+                  "umbrella"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {
+                      "raincoat": "bright yellow",
+                      "hat": "wide-brimmed",
+                      "umbrella": "held high"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_49.5_55.5",
+                  "name": "woman talks about heavy rainfall",
+                  "time": {
+                    "start": "49.5",
+                    "end": "55.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather news"
+                  ],
+                  "scene_topic": "A woman speaks to the camera about heavy rainfall.",
+                  "summary": "A woman talks about the impact of heavy rainfall on the area.",
+                  "implications": "Major weather news event",
+                  "modalities": {
+                    "visual": "A woman, wearing a bright yellow raincoat and a wide-brimmed hat, stands in the rain, her umbrella held high as she speaks to the camera about the heavy rainfall and its impact on the area.",
+                    "audio": "",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The camera pans across a flooded field, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods . The camera focuses on a woman in a yellow raincoat, standing in the floodwaters, her face etched with concern",
+        "summary": "A man's voice describes the devastating impact of floods in a foreign language as the camera shows the extent of the damage. A woman in a yellow raincoat stands in the floodwaters, listening to the report, while another woman in a yellow raincoat and hat speaks to the camera about the heavy rainfall and its effects on the area."
+      },
+      {
+        "level": 1,
+        "start_time": 55.5,
+        "end_time": 103.5,
+        "caption": "A woman, wearing a bright yellow raincoat and a wide-brimmed hat, stands in the rain, her umbrella held high as she speaks to the camera about the heavy rainfall and its impact on the area.",
+        "children": [],
+        "postprocess": {
+          "event_id": 9,
+          "original_answer": "A woman, wearing a bright yellow raincoat and a wide-brimmed hat, stands in the rain, her umbrella held high as she speaks to the camera about the heavy rainfall and its impact on the area.",
+          "result": {
+            "video_id": "tNeWPZw0Igw",
+            "event_id": "E_tNeWPZw0Igw_55_103",
+            "tags": [
+              "weather",
+              "rainfall",
+              "raincoat",
+              "umbrella"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "woman",
+                "attributes": {
+                  "raincoat": "bright yellow",
+                  "hat": "wide-brimmed"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "umbrella",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_tNeWPZw0Igw_55_103",
+              "name": "woman talks about heavy rainfall",
+              "time": {
+                "start": "55.5",
+                "end": "103.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "weather news"
+              ],
+              "scene_topic": "A woman speaks to the camera about heavy rainfall.",
+              "summary": "A woman talks about the impact of heavy rainfall.",
+              "implications": "Major weather news event",
+              "modalities": {
+                "visual": "A woman, wearing a bright yellow raincoat and a wide-brimmed hat, stands in the rain, her umbrella held high as she speaks to the camera about the heavy rainfall and its impact on the area.",
+                "audio": "",
+                "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 103.5,
+        "end_time": 110.5,
+        "children": [],
+        "caption": "A man in a yellow vest stands in the floodwaters, gesturing as he speaks to someone off-camera about the heavy rainfall and its impact on the area.",
+        "postprocess": {
+          "event_id": 10,
+          "original_answer": "A man in a yellow vest stands in the floodwaters, gesturing as he speaks to someone off-camera about the heavy rainfall and its impact on the area.",
+          "result": {
+            "video_id": "tNeWPZw0Igw",
+            "event_id": "E_tNeWPZw0Igw_103.5_110.5",
+            "tags": [
+              "weather",
+              "flood",
+              "rainfall",
+              "community"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "clothing": "yellow vest"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_tNeWPZw0Igw_103.5_110.5",
+              "name": "Man speaks about heavy rainfall",
+              "time": {
+                "start": "103.5",
+                "end": "110.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "weather news"
+              ],
+              "scene_topic": "A man in a yellow vest stands in the floodwaters, gesturing as he speaks to someone off-camera about the heavy rainfall and its impact on the area.",
+              "summary": "The man speaks about the heavy rainfall and its impact on the area.",
+              "implications": "Major weather news event",
+              "modalities": {
+                "visual": "A man in a yellow vest stands in the floodwaters, gesturing as he speaks to someone off-camera.",
+                "audio": "speaking; heavy rainfall",
+                "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 110.5,
+        "end_time": 125.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 110.5,
+            "end_time": 115.5,
+            "children": [],
+            "caption": "A man in a yellow vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "A man in a yellow vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_110.5_115.5",
+                "tags": [
+                  "rainfall",
+                  "flood",
+                  "city",
+                  "weather",
+                  "storm"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "wearing": "yellow vest",
+                      "gesturing": "to camera"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "bridge",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "flooded street",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_110.5_115.5",
+                  "name": "Heavy rainfall and its impact on the city",
+                  "time": {
+                    "start": "110.5",
+                    "end": "115.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather news"
+                  ],
+                  "scene_topic": "A man in a yellow vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+                  "summary": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                  "implications": "Major economics,finance news event",
+                  "modalities": {
+                    "visual": "A man in a yellow vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+                    "audio": "",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 115.5,
+            "end_time": 119.5,
+            "children": [],
+            "caption": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded river, gesturing as he speaks to the camera about the heavy rainfall and its impact on the area.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded river, gesturing as he speaks to the camera about the heavy rainfall and its impact on the area.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_115.5_119.5",
+                "tags": [
+                  "rainfall",
+                  "flood",
+                  "heavy_rain",
+                  "bridge",
+                  "river"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "wearing": "safety vest"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "bridge",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "river",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_115.5_119.5",
+                  "name": "man talks about heavy rainfall",
+                  "time": {
+                    "start": "115.5",
+                    "end": "119.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather news"
+                  ],
+                  "scene_topic": "A man stands on a bridge over a flooded river, gesturing as he speaks to the camera about the heavy rainfall.",
+                  "summary": "The man talks about the impact of heavy rainfall on the area.",
+                  "implications": "Major weather news event",
+                  "modalities": {
+                    "visual": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded river, gesturing as he speaks to the camera about the heavy rainfall and its impact on the area.",
+                    "audio": "",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 119.5,
+            "end_time": 125.5,
+            "children": [],
+            "caption": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground, as a man's voice continues to report on the flooding in Mukono, urging viewers to stay safe.",
+            "postprocess": {
+              "event_id": 13,
+              "original_answer": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground, as a man's voice continues to report on the flooding in Mukono, urging viewers to stay safe.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_119_125",
+                "tags": [
+                  "flood",
+                  "mukono",
+                  "reporting",
+                  "safety"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "flooded street",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "water",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "debris",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man's voice",
+                    "ref_object": "O001",
+                    "role": "reporter",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_119_125",
+                  "name": "Flood report in Mukono",
+                  "time": {
+                    "start": "119.5",
+                    "end": "125.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "natural disaster news"
+                  ],
+                  "scene_topic": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground, as a man's voice continues to report on the flooding in Mukono, urging viewers to stay safe.",
+                  "summary": "Flood report in Mukono",
+                  "implications": "Major news event",
+                  "modalities": {
+                    "visual": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground.",
+                    "audio": "a man's voice; reporting; urging viewers to stay safe.",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man in a yellow vest stands on a bridge over a flooded river, gesturing as he speaks to the camera about the heavy rainfall and its impact on the area . The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground .",
+        "summary": "Heavy rainfall has caused widespread flooding in Mukono, with streets and rivers overflowing and debris scattered on the ground. A reporter on the scene is urging viewers to stay safe as the city deals with the aftermath of the storm."
+      },
+      {
+        "level": 1,
+        "start_time": 125.5,
+        "end_time": 129.5,
+        "children": [],
+        "caption": "A man in a yellow vest stands in the floodwaters, gesturing as he speaks to someone off-camera about the heavy rainfall and its impact on the area.",
+        "postprocess": {
+          "event_id": 14,
+          "original_answer": "A man in a yellow vest stands in the floodwaters, gesturing as he speaks to someone off-camera about the heavy rainfall and its impact on the area.",
+          "result": {
+            "video_id": "tNeWPZw0Igw",
+            "event_id": "E_tNeWPZw0Igw_125_129",
+            "tags": [
+              "weather",
+              "flood",
+              "rainfall",
+              "storm",
+              "emergency"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "clothing": "yellow vest",
+                  "gesturing": "true"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_tNeWPZw0Igw_125_129",
+              "name": "Heavy Rainfall and Floods",
+              "time": {
+                "start": "125.5",
+                "end": "129.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "weather news"
+              ],
+              "scene_topic": "A man in a yellow vest stands in the floodwaters, gesturing as he speaks to someone off-camera about the heavy rainfall and its impact on the area.",
+              "summary": "The man discusses the heavy rainfall and its effects on the area.",
+              "implications": "Major weather news event",
+              "modalities": {
+                "visual": "A man in a yellow vest stands in the floodwaters, gesturing as he speaks to someone off-camera.",
+                "audio": "speaking; heavy rainfall",
+                "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 129.5,
+        "end_time": 186.5,
+        "caption": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+        "children": [],
+        "postprocess": {
+          "event_id": 15,
+          "original_answer": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+          "result": {
+            "video_id": "tNeWPZw0Igw",
+            "event_id": "E_tNeWPZw0Igw_129_186",
+            "tags": [
+              "rainfall",
+              "flood",
+              "city",
+              "weather",
+              "storm"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "wearing": "safety vest"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "bridge",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "street",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_tNeWPZw0Igw_129_186",
+              "name": "Heavy Rainfall and Flood Impact",
+              "time": {
+                "start": "129.5",
+                "end": "186.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "weather news"
+              ],
+              "scene_topic": "A man speaks about heavy rainfall and its impact on the city.",
+              "summary": "The man discusses the effects of heavy rainfall on the city.",
+              "implications": "Major weather news event",
+              "modalities": {
+                "visual": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+                "audio": "",
+                "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 186.5,
+        "end_time": 209.5,
+        "caption": "A man in a \"Makola News\" shirt, standing in front of a flooded street, speaks into a microphone, his voice amplified by the camera as he reports on the heavy rainfall and its impact on the city.",
+        "children": [],
+        "postprocess": {
+          "event_id": 16,
+          "original_answer": "A man in a \"Makola News\" shirt, standing in front of a flooded street, speaks into a microphone, his voice amplified by the camera as he reports on the heavy rainfall and its impact on the city.",
+          "result": {
+            "video_id": "tNeWPZw0Igw",
+            "event_id": "E_tNeWPZw0Igw_186_209",
+            "tags": [
+              "weather",
+              "rainfall",
+              "flood",
+              "reporting"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "clothing": "Makola News shirt"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "microphone",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "camera",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "reporter",
+                "ref_object": "O001",
+                "role": "reporter",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_tNeWPZw0Igw_186_209",
+              "name": "reporting on heavy rainfall",
+              "time": {
+                "start": "186.5",
+                "end": "209.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "weather news"
+              ],
+              "scene_topic": "A man reports on heavy rainfall and its impact on the city.",
+              "summary": "A reporter reports on the heavy rainfall and its impact on the city.",
+              "implications": "Major weather news event",
+              "modalities": {
+                "visual": "A man in a 'Makola News' shirt, standing in front of a flooded street.",
+                "audio": "speaks; amplified voice; reporting",
+                "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes. Residents are calling for the county and national governments to take more action to address the long-standing issue, as the current situation is causing concern and disrupting daily life."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 209.5,
+        "end_time": 228.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 209.5,
+            "end_time": 213.5,
+            "children": [],
+            "caption": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+            "postprocess": {
+              "event_id": 17,
+              "original_answer": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_209.5_213.5",
+                "tags": [
+                  "rainfall",
+                  "flood",
+                  "city",
+                  "weather",
+                  "storm"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "wearing": "safety vest"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "bridge",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "street",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_209.5_213.5",
+                  "name": "Man discusses heavy rainfall and its impact on the city",
+                  "time": {
+                    "start": "209.5",
+                    "end": "213.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather news"
+                  ],
+                  "scene_topic": "A man discusses the impact of heavy rainfall on the city",
+                  "summary": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+                  "implications": "Major weather news event",
+                  "modalities": {
+                    "visual": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+                    "audio": "",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 213.5,
+            "end_time": 228.5,
+            "caption": "A man in a \"Makola News\" shirt, standing in front of a flooded street, speaks into a microphone, his voice amplified by the camera as he reports on the heavy rainfall and its impact on the city.",
+            "children": [],
+            "postprocess": {
+              "event_id": 18,
+              "original_answer": "A man in a \"Makola News\" shirt, standing in front of a flooded street, speaks into a microphone, his voice amplified by the camera as he reports on the heavy rainfall and its impact on the city.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_213_228",
+                "tags": [
+                  "weather",
+                  "rainfall",
+                  "flood",
+                  "reporting"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "clothing": "Makola News shirt"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "microphone",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "camera",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "reporter",
+                    "ref_object": "O001",
+                    "role": "reporter",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_213_228",
+                  "name": "reporting on heavy rainfall",
+                  "time": {
+                    "start": "213.5",
+                    "end": "228.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather news"
+                  ],
+                  "scene_topic": "A reporter reports on heavy rainfall and its impact on the city.",
+                  "summary": "A reporter reports on heavy rainfall and its impact on the city.",
+                  "implications": "Major weather news event",
+                  "modalities": {
+                    "visual": "A man in a 'Makola News' shirt, standing in front of a flooded street.",
+                    "audio": "speaks; amplified voice; reporting",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes. Residents are calling for the county and national governments to take more action to address the long-standing issue, as the current situation is causing concern and disrupting daily life."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man in a yellow hard hat and safety vest stands on a bridge over a flooded street . He speaks to the camera about the heavy rainfall and its impact on the city .",
+        "summary": "Heavy rainfall has caused widespread flooding in the city, with streets submerged under water, as seen in footage of a man in a yellow hard hat and safety vest standing on a bridge and a reporter from \"Makola News\" standing in front of a flooded street. The rain has had a significant impact on the city, with the reporter providing live updates on the situation."
+      },
+      {
+        "level": 1,
+        "start_time": 228.5,
+        "end_time": 236.5,
+        "children": [],
+        "caption": "A man in a \"WATER\" shirt, standing in the floodwaters, speaks into a microphone, his voice amplified as he reports on the heavy rainfall and its impact on the city, including the flooding of the Mbale River.",
+        "postprocess": {
+          "event_id": 19,
+          "original_answer": "A man in a \"WATER\" shirt, standing in the floodwaters, speaks into a microphone, his voice amplified as he reports on the heavy rainfall and its impact on the city, including the flooding of the Mbale River.",
+          "result": {
+            "video_id": "tNeWPZw0Igw",
+            "event_id": "E_tNeWPZw0Igw_228_236",
+            "tags": [
+              "weather",
+              "flood",
+              "rainfall",
+              "reporting",
+              "city"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "clothing": "WATER shirt"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "microphone",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "reporter",
+                "ref_object": "O001",
+                "role": "reporter",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_tNeWPZw0Igw_228_236",
+              "name": "reporting on heavy rainfall and flooding",
+              "time": {
+                "start": "228.5",
+                "end": "236.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "weather news"
+              ],
+              "scene_topic": "A reporter reports on heavy rainfall and flooding in the city.",
+              "summary": "A reporter reports on the impact of heavy rainfall and flooding in the city.",
+              "implications": "Major weather news event",
+              "modalities": {
+                "visual": "A man in a 'WATER' shirt, standing in the floodwaters.",
+                "audio": "speaks; amplified voice; reporting; heavy rainfall; flooding of the Mbale River.",
+                "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 236.5,
+        "end_time": 266.5,
+        "caption": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground, as a man's voice continues to report on the flooding in Mukono.",
+        "children": [],
+        "postprocess": {
+          "event_id": 20,
+          "original_answer": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground, as a man's voice continues to report on the flooding in Mukono.",
+          "result": {
+            "video_id": "tNeWPZw0Igw",
+            "event_id": "E_tNeWPZw0Igw_236_266",
+            "tags": [
+              "flood",
+              "mukono",
+              "reporting",
+              "weather"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "flooded street",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "debris",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man's voice",
+                "ref_object": "",
+                "role": "reporter",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_tNeWPZw0Igw_236_266",
+              "name": "Flood reporting in Mukono",
+              "time": {
+                "start": "236.5",
+                "end": "266.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "weather news"
+              ],
+              "scene_topic": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground, as a man's voice continues to report on the flooding in Mukono.",
+              "summary": "The camera shows a flooded street in Mukono with debris scattered around.",
+              "implications": "Major weather news event",
+              "modalities": {
+                "visual": "The camera pans across a flooded street, showing the water's depth and the debris scattered on the ground.",
+                "audio": "a man's voice reporting",
+                "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 266.5,
+        "end_time": 301.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 266.5,
+            "end_time": 280.5,
+            "children": [],
+            "caption": "The camera pans across a flooded street, showing the extent of the damage as a man speaks about the heavy rainfall and its impact on the city, his voice occasionally drowned out by the sound of the water.",
+            "postprocess": {
+              "event_id": 21,
+              "original_answer": "The camera pans across a flooded street, showing the extent of the damage as a man speaks about the heavy rainfall and its impact on the city, his voice occasionally drowned out by the sound of the water.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_266_280",
+                "tags": [
+                  "weather",
+                  "flood",
+                  "rainfall",
+                  "city",
+                  "damage"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "street",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "water",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_266_280",
+                  "name": "Heavy rainfall and flood damage",
+                  "time": {
+                    "start": "266.5",
+                    "end": "280.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather news"
+                  ],
+                  "scene_topic": "The camera pans across a flooded street, showing the extent of the damage as a man speaks about the heavy rainfall and its impact on the city.",
+                  "summary": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                  "implications": "Major weather news event",
+                  "modalities": {
+                    "visual": "The camera pans across a flooded street, showing the extent of the damage as a man speaks about the heavy rainfall and its impact on the city.",
+                    "audio": "man speaking; water sound",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 280.5,
+            "end_time": 291.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 280.5,
+                "end_time": 285.5,
+                "children": [],
+                "caption": "A man in a white shirt and black vest stands in front of a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "A man in a white shirt and black vest stands in front of a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+                  "result": {
+                    "video_id": "tNeWPZw0Igw",
+                    "event_id": "E_tNeWPZw0Igw_280_285",
+                    "tags": [
+                      "rainfall",
+                      "flood",
+                      "city",
+                      "weather",
+                      "storm"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "white shirt and black vest"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "flooded street",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_tNeWPZw0Igw_280_285",
+                      "name": "Heavy rainfall and its impact on the city",
+                      "time": {
+                        "start": "280.5",
+                        "end": "285.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "weather news"
+                      ],
+                      "scene_topic": "A man speaks about the heavy rainfall and its impact on the city.",
+                      "summary": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                      "implications": "Major economics, finance news event",
+                      "modalities": {
+                        "visual": "A man in a white shirt and black vest stands in front of a flooded street, gesturing as he speaks to the camera about the heavy rainfall and its impact on the city.",
+                        "audio": "",
+                        "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 285.5,
+                "end_time": 291.5,
+                "children": [],
+                "caption": "The camera pans across a flooded street, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "The camera pans across a flooded street, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods.",
+                  "result": {
+                    "video_id": "tNeWPZw0Igw",
+                    "event_id": "E_tNeWPZw0Igw_285_291",
+                    "tags": [
+                      "flood",
+                      "damage",
+                      "devastation",
+                      "natural_disaster",
+                      "weather"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "flooded_street",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_tNeWPZw0Igw_285_291",
+                      "name": "Flood damage description",
+                      "time": {
+                        "start": "285.5",
+                        "end": "291.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "natural_disaster"
+                      ],
+                      "scene_topic": "The camera pans across a flooded street, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact of the floods.",
+                      "summary": "The camera shows a flooded street with a man speaking in a foreign language about the damage.",
+                      "implications": "Major weather event",
+                      "modalities": {
+                        "visual": "The camera pans across a flooded street, showing the extent of the damage.",
+                        "audio": "Man's voice; speaking in a foreign language.",
+                        "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a white shirt and black vest speaks to the camera about the heavy rainfall and its impact on the city . The camera pans across a flooded street, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact .",
+            "summary": "A man stands in front of a flooded street, describing the heavy rainfall and its devastating impact on the city. The camera shows the extent of the damage, with a man's voice in a foreign language adding to the description."
+          },
+          {
+            "level": 2,
+            "start_time": 291.5,
+            "end_time": 301.5,
+            "children": [],
+            "caption": "The camera pans across a flooded street, showing the extent of the damage as a man speaks about the heavy rainfall and its impact on the city.",
+            "postprocess": {
+              "event_id": 24,
+              "original_answer": "The camera pans across a flooded street, showing the extent of the damage as a man speaks about the heavy rainfall and its impact on the city.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_291_301",
+                "tags": [
+                  "weather",
+                  "flood",
+                  "rainfall",
+                  "city",
+                  "damage"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "street",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_291_301",
+                  "name": "Heavy rainfall and flood damage",
+                  "time": {
+                    "start": "291.5",
+                    "end": "301.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather news"
+                  ],
+                  "scene_topic": "The camera pans across a flooded street, showing the extent of the damage as a man speaks about the heavy rainfall and its impact on the city.",
+                  "summary": "The camera shows a flooded street and a man speaking about the heavy rainfall and its impact.",
+                  "implications": "Major weather news event",
+                  "modalities": {
+                    "visual": "The camera pans across a flooded street, showing the extent of the damage.",
+                    "audio": "man speaking; heavy rainfall",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man in a white shirt and black vest speaks to the camera about the heavy rainfall and its impact on the city . The camera pans across a flooded street, showing the extent of the damage as a man's voice, speaking in a foreign language, describes the devastating impact .",
+        "summary": "The heavy rainfall has caused devastating damage to the city, with streets flooded and the sound of rushing water drowning out the voices of those describing the extent of the destruction. The camera captures the severity of the situation, showing the impact on the city and the efforts of those trying to make sense of the chaos."
+      },
+      {
+        "level": 1,
+        "start_time": 301.5,
+        "end_time": 305.5,
+        "children": [],
+        "caption": "A man in a white shirt and black vest, standing in front of a flooded street, speaks into a microphone, his voice amplified by the camera as he reports on the heavy rainfall and its impact on the city.",
+        "postprocess": {
+          "event_id": 25,
+          "original_answer": "A man in a white shirt and black vest, standing in front of a flooded street, speaks into a microphone, his voice amplified by the camera as he reports on the heavy rainfall and its impact on the city.",
+          "result": {
+            "video_id": "tNeWPZw0Igw",
+            "event_id": "E_tNeWPZw0Igw_301.5_305.5",
+            "tags": [
+              "weather",
+              "rainfall",
+              "flood",
+              "reporting"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "clothing": "white shirt and black vest",
+                  "location": "flooded street",
+                  "equipment": "microphone"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "reporter",
+                "ref_object": "O001",
+                "role": "reporter",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_tNeWPZw0Igw_301.5_305.5",
+              "name": "Reporting on heavy rainfall and its impact",
+              "time": {
+                "start": "301.5",
+                "end": "305.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "weather news"
+              ],
+              "scene_topic": "A reporter reports on heavy rainfall and its impact on the city.",
+              "summary": "A reporter reports on heavy rainfall and its impact on the city.",
+              "implications": "Major weather news event",
+              "modalities": {
+                "visual": "A man in a white shirt and black vest, standing in front of a flooded street.",
+                "audio": "speaks; amplified voice; reports",
+                "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 305.5,
+        "end_time": 327.633333,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 305.5,
+            "end_time": 319.5,
+            "caption": "A man in a white shirt and black vest, standing in front of a flooded street, speaks into a microphone, his voice amplified by the camera as he reports on the heavy rainfall and its impact on the city.",
+            "children": [],
+            "postprocess": {
+              "event_id": 26,
+              "original_answer": "A man in a white shirt and black vest, standing in front of a flooded street, speaks into a microphone, his voice amplified by the camera as he reports on the heavy rainfall and its impact on the city.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_305_319",
+                "tags": [
+                  "weather",
+                  "rainfall",
+                  "flood",
+                  "reporting"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "clothing": "white shirt and black vest",
+                      "location": "flooded street",
+                      "equipment": "microphone"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "reporter",
+                    "ref_object": "O001",
+                    "role": "reporter",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_305_319",
+                  "name": "report on heavy rainfall",
+                  "time": {
+                    "start": "305.5",
+                    "end": "319.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather news"
+                  ],
+                  "scene_topic": "A reporter reports on heavy rainfall and its impact on the city.",
+                  "summary": "A reporter reports on heavy rainfall and its impact on the city.",
+                  "implications": "Major weather news event",
+                  "modalities": {
+                    "visual": "A man in a white shirt and black vest, standing in front of a flooded street.",
+                    "audio": "speaks; amplified voice; reports",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 319.5,
+            "end_time": 327.633333,
+            "children": [],
+            "caption": "A news anchor, dressed in a suit and tie, stands in front of a cityscape backdrop, delivering a report on the flooding in Mogadishu, his voice serious as he details the extent of the damage and the efforts to mitigate the situation.",
+            "postprocess": {
+              "event_id": 27,
+              "original_answer": "A news anchor, dressed in a suit and tie, stands in front of a cityscape backdrop, delivering a report on the flooding in Mogadishu, his voice serious as he details the extent of the damage and the efforts to mitigate the situation.",
+              "result": {
+                "video_id": "tNeWPZw0Igw",
+                "event_id": "E_tNeWPZw0Igw_319.5_327.63",
+                "tags": [
+                  "flood",
+                  "mogadishu",
+                  "report",
+                  "news"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "news anchor",
+                    "attributes": {
+                      "dressed": "suit and tie",
+                      "backdrop": "cityscape"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "news anchor",
+                    "ref_object": "O001",
+                    "role": "reporter",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_tNeWPZw0Igw_319.5_327.63",
+                  "name": "report on Mogadishu flooding",
+                  "time": {
+                    "start": "319.5",
+                    "end": "327.63"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "news",
+                    "disaster"
+                  ],
+                  "scene_topic": "A news anchor reports on the flooding in Mogadishu.",
+                  "summary": "The news anchor delivers a report on the flooding in Mogadishu, detailing the damage and efforts to mitigate the situation.",
+                  "implications": "Major news event",
+                  "modalities": {
+                    "visual": "A news anchor stands in front of a cityscape backdrop, delivering a report.",
+                    "audio": "serious voice; report",
+                    "speech": "Heavy flooding has hit Mombasa, caused by heavy rains and poor drainage, with houses submerged and families unable to leave their homes. Residents are calling for the county and national governments to take more action to address the long-standing issue, as the current situation is causing concern and disrupting daily life."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A news anchor delivers a report on the flooding in Mogadishu . He details the extent of the damage and the efforts to mitigate the situation .",
+        "summary": "Heavy rainfall has caused widespread flooding in Mogadishu, with reports of significant damage and efforts underway to mitigate the situation."
+      }
+    ],
+    "caption": "The news broadcast opens with a split-screen showing two female anchors at their desks . They introduce the story of flooding in the region as they report on the flooding in Mogadishu . The camera pans across a flooded landscape, showing the extent of the damage .",
+    "summary": "Heavy rainfall has caused widespread flooding in Mogadishu, Somalia, and Mukono, with streets and buildings submerged in water and debris scattered across the ground, resulting in significant damage and disruption. Heavy rainfall has caused widespread flooding in the city, with streets submerged under water and devastating damage reported, as seen in footage of flooded streets and debris scattered on the ground. The rain has had a significant impact on the city, with reporters providing live updates on the situation and efforts underway to make sense of the chaos. Heavy rainfall has caused widespread flooding in Mogadishu, resulting in significant damage. Efforts are underway to mitigate the situation."
+  }
+}

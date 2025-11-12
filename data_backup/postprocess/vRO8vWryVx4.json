@@ -1,0 +1,716 @@
+{
+  "video_id": "vRO8vWryVx4",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 32.365667,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 3.5,
+        "children": [],
+        "caption": "In a bustling city street at night, a man in a cowboy hat and a red shirt stands in front of a large neon sign that reads \"Las Vegas,\" while a woman in a red dress walks by, her gaze fixed on him.",
+        "postprocess": {
+          "event_id": 0,
+          "original_answer": "In a bustling city street at night, a man in a cowboy hat and a red shirt stands in front of a large neon sign that reads \"Las Vegas,\" while a woman in a red dress walks by, her gaze fixed on him.",
+          "result": {
+            "video_id": "vRO8vWryVx4",
+            "event_id": "E_vRO8vWryVx4_0_3.5",
+            "tags": [
+              "city",
+              "night",
+              "cowboy",
+              "neon",
+              "sign"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "hat": "cowboy",
+                  "shirt": "red"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "woman",
+                "attributes": {
+                  "dress": "red"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "neon sign",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "main",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "woman",
+                "ref_object": "O002",
+                "role": "supporting",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_vRO8vWryVx4_0_3.5",
+              "name": "Man stands in front of neon sign",
+              "time": {
+                "start": "0",
+                "end": "3.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "city life"
+              ],
+              "scene_topic": "A man stands in front of a neon sign in a city street at night, while a woman walks by.",
+              "summary": "A man stands in front of a neon sign in a city street at night, while a woman walks by.",
+              "implications": "A significant event in a city street at night",
+              "modalities": {
+                "visual": "In a bustling city street at night, a man in a cowboy hat and a red shirt stands in front of a large neon sign that reads 'Las Vegas', while a woman in a red dress walks by, her gaze fixed on him.",
+                "audio": "",
+                "speech": "After midnight, the speaker plans to let loose and enjoy a cold beer, specifically Miller Genuine Craft, and check the heat."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 3.5,
+        "end_time": 7.5,
+        "children": [],
+        "caption": "In a dimly lit bar, a man in a cowboy hat and a woman in a red dress stand close together, their faces illuminated by the warm glow of the bar's neon lights as they engage in a lively conversation.",
+        "postprocess": {
+          "event_id": 1,
+          "original_answer": "In a dimly lit bar, a man in a cowboy hat and a woman in a red dress stand close together, their faces illuminated by the warm glow of the bar's neon lights as they engage in a lively conversation.",
+          "result": {
+            "video_id": "vRO8vWryVx4",
+            "event_id": "E_vRO8vWryVx4_3.5_7.5",
+            "tags": [
+              "bar",
+              "cowboy",
+              "red_dress",
+              "conversation",
+              "lively"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "hat": "cowboy",
+                  "face_illumination": "neon_lights"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "woman",
+                "attributes": {
+                  "dress": "red",
+                  "face_illumination": "neon_lights"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "bar",
+                "attributes": {
+                  "lighting": "warm_glow",
+                  "neon_lights": "True"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "woman",
+                "ref_object": "O002",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_vRO8vWryVx4_3.5_7.5",
+              "name": "lively_conversation",
+              "time": {
+                "start": "3.5",
+                "end": "7.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "social_scene"
+              ],
+              "scene_topic": "A couple engages in a lively conversation in a dimly lit bar.",
+              "summary": "A couple has a lively conversation in a dimly lit bar.",
+              "implications": "Social interaction, relationship building",
+              "modalities": {
+                "visual": "In a dimly lit bar, a man in a cowboy hat and a woman in a red dress stand close together, their faces illuminated by the warm glow of the bar's neon lights as they engage in a lively conversation.",
+                "audio": "",
+                "speech": "After midnight, the speaker plans to let loose and enjoy a cold beer, specifically Miller Genuine Craft, and check the heat."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 7.5,
+        "end_time": 15.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 12.5,
+            "children": [],
+            "caption": "In a dimly lit bar, a man in a white shirt and black vest stands before a woman in a red dress, their conversation drowned out by the lively chatter of the crowd and the rhythmic pulse of electronic music.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "In a dimly lit bar, a man in a white shirt and black vest stands before a woman in a red dress, their conversation drowned out by the lively chatter of the crowd and the rhythmic pulse of electronic music.",
+              "result": {
+                "video_id": "vRO8vWryVx4",
+                "event_id": "E_vRO8vWryVx4_7.5_12.5",
+                "tags": [
+                  "bar",
+                  "conversation",
+                  "music",
+                  "nightlife",
+                  "people"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "clothing": "white shirt and black vest"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "clothing": "red dress"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "listener",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_vRO8vWryVx4_7.5_12.5",
+                  "name": "Conversation in a bar",
+                  "time": {
+                    "start": "7.5",
+                    "end": "12.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "nightlife",
+                    "social interaction"
+                  ],
+                  "scene_topic": "A man and a woman have a conversation in a dimly lit bar.",
+                  "summary": "A man and a woman have a conversation in a dimly lit bar.",
+                  "implications": "Social interaction and communication",
+                  "modalities": {
+                    "visual": "In a dimly lit bar, a man in a white shirt and black vest stands before a woman in a red dress.",
+                    "audio": "crowd chatter; electronic music",
+                    "speech": "After midnight, the speaker plans to let loose and enjoy a cold beer, specifically Miller Genuine Craft, and check the heat."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 12.5,
+            "end_time": 15.5,
+            "children": [],
+            "caption": "A man and a woman, illuminated by the neon lights of a bustling city street, stand before a large, illuminated cowboy boot sculpture, the woman smiling as she gazes up at it.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "A man and a woman, illuminated by the neon lights of a bustling city street, stand before a large, illuminated cowboy boot sculpture, the woman smiling as she gazes up at it.",
+              "result": {
+                "video_id": "vRO8vWryVx4",
+                "event_id": "E_vRO8vWryVx4_12.5_15.5",
+                "tags": [
+                  "city",
+                  "sculpture",
+                  "cowboy",
+                  "neon",
+                  "nightlife"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cowboy boot sculpture",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "neon lights",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "observer",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "observer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_vRO8vWryVx4_12.5_15.5",
+                  "name": "Couple admiring cowboy boot sculpture",
+                  "time": {
+                    "start": "12.5",
+                    "end": "15.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "nightlife"
+                  ],
+                  "scene_topic": "A couple admires a large, illuminated cowboy boot sculpture in a bustling city street.",
+                  "summary": "A man and a woman stand before a large, illuminated cowboy boot sculpture, the woman smiling as she gazes up at it.",
+                  "implications": "Major scene, urban culture",
+                  "modalities": {
+                    "visual": "A man and a woman stand before a large, illuminated cowboy boot sculpture, the woman smiling as she gazes up at it.",
+                    "audio": "",
+                    "speech": "After midnight, the speaker plans to let loose and enjoy a cold beer, specifically Miller Genuine Craft, and check the heat."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man and a woman, illuminated by the neon lights of a busy city street, stand before a large, illuminated cowboy boot sculpture . Their conversation drowned out by the rhythmic pulse of electronic music . The woman smiling as she gazes up at it .",
+        "summary": "In a dimly lit bar, a man and a woman converse amidst the lively atmosphere, their words lost in the background noise. Meanwhile, on a city street, another couple stands before a large cowboy boot sculpture, the woman admiring its neon glow."
+      },
+      {
+        "level": 1,
+        "start_time": 15.5,
+        "end_time": 20.5,
+        "children": [],
+        "caption": "A man and a woman, illuminated by the neon lights of a vibrant arcade, reach for a bottle of Budweiser, their hands almost touching as a woman's voice encourages them to \"take a sip.\"",
+        "postprocess": {
+          "event_id": 4,
+          "original_answer": "A man and a woman, illuminated by the neon lights of a vibrant arcade, reach for a bottle of Budweiser, their hands almost touching as a woman's voice encourages them to \"take a sip.\"",
+          "result": {
+            "video_id": "vRO8vWryVx4",
+            "event_id": "E_vRO8vWryVx4_15.5_20.5",
+            "tags": [
+              "arcade",
+              "beer",
+              "couple",
+              "encouragement",
+              "hands_touching"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Bottle of Budweiser",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man",
+                "ref_object": "O001",
+                "role": "actor",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Woman",
+                "ref_object": "O001",
+                "role": "actor",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_vRO8vWryVx4_15.5_20.5",
+              "name": "Couple reaches for beer",
+              "time": {
+                "start": "15.5",
+                "end": "20.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "human behavior",
+                "social interaction"
+              ],
+              "scene_topic": "A couple reaches for a beer in an arcade, with a woman's voice encouraging them to take a sip.",
+              "summary": "A couple's intimate moment in an arcade, with a woman's voice encouraging them to take a sip.",
+              "implications": "Major social, human behavior news event",
+              "modalities": {
+                "visual": "A man and a woman, illuminated by the neon lights of a vibrant arcade, reach for a bottle of Budweiser, their hands almost touching.",
+                "audio": "woman's voice; 'take a sip'",
+                "speech": "After midnight, the speaker plans to let loose and enjoy a cold beer, specifically Miller Genuine Craft, and check the heat."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 20.5,
+        "end_time": 25.5,
+        "children": [],
+        "caption": "The man and woman, illuminated by the neon lights of the city, stand close together, their faces reflecting the excitement of the moment as they watch the man in the cowboy hat and red shirt ride a mechanical bull.",
+        "postprocess": {
+          "event_id": 5,
+          "original_answer": "The man and woman, illuminated by the neon lights of the city, stand close together, their faces reflecting the excitement of the moment as they watch the man in the cowboy hat and red shirt ride a mechanical bull.",
+          "result": {
+            "video_id": "vRO8vWryVx4",
+            "event_id": "E_vRO8vWryVx4_20.5_25.5",
+            "tags": [
+              "city",
+              "neon",
+              "cowboy",
+              "mechanical_bull",
+              "romance"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "woman",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "mechanical_bull",
+                "attributes": {}
+              },
+              {
+                "object_id": "O004",
+                "name": "cowboy",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "rider",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "woman",
+                "ref_object": "O002",
+                "role": "spectator",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A003",
+                "name": "cowboy",
+                "ref_object": "O004",
+                "role": "rider",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_vRO8vWryVx4_20.5_25.5",
+              "name": "",
+              "time": {
+                "start": "20.5",
+                "end": "25.5"
+              },
+              "actors": [
+                "A001",
+                "A002",
+                "A003"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "romance"
+              ],
+              "scene_topic": "The man and woman, illuminated by the neon lights of the city, stand close together, their faces reflecting the excitement of the moment as they watch the man in the cowboy hat and red shirt ride a mechanical bull.",
+              "summary": "The man and woman watch the cowboy ride a mechanical bull.",
+              "implications": "Major romance event",
+              "modalities": {
+                "visual": "The man and woman stand close together, their faces reflecting the excitement of the moment as they watch the man in the cowboy hat and red shirt ride a mechanical bull.",
+                "audio": "",
+                "speech": "After midnight, the speaker plans to let loose and enjoy a cold beer, specifically Miller Genuine Craft, and check the heat."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 25.5,
+        "end_time": 32.365667,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 25.5,
+            "end_time": 29.5,
+            "children": [],
+            "caption": "In a dimly lit room, a man and a woman stand close together, their hands clasped, as a pop song plays in the background, its lyrics about love and longing echoing the intimate moment.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "In a dimly lit room, a man and a woman stand close together, their hands clasped, as a pop song plays in the background, its lyrics about love and longing echoing the intimate moment.",
+              "result": {
+                "video_id": "vRO8vWryVx4",
+                "event_id": "E_vRO8vWryVx4_25.5_29.5",
+                "tags": [
+                  "intimate_moment",
+                  "love",
+                  "longing",
+                  "music",
+                  "pop_song"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "room",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "pop_song",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "actor",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_vRO8vWryVx4_25.5_29.5",
+                  "name": "intimate_moment",
+                  "time": {
+                    "start": "25.5",
+                    "end": "29.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "intimate_moment"
+                  ],
+                  "scene_topic": "A couple stands close together, hands clasped, as a pop song plays in the background.",
+                  "summary": "A couple shares an intimate moment in a dimly lit room.",
+                  "implications": "Major emotional event",
+                  "modalities": {
+                    "visual": "In a dimly lit room, a man and a woman stand close together, their hands clasped, as a pop song plays in the background.",
+                    "audio": "pop song; lyrics about love and longing",
+                    "speech": "After midnight, the speaker plans to let loose and enjoy a cold beer, specifically Miller Genuine Craft, and check the heat."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 32.365667,
+            "children": [],
+            "caption": "The video transitions from a close-up of a car's dashboard to a wider shot of the car driving down a snowy road, as a man's voice can be heard saying \"I'm gonna get you.\"",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "The video transitions from a close-up of a car's dashboard to a wider shot of the car driving down a snowy road, as a man's voice can be heard saying \"I'm gonna get you.\"",
+              "result": {
+                "video_id": "vRO8vWryVx4",
+                "event_id": "E_vRO8vWryVx4_29.5_32.37",
+                "tags": [
+                  "car",
+                  "snow",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "car",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "dashboard",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "road",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "driver",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_vRO8vWryVx4_29.5_32.37",
+                  "name": "car driving on snowy road",
+                  "time": {
+                    "start": "29.5",
+                    "end": "32.37"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "transportation news"
+                  ],
+                  "scene_topic": "A man is driving a car on a snowy road while saying 'I'm gonna get you'.",
+                  "summary": "The video shows a car driving on a snowy road with a man's voice saying 'I'm gonna get you'.",
+                  "implications": "Major transportation news event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a car's dashboard to a wider shot of the car driving down a snowy road.",
+                    "audio": "Man's voice; 'I'm gonna get you'.",
+                    "speech": "After midnight, I'm gonna get you, let loose and enjoy a cold beer, specifically Miller Genuine Craft, and check the heat."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "In a dimly lit room, a man and a woman stand close together, their hands clasped, as a pop song plays in the background . The video transitions from a close-up of a car's dashboard to a wider shot of a snowy road .",
+        "summary": "A romantic scene unfolds in a dimly lit room, with a couple embracing and a pop song playing in the background, its lyrics echoing their intimate moment. The scene transitions to a car driving down a snowy road, with a man's voiceover saying \"I'm gonna get you\"."
+      }
+    ],
+    "caption": "In a bustling city street at night, a man in a cowboy hat and a red shirt stands in front of a large neon sign that reads \"Las Vegas\" The video transitions from a close-up of a car's dashboard to a wider shot of a snowy road .",
+    "summary": "A romantic evening unfolds in Las Vegas, with a man in a cowboy hat and a woman in a red dress sharing intimate moments in various settings, from a dimly lit bar to a vibrant arcade, amidst the city's neon lights and lively atmosphere. The scene culminates with a couple embracing in a dimly lit room, as a man's voiceover hints at a romantic pursuit."
+  }
+}

@@ -1,0 +1,408 @@
+{
+  "video_id": "n8Da3jHuFjM",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 30.8,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 3.5,
+        "children": [],
+        "caption": "A sleek, black motorcycle, its engine roaring, is showcased in a close-up shot, the camera capturing its design and the rider's skillful maneuvering through a winding road.",
+        "postprocess": {
+          "event_id": 0,
+          "original_answer": "A sleek, black motorcycle, its engine roaring, is showcased in a close-up shot, the camera capturing its design and the rider's skillful maneuvering through a winding road.",
+          "result": {
+            "video_id": "n8Da3jHuFjM",
+            "event_id": "E_n8Da3jHuFjM_0_3.5",
+            "tags": [
+              "motorcycle",
+              "close_up",
+              "design",
+              "rider",
+              "maneuvering"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "motorcycle",
+                "attributes": {
+                  "color": "black",
+                  "type": "sleek"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "rider",
+                "ref_object": "O001",
+                "role": "operator",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_n8Da3jHuFjM_0_3.5",
+              "name": "motorcycle showcase",
+              "time": {
+                "start": "0",
+                "end": "3.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "transportation news"
+              ],
+              "scene_topic": "A sleek, black motorcycle is showcased in a close-up shot.",
+              "summary": "A sleek, black motorcycle, its engine roaring, is showcased in a close-up shot, the camera capturing its design and the rider's skillful maneuvering through a winding road.",
+              "implications": "Major transportation news event",
+              "modalities": {
+                "visual": "A sleek, black motorcycle, its engine roaring, is showcased in a close-up shot, the camera capturing its design and the rider's skillful maneuvering through a winding road.",
+                "audio": "engine roaring",
+                "speech": "The speaker's heart is a safe haven for their loved one, a place where they can find comfort and solace in times of darkness and uncertainty."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 3.5,
+        "end_time": 9.5,
+        "children": [],
+        "caption": "The sleek black motorcycle, parked on a textured surface, gleams under the bright lights as a man's voice, seemingly unrelated to the motorcycle, can be heard in the background.",
+        "postprocess": {
+          "event_id": 1,
+          "original_answer": "The sleek black motorcycle, parked on a textured surface, gleams under the bright lights as a man's voice, seemingly unrelated to the motorcycle, can be heard in the background.",
+          "result": {
+            "video_id": "n8Da3jHuFjM",
+            "event_id": "E_n8Da3jHuFjM_3_9",
+            "tags": [
+              "motorcycle",
+              "parked",
+              "lights",
+              "background",
+              "voice"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "motorcycle",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "voice",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_n8Da3jHuFjM_3_9",
+              "name": "motorcycle parked",
+              "time": {
+                "start": "3.5",
+                "end": "9.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "non-violent scene"
+              ],
+              "scene_topic": "A man's voice is heard in the background as a motorcycle is parked.",
+              "summary": "A man's voice is heard in the background as a motorcycle is parked.",
+              "implications": "Minor scene",
+              "modalities": {
+                "visual": "The sleek black motorcycle, parked on a textured surface, gleams under the bright lights as a man's voice, seemingly unrelated to the motorcycle, can be heard in the background.",
+                "audio": "",
+                "speech": "The speaker's heart is a safe haven for their loved one, a place where they can find comfort and solace in times of darkness and uncertainty."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 9.5,
+        "end_time": 14.5,
+        "children": [],
+        "caption": "The video showcases a sleek, black motorcycle with a prominent \"C\" logo on its fuel tank, highlighting its design and features as it moves smoothly on a paved surface.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "The video showcases a sleek, black motorcycle with a prominent \"C\" logo on its fuel tank, highlighting its design and features as it moves smoothly on a paved surface.",
+          "result": {
+            "video_id": "n8Da3jHuFjM",
+            "event_id": "E_n8Da3jHuFjM_9.5_14.5",
+            "tags": [
+              "design",
+              "motorcycle",
+              "features",
+              "paved_surface"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "motorcycle",
+                "attributes": {
+                  "color": "black",
+                  "logo": "C"
+                }
+              }
+            ],
+            "actors": [],
+            "event": {
+              "event_id": "E_n8Da3jHuFjM_9.5_14.5",
+              "name": "Motorcycle showcase",
+              "time": {
+                "start": "9.5",
+                "end": "14.5"
+              },
+              "actors": [],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "product demonstration"
+              ],
+              "scene_topic": "The video showcases a sleek, black motorcycle with a prominent 'C' logo on its fuel tank, highlighting its design and features as it moves smoothly on a paved surface.",
+              "summary": "The video showcases a sleek, black motorcycle with a prominent 'C' logo on its fuel tank, highlighting its design and features as it moves smoothly on a paved surface.",
+              "implications": "Product demonstration",
+              "modalities": {
+                "visual": "The video showcases a sleek, black motorcycle with a prominent 'C' logo on its fuel tank, highlighting its design and features as it moves smoothly on a paved surface.",
+                "audio": "",
+                "speech": "The speaker's heart is a safe haven for their loved one, a place where they can find comfort and solace in times of darkness and uncertainty."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 14.5,
+        "end_time": 20.5,
+        "children": [],
+        "caption": "The video showcases a sleek black motorcycle, its engine roaring to life as it speeds down a winding road, its rider expertly maneuvering through the curves.",
+        "postprocess": {
+          "event_id": 3,
+          "original_answer": "The video showcases a sleek black motorcycle, its engine roaring to life as it speeds down a winding road, its rider expertly maneuvering through the curves.",
+          "result": {
+            "video_id": "n8Da3jHuFjM",
+            "event_id": "E_n8Da3jHuFjM_14.5_20.5",
+            "tags": [
+              "motorcycle",
+              "rider",
+              "road",
+              "speed"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "motorcycle",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "rider",
+                "ref_object": "O001",
+                "role": "driver",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_n8Da3jHuFjM_14.5_20.5",
+              "name": "motorcycle ride",
+              "time": {
+                "start": "14.5",
+                "end": "20.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "transportation"
+              ],
+              "scene_topic": "The rider expertly navigates a winding road on a sleek black motorcycle.",
+              "summary": "A person rides a motorcycle on a road.",
+              "implications": "Major transportation event",
+              "modalities": {
+                "visual": "The video showcases a sleek black motorcycle, its engine roaring to life as it speeds down a winding road, its rider expertly maneuvering through the curves.",
+                "audio": "engine roaring; road noise.",
+                "speech": "The speaker's heart is a safe haven for their loved one, a place where they can find comfort and solace in times of darkness and uncertainty."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 20.5,
+        "end_time": 24.5,
+        "children": [],
+        "caption": "The sleek black motorcycle, its engine roaring, speeds down a winding road, its rider expertly maneuvering through the curves as the upbeat pop music continues to play.",
+        "postprocess": {
+          "event_id": 4,
+          "original_answer": "The sleek black motorcycle, its engine roaring, speeds down a winding road, its rider expertly maneuvering through the curves as the upbeat pop music continues to play.",
+          "result": {
+            "video_id": "n8Da3jHuFjM",
+            "event_id": "E_n8Da3jHuFjM_20.5_24.5",
+            "tags": [
+              "motorcycle",
+              "road",
+              "music",
+              "pop",
+              "rider"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "motorcycle",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "road",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "music",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "rider",
+                "ref_object": "O001",
+                "role": "driver",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_n8Da3jHuFjM_20.5_24.5",
+              "name": "motorcycle ride",
+              "time": {
+                "start": "20.5",
+                "end": "24.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "transportation news"
+              ],
+              "scene_topic": "The rider expertly navigates a winding road on a sleek black motorcycle.",
+              "summary": "A person rides a motorcycle on a road.",
+              "implications": "Major transportation news event",
+              "modalities": {
+                "visual": "The sleek black motorcycle speeds down a winding road, its rider expertly maneuvering through the curves.",
+                "audio": "engine roaring; upbeat pop music",
+                "speech": "The speaker's heart is a safe haven for their loved one, a place where they can find comfort and solace in times of darkness and uncertainty."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 24.5,
+        "end_time": 30.8,
+        "children": [],
+        "caption": "The video showcases a sleek black motorcycle, its shiny exterior gleaming under the spotlight as a man's voice enthusiastically describes its features, including the \"Cool\" emblem and the \"Cool\" logo on the tank.",
+        "postprocess": {
+          "event_id": 5,
+          "original_answer": "The video showcases a sleek black motorcycle, its shiny exterior gleaming under the spotlight as a man's voice enthusiastically describes its features, including the \"Cool\" emblem and the \"Cool\" logo on the tank.",
+          "result": {
+            "video_id": "n8Da3jHuFjM",
+            "event_id": "E_n8Da3jHuFjM_24.5_30.8",
+            "tags": [
+              "motorcycle",
+              "product_description",
+              "advertising"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "motorcycle",
+                "attributes": {
+                  "color": "black",
+                  "features": "Cool emblem and Cool logo on the tank"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_n8Da3jHuFjM_24.5_30.8",
+              "name": "motorcycle product description",
+              "time": {
+                "start": "24.5",
+                "end": "30.8"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "product_description"
+              ],
+              "scene_topic": "A man enthusiastically describes the features of a sleek black motorcycle.",
+              "summary": "The video showcases a sleek black motorcycle and its features.",
+              "implications": "Major product description event",
+              "modalities": {
+                "visual": "The video showcases a sleek black motorcycle, its shiny exterior gleaming under the spotlight as a man's voice enthusiastically describes its features, including the 'Cool' emblem and the 'Cool' logo on the tank.",
+                "audio": "Man's voice; 'Cool' emblem; 'Cool' logo.",
+                "speech": "The speaker's heart is a safe haven for their loved one, a place where they can find comfort and solace in times of darkness and uncertainty."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "A sleek black motorcycle, its engine roaring, is showcased in a close-up shot . The video showcases a sleek, black motorcycle with a prominent \"C\" logo on its fuel tank . A man's voice, seemingly unrelated to the motorcycle, is heard in the background .",
+    "summary": "A sleek black motorcycle with a prominent \"C\" logo is showcased in a video, highlighting its design and features as it speeds down a winding road with its rider expertly maneuvering through the curves. The motorcycle's shiny exterior gleams under the spotlight as a man's voice enthusiastically describes its features, including the \"Cool\" emblem and logo on the tank."
+  }
+}

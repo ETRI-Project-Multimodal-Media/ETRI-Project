@@ -1,0 +1,564 @@
+{
+  "video_id": "rFA1jSO6pdg",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 70.612208,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 4.5,
+        "children": [],
+        "caption": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with food, speaking directly to the camera about his diabetes.",
+        "postprocess": {
+          "event_id": 0,
+          "original_answer": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with food, speaking directly to the camera about his diabetes.",
+          "result": {
+            "video_id": "rFA1jSO6pdg",
+            "event_id": "E_rFA1jSO6pdg_0_4.5",
+            "tags": [
+              "diabetes",
+              "kitchen",
+              "man",
+              "speaking"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "hair_color": "graying",
+                  "beard": "present",
+                  "shirt_color": "blue"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "refrigerator",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_rFA1jSO6pdg_0_4.5",
+              "name": "man speaking about diabetes",
+              "time": {
+                "start": "0",
+                "end": "4.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "health news"
+              ],
+              "scene_topic": "A man speaks about his diabetes in a kitchen.",
+              "summary": "A man discusses his diabetes in a kitchen.",
+              "implications": "Major health news event",
+              "modalities": {
+                "visual": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with food, speaking directly to the camera about his diabetes.",
+                "audio": "speaking",
+                "speech": "As a diabetic, I initially worried about amputations and complications, but after taking better care of my legs and treating sores promptly, I've noticed significant improvements, including proper scabbing and faster healing."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 4.5,
+        "end_time": 65.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 4.5,
+            "end_time": 8.5,
+            "children": [],
+            "caption": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a shelf filled with various items, including a blue bucket and a red container, as he speaks directly to the camera.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a shelf filled with various items, including a blue bucket and a red container, as he speaks directly to the camera.",
+              "result": {
+                "video_id": "rFA1jSO6pdg",
+                "event_id": "E_rFA1jSO6pdg_4.5_8.5",
+                "tags": [
+                  "kitchen",
+                  "man",
+                  "shelf",
+                  "items",
+                  "blue",
+                  "red"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "",
+                    "attributes": {
+                      "color": "blue",
+                      "type": "bucket"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "",
+                    "attributes": {
+                      "color": "red",
+                      "type": "container"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_rFA1jSO6pdg_4.5_8.5",
+                  "name": "",
+                  "time": {
+                    "start": "4.5",
+                    "end": "8.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person speaking"
+                  ],
+                  "scene_topic": "A man speaks in a kitchen.",
+                  "summary": "A man speaks in a kitchen.",
+                  "implications": "Major communication event",
+                  "modalities": {
+                    "visual": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a shelf filled with various items, including a blue bucket and a red container, as he speaks directly to the camera.",
+                    "audio": "",
+                    "speech": "As a diabetic, I initially worried about amputations and complications, but after taking better care of my legs and treating sores promptly, I've noticed significant improvements, including proper scabbing and faster healing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 8.5,
+            "end_time": 22.5,
+            "caption": "A man with short, graying hair, wearing a blue shirt, stands in a well-lit kitchen, thoughtfully gesturing as he speaks about the importance of a healthy diet.",
+            "children": [],
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "A man with short, graying hair, wearing a blue shirt, stands in a well-lit kitchen, thoughtfully gesturing as he speaks about the importance of a healthy diet.",
+              "result": {
+                "video_id": "rFA1jSO6pdg",
+                "event_id": "E_rFA1jSO6pdg_8.5_22.5",
+                "tags": [
+                  "diet",
+                  "health",
+                  "nutrition",
+                  "kitchen",
+                  "man"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "hair_color": "graying",
+                      "shirt_color": "blue"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "kitchen",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_rFA1jSO6pdg_8.5_22.5",
+                  "name": "man talks about healthy diet",
+                  "time": {
+                    "start": "8.5",
+                    "end": "22.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person speaking"
+                  ],
+                  "scene_topic": "A man talks about the importance of a healthy diet in a well-lit kitchen.",
+                  "summary": "A man discusses the importance of a healthy diet.",
+                  "implications": "Major health news event",
+                  "modalities": {
+                    "visual": "A man with short, graying hair, wearing a blue shirt, stands in a well-lit kitchen, thoughtfully gesturing as he speaks about the importance of a healthy diet.",
+                    "audio": "",
+                    "speech": "As a diabetic, I initially worried about amputations and complications, but after taking better care of my legs and treating sores promptly, I've noticed significant improvements, including proper scabbing and faster healing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 22.5,
+            "end_time": 44.5,
+            "caption": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with various food items, as he speaks directly to the camera.",
+            "children": [],
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with various food items, as he speaks directly to the camera.",
+              "result": {
+                "video_id": "rFA1jSO6pdg",
+                "event_id": "E_rFA1jSO6pdg_22.5_44.5",
+                "tags": [
+                  "kitchen",
+                  "man",
+                  "food",
+                  "camera",
+                  "speech"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "hair_color": "graying",
+                      "beard": "present",
+                      "shirt_color": "blue"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "refrigerator",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "camera",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_rFA1jSO6pdg_22.5_44.5",
+                  "name": "man speaking in kitchen",
+                  "time": {
+                    "start": "22.5",
+                    "end": "44.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person speaking"
+                  ],
+                  "scene_topic": "A man speaks in a kitchen.",
+                  "summary": "A man speaks directly to the camera in a well-lit kitchen.",
+                  "implications": "Major communication event",
+                  "modalities": {
+                    "visual": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with various food items, as he speaks directly to the camera.",
+                    "audio": "",
+                    "speech": "As a diabetic, I initially worried about amputations and complications, but after taking better care of my legs and treating sores promptly, I've noticed significant improvements, including proper scabbing and faster healing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 44.5,
+            "end_time": 62.5,
+            "caption": "In a well-lit kitchen, a middle-aged man with short, graying hair and a beard, wearing a blue shirt, stands in front of a shelf filled with various canned goods and bottles, speaking directly to the camera with a serious expression.",
+            "children": [],
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "In a well-lit kitchen, a middle-aged man with short, graying hair and a beard, wearing a blue shirt, stands in front of a shelf filled with various canned goods and bottles, speaking directly to the camera with a serious expression.",
+              "result": {
+                "video_id": "rFA1jSO6pdg",
+                "event_id": "E_rFA1jSO6pdg_44.5_62.5",
+                "tags": [
+                  "kitchen",
+                  "man",
+                  "canned_goods",
+                  "bottles",
+                  "camera"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "shelf",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "canned_goods",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "bottles",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "camera",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "middle-aged man",
+                    "ref_object": "O004",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_rFA1jSO6pdg_44.5_62.5",
+                  "name": "man speaking in kitchen",
+                  "time": {
+                    "start": "44.5",
+                    "end": "62.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person speaking"
+                  ],
+                  "scene_topic": "A middle-aged man speaks in a kitchen.",
+                  "summary": "A man speaks in a kitchen.",
+                  "implications": "Major news event",
+                  "modalities": {
+                    "visual": "In a well-lit kitchen, a middle-aged man with short, graying hair and a beard, wearing a blue shirt, stands in front of a shelf filled with various canned goods and bottles, speaking directly to the camera with a serious expression.",
+                    "audio": "",
+                    "speech": "As a diabetic, I initially worried about amputations and complications, but after taking better care of my legs and treating sores promptly, I've noticed significant improvements, including proper scabbing and faster healing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 62.5,
+            "end_time": 65.5,
+            "children": [],
+            "caption": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with various food items, as he speaks directly to the camera.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with various food items, as he speaks directly to the camera.",
+              "result": {
+                "video_id": "rFA1jSO6pdg",
+                "event_id": "E_rFA1jSO6pdg_62.5_65.5",
+                "tags": [
+                  "kitchen",
+                  "man",
+                  "food",
+                  "camera",
+                  "speech"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "hair_color": "graying",
+                      "beard": "present",
+                      "shirt_color": "blue"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "refrigerator",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "camera",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_rFA1jSO6pdg_62.5_65.5",
+                  "name": "man speaking in kitchen",
+                  "time": {
+                    "start": "62.5",
+                    "end": "65.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person speaking"
+                  ],
+                  "scene_topic": "A man speaks in a kitchen.",
+                  "summary": "A man speaks in a kitchen.",
+                  "implications": "Major communication event",
+                  "modalities": {
+                    "visual": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with various food items, as he speaks directly to the camera.",
+                    "audio": "",
+                    "speech": "As a diabetic, I initially worried about amputations and complications, but after taking better care of my legs and treating sores promptly, I've noticed significant improvements, including proper scabbing and faster healing."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, stands in front of a refrigerator filled with various food items, as he speaks directly to the camera .",
+        "summary": "A middle-aged man with short, graying hair and a beard, wearing a blue shirt, speaks directly to the camera in a well-lit kitchen, discussing the importance of a healthy diet. He stands in front of various kitchen settings, including shelves and refrigerators filled with food items, conveying a serious and thoughtful tone."
+      },
+      {
+        "level": 1,
+        "start_time": 65.5,
+        "end_time": 70.612208,
+        "children": [],
+        "caption": "The video transitions from a close-up of a plate of food to a wider shot of a person enjoying a meal, accompanied by a change in music from electronic to pop.",
+        "postprocess": {
+          "event_id": 6,
+          "original_answer": "The video transitions from a close-up of a plate of food to a wider shot of a person enjoying a meal, accompanied by a change in music from electronic to pop.",
+          "result": {
+            "video_id": "rFA1jSO6pdg",
+            "event_id": "E_rFA1jSO6pdg_65.5_70.61",
+            "tags": [
+              "food",
+              "meal",
+              "music"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "plate of food",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "person",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "person",
+                "ref_object": "O002",
+                "role": "actor",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_rFA1jSO6pdg_65.5_70.61",
+              "name": "meal transition",
+              "time": {
+                "start": "65.5",
+                "end": "70.61"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "food news"
+              ],
+              "scene_topic": "The video transitions from a close-up of a plate of food to a wider shot of a person enjoying a meal, accompanied by a change in music from electronic to pop.",
+              "summary": "The video transitions from a close-up of a plate of food to a wider shot of a person enjoying a meal, accompanied by a change in music from electronic to pop.",
+              "implications": "Major food news event",
+              "modalities": {
+                "visual": "The video transitions from a close-up of a plate of food to a wider shot of a person enjoying a meal.",
+                "audio": "change in music from electronic to pop.",
+                "speech": "As a diabetic, I initially worried about amputations and complications, but after taking better care of my legs and treating sores promptly, I've noticed significant improvements, including proper scabbing and faster healing."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "The video transitions from a close-up of a plate of food to a wider shot of a person enjoying a meal . In a well-lit kitchen, a man with short, graying hair and a beard, wearing a blue shirt, speaks directly to the camera .",
+    "summary": "A man with graying hair and beard discusses the importance of a healthy diet in a well-lit kitchen, standing in front of various food-filled settings. He conveys a serious and thoughtful tone as he speaks directly to the camera about his experience with diabetes."
+  }
+}
