@@ -1,0 +1,774 @@
+{
+  "video_id": "YOKbG0C-tJg",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 56.389667,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 10.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 7.5,
+            "children": [],
+            "caption": "The video opens with a close-up of a baseball glove, then pans out to show a person wearing the glove, ready to catch a ball. As the camera zooms out further, the glove is shown in motion, catching a ball thrown by an unseen person.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "The video opens with a close-up of a baseball glove, then pans out to show a person wearing the glove, ready to catch a ball. As the camera zooms out further, the glove is shown in motion, catching a ball thrown by an unseen person.",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_0_7.5",
+                "tags": [
+                  "baseball",
+                  "glove",
+                  "catch",
+                  "ball"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baseball_glove",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "person",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "baseball",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "unseen_person",
+                    "ref_object": "O003",
+                    "role": "thrower",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "person_wearing_glove",
+                    "ref_object": "O001",
+                    "role": "catcher",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_0_7.5",
+                  "name": "baseball_catch",
+                  "time": {
+                    "start": "0",
+                    "end": "7.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports"
+                  ],
+                  "scene_topic": "The video shows a person catching a baseball with a glove.",
+                  "summary": "The video opens with a close-up of a baseball glove, then pans out to show a person wearing the glove, ready to catch a ball. As the camera zooms out further, the glove is shown in motion, catching a ball thrown by an unseen person.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "The video opens with a close-up of a baseball glove, then pans out to show a person wearing the glove, ready to catch a ball. As the camera zooms out further, the glove is shown in motion, catching a ball thrown by an unseen person.",
+                    "audio": "",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury, with the crowd at Chase Field strongly supporting her throughout."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 10.5,
+            "children": [],
+            "caption": "A woman, illuminated by the bright lights of the ring, raises her arms in triumph, her smile widening as she celebrates her victory, the crowd's cheers echoing through the arena.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A woman, illuminated by the bright lights of the ring, raises her arms in triumph, her smile widening as she celebrates her victory, the crowd's cheers echoing through the arena.",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_7_10",
+                "tags": [
+                  "wrestling",
+                  "victory",
+                  "celebration",
+                  "crowd",
+                  "arena"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {
+                      "illuminated": "bright lights",
+                      "raising": "arms",
+                      "smiling": "widen"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "winner",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_7_10",
+                  "name": "victory celebration",
+                  "time": {
+                    "start": "7.5",
+                    "end": "10.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A woman celebrates her victory in a wrestling match.",
+                  "summary": "A woman, illuminated by the bright lights of the ring, raises her arms in triumph, her smile widening as she celebrates her victory, the crowd's cheers echoing through the arena.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "A woman, illuminated by the bright lights of the ring, raises her arms in triumph, her smile widening as she celebrates her victory, the crowd's cheers echoing through the arena.",
+                    "audio": "cheers",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury, with the crowd at Chase Field strongly supporting her throughout."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A baseball player catches a ball in mid-air with their glove, while a boxer raises her arms in victory after a hard-fought match.",
+        "summary": "A person wearing a baseball glove catches a ball thrown by an unseen person, with a woman in the background celebrating her victory amidst the crowd's cheers. The scene is set in a bright-lit arena, with the camera capturing the action and the woman's triumphant moment."
+      },
+      {
+        "level": 1,
+        "start_time": 10.5,
+        "end_time": 16.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 10.5,
+            "end_time": 16.5,
+            "children": [],
+            "caption": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_10.5_16.5",
+                "tags": [
+                  "woman",
+                  "spotlight",
+                  "triumph",
+                  "smile",
+                  "crowd",
+                  "cheers",
+                  "arena"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_10.5_16.5",
+                  "name": "The woman raises her arms in triumph",
+                  "time": {
+                    "start": "10.5",
+                    "end": "16.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "event",
+                    "celebration"
+                  ],
+                  "scene_topic": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+                  "summary": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+                  "implications": "Major entertainment, event news",
+                  "modalities": {
+                    "visual": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+                    "audio": "cheers; crowd reaction",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury, with the crowd at Chase Field strongly supporting her throughout."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A woman triumphantly raises her arms in the spotlight, as the crowd cheers and echoes their excitement in the arena.",
+        "summary": "The woman stands in the spotlight, her arms raised in triumph as the crowd cheers, their excitement filling the arena."
+      },
+      {
+        "level": 1,
+        "start_time": 16.5,
+        "end_time": 30.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 24.5,
+            "children": [],
+            "caption": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_165_245",
+                "tags": [
+                  "woman",
+                  "spotlight",
+                  "triumph",
+                  "smile",
+                  "crowd",
+                  "cheers",
+                  "arena"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_165_245",
+                  "name": "The woman raises her arms in triumph",
+                  "time": {
+                    "start": "16.5",
+                    "end": "24.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human interest"
+                  ],
+                  "scene_topic": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+                  "summary": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+                  "implications": "Major human interest event",
+                  "modalities": {
+                    "visual": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+                    "audio": "cheers; crowd reaction",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury, with the crowd at Chase Field strongly supporting her throughout."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 30.5,
+            "children": [],
+            "caption": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_24.5_30.5",
+                "tags": [
+                  "woman",
+                  "spotlight",
+                  "triumph",
+                  "smile",
+                  "crowd",
+                  "cheers",
+                  "arena"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_24.5_30.5",
+                  "name": "The woman raises her arms in triumph",
+                  "time": {
+                    "start": "24.5",
+                    "end": "30.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "event",
+                    "celebration"
+                  ],
+                  "scene_topic": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+                  "summary": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+                  "implications": "Major entertainment event",
+                  "modalities": {
+                    "visual": "The woman, bathed in the spotlight, raises her arms in triumph, her smile widening as the crowd cheers, their excitement echoing through the arena.",
+                    "audio": "cheers; crowd reaction",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury, with the crowd at Chase Field strongly supporting her throughout."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A woman triumphantly raises her arms in the spotlight, as the crowd cheers and their excitement echoes through the arena.",
+        "summary": "The woman stands in the spotlight, her arms raised in triumph as the crowd cheers, their excitement resonating through the arena. Her smile widens as she basks in the applause."
+      },
+      {
+        "level": 1,
+        "start_time": 30.5,
+        "end_time": 45.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 30.5,
+            "end_time": 45.5,
+            "children": [],
+            "caption": "The woman, bathed in the spotlight, raises her arms in triumph, celebrating her victory as the crowd cheers and the announcer declares her the winner.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "The woman, bathed in the spotlight, raises her arms in triumph, celebrating her victory as the crowd cheers and the announcer declares her the winner.",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_30_45",
+                "tags": [
+                  "woman",
+                  "victory",
+                  "celebration",
+                  "crowd",
+                  "announcer"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "winner",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_30_45",
+                  "name": "woman wins",
+                  "time": {
+                    "start": "30.5",
+                    "end": "45.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person news"
+                  ],
+                  "scene_topic": "The woman raises her arms in triumph, celebrating her victory as the crowd cheers and the announcer declares her the winner.",
+                  "summary": "The woman, bathed in the spotlight, raises her arms in triumph, celebrating her victory as the crowd cheers and the announcer declares her the winner.",
+                  "implications": "Major person news event",
+                  "modalities": {
+                    "visual": "The woman, bathed in the spotlight, raises her arms in triumph, celebrating her victory as the crowd cheers.",
+                    "audio": "cheers; announcer",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury, with the crowd at Chase Field strongly supporting her throughout."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A woman is declared the winner in a triumphant moment, with the crowd cheering and the announcer declaring her victory.",
+        "summary": "The woman stands triumphantly, her arms raised, as the crowd erupts in cheers and the announcer declares her the winner."
+      },
+      {
+        "level": 1,
+        "start_time": 45.5,
+        "end_time": 56.389667,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 45.5,
+            "end_time": 47.5,
+            "children": [],
+            "caption": "The woman, now in a black top, stands in the ring, her arms raised in triumph as the crowd cheers, her victory confirmed by the announcer's voice.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "The woman, now in a black top, stands in the ring, her arms raised in triumph as the crowd cheers, her victory confirmed by the announcer's voice.",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_45.5_47.5",
+                "tags": [
+                  "woman",
+                  "ring",
+                  "triumph",
+                  "crowd",
+                  "victory"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_45.5_47.5",
+                  "name": "victory celebration",
+                  "time": {
+                    "start": "45.5",
+                    "end": "47.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "event",
+                    "celebration"
+                  ],
+                  "scene_topic": "The woman stands in the ring, her arms raised in triumph as the crowd cheers, her victory confirmed by the announcer's voice.",
+                  "summary": "The woman, now in a black top, stands in the ring, her arms raised in triumph as the crowd cheers, her victory confirmed by the announcer's voice.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "The woman stands in the ring, her arms raised in triumph as the crowd cheers, her victory confirmed.",
+                    "audio": "announcer's voice; crowd cheers",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 47.5,
+            "end_time": 50.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a thumbs-up emoji to a woman with long blonde hair, wearing a black top and a necklace, standing in a brightly lit arena, as a man's voice can be heard saying \"I'm sorry.\"",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "The video transitions from a close-up of a thumbs-up emoji to a woman with long blonde hair, wearing a black top and a necklace, standing in a brightly lit arena, as a man's voice can be heard saying \"I'm sorry.\"",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_4750_505",
+                "tags": [
+                  "emoji",
+                  "woman",
+                  "arena",
+                  "apology"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "thumbs-up emoji",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman with long blonde hair",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "arena",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_4750_505",
+                  "name": "apology",
+                  "time": {
+                    "start": "47.5",
+                    "end": "50.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "apology"
+                  ],
+                  "scene_topic": "A man apologizes to a woman in a brightly lit arena.",
+                  "summary": "The video transitions from a close-up of a thumbs-up emoji to a woman with long blonde hair, wearing a black top and a necklace, standing in a brightly lit arena, as a man's voice can be heard saying \"I'm sorry.\"",
+                  "implications": "Major personal, social news event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a thumbs-up emoji to a woman with long blonde hair, wearing a black top and a necklace, standing in a brightly lit arena.",
+                    "audio": "Man's voice saying 'I'm sorry'.",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury, with the crowd at Chase Field strongly supporting her throughout."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 50.5,
+            "end_time": 53.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a thumbs-up emoji to a wider shot of a person's hands typing on a keyboard, all while a woman's voice can be heard saying \"Bye.\"",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "The video transitions from a close-up of a thumbs-up emoji to a wider shot of a person's hands typing on a keyboard, all while a woman's voice can be heard saying \"Bye.\"",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_50_53",
+                "tags": [
+                  "emoji",
+                  "typing",
+                  "goodbye"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "thumbs-up emoji",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "person's hands",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "keyboard",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_50_53",
+                  "name": "Goodbye",
+                  "time": {
+                    "start": "50.5",
+                    "end": "53.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "A woman says goodbye while typing on a keyboard.",
+                  "summary": "The video transitions from a close-up of a thumbs-up emoji to a wider shot of a person's hands typing on a keyboard, all while a woman's voice can be heard saying \"Bye.\"",
+                  "implications": "Major communication event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a thumbs-up emoji to a wider shot of a person's hands typing on a keyboard.",
+                    "audio": "Woman's voice saying 'Bye'.",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury, with the crowd at Chase Field strongly supporting her throughout. She will now choose between Ronda Rousey and Asuka as her opponent at WrestleMania."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 53.5,
+            "end_time": 56.389667,
+            "children": [],
+            "caption": "Against a vibrant blue background, the words \"SHARE THIS VIDEO\" appear on the screen, accompanied by a thumbs-up emoji, as a woman's voice encourages viewers to share the video.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "Against a vibrant blue background, the words \"SHARE THIS VIDEO\" appear on the screen, accompanied by a thumbs-up emoji, as a woman's voice encourages viewers to share the video.",
+              "result": {
+                "video_id": "YOKbG0C_tJg",
+                "event_id": "E_YOKbG0C_tJg_53.5_56.39",
+                "tags": [
+                  "share",
+                  "video",
+                  "share_video",
+                  "thumbs_up",
+                  "emoji"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "text",
+                    "attributes": {
+                      "text": "SHARE THIS VIDEO"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "emoji",
+                    "attributes": {
+                      "emoji": "thumbs-up"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman's voice",
+                    "ref_object": "",
+                    "role": "narrator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_YOKbG0C_tJg_53.5_56.39",
+                  "name": "SHARE THIS VIDEO",
+                  "time": {
+                    "start": "53.5",
+                    "end": "56.39"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "video sharing"
+                  ],
+                  "scene_topic": "A woman's voice encourages viewers to share the video.",
+                  "summary": "Against a vibrant blue background, the words \"SHARE THIS VIDEO\" appear on the screen, accompanied by a thumbs-up emoji, as a woman's voice encourages viewers to share the video.",
+                  "implications": "Major video sharing event",
+                  "modalities": {
+                    "visual": "Against a vibrant blue background, the words 'SHARE THIS VIDEO' appear on the screen, accompanied by a thumbs-up emoji, as a woman's voice encourages viewers to share the video.",
+                    "audio": "",
+                    "speech": "Becky Lynch unexpectedly won the Royal Rumble match after entering the contest due to Lana's ankle injury, with the crowd at Chase Field strongly supporting her throughout."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A woman stands in a ring, triumphant, as the crowd cheers and an announcer confirms her victory. The video then cuts to a close-up of a thumbs-up emoji, followed by a woman in a black top and necklace standing in a brightly lit arena, with a man's voice saying \"I'm sorry.\" The video then cuts again to a close-up of a thumbs-up emoji, followed by a person typing on a keyboard, with a woman's voice saying \"Bye.\" Finally,",
+        "summary": "A woman stands in a brightly lit arena, her arms raised in triumph as the crowd cheers, with a man's voice apologizing in the background. The video then cuts to a person typing on a keyboard and a woman saying \"Bye\" before ending with a call to action to share the video."
+      }
+    ],
+    "caption": "A woman triumphantly raises her arms in a victorious moment, with the crowd cheering and the announcer declaring her victory.",
+    "summary": "A woman celebrates her victory in a bright-lit arena, her arms raised in triumph as the crowd cheers and the announcer declares her the winner."
+  }
+}

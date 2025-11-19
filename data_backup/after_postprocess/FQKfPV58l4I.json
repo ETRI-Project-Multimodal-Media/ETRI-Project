@@ -1,0 +1,1535 @@
+{
+  "video_id": "FQKfPV58l4I",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 74.24,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 16.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 4.5,
+            "children": [],
+            "caption": "The video opens with a black screen displaying the bold white text \"A DRESS FOR OBSESSION\" as a man's voice begins to speak.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "The video opens with a black screen displaying the bold white text \"A DRESS FOR OBSESSION\" as a man's voice begins to speak.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_0_4.5",
+                "tags": [
+                  "dress",
+                  "obsession",
+                  "man",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "black screen",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "bold white text",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man's voice",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_0_4.5",
+                  "name": "The video opens with a black screen displaying the bold white text",
+                  "time": {
+                    "start": "0",
+                    "end": "4.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "video opening"
+                  ],
+                  "scene_topic": "The video opens with a black screen displaying the bold white text 'A DRESS FOR OBSESSION' as a man's voice begins to speak.",
+                  "summary": "The video opens with a black screen displaying the bold white text \"A DRESS FOR OBSESSION\" as a man's voice begins to speak.",
+                  "implications": "Major video opening event",
+                  "modalities": {
+                    "visual": "The video opens with a black screen displaying the bold white text 'A DRESS FOR OBSESSION'.",
+                    "audio": "a man's voice begins to speak.",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 4.5,
+            "end_time": 7.5,
+            "children": [],
+            "caption": "A man in a black suit and a white shirt, accompanied by a violinist in a black suit, stands on a dimly lit stage, their faces illuminated by the warm glow of the spotlight as they begin to play a lively tune.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A man in a black suit and a white shirt, accompanied by a violinist in a black suit, stands on a dimly lit stage, their faces illuminated by the warm glow of the spotlight as they begin to play a lively tune.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_4.5_7.5",
+                "tags": [
+                  "music",
+                  "performance",
+                  "stage",
+                  "spotlight"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "clothing": "black suit",
+                      "shirt": "white"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "violinist",
+                    "attributes": {
+                      "clothing": "black suit"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "stage",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "spotlight",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "performer",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "violinist",
+                    "ref_object": "O002",
+                    "role": "performer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_4.5_7.5",
+                  "name": "music performance",
+                  "time": {
+                    "start": "4.5",
+                    "end": "7.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "music performance"
+                  ],
+                  "scene_topic": "A man and a violinist play a lively tune on a dimly lit stage.",
+                  "summary": "A man in a black suit and a white shirt, accompanied by a violinist in a black suit, stands on a dimly lit stage, their faces illuminated by the warm glow of the spotlight as they begin to play a lively tune.",
+                  "implications": "Major music event",
+                  "modalities": {
+                    "visual": "A man in a black suit and a white shirt, accompanied by a violinist in a black suit, stands on a dimly lit stage, their faces illuminated by the warm glow of the spotlight as they begin to play a lively tune.",
+                    "audio": "",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 10.5,
+            "children": [],
+            "caption": "In a dimly lit room, a man in a black suit and a white shirt plays a melodious tune on his violin, his fingers moving swiftly and gracefully across the strings.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "In a dimly lit room, a man in a black suit and a white shirt plays a melodious tune on his violin, his fingers moving swiftly and gracefully across the strings.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_7.5_10.5",
+                "tags": [
+                  "music",
+                  "violin",
+                  "performance",
+                  "art"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "violin",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "performer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_7.5_10.5",
+                  "name": "violin performance",
+                  "time": {
+                    "start": "7.5",
+                    "end": "10.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "music performance"
+                  ],
+                  "scene_topic": "A man plays a melodious tune on his violin.",
+                  "summary": "In a dimly lit room, a man in a black suit and a white shirt plays a melodious tune on his violin, his fingers moving swiftly and gracefully across the strings.",
+                  "implications": "Major music event",
+                  "modalities": {
+                    "visual": "In a dimly lit room, a man in a black suit and a white shirt plays a melodious tune on his violin, his fingers moving swiftly and gracefully across the strings.",
+                    "audio": "violin music",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen,"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 10.5,
+            "end_time": 16.5,
+            "children": [],
+            "caption": "A woman with short blonde hair, wearing a red top, sits at a table in a well-lit room, listening intently as a man's voice, likely from a separate recording, discusses the importance of music in storytelling.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "A woman with short blonde hair, wearing a red top, sits at a table in a well-lit room, listening intently as a man's voice, likely from a separate recording, discusses the importance of music in storytelling.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_10.5_16.5",
+                "tags": [
+                  "storytelling",
+                  "music",
+                  "narrative"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {
+                      "hair_color": "blonde",
+                      "clothing": "red top"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {
+                      "voice": "recording"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "table",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "room",
+                    "attributes": {
+                      "lighting": "well-lit"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "listener",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_10.5_16.5",
+                  "name": "woman listens to man discussing music in storytelling",
+                  "time": {
+                    "start": "10.5",
+                    "end": "16.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "storytelling",
+                    "music"
+                  ],
+                  "scene_topic": "A woman listens to a man discussing the importance of music in storytelling",
+                  "summary": "A woman with short blonde hair, wearing a red top, sits at a table in a well-lit room, listening intently as a man's voice, likely from a separate recording, discusses the importance of music in storytelling.",
+                  "implications": "Major storytelling, music news event",
+                  "modalities": {
+                    "visual": "A woman with short blonde hair, wearing a red top, sits at a table in a well-lit room, listening intently as a man's voice discusses the importance of music in storytelling.",
+                    "audio": "man's voice",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man speaks about a dress for obsession, while a violinist plays a lively tune on a dimly lit stage. The camera then cuts to a different room where a man plays a melodious tune on his violin, and then to a well-lit room where a woman listens intently to a man's voice discussing the importance of music in storytelling.",
+        "summary": "A man in a black suit and a white shirt, accompanied by a violinist, performs a lively tune on a dimly lit stage, while a woman listens intently to a recorded voice discussing the role of music in storytelling. The scene is set against a backdrop of warm lighting and elegant attire, evoking a sense of sophistication and refinement."
+      },
+      {
+        "level": 1,
+        "start_time": 16.5,
+        "end_time": 35.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 21.5,
+            "children": [],
+            "caption": "A woman with short blonde hair, wearing a blue sweater, sits at a table in a well-lit room, listening intently as a man's voice, likely from a separate recording, discusses the importance of a \"good story.\"",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "A woman with short blonde hair, wearing a blue sweater, sits at a table in a well-lit room, listening intently as a man's voice, likely from a separate recording, discusses the importance of a \"good story.\"",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_16.5_21.5",
+                "tags": [
+                  "storytelling",
+                  "communication",
+                  "importance"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {
+                      "hair_color": "blonde",
+                      "clothing": "blue sweater"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {
+                      "voice": "separate recording"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "table",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "room",
+                    "attributes": {
+                      "lighting": "well-lit"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "listener",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_16.5_21.5",
+                  "name": "Storytelling importance",
+                  "time": {
+                    "start": "16.5",
+                    "end": "21.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "communication"
+                  ],
+                  "scene_topic": "A woman listens intently as a man discusses the importance of a good story.",
+                  "summary": "A woman with short blonde hair, wearing a blue sweater, sits at a table in a well-lit room, listening intently as a man's voice, likely from a separate recording, discusses the importance of a \"good story.\"",
+                  "implications": "Major communication event",
+                  "modalities": {
+                    "visual": "A woman with short blonde hair, wearing a blue sweater, sits at a table in a well-lit room, listening intently as a man's voice discusses the importance of a 'good story'.",
+                    "audio": "",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 21.5,
+            "end_time": 26.5,
+            "children": [],
+            "caption": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a well-lit room, listening intently as a man's voice, likely from a separate recording, discusses the importance of a \"good story.\"",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a well-lit room, listening intently as a man's voice, likely from a separate recording, discusses the importance of a \"good story.\"",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_21.5_26.5",
+                "tags": [
+                  "storytelling",
+                  "communication",
+                  "narrative"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {
+                      "hair_color": "reddish-brown",
+                      "clothing": "blue top"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {
+                      "voice": "separate recording"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "couch",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "room",
+                    "attributes": {
+                      "lighting": "well-lit"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "listener",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_21.5_26.5",
+                  "name": "Storytelling discussion",
+                  "time": {
+                    "start": "21.5",
+                    "end": "26.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "communication"
+                  ],
+                  "scene_topic": "A woman listens intently to a man discussing the importance of a good story.",
+                  "summary": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a well-lit room, listening intently as a man's voice, likely from a separate recording, discusses the importance of a \"good story.\"",
+                  "implications": "Major communication event",
+                  "modalities": {
+                    "visual": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a well-lit room, listening intently as a man's voice discusses the importance of a 'good story'.",
+                    "audio": "man's voice; 'good story'.",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 26.5,
+            "end_time": 29.5,
+            "children": [],
+            "caption": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a living room, listening intently as a man's voice, likely from a nearby room, discusses the importance of a \"good story.\"",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a living room, listening intently as a man's voice, likely from a nearby room, discusses the importance of a \"good story.\"",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_26.5_29.5",
+                "tags": [
+                  "storytelling",
+                  "communication",
+                  "importance"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "couch",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "living room",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "man",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O003",
+                    "role": "listener",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O004",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_26.5_29.5",
+                  "name": "Storytelling importance discussion",
+                  "time": {
+                    "start": "26.5",
+                    "end": "29.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "communication"
+                  ],
+                  "scene_topic": "A woman listens intently as a man discusses the importance of a good story.",
+                  "summary": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a living room, listening intently as a man's voice, likely from a nearby room, discusses the importance of a \"good story.\"",
+                  "implications": "Major communication event",
+                  "modalities": {
+                    "visual": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a living room, listening intently as a man's voice, likely from a nearby room, discusses the importance of a 'good story'.",
+                    "audio": "",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 35.5,
+            "children": [],
+            "caption": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a living room, listening intently as a man's voice, likely from a nearby recording studio, discusses the importance of music in storytelling.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a living room, listening intently as a man's voice, likely from a nearby recording studio, discusses the importance of music in storytelling.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_29.5_35.5",
+                "tags": [
+                  "storytelling",
+                  "music",
+                  "narrative"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {
+                      "hair_color": "reddish-brown",
+                      "clothing": "blue top"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {
+                      "voice": "recording studio"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "couch",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "living room",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "listener",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_29.5_35.5",
+                  "name": "music in storytelling discussion",
+                  "time": {
+                    "start": "29.5",
+                    "end": "35.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "storytelling"
+                  ],
+                  "scene_topic": "A woman listens to a man discussing the importance of music in storytelling.",
+                  "summary": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a living room, listening intently as a man's voice, likely from a nearby recording studio, discusses the importance of music in storytelling.",
+                  "implications": "Major narrative, storytelling news event",
+                  "modalities": {
+                    "visual": "A woman with short, reddish-brown hair, wearing a blue top, sits on a couch in a living room, listening intently as a man's voice discusses the importance of music in storytelling.",
+                    "audio": "man's voice",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A woman listens intently as a voice discusses the importance of a good story, either from a recording or in a nearby room.",
+        "summary": "A woman listens intently to a man's voice discussing the importance of a \"good story\" in a well-lit room, with the scene repeating with slight variations. The man's voice is likely from a separate recording, and the conversation touches on the role of music in storytelling."
+      },
+      {
+        "level": 1,
+        "start_time": 35.5,
+        "end_time": 45.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 35.5,
+            "end_time": 38.5,
+            "children": [],
+            "caption": "A man in a red vest and black hat, holding a large red instrument, smiles at the camera as a woman's voice encourages viewers to \"get your tickets now\" for the Melbourne Opera Festival.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "A man in a red vest and black hat, holding a large red instrument, smiles at the camera as a woman's voice encourages viewers to \"get your tickets now\" for the Melbourne Opera Festival.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_35.5_38.5",
+                "tags": [
+                  "opera",
+                  "festival",
+                  "melbourne",
+                  "tickets",
+                  "music"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "color_vest": "red",
+                      "color_hat": "black",
+                      "instrument": "large red instrument"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "performer",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "announcer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_35.5_38.5",
+                  "name": "Melbourne Opera Festival promotion",
+                  "time": {
+                    "start": "35.5",
+                    "end": "38.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "entertainment news"
+                  ],
+                  "scene_topic": "The Melbourne Opera Festival is promoted with a man and a woman encouraging viewers to buy tickets.",
+                  "summary": "A man in a red vest and black hat, holding a large red instrument, smiles at the camera as a woman's voice encourages viewers to \"get your tickets now\" for the Melbourne Opera Festival.",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "A man in a red vest and black hat, holding a large red instrument, smiles at the camera as a woman's voice encourages viewers to get your tickets now for the Melbourne Opera Festival.",
+                    "audio": "woman's voice; 'get your tickets now'",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 38.5,
+            "end_time": 45.5,
+            "children": [],
+            "caption": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man with a beard, wearing a red vest, speaks about the importance of music in his life.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man with a beard, wearing a red vest, speaks about the importance of music in his life.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_38.5_45.5",
+                "tags": [
+                  "living_room",
+                  "music",
+                  "person",
+                  "speech"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "couch",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "listener",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_38.5_45.5",
+                  "name": "man speaking about music",
+                  "time": {
+                    "start": "38.5",
+                    "end": "45.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "music"
+                  ],
+                  "scene_topic": "A man speaks about the importance of music in his life.",
+                  "summary": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man with a beard, wearing a red vest, speaks about the importance of music in his life.",
+                  "implications": "Major music-related event",
+                  "modalities": {
+                    "visual": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man with a beard, wearing a red vest, speaks about the importance of music in his life.",
+                    "audio": "",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man promotes the Melbourne Opera Festival, while a woman listens intently to a man discussing the importance of music in his life.",
+        "summary": "The Melbourne Opera Festival is promoted through a scene featuring a man in a red vest and black hat holding a large red instrument, with a woman's voice urging viewers to \"get your tickets now\". The festival is also showcased through a conversation between a man with a beard and a woman with short blonde hair, discussing the significance of music in their lives."
+      },
+      {
+        "level": 1,
+        "start_time": 45.5,
+        "end_time": 64.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 45.5,
+            "end_time": 51.5,
+            "children": [],
+            "caption": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man in a suit speaks about the importance of music in theater.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man in a suit speaks about the importance of music in theater.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_45.5_51.5",
+                "tags": [
+                  "theater",
+                  "music",
+                  "performance"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "couch",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "living room",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "man",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O003",
+                    "role": "listener",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O004",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_45.5_51.5",
+                  "name": "Discussion about music in theater",
+                  "time": {
+                    "start": "45.5",
+                    "end": "51.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "theater",
+                    "music"
+                  ],
+                  "scene_topic": "A man speaks about the importance of music in theater, while a woman listens intently.",
+                  "summary": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man in a suit speaks about the importance of music in theater.",
+                  "implications": "Major arts and culture news event",
+                  "modalities": {
+                    "visual": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man in a suit speaks about the importance of music in theater.",
+                    "audio": "",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 51.5,
+            "end_time": 54.5,
+            "children": [],
+            "caption": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man in a suit speaks about the importance of the arts in Australia.",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man in a suit speaks about the importance of the arts in Australia.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_51.5_54.5",
+                "tags": [
+                  "arts",
+                  "australia",
+                  "cultural_importance",
+                  "living_room",
+                  "woman"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "couch",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "living_room",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "man",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O004",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O003",
+                    "role": "listener",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_51.5_54.5",
+                  "name": "Discussion on arts importance",
+                  "time": {
+                    "start": "51.5",
+                    "end": "54.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cultural_event"
+                  ],
+                  "scene_topic": "A man speaks about the importance of arts in Australia, while a woman listens intently.",
+                  "summary": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man in a suit speaks about the importance of the arts in Australia.",
+                  "implications": "Major cultural event",
+                  "modalities": {
+                    "visual": "A woman with short blonde hair, wearing a blue top, sits on a couch in a living room, listening intently as a man in a suit speaks about the importance of the arts in Australia.",
+                    "audio": "",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 54.5,
+            "end_time": 57.5,
+            "children": [],
+            "caption": "A woman with short blonde hair, wearing a blue top, smiles at the camera as a man's voice, likely from off-screen, asks about her experience with the show.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "A woman with short blonde hair, wearing a blue top, smiles at the camera as a man's voice, likely from off-screen, asks about her experience with the show.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_54.5_57.5",
+                "tags": [
+                  "tv_show",
+                  "interview",
+                  "woman",
+                  "man",
+                  "camera"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {
+                      "hair_color": "blonde",
+                      "clothing": "blue top"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "interviewee",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "",
+                    "role": "interviewer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_54.5_57.5",
+                  "name": "TV show interview",
+                  "time": {
+                    "start": "54.5",
+                    "end": "57.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person interview"
+                  ],
+                  "scene_topic": "A woman is interviewed about her experience with a TV show.",
+                  "summary": "A woman with short blonde hair, wearing a blue top, smiles at the camera as a man's voice, likely from off-screen, asks about her experience with the show.",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "A woman with short blonde hair, wearing a blue top, smiles at the camera as a man's voice, likely from off-screen, asks about her experience with the show.",
+                    "audio": "man's voice",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 57.5,
+            "end_time": 61.5,
+            "children": [],
+            "caption": "A man in a suit and tie, standing in a room with a wooden wall, smiles as he listens to a woman's voice, her words suggesting a positive experience.",
+            "postprocess": {
+              "event_id": 13,
+              "original_answer": "A man in a suit and tie, standing in a room with a wooden wall, smiles as he listens to a woman's voice, her words suggesting a positive experience.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_57_61",
+                "tags": [
+                  "human_behavior",
+                  "communication",
+                  "positive_experience"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "gender": "male",
+                      "clothing": "suit_and_tie"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "gender": "female",
+                      "role": "speaker"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "room",
+                    "attributes": {
+                      "material": "wooden"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "listener",
+                    "entity": "human"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_57_61",
+                  "name": "positive_experience",
+                  "time": {
+                    "start": "57.5",
+                    "end": "61.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human_behavior"
+                  ],
+                  "scene_topic": "A man listens to a woman's positive words in a room.",
+                  "summary": "A man in a suit and tie, standing in a room with a wooden wall, smiles as he listens to a woman's voice, her words suggesting a positive experience.",
+                  "implications": "Major human behavior, communication news event",
+                  "modalities": {
+                    "visual": "A man in a suit and tie, standing in a room with a wooden wall, smiles.",
+                    "audio": "woman's voice; words suggesting a positive experience.",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 61.5,
+            "end_time": 64.5,
+            "children": [],
+            "caption": "A man in a suit, standing in a room with a wooden floor and a large window, smiles at the camera as he listens to a woman's voice, her words suggesting a positive experience.",
+            "postprocess": {
+              "event_id": 14,
+              "original_answer": "A man in a suit, standing in a room with a wooden floor and a large window, smiles at the camera as he listens to a woman's voice, her words suggesting a positive experience.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_61_64",
+                "tags": [
+                  "human",
+                  "room",
+                  "window",
+                  "smile",
+                  "camera"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "actor": "man",
+                      "expression": "smile"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "actor": "woman",
+                      "expression": "speaking"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "room",
+                    "attributes": {
+                      "type": "interior",
+                      "floor": "wooden",
+                      "window": "large"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "human"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "actor",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_61_64",
+                  "name": "man listens to woman's voice",
+                  "time": {
+                    "start": "61.5",
+                    "end": "64.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human interaction"
+                  ],
+                  "scene_topic": "A man listens to a woman's voice with a positive expression.",
+                  "summary": "A man in a suit, standing in a room with a wooden floor and a large window, smiles at the camera as he listens to a woman's voice, her words suggesting a positive experience.",
+                  "implications": "Positive human interaction",
+                  "modalities": {
+                    "visual": "A man in a suit, standing in a room with a wooden floor and a large window, smiles at the camera as he listens to a woman's voice.",
+                    "audio": "woman's voice",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A woman with short blonde hair and a blue top listens intently as a man speaks about the importance of music in theater or the arts in Australia. She smiles at the camera and the man's voice suggests a positive experience.",
+        "summary": "A woman with short blonde hair and a blue top is featured in a series of scenes, listening intently to a man in a suit discussing the importance of music and the arts in Australia, and later smiling as she shares her positive experience with the show. The scenes showcase the woman's engagement with the topic and her enthusiasm for the arts."
+      },
+      {
+        "level": 1,
+        "start_time": 64.5,
+        "end_time": 74.24,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 64.5,
+            "end_time": 69.5,
+            "children": [],
+            "caption": "A man in a suit, standing in a room with a wooden floor and a large window, smiles at the camera as a woman's voice expresses gratitude for the opportunity to perform at the festival.",
+            "postprocess": {
+              "event_id": 15,
+              "original_answer": "A man in a suit, standing in a room with a wooden floor and a large window, smiles at the camera as a woman's voice expresses gratitude for the opportunity to perform at the festival.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_64_69",
+                "tags": [
+                  "festival",
+                  "opportunity",
+                  "gratitude",
+                  "performance",
+                  "smile"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "role": "actor",
+                      "entity": "person"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "room",
+                    "attributes": {
+                      "type": "interior"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "window",
+                    "attributes": {
+                      "type": "window"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_64_69",
+                  "name": "Gratitude expression",
+                  "time": {
+                    "start": "64.5",
+                    "end": "69.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human behavior",
+                    "social interaction"
+                  ],
+                  "scene_topic": "A man smiles at the camera as a woman's voice expresses gratitude for the opportunity to perform at the festival.",
+                  "summary": "A man in a suit, standing in a room with a wooden floor and a large window, smiles at the camera as a woman's voice expresses gratitude for the opportunity to perform at the festival.",
+                  "implications": "Major social, emotional news event",
+                  "modalities": {
+                    "visual": "A man in a suit, standing in a room with a wooden floor and a large window, smiles at the camera as a woman's voice expresses gratitude for the opportunity to perform at the festival.",
+                    "audio": "woman's voice; gratitude",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 69.5,
+            "end_time": 74.24,
+            "children": [],
+            "caption": "The video transitions from a black screen to a promotional graphic for \"The Fleurieu\" show, featuring a stylized logo and dates for the show's run, while a woman's voice encourages viewers to purchase tickets.",
+            "postprocess": {
+              "event_id": 16,
+              "original_answer": "The video transitions from a black screen to a promotional graphic for \"The Fleurieu\" show, featuring a stylized logo and dates for the show's run, while a woman's voice encourages viewers to purchase tickets.",
+              "result": {
+                "video_id": "FQKfPV58l4I",
+                "event_id": "E_FQKfPV58l4I_69.5_74.24",
+                "tags": [
+                  "video_transition",
+                  "promotional_graphic",
+                  "tv_show"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "black_screen",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "promotional_graphic",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman's_voice",
+                    "ref_object": "",
+                    "role": "narrator",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_FQKfPV58l4I_69.5_74.24",
+                  "name": "Promotional Graphic for The Fleurieu",
+                  "time": {
+                    "start": "69.5",
+                    "end": "74.24"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "tv_programming"
+                  ],
+                  "scene_topic": "The video transitions from a black screen to a promotional graphic for 'The Fleurieu' show.",
+                  "summary": "The video transitions from a black screen to a promotional graphic for \"The Fleurieu\" show, featuring a stylized logo and dates for the show's run, while a woman's voice encourages viewers to purchase tickets.",
+                  "implications": "Major TV programming event",
+                  "modalities": {
+                    "visual": "The video transitions from a black screen to a promotional graphic for 'The Fleurieu' show, featuring a stylized logo and dates for the show's run.",
+                    "audio": "A woman's voice; encouraging viewers to purchase tickets.",
+                    "speech": "The speaker is a fan of the dark, Baltic cabaret band Michelangelo and the Black Sea Gentlemen, whose music inspired their work on the play Masquerade."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man in a suit smiles at the camera as a woman's voice expresses gratitude for the opportunity to perform at a festival. The video then transitions to a promotional graphic for \"The Fleurieu\" show, featuring dates for the show's run and encouraging viewers to purchase tickets.",
+        "summary": "A man in a suit stands in a room with a wooden floor and large window, smiling at the camera as a woman's voice expresses gratitude for the opportunity to perform at the festival. The video then transitions to a promotional graphic for \"The Fleurieu\" show, featuring a stylized logo and dates, with the woman's voice encouraging viewers to purchase tickets."
+      }
+    ],
+    "caption": "A series of people listen intently to various speakers and musicians, highlighting the importance of music in storytelling, theater, and life. The video also promotes the Melbourne Opera Festival and a show called \"The Fleurieu.\"",
+    "summary": "The Melbourne Opera Festival is showcased through a series of scenes featuring various individuals discussing the importance of music and storytelling, with a focus on the role of music in their lives and the significance of the arts in Australia. The scenes highlight the festival's promotion and the enthusiasm of its attendees, with a sense of sophistication and refinement throughout. The video transitions to a promotional graphic for \"The Fleurieu\" show, featuring a stylized logo and dates, with a woman's voice encouraging viewers to purchase tickets."
+  }
+}

@@ -1,0 +1,2503 @@
+{
+  "video_id": "ZnueWTgJJ8E",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 124.9,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 40.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 12.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 4.5,
+                "children": [],
+                "caption": "The video opens with a close-up of a dark, textured surface, the camera zooming out to reveal a group of people in the distance, their faces illuminated by a bright light as if in a dimly lit room.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a close-up of a dark, textured surface, the camera zooming out to reveal a group of people in the distance, their faces illuminated by a bright light as if in a dimly lit room.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_0_4.5",
+                    "tags": [
+                      "dark_surface",
+                      "zoom_out",
+                      "group_people",
+                      "dimly_lit_room"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "dark_surface",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "bright_light",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_0_4.5",
+                      "name": "",
+                      "time": {
+                        "start": "0",
+                        "end": "4.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "scene_description"
+                      ],
+                      "scene_topic": "The video opens with a close-up of a dark, textured surface, the camera zooming out to reveal a group of people in the distance, their faces illuminated by a bright light as if in a dimly lit room.",
+                      "summary": "The video opens with a close-up of a dark, textured surface, the camera zooming out to reveal a group of people in the distance, their faces illuminated by a bright light as if in a dimly lit room.",
+                      "implications": "Scene setting",
+                      "modalities": {
+                        "visual": "The video opens with a close-up of a dark, textured surface, the camera zooming out to reveal a group of people in the distance, their faces illuminated by a bright light as if in a dimly lit room.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 4.5,
+                "end_time": 7.5,
+                "children": [],
+                "caption": "A group of people, illuminated by the headlights of a car, stand in a dimly lit field, their faces etched with concern as a man's voice, barely audible over the wind, asks, \"What are you doing here?\"",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A group of people, illuminated by the headlights of a car, stand in a dimly lit field, their faces etched with concern as a man's voice, barely audible over the wind, asks, \"What are you doing here?\"",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_4.5_7.5",
+                    "tags": [
+                      "people",
+                      "field",
+                      "car",
+                      "concern",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "group of people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "car",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_4.5_7.5",
+                      "name": "Man asks group of people what they are doing",
+                      "time": {
+                        "start": "4.5",
+                        "end": "7.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "field",
+                        "car"
+                      ],
+                      "scene_topic": "A group of people stand in a dimly lit field, concerned, as a man asks what they are doing",
+                      "summary": "A group of people, illuminated by the headlights of a car, stand in a dimly lit field, their faces etched with concern as a man's voice, barely audible over the wind, asks, \"What are you doing here?\"",
+                      "implications": "Major news event",
+                      "modalities": {
+                        "visual": "A group of people stand in a dimly lit field, their faces etched with concern, illuminated by the headlights of a car.",
+                        "audio": "Man's voice; wind; 'What are you doing here?'",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "A man with a serious expression, illuminated by a bright light, looks directly at the camera as a woman's voice speaks in the background.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "A man with a serious expression, illuminated by a bright light, looks directly at the camera as a woman's voice speaks in the background.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_7.5_9.5",
+                    "tags": [
+                      "serious_expression",
+                      "bright_light",
+                      "direct_gaze",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "expression": "serious",
+                          "illumination": "bright_light"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_7.5_9.5",
+                      "name": "man looks directly at the camera",
+                      "time": {
+                        "start": "7.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "expression"
+                      ],
+                      "scene_topic": "A man with a serious expression looks directly at the camera",
+                      "summary": "A man with a serious expression, illuminated by a bright light, looks directly at the camera as a woman's voice speaks in the background.",
+                      "implications": "Major human behavior, psychology news event",
+                      "modalities": {
+                        "visual": "A man with a serious expression, illuminated by a bright light, looks directly at the camera as a woman's voice speaks in the background.",
+                        "audio": "woman's voice",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "A man with a serious expression, wearing a dark jacket, stands in a dimly lit room, his face illuminated by a bright light as he speaks directly to the camera.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "A man with a serious expression, wearing a dark jacket, stands in a dimly lit room, his face illuminated by a bright light as he speaks directly to the camera.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_9.5_12.5",
+                    "tags": [
+                      "serious",
+                      "man",
+                      "jacket",
+                      "room",
+                      "light"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "expression": "serious",
+                          "clothing": "dark jacket"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "dimly lit"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "light",
+                        "attributes": {
+                          "type": "bright"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_9.5_12.5",
+                      "name": "man speaking to camera",
+                      "time": {
+                        "start": "9.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man speaks directly to the camera in a dimly lit room.",
+                      "summary": "A man with a serious expression, wearing a dark jacket, stands in a dimly lit room, his face illuminated by a bright light as he speaks directly to the camera.",
+                      "implications": "Major news event",
+                      "modalities": {
+                        "visual": "A man with a serious expression, wearing a dark jacket, stands in a dimly lit room, his face illuminated by a bright light as he speaks directly to the camera.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of people are seen in various dimly lit settings, their faces illuminated by light sources such as headlights or bright lights. A man's voice is heard asking questions, and a serious-looking man speaks directly to the camera.",
+            "summary": "The video opens with a group of people standing in a dimly lit field, their faces concerned, as a man's voice asks what they're doing there. The scene then cuts to a man speaking directly to the camera, his face illuminated by a bright light, as a woman's voice is heard in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 12.5,
+            "end_time": 18.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 15.5,
+                "children": [],
+                "caption": "The video cuts to a close-up of a man with a serious expression, his face illuminated by a bright light as he speaks directly to the camera.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The video cuts to a close-up of a man with a serious expression, his face illuminated by a bright light as he speaks directly to the camera.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_12.5_15.5",
+                    "tags": [
+                      "serious_face",
+                      "close_up",
+                      "man_speaking"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "expression": "serious",
+                          "illumination": "bright_light"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_12.5_15.5",
+                      "name": "man speaking",
+                      "time": {
+                        "start": "12.5",
+                        "end": "15.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "The man speaks directly to the camera.",
+                      "summary": "The video cuts to a close-up of a man with a serious expression, his face illuminated by a bright light as he speaks directly to the camera.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "The video cuts to a close-up of a man with a serious expression, his face illuminated by a bright light as he speaks directly to the camera.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 15.5,
+                "end_time": 18.5,
+                "children": [],
+                "caption": "A man with short, dark hair, wearing a dark shirt, speaks directly to the camera, his expression serious as he discusses a situation involving a \"bad guy\" and a \"bad guy's girl.\"",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A man with short, dark hair, wearing a dark shirt, speaks directly to the camera, his expression serious as he discusses a situation involving a \"bad guy\" and a \"bad guy's girl.\"",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_15.5_18.5",
+                    "tags": [
+                      "man",
+                      "camera",
+                      "serious",
+                      "bad_guy",
+                      "bad_guys_girl"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "hair": "short",
+                          "hair_color": "dark",
+                          "shirt": "dark"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_15.5_18.5",
+                      "name": "man discusses situation",
+                      "time": {
+                        "start": "15.5",
+                        "end": "18.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "communication"
+                      ],
+                      "scene_topic": "A man discusses a situation involving a 'bad guy' and a 'bad guy's girl'.",
+                      "summary": "A man with short, dark hair, wearing a dark shirt, speaks directly to the camera, his expression serious as he discusses a situation involving a \"bad guy\" and a \"bad guy's girl.\"",
+                      "implications": "Major news event",
+                      "modalities": {
+                        "visual": "A man with short, dark hair, wearing a dark shirt, speaks directly to the camera, his expression serious.",
+                        "audio": "speaks; 'bad guy'; 'bad guy's girl'.",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A serious-looking man speaks directly to the camera, discussing a situation involving a \"bad guy\" and his girlfriend.",
+            "summary": "A man with a serious expression speaks directly to the camera, discussing a situation involving a \"bad guy\" and his \"bad guy's girl\"."
+          },
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 23.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 18.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "A man with short, dark hair, wearing a dark shirt, speaks directly to the camera, his expression serious as he discusses the possibility of a \"big one\" and the need to be prepared.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A man with short, dark hair, wearing a dark shirt, speaks directly to the camera, his expression serious as he discusses the possibility of a \"big one\" and the need to be prepared.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_18.5_21.5",
+                    "tags": [
+                      "economy",
+                      "finance",
+                      "preparedness"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "hair_color": "dark",
+                          "shirt_color": "dark"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_18.5_21.5",
+                      "name": "preparedness speech",
+                      "time": {
+                        "start": "18.5",
+                        "end": "21.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "economy news"
+                      ],
+                      "scene_topic": "A man discusses the possibility of a 'big one' and the need to be prepared.",
+                      "summary": "A man with short, dark hair, wearing a dark shirt, speaks directly to the camera, his expression serious as he discusses the possibility of a \"big one\" and the need to be prepared.",
+                      "implications": "Major economics, finance news event",
+                      "modalities": {
+                        "visual": "A man with short, dark hair, wearing a dark shirt, speaks directly to the camera, his expression serious as he discusses the possibility of a 'big one' and the need to be prepared.",
+                        "audio": "speaks; 'big one'",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 23.5,
+                "children": [],
+                "caption": "A man with short, dark hair, wearing a light-colored shirt, speaks directly to the camera, his expression serious as he discusses the possibility of someone being \"taken\" and the need to find them.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A man with short, dark hair, wearing a light-colored shirt, speaks directly to the camera, his expression serious as he discusses the possibility of someone being \"taken\" and the need to find them.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_21.5_23.5",
+                    "tags": [
+                      "person",
+                      "camera",
+                      "serious",
+                      "discussion"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "hair_color": "dark",
+                          "shirt_color": "light"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_21.5_23.5",
+                      "name": "Discussion about missing person",
+                      "time": {
+                        "start": "21.5",
+                        "end": "23.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person news"
+                      ],
+                      "scene_topic": "A man discusses the possibility of someone being 'taken' and the need to find them.",
+                      "summary": "A man with short, dark hair, wearing a light-colored shirt, speaks directly to the camera, his expression serious as he discusses the possibility of someone being \"taken\" and the need to find them.",
+                      "implications": "Major person news event",
+                      "modalities": {
+                        "visual": "A man with short, dark hair, wearing a light-colored shirt, speaks directly to the camera, his expression serious as he discusses the possibility of someone being 'taken' and the need to find them.",
+                        "audio": "speaks; 'taken'",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two men speak directly to the camera, one discussing the possibility of a natural disaster and the need to be prepared, while the other discusses the possibility of someone being taken and the need to find them.",
+            "summary": "Two men with serious expressions discuss the possibility of a catastrophic event, with one mentioning a \"big one\" and the other referring to someone being \"taken\", emphasizing the need to be prepared and find the missing person."
+          },
+          {
+            "level": 2,
+            "start_time": 23.5,
+            "end_time": 27.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 23.5,
+                "end_time": 25.5,
+                "children": [],
+                "caption": "A man with short, dark hair, wearing a light-colored shirt, smiles at the camera as a woman's voice asks him a question, her words barely audible over the upbeat pop music playing in the background.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A man with short, dark hair, wearing a light-colored shirt, smiles at the camera as a woman's voice asks him a question, her words barely audible over the upbeat pop music playing in the background.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_23.5_25.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "pop_music",
+                      "interview"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "hair_color": "dark",
+                          "shirt_color": "light"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "barely audible"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "interviewee",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "interviewer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_23.5_25.5",
+                      "name": "interview",
+                      "time": {
+                        "start": "23.5",
+                        "end": "25.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "interview"
+                      ],
+                      "scene_topic": "A man is interviewed by a woman in a pop music background.",
+                      "summary": "A man with short, dark hair, wearing a light-colored shirt, smiles at the camera as a woman's voice asks him a question, her words barely audible over the upbeat pop music playing in the background.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "A man with short, dark hair, wearing a light-colored shirt, smiles at the camera as a woman's voice asks him a question.",
+                        "audio": "woman's voice; upbeat pop music",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 25.5,
+                "end_time": 27.5,
+                "children": [],
+                "caption": "A man in a suit, standing in a room with a large window, smiles at the camera as he speaks, his words \"I'm not a killer\" echoing in the background.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A man in a suit, standing in a room with a large window, smiles at the camera as he speaks, his words \"I'm not a killer\" echoing in the background.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_25.5_27.5",
+                    "tags": [
+                      "man",
+                      "suit",
+                      "room",
+                      "window",
+                      "smile",
+                      "camera",
+                      "speech"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "standing": "",
+                          "smiling": "",
+                          "speaking": "",
+                          "background_echo": "I'm not a killer"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_25.5_27.5",
+                      "name": "man speaking",
+                      "time": {
+                        "start": "25.5",
+                        "end": "27.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man in a suit, standing in a room with a large window, smiles at the camera as he speaks, his words 'I'm not a killer' echoing in the background.",
+                      "summary": "A man in a suit, standing in a room with a large window, smiles at the camera as he speaks, his words \"I'm not a killer\" echoing in the background.",
+                      "implications": "Major news event",
+                      "modalities": {
+                        "visual": "A man in a suit, standing in a room with a large window, smiles at the camera as he speaks.",
+                        "audio": "speaks 'I'm not a killer'; echoing",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man smiles at the camera as he is asked a question by an unseen interviewer, while upbeat pop music plays in the background. Another man, dressed in a suit, stands in a room with a large window and smiles at the camera as he speaks, with the words \"I'm not a killer\" echoing in the background.",
+            "summary": "A man with short, dark hair is interviewed, smiling at the camera as a woman's voice asks a question, while upbeat pop music plays in the background. He is also shown standing in a room with a large window, smiling and stating \"I'm not a killer\"."
+          },
+          {
+            "level": 2,
+            "start_time": 27.5,
+            "end_time": 40.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 27.5,
+                "end_time": 30.5,
+                "children": [],
+                "caption": "A man in a suit, standing in a room with a large window, smiles at the camera as he speaks, his words \"I'm sorry\" echoing in the background.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A man in a suit, standing in a room with a large window, smiles at the camera as he speaks, his words \"I'm sorry\" echoing in the background.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_27.5_30.5",
+                    "tags": [
+                      "man",
+                      "apology",
+                      "business",
+                      "room",
+                      "window"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "actor": "man",
+                          "location": "room",
+                          "action": "speaking"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_27.5_30.5",
+                      "name": "apology",
+                      "time": {
+                        "start": "27.5",
+                        "end": "30.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man apologizes in a room",
+                      "summary": "A man in a suit, standing in a room with a large window, smiles at the camera as he speaks, his words \"I'm sorry\" echoing in the background.",
+                      "implications": "Major personal, social news event",
+                      "modalities": {
+                        "visual": "A man in a suit, standing in a room with a large window, smiles at the camera as he speaks.",
+                        "audio": "speaks 'I'm sorry'; echo",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 30.5,
+                "end_time": 35.5,
+                "children": [],
+                "caption": "In a brightly lit room, a man in a suit stands before a woman in a white dress, their expressions serious as they engage in a conversation, while a woman's voice can be heard speaking in the background.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "In a brightly lit room, a man in a suit stands before a woman in a white dress, their expressions serious as they engage in a conversation, while a woman's voice can be heard speaking in the background.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_30.5_35.5",
+                    "tags": [
+                      "room",
+                      "conversation",
+                      "woman",
+                      "man",
+                      "suit",
+                      "dress"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in suit",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in white dress",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman's voice",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in suit",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in white dress",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_30.5_35.5",
+                      "name": "Conversation in a room",
+                      "time": {
+                        "start": "30.5",
+                        "end": "35.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "conversation"
+                      ],
+                      "scene_topic": "A man and a woman engage in a conversation in a room",
+                      "summary": "In a brightly lit room, a man in a suit stands before a woman in a white dress, their expressions serious as they engage in a conversation, while a woman's voice can be heard speaking in the background.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a man in a suit stands before a woman in a white dress, their expressions serious as they engage in a conversation.",
+                        "audio": "woman's voice speaking in the background.",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 35.5,
+                "end_time": 40.5,
+                "children": [],
+                "caption": "In a grand, ornate room, a man in a suit stands before a woman in a white dress, their hands clasped together as they exchange a warm embrace, surrounded by the warm glow of candlelight.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "In a grand, ornate room, a man in a suit stands before a woman in a white dress, their hands clasped together as they exchange a warm embrace, surrounded by the warm glow of candlelight.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_35.5_40.5",
+                    "tags": [
+                      "romance",
+                      "intimacy",
+                      "candlelight"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "candlelight",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_35.5_40.5",
+                      "name": "romantic moment",
+                      "time": {
+                        "start": "35.5",
+                        "end": "40.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "romance"
+                      ],
+                      "scene_topic": "A couple shares a romantic moment in a candlelit room.",
+                      "summary": "In a grand, ornate room, a man in a suit stands before a woman in a white dress, their hands clasped together as they exchange a warm embrace, surrounded by the warm glow of candlelight.",
+                      "implications": "Major romance event",
+                      "modalities": {
+                        "visual": "In a grand, ornate room, a man in a suit stands before a woman in a white dress, their hands clasped together as they exchange a warm embrace, surrounded by the warm glow of candlelight.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a suit apologizes to the camera, while in another scene, he converses seriously with a woman in a white dress. In a third scene, he embraces the woman in a warm embrace, surrounded by candlelight.",
+            "summary": "A man in a suit is seen in various settings, interacting with a woman in a white dress, with conversations taking place in a serious and intimate atmosphere. The scenes are set against a backdrop of warm lighting, with the man's words \"I'm sorry\" echoing in the background, suggesting a sense of apology and reconciliation."
+          }
+        ],
+        "caption": "A group of people are interviewed in various dimly lit settings, discussing serious topics such as natural disasters, crime, and personal struggles. One man smiles and speaks directly to the camera, while another man in a suit stands in a room with a large window and discusses his innocence. The scenes are intercut with upbeat pop music and the sound of a man's voice asking questions.",
+        "summary": "A group of people gather in a dimly lit field, discussing a situation involving a \"bad guy\" and his \"bad guy's girl\", with concerns about a catastrophic event and the need to be prepared. The scenes then shift to a series of interviews and interactions between characters, including a man who claims he's not a killer and a couple who seem to be seeking reconciliation."
+      },
+      {
+        "level": 1,
+        "start_time": 40.5,
+        "end_time": 100.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 40.5,
+            "end_time": 49.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 43.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man and a woman stand close together, their faces illuminated by the warm glow of a candle, as the man speaks to the woman in Portuguese.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "In a dimly lit room, a man and a woman stand close together, their faces illuminated by the warm glow of a candle, as the man speaks to the woman in Portuguese.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_40.5_43.5",
+                    "tags": [
+                      "candlelight",
+                      "intimate",
+                      "portuguese"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "candle",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O003",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_40.5_43.5",
+                      "name": "man speaks to woman",
+                      "time": {
+                        "start": "40.5",
+                        "end": "43.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "intimate scene"
+                      ],
+                      "scene_topic": "A man speaks to a woman in a dimly lit room.",
+                      "summary": "In a dimly lit room, a man and a woman stand close together, their faces illuminated by the warm glow of a candle, as the man speaks to the woman in Portuguese.",
+                      "implications": "Romantic or intimate moment",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a man and a woman stand close together, their faces illuminated by the warm glow of a candle.",
+                        "audio": "Portuguese speech.",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 43.5,
+                "end_time": 49.5,
+                "children": [],
+                "caption": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_43.5_49.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "car",
+                      "room",
+                      "concern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "car",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "room",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_43.5_49.5",
+                      "name": "",
+                      "time": {
+                        "start": "43.5",
+                        "end": "49.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                      "summary": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                      "implications": "Major scene, dialogue event",
+                      "modalities": {
+                        "visual": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice.",
+                        "audio": "woman's voice; car engine starting up.",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two people are intimately close, with their faces illuminated by a candle, as one speaks to the other in Portuguese. Meanwhile, a man in a suit listens to a woman's voice, though the sound of a car engine drowns out most of her words.",
+            "summary": "A man and a woman stand together in a dimly lit room, the man speaking to the woman in Portuguese, while a separate scene shows a man in a suit listening to a woman's voice, her words barely audible over the sound of a car engine starting up."
+          },
+          {
+            "level": 2,
+            "start_time": 49.5,
+            "end_time": 56.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 49.5,
+                "end_time": 56.5,
+                "children": [],
+                "caption": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_49.5_56.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "car",
+                      "engine",
+                      "room"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "car",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "room",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_49.5_56.5",
+                      "name": "",
+                      "time": {
+                        "start": "49.5",
+                        "end": "56.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                      "summary": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                      "implications": "Major scene, dialogue event",
+                      "modalities": {
+                        "visual": "A man in a suit stands in a dimly lit room, his face etched with concern as he listens to a woman's voice.",
+                        "audio": "woman's voice; car engine starting up.",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man listens intently to a woman's voice, the sound of a car engine drowning out her words, as concern etches his face.",
+            "summary": "A man in a suit stands in a dimly lit room, his face etched with concern, as he listens to a woman's voice barely audible over the sound of a car engine starting up."
+          },
+          {
+            "level": 2,
+            "start_time": 56.5,
+            "end_time": 67.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 56.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "A man in a dark jacket stands in a dimly lit room, his face etched with concern as he listens to a woman's voice urgently asking him to \"get out of here\" and \"get out of here now.\"",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "A man in a dark jacket stands in a dimly lit room, his face etched with concern as he listens to a woman's voice urgently asking him to \"get out of here\" and \"get out of here now.\"",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_56_63",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "concern",
+                      "urgency",
+                      "escape"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_56_63",
+                      "name": "Urgent warning",
+                      "time": {
+                        "start": "56.5",
+                        "end": "63.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "concern",
+                        "urgency"
+                      ],
+                      "scene_topic": "A man is warned to leave a room by a woman.",
+                      "summary": "A man in a dark jacket stands in a dimly lit room, his face etched with concern as he listens to a woman's voice urgently asking him to \"get out of here\" and \"get out of here now.\"",
+                      "implications": "Major event in a person's life",
+                      "modalities": {
+                        "visual": "A man in a dark jacket stands in a dimly lit room, his face etched with concern as he listens to a woman's voice.",
+                        "audio": "woman's voice; 'get out of here'; 'get out of here now'.",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 67.5,
+                "children": [],
+                "caption": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words echoing the question \"What is the meaning of life?\"",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words echoing the question \"What is the meaning of life?\"",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_63_67",
+                    "tags": [
+                      "philosophy",
+                      "meaning_of_life",
+                      "existentialism",
+                      "question",
+                      "human"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "dark_jacket",
+                          "illumination": "bright_light",
+                          "room": "dimly_lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_63_67",
+                      "name": "man speaks about the meaning of life",
+                      "time": {
+                        "start": "63.5",
+                        "end": "67.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "philosophy"
+                      ],
+                      "scene_topic": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words echoing the question 'What is the meaning of life?'",
+                      "summary": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words echoing the question \"What is the meaning of life?\"",
+                      "implications": "Major existentialism, philosophy news event",
+                      "modalities": {
+                        "visual": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks.",
+                        "audio": "speaks; echoing 'What is the meaning of life?'",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a dark jacket is shown in two different scenarios, one of urgency and one of philosophical contemplation.",
+            "summary": "A man in a dark jacket is urgently advised by a woman to leave a dimly lit room, while another man in the same jacket ponders the meaning of life in a bright-lit setting."
+          },
+          {
+            "level": 2,
+            "start_time": 67.5,
+            "end_time": 83.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 67.5,
+                "end_time": 73.5,
+                "children": [],
+                "caption": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words echoing the question \"What is the meaning of life?\"",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words echoing the question \"What is the meaning of life?\"",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_67.5_73.5",
+                    "tags": [
+                      "philosophy",
+                      "meaning_of_life",
+                      "existentialism",
+                      "question",
+                      "human"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "dark_jacket",
+                          "illumination": "bright_light",
+                          "room": "dimly_lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_67.5_73.5",
+                      "name": "man speaks about the meaning of life",
+                      "time": {
+                        "start": "67.5",
+                        "end": "73.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "philosophy"
+                      ],
+                      "scene_topic": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words echoing the question 'What is the meaning of life?'",
+                      "summary": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words echoing the question \"What is the meaning of life?\"",
+                      "implications": "Major philosophical event",
+                      "modalities": {
+                        "visual": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks.",
+                        "audio": "speaks; echoing 'What is the meaning of life?'",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 73.5,
+                "end_time": 75.5,
+                "children": [],
+                "caption": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words \"I'm not going to let you do this\" echoing in the silence.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words \"I'm not going to let you do this\" echoing in the silence.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_73.5_75.5",
+                    "tags": [
+                      "man",
+                      "dark_jacket",
+                      "dimly_lit",
+                      "bright_light",
+                      "silence"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "dark_jacket",
+                          "illumination": "bright_light"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_73.5_75.5",
+                      "name": "man speaks in dimly lit room",
+                      "time": {
+                        "start": "73.5",
+                        "end": "75.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "speech"
+                      ],
+                      "scene_topic": "A man speaks in a dimly lit room",
+                      "summary": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks, his words \"I'm not going to let you do this\" echoing in the silence.",
+                      "implications": "Major drama, emotional event",
+                      "modalities": {
+                        "visual": "A man in a dark jacket stands in a dimly lit room, his face illuminated by a bright light as he speaks.",
+                        "audio": "speaks; 'I'm not going to let you do this'",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 75.5,
+                "end_time": 83.5,
+                "children": [],
+                "caption": "A man, illuminated by a bright light, speaks directly to the camera, his words inaudible as he gestures with his hands.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "A man, illuminated by a bright light, speaks directly to the camera, his words inaudible as he gestures with his hands.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_75.5_83.5",
+                    "tags": [
+                      "man",
+                      "camera",
+                      "light",
+                      "gestures",
+                      "hands"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_75.5_83.5",
+                      "name": "man speaks to camera",
+                      "time": {
+                        "start": "75.5",
+                        "end": "83.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man speaks directly to the camera",
+                      "summary": "A man, illuminated by a bright light, speaks directly to the camera, his words inaudible as he gestures with his hands.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "A man, illuminated by a bright light, speaks directly to the camera, his words inaudible as he gestures with his hands.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man grapples with the question of the meaning of life, and later, stands up to someone who is trying to do something. The final scene shows a man speaking directly to the camera, but his words are inaudible.",
+            "summary": "A man in a dark jacket is seen in a dimly lit room, his face illuminated by a bright light as he speaks, with his words echoing in the silence. He asks the question \"What is the meaning of life?\" and also says \"I'm not going to let you do this\", but his words are inaudible as he gestures with his hands."
+          },
+          {
+            "level": 2,
+            "start_time": 83.5,
+            "end_time": 100.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 83.5,
+                "end_time": 88.5,
+                "children": [],
+                "caption": "A man, illuminated by a bright light, speaks directly to the camera, his words inaudible but his expression serious as he warns someone off-screen about the consequences of their actions.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "A man, illuminated by a bright light, speaks directly to the camera, his words inaudible but his expression serious as he warns someone off-screen about the consequences of their actions.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_83_88",
+                    "tags": [
+                      "man",
+                      "warning",
+                      "consequences",
+                      "actions"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_83_88",
+                      "name": "man warns off-screen person",
+                      "time": {
+                        "start": "83.5",
+                        "end": "88.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person warning"
+                      ],
+                      "scene_topic": "A man warns someone off-screen about the consequences of their actions.",
+                      "summary": "A man, illuminated by a bright light, speaks directly to the camera, his words inaudible but his expression serious as he warns someone off-screen about the consequences of their actions.",
+                      "implications": "Major news event",
+                      "modalities": {
+                        "visual": "A man, illuminated by a bright light, speaks directly to the camera, his expression serious.",
+                        "audio": "speaks; warning",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 88.5,
+                "end_time": 96.5,
+                "children": [],
+                "caption": "A man in a dimly lit room, illuminated by a single light source, speaks directly to the camera, his serious expression and the blurred background suggesting a tense or dramatic atmosphere.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "A man in a dimly lit room, illuminated by a single light source, speaks directly to the camera, his serious expression and the blurred background suggesting a tense or dramatic atmosphere.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_88.5_96.5",
+                    "tags": [
+                      "man",
+                      "room",
+                      "light",
+                      "camera",
+                      "serious"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_88.5_96.5",
+                      "name": "man speaks to camera",
+                      "time": {
+                        "start": "88.5",
+                        "end": "96.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man speaks directly to the camera in a dimly lit room.",
+                      "summary": "A man in a dimly lit room, illuminated by a single light source, speaks directly to the camera, his serious expression and the blurred background suggesting a tense or dramatic atmosphere.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "A man in a dimly lit room, illuminated by a single light source, speaks directly to the camera, his serious expression and the blurred background suggesting a tense or dramatic atmosphere.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 96.5,
+                "end_time": 100.5,
+                "children": [],
+                "caption": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the shadows.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the shadows.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_96.5_100.5",
+                    "tags": [
+                      "room",
+                      "person",
+                      "door",
+                      "shadows"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "person",
+                        "attributes": {
+                          "wearing": "white shirt and black pants",
+                          "face_obscured": "by shadows"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_96.5_100.5",
+                      "name": "",
+                      "time": {
+                        "start": "96.5",
+                        "end": "100.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A person stands in front of a door, their face obscured by shadows.",
+                      "summary": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the shadows.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the shadows.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A mysterious figure warns someone off-screen about the consequences of their actions, their face obscured by shadows. Another scene takes place in a dimly lit room, where a person speaks directly to the camera with a serious expression, creating a tense atmosphere. Finally, a person stands in front of a door, their face hidden in the shadows, adding to the mystery.",
+            "summary": "A man, illuminated by a bright light, warns someone off-screen about the consequences of their actions, his serious expression conveying a sense of urgency. In a dimly lit room, another man speaks directly to the camera, his serious expression and blurred background suggesting a tense or dramatic atmosphere."
+          }
+        ],
+        "caption": "The captions depict various scenes of people engaging in intense conversations, contemplating life's meaning, and facing challenges. The scenes are characterized by the use of shadows, close-ups, and the drowning out of voices by background noises, creating a sense of mystery and tension. The summaries are:\n\n1. Two people are intimately close, discussing something in Portuguese, while a man in a suit listens to a woman's voice, but most of her words are inaudible due to the sound of a",
+        "summary": "A man in a dark jacket is seen in various dimly lit settings, speaking to others or to himself, with his words often inaudible or echoing in silence, as he grapples with existential questions and confronts unknown threats. Meanwhile, a separate scene shows a man in a suit listening to a woman's voice, barely audible over the sound of a car engine, adding to the sense of tension and uncertainty."
+      },
+      {
+        "level": 1,
+        "start_time": 100.5,
+        "end_time": 124.9,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 100.5,
+            "end_time": 119.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 100.5,
+                "end_time": 104.5,
+                "children": [],
+                "caption": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the shadows.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the shadows.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_100.5_104.5",
+                    "tags": [
+                      "person",
+                      "door",
+                      "room"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "person",
+                        "attributes": {
+                          "wearing": "white shirt and black pants",
+                          "face_obscured": "by shadows"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_100.5_104.5",
+                      "name": "",
+                      "time": {
+                        "start": "100.5",
+                        "end": "104.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person"
+                      ],
+                      "scene_topic": "A person stands in front of a door in a dimly lit room.",
+                      "summary": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the shadows.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the shadows.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 104.5,
+                "end_time": 106.5,
+                "children": [],
+                "caption": "A man in a dimly lit room, illuminated by a single light source, speaks directly to the camera, his serious expression and the blurred background suggesting a tense or dramatic situation.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "A man in a dimly lit room, illuminated by a single light source, speaks directly to the camera, his serious expression and the blurred background suggesting a tense or dramatic situation.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_104.5_106.5",
+                    "tags": [
+                      "man",
+                      "room",
+                      "light",
+                      "camera",
+                      "serious"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_104.5_106.5",
+                      "name": "man speaks to camera",
+                      "time": {
+                        "start": "104.5",
+                        "end": "106.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man speaks directly to the camera in a dimly lit room.",
+                      "summary": "A man in a dimly lit room, illuminated by a single light source, speaks directly to the camera, his serious expression and the blurred background suggesting a tense or dramatic situation.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "A man in a dimly lit room, illuminated by a single light source, speaks directly to the camera, his serious expression and the blurred background suggesting a tense or dramatic situation.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 106.5,
+                "end_time": 108.5,
+                "children": [],
+                "caption": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the darkness.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the darkness.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_106.5_108.5",
+                    "tags": [
+                      "person",
+                      "door",
+                      "darkness"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "person",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_106.5_108.5",
+                      "name": "",
+                      "time": {
+                        "start": "106.5",
+                        "end": "108.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person"
+                      ],
+                      "scene_topic": "A person stands in front of a door in a dimly lit room.",
+                      "summary": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the darkness.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a person wearing a white shirt and black pants stands in front of a door, their face obscured by the darkness.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 108.5,
+                "end_time": 112.5,
+                "children": [],
+                "caption": "A woman, illuminated by a bright light, looks directly at the camera as a man's voice speaks in a foreign language, his words barely audible over the sound of a car engine starting up.",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "A woman, illuminated by a bright light, looks directly at the camera as a man's voice speaks in a foreign language, his words barely audible over the sound of a car engine starting up.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_108_112",
+                    "tags": [
+                      "woman",
+                      "light",
+                      "camera",
+                      "man",
+                      "voice",
+                      "car"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "light",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "camera",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "car",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O004",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_108_112",
+                      "name": "",
+                      "time": {
+                        "start": "108.5",
+                        "end": "112.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A woman, illuminated by a bright light, looks directly at the camera as a man's voice speaks in a foreign language, his words barely audible over the sound of a car engine starting up.",
+                      "summary": "A woman, illuminated by a bright light, looks directly at the camera as a man's voice speaks in a foreign language, his words barely audible over the sound of a car engine starting up.",
+                      "implications": "Major scene, camera focus",
+                      "modalities": {
+                        "visual": "A woman, illuminated by a bright light, looks directly at the camera as a man's voice speaks in a foreign language.",
+                        "audio": "man's voice; car engine starting up",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 112.5,
+                "end_time": 115.5,
+                "children": [],
+                "caption": "A woman, illuminated by a bright light, looks directly at the camera with a serious expression as a man's voice speaks in the background.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "A woman, illuminated by a bright light, looks directly at the camera with a serious expression as a man's voice speaks in the background.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_112.5_115.5",
+                    "tags": [
+                      "woman",
+                      "light",
+                      "camera",
+                      "voice",
+                      "background"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_112.5_115.5",
+                      "name": "",
+                      "time": {
+                        "start": "112.5",
+                        "end": "115.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A woman looks directly at the camera with a serious expression as a man's voice speaks in the background.",
+                      "summary": "A woman, illuminated by a bright light, looks directly at the camera with a serious expression as a man's voice speaks in the background.",
+                      "implications": "Major scene, human interaction",
+                      "modalities": {
+                        "visual": "A woman, illuminated by a bright light, looks directly at the camera with a serious expression as a man's voice speaks in the background.",
+                        "audio": "man's voice",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 115.5,
+                "end_time": 119.5,
+                "children": [],
+                "caption": "A woman, illuminated by a bright light, looks directly at the camera as a man's voice speaks about a \"new world\" and a \"new way of life,\" his words echoing the woman's earlier question about the end of the world.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "A woman, illuminated by a bright light, looks directly at the camera as a man's voice speaks about a \"new world\" and a \"new way of life,\" his words echoing the woman's earlier question about the end of the world.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_115.5_119.5",
+                    "tags": [
+                      "end_of_world",
+                      "new_world",
+                      "new_way_of_life"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "questioner",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_115.5_119.5",
+                      "name": "",
+                      "time": {
+                        "start": "115.5",
+                        "end": "119.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "end_of_world"
+                      ],
+                      "scene_topic": "A woman looks directly at the camera as a man speaks about a new world and a new way of life.",
+                      "summary": "A woman, illuminated by a bright light, looks directly at the camera as a man's voice speaks about a \"new world\" and a \"new way of life,\" his words echoing the woman's earlier question about the end of the world.",
+                      "implications": "Major philosophy, spirituality news event",
+                      "modalities": {
+                        "visual": "A woman, illuminated by a bright light, looks directly at the camera.",
+                        "audio": "Man's voice; 'new world'; 'new way of life'; echoing",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A series of mysterious and dramatic scenes are depicted, with characters obscured by shadows or illuminated by a single light source. The scenes suggest a tense or dramatic situation, with a man's voice speaking directly to the camera in one scene and a woman's voice speaking in a foreign language in another. The scenes also hint at the end of the world or a new beginning, with the woman in the final scene asking about the end of the world and the man's voice speaking about a \"new world\" and a \"new way of life.\"",
+            "summary": "A person in a dimly lit room stands in front of a door, their face obscured, while a man speaks in a foreign language in the background. A woman is illuminated by a bright light, looking directly at the camera, as a man's voice discusses a \"new world\" and \"new way of life\", echoing her earlier question about the end of the world."
+          },
+          {
+            "level": 2,
+            "start_time": 119.5,
+            "end_time": 124.9,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 119.5,
+                "end_time": 122.5,
+                "children": [],
+                "caption": "The video transitions from a dark, blurry scene to a bright, empty room, while a woman's voice can be heard, her words unclear but her tone urgent.",
+                "postprocess": {
+                  "event_id": 30,
+                  "original_answer": "The video transitions from a dark, blurry scene to a bright, empty room, while a woman's voice can be heard, her words unclear but her tone urgent.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_119_122",
+                    "tags": [
+                      "dark_scene",
+                      "bright_room",
+                      "woman_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_119_122",
+                      "name": "",
+                      "time": {
+                        "start": "119.5",
+                        "end": "122.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The video transitions from a dark, blurry scene to a bright, empty room, while a woman's voice can be heard, her words unclear but her tone urgent.",
+                      "summary": "The video transitions from a dark, blurry scene to a bright, empty room, while a woman's voice can be heard, her words unclear but her tone urgent.",
+                      "implications": "Major scene transition event",
+                      "modalities": {
+                        "visual": "The video transitions from a dark, blurry scene to a bright, empty room.",
+                        "audio": "Woman's voice; unclear words; urgent tone.",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 122.5,
+                "end_time": 124.9,
+                "children": [],
+                "caption": "The video transitions to a black screen with white text, displaying a warning message about copyright infringement and encouraging viewers to subscribe for more content.",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "The video transitions to a black screen with white text, displaying a warning message about copyright infringement and encouraging viewers to subscribe for more content.",
+                  "result": {
+                    "video_id": "ZnueWTgJJ8E",
+                    "event_id": "E_ZnueWTgJJ8E_122.5_124.9",
+                    "tags": [
+                      "copyright",
+                      "infringement",
+                      "warning",
+                      "subscription"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black screen",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "white text",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "warning message",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZnueWTgJJ8E_122.5_124.9",
+                      "name": "Copyright infringement warning",
+                      "time": {
+                        "start": "122.5",
+                        "end": "124.9"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "copyright infringement"
+                      ],
+                      "scene_topic": "The video displays a warning message about copyright infringement.",
+                      "summary": "The video transitions to a black screen with white text, displaying a warning message about copyright infringement and encouraging viewers to subscribe for more content.",
+                      "implications": "Major copyright infringement event",
+                      "modalities": {
+                        "visual": "The video transitions to a black screen with white text, displaying a warning message about copyright infringement and encouraging viewers to subscribe for more content.",
+                        "audio": "",
+                        "speech": "Tommy Covington, likely dead, records a message to his friend Dan, pronouncing him married to Skylar, and warns of an impending catastrophe, referencing Revelations 9 and the fifth angel."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video transitions between a dark and blurry scene and a bright and empty room, with an urgent voiceover from a woman. The video then displays a warning message about copyright infringement and encourages viewers to subscribe for more content.",
+            "summary": "The video begins with a dark and blurry scene, followed by a bright and empty room where a woman's voice is heard, though her words are unclear. The video then cuts to a black screen with a warning message about copyright infringement and an invitation to subscribe for more content."
+          }
+        ],
+        "caption": "The video depicts a series of mysterious and dramatic scenes, with a man's voice and a woman's voice speaking directly to the camera. The scenes suggest a tense or dramatic situation and hint at the end of the world or a new beginning. The video then transitions to a bright and empty room with an urgent voiceover from a woman, followed by a warning message about copyright infringement and an encouragement to subscribe for more content.",
+        "summary": "A dimly lit scene features a person with their face obscured, while a foreign language is spoken in the background, followed by a bright room where a woman is illuminated and a man's voice discusses a \"new world\" and \"new way of life\". The video then cuts to a black screen with a warning message and an invitation to subscribe."
+      }
+    ],
+    "caption": "The video depicts a series of intense and dramatic scenes, with a focus on mysterious and tense situations. The scenes suggest the end of the world or a new beginning, and are characterized by the use of shadows, close-ups, and the drowning out of voices by background noises. The video transitions to a bright and empty room with an urgent voiceover from a woman, followed by a warning message about copyright infringement and an encouragement to subscribe for more content.\n\n1. Two people are intimately close",
+    "summary": "A group of people gather to discuss a catastrophic event, while individual characters grapple with existential questions and confront unknown threats in dimly lit settings. The video jumps between these scenes, featuring a mix of conversations, interactions, and ominous warnings, ultimately ending with a warning message and an invitation to subscribe."
+  }
+}

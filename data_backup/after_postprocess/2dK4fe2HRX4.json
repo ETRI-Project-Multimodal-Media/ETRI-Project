@@ -1,0 +1,1477 @@
+{
+  "video_id": "2dK4fe2HRX4",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 125.200018,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 73.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 18.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "The camera pans across a cozy living room, showcasing a wooden coffee table with a red cup and a book, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The camera pans across a cozy living room, showcasing a wooden coffee table with a red cup and a book, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_0_3.5",
+                    "tags": [
+                      "living_room",
+                      "cozy",
+                      "coffee_table",
+                      "book",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "coffee_table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "book",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "red_cup",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_0_3.5",
+                      "name": "The camera pans across a cozy living room",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "home_living"
+                      ],
+                      "scene_topic": "The camera pans across a cozy living room, showcasing a wooden coffee table with a red cup and a book, while a woman's voice can be heard in the background.",
+                      "summary": "The camera pans across a cozy living room, showcasing a wooden coffee table with a red cup and a book, while a woman's voice can be heard in the background.",
+                      "implications": "Home and living scene",
+                      "modalities": {
+                        "visual": "The camera pans across a cozy living room, showcasing a wooden coffee table with a red cup and a book.",
+                        "audio": "woman's voice",
+                        "speech": "I'm talking to you today I can't hear you thank you goodbye"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 8.5,
+                "children": [],
+                "caption": "A hand reaches out to adjust the camera, revealing a cozy living room with a wooden coffee table and a patterned rug, as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A hand reaches out to adjust the camera, revealing a cozy living room with a wooden coffee table and a patterned rug, as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_3.5_8.5",
+                    "tags": [
+                      "living_room",
+                      "cozy",
+                      "camera_adjustment",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "coffee_table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "patterned_rug",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O003",
+                        "role": "operator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_3.5_8.5",
+                      "name": "Camera adjustment",
+                      "time": {
+                        "start": "3.5",
+                        "end": "8.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "home_life"
+                      ],
+                      "scene_topic": "A woman adjusts the camera in a cozy living room.",
+                      "summary": "A hand reaches out to adjust the camera, revealing a cozy living room with a wooden coffee table and a patterned rug, as a woman's voice can be heard in the background.",
+                      "implications": "Minor adjustment to camera settings",
+                      "modalities": {
+                        "visual": "A hand reaches out to adjust the camera, revealing a cozy living room with a wooden coffee table and a patterned rug.",
+                        "audio": "woman's voice",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 8.5,
+                "end_time": 18.5,
+                "children": [],
+                "caption": "A hand reaches out to pet a plush toy on the couch, then the camera zooms in on the toy as a woman's voice can be heard, followed by a man's voice.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "A hand reaches out to pet a plush toy on the couch, then the camera zooms in on the toy as a woman's voice can be heard, followed by a man's voice.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_8.5_18.5",
+                    "tags": [
+                      "petting",
+                      "plush_toy",
+                      "couch",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "plush toy",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_8.5_18.5",
+                      "name": "Petting a plush toy",
+                      "time": {
+                        "start": "8.5",
+                        "end": "18.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "domestic scene"
+                      ],
+                      "scene_topic": "A woman and a man are heard talking while petting a plush toy on the couch.",
+                      "summary": "A hand reaches out to pet a plush toy on the couch, then the camera zooms in on the toy as a woman's voice can be heard, followed by a man's voice.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A hand reaches out to pet a plush toy on the couch, then the camera zooms in on the toy.",
+                        "audio": "woman's voice; man's voice.",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A cozy living room is shown, with a woman's voice heard in the background, along with a red cup and a book on a wooden coffee table. The camera is then adjusted, revealing a more detailed view of the room, including a patterned rug and a plush toy on the couch. The woman's and man's voices are heard, along with the sound of someone petting the toy.",
+            "summary": "A camera pans across a cozy living room, showing a wooden coffee table and a plush toy on the couch, as a woman's voice is heard in the background. The camera then zooms in on the toy, and a man's voice is also heard, as a hand reaches out to pet the toy."
+          },
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 44.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 18.5,
+                "end_time": 35.5,
+                "children": [],
+                "caption": "A hand wearing a red watch rests on a plush red couch, the person's face obscured by the camera angle, as a woman's voice can be heard, followed by a man's voice and then a baby's cries.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "A hand wearing a red watch rests on a plush red couch, the person's face obscured by the camera angle, as a woman's voice can be heard, followed by a man's voice and then a baby's cries.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_18.5_35.5",
+                    "tags": [
+                      "couch",
+                      "watch",
+                      "baby",
+                      "voice",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "color": "red",
+                          "location": "couch"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "watch",
+                        "attributes": {
+                          "color": "red"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "couch",
+                        "attributes": {
+                          "material": "plush",
+                          "color": "red"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_18.5_35.5",
+                      "name": "",
+                      "time": {
+                        "start": "18.5",
+                        "end": "35.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A person's hand rests on a couch as voices and a baby's cries are heard.",
+                      "summary": "A hand wearing a red watch rests on a plush red couch, the person's face obscured by the camera angle, as a woman's voice can be heard, followed by a man's voice and then a baby's cries.",
+                      "implications": "Minor domestic scene",
+                      "modalities": {
+                        "visual": "A hand wearing a red watch rests on a plush red couch, the person's face obscured by the camera angle.",
+                        "audio": "Woman's voice; man's voice; baby's cries.",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 35.5,
+                "end_time": 40.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a plush red couch, the hand gently moving as if adjusting the cushions, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The camera focuses on a person's hand resting on a plush red couch, the hand gently moving as if adjusting the cushions, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_35.5_40.5",
+                    "tags": [
+                      "couch",
+                      "hand",
+                      "voice",
+                      "background",
+                      "adjusting"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "couch",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_35.5_40.5",
+                      "name": "",
+                      "time": {
+                        "start": "35.5",
+                        "end": "40.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera focuses on a person's hand resting on a plush red couch, the hand gently moving as if adjusting the cushions, while a woman's voice can be heard in the background.",
+                      "summary": "The camera focuses on a person's hand resting on a plush red couch, the hand gently moving as if adjusting the cushions, while a woman's voice can be heard in the background.",
+                      "implications": "Major scene, background audio",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a plush red couch, the hand gently moving as if adjusting the cushions.",
+                        "audio": "woman's voice",
+                        "speech": "I'm talking to you today I can't hear you thank you goodbye"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "A hand wearing a red watch rests on a plush red couch, the person's face obscured by the camera angle as they speak, their voice a low murmur.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A hand wearing a red watch rests on a plush red couch, the person's face obscured by the camera angle as they speak, their voice a low murmur.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_40.5_44.5",
+                    "tags": [
+                      "couch",
+                      "hand",
+                      "red",
+                      "watch",
+                      "person",
+                      "face",
+                      "camera",
+                      "angle",
+                      "voice",
+                      "murmur"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "color": "red",
+                          "watch": "present"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "couch",
+                        "attributes": {
+                          "color": "red",
+                          "plush": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_40.5_44.5",
+                      "name": "A person speaks",
+                      "time": {
+                        "start": "40.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A person speaks on a couch",
+                      "summary": "A hand wearing a red watch rests on a plush red couch, the person's face obscured by the camera angle as they speak, their voice a low murmur.",
+                      "implications": "Human behavior, communication",
+                      "modalities": {
+                        "visual": "A hand wearing a red watch rests on a plush red couch, the person's face obscured by the camera angle.",
+                        "audio": "low murmur",
+                        "speech": "I'm talking to you today I can't hear you thank you goodbye"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person's hand is shown resting on a plush red couch, adjusting the cushions, while a woman's voice and a baby's cries can be heard in the background.",
+            "summary": "A person's hand, wearing a red watch, rests on a plush red couch, adjusting the cushions as a woman's voice and a man's voice can be heard in the background, with a baby's cries also audible. The person's face is obscured by the camera angle, and their voice is a low murmur."
+          },
+          {
+            "level": 2,
+            "start_time": 44.5,
+            "end_time": 61.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 44.5,
+                "end_time": 49.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a couch, the person's face obscured by the camera angle, as a woman's voice can be heard saying \"Bye\" and a man's voice responds with \"Okay.\"",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The camera focuses on a person's hand resting on a couch, the person's face obscured by the camera angle, as a woman's voice can be heard saying \"Bye\" and a man's voice responds with \"Okay.\"",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_44.5_49.5",
+                    "tags": [
+                      "couch",
+                      "hand",
+                      "voice",
+                      "response"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "couch",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person's hand",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "unknown",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_44.5_49.5",
+                      "name": "unknown",
+                      "time": {
+                        "start": "44.5",
+                        "end": "49.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera focuses on a person's hand resting on a couch, the person's face obscured by the camera angle, as a woman's voice can be heard saying 'Bye' and a man's voice responds with 'Okay.'",
+                      "summary": "The camera focuses on a person's hand resting on a couch, the person's face obscured by the camera angle, as a woman's voice can be heard saying \"Bye\" and a man's voice responds with \"Okay.\"",
+                      "implications": "Major scene, minor significance",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a couch, the person's face obscured by the camera angle, as a woman's voice can be heard saying 'Bye' and a man's voice responds with 'Okay'.",
+                        "audio": "",
+                        "speech": "I'm talking to you today I can't hear you"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 49.5,
+                "end_time": 61.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a red watch and a ring, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a red watch and a ring, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_49.5_61.5",
+                    "tags": [
+                      "hand",
+                      "watch",
+                      "ring",
+                      "voice",
+                      "background"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "wearing_watch": "true",
+                          "wearing_ring": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "unknown",
+                        "ref_object": "O001",
+                        "role": "unknown",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_49.5_61.5",
+                      "name": "unknown",
+                      "time": {
+                        "start": "49.5",
+                        "end": "61.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a red watch and a ring, while a woman's voice can be heard in the background.",
+                      "summary": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a red watch and a ring, while a woman's voice can be heard in the background.",
+                      "implications": "Major scene, minor significance",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a red watch and a ring.",
+                        "audio": "woman's voice",
+                        "speech": "I'm talking to you today I can't hear you thank you goodbye"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person's hand is shown in two different settings, with a woman's voice saying \"bye\" and a man's voice responding, and a person's hand resting on a textured surface while a woman's voice is heard in the background.",
+            "summary": "A person's hand is shown resting on a couch and a textured surface, wearing a red watch and ring, while a woman's voice is heard in the background saying \"Bye\" and a man responds with \"Okay\". The camera angle obscures the person's face, focusing on the hand instead."
+          },
+          {
+            "level": 2,
+            "start_time": 61.5,
+            "end_time": 73.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 61.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_61.5_63.5",
+                    "tags": [
+                      "texture",
+                      "hand",
+                      "surface"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "textured surface",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_61.5_63.5",
+                      "name": "hand on textured surface",
+                      "time": {
+                        "start": "61.5",
+                        "end": "63.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The person's hand rests on a textured surface, moving slightly.",
+                      "summary": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                      "implications": "Minor visual detail",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                        "audio": "",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 65.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a watch and a ring, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a watch and a ring, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_63.5_65.5",
+                    "tags": [
+                      "hand",
+                      "watch",
+                      "ring",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "wearing_watch": "true",
+                          "wearing_ring": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "unknown",
+                        "ref_object": "O001",
+                        "role": "unknown",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_63.5_65.5",
+                      "name": "unknown",
+                      "time": {
+                        "start": "63.5",
+                        "end": "65.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a watch and a ring, while a woman's voice can be heard in the background.",
+                      "summary": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a watch and a ring, while a woman's voice can be heard in the background.",
+                      "implications": "Major scene description",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a textured surface, the hand is wearing a watch and a ring.",
+                        "audio": "woman's voice",
+                        "speech": "I'm talking to you today I can't hear you thank you goodbye"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 65.5,
+                "end_time": 73.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_65.5_73.5",
+                    "tags": [
+                      "texture",
+                      "hand",
+                      "surface"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "textured surface",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_65.5_73.5",
+                      "name": "hand on textured surface",
+                      "time": {
+                        "start": "65.5",
+                        "end": "73.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The person's hand rests on a textured surface, moving slightly.",
+                      "summary": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                      "implications": "Minor visual detail",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                        "audio": "",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person's hand is shown resting on a textured surface, with the hand moving slightly as if feeling the texture. The hand is adorned with a watch and ring.",
+            "summary": "A person's hand is shown resting on a textured surface, with a watch and ring visible, as a woman's voice is heard in the background. The hand moves slightly as if feeling the texture, with the camera focusing on it multiple times."
+          }
+        ],
+        "caption": "A person's hand is shown in various settings, adjusting cushions, petting a plush toy, and resting on different surfaces. The person's voice and the voices of others in the background are heard, along with various sounds such as baby cries and the sound of a clock ticking.",
+        "summary": "A person's hand is shown resting on a couch and textured surface, wearing a red watch and ring, as a woman's voice and a man's voice can be heard in the background, with a baby's cries also audible. The camera focuses on the hand as it moves slightly, feeling the texture, while the voices and sounds of the background create a cozy atmosphere."
+      },
+      {
+        "level": 1,
+        "start_time": 73.5,
+        "end_time": 125.200018,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 73.5,
+            "end_time": 84.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 73.5,
+                "end_time": 80.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_73.5_80.5",
+                    "tags": [
+                      "texture",
+                      "hand",
+                      "surface"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "textured surface",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_73.5_80.5",
+                      "name": "hand on textured surface",
+                      "time": {
+                        "start": "73.5",
+                        "end": "80.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The person's hand rests on a textured surface, moving slightly.",
+                      "summary": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                      "implications": "Minor visual detail",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a textured surface, the hand moving slightly as if feeling the texture.",
+                        "audio": "",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 80.5,
+                "end_time": 84.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a textured surface, the hand's fingers gently moving as if exploring the surface, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The camera focuses on a person's hand resting on a textured surface, the hand's fingers gently moving as if exploring the surface, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_80_84",
+                    "tags": [
+                      "exploration",
+                      "texture",
+                      "fingers",
+                      "hand",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "resting": "true",
+                          "exploring": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_80_84",
+                      "name": "Hand Exploration",
+                      "time": {
+                        "start": "80.5",
+                        "end": "84.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera focuses on a person's hand resting on a textured surface, the hand's fingers gently moving as if exploring the surface, while a woman's voice can be heard in the background.",
+                      "summary": "The camera focuses on a person's hand resting on a textured surface, the hand's fingers gently moving as if exploring the surface, while a woman's voice can be heard in the background.",
+                      "implications": "Major scene, minor significance",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a textured surface, the hand's fingers gently moving as if exploring the surface, while a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person's hand explores a textured surface, the fingers moving gently as they feel the texture.",
+            "summary": "A person's hand is shown resting on a textured surface, with their fingers gently moving as if exploring the texture. In the background, a woman's voice can be heard."
+          },
+          {
+            "level": 2,
+            "start_time": 84.5,
+            "end_time": 93.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 84.5,
+                "end_time": 93.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a plush fabric, the hand moving slightly as if adjusting the fabric, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "The camera focuses on a person's hand resting on a plush fabric, the hand moving slightly as if adjusting the fabric, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_84.5_93.5",
+                    "tags": [
+                      "fabric",
+                      "hand",
+                      "voice",
+                      "background",
+                      "adjusting"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "resting": "on",
+                          "moving": "slightly"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plush fabric",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_84.5_93.5",
+                      "name": "",
+                      "time": {
+                        "start": "84.5",
+                        "end": "93.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A person adjusts a plush fabric while a woman's voice is heard in the background.",
+                      "summary": "The camera focuses on a person's hand resting on a plush fabric, the hand moving slightly as if adjusting the fabric, while a woman's voice can be heard in the background.",
+                      "implications": "Minor human activity",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a plush fabric, the hand moving slightly as if adjusting the fabric.",
+                        "audio": "a woman's voice",
+                        "speech": "I'm talking to you today I can't hear you thank you goodbye"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person's hand gently adjusts the fabric on a plush surface, while a woman's voice can be heard in the background.",
+            "summary": "A person's hand is seen adjusting a plush fabric, while a woman's voice can be heard in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 93.5,
+            "end_time": 111.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 93.5,
+                "end_time": 98.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a plush, brown couch, the person's fingers gently moving as if they are petting the fabric.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The camera focuses on a person's hand resting on a plush, brown couch, the person's fingers gently moving as if they are petting the fabric.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_93.5_98.5",
+                    "tags": [
+                      "hand",
+                      "couch",
+                      "petting"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "couch",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hand",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_93.5_98.5",
+                      "name": "",
+                      "time": {
+                        "start": "93.5",
+                        "end": "98.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The person's hand is petting the couch.",
+                      "summary": "The camera focuses on a person's hand resting on a plush, brown couch, the person's fingers gently moving as if they are petting the fabric.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a plush, brown couch, the person's fingers gently moving as if they are petting the fabric.",
+                        "audio": "",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 98.5,
+                "end_time": 111.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a plush couch, the person's face obscured by the couch cushion, as a woman's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "The camera focuses on a person's hand resting on a plush couch, the person's face obscured by the couch cushion, as a woman's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_98.5_111.5",
+                    "tags": [
+                      "couch",
+                      "hand",
+                      "voice",
+                      "goodbye"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "couch",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hand",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_98.5_111.5",
+                      "name": "",
+                      "time": {
+                        "start": "98.5",
+                        "end": "111.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera focuses on a person's hand resting on a plush couch, the person's face obscured by the couch cushion, as a woman's voice can be heard saying 'Bye' and 'I'll see you later.'",
+                      "summary": "The camera focuses on a person's hand resting on a plush couch, the person's face obscured by the couch cushion, as a woman's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                      "implications": "Major scene, social interaction",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a plush couch, the person's face obscured by the couch cushion, as a woman's face is hidden by the couch cushion.",
+                        "audio": "Woman's voice saying 'Bye'; 'I'll see you later'.",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person's hand is shown gently moving on a plush couch, while a woman's voice can be heard saying goodbye and indicating that she will see the person later.",
+            "summary": "A person's hand is shown resting on a plush brown couch, with their fingers moving gently as if petting the fabric. Meanwhile, a woman's voice is heard saying \"Bye\" and \"I'll see you later\" from off-camera."
+          },
+          {
+            "level": 2,
+            "start_time": 111.5,
+            "end_time": 125.200018,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 111.5,
+                "end_time": 114.5,
+                "children": [],
+                "caption": "The camera focuses on a person's hand resting on a patterned blanket, the person's voice can be heard saying \"I'm sorry\" as if in response to a question.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The camera focuses on a person's hand resting on a patterned blanket, the person's voice can be heard saying \"I'm sorry\" as if in response to a question.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_111.5_114.5",
+                    "tags": [
+                      "hand",
+                      "blanket",
+                      "apology"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "person's hand",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "patterned blanket",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_111.5_114.5",
+                      "name": "apology",
+                      "time": {
+                        "start": "111.5",
+                        "end": "114.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "The person apologizes saying 'I'm sorry'",
+                      "summary": "The camera focuses on a person's hand resting on a patterned blanket, the person's voice can be heard saying \"I'm sorry\" as if in response to a question.",
+                      "implications": "Emotional significance",
+                      "modalities": {
+                        "visual": "The camera focuses on a person's hand resting on a patterned blanket.",
+                        "audio": "'I'm sorry'",
+                        "speech": "I'm talking to you today I can't hear you"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 114.5,
+                "end_time": 118.5,
+                "children": [],
+                "caption": "A person wearing a red shirt sits on a couch, their hands resting on their lap as they gaze off into the distance, seemingly lost in thought.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "A person wearing a red shirt sits on a couch, their hands resting on their lap as they gaze off into the distance, seemingly lost in thought.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_114.5_118.5",
+                    "tags": [
+                      "person",
+                      "couch",
+                      "red_shirt",
+                      "lost_in_thought",
+                      "gazing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "couch",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O002",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_114.5_118.5",
+                      "name": "A person sits on a couch",
+                      "time": {
+                        "start": "114.5",
+                        "end": "118.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person_activity"
+                      ],
+                      "scene_topic": "A person sits on a couch, gazing off into the distance",
+                      "summary": "A person wearing a red shirt sits on a couch, their hands resting on their lap as they gaze off into the distance, seemingly lost in thought.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "A person wearing a red shirt sits on a couch, their hands resting on their lap as they gaze off into the distance, seemingly lost in thought.",
+                        "audio": "",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 118.5,
+                "end_time": 125.200018,
+                "children": [],
+                "caption": "A person sits on a couch, their back to the camera, as a woman's voice can be heard in the background, followed by a man's voice.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "A person sits on a couch, their back to the camera, as a woman's voice can be heard in the background, followed by a man's voice.",
+                  "result": {
+                    "video_id": "2dK4fe2HRX4",
+                    "event_id": "E_2dK4fe2HRX4_118.5_125.2",
+                    "tags": [
+                      "person",
+                      "couch",
+                      "voice",
+                      "background"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "couch",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2dK4fe2HRX4_118.5_125.2",
+                      "name": "A person sits on a couch",
+                      "time": {
+                        "start": "118.5",
+                        "end": "125.2"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person activity"
+                      ],
+                      "scene_topic": "A person sits on a couch, their back to the camera, as a woman's voice can be heard in the background, followed by a man's voice.",
+                      "summary": "A person sits on a couch, their back to the camera, as a woman's voice can be heard in the background, followed by a man's voice.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "A person sits on a couch, their back to the camera, as a woman's voice can be heard in the background, followed by a man's voice.",
+                        "audio": "woman's voice; man's voice.",
+                        "speech": "I'm talking to you today I can't hear you thank you"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person apologizes and appears lost in thought, while another person sits on a couch and listens to someone else's voice in the background.",
+            "summary": "A person's hand rests on a patterned blanket as they apologize, while another person sits on a couch, lost in thought. In the background, a woman and man's voices can be heard, but their conversation is not audible."
+          }
+        ],
+        "caption": "A person's hand is shown exploring a textured surface, adjusting fabric, and gently moving on a plush couch, while voices in the background convey a sense of goodbye and apology.",
+        "summary": "A person's hands are shown gently exploring and petting various textures, including a textured surface, plush fabric, and patterned blanket, while a woman's voice is heard in the background saying goodbye and apologizing. Meanwhile, a man sits on a couch lost in thought, with the sounds of a woman and man's conversation muffled in the background."
+      }
+    ],
+    "caption": "A person's hand is shown in various scenarios, adjusting cushions and petting a plush toy, while their voice and the voices of others in the background are heard. In the second scenario, the person's hand is shown exploring a textured surface and gently moving on a plush couch, while voices in the background convey a sense of goodbye and apology.",
+    "summary": "A person's hand is shown exploring various textures, including a textured surface, plush fabric, and patterned blanket, as a woman's voice and a man's voice can be heard in the background, creating a cozy atmosphere. Meanwhile, a man sits on a couch lost in thought, with the sounds of a woman and man's conversation muffled in the background."
+  }
+}

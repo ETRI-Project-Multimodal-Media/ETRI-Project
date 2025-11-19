@@ -1,0 +1,648 @@
+{
+  "video_id": "sNm_rmkzt3Y",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 41.075729,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 25.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 11.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "In a lively wedding reception, a woman in a sparkling dress dances gracefully on the dance floor, her movements captured by the camera as she twirls and spins.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "In a lively wedding reception, a woman in a sparkling dress dances gracefully on the dance floor, her movements captured by the camera as she twirls and spins.",
+                  "result": {
+                    "video_id": "sNm_rmkzt3Y",
+                    "event_id": "E_sNm_rmkzt3Y_0_3.5",
+                    "tags": [
+                      "wedding",
+                      "dance",
+                      "reception",
+                      "celebration",
+                      "fashion"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "sparkling_dress": "",
+                          "dancing": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sNm_rmkzt3Y_0_3.5",
+                      "name": "wedding reception dance",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "celebration"
+                      ],
+                      "scene_topic": "A woman dances at a wedding reception.",
+                      "summary": "In a lively wedding reception, a woman in a sparkling dress dances gracefully on the dance floor, her movements captured by the camera as she twirls and spins.",
+                      "implications": "Social event, celebration",
+                      "modalities": {
+                        "visual": "A woman in a sparkling dress dances gracefully on the dance floor, her movements captured by the camera as she twirls and spins.",
+                        "audio": "",
+                        "speech": "The speaker is indicating their departure or exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "The man and woman, dressed in formal attire, twirl and spin gracefully on the dance floor, their movements perfectly in sync with the upbeat pop music playing in the background.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The man and woman, dressed in formal attire, twirl and spin gracefully on the dance floor, their movements perfectly in sync with the upbeat pop music playing in the background.",
+                  "result": {
+                    "video_id": "sNm_rmkzt3Y",
+                    "event_id": "E_sNm_rmkzt3Y_3_6",
+                    "tags": [
+                      "dance",
+                      "formal_attire",
+                      "pop_music",
+                      "sync"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sNm_rmkzt3Y_3_6",
+                      "name": "Dancing couple",
+                      "time": {
+                        "start": "3.5",
+                        "end": "6.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people_dancing"
+                      ],
+                      "scene_topic": "A couple dances in sync to upbeat pop music.",
+                      "summary": "The man and woman, dressed in formal attire, twirl and spin gracefully on the dance floor, their movements perfectly in sync with the upbeat pop music playing in the background.",
+                      "implications": "Social event, entertainment",
+                      "modalities": {
+                        "visual": "The man and woman, dressed in formal attire, twirl and spin gracefully on the dance floor, their movements perfectly in sync with the upbeat pop music playing in the background.",
+                        "audio": "pop music",
+                        "speech": "The speaker is indicating their departure or exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 11.5,
+                "children": [],
+                "caption": "In a dimly lit room, a woman in a black dress dances gracefully, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "In a dimly lit room, a woman in a black dress dances gracefully, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                  "result": {
+                    "video_id": "sNm_rmkzt3Y",
+                    "event_id": "E_sNm_rmkzt3Y_6_11",
+                    "tags": [
+                      "dance",
+                      "music",
+                      "pop",
+                      "woman",
+                      "black_dress"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "color": "black",
+                          "dress": "dress",
+                          "movement": "graceful",
+                          "rhythm": "pop_song"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sNm_rmkzt3Y_6_11",
+                      "name": "woman_dancing",
+                      "time": {
+                        "start": "6.5",
+                        "end": "11.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_activity"
+                      ],
+                      "scene_topic": "A woman dances in a dimly lit room.",
+                      "summary": "In a dimly lit room, a woman in a black dress dances gracefully, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a woman in a black dress dances gracefully, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                        "audio": "pop song",
+                        "speech": "The speaker is indicating their departure or exit."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a series of dance scenes, a woman in a sparkling dress and two other dancers move gracefully on the dance floor, their movements captured by the camera as they twirl and spin to the upbeat music.",
+            "summary": "A woman in a sparkling dress and a man in formal attire dance together on the dance floor, their movements perfectly in sync with the upbeat pop music. In a dimly lit room, another woman in a black dress sways to the rhythm of the pop song, her movements captured by the camera."
+          },
+          {
+            "level": 2,
+            "start_time": 11.5,
+            "end_time": 25.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 11.5,
+                "end_time": 25.5,
+                "children": [],
+                "caption": "In a lively party setting, a woman in a sparkling dress dances energetically, her movements captured by the camera as she sways to the rhythm of the music.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "In a lively party setting, a woman in a sparkling dress dances energetically, her movements captured by the camera as she sways to the rhythm of the music.",
+                  "result": {
+                    "video_id": "sNm_rmkzt3Y",
+                    "event_id": "E_sNm_rmkzt3Y_11.5_25.5",
+                    "tags": [
+                      "party",
+                      "dancing",
+                      "music",
+                      "fashion",
+                      "celebration"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dancing": "energetically",
+                          "wearing": "sparkling dress"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sNm_rmkzt3Y_11.5_25.5",
+                      "name": "woman dancing",
+                      "time": {
+                        "start": "11.5",
+                        "end": "25.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "A woman dances energetically in a party setting.",
+                      "summary": "In a lively party setting, a woman in a sparkling dress dances energetically, her movements captured by the camera as she sways to the rhythm of the music.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "A woman in a sparkling dress dances energetically, her movements captured by the camera as she sways to the rhythm of the music.",
+                        "audio": "music",
+                        "speech": "The speaker is indicating their departure or exit."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman dances lively and energetically at a party, her movements captured by the camera as she sways to the rhythm of the music.",
+            "summary": "A woman in a sparkling dress dances energetically to the music, her movements captured by the camera."
+          }
+        ],
+        "caption": "A woman dances gracefully and energetically in a series of scenes, capturing the movement and rhythm of the dance with the camera.",
+        "summary": "Women in sparkling and black dresses dance to upbeat pop music, their movements captured by the camera, with one couple dancing in sync and another woman dancing energetically. The dimly lit room provides a dramatic backdrop for the lively and carefree dance scenes."
+      },
+      {
+        "level": 1,
+        "start_time": 25.5,
+        "end_time": 41.075729,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 25.5,
+            "end_time": 36.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 25.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "The woman in the sparkling dress dances energetically in the dimly lit room, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The woman in the sparkling dress dances energetically in the dimly lit room, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                  "result": {
+                    "video_id": "sNm_rmkzt3Y",
+                    "event_id": "E_sNm_rmkzt3Y_25.5_31.5",
+                    "tags": [
+                      "sparkling_dress",
+                      "dancing",
+                      "pop_song",
+                      "dimly_lit_room"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dancing": "energetically",
+                          "wearing": "sparkling_dress"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sNm_rmkzt3Y_25.5_31.5",
+                      "name": "The woman dances in the dimly lit room",
+                      "time": {
+                        "start": "25.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment",
+                        "music"
+                      ],
+                      "scene_topic": "The woman in the sparkling dress dances energetically in the dimly lit room",
+                      "summary": "The woman in the sparkling dress dances energetically in the dimly lit room, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The woman in the sparkling dress dances energetically in the dimly lit room, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                        "audio": "pop song",
+                        "speech": "The speaker is indicating their departure or exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 36.5,
+                "children": [],
+                "caption": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                  "result": {
+                    "video_id": "sNm_rmkzt3Y",
+                    "event_id": "E_sNm_rmkzt3Y_31.5_36.5",
+                    "tags": [
+                      "dance",
+                      "music",
+                      "party"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "dance floor",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "pop music",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "colorful lights",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "people",
+                        "ref_object": "O002",
+                        "role": "dancer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sNm_rmkzt3Y_31.5_36.5",
+                      "name": "The camera pans across the dance floor",
+                      "time": {
+                        "start": "31.5",
+                        "end": "36.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                      "summary": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                        "audio": "",
+                        "speech": "The speaker is indicating their departure or exit."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman dances energetically in a dimly lit room, captured by the camera as she sways to the rhythm of the pop song playing in the background. The camera pans across the dance floor, showing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by colorful lights.",
+            "summary": "A woman in a sparkling dress dances energetically in a dimly lit room, her movements captured by the camera as she sways to the pop song playing in the background. The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat music, illuminated by colorful lights."
+          },
+          {
+            "level": 2,
+            "start_time": 36.5,
+            "end_time": 41.075729,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 36.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                  "result": {
+                    "video_id": "sNm_rmkzt3Y",
+                    "event_id": "E_sNm_rmkzt3Y_36.5_38.5",
+                    "tags": [
+                      "dance",
+                      "music",
+                      "party"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "dance floor",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "pop music",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "colorful lights",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "people",
+                        "ref_object": "O002",
+                        "role": "dancer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sNm_rmkzt3Y_36.5_38.5",
+                      "name": "The camera pans across the dance floor",
+                      "time": {
+                        "start": "36.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                      "summary": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across the dance floor, capturing the lively atmosphere as people dance to the upbeat pop music, their movements illuminated by the colorful lights.",
+                        "audio": "",
+                        "speech": "The speaker is indicating their departure or exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 41.075729,
+                "children": [],
+                "caption": "The woman in the sparkling dress dances energetically in the dimly lit room, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The woman in the sparkling dress dances energetically in the dimly lit room, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                  "result": {
+                    "video_id": "sNm_rmkzt3Y",
+                    "event_id": "E_sNm_rmkzt3Y_38.5_41.08",
+                    "tags": [
+                      "sparkling_dress",
+                      "dancing",
+                      "pop_song",
+                      "dimly_lit_room"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dancing": "energetically",
+                          "wearing": "sparkling_dress"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sNm_rmkzt3Y_38.5_41.08",
+                      "name": "The woman dances in the dimly lit room",
+                      "time": {
+                        "start": "38.5",
+                        "end": "41.08"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment",
+                        "music"
+                      ],
+                      "scene_topic": "The woman in the sparkling dress dances energetically in the dimly lit room",
+                      "summary": "The woman in the sparkling dress dances energetically in the dimly lit room, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The woman in the sparkling dress dances energetically in the dimly lit room, her movements captured by the camera as she sways to the rhythm of the pop song playing in the background.",
+                        "audio": "pop song",
+                        "speech": "The speaker is indicating their departure or exit."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A lively atmosphere fills the dance floor as people dance to upbeat pop music, their movements illuminated by colorful lights. A woman in a sparkling dress dances energetically in a dimly lit room, her movements captured by the camera as she sways to the rhythm of the music.",
+            "summary": "The camera captures the lively atmosphere on the dance floor, where people dance to upbeat pop music under colorful lights. A woman in a sparkling dress is prominently featured, her energetic movements illuminated by the dim lighting as she sways to the music."
+          }
+        ],
+        "caption": "A lively atmosphere fills the dance floor as people dance to upbeat pop music, their movements illuminated by colorful lights. A woman in a sparkling dress dances energetically in a dimly lit room, her movements captured by the camera as she sways to the rhythm of the music.",
+        "summary": "A woman in a sparkling dress dances energetically in a dimly lit room, her movements captured by the camera as she sways to the pop song playing in the background. The camera pans across the dance floor, capturing the lively atmosphere as people dance to upbeat music under colorful lights."
+      }
+    ],
+    "caption": "A woman dances with grace and energy in a series of scenes, capturing the movement and rhythm of the dance with the camera. The atmosphere on the dance floor is lively and energetic, with people dancing to upbeat pop music and their movements illuminated by colorful lights. A woman in a sparkling dress dances with passion and fluidity in a dimly lit room, her movements captured by the camera as she sways to the rhythm of the music.",
+    "summary": "Women in sparkling and black dresses dance to upbeat pop music in a dimly lit room, their movements captured by the camera as they sway and twirl to the lively tunes. The camera pans across the dance floor, showcasing the carefree atmosphere and colorful lights that add to the energetic vibe."
+  }
+}

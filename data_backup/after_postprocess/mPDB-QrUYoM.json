@@ -1,0 +1,3490 @@
+{
+  "video_id": "mPDB-QrUYoM",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 207.95775,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 95.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 29.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 6.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 0.0,
+                    "end_time": 2.5,
+                    "children": [],
+                    "caption": "The video opens with a close-up of a person's face, their eyes closed as if lost in thought, while a man's voice begins to speak, his words barely audible over the sound of a car engine starting up.",
+                    "postprocess": {
+                      "event_id": 0,
+                      "original_answer": "The video opens with a close-up of a person's face, their eyes closed as if lost in thought, while a man's voice begins to speak, his words barely audible over the sound of a car engine starting up.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_0_2.5",
+                        "tags": [
+                          "video",
+                          "person",
+                          "car",
+                          "engine",
+                          "voice"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_0_2.5",
+                          "name": "video opening",
+                          "time": {
+                            "start": "0",
+                            "end": "2.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "video content"
+                          ],
+                          "scene_topic": "The video opens with a close-up of a person's face, their eyes closed as if lost in thought, while a man's voice begins to speak, his words barely audible over the sound of a car engine starting up.",
+                          "summary": "The video opens with a close-up of a person's face, their eyes closed as if lost in thought, while a man's voice begins to speak, his words barely audible over the sound of a car engine starting up.",
+                          "implications": "Major video content event",
+                          "modalities": {
+                            "visual": "The video opens with a close-up of a person's face, their eyes closed as if lost in thought, while a man's voice begins to speak.",
+                            "audio": "man's voice; car engine starting up",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 2.5,
+                    "end_time": 6.5,
+                    "children": [],
+                    "caption": "The video opens with a close-up of a man's face, his eyes closed as if lost in thought, while a hip-hop song plays in the background.",
+                    "postprocess": {
+                      "event_id": 1,
+                      "original_answer": "The video opens with a close-up of a man's face, his eyes closed as if lost in thought, while a hip-hop song plays in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_2_5_6_5",
+                        "tags": [
+                          "hip_hop",
+                          "man",
+                          "face",
+                          "thought"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man's face",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "main",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_2_5_6_5",
+                          "name": "man's introspection",
+                          "time": {
+                            "start": "2.5",
+                            "end": "6.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person"
+                          ],
+                          "scene_topic": "The video opens with a close-up of a man's face, his eyes closed as if lost in thought, while a hip-hop song plays in the background.",
+                          "summary": "The video opens with a close-up of a man's face, his eyes closed as if lost in thought, while a hip-hop song plays in the background.",
+                          "implications": "Major music, entertainment news event",
+                          "modalities": {
+                            "visual": "The video opens with a close-up of a man's face, his eyes closed as if lost in thought, while a hip-hop song plays in the background.",
+                            "audio": "Hip-hop song.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The video opens with a person lost in thought, their face in close-up, while a car engine starts up or a hip-hop song plays in the background.",
+                "summary": "The video begins with a close-up of a person's face, their eyes closed, as a man's voice is heard speaking softly over the sound of a car engine starting up. The scene is set to a hip-hop song playing in the background."
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 14.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 6.5,
+                    "end_time": 10.5,
+                    "children": [],
+                    "caption": "The camera focuses on a man's face, his eyes closed as if lost in thought, while a hip-hop song plays in the background, its lyrics about wealth and success contrasting with the man's contemplative expression.",
+                    "postprocess": {
+                      "event_id": 2,
+                      "original_answer": "The camera focuses on a man's face, his eyes closed as if lost in thought, while a hip-hop song plays in the background, its lyrics about wealth and success contrasting with the man's contemplative expression.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_6_10",
+                        "tags": [
+                          "music",
+                          "thought",
+                          "contrast"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "expression": "contemplative"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "main",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_6_10",
+                          "name": "man lost in thought",
+                          "time": {
+                            "start": "6.5",
+                            "end": "10.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music"
+                          ],
+                          "scene_topic": "The camera focuses on a man's face, his eyes closed as if lost in thought, while a hip-hop song plays in the background, its lyrics about wealth and success contrasting with the man's contemplative expression.",
+                          "summary": "The camera focuses on a man's face, his eyes closed as if lost in thought, while a hip-hop song plays in the background, its lyrics about wealth and success contrasting with the man's contemplative expression.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The camera focuses on a man's face, his eyes closed as if lost in thought, while his contemplative expression contrasts with the song's lyrics about wealth and success.",
+                            "audio": "Hip-hop song; its lyrics about wealth and success.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 10.5,
+                    "end_time": 12.5,
+                    "children": [],
+                    "caption": "The camera focuses on a man in a dimly lit room, his face partially obscured by a mask, as he raps along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 3,
+                      "original_answer": "The camera focuses on a man in a dimly lit room, his face partially obscured by a mask, as he raps along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_10.5_12.5",
+                        "tags": [
+                          "hip_hop",
+                          "music",
+                          "rapper",
+                          "mask",
+                          "dimly_lit"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "face_obscured": "true",
+                              "room_type": "dimly_lit"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "mask",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "hip_hop_song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_10.5_12.5",
+                          "name": "rapper_raps_along_to_hip_hop_song",
+                          "time": {
+                            "start": "10.5",
+                            "end": "12.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_performance"
+                          ],
+                          "scene_topic": "The rapper performs in a dimly lit room, wearing a mask.",
+                          "summary": "The camera focuses on a man in a dimly lit room, his face partially obscured by a mask, as he raps along to the hip-hop song playing in the background.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The camera focuses on a man in a dimly lit room, his face partially obscured by a mask, as he raps along.",
+                            "audio": "hip-hop song; rapping",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 12.5,
+                    "end_time": 14.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man in a black hoodie stands in front of a graffiti-covered wall, his face partially obscured by a mask, as he raps along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 4,
+                      "original_answer": "In a dimly lit room, a man in a black hoodie stands in front of a graffiti-covered wall, his face partially obscured by a mask, as he raps along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_12.5_14.5",
+                        "tags": [
+                          "hip_hop",
+                          "rap",
+                          "graffiti",
+                          "mask",
+                          "black_hoodie"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "face_obscured": "true",
+                              "wearing_mask": "true",
+                              "wearing_black_hoodie": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "graffiti-covered_wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "hip-hop_song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "rapper",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_12.5_14.5",
+                          "name": "man_rapping",
+                          "time": {
+                            "start": "12.5",
+                            "end": "14.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music",
+                            "performance"
+                          ],
+                          "scene_topic": "A man raps in a dimly lit room with graffiti-covered walls.",
+                          "summary": "In a dimly lit room, a man in a black hoodie stands in front of a graffiti-covered wall, his face partially obscured by a mask, as he raps along to the hip-hop song playing in the background.",
+                          "implications": "Cultural significance of hip-hop music",
+                          "modalities": {
+                            "visual": "A man in a black hoodie stands in front of a graffiti-covered wall, his face partially obscured by a mask.",
+                            "audio": "Rapping; hip-hop music.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man lost in thought, a man rapping in a dimly lit room, and a man rapping in front of a graffiti-covered wall, all to the beat of a hip-hop song with lyrics about wealth and success, create a contrast between the man's contemplative expression and the song's themes of success and wealth.",
+                "summary": "A man is shown in a dimly lit room, his face partially obscured by a mask, rapping along to a hip-hop song that contrasts with his contemplative expression. The scene is repeated with slight variations, emphasizing the man's focus on his music despite the dark and mysterious surroundings."
+              },
+              {
+                "level": 3,
+                "start_time": 14.5,
+                "end_time": 29.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 14.5,
+                    "end_time": 18.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man in a black hoodie stands in front of a graffiti-covered wall, his face partially obscured by a mask, as he raps along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 5,
+                      "original_answer": "In a dimly lit room, a man in a black hoodie stands in front of a graffiti-covered wall, his face partially obscured by a mask, as he raps along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_14.5_18.5",
+                        "tags": [
+                          "hip_hop",
+                          "rap",
+                          "graffiti",
+                          "mask",
+                          "black_hoodie"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "face_obscured": "true",
+                              "wearing_mask": "true",
+                              "wearing_black_hoodie": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "graffiti-covered_wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "hip-hop_song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "rapper",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_14.5_18.5",
+                          "name": "man_rapping",
+                          "time": {
+                            "start": "14.5",
+                            "end": "18.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music",
+                            "performance"
+                          ],
+                          "scene_topic": "A man raps in a dimly lit room with graffiti-covered walls.",
+                          "summary": "In a dimly lit room, a man in a black hoodie stands in front of a graffiti-covered wall, his face partially obscured by a mask, as he raps along to the hip-hop song playing in the background.",
+                          "implications": "Cultural significance of hip-hop music",
+                          "modalities": {
+                            "visual": "A man in a black hoodie stands in front of a graffiti-covered wall, his face partially obscured by a mask.",
+                            "audio": "Rapping; hip-hop music.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 18.5,
+                    "end_time": 21.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man in a black cap and a red shirt stands in front of a graffiti-covered wall, his serious expression and the surrounding urban setting suggesting a moment of contemplation or reflection.",
+                    "postprocess": {
+                      "event_id": 6,
+                      "original_answer": "In a dimly lit room, a man in a black cap and a red shirt stands in front of a graffiti-covered wall, his serious expression and the surrounding urban setting suggesting a moment of contemplation or reflection.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_18.5_21.5",
+                        "tags": [
+                          "urban",
+                          "contemplation",
+                          "reflection",
+                          "man",
+                          "wall"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wall",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "actor",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_18.5_21.5",
+                          "name": "man standing in front of a wall",
+                          "time": {
+                            "start": "18.5",
+                            "end": "21.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "urban scene"
+                          ],
+                          "scene_topic": "A man stands in front of a graffiti-covered wall, looking contemplative.",
+                          "summary": "In a dimly lit room, a man in a black cap and a red shirt stands in front of a graffiti-covered wall, his serious expression and the surrounding urban setting suggesting a moment of contemplation or reflection.",
+                          "implications": "Urban scene with a person reflecting",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man in a black cap and a red shirt stands in front of a graffiti-covered wall, his serious expression and the surrounding urban setting suggesting a moment of contemplation or reflection.",
+                            "audio": "",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 21.5,
+                    "end_time": 25.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, rapping along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 7,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, rapping along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_21.5_25.5",
+                        "tags": [
+                          "hip_hop",
+                          "rap",
+                          "graffiti",
+                          "music",
+                          "performance"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "graffiti",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "hip_hop_song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_21.5_25.5",
+                          "name": "man rapping in front of graffiti wall",
+                          "time": {
+                            "start": "21.5",
+                            "end": "25.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man raps in front of a graffiti-covered wall.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, rapping along to the hip-hop song playing in the background.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "A man with a beard and sunglasses stands in front of a graffiti-covered wall.",
+                            "audio": "Rapping; hip-hop music.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 25.5,
+                    "end_time": 29.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 8,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_25.5_29.5",
+                        "tags": [
+                          "hip_hop",
+                          "rap",
+                          "music",
+                          "performance",
+                          "art"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "graffiti",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "hip_hop_song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_25.5_29.5",
+                          "name": "man rapping",
+                          "time": {
+                            "start": "25.5",
+                            "end": "29.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man raps in front of a graffiti-covered wall.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "A man with a beard and sunglasses stands in front of a graffiti-covered wall.",
+                            "audio": "Rapping; hip-hop music.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A series of men, each with their own unique style and expression, are shown standing in front of a graffiti-covered wall, rapping along to the hip-hop song playing in the background. The scenes are dimly lit, adding to the overall mood of contemplation and reflection.",
+                "summary": "A man, often with a beard and sunglasses, stands in front of a graffiti-covered wall in a dimly lit room, rapping along to a hip-hop song in a moment of contemplation or passion. The setting and his serious expression suggest a deeper meaning behind his words, as he connects with the music and his surroundings."
+              }
+            ],
+            "caption": "A series of men are shown lost in thought and rapping in front of a graffiti-covered wall, contrasting their contemplative expressions with the hip-hop song's themes of wealth and success.",
+            "summary": "A man is shown in a dimly lit room, rapping along to hip-hop songs with a contemplative expression, despite the dark and mysterious surroundings. The setting and his serious expression suggest a deeper meaning behind his words, as he connects with the music and his surroundings."
+          },
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 54.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 37.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 29.5,
+                    "end_time": 37.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 9,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_29.5_37.5",
+                        "tags": [
+                          "hip_hop",
+                          "rap",
+                          "music",
+                          "performance",
+                          "art"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "graffiti",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "hip_hop_song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_29.5_37.5",
+                          "name": "man rapping",
+                          "time": {
+                            "start": "29.5",
+                            "end": "37.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_performance"
+                          ],
+                          "scene_topic": "A man raps in front of a graffiti-covered wall.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "A man with a beard and sunglasses stands in front of a graffiti-covered wall.",
+                            "audio": "Rapping; hip-hop music.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man passionately raps along to a hip-hop song in a dimly lit room with a graffiti-covered wall, showcasing his enthusiasm and energy.",
+                "summary": "A man with a beard and sunglasses raps passionately in a dimly lit room, surrounded by graffiti-covered walls."
+              },
+              {
+                "level": 3,
+                "start_time": 37.5,
+                "end_time": 54.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 37.5,
+                    "end_time": 48.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses passionately delivers a speech, his voice amplified by a microphone as he gestures with his hands.",
+                    "postprocess": {
+                      "event_id": 10,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses passionately delivers a speech, his voice amplified by a microphone as he gestures with his hands.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_3750_4850",
+                        "tags": [
+                          "public_speech",
+                          "man",
+                          "beard",
+                          "sunglasses",
+                          "microphone"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "has_beard": "true",
+                              "wears_sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_3750_4850",
+                          "name": "public speech",
+                          "time": {
+                            "start": "37.5",
+                            "end": "48.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public_speech"
+                          ],
+                          "scene_topic": "A man delivers a passionate speech in a dimly lit room.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses passionately delivers a speech, his voice amplified by a microphone as he gestures with his hands.",
+                          "implications": "Major public speaking event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses passionately delivers a speech, his voice amplified by a microphone as he gestures with his hands.",
+                            "audio": "speech",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 48.5,
+                    "end_time": 51.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a microphone, passionately rapping about his life experiences and the struggles he's faced.",
+                    "postprocess": {
+                      "event_id": 11,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a microphone, passionately rapping about his life experiences and the struggles he's faced.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_4851",
+                        "tags": [
+                          "hip_hop",
+                          "rapper",
+                          "performance"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_4851",
+                          "name": "rapper's performance",
+                          "time": {
+                            "start": "48.5",
+                            "end": "51.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man passionately raps about his life experiences and struggles.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a microphone, passionately rapping about his life experiences and the struggles he's faced.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses stands in front of a microphone.",
+                            "audio": "passionately rapping",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 51.5,
+                    "end_time": 54.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 12,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_51.5_54.5",
+                        "tags": [
+                          "hip_hop",
+                          "rap",
+                          "music",
+                          "performance",
+                          "graffiti"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "beard": "",
+                              "sunglasses": "",
+                              "black_cap": "",
+                              "red_shirt": ""
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "graffiti-covered wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "hip-hop song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_51.5_54.5",
+                          "name": "man rapping to hip-hop song",
+                          "time": {
+                            "start": "51.5",
+                            "end": "54.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man raps to a hip-hop song in a dimly lit room.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, stands in front of a graffiti-covered wall.",
+                            "audio": "Rapping; hip-hop song.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man with a beard and sunglasses passionately delivers a speech or raps in a dimly lit room, using a microphone to amplify his voice and express his thoughts and experiences.",
+                "summary": "A man with a beard and sunglasses delivers a passionate speech, rapping about his life experiences and struggles, in a dimly lit room with a graffiti-covered wall and a hip-hop song playing in the background."
+              }
+            ],
+            "caption": "A man passionately raps or speaks in a dimly lit room, showcasing his energy and enthusiasm through his words and delivery.",
+            "summary": "A man with a beard and sunglasses delivers a passionate speech, rapping about his life experiences and struggles in a dimly lit room with a graffiti-covered wall and a hip-hop song playing in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 54.5,
+            "end_time": 95.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 54.5,
+                "end_time": 82.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 54.5,
+                    "end_time": 58.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a microphone, passionately rapping about his life experiences and the struggles he's faced.",
+                    "postprocess": {
+                      "event_id": 13,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a microphone, passionately rapping about his life experiences and the struggles he's faced.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_54_58",
+                        "tags": [
+                          "hip_hop",
+                          "rapper",
+                          "performance"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_54_58",
+                          "name": "rapper's performance",
+                          "time": {
+                            "start": "54.5",
+                            "end": "58.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music",
+                            "performance"
+                          ],
+                          "scene_topic": "A man passionately raps about his life experiences and struggles.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a microphone, passionately rapping about his life experiences and the struggles he's faced.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses stands in front of a microphone.",
+                            "audio": "passionately rapping",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 58.5,
+                    "end_time": 63.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses passionately delivers a speech, his voice amplified by a microphone as he gestures with his hands.",
+                    "postprocess": {
+                      "event_id": 14,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses passionately delivers a speech, his voice amplified by a microphone as he gestures with his hands.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_58_63",
+                        "tags": [
+                          "public_speech",
+                          "man",
+                          "beard",
+                          "sunglasses",
+                          "microphone"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "has_beard": "true",
+                              "wears_sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_58_63",
+                          "name": "public_speech",
+                          "time": {
+                            "start": "58.5",
+                            "end": "63.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public_speech"
+                          ],
+                          "scene_topic": "A man delivers a passionate speech in a dimly lit room.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses passionately delivers a speech, his voice amplified by a microphone as he gestures with his hands.",
+                          "implications": "Major public speaking event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses passionately delivers a speech, his voice amplified by a microphone as he gestures with his hands.",
+                            "audio": "speech",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 63.5,
+                    "end_time": 66.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, passionately raps into a microphone, his facial expressions conveying the intensity of his performance.",
+                    "postprocess": {
+                      "event_id": 15,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, passionately raps into a microphone, his facial expressions conveying the intensity of his performance.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_63_66",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "rapper",
+                          "mic"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "beard": "",
+                              "sunglasses": "",
+                              "black_cap": "",
+                              "red_shirt": ""
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_63_66",
+                          "name": "rapper performance",
+                          "time": {
+                            "start": "63.5",
+                            "end": "66.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man passionately raps into a microphone.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, passionately raps into a microphone, his facial expressions conveying the intensity of his performance.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, passionately raps into a microphone, his facial expressions conveying the intensity of his performance.",
+                            "audio": "",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 66.5,
+                    "end_time": 73.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses passionately raps into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                    "postprocess": {
+                      "event_id": 16,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses passionately raps into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_66.5_73.5",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "rapper"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "camera",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_66.5_73.5",
+                          "name": "rapper performance",
+                          "time": {
+                            "start": "66.5",
+                            "end": "73.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man passionately raps into a microphone.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses passionately raps into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses passionately raps into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                            "audio": "Rapping",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 73.5,
+                    "end_time": 76.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, raps along to the hip-hop song playing in the background, his hands moving rhythmically as he sings along.",
+                    "postprocess": {
+                      "event_id": 17,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, raps along to the hip-hop song playing in the background, his hands moving rhythmically as he sings along.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_73_76",
+                        "tags": [
+                          "hip_hop",
+                          "music",
+                          "rapping",
+                          "singing",
+                          "dancing"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "beard": "",
+                              "sunglasses": "",
+                              "black_cap": "",
+                              "red_shirt": ""
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "raper",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_73_76",
+                          "name": "man rapping",
+                          "time": {
+                            "start": "73.5",
+                            "end": "76.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music"
+                          ],
+                          "scene_topic": "A man raps along to a hip-hop song in a dimly lit room.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, raps along to the hip-hop song playing in the background, his hands moving rhythmically as he sings along.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses, wearing a black cap and a red shirt, raps along to the hip-hop song, his hands moving rhythmically as he sings along.",
+                            "audio": "Rapping; hip-hop song; singing",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 76.5,
+                    "end_time": 82.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses raps passionately into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                    "postprocess": {
+                      "event_id": 18,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses raps passionately into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_76_82",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "rapper"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_76_82",
+                          "name": "rapper performance",
+                          "time": {
+                            "start": "76.5",
+                            "end": "82.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man raps passionately into a microphone.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses raps passionately into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses raps passionately into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                            "audio": "Rapping",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man with a beard and sunglasses passionately raps or speaks in a dimly lit room, conveying his life experiences and struggles through his words and movements.",
+                "summary": "A man with a beard and sunglasses passionately raps about his life experiences and struggles in a dimly lit room, his intense expression and energetic movements captivating the camera."
+              },
+              {
+                "level": 3,
+                "start_time": 82.5,
+                "end_time": 95.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 82.5,
+                    "end_time": 95.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses raps passionately into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                    "postprocess": {
+                      "event_id": 19,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses raps passionately into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_82_95",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "rapper"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_82_95",
+                          "name": "rapper performance",
+                          "time": {
+                            "start": "82.5",
+                            "end": "95.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man raps passionately into a microphone.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses raps passionately into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses raps passionately into a microphone, his intense expression and energetic movements capturing the attention of the camera.",
+                            "audio": "Rapping",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A rapper performs with intensity and energy in a dimly lit room, capturing the attention of the camera with his passionate delivery and dynamic movements.",
+                "summary": "A man with a beard and sunglasses raps with passion and energy, his intense expression and movements captivating the camera's attention in a dimly lit room."
+              }
+            ],
+            "caption": "A rapper conveys his life experiences and struggles through passionate rap in a dimly lit room, capturing the attention of the camera with his intensity and energy.",
+            "summary": "A man with a beard and sunglasses passionately raps about his life experiences and struggles in a dimly lit room, his intense expression and energetic movements captivating the camera. His performance is marked by a high level of energy and emotional intensity."
+          }
+        ],
+        "caption": "A series of men express contrasting emotions and attitudes through rap, with some appearing lost in thought and others conveying passion and energy.",
+        "summary": "A man with a beard and sunglasses raps passionately about his life experiences and struggles in a dimly lit room with a graffiti-covered wall, his intense expression and energetic movements captivating the camera. The setting and his serious expression suggest a deeper meaning behind his words, as he connects with the music and his surroundings."
+      },
+      {
+        "level": 1,
+        "start_time": 95.5,
+        "end_time": 207.95775,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 95.5,
+            "end_time": 126.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 95.5,
+                "end_time": 106.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 95.5,
+                    "end_time": 100.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the surrounding graffiti suggesting a moment of contemplation.",
+                    "postprocess": {
+                      "event_id": 20,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the surrounding graffiti suggesting a moment of contemplation.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_95_100",
+                        "tags": [
+                          "contemplation",
+                          "man",
+                          "beard",
+                          "sunglasses",
+                          "brick_wall",
+                          "graffiti"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick_wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "graffiti",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "main",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_95_100",
+                          "name": "contemplation",
+                          "time": {
+                            "start": "95.5",
+                            "end": "100.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person",
+                            "contemplation"
+                          ],
+                          "scene_topic": "A man stands in front of a brick wall, contemplating.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the surrounding graffiti suggesting a moment of contemplation.",
+                          "implications": "Major person, contemplation event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the surrounding graffiti suggesting a moment of contemplation.",
+                            "audio": "",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 100.5,
+                    "end_time": 106.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, passionately rapping along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 21,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, passionately rapping along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_100_106",
+                        "tags": [
+                          "hip_hop",
+                          "rap",
+                          "music",
+                          "performance",
+                          "entertainment"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "hip-hop song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_100_106",
+                          "name": "man rapping to hip-hop song",
+                          "time": {
+                            "start": "100.5",
+                            "end": "106.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man raps to a hip-hop song in a dimly lit room.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, passionately rapping along to the hip-hop song playing in the background.",
+                          "implications": "Major music, entertainment news event",
+                          "modalities": {
+                            "visual": "A man with a beard and sunglasses stands in front of a brick wall, passionately rapping along.",
+                            "audio": "hip-hop song; rapping",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The man in the dimly lit room is seen contemplating or rapping passionately in front of a brick wall, depending on the context.",
+                "summary": "A man with a beard and sunglasses stands in a dimly lit room, surrounded by graffiti, with a serious expression. He passionately raps along to a hip-hop song playing in the background."
+              },
+              {
+                "level": 3,
+                "start_time": 106.5,
+                "end_time": 110.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 106.5,
+                    "end_time": 108.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, his serious expression and the surrounding urban setting suggesting a moment of contemplation or reflection.",
+                    "postprocess": {
+                      "event_id": 22,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, his serious expression and the surrounding urban setting suggesting a moment of contemplation or reflection.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_106.5_108.5",
+                        "tags": [
+                          "urban",
+                          "contemplation",
+                          "reflection",
+                          "man",
+                          "beard",
+                          "sunglasses"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wall",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "main",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_106.5_108.5",
+                          "name": "Man in contemplation",
+                          "time": {
+                            "start": "106.5",
+                            "end": "108.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "urban scene"
+                          ],
+                          "scene_topic": "A man stands in front of a graffiti-covered wall, contemplating.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, his serious expression and the surrounding urban setting suggesting a moment of contemplation or reflection.",
+                          "implications": "Major urban scene event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, his serious expression and the surrounding urban setting suggesting a moment of contemplation or reflection.",
+                            "audio": "",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 108.5,
+                    "end_time": 110.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 23,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_108_110",
+                        "tags": [
+                          "hip_hop",
+                          "rap",
+                          "music",
+                          "performance",
+                          "art"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "graffiti",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "hip_hop_song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_108_110",
+                          "name": "man rapping",
+                          "time": {
+                            "start": "108.5",
+                            "end": "110.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "A man raps in front of a graffiti-covered wall.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a graffiti-covered wall, passionately rapping along to the hip-hop song playing in the background.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "A man with a beard and sunglasses stands in front of a graffiti-covered wall.",
+                            "audio": "Rapping; hip-hop music.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The man in the dimly lit room is shown to be in a state of contemplation or reflection, as suggested by his serious expression and the urban setting. (First caption)\n\nAlternatively, the man in the dimly lit room is shown to be passionately rapping along to a hip-hop song, as suggested by his enthusiastic expression and the background music. (Second caption)",
+                "summary": "A man with a beard and sunglasses stands in a dimly lit room, surrounded by graffiti, with a serious expression that suggests contemplation or reflection. He is also shown passionately rapping along to a hip-hop song playing in the background."
+              },
+              {
+                "level": 3,
+                "start_time": 110.5,
+                "end_time": 115.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 110.5,
+                    "end_time": 115.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, passionately rapping along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 24,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, passionately rapping along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_110.5_115.5",
+                        "tags": [
+                          "hip_hop",
+                          "music",
+                          "rapper",
+                          "beard",
+                          "sunglasses"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick_wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "hip_hop_song",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_110.5_115.5",
+                          "name": "rapper performs hip-hop song",
+                          "time": {
+                            "start": "110.5",
+                            "end": "115.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music"
+                          ],
+                          "scene_topic": "A man raps in front of a brick wall.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, passionately rapping along to the hip-hop song playing in the background.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "A man with a beard and sunglasses stands in front of a brick wall, passionately rapping along.",
+                            "audio": "hip-hop song; rapping",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man passionately raps along to a hip-hop song in a dimly lit room, showcasing his energy and enthusiasm for the music.",
+                "summary": "A man with a beard and sunglasses raps passionately in a dimly lit room, accompanied by a hip-hop song playing in the background."
+              },
+              {
+                "level": 3,
+                "start_time": 115.5,
+                "end_time": 126.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 115.5,
+                    "end_time": 121.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence.",
+                    "postprocess": {
+                      "event_id": 25,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_115_121",
+                        "tags": [
+                          "man",
+                          "beard",
+                          "sunglasses",
+                          "brick_wall",
+                          "serious"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "expression": "serious",
+                              "presence": "emphasized"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick_wall",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "main",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_115_121",
+                          "name": "man in front of brick wall",
+                          "time": {
+                            "start": "115.5",
+                            "end": "121.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person",
+                            "room"
+                          ],
+                          "scene_topic": "A man stands in front of a brick wall, emphasizing his presence.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence.",
+                          "implications": "Minor scene with a person",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence.",
+                            "audio": "",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 121.5,
+                    "end_time": 124.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence as he raps along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 26,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence as he raps along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_121_124",
+                        "tags": [
+                          "hip_hop",
+                          "rapper",
+                          "music",
+                          "performance",
+                          "entertainment"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "sunglasses": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "camera",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_121_124",
+                          "name": "rapper performs in dimly lit room",
+                          "time": {
+                            "start": "121.5",
+                            "end": "124.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The rapper performs in a dimly lit room, emphasizing his presence.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence as he raps along to the hip-hop song playing in the background.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "A man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence as he raps along to the hip-hop song playing in the background.",
+                            "audio": "Rapping; hip-hop song.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 124.5,
+                    "end_time": 126.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence.",
+                    "postprocess": {
+                      "event_id": 27,
+                      "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_124_126",
+                        "tags": [
+                          "room",
+                          "man",
+                          "beard",
+                          "sunglasses",
+                          "brick_wall"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "expression": "serious",
+                              "camera_angle": "close-up"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick_wall",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "main",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_124_126",
+                          "name": "man standing in front of a brick wall",
+                          "time": {
+                            "start": "124.5",
+                            "end": "126.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person",
+                            "room"
+                          ],
+                          "scene_topic": "A man stands in front of a brick wall, emphasizing his presence.",
+                          "summary": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence.",
+                          "implications": "Major presence event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and sunglasses stands in front of a brick wall, his serious expression and the camera's close-up emphasizing his presence.",
+                            "audio": "",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man with a beard and sunglasses stands in a dimly lit room, rapping along to a hip-hop song in the background, his serious expression and close-up by the camera emphasizing his presence.",
+                "summary": "A man with a beard and sunglasses stands in front of a brick wall in a dimly lit room, his serious expression emphasized by the camera's close-up as he raps along to a hip-hop song playing in the background."
+              }
+            ],
+            "caption": "The captions provide two different interpretations of the same scene:\n\nSummary: The scene shows a man in a dimly lit room, either contemplating or passionately rapping along to a hip-hop song, depending on the context. The first caption suggests a more serious and introspective mood, while the second caption highlights the man's enthusiasm and energy for the music.",
+            "summary": "A man with a beard and sunglasses is shown rapping passionately in a dimly lit room surrounded by graffiti, his serious expression suggesting contemplation or reflection. The scene is set to a hip-hop song playing in the background, with the camera focusing on the man's intense performance."
+          },
+          {
+            "level": 2,
+            "start_time": 126.5,
+            "end_time": 157.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 126.5,
+                "end_time": 138.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 126.5,
+                    "end_time": 132.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands.",
+                    "postprocess": {
+                      "event_id": 28,
+                      "original_answer": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_126_132",
+                        "tags": [
+                          "speech",
+                          "man",
+                          "brick_wall",
+                          "microphone",
+                          "gesturing"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "true",
+                              "wearing_cap": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick_wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_126_132",
+                          "name": "man speaking",
+                          "time": {
+                            "start": "126.5",
+                            "end": "132.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "non-violent scene"
+                          ],
+                          "scene_topic": "A man speaks in front of a brick wall.",
+                          "summary": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands.",
+                          "implications": "Minor event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, gesturing with his hands.",
+                            "audio": "speaking into a microphone",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 132.5,
+                    "end_time": 135.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a serious expression stands in front of a brick wall, his gaze fixed on the camera as he raps along to the hip-hop song playing in the background.",
+                    "postprocess": {
+                      "event_id": 29,
+                      "original_answer": "In a dimly lit room, a man with a serious expression stands in front of a brick wall, his gaze fixed on the camera as he raps along to the hip-hop song playing in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_132.5_135.5",
+                        "tags": [
+                          "hip_hop",
+                          "music",
+                          "rapper",
+                          "performance",
+                          "expression"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "expression": "serious",
+                              "gaze": "fixed_on_camera"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick_wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "camera",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "rapper",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_132.5_135.5",
+                          "name": "man rapping",
+                          "time": {
+                            "start": "132.5",
+                            "end": "135.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_performance"
+                          ],
+                          "scene_topic": "A man raps in front of a brick wall.",
+                          "summary": "In a dimly lit room, a man with a serious expression stands in front of a brick wall, his gaze fixed on the camera as he raps along to the hip-hop song playing in the background.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a serious expression stands in front of a brick wall, his gaze fixed on the camera as he stands in front of a brick wall, his gaze fixed on the camera.",
+                            "audio": "Rapping; hip-hop song.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 135.5,
+                    "end_time": 138.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands.",
+                    "postprocess": {
+                      "event_id": 30,
+                      "original_answer": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_135.5_138.5",
+                        "tags": [
+                          "speech",
+                          "man",
+                          "brick_wall",
+                          "microphone",
+                          "gesturing"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "bearded": "",
+                              "wearing_cap": ""
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick_wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_135.5_138.5",
+                          "name": "",
+                          "time": {
+                            "start": "135.5",
+                            "end": "138.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "non-violent scene"
+                          ],
+                          "scene_topic": "A man speaks into a microphone in front of a brick wall.",
+                          "summary": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands.",
+                          "implications": "Minor event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, gesturing with his hands.",
+                            "audio": "speaking into a microphone",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man stands in front of a brick wall, speaking into a microphone and gesturing with his hands in a dimly lit room, possibly recording a rap or hip-hop song.",
+                "summary": "A man with a beard and cap stands in front of a brick wall, speaking into a microphone and gesturing with his hands in a dimly lit room."
+              },
+              {
+                "level": 3,
+                "start_time": 138.5,
+                "end_time": 148.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 138.5,
+                    "end_time": 148.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands.",
+                    "postprocess": {
+                      "event_id": 31,
+                      "original_answer": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_138_148",
+                        "tags": [
+                          "speech",
+                          "man",
+                          "brick_wall",
+                          "microphone",
+                          "gesturing"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "has_beard": "true",
+                              "wears_cap": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "brick_wall",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_138_148",
+                          "name": "man speaking",
+                          "time": {
+                            "start": "138.5",
+                            "end": "148.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "non-violent scene"
+                          ],
+                          "scene_topic": "A man speaks in front of a brick wall.",
+                          "summary": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands.",
+                          "implications": "Minor event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a beard and a cap stands in front of a brick wall, gesturing with his hands.",
+                            "audio": "speaking into a microphone",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man with a beard and cap speaks into a microphone in a dimly lit room, gesturing with his hands.",
+                "summary": "A man with a beard and cap stands in front of a brick wall, speaking into a microphone while gesturing with his hands in a dimly lit room."
+              },
+              {
+                "level": 3,
+                "start_time": 148.5,
+                "end_time": 157.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 148.5,
+                    "end_time": 157.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his gaze fixed on the camera as he raps about his life experiences.",
+                    "postprocess": {
+                      "event_id": 32,
+                      "original_answer": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his gaze fixed on the camera as he raps about his life experiences.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_148.5_157.5",
+                        "tags": [
+                          "life_story",
+                          "rap_music",
+                          "street_art"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "expression": "serious",
+                              "gaze": "fixed_on_camera"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wall",
+                            "attributes": {
+                              "surface": "graffiti-covered"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "rapper",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_148.5_157.5",
+                          "name": "man rapping about life experiences",
+                          "time": {
+                            "start": "148.5",
+                            "end": "157.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "life_story"
+                          ],
+                          "scene_topic": "A man raps about his life experiences in front of a graffiti-covered wall.",
+                          "summary": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his gaze fixed on the camera as he raps about his life experiences.",
+                          "implications": "Major music, life story event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his gaze fixed on the camera as he stands.",
+                            "audio": "Rapping.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A rapper shares his personal story through a powerful performance in a dimly lit room, his eyes fixed on the camera.",
+                "summary": "A man with a serious expression raps about his life experiences in a dimly lit room, his gaze fixed on the camera as he stands in front of a graffiti-covered wall."
+              }
+            ],
+            "caption": "A rapper records a song in a dimly lit room, using gestures and expressions to convey the emotions of the lyrics.",
+            "summary": "A man with a beard and cap stands in a dimly lit room, speaking into a microphone and gesturing with his hands as he raps about his life experiences. His serious expression and fixed gaze on the camera convey a sense of intensity and authenticity."
+          },
+          {
+            "level": 2,
+            "start_time": 157.5,
+            "end_time": 207.95775,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 157.5,
+                "end_time": 173.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 157.5,
+                    "end_time": 173.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his gaze fixed on the camera as he raps about his life experiences.",
+                    "postprocess": {
+                      "event_id": 33,
+                      "original_answer": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his gaze fixed on the camera as he raps about his life experiences.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_157.5_173.5",
+                        "tags": [
+                          "life_story",
+                          "rap_music",
+                          "street_art"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "expression": "serious",
+                              "gaze": "fixed_on_camera"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wall",
+                            "attributes": {
+                              "surface": "graffiti-covered"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "rapper",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_157.5_173.5",
+                          "name": "rapper's performance",
+                          "time": {
+                            "start": "157.5",
+                            "end": "173.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "life_story"
+                          ],
+                          "scene_topic": "A man raps about his life experiences in front of a graffiti-covered wall.",
+                          "summary": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his gaze fixed on the camera as he raps about his life experiences.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his gaze fixed on the camera as he stands.",
+                            "audio": "Rapping.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A rapper shares his personal story through a powerful performance in a dimly lit room, his gaze captivating the audience.",
+                "summary": "A man with a serious expression raps about his life experiences in a dimly lit room, his gaze fixed on the camera as he stands in front of a graffiti-covered wall."
+              },
+              {
+                "level": 3,
+                "start_time": 173.5,
+                "end_time": 182.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 173.5,
+                    "end_time": 176.5,
+                    "children": [],
+                    "caption": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his hands clasped together in front of him.",
+                    "postprocess": {
+                      "event_id": 34,
+                      "original_answer": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his hands clasped together in front of him.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_173.5_176.5",
+                        "tags": [
+                          "man",
+                          "wall",
+                          "hands"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wall",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "actor",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_173.5_176.5",
+                          "name": "man standing in front of wall",
+                          "time": {
+                            "start": "173.5",
+                            "end": "176.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person scene"
+                          ],
+                          "scene_topic": "A man stands in front of a graffiti-covered wall.",
+                          "summary": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his hands clasped together in front of him.",
+                          "implications": "Minor scene",
+                          "modalities": {
+                            "visual": "In a dimly lit room, a man with a serious expression stands in front of a graffiti-covered wall, his hands clasped together in front of him.",
+                            "audio": "",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 176.5,
+                    "end_time": 178.5,
+                    "children": [],
+                    "caption": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera, while a hip-hop song plays in the background.",
+                    "postprocess": {
+                      "event_id": 35,
+                      "original_answer": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera, while a hip-hop song plays in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_176_178",
+                        "tags": [
+                          "music",
+                          "face",
+                          "expression",
+                          "serious",
+                          "intense"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {
+                              "expression": "serious",
+                              "gaze": "intently"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "unknown",
+                            "ref_object": "O001",
+                            "role": "subject",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_176_178",
+                          "name": "zoom_in_on_person",
+                          "time": {
+                            "start": "176.5",
+                            "end": "178.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_video"
+                          ],
+                          "scene_topic": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera, while a hip-hop song plays in the background.",
+                          "summary": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera, while a hip-hop song plays in the background.",
+                          "implications": "Major music, entertainment news event",
+                          "modalities": {
+                            "visual": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera.",
+                            "audio": "hip-hop song",
+                            "speech": "KO the General, a confident and assertive individual, warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 178.5,
+                    "end_time": 182.5,
+                    "children": [],
+                    "caption": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a dimly lit room.",
+                    "postprocess": {
+                      "event_id": 36,
+                      "original_answer": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a dimly lit room.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_178_182",
+                        "tags": [
+                          "person",
+                          "face",
+                          "expression",
+                          "conversation",
+                          "room"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_178_182",
+                          "name": "",
+                          "time": {
+                            "start": "178.5",
+                            "end": "182.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person"
+                          ],
+                          "scene_topic": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a dimly lit room.",
+                          "summary": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a dimly lit room.",
+                          "implications": "Major social, psychology news event",
+                          "modalities": {
+                            "visual": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a dimly lit room.",
+                            "audio": "",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person stands in front of a graffiti-covered wall, their expression serious, while a hip-hop song plays in the background. The camera then zooms in on a person's face, showing their serious expression as they listen intently to a conversation in a dimly lit room.",
+                "summary": "A man stands in a dimly lit room, his serious expression fixed on the camera as a hip-hop song plays in the background. The camera zooms in on his face, revealing his intense focus as he listens to a conversation."
+              },
+              {
+                "level": 3,
+                "start_time": 182.5,
+                "end_time": 207.95775,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 182.5,
+                    "end_time": 187.5,
+                    "children": [],
+                    "caption": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words \"DON'T FUCK WITH US\" flashing on the screen behind them.",
+                    "postprocess": {
+                      "event_id": 37,
+                      "original_answer": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words \"DON'T FUCK WITH US\" flashing on the screen behind them.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_182_187",
+                        "tags": [
+                          "face",
+                          "serious",
+                          "intently",
+                          "foreign_language",
+                          "flash"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {
+                              "expression": "serious"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "screen",
+                            "attributes": {
+                              "text": "DON'T FUCK WITH US"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O001",
+                            "role": "listener",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_182_187",
+                          "name": "serious expression",
+                          "time": {
+                            "start": "182.5",
+                            "end": "187.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "non-violent scene"
+                          ],
+                          "scene_topic": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words 'DON'T FUCK WITH US' flashing on the screen behind them.",
+                          "summary": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words \"DON'T FUCK WITH US\" flashing on the screen behind them.",
+                          "implications": "Major non-violent scene",
+                          "modalities": {
+                            "visual": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words 'DON'T FUCK WITH US' flashing on the screen behind them.",
+                            "audio": "conversation; words 'DON'T FUCK WITH US'",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 187.5,
+                    "end_time": 190.5,
+                    "children": [],
+                    "caption": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera, while a hip-hop song plays in the background.",
+                    "postprocess": {
+                      "event_id": 38,
+                      "original_answer": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera, while a hip-hop song plays in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_187_190",
+                        "tags": [
+                          "music",
+                          "face",
+                          "expression",
+                          "serious",
+                          "intense"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {
+                              "expression": "serious",
+                              "gaze": "intently"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "unknown",
+                            "ref_object": "O001",
+                            "role": "subject",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_187_190",
+                          "name": "zoom_in_on_person",
+                          "time": {
+                            "start": "187.5",
+                            "end": "190.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_video"
+                          ],
+                          "scene_topic": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera, while a hip-hop song plays in the background.",
+                          "summary": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera, while a hip-hop song plays in the background.",
+                          "implications": "Major music, entertainment news event",
+                          "modalities": {
+                            "visual": "The camera zooms in on a person's face, their expression serious as they stare intently at the camera.",
+                            "audio": "hip-hop song",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 190.5,
+                    "end_time": 194.5,
+                    "children": [],
+                    "caption": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words \"DON'T FUCK WITH US\" flashing on the screen behind them.",
+                    "postprocess": {
+                      "event_id": 39,
+                      "original_answer": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words \"DON'T FUCK WITH US\" flashing on the screen behind them.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_190_194",
+                        "tags": [
+                          "audio",
+                          "face",
+                          "foreign_language",
+                          "serious_expression",
+                          "screen"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {
+                              "expression": "serious",
+                              "language": "foreign"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "screen",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_190_194",
+                          "name": "serious conversation",
+                          "time": {
+                            "start": "190.5",
+                            "end": "194.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "audio",
+                            "visual"
+                          ],
+                          "scene_topic": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words 'DON'T FUCK WITH US' flashing on the screen behind them.",
+                          "summary": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words \"DON'T FUCK WITH US\" flashing on the screen behind them.",
+                          "implications": "Major audio, visual news event",
+                          "modalities": {
+                            "visual": "The camera zooms in on a person's face, revealing a serious expression as they listen intently to a conversation in a foreign language, the words 'DON'T FUCK WITH US' flashing on the screen behind them.",
+                            "audio": "conversation; words 'DON'T FUCK WITH US'",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 194.5,
+                    "end_time": 197.5,
+                    "children": [],
+                    "caption": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a textured wall, as a hip-hop song plays in the background.",
+                    "postprocess": {
+                      "event_id": 40,
+                      "original_answer": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a textured wall, as a hip-hop song plays in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_194.5_197.5",
+                        "tags": [
+                          "video_transition",
+                          "person",
+                          "room",
+                          "music"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "room",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_194.5_197.5",
+                          "name": "",
+                          "time": {
+                            "start": "194.5",
+                            "end": "197.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "video_content"
+                          ],
+                          "scene_topic": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a textured wall, as a hip-hop song plays in the background.",
+                          "summary": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a textured wall, as a hip-hop song plays in the background.",
+                          "implications": "Major video content event",
+                          "modalities": {
+                            "visual": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a textured wall.",
+                            "audio": "hip-hop song",
+                            "speech": "KO the General, a confident and assertive individual, warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 197.5,
+                    "end_time": 201.5,
+                    "children": [],
+                    "caption": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a graffiti-covered wall, as a hip-hop song about loyalty and betrayal plays.",
+                    "postprocess": {
+                      "event_id": 41,
+                      "original_answer": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a graffiti-covered wall, as a hip-hop song about loyalty and betrayal plays.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_197_201",
+                        "tags": [
+                          "video_transition",
+                          "person",
+                          "room",
+                          "graffiti",
+                          "music"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "room",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "graffiti-covered wall",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_197_201",
+                          "name": "Video transition",
+                          "time": {
+                            "start": "197.5",
+                            "end": "201.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "video_transition"
+                          ],
+                          "scene_topic": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a graffiti-covered wall, as a hip-hop song about loyalty and betrayal plays.",
+                          "summary": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a graffiti-covered wall, as a hip-hop song about loyalty and betrayal plays.",
+                          "implications": "Major video content event",
+                          "modalities": {
+                            "visual": "The video transitions from a close-up of a person's face to a wider shot, revealing them in a dimly lit room with a graffiti-covered wall.",
+                            "audio": "Hip-hop song about loyalty and betrayal.",
+                            "speech": "KO the General warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 201.5,
+                    "end_time": 207.95775,
+                    "children": [],
+                    "caption": "The video transitions from a black screen with the words \"TWO BLACK\" and \"TWO BLACK\" to a black screen with the words \"TWO BLACK\" and \"TWO BLACK\" in white text, while a man's voice can be heard faintly in the background.",
+                    "postprocess": {
+                      "event_id": 42,
+                      "original_answer": "The video transitions from a black screen with the words \"TWO BLACK\" and \"TWO BLACK\" to a black screen with the words \"TWO BLACK\" and \"TWO BLACK\" in white text, while a man's voice can be heard faintly in the background.",
+                      "result": {
+                        "video_id": "mPDB_QrUYoM",
+                        "event_id": "E_mPDB_QrUYoM_201.5_207.96",
+                        "tags": [
+                          "video_transition",
+                          "black_screen",
+                          "text_overlay",
+                          "audio_background"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "black_screen",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "white_text",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man's voice",
+                            "ref_object": "",
+                            "role": "speaker",
+                            "entity": "voice"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_mPDB_QrUYoM_201.5_207.96",
+                          "name": "video transition",
+                          "time": {
+                            "start": "201.5",
+                            "end": "207.96"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "video_transition"
+                          ],
+                          "scene_topic": "The video transitions from a black screen with the words 'TWO BLACK' and 'TWO BLACK' to a black screen with the words 'TWO BLACK' and 'TWO BLACK' in white text, while a man's voice can be heard faintly in the background.",
+                          "summary": "The video transitions from a black screen with the words \"TWO BLACK\" and \"TWO BLACK\" to a black screen with the words \"TWO BLACK\" and \"TWO BLACK\" in white text, while a man's voice can be heard faintly in the background.",
+                          "implications": "Major video event",
+                          "modalities": {
+                            "visual": "The video transitions from a black screen with the words 'TWO BLACK' and 'TWO BLACK' to a black screen with the words 'TWO BLACK' and 'TWO BLACK' in white text.",
+                            "audio": "a man's voice in the background.",
+                            "speech": "KO the General, a confident and assertive individual, warns others to not approach him as he's unpredictable and can unleash his inner \"napalm\" or \"tick tick bomb\" to get what he wants."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The video shows a person listening intently to a conversation in a foreign language, with the words \"DON'T FUCK WITH US\" flashing on the screen behind them. The person's expression is serious and intense, and the video cuts to a wider shot of the person in a dimly lit room with a textured wall, as a hip-hop song plays in the background. The video then cuts to a black screen with the words \"TWO BLACK\" and \"TWO BLACK\" in white text, with a faint voice",
+                "summary": "The video features a person with a serious expression listening to a foreign language conversation, with the words \"DON'T FUCK WITH US\" flashing on the screen, set to a hip-hop soundtrack. The camera cuts between close-ups of the person's face and wider shots of them in a dimly lit room with graffiti-covered walls, exploring themes of loyalty and betrayal."
+              }
+            ],
+            "caption": "The video showcases a series of intense and dramatic scenes, highlighting the themes of personal storytelling, seriousness, and intensity. The scenes feature a rapper performing in a dimly lit room, a person standing in front of a graffiti-covered wall, and a person listening intently to a conversation in a foreign language. The video also includes the phrase \"DON'T FUCK WITH US\" flashing on the screen, adding to the overall sense of seriousness and intensity. The video ends with the words \"TWO BLACK",
+            "summary": "A man with a serious expression raps about his life experiences in a dimly lit room with graffiti-covered walls, his intense focus fixed on the camera as a hip-hop song plays in the background. The video explores themes of loyalty and betrayal through close-ups of his face and wider shots of the dimly lit room."
+          }
+        ],
+        "caption": "The scene shows a man either contemplating or passionately rapping along to a hip-hop song, depending on the context, in a dimly lit room. The video highlights themes of personal storytelling, seriousness, and intensity through a series of intense and dramatic scenes, including a rapper recording a song in a dimly lit room, a person standing in front of a graffiti-covered wall, and a person listening intently to a conversation in a foreign language. The video ends with the phrase \"DON'T FUCK",
+        "summary": "A man with a beard and serious expression raps passionately in a dimly lit room surrounded by graffiti, his intense performance conveyed through his fixed gaze and gestures. The video explores themes of loyalty and betrayal through his emotional delivery and the atmospheric setting."
+      }
+    ],
+    "caption": "A series of men express contrasting emotions and attitudes through rap, showcasing themes of personal storytelling, seriousness, and intensity.",
+    "summary": "A man with a beard and sunglasses raps passionately in a dimly lit room with graffiti-covered walls, his intense expression and energetic movements conveying a deeper meaning behind his words. The video explores themes of loyalty and betrayal through his emotional delivery and atmospheric setting."
+  }
+}

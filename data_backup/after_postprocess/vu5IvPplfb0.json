@@ -1,0 +1,1638 @@
+{
+  "video_id": "vu5IvPplfb0",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 111.08,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 44.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 17.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 1.5,
+                "children": [],
+                "caption": "The video opens with a black screen, the only sound a man's voice, barely audible, speaking in a foreign language.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a black screen, the only sound a man's voice, barely audible, speaking in a foreign language.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_0_1.5",
+                    "tags": [
+                      "video_start",
+                      "black_screen",
+                      "audio_only",
+                      "foreign_language"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_0_1.5",
+                      "name": "",
+                      "time": {
+                        "start": "0",
+                        "end": "1.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_start"
+                      ],
+                      "scene_topic": "The video opens with a black screen, the only sound a man's voice, barely audible, speaking in a foreign language.",
+                      "summary": "The video opens with a black screen, the only sound a man's voice, barely audible, speaking in a foreign language.",
+                      "implications": "Major video event",
+                      "modalities": {
+                        "visual": "The video opens with a black screen.",
+                        "audio": "Man's voice speaking in a foreign language.",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 1.5,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "The video opens with a high-speed train racing through a cityscape, its sleek exterior reflecting the urban environment as it speeds along the tracks.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The video opens with a high-speed train racing through a cityscape, its sleek exterior reflecting the urban environment as it speeds along the tracks.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_1.5_6.5",
+                    "tags": [
+                      "cityscape",
+                      "high_speed_train",
+                      "urban_environment",
+                      "reflection",
+                      "tracks"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "high-speed train",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_1.5_6.5",
+                      "name": "",
+                      "time": {
+                        "start": "1.5",
+                        "end": "6.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cityscape"
+                      ],
+                      "scene_topic": "The video opens with a high-speed train racing through a cityscape, its sleek exterior reflecting the urban environment as it speeds along the tracks.",
+                      "summary": "The video opens with a high-speed train racing through a cityscape, its sleek exterior reflecting the urban environment as it speeds along the tracks.",
+                      "implications": "Major visual event",
+                      "modalities": {
+                        "visual": "The video opens with a high-speed train racing through a cityscape, its sleek exterior reflecting the urban environment as it speeds along the tracks.",
+                        "audio": "",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street, capturing the movement of cars and pedestrians as a man's voice begins to speak, the source of the voice unseen.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The camera pans across a bustling city street, capturing the movement of cars and pedestrians as a man's voice begins to speak, the source of the voice unseen.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_6.5_9.5",
+                    "tags": [
+                      "city",
+                      "street",
+                      "voice",
+                      "unseen"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city_street",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "cars",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "pedestrians",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_6.5_9.5",
+                      "name": "city_street_scene",
+                      "time": {
+                        "start": "6.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "city_scene"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street, capturing the movement of cars and pedestrians as a man's voice begins to speak, the source of the voice unseen.",
+                      "summary": "The camera pans across a bustling city street, capturing the movement of cars and pedestrians as a man's voice begins to speak, the source of the voice unseen.",
+                      "implications": "Major urban scene event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street, capturing the movement of cars and pedestrians.",
+                        "audio": "a man's voice",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 13.5,
+                "children": [],
+                "caption": "The video transitions from a high-speed train journey to a close-up of a sleek, modern building with a reflective surface, as a man's voice begins to speak.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The video transitions from a high-speed train journey to a close-up of a sleek, modern building with a reflective surface, as a man's voice begins to speak.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_9.5_13.5",
+                    "tags": [
+                      "train",
+                      "building",
+                      "voiceover"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "high-speed train",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "sleek, modern building",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_9.5_13.5",
+                      "name": "Train to building transition",
+                      "time": {
+                        "start": "9.5",
+                        "end": "13.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "visual transition"
+                      ],
+                      "scene_topic": "The video transitions from a high-speed train journey to a close-up of a sleek, modern building with a reflective surface, as a man's voice begins to speak.",
+                      "summary": "The video transitions from a high-speed train journey to a close-up of a sleek, modern building with a reflective surface, as a man's voice begins to speak.",
+                      "implications": "Major visual transition event",
+                      "modalities": {
+                        "visual": "The video transitions from a high-speed train journey to a close-up of a sleek, modern building with a reflective surface, as a man's voice begins to speak.",
+                        "audio": "man's voice",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 13.5,
+                "end_time": 17.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a sleek, modern building to a wider shot of a bustling city street, the camera following a car as it drives through the urban landscape, the sounds of the city fading into the background as a man begins to speak.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The video transitions from a close-up of a sleek, modern building to a wider shot of a bustling city street, the camera following a car as it drives through the urban landscape, the sounds of the city fading into the background as a man begins to speak.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_13.5_17.5",
+                    "tags": [
+                      "urban",
+                      "city",
+                      "building",
+                      "car",
+                      "man"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "building",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "car",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_13.5_17.5",
+                      "name": "city street scene",
+                      "time": {
+                        "start": "13.5",
+                        "end": "17.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban scene"
+                      ],
+                      "scene_topic": "The camera follows a car through a bustling city street as a man begins to speak.",
+                      "summary": "The video transitions from a close-up of a sleek, modern building to a wider shot of a bustling city street, the camera following a car as it drives through the urban landscape, the sounds of the city fading into the background as a man begins to speak.",
+                      "implications": "Major urban scene event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a sleek, modern building to a wider shot of a bustling city street, the camera following a car as it drives through the urban landscape.",
+                        "audio": "city sounds; man speaking.",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video opens with a black screen and a faint voice speaking in a foreign language. The scene then shifts to a high-speed train racing through a cityscape, followed by a pan across a bustling city street with a man's voice speaking. The video then transitions to a close-up of a sleek, modern building with a reflective surface, and then to a wider shot of a city street with a car driving through the urban landscape. Throughout the video, the man's voice speaks, but his location is not visible.",
+            "summary": "The video opens with a high-speed train racing through a cityscape, followed by a close-up of a sleek, modern building, as a man's voice speaks in a foreign language. The camera then transitions to a wider shot of a bustling city street, capturing the movement of cars and pedestrians as the man's voice continues to speak."
+          },
+          {
+            "level": 2,
+            "start_time": 17.5,
+            "end_time": 29.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 17.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city, mentioning its rapid growth and the influence of the Japanese.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city, mentioning its rapid growth and the influence of the Japanese.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_17.5_24.5",
+                    "tags": [
+                      "cityscape",
+                      "history",
+                      "narration",
+                      "growth",
+                      "influence"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cityscape",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_17.5_24.5",
+                      "name": "City history narration",
+                      "time": {
+                        "start": "17.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban development"
+                      ],
+                      "scene_topic": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city, mentioning its rapid growth and the influence of the Japanese.",
+                      "summary": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city, mentioning its rapid growth and the influence of the Japanese.",
+                      "implications": "Major urban development news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets.",
+                        "audio": "Man's voice narration; city sounds.",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 29.5,
+                "children": [],
+                "caption": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city's development.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city's development.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_24.5_29.5",
+                    "tags": [
+                      "cityscape",
+                      "history",
+                      "narration",
+                      "development",
+                      "skyscrapers",
+                      "streets"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cityscape",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_24.5_29.5",
+                      "name": "city development history",
+                      "time": {
+                        "start": "24.5",
+                        "end": "29.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban development"
+                      ],
+                      "scene_topic": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city's development.",
+                      "summary": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city's development.",
+                      "implications": "Major urban development news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets.",
+                        "audio": "man's voice narration",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A city's rapid growth and Japanese influence are narrated in a man's voice as the camera pans across a bustling cityscape of towering skyscrapers and busy streets.",
+            "summary": "The city's history is narrated by a man's voice, highlighting its rapid growth and the influence of the Japanese, as the camera pans across the bustling cityscape. The city's development is showcased through the towering skyscrapers and busy streets."
+          },
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 38.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, as a man's voice begins to speak, his words drowned out by the sounds of the city.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, as a man's voice begins to speak, his words drowned out by the sounds of the city.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_29.5_31.5",
+                    "tags": [
+                      "cityscape",
+                      "skyscrapers",
+                      "busy_streets",
+                      "man_voice",
+                      "city_noises"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cityscape",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_29.5_31.5",
+                      "name": "cityscape with man's voice",
+                      "time": {
+                        "start": "29.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cityscape"
+                      ],
+                      "scene_topic": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, as a man's voice begins to speak, his words drowned out by the sounds of the city.",
+                      "summary": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, as a man's voice begins to speak, his words drowned out by the sounds of the city.",
+                      "implications": "Major urban scene",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets.",
+                        "audio": "man's voice; city sounds.",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city's development, from its early days as a fishing village to its current status as a major metropolis.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city's development, from its early days as a fishing village to its current status as a major metropolis.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_31.5_38.5",
+                    "tags": [
+                      "cityscape",
+                      "history",
+                      "development",
+                      "metropolis"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cityscape",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_31.5_38.5",
+                      "name": "city development history",
+                      "time": {
+                        "start": "31.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban development"
+                      ],
+                      "scene_topic": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city's development, from its early days as a fishing village to its current status as a major metropolis.",
+                      "summary": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets, while a man's voice narrates the history of the city's development, from its early days as a fishing village to its current status as a major metropolis.",
+                      "implications": "Major economics,finance news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and busy streets.",
+                        "audio": "man's voice narrating the history of the city's development",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man's voice narrates the history of a bustling city, from its origins as a fishing village to its current status as a major metropolis, as the camera pans across the towering skyscrapers and busy streets.",
+            "summary": "The camera captures a bustling cityscape as a man's voice narrates the history of the city's development, from its humble beginnings as a fishing village to its current status as a major metropolis."
+          },
+          {
+            "level": 2,
+            "start_time": 38.5,
+            "end_time": 44.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day, while a man's voice continues to describe the city's unique characteristics.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day, while a man's voice continues to describe the city's unique characteristics.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_38.5_44.5",
+                    "tags": [
+                      "city",
+                      "architecture",
+                      "people",
+                      "day",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "architecture",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "people",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "",
+                        "role": "narrator",
+                        "entity": "voice"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_38.5_44.5",
+                      "name": "city street scene",
+                      "time": {
+                        "start": "38.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban scene"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day, while a man's voice continues to describe the city's unique characteristics.",
+                      "summary": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day, while a man's voice continues to describe the city's unique characteristics.",
+                      "implications": "Major urban scene event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day.",
+                        "audio": "a man's voice",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The camera captures the vibrant energy of a bustling city, showcasing its modern architecture and the daily activities of its inhabitants, while a voiceover provides a narrative that highlights the city's distinctive features.",
+            "summary": "The camera captures the modern architecture and daily life of a bustling city, while a man's voice describes its unique characteristics."
+          }
+        ],
+        "caption": "The video shows a bustling city with a mix of modern architecture and daily activities of its inhabitants. The video transitions between different scenes, including a high-speed train, a sleek modern building, and a busy city street. A man's voice narrates the video, but his location is not visible. The video highlights the city's rapid growth and Japanese influence, and provides a historical narrative of the city's transformation from a fishing village to a major metropolis. The vibrant energy of the city is showcased through the camera's p",
+        "summary": "The video showcases the rapid growth and development of a city, highlighting its transformation from a humble fishing village to a modern metropolis, with a focus on its unique characteristics and influences. The camera pans across the bustling cityscape, capturing the movement of cars and pedestrians, and the narrator's voice shares the city's history and development."
+      },
+      {
+        "level": 1,
+        "start_time": 44.5,
+        "end_time": 67.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 44.5,
+            "end_time": 53.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 44.5,
+                "end_time": 50.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day, while a man's voice continues to describe the city's unique architectural style.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day, while a man's voice continues to describe the city's unique architectural style.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_44.5_50.5",
+                    "tags": [
+                      "city",
+                      "architecture",
+                      "people",
+                      "day",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city street",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "modern architecture",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "people",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "",
+                        "role": "narrator",
+                        "entity": "voice"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_44.5_50.5",
+                      "name": "city street scene",
+                      "time": {
+                        "start": "44.5",
+                        "end": "50.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "city scene"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day, while a man's voice continues to describe the city's unique architectural style.",
+                      "summary": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day, while a man's voice continues to describe the city's unique architectural style.",
+                      "implications": "Major urban planning and architecture news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street, capturing the modern architecture and the people going about their day.",
+                        "audio": "a man's voice; city sounds.",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 50.5,
+                "end_time": 53.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to describe the city's architecture.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to describe the city's architecture.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_50.5_53.5",
+                    "tags": [
+                      "city",
+                      "night",
+                      "architecture",
+                      "voiceover",
+                      "description"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_50.5_53.5",
+                      "name": "",
+                      "time": {
+                        "start": "50.5",
+                        "end": "53.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cityscape"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to describe the city's architecture.",
+                      "summary": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to describe the city's architecture.",
+                      "implications": "Major urban scene",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to describe the city's architecture.",
+                        "audio": "man's voice",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The city's modern architecture and vibrant energy are showcased in the camera shots, with a man's voice providing a narration of the city's unique style.",
+            "summary": "The camera captures the city's modern architecture and vibrant energy, panning across bustling streets during the day and night, while a man's voice describes the city's unique architectural style. The footage showcases the city's dynamic atmosphere, highlighting its modern design and lively streets."
+          },
+          {
+            "level": 2,
+            "start_time": 53.5,
+            "end_time": 67.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 53.5,
+                "end_time": 67.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street at night, capturing the neon lights of buildings and the movement of people, before focusing on a modern building with a glass facade reflecting the cityscape.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The camera pans across a bustling city street at night, capturing the neon lights of buildings and the movement of people, before focusing on a modern building with a glass facade reflecting the cityscape.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_53.5_67.5",
+                    "tags": [
+                      "city",
+                      "night",
+                      "neon",
+                      "buildings",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cityscape",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "buildings",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "modern building",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_53.5_67.5",
+                      "name": "City street at night",
+                      "time": {
+                        "start": "53.5",
+                        "end": "67.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cityscape"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street at night, capturing the neon lights of buildings and the movement of people, before focusing on a modern building with a glass facade reflecting the cityscape.",
+                      "summary": "The camera pans across a bustling city street at night, capturing the neon lights of buildings and the movement of people, before focusing on a modern building with a glass facade reflecting the cityscape.",
+                      "implications": "Major cityscape, urban planning news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street at night, capturing the neon lights of buildings and the movement of people, before focusing on a modern building with a glass facade reflecting the cityscape.",
+                        "audio": "",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A modern building with a glass facade reflects the bustling city street at night, capturing the vibrant lights and movement of people.",
+            "summary": "The camera captures a vibrant city street at night, showcasing neon lights and bustling activity, before zooming in on a modern glass-fronted building that reflects the city's skyline."
+          }
+        ],
+        "caption": "The city's modern architecture and vibrant energy are showcased in the camera shots, with a man's voice providing a narration of the city's unique style. A modern building with a glass facade reflects the bustling city street at night, capturing the vibrant lights and movement of people.",
+        "summary": "The city's modern architecture and vibrant energy are showcased through a camera panning across bustling streets during the day and night, highlighting its unique style and dynamic atmosphere. The footage features neon-lit streets at night and a modern glass-fronted building that reflects the city's skyline."
+      },
+      {
+        "level": 1,
+        "start_time": 67.5,
+        "end_time": 111.08,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 67.5,
+            "end_time": 76.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 67.5,
+                "end_time": 76.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to discuss the architectural styles of Tokyo.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to discuss the architectural styles of Tokyo.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_67.5_76.5",
+                    "tags": [
+                      "city",
+                      "night",
+                      "architecture",
+                      "tokyo",
+                      "voiceover"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city_street",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "cars",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "people",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "voiceover",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_67.5_76.5",
+                      "name": "city_street_panorama",
+                      "time": {
+                        "start": "67.5",
+                        "end": "76.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban_landscape"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to discuss the architectural styles of Tokyo.",
+                      "summary": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to discuss the architectural styles of Tokyo.",
+                      "implications": "Major urban landscape event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by.",
+                        "audio": "a man's voice; cars driving by",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The camera captures the vibrant energy of Tokyo's cityscape at night, while a man's voice discusses the architectural styles of the city.",
+            "summary": "The camera captures the lively atmosphere of a Tokyo city street at night, while a man's voiceover discusses the city's architectural styles."
+          },
+          {
+            "level": 2,
+            "start_time": 76.5,
+            "end_time": 85.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 76.5,
+                "end_time": 80.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to discuss the architectural styles of Tokyo.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to discuss the architectural styles of Tokyo.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_76.5_80.5",
+                    "tags": [
+                      "city",
+                      "night",
+                      "architecture",
+                      "tokyo",
+                      "voiceover"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city_street",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "cars",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "people",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "voiceover",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_76.5_80.5",
+                      "name": "city_street_panorama",
+                      "time": {
+                        "start": "76.5",
+                        "end": "80.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban_landscape"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to discuss the architectural styles of Tokyo.",
+                      "summary": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by, while a man's voice continues to discuss the architectural styles of Tokyo.",
+                      "implications": "Major urban landscape event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street at night, capturing the vibrant energy of the city as people walk and cars drive by.",
+                        "audio": "a man's voice; cars driving by",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 80.5,
+                "end_time": 85.5,
+                "children": [],
+                "caption": "A man, seated at a table with a book titled \"The Book of Contemporary Japanese Interior Design\" open in front of him, continues his discussion about the influence of Japanese design on contemporary architecture, his voice clear and audible over the faint hum of the room.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "A man, seated at a table with a book titled \"The Book of Contemporary Japanese Interior Design\" open in front of him, continues his discussion about the influence of Japanese design on contemporary architecture, his voice clear and audible over the faint hum of the room.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_80_85",
+                    "tags": [
+                      "design",
+                      "architecture",
+                      "japan"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "book",
+                        "attributes": {
+                          "title": "The Book of Contemporary Japanese Interior Design"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "table",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_80_85",
+                      "name": "Discussion on Japanese design influence",
+                      "time": {
+                        "start": "80.5",
+                        "end": "85.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "design",
+                        "architecture"
+                      ],
+                      "scene_topic": "A man discusses Japanese design influence on contemporary architecture",
+                      "summary": "A man, seated at a table with a book titled \"The Book of Contemporary Japanese Interior Design\" open in front of him, continues his discussion about the influence of Japanese design on contemporary architecture, his voice clear and audible over the faint hum of the room.",
+                      "implications": "Major design and architecture news event",
+                      "modalities": {
+                        "visual": "A man, seated at a table with a book titled 'The Book of Contemporary Japanese Interior Design' open in front of him, continues his discussion about the influence of Japanese design on contemporary architecture.",
+                        "audio": "his voice; faint hum of the room.",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man discusses the influence of Japanese design on contemporary architecture while a camera pans across a bustling city street at night, capturing the vibrant energy of the city.",
+            "summary": "The camera captures the lively Tokyo cityscape at night as a man discusses the influence of Japanese design on contemporary architecture, referencing a book on Japanese interior design. His voice is clear and audible over the background hum, highlighting the significance of Japanese design on modern architecture."
+          },
+          {
+            "level": 2,
+            "start_time": 85.5,
+            "end_time": 95.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 85.5,
+                "end_time": 88.5,
+                "children": [],
+                "caption": "A man, seated at a table with a book titled \"The Book of Trees\" open in front of him, begins to speak about the book's author, a renowned architect named Shigeru Ban, who is known for his innovative use of natural materials in his designs.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "A man, seated at a table with a book titled \"The Book of Trees\" open in front of him, begins to speak about the book's author, a renowned architect named Shigeru Ban, who is known for his innovative use of natural materials in his designs.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_85.5_88.5",
+                    "tags": [
+                      "architecture",
+                      "book",
+                      "design",
+                      "innovation",
+                      "natural_materials"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "book",
+                        "attributes": {
+                          "title": "The Book of Trees"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "table",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_85.5_88.5",
+                      "name": "Shigeru Ban's book discussion",
+                      "time": {
+                        "start": "85.5",
+                        "end": "88.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "architecture news"
+                      ],
+                      "scene_topic": "A man discusses the author of a book on innovative design",
+                      "summary": "A man, seated at a table with a book titled \"The Book of Trees\" open in front of him, begins to speak about the book's author, a renowned architect named Shigeru Ban, who is known for his innovative use of natural materials in his designs.",
+                      "implications": "Major design news event",
+                      "modalities": {
+                        "visual": "A man, seated at a table with a book titled 'The Book of Trees' open in front of him, begins to speak about the book's author, a renowned architect named Shigeru Ban.",
+                        "audio": "",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 88.5,
+                "end_time": 90.5,
+                "children": [],
+                "caption": "A woman, wearing a white shirt, sits at a table in a well-lit room, meticulously cutting and folding a piece of paper with scissors and a ruler, her focused expression and the sound of the paper cutting through the quiet room.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "A woman, wearing a white shirt, sits at a table in a well-lit room, meticulously cutting and folding a piece of paper with scissors and a ruler, her focused expression and the sound of the paper cutting through the quiet room.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_88.5_90.5",
+                    "tags": [
+                      "paper_craft",
+                      "woman",
+                      "table",
+                      "room",
+                      "scissors",
+                      "ruler"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "paper",
+                        "attributes": {
+                          "color": "",
+                          "shape": "",
+                          "size": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scissors",
+                        "attributes": {
+                          "type": "",
+                          "material": ""
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "ruler",
+                        "attributes": {
+                          "material": "",
+                          "length": ""
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "table",
+                        "attributes": {
+                          "material": "",
+                          "size": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "crafting",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_88.5_90.5",
+                      "name": "",
+                      "time": {
+                        "start": "88.5",
+                        "end": "90.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A woman is cutting and folding a piece of paper with scissors and a ruler.",
+                      "summary": "A woman, wearing a white shirt, sits at a table in a well-lit room, meticulously cutting and folding a piece of paper with scissors and a ruler, her focused expression and the sound of the paper cutting through the quiet room.",
+                      "implications": "Minor creative activity",
+                      "modalities": {
+                        "visual": "A woman sits at a table, cutting and folding a piece of paper with scissors and a ruler, with a focused expression, in a well-lit room.",
+                        "audio": "sound of paper cutting",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 90.5,
+                "end_time": 95.5,
+                "children": [],
+                "caption": "Two women, one in a white shirt and the other in a black shirt, are meticulously cutting and measuring a piece of paper on a table, their focused expressions reflecting the importance of the task.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "Two women, one in a white shirt and the other in a black shirt, are meticulously cutting and measuring a piece of paper on a table, their focused expressions reflecting the importance of the task.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_90.5_95.5",
+                    "tags": [
+                      "paper_cutting",
+                      "measurement",
+                      "task"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "paper",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "table",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman 1",
+                        "ref_object": "O001",
+                        "role": "operator",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman 2",
+                        "ref_object": "O001",
+                        "role": "operator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_90.5_95.5",
+                      "name": "paper cutting and measurement",
+                      "time": {
+                        "start": "90.5",
+                        "end": "95.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "task"
+                      ],
+                      "scene_topic": "Two women are meticulously cutting and measuring a piece of paper on a table.",
+                      "summary": "Two women, one in a white shirt and the other in a black shirt, are meticulously cutting and measuring a piece of paper on a table, their focused expressions reflecting the importance of the task.",
+                      "implications": "Important task",
+                      "modalities": {
+                        "visual": "Two women, one in a white shirt and the other in a black shirt, are meticulously cutting and measuring a piece of paper on a table, their focused expressions reflecting the importance of the task.",
+                        "audio": "",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Three people, including a man and two women, are shown engaging in various creative tasks related to architecture and design. The man speaks about a renowned architect, Shigeru Ban, while the other two women are seen meticulously cutting and measuring a piece of paper.",
+            "summary": "The speaker discusses \"The Book of Trees\" by renowned architect Shigeru Ban, known for his innovative use of natural materials in his designs. Meanwhile, two women are shown meticulously cutting and measuring paper, and a third woman is folding paper with scissors and a ruler, all with focused expressions reflecting the importance of their tasks."
+          },
+          {
+            "level": 2,
+            "start_time": 95.5,
+            "end_time": 111.08,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 95.5,
+                "end_time": 106.5,
+                "children": [],
+                "caption": "The camera pans across a serene, modern building with large windows, showcasing its minimalist design and natural surroundings, while a man's voice continues to discuss the architect's philosophy.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "The camera pans across a serene, modern building with large windows, showcasing its minimalist design and natural surroundings, while a man's voice continues to discuss the architect's philosophy.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_95.5_106.5",
+                    "tags": [
+                      "architecture",
+                      "design",
+                      "philosophy"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "building",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_95.5_106.5",
+                      "name": "",
+                      "time": {
+                        "start": "95.5",
+                        "end": "106.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "architecture news"
+                      ],
+                      "scene_topic": "The camera pans across a serene, modern building with large windows, showcasing its minimalist design and natural surroundings, while a man's voice continues to discuss the architect's philosophy.",
+                      "summary": "The camera pans across a serene, modern building with large windows, showcasing its minimalist design and natural surroundings, while a man's voice continues to discuss the architect's philosophy.",
+                      "implications": "Major architecture news event",
+                      "modalities": {
+                        "visual": "The camera pans across a serene, modern building with large windows, showcasing its minimalist design and natural surroundings.",
+                        "audio": "a man's voice",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 106.5,
+                "end_time": 111.08,
+                "children": [],
+                "caption": "The video transitions from a close-up of a modern building to a wider shot of its surroundings, while a man's voice continues to describe the architect's vision for the building's design.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "The video transitions from a close-up of a modern building to a wider shot of its surroundings, while a man's voice continues to describe the architect's vision for the building's design.",
+                  "result": {
+                    "video_id": "vu5IvPplfb0",
+                    "event_id": "E_vu5IvPplfb0_106.5_111.08",
+                    "tags": [
+                      "architecture",
+                      "building",
+                      "design",
+                      "urban"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "building",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "surroundings",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vu5IvPplfb0_106.5_111.08",
+                      "name": "building design",
+                      "time": {
+                        "start": "106.5",
+                        "end": "111.08"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban planning"
+                      ],
+                      "scene_topic": "The architect describes the building's design",
+                      "summary": "The video transitions from a close-up of a modern building to a wider shot of its surroundings, while a man's voice continues to describe the architect's vision for the building's design.",
+                      "implications": "Major architecture news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a modern building to a wider shot of its surroundings, while a man's voice continues to describe the architect's vision for the building's design.",
+                        "audio": "man's voice",
+                        "speech": "Passengers transferring at this station are advised to note the various train lines available. The speaker reflects on the similarities between Japanese and Swiss architecture, citing the shared values of precision, craftsmanship, and attention to detail, which are also reflected in Swiss watches and Japanese design."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A modern building is showcased in a serene and minimalist design, surrounded by natural surroundings, while an architect's voice discusses their philosophy and vision for the building's design.",
+            "summary": "The architect's philosophy is showcased through a modern building's minimalist design and natural surroundings, as described by a man's voice. The video transitions from a close-up to a wider shot, highlighting the building's design and the architect's vision."
+          }
+        ],
+        "caption": "The video showcases the vibrant energy of Tokyo's cityscape at night, while discussing the architectural styles of the city. The camera pans across a bustling street, capturing the city's vibrant energy. Three people are seen engaging in creative tasks related to architecture and design, including a man discussing the influence of Japanese design on contemporary architecture. A modern building is showcased in a serene and minimalist design, surrounded by natural surroundings, while an architect discusses their philosophy and vision for the building's design",
+        "summary": "The video showcases Tokyo's cityscape at night while a man discusses the influence of Japanese design on contemporary architecture, referencing a book on Japanese interior design and highlighting the significance of natural materials in modern architecture. The architect's philosophy is demonstrated through a minimalist-designed building surrounded by nature, as described by a man's voice."
+      }
+    ],
+    "caption": "The summaries for the three captions are:\n\nCaption 1:\nTokyo, a city that has transformed from a fishing village to a major metropolis, showcases its rapid growth and Japanese influence through its modern architecture and vibrant energy. A man's voice narrates the video, providing a historical narrative of the city's transformation.\n\nCaption 2:\nTokyo's modern architecture and vibrant energy are highlighted through camera shots, with a man's voice providing a narration of the city'",
+    "summary": "The video showcases the transformation of a city from a humble fishing village to a modern metropolis, highlighting its unique characteristics and influences through a blend of architecture, energy, and natural materials. The footage features neon-lit streets, modern glass-fronted buildings, and a minimalist-designed building surrounded by nature, demonstrating the city's unique style and dynamic atmosphere."
+  }
+}

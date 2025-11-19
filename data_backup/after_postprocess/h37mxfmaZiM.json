@@ -1,0 +1,1519 @@
+{
+  "video_id": "h37mxfmaZiM",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 194.143602,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 55.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 21.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 10.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 0.0,
+                    "end_time": 3.5,
+                    "children": [],
+                    "caption": "The video opens with a vibrant nighttime scene, the stage illuminated by colorful lights as a marching band takes the field, their uniforms a blur of green, white, and black as they launch into a lively performance.",
+                    "postprocess": {
+                      "event_id": 0,
+                      "original_answer": "The video opens with a vibrant nighttime scene, the stage illuminated by colorful lights as a marching band takes the field, their uniforms a blur of green, white, and black as they launch into a lively performance.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_0_3.5",
+                        "tags": [
+                          "nighttime",
+                          "marching_band",
+                          "performance",
+                          "stage",
+                          "lights"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O002",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_0_3.5",
+                          "name": "The video opens with a vibrant nighttime scene",
+                          "time": {
+                            "start": "0",
+                            "end": "3.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "nighttime scene"
+                          ],
+                          "scene_topic": "The stage illuminated by colorful lights as a marching band takes the field, their uniforms a blur of green, white, and black as they launch into a lively performance.",
+                          "summary": "The video opens with a vibrant nighttime scene, the stage illuminated by colorful lights as a marching band takes the field, their uniforms a blur of green, white, and black as they launch into a lively performance.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The video opens with a vibrant nighttime scene, the stage illuminated by colorful lights as a marching band takes the field, their uniforms a blur of green, white, and black as they launch into a lively performance.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 3.5,
+                    "end_time": 7.5,
+                    "children": [],
+                    "caption": "The marching band, dressed in green and white uniforms, performs a lively routine on a brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle for the cheering crowd.",
+                    "postprocess": {
+                      "event_id": 1,
+                      "original_answer": "The marching band, dressed in green and white uniforms, performs a lively routine on a brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle for the cheering crowd.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_3_7",
+                        "tags": [
+                          "marching_band",
+                          "football_field",
+                          "uniforms",
+                          "flags",
+                          "synchronized"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {
+                              "uniform_color": "green and white",
+                              "uniform_type": "uniforms",
+                              "field_type": "football field",
+                              "field_condition": "brightly lit"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_3_7",
+                          "name": "marching band performance",
+                          "time": {
+                            "start": "3.5",
+                            "end": "7.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports event"
+                          ],
+                          "scene_topic": "The marching band performs a lively routine on a brightly lit football field.",
+                          "summary": "The marching band, dressed in green and white uniforms, performs a lively routine on a brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle for the cheering crowd.",
+                          "implications": "Major sports event",
+                          "modalities": {
+                            "visual": "The marching band, dressed in green and white uniforms, performs a lively routine on a brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle for the cheering crowd.",
+                            "audio": "cheering crowd",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 7.5,
+                    "end_time": 10.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle.",
+                    "postprocess": {
+                      "event_id": 2,
+                      "original_answer": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_7.5_10.5",
+                        "tags": [
+                          "marching_band",
+                          "stadium",
+                          "performance",
+                          "green_field",
+                          "synchronized"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_7.5_10.5",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "7.5",
+                            "end": "10.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "performance"
+                          ],
+                          "scene_topic": "The marching band performs on the green field.",
+                          "summary": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine. The production features a unique and magical performance."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A vibrant marching band performs on a brightly lit football field, their synchronized movements and colorful uniforms creating a lively spectacle for the cheering crowd.",
+                "summary": "A marching band performs a lively routine on a brightly lit football field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd. The band's green and white uniforms blend with the stadium lights to create a dynamic and energetic display."
+              },
+              {
+                "level": 3,
+                "start_time": 10.5,
+                "end_time": 21.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 10.5,
+                    "end_time": 21.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by the stadium lights, performs a lively routine on the green field, their white and green uniforms a stark contrast to the darkening sky as the sun sets.",
+                    "postprocess": {
+                      "event_id": 3,
+                      "original_answer": "The marching band, illuminated by the stadium lights, performs a lively routine on the green field, their white and green uniforms a stark contrast to the darkening sky as the sun sets.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_10.5_21.5",
+                        "tags": [
+                          "marching_band",
+                          "stadium",
+                          "lights",
+                          "uniforms",
+                          "sunset"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_10.5_21.5",
+                          "name": "marching band performance",
+                          "time": {
+                            "start": "10.5",
+                            "end": "21.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The marching band performs a lively routine on the green field.",
+                          "summary": "The marching band, illuminated by the stadium lights, performs a lively routine on the green field, their white and green uniforms a stark contrast to the darkening sky as the sun sets.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The marching band performs a lively routine on the green field, their white and green uniforms a stark contrast to the darkening sky as the sun sets.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a vibrant routine under the fading sunlight, their uniforms standing out against the darkening sky.",
+                "summary": "The marching band performs a lively routine on the green field, their white and green uniforms standing out against the darkening sky as the sun sets."
+              }
+            ],
+            "caption": "A vibrant marching band performs a lively routine on a football field, their synchronized movements and colorful uniforms creating a spectacle for the cheering crowd under the fading sunlight.",
+            "summary": "A lively marching band performs a vibrant routine on a brightly lit football field, their synchronized movements and colorful uniforms creating a dynamic display for the cheering crowd. The band's green and white uniforms stand out against the darkening sky as the sun sets, blending with the stadium lights to create an energetic spectacle."
+          },
+          {
+            "level": 2,
+            "start_time": 21.5,
+            "end_time": 55.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 30.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 21.5,
+                    "end_time": 30.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 4,
+                      "original_answer": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_21.5_30.5",
+                        "tags": [
+                          "marching_band",
+                          "stadium",
+                          "performance",
+                          "green_field",
+                          "synchronized"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {
+                              "colorful": "uniforms",
+                              "vibrant": "spectacle"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_21.5_30.5",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "21.5",
+                            "end": "30.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "performance"
+                          ],
+                          "scene_topic": "The marching band performs a lively pop song on the green field.",
+                          "summary": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle illuminated by the stadium lights.",
+                "summary": "The marching band performs on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song under the stadium lights."
+              },
+              {
+                "level": 3,
+                "start_time": 30.5,
+                "end_time": 40.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 30.5,
+                    "end_time": 40.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their white and green uniforms a stark contrast to the darkening sky as the music shifts from pop to a more upbeat tempo.",
+                    "postprocess": {
+                      "event_id": 5,
+                      "original_answer": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their white and green uniforms a stark contrast to the darkening sky as the music shifts from pop to a more upbeat tempo.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_30.5_40.5",
+                        "tags": [
+                          "marching_band",
+                          "stadium",
+                          "performance",
+                          "music",
+                          "tempo"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {
+                              "uniform_color": "white and green",
+                              "location": "green field"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "marching_band"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_30.5_40.5",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "30.5",
+                            "end": "40.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_event"
+                          ],
+                          "scene_topic": "The marching band continues their performance on the green field.",
+                          "summary": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their white and green uniforms a stark contrast to the darkening sky as the music shifts from pop to a more upbeat tempo.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their white and green uniforms a stark contrast to the darkening sky as the music shifts from pop to a more upbeat tempo.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs with energy and enthusiasm, their uniforms standing out against the darkening sky as they shift from one musical style to another.",
+                "summary": "The marching band performs on the green field, their white and green uniforms standing out against the darkening sky, as the music transitions from pop to a more upbeat tempo."
+              },
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 55.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 40.5,
+                    "end_time": 55.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 6,
+                      "original_answer": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_40.5_55.5",
+                        "tags": [
+                          "marching_band",
+                          "stage_lights",
+                          "field",
+                          "synchronized_movements",
+                          "colorful_uniforms"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_40.5_55.5",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "40.5",
+                            "end": "55.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_event"
+                          ],
+                          "scene_topic": "The marching band performs a lively pop song on the field.",
+                          "summary": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on a brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle.",
+                "summary": "The marching band performs on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song."
+              }
+            ],
+            "caption": "The marching band performs an energetic and colorful routine on the field, showcasing their synchronized movements and vibrant uniforms under the stadium lights.",
+            "summary": "The marching band performs on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song under the stadium lights. The band's uniforms stand out against the darkening sky as the music transitions to a more upbeat tempo."
+          }
+        ],
+        "caption": "A vibrant marching band performs an energetic and colorful routine on a football field, entertaining the cheering crowd under the fading sunlight or stadium lights.",
+        "summary": "A lively marching band performs a vibrant routine on a football field, their synchronized movements and colorful uniforms creating a dynamic display for the cheering crowd as the sun sets and stadium lights take over. The band's green and white uniforms stand out against the darkening sky, blending with the lights to create an energetic spectacle."
+      },
+      {
+        "level": 1,
+        "start_time": 55.5,
+        "end_time": 120.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 55.5,
+            "end_time": 92.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 55.5,
+                "end_time": 63.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 55.5,
+                    "end_time": 63.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd.",
+                    "postprocess": {
+                      "event_id": 7,
+                      "original_answer": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd.",
+                      "result": {
+                        "video_id": "h_37mxfmaZiM",
+                        "event_id": "E_h_37mxfmaZiM_55_63",
+                        "tags": [
+                          "marching_band",
+                          "stage_lights",
+                          "field",
+                          "synchronized_movements",
+                          "colorful_uniforms"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h_37mxfmaZiM_55_63",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "55.5",
+                            "end": "63.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "entertainment"
+                          ],
+                          "scene_topic": "The marching band performs on the field, illuminated by stage lights.",
+                          "summary": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs with vibrant uniforms and synchronized movements, illuminated by green and blue stage lights, entertaining the cheering crowd.",
+                "summary": "The marching band performs on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd."
+              },
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 72.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 63.5,
+                    "end_time": 72.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd.",
+                    "postprocess": {
+                      "event_id": 8,
+                      "original_answer": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd.",
+                      "result": {
+                        "video_id": "h_37mxfmaZiM",
+                        "event_id": "E_h_37mxfmaZiM_63_72",
+                        "tags": [
+                          "marching_band",
+                          "stage_lights",
+                          "field",
+                          "synchronized_movements",
+                          "colorful_uniforms"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h_37mxfmaZiM_63_72",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "63.5",
+                            "end": "72.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "entertainment"
+                          ],
+                          "scene_topic": "The marching band performs on the field, illuminated by stage lights.",
+                          "summary": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs on the field, their colorful uniforms and synchronized movements creating a vibrant spectacle for the cheering crowd, illuminated by green and blue stage lights.",
+                "summary": "The marching band performs on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle for the cheering crowd."
+              },
+              {
+                "level": 3,
+                "start_time": 72.5,
+                "end_time": 92.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 72.5,
+                    "end_time": 92.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 9,
+                      "original_answer": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_72.5_92.5",
+                        "tags": [
+                          "marching_band",
+                          "performance",
+                          "stage_lights",
+                          "field",
+                          "synchronized_movements",
+                          "colorful_uniforms"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "marching_band"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_72.5_92.5",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "72.5",
+                            "end": "92.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "performance"
+                          ],
+                          "scene_topic": "The marching band performs on the brightly lit field.",
+                          "summary": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by green and blue stage lights, continues their performance on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on a brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle.",
+                "summary": "The marching band performs on the brightly lit field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song."
+              }
+            ],
+            "caption": "The marching band performs a lively and colorful routine on a brightly lit field, entertaining the cheering crowd with their synchronized movements and vibrant uniforms illuminated by green and blue stage lights.",
+            "summary": "The marching band performs on the brightly lit field, showcasing their synchronized movements and colorful uniforms in a vibrant spectacle for the cheering crowd. They play a lively pop song, adding to the energetic atmosphere."
+          },
+          {
+            "level": 2,
+            "start_time": 92.5,
+            "end_time": 120.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 92.5,
+                "end_time": 101.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 92.5,
+                    "end_time": 101.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 10,
+                      "original_answer": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h_37mxfmaZiM",
+                        "event_id": "E_h_37mxfmaZiM_92_101",
+                        "tags": [
+                          "marching_band",
+                          "stadium",
+                          "performance",
+                          "green_field",
+                          "synchronized"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h_37mxfmaZiM_92_101",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "92.5",
+                            "end": "101.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_event"
+                          ],
+                          "scene_topic": "The marching band performs a lively pop song on the green field.",
+                          "summary": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle illuminated by the stadium lights.",
+                "summary": "The marching band performs on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song under the stadium lights."
+              },
+              {
+                "level": 3,
+                "start_time": 101.5,
+                "end_time": 110.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 101.5,
+                    "end_time": 110.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 11,
+                      "original_answer": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h_37mxfmaZiM",
+                        "event_id": "E_h_37mxfmaZiM_101.5_110.5",
+                        "tags": [
+                          "marching_band",
+                          "stadium",
+                          "performance",
+                          "green_field",
+                          "synchronized"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h_37mxfmaZiM_101.5_110.5",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "101.5",
+                            "end": "110.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_event"
+                          ],
+                          "scene_topic": "The marching band performs a lively pop song on the green field.",
+                          "summary": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle illuminated by the stadium lights.",
+                "summary": "The marching band performs on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song under the stadium lights."
+              },
+              {
+                "level": 3,
+                "start_time": 110.5,
+                "end_time": 120.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 110.5,
+                    "end_time": 120.5,
+                    "children": [],
+                    "caption": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 12,
+                      "original_answer": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h_37mxfmaZiM",
+                        "event_id": "E_h_37mxfmaZiM_110.5_120.5",
+                        "tags": [
+                          "marching_band",
+                          "stadium",
+                          "performance",
+                          "green_field",
+                          "synchronized"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h_37mxfmaZiM_110.5_120.5",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "110.5",
+                            "end": "120.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "entertainment"
+                          ],
+                          "scene_topic": "The marching band performs a lively pop song on the green field.",
+                          "summary": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle illuminated by the stadium lights.",
+                "summary": "The marching band performs on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song under the stadium lights."
+              }
+            ],
+            "caption": "The marching band performs a lively pop song on the green field, showcasing their synchronized movements and colorful uniforms under the illumination of the stadium lights.",
+            "summary": "The marching band performs on the green field, showcasing synchronized movements and colorful uniforms as they play a lively pop song under the stadium lights, creating a vibrant spectacle."
+          }
+        ],
+        "caption": "The marching band performs an energetic and visually striking routine on the field, entertaining the audience with their synchronized movements and vibrant uniforms illuminated by bright lights.",
+        "summary": "The marching band performs on the field, showcasing synchronized movements and colorful uniforms as they play a lively pop song under the stadium lights, creating a vibrant spectacle for the cheering crowd. The energetic atmosphere is amplified by the band's lively performance."
+      },
+      {
+        "level": 1,
+        "start_time": 120.5,
+        "end_time": 194.143602,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 120.5,
+            "end_time": 162.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 120.5,
+                "end_time": 131.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 120.5,
+                    "end_time": 131.5,
+                    "children": [],
+                    "caption": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 13,
+                      "original_answer": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_120_131",
+                        "tags": [
+                          "marching_band",
+                          "football_field",
+                          "performance",
+                          "synchronized",
+                          "pop_song"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {
+                              "uniforms": "green and white",
+                              "flags": "colorful"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "marching_band"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_120_131",
+                          "name": "marching_band performance",
+                          "time": {
+                            "start": "120.5",
+                            "end": "131.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "performance"
+                          ],
+                          "scene_topic": "The marching band performs on the football field.",
+                          "summary": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the football field, their synchronized movements and colorful flags creating a vibrant spectacle.",
+                "summary": "The marching band performed on the football field, dressed in green and white uniforms, with synchronized movements and colorful flags creating a vibrant spectacle. They played a lively pop song, entertaining the audience with their energetic display."
+              },
+              {
+                "level": 3,
+                "start_time": 131.5,
+                "end_time": 137.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 131.5,
+                    "end_time": 137.5,
+                    "children": [],
+                    "caption": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 14,
+                      "original_answer": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_131_137",
+                        "tags": [
+                          "marching_band",
+                          "football_field",
+                          "performance",
+                          "synchronized",
+                          "pop_song"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {
+                              "uniforms": "green and white",
+                              "flags": "colorful"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "marching_band"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_131_137",
+                          "name": "marching_band performance",
+                          "time": {
+                            "start": "131.5",
+                            "end": "137.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "performance"
+                          ],
+                          "scene_topic": "The marching band performs on the football field.",
+                          "summary": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the football field, their synchronized movements and colorful flags creating a vibrant spectacle.",
+                "summary": "The marching band performed on the football field, dressed in green and white uniforms, with synchronized movements and colorful flags creating a vibrant spectacle. They played a lively pop song, entertaining the audience with their energetic display."
+              },
+              {
+                "level": 3,
+                "start_time": 137.5,
+                "end_time": 145.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 137.5,
+                    "end_time": 145.5,
+                    "children": [],
+                    "caption": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 15,
+                      "original_answer": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_137_145",
+                        "tags": [
+                          "marching_band",
+                          "football_field",
+                          "performance",
+                          "synchronized",
+                          "pop_song"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {
+                              "uniform_color": "green and white"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "football_field",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "flags",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "marching_band"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_137_145",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "137.5",
+                            "end": "145.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "performance"
+                          ],
+                          "scene_topic": "The marching band performs on the football field.",
+                          "summary": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the football field, their synchronized movements and colorful flags creating a vibrant spectacle.",
+                "summary": "The marching band performed on the football field, dressed in green and white uniforms, with synchronized movements and colorful flags creating a vibrant spectacle. They played a lively pop song, entertaining the audience with their energetic display."
+              },
+              {
+                "level": 3,
+                "start_time": 145.5,
+                "end_time": 162.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 145.5,
+                    "end_time": 162.5,
+                    "children": [],
+                    "caption": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 16,
+                      "original_answer": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_145.5_162.5",
+                        "tags": [
+                          "marching_band",
+                          "football_field",
+                          "uniforms",
+                          "synchronized_movements",
+                          "colorful_flags"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_145.5_162.5",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "145.5",
+                            "end": "162.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "entertainment"
+                          ],
+                          "scene_topic": "The marching band performs on the football field.",
+                          "summary": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the football field, their synchronized movements and colorful flags creating a vibrant spectacle.",
+                "summary": "The marching band performed on the football field, dressed in green and white uniforms, with synchronized movements and colorful flags creating a vibrant spectacle. They played a lively pop song, entertaining the audience with their energetic display."
+              }
+            ],
+            "caption": "The marching band performs a lively pop song on the football field, showcasing their synchronized movements and colorful flags in a vibrant spectacle.",
+            "summary": "The marching band performed on the football field, dressed in green and white uniforms, with synchronized movements and colorful flags creating a vibrant spectacle. They played a lively pop song, entertaining the audience with their energetic display."
+          },
+          {
+            "level": 2,
+            "start_time": 162.5,
+            "end_time": 194.143602,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 162.5,
+                "end_time": 182.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 162.5,
+                    "end_time": 182.5,
+                    "children": [],
+                    "caption": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 17,
+                      "original_answer": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h37mxfmaZiM",
+                        "event_id": "E_h37mxfmaZiM_162.5_182.5",
+                        "tags": [
+                          "marching_band",
+                          "football_field",
+                          "performance",
+                          "uniforms",
+                          "flags"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h37mxfmaZiM_162.5_182.5",
+                          "name": "marching band performance",
+                          "time": {
+                            "start": "162.5",
+                            "end": "182.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "performance"
+                          ],
+                          "scene_topic": "The marching band performs on the football field.",
+                          "summary": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, dressed in green and white uniforms, continues their performance on the brightly lit football field, their synchronized movements and colorful flags creating a vibrant spectacle as they play a lively pop song.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the football field, their synchronized movements and colorful flags creating a vibrant spectacle.",
+                "summary": "The marching band performed on the football field, dressed in green and white uniforms, with synchronized movements and colorful flags creating a vibrant spectacle. They played a lively pop song, entertaining the audience with their energetic display."
+              },
+              {
+                "level": 3,
+                "start_time": 182.5,
+                "end_time": 194.143602,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 182.5,
+                    "end_time": 194.143602,
+                    "children": [],
+                    "caption": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                    "postprocess": {
+                      "event_id": 18,
+                      "original_answer": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                      "result": {
+                        "video_id": "h_37mxfmaZiM",
+                        "event_id": "E_h_37mxfmaZiM_182.5_194.14",
+                        "tags": [
+                          "marching_band",
+                          "stadium",
+                          "performance",
+                          "green_field",
+                          "synchronized"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "marching_band",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "marching_band",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "marching_band"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_h_37mxfmaZiM_182.5_194.14",
+                          "name": "marching_band_performance",
+                          "time": {
+                            "start": "182.5",
+                            "end": "194.14"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music_event"
+                          ],
+                          "scene_topic": "The marching band performs a lively pop song on the green field.",
+                          "summary": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song.",
+                          "implications": "Major entertainment event",
+                          "modalities": {
+                            "visual": "The marching band, illuminated by the stadium lights, continues their performance on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play.",
+                            "audio": "",
+                            "speech": "The Pelham High School Marching Band presents its 2019 edition, directed by drum majors Jesse Fonten, Anna Wilkes, Emily Munday, and Maggie Rine."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The marching band performs a lively pop song on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle illuminated by the stadium lights.",
+                "summary": "The marching band performs on the green field, their synchronized movements and colorful uniforms creating a vibrant spectacle as they play a lively pop song under the stadium lights."
+              }
+            ],
+            "caption": "The marching band performs a lively pop song on the football field or green field, showcasing their synchronized movements and colorful uniforms or flags, illuminated by the stadium lights.",
+            "summary": "The marching band performed on the football field, dressed in green and white uniforms, with synchronized movements and colorful flags creating a vibrant spectacle. They played a lively pop song, entertaining the audience with their energetic display."
+          }
+        ],
+        "caption": "The marching band performs a lively pop song on the football field, showcasing their synchronized movements and colorful flags in a vibrant spectacle, illuminated by the stadium lights.",
+        "summary": "The marching band performed on the football field, dressed in green and white uniforms, with synchronized movements and colorful flags creating a vibrant spectacle. They played a lively pop song, entertaining the audience with their energetic display."
+      }
+    ],
+    "caption": "A vibrant marching band performs an energetic and visually striking routine on a football field, entertaining the cheering crowd under the fading sunlight or stadium lights.",
+    "summary": "A lively marching band performs a vibrant routine on a football field, showcasing synchronized movements and colorful uniforms under the stadium lights, creating an energetic spectacle for the cheering crowd. The band's green and white uniforms stand out against the darkening sky, blending with the lights to amplify the dynamic display."
+  }
+}

@@ -1,0 +1,1398 @@
+{
+  "video_id": "ZA8BslrJ0IQ",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 49.866667,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 16.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 9.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 4.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black shorts is seated on a blue and white striped chair, his hands clasped in his lap, as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A man in a blue shirt and black shorts is seated on a blue and white striped chair, his hands clasped in his lap, as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_0_4.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "chair",
+                      "voice",
+                      "background"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "chair",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_0_4.5",
+                      "name": "man seated on chair",
+                      "time": {
+                        "start": "0",
+                        "end": "4.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person scene"
+                      ],
+                      "scene_topic": "A man is seated on a chair, with a woman's voice in the background.",
+                      "summary": "A man in a blue shirt and black shorts is seated on a blue and white striped chair, his hands clasped in his lap, as a woman's voice can be heard in the background.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black shorts is seated on a blue and white striped chair, his hands clasped in his lap, as a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 4.5,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "A woman in a black swimsuit, her face wet with sweat, stands on a grassy lawn, her arms raised as if celebrating, while a man's voice can be heard in the background, followed by the sound of a car engine starting.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A woman in a black swimsuit, her face wet with sweat, stands on a grassy lawn, her arms raised as if celebrating, while a man's voice can be heard in the background, followed by the sound of a car engine starting.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_4.5_6.5",
+                    "tags": [
+                      "celebration",
+                      "beach",
+                      "swimsuit",
+                      "grass",
+                      "car"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "wet_face": "true",
+                          "wet_hair": "true",
+                          "swimsuit": "black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_4.5_6.5",
+                      "name": "Woman celebrates on the lawn",
+                      "time": {
+                        "start": "4.5",
+                        "end": "6.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "celebration"
+                      ],
+                      "scene_topic": "A woman celebrates on the lawn",
+                      "summary": "A woman in a black swimsuit, her face wet with sweat, stands on a grassy lawn, her arms raised as if celebrating, while a man's voice can be heard in the background, followed by the sound of a car engine starting.",
+                      "implications": "Major celebration event",
+                      "modalities": {
+                        "visual": "A woman in a black swimsuit, her face wet with sweat, stands on a grassy lawn, her arms raised as if celebrating.",
+                        "audio": "man's voice; car engine starting.",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "A man in a blue shirt stands on a circular platform, smiling as he interacts with a woman in a white dress who is playfully splashing him with water from a hose.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "A man in a blue shirt stands on a circular platform, smiling as he interacts with a woman in a white dress who is playfully splashing him with water from a hose.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_6.5_9.5",
+                    "tags": [
+                      "human_interaction",
+                      "water_play",
+                      "smiling",
+                      "circular_platform",
+                      "blue_shirt",
+                      "white_dress"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "circular_platform",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hose",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_6.5_9.5",
+                      "name": "man interacts with woman on circular platform",
+                      "time": {
+                        "start": "6.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "A man in a blue shirt stands on a circular platform, smiling as he interacts with a woman in a white dress who is playfully splashing him with water from a hose.",
+                      "summary": "A man in a blue shirt stands on a circular platform, smiling as he interacts with a woman in a white dress who is playfully splashing him with water from a hose.",
+                      "implications": "Major social, emotional news event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt stands on a circular platform, smiling as he interacts with a woman in a white dress who is playfully splashing him with water from a hose.",
+                        "audio": "",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man sits calmly while a woman's voice speaks in the background, while another woman stands on a lawn, celebrating with raised arms, and a man stands on a platform, smiling as he gets splashed with water by a playful woman in a white dress.",
+            "summary": "A man sits on a chair, while a woman stands on a lawn, both with voices in the background. Meanwhile, another man interacts with a woman on a circular platform, with the sound of a car engine starting and water splashing in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 9.5,
+            "end_time": 16.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "A man in a blue shirt stands on a platform, smiling as he interacts with a woman in a pink dress, who is playfully splashing him with a hose in a backyard.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "A man in a blue shirt stands on a platform, smiling as he interacts with a woman in a pink dress, who is playfully splashing him with a hose in a backyard.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_9.5_12.5",
+                    "tags": [
+                      "backyard",
+                      "interact",
+                      "playful",
+                      "splash",
+                      "smile"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color": "blue",
+                          "shirt": "shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "color": "pink",
+                          "dress": "dress"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "hose",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_9.5_12.5",
+                      "name": "backyard interaction",
+                      "time": {
+                        "start": "9.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human interaction"
+                      ],
+                      "scene_topic": "A man and a woman interact playfully in a backyard.",
+                      "summary": "A man in a blue shirt stands on a platform, smiling as he interacts with a woman in a pink dress, who is playfully splashing him with a hose in a backyard.",
+                      "implications": "Social interaction, human connection",
+                      "modalities": {
+                        "visual": "A man in a blue shirt stands on a platform, smiling as he interacts with a woman in a pink dress, who is playfully splashing him with a hose in a backyard.",
+                        "audio": "",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 16.5,
+                "children": [],
+                "caption": "A man in a blue shirt stands on a platform, playfully interacting with a large inflatable ball as a woman's voice can be heard in the background, followed by a man's voice saying \"I'm gonna go with the blue.\"",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A man in a blue shirt stands on a platform, playfully interacting with a large inflatable ball as a woman's voice can be heard in the background, followed by a man's voice saying \"I'm gonna go with the blue.\"",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_12.5_16.5",
+                    "tags": [
+                      "human_interaction",
+                      "play",
+                      "inflatable_ball"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "inflatable_ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "platform",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_12.5_16.5",
+                      "name": "man plays with inflatable ball",
+                      "time": {
+                        "start": "12.5",
+                        "end": "16.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_behavior"
+                      ],
+                      "scene_topic": "A man plays with an inflatable ball on a platform.",
+                      "summary": "A man in a blue shirt stands on a platform, playfully interacting with a large inflatable ball as a woman's voice can be heard in the background, followed by a man's voice saying \"I'm gonna go with the blue.\"",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt stands on a platform, playfully interacting with a large inflatable ball as a woman's voice can be heard in the background, followed by a man's voice saying 'I'm gonna go with the blue'.",
+                        "audio": "woman's voice; man's voice 'I'm gonna go with the blue'",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man is playfully splashed with a hose by a woman in a pink dress in a backyard, while another man interacts with an inflatable ball in a similar setting.",
+            "summary": "A man in a blue shirt is playfully interacting with a woman in a pink dress in a backyard, with the woman splashing him with a hose. Meanwhile, another man is seen playing with a large inflatable ball, with a woman's voice heard in the background before a man chooses the blue option."
+          }
+        ],
+        "caption": "A man is serenaded by a woman's voice in the background while another woman celebrates on a lawn, while a man on a platform gets splashed with water by a playful woman in a white dress. Meanwhile, a man is playfully splashed with a hose by a woman in a pink dress in a backyard, and another man interacts with an inflatable ball in a similar setting.",
+        "summary": "A man sits on a chair, while a woman stands on a lawn, amidst background voices, as another man interacts with a woman on a circular platform amidst car engine and water sounds. Meanwhile, a man in a blue shirt plays with a woman in a pink dress in a backyard, and another man plays with an inflatable ball, with a woman's voice heard in the background."
+      },
+      {
+        "level": 1,
+        "start_time": 16.5,
+        "end_time": 49.866667,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 28.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 16.5,
+                "end_time": 19.5,
+                "children": [],
+                "caption": "A man in a blue shirt stands on a platform, playfully interacting with a large inflatable ball as a woman's voice can be heard in the background, followed by a man's voice saying \"Okay.\"",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A man in a blue shirt stands on a platform, playfully interacting with a large inflatable ball as a woman's voice can be heard in the background, followed by a man's voice saying \"Okay.\"",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_16.5_19.5",
+                    "tags": [
+                      "man",
+                      "inflatable_ball",
+                      "platform",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "inflatable_ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "platform",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_16.5_19.5",
+                      "name": "man plays with inflatable ball",
+                      "time": {
+                        "start": "16.5",
+                        "end": "19.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_activity"
+                      ],
+                      "scene_topic": "A man plays with an inflatable ball on a platform.",
+                      "summary": "A man in a blue shirt stands on a platform, playfully interacting with a large inflatable ball as a woman's voice can be heard in the background, followed by a man's voice saying \"Okay.\"",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt stands on a platform, playfully interacting with a large inflatable ball, a woman's voice can be heard in the background, a man's voice saying 'Okay'.",
+                        "audio": "",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 19.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black shorts stands on a platform, smiling as he prepares to dunk a basketball into a large blue bin, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A man in a blue shirt and black shorts stands on a platform, smiling as he prepares to dunk a basketball into a large blue bin, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_195_215",
+                    "tags": [
+                      "sports",
+                      "basketball",
+                      "dunk",
+                      "man",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "basketball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "platform",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "blue bin",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_195_215",
+                      "name": "basketball dunk",
+                      "time": {
+                        "start": "19.5",
+                        "end": "21.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A man prepares to dunk a basketball into a large blue bin while a woman's voice is heard in the background.",
+                      "summary": "A man in a blue shirt and black shorts stands on a platform, smiling as he prepares to dunk a basketball into a large blue bin, while a woman's voice can be heard in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black shorts stands on a platform, smiling as he prepares to dunk a basketball into a large blue bin.",
+                        "audio": "woman's voice; basketball; dunk",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black shorts, standing on a blue inflatable ball in a backyard, playfully splashes water at a woman in a white dress, who laughs and covers her face with her hands.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A man in a blue shirt and black shorts, standing on a blue inflatable ball in a backyard, playfully splashes water at a woman in a white dress, who laughs and covers her face with her hands.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_21.5_24.5",
+                    "tags": [
+                      "backyard",
+                      "water",
+                      "play",
+                      "laughter"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "blue inflatable ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "blue shirt",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "black shorts",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "white dress",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O004",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_21.5_24.5",
+                      "name": "playful water splashing",
+                      "time": {
+                        "start": "21.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "recreation"
+                      ],
+                      "scene_topic": "A man playfully splashes water at a woman in a backyard.",
+                      "summary": "A man in a blue shirt and black shorts, standing on a blue inflatable ball in a backyard, playfully splashes water at a woman in a white dress, who laughs and covers her face with her hands.",
+                      "implications": "A lighthearted and playful moment between two people.",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black shorts, standing on a blue inflatable ball in a backyard, playfully splashes water at a woman in a white dress, who laughs and covers her face with her hands.",
+                        "audio": "",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 28.5,
+                "children": [],
+                "caption": "In a backyard, a man in a blue shirt and shorts is playfully dunking a woman in a white dress into a large blue inflatable ball, eliciting laughter from the group gathered around.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "In a backyard, a man in a blue shirt and shorts is playfully dunking a woman in a white dress into a large blue inflatable ball, eliciting laughter from the group gathered around.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_24.5_28.5",
+                    "tags": [
+                      "backyard",
+                      "playful",
+                      "dunking",
+                      "laughter",
+                      "group"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "inflatable ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in white dress",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in blue shirt and shorts",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in blue shirt and shorts",
+                        "ref_object": "O003",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in white dress",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_24.5_28.5",
+                      "name": "playful dunking",
+                      "time": {
+                        "start": "24.5",
+                        "end": "28.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "recreation"
+                      ],
+                      "scene_topic": "A man playfully dunks a woman into an inflatable ball, causing laughter from the group.",
+                      "summary": "In a backyard, a man in a blue shirt and shorts is playfully dunking a woman in a white dress into a large blue inflatable ball, eliciting laughter from the group gathered around.",
+                      "implications": "Social and recreational event",
+                      "modalities": {
+                        "visual": "In a backyard, a man in a blue shirt and shorts is playfully dunking a woman in a white dress into a large blue inflatable ball, eliciting laughter from the group gathered around.",
+                        "audio": "laughter",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of people are having fun in a backyard, engaging in various playful activities involving inflatables, basketball, and water.",
+            "summary": "A man in a blue shirt and black shorts is playfully interacting with a large inflatable ball, dunking a basketball and splashing water at a woman in a white dress in a backyard setting, causing laughter from the group gathered around. The scene is filled with lighthearted and playful moments, with the man's energetic and carefree nature bringing joy to those around him."
+          },
+          {
+            "level": 2,
+            "start_time": 28.5,
+            "end_time": 34.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 28.5,
+                "end_time": 30.5,
+                "children": [],
+                "caption": "A man in a black shirt and blue jeans, standing on a grassy field, laughs and claps his hands together, enjoying the lively atmosphere as a woman in a pink dress dances nearby.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A man in a black shirt and blue jeans, standing on a grassy field, laughs and claps his hands together, enjoying the lively atmosphere as a woman in a pink dress dances nearby.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_28.5_30.5",
+                    "tags": [
+                      "grass_field",
+                      "lively_atmosphere",
+                      "laughter",
+                      "clapping",
+                      "dancing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_shirt": "black",
+                          "color_pants": "blue",
+                          "location": "grassy_field"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "color_dress": "pink",
+                          "location": "grassy_field"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_28.5_30.5",
+                      "name": "man and woman enjoying lively atmosphere",
+                      "time": {
+                        "start": "28.5",
+                        "end": "30.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_behavior",
+                        "social_event"
+                      ],
+                      "scene_topic": "A man and a woman enjoying a lively atmosphere in a grassy field",
+                      "summary": "A man in a black shirt and blue jeans, standing on a grassy field, laughs and claps his hands together, enjoying the lively atmosphere as a woman in a pink dress dances nearby.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "A man in a black shirt and blue jeans, standing on a grassy field, and a woman in a pink dress dances nearby.",
+                        "audio": "laughs; claps; lively atmosphere",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 30.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "In a lively outdoor gathering, a woman in a pink top and black shorts dances joyfully, her laughter blending with the chatter and clinking of glasses as a man in a black shirt watches her from the sidelines.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "In a lively outdoor gathering, a woman in a pink top and black shorts dances joyfully, her laughter blending with the chatter and clinking of glasses as a man in a black shirt watches her from the sidelines.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_30.5_34.5",
+                    "tags": [
+                      "outdoor_gathering",
+                      "dancing",
+                      "social_event",
+                      "recreational_activity",
+                      "leisure"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "color_top": "pink",
+                          "color_shorts": "black"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "color_shirt": "black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "observer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_30.5_34.5",
+                      "name": "outdoor_dancing",
+                      "time": {
+                        "start": "30.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_event"
+                      ],
+                      "scene_topic": "A woman dances joyfully in an outdoor gathering.",
+                      "summary": "In a lively outdoor gathering, a woman in a pink top and black shorts dances joyfully, her laughter blending with the chatter and clinking of glasses as a man in a black shirt watches her from the sidelines.",
+                      "implications": "Social event, recreational activity",
+                      "modalities": {
+                        "visual": "A woman in a pink top and black shorts dances joyfully, her laughter blending with the chatter and clinking of glasses as a man in a black shirt watches her from the sidelines.",
+                        "audio": "Laughter; chatter; clinking of glasses.",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In an outdoor gathering, a woman in a pink dress dances joyfully, surrounded by a lively atmosphere filled with laughter and chatter, while a man in a black shirt watches from the sidelines, enjoying the festive mood.",
+            "summary": "A lively outdoor gathering takes place on a grassy field, where a woman in a pink dress and a man in a black shirt are enjoying themselves, with the woman dancing joyfully and the man watching with a smile. The atmosphere is filled with laughter, chatter, and the clinking of glasses."
+          },
+          {
+            "level": 2,
+            "start_time": 34.5,
+            "end_time": 49.866667,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 37.5,
+                "children": [],
+                "caption": "In a lively outdoor gathering, a woman in a pink top and black shorts dances joyfully, her laughter blending with the chatter and clinking of glasses as she enjoys the festive atmosphere.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "In a lively outdoor gathering, a woman in a pink top and black shorts dances joyfully, her laughter blending with the chatter and clinking of glasses as she enjoys the festive atmosphere.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_34.5_37.5",
+                    "tags": [
+                      "outdoor_gathering",
+                      "dancing",
+                      "laughter",
+                      "festive_atmosphere",
+                      "social_event"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "color_top": "pink",
+                          "color_shorts": "black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_34.5_37.5",
+                      "name": "outdoor_dancing",
+                      "time": {
+                        "start": "34.5",
+                        "end": "37.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_event"
+                      ],
+                      "scene_topic": "A woman dances joyfully in an outdoor gathering.",
+                      "summary": "In a lively outdoor gathering, a woman in a pink top and black shorts dances joyfully, her laughter blending with the chatter and clinking of glasses as she enjoys the festive atmosphere.",
+                      "implications": "Social event, community bonding",
+                      "modalities": {
+                        "visual": "A woman in a pink top and black shorts dances joyfully, her laughter blending with the chatter and clinking of glasses as she enjoys the festive atmosphere.",
+                        "audio": "Laughter; chatter; clinking of glasses.",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 37.5,
+                "end_time": 41.5,
+                "children": [],
+                "caption": "A woman in a pink top laughs joyfully as a man in a black shirt playfully douses her with a blue bucket, the sound of their laughter blending with the chatter of a crowd gathered around a pool.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "A woman in a pink top laughs joyfully as a man in a black shirt playfully douses her with a blue bucket, the sound of their laughter blending with the chatter of a crowd gathered around a pool.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_37.5_41.5",
+                    "tags": [
+                      "laughter",
+                      "playfulness",
+                      "pool",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "pink top",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "black shirt",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "blue bucket",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "laughing",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "dousing",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_37.5_41.5",
+                      "name": "playful dousing",
+                      "time": {
+                        "start": "37.5",
+                        "end": "41.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A woman is playfully doused with water by a man.",
+                      "summary": "A woman in a pink top laughs joyfully as a man in a black shirt playfully douses her with a blue bucket, the sound of their laughter blending with the chatter of a crowd gathered around a pool.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "A woman in a pink top laughs joyfully as a man in a black shirt playfully douses her with a blue bucket.",
+                        "audio": "Laughter; crowd chatter.",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 41.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "A man in a black shirt and blue jeans stands on a wooden deck, smiling at the camera as a woman's voice can be heard in the background, followed by a man's laughter.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A man in a black shirt and blue jeans stands on a wooden deck, smiling at the camera as a woman's voice can be heard in the background, followed by a man's laughter.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_41.5_44.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "laughter",
+                      "smiling",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "wooden deck",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_41.5_44.5",
+                      "name": "man smiling at camera",
+                      "time": {
+                        "start": "41.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man stands on a wooden deck, smiling at the camera as a woman's voice can be heard in the background, followed by a man's laughter.",
+                      "summary": "A man in a black shirt and blue jeans stands on a wooden deck, smiling at the camera as a woman's voice can be heard in the background, followed by a man's laughter.",
+                      "implications": "Social interaction, everyday life",
+                      "modalities": {
+                        "visual": "A man in a black shirt and blue jeans stands on a wooden deck, smiling at the camera.",
+                        "audio": "woman's voice; man's laughter",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 44.5,
+                "end_time": 46.5,
+                "children": [],
+                "caption": "A man in a black shirt and blue jeans stands on a wooden deck, smiling at the camera as he playfully interacts with a large inflatable ball, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "A man in a black shirt and blue jeans stands on a wooden deck, smiling at the camera as he playfully interacts with a large inflatable ball, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_44.5_46.5",
+                    "tags": [
+                      "man",
+                      "inflatable_ball",
+                      "wooden_deck",
+                      "smiling",
+                      "playful"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "inflatable_ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "wooden_deck",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_44.5_46.5",
+                      "name": "man plays with inflatable ball",
+                      "time": {
+                        "start": "44.5",
+                        "end": "46.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_activity"
+                      ],
+                      "scene_topic": "A man plays with an inflatable ball on a wooden deck",
+                      "summary": "A man in a black shirt and blue jeans stands on a wooden deck, smiling at the camera as he playfully interacts with a large inflatable ball, while a woman's voice can be heard in the background.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A man in a black shirt and blue jeans stands on a wooden deck, smiling at the camera as he playfully interacts with a large inflatable ball.",
+                        "audio": "woman's voice",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 46.5,
+                "end_time": 49.866667,
+                "children": [],
+                "caption": "A man in a blue shirt stands on a platform, playfully splashing water at a woman in a white dress who is laughing and splashing back at him, as a group of people watch and cheer them on.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "A man in a blue shirt stands on a platform, playfully splashing water at a woman in a white dress who is laughing and splashing back at him, as a group of people watch and cheer them on.",
+                  "result": {
+                    "video_id": "ZA8BslrJ0IQ",
+                    "event_id": "E_ZA8BslrJ0IQ_46.5_49.87",
+                    "tags": [
+                      "water_splashing",
+                      "playful",
+                      "laughing",
+                      "cheering",
+                      "group"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "platform",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZA8BslrJ0IQ_46.5_49.87",
+                      "name": "water_splashing",
+                      "time": {
+                        "start": "46.5",
+                        "end": "49.87"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_behavior",
+                        "social_interaction"
+                      ],
+                      "scene_topic": "A man and a woman playfully splash water at each other",
+                      "summary": "A man in a blue shirt stands on a platform, playfully splashing water at a woman in a white dress who is laughing and splashing back at him, as a group of people watch and cheer them on.",
+                      "implications": "Social interaction and playful behavior",
+                      "modalities": {
+                        "visual": "A man in a blue shirt stands on a platform, playfully splashing water at a woman in a white dress who is laughing and splashing back at him, as a group of people watch and cheer them on.",
+                        "audio": "laughter; cheering",
+                        "speech": "Charles is preparing for a potentially cold situation, and believes the person above him will try to get out of it."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of people are enjoying a lively outdoor gathering, with laughter and music filling the air. A woman in a pink top and black shorts is dancing joyfully, while a man in a black shirt playfully douses her with a blue bucket. Another man in a black shirt and blue jeans stands on a wooden deck, smiling at the camera and interacting playfully with an inflatable ball. A woman's voice can be heard in the background, followed by a man's laughter. The scene shifts to a platform",
+            "summary": "A lively outdoor gathering takes place, filled with joyful laughter and playful interactions, as people enjoy the festive atmosphere and engage in fun activities such as splashing water and playing with inflatable balls. The atmosphere is lively and carefree, with people of all ages participating and having a great time."
+          }
+        ],
+        "caption": "A group of people are enjoying a lively outdoor gathering, with laughter and music filling the air. They engage in various playful activities, including dancing, basketball, and water play. A woman in a pink dress dances joyfully, surrounded by a festive atmosphere, while a man in a black shirt watches from the sidelines. Another man playfully douses her with a blue bucket, and a woman's voice can be heard in the background. The scene shifts to a platform, where a man in a black shirt and",
+        "summary": "A lively outdoor gathering takes place in a backyard setting, filled with playful interactions, laughter, and joyful moments as people of all ages enjoy festive activities such as splashing water and playing with inflatable balls. The atmosphere is carefree and lively, with energetic and playful individuals bringing joy to those around them."
+      }
+    ],
+    "caption": "A group of people are enjoying a fun outdoor gathering with music, dancing, and playful activities like basketball and water splashing. A woman in a pink dress dances happily, surrounded by the festive atmosphere, while a man watches from the sidelines. Another man playfully douses her with a blue bucket, and a woman's voice can be heard in the background.",
+    "summary": "A lively outdoor gathering takes place in a backyard, filled with playful interactions, laughter, and joyful moments as people of all ages enjoy festive activities. The atmosphere is carefree and lively, with energetic and playful individuals bringing joy to those around them."
+  }
+}

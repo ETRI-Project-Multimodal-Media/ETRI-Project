@@ -1,0 +1,1645 @@
+{
+  "video_id": "vHTfzg4dBsY",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 58.600208,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 24.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 8.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 5.5,
+                "children": [],
+                "caption": "The video begins with a close-up shot of a man in a black cap and a woman in a white top, both seated in a semi-circle, listening intently to a speaker at a podium.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video begins with a close-up shot of a man in a black cap and a woman in a white top, both seated in a semi-circle, listening intently to a speaker at a podium.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_0_5.5",
+                    "tags": [
+                      "people",
+                      "meeting",
+                      "speaker",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in white top",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "speaker at podium",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black cap",
+                        "ref_object": "O001",
+                        "role": "audience",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in white top",
+                        "ref_object": "O002",
+                        "role": "audience",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "speaker at podium",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_0_5.5",
+                      "name": "Meeting",
+                      "time": {
+                        "start": "0",
+                        "end": "5.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "meeting"
+                      ],
+                      "scene_topic": "The video begins with a close-up shot of a man in a black cap and a woman in a white top, both seated in a semi-circle, listening intently to a speaker at a podium.",
+                      "summary": "The video begins with a close-up shot of a man in a black cap and a woman in a white top, both seated in a semi-circle, listening intently to a speaker at a podium.",
+                      "implications": "Major people, meeting event",
+                      "modalities": {
+                        "visual": "The video begins with a close-up shot of a man in a black cap and a woman in a white top, both seated in a semi-circle, listening intently to a speaker at a podium.",
+                        "audio": "",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 5.5,
+                "end_time": 8.5,
+                "children": [],
+                "caption": "The woman, illuminated by the stage lights, continues her speech, her voice echoing through the auditorium as she addresses the audience.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The woman, illuminated by the stage lights, continues her speech, her voice echoing through the auditorium as she addresses the audience.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_5.5_8.5",
+                    "tags": [
+                      "woman",
+                      "speech",
+                      "auditorium",
+                      "stage",
+                      "lights"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_5.5_8.5",
+                      "name": "woman's speech",
+                      "time": {
+                        "start": "5.5",
+                        "end": "8.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "The woman continues her speech, her voice echoing through the auditorium.",
+                      "summary": "The woman, illuminated by the stage lights, continues her speech, her voice echoing through the auditorium as she addresses the audience.",
+                      "implications": "Major event in the person's life",
+                      "modalities": {
+                        "visual": "The woman, illuminated by the stage lights, continues her speech.",
+                        "audio": "her voice; echoing; audience",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman delivers a speech to an attentive audience in a dimly lit auditorium, with a man seated next to her and the stage lights illuminating her face.",
+            "summary": "A woman speaks at a podium, her voice echoing through the auditorium, as a man in a black cap and she sit in a semi-circle, listening intently to her address."
+          },
+          {
+            "level": 2,
+            "start_time": 8.5,
+            "end_time": 16.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 8.5,
+                "end_time": 11.5,
+                "children": [],
+                "caption": "The woman, illuminated by the stage lights, continues her speech, her voice clear and audible as she addresses the audience.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The woman, illuminated by the stage lights, continues her speech, her voice clear and audible as she addresses the audience.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_8.5_11.5",
+                    "tags": [
+                      "woman",
+                      "speech",
+                      "audience",
+                      "stage",
+                      "lights"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_8.5_11.5",
+                      "name": "",
+                      "time": {
+                        "start": "8.5",
+                        "end": "11.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "The woman, illuminated by the stage lights, continues her speech, her voice clear and audible as she addresses the audience.",
+                      "summary": "The woman, illuminated by the stage lights, continues her speech, her voice clear and audible as she addresses the audience.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "The woman, illuminated by the stage lights, continues her speech.",
+                        "audio": "her voice",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 11.5,
+                "end_time": 16.5,
+                "children": [],
+                "caption": "The man in the black cap and t-shirt, seated on the right side of the panel, smiles at the camera as a woman's voice, likely from the audience, asks a question about the film's message.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The man in the black cap and t-shirt, seated on the right side of the panel, smiles at the camera as a woman's voice, likely from the audience, asks a question about the film's message.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_11.5_16.5",
+                    "tags": [
+                      "film",
+                      "message",
+                      "audience",
+                      "question"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_cap": "black",
+                          "color_tshirt": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "panel",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "panelist",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "audience_member",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_11.5_16.5",
+                      "name": "Q&A session",
+                      "time": {
+                        "start": "11.5",
+                        "end": "16.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "film discussion"
+                      ],
+                      "scene_topic": "The man in the black cap and t-shirt smiles at the camera as a woman asks a question about the film's message.",
+                      "summary": "The man in the black cap and t-shirt, seated on the right side of the panel, smiles at the camera as a woman's voice, likely from the audience, asks a question about the film's message.",
+                      "implications": "Major film discussion event",
+                      "modalities": {
+                        "visual": "The man in the black cap and t-shirt, seated on the right side of the panel, smiles at the camera as a woman's voice asks a question about the film's message.",
+                        "audio": "woman's voice",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman delivers a speech, illuminated by stage lights, while a man in the audience smiles and a woman's voice asks a question about the film's message.",
+            "summary": "A woman speaks on stage, her voice clear and audible, while a man in the audience asks a question about the film's message."
+          },
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 24.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 16.5,
+                "end_time": 22.5,
+                "children": [],
+                "caption": "The man in the black cap and the woman in the black top are seated on a stage, listening intently to a speaker who is addressing the audience.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The man in the black cap and the woman in the black top are seated on a stage, listening intently to a speaker who is addressing the audience.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_16.5_22.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "stage",
+                      "speaker",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stage",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "speaker",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "audience",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_16.5_22.5",
+                      "name": "",
+                      "time": {
+                        "start": "16.5",
+                        "end": "22.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The man in the black cap and the woman in the black top are seated on a stage, listening intently to a speaker who is addressing the audience.",
+                      "summary": "The man in the black cap and the woman in the black top are seated on a stage, listening intently to a speaker who is addressing the audience.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "The man in the black cap and the woman in the black top are seated on a stage, listening intently to a speaker.",
+                        "audio": "",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 22.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "The man in the black cap and the man in the black cap and white cap are both wearing headphones and listening intently to a speaker at the podium, who is addressing the audience about the importance of being present in the moment.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The man in the black cap and the man in the black cap and white cap are both wearing headphones and listening intently to a speaker at the podium, who is addressing the audience about the importance of being present in the moment.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_22.5_24.5",
+                    "tags": [
+                      "moment",
+                      "presence",
+                      "audience",
+                      "speaker",
+                      "headphones"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in black and white cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "speaker at podium",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "audience",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black cap",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in black and white cap",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_22.5_24.5",
+                      "name": "Importance of being present in the moment",
+                      "time": {
+                        "start": "22.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "people"
+                      ],
+                      "scene_topic": "The speaker addresses the audience about the importance of being present in the moment.",
+                      "summary": "The man in the black cap and the man in the black cap and white cap are both wearing headphones and listening intently to a speaker at the podium, who is addressing the audience about the importance of being present in the moment.",
+                      "implications": "Major life event",
+                      "modalities": {
+                        "visual": "The man in the black cap and the man in the black cap and white cap are both wearing headphones and listening intently to a speaker at the podium.",
+                        "audio": "speaker; headphones",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The man in the black cap and the woman in the black top are seated on a stage, listening intently to a speaker who is addressing the audience. Meanwhile, the man in the black cap and the man in the black cap and white cap are both wearing headphones and listening to a speaker at the podium, who is discussing the importance of being present in the moment.",
+            "summary": "A speaker addresses the audience on the importance of being present in the moment, while two men in black caps, one with a white cap, and a woman in a black top listen intently, some wearing headphones."
+          }
+        ],
+        "caption": "A woman delivers a speech to an attentive audience, while a man in the audience smiles and a woman asks a question. Another woman speaks on stage, while two men listen intently. The speaker discusses the importance of being present in the moment.",
+        "summary": "A woman delivers a speech to a group of people, including a man in a black cap, while others listen intently or wear headphones. The speaker's message is met with questions and attention from the audience, highlighting the importance of being present in the moment."
+      },
+      {
+        "level": 1,
+        "start_time": 24.5,
+        "end_time": 58.600208,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 33.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 27.5,
+                "children": [],
+                "caption": "The man in the black cap and the man in the black cap and white cap are both wearing headphones and listening intently to a speaker at the podium, who is addressing the audience about the importance of being present in the moment.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The man in the black cap and the man in the black cap and white cap are both wearing headphones and listening intently to a speaker at the podium, who is addressing the audience about the importance of being present in the moment.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_24.5_27.5",
+                    "tags": [
+                      "moment",
+                      "presence",
+                      "audience",
+                      "speaker",
+                      "headphones"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in black and white cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "speaker at podium",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "audience",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black cap",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in black and white cap",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_24.5_27.5",
+                      "name": "Importance of being present in the moment",
+                      "time": {
+                        "start": "24.5",
+                        "end": "27.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "people"
+                      ],
+                      "scene_topic": "The speaker addresses the audience about the importance of being present in the moment.",
+                      "summary": "The man in the black cap and the man in the black cap and white cap are both wearing headphones and listening intently to a speaker at the podium, who is addressing the audience about the importance of being present in the moment.",
+                      "implications": "Major life event",
+                      "modalities": {
+                        "visual": "The man in the black cap and the man in the black cap and white cap are both wearing headphones and listening intently to a speaker at the podium.",
+                        "audio": "speaker; headphones",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 27.5,
+                "end_time": 29.5,
+                "children": [],
+                "caption": "The man in the black cap, seated on the left, smiles at the camera as the woman in the white cap, seated on the right, continues her speech, her voice clear and audible over the murmuring audience.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The man in the black cap, seated on the left, smiles at the camera as the woman in the white cap, seated on the right, continues her speech, her voice clear and audible over the murmuring audience.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_27.5_29.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "speech",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_27.5_29.5",
+                      "name": "",
+                      "time": {
+                        "start": "27.5",
+                        "end": "29.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "speech"
+                      ],
+                      "scene_topic": "The man in the black cap smiles at the camera as the woman in the white cap continues her speech.",
+                      "summary": "The man in the black cap, seated on the left, smiles at the camera as the woman in the white cap, seated on the right, continues her speech, her voice clear and audible over the murmuring audience.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "The man in the black cap, seated on the left, smiles at the camera as the woman in the white cap, seated on the right, continues her speech.",
+                        "audio": "murmuring audience; speech",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 33.5,
+                "children": [],
+                "caption": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, speaks about the importance of being yourself.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, speaks about the importance of being yourself.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_29.5_33.5",
+                    "tags": [
+                      "self_awareness",
+                      "self_acceptance",
+                      "panel_discussion"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_black_cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman_in_black_top",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "panel",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_black_cap",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman_in_black_top",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_29.5_33.5",
+                      "name": "panel_discussion",
+                      "time": {
+                        "start": "29.5",
+                        "end": "33.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person_to_person_communication"
+                      ],
+                      "scene_topic": "The woman in black top speaks about the importance of being yourself.",
+                      "summary": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, speaks about the importance of being yourself.",
+                      "implications": "Major personal growth and self-improvement news event",
+                      "modalities": {
+                        "visual": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, speaks about the importance of being yourself.",
+                        "audio": "",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "At a panel discussion, two men wearing headphones listen intently to a speaker addressing the audience about the importance of being present in the moment. One of the men smiles at the camera, while the other takes notes. The speaker is interrupted by a woman who begins to speak about the importance of being yourself.",
+            "summary": "A speaker addresses the audience on the importance of being present in the moment, with two men in black caps and a woman in a white cap listening intently. The speaker's voice is clear and audible over the murmuring audience, as the panel members engage with the topic."
+          },
+          {
+            "level": 2,
+            "start_time": 33.5,
+            "end_time": 40.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 33.5,
+                "end_time": 36.5,
+                "children": [],
+                "caption": "The man in the black cap and t-shirt, seated on the stage, listens intently as a woman's voice, barely audible over the cheers of the crowd, asks a question about the film's message.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The man in the black cap and t-shirt, seated on the stage, listens intently as a woman's voice, barely audible over the cheers of the crowd, asks a question about the film's message.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_33.5_36.5",
+                    "tags": [
+                      "man",
+                      "black_cap",
+                      "stage",
+                      "question",
+                      "film_message"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stage",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "questioner",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_33.5_36.5",
+                      "name": "question about film's message",
+                      "time": {
+                        "start": "33.5",
+                        "end": "36.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "event",
+                        "communication"
+                      ],
+                      "scene_topic": "A woman asks a question about a film's message on stage.",
+                      "summary": "The man in the black cap and t-shirt, seated on the stage, listens intently as a woman's voice, barely audible over the cheers of the crowd, asks a question about the film's message.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "The man in the black cap and t-shirt, seated on the stage, listens intently as a woman's voice, barely audible over the cheers of the crowd, asks a question about the film's message.",
+                        "audio": "woman's voice; cheers of the crowd",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 36.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech, her voice clear and audible over the microphone.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech, her voice clear and audible over the microphone.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_36.5_38.5",
+                    "tags": [
+                      "man_in_black_cap",
+                      "woman_in_black_top",
+                      "panel",
+                      "speech",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in black top",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "panel",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black cap",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in black top",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_36.5_38.5",
+                      "name": "woman speaking at panel",
+                      "time": {
+                        "start": "36.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The woman in black top continues her speech at the panel.",
+                      "summary": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech, her voice clear and audible over the microphone.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech.",
+                        "audio": "her voice",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 40.5,
+                "children": [],
+                "caption": "The man in the black cap, seated on the left, listens intently as the woman in the white cap, seated on the right, speaks, her voice clear and audible over the murmur of the crowd.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The man in the black cap, seated on the left, listens intently as the woman in the white cap, seated on the right, speaks, her voice clear and audible over the murmur of the crowd.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_38.5_40.5",
+                    "tags": [
+                      "human_interaction",
+                      "conversation",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_black_cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman_in_white_cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_black_cap",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman_in_white_cap",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_38.5_40.5",
+                      "name": "conversation",
+                      "time": {
+                        "start": "38.5",
+                        "end": "40.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "The woman in the white cap speaks to the man in the black cap in a crowded area.",
+                      "summary": "The man in the black cap, seated on the left, listens intently as the woman in the white cap, seated on the right, speaks, her voice clear and audible over the murmur of the crowd.",
+                      "implications": "Major human interaction event",
+                      "modalities": {
+                        "visual": "The man in the black cap, seated on the left, listens intently as the woman in the white cap, seated on the right, speaks.",
+                        "audio": "speaks; voice; murmur of the crowd",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A panel discussion is taking place on stage, with three individuals seated on opposite sides of the stage. One man, seated on the right side, listens intently as a woman speaks, while another woman, seated on the left, speaks clearly and audibly over the murmur of the crowd.",
+            "summary": "A woman asks a question about the film's message, and the man in the black cap listens intently as the woman in the black top continues her speech, her voice clear over the microphone. The man in the black cap also listens to the woman in the white cap, who speaks clearly over the murmur of the crowd."
+          },
+          {
+            "level": 2,
+            "start_time": 40.5,
+            "end_time": 45.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 45.5,
+                "children": [],
+                "caption": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech, her voice clear and audible over the murmur of the audience.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech, her voice clear and audible over the murmur of the audience.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_40.5_45.5",
+                    "tags": [
+                      "man_in_black_cap",
+                      "woman_in_black_top",
+                      "panel",
+                      "speech",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in black top",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "panel",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "audience",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black cap",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in black top",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_40.5_45.5",
+                      "name": "woman's speech",
+                      "time": {
+                        "start": "40.5",
+                        "end": "45.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The woman in black top continues her speech, her voice clear and audible over the murmur of the audience.",
+                      "summary": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech, her voice clear and audible over the murmur of the audience.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech.",
+                        "audio": "her voice; murmur of the audience.",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman speaks confidently and clearly to a captivated audience, while a man listens intently on the other side of the panel.",
+            "summary": "A woman in a black top speaks clearly to the audience, her voice audible over the background noise, while a man in a black cap listens intently from the right side of the panel."
+          },
+          {
+            "level": 2,
+            "start_time": 45.5,
+            "end_time": 58.600208,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 45.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech, her voice clear and audible over the murmur of the audience.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech, her voice clear and audible over the murmur of the audience.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_45.5_47.5",
+                    "tags": [
+                      "man_in_black_cap",
+                      "woman_in_black_top",
+                      "panel",
+                      "speech",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in black top",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "panel",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "audience",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black cap",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in black top",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_45.5_47.5",
+                      "name": "woman's speech",
+                      "time": {
+                        "start": "45.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The woman in black top continues her speech, her voice clear and audible over the murmur of the audience.",
+                      "summary": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech, her voice clear and audible over the murmur of the audience.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "The man in the black cap, seated on the right side of the panel, listens intently as the woman in the black top, seated on the left, continues her speech.",
+                        "audio": "her voice; murmur of the audience.",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 49.5,
+                "children": [],
+                "caption": "The man in the black cap, seated on the right side of the panel, smiles at the camera as the woman on the left continues to speak, her voice now accompanied by the faint sound of a car engine starting up in the background.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The man in the black cap, seated on the right side of the panel, smiles at the camera as the woman on the left continues to speak, her voice now accompanied by the faint sound of a car engine starting up in the background.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_47.5_49.5",
+                    "tags": [
+                      "man",
+                      "black_cap",
+                      "panel",
+                      "smile",
+                      "camera",
+                      "woman",
+                      "car_engine"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "black_cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "panel",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O006",
+                        "name": "car_engine",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O005",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_47.5_49.5",
+                      "name": "",
+                      "time": {
+                        "start": "47.5",
+                        "end": "49.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005",
+                        "O006"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The man in the black cap smiles at the camera as the woman on the left continues to speak, her voice now accompanied by the faint sound of a car engine starting up in the background.",
+                      "summary": "The man in the black cap, seated on the right side of the panel, smiles at the camera as the woman on the left continues to speak, her voice now accompanied by the faint sound of a car engine starting up in the background.",
+                      "implications": "Major scene, minor significance",
+                      "modalities": {
+                        "visual": "The man in the black cap, seated on the right side of the panel, smiles at the camera as the woman on the left continues to speak.",
+                        "audio": "her voice; car engine starting up.",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 49.5,
+                "end_time": 52.5,
+                "children": [],
+                "caption": "Two men, one in a black cap and the other in a black cap and white t-shirt, are seated on a stage, engaged in a lively conversation, their animated gestures and expressions suggesting a friendly and engaging atmosphere.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "Two men, one in a black cap and the other in a black cap and white t-shirt, are seated on a stage, engaged in a lively conversation, their animated gestures and expressions suggesting a friendly and engaging atmosphere.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_49.5_52.5",
+                    "tags": [
+                      "people",
+                      "conversation",
+                      "stage",
+                      "gestures",
+                      "expressions"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "stage",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "black cap",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "white t-shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "",
+                        "entity": ""
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "",
+                        "ref_object": "O003",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_49.5_52.5",
+                      "name": "",
+                      "time": {
+                        "start": "49.5",
+                        "end": "52.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people"
+                      ],
+                      "scene_topic": "Two men, one in a black cap and the other in a black cap and white t-shirt, are seated on a stage, engaged in a lively conversation, their animated gestures and expressions suggesting a friendly and engaging atmosphere.",
+                      "summary": "Two men, one in a black cap and the other in a black cap and white t-shirt, are seated on a stage, engaged in a lively conversation, their animated gestures and expressions suggesting a friendly and engaging atmosphere.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "Two men, one in a black cap and the other in a black cap and white t-shirt, are seated on a stage, engaged in a lively conversation, their animated gestures and expressions suggesting a friendly and engaging atmosphere.",
+                        "audio": "",
+                        "speech": "expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 52.5,
+                "end_time": 55.5,
+                "children": [],
+                "caption": "The man in the black cap smiles at the camera as he listens to the woman's question about the film's success, her voice barely audible over the excited chatter of the crowd.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The man in the black cap smiles at the camera as he listens to the woman's question about the film's success, her voice barely audible over the excited chatter of the crowd.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_52.5_55.5",
+                    "tags": [
+                      "film",
+                      "success",
+                      "audience",
+                      "question",
+                      "answer"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_black_cap",
+                        "attributes": {
+                          "role": "actor",
+                          "entity": "person"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "actor",
+                          "entity": "person"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "camera",
+                        "attributes": {
+                          "role": "camera",
+                          "entity": "device"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_black_cap",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_52.5_55.5",
+                      "name": "man_in_black_cap_smiles_at_camera",
+                      "time": {
+                        "start": "52.5",
+                        "end": "55.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "film",
+                        "audience"
+                      ],
+                      "scene_topic": "The man in the black cap smiles at the camera as he listens to the woman's question about the film's success, her voice barely audible over the excited chatter of the crowd.",
+                      "summary": "The man in the black cap smiles at the camera as he listens to the woman's question about the film's success, her voice barely audible over the excited chatter of the crowd.",
+                      "implications": "Major film news event",
+                      "modalities": {
+                        "visual": "The man in the black cap smiles at the camera as he listens to the woman's question about the film's success.",
+                        "audio": "her voice; excited chatter",
+                        "speech": "The speaker expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 55.5,
+                "end_time": 58.600208,
+                "children": [],
+                "caption": "Two men, comfortably seated in a brightly lit room, are engaged in a lively conversation, their animated gestures and smiles reflecting the friendly atmosphere.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "Two men, comfortably seated in a brightly lit room, are engaged in a lively conversation, their animated gestures and smiles reflecting the friendly atmosphere.",
+                  "result": {
+                    "video_id": "vHTfzg4dBsY",
+                    "event_id": "E_vHTfzg4dBsY_55.5_58.6",
+                    "tags": [
+                      "human_interaction",
+                      "conversation",
+                      "social"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_vHTfzg4dBsY_55.5_58.6",
+                      "name": "",
+                      "time": {
+                        "start": "55.5",
+                        "end": "58.6"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "Two men engage in a friendly conversation",
+                      "summary": "Two men, comfortably seated in a brightly lit room, are engaged in a lively conversation, their animated gestures and smiles reflecting the friendly atmosphere.",
+                      "implications": "Social interaction event",
+                      "modalities": {
+                        "visual": "Two men, comfortably seated in a brightly lit room, are engaged in a lively conversation, their animated gestures and smiles reflecting the friendly atmosphere.",
+                        "audio": "",
+                        "speech": "expresses willingness to return for another season of Smallville, contingent on the involvement of Tom Welling, Michael Rosenbaum, and Laura Vandervoort."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a black cap is shown listening intently to a woman's speech, while another man smiles at the camera and nods along with the conversation. The atmosphere is friendly and engaging, with animated gestures and expressions.",
+            "summary": "Two men and a woman are seated on a stage or panel, engaged in a lively conversation with animated gestures and expressions, while a car engine starts up in the background. The atmosphere is friendly and engaging, with the woman's voice clear and audible over the audience's murmur."
+          }
+        ],
+        "caption": "A panel discussion is taking place, with individuals listening intently to each other's thoughts and ideas. The atmosphere is friendly and engaging, with animated gestures and expressions.",
+        "summary": "A speaker discusses the importance of being present in the moment, engaging with a panel of two men and a woman who listen intently and ask questions, their voices clear over the background noise. The atmosphere is friendly and engaging, with animated gestures and expressions adding to the lively conversation."
+      }
+    ],
+    "caption": "A panel discussion takes place, with individuals engaging in a friendly and animated conversation about important ideas and topics. A woman delivers a speech to an attentive audience, emphasizing the importance of being present in the moment.",
+    "summary": "A woman delivers a speech to a group of people, emphasizing the importance of being present in the moment, which sparks questions and attention from the audience. The conversation is friendly and engaging, with animated gestures and expressions adding to the lively discussion."
+  }
+}

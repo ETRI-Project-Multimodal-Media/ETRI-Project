@@ -1,0 +1,3095 @@
+{
+  "video_id": "JS-7WQLMkXE",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 225.666667,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 33.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 6.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "The video opens with a vibrant soccer match, the players in red and white jerseys sprinting across the field as the crowd cheers and a pop song plays.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a vibrant soccer match, the players in red and white jerseys sprinting across the field as the crowd cheers and a pop song plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_0_3.5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "pop_music",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "pop_song",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "soccer_players",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_0_3.5",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The video opens with a vibrant soccer match, the players in red and white jerseys sprinting across the field as the crowd cheers and a pop song plays.",
+                      "summary": "The video opens with a vibrant soccer match, the players in red and white jerseys sprinting across the field as the crowd cheers and a pop song plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The video opens with a vibrant soccer match, the players in red and white jerseys sprinting across the field as the crowd cheers.",
+                        "audio": "pop song; crowd cheers",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the field, the crowd cheering and clapping in the background.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the field, the crowd cheering and clapping in the background.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_3_5_6_5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "ball",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_3_5_6_5",
+                      "name": "",
+                      "time": {
+                        "start": "3.5",
+                        "end": "6.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the field, the crowd cheering and clapping in the background.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the field, the crowd cheering and clapping in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the field, the crowd in the background.",
+                        "audio": "cheering; clapping",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A vibrant soccer match is shown, with players in red and white jerseys sprinting across the field and battling for possession of the ball, accompanied by cheering and clapping from the crowd and a catchy pop song.",
+            "summary": "The video opens with a lively soccer match featuring players in red and white jerseys, with the crowd enthusiastically cheering and clapping in the background. The match continues with intense competition for the ball, showcasing the players' skills and the crowd's energy."
+          },
+          {
+            "level": 2,
+            "start_time": 6.5,
+            "end_time": 12.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the crowd cheering and clapping along to the upbeat pop music playing in the background.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the crowd cheering and clapping along to the upbeat pop music playing in the background.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_6_12",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "ball",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "battling",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_6_12",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "6.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players battling for possession of the ball on the field.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the crowd cheering and clapping along to the upbeat pop music playing in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the crowd cheering and clapping along to the upbeat pop music playing in the background.",
+                        "audio": "cheering; clapping; pop music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In an intense soccer match, players in red and yellow jerseys fight for control of the ball on the field, with the crowd cheering and dancing to the lively music in the background.",
+            "summary": "The soccer match is underway with players in red and yellow jerseys competing for the ball on the field, accompanied by the energetic atmosphere of a cheering crowd and upbeat pop music."
+          },
+          {
+            "level": 2,
+            "start_time": 12.5,
+            "end_time": 33.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the commentator describes the action.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the commentator describes the action.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_12.5_21.5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "commentator",
+                        "ref_object": "O002",
+                        "role": "commentator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_12.5_21.5",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "12.5",
+                        "end": "21.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the commentator describes the action.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the commentator describes the action.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the commentator describes the action.",
+                        "audio": "crowd cheering; commentator",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 27.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 0 - 0 St Etienne\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 0 - 0 St Etienne\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_21_5_27_5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "lyon",
+                      "st_etienne"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O003",
+                        "role": "player",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_21_5_27_5",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "21.5",
+                        "end": "27.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Lyon 0 - 0 St Etienne' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 0 - 0 St Etienne\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Lyon 0 - 0 St Etienne' as the field.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 27.5,
+                "end_time": 33.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_275_335",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_275_335",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "27.5",
+                        "end": "33.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A soccer match is underway between Lyon and St Etienne, with the players in red and yellow jerseys competing for possession of the ball on a well-maintained field. The crowd is cheering, and the commentator is describing the action.",
+            "summary": "The soccer match between Lyon and St Etienne is underway, with players in red and yellow jerseys competing for possession on the well-maintained field, accompanied by the crowd's cheers and electronic music. The scoreboard currently reads \"Lyon 0 - 0 St Etienne\" as the camera captures the action from multiple angles."
+          }
+        ],
+        "caption": "A vibrant and intense soccer match is underway between Lyon and St Etienne, with players in red and yellow jerseys battling for control of the ball on a well-maintained field. The crowd is cheering and dancing to the lively music in the background, adding to the excitement of the match.",
+        "summary": "A soccer match between Lyon and St Etienne is underway, with players in red and yellow jerseys competing for possession on the field, accompanied by the energetic atmosphere of a cheering crowd and upbeat music. The scoreboard currently reads \"Lyon 0 - 0 St Etienne\" as the camera captures the action from multiple angles."
+      },
+      {
+        "level": 1,
+        "start_time": 33.5,
+        "end_time": 85.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 33.5,
+            "end_time": 58.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 33.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 1 - 0 St-Etienne\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 1 - 0 St-Etienne\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_33_38",
+                    "tags": [
+                      "soccer",
+                      "lyon",
+                      "st-etienne",
+                      "match",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "electronic_music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "players",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_33_38",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "33.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Lyon 1 - 0 St-Etienne' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 1 - 0 St-Etienne\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Lyon 1 - 0 St-Etienne' as the field.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_38_44",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_38_44",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "38.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 44.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 1 - 0 St-Etienne\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 1 - 0 St-Etienne\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_44_47",
+                    "tags": [
+                      "soccer",
+                      "lyon",
+                      "st-etienne",
+                      "match",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "electronic_music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "players",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_44_47",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "44.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Lyon 1 - 0 St-Etienne' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 1 - 0 St-Etienne\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Lyon 1 - 0 St-Etienne' as the field.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 51.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_4750_5150",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "jerseys",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "jerseys",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_4750_5150",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "47.5",
+                        "end": "51.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 51.5,
+                "end_time": 54.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_51_54",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "scoreboard",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O004",
+                        "role": "battling",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_51_54",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "51.5",
+                        "end": "54.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing 'Sud 0 - 0' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing 'Sud 0 - 0'.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 54.5,
+                "end_time": 58.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the crowd cheering and clapping along to the upbeat pop music playing in the background.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the crowd cheering and clapping along to the upbeat pop music playing in the background.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_54_58",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "ball",
+                      "field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "battling",
+                        "entity": "soccer_players"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_54_58",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "54.5",
+                        "end": "58.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer players battle for possession of the ball on the field.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the crowd cheering and clapping along to the upbeat pop music playing in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the crowd cheering and clapping along to the upbeat pop music playing in the background.",
+                        "audio": "cheering; clapping; pop music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A soccer match is underway between Lyon and St-Etienne, with the score currently at 1-0 in favor of Lyon. The match is being played on a well-maintained field, and the electronic music playing in the background adds to the excitement of the game. The players are battling for possession of the ball, and the crowd is cheering and clapping along to the upbeat pop music. The match continues with players in red and yellow jerseys fighting for every ball, and the scoreboard showing the current score.",
+            "summary": "The soccer match between Lyon and St-Etienne continues with players battling for possession on the well-maintained field, the scoreboard showing a 1-0 lead for Lyon, accompanied by electronic music. The crowd cheers and claps along to the upbeat pop music as the camera captures the action from various angles."
+          },
+          {
+            "level": 2,
+            "start_time": 58.5,
+            "end_time": 67.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 58.5,
+                "end_time": 61.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_58_61",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "scoreboard",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O004",
+                        "role": "battling",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_58_61",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "58.5",
+                        "end": "61.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing 'Sud 0 - 0' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession of the ball on the field, the scoreboard showing 'Sud 0 - 0'.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 61.5,
+                "end_time": 64.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_61_64",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_61_64",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "61.5",
+                        "end": "64.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 64.5,
+                "end_time": 67.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_64_67",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "scoreboard",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O003",
+                        "role": "player",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_64_67",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "64.5",
+                        "end": "67.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0'.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The soccer match is underway with the teams in red and yellow jerseys competing for possession of the ball on the field, the score currently tied at 0-0. The electronic music adds to the excitement of the match as the camera captures the action from different angles.",
+            "summary": "The soccer match is underway, with players in red and yellow jerseys competing for possession of the ball on the field, accompanied by electronic music and the scoreboard displaying a scoreless tie. The action is captured from various angles, with the crowd cheering in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 67.5,
+            "end_time": 74.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 67.5,
+                "end_time": 69.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_67_69",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "jerseys",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "jerseys",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_67_69",
+                      "name": "",
+                      "time": {
+                        "start": "67.5",
+                        "end": "69.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 69.5,
+                "end_time": 71.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys running across the field, their movements captured in a close-up shot as the electronic music plays in the background.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys running across the field, their movements captured in a close-up shot as the electronic music plays in the background.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_69_71",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "field",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_69_71",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "69.5",
+                        "end": "71.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys running across the field.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys running across the field, their movements captured in a close-up shot as the electronic music plays in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys running across the field, their movements captured in a close-up shot.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 71.5,
+                "end_time": 74.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_71_5_74_5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "scoreboard",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O003",
+                        "role": "player",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_71_5_74_5",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "71.5",
+                        "end": "74.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0'.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The soccer match is in full swing, with players in red and yellow jerseys competing for possession on the field. The crowd cheers and the camera captures the action from various angles, while electronic music plays in the background. The scoreboard shows \"Sud 0 - 0\".",
+            "summary": "The soccer match features players in red and yellow jerseys battling for possession on the field, with the action captured from various angles and electronic music playing in the background. The scoreboard shows a scoreless game, with the players running across the field in a close-up shot."
+          },
+          {
+            "level": 2,
+            "start_time": 74.5,
+            "end_time": 85.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 74.5,
+                "end_time": 85.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_74_85",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_74_85",
+                      "name": "",
+                      "time": {
+                        "start": "74.5",
+                        "end": "85.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A high-energy soccer match is underway, with players in red and yellow jerseys competing for control of the field and the crowd cheering from various angles.",
+            "summary": "The soccer match is underway, with players in red and yellow jerseys competing for possession on the field, accompanied by the enthusiastic crowd. The camera captures the action from multiple angles, providing a dynamic view of the game."
+          }
+        ],
+        "caption": "A high-energy soccer match is underway between Lyon and St-Etienne, with the score currently at 1-0 in favor of Lyon. The match is being played on a well-maintained field, and the electronic music playing in the background adds to the excitement of the game. The players are battling for possession of the ball, and the crowd is cheering and clapping along to the upbeat pop music. The match continues with players in red and yellow jerseys fighting for every ball, and the scoreboard showing the current score.",
+        "summary": "The soccer match between Lyon and St-Etienne is underway, with players in red and yellow jerseys competing for possession on the field, accompanied by electronic music and a scoreless tie on the scoreboard. The action is captured from various angles, with the enthusiastic crowd cheering and clapping along to the upbeat music."
+      },
+      {
+        "level": 1,
+        "start_time": 85.5,
+        "end_time": 103.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 85.5,
+            "end_time": 94.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 85.5,
+                "end_time": 94.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_85_94",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_85_94",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "85.5",
+                        "end": "94.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A high-energy soccer match is underway, with players in red and yellow jerseys competing for control of the field and the crowd cheering from various angles.",
+            "summary": "The soccer match is underway, with players in red and yellow jerseys competing for possession on the field, accompanied by the enthusiastic crowd. The camera captures the action from multiple angles, providing a dynamic view of the game."
+          },
+          {
+            "level": 2,
+            "start_time": 94.5,
+            "end_time": 103.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 94.5,
+                "end_time": 103.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0 DAC\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0 DAC\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_94_103",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "scoreboard",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "electronic_music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "players",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_94_103",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "94.5",
+                        "end": "103.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0 DAC' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0 DAC\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0 DAC'.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a tense soccer match, the red and yellow teams fight for control of the field with the score tied at 0-0, as electronic music plays in the background.",
+            "summary": "The soccer match is ongoing with players in red and yellow jerseys competing for possession on the field, with the scoreboard displaying a scoreless tie between Sud and DAC."
+          }
+        ],
+        "caption": "In a tense and high-energy soccer match, the red and yellow teams battle for control of the field with the score tied at 0-0, as the crowd cheers from various angles and electronic music plays in the background.",
+        "summary": "The soccer match is underway with players in red and yellow jerseys competing for possession on the field, accompanied by an enthusiastic crowd. The scoreboard displays a scoreless tie between Sud and DAC as the game continues."
+      },
+      {
+        "level": 1,
+        "start_time": 103.5,
+        "end_time": 129.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 103.5,
+            "end_time": 113.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 103.5,
+                "end_time": 113.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0 DET\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0 DET\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_103_113",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "scoreboard",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "electronic_music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "players",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_103_113",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "103.5",
+                        "end": "113.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0 DET' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0 DET\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and yellow jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0 DET'.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a tense soccer match, the red and yellow teams fight for control of the field with the score tied at 0-0, as electronic music plays in the background.",
+            "summary": "The soccer match is ongoing with players in red and yellow jerseys competing for possession on the field, with the scoreboard displaying a scoreless tie between Sud and DET."
+          },
+          {
+            "level": 2,
+            "start_time": 113.5,
+            "end_time": 129.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 113.5,
+                "end_time": 129.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_113_129",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "uniforms",
+                      "field",
+                      "close_up"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "players"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_113_129",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "113.5",
+                        "end": "129.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                      "summary": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                        "audio": "",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The soccer match is intense and action-packed, with players in red and white uniforms running across the field and their movements captured in a series of close-up shots.",
+            "summary": "The soccer match is shown in close-up shots, capturing the intensity of the game as players in red and white uniforms run across the field."
+          }
+        ],
+        "caption": "In an intense and action-packed soccer match, the red and yellow teams battle for control of the field with the score tied at 0-0, as electronic music adds to the tension. Close-up shots capture the players' movements and the intensity of the match.",
+        "summary": "The soccer match between Sud and DET is scoreless, with players in red and yellow jerseys competing for possession on the field, captured in close-up shots that showcase the intensity of the game."
+      },
+      {
+        "level": 1,
+        "start_time": 129.5,
+        "end_time": 160.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 129.5,
+            "end_time": 140.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 129.5,
+                "end_time": 140.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_129_140",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "uniforms",
+                      "field",
+                      "close_up"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "players"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_129_140",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "129.5",
+                        "end": "140.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                      "summary": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                        "audio": "",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The soccer match is intense, with players in red and white uniforms running across the field in a series of close-up shots.",
+            "summary": "The soccer match is shown in close-up shots, capturing the intensity of the game as players in red and white uniforms run across the field."
+          },
+          {
+            "level": 2,
+            "start_time": 140.5,
+            "end_time": 149.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 140.5,
+                "end_time": 149.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_140.5_149.5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "uniforms",
+                      "field",
+                      "close_up"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "players"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_140.5_149.5",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "140.5",
+                        "end": "149.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                      "summary": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                        "audio": "",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The soccer match is intense, with players in red and white uniforms running across the field in a series of close-up shots.",
+            "summary": "The soccer match is shown in close-up shots, capturing the intensity of the game as players in red and white uniforms run across the field."
+          },
+          {
+            "level": 2,
+            "start_time": 149.5,
+            "end_time": 160.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 149.5,
+                "end_time": 156.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_149_156",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "scoreboard",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O003",
+                        "role": "player",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_149_156",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "149.5",
+                        "end": "156.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession on the field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession on the field, the scoreboard showing 'Sud 0 - 0'.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 156.5,
+                "end_time": 160.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_156.5_160.5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "jerseys",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "jerseys",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_156.5_160.5",
+                      "name": "",
+                      "time": {
+                        "start": "156.5",
+                        "end": "160.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The soccer match is underway, with the score tied at 0-0, as the players in red and white jerseys compete for possession on the field while the electronic music plays and the crowd cheers.",
+            "summary": "The soccer match is underway, with players in red and white jerseys competing for possession on the field, the scoreboard currently reading 0-0. The electronic music plays as the crowd cheers, with the camera capturing the action from multiple angles."
+          }
+        ],
+        "caption": "The soccer match is intense and underway, with players in red and white uniforms competing for possession on the field while electronic music plays and the crowd cheers.",
+        "summary": "The soccer match is shown in close-up shots, capturing the intensity of the game as players in red and white uniforms run across the field, with the scoreboard currently reading 0-0. The electronic music plays as the crowd cheers, with the camera capturing the action from multiple angles."
+      },
+      {
+        "level": 1,
+        "start_time": 160.5,
+        "end_time": 188.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 160.5,
+            "end_time": 176.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 160.5,
+                "end_time": 176.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_160_176",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "uniforms",
+                      "field",
+                      "close_up"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "players"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_160_176",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "160.5",
+                        "end": "176.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                      "summary": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white uniforms running across the field, their movements captured in a series of close-up shots that highlight the intensity of the game.",
+                        "audio": "",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The soccer match is intense and action-packed, with players in red and white uniforms running across the field and their movements captured in close-up shots.",
+            "summary": "The soccer match is shown in close-up shots, capturing the intensity of the game as players in red and white uniforms run across the field."
+          },
+          {
+            "level": 2,
+            "start_time": 176.5,
+            "end_time": 188.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 176.5,
+                "end_time": 179.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_176_179",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "jerseys",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "jerseys",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_176_179",
+                      "name": "",
+                      "time": {
+                        "start": "176.5",
+                        "end": "179.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 179.5,
+                "end_time": 188.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_179_188",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "jerseys",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "jerseys",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_179_188",
+                      "name": "",
+                      "time": {
+                        "start": "179.5",
+                        "end": "188.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A soccer match is in progress, with players in red and white jerseys competing for control of the field and the crowd cheering from various angles.",
+            "summary": "The soccer match is underway, with players in red and white jerseys competing for possession on the field, accompanied by the enthusiastic crowd. The camera captures the action from multiple angles, providing a dynamic view of the game."
+          }
+        ],
+        "caption": "The soccer match is intense and action-packed, with players in red and white uniforms competing for control of the field.",
+        "summary": "The soccer match is shown in close-up shots, capturing the intensity of the game as players in red and white uniforms run across the field, with the enthusiastic crowd cheering them on. The camera provides a dynamic view of the game from multiple angles, showcasing the action as players compete for possession."
+      },
+      {
+        "level": 1,
+        "start_time": 188.5,
+        "end_time": 225.666667,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 188.5,
+            "end_time": 196.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 188.5,
+                "end_time": 193.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 30,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_188_193",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "field",
+                      "scoreboard",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "players",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O003",
+                        "role": "player",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_188_193",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "188.5",
+                        "end": "193.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Sud 0 - 0' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Sud 0 - 0\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Sud 0 - 0'.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 193.5,
+                "end_time": 196.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard in the background showing the score as 1-0 in favor of the team in red.",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard in the background showing the score as 1-0 in favor of the team in red.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_193_196",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "field",
+                      "scoreboard",
+                      "team"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "players",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_193_196",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "193.5",
+                        "end": "196.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard in the background showing the score as 1-0 in favor of the team in red.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard in the background showing the score as 1-0 in favor of the team in red.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard in the background showing the score as 1-0 in favor of the team in red.",
+                        "audio": "",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A soccer match is underway on a well-maintained field, with players in red and white jerseys competing for possession of the ball. The score is tied at 0-0, with the electronic music adding to the excitement of the match.",
+            "summary": "The soccer match is underway on a well-maintained field, with players in red and white jerseys competing for possession of the ball as electronic music plays. The scoreboard shows a score of 1-0 in favor of the team in red."
+          },
+          {
+            "level": 2,
+            "start_time": 196.5,
+            "end_time": 215.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 196.5,
+                "end_time": 207.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 32,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_196_207",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "jerseys",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "jerseys",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_196_207",
+                      "name": "",
+                      "time": {
+                        "start": "196.5",
+                        "end": "207.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 207.5,
+                "end_time": 209.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 1 - 0 St-Etienne\" as the electronic music plays.",
+                "postprocess": {
+                  "event_id": 33,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 1 - 0 St-Etienne\" as the electronic music plays.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_207_209",
+                    "tags": [
+                      "soccer",
+                      "lyon",
+                      "st-etienne",
+                      "match",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "electronic_music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "players",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_207_209",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "207.5",
+                        "end": "209.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Lyon 1 - 0 St-Etienne' as the electronic music plays.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing \"Lyon 1 - 0 St-Etienne\" as the electronic music plays.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession of the ball on the well-maintained field, the scoreboard showing 'Lyon 1 - 0 St-Etienne' as the field is.",
+                        "audio": "electronic music",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 209.5,
+                "end_time": 215.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 34,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_209_215",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "jerseys",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "jerseys",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_209_215",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "209.5",
+                        "end": "215.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A soccer match is underway between Lyon and St-Etienne, with the home team currently leading 1-0. The camera captures the action from various angles, showing the players in red and white jerseys battling for possession of the ball on the well-maintained field. The crowd is cheering, adding to the excitement of the match.",
+            "summary": "The soccer match between Lyon and St-Etienne is underway, with players in red and white jerseys battling for possession on the well-maintained field, as the crowd cheers and the scoreboard shows Lyon leading 1-0. The camera captures the action from various angles, accompanied by electronic music."
+          },
+          {
+            "level": 2,
+            "start_time": 215.5,
+            "end_time": 225.666667,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 215.5,
+                "end_time": 220.5,
+                "children": [],
+                "caption": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                "postprocess": {
+                  "event_id": 35,
+                  "original_answer": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_215_220",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "jerseys",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "jerseys",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_215_220",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "215.5",
+                        "end": "220.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "summary": "The soccer match continues with players in red and white jerseys battling for possession on the field, the crowd cheering as the camera captures the action from various angles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in red and white jerseys battling for possession on the field, the camera captures the action from various angles.",
+                        "audio": "crowd cheering",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 220.5,
+                "end_time": 225.666667,
+                "children": [],
+                "caption": "The video transitions from the soccer match to a black screen with a single white dot, accompanied by a shift in music from electronic to pop.",
+                "postprocess": {
+                  "event_id": 36,
+                  "original_answer": "The video transitions from the soccer match to a black screen with a single white dot, accompanied by a shift in music from electronic to pop.",
+                  "result": {
+                    "video_id": "JS_7WQLMkXE",
+                    "event_id": "E_JS_7WQLMkXE_220.5_225.67",
+                    "tags": [
+                      "soccer",
+                      "music",
+                      "transition"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black screen",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "white dot",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JS_7WQLMkXE_220.5_225.67",
+                      "name": "Transition to black screen",
+                      "time": {
+                        "start": "220.5",
+                        "end": "225.67"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video transition"
+                      ],
+                      "scene_topic": "The video transitions from the soccer match to a black screen with a single white dot, accompanied by a shift in music from electronic to pop.",
+                      "summary": "The video transitions from the soccer match to a black screen with a single white dot, accompanied by a shift in music from electronic to pop.",
+                      "implications": "Major video content change",
+                      "modalities": {
+                        "visual": "The video transitions from the soccer match to a black screen with a single white dot.",
+                        "audio": "shift in music from electronic to pop.",
+                        "speech": "You"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The soccer match is in full swing, with players in red and white jerseys competing for control of the field, while the crowd cheers. The camera captures the action from different angles, creating a dynamic and fast-paced visual experience. Suddenly, the video cuts to a black screen with a single white dot, accompanied by a shift in music from electronic to pop, signaling a change in tone and mood.",
+            "summary": "The soccer match continues with players in red and white jerseys battling for possession on the field, accompanied by cheering crowds. The video then transitions to a black screen with a single white dot, accompanied by a shift in music from electronic to pop."
+          }
+        ],
+        "caption": "A soccer match is underway between Lyon and St-Etienne, with the home team leading 1-0. The match is being played on a well-maintained field, with players in red and white jerseys competing for possession of the ball. The crowd is cheering, adding to the excitement of the match. The camera captures the action from various angles, creating a dynamic and fast-paced visual experience. Suddenly, the video cuts to a black screen with a single white dot, accompanied by a shift in music from electronic",
+        "summary": "The soccer match between Lyon and St-Etienne is underway on a well-maintained field, with the team in red leading 1-0, as players in red and white jerseys battle for possession and the crowd cheers. The camera captures the action from various angles, accompanied by electronic music, before transitioning to a black screen with a single white dot and a shift in music to pop."
+      }
+    ],
+    "caption": "Intense soccer matches are underway between Lyon and St-Etienne, with players in red and yellow jerseys battling for control of the ball on well-maintained fields. The crowd is cheering and dancing to the lively music in the background, adding to the excitement of the match. The matches are being played with high energy and intensity, with players fighting for every ball and the scoreboard showing the current score. Close-up shots capture the players' movements and the tension of the match, while electronic music adds to the excitement.",
+    "summary": "A soccer match between Lyon and St Etienne is underway, with players in red and yellow jerseys competing for possession on the field, accompanied by an enthusiastic crowd and electronic music. The scoreboard currently reads a scoreless tie, with the action captured from multiple angles and close-up shots showcasing the intensity of the game. The soccer match between Lyon and St-Etienne is underway on a well-maintained field, with Lyon leading 1-0, as players in red and white jerseys battle for possession amidst a cheering crowd. The camera captures the action from multiple angles, accompanied by electronic music, before transitioning to a black screen with a single white dot and a shift in music to pop."
+  }
+}

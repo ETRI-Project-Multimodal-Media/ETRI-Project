@@ -1,0 +1,978 @@
+{
+  "video_id": "mcBCZnlRAIc",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 65.8,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 38.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 16.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 5.5,
+                "children": [],
+                "caption": "The video opens with a bold, white text \"ROAD\" against a vibrant pink background, accompanied by upbeat electronic music.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a bold, white text \"ROAD\" against a vibrant pink background, accompanied by upbeat electronic music.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_0_5.5",
+                    "tags": [
+                      "road",
+                      "pink",
+                      "electronic_music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "ROAD",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_0_5.5",
+                      "name": "",
+                      "time": {
+                        "start": "0",
+                        "end": "5.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "visual_content"
+                      ],
+                      "scene_topic": "The video opens with a bold, white text 'ROAD' against a vibrant pink background, accompanied by upbeat electronic music.",
+                      "summary": "The video opens with a bold, white text \"ROAD\" against a vibrant pink background, accompanied by upbeat electronic music.",
+                      "implications": "Minor visual content event",
+                      "modalities": {
+                        "visual": "The video opens with a bold, white text 'ROAD' against a vibrant pink background.",
+                        "audio": "upbeat electronic music",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 5.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "The video opens with a blank screen, then transitions to a minimalist graphic design featuring the word \"ARIES\" in bold white letters against a light gray background, accompanied by a cheerful pop song.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The video opens with a blank screen, then transitions to a minimalist graphic design featuring the word \"ARIES\" in bold white letters against a light gray background, accompanied by a cheerful pop song.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_5.5_9.5",
+                    "tags": [
+                      "graphic_design",
+                      "minimalist",
+                      "pop_song"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "ARIES graphic",
+                        "attributes": {
+                          "color": "white",
+                          "background": "light gray"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Unknown",
+                        "ref_object": "O001",
+                        "role": "designer",
+                        "entity": "graphic"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_5.5_9.5",
+                      "name": "ARIES graphic design",
+                      "time": {
+                        "start": "5.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "graphic_design"
+                      ],
+                      "scene_topic": "The video opens with a blank screen, then transitions to a minimalist graphic design featuring the word 'ARIES' in bold white letters against a light gray background, accompanied by a cheerful pop song.",
+                      "summary": "The video opens with a blank screen, then transitions to a minimalist graphic design featuring the word \"ARIES\" in bold white letters against a light gray background, accompanied by a cheerful pop song.",
+                      "implications": "Major graphic design, pop culture event",
+                      "modalities": {
+                        "visual": "The video opens with a blank screen, then transitions to a minimalist graphic design featuring the word 'ARIES' in bold white letters against a light gray background.",
+                        "audio": "cheerful pop song",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 13.5,
+                "children": [],
+                "caption": "The video opens with a close-up of the \"Vinayaka Travels\" logo, a stylized \"V\" with a crown, against a white background, while a pop song plays in the background.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The video opens with a close-up of the \"Vinayaka Travels\" logo, a stylized \"V\" with a crown, against a white background, while a pop song plays in the background.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_9.5_13.5",
+                    "tags": [
+                      "branding",
+                      "logo",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Vinayaka Travels logo",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_9.5_13.5",
+                      "name": "Logo and music introduction",
+                      "time": {
+                        "start": "9.5",
+                        "end": "13.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "branding"
+                      ],
+                      "scene_topic": "The video opens with a close-up of the 'Vinayaka Travels' logo, a stylized 'V' with a crown, against a white background, while a pop song plays in the background.",
+                      "summary": "The video opens with a close-up of the \"Vinayaka Travels\" logo, a stylized \"V\" with a crown, against a white background, while a pop song plays in the background.",
+                      "implications": "Initial branding and setting the tone",
+                      "modalities": {
+                        "visual": "The video opens with a close-up of the 'Vinayaka Travels' logo, a stylized 'V' with a crown, against a white background.",
+                        "audio": "pop song",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 13.5,
+                "end_time": 16.5,
+                "children": [],
+                "caption": "The white and yellow bus, parked on a quiet street at night, is illuminated by its headlights as it sits idle, its engine humming softly.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The white and yellow bus, parked on a quiet street at night, is illuminated by its headlights as it sits idle, its engine humming softly.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_13.5_16.5",
+                    "tags": [
+                      "night",
+                      "bus",
+                      "street",
+                      "headlights",
+                      "engine"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bus",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_13.5_16.5",
+                      "name": "",
+                      "time": {
+                        "start": "13.5",
+                        "end": "16.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "night scene"
+                      ],
+                      "scene_topic": "A parked bus is illuminated by its headlights at night.",
+                      "summary": "The white and yellow bus, parked on a quiet street at night, is illuminated by its headlights as it sits idle, its engine humming softly.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "The white and yellow bus, parked on a quiet street at night, is illuminated by its headlights as it sits idle.",
+                        "audio": "engine humming",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The videos open with different visuals and music, showcasing the brand identities of \"ROAD\", \"ARIES\", and \"Vinayaka Travels\". The first video features a bold and vibrant pink background with upbeat electronic music, while the second video has a minimalist design with a cheerful pop song. The third video shows a close-up of the \"Vinayaka Travels\" logo against a white background, and the fourth video shows a quiet street at night with the headlights of a white and yellow bus illumin",
+            "summary": "The video features a series of bold graphics and upbeat music, transitioning between a pink background with the word \"ROAD\", a gray background with the word \"ARIES\", and a close-up of the \"Vinayaka Travels\" logo. The visuals are accompanied by cheerful pop songs and showcase a white and yellow bus parked on a quiet street at night."
+          },
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 31.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 16.5,
+                "end_time": 20.5,
+                "children": [],
+                "caption": "The white and yellow bus, parked on a quiet street at night, is illuminated by its headlights as it sits idle, its engine humming softly.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The white and yellow bus, parked on a quiet street at night, is illuminated by its headlights as it sits idle, its engine humming softly.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_16.5_20.5",
+                    "tags": [
+                      "night",
+                      "bus",
+                      "street",
+                      "headlights",
+                      "engine"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bus",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_16.5_20.5",
+                      "name": "",
+                      "time": {
+                        "start": "16.5",
+                        "end": "20.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "night scene"
+                      ],
+                      "scene_topic": "A parked bus is illuminated by its headlights at night.",
+                      "summary": "The white and yellow bus, parked on a quiet street at night, is illuminated by its headlights as it sits idle, its engine humming softly.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "The white and yellow bus, parked on a quiet street at night, is illuminated by its headlights as it sits idle.",
+                        "audio": "engine humming",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 20.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "The white and red bus, with its distinctive logo and \"Vinayaka Travels\" sign, continues its journey down the street, its engine humming as it passes by parked cars and buildings.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The white and red bus, with its distinctive logo and \"Vinayaka Travels\" sign, continues its journey down the street, its engine humming as it passes by parked cars and buildings.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_20.5_31.5",
+                    "tags": [
+                      "bus",
+                      "journey",
+                      "street",
+                      "cars",
+                      "buildings"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bus",
+                        "attributes": {
+                          "color": "white",
+                          "color2": "red",
+                          "logo": "distinctive",
+                          "sign": "Vinayaka Travels"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_20.5_31.5",
+                      "name": "",
+                      "time": {
+                        "start": "20.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "transportation news"
+                      ],
+                      "scene_topic": "The white and red bus, with its distinctive logo and 'Vinayaka Travels' sign, continues its journey down the street, its engine humming as it passes by parked cars and buildings.",
+                      "summary": "The white and red bus, with its distinctive logo and \"Vinayaka Travels\" sign, continues its journey down the street, its engine humming as it passes by parked cars and buildings.",
+                      "implications": "Major transportation news event",
+                      "modalities": {
+                        "visual": "The white and red bus, with its distinctive logo and 'Vinayaka Travels' sign, continues its journey down the street, passing by parked cars and buildings.",
+                        "audio": "",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two buses, one white and yellow and the other white and red, are shown in different scenes. The first bus is parked on a quiet street at night, its headlights illuminating the surrounding area, while the second bus continues its journey down the street, passing by parked cars and buildings.",
+            "summary": "A white and yellow bus sits idle on a quiet street at night, its headlights illuminating it as its engine hums softly. Meanwhile, a white and red bus with a distinctive logo and \"Vinayaka Travels\" sign continues its journey down the street, passing by parked cars and buildings."
+          },
+          {
+            "level": 2,
+            "start_time": 31.5,
+            "end_time": 38.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "The white and red bus, with its distinctive logo and \"Golden\" branding, continues its journey down the street, its headlights illuminating the road ahead.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The white and red bus, with its distinctive logo and \"Golden\" branding, continues its journey down the street, its headlights illuminating the road ahead.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_31.5_34.5",
+                    "tags": [
+                      "bus",
+                      "transportation",
+                      "road",
+                      "journey"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bus",
+                        "attributes": {
+                          "color": "white",
+                          "color2": "red",
+                          "branding": "Golden"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_31.5_34.5",
+                      "name": "",
+                      "time": {
+                        "start": "31.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "transportation news"
+                      ],
+                      "scene_topic": "A bus continues its journey down the street.",
+                      "summary": "The white and red bus, with its distinctive logo and \"Golden\" branding, continues its journey down the street, its headlights illuminating the road ahead.",
+                      "implications": "Major transportation news event",
+                      "modalities": {
+                        "visual": "The white and red bus, with its distinctive logo and 'Golden' branding, continues its journey down the street, its headlights illuminating the road ahead.",
+                        "audio": "",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 36.5,
+                "children": [],
+                "caption": "The camera pans across the interior of a bus, showcasing its spaciousness and modern design, with a focus on the red and white striped seats and the polished wooden floor.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The camera pans across the interior of a bus, showcasing its spaciousness and modern design, with a focus on the red and white striped seats and the polished wooden floor.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_34.5_36.5",
+                    "tags": [
+                      "bus",
+                      "interior",
+                      "design",
+                      "seats",
+                      "wooden_floor"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bus",
+                        "attributes": {
+                          "color": "",
+                          "material": "",
+                          "design": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "seats",
+                        "attributes": {
+                          "color": "red_and_white",
+                          "material": "",
+                          "design": ""
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "wooden_floor",
+                        "attributes": {
+                          "material": "wood",
+                          "color": "",
+                          "design": ""
+                        }
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_34.5_36.5",
+                      "name": "bus interior",
+                      "time": {
+                        "start": "34.5",
+                        "end": "36.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "transportation"
+                      ],
+                      "scene_topic": "The camera pans across the interior of a bus, showcasing its spaciousness and modern design.",
+                      "summary": "The camera pans across the interior of a bus, showcasing its spaciousness and modern design, with a focus on the red and white striped seats and the polished wooden floor.",
+                      "implications": "Major transportation news event",
+                      "modalities": {
+                        "visual": "The camera pans across the interior of a bus, showcasing its spaciousness and modern design, with a focus on the red and white striped seats and the polished wooden floor.",
+                        "audio": "",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 36.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in the center, as upbeat pop music plays in the background.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in the center, as upbeat pop music plays in the background.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_36.5_38.5",
+                    "tags": [
+                      "bus",
+                      "interior",
+                      "seats",
+                      "aisle",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bus",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_36.5_38.5",
+                      "name": "",
+                      "time": {
+                        "start": "36.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in the center, as upbeat pop music plays in the background.",
+                      "summary": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in the center, as upbeat pop music plays in the background.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in the center.",
+                        "audio": "upbeat pop music",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The Golden Bus continues its journey down the street, its modern design and spacious interior visible through the headlights. Inside, the red and white striped seats and polished wooden floor create a comfortable and stylish atmosphere, while upbeat pop music adds to the lively atmosphere.",
+            "summary": "A white and red bus with distinctive branding travels down the street, its headlights illuminating the road ahead. Inside, the bus features spacious and modern design, with red and white striped seats and a polished wooden floor, accompanied by upbeat pop music."
+          }
+        ],
+        "caption": "The videos showcase the brand identities of \"ROAD\", \"ARIES\", and \"Vinayaka Travels\" through visually distinct and musically upbeat openings. The first video features bold and vibrant visuals, while the second video has a minimalist design and cheerful pop music. The third video showcases the \"Vinayaka Travels\" logo, while the fourth video shows a quiet street at night with the headlights of a white and yellow bus illuminating the area. The final two videos show two buses,",
+        "summary": "The video features a series of bold graphics and upbeat music, showcasing a white and yellow bus parked on a quiet street at night, with a white and red bus with distinctive branding continuing its journey down the street. The interior of the bus is modern and spacious, with red and white striped seats and a polished wooden floor, all set to cheerful pop music."
+      },
+      {
+        "level": 1,
+        "start_time": 38.5,
+        "end_time": 65.8,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 38.5,
+            "end_time": 44.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between, as upbeat pop music plays in the background.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between, as upbeat pop music plays in the background.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_38.5_44.5",
+                    "tags": [
+                      "bus",
+                      "interior",
+                      "seats",
+                      "aisle",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bus",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_38.5_44.5",
+                      "name": "",
+                      "time": {
+                        "start": "38.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between, as upbeat pop music plays in the background.",
+                      "summary": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between, as upbeat pop music plays in the background.",
+                      "implications": "Major scene",
+                      "modalities": {
+                        "visual": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between.",
+                        "audio": "upbeat pop music",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A bus interior with red seats and an aisle, set to upbeat pop music.",
+            "summary": "The camera shows the interior of a bus, featuring rows of red seats and an aisle, set to upbeat pop music."
+          },
+          {
+            "level": 2,
+            "start_time": 44.5,
+            "end_time": 54.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 44.5,
+                "end_time": 54.5,
+                "children": [],
+                "caption": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between, as upbeat pop music plays in the background.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between, as upbeat pop music plays in the background.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_44.5_54.5",
+                    "tags": [
+                      "bus",
+                      "interior",
+                      "seats",
+                      "aisle",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bus",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_44.5_54.5",
+                      "name": "",
+                      "time": {
+                        "start": "44.5",
+                        "end": "54.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between, as upbeat pop music plays in the background.",
+                      "summary": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between, as upbeat pop music plays in the background.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "The camera pans across the interior of a bus, showcasing the rows of red seats and the aisle in between.",
+                        "audio": "upbeat pop music",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A colorful bus interior with rows of seats and an aisle is shown, set to upbeat music.",
+            "summary": "The camera shows the interior of a bus, featuring rows of red seats and an aisle, set to upbeat pop music."
+          },
+          {
+            "level": 2,
+            "start_time": 54.5,
+            "end_time": 65.8,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 54.5,
+                "end_time": 60.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a red and white bus to a wider shot of the bus parked on a street at night, its headlights illuminating the scene as a pop song plays in the background.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The video transitions from a close-up of a red and white bus to a wider shot of the bus parked on a street at night, its headlights illuminating the scene as a pop song plays in the background.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_54.5_60.5",
+                    "tags": [
+                      "night",
+                      "bus",
+                      "street",
+                      "music",
+                      "pop"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red and white bus",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "street",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_54.5_60.5",
+                      "name": "",
+                      "time": {
+                        "start": "54.5",
+                        "end": "60.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "night scene"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a red and white bus to a wider shot of the bus parked on a street at night, its headlights illuminating the scene as a pop song plays in the background.",
+                      "summary": "The video transitions from a close-up of a red and white bus to a wider shot of the bus parked on a street at night, its headlights illuminating the scene as a pop song plays in the background.",
+                      "implications": "Major scene change",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a red and white bus to a wider shot of the bus parked on a street at night, its headlights illuminating the scene.",
+                        "audio": "pop song",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 60.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a red and white bus to a wider shot, revealing the bus parked on a quiet street at night, its headlights illuminating the empty road ahead.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The video transitions from a close-up of a red and white bus to a wider shot, revealing the bus parked on a quiet street at night, its headlights illuminating the empty road ahead.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_60.5_63.5",
+                    "tags": [
+                      "night",
+                      "bus",
+                      "street",
+                      "road",
+                      "headlights"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bus",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_60.5_63.5",
+                      "name": "",
+                      "time": {
+                        "start": "60.5",
+                        "end": "63.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "night scene"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a red and white bus to a wider shot, revealing the bus parked on a quiet street at night, its headlights illuminating the empty road ahead.",
+                      "summary": "The video transitions from a close-up of a red and white bus to a wider shot, revealing the bus parked on a quiet street at night, its headlights illuminating the empty road ahead.",
+                      "implications": "Minor scene change",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a red and white bus to a wider shot, revealing the bus parked on a quiet street at night, its headlights illuminating the empty road ahead.",
+                        "audio": "",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 65.8,
+                "children": [],
+                "caption": "Against a stark white background, the words \"THANKS FOR WATCHING\" appear in bold red letters, while a simple red triangle with a white border sits atop a smaller red triangle, all set against a minimalist gray background.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "Against a stark white background, the words \"THANKS FOR WATCHING\" appear in bold red letters, while a simple red triangle with a white border sits atop a smaller red triangle, all set against a minimalist gray background.",
+                  "result": {
+                    "video_id": "mcBCZnlRAIc",
+                    "event_id": "E_mcBCZnlRAIc_63.5_65.8",
+                    "tags": [
+                      "thanks",
+                      "watching",
+                      "minimalist",
+                      "gray",
+                      "red",
+                      "white"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bold red letters",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "simple red triangle",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "smaller red triangle",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "minimalist gray background",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_mcBCZnlRAIc_63.5_65.8",
+                      "name": "Thanks for Watching",
+                      "time": {
+                        "start": "63.5",
+                        "end": "65.8"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "visual effects"
+                      ],
+                      "scene_topic": "A title screen with a minimalist design",
+                      "summary": "Against a stark white background, the words \"THANKS FOR WATCHING\" appear in bold red letters, while a simple red triangle with a white border sits atop a smaller red triangle, all set against a minimalist gray background.",
+                      "implications": "Major visual effects, title screen",
+                      "modalities": {
+                        "visual": "Against a stark white background, the words 'THANKS FOR WATCHING' appear in bold red letters, while a simple red triangle with a white border sits atop a smaller red triangle, all set against a minimalist gray background.",
+                        "audio": "",
+                        "speech": "None"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video transitions between shots of a bus at night, with its headlights illuminating the scene, and a simple white background with the words \"THANKS FOR WATCHING\" appearing in bold red letters.",
+            "summary": "The video features a red and white bus parked on a quiet street at night, its headlights illuminating the empty road ahead, set to a pop song in the background. The video ends with a minimalist design featuring bold red letters and triangles against a gray background, displaying the message \"THANKS FOR WATCHING\"."
+          }
+        ],
+        "caption": "A bus interior with colorful seats and upbeat music creates an energetic atmosphere, while the transitions between nighttime shots of the bus and a simple white background with bold red letters add variety to the video.",
+        "summary": "The video features a bus interior and exterior, set to upbeat pop music, showcasing rows of red seats and an aisle, as well as a quiet street at night with the bus parked and its headlights illuminating the road. The video concludes with a minimalist design displaying the message \"THANKS FOR WATCHING\" in bold red letters and triangles against a gray background."
+      }
+    ],
+    "caption": "The videos showcase the brand identities of three companies, \"ROAD\", \"ARIES\", and \"Vinayaka Travels\", through visually distinct and musically upbeat openings. The first video features bold and vibrant visuals, while the second video has a minimalist design and cheerful pop music. The third video showcases the \"Vinayaka Travels\" logo, while the fourth video shows a quiet street at night with the headlights of a white and yellow bus illuminating the area. The final two videos show two",
+    "summary": "The video showcases a modern and spacious bus interior with red and white striped seats and a polished wooden floor, set to cheerful pop music, as well as its exterior parked on a quiet street at night with its headlights illuminating the road. The video concludes with a minimalist design displaying the message \"THANKS FOR WATCHING\" in bold red letters and triangles against a gray background."
+  }
+}

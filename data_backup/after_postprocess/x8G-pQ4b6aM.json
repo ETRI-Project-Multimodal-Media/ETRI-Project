@@ -1,0 +1,2414 @@
+{
+  "video_id": "x8G-pQ4b6aM",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 128.333,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 26.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 7.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "The video opens with a close-up of a vibrant garden, the camera panning out to reveal a person tending to the lush greenery. As the camera continues to pan, the person's voice begins to explain the process of growing garlic.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a close-up of a vibrant garden, the camera panning out to reveal a person tending to the lush greenery. As the camera continues to pan, the person's voice begins to explain the process of growing garlic.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_0_3.5",
+                    "tags": [
+                      "garden",
+                      "garlic",
+                      "agriculture",
+                      "horticulture",
+                      "botany"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O002",
+                        "role": "gardener",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_0_3.5",
+                      "name": "garlic cultivation",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "botany"
+                      ],
+                      "scene_topic": "The video opens with a close-up of a vibrant garden, the camera panning out to reveal a person tending to the lush greenery.",
+                      "summary": "The video opens with a close-up of a vibrant garden, the camera panning out to reveal a person tending to the lush greenery. As the camera continues to pan, the person's voice begins to explain the process of growing garlic.",
+                      "implications": "Major agriculture news event",
+                      "modalities": {
+                        "visual": "The video opens with a close-up of a vibrant garden, the camera panning out to reveal a person tending to the lush greenery.",
+                        "audio": "person's voice",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 5.5,
+                "children": [],
+                "caption": "A man's voice explains how to grow garlic in a garden, as the camera focuses on a patch of dirt with a few small plants, then pans out to show a wider view of the garden.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A man's voice explains how to grow garlic in a garden, as the camera focuses on a patch of dirt with a few small plants, then pans out to show a wider view of the garden.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_3.5_5.5",
+                    "tags": [
+                      "garden",
+                      "garlic",
+                      "agriculture",
+                      "horticulture",
+                      "growing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garlic plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "garden",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_3.5_5.5",
+                      "name": "Garlic Growing Tutorial",
+                      "time": {
+                        "start": "3.5",
+                        "end": "5.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "agriculture"
+                      ],
+                      "scene_topic": "A man explains how to grow garlic in a garden",
+                      "summary": "A man's voice explains how to grow garlic in a garden, as the camera focuses on a patch of dirt with a few small plants, then pans out to show a wider view of the garden.",
+                      "implications": "Major gardening and agriculture news event",
+                      "modalities": {
+                        "visual": "A man's voice explains how to grow garlic in a garden, as the camera focuses on a patch of dirt with a few small plants, then pans out to show a wider view of the garden.",
+                        "audio": "A man's voice; camera sounds.",
+                        "speech": "The garden is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 5.5,
+                "end_time": 7.5,
+                "children": [],
+                "caption": "A man's voice explains how to plant seeds in a raised garden bed, as the camera focuses on the bare soil, ready for planting.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "A man's voice explains how to plant seeds in a raised garden bed, as the camera focuses on the bare soil, ready for planting.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_5_7",
+                    "tags": [
+                      "garden",
+                      "seeds",
+                      "planting",
+                      "soil",
+                      "raised_bed"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soil",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_5_7",
+                      "name": "planting_seeds",
+                      "time": {
+                        "start": "5.5",
+                        "end": "7.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "A man explains how to plant seeds in a raised garden bed.",
+                      "summary": "A man's voice explains how to plant seeds in a raised garden bed, as the camera focuses on the bare soil, ready for planting.",
+                      "implications": "Gardening tutorial",
+                      "modalities": {
+                        "visual": "A man's voice explains how to plant seeds in a raised garden bed, as the camera focuses on the bare soil, ready for planting.",
+                        "audio": "man's voice",
+                        "speech": "The garden is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In this video, a person is shown tending to a vibrant garden, explaining the process of growing garlic. The camera pans out to reveal a wider view of the garden, and the person's voice continues to provide instructions on how to plant seeds in a raised garden bed.",
+            "summary": "A person tends to a vibrant garden, explaining the process of growing garlic as the camera pans out to reveal a patch of dirt with small plants and a wider view of the garden. The narrator provides instructions on planting seeds in a raised garden bed, focusing on the bare soil ready for planting."
+          },
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 16.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "A man and a woman are working together in a garden, the woman gently guiding a small plant into the ground as the man explains how to plant it.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "A man and a woman are working together in a garden, the woman gently guiding a small plant into the ground as the man explains how to plant it.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_7.5_12.5",
+                    "tags": [
+                      "garden",
+                      "planting",
+                      "cooperation",
+                      "education",
+                      "nature"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "plant",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "garden",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "explainer",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "planter",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_7.5_12.5",
+                      "name": "planting a small plant",
+                      "time": {
+                        "start": "7.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "nature news"
+                      ],
+                      "scene_topic": "A man and a woman are working together in a garden, the woman gently guiding a small plant into the ground as the man explains how to plant it.",
+                      "summary": "A man and a woman are working together in a garden, the woman gently guiding a small plant into the ground as the man explains how to plant it.",
+                      "implications": "Major nature, education news event",
+                      "modalities": {
+                        "visual": "A man and a woman are working together in a garden, the woman gently guiding a small plant into the ground as the man explains how to plant it.",
+                        "audio": "",
+                        "speech": "The garden is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 16.5,
+                "children": [],
+                "caption": "A man's voice explains how to plant seeds in a raised garden bed, as the camera focuses on the bare soil, ready for planting.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A man's voice explains how to plant seeds in a raised garden bed, as the camera focuses on the bare soil, ready for planting.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_12.5_16.5",
+                    "tags": [
+                      "garden",
+                      "planting",
+                      "seeds",
+                      "raised_bed",
+                      "soil"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soil",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_12.5_16.5",
+                      "name": "planting seeds in a raised garden bed",
+                      "time": {
+                        "start": "12.5",
+                        "end": "16.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "A man explains how to plant seeds in a raised garden bed.",
+                      "summary": "A man's voice explains how to plant seeds in a raised garden bed, as the camera focuses on the bare soil, ready for planting.",
+                      "implications": "Gardening and agriculture news event",
+                      "modalities": {
+                        "visual": "A man's voice explains how to plant seeds in a raised garden bed, as the camera focuses on the bare soil, ready for planting.",
+                        "audio": "man's voice",
+                        "speech": "The garden is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man and woman work together in a garden, planting a small plant, while the man explains the process to the woman. Meanwhile, the camera focuses on the bare soil in a raised garden bed, ready for planting.",
+            "summary": "A man and a woman work together in a garden, with the woman planting a small plant and the man explaining the process. The camera then focuses on a raised garden bed, where the man demonstrates how to plant seeds in the bare soil."
+          },
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 26.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 16.5,
+                "end_time": 20.5,
+                "children": [],
+                "caption": "A pair of hands carefully tend to a patch of dirt, preparing the ground for planting as a woman's voice explains the process of planting seeds.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A pair of hands carefully tend to a patch of dirt, preparing the ground for planting as a woman's voice explains the process of planting seeds.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_16.5_20.5",
+                    "tags": [
+                      "garden",
+                      "planting",
+                      "seeds",
+                      "groundwork",
+                      "farming"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "patch of dirt",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "pair of hands",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_16.5_20.5",
+                      "name": "planting seeds",
+                      "time": {
+                        "start": "16.5",
+                        "end": "20.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "A woman explains the process of planting seeds by preparing the ground.",
+                      "summary": "A pair of hands carefully tend to a patch of dirt, preparing the ground for planting as a woman's voice explains the process of planting seeds.",
+                      "implications": "Major gardening event",
+                      "modalities": {
+                        "visual": "A pair of hands carefully tend to a patch of dirt, preparing the ground for planting as a woman's voice explains the process of planting seeds.",
+                        "audio": "",
+                        "speech": "The garden is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 20.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "A pair of hands, adorned with a green band, carefully tend to a patch of vibrant green plants, their gentle touch and the sound of rustling leaves accompanying the narrator's voice.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A pair of hands, adorned with a green band, carefully tend to a patch of vibrant green plants, their gentle touch and the sound of rustling leaves accompanying the narrator's voice.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_20.5_24.5",
+                    "tags": [
+                      "gardening",
+                      "plants",
+                      "narration",
+                      "sound"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hands",
+                        "attributes": {
+                          "adorned": "green band"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {
+                          "vibrant": "green",
+                          "tended": "carefully"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "narrator",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_20.5_24.5",
+                      "name": "plant care",
+                      "time": {
+                        "start": "20.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "nature",
+                        "garden"
+                      ],
+                      "scene_topic": "A narrator guides the viewer through a peaceful gardening scene.",
+                      "summary": "A pair of hands, adorned with a green band, carefully tend to a patch of vibrant green plants, their gentle touch and the sound of rustling leaves accompanying the narrator's voice.",
+                      "implications": "A calming and educational experience",
+                      "modalities": {
+                        "visual": "A pair of hands, adorned with a green band, carefully tend to a patch of vibrant green plants, their gentle touch and the sound of rustling leaves accompanying the narrator's voice.",
+                        "audio": "rustling leaves; narrator's voice",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 26.5,
+                "children": [],
+                "caption": "A pair of hands, adorned with a green gardening glove, carefully tend to the vibrant green plants in the garden bed, their movements accompanied by the cheerful chirping of birds.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A pair of hands, adorned with a green gardening glove, carefully tend to the vibrant green plants in the garden bed, their movements accompanied by the cheerful chirping of birds.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_24.5_26.5",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "birds",
+                      "green",
+                      "gloves"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hands",
+                        "attributes": {
+                          "adorned_with": "green gardening glove",
+                          "tending_to": "vibrant green plants"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "garden bed",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "birds",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "pair of hands",
+                        "ref_object": "O001",
+                        "role": "tender",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_24.5_26.5",
+                      "name": "pair of hands tending to plants",
+                      "time": {
+                        "start": "24.5",
+                        "end": "26.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden scene"
+                      ],
+                      "scene_topic": "A pair of hands tend to the plants in the garden bed, accompanied by birds chirping.",
+                      "summary": "A pair of hands, adorned with a green gardening glove, carefully tend to the vibrant green plants in the garden bed, their movements accompanied by the cheerful chirping of birds.",
+                      "implications": "Major gardening event",
+                      "modalities": {
+                        "visual": "A pair of hands, adorned with a green gardening glove, carefully tend to the vibrant green plants in the garden bed, their movements.",
+                        "audio": "birds chirping.",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A pair of hands tend to plants in a garden, preparing the ground for planting and caring for the vibrant green plants, accompanied by the sounds of nature.",
+            "summary": "A woman's voice guides the process of planting seeds, as a pair of hands carefully tend to the soil and later nurture vibrant green plants in a garden bed. The gentle touch and soothing sounds of rustling leaves and chirping birds create a peaceful atmosphere as the narrator's voice explains the steps involved."
+          }
+        ],
+        "caption": "In the first caption, a person is shown tending to a garden, specifically growing garlic, while explaining the process to the viewer. In the second caption, a man and woman work together in a garden, planting a small plant, while the man explains the process to the woman. In the third caption, a pair of hands tend to plants in a garden, preparing the ground for planting and caring for the vibrant green plants.",
+        "summary": "The narrator guides viewers through the process of growing garlic, demonstrating how to plant seeds in a raised garden bed and nurture the plants to maturity. The camera captures the gentle and peaceful atmosphere of the garden, showcasing the careful attention to detail required to coax vibrant green plants from the soil."
+      },
+      {
+        "level": 1,
+        "start_time": 26.5,
+        "end_time": 45.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 26.5,
+            "end_time": 34.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 26.5,
+                "end_time": 29.5,
+                "children": [],
+                "caption": "A pair of hands, adorned with a green ring, carefully tend to a patch of vibrant green plants, their gentle touch and the sound of rustling leaves creating a peaceful atmosphere.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A pair of hands, adorned with a green ring, carefully tend to a patch of vibrant green plants, their gentle touch and the sound of rustling leaves creating a peaceful atmosphere.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_26.5_29.5",
+                    "tags": [
+                      "gardening",
+                      "plants",
+                      "relaxation",
+                      "nature",
+                      "peaceful"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hands",
+                        "attributes": {
+                          "adorned_with": "green_ring"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {
+                          "vibrant_green": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "pair_of_hands",
+                        "ref_object": "O001",
+                        "role": "tender",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_26.5_29.5",
+                      "name": "pair_of_hands_tending_to_plants",
+                      "time": {
+                        "start": "26.5",
+                        "end": "29.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "nature"
+                      ],
+                      "scene_topic": "A pair of hands, adorned with a green ring, carefully tend to a patch of vibrant green plants, their gentle touch and the sound of rustling leaves creating a peaceful atmosphere.",
+                      "summary": "A pair of hands, adorned with a green ring, carefully tend to a patch of vibrant green plants, their gentle touch and the sound of rustling leaves creating a peaceful atmosphere.",
+                      "implications": "Major relaxation, nature, and gardening event",
+                      "modalities": {
+                        "visual": "A pair of hands, adorned with a green ring, carefully tend to a patch of vibrant green plants.",
+                        "audio": "rustling leaves",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "A pair of hands wearing a green glove carefully tend to a patch of dirt, preparing the ground for planting as a woman's voice explains the process of planting seeds.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A pair of hands wearing a green glove carefully tend to a patch of dirt, preparing the ground for planting as a woman's voice explains the process of planting seeds.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_29.5_34.5",
+                    "tags": [
+                      "garden",
+                      "planting",
+                      "seeds",
+                      "groundwork",
+                      "green_glove"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hands",
+                        "attributes": {
+                          "wearing": "green_glove",
+                          "tending": "patch_of_dirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "patch_of_dirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_29.5_34.5",
+                      "name": "planting_seeds",
+                      "time": {
+                        "start": "29.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "A woman explains the process of planting seeds.",
+                      "summary": "A pair of hands wearing a green glove carefully tend to a patch of dirt, preparing the ground for planting as a woman's voice explains the process of planting seeds.",
+                      "implications": "Major gardening event",
+                      "modalities": {
+                        "visual": "A pair of hands wearing a green glove carefully tend to a patch of dirt, preparing the ground for planting as a woman's voice explains the process of planting seeds.",
+                        "audio": "woman's voice",
+                        "speech": "The garden is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person tenders to a patch of green plants with gentle care, creating a peaceful atmosphere, while another person prepares the ground for planting seeds, their voice providing instructions.",
+            "summary": "A pair of hands, adorned with a green ring or glove, tend to a patch of green plants, creating a peaceful atmosphere with gentle touch and rustling leaves. The process of planting seeds is explained as the hands prepare the ground, ready for planting."
+          },
+          {
+            "level": 2,
+            "start_time": 34.5,
+            "end_time": 45.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "A man's voice explains how to plant the \"Growing Your Garden\" seeds, as the camera focuses on a hand carefully placing a small seedling into the moist soil of a raised garden bed.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A man's voice explains how to plant the \"Growing Your Garden\" seeds, as the camera focuses on a hand carefully placing a small seedling into the moist soil of a raised garden bed.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_34.5_38.5",
+                    "tags": [
+                      "garden",
+                      "seeds",
+                      "planting",
+                      "growing",
+                      "soil"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "seedling",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "garden bed",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "hand",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_34.5_38.5",
+                      "name": "planting seeds",
+                      "time": {
+                        "start": "34.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "A man explains how to plant seeds in a garden bed.",
+                      "summary": "A man's voice explains how to plant the \"Growing Your Garden\" seeds, as the camera focuses on a hand carefully placing a small seedling into the moist soil of a raised garden bed.",
+                      "implications": "Major gardening event",
+                      "modalities": {
+                        "visual": "A man's voice explains how to plant the 'Growing Your Garden' seeds, as the camera focuses on a hand carefully placing a small seedling into the moist soil of a raised garden bed.",
+                        "audio": "man's voice; seedling placement; soil sounds.",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 41.5,
+                "children": [],
+                "caption": "The camera pans across a lush garden, following the path of a dirt road through a field of vibrant green plants, as a woman's voice explains how to plant the seeds.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The camera pans across a lush garden, following the path of a dirt road through a field of vibrant green plants, as a woman's voice explains how to plant the seeds.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_38.5_41.5",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "seeds",
+                      "planting",
+                      "dirt_road"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "dirt_road",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "plants",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_38.5_41.5",
+                      "name": "planting_seeds",
+                      "time": {
+                        "start": "38.5",
+                        "end": "41.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "The camera pans across a lush garden, following the path of a dirt road through a field of vibrant green plants, as a woman's voice explains how to plant the seeds.",
+                      "summary": "The camera pans across a lush garden, following the path of a dirt road through a field of vibrant green plants, as a woman's voice explains how to plant the seeds.",
+                      "implications": "Major gardening, education news event",
+                      "modalities": {
+                        "visual": "The camera pans across a lush garden, following the path of a dirt road through a field of vibrant green plants, as a woman's voice explains how to plant the seeds.",
+                        "audio": "woman's voice",
+                        "speech": "The garden is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 41.5,
+                "end_time": 45.5,
+                "children": [],
+                "caption": "The camera pans across a lush garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of tomato plants in a raised bed.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The camera pans across a lush garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of tomato plants in a raised bed.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_41.5_45.5",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "tomato",
+                      "raised_bed"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flowers",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "tomato",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "raised_bed",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O005",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_41.5_45.5",
+                      "name": "planting_tomato_plants",
+                      "time": {
+                        "start": "41.5",
+                        "end": "45.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "The camera pans across a lush garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of tomato plants in a raised bed.",
+                      "summary": "The camera pans across a lush garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of tomato plants in a raised bed.",
+                      "implications": "Gardening and plant care",
+                      "modalities": {
+                        "visual": "The camera pans across a lush garden, showcasing a variety of plants and flowers in bloom.",
+                        "audio": "woman's voice",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person plants seeds in a garden, following instructions from a voiceover, while a camera pans across a lush garden showing various plants and flowers in bloom.",
+            "summary": "The camera shows a man and woman planting seeds and seedlings in a raised garden bed, with the woman explaining how to plant a row of tomato plants. The footage also pans across a lush garden, showcasing a variety of plants and flowers in bloom."
+          }
+        ],
+        "caption": "A person tenders to a garden with gentle care, creating a peaceful atmosphere, while another person prepares the ground for planting seeds. The voiceover provides instructions for planting the seeds in the garden, which is filled with various plants and flowers in bloom.",
+        "summary": "A pair of hands tend to a patch of green plants, creating a peaceful atmosphere, as the process of planting seeds is explained. The camera shows a man and woman planting seeds and seedlings in a raised garden bed, showcasing a variety of plants and flowers in bloom."
+      },
+      {
+        "level": 1,
+        "start_time": 45.5,
+        "end_time": 128.333,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 45.5,
+            "end_time": 53.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 45.5,
+                "end_time": 53.5,
+                "children": [],
+                "caption": "A man, standing in a garden filled with vibrant green plants, explains how to plant a row of tomato seedlings in a raised bed, his voice clear as he gestures towards the plants.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A man, standing in a garden filled with vibrant green plants, explains how to plant a row of tomato seedlings in a raised bed, his voice clear as he gestures towards the plants.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_45.5_53.5",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "tomato",
+                      "seedlings",
+                      "raised_bed"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "tomato seedlings",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "raised bed",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_45.5_53.5",
+                      "name": "planting tomato seedlings",
+                      "time": {
+                        "start": "45.5",
+                        "end": "53.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "A man explains how to plant tomato seedlings in a raised bed",
+                      "summary": "A man, standing in a garden filled with vibrant green plants, explains how to plant a row of tomato seedlings in a raised bed, his voice clear as he gestures towards the plants.",
+                      "implications": "Gardening, DIY, and home improvement",
+                      "modalities": {
+                        "visual": "A man standing in a garden filled with vibrant green plants, explaining how to plant a row of tomato seedlings in a raised bed, gesturing towards the plants.",
+                        "audio": "his voice",
+                        "speech": "The speaker is showing off their garden which is 30 by 80 feet and features a variety of organic plants including garlic peas carrots beans tomatoes zucchini melons lettuce cabbage parsley and potatoes with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A gardening expert demonstrates how to plant tomato seedlings in a raised bed, providing clear instructions and gesturing towards the plants.",
+            "summary": "A man demonstrates how to plant a row of tomato seedlings in a raised bed, gesturing towards the vibrant green plants in the garden. He explains the process in a clear and concise manner, likely providing guidance on spacing, soil preparation, and other essential steps."
+          },
+          {
+            "level": 2,
+            "start_time": 53.5,
+            "end_time": 65.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 53.5,
+                "end_time": 55.5,
+                "children": [],
+                "caption": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of tomato plants in a raised bed.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of tomato plants in a raised bed.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_53_55",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "tomato",
+                      "raised_bed"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flowers",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "tomato",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "raised_bed",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O005",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_53_55",
+                      "name": "planting_tomato_plants",
+                      "time": {
+                        "start": "53.5",
+                        "end": "55.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of tomato plants in a raised bed.",
+                      "summary": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of tomato plants in a raised bed.",
+                      "implications": "Major gardening, horticulture news event",
+                      "modalities": {
+                        "visual": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, a woman's voice explains how to plant a row of tomato plants in a raised bed.",
+                        "audio": "",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 55.5,
+                "end_time": 65.5,
+                "children": [],
+                "caption": "A man's voice explains how to plant a tomato seedling in a pot, as the camera focuses on a hand gently placing a small plant into a hole in the ground, surrounded by other plants.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "A man's voice explains how to plant a tomato seedling in a pot, as the camera focuses on a hand gently placing a small plant into a hole in the ground, surrounded by other plants.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_55_65",
+                    "tags": [
+                      "garden",
+                      "planting",
+                      "tomato",
+                      "seedling",
+                      "pot"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "tomato seedling",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "pot",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "ground",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_55_65",
+                      "name": "planting a tomato seedling",
+                      "time": {
+                        "start": "55.5",
+                        "end": "65.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "A man gently places a tomato seedling into a hole in the ground.",
+                      "summary": "A man's voice explains how to plant a tomato seedling in a pot, as the camera focuses on a hand gently placing a small plant into a hole in the ground, surrounded by other plants.",
+                      "implications": "Gardening and plant care",
+                      "modalities": {
+                        "visual": "A man's voice explains how to plant a tomato seedling in a pot, as the camera focuses on a hand gently placing a small plant into a hole in the ground, surrounded by other plants.",
+                        "audio": "man's voice; gentle placement; environmental sounds.",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A gardening expert demonstrates how to plant tomato seedlings in a raised bed and in pots, providing step-by-step instructions for viewers to follow.",
+            "summary": "The camera shows a garden with various plants and flowers, while a woman explains how to plant tomato plants in a raised bed and a man demonstrates planting a tomato seedling in a pot. The process involves gently placing the small plant into a hole surrounded by other plants."
+          },
+          {
+            "level": 2,
+            "start_time": 65.5,
+            "end_time": 77.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 65.5,
+                "end_time": 69.5,
+                "children": [],
+                "caption": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_65_69",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "person",
+                      "hand",
+                      "touch"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden bed",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "vibrant green plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "person's hand",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O003",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_65_69",
+                      "name": "camera pans across garden bed",
+                      "time": {
+                        "start": "65.5",
+                        "end": "69.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden scene"
+                      ],
+                      "scene_topic": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                      "summary": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                      "implications": "Garden scene",
+                      "modalities": {
+                        "visual": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                        "audio": "",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 69.5,
+                "end_time": 72.5,
+                "children": [],
+                "caption": "The camera pans across a garden bed, showcasing rows of vibrant green onions, as a woman's voice explains that the onions are ready to be harvested.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "The camera pans across a garden bed, showcasing rows of vibrant green onions, as a woman's voice explains that the onions are ready to be harvested.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_69.5_72.5",
+                    "tags": [
+                      "garden",
+                      "onions",
+                      "harvest",
+                      "food"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden bed",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "vibrant green onions",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_69.5_72.5",
+                      "name": "Onion Harvesting",
+                      "time": {
+                        "start": "69.5",
+                        "end": "72.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "food news"
+                      ],
+                      "scene_topic": "The camera pans across a garden bed, showcasing rows of vibrant green onions, as a woman's voice explains that the onions are ready to be harvested.",
+                      "summary": "The camera pans across a garden bed, showcasing rows of vibrant green onions, as a woman's voice explains that the onions are ready to be harvested.",
+                      "implications": "Major food news event",
+                      "modalities": {
+                        "visual": "The camera pans across a garden bed, showcasing rows of vibrant green onions.",
+                        "audio": "woman's voice",
+                        "speech": "The garden is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 72.5,
+                "end_time": 77.5,
+                "children": [],
+                "caption": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_72_75",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "person",
+                      "hand",
+                      "touch"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden bed",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "vibrant green plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "person's hand",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O003",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_72_75",
+                      "name": "camera pans across garden bed",
+                      "time": {
+                        "start": "72.5",
+                        "end": "77.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden scene"
+                      ],
+                      "scene_topic": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                      "summary": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                      "implications": "Garden scene",
+                      "modalities": {
+                        "visual": "The camera pans across a garden bed filled with vibrant green plants, following the path of a person's hand as they reach out to touch the leaves.",
+                        "audio": "",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person touches the leaves of vibrant green plants in a garden bed, while a woman's voice explains that the onions are ready to be harvested.",
+            "summary": "The camera shows a garden bed filled with vibrant green plants, including onions ready to be harvested, as a woman's voice explains the process. The scene features a person's hand reaching out to touch the leaves, highlighting the freshness and beauty of the garden."
+          },
+          {
+            "level": 2,
+            "start_time": 77.5,
+            "end_time": 86.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 77.5,
+                "end_time": 81.5,
+                "children": [],
+                "caption": "The camera pans across a garden bed, showcasing rows of vibrant green onions, as a woman's voice explains how to plant them in a trench for better growth.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "The camera pans across a garden bed, showcasing rows of vibrant green onions, as a woman's voice explains how to plant them in a trench for better growth.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_77_81",
+                    "tags": [
+                      "garden",
+                      "onions",
+                      "planting",
+                      "trench",
+                      "growth"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden bed",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "vibrant green onions",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_77_81",
+                      "name": "planting onions",
+                      "time": {
+                        "start": "77.5",
+                        "end": "81.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "The camera pans across a garden bed, showcasing rows of vibrant green onions, as a woman's voice explains how to plant them in a trench for better growth.",
+                      "summary": "The camera pans across a garden bed, showcasing rows of vibrant green onions, as a woman's voice explains how to plant them in a trench for better growth.",
+                      "implications": "Major gardening, agriculture news event",
+                      "modalities": {
+                        "visual": "The camera pans across a garden bed, showcasing rows of vibrant green onions.",
+                        "audio": "woman's voice; explanation",
+                        "speech": "The garden is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 81.5,
+                "end_time": 86.5,
+                "children": [],
+                "caption": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant seeds in the garden.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant seeds in the garden.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_81_86",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "seeds",
+                      "growing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flowers",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "seeds",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman's voice",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_81_86",
+                      "name": "garden tour",
+                      "time": {
+                        "start": "81.5",
+                        "end": "86.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant seeds in the garden.",
+                      "summary": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant seeds in the garden.",
+                      "implications": "Major gardening, education event",
+                      "modalities": {
+                        "visual": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom.",
+                        "audio": "woman's voice",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman explains how to plant onions and seeds in a garden, showcasing the vibrant growth of the plants.",
+            "summary": "The video showcases a woman demonstrating how to plant onions in a trench for optimal growth, and also planting seeds in a vibrant garden filled with various plants and flowers."
+          },
+          {
+            "level": 2,
+            "start_time": 86.5,
+            "end_time": 93.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 86.5,
+                "end_time": 93.5,
+                "children": [],
+                "caption": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of onions in the garden.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of onions in the garden.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_86_93",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "onions",
+                      "growing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flowers",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "onions",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_86_93",
+                      "name": "garden tour",
+                      "time": {
+                        "start": "86.5",
+                        "end": "93.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of onions in the garden.",
+                      "summary": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant a row of onions in the garden.",
+                      "implications": "Major gardening event",
+                      "modalities": {
+                        "visual": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom.",
+                        "audio": "woman's voice",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman's voice explains how to plant a row of onions in a vibrant garden, while the camera showcases a variety of plants and flowers in bloom.",
+            "summary": "The camera shows a colorful garden with various plants and flowers, as a woman's voice guides viewers through the process of planting a row of onions, likely providing tips and instructions for successful cultivation."
+          },
+          {
+            "level": 2,
+            "start_time": 93.5,
+            "end_time": 106.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 93.5,
+                "end_time": 99.5,
+                "children": [],
+                "caption": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic bulbs in the spring.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic bulbs in the spring.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_93_99",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "garlic",
+                      "spring"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flowers",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "garlic",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman's voice",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_93_99",
+                      "name": "planting garlic in the spring",
+                      "time": {
+                        "start": "93.5",
+                        "end": "99.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic bulbs in the spring.",
+                      "summary": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic bulbs in the spring.",
+                      "implications": "Major gardening, DIY news event",
+                      "modalities": {
+                        "visual": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom.",
+                        "audio": "woman's voice",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 99.5,
+                "end_time": 106.5,
+                "children": [],
+                "caption": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic cloves for a fall harvest.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic cloves for a fall harvest.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_99_106",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "garlic",
+                      "fall_harvest"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flowers",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "garlic",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O004",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_99_106",
+                      "name": "garden_tour",
+                      "time": {
+                        "start": "99.5",
+                        "end": "106.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden_tour"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic cloves for a fall harvest.",
+                      "summary": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic cloves for a fall harvest.",
+                      "implications": "Major gardening, agriculture news event",
+                      "modalities": {
+                        "visual": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom.",
+                        "audio": "woman's voice; explaining how to plant garlic cloves",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In the spring, a woman explains how to plant garlic bulbs in a vibrant garden, showcasing a variety of plants and flowers in bloom. In the fall, the same woman explains how to plant garlic cloves in the same garden for a subsequent harvest.",
+            "summary": "The video shows a woman explaining how to plant garlic bulbs in the spring and garlic cloves in the fall, highlighting the importance of timing for a successful harvest."
+          },
+          {
+            "level": 2,
+            "start_time": 106.5,
+            "end_time": 118.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 106.5,
+                "end_time": 108.5,
+                "children": [],
+                "caption": "The camera pans across a vibrant garden, showcasing a variety of plants in bloom, including a tall, green plant with delicate white flowers swaying gently in the breeze.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "The camera pans across a vibrant garden, showcasing a variety of plants in bloom, including a tall, green plant with delicate white flowers swaying gently in the breeze.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_106.5_108.5",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "nature",
+                      "panorama"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Tall, green plant with delicate white flowers",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_106.5_108.5",
+                      "name": "Garden Panorama",
+                      "time": {
+                        "start": "106.5",
+                        "end": "108.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "nature"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant garden, showcasing a variety of plants in bloom.",
+                      "summary": "The camera pans across a vibrant garden, showcasing a variety of plants in bloom, including a tall, green plant with delicate white flowers swaying gently in the breeze.",
+                      "implications": "Aesthetic appreciation",
+                      "modalities": {
+                        "visual": "The camera pans across a vibrant garden, showcasing a variety of plants in bloom, including a tall, green plant with delicate white flowers swaying gently in the breeze.",
+                        "audio": "",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 108.5,
+                "end_time": 112.5,
+                "children": [],
+                "caption": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic bulbs in the fall.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic bulbs in the fall.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_108_112",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "garlic",
+                      "fall"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flowers",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "garlic",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_108_112",
+                      "name": "garden tour",
+                      "time": {
+                        "start": "108.5",
+                        "end": "112.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic bulbs in the fall.",
+                      "summary": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to plant garlic bulbs in the fall.",
+                      "implications": "Major gardening, education news event",
+                      "modalities": {
+                        "visual": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom.",
+                        "audio": "woman's voice",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 112.5,
+                "end_time": 118.5,
+                "children": [],
+                "caption": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to grow garlic chives, her voice occasionally drowned out by the sound of a car engine starting up.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to grow garlic chives, her voice occasionally drowned out by the sound of a car engine starting up.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_112_118",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "garlic_chives",
+                      "cooking"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flowers",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "garlic_chives",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "car",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O004",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_112_118",
+                      "name": "garden_tour",
+                      "time": {
+                        "start": "112.5",
+                        "end": "118.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden_tour"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to grow garlic chives, her voice occasionally drowned out by the sound of a car engine starting up.",
+                      "summary": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to grow garlic chives, her voice occasionally drowned out by the sound of a car engine starting up.",
+                      "implications": "Major gardening, cooking news event",
+                      "modalities": {
+                        "visual": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, a woman explains how to grow garlic chives.",
+                        "audio": "woman's voice; car engine starting up.",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A vibrant garden is shown, featuring various plants and flowers in bloom, while a voice explains the process of planting garlic bulbs in the fall. The camera pans across the garden, showcasing the different plants and flowers, and the voice provides instructions on how to grow garlic chives. The sound of a car engine can be heard in the background, occasionally drowning out the voice.",
+            "summary": "The camera pans across a vibrant garden showcasing various plants and flowers in bloom, while a woman's voice provides instructions on planting garlic bulbs in the fall and growing garlic chives. The voiceover is occasionally interrupted by the sound of a car engine starting up."
+          },
+          {
+            "level": 2,
+            "start_time": 118.5,
+            "end_time": 128.333,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 118.5,
+                "end_time": 121.5,
+                "children": [],
+                "caption": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to grow garlic chives, her voice occasionally drowned out by the sound of a car engine starting up.",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to grow garlic chives, her voice occasionally drowned out by the sound of a car engine starting up.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_118.5_121.5",
+                    "tags": [
+                      "garden",
+                      "plants",
+                      "flowers",
+                      "garlic_chives",
+                      "cooking"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "plants",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flowers",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "garlic_chives",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "car",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O004",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_118.5_121.5",
+                      "name": "garden_tour",
+                      "time": {
+                        "start": "118.5",
+                        "end": "121.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "garden_tour"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to grow garlic chives, her voice occasionally drowned out by the sound of a car engine starting up.",
+                      "summary": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, while a woman's voice explains how to grow garlic chives, her voice occasionally drowned out by the sound of a car engine starting up.",
+                      "implications": "Major gardening, cooking news event",
+                      "modalities": {
+                        "visual": "The camera pans across a vibrant garden, showcasing a variety of plants and flowers in bloom, a woman explains how to grow garlic chives.",
+                        "audio": "woman's voice; car engine starting up.",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 121.5,
+                "end_time": 128.333,
+                "children": [],
+                "caption": "The video transitions from a close-up of a vibrant garden to a woman standing in a lush green field, enthusiastically explaining how to grow a \"miracle garden\" using a special method.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "The video transitions from a close-up of a vibrant garden to a woman standing in a lush green field, enthusiastically explaining how to grow a \"miracle garden\" using a special method.",
+                  "result": {
+                    "video_id": "x8G_pQ4b6aM",
+                    "event_id": "E_x8G_pQ4b6aM_121.5_128.33",
+                    "tags": [
+                      "garden",
+                      "miracle_garden",
+                      "growth",
+                      "method",
+                      "nature"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "vibrant garden",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "lush green field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_x8G_pQ4b6aM_121.5_128.33",
+                      "name": "miracle garden explanation",
+                      "time": {
+                        "start": "121.5",
+                        "end": "128.33"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "nature",
+                        "garden"
+                      ],
+                      "scene_topic": "A woman explains how to grow a'miracle garden' in a lush green field.",
+                      "summary": "The video transitions from a close-up of a vibrant garden to a woman standing in a lush green field, enthusiastically explaining how to grow a \"miracle garden\" using a special method.",
+                      "implications": "Major gardening, nature news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a vibrant garden to a woman standing in a lush green field, enthusiastically explaining how to grow a'miracle garden' using a special method.",
+                        "audio": "",
+                        "speech": "The speaker is showing off their garden, which is 30 by 80 feet and features a variety of organic plants including garlic, peas, carrots, beans, tomatoes, zucchini, melons, lettuce, cabbage, parsley, and potatoes, with many of the plants being Israeli seeds."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A gardening expert shares tips on growing garlic chives and a \"miracle garden\" in a vibrant garden and lush green field, with the sound of a car engine occasionally drowning out her voice.",
+            "summary": "A woman guides viewers through growing garlic chives and a \"miracle garden\" in a lush green field, her voice occasionally interrupted by a distant car engine. The video showcases a vibrant garden and a special method for cultivating a thriving garden."
+          }
+        ],
+        "caption": "The summaries for each caption are as follows:\n\n1. A gardening expert demonstrates how to plant tomato seedlings in a raised bed, providing clear instructions and gesturing towards the plants.\n\nSummary: A gardening expert shows how to plant tomato seedlings in a raised bed, providing step-by-step instructions for viewers to follow.\n\n2. A gardening expert demonstrates how to plant tomato seedlings in a raised bed and in pots, providing step-by-step instructions for viewers to follow.\n\nSummary:",
+        "summary": "The video demonstrates various gardening techniques, including planting tomato seedlings in a raised bed, onions in a trench, and garlic bulbs and cloves at the right time. The scenes showcase a vibrant garden filled with various plants and flowers, with a woman's voice guiding viewers through the processes and providing tips for successful cultivation. A woman guides viewers through growing garlic chives and a \"miracle garden\" in a lush green field, sharing instructions on planting garlic bulbs in the fall and showcasing a vibrant garden. The video also highlights a special method for cultivating a thriving garden, with occasional interruptions from a distant car engine."
+      }
+    ],
+    "caption": "Sure, here are the summaries for each caption:\n\n1. A gardening expert demonstrates how to plant tomato seedlings in a raised bed, providing clear instructions and gesturing towards the plants.\n\nSummary: A gardening expert shows how to plant tomato seedlings in a raised bed, providing step-by-step instructions for viewers to follow.\n\n2. A gardening expert demonstrates how to plant tomato seedlings in a raised bed and in pots, providing step-by-step instructions for viewers to follow.\n\nSummary",
+    "summary": "The narrator guides viewers through the process of growing garlic, showcasing various gardening techniques such as planting seeds and seedlings in a raised garden bed, and providing tips for successful cultivation. The video features a peaceful and vibrant garden filled with various plants and flowers, with a woman's voice guiding viewers through the processes and sharing instructions on planting garlic bulbs in the fall."
+  }
+}

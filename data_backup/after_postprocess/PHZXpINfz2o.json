@@ -1,0 +1,2377 @@
+{
+  "video_id": "PHZXpINfz2o",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 179.533333,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 101.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 10.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 2.5,
+                "children": [],
+                "caption": "The video opens with a close-up of a blue and white geometric pattern, then zooms out to reveal a person standing in front of a modern building, their figure blurred as they move.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a close-up of a blue and white geometric pattern, then zooms out to reveal a person standing in front of a modern building, their figure blurred as they move.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_0_2.5",
+                    "tags": [
+                      "geometric_pattern",
+                      "person",
+                      "building",
+                      "blurred"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "geometric pattern",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "building",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_0_2.5",
+                      "name": "",
+                      "time": {
+                        "start": "0",
+                        "end": "2.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "visual scene"
+                      ],
+                      "scene_topic": "The video opens with a close-up of a blue and white geometric pattern, then zooms out to reveal a person standing in front of a modern building, their figure blurred as they move.",
+                      "summary": "The video opens with a close-up of a blue and white geometric pattern, then zooms out to reveal a person standing in front of a modern building, their figure blurred as they move.",
+                      "implications": "Visual scene description",
+                      "modalities": {
+                        "visual": "The video opens with a close-up of a blue and white geometric pattern, then zooms out to reveal a person standing in front of a modern building, their figure blurred as they move.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 2.5,
+                "end_time": 10.5,
+                "children": [],
+                "caption": "The video opens with a close-up of a blue \"SUBSCRIBE\" button, then zooms out to reveal a person's hand hovering over it, as a woman's voice begins to speak.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The video opens with a close-up of a blue \"SUBSCRIBE\" button, then zooms out to reveal a person's hand hovering over it, as a woman's voice begins to speak.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_2_10",
+                    "tags": [
+                      "subscribe",
+                      "button",
+                      "hand",
+                      "voice",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "SUBSCRIBE button",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person's hand",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_2_10",
+                      "name": "Video opening",
+                      "time": {
+                        "start": "2.5",
+                        "end": "10.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video opening"
+                      ],
+                      "scene_topic": "The video opens with a close-up of a blue 'SUBSCRIBE' button, then zooms out to reveal a person's hand hovering over it, as a woman's voice begins to speak.",
+                      "summary": "The video opens with a close-up of a blue \"SUBSCRIBE\" button, then zooms out to reveal a person's hand hovering over it, as a woman's voice begins to speak.",
+                      "implications": "Major video opening event",
+                      "modalities": {
+                        "visual": "The video opens with a close-up of a blue 'SUBSCRIBE' button, then zooms out to reveal a person's hand hovering over it, as a woman's voice begins to speak.",
+                        "audio": "woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video opens with a blue and white geometric pattern before revealing a person standing in front of a modern building, their figure blurred as they move. The video then cuts to a close-up of a blue \"SUBSCRIBE\" button, with a person's hand hovering over it as a woman's voice speaks.",
+            "summary": "The video opens with a close-up of a blue and white geometric pattern, which then zooms out to reveal a person standing in front of a modern building with a blurred figure. The scene then shifts to a close-up of a \"SUBSCRIBE\" button, with a person's hand hovering over it as a woman's voice begins to speak."
+          },
+          {
+            "level": 2,
+            "start_time": 10.5,
+            "end_time": 16.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 10.5,
+                "end_time": 14.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a sleek red SUV to a wider shot of the car parked on a tree-lined street, while a woman's voice begins to describe its features.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The video transitions from a close-up of a sleek red SUV to a wider shot of the car parked on a tree-lined street, while a woman's voice begins to describe its features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_10.5_14.5",
+                    "tags": [
+                      "suv",
+                      "car",
+                      "description",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "sleek red SUV",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "tree-lined street",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman's voice",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_10.5_14.5",
+                      "name": "",
+                      "time": {
+                        "start": "10.5",
+                        "end": "14.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "description"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a sleek red SUV to a wider shot of the car parked on a tree-lined street, while a woman's voice begins to describe its features.",
+                      "summary": "The video transitions from a close-up of a sleek red SUV to a wider shot of the car parked on a tree-lined street, while a woman's voice begins to describe its features.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a sleek red SUV to a wider shot of the car parked on a tree-lined street.",
+                        "audio": "woman's voice describing its features.",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 14.5,
+                "end_time": 16.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the red 2018 GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a winding road, the upbeat pop music from the previous segment continuing to play.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The video transitions from a close-up of the red 2018 GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a winding road, the upbeat pop music from the previous segment continuing to play.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_14.5_16.5",
+                    "tags": [
+                      "suv",
+                      "car",
+                      "design",
+                      "road",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "2018 GMC Acadia SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_14.5_16.5",
+                      "name": "",
+                      "time": {
+                        "start": "14.5",
+                        "end": "16.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "vehicle"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the red 2018 GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a winding road, the upbeat pop music from the previous segment continuing to play.",
+                      "summary": "The video transitions from a close-up of the red 2018 GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a winding road, the upbeat pop music from the previous segment continuing to play.",
+                      "implications": "Major vehicle design and road event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the red 2018 GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a winding road.",
+                        "audio": "upbeat pop music",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the features and sleek design of a red 2018 GMC Acadia SUV, highlighting its design and performance as it drives down a winding road.",
+            "summary": "The video showcases a sleek red 2018 GMC Acadia SUV, transitioning from a close-up to a wider shot as it drives down a winding road. The car's design is highlighted as upbeat pop music continues to play."
+          },
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 24.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 16.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "The video showcases a red 2018 GMC Acadia SUV, parked in a lot with its sleek design and modern features highlighted as a woman's voice describes its features and options.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The video showcases a red 2018 GMC Acadia SUV, parked in a lot with its sleek design and modern features highlighted as a woman's voice describes its features and options.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_16.5_24.5",
+                    "tags": [
+                      "suv",
+                      "gmc",
+                      "acadia",
+                      "car",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "2018 GMC Acadia SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_16.5_24.5",
+                      "name": "",
+                      "time": {
+                        "start": "16.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product review"
+                      ],
+                      "scene_topic": "A woman describes the features of a 2018 GMC Acadia SUV.",
+                      "summary": "The video showcases a red 2018 GMC Acadia SUV, parked in a lot with its sleek design and modern features highlighted as a woman's voice describes its features and options.",
+                      "implications": "Major product review event",
+                      "modalities": {
+                        "visual": "The video showcases a red 2018 GMC Acadia SUV, parked in a lot with its sleek design and modern features highlighted.",
+                        "audio": "woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A 2018 GMC Acadia SUV is showcased, highlighting its sleek design and modern features, as described by a woman's voice.",
+            "summary": "The video features a 2018 GMC Acadia SUV, showcasing its sleek design and modern features as a woman's voice describes its attributes and options."
+          },
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 33.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 29.5,
+                "children": [],
+                "caption": "The video showcases a red 2017 Chevrolet Equinox SUV, parked in a lot with its sleek design and modern features highlighted as a woman's voice describes its features.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The video showcases a red 2017 Chevrolet Equinox SUV, parked in a lot with its sleek design and modern features highlighted as a woman's voice describes its features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_24.5_29.5",
+                    "tags": [
+                      "car",
+                      "suv",
+                      "chevrolet",
+                      "equinox",
+                      "design",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "2017 Chevrolet Equinox SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_24.5_29.5",
+                      "name": "",
+                      "time": {
+                        "start": "24.5",
+                        "end": "29.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product presentation"
+                      ],
+                      "scene_topic": "A woman describes the features of a 2017 Chevrolet Equinox SUV.",
+                      "summary": "The video showcases a red 2017 Chevrolet Equinox SUV, parked in a lot with its sleek design and modern features highlighted as a woman's voice describes its features.",
+                      "implications": "Major product presentation event",
+                      "modalities": {
+                        "visual": "The video showcases a red 2017 Chevrolet Equinox SUV, parked in a lot with its sleek design and modern features highlighted.",
+                        "audio": "woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "The video showcases a red 2018 Chevrolet Equinox SUV, parked in a lot with its sleek design and modern features highlighted as a woman's voice describes its features.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The video showcases a red 2018 Chevrolet Equinox SUV, parked in a lot with its sleek design and modern features highlighted as a woman's voice describes its features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_29.5_31.5",
+                    "tags": [
+                      "car",
+                      "suv",
+                      "chevrolet",
+                      "equinox",
+                      "design",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "2018 Chevrolet Equinox SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_29.5_31.5",
+                      "name": "",
+                      "time": {
+                        "start": "29.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product presentation"
+                      ],
+                      "scene_topic": "A woman describes the features of a 2018 Chevrolet Equinox SUV.",
+                      "summary": "The video showcases a red 2018 Chevrolet Equinox SUV, parked in a lot with its sleek design and modern features highlighted as a woman's voice describes its features.",
+                      "implications": "Major product presentation event",
+                      "modalities": {
+                        "visual": "The video showcases a red 2018 Chevrolet Equinox SUV, parked in a lot with its sleek design and modern features highlighted.",
+                        "audio": "woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 33.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the red GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a tree-lined road, the upbeat pop music from the previous segment continuing to play.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The video transitions from a close-up of the red GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a tree-lined road, the upbeat pop music from the previous segment continuing to play.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_31.5_33.5",
+                    "tags": [
+                      "suv",
+                      "car",
+                      "design",
+                      "road",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "GMC Acadia SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_31.5_33.5",
+                      "name": "",
+                      "time": {
+                        "start": "31.5",
+                        "end": "33.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "vehicle"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the red GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a tree-lined road, the upbeat pop music from the previous segment continuing to play.",
+                      "summary": "The video transitions from a close-up of the red GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a tree-lined road, the upbeat pop music from the previous segment continuing to play.",
+                      "implications": "Major vehicle design event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the red GMC Acadia SUV to a wider shot, showcasing its sleek design as it drives down a tree-lined road.",
+                        "audio": "upbeat pop music",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases two different models of Chevrolet Equinox SUVs, highlighting their sleek design and modern features, while also featuring a close-up shot of a GMC Acadia SUV driving down a road.",
+            "summary": "The video features two red Chevrolet Equinox SUVs, highlighting their sleek design and modern features, as well as a red GMC Acadia SUV driving down a tree-lined road, showcasing its design. The video is accompanied by upbeat pop music and features a woman's voice describing the vehicles' features."
+          },
+          {
+            "level": 2,
+            "start_time": 33.5,
+            "end_time": 49.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 33.5,
+                "end_time": 39.5,
+                "children": [],
+                "caption": "The video showcases a red 2018 Chevrolet Equinox SUV, parked on a tree-lined street, as a woman's voice describes its features, including a 3.6L V6 engine and a six-speed automatic transmission.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The video showcases a red 2018 Chevrolet Equinox SUV, parked on a tree-lined street, as a woman's voice describes its features, including a 3.6L V6 engine and a six-speed automatic transmission.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_33_39",
+                    "tags": [
+                      "car",
+                      "suv",
+                      "chevrolet",
+                      "equinox",
+                      "engine",
+                      "transmission"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "2018 Chevrolet Equinox SUV",
+                        "attributes": {
+                          "make": "Chevrolet",
+                          "model": "Equinox",
+                          "year": "2018",
+                          "engine": "3.6L V6",
+                          "transmission": "six-speed automatic"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman's voice",
+                        "ref_object": "O001",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_33_39",
+                      "name": "Description of 2018 Chevrolet Equinox SUV",
+                      "time": {
+                        "start": "33.5",
+                        "end": "39.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product review"
+                      ],
+                      "scene_topic": "The video showcases a red 2018 Chevrolet Equinox SUV, parked on a tree-lined street, as a woman's voice describes its features.",
+                      "summary": "The video showcases a red 2018 Chevrolet Equinox SUV, parked on a tree-lined street, as a woman's voice describes its features, including a 3.6L V6 engine and a six-speed automatic transmission.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video showcases a red 2018 Chevrolet Equinox SUV, parked on a tree-lined street, as a woman's voice describes its features.",
+                        "audio": "woman's voice; engine; transmission",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 39.5,
+                "end_time": 41.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car parked on a tree-lined street, as a woman's voice begins to describe its features.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car parked on a tree-lined street, as a woman's voice begins to describe its features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_39.5_41.5",
+                    "tags": [
+                      "car",
+                      "suv",
+                      "description",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "GMC SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_39.5_41.5",
+                      "name": "Car description",
+                      "time": {
+                        "start": "39.5",
+                        "end": "41.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "automotive news"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car parked on a tree-lined street, as a woman's voice begins to describe its features.",
+                      "summary": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car parked on a tree-lined street, as a woman's voice begins to describe its features.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car parked on a tree-lined street, as a woman's voice begins to describe its features.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 41.5,
+                "end_time": 49.5,
+                "children": [],
+                "caption": "The video showcases a red Chevrolet SUV, highlighting its sleek design and powerful engine as a woman's voice describes its features, including a 3.6L V6 engine and a six-speed automatic transmission.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The video showcases a red Chevrolet SUV, highlighting its sleek design and powerful engine as a woman's voice describes its features, including a 3.6L V6 engine and a six-speed automatic transmission.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_41.5_49.5",
+                    "tags": [
+                      "car",
+                      "chevrolet",
+                      "suv",
+                      "design",
+                      "engine"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Chevrolet SUV",
+                        "attributes": {
+                          "make": "Chevrolet",
+                          "model": "SUV",
+                          "engine": "3.6L V6",
+                          "transmission": "six-speed automatic"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_41.5_49.5",
+                      "name": "Chevrolet SUV showcase",
+                      "time": {
+                        "start": "41.5",
+                        "end": "49.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product demonstration"
+                      ],
+                      "scene_topic": "The video showcases a red Chevrolet SUV, highlighting its sleek design and powerful engine as a woman's voice describes its features.",
+                      "summary": "The video showcases a red Chevrolet SUV, highlighting its sleek design and powerful engine as a woman's voice describes its features, including a 3.6L V6 engine and a six-speed automatic transmission.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video showcases a red Chevrolet SUV, highlighting its sleek design.",
+                        "audio": "woman's voice; engine; transmission",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A red 2018 Chevrolet Equinox SUV is showcased, highlighting its features such as a 3.6L V6 engine and a six-speed automatic transmission, as described by a woman's voice.",
+            "summary": "The video features a 2018 Chevrolet Equinox SUV, showcasing its sleek design and powerful 3.6L V6 engine with a six-speed automatic transmission. The video highlights the car's features through a combination of close-up shots and wider views of the vehicle parked on a tree-lined street."
+          },
+          {
+            "level": 2,
+            "start_time": 49.5,
+            "end_time": 65.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 49.5,
+                "end_time": 65.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the red GMC Acadia SUV's sleek design to a wider shot showcasing its modern exterior, all while a woman's voice continues to describe its features.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The video transitions from a close-up of the red GMC Acadia SUV's sleek design to a wider shot showcasing its modern exterior, all while a woman's voice continues to describe its features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_49_65",
+                    "tags": [
+                      "suv",
+                      "car",
+                      "design",
+                      "exterior",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "GMC Acadia SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_49_65",
+                      "name": "SUV Design and Features",
+                      "time": {
+                        "start": "49.5",
+                        "end": "65.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product review"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the red GMC Acadia SUV's sleek design to a wider shot showcasing its modern exterior, all while a woman's voice continues to describe its features.",
+                      "summary": "The video transitions from a close-up of the red GMC Acadia SUV's sleek design to a wider shot showcasing its modern exterior, all while a woman's voice continues to describe its features.",
+                      "implications": "Major product review event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the red GMC Acadia SUV's sleek design to a wider shot showcasing its modern exterior.",
+                        "audio": "a woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The red GMC Acadia SUV is showcased in a modern exterior shot, with a woman's voice describing its features.",
+            "summary": "The video showcases the modern exterior design of the red GMC Acadia SUV, featuring a sleek design and a wider shot of its exterior."
+          },
+          {
+            "level": 2,
+            "start_time": 65.5,
+            "end_time": 73.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 65.5,
+                "end_time": 69.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car driving down a winding road, while a woman's voice continues to describe its features.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car driving down a winding road, while a woman's voice continues to describe its features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_65_69",
+                    "tags": [
+                      "gmc",
+                      "suv",
+                      "car",
+                      "road",
+                      "description"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "GMC SUV",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Winding road",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_65_69",
+                      "name": "Car description",
+                      "time": {
+                        "start": "65.5",
+                        "end": "69.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "automotive news"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car driving down a winding road, while a woman's voice continues to describe its features.",
+                      "summary": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car driving down a winding road, while a woman's voice continues to describe its features.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the red GMC SUV's grille to a wider shot of the car driving down a winding road, while a woman's voice continues to describe its features.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 69.5,
+                "end_time": 73.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the red GMC SUV's rear bumper, showcasing its \"QUAD\" emblem, to a wider shot of the car parked on a tree-lined road, as a woman's voice begins to describe its features.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "The video transitions from a close-up of the red GMC SUV's rear bumper, showcasing its \"QUAD\" emblem, to a wider shot of the car parked on a tree-lined road, as a woman's voice begins to describe its features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_69.5_73.5",
+                    "tags": [
+                      "gmc",
+                      "suv",
+                      "car",
+                      "features",
+                      "description"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "GMC SUV",
+                        "attributes": {
+                          "emblem": "QUAD"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Tree-lined road",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_69.5_73.5",
+                      "name": "GMC SUV features description",
+                      "time": {
+                        "start": "69.5",
+                        "end": "73.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "automotive news"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the red GMC SUV's rear bumper to a wider shot of the car parked on a tree-lined road.",
+                      "summary": "The video transitions from a close-up of the red GMC SUV's rear bumper, showcasing its \"QUAD\" emblem, to a wider shot of the car parked on a tree-lined road, as a woman's voice begins to describe its features.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the red GMC SUV's rear bumper, showcasing its 'QUAD' emblem, to a wider shot of the car parked on a tree-lined road.",
+                        "audio": "woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the features of a red GMC SUV, transitioning between close-up shots of the grille, rear bumper, and wider shots of the car driving and parked on a road.",
+            "summary": "The video showcases a red GMC SUV driving down a winding road and parked on a tree-lined road, featuring close-ups of its grille, rear bumper, and \"QUAD\" emblem. A woman's voice describes the car's features throughout the video."
+          },
+          {
+            "level": 2,
+            "start_time": 73.5,
+            "end_time": 90.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 73.5,
+                "end_time": 85.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the \"QUANTUM\" logo to a detailed shot of a red Chevrolet SUV, showcasing its sleek design and modern features as a woman's voice describes its impressive performance and safety features.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The video transitions from a close-up of the \"QUANTUM\" logo to a detailed shot of a red Chevrolet SUV, showcasing its sleek design and modern features as a woman's voice describes its impressive performance and safety features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_73_85",
+                    "tags": [
+                      "logo_transition",
+                      "car_design",
+                      "safety_features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "QUANTUM logo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Chevrolet SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O002",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_73_85",
+                      "name": "Car Design Showcase",
+                      "time": {
+                        "start": "73.5",
+                        "end": "85.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product_promotion"
+                      ],
+                      "scene_topic": "The video showcases the design and features of a Chevrolet SUV.",
+                      "summary": "The video transitions from a close-up of the \"QUANTUM\" logo to a detailed shot of a red Chevrolet SUV, showcasing its sleek design and modern features as a woman's voice describes its impressive performance and safety features.",
+                      "implications": "Major product promotion event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the 'QUANTUM' logo to a detailed shot of a red Chevrolet SUV, showcasing its sleek design and modern features.",
+                        "audio": "woman's voice; description",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 85.5,
+                "end_time": 90.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the \"QUANTUM\" logo to a detailed view of the red 2018 Jeep Grand Cherokee's tire, showcasing its sleek design and tread pattern.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "The video transitions from a close-up of the \"QUANTUM\" logo to a detailed view of the red 2018 Jeep Grand Cherokee's tire, showcasing its sleek design and tread pattern.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_85_90",
+                    "tags": [
+                      "logo",
+                      "car",
+                      "design",
+                      "tire",
+                      "sleek"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "QUANTUM logo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "2018 Jeep Grand Cherokee's tire",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_85_90",
+                      "name": "",
+                      "time": {
+                        "start": "85.5",
+                        "end": "90.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product presentation"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the QUANTUM logo to a detailed view of the red 2018 Jeep Grand Cherokee's tire, showcasing its sleek design and tread pattern.",
+                      "summary": "The video transitions from a close-up of the \"QUANTUM\" logo to a detailed view of the red 2018 Jeep Grand Cherokee's tire, showcasing its sleek design and tread pattern.",
+                      "implications": "Major product presentation event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the 'QUANTUM' logo to a detailed view of the red 2018 Jeep Grand Cherokee's tire, showcasing its sleek design and tread pattern.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the sleek design and modern features of a red Chevrolet SUV, as well as the impressive performance and safety features of a red 2018 Jeep Grand Cherokee.",
+            "summary": "The video showcases the design and features of two vehicles, a red Chevrolet SUV and a red 2018 Jeep Grand Cherokee, highlighting their sleek designs and modern features. The narrator describes the impressive performance and safety features of the vehicles."
+          },
+          {
+            "level": 2,
+            "start_time": 90.5,
+            "end_time": 101.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 90.5,
+                "end_time": 97.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the red GMC SUV's tire to a wider shot of the car parked on a paved surface, while a woman's voice continues to describe the car's features.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The video transitions from a close-up of the red GMC SUV's tire to a wider shot of the car parked on a paved surface, while a woman's voice continues to describe the car's features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_90_97",
+                    "tags": [
+                      "car",
+                      "suv",
+                      "paved_surface",
+                      "voice_description",
+                      "close_up"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "GMC SUV",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "paved surface",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice_description",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_90_97",
+                      "name": "Car description",
+                      "time": {
+                        "start": "90.5",
+                        "end": "97.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "automotive news"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the red GMC SUV's tire to a wider shot of the car parked on a paved surface, while a woman's voice continues to describe the car's features.",
+                      "summary": "The video transitions from a close-up of the red GMC SUV's tire to a wider shot of the car parked on a paved surface, while a woman's voice continues to describe the car's features.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the red GMC SUV's tire to a wider shot of the car parked on a paved surface, while a woman's voice continues to describe the car's features.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 97.5,
+                "end_time": 101.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the red GMC SUV's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the car's interior, highlighting the modern design of the dashboard and steering wheel.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "The video transitions from a close-up of the red GMC SUV's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the car's interior, highlighting the modern design of the dashboard and steering wheel.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_97.5_101.5",
+                    "tags": [
+                      "gmc",
+                      "suv",
+                      "dashboard",
+                      "speedometer",
+                      "tachometer"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "GMC SUV dashboard",
+                        "attributes": {
+                          "speedometer": "0",
+                          "tachometer": "3000"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "GMC SUV interior",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_97.5_101.5",
+                      "name": "",
+                      "time": {
+                        "start": "97.5",
+                        "end": "101.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "automotive news"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the red GMC SUV's dashboard to a wider shot of the car's interior.",
+                      "summary": "The video transitions from a close-up of the red GMC SUV's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the car's interior, highlighting the modern design of the dashboard and steering wheel.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the red GMC SUV's dashboard, showcasing the speedometer and tachometer needles pointing to '0' and '3000', respectively, to a wider shot of the car's interior, highlighting the modern design of the dashboard and steering wheel.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the features of a red GMC SUV, transitioning between close-up shots of the tire and dashboard, and wider shots of the car's interior, highlighting its modern design and functionality.",
+            "summary": "The video showcases a red GMC SUV, featuring a close-up of its tire and dashboard, highlighting the modern design of the interior and the speedometer and tachometer needles pointing to \"0\" and \"3000\" respectively. The camera then transitions to a wider shot of the car parked on a paved surface, providing a comprehensive view of the vehicle's features."
+          }
+        ],
+        "caption": "The video showcases various models of SUVs, including the GMC Acadia, Chevrolet Equinox, and Jeep Grand Cherokee, highlighting their sleek designs, modern features, and impressive performance. The video also features close-up shots of the cars' grilles, rear bumpers, and interiors, emphasizing their functionality and design.",
+        "summary": "The video showcases the sleek design and modern features of the 2018 GMC Acadia and Chevrolet Equinox SUVs, highlighting their attributes and options through a combination of close-up shots and wider views. The video is accompanied by upbeat pop music and features a woman's voice describing the vehicles' features, with the cars driving down winding roads and parked on tree-lined streets. The video showcases the design and features of three red SUVs, including a Chevrolet, Jeep Grand Cherokee, and GMC, highlighting their sleek designs, modern features, and impressive performance and safety features. The narrator provides a comprehensive overview of the vehicles' features, including close-ups of their tires, dashboards, and speedometers."
+      },
+      {
+        "level": 1,
+        "start_time": 101.5,
+        "end_time": 116.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 101.5,
+            "end_time": 108.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 101.5,
+                "end_time": 108.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, where the camera pans across the spacious backseat and then focuses on the driver's side door, highlighting its sleek design and the \"Eco\" logo on the door panel.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, where the camera pans across the spacious backseat and then focuses on the driver's side door, highlighting its sleek design and the \"Eco\" logo on the door panel.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_101_108",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "speedometer",
+                      "tachometer",
+                      "interior",
+                      "backseat",
+                      "driver",
+                      "door",
+                      "eco"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car's dashboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "speedometer",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "tachometer",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "interior",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "backseat",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O006",
+                        "name": "driver's side door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "driver",
+                        "ref_object": "O006",
+                        "role": "driver",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_101_108",
+                      "name": "The video transitions from a close-up of the car's dashboard to a wider shot of the interior",
+                      "time": {
+                        "start": "101.5",
+                        "end": "108.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005",
+                        "O006"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "car interior"
+                      ],
+                      "scene_topic": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                      "summary": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, where the camera pans across the spacious backseat and then focuses on the driver's side door, highlighting its sleek design and the \"Eco\" logo on the door panel.",
+                      "implications": "Major economics,finance news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to '0' and '3000,' respectively, to a wider shot of the interior, where the camera pans across the spacious backseat and then focuses on the driver's side door, highlighting its sleek design and the 'Eco' logo on the door panel.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the sleek design and advanced features of a car's interior, highlighting the spacious backseat and the \"Eco\" logo on the driver's side door panel.",
+            "summary": "The video shows a close-up of the car's dashboard, followed by a wider shot of the interior, highlighting the spacious backseat and the sleek design of the driver's side door, which features the \"Eco\" logo. The camera pans across the interior, showcasing the car's features."
+          },
+          {
+            "level": 2,
+            "start_time": 108.5,
+            "end_time": 116.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 108.5,
+                "end_time": 116.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, where the camera pans across the spacious backseat and then focuses on the driver's side door, highlighting its sleek design and the \"G\" logo on the door panel.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, where the camera pans across the spacious backseat and then focuses on the driver's side door, highlighting its sleek design and the \"G\" logo on the door panel.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_108_116",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "speedometer",
+                      "tachometer",
+                      "interior",
+                      "backseat",
+                      "door",
+                      "logo"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car's dashboard",
+                        "attributes": {
+                          "speedometer": "0",
+                          "tachometer": "3000"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "spacious backseat",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "driver's side door",
+                        "attributes": {
+                          "sleek design": "",
+                          "G logo": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O003",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_108_116",
+                      "name": "",
+                      "time": {
+                        "start": "108.5",
+                        "end": "116.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "car interior"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the car's dashboard to a wider shot of the interior.",
+                      "summary": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, where the camera pans across the spacious backseat and then focuses on the driver's side door, highlighting its sleek design and the \"G\" logo on the door panel.",
+                      "implications": "Major car features, design news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to '0' and '3000,' respectively, to a wider shot of the interior, where the camera pans across the spacious backseat and then focuses on the driver's side door, highlighting its sleek design and the 'G' logo on the door panel.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the sleek design and luxurious interior of a high-performance sports car, highlighting its advanced features and premium materials.",
+            "summary": "The video shows a close-up of the car's dashboard, followed by a wider shot of the interior, highlighting the spacious backseat and the sleek design of the driver's side door, which features the \"G\" logo. The camera pans across the interior, showcasing the car's features."
+          }
+        ],
+        "caption": "The video showcases the sleek design and advanced features of two different cars, one a luxurious sports car and the other a more practical vehicle with a spacious backseat.",
+        "summary": "The video showcases the interior of a car, highlighting its spacious backseat and sleek design, including the \"Eco\" logo on the driver's side door. The camera pans across the interior, featuring the car's dashboard and various interior elements."
+      },
+      {
+        "level": 1,
+        "start_time": 116.5,
+        "end_time": 141.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 116.5,
+            "end_time": 125.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 116.5,
+                "end_time": 125.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, highlighting the modern design and spaciousness of the backseat.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, highlighting the modern design and spaciousness of the backseat.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_116_125",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "speedometer",
+                      "tachometer",
+                      "interior",
+                      "design",
+                      "backseat"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car's dashboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "speedometer",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "tachometer",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "interior",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "backseat",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_116_125",
+                      "name": "The video transitions from a close-up of the car's dashboard to a wider shot of the interior",
+                      "time": {
+                        "start": "116.5",
+                        "end": "125.5"
+                      },
+                      "actors": [],
+                      "objects": []
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "car interior"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the car's dashboard to a wider shot of the interior",
+                      "summary": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, highlighting the modern design and spaciousness of the backseat.",
+                      "implications": "Car interior design and features",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to '0' and '3000', respectively, to a wider shot of the interior, highlighting the modern design and spaciousness of the backseat.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the modern design and spaciousness of a car's interior, with a focus on the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, before transitioning to a wider shot of the interior.",
+            "summary": "The video shows a close-up of the car's dashboard, with the speedometer and tachometer needles at \"0\" and \"3000,\" respectively, before transitioning to a wider shot of the interior, highlighting its modern design and spacious backseat."
+          },
+          {
+            "level": 2,
+            "start_time": 125.5,
+            "end_time": 133.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 125.5,
+                "end_time": 133.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the car's interior, highlighting the modern design of the dashboard and steering wheel.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the car's interior, highlighting the modern design of the dashboard and steering wheel.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_125_133",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "speedometer",
+                      "tachometer",
+                      "interior",
+                      "design"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "speedometer",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "tachometer",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "dashboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "steering wheel",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_125_133",
+                      "name": "",
+                      "time": {
+                        "start": "125.5",
+                        "end": "133.5"
+                      },
+                      "actors": [],
+                      "objects": []
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "car interior"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the car's dashboard to a wider shot of the car's interior.",
+                      "summary": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the car's interior, highlighting the modern design of the dashboard and steering wheel.",
+                      "implications": "Major car design news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to '0' and '3000', respectively, to a wider shot of the car's interior, highlighting the modern design of the dashboard and steering wheel.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The car's dashboard and interior are shown, highlighting its modern design and features.",
+            "summary": "The video shows a close-up of the car's dashboard, featuring a speedometer and tachometer at \"0\" and \"3000\" respectively, before panning out to reveal the modern design of the interior. The shot highlights the sleek dashboard and steering wheel."
+          },
+          {
+            "level": 2,
+            "start_time": 133.5,
+            "end_time": 141.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 133.5,
+                "end_time": 137.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, highlighting the modern design and controls.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, highlighting the modern design and controls.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_133_137",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "speedometer",
+                      "tachometer",
+                      "interior",
+                      "design",
+                      "controls"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "speedometer",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "tachometer",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "car's dashboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "interior",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_133_137",
+                      "name": "",
+                      "time": {
+                        "start": "133.5",
+                        "end": "137.5"
+                      },
+                      "actors": [],
+                      "objects": []
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "car interior"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the car's dashboard to a wider shot of the interior.",
+                      "summary": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the interior, highlighting the modern design and controls.",
+                      "implications": "Major car design and technology news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer needles pointing to '0' and '3000', respectively, to a wider shot of the interior, highlighting the modern design and controls.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 137.5,
+                "end_time": 141.5,
+                "children": [],
+                "caption": "The camera pans across the sleek, modern dashboard of the red sedan, showcasing the digital display and various controls, while a woman's voice continues to describe the car's features.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "The camera pans across the sleek, modern dashboard of the red sedan, showcasing the digital display and various controls, while a woman's voice continues to describe the car's features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_137_141",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "features",
+                      "description",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red sedan",
+                        "attributes": {
+                          "color": "red",
+                          "type": "sedan",
+                          "dashboard": "sleek, modern"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "digital display",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "various controls",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_137_141",
+                      "name": "Car dashboard features",
+                      "time": {
+                        "start": "137.5",
+                        "end": "141.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "car features"
+                      ],
+                      "scene_topic": "The camera pans across the sleek, modern dashboard of the red sedan, showcasing the digital display and various controls, while a woman's voice continues to describe the car's features.",
+                      "summary": "The camera pans across the sleek, modern dashboard of the red sedan, showcasing the digital display and various controls, while a woman's voice continues to describe the car's features.",
+                      "implications": "Major car features, description event",
+                      "modalities": {
+                        "visual": "The camera pans across the sleek, modern dashboard of the red sedan, showcasing the digital display and various controls.",
+                        "audio": "woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the modern design and features of a red sedan, highlighting its sleek dashboard and digital display.",
+            "summary": "The video shows a close-up of the car's dashboard, highlighting the speedometer and tachometer, before panning out to reveal the modern interior design and controls. The camera showcases the digital display and various controls of the sleek, red sedan."
+          }
+        ],
+        "caption": "The video showcases the modern design and features of a red sedan, highlighting its sleek dashboard and digital display, with a focus on the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively.",
+        "summary": "The video showcases the modern design and features of a sleek, red sedan, highlighting its dashboard, speedometer, tachometer, and digital display. The camera pans out to reveal the spacious backseat and modern interior design, emphasizing the car's sleek and modern aesthetic."
+      },
+      {
+        "level": 1,
+        "start_time": 141.5,
+        "end_time": 163.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 141.5,
+            "end_time": 148.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 141.5,
+                "end_time": 148.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer, to a wider shot of the interior, highlighting the modern design and controls as a woman's voice continues to describe the car's features.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer, to a wider shot of the interior, highlighting the modern design and controls as a woman's voice continues to describe the car's features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_141_148",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "interior",
+                      "design",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car's dashboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "car's interior",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman's voice",
+                        "ref_object": "O002",
+                        "role": "narrator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_141_148",
+                      "name": "Car interior features",
+                      "time": {
+                        "start": "141.5",
+                        "end": "148.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "automotive news"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the car's dashboard to a wider shot of the interior, highlighting the modern design and controls.",
+                      "summary": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer, to a wider shot of the interior, highlighting the modern design and controls as a woman's voice continues to describe the car's features.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer, to a wider shot of the interior, highlighting the modern design and controls.",
+                        "audio": "a woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the modern design and features of a car, with a focus on the interior and controls, as a woman's voice provides a narration.",
+            "summary": "The video shows a close-up of the car's dashboard, followed by a wider shot of the interior, highlighting its modern design and controls. A woman's voice continues to describe the car's features throughout the transition."
+          },
+          {
+            "level": 2,
+            "start_time": 148.5,
+            "end_time": 153.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 148.5,
+                "end_time": 153.5,
+                "children": [],
+                "caption": "The camera pans across the sleek, modern dashboard of a car, showcasing the digital display and various controls, while a woman's voice continues to describe the car's features.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "The camera pans across the sleek, modern dashboard of a car, showcasing the digital display and various controls, while a woman's voice continues to describe the car's features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_148.5_153.5",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "features",
+                      "description",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "dashboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "digital display",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "controls",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_148.5_153.5",
+                      "name": "car features description",
+                      "time": {
+                        "start": "148.5",
+                        "end": "153.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "description"
+                      ],
+                      "scene_topic": "The camera pans across the sleek, modern dashboard of a car, showcasing the digital display and various controls, while a woman's voice continues to describe the car's features.",
+                      "summary": "The camera pans across the sleek, modern dashboard of a car, showcasing the digital display and various controls, while a woman's voice continues to describe the car's features.",
+                      "implications": "Major car features description event",
+                      "modalities": {
+                        "visual": "The camera pans across the sleek, modern dashboard of a car, showcasing the digital display and various controls.",
+                        "audio": "woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A sleek and modern car is showcased, with a woman's voice describing its features and controls.",
+            "summary": "The camera shows the modern dashboard of a car, highlighting its digital display and controls, as a woman's voice continues to describe its features."
+          },
+          {
+            "level": 2,
+            "start_time": 153.5,
+            "end_time": 163.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 153.5,
+                "end_time": 163.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer, to a wider shot of the interior, highlighting the steering wheel and controls as a woman's voice continues to describe the car's features.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer, to a wider shot of the interior, highlighting the steering wheel and controls as a woman's voice continues to describe the car's features.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_153_163",
+                    "tags": [
+                      "car_features",
+                      "dashboard",
+                      "steering_wheel",
+                      "voice_description"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car_dashboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "steering_wheel",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice_description",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_153_163",
+                      "name": "car_features_description",
+                      "time": {
+                        "start": "153.5",
+                        "end": "163.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "car_features"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the car's dashboard to a wider shot of the interior.",
+                      "summary": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer, to a wider shot of the interior, highlighting the steering wheel and controls as a woman's voice continues to describe the car's features.",
+                      "implications": "Major car features and interior design news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the car's dashboard, showcasing the speedometer and tachometer, to a wider shot of the interior, highlighting the steering wheel and controls.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman's voice describes the features of a car's interior, highlighting the speedometer, tachometer, steering wheel, and controls.",
+            "summary": "The video shows a close-up of the car's dashboard, followed by a wider shot of the interior, highlighting the steering wheel and controls. A woman's voice continues to describe the car's features throughout the transition."
+          }
+        ],
+        "caption": "A modern car is showcased, with a focus on its interior and controls, as a woman's voice provides a narration.",
+        "summary": "The video showcases the modern design and features of a car's interior, highlighting its digital display and controls, with a woman's voiceover describing its features throughout. The camera pans from a close-up of the dashboard to a wider shot of the interior, emphasizing the car's sleek design and user-friendly controls."
+      },
+      {
+        "level": 1,
+        "start_time": 163.5,
+        "end_time": 179.533333,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 163.5,
+            "end_time": 173.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 163.5,
+                "end_time": 167.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the car's interior, highlighting the steering wheel and dashboard controls.",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "The video transitions from a close-up of a car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the car's interior, highlighting the steering wheel and dashboard controls.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_163_167",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "speedometer",
+                      "tachometer",
+                      "steering_wheel"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car's dashboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "steering wheel",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_163_167",
+                      "name": "",
+                      "time": {
+                        "start": "163.5",
+                        "end": "167.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "car interior"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a car's dashboard to a wider shot of the car's interior.",
+                      "summary": "The video transitions from a close-up of a car's dashboard, showcasing the speedometer and tachometer needles pointing to \"0\" and \"3000,\" respectively, to a wider shot of the car's interior, highlighting the steering wheel and dashboard controls.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a car's dashboard, showcasing the speedometer and tachometer needles pointing to '0' and '3000', respectively, to a wider shot of the car's interior, highlighting the steering wheel and dashboard controls.",
+                        "audio": "",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 167.5,
+                "end_time": 173.5,
+                "children": [],
+                "caption": "As the upbeat pop music fades, the video transitions to a black screen with the words \"THANKS FOR WATCHING\" in white, while a woman's voice can be heard faintly in the background.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "As the upbeat pop music fades, the video transitions to a black screen with the words \"THANKS FOR WATCHING\" in white, while a woman's voice can be heard faintly in the background.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_167.5_173.5",
+                    "tags": [
+                      "pop_music",
+                      "black_screen",
+                      "thanks_for_watching",
+                      "woman_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black_screen",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "white_text",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_167.5_173.5",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "167.5",
+                        "end": "173.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions to a black screen with white text.",
+                      "summary": "As the upbeat pop music fades, the video transitions to a black screen with the words \"THANKS FOR WATCHING\" in white, while a woman's voice can be heard faintly in the background.",
+                      "implications": "Major video event",
+                      "modalities": {
+                        "visual": "As the upbeat pop music fades, the video transitions to a black screen with the words 'THANKS FOR WATCHING' in white, while a woman's voice can be heard faintly in the background.",
+                        "audio": "upbeat pop music; woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video shows a car's dashboard and interior, highlighting the speedometer and tachometer, before transitioning to a black screen with the words \"THANKS FOR WATCHING\" in white.",
+            "summary": "The video shows a car's interior, with the speedometer and tachometer needles at \"0\" and \"3000\" respectively, before transitioning to a black screen with the words \"THANKS FOR WATCHING\" and a faint woman's voice in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 173.5,
+            "end_time": 179.533333,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 173.5,
+                "end_time": 179.533333,
+                "children": [],
+                "caption": "As the upbeat pop music fades, the video transitions to a black screen with the words \"THANKS FOR WATCHING\" in white, while a woman's voice can be heard faintly in the background.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "As the upbeat pop music fades, the video transitions to a black screen with the words \"THANKS FOR WATCHING\" in white, while a woman's voice can be heard faintly in the background.",
+                  "result": {
+                    "video_id": "PHZXpINfz2o",
+                    "event_id": "E_PHZXpINfz2o_173.5_179.53",
+                    "tags": [
+                      "pop_music",
+                      "black_screen",
+                      "thanks_for_watching",
+                      "woman_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black_screen",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "white_text",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_PHZXpINfz2o_173.5_179.53",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "173.5",
+                        "end": "179.53"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions to a black screen with white text.",
+                      "summary": "As the upbeat pop music fades, the video transitions to a black screen with the words \"THANKS FOR WATCHING\" in white, while a woman's voice can be heard faintly in the background.",
+                      "implications": "Major video event",
+                      "modalities": {
+                        "visual": "As the upbeat pop music fades, the video transitions to a black screen with the words 'THANKS FOR WATCHING' in white, while a woman's voice can be heard faintly in the background.",
+                        "audio": "upbeat pop music; woman's voice",
+                        "speech": "The 2018 Chevrolet Equinox features a refreshed design, shedding 400 pounds of weight, and is available with a trio of turbocharged engines, including a 1.5-liter turbo-4 that achieves 26 mpg city and 32 mpg highway with front-wheel drive. Compared to the 2017 model, the new Equinox offers improved fuel efficiency, with the 1.5-liter engine netting 5-7 mpg better in city and highway driving."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video ends with the words \"THANKS FOR WATCHING\" on a black screen, accompanied by a faint voice in the background.",
+            "summary": "The video ends with a black screen displaying the words \"THANKS FOR WATCHING\" in white, accompanied by a faint woman's voice in the background."
+          }
+        ],
+        "caption": "The video shows a car's dashboard and interior before transitioning to a black screen with the words \"THANKS FOR WATCHING\" in white. The video ends with the same message on a black screen, accompanied by a faint voice in the background.",
+        "summary": "The video shows a car's interior with the speedometer and tachometer at \"0\" and \"3000\" respectively, before transitioning to a black screen with a message and a faint woman's voice. The video ends with a black screen displaying the same message and voice."
+      }
+    ],
+    "caption": "The summaries of the videos are:\n\n1. The video showcases various SUV models, highlighting their designs, features, and performance.\n2. The video showcases the design and features of two different cars, one luxurious and one practical, with a focus on their sleek designs and advanced features.\n3. The video showcases the modern design and features of a red sedan, highlighting its sleek dashboard and digital display.\n4. The video showcases a car's interior and controls, with a woman's voice providing a narration",
+    "summary": "The video showcases the sleek design and modern features of three red SUVs, including a Chevrolet, Jeep Grand Cherokee, and GMC Acadia, highlighting their attributes and options through a combination of close-up shots and wider views. The narrator provides a comprehensive overview of the vehicles' features, including their interior design, dashboard, and safety features, set to upbeat pop music. The video showcases a car's interior, highlighting its sleek design and user-friendly controls, before transitioning to a black screen with a message and a faint woman's voice. The video ends with a black screen displaying the same message and voice."
+  }
+}

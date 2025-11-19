@@ -1,0 +1,1651 @@
+{
+  "video_id": "BiKE-TEvmsY",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 90.557,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 23.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 7.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 2.5,
+                "children": [],
+                "caption": "A group of people, dressed in formal attire, are gathered outside a building, chatting and laughing as a woman's voice can be heard, though her words are unclear.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A group of people, dressed in formal attire, are gathered outside a building, chatting and laughing as a woman's voice can be heard, though her words are unclear.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_0_2.5",
+                    "tags": [
+                      "group",
+                      "people",
+                      "formal_attire",
+                      "building",
+                      "chattering"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "group_of_people",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "unknown",
+                        "ref_object": "O001",
+                        "role": "unknown",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_0_2.5",
+                      "name": "unknown",
+                      "time": {
+                        "start": "0",
+                        "end": "2.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_event"
+                      ],
+                      "scene_topic": "A group of people are gathered outside a building, chatting and laughing.",
+                      "summary": "A group of people, dressed in formal attire, are gathered outside a building, chatting and laughing as a woman's voice can be heard, though her words are unclear.",
+                      "implications": "Social event",
+                      "modalities": {
+                        "visual": "A group of people, dressed in formal attire, are gathered outside a building, chatting and laughing as a woman's voice can be heard.",
+                        "audio": "woman's voice",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 2.5,
+                "end_time": 7.5,
+                "children": [],
+                "caption": "A group of formally dressed people, including a woman in a black dress and a man in a tuxedo, are gathered on a red carpet, chatting and laughing as a woman's voice can be heard, likely from a nearby microphone.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A group of formally dressed people, including a woman in a black dress and a man in a tuxedo, are gathered on a red carpet, chatting and laughing as a woman's voice can be heard, likely from a nearby microphone.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_2.5_7.5",
+                    "tags": [
+                      "formal_event",
+                      "red_carpet",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red_carpet",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman_in_black_dress",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man_in_tuxedo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "guest",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_2.5_7.5",
+                      "name": "Formal Event",
+                      "time": {
+                        "start": "2.5",
+                        "end": "7.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people_event"
+                      ],
+                      "scene_topic": "A group of formally dressed people are gathered on a red carpet, chatting and laughing.",
+                      "summary": "A group of formally dressed people, including a woman in a black dress and a man in a tuxedo, are gathered on a red carpet, chatting and laughing as a woman's voice can be heard, likely from a nearby microphone.",
+                      "implications": "Social event",
+                      "modalities": {
+                        "visual": "A group of formally dressed people, including a woman in a black dress and a man in a tuxedo, are gathered on a red carpet, chatting and laughing as a woman's voice can be heard, likely from a nearby microphone.",
+                        "audio": "woman's voice",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of formally dressed people are gathered outside or on a red carpet, chatting and laughing, with a woman's voice heard from a nearby microphone or speaker.",
+            "summary": "A group of formally dressed people are gathered outside a building, chatting and laughing, with a woman's voice audible in the background. They are likely awaiting an event, as a similar group is gathered on a red carpet, also chatting and laughing, with a woman's voice likely coming from a nearby microphone."
+          },
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 13.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 13.5,
+                "children": [],
+                "caption": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the night air.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the night air.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_7.5_13.5",
+                    "tags": [
+                      "event",
+                      "celebrity",
+                      "red_carpet"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_tuxedo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "red_carpet",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_tuxedo",
+                        "ref_object": "O001",
+                        "role": "main_character",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_7.5_13.5",
+                      "name": "Celebrity Arrival",
+                      "time": {
+                        "start": "7.5",
+                        "end": "13.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "celebrity"
+                      ],
+                      "scene_topic": "The man in the tuxedo walks down the red carpet, and the crowd cheers and claps.",
+                      "summary": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the night air.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "As the man in the tuxedo walks down the red carpet.",
+                        "audio": "cheers; claps; echoing through the night air.",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The man in the tuxedo is greeted with cheers and applause as he walks down the red carpet at an event.",
+            "summary": "The man in the tuxedo walked down the red carpet, greeted by a cheering and clapping crowd whose enthusiasm filled the night air."
+          },
+          {
+            "level": 2,
+            "start_time": 13.5,
+            "end_time": 23.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 13.5,
+                "end_time": 23.5,
+                "children": [],
+                "caption": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the air.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the air.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_13.5_23.5",
+                    "tags": [
+                      "event",
+                      "celebrity",
+                      "red_carpet"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_tuxedo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "red_carpet",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_tuxedo",
+                        "ref_object": "O001",
+                        "role": "main_character",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_13.5_23.5",
+                      "name": "Celebrity Arrival",
+                      "time": {
+                        "start": "13.5",
+                        "end": "23.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "celebrity"
+                      ],
+                      "scene_topic": "The man in the tuxedo walks down the red carpet, and the crowd cheers and claps.",
+                      "summary": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the air.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "As the man in the tuxedo walks down the red carpet.",
+                        "audio": "cheers; claps; echoing through the air",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a tuxedo is greeted with cheers and applause as he walks down a red carpet.",
+            "summary": "The man in the tuxedo walked down the red carpet, greeted by a cheering and clapping crowd whose excitement filled the air."
+          }
+        ],
+        "caption": "A man in a tuxedo is greeted with cheers and applause as he walks down a red carpet at an event.",
+        "summary": "A group of formally dressed people gathered outside a building, awaiting an event, while another group was gathered on a red carpet, chatting and laughing. A man in a tuxedo walked down the red carpet, greeted by a cheering and clapping crowd whose enthusiasm filled the night air."
+      },
+      {
+        "level": 1,
+        "start_time": 23.5,
+        "end_time": 44.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 23.5,
+            "end_time": 31.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 23.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the air.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the air.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_23.5_31.5",
+                    "tags": [
+                      "event",
+                      "celebrity",
+                      "red_carpet"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_tuxedo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "red_carpet",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_tuxedo",
+                        "ref_object": "O001",
+                        "role": "main_character",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_23.5_31.5",
+                      "name": "man_walks_down_red_carpet",
+                      "time": {
+                        "start": "23.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "celebrity"
+                      ],
+                      "scene_topic": "The man in the tuxedo walks down the red carpet, the crowd cheers and claps.",
+                      "summary": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the air.",
+                      "implications": "Major celebrity event",
+                      "modalities": {
+                        "visual": "As the man in the tuxedo walks down the red carpet.",
+                        "audio": "cheers; claps; echoing through the air",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The man in the tuxedo is greeted with cheers and applause as he walks down the red carpet.",
+            "summary": "The man in the tuxedo walked down the red carpet, greeted by a cheering and clapping crowd whose excitement filled the air."
+          },
+          {
+            "level": 2,
+            "start_time": 31.5,
+            "end_time": 44.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "The man in the tuxedo, standing on the red carpet, smiles as he addresses the crowd, his voice echoing through the outdoor venue as he welcomes everyone to the event.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The man in the tuxedo, standing on the red carpet, smiles as he addresses the crowd, his voice echoing through the outdoor venue as he welcomes everyone to the event.",
+                  "result": {
+                    "video_id": "bike_tevmsy",
+                    "event_id": "E_bike_tevmsy_31.5_38.5",
+                    "tags": [
+                      "event",
+                      "welcome",
+                      "speech",
+                      "outdoor",
+                      "venue"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "tuxedo",
+                          "location": "red carpet"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_bike_tevmsy_31.5_38.5",
+                      "name": "welcome speech",
+                      "time": {
+                        "start": "31.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event news"
+                      ],
+                      "scene_topic": "The man in the tuxedo welcomes everyone to the event.",
+                      "summary": "The man in the tuxedo, standing on the red carpet, smiles as he addresses the crowd, his voice echoing through the outdoor venue as he welcomes everyone to the event.",
+                      "implications": "Major event news",
+                      "modalities": {
+                        "visual": "The man in the tuxedo, standing on the red carpet, smiles as he addresses the crowd.",
+                        "audio": "his voice; crowd reactions",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a group of formally dressed individuals gather around a man in a tuxedo, who is speaking into a microphone, while a woman in a black dress stands nearby, listening intently.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "In a lively outdoor setting, a group of formally dressed individuals gather around a man in a tuxedo, who is speaking into a microphone, while a woman in a black dress stands nearby, listening intently.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_38.5_44.5",
+                    "tags": [
+                      "outdoor",
+                      "gathering",
+                      "speech",
+                      "formal",
+                      "event"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in tuxedo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in black dress",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in tuxedo",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in black dress",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_38.5_44.5",
+                      "name": "speech",
+                      "time": {
+                        "start": "38.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "gathering"
+                      ],
+                      "scene_topic": "A group of formally dressed individuals gather around a man in a tuxedo, who is speaking into a microphone, while a woman in a black dress stands nearby, listening intently.",
+                      "summary": "In a lively outdoor setting, a group of formally dressed individuals gather around a man in a tuxedo, who is speaking into a microphone, while a woman in a black dress stands nearby, listening intently.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a group of formally dressed individuals gather around a man in a tuxedo, who is speaking into a microphone, while a woman in a black dress stands nearby, listening intently.",
+                        "audio": "speaking into a microphone",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "At an outdoor event, a man in a tuxedo welcomes the crowd while a woman listens intently to his speech.",
+            "summary": "A man in a tuxedo welcomes the crowd to the event, his voice echoing through the outdoor venue, as a woman in a black dress listens intently nearby. The scene takes place in a lively outdoor setting where formally dressed individuals have gathered around the speaker."
+          }
+        ],
+        "caption": "A man in a tuxedo is greeted with cheers and applause as he walks down a red carpet at an outdoor event, where he delivers a speech to a crowd of people.",
+        "summary": "A man in a tuxedo walked down the red carpet, greeted by a cheering crowd, as a woman in a black dress listened intently nearby. The scene unfolded in a lively outdoor setting where formally dressed individuals had gathered to hear the speaker's welcome."
+      },
+      {
+        "level": 1,
+        "start_time": 44.5,
+        "end_time": 73.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 44.5,
+            "end_time": 51.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 44.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a group of formally dressed individuals gather around a man in a tuxedo, who is speaking into a microphone, while a woman in a black dress stands nearby, listening intently.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "In a lively outdoor setting, a group of formally dressed individuals gather around a man in a tuxedo, who is speaking into a microphone, while a woman in a black dress stands nearby, listening intently.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_44.5_47.5",
+                    "tags": [
+                      "outdoor",
+                      "gathering",
+                      "speech",
+                      "formal",
+                      "event"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in tuxedo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in black dress",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in tuxedo",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in black dress",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_44.5_47.5",
+                      "name": "speech",
+                      "time": {
+                        "start": "44.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor event"
+                      ],
+                      "scene_topic": "A group of formally dressed individuals gather around a man speaking into a microphone.",
+                      "summary": "In a lively outdoor setting, a group of formally dressed individuals gather around a man in a tuxedo, who is speaking into a microphone, while a woman in a black dress stands nearby, listening intently.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a group of formally dressed individuals gather around a man in a tuxedo, who is speaking into a microphone, while a woman in a black dress stands nearby, listening intently.",
+                        "audio": "speaking into a microphone",
+                        "speech": "The speaker, a female Catholic, discusses her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 51.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, their laughter and chatter blending with the sounds of the crowd and the distant music.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, their laughter and chatter blending with the sounds of the crowd and the distant music.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_4750_5150",
+                    "tags": [
+                      "outdoor",
+                      "gathering",
+                      "formal",
+                      "laughter",
+                      "chatter"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_4750_5150",
+                      "name": "",
+                      "time": {
+                        "start": "47.5",
+                        "end": "51.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor scene"
+                      ],
+                      "scene_topic": "A group of formally dressed individuals gather around a table, laughing and chatting.",
+                      "summary": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, their laughter and chatter blending with the sounds of the crowd and the distant music.",
+                      "implications": "Social event, community gathering",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, their laughter and chatter blending with the sounds of the crowd and the distant music.",
+                        "audio": "laughter; chatter; crowd; music",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of formally dressed individuals gather in an outdoor setting, either around a man speaking into a microphone or a table, enjoying each other's company and the lively atmosphere.",
+            "summary": "A group of formally dressed individuals gather around a man speaking into a microphone in a lively outdoor setting, accompanied by a woman listening intently. The atmosphere is filled with laughter, chatter, and distant music, creating a lively and festive atmosphere."
+          },
+          {
+            "level": 2,
+            "start_time": 51.5,
+            "end_time": 56.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 51.5,
+                "end_time": 53.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a man in a tuxedo stands at the center of a group of formally dressed individuals, addressing them with a microphone, while a woman in a black dress stands beside him, listening attentively.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "In a lively outdoor setting, a man in a tuxedo stands at the center of a group of formally dressed individuals, addressing them with a microphone, while a woman in a black dress stands beside him, listening attentively.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_51.5_53.5",
+                    "tags": [
+                      "outdoor",
+                      "formal_event",
+                      "speech",
+                      "gathering"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "tuxedo",
+                          "role": "speaker"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "black_dress",
+                          "role": "listener"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_51.5_53.5",
+                      "name": "formal_event",
+                      "time": {
+                        "start": "51.5",
+                        "end": "53.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "formal_event"
+                      ],
+                      "scene_topic": "A man gives a speech at a formal gathering.",
+                      "summary": "In a lively outdoor setting, a man in a tuxedo stands at the center of a group of formally dressed individuals, addressing them with a microphone, while a woman in a black dress stands beside him, listening attentively.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a man in a tuxedo stands at the center of a group of formally dressed individuals, addressing them with a microphone, while a woman in a black dress stands beside him, listening attentively.",
+                        "audio": "",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 53.5,
+                "end_time": 56.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, their laughter and chatter blending with the sounds of the crowd and the distant music.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, their laughter and chatter blending with the sounds of the crowd and the distant music.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_53.5_56.5",
+                    "tags": [
+                      "outdoor",
+                      "gathering",
+                      "formal",
+                      "laughter",
+                      "chatter"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_53.5_56.5",
+                      "name": "",
+                      "time": {
+                        "start": "53.5",
+                        "end": "56.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor scene"
+                      ],
+                      "scene_topic": "A group of formally dressed individuals gather around a table, laughing and chatting.",
+                      "summary": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, their laughter and chatter blending with the sounds of the crowd and the distant music.",
+                      "implications": "Social event, community gathering",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, their laughter and chatter blending with the sounds of the crowd and the distant music.",
+                        "audio": "laughter; chatter; crowd; music",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a tuxedo addresses a group of formally dressed individuals in an outdoor setting, while a woman in a black dress listens attentively. Elsewhere in the same outdoor area, a group of individuals gather around a table, laughing and chattering.",
+            "summary": "A man in a tuxedo addresses a group of formally dressed individuals in a lively outdoor setting, with a woman in a black dress listening attentively beside him. The group is surrounded by the sounds of the crowd and distant music, with laughter and chatter filling the air."
+          },
+          {
+            "level": 2,
+            "start_time": 56.5,
+            "end_time": 66.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 56.5,
+                "end_time": 66.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, engaged in animated conversations and laughter, while a man's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, engaged in animated conversations and laughter, while a man's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_56_66",
+                    "tags": [
+                      "outdoor",
+                      "gathering",
+                      "conversations",
+                      "laughter",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "individuals",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_56_66",
+                      "name": "Group Conversation",
+                      "time": {
+                        "start": "56.5",
+                        "end": "66.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_event"
+                      ],
+                      "scene_topic": "A group of people gather around a table for a lively conversation.",
+                      "summary": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, engaged in animated conversations and laughter, while a man's voice can be heard in the background.",
+                      "implications": "Social gathering, community building",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a group of formally dressed individuals gather around a table, engaged in animated conversations and laughter.",
+                        "audio": "man's voice",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of people gather in a lively outdoor setting, engaging in animated conversations and laughter while a man's voice can be heard in the background.",
+            "summary": "A group of formally dressed individuals gather in an outdoor setting, engaging in lively conversations and laughter. In the background, a man's voice can be heard, adding to the lively atmosphere."
+          },
+          {
+            "level": 2,
+            "start_time": 66.5,
+            "end_time": 73.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 66.5,
+                "end_time": 70.5,
+                "children": [],
+                "caption": "In a grand outdoor setting, a man in a tuxedo stands at the podium, addressing a large crowd gathered for a formal event, as evidenced by the formal attire and the presence of a red carpet.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "In a grand outdoor setting, a man in a tuxedo stands at the podium, addressing a large crowd gathered for a formal event, as evidenced by the formal attire and the presence of a red carpet.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_66.5_70.5",
+                    "tags": [
+                      "formal_event",
+                      "outdoor_setting",
+                      "podium",
+                      "red_carpet",
+                      "tuxedo"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "attire": "formal",
+                          "position": "at the podium"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {
+                          "attire": "formal",
+                          "size": "large"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "podium",
+                        "attributes": {
+                          "type": "formal"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "red_carpet",
+                        "attributes": {
+                          "type": "formal"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_66.5_70.5",
+                      "name": "formal event",
+                      "time": {
+                        "start": "66.5",
+                        "end": "70.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "formal_event"
+                      ],
+                      "scene_topic": "A man in a tuxedo stands at the podium, addressing a large crowd gathered for a formal event.",
+                      "summary": "In a grand outdoor setting, a man in a tuxedo stands at the podium, addressing a large crowd gathered for a formal event, as evidenced by the formal attire and the presence of a red carpet.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a grand outdoor setting, a man in a tuxedo stands at the podium, addressing a large crowd gathered for a formal event, as evidenced by the formal attire and the presence of a red carpet.",
+                        "audio": "",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 70.5,
+                "end_time": 73.5,
+                "children": [],
+                "caption": "In a grand outdoor setting, a man in a tuxedo stands at the center of a group of formally dressed individuals, his presence drawing attention as he interacts with the crowd.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "In a grand outdoor setting, a man in a tuxedo stands at the center of a group of formally dressed individuals, his presence drawing attention as he interacts with the crowd.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_70.5_73.5",
+                    "tags": [
+                      "outdoor",
+                      "formal_event",
+                      "social_gathering"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_tuxedo",
+                        "attributes": {
+                          "role": "host",
+                          "entity": "person"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "group_of_formally_dressed_individuals",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_tuxedo",
+                        "ref_object": "O001",
+                        "role": "host",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_70.5_73.5",
+                      "name": "formal_event",
+                      "time": {
+                        "start": "70.5",
+                        "end": "73.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_event"
+                      ],
+                      "scene_topic": "A man in a tuxedo stands at the center of a group of formally dressed individuals, interacting with the crowd.",
+                      "summary": "In a grand outdoor setting, a man in a tuxedo stands at the center of a group of formally dressed individuals, his presence drawing attention as he interacts with the crowd.",
+                      "implications": "Social event, formal gathering",
+                      "modalities": {
+                        "visual": "In a grand outdoor setting, a man in a tuxedo stands at the center of a group of formally dressed individuals, his presence drawing attention as he interacts with the crowd.",
+                        "audio": "",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a tuxedo stands at the center of a formal event, addressing a large crowd or interacting with a group of formally dressed individuals.",
+            "summary": "A man in a tuxedo stands at the podium in a grand outdoor setting, addressing a crowd of formally dressed individuals gathered on a red carpet. He interacts with the crowd, drawing attention to himself as he speaks."
+          }
+        ],
+        "caption": "A group of people gather in an outdoor setting for a formal event, enjoying each other's company and the lively atmosphere. A man in a tuxedo addresses the crowd or interacts with other formally dressed individuals.",
+        "summary": "A group of formally dressed individuals gather in a lively outdoor setting, surrounded by laughter, chatter, and distant music, as a man in a tuxedo addresses them from a podium. The atmosphere is festive and lively, with the man engaging with the crowd and drawing attention to himself as he speaks."
+      },
+      {
+        "level": 1,
+        "start_time": 73.5,
+        "end_time": 90.557,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 73.5,
+            "end_time": 80.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 73.5,
+                "end_time": 75.5,
+                "children": [],
+                "caption": "In a grand hall adorned with elegant decorations, a man in a tuxedo stands at the center, addressing the crowd with a microphone, while a woman in a sparkling dress stands beside him, her gaze directed towards the camera.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "In a grand hall adorned with elegant decorations, a man in a tuxedo stands at the center, addressing the crowd with a microphone, while a woman in a sparkling dress stands beside him, her gaze directed towards the camera.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_73.5_75.5",
+                    "tags": [
+                      "event",
+                      "speech",
+                      "ceremony",
+                      "celebration",
+                      "gala"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "tuxedo",
+                          "role": "speaker"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "sparkling dress",
+                          "role": "assistant"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "assistant",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_73.5_75.5",
+                      "name": "Speech at the ceremony",
+                      "time": {
+                        "start": "73.5",
+                        "end": "75.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "ceremony"
+                      ],
+                      "scene_topic": "A man and a woman stand at the center of a grand hall, addressing the crowd.",
+                      "summary": "In a grand hall adorned with elegant decorations, a man in a tuxedo stands at the center, addressing the crowd with a microphone, while a woman in a sparkling dress stands beside him, her gaze directed towards the camera.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a grand hall adorned with elegant decorations, a man in a tuxedo stands at the center, addressing the crowd with a microphone, while a woman in a sparkling dress stands beside him, her gaze directed towards the camera.",
+                        "audio": "",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 75.5,
+                "end_time": 80.5,
+                "children": [],
+                "caption": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the outdoor venue.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the outdoor venue.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_75.5_80.5",
+                    "tags": [
+                      "event",
+                      "celebrity",
+                      "red_carpet"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_tuxedo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "red_carpet",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "outdoor_venue",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_tuxedo",
+                        "ref_object": "O001",
+                        "role": "main_character",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_75.5_80.5",
+                      "name": "man_walks_down_red_carpet",
+                      "time": {
+                        "start": "75.5",
+                        "end": "80.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event"
+                      ],
+                      "scene_topic": "The man in the tuxedo walks down the red carpet, the crowd cheers and claps.",
+                      "summary": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the outdoor venue.",
+                      "implications": "Major celebrity event",
+                      "modalities": {
+                        "visual": "As the man in the tuxedo walks down the red carpet.",
+                        "audio": "cheers; claps; echoing",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "At a grand event, a man in a tuxedo and a woman in a sparkling dress are the center of attention, with the man addressing the crowd with a microphone and the woman gazing towards the camera. The man walks down the red carpet, surrounded by cheers and applause from the excited crowd.",
+            "summary": "A man in a tuxedo, accompanied by a woman in a sparkling dress, addresses a crowd from a grand hall, drawing cheers and applause as he walks down the red carpet. The atmosphere is lively and festive, with the crowd's excitement filling the outdoor venue."
+          },
+          {
+            "level": 2,
+            "start_time": 80.5,
+            "end_time": 90.557,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 80.5,
+                "end_time": 82.5,
+                "children": [],
+                "caption": "The man in the tuxedo, standing on the red carpet, smiles as he addresses the crowd, his voice echoing through the outdoor venue as he thanks everyone for coming.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The man in the tuxedo, standing on the red carpet, smiles as he addresses the crowd, his voice echoing through the outdoor venue as he thanks everyone for coming.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_80.5_82.5",
+                    "tags": [
+                      "event",
+                      "speech",
+                      "outdoor",
+                      "red_carpet",
+                      "tuxedo"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "tuxedo",
+                          "location": "red carpet",
+                          "action": "smiling",
+                          "voice": "echoing"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_80.5_82.5",
+                      "name": "Speech on the red carpet",
+                      "time": {
+                        "start": "80.5",
+                        "end": "82.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "speech"
+                      ],
+                      "scene_topic": "The man in the tuxedo addresses the crowd on the red carpet.",
+                      "summary": "The man in the tuxedo, standing on the red carpet, smiles as he addresses the crowd, his voice echoing through the outdoor venue as he thanks everyone for coming.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "The man in the tuxedo, standing on the red carpet, smiles as he addresses the crowd.",
+                        "audio": "his voice; crowd reactions",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 82.5,
+                "end_time": 87.5,
+                "children": [],
+                "caption": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the outdoor venue.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the outdoor venue.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_82.5_87.5",
+                    "tags": [
+                      "event",
+                      "celebrity",
+                      "red_carpet"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_tuxedo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "red_carpet",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "outdoor_venue",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_tuxedo",
+                        "ref_object": "O001",
+                        "role": "main_character",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_82.5_87.5",
+                      "name": "Celebrity Arrival",
+                      "time": {
+                        "start": "82.5",
+                        "end": "87.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event"
+                      ],
+                      "scene_topic": "The man in the tuxedo walks down the red carpet, and the crowd cheers and claps.",
+                      "summary": "As the man in the tuxedo walks down the red carpet, the crowd cheers and claps, their excitement echoing through the outdoor venue.",
+                      "implications": "Major celebrity news event",
+                      "modalities": {
+                        "visual": "As the man in the tuxedo walks down the red carpet.",
+                        "audio": "cheers; claps; echoing",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 87.5,
+                "end_time": 90.557,
+                "children": [],
+                "caption": "As the man in the tuxedo walks down the aisle, the crowd erupts in cheers and applause, their excitement echoing through the grand hall.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "As the man in the tuxedo walks down the aisle, the crowd erupts in cheers and applause, their excitement echoing through the grand hall.",
+                  "result": {
+                    "video_id": "BiKE_TEvmsY",
+                    "event_id": "E_BiKE_TEvmsY_87.5_90.56",
+                    "tags": [
+                      "event",
+                      "celebration",
+                      "wedding",
+                      "applause",
+                      "cheers"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in tuxedo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "grand hall",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in tuxedo",
+                        "ref_object": "O001",
+                        "role": "main actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_BiKE_TEvmsY_87.5_90.56",
+                      "name": "wedding ceremony",
+                      "time": {
+                        "start": "87.5",
+                        "end": "90.56"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "celebration"
+                      ],
+                      "scene_topic": "The man in the tuxedo walks down the aisle, and the crowd erupts in cheers and applause.",
+                      "summary": "As the man in the tuxedo walks down the aisle, the crowd erupts in cheers and applause, their excitement echoing through the grand hall.",
+                      "implications": "Major life event, significant milestone",
+                      "modalities": {
+                        "visual": "As the man in the tuxedo walks down the aisle.",
+                        "audio": "cheers; applause; echoing",
+                        "speech": "her experience playing a role in a production, enjoying the opportunity to put her own spin on the character and have fun."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The man in the tuxedo addresses the crowd with a smile, thanking them for attending, as he walks down the red carpet and aisle, eliciting cheers and applause from the excited crowd.",
+            "summary": "The man in the tuxedo, standing on the red carpet, thanks the crowd for coming and is met with cheers and applause as he walks down the carpet and aisle. The crowd's excitement echoes through the outdoor venue and grand hall, filling the air with energy and celebration."
+          }
+        ],
+        "caption": "At a grand event, a man in a tuxedo and a woman in a sparkling dress are the center of attention, with the man delivering a speech and the woman smiling and gazing towards the camera.",
+        "summary": "A man in a tuxedo, accompanied by a woman in a sparkling dress, walks down the red carpet to a crowd of cheering and applauding people in a grand hall, filling the outdoor venue with lively and festive energy. He thanks the crowd for coming, receiving more cheers and applause as he makes his way down the carpet and aisle."
+      }
+    ],
+    "caption": "A man in a tuxedo is greeted with cheers and applause as he walks down a red carpet at an event, where he delivers a speech to a crowd of people.",
+    "summary": "A group of formally dressed individuals gathered in a lively outdoor setting, awaiting an event, as a man in a tuxedo walked down the red carpet, greeted by a cheering crowd. The atmosphere was festive and lively, with the man engaging with the crowd and drawing attention to himself as he spoke, accompanied by a woman in a sparkling dress."
+  }
+}

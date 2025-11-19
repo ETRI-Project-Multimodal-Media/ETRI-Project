@@ -1,0 +1,1693 @@
+{
+  "video_id": "AI86J_4Jtnk",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 122.96,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 44.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 18.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 5.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 0.0,
+                    "end_time": 5.5,
+                    "children": [],
+                    "caption": "A man in a suit walks down a hallway, passing by a group of people, as a woman's voice can be heard speaking about a \"big case\" and a \"big trial.\"",
+                    "postprocess": {
+                      "event_id": 0,
+                      "original_answer": "A man in a suit walks down a hallway, passing by a group of people, as a woman's voice can be heard speaking about a \"big case\" and a \"big trial.\"",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_0_5.5",
+                        "tags": [
+                          "man",
+                          "suit",
+                          "hallway",
+                          "people",
+                          "voice",
+                          "big_case",
+                          "big_trial"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "woman",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "actor",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "woman",
+                            "ref_object": "O002",
+                            "role": "voice",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_0_5.5",
+                          "name": "man walks down hallway",
+                          "time": {
+                            "start": "0",
+                            "end": "5.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person",
+                            "event"
+                          ],
+                          "scene_topic": "A man in a suit walks down a hallway, passing by a group of people, as a woman's voice can be heard speaking about a 'big case' and a 'big trial.'",
+                          "summary": "A man in a suit walks down a hallway, passing by a group of people, as a woman's voice can be heard speaking about a \"big case\" and a \"big trial.\"",
+                          "implications": "Major news event",
+                          "modalities": {
+                            "visual": "A man in a suit walks down a hallway, passing by a group of people, as a woman's voice can be heard speaking about a 'big case' and a 'big trial'.",
+                            "audio": "woman's voice; 'big case'; 'big trial'",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man in a suit walks down a hallway while a woman's voice speaks about a significant legal case or trial.",
+                "summary": "A man in a suit walks down a hallway, passing by a group of people, as a woman's voice is heard discussing a significant case and trial."
+              },
+              {
+                "level": 3,
+                "start_time": 5.5,
+                "end_time": 18.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 5.5,
+                    "end_time": 10.5,
+                    "children": [],
+                    "caption": "A woman, identified as Houston's Harris County District Attorney, speaks to the media about the case of a man accused of killing his wife and daughter, her voice clear and confident as she addresses the crowd gathered in the courtroom.",
+                    "postprocess": {
+                      "event_id": 1,
+                      "original_answer": "A woman, identified as Houston's Harris County District Attorney, speaks to the media about the case of a man accused of killing his wife and daughter, her voice clear and confident as she addresses the crowd gathered in the courtroom.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_5_10",
+                        "tags": [
+                          "courtroom",
+                          "homicide",
+                          "district_attorney",
+                          "media"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "role": "District Attorney",
+                              "location": "courtroom"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "Houston's Harris County District Attorney",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_5_10",
+                          "name": "Press conference",
+                          "time": {
+                            "start": "5.5",
+                            "end": "10.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "crime news"
+                          ],
+                          "scene_topic": "A woman, identified as Houston's Harris County District Attorney, speaks to the media about the case of a man accused of killing his wife and daughter.",
+                          "summary": "A woman, identified as Houston's Harris County District Attorney, speaks to the media about the case of a man accused of killing his wife and daughter, her voice clear and confident as she addresses the crowd gathered in the courtroom.",
+                          "implications": "Major crime news event",
+                          "modalities": {
+                            "visual": "A woman, identified as Houston's Harris County District Attorney, speaks to the media about the case of a man accused of killing his wife and daughter, her voice clear and confident as she addresses the crowd gathered in the courtroom.",
+                            "audio": "speaks; voice; crowd reactions",
+                            "speech": "The family of Jasmine is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 10.5,
+                    "end_time": 13.5,
+                    "children": [],
+                    "caption": "A woman, wearing a black blazer and a white blouse, stands before a microphone, addressing a crowd gathered in a public space, her voice amplified by a microphone as she speaks about the case of a man named Travis, his arrest, and the community's reaction.",
+                    "postprocess": {
+                      "event_id": 2,
+                      "original_answer": "A woman, wearing a black blazer and a white blouse, stands before a microphone, addressing a crowd gathered in a public space, her voice amplified by a microphone as she speaks about the case of a man named Travis, his arrest, and the community's reaction.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_10.5_13.5",
+                        "tags": [
+                          "community_reaction",
+                          "travis_case",
+                          "public_speech",
+                          "arrest"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "clothing": "black blazer and white blouse",
+                              "location": "public space",
+                              "equipment": "microphone"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_10.5_13.5",
+                          "name": "Public Speech about Travis Case",
+                          "time": {
+                            "start": "10.5",
+                            "end": "13.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "community news"
+                          ],
+                          "scene_topic": "A woman speaks about the Travis case to a crowd in a public space.",
+                          "summary": "A woman, wearing a black blazer and a white blouse, stands before a microphone, addressing a crowd gathered in a public space, her voice amplified by a microphone as she speaks about the case of a man named Travis, his arrest, and the community's reaction.",
+                          "implications": "Major community news event",
+                          "modalities": {
+                            "visual": "A woman stands before a microphone, wearing a black blazer and a white blouse.",
+                            "audio": "speaks; amplified voice",
+                            "speech": "The family of Jasmine is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 13.5,
+                    "end_time": 15.5,
+                    "children": [],
+                    "caption": "A woman, wearing a black blazer and a white blouse, stands before a microphone, addressing a crowd gathered in front of a building with a large glass window, her voice amplified through a microphone as she speaks about the case of a young man who was shot and killed by a police officer.",
+                    "postprocess": {
+                      "event_id": 3,
+                      "original_answer": "A woman, wearing a black blazer and a white blouse, stands before a microphone, addressing a crowd gathered in front of a building with a large glass window, her voice amplified through a microphone as she speaks about the case of a young man who was shot and killed by a police officer.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_13.5_15.5",
+                        "tags": [
+                          "police",
+                          "shooting",
+                          "protest",
+                          "speech",
+                          "case"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "clothing": "black blazer and white blouse",
+                              "location": "in front of a building with a large glass window"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "building",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_13.5_15.5",
+                          "name": "speech about police shooting",
+                          "time": {
+                            "start": "13.5",
+                            "end": "15.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "police violence",
+                            "social justice"
+                          ],
+                          "scene_topic": "A woman speaks about a police shooting at a protest",
+                          "summary": "A woman, wearing a black blazer and a white blouse, stands before a microphone, addressing a crowd gathered in front of a building with a large glass window, her voice amplified through a microphone as she speaks about the case of a young man who was shot and killed by a police officer.",
+                          "implications": "Major social justice and police accountability news event",
+                          "modalities": {
+                            "visual": "A woman stands before a microphone, addressing a crowd in front of a building with a large glass window, wearing a black blazer and a white blouse.",
+                            "audio": "speaks",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 15.5,
+                    "end_time": 18.5,
+                    "children": [],
+                    "caption": "A man in a white shirt, standing before a crowd, passionately addresses them, his voice amplified by a microphone as he speaks about the importance of community and unity.",
+                    "postprocess": {
+                      "event_id": 4,
+                      "original_answer": "A man in a white shirt, standing before a crowd, passionately addresses them, his voice amplified by a microphone as he speaks about the importance of community and unity.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_15.5_18.5",
+                        "tags": [
+                          "community",
+                          "unity",
+                          "public_speech",
+                          "importance"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "clothing": "white_shirt",
+                              "position": "standing",
+                              "location": "before_a_crowd"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "crowd",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_15.5_18.5",
+                          "name": "public_speech",
+                          "time": {
+                            "start": "15.5",
+                            "end": "18.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public_speech"
+                          ],
+                          "scene_topic": "A man passionately addresses a crowd about community and unity.",
+                          "summary": "A man in a white shirt, standing before a crowd, passionately addresses them, his voice amplified by a microphone as he speaks about the importance of community and unity.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "A man in a white shirt, standing before a crowd.",
+                            "audio": "Passionate speech; amplified voice.",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A confident and clear-voiced woman, identified as the Harris County District Attorney, speaks to the media about a man accused of killing his wife and daughter. Another woman, wearing a black blazer and white blouse, addresses a crowd gathered in a public space about the arrest of a man named Travis and the community's reaction. A third woman, also wearing a black blazer and white blouse, speaks to a crowd gathered in front of a building about the case of a young man who was shot and killed by a police officer. Finally, a man",
+                "summary": "Harris County District Attorney addresses the media about the case of Travis, a man accused of killing his wife and daughter, and the community's reaction to his arrest. She speaks confidently and clearly, emphasizing the importance of community and unity."
+              }
+            ],
+            "caption": "A district attorney speaks to the media about a high-profile murder case, while other women in the community address the public about the arrest of the accused and the community's reaction.",
+            "summary": "Harris County District Attorney addresses the media about the case of Travis, a man accused of killing his wife and daughter, emphasizing the importance of community and unity."
+          },
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 44.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 18.5,
+                "end_time": 26.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 18.5,
+                    "end_time": 22.5,
+                    "children": [],
+                    "caption": "A man, wearing a white cap and a black shirt, stands before a crowd, passionately addressing them as he gestures with his hands.",
+                    "postprocess": {
+                      "event_id": 5,
+                      "original_answer": "A man, wearing a white cap and a black shirt, stands before a crowd, passionately addressing them as he gestures with his hands.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_18.5_22.5",
+                        "tags": [
+                          "man",
+                          "public_speech",
+                          "gestures",
+                          "addressing"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "wearing": "white cap and black shirt"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_18.5_22.5",
+                          "name": "public speech",
+                          "time": {
+                            "start": "18.5",
+                            "end": "22.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public_speech"
+                          ],
+                          "scene_topic": "A man passionately addresses a crowd.",
+                          "summary": "A man, wearing a white cap and a black shirt, stands before a crowd, passionately addressing them as he gestures with his hands.",
+                          "implications": "Major public speaking event",
+                          "modalities": {
+                            "visual": "A man, wearing a white cap and a black shirt, stands before a crowd, gesturing with his hands.",
+                            "audio": "",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 22.5,
+                    "end_time": 26.5,
+                    "children": [],
+                    "caption": "A man, wearing a white cap and a black shirt, addresses a large crowd gathered in a public space, his voice amplified by a microphone as he speaks about the importance of community and unity.",
+                    "postprocess": {
+                      "event_id": 6,
+                      "original_answer": "A man, wearing a white cap and a black shirt, addresses a large crowd gathered in a public space, his voice amplified by a microphone as he speaks about the importance of community and unity.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_22.5_26.5",
+                        "tags": [
+                          "community",
+                          "unity",
+                          "public_speech",
+                          "man",
+                          "crowd"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "wearing": "black shirt"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "crowd",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_22.5_26.5",
+                          "name": "public speech",
+                          "time": {
+                            "start": "22.5",
+                            "end": "26.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public event"
+                          ],
+                          "scene_topic": "A man gives a public speech about community and unity.",
+                          "summary": "A man, wearing a white cap and a black shirt, addresses a large crowd gathered in a public space, his voice amplified by a microphone as he speaks about the importance of community and unity.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "A man, wearing a white cap and a black shirt, addresses a large crowd gathered in a public space.",
+                            "audio": "speaks",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man passionately addresses a large crowd, emphasizing the importance of community and unity.",
+                "summary": "A man, dressed in a white cap and black shirt, passionately addresses a crowd in a public space, emphasizing the significance of community and unity."
+              },
+              {
+                "level": 3,
+                "start_time": 26.5,
+                "end_time": 38.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 26.5,
+                    "end_time": 30.5,
+                    "children": [],
+                    "caption": "A man, wearing a white t-shirt with the word \"HUSTLE\" printed on it, addresses a large crowd gathered in a park, his voice amplified by a microphone as he speaks about the importance of unity and the need for change.",
+                    "postprocess": {
+                      "event_id": 7,
+                      "original_answer": "A man, wearing a white t-shirt with the word \"HUSTLE\" printed on it, addresses a large crowd gathered in a park, his voice amplified by a microphone as he speaks about the importance of unity and the need for change.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_26.5_30.5",
+                        "tags": [
+                          "unity",
+                          "change",
+                          "speech",
+                          "crowd",
+                          "park"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "clothing": "white t-shirt",
+                              "text": "HUSTLE"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_26.5_30.5",
+                          "name": "speech",
+                          "time": {
+                            "start": "26.5",
+                            "end": "30.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "speech",
+                            "public speaking"
+                          ],
+                          "scene_topic": "A man gives a speech about unity and change to a crowd in a park.",
+                          "summary": "A man, wearing a white t-shirt with the word \"HUSTLE\" printed on it, addresses a large crowd gathered in a park, his voice amplified by a microphone as he speaks about the importance of unity and the need for change.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "A man, wearing a white t-shirt with the word 'HUSTLE' printed on it, addresses a large crowd gathered in a park.",
+                            "audio": "speaks",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 30.5,
+                    "end_time": 33.5,
+                    "children": [],
+                    "caption": "A woman, her face etched with concern, stands before a crowd, her voice rising above the cheers as she speaks about the case, her words echoing the emotions of the gathered supporters.",
+                    "postprocess": {
+                      "event_id": 8,
+                      "original_answer": "A woman, her face etched with concern, stands before a crowd, her voice rising above the cheers as she speaks about the case, her words echoing the emotions of the gathered supporters.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_30.5_33.5",
+                        "tags": [
+                          "woman",
+                          "crowd",
+                          "concern",
+                          "speech",
+                          "supporters"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "concern": "true",
+                              "speaking": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "crowd",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_30.5_33.5",
+                          "name": "woman speaks to crowd",
+                          "time": {
+                            "start": "30.5",
+                            "end": "33.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person",
+                            "public speaking"
+                          ],
+                          "scene_topic": "A woman speaks to a crowd about a case, her words echoing the emotions of the gathered supporters.",
+                          "summary": "A woman, her face etched with concern, stands before a crowd, her voice rising above the cheers as she speaks about the case, her words echoing the emotions of the gathered supporters.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "A woman stands before a crowd, her face etched with concern.",
+                            "audio": "speaks; cheers; echoing emotions",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 33.5,
+                    "end_time": 38.5,
+                    "children": [],
+                    "caption": "A woman, dressed in a black blazer, stands before a microphone, addressing a large crowd gathered in a public space, her voice amplified through a microphone as she speaks about the importance of the community coming together.",
+                    "postprocess": {
+                      "event_id": 9,
+                      "original_answer": "A woman, dressed in a black blazer, stands before a microphone, addressing a large crowd gathered in a public space, her voice amplified through a microphone as she speaks about the importance of the community coming together.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_335_385",
+                        "tags": [
+                          "community",
+                          "importance",
+                          "together",
+                          "public_space",
+                          "address"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "dressed": "black blazer",
+                              "speaking": "about importance of community"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "crowd",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_335_385",
+                          "name": "woman addresses crowd",
+                          "time": {
+                            "start": "33.5",
+                            "end": "38.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public speaking"
+                          ],
+                          "scene_topic": "A woman addresses a crowd in a public space",
+                          "summary": "A woman, dressed in a black blazer, stands before a microphone, addressing a large crowd gathered in a public space, her voice amplified through a microphone as she speaks about the importance of the community coming together.",
+                          "implications": "Major community event",
+                          "modalities": {
+                            "visual": "A woman stands before a microphone, addressing a large crowd in a public space, dressed in a black blazer.",
+                            "audio": "speaks",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A passionate speaker addresses a large crowd in a park, emphasizing the importance of unity and change. Another speaker, a woman, stands before a crowd, expressing concern and emotion about a specific case, while a third speaker, also a woman, urges the community to come together.",
+                "summary": "A man and two women address crowds in a park and public space, emphasizing the need for unity and change, with their voices amplified by microphones. They urge the community to come together, echoing the emotions of the gathered supporters."
+              },
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 44.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 38.5,
+                    "end_time": 41.5,
+                    "children": [],
+                    "caption": "A woman, wearing a black blazer and a white blouse, stands before a microphone, addressing a crowd gathered in front of a building, her voice amplified through a microphone as she speaks about the case of a young man who was shot and killed by a police officer.",
+                    "postprocess": {
+                      "event_id": 10,
+                      "original_answer": "A woman, wearing a black blazer and a white blouse, stands before a microphone, addressing a crowd gathered in front of a building, her voice amplified through a microphone as she speaks about the case of a young man who was shot and killed by a police officer.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_38.5_41.5",
+                        "tags": [
+                          "police",
+                          "shooting",
+                          "protest",
+                          "speech",
+                          "case"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "clothing": "black blazer and white blouse",
+                              "location": "before a microphone",
+                              "action": "speaking"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "building",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_38.5_41.5",
+                          "name": "speech about police shooting",
+                          "time": {
+                            "start": "38.5",
+                            "end": "41.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "police violence"
+                          ],
+                          "scene_topic": "A woman speaks about a police shooting at a protest",
+                          "summary": "A woman, wearing a black blazer and a white blouse, stands before a microphone, addressing a crowd gathered in front of a building, her voice amplified through a microphone as she speaks about the case of a young man who was shot and killed by a police officer.",
+                          "implications": "Major news event",
+                          "modalities": {
+                            "visual": "A woman stands before a microphone, wearing a black blazer and a white blouse, addressing a crowd in front of a building.",
+                            "audio": "speaks; amplified voice; shot; killed; police officer.",
+                            "speech": "The family of Jasmine is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 41.5,
+                    "end_time": 44.5,
+                    "children": [],
+                    "caption": "A woman, dressed in a black blazer, stands before a microphone, addressing a crowd gathered in a public space, her voice amplified through a microphone as she speaks about the case of a man who was wrongly accused of murder.",
+                    "postprocess": {
+                      "event_id": 11,
+                      "original_answer": "A woman, dressed in a black blazer, stands before a microphone, addressing a crowd gathered in a public space, her voice amplified through a microphone as she speaks about the case of a man who was wrongly accused of murder.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_41.5_44.5",
+                        "tags": [
+                          "public_speech",
+                          "wrongful_acquisition",
+                          "murder_case"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "clothing": "black blazer",
+                              "location": "public space",
+                              "equipment": "microphone"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_41.5_44.5",
+                          "name": "Public Speech on Wrongful Murder Case",
+                          "time": {
+                            "start": "41.5",
+                            "end": "44.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public_speech",
+                            "news"
+                          ],
+                          "scene_topic": "A woman speaks about a wrongful murder case to a crowd.",
+                          "summary": "A woman, dressed in a black blazer, stands before a microphone, addressing a crowd gathered in a public space, her voice amplified through a microphone as she speaks about the case of a man who was wrongly accused of murder.",
+                          "implications": "Major news event",
+                          "modalities": {
+                            "visual": "A woman stands before a microphone, addressing a crowd in a public space, dressed in a black blazer.",
+                            "audio": "speaking; amplified voice",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A woman speaks to a crowd about a case of police brutality, while another woman speaks to a crowd about a case of wrongful accusation.",
+                "summary": "A woman addresses a crowd about the case of a young man shot and killed by a police officer, speaking out against the tragedy."
+              }
+            ],
+            "caption": "A passionate speaker addresses a crowd, emphasizing the importance of unity and change, while another speaker expresses concern and emotion about a specific case. A third speaker urges the community to come together to address issues of police brutality and wrongful accusation.",
+            "summary": "Speakers in public spaces and parks emphasized the importance of unity and change, urging the community to come together and echoing the emotions of gathered supporters. A woman also spoke out against the tragic case of a young man shot and killed by a police officer, highlighting the need for justice and accountability."
+          }
+        ],
+        "caption": "In a high-profile murder case, a district attorney speaks to the media about the arrest of the accused, while other women in the community address the public about the community's reaction. A passionate speaker emphasizes the importance of unity and change, while another speaker expresses concern and emotion about a specific case. A third speaker urges the community to come together to address issues of police brutality and wrongful accusation.",
+        "summary": "The Harris County District Attorney emphasized the importance of community and unity in the wake of a tragic case involving a man accused of killing his wife and daughter, while speakers in public spaces and parks echoed the sentiment, urging the community to come together."
+      },
+      {
+        "level": 1,
+        "start_time": 44.5,
+        "end_time": 74.5,
+        "children": [],
+        "caption": "A woman, dressed in a black blazer, speaks into a microphone, her voice amplified as she addresses a crowd gathered in a public space, the bustling atmosphere punctuated by the sounds of a car engine starting and idling nearby.",
+        "postprocess": {
+          "event_id": 12,
+          "original_answer": "A woman, dressed in a black blazer, speaks into a microphone, her voice amplified as she addresses a crowd gathered in a public space, the bustling atmosphere punctuated by the sounds of a car engine starting and idling nearby.",
+          "result": {
+            "video_id": "AI86J_4Jtnk",
+            "event_id": "E_AI86J_4Jtnk_44_74",
+            "tags": [
+              "public_speech",
+              "woman",
+              "crowd",
+              "microphone",
+              "car_noise"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "woman",
+                "attributes": {
+                  "dressed": "black blazer",
+                  "speaking": "into a microphone"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "microphone",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "crowd",
+                "attributes": {}
+              },
+              {
+                "object_id": "O004",
+                "name": "car",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_AI86J_4Jtnk_44_74",
+              "name": "public speech",
+              "time": {
+                "start": "44.5",
+                "end": "74.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "public event"
+              ],
+              "scene_topic": "A woman speaks into a microphone in a public space",
+              "summary": "A woman, dressed in a black blazer, speaks into a microphone, her voice amplified as she addresses a crowd gathered in a public space, the bustling atmosphere punctuated by the sounds of a car engine starting and idling nearby.",
+              "implications": "Major public event",
+              "modalities": {
+                "visual": "A woman, dressed in a black blazer, speaks into a microphone, her voice amplified as she addresses a crowd gathered in a public space, the bustling atmosphere.",
+                "audio": "speaks; car engine starting; car engine idling.",
+                "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 74.5,
+        "end_time": 79.5,
+        "children": [],
+        "caption": "In a courtroom, a woman in a black blazer speaks into a microphone, her voice clear and confident as she addresses the audience.",
+        "postprocess": {
+          "event_id": 13,
+          "original_answer": "In a courtroom, a woman in a black blazer speaks into a microphone, her voice clear and confident as she addresses the audience.",
+          "result": {
+            "video_id": "AI86J_4Jtnk",
+            "event_id": "E_AI86J_4Jtnk_74_79",
+            "tags": [
+              "courtroom",
+              "woman",
+              "black_blazer",
+              "microphone",
+              "audience"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "woman",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_AI86J_4Jtnk_74_79",
+              "name": "woman speaks in courtroom",
+              "time": {
+                "start": "74.5",
+                "end": "79.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "person speaking"
+              ],
+              "scene_topic": "A woman speaks confidently in a courtroom.",
+              "summary": "In a courtroom, a woman in a black blazer speaks into a microphone, her voice clear and confident as she addresses the audience.",
+              "implications": "Major communication event",
+              "modalities": {
+                "visual": "In a courtroom, a woman in a black blazer speaks into a microphone.",
+                "audio": "speaks; voice",
+                "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 79.5,
+        "end_time": 93.5,
+        "children": [],
+        "caption": "A woman, wearing a black blazer and a patterned top, speaks into a microphone, her voice clear and audible as she addresses the crowd gathered in a public space, her words drowned out by the cheers and shouts of the crowd.",
+        "postprocess": {
+          "event_id": 14,
+          "original_answer": "A woman, wearing a black blazer and a patterned top, speaks into a microphone, her voice clear and audible as she addresses the crowd gathered in a public space, her words drowned out by the cheers and shouts of the crowd.",
+          "result": {
+            "video_id": "AI86J_4Jtnk",
+            "event_id": "E_AI86J_4Jtnk_795_935",
+            "tags": [
+              "public_speech",
+              "crowd",
+              "woman",
+              "microphone",
+              "audible"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "woman",
+                "attributes": {
+                  "clothing": "black blazer",
+                  "top": "patterned"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "microphone",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "crowd",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_AI86J_4Jtnk_795_935",
+              "name": "",
+              "time": {
+                "start": "79.5",
+                "end": "93.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "public_speech"
+              ],
+              "scene_topic": "A woman speaks into a microphone, her voice clear and audible, as the crowd cheers and shouts.",
+              "summary": "A woman, wearing a black blazer and a patterned top, speaks into a microphone, her voice clear and audible as she addresses the crowd gathered in a public space, her words drowned out by the cheers and shouts of the crowd.",
+              "implications": "Major public event",
+              "modalities": {
+                "visual": "A woman, wearing a black blazer and a patterned top, speaks into a microphone, her voice clear and audible as she addresses the crowd gathered in a public space.",
+                "audio": "speaks; cheers; shouts",
+                "speech": "The family of Jasmine is seeking justice and closure after a suspect was charged and taken into custody."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 93.5,
+        "end_time": 122.96,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 93.5,
+            "end_time": 101.5,
+            "children": [],
+            "caption": "A woman, standing before a microphone in a professional setting, addresses the crowd, her voice amplified as she speaks about the importance of the case and the community's support for the family.",
+            "postprocess": {
+              "event_id": 15,
+              "original_answer": "A woman, standing before a microphone in a professional setting, addresses the crowd, her voice amplified as she speaks about the importance of the case and the community's support for the family.",
+              "result": {
+                "video_id": "AI86J_4Jtnk",
+                "event_id": "E_AI86J_4Jtnk_93_101",
+                "tags": [
+                  "community",
+                  "family",
+                  "importance",
+                  "support"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_AI86J_4Jtnk_93_101",
+                  "name": "woman addresses crowd",
+                  "time": {
+                    "start": "93.5",
+                    "end": "101.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "community news"
+                  ],
+                  "scene_topic": "A woman speaks about the importance of the case and the community's support for the family.",
+                  "summary": "A woman, standing before a microphone in a professional setting, addresses the crowd, her voice amplified as she speaks about the importance of the case and the community's support for the family.",
+                  "implications": "Major community news event",
+                  "modalities": {
+                    "visual": "A woman standing before a microphone in a professional setting addresses the crowd.",
+                    "audio": "speaks",
+                    "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 101.5,
+            "end_time": 116.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 101.5,
+                "end_time": 107.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 101.5,
+                    "end_time": 107.5,
+                    "children": [],
+                    "caption": "In a courtroom, a man in a suit stands at a podium, addressing the audience with a serious expression, while a woman in a black blazer stands beside him, listening attentively.",
+                    "postprocess": {
+                      "event_id": 16,
+                      "original_answer": "In a courtroom, a man in a suit stands at a podium, addressing the audience with a serious expression, while a woman in a black blazer stands beside him, listening attentively.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_101_107",
+                        "tags": [
+                          "courtroom",
+                          "lawyer",
+                          "judge"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man in suit",
+                            "attributes": {
+                              "expression": "serious"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "woman in black blazer",
+                            "attributes": {
+                              "expression": "attentive"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man in suit",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "woman in black blazer",
+                            "ref_object": "O002",
+                            "role": "listener",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_101_107",
+                          "name": "Courtroom scene",
+                          "time": {
+                            "start": "101.5",
+                            "end": "107.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person",
+                            "event"
+                          ],
+                          "scene_topic": "A man addresses the audience in a courtroom.",
+                          "summary": "In a courtroom, a man in a suit stands at a podium, addressing the audience with a serious expression, while a woman in a black blazer stands beside him, listening attentively.",
+                          "implications": "Major news event",
+                          "modalities": {
+                            "visual": "In a courtroom, a man in a suit stands at a podium, addressing the audience with a serious expression, while a woman in a black blazer stands beside him, listening attentively.",
+                            "audio": "",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A lawyer delivers a serious and attentive presentation in a courtroom, accompanied by a colleague.",
+                "summary": "A man in a suit stands at a podium in a courtroom, addressing the audience with a serious expression, while a woman in a black blazer listens attentively beside him."
+              },
+              {
+                "level": 3,
+                "start_time": 107.5,
+                "end_time": 116.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 107.5,
+                    "end_time": 109.5,
+                    "children": [],
+                    "caption": "In a courtroom, a man in a suit stands at a podium, addressing the audience with a serious expression, while a woman in a black dress stands beside him, listening attentively.",
+                    "postprocess": {
+                      "event_id": 17,
+                      "original_answer": "In a courtroom, a man in a suit stands at a podium, addressing the audience with a serious expression, while a woman in a black dress stands beside him, listening attentively.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_107.5_109.5",
+                        "tags": [
+                          "courtroom",
+                          "lawyer",
+                          "judge"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man in a suit",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "woman in a black dress",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "podium",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man in a suit",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "woman in a black dress",
+                            "ref_object": "O002",
+                            "role": "listener",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_107.5_109.5",
+                          "name": "man addresses the audience",
+                          "time": {
+                            "start": "107.5",
+                            "end": "109.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "non-violent scene"
+                          ],
+                          "scene_topic": "A man addresses the audience in a courtroom.",
+                          "summary": "In a courtroom, a man in a suit stands at a podium, addressing the audience with a serious expression, while a woman in a black dress stands beside him, listening attentively.",
+                          "implications": "Major news event",
+                          "modalities": {
+                            "visual": "In a courtroom, a man in a suit stands at a podium, addressing the audience with a serious expression, while a woman in a black dress stands beside him, listening attentively.",
+                            "audio": "",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 109.5,
+                    "end_time": 112.5,
+                    "children": [],
+                    "caption": "In a professional setting, a man in a suit delivers a speech or presentation, his serious expression and gestures conveying the importance of the topic.",
+                    "postprocess": {
+                      "event_id": 18,
+                      "original_answer": "In a professional setting, a man in a suit delivers a speech or presentation, his serious expression and gestures conveying the importance of the topic.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_109_112",
+                        "tags": [
+                          "professional_setting",
+                          "speech",
+                          "presentation",
+                          "serious_expression",
+                          "gestures"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "actor": "man",
+                              "expression": "serious",
+                              "gestures": "conveying_importance"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_109_112",
+                          "name": "speech or presentation",
+                          "time": {
+                            "start": "109.5",
+                            "end": "112.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "professional_setting"
+                          ],
+                          "scene_topic": "A man delivers a serious speech or presentation.",
+                          "summary": "In a professional setting, a man in a suit delivers a speech or presentation, his serious expression and gestures conveying the importance of the topic.",
+                          "implications": "Major communication event",
+                          "modalities": {
+                            "visual": "A man in a suit delivers a speech or presentation, his serious expression and gestures conveying the importance of the topic.",
+                            "audio": "",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 112.5,
+                    "end_time": 116.5,
+                    "children": [],
+                    "caption": "In a professional setting, a man in a suit delivers a speech or presentation, using hand gestures to emphasize his points while standing in front of a backdrop with a logo.",
+                    "postprocess": {
+                      "event_id": 19,
+                      "original_answer": "In a professional setting, a man in a suit delivers a speech or presentation, using hand gestures to emphasize his points while standing in front of a backdrop with a logo.",
+                      "result": {
+                        "video_id": "AI86J_4Jtnk",
+                        "event_id": "E_AI86J_4Jtnk_112_116",
+                        "tags": [
+                          "professional_setting",
+                          "man_in_suit",
+                          "speech",
+                          "presentation",
+                          "hand_gestures"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man_in_suit",
+                            "attributes": {
+                              "actor": "man",
+                              "role": "speaker",
+                              "setting": "professional"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "backdrop",
+                            "attributes": {
+                              "type": "logo"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man_in_suit",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_AI86J_4Jtnk_112_116",
+                          "name": "speech_or_presentation",
+                          "time": {
+                            "start": "112.5",
+                            "end": "116.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "professional_event"
+                          ],
+                          "scene_topic": "A man delivers a speech or presentation in a professional setting.",
+                          "summary": "In a professional setting, a man in a suit delivers a speech or presentation, using hand gestures to emphasize his points while standing in front of a backdrop with a logo.",
+                          "implications": "Major professional event",
+                          "modalities": {
+                            "visual": "A man in a suit delivers a speech or presentation, using hand gestures, standing in front of a backdrop with a logo.",
+                            "audio": "",
+                            "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man in a suit delivers a serious speech or presentation in a professional setting, conveying importance and using hand gestures to emphasize his points.",
+                "summary": "A man in a suit delivers a serious and professional speech or presentation, using hand gestures to emphasize his points, while a woman in a black dress listens attentively. The setting is a professional environment, with a backdrop featuring a logo, conveying the importance of the topic."
+              }
+            ],
+            "caption": "A lawyer delivers a professional and authoritative presentation in a courtroom, while a man in a suit delivers a serious speech or presentation in a professional setting, using hand gestures to emphasize his points.",
+            "summary": "A man delivers a serious and professional speech or presentation in a courtroom setting, using hand gestures to emphasize his points, while a woman listens attentively beside him. The backdrop features a logo, conveying the importance of the topic in a professional environment."
+          },
+          {
+            "level": 2,
+            "start_time": 116.5,
+            "end_time": 122.96,
+            "children": [],
+            "caption": "A group of men in suits walk down a hallway, their footsteps echoing as one of them, wearing a striped shirt, turns to address the camera, his voice audible as he speaks about the case.",
+            "postprocess": {
+              "event_id": 20,
+              "original_answer": "A group of men in suits walk down a hallway, their footsteps echoing as one of them, wearing a striped shirt, turns to address the camera, his voice audible as he speaks about the case.",
+              "result": {
+                "video_id": "AI86J_4Jtnk",
+                "event_id": "E_AI86J_4Jtnk_116.5_122.96",
+                "tags": [
+                  "group",
+                  "men",
+                  "suits",
+                  "hallway",
+                  "footsteps"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_AI86J_4Jtnk_116.5_122.96",
+                  "name": "",
+                  "time": {
+                    "start": "116.5",
+                    "end": "122.96"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "A group of men in suits walk down a hallway, one of them turns to address the camera.",
+                  "summary": "A group of men in suits walk down a hallway, their footsteps echoing as one of them, wearing a striped shirt, turns to address the camera, his voice audible as he speaks about the case.",
+                  "implications": "Major news event",
+                  "modalities": {
+                    "visual": "A group of men in suits walk down a hallway, one of them wearing a striped shirt turns to address the camera.",
+                    "audio": "footsteps; voice speaking about the case",
+                    "speech": "The family of Jasmine, a seven-year-old who was shot in a mistaken identity incident, is seeking justice and closure after a suspect was charged and taken into custody."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A lawyer delivers a passionate speech in a professional setting, while a group of men in suits discuss a legal case in a dramatic and authoritative manner.",
+        "summary": "A professional setting is the backdrop for a woman's impassioned speech and a man's serious presentation, both emphasizing the importance of a case and the community's support for the family. Meanwhile, a group of men in suits discuss the case, with one of them speaking directly to the camera about the topic."
+      }
+    ],
+    "caption": "In a high-profile murder case, a district attorney speaks to the media about the arrest of the accused, while other women in the community address the public about the community's reaction. A passionate speaker emphasizes the importance of unity and change, while another speaker expresses concern and emotion about a specific case. A third speaker urges the community to come together to address issues of police brutality and wrongful accusation.\n\nMeanwhile, a woman in a black blazer speaks into a microphone, her voice amplified as she addresses a crowd gathered",
+    "summary": "In the wake of a tragic case, community leaders and residents emphasized the importance of unity and coming together, with speakers in public spaces and a courtroom urging the community to support the family."
+  }
+}

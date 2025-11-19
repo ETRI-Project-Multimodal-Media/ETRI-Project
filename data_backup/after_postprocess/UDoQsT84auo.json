@@ -1,0 +1,1720 @@
+{
+  "video_id": "UDoQsT84auo",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 76.04,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 38.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 15.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 6.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 0.0,
+                    "end_time": 4.5,
+                    "children": [],
+                    "caption": "A man, dressed in traditional Middle Eastern attire, stands in a serene garden, his hands clasped in prayer as he delivers a speech to a large, attentive crowd gathered under a canopy of trees.",
+                    "postprocess": {
+                      "event_id": 0,
+                      "original_answer": "A man, dressed in traditional Middle Eastern attire, stands in a serene garden, his hands clasped in prayer as he delivers a speech to a large, attentive crowd gathered under a canopy of trees.",
+                      "result": {
+                        "video_id": "UdoqsT84auo",
+                        "event_id": "E_UdoqsT84auo_0_4.5",
+                        "tags": [
+                          "middle_east",
+                          "garden",
+                          "prayer",
+                          "speech",
+                          "crowd"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "attire": "traditional_middle_eastern",
+                              "position": "standing",
+                              "action": "prayer",
+                              "location": "garden"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "garden",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "canopy",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "crowd",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoqsT84auo_0_4.5",
+                          "name": "speech",
+                          "time": {
+                            "start": "0",
+                            "end": "4.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person_speech"
+                          ],
+                          "scene_topic": "A man delivers a speech in a garden",
+                          "summary": "A man, dressed in traditional Middle Eastern attire, stands in a serene garden, his hands clasped in prayer as he delivers a speech to a large, attentive crowd gathered under a canopy of trees.",
+                          "implications": "Major event in the life of the person",
+                          "modalities": {
+                            "visual": "A man, dressed in traditional Middle Eastern attire, stands in a serene garden, his hands clasped in prayer as he delivers a speech to a large, attentive crowd gathered under a canopy of trees.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 4.5,
+                    "end_time": 6.5,
+                    "children": [],
+                    "caption": "A man in traditional attire, standing before a building with a green dome, delivers a speech to a large, attentive crowd gathered outdoors, the lively chatter of the crowd occasionally punctuated by the man's words.",
+                    "postprocess": {
+                      "event_id": 1,
+                      "original_answer": "A man in traditional attire, standing before a building with a green dome, delivers a speech to a large, attentive crowd gathered outdoors, the lively chatter of the crowd occasionally punctuated by the man's words.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_4.5_6.5",
+                        "tags": [
+                          "man",
+                          "traditional_attire",
+                          "building",
+                          "green_dome",
+                          "speech"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "building",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_4.5_6.5",
+                          "name": "speech",
+                          "time": {
+                            "start": "4.5",
+                            "end": "6.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public_speech"
+                          ],
+                          "scene_topic": "A man delivers a speech to a crowd",
+                          "summary": "A man in traditional attire, standing before a building with a green dome, delivers a speech to a large, attentive crowd gathered outdoors, the lively chatter of the crowd occasionally punctuated by the man's words.",
+                          "implications": "Major public event",
+                          "modalities": {
+                            "visual": "A man in traditional attire, standing before a building with a green dome, delivers a speech to a large, attentive crowd gathered outdoors.",
+                            "audio": "speech; crowd chatter",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man delivers a speech in a serene garden or outdoors, surrounded by a large and attentive crowd, dressed in traditional Middle Eastern attire.",
+                "summary": "A man in traditional Middle Eastern attire delivers a speech to a large and attentive crowd in a serene garden and outdoors, his words occasionally punctuated by the lively chatter of the crowd."
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 10.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 6.5,
+                    "end_time": 8.5,
+                    "children": [],
+                    "caption": "In a serene outdoor setting, a group of people gather on a grassy field, their hands clasped together in a gesture of unity and shared purpose.",
+                    "postprocess": {
+                      "event_id": 2,
+                      "original_answer": "In a serene outdoor setting, a group of people gather on a grassy field, their hands clasped together in a gesture of unity and shared purpose.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_6.5_8.5",
+                        "tags": [
+                          "outdoor",
+                          "unity",
+                          "group",
+                          "gesture",
+                          "purpose"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "Grassy field",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "Group of people",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "People",
+                            "ref_object": "O002",
+                            "role": "Participant",
+                            "entity": "Group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_6.5_8.5",
+                          "name": "Group gathering",
+                          "time": {
+                            "start": "6.5",
+                            "end": "8.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "outdoor scene"
+                          ],
+                          "scene_topic": "A group of people gather on a grassy field, their hands clasped together in a gesture of unity and shared purpose.",
+                          "summary": "In a serene outdoor setting, a group of people gather on a grassy field, their hands clasped together in a gesture of unity and shared purpose.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "In a serene outdoor setting, a group of people gather on a grassy field, their hands clasped together in a gesture of unity and shared purpose.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 8.5,
+                    "end_time": 10.5,
+                    "children": [],
+                    "caption": "In a serene outdoor setting, a large group of people gather on a grassy field, their hands clasped together in a unified gesture, their faces upturned in reverence as they listen to a speaker addressing them.",
+                    "postprocess": {
+                      "event_id": 3,
+                      "original_answer": "In a serene outdoor setting, a large group of people gather on a grassy field, their hands clasped together in a unified gesture, their faces upturned in reverence as they listen to a speaker addressing them.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_8.5_10.5",
+                        "tags": [
+                          "outdoor",
+                          "gathering",
+                          "unified",
+                          "reverence",
+                          "speaker"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "group_of_people",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "speaker",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_8.5_10.5",
+                          "name": "Group Gathering",
+                          "time": {
+                            "start": "8.5",
+                            "end": "10.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "gathering"
+                          ],
+                          "scene_topic": "A large group of people gather in a serene outdoor setting to listen to a speaker.",
+                          "summary": "In a serene outdoor setting, a large group of people gather on a grassy field, their hands clasped together in a unified gesture, their faces upturned in reverence as they listen to a speaker addressing them.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "In a serene outdoor setting, a large group of people gather on a grassy field, their hands clasped together in a unified gesture, their faces upturned in reverence as they listen to a speaker addressing them.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A large group of people gather in a serene outdoor setting, their hands clasped together in a gesture of unity and shared purpose, as they listen to a speaker addressing them with reverence.",
+                "summary": "A group of people gather in a serene outdoor setting, clasping hands in unity and reverence as they listen to a speaker."
+              },
+              {
+                "level": 3,
+                "start_time": 10.5,
+                "end_time": 15.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 10.5,
+                    "end_time": 15.5,
+                    "children": [],
+                    "caption": "In a serene outdoor setting, a diverse crowd gathers on a grassy field, their hands clasped together in a gesture of unity, while a man delivers a speech, his voice echoing through the air.",
+                    "postprocess": {
+                      "event_id": 4,
+                      "original_answer": "In a serene outdoor setting, a diverse crowd gathers on a grassy field, their hands clasped together in a gesture of unity, while a man delivers a speech, his voice echoing through the air.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_10.5_15.5",
+                        "tags": [
+                          "unity",
+                          "speech",
+                          "outdoor",
+                          "gathering",
+                          "diversity"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "Grassy field",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "Man",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "Crowd",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "Man",
+                            "ref_object": "O002",
+                            "role": "Speaker",
+                            "entity": "Person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_10.5_15.5",
+                          "name": "Speech on unity",
+                          "time": {
+                            "start": "10.5",
+                            "end": "15.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "gathering"
+                          ],
+                          "scene_topic": "A man delivers a speech to a diverse crowd in a serene outdoor setting.",
+                          "summary": "In a serene outdoor setting, a diverse crowd gathers on a grassy field, their hands clasped together in a gesture of unity, while a man delivers a speech, his voice echoing through the air.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "In a serene outdoor setting, a diverse crowd gathers on a grassy field, their hands clasped together in a gesture of unity, while a man delivers a speech.",
+                            "audio": "speech; echoing voice.",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A diverse crowd gathers in a serene outdoor setting, united in a gesture of solidarity as a speaker delivers an impassioned speech.",
+                "summary": "A diverse group of people gathers in a peaceful outdoor setting, united in their hands clasped together, as a man delivers a speech with his voice carrying through the air."
+              }
+            ],
+            "caption": "A speaker delivers an impassioned speech to a large and attentive crowd in a serene outdoor setting, united in a gesture of solidarity and shared purpose.",
+            "summary": "A man in traditional Middle Eastern attire delivers a speech to a diverse crowd in a serene outdoor setting, his words accompanied by the lively chatter of the audience. The crowd gathers in unity, clasping hands in reverence as they listen to the speaker's words carried through the air."
+          },
+          {
+            "level": 2,
+            "start_time": 15.5,
+            "end_time": 38.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 15.5,
+                "end_time": 24.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 15.5,
+                    "end_time": 20.5,
+                    "children": [],
+                    "caption": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement, as a man's voice, barely audible over the crowd's chatter, speaks about the importance of unity.",
+                    "postprocess": {
+                      "event_id": 5,
+                      "original_answer": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement, as a man's voice, barely audible over the crowd's chatter, speaks about the importance of unity.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_15.5_20.5",
+                        "tags": [
+                          "gathering",
+                          "unity",
+                          "speech",
+                          "outdoor",
+                          "crowd"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "camera",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "man",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "crowd",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_15.5_20.5",
+                          "name": "speech about unity",
+                          "time": {
+                            "start": "15.5",
+                            "end": "20.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "gathering news"
+                          ],
+                          "scene_topic": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement, as a man's voice, barely audible over the crowd's chatter, speaks about the importance of unity.",
+                          "summary": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement, as a man's voice, barely audible over the crowd's chatter, speaks about the importance of unity.",
+                          "implications": "Major social news event",
+                          "modalities": {
+                            "visual": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement.",
+                            "audio": "man's voice; crowd's chatter",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 20.5,
+                    "end_time": 24.5,
+                    "children": [],
+                    "caption": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement.",
+                    "postprocess": {
+                      "event_id": 6,
+                      "original_answer": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_20.5_24.5",
+                        "tags": [
+                          "outdoor_gathering",
+                          "crowd",
+                          "camera_panning"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "camera",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "gathering",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O002",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_20.5_24.5",
+                          "name": "",
+                          "time": {
+                            "start": "20.5",
+                            "end": "24.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "outdoor_event"
+                          ],
+                          "scene_topic": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement.",
+                          "summary": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement.",
+                          "implications": "Major event",
+                          "modalities": {
+                            "visual": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their faces partially obscured by the camera's movement.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A diverse crowd gathers under a bright blue sky, partially obscured by the camera's movement, as a man's voice speaks about the importance of unity.",
+                "summary": "A diverse crowd gathers outdoors under a bright blue sky, their faces partially obscured by the camera's movement, as a man's voice is heard speaking about the importance of unity amidst the crowd's chatter."
+              },
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 32.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 24.5,
+                    "end_time": 30.5,
+                    "children": [],
+                    "caption": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their attentive faces illuminated by the sunlight as a man's voice, barely audible over the murmur of the crowd, speaks about the importance of unity.",
+                    "postprocess": {
+                      "event_id": 7,
+                      "original_answer": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their attentive faces illuminated by the sunlight as a man's voice, barely audible over the murmur of the crowd, speaks about the importance of unity.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_24.5_30.5",
+                        "tags": [
+                          "gathering",
+                          "unity",
+                          "speech",
+                          "outdoor",
+                          "crowd"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "crowd",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "man",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "sunlight",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_24.5_30.5",
+                          "name": "speech about unity",
+                          "time": {
+                            "start": "24.5",
+                            "end": "30.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "gathering",
+                            "speech"
+                          ],
+                          "scene_topic": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their attentive faces illuminated by the sunlight as a man's voice, barely audible over the murmur of the crowd, speaks about the importance of unity.",
+                          "summary": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their attentive faces illuminated by the sunlight as a man's voice, barely audible over the murmur of the crowd, speaks about the importance of unity.",
+                          "implications": "Major economics,finance news event",
+                          "modalities": {
+                            "visual": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright blue sky, their attentive faces illuminated by the sunlight.",
+                            "audio": "man's voice; murmur of the crowd",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 30.5,
+                    "end_time": 32.5,
+                    "children": [],
+                    "caption": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their attentive faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                    "postprocess": {
+                      "event_id": 8,
+                      "original_answer": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their attentive faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_30.5_32.5",
+                        "tags": [
+                          "outdoor_gathering",
+                          "public_speaking",
+                          "crowd",
+                          "sunlight",
+                          "microphone"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "camera",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "speaker",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "microphone",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "crowd",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "speaker",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_30.5_32.5",
+                          "name": "Public Speaking",
+                          "time": {
+                            "start": "30.5",
+                            "end": "32.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public_speaking"
+                          ],
+                          "scene_topic": "The speaker addresses a crowd outdoors.",
+                          "summary": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their attentive faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                          "implications": "Major public speaking event",
+                          "modalities": {
+                            "visual": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their attentive faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A diverse crowd gathers under a bright blue sky, listening intently to a speaker addressing them through a microphone, emphasizing the importance of unity.",
+                "summary": "A diverse crowd gathers outdoors under a bright blue sky, their faces illuminated by sunlight as they listen to a speaker's voice, barely audible over the crowd's murmur, emphasize the importance of unity. The camera pans across the crowd, capturing their attentive faces as they absorb the speaker's words."
+              },
+              {
+                "level": 3,
+                "start_time": 32.5,
+                "end_time": 38.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 32.5,
+                    "end_time": 35.5,
+                    "children": [],
+                    "caption": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their attentive faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                    "postprocess": {
+                      "event_id": 9,
+                      "original_answer": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their attentive faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_32.5_35.5",
+                        "tags": [
+                          "outdoor_gathering",
+                          "public_speaking",
+                          "crowd",
+                          "sunlight",
+                          "speaker"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "speaker",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "crowd",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "speaker",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_32.5_35.5",
+                          "name": "Public Speaking",
+                          "time": {
+                            "start": "32.5",
+                            "end": "35.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public_speaking"
+                          ],
+                          "scene_topic": "The speaker addresses the crowd under a bright sky.",
+                          "summary": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their attentive faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                          "implications": "Major public speaking event",
+                          "modalities": {
+                            "visual": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their attentive faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 35.5,
+                    "end_time": 38.5,
+                    "children": [],
+                    "caption": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their faces a mix of anticipation and curiosity as a man's voice, barely audible over the murmur of the crowd, speaks about a \"great leader.\"",
+                    "postprocess": {
+                      "event_id": 10,
+                      "original_answer": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their faces a mix of anticipation and curiosity as a man's voice, barely audible over the murmur of the crowd, speaks about a \"great leader.\"",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_35.5_38.5",
+                        "tags": [
+                          "gathering",
+                          "outdoor",
+                          "speech",
+                          "leader"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "crowd",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "man",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_35.5_38.5",
+                          "name": "Speech about a great leader",
+                          "time": {
+                            "start": "35.5",
+                            "end": "38.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "gathering news"
+                          ],
+                          "scene_topic": "The man speaks about a great leader to a diverse crowd.",
+                          "summary": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their faces a mix of anticipation and curiosity as a man's voice, barely audible over the murmur of the crowd, speaks about a \"great leader.\"",
+                          "implications": "Major news event",
+                          "modalities": {
+                            "visual": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a bright sky, their faces a mix of anticipation and curiosity as a man's voice speaks about a 'great leader'.",
+                            "audio": "man's voice; crowd murmur",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A large crowd gathers under a bright sky, listening intently to a speaker address them through a microphone, with a mix of anticipation and curiosity on their faces as they hear about a \"great leader.\"",
+                "summary": "A diverse crowd gathers outdoors, their faces filled with anticipation and curiosity as a man speaks about a \"great leader\" through a microphone."
+              }
+            ],
+            "caption": "A diverse crowd gathers under a bright blue sky to listen to a speaker emphasize the importance of unity.",
+            "summary": "A diverse crowd gathers outdoors, listening intently as a speaker emphasizes the importance of unity, their faces illuminated by sunlight as they absorb his words. The speaker, using a microphone, talks about a \"great leader\" as the crowd's anticipation and curiosity are palpable."
+          }
+        ],
+        "caption": "A speaker inspires a diverse crowd in a serene outdoor setting, emphasizing the importance of unity and shared purpose.",
+        "summary": "A speaker in traditional Middle Eastern attire delivers a speech to a diverse crowd outdoors, emphasizing the importance of unity as the audience listens intently, their faces illuminated by sunlight. The speaker's words are met with anticipation and curiosity, as the crowd gathers in unity, clasping hands in reverence."
+      },
+      {
+        "level": 1,
+        "start_time": 38.5,
+        "end_time": 76.04,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 38.5,
+            "end_time": 58.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 48.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 38.5,
+                    "end_time": 41.5,
+                    "children": [],
+                    "caption": "In a lush green field, a diverse crowd of people, dressed in a mix of traditional and modern attire, gather under a large tent, their faces upturned in reverence as a man delivers a speech, his words echoing through the air.",
+                    "postprocess": {
+                      "event_id": 11,
+                      "original_answer": "In a lush green field, a diverse crowd of people, dressed in a mix of traditional and modern attire, gather under a large tent, their faces upturned in reverence as a man delivers a speech, his words echoing through the air.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_38.5_41.5",
+                        "tags": [
+                          "gathering",
+                          "speech",
+                          "traditional_attire",
+                          "modern_attire",
+                          "reverence"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "tent",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "man",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "people",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_38.5_41.5",
+                          "name": "speech",
+                          "time": {
+                            "start": "38.5",
+                            "end": "41.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "gathering"
+                          ],
+                          "scene_topic": "A man delivers a speech to a crowd of people in a field.",
+                          "summary": "In a lush green field, a diverse crowd of people, dressed in a mix of traditional and modern attire, gather under a large tent, their faces upturned in reverence as a man delivers a speech, his words echoing through the air.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "In a lush green field, a diverse crowd of people, dressed in a mix of traditional and modern attire, gather under a large tent, their faces upturned in reverence as a man delivers a speech.",
+                            "audio": "speech",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 41.5,
+                    "end_time": 44.5,
+                    "children": [],
+                    "caption": "In a grassy field, a group of men in traditional attire stand in a line, their hands clasped in a gesture of unity, while a man in the center delivers a speech, his words echoing through the field.",
+                    "postprocess": {
+                      "event_id": 12,
+                      "original_answer": "In a grassy field, a group of men in traditional attire stand in a line, their hands clasped in a gesture of unity, while a man in the center delivers a speech, his words echoing through the field.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_41.5_44.5",
+                        "tags": [
+                          "grass_field",
+                          "traditional_attire",
+                          "unity_gesture",
+                          "speech",
+                          "unity"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "group_of_men",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "man_in_center",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man_in_center",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_41.5_44.5",
+                          "name": "unity_speech",
+                          "time": {
+                            "start": "41.5",
+                            "end": "44.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "social_event"
+                          ],
+                          "scene_topic": "A group of men stand in a line, clasping hands, while one delivers a speech.",
+                          "summary": "In a grassy field, a group of men in traditional attire stand in a line, their hands clasped in a gesture of unity, while a man in the center delivers a speech, his words echoing through the field.",
+                          "implications": "Social event, unity, community",
+                          "modalities": {
+                            "visual": "In a grassy field, a group of men in traditional attire stand in a line, their hands clasped in a gesture of unity, while a man in the center delivers a speech.",
+                            "audio": "speech",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 44.5,
+                    "end_time": 48.5,
+                    "children": [],
+                    "caption": "In a lush outdoor setting, a group of men in traditional attire stand in a line, their serious expressions and the attentive atmosphere suggesting a formal event or ceremony.",
+                    "postprocess": {
+                      "event_id": 13,
+                      "original_answer": "In a lush outdoor setting, a group of men in traditional attire stand in a line, their serious expressions and the attentive atmosphere suggesting a formal event or ceremony.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_44.5_48.5",
+                        "tags": [
+                          "outdoor",
+                          "ceremony",
+                          "traditional_attire",
+                          "formal_event"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "group_of_men",
+                            "attributes": {
+                              "attire": "traditional",
+                              "expression": "serious",
+                              "atmosphere": "formal"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "group_of_men",
+                            "ref_object": "O001",
+                            "role": "participants",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_44.5_48.5",
+                          "name": "Ceremony",
+                          "time": {
+                            "start": "44.5",
+                            "end": "48.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "ceremony"
+                          ],
+                          "scene_topic": "A group of men in traditional attire stand in a line, their serious expressions and the attentive atmosphere suggesting a formal event or ceremony.",
+                          "summary": "In a lush outdoor setting, a group of men in traditional attire stand in a line, their serious expressions and the attentive atmosphere suggesting a formal event or ceremony.",
+                          "implications": "Major cultural event",
+                          "modalities": {
+                            "visual": "In a lush outdoor setting, a group of men in traditional attire stand in a line, their serious expressions and the attentive atmosphere suggesting a formal event or ceremony.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man delivers a speech in a lush green field, surrounded by a diverse crowd of people dressed in a mix of traditional and modern attire, as they gather under a large tent.",
+                "summary": "A diverse crowd gathers in a lush green field or under a tent, listening to a man deliver a speech, with some groups of men in traditional attire standing in lines, their hands clasped in unity. The atmosphere is formal and reverent, suggesting a ceremony or event."
+              },
+              {
+                "level": 3,
+                "start_time": 48.5,
+                "end_time": 58.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 48.5,
+                    "end_time": 51.5,
+                    "children": [],
+                    "caption": "In a lush outdoor setting, a group of men in traditional attire stand in a semi-circle, their serious expressions and gestures suggesting a formal or cultural gathering.",
+                    "postprocess": {
+                      "event_id": 14,
+                      "original_answer": "In a lush outdoor setting, a group of men in traditional attire stand in a semi-circle, their serious expressions and gestures suggesting a formal or cultural gathering.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_48.5_51.5",
+                        "tags": [
+                          "outdoor",
+                          "cultural",
+                          "gathering"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "men",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "group of men",
+                            "ref_object": "O001",
+                            "role": "participants",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_48.5_51.5",
+                          "name": "Cultural gathering",
+                          "time": {
+                            "start": "48.5",
+                            "end": "51.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cultural event"
+                          ],
+                          "scene_topic": "A group of men gather in a semi-circle in a lush outdoor setting.",
+                          "summary": "In a lush outdoor setting, a group of men in traditional attire stand in a semi-circle, their serious expressions and gestures suggesting a formal or cultural gathering.",
+                          "implications": "Cultural significance",
+                          "modalities": {
+                            "visual": "In a lush outdoor setting, a group of men in traditional attire stand in a semi-circle, their serious expressions and gestures suggesting a formal or cultural gathering.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 51.5,
+                    "end_time": 58.5,
+                    "children": [],
+                    "caption": "In a lush outdoor setting, a large crowd gathers, their attention focused on a man delivering a speech at a podium, while a woman's voice can be heard in the background.",
+                    "postprocess": {
+                      "event_id": 15,
+                      "original_answer": "In a lush outdoor setting, a large crowd gathers, their attention focused on a man delivering a speech at a podium, while a woman's voice can be heard in the background.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_51.5_58.5",
+                        "tags": [
+                          "outdoor",
+                          "crowd",
+                          "speech",
+                          "podium",
+                          "background"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "woman",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "podium",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "woman",
+                            "ref_object": "O002",
+                            "role": "background",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_51.5_58.5",
+                          "name": "speech",
+                          "time": {
+                            "start": "51.5",
+                            "end": "58.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "outdoor scene"
+                          ],
+                          "scene_topic": "A man delivers a speech at a podium while a woman's voice is heard in the background.",
+                          "summary": "In a lush outdoor setting, a large crowd gathers, their attention focused on a man delivering a speech at a podium, while a woman's voice can be heard in the background.",
+                          "implications": "Major public speaking event",
+                          "modalities": {
+                            "visual": "In a lush outdoor setting, a large crowd gathers, their attention focused on a man delivering a speech at a podium, while a woman's voice can be heard in the background.",
+                            "audio": "speech; woman's voice",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A formal gathering of men takes place in a picturesque outdoor setting, while a large crowd listens to a speaker at a podium in another outdoor location.",
+                "summary": "A group of men in traditional attire gather in a semi-circle, exuding a sense of formality, while a large crowd assembles around a podium where a man delivers a speech, accompanied by a woman's voice in the background."
+              }
+            ],
+            "caption": "A speaker addresses a large crowd in a picturesque outdoor setting, surrounded by a diverse group of people dressed in a mix of traditional and modern attire.",
+            "summary": "A formal and reverent ceremony or event takes place in a lush green field or under a tent, featuring a diverse crowd and groups of men in traditional attire gathered in lines or semi-circles. A man delivers a speech from a podium, accompanied by a woman's voice in the background, amidst a sense of unity and formality."
+          },
+          {
+            "level": 2,
+            "start_time": 58.5,
+            "end_time": 76.04,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 58.5,
+                "end_time": 66.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 58.5,
+                    "end_time": 61.5,
+                    "children": [],
+                    "caption": "In a lush green field, a large crowd of people, dressed in a mix of traditional and modern attire, gather in a semi-circle, their hands raised in a gesture of unity as a man's voice, likely a speaker, addresses them through a microphone.",
+                    "postprocess": {
+                      "event_id": 16,
+                      "original_answer": "In a lush green field, a large crowd of people, dressed in a mix of traditional and modern attire, gather in a semi-circle, their hands raised in a gesture of unity as a man's voice, likely a speaker, addresses them through a microphone.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_58_61",
+                        "tags": [
+                          "crowd",
+                          "unity",
+                          "speech",
+                          "gathering"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "people",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "field",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "speaker",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "microphone",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "speaker",
+                            "ref_object": "O003",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_58_61",
+                          "name": "Unity Gathering",
+                          "time": {
+                            "start": "58.5",
+                            "end": "61.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "gathering"
+                          ],
+                          "scene_topic": "A crowd gathers in a field to listen to a speaker.",
+                          "summary": "In a lush green field, a large crowd of people, dressed in a mix of traditional and modern attire, gather in a semi-circle, their hands raised in a gesture of unity as a man's voice, likely a speaker, addresses them through a microphone.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "In a lush green field, a large crowd of people, dressed in a mix of traditional and modern attire, gather in a semi-circle, their hands raised in a gesture of unity as a man addresses them through a microphone.",
+                            "audio": "man's voice; speaker",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 61.5,
+                    "end_time": 63.5,
+                    "children": [],
+                    "caption": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a canopy of trees, their faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                    "postprocess": {
+                      "event_id": 17,
+                      "original_answer": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a canopy of trees, their faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_61_63",
+                        "tags": [
+                          "outdoor_gathering",
+                          "public_speech",
+                          "diverse_crowd"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "speaker",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "canopy",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "trees",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "speaker",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_61_63",
+                          "name": "Public Speech",
+                          "time": {
+                            "start": "61.5",
+                            "end": "63.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "public_speech"
+                          ],
+                          "scene_topic": "The speaker addresses a diverse crowd under a canopy of trees.",
+                          "summary": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a canopy of trees, their faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                          "implications": "Major public event",
+                          "modalities": {
+                            "visual": "The camera pans across a large, outdoor gathering, capturing the diverse crowd gathered under a canopy of trees, their faces illuminated by the sunlight as they listen to a speaker addressing them through a microphone.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 63.5,
+                    "end_time": 66.5,
+                    "children": [],
+                    "caption": "The camera pans across a large, lively gathering of people in traditional attire, their colorful clothing blending with the greenery of the park as they listen intently to a speaker addressing them from a raised platform.",
+                    "postprocess": {
+                      "event_id": 18,
+                      "original_answer": "The camera pans across a large, lively gathering of people in traditional attire, their colorful clothing blending with the greenery of the park as they listen intently to a speaker addressing them from a raised platform.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_63_66",
+                        "tags": [
+                          "cultural_event",
+                          "traditional_attire",
+                          "public_speaking",
+                          "outdoor_gathering",
+                          "park"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "people",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "speaker",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "platform",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "park",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "speaker",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_63_66",
+                          "name": "Public Speaking Event",
+                          "time": {
+                            "start": "63.5",
+                            "end": "66.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cultural_event"
+                          ],
+                          "scene_topic": "The speaker addresses a lively gathering of people in a park.",
+                          "summary": "The camera pans across a large, lively gathering of people in traditional attire, their colorful clothing blending with the greenery of the park as they listen intently to a speaker addressing them from a raised platform.",
+                          "implications": "Major cultural event",
+                          "modalities": {
+                            "visual": "The camera pans across a large, lively gathering of people in traditional attire, their colorful clothing blending with the greenery of the park as they listen intently to a speaker addressing them from a raised platform.",
+                            "audio": "",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A large crowd of people gather in a semi-circle, united in their gesture of unity as they listen to a speaker address them through a microphone. The camera pans across a diverse gathering of people in a park, their faces illuminated by sunlight as they listen intently to a speaker on a raised platform.",
+                "summary": "A diverse crowd of people, dressed in traditional and modern attire, gathers in a semi-circle in a lush green field, their hands raised in unity as a speaker addresses them through a microphone. The camera captures the lively gathering, showcasing the colorful clothing and the speaker's platform amidst the natural surroundings."
+              },
+              {
+                "level": 3,
+                "start_time": 66.5,
+                "end_time": 76.04,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 66.5,
+                    "end_time": 71.5,
+                    "children": [],
+                    "caption": "A large group of people, dressed in a mix of traditional and modern attire, walk along a dirt path, their voices blending with the sounds of the forest as they chant and pray.",
+                    "postprocess": {
+                      "event_id": 19,
+                      "original_answer": "A large group of people, dressed in a mix of traditional and modern attire, walk along a dirt path, their voices blending with the sounds of the forest as they chant and pray.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_66.5_71.5",
+                        "tags": [
+                          "forest",
+                          "people",
+                          "chant",
+                          "pray"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "group_of_people",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "unknown",
+                            "ref_object": "O001",
+                            "role": "unknown",
+                            "entity": "unknown"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_66.5_71.5",
+                          "name": "unknown",
+                          "time": {
+                            "start": "66.5",
+                            "end": "71.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "people"
+                          ],
+                          "scene_topic": "A group of people walk along a dirt path, chanting and praying in the forest.",
+                          "summary": "A large group of people, dressed in a mix of traditional and modern attire, walk along a dirt path, their voices blending with the sounds of the forest as they chant and pray.",
+                          "implications": "Major social event",
+                          "modalities": {
+                            "visual": "A large group of people, dressed in a mix of traditional and modern attire, walk along a dirt path, their voices blending with the sounds of the forest as they chant and pray.",
+                            "audio": "chanting; praying; forest sounds",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 71.5,
+                    "end_time": 76.04,
+                    "children": [],
+                    "caption": "A group of people, dressed in a mix of traditional and modern attire, walk along a dirt path through a lush green forest, their conversation blending with the sounds of nature as they make their way towards a large gathering.",
+                    "postprocess": {
+                      "event_id": 20,
+                      "original_answer": "A group of people, dressed in a mix of traditional and modern attire, walk along a dirt path through a lush green forest, their conversation blending with the sounds of nature as they make their way towards a large gathering.",
+                      "result": {
+                        "video_id": "UdoQsT84auo",
+                        "event_id": "E_UdoQsT84auo_71.5_76.04",
+                        "tags": [
+                          "forest",
+                          "people",
+                          "conversation",
+                          "nature",
+                          "gathering"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "people",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UdoQsT84auo_71.5_76.04",
+                          "name": "",
+                          "time": {
+                            "start": "71.5",
+                            "end": "76.04"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "people"
+                          ],
+                          "scene_topic": "A group of people walk through a forest, having a conversation.",
+                          "summary": "A group of people, dressed in a mix of traditional and modern attire, walk along a dirt path through a lush green forest, their conversation blending with the sounds of nature as they make their way towards a large gathering.",
+                          "implications": "Social interaction",
+                          "modalities": {
+                            "visual": "A group of people, dressed in a mix of traditional and modern attire, walk along a dirt path through a lush green forest, their conversation.",
+                            "audio": "conversation; nature sounds",
+                            "speech": "He is the central figure, and a hero is responsible for the death of all of them."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A group of people walk through a forest, blending traditional and modern attire, as they chant and pray or converse with each other and the natural surroundings.",
+                "summary": "A group of people, dressed in a mix of traditional and modern attire, walk along a dirt path through a lush green forest, their voices blending with the sounds of nature as they make their way towards a large gathering."
+              }
+            ],
+            "caption": "A diverse group of people gather in a park, united in their gesture of unity as they listen to a speaker address them through a microphone. Another group of people walk through a forest, blending traditional and modern attire, as they chant and pray or converse with each other and the natural surroundings.",
+            "summary": "A diverse group of people, dressed in traditional and modern attire, gathers in a lush green field and forest, united in their voices and hands raised in unity as a speaker addresses them. The camera captures the vibrant scene, showcasing the colorful clothing and natural surroundings amidst the lively gathering."
+          }
+        ],
+        "caption": "A speaker addresses a diverse crowd in an outdoor setting, surrounded by people dressed in a mix of traditional and modern attire, while another group walks through a forest, blending traditional and modern styles, as they chant and pray or converse with each other and the natural surroundings.",
+        "summary": "A formal ceremony or event takes place in a lush green field or under a tent, featuring a diverse crowd and traditional attire, with a speaker delivering a speech amidst a sense of unity and formality. The camera captures the vibrant scene, showcasing colorful clothing and natural surroundings amidst the lively gathering."
+      }
+    ],
+    "caption": "A speaker inspires a diverse crowd in an outdoor setting, emphasizing the importance of unity and shared purpose, while another group blends traditional and modern styles as they walk through a forest, chanting and praying or conversing with each other and the natural surroundings.",
+    "summary": "A speaker in traditional Middle Eastern attire delivers a speech to a diverse crowd outdoors, emphasizing the importance of unity as the audience listens intently. The ceremony or event takes place in a lush green field or under a tent, featuring a vibrant scene of colorful clothing and natural surroundings amidst a sense of unity and formality."
+  }
+}

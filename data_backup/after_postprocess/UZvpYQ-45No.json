@@ -1,0 +1,745 @@
+{
+  "video_id": "UZvpYQ-45No",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 42.666667,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 13.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 7.5,
+            "children": [],
+            "caption": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to one of surprise as she listens to a woman's voice off-camera.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to one of surprise as she listens to a woman's voice off-camera.",
+              "result": {
+                "video_id": "UZvpYQ_45No",
+                "event_id": "E_UZvpYQ_0_7.5",
+                "tags": [
+                  "girl",
+                  "room",
+                  "surprise"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "hair_color": "light-colored",
+                      "shirt_color": "pink",
+                      "expression": "neutral",
+                      "expression_shift": "surprise"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "room",
+                    "attributes": {
+                      "lighting": "well-lit"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "",
+                    "role": "off-camera speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UZvpYQ_0_7.5",
+                  "name": "girl's surprise reaction",
+                  "time": {
+                    "start": "0",
+                    "end": "7.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "room"
+                  ],
+                  "scene_topic": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to one of surprise as she listens to a woman's voice off-camera.",
+                  "summary": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to one of surprise as she listens to a woman's voice off-camera.",
+                  "implications": "Major emotional event",
+                  "modalities": {
+                    "visual": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to one of surprise as she listens to a woman's voice off-camera.",
+                    "audio": "",
+                    "speech": "open a door, likely to exit the house, and is discussing the location of a leg end"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 9.5,
+            "children": [],
+            "caption": "The young girl, with her hair styled in a braid, looks directly at the camera with a neutral expression, her eyes wide and her mouth slightly open as if about to speak.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "The young girl, with her hair styled in a braid, looks directly at the camera with a neutral expression, her eyes wide and her mouth slightly open as if about to speak.",
+              "result": {
+                "video_id": "UZvpYQ_45No",
+                "event_id": "E_UZvpYQ_7_9",
+                "tags": [
+                  "child",
+                  "girl",
+                  "neutral_expression",
+                  "direct_gaze",
+                  "camera"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "hair_style": "braid",
+                      "expression": "neutral",
+                      "eyes": "wide",
+                      "mouth": "slightly_open"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UZvpYQ_7_9",
+                  "name": "girl looks directly at the camera",
+                  "time": {
+                    "start": "7.5",
+                    "end": "9.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person"
+                  ],
+                  "scene_topic": "The young girl looks directly at the camera with a neutral expression",
+                  "summary": "The young girl, with her hair styled in a braid, looks directly at the camera with a neutral expression, her eyes wide and her mouth slightly open as if about to speak.",
+                  "implications": "Major people news event",
+                  "modalities": {
+                    "visual": "The young girl looks directly at the camera with a neutral expression, her eyes wide and her mouth slightly open as if about to speak, her hair styled in a braid.",
+                    "audio": "",
+                    "speech": "open a door, likely to exit the house, and is discussing the location of a leg end"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 9.5,
+            "end_time": 13.5,
+            "children": [],
+            "caption": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to a smile as she listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to a smile as she listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+              "result": {
+                "video_id": "UZvpYQ_45No",
+                "event_id": "E_UZvpYQ_9_13",
+                "tags": [
+                  "girl",
+                  "woman",
+                  "car",
+                  "room",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "hair_color": "light-colored",
+                      "shirt_color": "pink",
+                      "expression": "neutral",
+                      "expression_shift": "smile"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "voice": "barely audible"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "car",
+                    "attributes": {
+                      "engine_sound": "starting up"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "room",
+                    "attributes": {
+                      "lighting": "well-lit"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "supporting",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UZvpYQ_9_13",
+                  "name": "girl listening to woman's voice",
+                  "time": {
+                    "start": "9.5",
+                    "end": "13.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "voice",
+                    "car"
+                  ],
+                  "scene_topic": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to a smile as she listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                  "summary": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to a smile as she listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                  "implications": "Major social interaction event",
+                  "modalities": {
+                    "visual": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, her neutral expression shifting to a smile as she listens to a woman's voice.",
+                    "audio": "woman's voice; car engine starting up.",
+                    "speech": "open a door, likely to exit the house, and is discussing the location of a leg end"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A young girl listens to a woman's voice off-camera, her expression changing from surprise to a smile as the sound of a car engine drowns out the woman's words.",
+        "summary": "A young girl with light-colored hair and a pink shirt sits in a well-lit room, initially displaying a neutral expression that shifts to surprise and then a smile as she listens to a woman's voice off-camera."
+      },
+      {
+        "level": 1,
+        "start_time": 13.5,
+        "end_time": 25.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 13.5,
+            "end_time": 16.5,
+            "children": [],
+            "caption": "The young girl, with her hair styled in a ponytail, looks directly at the camera with a neutral expression, her eyes wide and her mouth slightly open as if about to speak.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "The young girl, with her hair styled in a ponytail, looks directly at the camera with a neutral expression, her eyes wide and her mouth slightly open as if about to speak.",
+              "result": {
+                "video_id": "UZvpYQ_45No",
+                "event_id": "E_UZvpYQ_13.5_16.5",
+                "tags": [
+                  "girl",
+                  "camera",
+                  "expression",
+                  "eyes",
+                  "mouth"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "hair_style": "ponytail",
+                      "expression": "neutral",
+                      "eyes": "wide",
+                      "mouth": "slightly_open"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UZvpYQ_13.5_16.5",
+                  "name": "girl looks directly at the camera",
+                  "time": {
+                    "start": "13.5",
+                    "end": "16.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person"
+                  ],
+                  "scene_topic": "The young girl looks directly at the camera with a neutral expression",
+                  "summary": "The young girl, with her hair styled in a ponytail, looks directly at the camera with a neutral expression, her eyes wide and her mouth slightly open as if about to speak.",
+                  "implications": "Major people news event",
+                  "modalities": {
+                    "visual": "The young girl looks directly at the camera with a neutral expression, her eyes wide and her mouth slightly open as if about to speak.",
+                    "audio": "",
+                    "speech": "open a door, likely to exit the house, and is discussing the location of a leg end"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 25.5,
+            "children": [],
+            "caption": "A young girl with long, light-colored hair, wearing a pink shirt, smiles at the camera as a woman's voice can be heard in the background, saying \"Bye, bye.\"",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "A young girl with long, light-colored hair, wearing a pink shirt, smiles at the camera as a woman's voice can be heard in the background, saying \"Bye, bye.\"",
+              "result": {
+                "video_id": "UZvpYQ_45No",
+                "event_id": "E_UZvpYQ_16.5_25.5",
+                "tags": [
+                  "girl",
+                  "smile",
+                  "pink_shirt",
+                  "background_voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "hair_color": "light-colored",
+                      "clothing": "pink shirt"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "voice",
+                    "entity": "background"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UZvpYQ_16.5_25.5",
+                  "name": "girl smiling at camera",
+                  "time": {
+                    "start": "16.5",
+                    "end": "25.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human_interaction"
+                  ],
+                  "scene_topic": "A young girl smiles at the camera as a woman's voice can be heard in the background.",
+                  "summary": "A young girl with long, light-colored hair, wearing a pink shirt, smiles at the camera as a woman's voice can be heard in the background, saying \"Bye, bye.\"",
+                  "implications": "Minor social interaction event",
+                  "modalities": {
+                    "visual": "A young girl with long, light-colored hair, wearing a pink shirt, smiles at the camera as a woman's voice can be heard in the background, saying 'Bye, bye'.",
+                    "audio": "woman's voice saying 'Bye; bye'",
+                    "speech": "open a door, likely to exit the house, and is discussing the location of a leg end"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "Two young girls, one with a neutral expression and the other smiling, look directly at the camera as a woman's voice says \"bye\" in the background.",
+        "summary": "A young girl with long, light-colored hair and a pink shirt smiles at the camera, while a woman's voice can be heard in the background saying \"Bye, bye.\" The girl's expression is neutral, with her eyes wide and mouth slightly open, as if about to speak."
+      },
+      {
+        "level": 1,
+        "start_time": 25.5,
+        "end_time": 42.666667,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 25.5,
+            "end_time": 32.5,
+            "children": [],
+            "caption": "The young girl, with her hair styled in a ponytail, smiles brightly at the camera, her eyes sparkling with joy as she playfully sticks out her tongue.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "The young girl, with her hair styled in a ponytail, smiles brightly at the camera, her eyes sparkling with joy as she playfully sticks out her tongue.",
+              "result": {
+                "video_id": "UZvpYQ_45No",
+                "event_id": "E_UZvpYQ_25_32",
+                "tags": [
+                  "girl",
+                  "smile",
+                  "playful",
+                  "joy",
+                  "tongue"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "hair_style": "ponytail",
+                      "eye_expression": "sparkling",
+                      "mouth_expression": "smiling"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UZvpYQ_25_32",
+                  "name": "girl smiling at camera",
+                  "time": {
+                    "start": "25.5",
+                    "end": "32.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "smile"
+                  ],
+                  "scene_topic": "The girl smiles brightly at the camera.",
+                  "summary": "The young girl, with her hair styled in a ponytail, smiles brightly at the camera, her eyes sparkling with joy as she playfully sticks out her tongue.",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "The young girl, with her hair styled in a ponytail, smiles brightly at the camera, her eyes sparkling with joy as she playfully sticks out her tongue.",
+                    "audio": "",
+                    "speech": "open a door"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 32.5,
+            "end_time": 38.5,
+            "children": [],
+            "caption": "The young girl, her face illuminated by the soft lighting, smiles at the camera as a woman's voice can be heard in the background, playfully asking if she's \"going to the party.\"",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "The young girl, her face illuminated by the soft lighting, smiles at the camera as a woman's voice can be heard in the background, playfully asking if she's \"going to the party.\"",
+              "result": {
+                "video_id": "UZvpYQ_45No",
+                "event_id": "E_UZvpYQ_32_38",
+                "tags": [
+                  "girl",
+                  "party",
+                  "voice",
+                  "background",
+                  "smile"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "young girl",
+                    "ref_object": "O001",
+                    "role": "protagonist",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "",
+                    "role": "narrator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UZvpYQ_32_38",
+                  "name": "girl at party",
+                  "time": {
+                    "start": "32.5",
+                    "end": "38.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family",
+                    "social"
+                  ],
+                  "scene_topic": "A young girl is asked if she's going to a party.",
+                  "summary": "The young girl, her face illuminated by the soft lighting, smiles at the camera as a woman's voice can be heard in the background, playfully asking if she's \"going to the party.\"",
+                  "implications": "Social event, family life",
+                  "modalities": {
+                    "visual": "The young girl, her face illuminated by the soft lighting, smiles at the camera as a woman's voice can be heard in the background, asking if she's 'going to the party'.",
+                    "audio": "woman's voice; asking 'going to the party'.",
+                    "speech": "open a door, likely to exit the house, and is discussing the location of a leg end"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 38.5,
+            "end_time": 40.5,
+            "children": [],
+            "caption": "The young girl, her face partially obscured by her hair, smiles at the camera as a woman's voice can be heard in the background, saying \"Bye\" and \"I love you\".",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "The young girl, her face partially obscured by her hair, smiles at the camera as a woman's voice can be heard in the background, saying \"Bye\" and \"I love you\".",
+              "result": {
+                "video_id": "UZvpYQ_45No",
+                "event_id": "E_UZvpYQ_38_40",
+                "tags": [
+                  "girl",
+                  "smile",
+                  "goodbye",
+                  "love"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "young girl",
+                    "ref_object": "O001",
+                    "role": "protagonist",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "background",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UZvpYQ_38_40",
+                  "name": "Goodbye and love",
+                  "time": {
+                    "start": "38.5",
+                    "end": "40.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family news"
+                  ],
+                  "scene_topic": "A young girl says goodbye to someone and expresses love.",
+                  "summary": "The young girl, her face partially obscured by her hair, smiles at the camera as a woman's voice can be heard in the background, saying \"Bye\" and \"I love you\".",
+                  "implications": "Major family news event",
+                  "modalities": {
+                    "visual": "The young girl, her face partially obscured by her hair, smiles at the camera as a woman's voice can be heard in the background.",
+                    "audio": "Woman's voice: 'Bye'; 'I love you'.",
+                    "speech": "open a door, likely to exit the house, and is discussing the location of a leg end"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 40.5,
+            "end_time": 42.666667,
+            "children": [],
+            "caption": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, looking directly at the camera with a neutral expression as a woman's voice can be heard in the background.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, looking directly at the camera with a neutral expression as a woman's voice can be heard in the background.",
+              "result": {
+                "video_id": "UZvpYQ_45No",
+                "event_id": "E_UZvpYQ_405_4267",
+                "tags": [
+                  "girl",
+                  "room",
+                  "camera",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "hair_color": "light-colored",
+                      "shirt_color": "pink"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "room",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "camera",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "young girl",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "",
+                    "role": "voice",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UZvpYQ_405_4267",
+                  "name": "girl sitting in a room",
+                  "time": {
+                    "start": "40.5",
+                    "end": "42.67"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "room"
+                  ],
+                  "scene_topic": "A young girl sits in a well-lit room, looking directly at the camera with a neutral expression.",
+                  "summary": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, looking directly at the camera with a neutral expression as a woman's voice can be heard in the background.",
+                  "implications": "Minor event, no significant impact",
+                  "modalities": {
+                    "visual": "A young girl with long, light-colored hair, wearing a pink shirt, sits in a well-lit room, looking directly at the camera with a neutral expression.",
+                    "audio": "a woman's voice",
+                    "speech": "open a door, likely to exit the house, and is discussing the location of a leg end"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A young girl smiles and sticks out her tongue at the camera, while a woman's voice can be heard in the background asking if she’s going to a party. The girl then smiles again as the woman says “bye” and “I love you.” In another shot, the girl sits in a well-lit room with a neutral expression, while a woman’s voice can be heard in the background.",
+        "summary": "A young girl with a ponytail and bright smile is seen in a well-lit room, interacting with a woman's voice in the background, exchanging playful phrases and affectionate goodbyes. The girl's expression changes from joyful to neutral as she sits in front of the camera, looking directly at it."
+      }
+    ],
+    "caption": "A young girl is shown reacting to a voice off-camera, first with surprise and then a smile, as the sound of a car engine drowns out the woman's words. In another scene, two young girls look directly at the camera while a woman's voice says \"bye\" in the background. The first girl smiles and sticks out her tongue, while the second girl has a neutral expression. In a third scene, the same girl sits in a well-lit room with a neutral expression, while a woman's voice can be heard in the background.",
+    "summary": "A young girl with light-colored hair and a pink shirt is seen interacting with a woman's voice in a well-lit room, displaying a range of emotions from surprise to joy and neutrality. The girl's expressions change as she listens to and responds to the woman's voice, exchanging playful phrases and affectionate goodbyes."
+  }
+}

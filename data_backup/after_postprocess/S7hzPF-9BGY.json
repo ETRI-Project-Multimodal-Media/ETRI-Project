@@ -1,0 +1,3310 @@
+{
+  "video_id": "S7hzPF-9BGY",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 246.179267,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 90.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 35.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 10.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 0.0,
+                    "end_time": 3.5,
+                    "children": [],
+                    "caption": "The video begins with a close-up of a car's engine, showcasing its intricate components and the mechanic's hands working on it.",
+                    "postprocess": {
+                      "event_id": 0,
+                      "original_answer": "The video begins with a close-up of a car's engine, showcasing its intricate components and the mechanic's hands working on it.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_0_3.5",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "mechanic"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "mechanic's hands",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O002",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_0_3.5",
+                          "name": "car engine inspection",
+                          "time": {
+                            "start": "0",
+                            "end": "3.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "mechanics"
+                          ],
+                          "scene_topic": "The mechanic inspects the car engine.",
+                          "summary": "The video begins with a close-up of a car's engine, showcasing its intricate components and the mechanic's hands working on it.",
+                          "implications": "Important car maintenance event",
+                          "modalities": {
+                            "visual": "The video begins with a close-up of a car's engine, showcasing its intricate components and the mechanic's hands working on it.",
+                            "audio": "engine; mechanic's hands",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 3.5,
+                    "end_time": 5.5,
+                    "children": [],
+                    "caption": "The video begins with a close-up of a complex mechanical system, likely a vehicle's engine, as a man's voice explains the process of replacing the fuel injector on a 2005 Ford Focus.",
+                    "postprocess": {
+                      "event_id": 1,
+                      "original_answer": "The video begins with a close-up of a complex mechanical system, likely a vehicle's engine, as a man's voice explains the process of replacing the fuel injector on a 2005 Ford Focus.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_3_5_5",
+                        "tags": [
+                          "mechanics",
+                          "engine",
+                          "fuel_injector",
+                          "ford_focus",
+                          "repair"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "vehicle_engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_3_5_5",
+                          "name": "fuel_injector_replacement",
+                          "time": {
+                            "start": "3.5",
+                            "end": "5.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "mechanics"
+                          ],
+                          "scene_topic": "A man explains the process of replacing the fuel injector on a 2005 Ford Focus.",
+                          "summary": "The video begins with a close-up of a complex mechanical system, likely a vehicle's engine, as a man's voice explains the process of replacing the fuel injector on a 2005 Ford Focus.",
+                          "implications": "Major mechanics news event",
+                          "modalities": {
+                            "visual": "The video begins with a close-up of a complex mechanical system, likely a vehicle's engine, as a man's voice explains the process of replacing the fuel injector on a 2005 Ford Focus.",
+                            "audio": "man's voice",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 5.5,
+                    "end_time": 10.5,
+                    "children": [],
+                    "caption": "The video starts with a close-up of a complex mechanical system, likely part of a vehicle, before zooming out to reveal a person's hand interacting with the system, possibly adjusting or repairing it.",
+                    "postprocess": {
+                      "event_id": 2,
+                      "original_answer": "The video starts with a close-up of a complex mechanical system, likely part of a vehicle, before zooming out to reveal a person's hand interacting with the system, possibly adjusting or repairing it.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_5_10",
+                        "tags": [
+                          "mechanical_system",
+                          "vehicle",
+                          "human_interaction"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "complex_mechanical_system",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "person's_hand",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O002",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_5_10",
+                          "name": "Mechanical System Interaction",
+                          "time": {
+                            "start": "5.5",
+                            "end": "10.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human_machine_interaction"
+                          ],
+                          "scene_topic": "A person interacts with a complex mechanical system.",
+                          "summary": "The video starts with a close-up of a complex mechanical system, likely part of a vehicle, before zooming out to reveal a person's hand interacting with the system, possibly adjusting or repairing it.",
+                          "implications": "Significant event in the field of mechanical engineering.",
+                          "modalities": {
+                            "visual": "The video starts with a close-up of a complex mechanical system, likely part of a vehicle, before zooming out to reveal a person's hand interacting with the system, possibly adjusting or repairing it.",
+                            "audio": "",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter, which is causing an engine code 0 1 4 0."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The video shows a mechanic working on a car's engine, explaining the process of replacing the fuel injector on a 2005 Ford Focus.",
+                "summary": "The video shows a mechanic replacing the fuel injector on a 2005 Ford Focus, starting with a close-up of the engine's intricate components and then zooming out to reveal the mechanic's hands working on the system."
+              },
+              {
+                "level": 3,
+                "start_time": 10.5,
+                "end_time": 20.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 10.5,
+                    "end_time": 15.5,
+                    "children": [],
+                    "caption": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                    "postprocess": {
+                      "event_id": 3,
+                      "original_answer": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_10.5_15.5",
+                        "tags": [
+                          "network",
+                          "wires",
+                          "pipes",
+                          "tools",
+                          "details"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "wires",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "pipes",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [],
+                        "event": {
+                          "event_id": "E_S7hzPF_10.5_15.5",
+                          "name": "The camera focuses on a complex network of wires and pipes",
+                          "time": {
+                            "start": "10.5",
+                            "end": "15.5"
+                          },
+                          "actors": [],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "technology"
+                          ],
+                          "scene_topic": "The camera focuses on a complex network of wires and pipes",
+                          "summary": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                          "implications": "Technical details of infrastructure",
+                          "modalities": {
+                            "visual": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                            "audio": "",
+                            "speech": "remove a faulty oxygen sensor"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 15.5,
+                    "end_time": 20.5,
+                    "children": [],
+                    "caption": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them, while a man's voice provides instructions on how to remove a fuel injector.",
+                    "postprocess": {
+                      "event_id": 4,
+                      "original_answer": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them, while a man's voice provides instructions on how to remove a fuel injector.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_155_205",
+                        "tags": [
+                          "mechanics",
+                          "diy",
+                          "car_repair"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "fuel_injector",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "wires",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "pipes",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O004",
+                            "role": "instructor",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_155_205",
+                          "name": "fuel_injector_removal",
+                          "time": {
+                            "start": "15.5",
+                            "end": "20.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "mechanics"
+                          ],
+                          "scene_topic": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them, while a man's voice provides instructions on how to remove a fuel injector.",
+                          "summary": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them, while a man's voice provides instructions on how to remove a fuel injector.",
+                          "implications": "Major DIY and car repair event",
+                          "modalities": {
+                            "visual": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                            "audio": "a man's voice; instructions",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A technician works on a complex engine system, using specialized tools to manipulate intricate networks of wires and pipes while providing step-by-step instructions for the viewer.",
+                "summary": "The camera shows a close-up of a complex network of wires and pipes, highlighting their details and the tools used to manipulate them, as a man's voice provides instructions on how to remove a fuel injector."
+              },
+              {
+                "level": 3,
+                "start_time": 20.5,
+                "end_time": 35.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 20.5,
+                    "end_time": 23.5,
+                    "children": [],
+                    "caption": "The camera focuses on a complex network of wires and hoses, possibly part of a vehicle's engine, as a man's voice explains that he's about to remove the fuel injector.",
+                    "postprocess": {
+                      "event_id": 5,
+                      "original_answer": "The camera focuses on a complex network of wires and hoses, possibly part of a vehicle's engine, as a man's voice explains that he's about to remove the fuel injector.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_20.5_23.5",
+                        "tags": [
+                          "mechanics",
+                          "engine",
+                          "fuel_injector",
+                          "vehicle",
+                          "repair"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "complex_network_of_wires_and_hoses",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_20.5_23.5",
+                          "name": "Removing fuel injector",
+                          "time": {
+                            "start": "20.5",
+                            "end": "23.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "mechanics"
+                          ],
+                          "scene_topic": "The camera focuses on a complex network of wires and hoses as a man explains he's about to remove the fuel injector.",
+                          "summary": "The camera focuses on a complex network of wires and hoses, possibly part of a vehicle's engine, as a man's voice explains that he's about to remove the fuel injector.",
+                          "implications": "Important information for vehicle repair",
+                          "modalities": {
+                            "visual": "The camera focuses on a complex network of wires and hoses, possibly part of a vehicle's engine, as a man's voice explains that he's about to remove the fuel injector.",
+                            "audio": "man's voice",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 23.5,
+                    "end_time": 25.5,
+                    "children": [],
+                    "caption": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                    "postprocess": {
+                      "event_id": 6,
+                      "original_answer": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_235_255",
+                        "tags": [
+                          "network",
+                          "wires",
+                          "pipes",
+                          "tools",
+                          "details"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "wires",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "pipes",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_235_255",
+                          "name": "",
+                          "time": {
+                            "start": "23.5",
+                            "end": "25.5"
+                          },
+                          "actors": [],
+                          "objects": []
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "technology"
+                          ],
+                          "scene_topic": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                          "summary": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                          "implications": "Technical details",
+                          "modalities": {
+                            "visual": "The camera focuses on a complex network of wires and pipes, highlighting their intricate details and the tools used to manipulate them.",
+                            "audio": "",
+                            "speech": "remove a faulty oxygen sensor"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 25.5,
+                    "end_time": 35.5,
+                    "children": [],
+                    "caption": "The camera focuses on a complex network of wires and hoses, possibly part of a vehicle's engine, as a man's voice explains that he's about to spray something into the engine.",
+                    "postprocess": {
+                      "event_id": 7,
+                      "original_answer": "The camera focuses on a complex network of wires and hoses, possibly part of a vehicle's engine, as a man's voice explains that he's about to spray something into the engine.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_25_35",
+                        "tags": [
+                          "engine",
+                          "vehicle",
+                          "mechanic",
+                          "spray",
+                          "maintenance"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "wires",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "hoses",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O003",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_25_35",
+                          "name": "Engine maintenance",
+                          "time": {
+                            "start": "25.5",
+                            "end": "35.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "vehicle maintenance"
+                          ],
+                          "scene_topic": "A man explains engine maintenance",
+                          "summary": "The camera focuses on a complex network of wires and hoses, possibly part of a vehicle's engine, as a man's voice explains that he's about to spray something into the engine.",
+                          "implications": "Important maintenance information",
+                          "modalities": {
+                            "visual": "The camera focuses on a complex network of wires and hoses, possibly part of a vehicle's engine, as a man's voice explains that he's about to spray something into the engine.",
+                            "audio": "man's voice",
+                            "speech": "remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A technician works on a vehicle's engine, explaining the process of removing a fuel injector, spraying a substance into the engine, and manipulating complex networks of wires and hoses using specialized tools.",
+                "summary": "A man's voice guides the removal of a fuel injector, focusing on the intricate network of wires and hoses, possibly part of a vehicle's engine, and the tools used to manipulate them. The camera highlights the complex details of the system as the man prepares to spray something into the engine."
+              }
+            ],
+            "caption": "A technician repairs a 2005 Ford Focus's engine by replacing a faulty fuel injector, explaining the process step-by-step to the viewer.",
+            "summary": "A mechanic replaces a fuel injector on a 2005 Ford Focus, with the camera capturing close-ups of the intricate engine components, wires, and pipes, and the tools used to manipulate them. A man's voice provides instructions on how to remove the fuel injector, highlighting the complex details of the system."
+          },
+          {
+            "level": 2,
+            "start_time": 35.5,
+            "end_time": 90.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 35.5,
+                "end_time": 58.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 35.5,
+                    "end_time": 58.5,
+                    "children": [],
+                    "caption": "The video shows a person's hands working on a car engine, the camera zooming in on the intricate details of the mechanical components as the person explains the process of removing the oil drain bolt.",
+                    "postprocess": {
+                      "event_id": 8,
+                      "original_answer": "The video shows a person's hands working on a car engine, the camera zooming in on the intricate details of the mechanical components as the person explains the process of removing the oil drain bolt.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_3558",
+                        "tags": [
+                          "mechanics",
+                          "car_engine",
+                          "oil_drain_bolt",
+                          "tutorial"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car_engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_3558",
+                          "name": "car_engine_tutorial",
+                          "time": {
+                            "start": "35.5",
+                            "end": "58.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "mechanics"
+                          ],
+                          "scene_topic": "The person explains the process of removing the oil drain bolt from a car engine.",
+                          "summary": "The video shows a person's hands working on a car engine, the camera zooming in on the intricate details of the mechanical components as the person explains the process of removing the oil drain bolt.",
+                          "implications": "Major mechanics news event",
+                          "modalities": {
+                            "visual": "The video shows a person's hands working on a car engine, the camera zooming in on the intricate details of the mechanical components as the person explains the process of removing the oil drain bolt.",
+                            "audio": "",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter, which is causing an engine code 0 1 4 0."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person is shown working on a car engine, explaining the process of removing the oil drain bolt while the camera zooms in on the intricate details of the mechanical components.",
+                "summary": "A person is shown working on a car engine, with the camera focusing on the intricate details of the mechanical components as they explain the process of removing the oil drain bolt."
+              },
+              {
+                "level": 3,
+                "start_time": 58.5,
+                "end_time": 69.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 58.5,
+                    "end_time": 69.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by his flashlight, continues to work on the car's undercarriage, the only sound the clinking of tools and the occasional muffled voice.",
+                    "postprocess": {
+                      "event_id": 9,
+                      "original_answer": "The mechanic, illuminated by his flashlight, continues to work on the car's undercarriage, the only sound the clinking of tools and the occasional muffled voice.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_585_695",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "undercarriage",
+                          "tools",
+                          "voice"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "flashlight",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O002",
+                            "role": "operator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_585_695",
+                          "name": "car repair",
+                          "time": {
+                            "start": "58.5",
+                            "end": "69.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "non-violent scene"
+                          ],
+                          "scene_topic": "The mechanic continues to work on the car's undercarriage.",
+                          "summary": "The mechanic, illuminated by his flashlight, continues to work on the car's undercarriage, the only sound the clinking of tools and the occasional muffled voice.",
+                          "implications": "Major maintenance event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by his flashlight, continues to work on the car's undercarriage.",
+                            "audio": "clinking of tools; muffled voice",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The mechanic works on the car's undercarriage in a dimly lit area, the only sounds being the clinking of tools and muffled voices.",
+                "summary": "The mechanic works on the car's undercarriage, the only sounds being the clinking of tools and occasional muffled voices, as he is illuminated by his flashlight."
+              },
+              {
+                "level": 3,
+                "start_time": 69.5,
+                "end_time": 75.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 69.5,
+                    "end_time": 75.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by his flashlight, continues to work on the car's undercarriage, the only sound the clinking of tools and the occasional muffled voice.",
+                    "postprocess": {
+                      "event_id": 10,
+                      "original_answer": "The mechanic, illuminated by his flashlight, continues to work on the car's undercarriage, the only sound the clinking of tools and the occasional muffled voice.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_69.5_75.5",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "undercarriage",
+                          "tools",
+                          "voice"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "flashlight",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O002",
+                            "role": "worker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_69.5_75.5",
+                          "name": "car repair",
+                          "time": {
+                            "start": "69.5",
+                            "end": "75.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "work"
+                          ],
+                          "scene_topic": "The mechanic continues to work on the car's undercarriage.",
+                          "summary": "The mechanic, illuminated by his flashlight, continues to work on the car's undercarriage, the only sound the clinking of tools and the occasional muffled voice.",
+                          "implications": "Major car repair event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by his flashlight, continues to work on the car's undercarriage.",
+                            "audio": "clinking of tools; muffled voice",
+                            "speech": "remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The mechanic works on the car's undercarriage in a dimly lit garage, the only sounds being the clinking of tools and muffled voices.",
+                "summary": "The mechanic works on the car's undercarriage, the only sounds being the clinking of tools and occasional muffled voices, as he is illuminated by his flashlight."
+              },
+              {
+                "level": 3,
+                "start_time": 75.5,
+                "end_time": 80.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 75.5,
+                    "end_time": 80.5,
+                    "children": [],
+                    "caption": "The camera focuses on the intricate details of a mechanical component, zooming in and out to reveal its complex structure and functionality.",
+                    "postprocess": {
+                      "event_id": 11,
+                      "original_answer": "The camera focuses on the intricate details of a mechanical component, zooming in and out to reveal its complex structure and functionality.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_75_80",
+                        "tags": [
+                          "mechanics",
+                          "engineering",
+                          "machine"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "mechanical component",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_75_80",
+                          "name": "camera focuses on mechanical component",
+                          "time": {
+                            "start": "75.5",
+                            "end": "80.5"
+                          },
+                          "actors": [],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "technology news"
+                          ],
+                          "scene_topic": "The camera zooms in and out to reveal the intricate details of a mechanical component.",
+                          "summary": "The camera focuses on the intricate details of a mechanical component, zooming in and out to reveal its complex structure and functionality.",
+                          "implications": "Significant for engineering and technology enthusiasts",
+                          "modalities": {
+                            "visual": "The camera focuses on the intricate details of a mechanical component, zooming in and out to reveal its complex structure and functionality.",
+                            "audio": "",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The camera explores the intricate details of a mechanical component, showcasing its complex structure and functionality through close-up shots and zooms.",
+                "summary": "The camera closely examines a mechanical component, showcasing its intricate details and complex structure through a series of zooms."
+              },
+              {
+                "level": 3,
+                "start_time": 80.5,
+                "end_time": 85.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 80.5,
+                    "end_time": 85.5,
+                    "children": [],
+                    "caption": "The camera focuses on a person's hand reaching out from the darkness, their face obscured by a mask, as a man's voice can be heard, though his words are unclear.",
+                    "postprocess": {
+                      "event_id": 12,
+                      "original_answer": "The camera focuses on a person's hand reaching out from the darkness, their face obscured by a mask, as a man's voice can be heard, though his words are unclear.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_80_85",
+                        "tags": [
+                          "darkness",
+                          "mask",
+                          "voice"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person's hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "face",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_80_85",
+                          "name": "Unseen speaker",
+                          "time": {
+                            "start": "80.5",
+                            "end": "85.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "darkness"
+                          ],
+                          "scene_topic": "The camera focuses on a person's hand reaching out from the darkness, their face obscured by a mask, as a man's voice can be heard, though his words are unclear.",
+                          "summary": "The camera focuses on a person's hand reaching out from the darkness, their face obscured by a mask, as a man's voice can be heard, though his words are unclear.",
+                          "implications": "Major suspense, thriller news event",
+                          "modalities": {
+                            "visual": "The camera focuses on a person's hand reaching out from the darkness, their face obscured by a mask, as a man's face is obscured.",
+                            "audio": "man's voice",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter which is causing an engine code 0 1 4 0"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A mysterious figure reaches out from the shadows, their face obscured by a mask, as an unintelligible voice speaks.",
+                "summary": "A person's hand extends from the shadows, with their face hidden behind a mask, while a man's voice is heard but his words are indistinguishable."
+              },
+              {
+                "level": 3,
+                "start_time": 85.5,
+                "end_time": 90.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 85.5,
+                    "end_time": 90.5,
+                    "children": [],
+                    "caption": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the faint hum of machinery in the background.",
+                    "postprocess": {
+                      "event_id": 13,
+                      "original_answer": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the faint hum of machinery in the background.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_85_90",
+                        "tags": [
+                          "person",
+                          "face",
+                          "voice",
+                          "machine",
+                          "background"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {
+                              "illuminated": "dim light",
+                              "speaking": "clear and audible"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "unknown",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_85_90",
+                          "name": "person speaking",
+                          "time": {
+                            "start": "85.5",
+                            "end": "90.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person speaking"
+                          ],
+                          "scene_topic": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the faint hum of machinery in the background.",
+                          "summary": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the faint hum of machinery in the background.",
+                          "implications": "Major communication event",
+                          "modalities": {
+                            "visual": "The camera focuses on a person's face, illuminated by a dim light, as they speak.",
+                            "audio": "speaking; faint hum of machinery",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person speaks clearly and audibly, their face illuminated by a dim light, while the background hum of machinery provides a subtle atmosphere.",
+                "summary": "A person's face is illuminated by a dim light as they speak, their voice clear and audible over the faint hum of machinery in the background."
+              }
+            ],
+            "caption": "A mechanic works on a car's undercarriage in a dimly lit area, while a mysterious figure lurks in the shadows. The camera shows close-up shots of the mechanical components, highlighting their intricate details and functionality. The mechanic speaks clearly and audibly, while the background hum of machinery creates a subtle atmosphere.",
+            "summary": "A mechanic is shown working on a car's undercarriage, removing the oil drain bolt, with the camera focusing on the intricate details of the mechanical components and the sounds of clinking tools and muffled voices. The scene is illuminated by a flashlight, with the mechanic's face hidden behind a mask and their voice indistinguishable, while their hands work on the car's engine."
+          }
+        ],
+        "caption": "A technician repairs a car's engine by replacing a faulty fuel injector, explaining the process step-by-step to the viewer. Meanwhile, a mysterious figure lurks in the shadows while a mechanic works on the car's undercarriage in a dimly lit area. The camera captures close-up shots of the mechanical components, highlighting their intricate details and functionality.",
+        "summary": "A mechanic replaces a fuel injector on a 2005 Ford Focus, with close-ups of engine components, wires, and pipes, and a voiceover providing instructions on removal. The scene also shows the mechanic working on the undercarriage, removing the oil drain bolt, with a focus on intricate mechanical details and sounds of clinking tools."
+      },
+      {
+        "level": 1,
+        "start_time": 90.5,
+        "end_time": 246.179267,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 90.5,
+            "end_time": 140.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 90.5,
+                "end_time": 99.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 90.5,
+                    "end_time": 99.5,
+                    "children": [],
+                    "caption": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the sound of a car engine idling in the background.",
+                    "postprocess": {
+                      "event_id": 14,
+                      "original_answer": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the sound of a car engine idling in the background.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_90_99",
+                        "tags": [
+                          "person",
+                          "face",
+                          "voice",
+                          "car",
+                          "background"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {
+                              "illuminated": "dim light",
+                              "speaking": "clear and audible"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_90_99",
+                          "name": "",
+                          "time": {
+                            "start": "90.5",
+                            "end": "99.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person speaking"
+                          ],
+                          "scene_topic": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the sound of a car engine idling in the background.",
+                          "summary": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the sound of a car engine idling in the background.",
+                          "implications": "Major audio, video news event",
+                          "modalities": {
+                            "visual": "The camera focuses on a person's face, illuminated by a dim light, as they speak.",
+                            "audio": "speaking; car engine idling",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter which is causing an engine code 0 1 4 0."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person speaks clearly and audibly, their voice rising above the background noise of a car engine.",
+                "summary": "A person's face is illuminated by a dim light as they speak, their voice clear and audible over the sound of a car engine idling in the background."
+              },
+              {
+                "level": 3,
+                "start_time": 99.5,
+                "end_time": 112.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 99.5,
+                    "end_time": 112.5,
+                    "children": [],
+                    "caption": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the sound of a car engine idling in the background.",
+                    "postprocess": {
+                      "event_id": 15,
+                      "original_answer": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the sound of a car engine idling in the background.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_99.5_112.5",
+                        "tags": [
+                          "person",
+                          "face",
+                          "voice",
+                          "car",
+                          "background"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {
+                              "illuminated": "dim light",
+                              "audible": "clear and audible"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "unknown",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_99.5_112.5",
+                          "name": "person speaking",
+                          "time": {
+                            "start": "99.5",
+                            "end": "112.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person speaking"
+                          ],
+                          "scene_topic": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the sound of a car engine idling in the background.",
+                          "summary": "The camera focuses on a person's face, illuminated by a dim light, as they speak, their voice clear and audible over the sound of a car engine idling in the background.",
+                          "implications": "Major communication event",
+                          "modalities": {
+                            "visual": "The camera focuses on a person's face, illuminated by a dim light, as they speak.",
+                            "audio": "speaking; car engine idling",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter which is causing an engine code 0 1 4 0"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person speaks clearly and audibly, their voice rising above the background noise of a car engine.",
+                "summary": "A person's face is illuminated by a dim light as they speak, their voice clear and audible over the sound of a car engine idling in the background."
+              },
+              {
+                "level": 3,
+                "start_time": 112.5,
+                "end_time": 124.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 112.5,
+                    "end_time": 119.5,
+                    "children": [],
+                    "caption": "The camera focuses on a person's face, illuminated by a dim light source, as they speak, their voice clear and audible over the quiet atmosphere.",
+                    "postprocess": {
+                      "event_id": 16,
+                      "original_answer": "The camera focuses on a person's face, illuminated by a dim light source, as they speak, their voice clear and audible over the quiet atmosphere.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_112_119",
+                        "tags": [
+                          "person",
+                          "face",
+                          "light",
+                          "voice",
+                          "atmosphere"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "person",
+                            "attributes": {
+                              "illuminated": "true",
+                              "clear_voice": "true"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "unknown",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_112_119",
+                          "name": "person speaking",
+                          "time": {
+                            "start": "112.5",
+                            "end": "119.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person speaking"
+                          ],
+                          "scene_topic": "The camera focuses on a person's face, illuminated by a dim light source, as they speak, their voice clear and audible over the quiet atmosphere.",
+                          "summary": "The camera focuses on a person's face, illuminated by a dim light source, as they speak, their voice clear and audible over the quiet atmosphere.",
+                          "implications": "Major communication event",
+                          "modalities": {
+                            "visual": "The camera focuses on a person's face, illuminated by a dim light source, as they speak.",
+                            "audio": "voice; quiet atmosphere",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 119.5,
+                    "end_time": 124.5,
+                    "children": [],
+                    "caption": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the engine roars and the car speeds down a dark road.",
+                    "postprocess": {
+                      "event_id": 17,
+                      "original_answer": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the engine roars and the car speeds down a dark road.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_119_124",
+                        "tags": [
+                          "car",
+                          "speed",
+                          "road",
+                          "night",
+                          "engine"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_119_124",
+                          "name": "",
+                          "time": {
+                            "start": "119.5",
+                            "end": "124.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "transportation"
+                          ],
+                          "scene_topic": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the engine roars and the car speeds down a dark road.",
+                          "summary": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the engine roars and the car speeds down a dark road.",
+                          "implications": "Major transportation event",
+                          "modalities": {
+                            "visual": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the car speeds down a dark road.",
+                            "audio": "engine roars",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person speaks clearly and audibly in a quiet atmosphere, while a car speeds down a dark road with the engine roaring and the speedometer needle pointing to 100 mph.",
+                "summary": "A person's face is illuminated by a dim light as they speak, their voice clear in the quiet atmosphere. Meanwhile, a car speeds down a dark road, its speedometer needle pointing to 100 mph as the engine roars."
+              },
+              {
+                "level": 3,
+                "start_time": 124.5,
+                "end_time": 140.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 124.5,
+                    "end_time": 126.5,
+                    "children": [],
+                    "caption": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph and the tachometer needle at 5,000 rpm, while a man's voice can be heard, though his words are unclear.",
+                    "postprocess": {
+                      "event_id": 18,
+                      "original_answer": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph and the tachometer needle at 5,000 rpm, while a man's voice can be heard, though his words are unclear.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_124_126",
+                        "tags": [
+                          "car",
+                          "dashboard",
+                          "speedometer",
+                          "tachometer",
+                          "voice"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "dashboard",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "speedometer",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "tachometer",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "driver",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_124_126",
+                          "name": "car dashboard view",
+                          "time": {
+                            "start": "124.5",
+                            "end": "126.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "car news"
+                          ],
+                          "scene_topic": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph and the tachometer needle at 5,000 rpm, while a man's voice can be heard, though his words are unclear.",
+                          "summary": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph and the tachometer needle at 5,000 rpm, while a man's voice can be heard, though his words are unclear.",
+                          "implications": "Major car news event",
+                          "modalities": {
+                            "visual": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph and the tachometer needle at 5,000 rpm.",
+                            "audio": "man's voice",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 126.5,
+                    "end_time": 129.5,
+                    "children": [],
+                    "caption": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the engine roars and the car speeds down a dark road.",
+                    "postprocess": {
+                      "event_id": 19,
+                      "original_answer": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the engine roars and the car speeds down a dark road.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_126_129",
+                        "tags": [
+                          "car",
+                          "speed",
+                          "road",
+                          "night",
+                          "engine"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_126_129",
+                          "name": "",
+                          "time": {
+                            "start": "126.5",
+                            "end": "129.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "transportation"
+                          ],
+                          "scene_topic": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the engine roars and the car speeds down a dark road.",
+                          "summary": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the engine roars and the car speeds down a dark road.",
+                          "implications": "Major transportation event",
+                          "modalities": {
+                            "visual": "The camera focuses on the car's dashboard, showing the speedometer needle pointing to 100 mph as the car speeds down a dark road.",
+                            "audio": "engine roars",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 129.5,
+                    "end_time": 140.5,
+                    "children": [],
+                    "caption": "The camera focuses on the car's engine, showing the intricate details of the components and wiring, while a man's voice explains the process of removing the engine mounts.",
+                    "postprocess": {
+                      "event_id": 20,
+                      "original_answer": "The camera focuses on the car's engine, showing the intricate details of the components and wiring, while a man's voice explains the process of removing the engine mounts.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_129_5_140_5",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "mechanics",
+                          "tutorial",
+                          "details"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man's voice",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_129_5_140_5",
+                          "name": "Car Engine Details",
+                          "time": {
+                            "start": "129.5",
+                            "end": "140.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "mechanics"
+                          ],
+                          "scene_topic": "The camera shows the car's engine and a man explains the process of removing the engine mounts.",
+                          "summary": "The camera focuses on the car's engine, showing the intricate details of the components and wiring, while a man's voice explains the process of removing the engine mounts.",
+                          "implications": "Major car maintenance and repair event",
+                          "modalities": {
+                            "visual": "The camera focuses on the car's engine, showing the intricate details of the components and wiring.",
+                            "audio": "man's voice; engine sounds.",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter, which is causing an engine code 0 1 4 0."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A car is shown speeding down a dark road with the dashboard instruments indicating 100 mph and 5,000 rpm, while a man's voice is heard but his words are unclear. The camera then focuses on the dashboard and engine, showing the intricate details of the components and wiring, and a man's voice explains the process of removing the engine mounts.",
+                "summary": "The camera shows a car speeding down a dark road with the speedometer at 100 mph and the engine roaring, while a man's voice is heard but unclear. The camera then focuses on the engine, showing its components and wiring, as the man's voice explains the process of removing the engine mounts."
+              }
+            ],
+            "caption": "A person's voice is heard clearly in various environments, including in a noisy car engine and a quiet atmosphere, as they speak audibly. The camera focuses on the dashboard and engine of a speeding car, showing the intricate details of the components and wiring, and a man's voice explains the process of removing the engine mounts.",
+            "summary": "A person's voice is heard over a dimly lit background, explaining the process of removing engine mounts, while a car speeds down a dark road in the background. The camera then focuses on the engine, showing its components and wiring, as the man's voice continues to explain the process."
+          },
+          {
+            "level": 2,
+            "start_time": 140.5,
+            "end_time": 170.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 140.5,
+                "end_time": 154.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 140.5,
+                    "end_time": 154.5,
+                    "children": [],
+                    "caption": "The camera focuses on the car's engine, zooming in on the intricate details of the metal components and wires, while a man's voice explains the process of removing the engine mounts.",
+                    "postprocess": {
+                      "event_id": 21,
+                      "original_answer": "The camera focuses on the car's engine, zooming in on the intricate details of the metal components and wires, while a man's voice explains the process of removing the engine mounts.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_140.5_154.5",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "mechanics",
+                          "explainer"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_140.5_154.5",
+                          "name": "Explaining car engine removal",
+                          "time": {
+                            "start": "140.5",
+                            "end": "154.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "technology"
+                          ],
+                          "scene_topic": "The camera focuses on the car's engine, zooming in on the intricate details of the metal components and wires, while a man's voice explains the process of removing the engine mounts.",
+                          "summary": "The camera focuses on the car's engine, zooming in on the intricate details of the metal components and wires, while a man's voice explains the process of removing the engine mounts.",
+                          "implications": "Major mechanics and car maintenance news event",
+                          "modalities": {
+                            "visual": "The camera focuses on the car's engine, zooming in on the intricate details of the metal components and wires.",
+                            "audio": "man's voice; engine sounds.",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter, which is causing an engine code 0 1 4 0."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The camera shows a close-up view of the car's engine, highlighting the intricate details of its metal components and wires, while a voiceover explains the process of removing the engine mounts.",
+                "summary": "The camera zooms in on the car's engine, showcasing its metal components and wires, as a man's voice guides the viewer through the process of removing the engine mounts."
+              },
+              {
+                "level": 3,
+                "start_time": 154.5,
+                "end_time": 160.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 154.5,
+                    "end_time": 160.5,
+                    "children": [],
+                    "caption": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                    "postprocess": {
+                      "event_id": 22,
+                      "original_answer": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_154.5_160.5",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "details",
+                          "background",
+                          "voice"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car's engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_154.5_160.5",
+                          "name": "The camera zooms in on the car's engine",
+                          "time": {
+                            "start": "154.5",
+                            "end": "160.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "non-violent scene"
+                          ],
+                          "scene_topic": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                          "summary": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                          "implications": "Technical details of car's engine",
+                          "modalities": {
+                            "visual": "The camera zooms in on the car's engine, revealing the intricate details of the components.",
+                            "audio": "man's voice; engine noise",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The camera zooms in on the car's engine, revealing the intricate details of the components, while a man's voice can be heard in the background, though his words are unclear.",
+                "summary": "The camera focuses on the car's engine, showcasing its intricate components, while a man's voice is heard in the background, though his words are indistinguishable."
+              },
+              {
+                "level": 3,
+                "start_time": 160.5,
+                "end_time": 170.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 160.5,
+                    "end_time": 170.5,
+                    "children": [],
+                    "caption": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                    "postprocess": {
+                      "event_id": 23,
+                      "original_answer": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_160.5_170.5",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "fuel_injector",
+                          "repair",
+                          "explanation"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "fuel_injector",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_160.5_170.5",
+                          "name": "car engine repair explanation",
+                          "time": {
+                            "start": "160.5",
+                            "end": "170.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "technology news"
+                          ],
+                          "scene_topic": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                          "summary": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                          "implications": "Major technology news event",
+                          "modalities": {
+                            "visual": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                            "audio": "man's voice; engine noise",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A mechanic replaces a fuel injector in a car's engine, explaining the process in detail as the camera zooms in on the components.",
+                "summary": "The camera focuses on the car's engine, showcasing its internal components, as a narrator guides viewers through the process of replacing the fuel injector."
+              }
+            ],
+            "caption": "The captions show close-up views of a car's engine, highlighting its intricate details, while voiceovers explain various mechanical processes, such as removing engine mounts, replacing fuel injectors, and other car maintenance tasks.",
+            "summary": "The camera shows the car's engine, highlighting its metal components and wires, as a narrator guides the viewer through the process of removing engine mounts and replacing the fuel injector. The camera focuses on the engine's intricate internal components, providing a detailed look at the replacement process."
+          },
+          {
+            "level": 2,
+            "start_time": 170.5,
+            "end_time": 200.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 170.5,
+                "end_time": 182.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 170.5,
+                    "end_time": 175.5,
+                    "children": [],
+                    "caption": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                    "postprocess": {
+                      "event_id": 24,
+                      "original_answer": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_170_175",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "fuel_injector",
+                          "repair"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "fuel_injector",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_170_175",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "170.5",
+                            "end": "175.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "car repair"
+                          ],
+                          "scene_topic": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                          "summary": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                          "implications": "Major car repair news event",
+                          "modalities": {
+                            "visual": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                            "audio": "man's voice; engine noise",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 175.5,
+                    "end_time": 182.5,
+                    "children": [],
+                    "caption": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                    "postprocess": {
+                      "event_id": 25,
+                      "original_answer": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_175_182",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "fuel_injector",
+                          "repair"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "fuel_injector",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_175_182",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "175.5",
+                            "end": "182.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "car repair"
+                          ],
+                          "scene_topic": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                          "summary": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                          "implications": "Major car repair news event",
+                          "modalities": {
+                            "visual": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                            "audio": "man's voice; engine noise",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A mechanic explains the process of replacing a fuel injector in a car's engine, highlighting the intricate details of the components involved in the process.",
+                "summary": "The camera shows the car's engine components as a man's voice explains the process of replacing the fuel injector, providing a detailed look at the intricate parts involved."
+              },
+              {
+                "level": 3,
+                "start_time": 182.5,
+                "end_time": 187.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 182.5,
+                    "end_time": 187.5,
+                    "children": [],
+                    "caption": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                    "postprocess": {
+                      "event_id": 26,
+                      "original_answer": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_182_187",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "fuel_injector",
+                          "repair"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "fuel_injector",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_182_187",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "182.5",
+                            "end": "187.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "technology news"
+                          ],
+                          "scene_topic": "A man explains the process of replacing a fuel injector in a car engine.",
+                          "summary": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                          "implications": "Major technology news event",
+                          "modalities": {
+                            "visual": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                            "audio": "man's voice; engine noise",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A mechanic replaces a fuel injector in a car's engine, explaining the process in detail as the camera zooms in on the components.",
+                "summary": "The camera focuses on the car's engine, showcasing its internal components, as a narrator guides viewers through the process of replacing the fuel injector."
+              },
+              {
+                "level": 3,
+                "start_time": 187.5,
+                "end_time": 200.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 187.5,
+                    "end_time": 193.5,
+                    "children": [],
+                    "caption": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                    "postprocess": {
+                      "event_id": 27,
+                      "original_answer": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_187_193",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "fuel_injector",
+                          "repair"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "fuel_injector",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_187_193",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "187.5",
+                            "end": "193.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "car repair"
+                          ],
+                          "scene_topic": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                          "summary": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                          "implications": "Major car repair event",
+                          "modalities": {
+                            "visual": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice explains the process of replacing the fuel injector.",
+                            "audio": "man's voice; engine noise",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 193.5,
+                    "end_time": 196.5,
+                    "children": [],
+                    "caption": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                    "postprocess": {
+                      "event_id": 28,
+                      "original_answer": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_193_196",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "details"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car's engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_193_196",
+                          "name": "Car engine details",
+                          "time": {
+                            "start": "193.5",
+                            "end": "196.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "non-violent scene"
+                          ],
+                          "scene_topic": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                          "summary": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                          "implications": "Major visual details event",
+                          "modalities": {
+                            "visual": "The camera zooms in on the car's engine, revealing the intricate details of the components.",
+                            "audio": "man's voice; engine noise",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 196.5,
+                    "end_time": 198.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                    "postprocess": {
+                      "event_id": 29,
+                      "original_answer": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_196_198",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "engine",
+                          "garage",
+                          "tools"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "garage",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O001",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_196_198",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "196.5",
+                            "end": "198.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "The mechanic continues to work on the engine in the garage.",
+                          "summary": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                          "implications": "Important maintenance work for the car",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the dimly lit garage.",
+                            "audio": "tools echoing",
+                            "speech": "remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 198.5,
+                    "end_time": 200.5,
+                    "children": [],
+                    "caption": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                    "postprocess": {
+                      "event_id": 30,
+                      "original_answer": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_198_200",
+                        "tags": [
+                          "car",
+                          "engine",
+                          "details"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car's engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_198_200",
+                          "name": "Car engine details",
+                          "time": {
+                            "start": "198.5",
+                            "end": "200.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "non-violent scene"
+                          ],
+                          "scene_topic": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                          "summary": "The camera zooms in on the car's engine, revealing the intricate details of the components as a man's voice can be heard in the background, though his words are unclear.",
+                          "implications": "Major visual details event",
+                          "modalities": {
+                            "visual": "The camera zooms in on the car's engine, revealing the intricate details of the components.",
+                            "audio": "man's voice; engine noise",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A mechanic works on the engine of a car, with the camera zooming in on the components to show their intricate details. The mechanic's voice can be heard in the background, though his words are unclear.",
+                "summary": "A mechanic is shown replacing a fuel injector in a car's engine, with the camera zooming in on the intricate components as the man's voice provides unclear commentary in the background. The mechanic works with precision, adjusting components and using tools in a dimly lit garage."
+              }
+            ],
+            "caption": "A mechanic replaces a fuel injector in a car's engine, explaining the process in detail while the camera zooms in on the components.",
+            "summary": "A mechanic replaces a fuel injector in a car's engine, with the camera providing a detailed look at the intricate components involved. The process is guided by a narrator's commentary, showcasing the mechanic's precision as they adjust components and use tools in a dimly lit garage."
+          },
+          {
+            "level": 2,
+            "start_time": 200.5,
+            "end_time": 235.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 200.5,
+                "end_time": 209.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 200.5,
+                    "end_time": 203.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                    "postprocess": {
+                      "event_id": 31,
+                      "original_answer": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_200.5_203.5",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "engine",
+                          "garage",
+                          "tools"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "garage",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O002",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_200.5_203.5",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "200.5",
+                            "end": "203.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "The mechanic continues to work on the engine in the garage.",
+                          "summary": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                          "implications": "Major maintenance event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the dimly lit garage.",
+                            "audio": "tools echoing",
+                            "speech": "remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 203.5,
+                    "end_time": 206.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                    "postprocess": {
+                      "event_id": 32,
+                      "original_answer": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_203_206",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "engine",
+                          "work",
+                          "precision"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "mechanic",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O001",
+                            "role": "worker",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_203_206",
+                          "name": "The mechanic works on the engine",
+                          "time": {
+                            "start": "203.5",
+                            "end": "206.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                          "summary": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                          "implications": "Important maintenance event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                            "audio": "",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter, which is causing an engine code 0 1 4 0."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 206.5,
+                    "end_time": 207.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the workshop lights, continues to work on the car's engine, his hands moving with precision as he explains the process of replacing the fuel injector.",
+                    "postprocess": {
+                      "event_id": 33,
+                      "original_answer": "The mechanic, illuminated by the workshop lights, continues to work on the car's engine, his hands moving with precision as he explains the process of replacing the fuel injector.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_206.5_207.5",
+                        "tags": [
+                          "mechanic",
+                          "workshop",
+                          "engine",
+                          "fuel_injector",
+                          "repair"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "workshop_lights",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "mechanic",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O005",
+                            "name": "fuel_injector",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O003",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_206.5_207.5",
+                          "name": "car_engine_repair",
+                          "time": {
+                            "start": "206.5",
+                            "end": "207.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004",
+                            "O005"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human_activity"
+                          ],
+                          "scene_topic": "The mechanic explains the process of replacing the fuel injector.",
+                          "summary": "The mechanic, illuminated by the workshop lights, continues to work on the car's engine, his hands moving with precision as he explains the process of replacing the fuel injector.",
+                          "implications": "Major repair event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the workshop lights, continues to work on the car's engine, his hands moving with precision as he explains the process of replacing the fuel injector.",
+                            "audio": "",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter, which is causing an engine code 0 1 4 0."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 207.5,
+                    "end_time": 209.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                    "postprocess": {
+                      "event_id": 34,
+                      "original_answer": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_207_5_209_5",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "engine",
+                          "garage",
+                          "tools"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "garage",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O001",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_207_5_209_5",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "207.5",
+                            "end": "209.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "The mechanic continues to work on the engine in the garage.",
+                          "summary": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                          "implications": "Major maintenance event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the dimly lit garage.",
+                            "audio": "tools echoing",
+                            "speech": "remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A mechanic works on a car's engine with precision, using various tools and adjusting components in a dimly lit garage or workshop.",
+                "summary": "A mechanic works on a car's engine in a dimly lit garage, his hands moving with precision as he adjusts components and explains the process of replacing the fuel injector. The sound of his tools echoes through the garage as he continues to work on the engine."
+              },
+              {
+                "level": 3,
+                "start_time": 209.5,
+                "end_time": 219.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 209.5,
+                    "end_time": 213.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                    "postprocess": {
+                      "event_id": 35,
+                      "original_answer": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_209_213",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "engine",
+                          "garage",
+                          "tools"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "garage",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O001",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_209_213",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "209.5",
+                            "end": "213.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "The mechanic continues to work on the car engine in a garage.",
+                          "summary": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                          "implications": "Major maintenance event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the dimly lit garage.",
+                            "audio": "tools echoing",
+                            "speech": "remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 213.5,
+                    "end_time": 219.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                    "postprocess": {
+                      "event_id": 36,
+                      "original_answer": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_213_219",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "engine",
+                          "garage",
+                          "tools"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "garage",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O001",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_213_219",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "213.5",
+                            "end": "219.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "The mechanic continues to work on the engine in the garage.",
+                          "summary": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                          "implications": "Major maintenance event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the dimly lit garage.",
+                            "audio": "tools echoing",
+                            "speech": "remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The mechanic works on the engine with precision, adjusting a component in the dimly lit garage, the sound of his tools echoing in the background.",
+                "summary": "A mechanic works on a car's engine in a dimly lit garage, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the background."
+              },
+              {
+                "level": 3,
+                "start_time": 219.5,
+                "end_time": 235.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 219.5,
+                    "end_time": 225.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                    "postprocess": {
+                      "event_id": 37,
+                      "original_answer": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_219_225",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "engine",
+                          "garage",
+                          "tools"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "garage",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O001",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_219_225",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "219.5",
+                            "end": "225.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "The mechanic continues to work on the car engine in a garage.",
+                          "summary": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                          "implications": "Major maintenance event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the dimly lit garage.",
+                            "audio": "tools echoing",
+                            "speech": "remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 225.5,
+                    "end_time": 228.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                    "postprocess": {
+                      "event_id": 38,
+                      "original_answer": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_225_228",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "engine",
+                          "work",
+                          "precision"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "mechanic",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "engine",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O001",
+                            "role": "worker",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_225_228",
+                          "name": "The mechanic works on the engine",
+                          "time": {
+                            "start": "225.5",
+                            "end": "228.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                          "summary": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                          "implications": "Important maintenance event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component.",
+                            "audio": "",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter, which is causing an engine code 0 1 4 0."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 228.5,
+                    "end_time": 233.5,
+                    "children": [],
+                    "caption": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                    "postprocess": {
+                      "event_id": 39,
+                      "original_answer": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_228_233",
+                        "tags": [
+                          "mechanic",
+                          "car",
+                          "engine",
+                          "garage",
+                          "tools"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "engine",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "garage",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "tools",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "mechanic",
+                            "ref_object": "O001",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_228_233",
+                          "name": "car engine repair",
+                          "time": {
+                            "start": "228.5",
+                            "end": "233.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "The mechanic continues to work on the engine in the garage.",
+                          "summary": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the sound of his tools echoing in the dimly lit garage.",
+                          "implications": "Major maintenance event",
+                          "modalities": {
+                            "visual": "The mechanic, illuminated by the car's headlights, continues to work on the engine, his hands moving with precision as he adjusts a component, the dimly lit garage.",
+                            "audio": "tools echoing",
+                            "speech": "remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 233.5,
+                    "end_time": 235.5,
+                    "children": [],
+                    "caption": "The camera focuses on the intricate details of a mechanical component, zooming in and out to reveal its complex structure and components.",
+                    "postprocess": {
+                      "event_id": 40,
+                      "original_answer": "The camera focuses on the intricate details of a mechanical component, zooming in and out to reveal its complex structure and components.",
+                      "result": {
+                        "video_id": "S7hzPF_9BGY",
+                        "event_id": "E_S7hzPF_9BGY_233_235",
+                        "tags": [
+                          "mechanics",
+                          "engineering",
+                          "machine"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "mechanical component",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [],
+                        "event": {
+                          "event_id": "E_S7hzPF_9BGY_233_235",
+                          "name": "camera focuses on mechanical component",
+                          "time": {
+                            "start": "233.5",
+                            "end": "235.5"
+                          },
+                          "actors": [],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "engineering"
+                          ],
+                          "scene_topic": "The camera focuses on the intricate details of a mechanical component, zooming in and out to reveal its complex structure and components.",
+                          "summary": "The camera focuses on the intricate details of a mechanical component, zooming in and out to reveal its complex structure and components.",
+                          "implications": "Technical details of a mechanical component",
+                          "modalities": {
+                            "visual": "The camera focuses on the intricate details of a mechanical component, zooming in and out to reveal its complex structure and components.",
+                            "audio": "",
+                            "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A mechanic works on an engine in a dimly lit garage, using precision tools and techniques to make adjustments. The camera focuses on the intricate details of the mechanical components, highlighting their complexity and craftsmanship.",
+                "summary": "A mechanic works on a car engine in a dimly lit garage, his hands moving with precision as he adjusts components, the sound of his tools echoing in the background. The camera zooms in on the intricate details of a mechanical component, revealing its complex structure and components."
+              }
+            ],
+            "caption": "A mechanic works with precision in a dimly lit garage, adjusting engine components using various tools to ensure optimal performance.",
+            "summary": "A mechanic works on a car's engine in a dimly lit garage, adjusting components with precision and explaining the process of replacing the fuel injector, with the sound of his tools echoing in the background. The camera zooms in on the intricate details of a mechanical component, revealing its complex structure and components."
+          },
+          {
+            "level": 2,
+            "start_time": 235.5,
+            "end_time": 246.179267,
+            "children": [],
+            "caption": "The camera focuses on the intricate details of a mechanical system, showcasing a complex network of wires and components, while a man's voice provides instructions and commentary, suggesting he is guiding viewers through a technical process or demonstration.",
+            "postprocess": {
+              "event_id": 41,
+              "original_answer": "The camera focuses on the intricate details of a mechanical system, showcasing a complex network of wires and components, while a man's voice provides instructions and commentary, suggesting he is guiding viewers through a technical process or demonstration.",
+              "result": {
+                "video_id": "S7hzPF_9BGY",
+                "event_id": "E_S7hzPF_9BGY_235.5_246.18",
+                "tags": [
+                  "mechanical_system",
+                  "technical_process",
+                  "demonstration"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "mechanical_system",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "guide",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_S7hzPF_9BGY_235.5_246.18",
+                  "name": "Technical Demonstration",
+                  "time": {
+                    "start": "235.5",
+                    "end": "246.18"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "technical_process"
+                  ],
+                  "scene_topic": "The camera focuses on the intricate details of a mechanical system, showcasing a complex network of wires and components, while a man's voice provides instructions and commentary.",
+                  "summary": "The camera focuses on the intricate details of a mechanical system, showcasing a complex network of wires and components, while a man's voice provides instructions and commentary, suggesting he is guiding viewers through a technical process or demonstration.",
+                  "implications": "Technical process or demonstration",
+                  "modalities": {
+                    "visual": "The camera focuses on the intricate details of a mechanical system, showcasing a complex network of wires and components.",
+                    "audio": "a man's voice; instructions; commentary",
+                    "speech": "The speaker is attempting to remove a faulty oxygen sensor bank one sensor from their catalytic converter, which is causing an engine code 0 1 4 0."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The captions showcase the intricate details of a car's engine and mechanical systems, with a focus on the process of removing engine mounts, replacing fuel injectors, and other car maintenance tasks. The camera provides close-up views of the components, while a voiceover explains the processes in detail. The mechanic works with precision in a dimly lit garage, adjusting engine components using various tools to ensure optimal performance. The camera focuses on the intricate details of a mechanical system, showcasing a complex network of wires and components, while a man's",
+        "summary": "A mechanic guides viewers through the process of removing engine mounts and replacing a fuel injector, providing a detailed look at the intricate components and wiring of a car's engine in a dimly lit garage. The camera zooms in on the mechanical components, showcasing the precision and complexity of the replacement process."
+      }
+    ],
+    "caption": "A technician repairs a car's engine by replacing a faulty fuel injector, while a mysterious figure lurks in the shadows. The camera captures close-up shots of the mechanical components, highlighting their intricate details and functionality. Meanwhile, a voiceover explains the process of removing engine mounts, replacing fuel injectors, and other car maintenance tasks. The mechanic works with precision in a dimly lit garage, adjusting engine components using various tools to ensure optimal performance. The camera focuses on the intricate details of a mechanical system,",
+    "summary": "A mechanic replaces a fuel injector on a 2005 Ford Focus, providing a detailed look at the intricate components and wiring of the car's engine in a dimly lit garage. The process is guided by a voiceover, with close-ups of engine components, wires, and pipes, and a focus on mechanical details and sounds of clinking tools."
+  }
+}

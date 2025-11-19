@@ -1,0 +1,2368 @@
+{
+  "video_id": "JC4bSl-5wAQ",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 134.5,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 51.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 9.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 2.5,
+                "children": [],
+                "caption": "The camera pans across a modern building, showcasing its sleek design and large windows, while a man's voice can be heard, though his words are unclear.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The camera pans across a modern building, showcasing its sleek design and large windows, while a man's voice can be heard, though his words are unclear.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_0_2.5",
+                    "tags": [
+                      "architecture",
+                      "building",
+                      "design",
+                      "voiceover",
+                      "man"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "building",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "voiceover",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_0_2.5",
+                      "name": "building showcase",
+                      "time": {
+                        "start": "0",
+                        "end": "2.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "architecture news"
+                      ],
+                      "scene_topic": "The camera pans across a modern building, showcasing its sleek design and large windows, while a man's voice can be heard, though his words are unclear.",
+                      "summary": "The camera pans across a modern building, showcasing its sleek design and large windows, while a man's voice can be heard, though his words are unclear.",
+                      "implications": "Major architecture news event",
+                      "modalities": {
+                        "visual": "The camera pans across a modern building, showcasing its sleek design and large windows.",
+                        "audio": "man's voice",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 2.5,
+                "end_time": 5.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black pants stands in a hallway, pressing a button on the wall as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A man in a blue shirt and black pants stands in a hallway, pressing a button on the wall as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_2_5_5",
+                    "tags": [
+                      "man",
+                      "button",
+                      "hallway",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "button",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "hallway",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_2_5_5",
+                      "name": "man presses button",
+                      "time": {
+                        "start": "2.5",
+                        "end": "5.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "action"
+                      ],
+                      "scene_topic": "A man presses a button in a hallway.",
+                      "summary": "A man in a blue shirt and black pants stands in a hallway, pressing a button on the wall as a woman's voice can be heard in the background.",
+                      "implications": "Major event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black pants stands in a hallway, pressing a button on the wall as a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 5.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black pants walks down a hallway, the camera following him as he approaches a door with a \"DO NOT USE\" sign and a numeric keypad.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "A man in a blue shirt and black pants walks down a hallway, the camera following him as he approaches a door with a \"DO NOT USE\" sign and a numeric keypad.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5_9",
+                    "tags": [
+                      "hallway",
+                      "door",
+                      "numeric_keypad"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_shirt": "blue",
+                          "color_pants": "black"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "door",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "numeric_keypad",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5_9",
+                      "name": "man approaches door",
+                      "time": {
+                        "start": "5.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man in a blue shirt and black pants walks down a hallway, the camera following him as he approaches a door with a 'DO NOT USE' sign and a numeric keypad.",
+                      "summary": "A man in a blue shirt and black pants walks down a hallway, the camera following him as he approaches a door with a \"DO NOT USE\" sign and a numeric keypad.",
+                      "implications": "Minor event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black pants walks down a hallway, the camera following him as he approaches a door with a 'DO NOT USE' sign and a numeric keypad.",
+                        "audio": "",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man stands in a hallway and presses a button on the wall, while a woman's voice can be heard in the background. The man then walks down the hallway towards a door with a \"DO NOT USE\" sign and a numeric keypad.",
+            "summary": "A man in a blue shirt and black pants navigates a modern building, pressing a button and approaching a door with a \"DO NOT USE\" sign and a numeric keypad. The camera captures the sleek design and large windows of the building, while the sounds of voices in the background add to the atmosphere."
+          },
+          {
+            "level": 2,
+            "start_time": 9.5,
+            "end_time": 19.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black pants stands in a hallway, pressing a button on the wall as a woman's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "A man in a blue shirt and black pants stands in a hallway, pressing a button on the wall as a woman's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_9_12",
+                    "tags": [
+                      "man",
+                      "hallway",
+                      "button",
+                      "voice",
+                      "goodbye"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "wall",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_9_12",
+                      "name": "man presses button",
+                      "time": {
+                        "start": "9.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A man presses a button in a hallway.",
+                      "summary": "A man in a blue shirt and black pants stands in a hallway, pressing a button on the wall as a woman's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                      "implications": "Minor event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black pants stands in a hallway, pressing a button on the wall as a woman's voice can be heard saying 'Bye' and 'I'll see you later'.",
+                        "audio": "Woman's voice saying 'Bye' and 'I'll see you later'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 19.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a \"1\" illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying \"Bye.\"",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a \"1\" illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying \"Bye.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_12.5_19.5",
+                    "tags": [
+                      "elevator",
+                      "hallway",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_12.5_19.5",
+                      "name": "Elevator door opens",
+                      "time": {
+                        "start": "12.5",
+                        "end": "19.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a '1' illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying 'Bye'.",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a \"1\" illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying \"Bye.\"",
+                      "implications": "Major scene setting event",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a '1' illuminated on the panel.",
+                        "audio": "Man's voice; woman's voice saying 'Bye'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man presses a button in a hallway, triggering the elevator to open and revealing a brightly lit hallway with a floor number illuminated on the panel.",
+            "summary": "A man enters an elevator, pressing a button as a woman's voice says goodbye, and the door opens to reveal a brightly lit hallway with a \"1\" illuminated on the panel. As the man steps in, a man's voice is heard, followed by the woman's voice saying goodbye again."
+          },
+          {
+            "level": 2,
+            "start_time": 19.5,
+            "end_time": 34.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 19.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a \"3\" illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying \"Bye.\"",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a \"3\" illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying \"Bye.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_19.5_34.5",
+                    "tags": [
+                      "elevator",
+                      "hallway",
+                      "panel",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "panel",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_19.5_34.5",
+                      "name": "Elevator door opens",
+                      "time": {
+                        "start": "19.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a '3' illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying 'Bye.'",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a \"3\" illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying \"Bye.\"",
+                      "implications": "Major scene, setting event",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a '3' illuminated on the panel.",
+                        "audio": "man's voice; woman's voice saying 'Bye'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man and woman exit an elevator on a brightly lit floor, with the number 3 illuminated on the panel, and the man's voice can be heard before the woman says goodbye.",
+            "summary": "The elevator door opens to reveal a brightly lit hallway with a \"3\" illuminated on the panel, as a man's voice is heard, followed by a woman's voice saying \"Bye\"."
+          },
+          {
+            "level": 2,
+            "start_time": 34.5,
+            "end_time": 51.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 40.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a \"3\" illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying \"Bye.\"",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a \"3\" illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying \"Bye.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_34_40",
+                    "tags": [
+                      "elevator",
+                      "hallway",
+                      "panel",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "panel",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_34_40",
+                      "name": "Elevator door opens",
+                      "time": {
+                        "start": "34.5",
+                        "end": "40.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a '3' illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying 'Bye.'",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a \"3\" illuminated on the panel, as a man's voice can be heard, followed by a woman's voice saying \"Bye.\"",
+                      "implications": "Major scene setting event",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a '3' illuminated on the panel.",
+                        "audio": "man's voice; woman's voice saying 'Bye'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 48.5,
+                "children": [],
+                "caption": "The elevator ascends, its digital display illuminating the numbers \"3\" and \"4\" as a man's voice, seemingly from outside the elevator, expresses surprise and disbelief.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The elevator ascends, its digital display illuminating the numbers \"3\" and \"4\" as a man's voice, seemingly from outside the elevator, expresses surprise and disbelief.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_40.5_48.5",
+                    "tags": [
+                      "elevator",
+                      "numbers",
+                      "voice",
+                      "surprise",
+                      "disbelief"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "digital display",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_40.5_48.5",
+                      "name": "The elevator ascends",
+                      "time": {
+                        "start": "40.5",
+                        "end": "48.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The elevator ascends, its digital display illuminating the numbers '3' and '4' as a man's voice, seemingly from outside the elevator, expresses surprise and disbelief.",
+                      "summary": "The elevator ascends, its digital display illuminating the numbers \"3\" and \"4\" as a man's voice, seemingly from outside the elevator, expresses surprise and disbelief.",
+                      "implications": "Major scene, event",
+                      "modalities": {
+                        "visual": "The elevator ascends, its digital display illuminating the numbers '3' and '4'.",
+                        "audio": "a man's voice; surprise; disbelief",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 48.5,
+                "end_time": 51.5,
+                "children": [],
+                "caption": "The camera pans across a dimly lit room, revealing a man in a blue shirt standing in front of a door with a \"1\" on it, as a woman's voice can be heard saying \"Bye\" and a man's voice responds \"Okay.\"",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The camera pans across a dimly lit room, revealing a man in a blue shirt standing in front of a door with a \"1\" on it, as a woman's voice can be heard saying \"Bye\" and a man's voice responds \"Okay.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_48.5_51.5",
+                    "tags": [
+                      "room",
+                      "man",
+                      "door",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_48.5_51.5",
+                      "name": "",
+                      "time": {
+                        "start": "48.5",
+                        "end": "51.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "room scene"
+                      ],
+                      "scene_topic": "The camera pans across a dimly lit room, revealing a man in a blue shirt standing in front of a door with a '1' on it, as a woman's voice can be heard saying 'Bye' and a man's voice responds 'Okay.'",
+                      "summary": "The camera pans across a dimly lit room, revealing a man in a blue shirt standing in front of a door with a \"1\" on it, as a woman's voice can be heard saying \"Bye\" and a man's voice responds \"Okay.\"",
+                      "implications": "Major scene, room description",
+                      "modalities": {
+                        "visual": "The camera pans across a dimly lit room, revealing a man in a blue shirt standing in front of a door with a '1' on it.",
+                        "audio": "Woman's voice: 'Bye'; man's voice: 'Okay'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man and woman exit an elevator on a floor with the number 3 illuminated, and a man's voice expresses surprise and disbelief from outside the elevator. The camera then pans to a different room where a man in a blue shirt stands in front of a door with the number 1 on it, and a woman's voice says \"Bye\" before the man responds \"Okay.\"",
+            "summary": "The elevator doors open to reveal a brightly lit hallway with a \"3\" illuminated on the panel, as a man's voice is heard expressing surprise and disbelief. Meanwhile, a man in a blue shirt is seen standing in front of a door with a \"1\" on it, as a woman's voice says \"Bye\" and a man responds \"Okay\"."
+          }
+        ],
+        "caption": "A man and woman interact with an elevator and a door with a numeric keypad, while a voice is heard in the background. They exit the elevator on a brightly lit floor and say goodbye, and a man's voice expresses surprise and disbelief from outside the elevator. Another man stands in front of a door with the number 1 on it and says \"Okay\" before a woman's voice says \"Bye\".",
+        "summary": "A man navigates a modern building, entering an elevator and traveling to different floors, accompanied by the sounds of voices in the background. Along the way, he encounters various scenes, including a door with a \"DO NOT USE\" sign and a man standing in front of a door with a \"1\" on it, as voices of men and women are heard saying goodbye and expressing surprise."
+      },
+      {
+        "level": 1,
+        "start_time": 51.5,
+        "end_time": 67.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 51.5,
+            "end_time": 60.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 51.5,
+                "end_time": 56.5,
+                "children": [],
+                "caption": "The camera pans across a dimly lit hallway, revealing a man in a white shirt walking towards the camera as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The camera pans across a dimly lit hallway, revealing a man in a white shirt walking towards the camera as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_51.5_56.5",
+                    "tags": [
+                      "hallway",
+                      "man",
+                      "woman",
+                      "voice",
+                      "background"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_51.5_56.5",
+                      "name": "man walking in hallway",
+                      "time": {
+                        "start": "51.5",
+                        "end": "56.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The camera pans across a dimly lit hallway, revealing a man in a white shirt walking towards the camera as a woman's voice can be heard in the background.",
+                      "summary": "The camera pans across a dimly lit hallway, revealing a man in a white shirt walking towards the camera as a woman's voice can be heard in the background.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "The camera pans across a dimly lit hallway, revealing a man in a white shirt walking towards the camera as a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 56.5,
+                "end_time": 60.5,
+                "children": [],
+                "caption": "A man in a dark shirt walks down a hallway, passing a closed door with a \"10\" on it, as a woman's voice can be heard saying \"Bye\" and a man responds with \"Okay.\"",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A man in a dark shirt walks down a hallway, passing a closed door with a \"10\" on it, as a woman's voice can be heard saying \"Bye\" and a man responds with \"Okay.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_56_60",
+                    "tags": [
+                      "man",
+                      "hallway",
+                      "door",
+                      "voice",
+                      "response"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_56_60",
+                      "name": "man walks down hallway",
+                      "time": {
+                        "start": "56.5",
+                        "end": "60.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A man walks down a hallway, passing a door with a '10' on it, as a woman's voice can be heard saying 'Bye' and a man responds with 'Okay.'",
+                      "summary": "A man in a dark shirt walks down a hallway, passing a closed door with a \"10\" on it, as a woman's voice can be heard saying \"Bye\" and a man responds with \"Okay.\"",
+                      "implications": "Minor human activity event",
+                      "modalities": {
+                        "visual": "A man in a dark shirt walks down a hallway, passing a closed door with a '10' on it.",
+                        "audio": "Woman's voice: 'Bye'; man's voice: 'Okay'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a white shirt walks towards the camera in a dimly lit hallway, while a woman's voice can be heard in the background. Later, a man in a dark shirt walks down the same hallway, passing a closed door with a \"10\" on it, and exchanges a farewell with someone inside.",
+            "summary": "A man in a white shirt walks towards the camera, while a woman's voice is heard in the background. Meanwhile, another man walks down a hallway, passing a door with a \"10\" on it, as the woman says \"Bye\" and the man responds with \"Okay\"."
+          },
+          {
+            "level": 2,
+            "start_time": 60.5,
+            "end_time": 67.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 60.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "A man in a dark shirt walks down a hallway, the camera following him as he passes a closed door with a \"NO\" sign and continues towards a door with a \"DO NOT ENTER\" sign.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "A man in a dark shirt walks down a hallway, the camera following him as he passes a closed door with a \"NO\" sign and continues towards a door with a \"DO NOT ENTER\" sign.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_60_63",
+                    "tags": [
+                      "man",
+                      "hallway",
+                      "door",
+                      "sign"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_60_63",
+                      "name": "man walks down hallway",
+                      "time": {
+                        "start": "60.5",
+                        "end": "63.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person movement"
+                      ],
+                      "scene_topic": "A man walks down a hallway, passing closed doors with signs.",
+                      "summary": "A man in a dark shirt walks down a hallway, the camera following him as he passes a closed door with a \"NO\" sign and continues towards a door with a \"DO NOT ENTER\" sign.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "A man in a dark shirt walks down a hallway, the camera following him as he passes a closed door with a 'NO' sign and continues towards a door with a 'DO NOT ENTER' sign.",
+                        "audio": "",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 67.5,
+                "children": [],
+                "caption": "A man in a dark shirt walks down a hallway, passing a closed door with a \"10\" sign, as a woman's voice can be heard saying \"Bye\" and a man responds with \"Okay.\"",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "A man in a dark shirt walks down a hallway, passing a closed door with a \"10\" sign, as a woman's voice can be heard saying \"Bye\" and a man responds with \"Okay.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_63_67",
+                    "tags": [
+                      "man",
+                      "hallway",
+                      "door",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_63_67",
+                      "name": "man walks down hallway",
+                      "time": {
+                        "start": "63.5",
+                        "end": "67.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A man walks down a hallway, passing a door with a '10' sign, as a woman's voice can be heard saying 'Bye' and a man responds with 'Okay.'",
+                      "summary": "A man in a dark shirt walks down a hallway, passing a closed door with a \"10\" sign, as a woman's voice can be heard saying \"Bye\" and a man responds with \"Okay.\"",
+                      "implications": "Minor human activity event",
+                      "modalities": {
+                        "visual": "A man in a dark shirt walks down a hallway, passing a closed door with a '10' sign.",
+                        "audio": "Woman's voice: 'Bye'; man's voice: 'Okay'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man walks through a hallway with signs indicating restricted areas, including a door with a \"NO\" sign and a door with a \"DO NOT ENTER\" sign. He passes another door with a number sign, and a voice can be heard in the background saying goodbye and a man responds with a farewell.",
+            "summary": "A man in a dark shirt walks down a hallway, passing doors with \"NO\", \"DO NOT ENTER\", and \"10\" signs, while a woman's voice is heard saying \"Bye\" and a man responds with \"Okay\"."
+          }
+        ],
+        "caption": "A man walks through a dimly lit hallway, interacting with someone in a closed room, while a woman's voice is heard in the background. Later, another man walks through the same hallway, passing several restricted areas and exchanging farewells with someone inside a closed door.",
+        "summary": "A man in a white shirt approaches the camera, while a woman's voice is heard in the background, saying \"Bye\" and a man responding with \"Okay\". Meanwhile, other men walk down hallways, passing doors with various signs, including \"10\", \"NO\", and \"DO NOT ENTER\", as the woman's voice is heard again, saying \"Bye\" and a man responding with \"Okay\"."
+      },
+      {
+        "level": 1,
+        "start_time": 67.5,
+        "end_time": 95.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 67.5,
+            "end_time": 84.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 67.5,
+                "end_time": 72.5,
+                "children": [],
+                "caption": "A man in a dark shirt walks down a hallway, passing a closed door with a \"DO NOT USE\" sign, as a woman's voice can be heard saying \"Bye\" and a man responds with \"Okay.\"",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A man in a dark shirt walks down a hallway, passing a closed door with a \"DO NOT USE\" sign, as a woman's voice can be heard saying \"Bye\" and a man responds with \"Okay.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_67.5_72.5",
+                    "tags": [
+                      "hallway",
+                      "door",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_67.5_72.5",
+                      "name": "man walks down hallway",
+                      "time": {
+                        "start": "67.5",
+                        "end": "72.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A man walks down a hallway, passing a door with a 'DO NOT USE' sign, as a woman's voice can be heard saying 'Bye' and a man responds with 'Okay.'",
+                      "summary": "A man in a dark shirt walks down a hallway, passing a closed door with a \"DO NOT USE\" sign, as a woman's voice can be heard saying \"Bye\" and a man responds with \"Okay.\"",
+                      "implications": "Minor human activity event",
+                      "modalities": {
+                        "visual": "A man in a dark shirt walks down a hallway, passing a closed door with a 'DO NOT USE' sign.",
+                        "audio": "Woman's voice: 'Bye'; man's voice: 'Okay'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 72.5,
+                "end_time": 76.5,
+                "children": [],
+                "caption": "The camera pans across a dimly lit room, revealing a person in a dark shirt walking towards the camera as a man's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The camera pans across a dimly lit room, revealing a person in a dark shirt walking towards the camera as a man's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_72_5_76_5",
+                    "tags": [
+                      "room",
+                      "person",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "person",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "room",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_72_5_76_5",
+                      "name": "",
+                      "time": {
+                        "start": "72.5",
+                        "end": "76.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "room scene"
+                      ],
+                      "scene_topic": "The camera pans across a dimly lit room, revealing a person in a dark shirt walking towards the camera as a man's voice can be heard in the background.",
+                      "summary": "The camera pans across a dimly lit room, revealing a person in a dark shirt walking towards the camera as a man's voice can be heard in the background.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "The camera pans across a dimly lit room, revealing a person in a dark shirt walking towards the camera.",
+                        "audio": "man's voice",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 76.5,
+                "end_time": 79.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a door marked \"EXIT\" on the left and a door with a \"1\" on the right, as a man's voice can be heard saying \"Okay, I'll see you in a little bit.\"",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a door marked \"EXIT\" on the left and a door with a \"1\" on the right, as a man's voice can be heard saying \"Okay, I'll see you in a little bit.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_76.5_79.5",
+                    "tags": [
+                      "elevator",
+                      "hallway",
+                      "exit",
+                      "door",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_76.5_79.5",
+                      "name": "",
+                      "time": {
+                        "start": "76.5",
+                        "end": "79.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a door marked 'EXIT' on the left and a door with a '1' on the right, as a man's voice can be heard saying 'Okay, I'll see you in a little bit.'",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a door marked \"EXIT\" on the left and a door with a \"1\" on the right, as a man's voice can be heard saying \"Okay, I'll see you in a little bit.\"",
+                      "implications": "Major scene setting event",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a door marked 'EXIT' on the left and a door with a '1' on the right.",
+                        "audio": "Man's voice saying 'Okay; I'll see you in a little bit'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 79.5,
+                "end_time": 81.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a door marked \"EXIT\" in the distance, as a man's voice can be heard, though his words are unclear.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a door marked \"EXIT\" in the distance, as a man's voice can be heard, though his words are unclear.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_79_81",
+                    "tags": [
+                      "elevator",
+                      "hallway",
+                      "exit",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "exit door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_79_81",
+                      "name": "Elevator door opens",
+                      "time": {
+                        "start": "79.5",
+                        "end": "81.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a door marked 'EXIT' in the distance, as a man's voice can be heard, though his words are unclear.",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a door marked \"EXIT\" in the distance, as a man's voice can be heard, though his words are unclear.",
+                      "implications": "Major scene setting event",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a door marked 'EXIT' in the distance.",
+                        "audio": "man's voice",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 81.5,
+                "end_time": 84.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads \"1\" as a man's voice can be heard, though his words are unclear.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads \"1\" as a man's voice can be heard, though his words are unclear.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_81_84",
+                    "tags": [
+                      "elevator",
+                      "hallway",
+                      "sign",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator door",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "sign",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_81_84",
+                      "name": "Elevator door opens",
+                      "time": {
+                        "start": "81.5",
+                        "end": "84.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "scene"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads '1'.",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads \"1\" as a man's voice can be heard, though his words are unclear.",
+                      "implications": "Scene setting",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads '1'.",
+                        "audio": "man's voice",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person walks down a hallway and passes a closed door with a \"DO NOT USE\" sign, while a woman's voice can be heard saying goodbye and a man responds. The camera pans across a dimly lit room and reveals a person walking towards the camera, while a man's voice can be heard in the background. The elevator door opens, revealing a brightly lit hallway with a door marked \"EXIT\" and a door with a \"1\" on it, as a man's voice can be heard saying goodbye.",
+            "summary": "A man walks down a dimly lit hallway, passing a door with a \"DO NOT USE\" sign, and enters an elevator where he exits onto a brightly lit hallway with doors marked \"EXIT\" and \"1\". The elevator doors open multiple times, revealing the same hallway with unclear voices heard in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 84.5,
+            "end_time": 95.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 84.5,
+                "end_time": 87.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads \"EXIT\" in bold letters, as a man's voice can be heard saying \"Okay.\"",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads \"EXIT\" in bold letters, as a man's voice can be heard saying \"Okay.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_84_87",
+                    "tags": [
+                      "elevator",
+                      "exit",
+                      "hallway",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator door",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "EXIT sign",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_84_87",
+                      "name": "Elevator door opens",
+                      "time": {
+                        "start": "84.5",
+                        "end": "87.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads 'EXIT' in bold letters, as a man's voice can be heard saying 'Okay.'",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads \"EXIT\" in bold letters, as a man's voice can be heard saying \"Okay.\"",
+                      "implications": "Major event",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a sign that reads 'EXIT' in bold letters.",
+                        "audio": "man's voice saying 'Okay'",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 87.5,
+                "end_time": 95.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying \"Okay, I'll see you in a little bit.\"",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying \"Okay, I'll see you in a little bit.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_87_5_95_5",
+                    "tags": [
+                      "elevator",
+                      "hallway",
+                      "modern",
+                      "voice",
+                      "man"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_87_5_95_5",
+                      "name": "Elevator door opens",
+                      "time": {
+                        "start": "87.5",
+                        "end": "95.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying 'Okay, I'll see you in a little bit.'",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying \"Okay, I'll see you in a little bit.\"",
+                      "implications": "Major scene setting event",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a modern design.",
+                        "audio": "Man's voice saying 'Okay; I'll see you in a little bit'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two different scenes are shown in the captions, with the only difference being the design of the hallway and the voiceover dialogue. In the first scene, the hallway is dimly lit and has a traditional look, while in the second scene, the hallway is brightly lit and has a modern design.",
+            "summary": "The elevator door opens to reveal a brightly lit hallway with a modern design, featuring an \"EXIT\" sign. A man's voice is heard saying \"Okay\" or \"Okay, I'll see you in a little bit\" as he exits the elevator."
+          }
+        ],
+        "caption": "A person is shown walking through a hallway with a \"DO NOT USE\" sign and overhears a goodbye conversation between two people. The camera pans to reveal a different hallway with a modern design and a different voiceover conversation. The scene then cuts to a different hallway with a bright lighting and a traditional design.",
+        "summary": "A man enters an elevator and exits onto a brightly lit hallway with \"EXIT\" and \"1\" marked doors, only to find himself in the same hallway multiple times with unclear voices in the background. Eventually, he exits the elevator into a modern-designed hallway with an \"EXIT\" sign, with a man's voice saying \"Okay\" or \"Okay, I'll see you in a little bit\" as he departs."
+      },
+      {
+        "level": 1,
+        "start_time": 95.5,
+        "end_time": 134.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 95.5,
+            "end_time": 102.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 95.5,
+                "end_time": 102.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying \"Okay, I'll see you in a little bit.\"",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying \"Okay, I'll see you in a little bit.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_95_102",
+                    "tags": [
+                      "elevator",
+                      "hallway",
+                      "modern",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_95_102",
+                      "name": "Elevator door opens",
+                      "time": {
+                        "start": "95.5",
+                        "end": "102.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying 'Okay, I'll see you in a little bit.'",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying \"Okay, I'll see you in a little bit.\"",
+                      "implications": "Major scene setting event",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a modern design.",
+                        "audio": "Man's voice saying 'Okay; I'll see you in a little bit'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man steps into an elevator and the doors close, leading to a modern and brightly lit hallway.",
+            "summary": "The elevator door opens to reveal a modern hallway with bright lighting, as a man's voice is heard saying he'll see someone in a little bit."
+          },
+          {
+            "level": 2,
+            "start_time": 102.5,
+            "end_time": 107.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 102.5,
+                "end_time": 104.5,
+                "children": [],
+                "caption": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying \"Okay, let's go.\"",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying \"Okay, let's go.\"",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_102_104",
+                    "tags": [
+                      "elevator",
+                      "hallway",
+                      "modern",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_102_104",
+                      "name": "Elevator door opens",
+                      "time": {
+                        "start": "102.5",
+                        "end": "104.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "scene"
+                      ],
+                      "scene_topic": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying 'Okay, let's go.'",
+                      "summary": "The elevator door slides open, revealing a brightly lit hallway with a modern design, as a man's voice can be heard saying \"Okay, let's go.\"",
+                      "implications": "Major scene event",
+                      "modalities": {
+                        "visual": "The elevator door slides open, revealing a brightly lit hallway with a modern design.",
+                        "audio": "Man's voice saying 'Okay; let's go'.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 104.5,
+                "end_time": 107.5,
+                "children": [],
+                "caption": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the green light indicating the elevator is on its way up.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the green light indicating the elevator is on its way up.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_104.5_107.5",
+                    "tags": [
+                      "elevator",
+                      "button",
+                      "watch",
+                      "modern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "elevator panel",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "button",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "watch",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "hand",
+                        "ref_object": "O002",
+                        "role": "operator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_104.5_107.5",
+                      "name": "Elevator button pressed",
+                      "time": {
+                        "start": "104.5",
+                        "end": "107.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human interaction"
+                      ],
+                      "scene_topic": "A hand presses a button on an elevator panel.",
+                      "summary": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the green light indicating the elevator is on its way up.",
+                      "implications": "Major human interaction event",
+                      "modalities": {
+                        "visual": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the green light indicating the elevator is on its way up.",
+                        "audio": "",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The elevator door opens to reveal a modern hallway, and a man's voice can be heard instructing the elevator to move. A hand presses a button on the elevator panel, indicating that the elevator is on its way up.",
+            "summary": "A man steps out of the elevator into a modern hallway, where he presses a button on the elevator panel, and the elevator begins its ascent."
+          },
+          {
+            "level": 2,
+            "start_time": 107.5,
+            "end_time": 114.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 107.5,
+                "end_time": 114.5,
+                "children": [],
+                "caption": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the only sound the click of the button and a faint hum from the elevator's machinery.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the only sound the click of the button and a faint hum from the elevator's machinery.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_107_114",
+                    "tags": [
+                      "elevator",
+                      "button",
+                      "watch",
+                      "modern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "wearing": "watch"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "elevator panel",
+                        "attributes": {
+                          "sleek": "modern"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "elevator machinery",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "hand",
+                        "ref_object": "O001",
+                        "role": "operator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_107_114",
+                      "name": "Elevator button pressed",
+                      "time": {
+                        "start": "107.5",
+                        "end": "114.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A hand presses a button on an elevator panel.",
+                      "summary": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the only sound the click of the button and a faint hum from the elevator's machinery.",
+                      "implications": "Major human activity event",
+                      "modalities": {
+                        "visual": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel.",
+                        "audio": "button click; elevator hum.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person presses a button on a sleek elevator panel, initiating the lift's movement with a quiet click and hum of machinery.",
+            "summary": "A hand, adorned with a watch, presses a button on a modern elevator panel, accompanied by the distinct sounds of the button click and the elevator's machinery humming faintly."
+          },
+          {
+            "level": 2,
+            "start_time": 114.5,
+            "end_time": 123.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 114.5,
+                "end_time": 118.5,
+                "children": [],
+                "caption": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the green light indicating the selection has been registered.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the green light indicating the selection has been registered.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_114_5_118_5",
+                    "tags": [
+                      "elevator",
+                      "button",
+                      "watch",
+                      "modern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "wearing_watch": "true",
+                          "pressing_button": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "elevator_panel",
+                        "attributes": {
+                          "sleek": "true",
+                          "modern": "true",
+                          "green_light": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "hand",
+                        "ref_object": "O001",
+                        "role": "operator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_114_5_118_5",
+                      "name": "Elevator button pressed",
+                      "time": {
+                        "start": "114.5",
+                        "end": "118.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_action"
+                      ],
+                      "scene_topic": "A hand presses a button on an elevator panel.",
+                      "summary": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the green light indicating the selection has been registered.",
+                      "implications": "Major human action event",
+                      "modalities": {
+                        "visual": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the green light indicating the selection has been registered.",
+                        "audio": "",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 118.5,
+                "end_time": 123.5,
+                "children": [],
+                "caption": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the only sound the click of the button and a faint hum from the elevator.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the only sound the click of the button and a faint hum from the elevator.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_118_123",
+                    "tags": [
+                      "elevator",
+                      "button",
+                      "watch",
+                      "modern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "wearing": "watch"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "elevator panel",
+                        "attributes": {
+                          "sleek": "modern"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "hand",
+                        "ref_object": "O001",
+                        "role": "operator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_118_123",
+                      "name": "Elevator button pressed",
+                      "time": {
+                        "start": "118.5",
+                        "end": "123.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human interaction"
+                      ],
+                      "scene_topic": "A hand presses a button on a modern elevator panel.",
+                      "summary": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the only sound the click of the button and a faint hum from the elevator.",
+                      "implications": "Minor event in daily life",
+                      "modalities": {
+                        "visual": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel.",
+                        "audio": "button click; elevator hum.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two people press buttons on a modern elevator panel, registering their selections with a green light and the sound of a button being pressed.",
+            "summary": "A hand wearing a watch presses a button on a sleek, modern elevator panel, registering the selection with a green light. The only sounds are the click of the button and a faint hum from the elevator."
+          },
+          {
+            "level": 2,
+            "start_time": 123.5,
+            "end_time": 134.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 123.5,
+                "end_time": 127.5,
+                "children": [],
+                "caption": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the only sound the click of the button and a faint hum from the elevator.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the only sound the click of the button and a faint hum from the elevator.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_123_127",
+                    "tags": [
+                      "elevator",
+                      "button",
+                      "watch",
+                      "modern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {
+                          "wearing_watch": "true",
+                          "pressing_button": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "elevator_panel",
+                        "attributes": {
+                          "sleek": "true",
+                          "modern": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "elevator",
+                        "attributes": {
+                          "humming": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "hand",
+                        "ref_object": "O001",
+                        "role": "operator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_123_127",
+                      "name": "Elevator button pressed",
+                      "time": {
+                        "start": "123.5",
+                        "end": "127.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_action"
+                      ],
+                      "scene_topic": "A hand presses a button on an elevator panel.",
+                      "summary": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel, the only sound the click of the button and a faint hum from the elevator.",
+                      "implications": "Minor event in daily life",
+                      "modalities": {
+                        "visual": "A hand, wearing a watch, presses a button on a sleek, modern elevator panel.",
+                        "audio": "button click; elevator hum.",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 127.5,
+                "end_time": 130.5,
+                "children": [],
+                "caption": "A young boy, wearing a blue shirt, stands in a hallway, looking up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "A young boy, wearing a blue shirt, stands in a hallway, looking up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_127.5_130.5",
+                    "tags": [
+                      "child",
+                      "hallway",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "boy",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "blue shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "boy",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_127.5_130.5",
+                      "name": "boy looking up at camera",
+                      "time": {
+                        "start": "127.5",
+                        "end": "130.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "scene"
+                      ],
+                      "scene_topic": "A young boy stands in a hallway, looking up at the camera.",
+                      "summary": "A young boy, wearing a blue shirt, stands in a hallway, looking up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "A young boy, wearing a blue shirt, stands in a hallway, looking up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 130.5,
+                "end_time": 134.5,
+                "children": [],
+                "caption": "A young boy, wearing a blue shirt, stands in a brightly lit elevator, his gaze fixed on the illuminated buttons as a woman's voice can be heard, seemingly unrelated to the elevator's function.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "A young boy, wearing a blue shirt, stands in a brightly lit elevator, his gaze fixed on the illuminated buttons as a woman's voice can be heard, seemingly unrelated to the elevator's function.",
+                  "result": {
+                    "video_id": "JC4bSl_5wAQ",
+                    "event_id": "E_JC4bSl_5wAQ_130_134",
+                    "tags": [
+                      "elevator",
+                      "boy",
+                      "woman",
+                      "voice",
+                      "unrelated"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Elevator",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Boy",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Boy",
+                        "ref_object": "O002",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "Woman",
+                        "ref_object": "O003",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JC4bSl_5wAQ_130_134",
+                      "name": "Boy in Elevator",
+                      "time": {
+                        "start": "130.5",
+                        "end": "134.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A young boy stands in a brightly lit elevator, his gaze fixed on the illuminated buttons.",
+                      "summary": "A young boy, wearing a blue shirt, stands in a brightly lit elevator, his gaze fixed on the illuminated buttons as a woman's voice can be heard, seemingly unrelated to the elevator's function.",
+                      "implications": "Minor scene with no significant implications",
+                      "modalities": {
+                        "visual": "A young boy, wearing a blue shirt, stands in a brightly lit elevator, his gaze fixed on the illuminated buttons.",
+                        "audio": "a woman's voice",
+                        "speech": "The speaker is examining a hydraulic Otis series wine elevator, noting its seven-story height and wobbly construction."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person presses a button on an elevator panel, and the elevator hums to life. A young boy stands in a hallway, looking curious, while a woman's voice can be heard in the background. Later, the same boy stands in an elevator, gazing at the buttons as a woman's voice speaks, seemingly unrelated to the elevator's function.",
+            "summary": "A hand presses a button on a modern elevator panel, accompanied by a faint hum, while a young boy in a blue shirt stands in a hallway and later in a brightly lit elevator, seemingly unaware of the elevator's function."
+          }
+        ],
+        "caption": "A person presses a button on an elevator panel, initiating the lift's movement with a quiet hum of machinery.",
+        "summary": "A man steps out of an elevator into a modern hallway, presses a button on the panel, and the elevator begins its ascent, accompanied by the sounds of the button click and humming machinery. A young boy in a blue shirt is also present, seemingly unaware of the elevator's function, as the scene is set with bright lighting and modern surroundings."
+      }
+    ],
+    "caption": "A series of people interact with elevators, doors, and hallways in various settings, overhearing conversations and saying goodbyes. The scenes shift between different hallways with different designs and lighting, and the voiceovers reveal the thoughts and emotions of the characters.",
+    "summary": "A man navigates a modern building, entering and exiting elevators, passing various doors with signs, and encountering people saying goodbye and expressing surprise, as the scene repeats with unclear voices in the background. Eventually, he exits the elevator into a modern-designed hallway with an \"EXIT\" sign, departing with a man's voice saying \"Okay\" or \"Okay, I'll see you in a little bit\"."
+  }
+}

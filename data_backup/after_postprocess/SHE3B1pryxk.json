@@ -1,0 +1,1625 @@
+{
+  "video_id": "SHE3B1pryxk",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 77.68,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 35.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 11.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "The video opens with a black screen, the title \"A Star is Born\" appearing in white, as a woman begins to speak.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a black screen, the title \"A Star is Born\" appearing in white, as a woman begins to speak.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_0_3.5",
+                    "tags": [
+                      "movie_title",
+                      "opening_credits",
+                      "female_speaker"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black_screen",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "title_text",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "unknown",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_0_3.5",
+                      "name": "video_opening",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "movie"
+                      ],
+                      "scene_topic": "The video opens with a black screen, the title 'A Star is Born' appearing in white, as a woman begins to speak.",
+                      "summary": "The video opens with a black screen, the title \"A Star is Born\" appearing in white, as a woman begins to speak.",
+                      "implications": "Major movie event",
+                      "modalities": {
+                        "visual": "The video opens with a black screen, the title 'A Star is Born' appearing in white, as a woman begins to speak.",
+                        "audio": "",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a \"Star Wars\" themed event, his voice barely audible over the sound of the waves.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a \"Star Wars\" themed event, his voice barely audible over the sound of the waves.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_3_6",
+                    "tags": [
+                      "beach",
+                      "star_wars",
+                      "event",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "group_of_people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "beach",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_3_6",
+                      "name": "Star Wars themed event",
+                      "time": {
+                        "start": "3.5",
+                        "end": "6.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "people"
+                      ],
+                      "scene_topic": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a 'Star Wars' themed event, his voice barely audible over the sound of the waves.",
+                      "summary": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a \"Star Wars\" themed event, his voice barely audible over the sound of the waves.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a 'Star Wars' themed event.",
+                        "audio": "man speaking; waves",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 8.5,
+                "children": [],
+                "caption": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a \"big day\" and a \"big event\" happening soon.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a \"big day\" and a \"big event\" happening soon.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_6.5_8.5",
+                    "tags": [
+                      "beach",
+                      "gathering",
+                      "sunny_day",
+                      "speech",
+                      "event"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "beach",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_6.5_8.5",
+                      "name": "beach gathering",
+                      "time": {
+                        "start": "6.5",
+                        "end": "8.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "gathering"
+                      ],
+                      "scene_topic": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a 'big day' and a 'big event' happening soon.",
+                      "summary": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a \"big day\" and a \"big event\" happening soon.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "A group of people are gathered on a beach, enjoying the sunny day as a man speaks about a 'big day' and a 'big event' happening soon.",
+                        "audio": "",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 8.5,
+                "end_time": 11.5,
+                "children": [],
+                "caption": "A group of people, some wearing matching shirts, are gathered on a beach, their laughter and chatter blending with the sound of crashing waves as one person speaks about a \"big day\" and a \"big surprise.\"",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "A group of people, some wearing matching shirts, are gathered on a beach, their laughter and chatter blending with the sound of crashing waves as one person speaks about a \"big day\" and a \"big surprise.\"",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_8.5_11.5",
+                    "tags": [
+                      "beach",
+                      "group",
+                      "people",
+                      "laughter",
+                      "chatter"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_8.5_11.5",
+                      "name": "",
+                      "time": {
+                        "start": "8.5",
+                        "end": "11.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "group_event"
+                      ],
+                      "scene_topic": "A group of people gathered on a beach, discussing a 'big day' and 'big surprise'.",
+                      "summary": "A group of people, some wearing matching shirts, are gathered on a beach, their laughter and chatter blending with the sound of crashing waves as one person speaks about a \"big day\" and a \"big surprise.\"",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "A group of people, some wearing matching shirts, are gathered on a beach, their laughter and chatter blending with the sound of crashing waves as one person speaks about a 'big day' and a 'big surprise'.",
+                        "audio": "laughter; chatter; crashing waves; speech 'big day'; speech 'big surprise'",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of people are gathered on a beach, excitedly discussing an upcoming event or surprise.",
+            "summary": "The video opens with a title and a woman speaking, followed by scenes of people gathered on a beach, discussing a \"big day\" and a \"big event\" or \"big surprise\" that is happening soon. The sound of waves and laughter fills the background as the group enjoys the sunny day."
+          },
+          {
+            "level": 2,
+            "start_time": 11.5,
+            "end_time": 35.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 11.5,
+                "end_time": 18.5,
+                "children": [],
+                "caption": "A man with a friendly smile, wearing a black cap and a striped shirt, stands in a room with a neutral background, looking directly at the camera as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A man with a friendly smile, wearing a black cap and a striped shirt, stands in a room with a neutral background, looking directly at the camera as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_11.5_18.5",
+                    "tags": [
+                      "man",
+                      "friendly",
+                      "smile",
+                      "black_cap",
+                      "striped_shirt",
+                      "neutral_background"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "friendly_smile": "",
+                          "black_cap": "",
+                          "striped_shirt": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_11.5_18.5",
+                      "name": "",
+                      "time": {
+                        "start": "11.5",
+                        "end": "18.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person"
+                      ],
+                      "scene_topic": "A man stands in a room looking directly at the camera.",
+                      "summary": "A man with a friendly smile, wearing a black cap and a striped shirt, stands in a room with a neutral background, looking directly at the camera as a woman's voice can be heard in the background.",
+                      "implications": "Minor social interaction event",
+                      "modalities": {
+                        "visual": "A man with a friendly smile, wearing a black cap and a striped shirt, stands in a room with a neutral background, looking directly at the camera.",
+                        "audio": "woman's voice",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 18.5,
+                "end_time": 22.5,
+                "children": [],
+                "caption": "A man with a beard and mustache, wearing a black cap and a white t-shirt, smiles at the camera as he speaks, his voice filled with excitement as he announces the start of a project.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A man with a beard and mustache, wearing a black cap and a white t-shirt, smiles at the camera as he speaks, his voice filled with excitement as he announces the start of a project.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_18.5_22.5",
+                    "tags": [
+                      "project_start",
+                      "excitement",
+                      "announcement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "beard": "present",
+                          "mustache": "present",
+                          "cap": "black",
+                          "shirt": "white"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_18.5_22.5",
+                      "name": "project_start_announcement",
+                      "time": {
+                        "start": "18.5",
+                        "end": "22.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "project",
+                        "announcement"
+                      ],
+                      "scene_topic": "A man announces the start of a project with excitement.",
+                      "summary": "A man with a beard and mustache, wearing a black cap and a white t-shirt, smiles at the camera as he speaks, his voice filled with excitement as he announces the start of a project.",
+                      "implications": "Major project news event",
+                      "modalities": {
+                        "visual": "A man with a beard and mustache, wearing a black cap and a white t-shirt, smiles at the camera as he speaks.",
+                        "audio": "speaks; announces",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 22.5,
+                "end_time": 26.5,
+                "children": [],
+                "caption": "A man with a beard and mustache, wearing a black cap and a white t-shirt, smiles at the camera as he stands in a room with a white wall and a window, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A man with a beard and mustache, wearing a black cap and a white t-shirt, smiles at the camera as he stands in a room with a white wall and a window, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_22.5_26.5",
+                    "tags": [
+                      "man",
+                      "beard",
+                      "mustache",
+                      "black_cap",
+                      "white_t_shirt"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "beard": "present",
+                          "mustache": "present",
+                          "clothing": "black_cap, white_t_shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "room",
+                        "attributes": {
+                          "wall": "white",
+                          "window": "present"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_22.5_26.5",
+                      "name": "man smiling at camera",
+                      "time": {
+                        "start": "22.5",
+                        "end": "26.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room"
+                      ],
+                      "scene_topic": "A man smiles at the camera in a room.",
+                      "summary": "A man with a beard and mustache, wearing a black cap and a white t-shirt, smiles at the camera as he stands in a room with a white wall and a window, while a woman's voice can be heard in the background.",
+                      "implications": "Minor social interaction event",
+                      "modalities": {
+                        "visual": "A man with a beard and mustache, wearing a black cap and a white t-shirt, smiles at the camera as he stands in a room with a white wall and a window.",
+                        "audio": "woman's voice",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 26.5,
+                "end_time": 29.5,
+                "children": [],
+                "caption": "A woman, wearing a black blazer and a white blouse, stands in a well-lit room, speaking into a microphone, her voice clear and audible as she addresses the camera.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A woman, wearing a black blazer and a white blouse, stands in a well-lit room, speaking into a microphone, her voice clear and audible as she addresses the camera.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_26.5_29.5",
+                    "tags": [
+                      "woman",
+                      "black_blazer",
+                      "white_blouse",
+                      "microphone",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "white_blouse"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_26.5_29.5",
+                      "name": "woman speaking into microphone",
+                      "time": {
+                        "start": "26.5",
+                        "end": "29.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A woman speaks into a microphone in a well-lit room.",
+                      "summary": "A woman, wearing a black blazer and a white blouse, stands in a well-lit room, speaking into a microphone, her voice clear and audible as she addresses the camera.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "A woman stands in a well-lit room, wearing a black blazer and a white blouse, speaking into a microphone.",
+                        "audio": "speaking",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "A woman, dressed in a black blazer and white blouse, stands in a well-lit room, speaking into a microphone as she prepares to interview someone off-camera.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A woman, dressed in a black blazer and white blouse, stands in a well-lit room, speaking into a microphone as she prepares to interview someone off-camera.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_2950_3150",
+                    "tags": [
+                      "interview",
+                      "journalism",
+                      "communication"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "black blazer and white blouse",
+                          "location": "well-lit room",
+                          "action": "speaking into a microphone"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "interviewer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_2950_3150",
+                      "name": "Interview preparation",
+                      "time": {
+                        "start": "29.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "communication"
+                      ],
+                      "scene_topic": "A woman prepares to interview someone off-camera.",
+                      "summary": "A woman, dressed in a black blazer and white blouse, stands in a well-lit room, speaking into a microphone as she prepares to interview someone off-camera.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "A woman stands in a well-lit room, dressed in a black blazer and white blouse, speaking into a microphone.",
+                        "audio": "speaking",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 35.5,
+                "children": [],
+                "caption": "A woman in a black blazer stands in a hotel lobby, speaking into a microphone, her voice echoing slightly as she addresses the crowd gathered around her.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A woman in a black blazer stands in a hotel lobby, speaking into a microphone, her voice echoing slightly as she addresses the crowd gathered around her.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_31.5_35.5",
+                    "tags": [
+                      "hotel_lobby",
+                      "speech",
+                      "woman",
+                      "microphone",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "black_blazer",
+                          "location": "hotel_lobby",
+                          "action": "speaking_into_microphone"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_31.5_35.5",
+                      "name": "speech",
+                      "time": {
+                        "start": "31.5",
+                        "end": "35.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speech"
+                      ],
+                      "scene_topic": "A woman speaks to a crowd in a hotel lobby.",
+                      "summary": "A woman in a black blazer stands in a hotel lobby, speaking into a microphone, her voice echoing slightly as she addresses the crowd gathered around her.",
+                      "implications": "Major public speaking event",
+                      "modalities": {
+                        "visual": "A woman in a black blazer stands in a hotel lobby.",
+                        "audio": "speaking; voice echoing; crowd reactions",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man and a woman are seen speaking into microphones in various settings, with the woman's voice heard in the background in some captions. The man's voice is filled with excitement as he announces the start of a project, while the woman's voice is clear and audible as she addresses the camera. The woman is also seen preparing to interview someone off-camera.",
+            "summary": "A man with a beard and mustache, wearing a black cap and white t-shirt, announces the start of a project with excitement, while a woman's voice is heard in the background. The scene then shifts to various settings, including a well-lit room and a hotel lobby, where women in black blazers and white blouses speak into microphones, addressing the camera and a crowd."
+          }
+        ],
+        "caption": "A group of people are excitedly discussing an upcoming event or surprise on a beach, while a man and a woman are seen speaking into microphones in various settings, with the woman's voice heard in the background in some captions. The man's voice is filled with excitement as he announces the start of a project, while the woman's voice is clear and audible as she addresses the camera. The woman is also seen preparing to interview someone off-camera.",
+        "summary": "The video opens with a group of people gathered on a beach, discussing a big event or surprise, before shifting to various settings where women in black blazers and white blouses address the camera and a crowd."
+      },
+      {
+        "level": 1,
+        "start_time": 35.5,
+        "end_time": 77.68,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 35.5,
+            "end_time": 54.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 35.5,
+                "end_time": 37.5,
+                "children": [],
+                "caption": "In a well-lit hotel lobby, a woman in a black blazer and white shirt stands behind a counter, engaging in a conversation with a man in a suit, who is seated on a couch.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "In a well-lit hotel lobby, a woman in a black blazer and white shirt stands behind a counter, engaging in a conversation with a man in a suit, who is seated on a couch.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_35.5_37.5",
+                    "tags": [
+                      "hotel",
+                      "lobby",
+                      "conversation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "counter",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "couch",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_35.5_37.5",
+                      "name": "hotel lobby conversation",
+                      "time": {
+                        "start": "35.5",
+                        "end": "37.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "hotel scene"
+                      ],
+                      "scene_topic": "A woman and a man engage in a conversation in a hotel lobby.",
+                      "summary": "In a well-lit hotel lobby, a woman in a black blazer and white shirt stands behind a counter, engaging in a conversation with a man in a suit, who is seated on a couch.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "In a well-lit hotel lobby, a woman in a black blazer and white shirt stands behind a counter, engaging in a conversation with a man in a suit, who is seated on a couch.",
+                        "audio": "",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 37.5,
+                "end_time": 40.5,
+                "children": [],
+                "caption": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_375_405",
+                    "tags": [
+                      "hotel",
+                      "lobby",
+                      "woman",
+                      "counter",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "black blazer and white shirt",
+                          "location": "behind a counter"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_375_405",
+                      "name": "Woman speaks into microphone",
+                      "time": {
+                        "start": "37.5",
+                        "end": "40.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A woman speaks into a microphone in a hotel lobby.",
+                      "summary": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter.",
+                        "audio": "speaking into a microphone; echoing",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 46.5,
+                "children": [],
+                "caption": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_40.5_46.5",
+                    "tags": [
+                      "hotel",
+                      "lobby",
+                      "woman",
+                      "counter",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "black blazer and white shirt",
+                          "location": "behind a counter"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_40.5_46.5",
+                      "name": "Woman speaks into microphone",
+                      "time": {
+                        "start": "40.5",
+                        "end": "46.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A woman speaks into a microphone in a hotel lobby.",
+                      "summary": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                      "implications": "Minor event",
+                      "modalities": {
+                        "visual": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter.",
+                        "audio": "speaking into a microphone; echoing",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 46.5,
+                "end_time": 49.5,
+                "children": [],
+                "caption": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_46.5_49.5",
+                    "tags": [
+                      "hotel",
+                      "lobby",
+                      "woman",
+                      "counter",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "black blazer and white shirt",
+                          "location": "behind a counter"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_46.5_49.5",
+                      "name": "Woman speaks into microphone",
+                      "time": {
+                        "start": "46.5",
+                        "end": "49.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A woman speaks into a microphone in a hotel lobby.",
+                      "summary": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                      "implications": "Minor event",
+                      "modalities": {
+                        "visual": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter.",
+                        "audio": "speaking into a microphone; echoing",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 49.5,
+                "end_time": 54.5,
+                "children": [],
+                "caption": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, engaging in a conversation with a man in a suit, who is seated on a couch.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, engaging in a conversation with a man in a suit, who is seated on a couch.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_49.5_54.5",
+                    "tags": [
+                      "hotel",
+                      "lobby",
+                      "conversation",
+                      "woman",
+                      "man",
+                      "suit"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "counter",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "couch",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_49.5_54.5",
+                      "name": "hotel lobby conversation",
+                      "time": {
+                        "start": "49.5",
+                        "end": "54.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "hotel scene"
+                      ],
+                      "scene_topic": "A woman and a man engage in a conversation in a hotel lobby.",
+                      "summary": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, engaging in a conversation with a man in a suit, who is seated on a couch.",
+                      "implications": "Minor social interaction event",
+                      "modalities": {
+                        "visual": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, engaging in a conversation with a man in a suit, who is seated on a couch.",
+                        "audio": "",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman in a black blazer and white shirt is seen standing behind a counter in a hotel lobby, engaging in conversations with a man in a suit or speaking into a microphone, her voice echoing slightly in the spacious room.",
+            "summary": "A woman in a black blazer and white shirt stands behind a counter in a hotel lobby, speaking into a microphone and engaging in conversation with a man in a suit seated on a couch. The scene is set in a well-lit, spacious room with the woman's voice echoing slightly."
+          },
+          {
+            "level": 2,
+            "start_time": 54.5,
+            "end_time": 66.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 54.5,
+                "end_time": 60.5,
+                "children": [],
+                "caption": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_54_60",
+                    "tags": [
+                      "hotel",
+                      "lobby",
+                      "woman",
+                      "counter",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "black blazer and white shirt",
+                          "location": "behind a counter"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_54_60",
+                      "name": "Woman speaks into microphone",
+                      "time": {
+                        "start": "54.5",
+                        "end": "60.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A woman speaks into a microphone in a hotel lobby.",
+                      "summary": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter, speaking into a microphone, her voice echoing slightly in the spacious room.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "In a hotel lobby, a woman in a black blazer and white shirt stands behind a counter.",
+                        "audio": "speaking into a microphone; echoing",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 60.5,
+                "end_time": 62.5,
+                "children": [],
+                "caption": "In a well-lit hallway, a woman in a black blazer and white shirt stands in front of a door, holding a small object in her hand, while a man's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "In a well-lit hallway, a woman in a black blazer and white shirt stands in front of a door, holding a small object in her hand, while a man's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_60.5_62.5",
+                    "tags": [
+                      "hallway",
+                      "woman",
+                      "door",
+                      "object",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "door",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "object",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_60.5_62.5",
+                      "name": "woman standing in front of door",
+                      "time": {
+                        "start": "60.5",
+                        "end": "62.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A woman stands in front of a door, holding an object, while a man's voice is heard in the background.",
+                      "summary": "In a well-lit hallway, a woman in a black blazer and white shirt stands in front of a door, holding a small object in her hand, while a man's voice can be heard in the background.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "In a well-lit hallway, a woman in a black blazer and white shirt stands in front of a door, holding a small object in her hand, while a man's voice can be heard in the background.",
+                        "audio": "man's voice",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 62.5,
+                "end_time": 66.5,
+                "children": [],
+                "caption": "In a grand hall, a man in a tuxedo and a woman in a black dress engage in a lively conversation, their laughter echoing through the room as they share a moment of joy.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "In a grand hall, a man in a tuxedo and a woman in a black dress engage in a lively conversation, their laughter echoing through the room as they share a moment of joy.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_62.5_66.5",
+                    "tags": [
+                      "social_event",
+                      "party",
+                      "conversing",
+                      "laughter",
+                      "joy"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "grand hall",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_62.5_66.5",
+                      "name": "lively conversation",
+                      "time": {
+                        "start": "62.5",
+                        "end": "66.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_event"
+                      ],
+                      "scene_topic": "A man and a woman engage in a lively conversation at a party.",
+                      "summary": "In a grand hall, a man in a tuxedo and a woman in a black dress engage in a lively conversation, their laughter echoing through the room as they share a moment of joy.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a grand hall, a man in a tuxedo and a woman in a black dress engage in a lively conversation, their laughter echoing through the room as they share a moment of joy.",
+                        "audio": "laughter",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a hotel lobby, a woman speaks into a microphone, her voice echoing in the spacious room. In a well-lit hallway, a woman holds a small object and is heard in the background. In a grand hall, a man and woman engage in a lively conversation, their laughter echoing through the room.",
+            "summary": "A woman in a black blazer and white shirt is seen in different settings, speaking into a microphone in a hotel lobby and holding a small object in a well-lit hallway, while a man's voice is heard in the background. Meanwhile, a man in a tuxedo and a woman in a black dress share a joyful moment in a grand hall, their laughter filling the room."
+          },
+          {
+            "level": 2,
+            "start_time": 66.5,
+            "end_time": 77.68,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 66.5,
+                "end_time": 70.5,
+                "children": [],
+                "caption": "A man in a suit and hat, standing in a grand hallway with a large window, smiles as he talks about the \"Drag Race\" event, his voice echoing slightly in the spacious room.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "A man in a suit and hat, standing in a grand hallway with a large window, smiles as he talks about the \"Drag Race\" event, his voice echoing slightly in the spacious room.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_66.5_70.5",
+                    "tags": [
+                      "drag_race",
+                      "event",
+                      "grand_hallway",
+                      "man_in_suit",
+                      "smiling"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_suit",
+                        "attributes": {
+                          "actor": "man_in_suit",
+                          "location": "grand_hallway",
+                          "window": "large_window"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_suit",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_66.5_70.5",
+                      "name": "Drag Race event",
+                      "time": {
+                        "start": "66.5",
+                        "end": "70.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "non-violent_scene"
+                      ],
+                      "scene_topic": "A man in a suit and hat, standing in a grand hallway with a large window, smiles as he talks about the 'Drag Race' event, his voice echoing slightly in the spacious room.",
+                      "summary": "A man in a suit and hat, standing in a grand hallway with a large window, smiles as he talks about the \"Drag Race\" event, his voice echoing slightly in the spacious room.",
+                      "implications": "Major event news",
+                      "modalities": {
+                        "visual": "A man in a suit and hat, standing in a grand hallway with a large window, smiles.",
+                        "audio": "Talking about 'Drag Race'; echoing voice.",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 70.5,
+                "end_time": 73.5,
+                "children": [],
+                "caption": "A woman, standing in a lush green park, gently strokes the fur of a large, dark brown dog as a man's voice can be heard in the background, saying \"I'm sorry\" and \"I'm sorry\".",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "A woman, standing in a lush green park, gently strokes the fur of a large, dark brown dog as a man's voice can be heard in the background, saying \"I'm sorry\" and \"I'm sorry\".",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_70.5_73.5",
+                    "tags": [
+                      "woman",
+                      "dog",
+                      "apology",
+                      "park"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "dog",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_70.5_73.5",
+                      "name": "",
+                      "time": {
+                        "start": "70.5",
+                        "end": "73.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A woman apologizes to a dog",
+                      "summary": "A woman, standing in a lush green park, gently strokes the fur of a large, dark brown dog as a man's voice can be heard in the background, saying \"I'm sorry\" and \"I'm sorry\".",
+                      "implications": "Emotional significance",
+                      "modalities": {
+                        "visual": "A woman, standing in a lush green park, gently strokes the fur of a large, dark brown dog as a man's voice can be heard in the background.",
+                        "audio": "Man's voice: 'I'm sorry'; 'I'm sorry'.",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 73.5,
+                "end_time": 77.68,
+                "children": [],
+                "caption": "The video transitions from a close-up of a person's hand holding a small object to a wide shot of a group of people standing in a grassy field, their faces illuminated by the sun as they sing and clap along to a pop song.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "The video transitions from a close-up of a person's hand holding a small object to a wide shot of a group of people standing in a grassy field, their faces illuminated by the sun as they sing and clap along to a pop song.",
+                  "result": {
+                    "video_id": "SHE3B1pryxk",
+                    "event_id": "E_SHE3B1pryxk_73.5_77.68",
+                    "tags": [
+                      "pop_music",
+                      "group_singing",
+                      "outdoor_scene",
+                      "people",
+                      "grass_field",
+                      "sunlight"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "person's hand",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "small object",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "group of people",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "unknown",
+                        "ref_object": "O003",
+                        "role": "singer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_SHE3B1pryxk_73.5_77.68",
+                      "name": "Group singing in a grassy field",
+                      "time": {
+                        "start": "73.5",
+                        "end": "77.68"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor_scene",
+                        "music"
+                      ],
+                      "scene_topic": "A group of people sing and clap along to a pop song in a grassy field",
+                      "summary": "The video transitions from a close-up of a person's hand holding a small object to a wide shot of a group of people standing in a grassy field, their faces illuminated by the sun as they sing and clap along to a pop song.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a person's hand holding a small object to a wide shot of a group of people standing in a grassy field, their faces illuminated by the sun as they sing and clap along.",
+                        "audio": "singing; clapping",
+                        "speech": "Kero asks Edge to do a favor, specifically to arrange for One Direction to sign at Onesie Islanders, citing past favors done for Edge."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man discusses an event, his voice echoing in a grand hallway. A woman strokes a dog in a green park while a man apologizes in the background. The video then cuts to a person holding a small object and transitions to a group of people singing and clapping in a grassy field.",
+            "summary": "A man discusses the \"Drag Race\" event in a grand hallway, while a woman tends to a dog in a park, amidst a background of apologetic voices. The scene then shifts to a group of people singing and clapping in a sunlit field, showcasing a lively and joyful atmosphere."
+          }
+        ],
+        "caption": "A hotel lobby is filled with conversations and speeches, while a woman in a green park strokes a dog and a man apologizes in the background. The video then cuts to a person holding a small object and a group of people singing and clapping in a grassy field.",
+        "summary": "A woman in a black blazer and white shirt is seen in various settings, speaking into a microphone and engaging in conversations, while a man's voice is heard in the background. The scene cuts between different locations, showcasing a range of activities, including a \"Drag Race\" event, a joyful moment in a grand hall, and a lively atmosphere in a sunlit field."
+      }
+    ],
+    "caption": "A group of people are excitedly discussing an upcoming event or surprise on a beach, while a man and a woman are seen speaking into microphones in various settings. The woman's voice is clear and audible as she addresses the camera, while the man's voice is filled with excitement as he announces the start of a project. Meanwhile, a hotel lobby is filled with conversations and speeches, and a woman in a green park strokes a dog while a man apologizes in the background. The video then cuts to a person holding a small object",
+    "summary": "The video features a group of people gathered on a beach discussing a surprise, followed by a series of scenes showcasing women in black blazers and white blouses addressing the camera and a crowd, interspersed with shots of a woman speaking into a microphone and engaging in conversations. The scenes cut between different locations, including a \"Drag Race\" event, a grand hall, and a sunlit field, showcasing a range of activities and joyful moments."
+  }
+}

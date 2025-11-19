@@ -1,0 +1,740 @@
+{
+  "video_id": "C7_yXTIwxmA",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 47.563183,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 21.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 2.5,
+            "children": [],
+            "caption": "A person wearing a blue shirt and a red cap holds a baby, gently feeding them a bottle while a woman's voice can be heard in the background.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "A person wearing a blue shirt and a red cap holds a baby, gently feeding them a bottle while a woman's voice can be heard in the background.",
+              "result": {
+                "video_id": "C7_yXTIwxmA",
+                "event_id": "E_C7_yXTIwxmA_0_2.5",
+                "tags": [
+                  "person",
+                  "baby",
+                  "feeding",
+                  "mother",
+                  "background_voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "person",
+                    "attributes": {
+                      "color_shirt": "blue",
+                      "color_cap": "red"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "baby",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "person",
+                    "ref_object": "O001",
+                    "role": "caregiver",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_C7_yXTIwxmA_0_2.5",
+                  "name": "Baby Feeding",
+                  "time": {
+                    "start": "0",
+                    "end": "2.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human behavior",
+                    "family"
+                  ],
+                  "scene_topic": "A person gently feeds a baby while a woman's voice is heard in the background.",
+                  "summary": "A person wearing a blue shirt and a red cap holds a baby, gently feeding them a bottle while a woman's voice can be heard in the background.",
+                  "implications": "Major family, human behavior news event",
+                  "modalities": {
+                    "visual": "A person wearing a blue shirt and a red cap holds a baby, gently feeding them a bottle.",
+                    "audio": "woman's voice",
+                    "speech": "Theodore is receiving his gas medicine and appears excited about it."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 2.5,
+            "end_time": 6.5,
+            "children": [],
+            "caption": "A baby, dressed in a pink onesie, sits on a couch, gripping a blue pacifier as a woman's voice can be heard in the background, saying \"Bye, bye\" and \"I love you.\"",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A baby, dressed in a pink onesie, sits on a couch, gripping a blue pacifier as a woman's voice can be heard in the background, saying \"Bye, bye\" and \"I love you.\"",
+              "result": {
+                "video_id": "C7_yXTIwxmA",
+                "event_id": "E_C7_yXTIwxmA_2_5_6_5",
+                "tags": [
+                  "baby",
+                  "onesie",
+                  "pacifier",
+                  "woman",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baby",
+                    "attributes": {
+                      "age": "infant",
+                      "clothing": "pink onesie"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "couch",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "pacifier",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_C7_yXTIwxmA_2_5_6_5",
+                  "name": "Goodbye",
+                  "time": {
+                    "start": "2.5",
+                    "end": "6.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family life"
+                  ],
+                  "scene_topic": "A woman says goodbye to a baby",
+                  "summary": "A baby, dressed in a pink onesie, sits on a couch, gripping a blue pacifier as a woman's voice can be heard in the background, saying \"Bye, bye\" and \"I love you.\"",
+                  "implications": "Emotional moment",
+                  "modalities": {
+                    "visual": "A baby, dressed in a pink onesie, sits on a couch, gripping a blue pacifier as a woman's voice can be heard in the background.",
+                    "audio": "Woman's voice: 'Bye; bye'; 'I love you'.",
+                    "speech": "Theodore is receiving his gas medicine and appears excited about it."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 6.5,
+            "end_time": 8.5,
+            "children": [],
+            "caption": "A baby, dressed in a pink onesie, sits on a couch, calmly sucking on a pacifier as a woman's voice can be heard in the background.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "A baby, dressed in a pink onesie, sits on a couch, calmly sucking on a pacifier as a woman's voice can be heard in the background.",
+              "result": {
+                "video_id": "C7_yXTIwxmA",
+                "event_id": "E_C7_yXTIwxmA_6.5_8.5",
+                "tags": [
+                  "baby",
+                  "onesie",
+                  "couch",
+                  "pacifier",
+                  "woman"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baby",
+                    "attributes": {
+                      "age": "infant",
+                      "clothing": "pink onesie"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "couch",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "pacifier",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "background voice",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_C7_yXTIwxmA_6.5_8.5",
+                  "name": "baby on couch",
+                  "time": {
+                    "start": "6.5",
+                    "end": "8.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family life"
+                  ],
+                  "scene_topic": "A baby sits on a couch, sucking on a pacifier, while a woman's voice is heard in the background.",
+                  "summary": "A baby, dressed in a pink onesie, sits on a couch, calmly sucking on a pacifier as a woman's voice can be heard in the background.",
+                  "implications": "Minor daily life event",
+                  "modalities": {
+                    "visual": "A baby, dressed in a pink onesie, sits on a couch, calmly sucking on a pacifier as a woman's voice can be heard in the background.",
+                    "audio": "woman's voice",
+                    "speech": "Theodore is receiving his gas medicine and appears excited about it."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 8.5,
+            "end_time": 10.5,
+            "children": [],
+            "caption": "A baby, dressed in a pink onesie, lies peacefully in a crib, its tiny hands gripping a blue pacifier as a woman's voice can be heard in the background, saying \"Bye, bye.\"",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "A baby, dressed in a pink onesie, lies peacefully in a crib, its tiny hands gripping a blue pacifier as a woman's voice can be heard in the background, saying \"Bye, bye.\"",
+              "result": {
+                "video_id": "C7_yXTIwxmA",
+                "event_id": "E_C7_yXTIwxmA_8_10",
+                "tags": [
+                  "baby",
+                  "onesie",
+                  "crib",
+                  "pacifier",
+                  "mother"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baby",
+                    "attributes": {
+                      "age": "infant",
+                      "clothing": "pink onesie"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "crib",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "pacifier",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "mother",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_C7_yXTIwxmA_8_10",
+                  "name": "baby sleeping",
+                  "time": {
+                    "start": "8.5",
+                    "end": "10.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family life"
+                  ],
+                  "scene_topic": "A baby lies peacefully in a crib, a woman's voice can be heard in the background.",
+                  "summary": "A baby, dressed in a pink onesie, lies peacefully in a crib, its tiny hands gripping a blue pacifier as a woman's voice can be heard in the background, saying \"Bye, bye.\"",
+                  "implications": "A normal family scene",
+                  "modalities": {
+                    "visual": "A baby, dressed in a pink onesie, lies peacefully in a crib, its tiny hands gripping a blue pacifier as a woman's voice can be heard in the background.",
+                    "audio": "woman's voice saying 'Bye; bye'.",
+                    "speech": "Theodore is receiving his gas medicine and appears excited about it."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 10.5,
+            "end_time": 21.5,
+            "children": [],
+            "caption": "A baby, dressed in a pink onesie, lies on a soft surface, their eyes closed as they peacefully suck on a pacifier.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "A baby, dressed in a pink onesie, lies on a soft surface, their eyes closed as they peacefully suck on a pacifier.",
+              "result": {
+                "video_id": "C7_yXTIwxmA",
+                "event_id": "E_C7_yXTIwxmA_10.5_21.5",
+                "tags": [
+                  "baby",
+                  "onesie",
+                  "pacifier"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baby",
+                    "attributes": {
+                      "age": "infant",
+                      "clothing": "pink onesie",
+                      "state": "asleep"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "soft surface",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "pacifier",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "baby",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_C7_yXTIwxmA_10.5_21.5",
+                  "name": "baby sleeping",
+                  "time": {
+                    "start": "10.5",
+                    "end": "21.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human behavior"
+                  ],
+                  "scene_topic": "A baby lies peacefully on a soft surface, sucking on a pacifier.",
+                  "summary": "A baby, dressed in a pink onesie, lies on a soft surface, their eyes closed as they peacefully suck on a pacifier.",
+                  "implications": "Minor human interest news event",
+                  "modalities": {
+                    "visual": "A baby, dressed in a pink onesie, lies on a soft surface, their eyes closed as they peacefully suck on a pacifier.",
+                    "audio": "",
+                    "speech": "Theodore is receiving his gas medicine and appears excited about it."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A baby is fed a bottle, comforted, and says goodbye to a loved one, all while sucking on a pacifier.",
+        "summary": "A person is seen caring for multiple babies, feeding and soothing them with pacifiers, while a woman's voice is heard in the background saying goodbye and expressing love. The babies are shown in various states of calmness, lying down or sitting on a couch, all with pacifiers in their mouths."
+      },
+      {
+        "level": 1,
+        "start_time": 21.5,
+        "end_time": 27.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 21.5,
+            "end_time": 27.5,
+            "children": [],
+            "caption": "A baby, dressed in a pink onesie, lies on a soft surface, its eyes closed as a woman's voice can be heard in the background, followed by the sound of a baby crying.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "A baby, dressed in a pink onesie, lies on a soft surface, its eyes closed as a woman's voice can be heard in the background, followed by the sound of a baby crying.",
+              "result": {
+                "video_id": "C7_yXTIwxmA",
+                "event_id": "E_C7_yXTIwxmA_21.5_27.5",
+                "tags": [
+                  "baby",
+                  "onesie",
+                  "soft_surface",
+                  "woman",
+                  "voice",
+                  "crying"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baby",
+                    "attributes": {
+                      "age": "infant",
+                      "clothing": "pink_onesie"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "soft_surface",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "caregiver",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_C7_yXTIwxmA_21.5_27.5",
+                  "name": "baby_crying",
+                  "time": {
+                    "start": "21.5",
+                    "end": "27.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family_life"
+                  ],
+                  "scene_topic": "A baby lies on a soft surface, crying, while a woman's voice is heard in the background.",
+                  "summary": "A baby, dressed in a pink onesie, lies on a soft surface, its eyes closed as a woman's voice can be heard in the background, followed by the sound of a baby crying.",
+                  "implications": "Major family life event",
+                  "modalities": {
+                    "visual": "A baby, dressed in a pink onesie, lies on a soft surface, its eyes closed as a woman's voice can be heard in the background.",
+                    "audio": "woman's voice; baby crying.",
+                    "speech": "Theodore is receiving his gas medicine and appears excited about it."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A baby is shown lying on a soft surface, with a woman's voice in the background and the sound of the baby crying.",
+        "summary": "A baby, dressed in a pink onesie, lies on a soft surface with its eyes closed, while a woman's voice can be heard in the background. The baby suddenly starts crying, breaking the silence."
+      },
+      {
+        "level": 1,
+        "start_time": 27.5,
+        "end_time": 40.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 27.5,
+            "end_time": 35.5,
+            "children": [],
+            "caption": "A baby, dressed in a pink onesie, sits on a person's lap, their eyes closed as they peacefully suck on a pacifier.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A baby, dressed in a pink onesie, sits on a person's lap, their eyes closed as they peacefully suck on a pacifier.",
+              "result": {
+                "video_id": "C7_yXTIwxmA",
+                "event_id": "E_C7_yXTIwxmA_27.5_35.5",
+                "tags": [
+                  "baby",
+                  "onesie",
+                  "pacifier"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baby",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "onesie",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "pacifier",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_C7_yXTIwxmA_27.5_35.5",
+                  "name": "",
+                  "time": {
+                    "start": "27.5",
+                    "end": "35.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "baby"
+                  ],
+                  "scene_topic": "A baby sits on a person's lap, peacefully sucking on a pacifier.",
+                  "summary": "A baby, dressed in a pink onesie, sits on a person's lap, their eyes closed as they peacefully suck on a pacifier.",
+                  "implications": "Minor daily life event",
+                  "modalities": {
+                    "visual": "A baby, dressed in a pink onesie, sits on a person's lap, their eyes closed as they peacefully suck on a pacifier.",
+                    "audio": "",
+                    "speech": "Theodore is receiving his gas medicine and appears excited about it."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 35.5,
+            "end_time": 40.5,
+            "children": [],
+            "caption": "A baby, dressed in a striped onesie, lies peacefully on a blanket, its eyes closed as a woman's voice can be heard in the background, saying \"Bye\" and \"I love you.\"",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "A baby, dressed in a striped onesie, lies peacefully on a blanket, its eyes closed as a woman's voice can be heard in the background, saying \"Bye\" and \"I love you.\"",
+              "result": {
+                "video_id": "C7_yXTIwxmA",
+                "event_id": "E_C7_yXTIwxmA_35_40",
+                "tags": [
+                  "baby",
+                  "onesie",
+                  "woman",
+                  "voice",
+                  "background"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baby",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "onesie",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "blanket",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_C7_yXTIwxmA_35_40",
+                  "name": "Goodbye moment",
+                  "time": {
+                    "start": "35.5",
+                    "end": "40.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family life"
+                  ],
+                  "scene_topic": "A woman says goodbye to a baby",
+                  "summary": "A baby, dressed in a striped onesie, lies peacefully on a blanket, its eyes closed as a woman's voice can be heard in the background, saying \"Bye\" and \"I love you.\"",
+                  "implications": "Emotional moment",
+                  "modalities": {
+                    "visual": "A baby, dressed in a striped onesie, lies peacefully on a blanket, its eyes closed as a woman's voice can be heard in the background.",
+                    "audio": "Woman's voice saying 'Bye' and 'I love you'.",
+                    "speech": "Theodore is receiving his gas medicine and appears excited about it."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "Two babies are shown, one sucking on a pacifier and the other lying peacefully on a blanket with a woman's voice in the background saying goodbye and expressing love.",
+        "summary": "A baby in a pink onesie is peacefully sucking on a pacifier while sitting on someone's lap, while another baby in a striped onesie lies on a blanket, both with their eyes closed. In the background, a woman's voice can be heard saying goodbye and expressing love."
+      },
+      {
+        "level": 1,
+        "start_time": 40.5,
+        "end_time": 47.563183,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 40.5,
+            "end_time": 47.563183,
+            "children": [],
+            "caption": "A baby, dressed in a striped onesie, lies peacefully in a crib, its eyes closed as a woman's voice can be heard in the background, saying \"Bye\" and \"I love you.\"",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "A baby, dressed in a striped onesie, lies peacefully in a crib, its eyes closed as a woman's voice can be heard in the background, saying \"Bye\" and \"I love you.\"",
+              "result": {
+                "video_id": "C7_yXTIwxmA",
+                "event_id": "E_C7_yXTIwxmA_40.5_47.56",
+                "tags": [
+                  "baby",
+                  "onesie",
+                  "crib",
+                  "woman",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baby",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "crib",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_C7_yXTIwxmA_40.5_47.56",
+                  "name": "Goodbye",
+                  "time": {
+                    "start": "40.5",
+                    "end": "47.56"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family life"
+                  ],
+                  "scene_topic": "A woman says goodbye to a baby in a crib.",
+                  "summary": "A baby, dressed in a striped onesie, lies peacefully in a crib, its eyes closed as a woman's voice can be heard in the background, saying \"Bye\" and \"I love you.\"",
+                  "implications": "Emotional moment",
+                  "modalities": {
+                    "visual": "A baby, dressed in a striped onesie, lies peacefully in a crib, its eyes closed as a woman's voice can be heard in the background.",
+                    "audio": "Woman's voice saying 'Bye' and 'I love you'.",
+                    "speech": "Theodore is receiving his gas medicine and appears excited about it."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A baby lies in a crib, peacefully sleeping as a woman's voice can be heard saying goodbye and expressing love.",
+        "summary": "A baby lies peacefully in a crib, its eyes closed, as a woman's voice can be heard in the background saying goodbye and expressing her love."
+      }
+    ],
+    "caption": "A baby is shown in various scenarios, including being fed a bottle, comforted, and saying goodbye to a loved one, all while sucking on a pacifier. Another baby is shown lying peacefully on a blanket, with a woman's voice in the background expressing love and saying goodbye. Two babies are also shown, one sucking on a pacifier and the other lying in a crib, peacefully sleeping as a woman's voice can be heard saying goodbye and expressing love.",
+    "summary": "A person is shown caring for multiple babies, feeding and soothing them with pacifiers, as a woman's voice is heard in the background saying goodbye and expressing love. The babies are seen in various states of calmness, with some lying down or sitting on a couch, all with pacifiers in their mouths, while a baby suddenly starts crying, breaking the silence."
+  }
+}

@@ -1,0 +1,1331 @@
+{
+  "video_id": "CQ4WI57FjFo",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 93.96879,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 40.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 14.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 2.5,
+                "children": [],
+                "caption": "The video opens with a soccer match in progress, the scoreboard showing \"Southampton\" leading \"Liverpool\" 1-0, while a man and a woman discuss the game, their voices barely audible over the roar of the crowd.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a soccer match in progress, the scoreboard showing \"Southampton\" leading \"Liverpool\" 1-0, while a man and a woman discuss the game, their voices barely audible over the roar of the crowd.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_0_2.5",
+                    "tags": [
+                      "soccer",
+                      "southampton",
+                      "liverpool",
+                      "match",
+                      "scoreboard"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_match",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "discussant",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O004",
+                        "role": "discussant",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_0_2.5",
+                      "name": "soccer_match_discussion",
+                      "time": {
+                        "start": "0",
+                        "end": "2.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The video opens with a soccer match in progress, the scoreboard showing 'Southampton' leading 'Liverpool' 1-0, while a man and a woman discuss the game, their voices barely audible over the roar of the crowd.",
+                      "summary": "The video opens with a soccer match in progress, the scoreboard showing \"Southampton\" leading \"Liverpool\" 1-0, while a man and a woman discuss the game, their voices barely audible over the roar of the crowd.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The video opens with a soccer match in progress, the scoreboard showing 'Southampton' leading 'Liverpool' 1-0, while a man and a woman discuss the game.",
+                        "audio": "crowd roar; voices",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 2.5,
+                "end_time": 7.5,
+                "children": [],
+                "caption": "A young woman, wearing a patterned shirt and shorts, walks down a hallway, her footsteps echoing as she passes a closed door.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A young woman, wearing a patterned shirt and shorts, walks down a hallway, her footsteps echoing as she passes a closed door.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_2.5_7.5",
+                    "tags": [
+                      "human_motion",
+                      "footsteps",
+                      "hallway",
+                      "door"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young woman",
+                        "attributes": {
+                          "clothing": "patterned shirt and shorts"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hallway",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "closed door",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young woman",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_2.5_7.5",
+                      "name": "woman walking down hallway",
+                      "time": {
+                        "start": "2.5",
+                        "end": "7.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A young woman walks down a hallway, her footsteps echoing as she passes a closed door.",
+                      "summary": "A young woman, wearing a patterned shirt and shorts, walks down a hallway, her footsteps echoing as she passes a closed door.",
+                      "implications": "Major human activity event",
+                      "modalities": {
+                        "visual": "A young woman, wearing a patterned shirt and shorts, walks down a hallway, her footsteps echoing as she passes a closed door.",
+                        "audio": "footsteps; door",
+                        "speech": "I will be present and acknowledge you as a champion."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 14.5,
+                "children": [],
+                "caption": "A woman in a red shirt is scrolling through a mobile app, her thumb moving quickly across the screen as she searches for something.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "A woman in a red shirt is scrolling through a mobile app, her thumb moving quickly across the screen as she searches for something.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_7.5_14.5",
+                    "tags": [
+                      "mobile_app",
+                      "search",
+                      "woman",
+                      "red_shirt"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "mobile_app",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "red_shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "user",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_7.5_14.5",
+                      "name": "woman searching on mobile app",
+                      "time": {
+                        "start": "7.5",
+                        "end": "14.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_computer_interaction"
+                      ],
+                      "scene_topic": "A woman is searching for something on her mobile app",
+                      "summary": "A woman in a red shirt is scrolling through a mobile app, her thumb moving quickly across the screen as she searches for something.",
+                      "implications": "Major human-computer interaction event",
+                      "modalities": {
+                        "visual": "A woman in a red shirt is scrolling through a mobile app, her thumb moving quickly across the screen as she searches for something.",
+                        "audio": "",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A soccer match between Southampton and Liverpool is being watched by a man and a woman, whose voices are barely audible over the roar of the crowd. A young woman walks down a hallway, and a woman in a red shirt scrolls through a mobile app on her phone.",
+            "summary": "The video shows a soccer match between Southampton and Liverpool, with a man and woman discussing the game in the background. Meanwhile, three women are shown in separate scenes, including one walking down a hallway, another scrolling through a mobile app, and a third wearing a patterned shirt and shorts."
+          },
+          {
+            "level": 2,
+            "start_time": 14.5,
+            "end_time": 21.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 14.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "The video transitions from a mobile game interface to a first-person perspective of a player navigating a dimly lit room, the only sound a woman's voice briefly saying \"Bye\" before a man's voice takes over.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The video transitions from a mobile game interface to a first-person perspective of a player navigating a dimly lit room, the only sound a woman's voice briefly saying \"Bye\" before a man's voice takes over.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_14.5_21.5",
+                    "tags": [
+                      "game",
+                      "interface",
+                      "first_person",
+                      "room",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "mobile game interface",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "dimly lit room",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "player",
+                        "ref_object": "O002",
+                        "role": "narrator",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_14.5_21.5",
+                      "name": "Transition to first-person perspective",
+                      "time": {
+                        "start": "14.5",
+                        "end": "21.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "game play"
+                      ],
+                      "scene_topic": "The video transitions from a mobile game interface to a first-person perspective of a player navigating a dimly lit room.",
+                      "summary": "The video transitions from a mobile game interface to a first-person perspective of a player navigating a dimly lit room, the only sound a woman's voice briefly saying \"Bye\" before a man's voice takes over.",
+                      "implications": "Major game play event",
+                      "modalities": {
+                        "visual": "The video transitions from a mobile game interface to a first-person perspective of a player navigating a dimly lit room.",
+                        "audio": "Woman's voice: 'Bye'; man's voice.",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A player navigates through a dark room while listening to a voice, with the transition from a mobile game interface to a first-person perspective indicating a shift in perspective and setting.",
+            "summary": "The video transitions from a mobile game interface to a first-person perspective of a player navigating a dimly lit room, where a woman's voice briefly says \"Bye\" before a man's voice takes over."
+          },
+          {
+            "level": 2,
+            "start_time": 21.5,
+            "end_time": 31.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "The video transitions from a mobile game interface to a first-person perspective of a player running through a grassy field, the player's avatar, a soccer player in a blue and yellow uniform, sprinting towards the camera as upbeat pop music plays in the background.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The video transitions from a mobile game interface to a first-person perspective of a player running through a grassy field, the player's avatar, a soccer player in a blue and yellow uniform, sprinting towards the camera as upbeat pop music plays in the background.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_21.5_24.5",
+                    "tags": [
+                      "gaming",
+                      "mobile_game",
+                      "first_person_perspective",
+                      "soccer",
+                      "pop_music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "mobile_game_interface",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "grass_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "player_avatar",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "player",
+                        "ref_object": "O003",
+                        "role": "main",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_21.5_24.5",
+                      "name": "player_running_through_grassy_field",
+                      "time": {
+                        "start": "21.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "gaming"
+                      ],
+                      "scene_topic": "The player's avatar, a soccer player in a blue and yellow uniform, sprinting towards the camera as upbeat pop music plays in the background.",
+                      "summary": "The video transitions from a mobile game interface to a first-person perspective of a player running through a grassy field, the player's avatar, a soccer player in a blue and yellow uniform, sprinting towards the camera as upbeat pop music plays in the background.",
+                      "implications": "Major gaming event",
+                      "modalities": {
+                        "visual": "The video transitions from a mobile game interface to a first-person perspective of a player running through a grassy field, the player's avatar, a soccer player in a blue and yellow uniform, sprinting towards the camera as.",
+                        "audio": "upbeat pop music",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 28.5,
+                "children": [],
+                "caption": "The video game interface displays a soccer match between \"Southampton\" and \"Manchester City,\" with the score at 0-0 in the first half, while a man's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The video game interface displays a soccer match between \"Southampton\" and \"Manchester City,\" with the score at 0-0 in the first half, while a man's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_24.5_28.5",
+                    "tags": [
+                      "soccer",
+                      "video_game",
+                      "southampton",
+                      "manchester_city"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "video_game_interface",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer_match",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's_voice",
+                        "ref_object": "O001",
+                        "role": "commentator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_24.5_28.5",
+                      "name": "Soccer match commentary",
+                      "time": {
+                        "start": "24.5",
+                        "end": "28.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The video game interface displays a soccer match between 'Southampton' and 'Manchester City', with the score at 0-0 in the first half, while a man's voice can be heard in the background.",
+                      "summary": "The video game interface displays a soccer match between \"Southampton\" and \"Manchester City,\" with the score at 0-0 in the first half, while a man's voice can be heard in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The video game interface displays a soccer match between 'Southampton' and 'Manchester City', with the score at 0-0 in the first half, a man's voice in the background.",
+                        "audio": "man's voice",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 28.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "The soccer match continues, the players in blue and yellow jerseys are running across the field, the scoreboard shows a score of 1-0 in favor of the blue team, and a man's voice can be heard commenting on the game.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The soccer match continues, the players in blue and yellow jerseys are running across the field, the scoreboard shows a score of 1-0 in favor of the blue team, and a man's voice can be heard commenting on the game.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_28.5_31.5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "score",
+                      "commentary"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "commentator",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "commentator",
+                        "ref_object": "O004",
+                        "role": "commentator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_28.5_31.5",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "28.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                      "summary": "The soccer match continues, the players in blue and yellow jerseys are running across the field, the scoreboard shows a score of 1-0 in favor of the blue team, and a man's voice can be heard commenting on the game.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues, the players in blue and yellow jerseys are running across the field, the scoreboard shows a score of 1-0 in favor of the blue team.",
+                        "audio": "a man's voice commenting on the game",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a video game, a player runs through a grassy field as an avatar, a soccer player in a blue and yellow uniform, while upbeat music plays in the background. The game transitions from a mobile interface to a first-person perspective, showing the player's sprint towards the camera. The score is 0-0 in the first half of the match between \"Southampton\" and \"Manchester City.\" The game continues, with the players running across the field and the scoreboard showing a score of 1-0 in favor of the blue",
+            "summary": "The video transitions from a mobile game interface to a first-person perspective of a soccer player running through a grassy field, with upbeat pop music playing in the background. The game interface shows a 0-0 score in the first half of a match between Southampton and Manchester City, which later becomes 1-0 in favor of the blue team."
+          },
+          {
+            "level": 2,
+            "start_time": 31.5,
+            "end_time": 40.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 35.5,
+                "children": [],
+                "caption": "The soccer match continues, the players in blue and yellow jerseys are running across the field, the scoreboard shows a score of 1-0 in favor of the blue team, and a man's voice can be heard commenting on the game.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The soccer match continues, the players in blue and yellow jerseys are running across the field, the scoreboard shows a score of 1-0 in favor of the blue team, and a man's voice can be heard commenting on the game.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_31.5_35.5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "score",
+                      "commentary"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "commentator",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "commentator",
+                        "ref_object": "O004",
+                        "role": "commentator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_31.5_35.5",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "31.5",
+                        "end": "35.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                      "summary": "The soccer match continues, the players in blue and yellow jerseys are running across the field, the scoreboard shows a score of 1-0 in favor of the blue team, and a man's voice can be heard commenting on the game.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues, the players in blue and yellow jerseys are running across the field, the scoreboard shows a score of 1-0 in favor of the blue team.",
+                        "audio": "a man's voice commenting on the game",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 35.5,
+                "end_time": 40.5,
+                "children": [],
+                "caption": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate as the crowd cheers and a commentator excitedly describes the action.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate as the crowd cheers and a commentator excitedly describes the action.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_35.5_40.5",
+                    "tags": [
+                      "soccer",
+                      "dribbling",
+                      "passing",
+                      "teamwork",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer player",
+                        "attributes": {
+                          "jersey_color": "blue and yellow"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "teammate",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "crowd",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "soccer player",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_35.5_40.5",
+                      "name": "Soccer player dribbles and passes the ball",
+                      "time": {
+                        "start": "35.5",
+                        "end": "40.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate as the crowd cheers and a commentator excitedly describes the action.",
+                      "summary": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate as the crowd cheers and a commentator excitedly describes the action.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate as the crowd cheers.",
+                        "audio": "crowd cheers; commentator excitedly describes the action.",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A soccer match is underway, with the blue team leading 1-0. A player in blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate, as the crowd cheers and a commentator provides excited commentary.",
+            "summary": "The soccer match is underway with the blue team leading 1-0, as players in blue and yellow jerseys run across the field. A skilled player in blue and yellow skillfully dribbles the ball and passes it to a teammate, drawing cheers from the crowd and enthusiastic commentary from the announcer."
+          }
+        ],
+        "caption": "A man and woman watch a soccer match between Southampton and Liverpool, while a young woman walks down a hallway and a woman scrolls through a mobile app. In a video game, a player navigates through a dark room and runs across a grassy field as an avatar, with the game transitioning from a mobile interface to a first-person perspective. The score is 0-0 in the first half of the match between Southampton and Manchester City, with the blue team leading 1-0 later in the game.",
+        "summary": "The video shows a soccer match between Southampton and Manchester City, with a 1-0 score in favor of the blue team, interspersed with scenes of people going about their daily activities and a first-person perspective of a player navigating a room and playing a mobile game. The match features skilled play and enthusiastic commentary, with the blue team leading 1-0 as players in blue and yellow jerseys run across the field."
+      },
+      {
+        "level": 1,
+        "start_time": 40.5,
+        "end_time": 93.96879,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 40.5,
+            "end_time": 47.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate who takes a shot on goal, the crowd cheering as the ball soars through the air.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate who takes a shot on goal, the crowd cheering as the ball soars through the air.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_40.5_47.5",
+                    "tags": [
+                      "soccer",
+                      "dribbling",
+                      "passing",
+                      "shooting",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer player",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "soccer player",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_40.5_47.5",
+                      "name": "Soccer player dribbles and passes the ball",
+                      "time": {
+                        "start": "40.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate who takes a shot on goal, the crowd cheering as the ball soars through the air.",
+                      "summary": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate who takes a shot on goal, the crowd cheering as the ball soars through the air.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer player in the blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate who takes a shot on goal, the ball soars through the air.",
+                        "audio": "crowd cheering",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A soccer player dribbles the ball down the field and passes it to a teammate who takes a shot on goal, resulting in a goal and cheers from the crowd.",
+            "summary": "A soccer player in a blue and yellow jersey skillfully dribbles the ball down the field, passing it to a teammate who takes a shot on goal. The crowd cheers as the ball soars through the air."
+          },
+          {
+            "level": 2,
+            "start_time": 47.5,
+            "end_time": 64.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 64.5,
+                "children": [],
+                "caption": "The soccer match continues, the players in blue and yellow jerseys are battling for possession of the ball on the field, while the commentator excitedly describes the action.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The soccer match continues, the players in blue and yellow jerseys are battling for possession of the ball on the field, while the commentator excitedly describes the action.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_47.5_64.5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "ball",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "players",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "commentator",
+                        "ref_object": "O001",
+                        "role": "commentator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_47.5_64.5",
+                      "name": "The soccer match continues",
+                      "time": {
+                        "start": "47.5",
+                        "end": "64.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The players in blue and yellow jerseys are battling for possession of the ball on the field, while the commentator excitedly describes the action.",
+                      "summary": "The soccer match continues, the players in blue and yellow jerseys are battling for possession of the ball on the field, while the commentator excitedly describes the action.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues, the players in blue and yellow jerseys are battling for possession of the ball on the field, while the commentator excitedly describes the action.",
+                        "audio": "",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a thrilling soccer match, the players in blue and yellow jerseys fight for control of the ball on the field, with the commentator providing vivid commentary.",
+            "summary": "The soccer match is underway, with players in blue and yellow jerseys competing for control of the ball on the field. The commentator enthusiastically narrates the action as the game unfolds."
+          },
+          {
+            "level": 2,
+            "start_time": 64.5,
+            "end_time": 74.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 64.5,
+                "end_time": 67.5,
+                "children": [],
+                "caption": "The soccer player in the blue and yellow striped jersey skillfully dribbles the ball down the field, his movements captured in a close-up shot as the crowd cheers and a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The soccer player in the blue and yellow striped jersey skillfully dribbles the ball down the field, his movements captured in a close-up shot as the crowd cheers and a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_64.5_67.5",
+                    "tags": [
+                      "soccer",
+                      "dribbling",
+                      "close_up",
+                      "crowd",
+                      "background_noise"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_player",
+                        "attributes": {
+                          "jersey_color": "blue and yellow striped"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer_ball",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "soccer_player",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_64.5_67.5",
+                      "name": "soccer_player_dribbles_ball",
+                      "time": {
+                        "start": "64.5",
+                        "end": "67.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer player skillfully dribbles the ball down the field.",
+                      "summary": "The soccer player in the blue and yellow striped jersey skillfully dribbles the ball down the field, his movements captured in a close-up shot as the crowd cheers and a woman's voice can be heard in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer player in the blue and yellow striped jersey skillfully dribbles the ball down the field, his movements captured in a close-up shot.",
+                        "audio": "crowd cheers; woman's voice",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 67.5,
+                "end_time": 74.5,
+                "children": [],
+                "caption": "The soccer match continues with the players in blue and yellow jerseys battling for possession of the ball on the vibrant green field, the crowd's cheers and the commentator's excited voice adding to the intensity of the match.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The soccer match continues with the players in blue and yellow jerseys battling for possession of the ball on the vibrant green field, the crowd's cheers and the commentator's excited voice adding to the intensity of the match.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_67.5_74.5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "ball",
+                      "field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "battling",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_67.5_74.5",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "67.5",
+                        "end": "74.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer players battle for possession of the ball on the field.",
+                      "summary": "The soccer match continues with the players in blue and yellow jerseys battling for possession of the ball on the vibrant green field, the crowd's cheers and the commentator's excited voice adding to the intensity of the match.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with the players in blue and yellow jerseys battling for possession of the ball on the vibrant green field, the crowd's cheers and the commentator's excited voice adding to the intensity of the match.",
+                        "audio": "crowd's cheers; commentator's excited voice",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A skilled soccer player dribbles the ball down the field, while the crowd cheers and a woman's voice can be heard in the background. The match continues with the players battling for possession of the ball on a vibrant green field, with the crowd's cheers and the commentator's excited voice adding to the intensity of the match.",
+            "summary": "A soccer player in a blue and yellow striped jersey skillfully dribbles the ball down the field, with the crowd cheering and a woman's voice audible in the background. The match continues with the blue and yellow teams battling for possession on the green field, the crowd's cheers and commentator's voice adding to the intensity."
+          },
+          {
+            "level": 2,
+            "start_time": 74.5,
+            "end_time": 93.96879,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 74.5,
+                "end_time": 83.5,
+                "children": [],
+                "caption": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the vibrant green field, the crowd's cheers and the commentator's excited voice filling the stadium as the scoreboard shows a close match.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the vibrant green field, the crowd's cheers and the commentator's excited voice filling the stadium as the scoreboard shows a close match.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_74.5_83.5",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "ball",
+                      "field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "players",
+                        "ref_object": "O001",
+                        "role": "battling",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_74.5_83.5",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "74.5",
+                        "end": "83.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the vibrant green field",
+                      "summary": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the vibrant green field, the crowd's cheers and the commentator's excited voice filling the stadium as the scoreboard shows a close match.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the vibrant green field, the scoreboard shows a close match.",
+                        "audio": "crowd's cheers; commentator's excited voice",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 83.5,
+                "end_time": 87.5,
+                "children": [],
+                "caption": "The soccer player in the yellow jersey skillfully maneuvers the ball down the field, dribbling past opponents and aiming for the goal as the crowd cheers and the commentator excitedly describes the action.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The soccer player in the yellow jersey skillfully maneuvers the ball down the field, dribbling past opponents and aiming for the goal as the crowd cheers and the commentator excitedly describes the action.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_83_87",
+                    "tags": [
+                      "soccer",
+                      "sports",
+                      "ball",
+                      "field",
+                      "goal"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer_field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "soccer_player",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_83_87",
+                      "name": "soccer_player_dribbles_ball",
+                      "time": {
+                        "start": "83.5",
+                        "end": "87.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer player skillfully maneuvers the ball down the field, dribbling past opponents and aiming for the goal.",
+                      "summary": "The soccer player in the yellow jersey skillfully maneuvers the ball down the field, dribbling past opponents and aiming for the goal as the crowd cheers and the commentator excitedly describes the action.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer player in the yellow jersey skillfully maneuvers the ball down the field, dribbling past opponents and aiming for the goal as the crowd cheers.",
+                        "audio": "crowd cheers; commentator excitedly describes the action",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 87.5,
+                "end_time": 93.96879,
+                "children": [],
+                "caption": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the grassy field, the crowd cheering as the commentator excitedly describes a goal scored by a player in a yellow jersey.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the grassy field, the crowd cheering as the commentator excitedly describes a goal scored by a player in a yellow jersey.",
+                  "result": {
+                    "video_id": "CQ4WI57FjFo",
+                    "event_id": "E_CQ4WI57FjFo_87.5_93.97",
+                    "tags": [
+                      "soccer",
+                      "match",
+                      "players",
+                      "ball",
+                      "field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "soccer_ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "grass_field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "player_in_yellow_jersey",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_CQ4WI57FjFo_87.5_93.97",
+                      "name": "soccer_match",
+                      "time": {
+                        "start": "87.5",
+                        "end": "93.97"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the grassy field, the crowd cheering as the commentator excitedly describes a goal scored by a player in a yellow jersey.",
+                      "summary": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the grassy field, the crowd cheering as the commentator excitedly describes a goal scored by a player in a yellow jersey.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer match continues with players in blue and yellow jerseys battling for possession of the ball on the grassy field, the crowd cheering as the commentator excitedly describes a goal scored by a player in a yellow jersey.",
+                        "audio": "crowd cheering; commentator",
+                        "speech": "The speaker reassures that they will be present and acknowledges someone as a champion."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A close soccer match is underway between two teams, with players in blue and yellow jerseys competing for possession of the ball on a green field. The crowd is cheering and a commentator is excitedly describing the action, including a goal scored by a player in a yellow jersey.",
+            "summary": "The soccer match is a close and intense game, with players in blue and yellow jerseys battling for possession of the ball on the grassy field, as the crowd cheers and the commentator excitedly describes the action. A player in a yellow jersey skillfully maneuvers the ball down the field, dribbling past opponents and scoring a goal, sending the crowd into a frenzy."
+          }
+        ],
+        "caption": "In a thrilling soccer match, players in blue and yellow jerseys fight for control of the ball on the field, with a skilled player dribbling the ball down the field and scoring a goal. The crowd cheers and a commentator provides vivid commentary, adding to the intensity of the match.",
+        "summary": "A soccer match is underway, with the blue and yellow teams competing for control of the ball on the field, as the crowd cheers and the commentator enthusiastically narrates the action. The game is a close and intense battle, with players skillfully dribbling and scoring goals, sending the crowd into a frenzy."
+      }
+    ],
+    "caption": "In a thrilling soccer match, players in blue and yellow jerseys battle for control of the ball on the field, with a skilled player dribbling the ball down the field and scoring a goal. The crowd cheers and a commentator provides vivid commentary, adding to the excitement of the match.",
+    "summary": "The video features a soccer match between Southampton and Manchester City, with the blue team leading 1-0, showcasing skilled play and enthusiastic commentary. The game is a close and intense battle, with players skillfully dribbling and scoring goals, sending the crowd into a frenzy."
+  }
+}

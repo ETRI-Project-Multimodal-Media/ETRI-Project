@@ -1,0 +1,1081 @@
+{
+  "video_id": "dX0fhMVGWlQ",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 37.120417,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 8.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 2.5,
+            "children": [],
+            "caption": "A man, standing in front of a house with a \"FOR SALE\" sign, smiles as he talks to a woman, who listens attentively.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "A man, standing in front of a house with a \"FOR SALE\" sign, smiles as he talks to a woman, who listens attentively.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_0_2.5",
+                "tags": [
+                  "real_estate",
+                  "conversation",
+                  "smile",
+                  "house",
+                  "sale"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "house",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O003",
+                    "role": "listener",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_0_2.5",
+                  "name": "real estate conversation",
+                  "time": {
+                    "start": "0",
+                    "end": "2.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "real estate news"
+                  ],
+                  "scene_topic": "A man talks to a woman in front of a house for sale.",
+                  "summary": "A man, standing in front of a house with a \"FOR SALE\" sign, smiles as he talks to a woman, who listens attentively.",
+                  "implications": "Major real estate news event",
+                  "modalities": {
+                    "visual": "A man standing in front of a house with a 'FOR SALE' sign, smiling, as he talks to a woman who listens attentively.",
+                    "audio": "",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 2.5,
+            "end_time": 5.5,
+            "children": [],
+            "caption": "In a backyard, a man and a woman stand before a \"Vote for Sharon\" sign, the woman smiling as she speaks to the camera, her voice filled with enthusiasm.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "In a backyard, a man and a woman stand before a \"Vote for Sharon\" sign, the woman smiling as she speaks to the camera, her voice filled with enthusiasm.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_2.5_5.5",
+                "tags": [
+                  "backyard",
+                  "sharon",
+                  "vote"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Vote for Sharon sign",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man",
+                    "ref_object": "",
+                    "role": "",
+                    "entity": ""
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Woman",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_2.5_5.5",
+                  "name": "Woman speaks to camera",
+                  "time": {
+                    "start": "2.5",
+                    "end": "5.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "A woman speaks to the camera in a backyard, holding a 'Vote for Sharon' sign.",
+                  "summary": "In a backyard, a man and a woman stand before a \"Vote for Sharon\" sign, the woman smiling as she speaks to the camera, her voice filled with enthusiasm.",
+                  "implications": "Campaign event",
+                  "modalities": {
+                    "visual": "In a backyard, a man and a woman stand before a 'Vote for Sharon' sign, the woman smiling as she speaks to the camera.",
+                    "audio": "speaking; voice filled with enthusiasm",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 5.5,
+            "end_time": 8.5,
+            "children": [],
+            "caption": "A woman, standing in a room with a \"Vote for Sharon\" sign, smiles as she listens to a man's voice, likely a campaign speech, as he emphasizes the importance of voting.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "A woman, standing in a room with a \"Vote for Sharon\" sign, smiles as she listens to a man's voice, likely a campaign speech, as he emphasizes the importance of voting.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_5_8",
+                "tags": [
+                  "politics",
+                  "election",
+                  "campaign",
+                  "voting",
+                  "sharon"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Vote for Sharon sign",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_5_8",
+                  "name": "campaign speech",
+                  "time": {
+                    "start": "5.5",
+                    "end": "8.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "politics news"
+                  ],
+                  "scene_topic": "A woman listens to a man's campaign speech emphasizing the importance of voting.",
+                  "summary": "A woman, standing in a room with a \"Vote for Sharon\" sign, smiles as she listens to a man's voice, likely a campaign speech, as he emphasizes the importance of voting.",
+                  "implications": "Major politics news event",
+                  "modalities": {
+                    "visual": "A woman standing in a room with a 'Vote for Sharon' sign, smiling.",
+                    "audio": "man's voice; campaign speech",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A series of people, including a man and a woman, are shown smiling and listening intently as they discuss or campaign for a political candidate named Sharon.",
+        "summary": "The transcript depicts scenes of people supporting a candidate, Sharon, with \"Vote for Sharon\" signs, showcasing enthusiasm and importance of voting. The scenes feature individuals, likely supporters, engaging with the campaign, highlighting the significance of casting a ballot."
+      },
+      {
+        "level": 1,
+        "start_time": 8.5,
+        "end_time": 18.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 8.5,
+            "end_time": 11.5,
+            "children": [],
+            "caption": "A woman, identified as \"Sherry Bittner,\" is seen in a professional setting, her serious expression and focused gaze suggesting she is engaged in a discussion or presentation.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "A woman, identified as \"Sherry Bittner,\" is seen in a professional setting, her serious expression and focused gaze suggesting she is engaged in a discussion or presentation.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_8.5_11.5",
+                "tags": [
+                  "woman",
+                  "professional",
+                  "serious",
+                  "focused",
+                  "discussion",
+                  "presentation"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Sherry Bittner",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Sherry Bittner",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_8.5_11.5",
+                  "name": "Sherry Bittner in a professional setting",
+                  "time": {
+                    "start": "8.5",
+                    "end": "11.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person news"
+                  ],
+                  "scene_topic": "A woman is seen in a professional setting, engaged in a discussion or presentation.",
+                  "summary": "A woman, identified as \"Sherry Bittner,\" is seen in a professional setting, her serious expression and focused gaze suggesting she is engaged in a discussion or presentation.",
+                  "implications": "Major news event",
+                  "modalities": {
+                    "visual": "A woman, identified as 'Sherry Bittner', is seen in a professional setting, her serious expression and focused gaze suggesting she is engaged in a discussion or presentation.",
+                    "audio": "",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 11.5,
+            "end_time": 14.5,
+            "children": [],
+            "caption": "In a well-lit room, a group of people are engaged in a discussion around a table, with a woman in a blue shirt actively participating in the conversation.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "In a well-lit room, a group of people are engaged in a discussion around a table, with a woman in a blue shirt actively participating in the conversation.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_11.5_14.5",
+                "tags": [
+                  "group_discussion",
+                  "people",
+                  "conversation"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "table",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "room",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman_in_blue_shirt",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman_in_blue_shirt",
+                    "ref_object": "O003",
+                    "role": "participant",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_11.5_14.5",
+                  "name": "Group Discussion",
+                  "time": {
+                    "start": "11.5",
+                    "end": "14.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "people",
+                    "conversation"
+                  ],
+                  "scene_topic": "A group of people are engaged in a discussion around a table.",
+                  "summary": "In a well-lit room, a group of people are engaged in a discussion around a table, with a woman in a blue shirt actively participating in the conversation.",
+                  "implications": "Social interaction, communication",
+                  "modalities": {
+                    "visual": "In a well-lit room, a group of people are engaged in a discussion around a table, with a woman in a blue shirt actively participating in the conversation.",
+                    "audio": "",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 14.5,
+            "end_time": 16.5,
+            "children": [],
+            "caption": "In a well-lit room, a woman in a blue blazer stands before a sign that reads \"FISHER TOWNSHIP,\" while a man in a suit stands beside her, both listening attentively to a speaker who is not visible in the frame.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "In a well-lit room, a woman in a blue blazer stands before a sign that reads \"FISHER TOWNSHIP,\" while a man in a suit stands beside her, both listening attentively to a speaker who is not visible in the frame.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_14.5_16.5",
+                "tags": [
+                  "township",
+                  "fishtown",
+                  "meeting",
+                  "people",
+                  "sign"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "FISHER TOWNSHIP sign",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman in blue blazer",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man in suit",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "speaker (not visible)",
+                    "ref_object": "",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman in blue blazer",
+                    "ref_object": "O002",
+                    "role": "attendee",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "man in suit",
+                    "ref_object": "O003",
+                    "role": "attendee",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_14.5_16.5",
+                  "name": "Meeting in Fisher Township",
+                  "time": {
+                    "start": "14.5",
+                    "end": "16.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "people",
+                    "meeting"
+                  ],
+                  "scene_topic": "A meeting in Fisher Township",
+                  "summary": "In a well-lit room, a woman in a blue blazer stands before a sign that reads \"FISHER TOWNSHIP,\" while a man in a suit stands beside her, both listening attentively to a speaker who is not visible in the frame.",
+                  "implications": "Major local news event",
+                  "modalities": {
+                    "visual": "In a well-lit room, a woman in a blue blazer stands before a sign that reads 'FISHER TOWNSHIP,' while a man in a suit stands beside her, both listening attentively to a speaker who is not visible in the frame.",
+                    "audio": "",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 18.5,
+            "children": [],
+            "caption": "A woman, wearing a blue shirt, sits at a table with a book, smiling as she reads to a young child, who is seated on the floor and looking at the book with curiosity.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A woman, wearing a blue shirt, sits at a table with a book, smiling as she reads to a young child, who is seated on the floor and looking at the book with curiosity.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_16.5_18.5",
+                "tags": [
+                  "reading",
+                  "child",
+                  "book",
+                  "smiling",
+                  "curiosity"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "book",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "table",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "child",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O003",
+                    "role": "reader",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "child",
+                    "ref_object": "O004",
+                    "role": "listener",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_16.5_18.5",
+                  "name": "reading to a child",
+                  "time": {
+                    "start": "16.5",
+                    "end": "18.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family",
+                    "education"
+                  ],
+                  "scene_topic": "A woman reads to a young child",
+                  "summary": "A woman, wearing a blue shirt, sits at a table with a book, smiling as she reads to a young child, who is seated on the floor and looking at the book with curiosity.",
+                  "implications": "Major family and education news event",
+                  "modalities": {
+                    "visual": "A woman, wearing a blue shirt, sits at a table with a book, smiling as she reads to a young child, who is seated on the floor and looking at the book with curiosity.",
+                    "audio": "",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A professional woman, Sherry Bittner, is seen in a serious discussion or presentation. A group of people are engaged in a discussion around a table, with a woman in a blue shirt actively participating. A woman in a blue blazer stands before a sign, listening attentively to a speaker who is not visible in the frame. A woman reads to a young child in a cozy setting.",
+        "summary": "A woman, Sherry Bittner, is seen in various professional and personal settings, engaging in discussions, presentations, and reading to a child. The scenes depict her in different roles, from a serious and focused professional to a warm and nurturing caregiver."
+      },
+      {
+        "level": 1,
+        "start_time": 18.5,
+        "end_time": 29.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 24.5,
+            "children": [],
+            "caption": "A man and a woman, both wearing glasses, sit at a table in a well-lit room, engaging in a conversation about the importance of early childhood education, as indicated by the text overlay on the screen.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "A man and a woman, both wearing glasses, sit at a table in a well-lit room, engaging in a conversation about the importance of early childhood education, as indicated by the text overlay on the screen.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_18.5_24.5",
+                "tags": [
+                  "early_childhood_education",
+                  "importance",
+                  "conversation",
+                  "glasses",
+                  "table",
+                  "room"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "table",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "room",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_18.5_24.5",
+                  "name": "conversation about early childhood education",
+                  "time": {
+                    "start": "18.5",
+                    "end": "24.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education news"
+                  ],
+                  "scene_topic": "A man and a woman discuss the importance of early childhood education.",
+                  "summary": "A man and a woman, both wearing glasses, sit at a table in a well-lit room, engaging in a conversation about the importance of early childhood education, as indicated by the text overlay on the screen.",
+                  "implications": "Major education news event",
+                  "modalities": {
+                    "visual": "A man and a woman, both wearing glasses, sit at a table in a well-lit room, engaging in a conversation about the importance of early childhood education, as indicated by the text overlay on the screen.",
+                    "audio": "",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 27.5,
+            "children": [],
+            "caption": "In a well-lit kitchen, a man and a woman are seated at a table, engaged in a conversation. The man, wearing a blue shirt, is speaking, while the woman, wearing a red top, listens attentively.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "In a well-lit kitchen, a man and a woman are seated at a table, engaged in a conversation. The man, wearing a blue shirt, is speaking, while the woman, wearing a red top, listens attentively.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_24.5_27.5",
+                "tags": [
+                  "kitchen",
+                  "conversation",
+                  "man",
+                  "woman"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "table",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O003",
+                    "role": "listener",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_24.5_27.5",
+                  "name": "Conversation in a kitchen",
+                  "time": {
+                    "start": "24.5",
+                    "end": "27.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human activity"
+                  ],
+                  "scene_topic": "A man and a woman are engaged in a conversation in a kitchen.",
+                  "summary": "In a well-lit kitchen, a man and a woman are seated at a table, engaged in a conversation. The man, wearing a blue shirt, is speaking, while the woman, wearing a red top, listens attentively.",
+                  "implications": "Social interaction, human communication",
+                  "modalities": {
+                    "visual": "In a well-lit kitchen, a man and a woman are seated at a table, engaged in a conversation. The man, wearing a blue shirt, is speaking, while the woman, wearing a red top, listens attentively.",
+                    "audio": "",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 27.5,
+            "end_time": 29.5,
+            "children": [],
+            "caption": "In a well-lit room, a man and a woman stand together, smiling and waving at the camera, while a woman's voice can be heard speaking in the background.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "In a well-lit room, a man and a woman stand together, smiling and waving at the camera, while a woman's voice can be heard speaking in the background.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_27.5_29.5",
+                "tags": [
+                  "human_interaction",
+                  "smiling",
+                  "waving",
+                  "camera"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "human"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "actor",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_27.5_29.5",
+                  "name": "smiling and waving",
+                  "time": {
+                    "start": "27.5",
+                    "end": "29.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human_interaction"
+                  ],
+                  "scene_topic": "A man and a woman stand together, smiling and waving at the camera.",
+                  "summary": "In a well-lit room, a man and a woman stand together, smiling and waving at the camera, while a woman's voice can be heard speaking in the background.",
+                  "implications": "Human interaction event",
+                  "modalities": {
+                    "visual": "In a well-lit room, a man and a woman stand together, smiling and waving at the camera.",
+                    "audio": "woman's voice speaking",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A conversation about the importance of early childhood education takes place between two people in a well-lit room, while in another scene, two people are seen having a conversation in a kitchen, and in the final scene, a man and a woman are seen smiling and waving at the camera while a woman's voice speaks in the background.",
+        "summary": "A conversation takes place between a man and a woman in a well-lit room, discussing the importance of early childhood education, as they sit at a table. The scene cuts to a kitchen and a room where the couple is seen engaging in conversation and interacting with each other."
+      },
+      {
+        "level": 1,
+        "start_time": 29.5,
+        "end_time": 37.120417,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 32.5,
+            "children": [],
+            "caption": "A man and a woman, both smiling, stand in front of a blue car in a parking lot, the woman holding a small child, as a woman's voice encourages viewers to vote for her and her running mate, Sharon Brock, for the upcoming election.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "A man and a woman, both smiling, stand in front of a blue car in a parking lot, the woman holding a small child, as a woman's voice encourages viewers to vote for her and her running mate, Sharon Brock, for the upcoming election.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_29.5_32.5",
+                "tags": [
+                  "election",
+                  "voting",
+                  "candidate",
+                  "running_mate"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "blue_car",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "parking_lot",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "candidate",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "candidate",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "small_child",
+                    "ref_object": "O001",
+                    "role": "dependent",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A004",
+                    "name": "woman's_voice",
+                    "ref_object": "",
+                    "role": "narrator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_29.5_32.5",
+                  "name": "Election Campaign",
+                  "time": {
+                    "start": "29.5",
+                    "end": "32.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003",
+                    "A004"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "election news"
+                  ],
+                  "scene_topic": "A woman and her running mate campaign for election, holding a small child.",
+                  "summary": "A man and a woman, both smiling, stand in front of a blue car in a parking lot, the woman holding a small child, as a woman's voice encourages viewers to vote for her and her running mate, Sharon Brock, for the upcoming election.",
+                  "implications": "Major election news event",
+                  "modalities": {
+                    "visual": "A man and a woman, both smiling, stand in front of a blue car in a parking lot, the woman holding a small child.",
+                    "audio": "a woman's voice; encouraging viewers to vote for her and her running mate; Sharon Brock.",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 32.5,
+            "end_time": 34.5,
+            "children": [],
+            "caption": "The video transitions from a political campaign advertisement to a close-up of a \"Vote for\" button, urging viewers to support the campaign.",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "The video transitions from a political campaign advertisement to a close-up of a \"Vote for\" button, urging viewers to support the campaign.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_32.5_34.5",
+                "tags": [
+                  "campaign_advertisement",
+                  "vote_button",
+                  "politics"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Vote for button",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Campaign",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "organization"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_32.5_34.5",
+                  "name": "Campaign advertisement",
+                  "time": {
+                    "start": "32.5",
+                    "end": "34.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "politics"
+                  ],
+                  "scene_topic": "The video transitions from a political campaign advertisement to a close-up of a 'Vote for' button, urging viewers to support the campaign.",
+                  "summary": "The video transitions from a political campaign advertisement to a close-up of a \"Vote for\" button, urging viewers to support the campaign.",
+                  "implications": "Major politics news event",
+                  "modalities": {
+                    "visual": "The video transitions from a political campaign advertisement to a close-up of a 'Vote for' button, urging viewers to support the campaign.",
+                    "audio": "",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 34.5,
+            "end_time": 37.120417,
+            "children": [],
+            "caption": "The video transitions from a political campaign advertisement to a close-up of a red and white \"VOTE FOR\" sign, urging viewers to vote for a candidate named \"Cathy Quist\" on November 6th.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "The video transitions from a political campaign advertisement to a close-up of a red and white \"VOTE FOR\" sign, urging viewers to vote for a candidate named \"Cathy Quist\" on November 6th.",
+              "result": {
+                "video_id": "dX0fhMVGWlQ",
+                "event_id": "E_dX0fhMVGWlQ_34.5_37.12",
+                "tags": [
+                  "election",
+                  "politics",
+                  "voting",
+                  "campaign",
+                  "cathy_quist"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "VOTE FOR sign",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Cathy Quist",
+                    "ref_object": "O001",
+                    "role": "candidate",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_dX0fhMVGWlQ_34.5_37.12",
+                  "name": "VOTE FOR sign",
+                  "time": {
+                    "start": "34.5",
+                    "end": "37.12"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "politics news"
+                  ],
+                  "scene_topic": "The video transitions from a political campaign advertisement to a close-up of a red and white 'VOTE FOR' sign, urging viewers to vote for a candidate named 'Cathy Quist' on November 6th.",
+                  "summary": "The video transitions from a political campaign advertisement to a close-up of a red and white \"VOTE FOR\" sign, urging viewers to vote for a candidate named \"Cathy Quist\" on November 6th.",
+                  "implications": "Major politics news event",
+                  "modalities": {
+                    "visual": "The video transitions from a political campaign advertisement to a close-up of a red and white 'VOTE FOR' sign, urging viewers to vote for Cathy Quist on November 6th.",
+                    "audio": "",
+                    "speech": "Tanya Bamford and Matthew Quaig are running for Montgomery Township Supervisor, bringing decades of business experience and community involvement to the role. They urge voters to cast their ballots on November 7th to support their leadership and integrity."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A political campaign advertisement encourages viewers to vote for a candidate named Cathy Quist and her running mate, Sharon Brock, in an upcoming election. The advertisement features a man and a woman standing in front of a blue car, with the woman holding a small child, and a woman's voice urges viewers to support the campaign. The video then transitions to a close-up of a \"Vote for\" button, followed by a close-up of a red and white \"VOTE FOR\" sign, both urging view",
+        "summary": "A political campaign advertisement features a woman and her running mate, Sharon Brock, encouraging viewers to vote for them in the upcoming election, with a focus on supporting their campaign through a \"Vote for\" button and sign. The advertisement specifically urges viewers to vote for Cathy Quist on November 6th."
+      }
+    ],
+    "caption": "A series of scenes show various women participating in political campaigns, discussions, and other activities. The scenes include a group of people listening to a political candidate named Sharon, a professional woman named Sherry Bittner in a serious discussion, a group of people engaged in a discussion around a table, a woman reading to a young child, and a conversation about early childhood education between two people in a well-lit room. The video also includes a political campaign advertisement encouraging viewers to vote for a candidate named Cathy Quist and her running mate, Sh",
+    "summary": "The transcript showcases scenes of people supporting candidate Sharon, highlighting the importance of voting, while also featuring Sharon's running mate, Cathy Quist, in a campaign advertisement encouraging viewers to vote for them on November 6th. The scenes also depict Sharon's professional and personal life, including her work and interactions with others, emphasizing her multifaceted personality."
+  }
+}

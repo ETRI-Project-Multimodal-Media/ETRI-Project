@@ -1,0 +1,1042 @@
+{
+  "video_id": "MEqYM_4UbRs",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 60.0,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 19.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 8.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 2.5,
+                "children": [],
+                "caption": "A group of cyclists, illuminated by the sunset, ride their bikes in a synchronized manner on a brightly lit indoor cycling studio, their movements captured by the camera.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A group of cyclists, illuminated by the sunset, ride their bikes in a synchronized manner on a brightly lit indoor cycling studio, their movements captured by the camera.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_0_2.5",
+                    "tags": [
+                      "cycling",
+                      "synchronized",
+                      "indoor",
+                      "studio"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cyclists",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "cyclists",
+                        "ref_object": "O001",
+                        "role": "performers",
+                        "entity": "group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_0_2.5",
+                      "name": "synchronized cycling",
+                      "time": {
+                        "start": "0",
+                        "end": "2.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A group of cyclists ride their bikes in a synchronized manner on a brightly lit indoor cycling studio.",
+                      "summary": "A group of cyclists, illuminated by the sunset, ride their bikes in a synchronized manner on a brightly lit indoor cycling studio, their movements captured by the camera.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A group of cyclists, illuminated by the sunset, ride their bikes in a synchronized manner on a brightly lit indoor cycling studio, their movements captured by the camera.",
+                        "audio": "",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 2.5,
+                "end_time": 5.5,
+                "children": [],
+                "caption": "The video opens with a close-up of a sunscreen bottle, then pans out to show a person applying it to their skin, all while upbeat electronic music plays in the background.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The video opens with a close-up of a sunscreen bottle, then pans out to show a person applying it to their skin, all while upbeat electronic music plays in the background.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_2_5_5",
+                    "tags": [
+                      "sunscreen",
+                      "beauty",
+                      "skincare",
+                      "music",
+                      "electronic"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "sunscreen bottle",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_2_5_5",
+                      "name": "Sunscreen application",
+                      "time": {
+                        "start": "2.5",
+                        "end": "5.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "beauty"
+                      ],
+                      "scene_topic": "A person applies sunscreen to their skin while upbeat electronic music plays.",
+                      "summary": "The video opens with a close-up of a sunscreen bottle, then pans out to show a person applying it to their skin, all while upbeat electronic music plays in the background.",
+                      "implications": "Major beauty, skincare news event",
+                      "modalities": {
+                        "visual": "The video opens with a close-up of a sunscreen bottle, then pans out to show a person applying it to their skin.",
+                        "audio": "upbeat electronic music",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 5.5,
+                "end_time": 8.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a spinning bicycle wheel to a wide shot of a group of cyclists riding in a circle, their movements captured from various angles as they pedal in sync with the upbeat electronic music playing in the background.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The video transitions from a close-up of a spinning bicycle wheel to a wide shot of a group of cyclists riding in a circle, their movements captured from various angles as they pedal in sync with the upbeat electronic music playing in the background.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_5_8",
+                    "tags": [
+                      "cycling",
+                      "bicycle",
+                      "music",
+                      "sync"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bicycle wheel",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "group of cyclists",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "cyclists",
+                        "ref_object": "O002",
+                        "role": "pedaling",
+                        "entity": "group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_5_8",
+                      "name": "cycling scene",
+                      "time": {
+                        "start": "5.5",
+                        "end": "8.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A group of cyclists ride in sync with upbeat music.",
+                      "summary": "The video transitions from a close-up of a spinning bicycle wheel to a wide shot of a group of cyclists riding in a circle, their movements captured from various angles as they pedal in sync with the upbeat electronic music playing in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a spinning bicycle wheel to a wide shot of a group of cyclists riding in a circle, their movements captured from various angles as they pedal in sync with the camera.",
+                        "audio": "upbeat electronic music",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of cyclists ride in a synchronized manner in an indoor cycling studio, while a person applies sunscreen to their skin in a bright and colorful setting. The video transitions between close-ups of a spinning bicycle wheel and wide shots of the cyclists riding in a circle, capturing their movements and the upbeat music in the background.",
+            "summary": "A group of cyclists ride in sync on brightly lit indoor cycling studio, their movements captured by the camera, set to upbeat electronic music. The video opens with a close-up of sunscreen application before transitioning to a wide shot of the cyclists pedaling in unison."
+          },
+          {
+            "level": 2,
+            "start_time": 8.5,
+            "end_time": 19.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 8.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "A group of cyclists, dressed in matching black and white uniforms, are riding in sync on stationary bikes in a brightly lit gym, their movements captured from various angles as upbeat pop music plays in the background.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "A group of cyclists, dressed in matching black and white uniforms, are riding in sync on stationary bikes in a brightly lit gym, their movements captured from various angles as upbeat pop music plays in the background.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_8_12",
+                    "tags": [
+                      "cycling",
+                      "gym",
+                      "fitness",
+                      "exercise",
+                      "sports"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "stationary bikes",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "gym",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "cyclists",
+                        "ref_object": "O001",
+                        "role": "rider",
+                        "entity": "group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_8_12",
+                      "name": "cycling group exercise",
+                      "time": {
+                        "start": "8.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A group of cyclists ride stationary bikes in a gym.",
+                      "summary": "A group of cyclists, dressed in matching black and white uniforms, are riding in sync on stationary bikes in a brightly lit gym, their movements captured from various angles as upbeat pop music plays in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A group of cyclists, dressed in matching black and white uniforms, are riding in sync on stationary bikes in a brightly lit gym, their movements captured from various angles.",
+                        "audio": "upbeat pop music",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 15.5,
+                "children": [],
+                "caption": "A group of cyclists, illuminated by the sunset, ride in a line on a path, their colorful jerseys a vibrant contrast to the greenery around them.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A group of cyclists, illuminated by the sunset, ride in a line on a path, their colorful jerseys a vibrant contrast to the greenery around them.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_12.5_15.5",
+                    "tags": [
+                      "cycling",
+                      "sunset",
+                      "path",
+                      "greenery",
+                      "jerseys"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cyclists",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "cyclists",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_12.5_15.5",
+                      "name": "Cyclists ride on a path",
+                      "time": {
+                        "start": "12.5",
+                        "end": "15.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor scene"
+                      ],
+                      "scene_topic": "A group of cyclists ride on a path during sunset",
+                      "summary": "A group of cyclists, illuminated by the sunset, ride in a line on a path, their colorful jerseys a vibrant contrast to the greenery around them.",
+                      "implications": "Aesthetic and recreational event",
+                      "modalities": {
+                        "visual": "A group of cyclists, illuminated by the sunset, ride in a line on a path, their colorful jerseys a vibrant contrast to the greenery around them.",
+                        "audio": "",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 15.5,
+                "end_time": 19.5,
+                "children": [],
+                "caption": "A man in a black shirt and white cap, his face beaming with joy, raises his arms in celebration, surrounded by a group of people enjoying a nighttime outdoor event.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A man in a black shirt and white cap, his face beaming with joy, raises his arms in celebration, surrounded by a group of people enjoying a nighttime outdoor event.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_15.5_19.5",
+                    "tags": [
+                      "nighttime_event",
+                      "celebration",
+                      "outdoor",
+                      "group"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black_shirt",
+                          "headwear": "white_cap"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "group",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "celebrant",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_15.5_19.5",
+                      "name": "Celebration",
+                      "time": {
+                        "start": "15.5",
+                        "end": "19.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "nighttime_event"
+                      ],
+                      "scene_topic": "A man raises his arms in celebration at a nighttime outdoor event.",
+                      "summary": "A man in a black shirt and white cap, his face beaming with joy, raises his arms in celebration, surrounded by a group of people enjoying a nighttime outdoor event.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "A man in a black shirt and white cap, his face beaming with joy, raises his arms in celebration, surrounded by a group of people enjoying a nighttime outdoor event.",
+                        "audio": "",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of cyclists, dressed in matching uniforms, ride in sync on stationary bikes in a brightly lit gym, while another group of cyclists ride in a line on a path during sunset, surrounded by greenery. A man celebrates with joy, surrounded by people enjoying an outdoor event at night.",
+            "summary": "Cyclists are shown in two distinct settings, first in a gym where they ride in sync on stationary bikes to upbeat music, and then outdoors where they ride in a line on a path surrounded by greenery."
+          }
+        ],
+        "caption": "A group of cyclists perform synchronized cycling in an indoor studio, while another group rides outdoors during sunset. The videos showcase the cyclists' movements and the upbeat music in the background.",
+        "summary": "A group of cyclists ride in sync on stationary bikes in a gym and outdoors on a path, their movements captured by a camera set to upbeat electronic music. The video showcases their synchronized pedaling in two distinct settings, with a close-up of sunscreen application at the beginning."
+      },
+      {
+        "level": 1,
+        "start_time": 19.5,
+        "end_time": 60.0,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 19.5,
+            "end_time": 31.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 19.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "The video transitions from a nighttime scene of a group of people enjoying a lively outdoor gathering, illuminated by colorful lights, to a close-up of a person with long, flowing hair, their face illuminated by a bright light as they smile and wave at the camera.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The video transitions from a nighttime scene of a group of people enjoying a lively outdoor gathering, illuminated by colorful lights, to a close-up of a person with long, flowing hair, their face illuminated by a bright light as they smile and wave at the camera.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_19.5_31.5",
+                    "tags": [
+                      "nighttime",
+                      "outdoor",
+                      "gathering",
+                      "lights",
+                      "closeup",
+                      "person",
+                      "smile",
+                      "wave"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "group_of_people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person_with_long_hair",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person_with_long_hair",
+                        "ref_object": "O002",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_19.5_31.5",
+                      "name": "Transition from nighttime scene to close-up",
+                      "time": {
+                        "start": "19.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "nighttime_scene",
+                        "closeup"
+                      ],
+                      "scene_topic": "The video transitions from a nighttime scene of a group of people enjoying a lively outdoor gathering, illuminated by colorful lights, to a close-up of a person with long, flowing hair, their face illuminated by a bright light as they smile and wave at the camera.",
+                      "summary": "The video transitions from a nighttime scene of a group of people enjoying a lively outdoor gathering, illuminated by colorful lights, to a close-up of a person with long, flowing hair, their face illuminated by a bright light as they smile and wave at the camera.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The video transitions from a nighttime scene of a group of people enjoying a lively outdoor gathering, illuminated by colorful lights, to a close-up of a person with long, flowing hair, their face illuminated by a bright light as they smile and wave at the camera.",
+                        "audio": "",
+                        "speech": "The speaker has an electronic invention they want to show, describing it as something similar to what they are demonstrating."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person with long hair smiles and waves at the camera, the scene transitioning from a lively outdoor gathering to a close-up of their face.",
+            "summary": "The video begins with a lively outdoor gathering at night, lit by colorful lights, before zooming in on a person with long hair, their face illuminated by a bright light as they smile and wave at the camera."
+          },
+          {
+            "level": 2,
+            "start_time": 31.5,
+            "end_time": 44.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 37.5,
+                "children": [],
+                "caption": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the warm glow of the setting sun.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the warm glow of the setting sun.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_31.5_37.5",
+                    "tags": [
+                      "outdoor",
+                      "gathering",
+                      "night",
+                      "music",
+                      "dance"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "camera",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "setting_sun",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_31.5_37.5",
+                      "name": "",
+                      "time": {
+                        "start": "31.5",
+                        "end": "37.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "night_scene"
+                      ],
+                      "scene_topic": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the warm glow of the setting sun.",
+                      "summary": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the warm glow of the setting sun.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the warm glow of the setting sun.",
+                        "audio": "",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 37.5,
+                "end_time": 39.5,
+                "children": [],
+                "caption": "As the camera pans across the night sky, a lone figure stands on a bridge, their silhouette illuminated against the twinkling lights of the city.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "As the camera pans across the night sky, a lone figure stands on a bridge, their silhouette illuminated against the twinkling lights of the city.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_375_395",
+                    "tags": [
+                      "night_sky",
+                      "bridge",
+                      "silhouette",
+                      "city"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bridge",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "city",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "night_sky",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "lone_figure",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "lone_figure",
+                        "ref_object": "O004",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_375_395",
+                      "name": "camera_pans_across_night_sky",
+                      "time": {
+                        "start": "37.5",
+                        "end": "39.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "night_sky"
+                      ],
+                      "scene_topic": "The camera pans across the night sky, a lone figure stands on a bridge, their silhouette illuminated against the twinkling lights of the city.",
+                      "summary": "As the camera pans across the night sky, a lone figure stands on a bridge, their silhouette illuminated against the twinkling lights of the city.",
+                      "implications": "Major scene, visual description",
+                      "modalities": {
+                        "visual": "As the camera pans across the night sky, a lone figure stands on a bridge, their silhouette illuminated against the twinkling lights of the city.",
+                        "audio": "",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 39.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the bright lights.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the bright lights.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_3950_4450",
+                    "tags": [
+                      "outdoor_gathering",
+                      "night",
+                      "music",
+                      "dance",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "camera",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "lights",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "unknown",
+                        "ref_object": "",
+                        "role": "unknown",
+                        "entity": "unknown"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_3950_4450",
+                      "name": "The camera pans across a lively outdoor gathering at night",
+                      "time": {
+                        "start": "39.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "nightlife",
+                        "outdoor_event"
+                      ],
+                      "scene_topic": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the bright lights.",
+                      "summary": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the bright lights.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across a lively outdoor gathering at night, capturing the vibrant energy of the crowd as they dance and move to the music, their silhouettes illuminated by the bright lights.",
+                        "audio": "",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A lively outdoor gathering at night is captured on camera, showcasing the vibrant energy of the crowd as they dance and move to the music under the warm glow of the setting sun or bright lights of the city. A lone figure stands on a bridge, their silhouette illuminated against the twinkling lights of the city.",
+            "summary": "The camera captures a lively outdoor gathering at night, showcasing the crowd's energy as they dance and move to the music, with their silhouettes illuminated by the setting sun and bright lights. A lone figure is also seen standing on a bridge, their silhouette highlighted against the twinkling city lights."
+          },
+          {
+            "level": 2,
+            "start_time": 44.5,
+            "end_time": 50.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 44.5,
+                "end_time": 50.5,
+                "children": [],
+                "caption": "As the energetic music continues, the camera pans across a vibrant crowd, capturing their joyous movements and the colorful lights illuminating the night sky, before focusing on a man in a white shirt who is dancing enthusiastically.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "As the energetic music continues, the camera pans across a vibrant crowd, capturing their joyous movements and the colorful lights illuminating the night sky, before focusing on a man in a white shirt who is dancing enthusiastically.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_4450_505",
+                    "tags": [
+                      "music",
+                      "dance",
+                      "crowd",
+                      "night",
+                      "lights"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "music",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "lights",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_4450_505",
+                      "name": "Dancing in the crowd",
+                      "time": {
+                        "start": "44.5",
+                        "end": "50.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music event"
+                      ],
+                      "scene_topic": "The camera pans across a vibrant crowd, capturing their joyous movements and the colorful lights illuminating the night sky, before focusing on a man in a white shirt who is dancing enthusiastically.",
+                      "summary": "As the energetic music continues, the camera pans across a vibrant crowd, capturing their joyous movements and the colorful lights illuminating the night sky, before focusing on a man in a white shirt who is dancing enthusiastically.",
+                      "implications": "Major entertainment event",
+                      "modalities": {
+                        "visual": "As the camera pans across a vibrant crowd, capturing their joyous movements and the colorful lights illuminating the night sky, before focusing on a man in a white shirt who is dancing enthusiastically.",
+                        "audio": "energetic music; crowd reactions",
+                        "speech": "The speaker has an electronic invention they want to show, describing it as something similar to what they are demonstrating."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man dances enthusiastically in a vibrant crowd at a lively nighttime event, surrounded by colorful lights and energetic music.",
+            "summary": "The camera captures a lively crowd dancing and enjoying the colorful lights, before zooming in on a man in a white shirt who is dancing with great enthusiasm."
+          },
+          {
+            "level": 2,
+            "start_time": 50.5,
+            "end_time": 60.0,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 50.5,
+                "end_time": 56.5,
+                "children": [],
+                "caption": "As the energetic music continues, the camera pans across a lively outdoor gathering at night, capturing the excitement of a large crowd dancing and cheering under the illumination of colorful lights.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "As the energetic music continues, the camera pans across a lively outdoor gathering at night, capturing the excitement of a large crowd dancing and cheering under the illumination of colorful lights.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_50.5_56.5",
+                    "tags": [
+                      "outdoor_gathering",
+                      "night",
+                      "music",
+                      "dancing",
+                      "cheering"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "camera",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "music",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "lights",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "crowd",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_50.5_56.5",
+                      "name": "outdoor_gathering",
+                      "time": {
+                        "start": "50.5",
+                        "end": "56.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "nightlife",
+                        "outdoor_event"
+                      ],
+                      "scene_topic": "A lively outdoor gathering at night, with people dancing and cheering under colorful lights.",
+                      "summary": "As the energetic music continues, the camera pans across a lively outdoor gathering at night, capturing the excitement of a large crowd dancing and cheering under the illumination of colorful lights.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "As the energetic music continues, the camera pans across a lively outdoor gathering at night, capturing the excitement of a large crowd dancing and cheering under the illumination of colorful lights.",
+                        "audio": "music; cheering; crowd reactions",
+                        "speech": "The speaker has an electronic invention they want to show"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 56.5,
+                "end_time": 60.0,
+                "children": [],
+                "caption": "As the energetic music fades, the camera pans across a well-lit tennis court at night, showcasing the illuminated tennis court and the surrounding buildings, before focusing on a group of people gathered on the court.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "As the energetic music fades, the camera pans across a well-lit tennis court at night, showcasing the illuminated tennis court and the surrounding buildings, before focusing on a group of people gathered on the court.",
+                  "result": {
+                    "video_id": "MEqYM_4UbRs",
+                    "event_id": "E_MEqYM_4UbRs_56_60",
+                    "tags": [
+                      "night",
+                      "tennis",
+                      "outdoor",
+                      "group",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "tennis court",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "buildings",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "group of people",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O003",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MEqYM_4UbRs_56_60",
+                      "name": "",
+                      "time": {
+                        "start": "56.5",
+                        "end": "60"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "night scene"
+                      ],
+                      "scene_topic": "The camera pans across a well-lit tennis court at night, showcasing the illuminated tennis court and the surrounding buildings, before focusing on a group of people gathered on the court.",
+                      "summary": "As the energetic music fades, the camera pans across a well-lit tennis court at night, showcasing the illuminated tennis court and the surrounding buildings, before focusing on a group of people gathered on the court.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "As the camera pans across a well-lit tennis court at night, showcasing the illuminated tennis court and the surrounding buildings, before focusing on a group of people gathered on the court.",
+                        "audio": "",
+                        "speech": "The speaker has an electronic invention they want to show, describing it as something similar to what they are demonstrating."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A lively outdoor gathering at night features a crowd of people dancing and cheering under colorful lights, while a separate scene shows a well-lit tennis court at night with a group of people gathered on the court.",
+            "summary": "The camera captures a lively outdoor gathering at night, featuring a crowd dancing and cheering under colorful lights, before panning to a well-lit tennis court where a group of people are gathered. The scene showcases the excitement of the gathering and the illuminated tennis court."
+          }
+        ],
+        "caption": "A person smiles and waves at the camera, transitioning from an outdoor gathering to a close-up of their face. The scene then shifts to a lively nighttime event, capturing the vibrant energy of the crowd as they dance and move to the music under the warm glow of the setting sun or bright lights of the city. Another scene shows a man dancing enthusiastically in a crowd at a nighttime event, surrounded by colorful lights and energetic music. The summary ends with a shot of a well-lit tennis court at night,",
+        "summary": "The video captures a lively outdoor gathering at night, featuring a crowd dancing and cheering under colorful lights, with silhouettes illuminated by the setting sun and bright lights. The camera zooms in on various individuals, including a man dancing with enthusiasm and a figure standing on a bridge, highlighting the excitement and energy of the gathering."
+      }
+    ],
+    "caption": "A group of cyclists perform synchronized cycling indoors, while another group rides outdoors during sunset, showcasing their movements and upbeat music. A person smiles and waves at the camera, transitioning to a lively nighttime event with a vibrant crowd dancing and moving to the music under warm or bright lights. A man dances enthusiastically in a crowd at a nighttime event, surrounded by colorful lights and energetic music. The summary ends with a shot of a well-lit tennis court at night, capturing",
+    "summary": "A group of cyclists ride in sync on stationary bikes and outdoors on a path, their movements captured by a camera set to upbeat electronic music. The video also features a lively outdoor gathering at night, showcasing a crowd dancing and cheering under colorful lights."
+  }
+}

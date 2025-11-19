@@ -1,0 +1,3305 @@
+{
+  "video_id": "JVuXCJWfc1M",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 144.72,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 47.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 11.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 1.5,
+                "children": [],
+                "caption": "The video opens with a close-up of a hand holding a red object, then pans out to reveal a person in a white shirt and red tie standing in front of a building with a large \"T\" logo.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a close-up of a hand holding a red object, then pans out to reveal a person in a white shirt and red tie standing in front of a building with a large \"T\" logo.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_0_1.5",
+                    "tags": [
+                      "video",
+                      "opening",
+                      "scene",
+                      "person",
+                      "building",
+                      "logo"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hand",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "red object",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "person",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "building",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "T logo",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O003",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_0_1.5",
+                      "name": "video opening",
+                      "time": {
+                        "start": "0",
+                        "end": "1.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video scene"
+                      ],
+                      "scene_topic": "The video opens with a close-up of a hand holding a red object, then pans out to reveal a person in a white shirt and red tie standing in front of a building with a large 'T' logo.",
+                      "summary": "The video opens with a close-up of a hand holding a red object, then pans out to reveal a person in a white shirt and red tie standing in front of a building with a large \"T\" logo.",
+                      "implications": "Major video scene event",
+                      "modalities": {
+                        "visual": "The video opens with a close-up of a hand holding a red object, then pans out to reveal a person in a white shirt and red tie standing in front of a building with a large 'T' logo.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 1.5,
+                "end_time": 4.5,
+                "children": [],
+                "caption": "A man in a white shirt and red tie, standing before a backdrop of a building with a large window, speaks into a microphone, his voice amplified as he addresses the crowd gathered in front of him.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A man in a white shirt and red tie, standing before a backdrop of a building with a large window, speaks into a microphone, his voice amplified as he addresses the crowd gathered in front of him.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_1.5_4.5",
+                    "tags": [
+                      "public_speech",
+                      "man",
+                      "building",
+                      "window",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_shirt": "white",
+                          "color_tie": "red"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "building",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "window",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_1.5_4.5",
+                      "name": "public speech",
+                      "time": {
+                        "start": "1.5",
+                        "end": "4.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speech"
+                      ],
+                      "scene_topic": "A man in a white shirt and red tie, standing before a backdrop of a building with a large window, speaks into a microphone, his voice amplified as he addresses the crowd gathered in front of him.",
+                      "summary": "A man in a white shirt and red tie, standing before a backdrop of a building with a large window, speaks into a microphone, his voice amplified as he addresses the crowd gathered in front of him.",
+                      "implications": "Major public event",
+                      "modalities": {
+                        "visual": "A man in a white shirt and red tie, standing before a backdrop of a building with a large window.",
+                        "audio": "speaks; amplified voice; crowd reactions",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 4.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "In a bustling polling station, a man in a suit casts his vote, while a woman in a hijab observes the process, as a man's voice narrates the election results.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "In a bustling polling station, a man in a suit casts his vote, while a woman in a hijab observes the process, as a man's voice narrates the election results.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_4.5_9.5",
+                    "tags": [
+                      "election",
+                      "polling_station",
+                      "voting",
+                      "democracy"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in suit",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in hijab",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in suit",
+                        "ref_object": "O001",
+                        "role": "voter",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in hijab",
+                        "ref_object": "O002",
+                        "role": "observer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_4.5_9.5",
+                      "name": "Election scene",
+                      "time": {
+                        "start": "4.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "democracy news"
+                      ],
+                      "scene_topic": "A man casts his vote in a polling station, while a woman observes the process.",
+                      "summary": "In a bustling polling station, a man in a suit casts his vote, while a woman in a hijab observes the process, as a man's voice narrates the election results.",
+                      "implications": "Major news event in the field of democracy",
+                      "modalities": {
+                        "visual": "In a bustling polling station, a man in a suit casts his vote, while a woman in a hijab observes the process, as a man narrates the election results.",
+                        "audio": "man's voice narrates the election results.",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 11.5,
+                "children": [],
+                "caption": "The video cuts to a close-up of a man in a suit, standing before a crowd of people, as a woman's voice, speaking in a foreign language, can be heard, though the words are unclear.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The video cuts to a close-up of a man in a suit, standing before a crowd of people, as a woman's voice, speaking in a foreign language, can be heard, though the words are unclear.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_9.5_11.5",
+                    "tags": [
+                      "event",
+                      "speech",
+                      "crowd",
+                      "man",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in suit",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman speaking",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd of people",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in suit",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_9.5_11.5",
+                      "name": "speech",
+                      "time": {
+                        "start": "9.5",
+                        "end": "11.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "speech"
+                      ],
+                      "scene_topic": "A man in a suit gives a speech in front of a crowd.",
+                      "summary": "The video cuts to a close-up of a man in a suit, standing before a crowd of people, as a woman's voice, speaking in a foreign language, can be heard, though the words are unclear.",
+                      "implications": "Major event",
+                      "modalities": {
+                        "visual": "The video cuts to a close-up of a man in a suit, standing before a crowd of people, as a woman's voice is heard.",
+                        "audio": "woman's voice; unclear speech",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person stands in front of a building with a large \"T\" logo, addressing a crowd gathered in front of them via a microphone. In a polling station, a man casts his vote while a woman observes the process. The video then cuts to a close-up of a man standing before a crowd, with a woman's voice speaking in a foreign language.",
+            "summary": "A person in a white shirt and red tie speaks to a crowd in front of a building with a large \"T\" logo, while a man in a suit casts his vote at a polling station. The video also shows a man standing before a crowd, with a woman's voice speaking in a foreign language in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 11.5,
+            "end_time": 21.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 11.5,
+                "end_time": 15.5,
+                "children": [],
+                "caption": "The video cuts to a close-up of a man in a suit, standing before a crowd of people, as a news report about the election results plays in the background.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The video cuts to a close-up of a man in a suit, standing before a crowd of people, as a news report about the election results plays in the background.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_11.5_15.5",
+                    "tags": [
+                      "election",
+                      "results",
+                      "news",
+                      "report",
+                      "man",
+                      "suit",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in suit",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in suit",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_11.5_15.5",
+                      "name": "Election Results Report",
+                      "time": {
+                        "start": "11.5",
+                        "end": "15.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "news"
+                      ],
+                      "scene_topic": "The video cuts to a close-up of a man in a suit, standing before a crowd of people, as a news report about the election results plays in the background.",
+                      "summary": "The video cuts to a close-up of a man in a suit, standing before a crowd of people, as a news report about the election results plays in the background.",
+                      "implications": "Major economics,finance news event",
+                      "modalities": {
+                        "visual": "The video cuts to a close-up of a man in a suit, standing before a crowd of people, as a news report about the election results plays in the background.",
+                        "audio": "news report",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 15.5,
+                "end_time": 17.5,
+                "children": [],
+                "caption": "A man in a suit and tie, identified as \"Mohamed Ali,\" is being interviewed by a woman in a red headscarf, as indicated by the Arabic text on the screen behind them.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A man in a suit and tie, identified as \"Mohamed Ali,\" is being interviewed by a woman in a red headscarf, as indicated by the Arabic text on the screen behind them.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_15.5_17.5",
+                    "tags": [
+                      "interview",
+                      "person",
+                      "business"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Mohamed Ali",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in red headscarf",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Mohamed Ali",
+                        "ref_object": "O001",
+                        "role": "interviewee",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in red headscarf",
+                        "ref_object": "O002",
+                        "role": "interviewer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_15.5_17.5",
+                      "name": "Interview with Mohamed Ali",
+                      "time": {
+                        "start": "15.5",
+                        "end": "17.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person interview"
+                      ],
+                      "scene_topic": "A man in a suit and tie, identified as Mohamed Ali, is being interviewed by a woman in a red headscarf.",
+                      "summary": "A man in a suit and tie, identified as \"Mohamed Ali,\" is being interviewed by a woman in a red headscarf, as indicated by the Arabic text on the screen behind them.",
+                      "implications": "Major business news event",
+                      "modalities": {
+                        "visual": "A man in a suit and tie, identified as 'Mohamed Ali,' is being interviewed by a woman in a red headscarf, as indicated by the Arabic text on the screen behind them.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 17.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a crowd of supporters, addressing them with a speech about the importance of democracy and the need for a new political system.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a crowd of supporters, addressing them with a speech about the importance of democracy and the need for a new political system.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_17.5_21.5",
+                    "tags": [
+                      "politics",
+                      "democracy",
+                      "tunisia",
+                      "prime_minister",
+                      "speech"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Prime Minister of Tunisia",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Crowd of supporters",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Prime Minister of Tunisia",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_17.5_21.5",
+                      "name": "Speech about democracy",
+                      "time": {
+                        "start": "17.5",
+                        "end": "21.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "politics news"
+                      ],
+                      "scene_topic": "The Prime Minister of Tunisia delivers a speech about democracy to a crowd of supporters.",
+                      "summary": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a crowd of supporters, addressing them with a speech about the importance of democracy and the need for a new political system.",
+                      "implications": "Major politics news event",
+                      "modalities": {
+                        "visual": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a crowd of supporters, addressing them with a speech about the importance of democracy and the need for a new political system.",
+                        "audio": "speech",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a recent political development, a man in a suit, identified as Mohamed Ali, is being interviewed by a woman in a red headscarf about the election results, as the Prime Minister of Tunisia addresses a crowd of supporters about the importance of democracy and the need for a new political system.",
+            "summary": "Mohamed Ali, a man in a suit and tie, is interviewed by a woman in a red headscarf as a news report about election results plays in the background. The Prime Minister of Tunisia addresses a crowd of supporters, emphasizing the importance of democracy and the need for a new political system."
+          },
+          {
+            "level": 2,
+            "start_time": 21.5,
+            "end_time": 29.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 26.5,
+                "children": [],
+                "caption": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a crowd, addressing them with a serious expression as a woman's voice speaks in the background.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a crowd, addressing them with a serious expression as a woman's voice speaks in the background.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_21.5_26.5",
+                    "tags": [
+                      "politics",
+                      "government",
+                      "tunisia"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Prime Minister of Tunisia",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Prime Minister of Tunisia",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_21.5_26.5",
+                      "name": "Speech by Prime Minister of Tunisia",
+                      "time": {
+                        "start": "21.5",
+                        "end": "26.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "politics news"
+                      ],
+                      "scene_topic": "The Prime Minister of Tunisia addresses a crowd.",
+                      "summary": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a crowd, addressing them with a serious expression as a woman's voice speaks in the background.",
+                      "implications": "Major government news event",
+                      "modalities": {
+                        "visual": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a crowd, with a serious expression.",
+                        "audio": "woman's voice; speech",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 26.5,
+                "end_time": 29.5,
+                "children": [],
+                "caption": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a red backdrop, delivering a speech to a large crowd gathered in a public space, his words drowned out by the cheers and chants of the crowd.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a red backdrop, delivering a speech to a large crowd gathered in a public space, his words drowned out by the cheers and chants of the crowd.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_26.5_29.5",
+                    "tags": [
+                      "politics",
+                      "tunisia",
+                      "prime_minister",
+                      "public_speech"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Prime Minister of Tunisia",
+                        "attributes": {
+                          "role": "speaker",
+                          "entity": "person"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Crowd",
+                        "attributes": {
+                          "size": "large",
+                          "type": "public"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Red backdrop",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Prime Minister of Tunisia",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_26.5_29.5",
+                      "name": "Public Speech by Prime Minister of Tunisia",
+                      "time": {
+                        "start": "26.5",
+                        "end": "29.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "politics",
+                        "public_speech"
+                      ],
+                      "scene_topic": "The Prime Minister of Tunisia delivers a speech to a large crowd in a public space.",
+                      "summary": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a red backdrop, delivering a speech to a large crowd gathered in a public space, his words drowned out by the cheers and chants of the crowd.",
+                      "implications": "Major politics news event",
+                      "modalities": {
+                        "visual": "A man in a suit and tie, identified as the Prime Minister of Tunisia, stands before a red backdrop, delivering a speech to a large crowd gathered in a public space.",
+                        "audio": "cheers; chants",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The Prime Minister of Tunisia delivers a speech to a large crowd in a public space, but his words are drowned out by the cheers and chants of the crowd.",
+            "summary": "The Prime Minister of Tunisia stands before a crowd, delivering a speech against a red backdrop, his words initially drowned out by the cheers and chants of the enthusiastic audience."
+          },
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 47.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "A man in a suit shakes hands with a woman in a hijab, then signs a document at a table with a red and white flag in the background, as a woman's voice speaks about the election results.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A man in a suit shakes hands with a woman in a hijab, then signs a document at a table with a red and white flag in the background, as a woman's voice speaks about the election results.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_2950_3450",
+                    "tags": [
+                      "election_results",
+                      "handshake",
+                      "document_signing",
+                      "flag",
+                      "woman_speech"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "red_and_white_flag",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_suit",
+                        "ref_object": "O001",
+                        "role": "signer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman_in_hijab",
+                        "ref_object": "O001",
+                        "role": "signer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "woman_speaker",
+                        "ref_object": "",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_2950_3450",
+                      "name": "Election Results Announcement",
+                      "time": {
+                        "start": "29.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "election_news"
+                      ],
+                      "scene_topic": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                      "summary": "A man in a suit shakes hands with a woman in a hijab, then signs a document at a table with a red and white flag in the background, as a woman's voice speaks about the election results.",
+                      "implications": "Major economics, finance news event",
+                      "modalities": {
+                        "visual": "A man in a suit shakes hands with a woman in a hijab, then signs a document at a table with a red and white flag in the background.",
+                        "audio": "a woman's voice speaks about the election results.",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 41.5,
+                "children": [],
+                "caption": "A man in a white robe and red cap, likely a religious leader, is being interviewed by a man in a suit, as indicated by the Arabic text on the screen.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A man in a white robe and red cap, likely a religious leader, is being interviewed by a man in a suit, as indicated by the Arabic text on the screen.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_34_41",
+                    "tags": [
+                      "religion",
+                      "interview",
+                      "leader",
+                      "suit",
+                      "arabic"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in white robe and red cap",
+                        "attributes": {
+                          "role": "religious leader"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in suit",
+                        "attributes": {
+                          "role": "interviewer"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Arabic text on the screen",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in white robe and red cap",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in suit",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_34_41",
+                      "name": "Interview with religious leader",
+                      "time": {
+                        "start": "34.5",
+                        "end": "41.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "religion",
+                        "interview"
+                      ],
+                      "scene_topic": "A man in a white robe and red cap, likely a religious leader, is being interviewed by a man in a suit, as indicated by the Arabic text on the screen.",
+                      "summary": "A man in a white robe and red cap, likely a religious leader, is being interviewed by a man in a suit, as indicated by the Arabic text on the screen.",
+                      "implications": "Major religion news event",
+                      "modalities": {
+                        "visual": "A man in a white robe and red cap, likely a religious leader, is being interviewed by a man in a suit, as indicated by the Arabic text on the screen.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 41.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "A man in a white robe and turban, likely a religious leader, delivers a speech to a large, attentive crowd gathered outdoors, the scene then shifts to a group of people waving red and white flags in a public space.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "A man in a white robe and turban, likely a religious leader, delivers a speech to a large, attentive crowd gathered outdoors, the scene then shifts to a group of people waving red and white flags in a public space.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_41_47",
+                    "tags": [
+                      "religion",
+                      "public_speech",
+                      "crowd",
+                      "flags"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "role": "speaker",
+                          "clothing": "white robe and turban"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "flags",
+                        "attributes": {
+                          "color": "red and white"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_41_47",
+                      "name": "public speech",
+                      "time": {
+                        "start": "41.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "religion"
+                      ],
+                      "scene_topic": "A man delivers a speech to a crowd",
+                      "summary": "A man in a white robe and turban, likely a religious leader, delivers a speech to a large, attentive crowd gathered outdoors, the scene then shifts to a group of people waving red and white flags in a public space.",
+                      "implications": "Major religion news event",
+                      "modalities": {
+                        "visual": "A man in a white robe and turban, likely a religious leader, delivers a speech to a large, attentive crowd gathered outdoors, the scene then shifts to a group of people waving red and white flags in a public space.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A summary of the captions could be:\n\nIn a series of scenes, people in various settings are shown interacting with each other, likely related to an election or political event. A man in a suit shakes hands with a woman in a hijab, then signs a document. A religious leader is interviewed by a man in a suit. The religious leader delivers a speech to a large crowd, and people wave red and white flags in a public space.",
+            "summary": "The transcript describes scenes of political and religious leaders in the Middle East, including a handshake between a man in a suit and a woman in a hijab, and a speech by a religious leader to a large outdoor crowd. The scenes also show people waving red and white flags, likely indicating a celebration or protest related to election results."
+          }
+        ],
+        "caption": "In a series of scenes, people are shown interacting with each other in various settings related to an election or political event. A man in a suit shakes hands with a woman in a hijab, then signs a document. A religious leader is interviewed by a man in a suit, and delivers a speech to a large crowd, with people waving red and white flags in a public space.",
+        "summary": "The transcript depicts scenes of political and religious leaders in the Middle East, including the Prime Minister of Tunisia addressing a crowd on the importance of democracy and a new political system, as well as a handshake between a man and a woman in a hijab. The scenes also show celebrations and protests related to election results, with people waving red and white flags and a news report playing in the background."
+      },
+      {
+        "level": 1,
+        "start_time": 47.5,
+        "end_time": 91.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 47.5,
+            "end_time": 61.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 52.5,
+                "children": [],
+                "caption": "A man in a white robe and turban, standing before a red backdrop with the crescent moon, delivers a speech in a foreign language, his words occasionally punctuated by applause from the unseen audience.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "A man in a white robe and turban, standing before a red backdrop with the crescent moon, delivers a speech in a foreign language, his words occasionally punctuated by applause from the unseen audience.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_47.5_52.5",
+                    "tags": [
+                      "islam",
+                      "speech",
+                      "audience",
+                      "applause",
+                      "foreign_language"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "robe": "white",
+                          "turban": "yes",
+                          "backdrop": "red",
+                          "crescent_moon": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_47.5_52.5",
+                      "name": "speech",
+                      "time": {
+                        "start": "47.5",
+                        "end": "52.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "religion",
+                        "public_speech"
+                      ],
+                      "scene_topic": "A man delivers a speech in a foreign language before a red backdrop with the crescent moon.",
+                      "summary": "A man in a white robe and turban, standing before a red backdrop with the crescent moon, delivers a speech in a foreign language, his words occasionally punctuated by applause from the unseen audience.",
+                      "implications": "Major religion, public speech event",
+                      "modalities": {
+                        "visual": "A man in a white robe and turban, standing before a red backdrop with the crescent moon.",
+                        "audio": "speech; applause",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 52.5,
+                "end_time": 57.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a man in a white shirt and patterned scarf addresses a large crowd, his speech amplified by a microphone as he gestures towards them.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "In a lively outdoor setting, a man in a white shirt and patterned scarf addresses a large crowd, his speech amplified by a microphone as he gestures towards them.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_52.5_57.5",
+                    "tags": [
+                      "outdoor",
+                      "speech",
+                      "crowd",
+                      "gestures",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "white shirt",
+                          "accessory": "patterned scarf"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_52.5_57.5",
+                      "name": "speech",
+                      "time": {
+                        "start": "52.5",
+                        "end": "57.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public speaking"
+                      ],
+                      "scene_topic": "A man gives a speech to a large crowd.",
+                      "summary": "In a lively outdoor setting, a man in a white shirt and patterned scarf addresses a large crowd, his speech amplified by a microphone as he gestures towards them.",
+                      "implications": "Major public speaking event",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a man in a white shirt and patterned scarf addresses a large crowd, his gestures towards them.",
+                        "audio": "speech amplified by a microphone",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 57.5,
+                "end_time": 59.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white shirt and black vest engages in a conversation with a woman in a black headscarf, while a man in a white shirt and black vest stands nearby, observing the lively scene.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "In a bustling outdoor market, a man in a white shirt and black vest engages in a conversation with a woman in a black headscarf, while a man in a white shirt and black vest stands nearby, observing the lively scene.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_57_59",
+                    "tags": [
+                      "outdoor_market",
+                      "conversation",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in white shirt and black vest",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in black headscarf",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in white shirt and black vest (observer)",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in white shirt and black vest",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in black headscarf",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_57_59",
+                      "name": "Conversation in outdoor market",
+                      "time": {
+                        "start": "57.5",
+                        "end": "59.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "conversation"
+                      ],
+                      "scene_topic": "A man and a woman engage in a conversation in an outdoor market.",
+                      "summary": "In a bustling outdoor market, a man in a white shirt and black vest engages in a conversation with a woman in a black headscarf, while a man in a white shirt and black vest stands nearby, observing the lively scene.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor market, a man in a white shirt and black vest engages in a conversation with a woman in a black headscarf, while a man in a white shirt and black vest stands nearby, observing the lively scene.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 59.5,
+                "end_time": 61.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white shirt and blue jeans stands before a crowd, gesturing as he speaks into a microphone, while the lively atmosphere is filled with the sounds of chatter and music.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "In a bustling outdoor market, a man in a white shirt and blue jeans stands before a crowd, gesturing as he speaks into a microphone, while the lively atmosphere is filled with the sounds of chatter and music.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_59_61",
+                    "tags": [
+                      "outdoor_market",
+                      "public_speaking",
+                      "crowd",
+                      "music",
+                      "chatter"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "white_shirt",
+                          "pants": "blue_jeans",
+                          "accessory": "microphone"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_59_61",
+                      "name": "public_speaking",
+                      "time": {
+                        "start": "59.5",
+                        "end": "61.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man speaks to a crowd in a bustling outdoor market.",
+                      "summary": "In a bustling outdoor market, a man in a white shirt and blue jeans stands before a crowd, gesturing as he speaks into a microphone, while the lively atmosphere is filled with the sounds of chatter and music.",
+                      "implications": "Major public speaking event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor market, a man in a white shirt and blue jeans stands before a crowd, gesturing as he speaks into a microphone, while the lively atmosphere is filled with the sounds of.",
+                        "audio": "chatter; music",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a white robe and turban delivers a speech in a foreign language, while another man in a white shirt and patterned scarf addresses a large crowd in a lively outdoor setting. In a bustling market, a man in a white shirt and black vest engages in a conversation with a woman in a black headscarf, while another man in a white shirt and blue jeans speaks into a microphone, surrounded by the sounds of chatter and music.",
+            "summary": "The transcript describes a series of scenes featuring men in white shirts and various headgear addressing crowds, engaging in conversations, and delivering speeches in a foreign language, often accompanied by applause, music, and lively atmospheres. The scenes take place in outdoor settings, including a market, with the men using microphones to amplify their voices as they gesture to their audiences."
+          },
+          {
+            "level": 2,
+            "start_time": 61.5,
+            "end_time": 66.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 61.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white shirt and black vest engages in a conversation with a woman in a black headscarf, while a man in a white shirt and black vest stands nearby, observing the lively scene.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "In a bustling outdoor market, a man in a white shirt and black vest engages in a conversation with a woman in a black headscarf, while a man in a white shirt and black vest stands nearby, observing the lively scene.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_61_63",
+                    "tags": [
+                      "outdoor_market",
+                      "conversation",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in white shirt and black vest",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in black headscarf",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in white shirt and black vest (observer)",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in white shirt and black vest",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in black headscarf",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_61_63",
+                      "name": "Conversation in outdoor market",
+                      "time": {
+                        "start": "61.5",
+                        "end": "63.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "conversation"
+                      ],
+                      "scene_topic": "A man and a woman engage in a conversation in an outdoor market.",
+                      "summary": "In a bustling outdoor market, a man in a white shirt and black vest engages in a conversation with a woman in a black headscarf, while a man in a white shirt and black vest stands nearby, observing the lively scene.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor market, a man in a white shirt and black vest engages in a conversation with a woman in a black headscarf, while a man in a white shirt and black vest stands nearby, observing the lively scene.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 66.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while in the background, other people are engaged in various activities, including a man in a red shirt and white cap who is speaking into a microphone.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while in the background, other people are engaged in various activities, including a man in a red shirt and white cap who is speaking into a microphone.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_63_66",
+                    "tags": [
+                      "outdoor_market",
+                      "food",
+                      "people",
+                      "activities",
+                      "speech"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_white_shirt",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man_in_red_shirt",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O001",
+                        "role": "dining",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_in_red_shirt",
+                        "ref_object": "O002",
+                        "role": "speaking",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_63_66",
+                      "name": "man_eating_at_market",
+                      "time": {
+                        "start": "63.5",
+                        "end": "66.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "outdoor_market"
+                      ],
+                      "scene_topic": "A man eats at an outdoor market while another man speaks into a microphone.",
+                      "summary": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while in the background, other people are engaged in various activities, including a man in a red shirt and white cap who is speaking into a microphone.",
+                      "implications": "A typical day in a bustling outdoor market",
+                      "modalities": {
+                        "visual": "A man in a white shirt and blue jeans enjoys a meal at a table, while other people are engaged in various activities in the background.",
+                        "audio": "speaking into a microphone",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a bustling outdoor market, people engage in conversations and activities while a man in a white shirt and black vest observes the lively scene.",
+            "summary": "In a lively outdoor market, multiple individuals are engaged in various activities, including a man in a white shirt and black vest conversing with a woman in a black headscarf, and another man enjoying a meal at a table. Meanwhile, a man in a red shirt and white cap is speaking into a microphone, adding to the bustling atmosphere."
+          },
+          {
+            "level": 2,
+            "start_time": 66.5,
+            "end_time": 77.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 66.5,
+                "end_time": 71.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while in the background, other people are engaged in various activities, including a man in a white shirt and blue jeans sitting on a bench and a man in a white shirt and blue jeans standing in front of a building.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while in the background, other people are engaged in various activities, including a man in a white shirt and blue jeans sitting on a bench and a man in a white shirt and blue jeans standing in front of a building.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_66_71",
+                    "tags": [
+                      "outdoor_market",
+                      "people",
+                      "food",
+                      "daily_life",
+                      "urban"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_white_shirt_blue_jeans",
+                        "attributes": {
+                          "color": "white",
+                          "clothing": "shirt",
+                          "pants": "blue_jeans"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "bench",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "building",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_white_shirt_blue_jeans",
+                        "ref_object": "O001",
+                        "role": "dining",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_66_71",
+                      "name": "man_enjoys_meal_in_outdoor_market",
+                      "time": {
+                        "start": "66.5",
+                        "end": "71.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "daily_life"
+                      ],
+                      "scene_topic": "A man enjoys a meal in an outdoor market.",
+                      "summary": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while in the background, other people are engaged in various activities, including a man in a white shirt and blue jeans sitting on a bench and a man in a white shirt and blue jeans standing in front of a building.",
+                      "implications": "A typical scene of daily life in an urban setting.",
+                      "modalities": {
+                        "visual": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while in the background, other people are engaged in various activities, including a man in a white shirt and blue jeans sitting on a bench and a man in a white shirt and blue jeans standing in front of a building.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 71.5,
+                "end_time": 72.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white shirt and black vest enjoys a meal at a table, while a nearby man in a blue shirt and white cap engages in conversation with someone off-camera.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "In a bustling outdoor market, a man in a white shirt and black vest enjoys a meal at a table, while a nearby man in a blue shirt and white cap engages in conversation with someone off-camera.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_71.5_72.5",
+                    "tags": [
+                      "outdoor_market",
+                      "food",
+                      "conversation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man_in_white_shirt_and_black_vest",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man_in_blue_shirt_and_white_cap",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_white_shirt_and_black_vest",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_in_blue_shirt_and_white_cap",
+                        "ref_object": "O003",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_71.5_72.5",
+                      "name": "Man enjoys meal in outdoor market",
+                      "time": {
+                        "start": "71.5",
+                        "end": "72.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent_scene"
+                      ],
+                      "scene_topic": "A man enjoys a meal in an outdoor market while another man engages in conversation.",
+                      "summary": "In a bustling outdoor market, a man in a white shirt and black vest enjoys a meal at a table, while a nearby man in a blue shirt and white cap engages in conversation with someone off-camera.",
+                      "implications": "Minor social event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor market, a man in a white shirt and black vest enjoys a meal at a table, while a nearby man in a blue shirt and white cap engages in conversation with someone off-camera.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 72.5,
+                "end_time": 73.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while a nearby man in a white shirt and blue jeans sits on a bench, engrossed in his phone.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while a nearby man in a white shirt and blue jeans sits on a bench, engrossed in his phone.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_72.5_73.5",
+                    "tags": [
+                      "outdoor_market",
+                      "food",
+                      "people",
+                      "phone",
+                      "bench"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "bench",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in white shirt and blue jeans",
+                        "ref_object": "O001",
+                        "role": "dining",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in white shirt and blue jeans",
+                        "ref_object": "O002",
+                        "role": "sitting",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_72.5_73.5",
+                      "name": "Man enjoys meal in outdoor market",
+                      "time": {
+                        "start": "72.5",
+                        "end": "73.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "daily_life"
+                      ],
+                      "scene_topic": "A man enjoys a meal in an outdoor market while another man sits on a bench engrossed in his phone.",
+                      "summary": "In a bustling outdoor market, a man in a white shirt and blue jeans enjoys a meal at a table, while a nearby man in a white shirt and blue jeans sits on a bench, engrossed in his phone.",
+                      "implications": "A typical daily scene in a bustling outdoor market",
+                      "modalities": {
+                        "visual": "A man in a white shirt and blue jeans enjoys a meal at a table, while a nearby man in a white shirt and blue jeans sits on a bench, engrossed in his phone.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 73.5,
+                "end_time": 77.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white shirt and black vest enjoys a meal at a table, while a nearby man in a blue shirt and white cap engages in conversation with someone off-camera.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "In a bustling outdoor market, a man in a white shirt and black vest enjoys a meal at a table, while a nearby man in a blue shirt and white cap engages in conversation with someone off-camera.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_73_77",
+                    "tags": [
+                      "outdoor_market",
+                      "food",
+                      "conversation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_white_shirt",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man_in_blue_shirt",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "table",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O001",
+                        "role": "dining",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_in_blue_shirt",
+                        "ref_object": "O002",
+                        "role": "conversing",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_73_77",
+                      "name": "outdoor_market_scene",
+                      "time": {
+                        "start": "73.5",
+                        "end": "77.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor_market"
+                      ],
+                      "scene_topic": "A man enjoys a meal at a table in a bustling outdoor market, while another man converses with someone off-camera.",
+                      "summary": "In a bustling outdoor market, a man in a white shirt and black vest enjoys a meal at a table, while a nearby man in a blue shirt and white cap engages in conversation with someone off-camera.",
+                      "implications": "Minor social event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor market, a man in a white shirt and black vest enjoys a meal at a table, while a nearby man in a blue shirt and white cap engages in conversation with someone off-camera.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a bustling outdoor market, various people are seen enjoying meals or engaging in conversations while going about their daily activities.",
+            "summary": "In a bustling outdoor market, multiple men in various shirts and vests enjoy meals at tables or engage in activities, including sitting on benches, standing in front of buildings, and conversing with others. The men's attire varies, with some wearing white shirts and blue jeans, while others wear white shirts and black vests, or blue shirts and white caps."
+          },
+          {
+            "level": 2,
+            "start_time": 77.5,
+            "end_time": 91.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 77.5,
+                "end_time": 85.5,
+                "children": [],
+                "caption": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap engages in a lively discussion with someone off-camera.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap engages in a lively discussion with someone off-camera.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_77_85",
+                    "tags": [
+                      "outdoor_cafe",
+                      "conversing",
+                      "meals",
+                      "background_discussion"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "outdoor_cafe",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "men_group",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man_in_white_shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O003",
+                        "role": "discussant",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_77_85",
+                      "name": "outdoor_cafe_conversation",
+                      "time": {
+                        "start": "77.5",
+                        "end": "85.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent_scene"
+                      ],
+                      "scene_topic": "A man in a white shirt and black cap engages in a lively discussion with someone off-camera in a bustling outdoor café.",
+                      "summary": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap engages in a lively discussion with someone off-camera.",
+                      "implications": "Social gathering, casual conversation",
+                      "modalities": {
+                        "visual": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap engages in a lively discussion with someone off-camera.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 85.5,
+                "end_time": 91.5,
+                "children": [],
+                "caption": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap sits alone, seemingly lost in thought.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap sits alone, seemingly lost in thought.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_85_91",
+                    "tags": [
+                      "outdoor_cafe",
+                      "men",
+                      "meals",
+                      "conversation",
+                      "background",
+                      "man",
+                      "thought"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "outdoor_cafe",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "men",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "meals",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "conversation",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "background",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O006",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O007",
+                        "name": "thought",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "group_of_men",
+                        "ref_object": "O002",
+                        "role": "main_characters",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O006",
+                        "role": "supporting_characters",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_85_91",
+                      "name": "group_of_men_conversing",
+                      "time": {
+                        "start": "85.5",
+                        "end": "91.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005",
+                        "O006",
+                        "O007"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent_scene"
+                      ],
+                      "scene_topic": "A group of men enjoy their meals and conversation in an outdoor café, while a man sits alone in the background.",
+                      "summary": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap sits alone, seemingly lost in thought.",
+                      "implications": "Minor social event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap sits alone, seemingly lost in thought.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while a man in a white shirt and black cap engages in a lively discussion with someone off-camera, or sits alone, lost in thought.",
+            "summary": "A group of men socialize and eat at an outdoor café, while a man in a white shirt and black cap sits alone in the background, lost in thought."
+          }
+        ],
+        "caption": "In a vibrant outdoor setting, people engage in conversations and activities while a man in a white shirt observes the lively scene.",
+        "summary": "The transcript describes a lively outdoor market scene where men in various attire, including white shirts and headgear, engage in conversations, deliver speeches, and enjoy meals, often using microphones to amplify their voices. The atmosphere is bustling and lively, with multiple scenes featuring men interacting with each other and their audiences."
+      },
+      {
+        "level": 1,
+        "start_time": 91.5,
+        "end_time": 119.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 91.5,
+            "end_time": 102.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 91.5,
+                "end_time": 94.5,
+                "children": [],
+                "caption": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap sits alone, seemingly lost in thought.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap sits alone, seemingly lost in thought.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_91_94",
+                    "tags": [
+                      "outdoor_cafe",
+                      "men",
+                      "meals",
+                      "conversation",
+                      "background",
+                      "man",
+                      "thought"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "outdoor_cafe",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "men",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "meals",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "conversation",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "background",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O006",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O007",
+                        "name": "thought",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "group_of_men",
+                        "ref_object": "O002",
+                        "role": "main_characters",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O006",
+                        "role": "supporting_characters",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_91_94",
+                      "name": "group_of_men_conversing",
+                      "time": {
+                        "start": "91.5",
+                        "end": "94.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005",
+                        "O006",
+                        "O007"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent_scene"
+                      ],
+                      "scene_topic": "A group of men enjoy their meals and conversation in an outdoor café, while a man sits alone in the background.",
+                      "summary": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap sits alone, seemingly lost in thought.",
+                      "implications": "Minor social event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and black cap sits alone, seemingly lost in thought.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 94.5,
+                "end_time": 97.5,
+                "children": [],
+                "caption": "In a bustling outdoor café, a group of men sit at a table, engaged in lively conversation and laughter, while a man in a white shirt and black cap sits alone, lost in thought, his gaze fixed on the distance.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "In a bustling outdoor café, a group of men sit at a table, engaged in lively conversation and laughter, while a man in a white shirt and black cap sits alone, lost in thought, his gaze fixed on the distance.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_94.5_97.5",
+                    "tags": [
+                      "outdoor",
+                      "cafe",
+                      "conversing",
+                      "laughter",
+                      "thought"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "men",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man_in_white_shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "group_of_men",
+                        "ref_object": "O002",
+                        "role": "conversing",
+                        "entity": "group"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O003",
+                        "role": "lost_in_thought",
+                        "entity": "individual"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_94.5_97.5",
+                      "name": "group_conversation",
+                      "time": {
+                        "start": "94.5",
+                        "end": "97.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_scene"
+                      ],
+                      "scene_topic": "A group of men engage in lively conversation in an outdoor café.",
+                      "summary": "In a bustling outdoor café, a group of men sit at a table, engaged in lively conversation and laughter, while a man in a white shirt and black cap sits alone, lost in thought, his gaze fixed on the distance.",
+                      "implications": "Social interaction and human behavior",
+                      "modalities": {
+                        "visual": "In a bustling outdoor café, a group of men sit at a table, engaged in lively conversation and laughter, while a man in a white shirt and black cap sits alone, lost in thought, his gaze fixed on the distance.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 97.5,
+                "end_time": 100.5,
+                "children": [],
+                "caption": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and blue jeans sits alone, his gaze fixed on something off-camera.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and blue jeans sits alone, his gaze fixed on something off-camera.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_97_100",
+                    "tags": [
+                      "outdoor_cafe",
+                      "men",
+                      "meals",
+                      "conversation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "men",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man_in_white_shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O002",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_97_100",
+                      "name": "group_of_men_in_cafe",
+                      "time": {
+                        "start": "97.5",
+                        "end": "100.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent_scene"
+                      ],
+                      "scene_topic": "A man sits alone in a café, lost in thought.",
+                      "summary": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and blue jeans sits alone, his gaze fixed on something off-camera.",
+                      "implications": "Social gathering, everyday life",
+                      "modalities": {
+                        "visual": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while in the background, a man in a white shirt and blue jeans sits alone, his gaze fixed on something off-camera.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 100.5,
+                "end_time": 102.5,
+                "children": [],
+                "caption": "In a bustling outdoor café, a group of men sit at a table, engaged in lively conversation and laughter, while a man in a white shirt sits alone, lost in thought, his hands clasped together in contemplation.",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "In a bustling outdoor café, a group of men sit at a table, engaged in lively conversation and laughter, while a man in a white shirt sits alone, lost in thought, his hands clasped together in contemplation.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_100_102",
+                    "tags": [
+                      "outdoor_cafe",
+                      "conversing",
+                      "laughter",
+                      "contemplation",
+                      "alone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "men",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man_in_white_shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "men",
+                        "ref_object": "O002",
+                        "role": "conversing",
+                        "entity": "group"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O003",
+                        "role": "contemplating",
+                        "entity": "individual"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_100_102",
+                      "name": "Group conversation and contemplation",
+                      "time": {
+                        "start": "100.5",
+                        "end": "102.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_scene"
+                      ],
+                      "scene_topic": "A group of men engage in lively conversation and laughter in an outdoor café, while one man sits alone, lost in thought.",
+                      "summary": "In a bustling outdoor café, a group of men sit at a table, engaged in lively conversation and laughter, while a man in a white shirt sits alone, lost in thought, his hands clasped together in contemplation.",
+                      "implications": "Social interaction and contemplation",
+                      "modalities": {
+                        "visual": "In a bustling outdoor café, a group of men sit at a table, engaged in lively conversation and laughter, while a man in a white shirt sits alone, lost in thought, his hands clasped together in contemplation.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a bustling outdoor café, a group of men enjoy their meals and conversation, while another man sits alone, lost in thought.",
+            "summary": "In a bustling outdoor café, a group of men enjoy their meals and conversations, while a lone figure in a white shirt sits apart, lost in thought, often gazing off into the distance. The scene is one of contrast between the lively atmosphere and the solitary contemplation of the man in white."
+          },
+          {
+            "level": 2,
+            "start_time": 102.5,
+            "end_time": 119.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 102.5,
+                "end_time": 109.5,
+                "children": [],
+                "caption": "In a bustling outdoor café, a man in a white shirt and black cap enjoys a meal, while a man in a blue shirt and cap sits nearby, engaged in conversation.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "In a bustling outdoor café, a man in a white shirt and black cap enjoys a meal, while a man in a blue shirt and cap sits nearby, engaged in conversation.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_102_109",
+                    "tags": [
+                      "outdoor_cafe",
+                      "people",
+                      "conversing",
+                      "eating",
+                      "cafe"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_white_shirt",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man_in_blue_shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_in_blue_shirt",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_102_109",
+                      "name": "Conversing in a café",
+                      "time": {
+                        "start": "102.5",
+                        "end": "109.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "social"
+                      ],
+                      "scene_topic": "Two men conversing in a bustling outdoor café",
+                      "summary": "In a bustling outdoor café, a man in a white shirt and black cap enjoys a meal, while a man in a blue shirt and cap sits nearby, engaged in conversation.",
+                      "implications": "Social interaction, everyday life",
+                      "modalities": {
+                        "visual": "In a bustling outdoor café, a man in a white shirt and black cap enjoys a meal, while a man in a blue shirt and cap sits nearby, engaged in conversation.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 109.5,
+                "end_time": 111.5,
+                "children": [],
+                "caption": "In a bustling outdoor café, a man in a white shirt and blue jeans sits at a table, engrossed in his phone, while a woman in a black headscarf sits nearby, also absorbed in her phone.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "In a bustling outdoor café, a man in a white shirt and blue jeans sits at a table, engrossed in his phone, while a woman in a black headscarf sits nearby, also absorbed in her phone.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_109_111",
+                    "tags": [
+                      "outdoor_cafe",
+                      "phone_use",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "phone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "sitting",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "sitting",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_109_111",
+                      "name": "People using phones in a café",
+                      "time": {
+                        "start": "109.5",
+                        "end": "111.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "phone_use"
+                      ],
+                      "scene_topic": "A man and a woman sit at a table in a café, both engrossed in their phones.",
+                      "summary": "In a bustling outdoor café, a man in a white shirt and blue jeans sits at a table, engrossed in his phone, while a woman in a black headscarf sits nearby, also absorbed in her phone.",
+                      "implications": "Major social, technology news event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor café, a man in a white shirt and blue jeans sits at a table, while a woman in a black headscarf sits nearby.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 111.5,
+                "end_time": 115.5,
+                "children": [],
+                "caption": "In a park, a man in a white shirt and blue jeans sits on a bench, his hands clasped together in contemplation, while a woman in a black headscarf walks by, her gaze fixed on the ground.",
+                "postprocess": {
+                  "event_id": 30,
+                  "original_answer": "In a park, a man in a white shirt and blue jeans sits on a bench, his hands clasped together in contemplation, while a woman in a black headscarf walks by, her gaze fixed on the ground.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_111_115",
+                    "tags": [
+                      "park",
+                      "man",
+                      "woman",
+                      "contemplation",
+                      "walk"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "white shirt, blue jeans",
+                          "pose": "sitting, clasped hands"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "black headscarf",
+                          "pose": "walking, gazing down"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "bench",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "sitting",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "walking",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_111_115",
+                      "name": "man sitting on a bench, woman walking by",
+                      "time": {
+                        "start": "111.5",
+                        "end": "115.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man sits on a bench, a woman walks by",
+                      "summary": "In a park, a man in a white shirt and blue jeans sits on a bench, his hands clasped together in contemplation, while a woman in a black headscarf walks by, her gaze fixed on the ground.",
+                      "implications": "Minor everyday event",
+                      "modalities": {
+                        "visual": "In a park, a man in a white shirt and blue jeans sits on a bench, his hands clasped together in contemplation, while a woman in a black headscarf walks by, her gaze fixed on the ground.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 115.5,
+                "end_time": 119.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, her footsteps echoing in the lively atmosphere.",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, her footsteps echoing in the lively atmosphere.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_115_119",
+                    "tags": [
+                      "outdoor_market",
+                      "man",
+                      "woman",
+                      "meal",
+                      "atmosphere"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "bench",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "metal_tray",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "sitting",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "walking",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_115_119",
+                      "name": "man eating in outdoor market",
+                      "time": {
+                        "start": "115.5",
+                        "end": "119.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor_market"
+                      ],
+                      "scene_topic": "A man eats a meal in a bustling outdoor market while a woman walks by.",
+                      "summary": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, her footsteps echoing in the lively atmosphere.",
+                      "implications": "Minor social event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by.",
+                        "audio": "footsteps",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a series of bustling outdoor settings, people are shown enjoying meals, engaging in conversation, and absorbed in their phones. A man in a white shirt and black cap is seen eating in a café, while a woman in a black headscarf walks by, lost in thought. In another scene, a man in a white shirt and blue jeans sits on a bench in a park, contemplating, while a woman in a black headscarf walks by with her gaze fixed on the ground. In a",
+            "summary": "In various outdoor settings, individuals in casual attire, including white shirts, blue jeans, and headscarves, engage in activities such as eating, conversing, and using their phones, often with a sense of contemplation or absorption. The scenes depict everyday life in public spaces, with people going about their daily routines amidst bustling environments."
+          }
+        ],
+        "caption": "In a series of bustling outdoor settings, people are shown enjoying meals, engaging in conversation, and absorbed in their phones. A man in a white shirt and black cap is seen eating in a café, while a woman in a black headscarf walks by, lost in thought. Another man sits on a bench in a park, contemplating, while a woman in a black headscarf walks by with her gaze fixed on the ground.",
+        "summary": "A lone figure in a white shirt sits apart, lost in thought, amidst a bustling outdoor café and other public spaces where people engage in everyday activities, such as eating and conversing, with a sense of contemplation. The contrast between the lively atmosphere and the man's solitary contemplation highlights the beauty of everyday life in public spaces."
+      },
+      {
+        "level": 1,
+        "start_time": 119.5,
+        "end_time": 144.72,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 119.5,
+            "end_time": 129.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 119.5,
+                "end_time": 129.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, carrying a large red plastic bag.",
+                "postprocess": {
+                  "event_id": 32,
+                  "original_answer": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, carrying a large red plastic bag.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_119_129",
+                    "tags": [
+                      "outdoor_market",
+                      "man",
+                      "woman",
+                      "food",
+                      "shopping"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "bench",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "metal_tray",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "large_red_plastic_bag",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "sitting",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "walking",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_119_129",
+                      "name": "Man eating at outdoor market",
+                      "time": {
+                        "start": "119.5",
+                        "end": "129.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor_market"
+                      ],
+                      "scene_topic": "A man sits on a bench eating a meal while a woman walks by with a large red plastic bag.",
+                      "summary": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, carrying a large red plastic bag.",
+                      "implications": "Minor everyday event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, carrying a large red plastic bag.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a vibrant outdoor market, a man savors his meal while a woman passes by with a colorful bag.",
+            "summary": "A man sits on a bench in an outdoor market, eating from a metal tray, while a woman walks by carrying a large red plastic bag. The scene is set in a bustling market, with the man and woman going about their daily activities."
+          },
+          {
+            "level": 2,
+            "start_time": 129.5,
+            "end_time": 144.72,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 129.5,
+                "end_time": 132.5,
+                "children": [],
+                "caption": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, carrying a large red plastic bag.",
+                "postprocess": {
+                  "event_id": 33,
+                  "original_answer": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, carrying a large red plastic bag.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_129_132",
+                    "tags": [
+                      "outdoor_market",
+                      "man",
+                      "woman",
+                      "food",
+                      "shopping"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "bench",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "metal_tray",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "large_red_plastic_bag",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "sitting",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "walking",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_129_132",
+                      "name": "Man eating at outdoor market",
+                      "time": {
+                        "start": "129.5",
+                        "end": "132.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor_market"
+                      ],
+                      "scene_topic": "A man sits on a bench eating a meal while a woman walks by with a large red plastic bag.",
+                      "summary": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, carrying a large red plastic bag.",
+                      "implications": "Minor everyday event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor market, a man in a white cap and sunglasses sits on a bench, enjoying a meal from a large metal tray, while a woman in a black headscarf walks by, carrying a large red plastic bag.",
+                        "audio": "",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 132.5,
+                "end_time": 135.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a red flag with a white crescent and star to a wider shot of a person in a white cap and sunglasses, as a man's voice continues to speak in a foreign language.",
+                "postprocess": {
+                  "event_id": 34,
+                  "original_answer": "The video transitions from a close-up of a red flag with a white crescent and star to a wider shot of a person in a white cap and sunglasses, as a man's voice continues to speak in a foreign language.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_132.5_135.5",
+                    "tags": [
+                      "video_transition",
+                      "flag",
+                      "person",
+                      "voiceover"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red flag",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_132.5_135.5",
+                      "name": "video transition",
+                      "time": {
+                        "start": "132.5",
+                        "end": "135.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video content"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a red flag with a white crescent and star to a wider shot of a person in a white cap and sunglasses, as a man's voice continues to speak in a foreign language.",
+                      "summary": "The video transitions from a close-up of a red flag with a white crescent and star to a wider shot of a person in a white cap and sunglasses, as a man's voice continues to speak in a foreign language.",
+                      "implications": "Major video content event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a red flag with a white crescent and star to a wider shot of a person in a white cap and sunglasses.",
+                        "audio": "a man's voice speaking in a foreign language.",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 135.5,
+                "end_time": 138.5,
+                "children": [],
+                "caption": "As the video transitions from the bustling street scene, a hand reaches out from the darkness, a small light illuminating a figure against a stark white background, while a man's voice begins to speak.",
+                "postprocess": {
+                  "event_id": 35,
+                  "original_answer": "As the video transitions from the bustling street scene, a hand reaches out from the darkness, a small light illuminating a figure against a stark white background, while a man's voice begins to speak.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_135_138",
+                    "tags": [
+                      "street_scene",
+                      "darkness",
+                      "light",
+                      "figure",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_135_138",
+                      "name": "",
+                      "time": {
+                        "start": "135.5",
+                        "end": "138.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "darkness",
+                        "light"
+                      ],
+                      "scene_topic": "A figure is illuminated against a stark white background as a man's voice begins to speak.",
+                      "summary": "As the video transitions from the bustling street scene, a hand reaches out from the darkness, a small light illuminating a figure against a stark white background, while a man's voice begins to speak.",
+                      "implications": "Major narrative event",
+                      "modalities": {
+                        "visual": "As the video transitions from the bustling street scene, a hand reaches out from the darkness, a small light illuminates a figure against a stark white background, while a man's voice begins to speak.",
+                        "audio": "man's voice",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 138.5,
+                "end_time": 141.5,
+                "children": [],
+                "caption": "As the video transitions from the bustling street scene, a hand reaches out to press a red \"SUBSCRIBE\" button on a bright blue background, accompanied by a woman's voice encouraging viewers to subscribe for more content.",
+                "postprocess": {
+                  "event_id": 36,
+                  "original_answer": "As the video transitions from the bustling street scene, a hand reaches out to press a red \"SUBSCRIBE\" button on a bright blue background, accompanied by a woman's voice encouraging viewers to subscribe for more content.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_138_141",
+                    "tags": [
+                      "subscribe",
+                      "button",
+                      "background",
+                      "voiceover",
+                      "content"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "SUBSCRIBE button",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Bright blue background",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman's voice",
+                        "ref_object": "O002",
+                        "role": "Voiceover",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_138_141",
+                      "name": "SUBSCRIBE button press",
+                      "time": {
+                        "start": "138.5",
+                        "end": "141.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video content"
+                      ],
+                      "scene_topic": "A woman's voice encourages viewers to subscribe for more content",
+                      "summary": "As the video transitions from the bustling street scene, a hand reaches out to press a red \"SUBSCRIBE\" button on a bright blue background, accompanied by a woman's voice encouraging viewers to subscribe for more content.",
+                      "implications": "Major video content event",
+                      "modalities": {
+                        "visual": "As the video transitions from the bustling street scene, a hand reaches out to press a red 'SUBSCRIBE' button on a bright blue background, accompanied by a woman's voice.",
+                        "audio": "woman's voice; button press; bell",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 141.5,
+                "end_time": 144.72,
+                "children": [],
+                "caption": "As the video transitions to a blue screen, a woman begins to speak, her voice accompanied by the subtle hum of a computer fan.",
+                "postprocess": {
+                  "event_id": 37,
+                  "original_answer": "As the video transitions to a blue screen, a woman begins to speak, her voice accompanied by the subtle hum of a computer fan.",
+                  "result": {
+                    "video_id": "JVuXCJWfc1M",
+                    "event_id": "E_JVuXCJWfc1M_141.5_144.72",
+                    "tags": [
+                      "video_transition",
+                      "blue_screen",
+                      "woman_speaking",
+                      "computer_fan"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "blue_screen",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "computer_fan",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JVuXCJWfc1M_141.5_144.72",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "141.5",
+                        "end": "144.72"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "A woman begins to speak on a blue screen.",
+                      "summary": "As the video transitions to a blue screen, a woman begins to speak, her voice accompanied by the subtle hum of a computer fan.",
+                      "implications": "Major video event",
+                      "modalities": {
+                        "visual": "As the video transitions to a blue screen, a woman begins to speak.",
+                        "audio": "speaking; computer fan hum.",
+                        "speech": "Tunisians are set to elect a new president in a tight race between prominent figures and political novices, with imprisoned Nabil Karawi holding a slight advantage, amidst high expectations and growing disillusionment with democratic institutions."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man enjoys a meal in a bustling outdoor market while a woman walks by with a red plastic bag. The video then cuts to a close-up of a red flag with a white crescent and star, followed by a wider shot of a person in a white cap and sunglasses. The video then transitions to a dark background with a hand reaching out, followed by a figure against a stark white background. The video then cuts to a bright blue background with a hand pressing a red \"SUBSCRIBE\" button, accompanied by a",
+            "summary": "A man sits on a bench in a bustling outdoor market, enjoying a meal, while a woman walks by carrying a red plastic bag. The video then transitions to a series of scenes, including a close-up of a red flag, a figure in a white cap and sunglasses, and a hand reaching out to press a \"SUBSCRIBE\" button, accompanied by various voices and sounds."
+          }
+        ],
+        "caption": "A man enjoys a meal in a bustling outdoor market while a woman walks by with a colorful bag. The video then shows a red flag with a white crescent and star, followed by a person in a white cap and sunglasses. The video then transitions to a dark background with a hand reaching out, followed by a figure against a stark white background. Finally, the video cuts to a bright blue background with a hand pressing a red \"SUBSCRIBE\" button.",
+        "summary": "A man eats on a bench in a bustling outdoor market, while a woman walks by carrying a red plastic bag, amidst the vibrant atmosphere of daily activities. The scene transitions to a series of unrelated images, including a red flag, a figure in sunglasses, and a hand pressing a \"SUBSCRIBE\" button."
+      }
+    ],
+    "caption": "The video shows various scenes of people interacting with each other in different settings related to an election or political event, highlighting diversity and inclusivity. The scenes are set in vibrant outdoor settings, with people engaging in conversations, enjoying meals, and absorbed in their phones. The video also shows a man in a white shirt observing the scene, and a woman in a black headscarf lost in thought. The video then transitions to a red flag with a white crescent and star, followed by a person in a white cap and s",
+    "summary": "The transcript depicts scenes of political and religious leaders in the Middle East, as well as everyday life in public spaces, showcasing a lively atmosphere of celebrations, protests, and daily activities. Amidst the bustle, a lone figure sits apart, lost in thought, highlighting the beauty of everyday life in public spaces."
+  }
+}

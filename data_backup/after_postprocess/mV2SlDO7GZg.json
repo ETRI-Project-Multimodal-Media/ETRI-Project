@@ -1,0 +1,753 @@
+{
+  "video_id": "mV2SlDO7GZg",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 71.638305,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 6.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 6.5,
+            "children": [],
+            "caption": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore as a man's voice can be heard, though his words are unclear.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore as a man's voice can be heard, though his words are unclear.",
+              "result": {
+                "video_id": "mV2SlDO7GZg",
+                "event_id": "E_mV2SlDO7GZg_0_6.5",
+                "tags": [
+                  "beach",
+                  "ocean",
+                  "voice",
+                  "unclear"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "beach",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "waves",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_mV2SlDO7GZg_0_6.5",
+                  "name": "beach scene",
+                  "time": {
+                    "start": "0",
+                    "end": "6.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore as a man's voice can be heard, though his words are unclear.",
+                  "summary": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore as a man's voice can be heard, though his words are unclear.",
+                  "implications": "Minor scene with no significant implications",
+                  "modalities": {
+                    "visual": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore.",
+                    "audio": "man's voice",
+                    "speech": "It's a beautiful day in Destin, Florida, with crystal clear water and a hint of emerald green, perfect for taking in the sights."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A serene beach scene is captured on camera, with the sound of waves and an indistinct voice in the background.",
+        "summary": "The camera pans across a vast, sandy beach, where gentle waves lap at the shore, accompanied by a man's voice that is unclear."
+      },
+      {
+        "level": 1,
+        "start_time": 6.5,
+        "end_time": 28.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 6.5,
+            "end_time": 25.5,
+            "children": [],
+            "caption": "A man, wearing sunglasses and a blue shirt, stands on a beach with the ocean and a clear blue sky behind him, speaking directly to the camera about the beautiful weather and the calm ocean.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A man, wearing sunglasses and a blue shirt, stands on a beach with the ocean and a clear blue sky behind him, speaking directly to the camera about the beautiful weather and the calm ocean.",
+              "result": {
+                "video_id": "mV2SlDO7GZg",
+                "event_id": "E_mV2SlDO7GZg_6.5_25.5",
+                "tags": [
+                  "weather",
+                  "beach",
+                  "ocean",
+                  "sunny",
+                  "calm"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "wearing_sunglasses": "",
+                      "wearing_blue_shirt": ""
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "ocean",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "beach",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "clear_blue_sky",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_mV2SlDO7GZg_6.5_25.5",
+                  "name": "man speaks about weather",
+                  "time": {
+                    "start": "6.5",
+                    "end": "25.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "weather"
+                  ],
+                  "scene_topic": "A man speaks about the beautiful weather and the calm ocean.",
+                  "summary": "A man, wearing sunglasses and a blue shirt, stands on a beach with the ocean and a clear blue sky behind him, speaking directly to the camera about the beautiful weather and the calm ocean.",
+                  "implications": "Weather-related news event",
+                  "modalities": {
+                    "visual": "A man, wearing sunglasses and a blue shirt, stands on a beach with the ocean and a clear blue sky behind him, speaking directly to the camera about the beautiful weather and the calm ocean.",
+                    "audio": "speaking",
+                    "speech": "It's a beautiful day in Destin, Florida, with crystal clear water and a hint of emerald green, perfect for taking in the sights."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 25.5,
+            "end_time": 28.5,
+            "children": [],
+            "caption": "A man, wearing sunglasses and a blue shirt, stands on a sandy beach, his gaze fixed on the vast ocean as the sound of waves crashing against the shore fills the air.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "A man, wearing sunglasses and a blue shirt, stands on a sandy beach, his gaze fixed on the vast ocean as the sound of waves crashing against the shore fills the air.",
+              "result": {
+                "video_id": "mV2SlDO7GZg",
+                "event_id": "E_mV2SlDO7GZg_25.5_28.5",
+                "tags": [
+                  "beach",
+                  "ocean",
+                  "waves",
+                  "sandy",
+                  "man"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "wearing_sunglasses": "",
+                      "wearing_blue_shirt": ""
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "beach",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "ocean",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_mV2SlDO7GZg_25.5_28.5",
+                  "name": "",
+                  "time": {
+                    "start": "25.5",
+                    "end": "28.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent_scene"
+                  ],
+                  "scene_topic": "A man stands on a beach, gazing at the ocean.",
+                  "summary": "A man, wearing sunglasses and a blue shirt, stands on a sandy beach, his gaze fixed on the vast ocean as the sound of waves crashing against the shore fills the air.",
+                  "implications": "Minor scene",
+                  "modalities": {
+                    "visual": "A man, wearing sunglasses and a blue shirt, stands on a sandy beach, his gaze fixed on the vast ocean.",
+                    "audio": "waves crashing against the shore",
+                    "speech": "It's a beautiful day in Destin, Florida, with crystal clear water and a hint of emerald green, perfect for taking in the sights."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man stands on a beach, admiring the beautiful weather and calm ocean, speaking directly to the camera. In another shot, the same man stands on the same beach, gazing out at the ocean with a contemplative expression.",
+        "summary": "A man stands on a beach, admiring the beautiful weather and calm ocean, with the sound of waves crashing in the background. He is dressed in sunglasses and a blue shirt, gazing out at the vast expanse of water."
+      },
+      {
+        "level": 1,
+        "start_time": 28.5,
+        "end_time": 38.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 28.5,
+            "end_time": 38.5,
+            "children": [],
+            "caption": "The camera pans across a vast, turquoise ocean, the waves gently lapping against the shore as a man's voice can be heard, though his words are unclear.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "The camera pans across a vast, turquoise ocean, the waves gently lapping against the shore as a man's voice can be heard, though his words are unclear.",
+              "result": {
+                "video_id": "mV2SlDO7GZg",
+                "event_id": "E_mV2SlDO7GZg_28.5_38.5",
+                "tags": [
+                  "ocean",
+                  "beach",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "ocean",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "beach",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "voice",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_mV2SlDO7GZg_28.5_38.5",
+                  "name": "camera pan",
+                  "time": {
+                    "start": "28.5",
+                    "end": "38.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "The camera pans across a vast, turquoise ocean, the waves gently lapping against the shore as a man's voice can be heard, though his words are unclear.",
+                  "summary": "The camera pans across a vast, turquoise ocean, the waves gently lapping against the shore as a man's voice can be heard, though his words are unclear.",
+                  "implications": "Minor scene",
+                  "modalities": {
+                    "visual": "The camera pans across a vast, turquoise ocean, the waves gently lapping against the shore.",
+                    "audio": "man's voice",
+                    "speech": "It's a beautiful day in Destin, Florida, with crystal clear water and a hint of emerald green, perfect for taking in the sights."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A tranquil ocean scene is captured on camera, with the waves gently lapping against the shore, while a man's voice can be heard, though his words are indistinct.",
+        "summary": "The camera captures a serene ocean scene with gentle waves lapping against the shore, accompanied by a man's voice that is indistinguishable due to distance or poor audio quality."
+      },
+      {
+        "level": 1,
+        "start_time": 38.5,
+        "end_time": 49.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 38.5,
+            "end_time": 42.5,
+            "children": [],
+            "caption": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore as a man's voice can be heard, though his words are unclear.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore as a man's voice can be heard, though his words are unclear.",
+              "result": {
+                "video_id": "mV2SlDO7GZg",
+                "event_id": "E_mV2SlDO7GZg_38.5_42.5",
+                "tags": [
+                  "ocean",
+                  "waves",
+                  "shore",
+                  "voice",
+                  "unclear"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "ocean",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "waves",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "shore",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_mV2SlDO7GZg_38.5_42.5",
+                  "name": "ocean scene",
+                  "time": {
+                    "start": "38.5",
+                    "end": "42.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "natural scene"
+                  ],
+                  "scene_topic": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore as a man's voice can be heard, though his words are unclear.",
+                  "summary": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore as a man's voice can be heard, though his words are unclear.",
+                  "implications": "Major visual scene",
+                  "modalities": {
+                    "visual": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore.",
+                    "audio": "man's voice",
+                    "speech": "It's a beautiful day in Destin, Florida, with crystal clear water and a hint of emerald green, perfect for taking in the sights."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 42.5,
+            "end_time": 46.5,
+            "children": [],
+            "caption": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore as a man's voice can be heard, though his words are unclear.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore as a man's voice can be heard, though his words are unclear.",
+              "result": {
+                "video_id": "mV2SlDO7GZg",
+                "event_id": "E_mV2SlDO7GZg_42.5_46.5",
+                "tags": [
+                  "ocean",
+                  "waves",
+                  "shore",
+                  "voice",
+                  "unclear"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "ocean",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "waves",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "shore",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_mV2SlDO7GZg_42.5_46.5",
+                  "name": "camera pans across ocean",
+                  "time": {
+                    "start": "42.5",
+                    "end": "46.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "natural scene"
+                  ],
+                  "scene_topic": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore as a man's voice can be heard, though his words are unclear.",
+                  "summary": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore as a man's voice can be heard, though his words are unclear.",
+                  "implications": "Major visual scene",
+                  "modalities": {
+                    "visual": "The camera pans across the vast, choppy ocean, capturing the waves crashing against the shore.",
+                    "audio": "man's voice",
+                    "speech": "It's a beautiful day in Destin, Florida, with crystal clear water and a hint of emerald green, perfect for taking in the sights."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 46.5,
+            "end_time": 49.5,
+            "children": [],
+            "caption": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore as a man's voice can be heard faintly in the background.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore as a man's voice can be heard faintly in the background.",
+              "result": {
+                "video_id": "mV2SlDO7GZg",
+                "event_id": "E_mV2SlDO7GZg_46.5_49.5",
+                "tags": [
+                  "ocean",
+                  "waves",
+                  "beach",
+                  "voice",
+                  "background"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "ocean",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "waves",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "beach",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_mV2SlDO7GZg_46.5_49.5",
+                  "name": "camera pan",
+                  "time": {
+                    "start": "46.5",
+                    "end": "49.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "nature",
+                    "environment"
+                  ],
+                  "scene_topic": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore as a man's voice can be heard faintly in the background.",
+                  "summary": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore as a man's voice can be heard faintly in the background.",
+                  "implications": "Major nature, environment news event",
+                  "modalities": {
+                    "visual": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore as a man's voice can be heard faintly in the background.",
+                    "audio": "man's voice",
+                    "speech": "It's a beautiful day in Destin, Florida, with crystal clear water and a hint of emerald green, perfect for taking in the sights."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man's voice can be heard, though his words are unclear, as the camera pans across the vast ocean, capturing the waves crashing against the shore.",
+        "summary": "The camera captures the vast, choppy ocean with waves crashing against the shore, accompanied by a man's voice that is sometimes unclear. The scene shifts to a more gentle, turquoise ocean with lapping waves, where the man's voice is heard faintly in the background."
+      },
+      {
+        "level": 1,
+        "start_time": 49.5,
+        "end_time": 71.638305,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 49.5,
+            "end_time": 57.5,
+            "children": [],
+            "caption": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore as a man's voice can be heard, though his words are unclear.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore as a man's voice can be heard, though his words are unclear.",
+              "result": {
+                "video_id": "mV2SlDO7GZg",
+                "event_id": "E_mV2SlDO7GZg_49.5_57.5",
+                "tags": [
+                  "ocean",
+                  "waves",
+                  "beach",
+                  "voice",
+                  "unclear"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "ocean",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "waves",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "beach",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_mV2SlDO7GZg_49.5_57.5",
+                  "name": "camera pans across the ocean",
+                  "time": {
+                    "start": "49.5",
+                    "end": "57.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "nature scene"
+                  ],
+                  "scene_topic": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore as a man's voice can be heard, though his words are unclear.",
+                  "summary": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore as a man's voice can be heard, though his words are unclear.",
+                  "implications": "Nature scene",
+                  "modalities": {
+                    "visual": "The camera pans across the vast, turquoise ocean, capturing the gentle waves lapping against the shore.",
+                    "audio": "man's voice",
+                    "speech": "It's a beautiful day in Destin, Florida, with crystal clear water and a hint of emerald green, perfect for taking in the sights."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 57.5,
+            "end_time": 71.638305,
+            "children": [],
+            "caption": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore as a man's voice can be heard, though his words are unclear.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore as a man's voice can be heard, though his words are unclear.",
+              "result": {
+                "video_id": "mV2SlDO7GZg",
+                "event_id": "E_mV2SlDO7GZg_57.5_71.64",
+                "tags": [
+                  "beach",
+                  "ocean",
+                  "voice",
+                  "man"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "beach",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "ocean",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_mV2SlDO7GZg_57.5_71.64",
+                  "name": "beach scene",
+                  "time": {
+                    "start": "57.5",
+                    "end": "71.64"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore as a man's voice can be heard, though his words are unclear.",
+                  "summary": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore as a man's voice can be heard, though his words are unclear.",
+                  "implications": "Minor scene with no significant implications",
+                  "modalities": {
+                    "visual": "The camera pans across a vast, sandy beach, the gentle waves lapping at the shore.",
+                    "audio": "man's voice",
+                    "speech": "It's a beautiful day in Destin, Florida, with crystal clear water and a hint of emerald green, perfect for taking in the sights."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A tranquil ocean scene is captured on camera, with gentle waves lapping against the shore and a man's voice, though indistinct, can be heard in the background. The camera then pans across a vast, sandy beach with the same tranquil ocean scene in the background.",
+        "summary": "The camera captures a serene ocean scene with a man's voice heard in the background, though his words are indistinguishable. The shot pans across a vast sandy beach, showcasing the gentle waves lapping at the shore."
+      }
+    ],
+    "caption": "A serene beach scene is captured on camera, with the sound of waves and an indistinct voice in the background. A man stands on the beach, admiring the beautiful weather and calm ocean, speaking directly to the camera. The scene shifts to a tranquil ocean scene, with gentle waves lapping against the shore, and a man's voice can be heard, though his words are indistinct. The camera then pans across a vast, sandy beach with the same tranquil ocean scene in the background. Throughout the video, the sound of waves and",
+    "summary": "A man stands on a beach, admiring the beautiful weather and calm ocean, with the sound of waves crashing in the background. The camera captures serene ocean scenes with gentle waves lapping against the shore, accompanied by a man's voice that is sometimes unclear due to distance or poor audio quality."
+  }
+}

@@ -1,0 +1,808 @@
+{
+  "video_id": "hKkycSsq__E",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 30.666667,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 5.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 1.5,
+            "children": [],
+            "caption": "A cartoon bear, dressed in a red chef's hat and apron, stands on a tree branch, holding a large red apple in its hand as it gazes out at the lush green landscape.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "A cartoon bear, dressed in a red chef's hat and apron, stands on a tree branch, holding a large red apple in its hand as it gazes out at the lush green landscape.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_0_1.5",
+                "tags": [
+                  "cartoon",
+                  "bear",
+                  "apple",
+                  "landscape",
+                  "tree"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "bear",
+                    "attributes": {
+                      "species": "cartoon",
+                      "clothing": "chef's hat and apron",
+                      "holding": "apple"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "apple",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "tree",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "landscape",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "bear",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "animal"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_0_1.5",
+                  "name": "bear holding apple",
+                  "time": {
+                    "start": "0",
+                    "end": "1.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon scene"
+                  ],
+                  "scene_topic": "A cartoon bear holds an apple in a tree.",
+                  "summary": "A cartoon bear, dressed in a red chef's hat and apron, stands on a tree branch, holding a large red apple in its hand as it gazes out at the lush green landscape.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A cartoon bear stands on a tree branch, holding a large red apple, as it gazes out at the lush green landscape.",
+                    "audio": "",
+                    "speech": "Archie, an apple enthusiast, picks and cooks apples for applesauce and pie, but his slices turn brown when cut, making them unappealing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 1.5,
+            "end_time": 3.5,
+            "children": [],
+            "caption": "A cartoon bear, wearing a red apron and holding a large red apple, stands in a vibrant garden, surrounded by lush green leaves and colorful fruits, as a woman's voice encourages viewers to subscribe to the American Chemical Society's YouTube channel.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A cartoon bear, wearing a red apron and holding a large red apple, stands in a vibrant garden, surrounded by lush green leaves and colorful fruits, as a woman's voice encourages viewers to subscribe to the American Chemical Society's YouTube channel.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_1.5_3.5",
+                "tags": [
+                  "cartoon",
+                  "bear",
+                  "garden",
+                  "apple",
+                  "youtube"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon bear",
+                    "attributes": {
+                      "color": "red",
+                      "apron": "red",
+                      "apple": "large",
+                      "garden": "vibrant"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman's voice",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "American Chemical Society's YouTube channel",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman's voice",
+                    "ref_object": "O002",
+                    "role": "narrator",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_1.5_3.5",
+                  "name": "cartoon bear in garden",
+                  "time": {
+                    "start": "1.5",
+                    "end": "3.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "entertainment",
+                    "education"
+                  ],
+                  "scene_topic": "A cartoon bear stands in a vibrant garden, encouraging viewers to subscribe to the American Chemical Society's YouTube channel.",
+                  "summary": "A cartoon bear, wearing a red apron and holding a large red apple, stands in a vibrant garden, surrounded by lush green leaves and colorful fruits, as a woman's voice encourages viewers to subscribe to the American Chemical Society's YouTube channel.",
+                  "implications": "Major entertainment and education news event",
+                  "modalities": {
+                    "visual": "A cartoon bear, wearing a red apron and holding a large red apple, stands in a vibrant garden, surrounded by lush green leaves and colorful fruits.",
+                    "audio": "woman's voice; subscribe; American Chemical Society's YouTube channel.",
+                    "speech": "Archie, an apple enthusiast, picks and cooks apples for applesauce and pie, but his slices turn brown when cut, making them unappealing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 3.5,
+            "end_time": 5.5,
+            "children": [],
+            "caption": "A cartoon bear, wearing a red apron and a yellow hat, stands in a brightly colored kitchen, smiling as he stirs a pot on the stove.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "A cartoon bear, wearing a red apron and a yellow hat, stands in a brightly colored kitchen, smiling as he stirs a pot on the stove.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_3.5_5.5",
+                "tags": [
+                  "cartoon",
+                  "bear",
+                  "kitchen",
+                  "cooking"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon bear",
+                    "attributes": {
+                      "wearing": "yellow hat",
+                      "standing": "brightly colored kitchen",
+                      "smiling": "stirs a pot on the stove"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "cartoon bear",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "cartoon character"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_3.5_5.5",
+                  "name": "cartoon bear cooking",
+                  "time": {
+                    "start": "3.5",
+                    "end": "5.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon"
+                  ],
+                  "scene_topic": "A cartoon bear stirs a pot in a brightly colored kitchen.",
+                  "summary": "A cartoon bear, wearing a red apron and a yellow hat, stands in a brightly colored kitchen, smiling as he stirs a pot on the stove.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A cartoon bear, wearing a red apron and a yellow hat, stands in a brightly colored kitchen, smiling as he stirs a pot on the stove.",
+                    "audio": "",
+                    "speech": "Archie, an apple enthusiast, picks and cooks apples for applesauce and pie, but his slices turn brown when cut, making them unappealing."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A cartoon bear is shown in various settings, each representing a different theme or message. The bear is dressed in a red chef's hat and apron in the first caption, standing on a tree branch and gazing out at a lush green landscape. In the second caption, the bear is surrounded by a vibrant garden, with the woman's voice encouraging viewers to subscribe to the American Chemical Society's YouTube channel. In the third caption, the bear is shown in a brightly colored kitchen, smiling as he stirs a pot",
+        "summary": "A cartoon bear, dressed in a chef's hat and apron, is featured in three different settings, each showcasing a vibrant and colorful environment, as a woman's voice encourages viewers to subscribe to the American Chemical Society's YouTube channel. The bear is depicted holding a large red apple and stirring a pot, highlighting the whimsical and playful tone of the promotional video."
+      },
+      {
+        "level": 1,
+        "start_time": 5.5,
+        "end_time": 19.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 5.5,
+            "end_time": 7.5,
+            "children": [],
+            "caption": "A cartoon bear, wearing a red chef's hat, stands in a brightly colored kitchen, smiling as he stirs a pot on the stove while a woman's voice encourages viewers to subscribe to the channel.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "A cartoon bear, wearing a red chef's hat, stands in a brightly colored kitchen, smiling as he stirs a pot on the stove while a woman's voice encourages viewers to subscribe to the channel.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_5.5_7.5",
+                "tags": [
+                  "cartoon",
+                  "kitchen",
+                  "chef",
+                  "smile",
+                  "encouragement"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon bear",
+                    "attributes": {
+                      "wearing": "red chef's hat",
+                      "standing": "brightly colored kitchen",
+                      "smiling": "stirs a pot on the stove"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman's voice",
+                    "ref_object": "",
+                    "role": "encourager",
+                    "entity": "channel"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_5.5_7.5",
+                  "name": "cartoon bear in kitchen",
+                  "time": {
+                    "start": "5.5",
+                    "end": "7.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "children's content"
+                  ],
+                  "scene_topic": "A cartoon bear in a kitchen, encouraging viewers to subscribe to the channel.",
+                  "summary": "A cartoon bear, wearing a red chef's hat, stands in a brightly colored kitchen, smiling as he stirs a pot on the stove while a woman's voice encourages viewers to subscribe to the channel.",
+                  "implications": "Major children's content event",
+                  "modalities": {
+                    "visual": "A cartoon bear stands in a brightly colored kitchen, smiling as he stirs a pot on the stove.",
+                    "audio": "woman's voice; subscribe to the channel.",
+                    "speech": "Archie, an apple enthusiast, picks and cooks apples for applesauce and pie, but his slices turn brown when cut, making them unappealing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 11.5,
+            "children": [],
+            "caption": "A hand reaches out to pick up a piece of fruit from a plate, then a cartoon character with a striped shirt and a blue bow tie appears, holding a piece of fruit and looking at the camera with a curious expression.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "A hand reaches out to pick up a piece of fruit from a plate, then a cartoon character with a striped shirt and a blue bow tie appears, holding a piece of fruit and looking at the camera with a curious expression.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_7.5_11.5",
+                "tags": [
+                  "fruit",
+                  "hand",
+                  "plate",
+                  "cartoon",
+                  "character"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "fruit",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "plate",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "hand",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "cartoon character",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "cartoon character",
+                    "ref_object": "O004",
+                    "role": "actor",
+                    "entity": "character"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_7.5_11.5",
+                  "name": "Fruit picking",
+                  "time": {
+                    "start": "7.5",
+                    "end": "11.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon scene"
+                  ],
+                  "scene_topic": "A cartoon character picks up a piece of fruit from a plate.",
+                  "summary": "A hand reaches out to pick up a piece of fruit from a plate, then a cartoon character with a striped shirt and a blue bow tie appears, holding a piece of fruit and looking at the camera with a curious expression.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A hand reaches out to pick up a piece of fruit from a plate, then a cartoon character with a striped shirt and a blue bow tie appears, holding a piece of fruit and looking at the camera with a curious expression.",
+                    "audio": "",
+                    "speech": "Archie, an apple enthusiast, picks and cooks apples for applesauce and pie, but his slices turn brown when cut, making them unappealing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 11.5,
+            "end_time": 15.5,
+            "children": [],
+            "caption": "A cartoon fox and a blue bird stand side by side, the fox holding a green apple and the bird a red apple, as a woman's voice explains that the fox is a carnivore and the apple is its preferred food.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "A cartoon fox and a blue bird stand side by side, the fox holding a green apple and the bird a red apple, as a woman's voice explains that the fox is a carnivore and the apple is its preferred food.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_11.5_15.5",
+                "tags": [
+                  "cartoon",
+                  "fox",
+                  "bird",
+                  "apple",
+                  "food"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "fox",
+                    "attributes": {
+                      "food": "apple",
+                      "carnivore": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "bird",
+                    "attributes": {
+                      "food": "apple"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "apple",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_11.5_15.5",
+                  "name": "fox and bird with apples",
+                  "time": {
+                    "start": "11.5",
+                    "end": "15.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon scene"
+                  ],
+                  "scene_topic": "A cartoon fox and a blue bird stand side by side, the fox holding a green apple and the bird a red apple, as a woman's voice explains that the fox is a carnivore and the apple is its preferred food.",
+                  "summary": "A cartoon fox and a blue bird stand side by side, the fox holding a green apple and the bird a red apple, as a woman's voice explains that the fox is a carnivore and the apple is its preferred food.",
+                  "implications": "Major cartoon scene",
+                  "modalities": {
+                    "visual": "A cartoon fox and a blue bird stand side by side, the fox holding a green apple and the bird a red apple, as a woman's voice explains that the fox is a carnivore and the apple is its preferred food.",
+                    "audio": "woman's voice",
+                    "speech": "Archie, an apple enthusiast, picks and cooks apples for applesauce and pie, but his slices turn brown when cut, making them unappealing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 15.5,
+            "end_time": 19.5,
+            "children": [],
+            "caption": "A cartoon chef, wearing a chef's hat and apron, stands in a brightly colored kitchen, holding a large knife and a plate of food, as a woman's voice encourages viewers to subscribe to the American Chemical Society's YouTube channel.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A cartoon chef, wearing a chef's hat and apron, stands in a brightly colored kitchen, holding a large knife and a plate of food, as a woman's voice encourages viewers to subscribe to the American Chemical Society's YouTube channel.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_15.5_19.5",
+                "tags": [
+                  "chemistry",
+                  "kitchen",
+                  "food",
+                  "youtube",
+                  "acs"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon chef",
+                    "attributes": {
+                      "wear": "chef's hat and apron",
+                      "hold": "large knife and a plate of food"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman's voice",
+                    "ref_object": "O001",
+                    "role": "narrator",
+                    "entity": "American Chemical Society"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_15.5_19.5",
+                  "name": "ACS YouTube channel promotion",
+                  "time": {
+                    "start": "15.5",
+                    "end": "19.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "science education"
+                  ],
+                  "scene_topic": "A cartoon chef promotes the American Chemical Society's YouTube channel.",
+                  "summary": "A cartoon chef, wearing a chef's hat and apron, stands in a brightly colored kitchen, holding a large knife and a plate of food, as a woman's voice encourages viewers to subscribe to the American Chemical Society's YouTube channel.",
+                  "implications": "Major science education event",
+                  "modalities": {
+                    "visual": "A cartoon chef stands in a brightly colored kitchen, holding a large knife and a plate of food.",
+                    "audio": "woman's voice; subscribe",
+                    "speech": "Archie, an apple enthusiast, picks and cooks apples for applesauce and pie, but his slices turn brown when cut, making them unappealing."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A cartoon bear, a curious cartoon character, and a cartoon chef are featured in a brightly colored kitchen, as a woman's voice encourages viewers to subscribe to a YouTube channel. The bear stirs a pot, the cartoon character picks up fruit, and the chef holds a knife and plate of food, while the woman's voice explains the dietary preferences of a carnivore.",
+        "summary": "A cartoon bear and various characters, including a fox and a blue bird, are shown in a colorful kitchen, highlighting their preferences for food, such as the fox's love for green apples. The scene is accompanied by a woman's voice encouraging viewers to subscribe to the American Chemical Society's YouTube channel."
+      },
+      {
+        "level": 1,
+        "start_time": 19.5,
+        "end_time": 30.666667,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 19.5,
+            "end_time": 22.5,
+            "children": [],
+            "caption": "A cartoon chef, wearing a yellow apron and a big smile, stands in a brightly colored kitchen, holding a large knife and a plate of food, as a woman's voice encourages viewers to subscribe to the American Chemical Society's ChemMatters magazine.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "A cartoon chef, wearing a yellow apron and a big smile, stands in a brightly colored kitchen, holding a large knife and a plate of food, as a woman's voice encourages viewers to subscribe to the American Chemical Society's ChemMatters magazine.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_19.5_22.5",
+                "tags": [
+                  "chemistry",
+                  "education",
+                  "magazine"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon chef",
+                    "attributes": {
+                      "color": "yellow",
+                      "apron": "big smile",
+                      "kitchen": "brightly colored"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "large knife",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "plate of food",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "cartoon chef",
+                    "ref_object": "O001",
+                    "role": "main character",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman's voice",
+                    "ref_object": "",
+                    "role": "narrator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_19.5_22.5",
+                  "name": "Promoting ChemMatters magazine",
+                  "time": {
+                    "start": "19.5",
+                    "end": "22.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education"
+                  ],
+                  "scene_topic": "A cartoon chef promotes ChemMatters magazine",
+                  "summary": "A cartoon chef, wearing a yellow apron and a big smile, stands in a brightly colored kitchen, holding a large knife and a plate of food, as a woman's voice encourages viewers to subscribe to the American Chemical Society's ChemMatters magazine.",
+                  "implications": "Major education news event",
+                  "modalities": {
+                    "visual": "A cartoon chef stands in a brightly colored kitchen, holding a large knife and a plate of food, with a big smile and a yellow apron.",
+                    "audio": "woman's voice; subscribe to the American Chemical Society's ChemMatters magazine.",
+                    "speech": "Archie, an apple enthusiast, picks and cooks apples for applesauce and pie, but his slices turn brown when cut, making them unappealing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 22.5,
+            "end_time": 25.5,
+            "children": [],
+            "caption": "The cartoon bear, with its bright yellow fur and cheerful expression, continues to dance and sing along to the upbeat pop music, its playful movements captured in a series of close-up shots.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "The cartoon bear, with its bright yellow fur and cheerful expression, continues to dance and sing along to the upbeat pop music, its playful movements captured in a series of close-up shots.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_22.5_25.5",
+                "tags": [
+                  "cartoon",
+                  "bear",
+                  "music",
+                  "dance",
+                  "pop"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon bear",
+                    "attributes": {
+                      "fur": "bright yellow",
+                      "expression": "cheerful"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "cartoon bear",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "cartoon character"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_22.5_25.5",
+                  "name": "The cartoon bear dances and sings",
+                  "time": {
+                    "start": "22.5",
+                    "end": "25.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon entertainment"
+                  ],
+                  "scene_topic": "The cartoon bear dances and sings along to upbeat pop music",
+                  "summary": "The cartoon bear, with its bright yellow fur and cheerful expression, continues to dance and sing along to the upbeat pop music, its playful movements captured in a series of close-up shots.",
+                  "implications": "Major entertainment event",
+                  "modalities": {
+                    "visual": "The cartoon bear with its bright yellow fur and cheerful expression continues to dance and sing along to the upbeat pop music, its playful movements captured in a series of close-up shots.",
+                    "audio": "singing; music",
+                    "speech": "Archie, an apple enthusiast, picks and cooks apples for applesauce and pie, but his slices turn brown when cut, making them unappealing."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 25.5,
+            "end_time": 30.666667,
+            "children": [],
+            "caption": "The video transitions from a cartoon scene of a yellow character with a red nose and a blue background to a static image of the American Chemical Society (ACS) logo, accompanied by a shift in music from a cheerful children's song to a more upbeat pop tune.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "The video transitions from a cartoon scene of a yellow character with a red nose and a blue background to a static image of the American Chemical Society (ACS) logo, accompanied by a shift in music from a cheerful children's song to a more upbeat pop tune.",
+              "result": {
+                "video_id": "hKkycSsq__E",
+                "event_id": "E_hKkycSsq__E_25.5_30.67",
+                "tags": [
+                  "cartoon",
+                  "animation",
+                  "logo",
+                  "music"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "yellow character",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "blue background",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "American Chemical Society logo",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_hKkycSsq__E_25.5_30.67",
+                  "name": "",
+                  "time": {
+                    "start": "25.5",
+                    "end": "30.67"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "animation"
+                  ],
+                  "scene_topic": "The video transitions from a cartoon scene to a static image of the ACS logo, accompanied by a shift in music.",
+                  "summary": "The video transitions from a cartoon scene of a yellow character with a red nose and a blue background to a static image of the American Chemical Society (ACS) logo, accompanied by a shift in music from a cheerful children's song to a more upbeat pop tune.",
+                  "implications": "Major visual and auditory changes in the video",
+                  "modalities": {
+                    "visual": "The video transitions from a cartoon scene of a yellow character with a red nose and a blue background to a static image of the American Chemical Society (ACS) logo.",
+                    "audio": "children's song; pop tune.",
+                    "speech": "Archie has a special technique to prevent the color change, making his apples look and taste great at any time of day."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A cartoon chef promotes the American Chemical Society's ChemMatters magazine, while a playful bear dances and sings to upbeat music. The video then transitions to a static image of the ACS logo with a more upbeat background music.",
+        "summary": "A cartoon chef and bear dance and sing in a colorful kitchen, promoting the American Chemical Society's ChemMatters magazine. The video transitions from a cartoon scene to a static image of the ACS logo, accompanied by a change in music."
+      }
+    ],
+    "caption": "A cartoon bear is featured in various settings to promote different themes or messages, such as a garden, kitchen, or chemistry-related content. The bear is shown to be curious and playful, and is often accompanied by other cartoon characters, such as a cartoon chef or a curious cartoon character. The video also includes a woman's voice encouraging viewers to subscribe to a YouTube channel or a magazine. The overall tone is upbeat and engaging, with a focus on promoting educational content related to chemistry and cooking.",
+    "summary": "A cartoon bear and friends are featured in a whimsical promotional video for the American Chemical Society's YouTube channel, showcasing colorful environments and playful scenes that highlight their food preferences. The video encourages viewers to subscribe to the channel and features a transition to a static image of the ACS logo."
+  }
+}

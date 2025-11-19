@@ -1,0 +1,1052 @@
+{
+  "video_id": "lGjFhc8w7ss",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 55.833333,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 21.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 5.5,
+            "children": [],
+            "caption": "The video opens with a close-up of a computer screen displaying a Microsoft Office application, likely Word, with a document open and a red line indicating a spelling error.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "The video opens with a close-up of a computer screen displaying a Microsoft Office application, likely Word, with a document open and a red line indicating a spelling error.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_0_5.5",
+                "tags": [
+                  "office_software",
+                  "microsoft_word",
+                  "spelling_error"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "computer_screen",
+                    "attributes": {
+                      "application": "Microsoft Office",
+                      "document_state": "open",
+                      "error_type": "spelling"
+                    }
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_0_5.5",
+                  "name": "Microsoft Office application display",
+                  "time": {
+                    "start": "0",
+                    "end": "5.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "office_software"
+                  ],
+                  "scene_topic": "The video opens with a close-up of a computer screen displaying a Microsoft Office application, likely Word, with a document open and a red line indicating a spelling error.",
+                  "summary": "The video opens with a close-up of a computer screen displaying a Microsoft Office application, likely Word, with a document open and a red line indicating a spelling error.",
+                  "implications": "Major office software event",
+                  "modalities": {
+                    "visual": "The video opens with a close-up of a computer screen displaying a Microsoft Office application, likely Word, with a document open and a red line indicating a spelling error.",
+                    "audio": "",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 5.5,
+            "end_time": 9.5,
+            "children": [],
+            "caption": "The computer screen displays a webpage with a code snippet in a programming language, while a woman's voice explains how to create a new document in Microsoft Word.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "The computer screen displays a webpage with a code snippet in a programming language, while a woman's voice explains how to create a new document in Microsoft Word.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_5_9",
+                "tags": [
+                  "programming",
+                  "microsoft_word",
+                  "document_creation"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "computer_screen",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "webpage",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "code_snippet",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman's_voice",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_5_9",
+                  "name": "Microsoft Word tutorial",
+                  "time": {
+                    "start": "5.5",
+                    "end": "9.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "computer_software"
+                  ],
+                  "scene_topic": "A woman explains how to create a new document in Microsoft Word.",
+                  "summary": "The computer screen displays a webpage with a code snippet in a programming language, while a woman's voice explains how to create a new document in Microsoft Word.",
+                  "implications": "Major computer software news event",
+                  "modalities": {
+                    "visual": "The computer screen displays a webpage with a code snippet in a programming language, while a woman's voice explains how to create a new document in Microsoft Word.",
+                    "audio": "woman's voice",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 9.5,
+            "end_time": 13.5,
+            "children": [],
+            "caption": "The screen displays a code snippet in a programming language, likely Python, with a comment explaining how to calculate the average of a list of numbers.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "The screen displays a code snippet in a programming language, likely Python, with a comment explaining how to calculate the average of a list of numbers.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_9.5_13.5",
+                "tags": [
+                  "programming",
+                  "python",
+                  "code_snippet",
+                  "average",
+                  "list"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "code_snippet",
+                    "attributes": {
+                      "programming_language": "python",
+                      "description": "The screen displays a code snippet in a programming language, likely Python, with a comment explaining how to calculate the average of a list of numbers."
+                    }
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_9.5_13.5",
+                  "name": "Code snippet explanation",
+                  "time": {
+                    "start": "9.5",
+                    "end": "13.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "computer science"
+                  ],
+                  "scene_topic": "The screen displays a code snippet in a programming language, likely Python, with a comment explaining how to calculate the average of a list of numbers.",
+                  "summary": "The screen displays a code snippet in a programming language, likely Python, with a comment explaining how to calculate the average of a list of numbers.",
+                  "implications": "Major computer science news event",
+                  "modalities": {
+                    "visual": "The screen displays a code snippet in a programming language, likely Python, with a comment explaining how to calculate the average of a list of numbers.",
+                    "audio": "",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 13.5,
+            "end_time": 15.5,
+            "children": [],
+            "caption": "The screen displays a code snippet in a programming language, likely Python, with the text \"1. The program starts by asking the user for input\" clearly visible.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "The screen displays a code snippet in a programming language, likely Python, with the text \"1. The program starts by asking the user for input\" clearly visible.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_13.5_15.5",
+                "tags": [
+                  "programming",
+                  "python",
+                  "code_snippet",
+                  "user_input"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "code_snippet",
+                    "attributes": {
+                      "programming_language": "Python"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "user",
+                    "ref_object": "O001",
+                    "role": "input_provider",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_13.5_15.5",
+                  "name": "Code snippet display",
+                  "time": {
+                    "start": "13.5",
+                    "end": "15.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "computer science"
+                  ],
+                  "scene_topic": "The screen displays a code snippet in a programming language, likely Python, with the text '1. The program starts by asking the user for input' clearly visible.",
+                  "summary": "The screen displays a code snippet in a programming language, likely Python, with the text \"1. The program starts by asking the user for input\" clearly visible.",
+                  "implications": "Major programming news event",
+                  "modalities": {
+                    "visual": "The screen displays a code snippet in a programming language, likely Python, with the text '1. The program starts by asking the user for input' clearly visible.",
+                    "audio": "",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 15.5,
+            "end_time": 21.5,
+            "children": [],
+            "caption": "The screen displays a mathematical equation, \"y = 1.5x + 1.2,\" with the variable \"x\" in blue and the constant \"1.5\" in red, while a woman's voice explains that the equation represents the relationship between two variables.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "The screen displays a mathematical equation, \"y = 1.5x + 1.2,\" with the variable \"x\" in blue and the constant \"1.5\" in red, while a woman's voice explains that the equation represents the relationship between two variables.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_15.5_21.5",
+                "tags": [
+                  "mathematics",
+                  "equation",
+                  "variables",
+                  "relationship",
+                  "voiceover"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "mathematical equation",
+                    "attributes": {
+                      "equation": "y = 1.5x + 1.2",
+                      "variable_color": "blue",
+                      "constant_color": "red"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman's voice",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_15.5_21.5",
+                  "name": "Mathematical equation explanation",
+                  "time": {
+                    "start": "15.5",
+                    "end": "21.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education",
+                    "mathematics"
+                  ],
+                  "scene_topic": "A woman explains a mathematical equation.",
+                  "summary": "The screen displays a mathematical equation, \"y = 1.5x + 1.2,\" with the variable \"x\" in blue and the constant \"1.5\" in red, while a woman's voice explains that the equation represents the relationship between two variables.",
+                  "implications": "Major education, mathematics news event",
+                  "modalities": {
+                    "visual": "The screen displays a mathematical equation, 'y = 1.5x + 1.2,' with the variable 'x' in blue and the constant '1.5' in red, a woman's voice explains that the equation represents the relationship between two variables.",
+                    "audio": "",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A video tutorial demonstrates how to use Microsoft Office and programming languages, including Word, Python, and mathematical equations to calculate the average of a list of numbers.",
+        "summary": "The video demonstrates how to create a new document in Microsoft Word and provides a code snippet in Python to calculate the average of a list of numbers. It also explains a mathematical equation, y = 1.5x + 1.2, which represents the relationship between two variables."
+      },
+      {
+        "level": 1,
+        "start_time": 21.5,
+        "end_time": 31.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 21.5,
+            "end_time": 23.5,
+            "children": [],
+            "caption": "The screen displays a mathematical equation, \"y = 3.14159,\" with a corresponding value of \"3.14159\" in a foreign language, while a woman's voice explains that the equation represents the circumference of a circle.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "The screen displays a mathematical equation, \"y = 3.14159,\" with a corresponding value of \"3.14159\" in a foreign language, while a woman's voice explains that the equation represents the circumference of a circle.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_21.5_23.5",
+                "tags": [
+                  "mathematics",
+                  "equation",
+                  "circle",
+                  "circumference",
+                  "value"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "mathematical_equation",
+                    "attributes": {
+                      "equation": "y = 3.14159",
+                      "value": "3.14159"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_21.5_23.5",
+                  "name": "Circle Circumference Explanation",
+                  "time": {
+                    "start": "21.5",
+                    "end": "23.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "mathematics"
+                  ],
+                  "scene_topic": "The screen displays a mathematical equation, \"y = 3.14159,\" with a corresponding value of \"3.14159\" in a foreign language, while a woman's voice explains that the equation represents the circumference of a circle.",
+                  "summary": "The screen displays a mathematical equation, \"y = 3.14159,\" with a corresponding value of \"3.14159\" in a foreign language, while a woman's voice explains that the equation represents the circumference of a circle.",
+                  "implications": "Major economics,finance news event",
+                  "modalities": {
+                    "visual": "The screen displays a mathematical equation, 'y = 3.14159,' with a corresponding value of '3.14159' in a foreign language, while a woman plays the role of a narrator.",
+                    "audio": "woman's voice",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 23.5,
+            "end_time": 25.5,
+            "children": [],
+            "caption": "The screen displays a mathematical equation, \"y = 3.5\", with a corresponding value of \"3.5\" in a foreign language, while a woman's voice explains that the equation represents the height of a building in meters.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "The screen displays a mathematical equation, \"y = 3.5\", with a corresponding value of \"3.5\" in a foreign language, while a woman's voice explains that the equation represents the height of a building in meters.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_23.5_25.5",
+                "tags": [
+                  "mathematics",
+                  "equation",
+                  "building_height",
+                  "foreign_language"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "mathematical_equation",
+                    "attributes": {
+                      "equation": "y = 3.5",
+                      "value": "3.5"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "building_height",
+                    "attributes": {
+                      "unit": "meters"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_23.5_25.5",
+                  "name": "equation_explanation",
+                  "time": {
+                    "start": "23.5",
+                    "end": "25.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education"
+                  ],
+                  "scene_topic": "A woman explains a mathematical equation on screen.",
+                  "summary": "The screen displays a mathematical equation, \"y = 3.5\", with a corresponding value of \"3.5\" in a foreign language, while a woman's voice explains that the equation represents the height of a building in meters.",
+                  "implications": "Major education news event",
+                  "modalities": {
+                    "visual": "The screen displays a mathematical equation, 'y = 3.5', with a corresponding value of '3.5' in a foreign language, while a woman plays the piano.",
+                    "audio": "woman's voice explaining the equation.",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 25.5,
+            "end_time": 31.5,
+            "children": [],
+            "caption": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the screen.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the screen.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_25.5_31.5",
+                "tags": [
+                  "math",
+                  "education",
+                  "y_value"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "screen",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "The woman",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_25.5_31.5",
+                  "name": "Explaining y-value calculation",
+                  "time": {
+                    "start": "25.5",
+                    "end": "31.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education"
+                  ],
+                  "scene_topic": "The woman explains how to find the y-value for the given x-value",
+                  "summary": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the screen.",
+                  "implications": "Major education news event",
+                  "modalities": {
+                    "visual": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the screen.",
+                    "audio": "",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A woman explains mathematical concepts, including the equation for the circumference of a circle and the height of a building, using a foreign language and visual aids on a screen.",
+        "summary": "The screen displays two mathematical equations, \"y = 3.14159\" and \"y = 3.5\", with corresponding values in a foreign language, as a woman's voice explains that the first equation represents the circumference of a circle and the second equation represents the height of a building in meters. She then demonstrates how to find the y-value for a given x-value, pointing out the correct answer on the screen."
+      },
+      {
+        "level": 1,
+        "start_time": 31.5,
+        "end_time": 41.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 31.5,
+            "end_time": 36.5,
+            "children": [],
+            "caption": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the calculator screen.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the calculator screen.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_31.5_36.5",
+                "tags": [
+                  "math",
+                  "education",
+                  "calculator"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "calculator",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "The woman",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_31.5_36.5",
+                  "name": "Explaining y-value calculation",
+                  "time": {
+                    "start": "31.5",
+                    "end": "36.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education"
+                  ],
+                  "scene_topic": "The woman explains how to find the y-value for the given x-value",
+                  "summary": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the calculator screen.",
+                  "implications": "Major math education event",
+                  "modalities": {
+                    "visual": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the calculator screen.",
+                    "audio": "",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 36.5,
+            "end_time": 41.5,
+            "children": [],
+            "caption": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she writes the equation on the whiteboard.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she writes the equation on the whiteboard.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_36.5_41.5",
+                "tags": [
+                  "math",
+                  "education",
+                  "equation"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "whiteboard",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "equation",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "The woman",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_36.5_41.5",
+                  "name": "Explaining y-value calculation",
+                  "time": {
+                    "start": "36.5",
+                    "end": "41.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education"
+                  ],
+                  "scene_topic": "The woman explains how to find the y-value for the given x-value",
+                  "summary": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she writes the equation on the whiteboard.",
+                  "implications": "Major education news event",
+                  "modalities": {
+                    "visual": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she writes the equation on the whiteboard.",
+                    "audio": "",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The woman explains how to find the y-value for a given x-value, using both a calculator and a whiteboard to illustrate the process.",
+        "summary": "The woman explains how to find the y-value for a given x-value, using a calculator and writing the equation on a whiteboard, her voice clear and concise. She provides a step-by-step guide to finding the correct answer."
+      },
+      {
+        "level": 1,
+        "start_time": 41.5,
+        "end_time": 45.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 41.5,
+            "end_time": 43.5,
+            "children": [],
+            "caption": "The woman continues to explain the process of finding the y-value for the given equation, her voice clear as she writes \"y = 3\" on the whiteboard.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "The woman continues to explain the process of finding the y-value for the given equation, her voice clear as she writes \"y = 3\" on the whiteboard.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_41.5_43.5",
+                "tags": [
+                  "math",
+                  "equation",
+                  "y_value",
+                  "process",
+                  "explanation"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "whiteboard",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "The woman",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_41.5_43.5",
+                  "name": "Explaining y-value for equation",
+                  "time": {
+                    "start": "41.5",
+                    "end": "43.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education",
+                    "mathematics"
+                  ],
+                  "scene_topic": "The woman explains the process of finding the y-value for the given equation.",
+                  "summary": "The woman continues to explain the process of finding the y-value for the given equation, her voice clear as she writes \"y = 3\" on the whiteboard.",
+                  "implications": "Major education, math news event",
+                  "modalities": {
+                    "visual": "The woman continues to explain the process of finding the y-value for the given equation, her voice clear as she writes 'y = 3' on the whiteboard.",
+                    "audio": "her voice; writes 'y = 3'",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 43.5,
+            "end_time": 45.5,
+            "children": [],
+            "caption": "The woman continues to explain the problem, her voice clear as she writes \"3.5\" on the whiteboard, the only sound the scratching of her pen against the chalkboard.",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "The woman continues to explain the problem, her voice clear as she writes \"3.5\" on the whiteboard, the only sound the scratching of her pen against the chalkboard.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_43.5_45.5",
+                "tags": [
+                  "education",
+                  "mathematics",
+                  "whiteboard"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "whiteboard",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "pen",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "The woman",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_43.5_45.5",
+                  "name": "The woman explains the problem",
+                  "time": {
+                    "start": "43.5",
+                    "end": "45.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education news"
+                  ],
+                  "scene_topic": "The woman explains the problem on the whiteboard",
+                  "summary": "The woman continues to explain the problem, her voice clear as she writes \"3.5\" on the whiteboard, the only sound the scratching of her pen against the chalkboard.",
+                  "implications": "Major education news event",
+                  "modalities": {
+                    "visual": "The woman continues to explain the problem, her voice clear as she writes '3.5' on the whiteboard, the only sound the scratching of her pen against the chalkboard.",
+                    "audio": "scratching of her pen against the chalkboard",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The teacher explains the process of finding the y-value for a given equation, using the whiteboard to illustrate the steps, and her voice is clear and concise throughout.",
+        "summary": "The woman explains the process of finding the y-value for a given equation, writing \"y = 3\" and \"3.5\" on the whiteboard as she speaks."
+      },
+      {
+        "level": 1,
+        "start_time": 45.5,
+        "end_time": 55.833333,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 45.5,
+            "end_time": 49.5,
+            "children": [],
+            "caption": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the calculator screen.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the calculator screen.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_45.5_49.5",
+                "tags": [
+                  "math",
+                  "education",
+                  "calculator"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "calculator",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "The woman",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_45.5_49.5",
+                  "name": "Explaining y-value calculation",
+                  "time": {
+                    "start": "45.5",
+                    "end": "49.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education"
+                  ],
+                  "scene_topic": "The woman explains how to find the y-value for the given x-value",
+                  "summary": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the calculator screen.",
+                  "implications": "Major education news event",
+                  "modalities": {
+                    "visual": "The woman continues to explain how to find the y-value for the given x-value, her voice clear as she points out the correct answer on the calculator screen.",
+                    "audio": "",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 49.5,
+            "end_time": 53.5,
+            "children": [],
+            "caption": "The woman continues to explain how to calculate the volume of a rectangular prism, writing the formula \"V = lwh\" on the whiteboard as she speaks.",
+            "postprocess": {
+              "event_id": 13,
+              "original_answer": "The woman continues to explain how to calculate the volume of a rectangular prism, writing the formula \"V = lwh\" on the whiteboard as she speaks.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_49.5_53.5",
+                "tags": [
+                  "math",
+                  "education",
+                  "geometry"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "whiteboard",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "The woman",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_49.5_53.5",
+                  "name": "Calculating volume of a rectangular prism",
+                  "time": {
+                    "start": "49.5",
+                    "end": "53.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "education"
+                  ],
+                  "scene_topic": "The woman explains how to calculate the volume of a rectangular prism",
+                  "summary": "The woman continues to explain how to calculate the volume of a rectangular prism, writing the formula \"V = lwh\" on the whiteboard as she speaks.",
+                  "implications": "Major math, education news event",
+                  "modalities": {
+                    "visual": "The woman continues to explain how to calculate the volume of a rectangular prism, writing the formula 'V = lwh' on the whiteboard as she speaks.",
+                    "audio": "",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 53.5,
+            "end_time": 55.833333,
+            "children": [],
+            "caption": "The computer screen displays a blank document with a dark blue background, while a man's voice can be heard, though his words are unclear.",
+            "postprocess": {
+              "event_id": 14,
+              "original_answer": "The computer screen displays a blank document with a dark blue background, while a man's voice can be heard, though his words are unclear.",
+              "result": {
+                "video_id": "lGjFhc8w7ss",
+                "event_id": "E_lGjFhc8w7ss_53.5_55.83",
+                "tags": [
+                  "computer_screen",
+                  "dark_blue_background",
+                  "man_voice",
+                  "unclear_words"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "computer_screen",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_lGjFhc8w7ss_53.5_55.83",
+                  "name": "",
+                  "time": {
+                    "start": "53.5",
+                    "end": "55.83"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "man_speaking"
+                  ],
+                  "scene_topic": "A man's voice is heard, though his words are unclear.",
+                  "summary": "The computer screen displays a blank document with a dark blue background, while a man's voice can be heard, though his words are unclear.",
+                  "implications": "Minor audio event",
+                  "modalities": {
+                    "visual": "The computer screen displays a blank document with a dark blue background.",
+                    "audio": "Man's voice; unclear words.",
+                    "speech": "The equation models exponential growth or decay, with the initial population being 360,000 people, and each year the population grows by 0.68%. The formula is y = 360,000 × (1 + 0.068)^(number of years)."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A teacher explains how to find the y-value for a given x-value and how to calculate the volume of a rectangular prism, while a man's voice can be heard in the background, though his words are unclear.",
+        "summary": "The woman explains how to find the y-value for a given x-value and calculates the volume of a rectangular prism using the formula \"V = lwh\", writing it on the whiteboard. Meanwhile, a man's voice can be heard in the background, though his words are unclear."
+      }
+    ],
+    "caption": "A video tutorial demonstrates how to use Microsoft Office and programming languages to perform various mathematical calculations, including finding the average of a list of numbers. A woman explains mathematical concepts, including the equation for the circumference of a circle and the height of a building, using a foreign language and visual aids on a screen. She also explains how to find the y-value for a given x-value, using both a calculator and a whiteboard to illustrate the process. The teacher's voice is clear and concise throughout, and she provides step-by-step instructions on how to perform",
+    "summary": "The video demonstrates how to create a new document in Microsoft Word and provides a Python code snippet to calculate the average of a list of numbers, while also explaining a mathematical equation and providing a step-by-step guide to finding the y-value for a given x-value. The video also shows how to calculate the volume of a rectangular prism using the formula \"V = lwh\" and displays various mathematical equations, including the circumference of a circle and the height of a building."
+  }
+}

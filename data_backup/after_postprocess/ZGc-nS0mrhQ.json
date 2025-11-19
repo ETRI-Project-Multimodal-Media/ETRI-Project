@@ -1,0 +1,1077 @@
+{
+  "video_id": "ZGc-nS0mrhQ",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 103.754312,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 44.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 18.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 4.5,
+                "children": [],
+                "caption": "In a lively concert setting, a man in a suit energetically performs on stage, captivating the audience with his passionate singing and dancing.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "In a lively concert setting, a man in a suit energetically performs on stage, captivating the audience with his passionate singing and dancing.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_0_4.5",
+                    "tags": [
+                      "concert",
+                      "music",
+                      "performance",
+                      "entertainment",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "role": "performer",
+                          "entity": "person"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_0_4.5",
+                      "name": "concert performance",
+                      "time": {
+                        "start": "0",
+                        "end": "4.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "A man performs a lively concert, captivating the audience.",
+                      "summary": "In a lively concert setting, a man in a suit energetically performs on stage, captivating the audience with his passionate singing and dancing.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "In a lively concert setting, a man in a suit energetically performs on stage, captivating the audience with his passionate singing and dancing.",
+                        "audio": "singing; dancing",
+                        "speech": "The speaker is leading a group in a drumming activity, instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 4.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "The man in the white suit, illuminated by the stage lights, continues to sing into the microphone, his voice blending with the cheers and applause of the crowd.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The man in the white suit, illuminated by the stage lights, continues to sing into the microphone, his voice blending with the cheers and applause of the crowd.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_4_9",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "applause"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "role": "singer",
+                          "entity": "person"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stage lights",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "crowd",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "singer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_4_9",
+                      "name": "man singing",
+                      "time": {
+                        "start": "4.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The man in the white suit continues to sing into the microphone, his voice blending with the cheers and applause of the crowd.",
+                      "summary": "The man in the white suit, illuminated by the stage lights, continues to sing into the microphone, his voice blending with the cheers and applause of the crowd.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The man in the white suit, illuminated by the stage lights, continues to sing into the microphone.",
+                        "audio": "cheers; applause",
+                        "speech": "instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 18.5,
+                "children": [],
+                "caption": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_9_18",
+                    "tags": [
+                      "pop_music",
+                      "dance",
+                      "stage",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_shirt": "white",
+                          "color_vest": "black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_9_18",
+                      "name": "man dancing on stage",
+                      "time": {
+                        "start": "9.5",
+                        "end": "18.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The man in the white shirt and black vest continues to dance energetically on stage.",
+                      "summary": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                        "audio": "pop music",
+                        "speech": "jump and clap in unison"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A passionate singer and dancer captivates the audience with his energetic performance on stage, blending his voice with the cheers and applause of the crowd.",
+            "summary": "A man in a white suit performs on stage with energetic singing and dancing, captivating the audience with his passionate performance. The crowd cheers and applauds as he sings into the microphone, his voice blending with the lively pop music filling the room."
+          },
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 24.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 18.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_18.5_24.5",
+                    "tags": [
+                      "pop_music",
+                      "dance",
+                      "stage",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_shirt": "white",
+                          "color_vest": "black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_18.5_24.5",
+                      "name": "man dancing on stage",
+                      "time": {
+                        "start": "18.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                      "summary": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                        "audio": "pop music",
+                        "speech": "The speaker is leading a group in a drumming activity, instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera and accompanied by lively pop music.",
+            "summary": "A man in a white shirt and black vest dances energetically on stage, his movements captured by the camera as lively pop music fills the room."
+          },
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 32.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 32.5,
+                "children": [],
+                "caption": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_24.5_32.5",
+                    "tags": [
+                      "dance",
+                      "pop_music",
+                      "party",
+                      "nightlife",
+                      "entertainment"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Dance Floor",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Dancers",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_24.5_32.5",
+                      "name": "Dance Party",
+                      "time": {
+                        "start": "24.5",
+                        "end": "32.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "summary": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                        "audio": "",
+                        "speech": "jump and clap in unison"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The camera captures the energetic and colorful dance floor, filled with people moving to the beat of upbeat pop music.",
+            "summary": "The camera captures the lively dance floor, where a crowd of people dance to upbeat pop music, their colorful clothing a blur of motion. The energy of the crowd is palpable as they move to the music."
+          },
+          {
+            "level": 2,
+            "start_time": 32.5,
+            "end_time": 44.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 32.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_32_44",
+                    "tags": [
+                      "dance",
+                      "pop_music",
+                      "party",
+                      "nightlife",
+                      "entertainment"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Dance Floor",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Dancers",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_32_44",
+                      "name": "Dance Party",
+                      "time": {
+                        "start": "32.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "summary": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                        "audio": "",
+                        "speech": "The speaker is leading a group in a drumming activity, instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The camera captures the energetic and colorful dance floor, filled with people moving to the beat of upbeat pop music.",
+            "summary": "The camera captures the lively dance floor, where a crowd of people dance to upbeat pop music, their colorful clothing a blur of motion. The energy of the crowd is palpable as they move to the music."
+          }
+        ],
+        "caption": "A singer and dancer performs an energetic and captivating stage show, accompanied by lively music and cheers from the crowd.",
+        "summary": "A performer in a white suit captivates the audience with his energetic singing and dancing, blending his voice with lively pop music. The crowd responds with cheers and applause, as the camera captures the vibrant dance floor where people move to the upbeat music in a blur of colorful motion."
+      },
+      {
+        "level": 1,
+        "start_time": 44.5,
+        "end_time": 71.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 44.5,
+            "end_time": 58.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 44.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_44.5_47.5",
+                    "tags": [
+                      "dance",
+                      "pop_music",
+                      "party",
+                      "nightlife",
+                      "entertainment"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Dance Floor",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Dancers",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_44.5_47.5",
+                      "name": "Dance Party",
+                      "time": {
+                        "start": "44.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "summary": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                        "audio": "",
+                        "speech": "The speaker is leading a group in a drumming activity, instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 50.5,
+                "children": [],
+                "caption": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_4750_505",
+                    "tags": [
+                      "pop_music",
+                      "dance",
+                      "stage",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_shirt": "white",
+                          "color_vest": "black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_4750_505",
+                      "name": "man dancing on stage",
+                      "time": {
+                        "start": "47.5",
+                        "end": "50.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                      "summary": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                        "audio": "pop music",
+                        "speech": "The speaker is leading a group in a drumming activity, instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 50.5,
+                "end_time": 58.5,
+                "children": [],
+                "caption": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_50.5_58.5",
+                    "tags": [
+                      "pop_music",
+                      "dance",
+                      "stage",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_shirt": "white",
+                          "color_vest": "black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "dancer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_50.5_58.5",
+                      "name": "man dancing on stage",
+                      "time": {
+                        "start": "50.5",
+                        "end": "58.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                      "summary": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The man in the white shirt and black vest continues to dance energetically on stage, his movements captured by the camera as the lively pop music fills the room.",
+                        "audio": "pop music",
+                        "speech": "The speaker is leading a group in a drumming activity, instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A lively dance party is underway, with a crowd of people dancing to upbeat pop music in colorful attire. A man on stage continues to dance energetically, his movements captured by the camera.",
+            "summary": "The camera captures the lively dance floor, where a crowd in colorful attire moves to upbeat pop music, while a man in a white shirt and black vest performs energetically on stage. His movements are captured by the camera as the lively music fills the room."
+          },
+          {
+            "level": 2,
+            "start_time": 58.5,
+            "end_time": 63.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 58.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_58_63",
+                    "tags": [
+                      "dance",
+                      "pop_music",
+                      "party",
+                      "nightlife",
+                      "entertainment"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Dance Floor",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Dancers",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_58_63",
+                      "name": "Dance Party",
+                      "time": {
+                        "start": "58.5",
+                        "end": "63.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "summary": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                        "audio": "",
+                        "speech": "jump and clap in unison"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A vibrant and energetic crowd dances to upbeat pop music at a lively event, their colorful clothing blurring together in a frenzy of motion.",
+            "summary": "The camera captures the lively dance floor, where a crowd of people dance to upbeat pop music, their colorful clothing a blur of motion. The energy of the crowd is palpable as they move to the music."
+          },
+          {
+            "level": 2,
+            "start_time": 63.5,
+            "end_time": 71.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 71.5,
+                "children": [],
+                "caption": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_63_71",
+                    "tags": [
+                      "dance",
+                      "pop_music",
+                      "party",
+                      "nightlife",
+                      "entertainment"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Dance Floor",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Crowd",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Music",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Dancers",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_63_71",
+                      "name": "Dance Party",
+                      "time": {
+                        "start": "63.5",
+                        "end": "71.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "summary": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion.",
+                        "audio": "",
+                        "speech": "The speaker is leading a group in a drumming activity, instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A vibrant and energetic crowd dances to upbeat pop music at a lively event, their colorful clothing blurring together in a frenzy of motion.",
+            "summary": "The camera captures the lively dance floor, where a crowd of people dance to upbeat pop music, their colorful clothing a blur of motion. The energy of the crowd is palpable as they move to the music."
+          }
+        ],
+        "caption": "A lively dance party is underway, with a crowd of people dancing to upbeat pop music in colorful attire.",
+        "summary": "The camera captures a lively dance floor where a crowd in colorful attire moves to upbeat pop music, with a performer on stage adding to the energy. The crowd's vibrant clothing blends together in a blur of motion as they dance with palpable enthusiasm."
+      },
+      {
+        "level": 1,
+        "start_time": 71.5,
+        "end_time": 103.754312,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 71.5,
+            "end_time": 80.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 71.5,
+                "end_time": 80.5,
+                "children": [],
+                "caption": "The man in the white shirt and black vest continues to sing into the microphone, his voice blending with the cheers and applause of the crowd as the camera captures the lively atmosphere of the event.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The man in the white shirt and black vest continues to sing into the microphone, his voice blending with the cheers and applause of the crowd as the camera captures the lively atmosphere of the event.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_71_80",
+                    "tags": [
+                      "event",
+                      "music",
+                      "performance",
+                      "audience",
+                      "atmosphere"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "role": "performer",
+                          "clothing": "white shirt, black vest"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "camera",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_71_80",
+                      "name": "man singing into microphone",
+                      "time": {
+                        "start": "71.5",
+                        "end": "80.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "music"
+                      ],
+                      "scene_topic": "The man in the white shirt and black vest continues to sing into the microphone, his voice blending with the cheers and applause of the crowd as the camera captures the lively atmosphere of the event.",
+                      "summary": "The man in the white shirt and black vest continues to sing into the microphone, his voice blending with the cheers and applause of the crowd as the camera captures the lively atmosphere of the event.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The man in the white shirt and black vest continues to sing into the microphone, his voice blending with the cheers and applause of the crowd as the camera captures the lively atmosphere of the event.",
+                        "audio": "Singing; cheers; applause",
+                        "speech": "instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The man in the white shirt and black vest sings passionately into the microphone, his voice intertwining with the energetic cheers and applause of the crowd, creating a lively atmosphere at the event.",
+            "summary": "The man in the white shirt and black vest sings into the microphone, his voice harmonizing with the crowd's cheers and applause, as the camera captures the lively atmosphere of the event."
+          },
+          {
+            "level": 2,
+            "start_time": 80.5,
+            "end_time": 103.754312,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 80.5,
+                "end_time": 103.754312,
+                "children": [],
+                "caption": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion under the bright stage lights.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion under the bright stage lights.",
+                  "result": {
+                    "video_id": "ZGc_nS0mrhQ",
+                    "event_id": "E_ZGc_nS0mrhQ_80.5_103.75",
+                    "tags": [
+                      "dance",
+                      "pop_music",
+                      "party",
+                      "nightlife",
+                      "entertainment"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Dance Floor",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Stage Lights",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Dancers",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_ZGc_nS0mrhQ_80.5_103.75",
+                      "name": "Dance Party",
+                      "time": {
+                        "start": "80.5",
+                        "end": "103.75"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion under the bright stage lights.",
+                      "summary": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion under the bright stage lights.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "The camera pans across the lively dance floor, capturing the energy of the crowd as they dance to the upbeat pop music, their colorful attire a blur of motion under the bright stage lights.",
+                        "audio": "",
+                        "speech": "The speaker is leading a group in a drumming activity, instructing them to jump and clap in unison, emphasizing the importance of enthusiasm and energy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The camera captures the energetic and colorful dance floor, filled with people moving to the beat of upbeat pop music under bright stage lights.",
+            "summary": "The camera captures the lively dance floor, where a crowd of people dance to upbeat pop music, their colorful outfits a blur of motion under bright stage lights. The scene is filled with energy and vibrancy, showcasing the excitement of the event."
+          }
+        ],
+        "caption": "At a lively event, a performer sings and interacts with the crowd, creating an energetic atmosphere, while the dance floor is filled with people moving to the beat of upbeat music under bright stage lights.",
+        "summary": "The event is filled with energy and vibrancy, featuring a lively dance floor where a crowd of people dance to upbeat pop music under bright stage lights. The atmosphere is electric, with the man in the white shirt and black vest harmonizing with the crowd's cheers and applause."
+      }
+    ],
+    "caption": "A performer enthralls the crowd with an energetic stage show, accompanied by lively music and cheers, creating an electric atmosphere. At a vibrant event, a singer and dancer captivates the crowd with an electrifying performance, while the dance floor fills with people moving to the beat of upbeat music under bright stage lights.",
+    "summary": "A performer in a white suit electrifies the audience with his energetic singing and dancing, blending his voice with lively pop music, as the crowd responds with cheers and applause. The event is filled with energy and vibrancy, featuring a lively dance floor where a crowd of people dance to upbeat pop music under bright stage lights."
+  }
+}

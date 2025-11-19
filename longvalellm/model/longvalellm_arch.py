@@ -9,66 +9,6 @@ import numpy as np
 import math
 
 
-# DyCoke 
-def dycole_ttm(image_feature, num_tokens_per_frame = 196, merging_ratio = 0.7):
-    # Split frames into tokens
-    num_frames = image_feature.shape[0] // num_tokens_per_frame
-    merging_ratio = 1 - merging_ratio
-    # Calculate similarities between adjacent even frames
-    similarities = []
-    for i in range(0, num_frames - 1, 2):
-        # Get tokens for adjacent frames
-        frame1_tokens = image_feature[i * num_tokens_per_frame: (i + 1) * num_tokens_per_frame]
-        frame2_tokens = image_feature[(i + 1) * num_tokens_per_frame: (i + 2) * num_tokens_per_frame]
-
-        # Calculate cosine similarity between normalized tokens
-        frame1_norm = torch.nn.functional.normalize(frame1_tokens, p=2, dim=1)
-        frame2_norm = torch.nn.functional.normalize(frame2_tokens, p=2, dim=1)
-        similarity = torch.nn.functional.cosine_similarity(frame1_norm, frame2_norm, dim=1)
-        similarities.append(similarity)
-
-    similarities = torch.stack([torch.tensor(similarity) for similarity in similarities])
-
-    # Process even frames
-    modified_image_feature = []
-    for i in range(0, num_frames - 1, 2):
-        frame1_tokens = image_feature[i * num_tokens_per_frame: (i + 1) * num_tokens_per_frame]
-        frame2_tokens = image_feature[(i + 1) * num_tokens_per_frame: (i + 2) * num_tokens_per_frame]
-        
-        avg_similarity = similarities[i // 2]
-        num_tokens_to_keep = int(merging_ratio * num_tokens_per_frame)
-        tokens_to_keep = avg_similarity.topk(num_tokens_to_keep, largest=False).indices
-        
-        modified_image_feature.append(frame1_tokens)
-        modified_image_feature.append(frame2_tokens[tokens_to_keep])
-
-    # Process odd frames
-    odd_similarities = []
-    for i in range(0, num_frames - 4, 4):
-        frame1_tokens = image_feature[i * num_tokens_per_frame: (i + 1) * num_tokens_per_frame]
-        frame2_tokens = image_feature[(i + 2) * num_tokens_per_frame: (i + 3) * num_tokens_per_frame]
-        
-        similarity = torch.nn.functional.cosine_similarity(frame1_tokens, frame2_tokens, dim=1)
-        odd_similarities.append(similarity)
-
-    odd_similarities = torch.stack([torch.tensor(similarity) for similarity in odd_similarities])
-
-    for i in range(0, num_frames - 4, 4):
-        frame1_tokens = image_feature[i * num_tokens_per_frame: (i + 1) * num_tokens_per_frame]
-        frame2_tokens = image_feature[(i + 2) * num_tokens_per_frame: (i + 3) * num_tokens_per_frame]
-        
-        avg_similarity = odd_similarities[i // 4]
-        num_tokens_to_keep = int(merging_ratio * num_tokens_per_frame)
-        tokens_to_keep = avg_similarity.topk(num_tokens_to_keep, largest=False).indices
-        
-        modified_image_feature[i] = frame1_tokens
-        modified_image_feature[i + 2] = frame2_tokens[tokens_to_keep]
-
-    # Combine all tokens
-    combined_tokens = torch.cat(modified_image_feature, dim=0)
-    return combined_tokens
-
-
 
 class LongVALELLMMetaModel:
 
@@ -154,34 +94,47 @@ class LongVALELLMMetaForCausalLM(ABC):
             return feature + positional_emb
         else:
             return feature + positional_emb.unsqueeze(0)
+
+    def _build_visual_time_tokens(self, sequence_length, device, dtype):
+        if not hasattr(self, "tokenizer"):
+            return None
+        embedding_layer = self.get_model().get_input_embeddings()
+        step = getattr(self.config, "visual_time_step", 1.0)
+        time_embeds = []
+        for idx in range(sequence_length):
+            time_text = f"{(idx + 1) * step:.1f}"
+            tokenized = self.tokenizer(
+                time_text,
+                return_tensors="pt",
+                add_special_tokens=False,
+            )
+            token_ids = tokenized["input_ids"].to(device)
+            token_embed = embedding_layer(token_ids)
+            token_embed = token_embed.mean(dim=1).squeeze(0)
+            time_embeds.append(token_embed.to(dtype))
+        return torch.stack(time_embeds, dim=0)
+
+    def _append_visual_time_tokens(self, image_feat):
+        if image_feat is None or not getattr(self.config, "add_visual_time_token", False):
+            return image_feat
+        if image_feat.dim() < 2:
+            return image_feat
+
+        seq_len = image_feat.shape[-2]
+        time_embeds = self._build_visual_time_tokens(seq_len, image_feat.device, image_feat.dtype)
+        if time_embeds is None:
+            return image_feat
+
+        if image_feat.dim() == 2:
+            return torch.cat([image_feat, time_embeds], dim=0)
+        else:
+            time_embeds = time_embeds.unsqueeze(0).expand(image_feat.shape[0], -1, -1)
+            return torch.cat([image_feat, time_embeds], dim=-2)
     
-        # divprune
     def pairwise_cosine_similarity(self, matrix):
         norm_matrix = matrix / matrix.norm(dim=1, keepdim=True)
         cosine_similarity = torch.mm(norm_matrix, norm_matrix.t())
-        return cosine_similarity
-
-    def DivPrune(self, visual_feature_vectors, image_feature_length, cosine_matrix=None, threshold_ratio=0.1):            
-        threshold_terms = int(round(threshold_ratio*image_feature_length))
-        if cosine_matrix is None:
-            cosine_matrix = 1.0 - (self.pairwise_cosine_similarity(visual_feature_vectors))
-
-        s = torch.empty(threshold_terms, dtype=torch.long, device=visual_feature_vectors.device)
-        for i in range(threshold_terms):
-            if i==0:
-                m2 = cosine_matrix
-            else:
-                m2 = torch.index_select(cosine_matrix, 0, torch.index_select(s,0,torch.arange(0,i,device=cosine_matrix.device)))
-
-            if i==0:
-                scores = torch.topk(m2, 2,dim=0,largest=False).values[1,:] #for distance
-            else:
-                scores = torch.min(m2, dim=0).values #for distance 
-
-            phrase_to_add_idx = torch.argmax(scores) # index by visual_feature_vector 
-            s[i] = phrase_to_add_idx
-        return s, cosine_matrix
-    
+        return cosine_similarity    
     
     def prepare_inputs_labels_for_multimodal(
         self, input_ids, position_ids, attention_mask, past_key_values, labels, images, audio=None, asr=None
@@ -231,30 +184,13 @@ class LongVALELLMMetaForCausalLM(ABC):
         for (audio_feat, image_feat, asr_feat) in zip(audio_features, image_features, asr_features):
         # for (audio_feat, image_feat) in zip(audio_features, image_features):    
             assert not (audio_feat == None and image_feat == None and asr_features == None) 
-            # assert not (audio_feat == None and image_feat == None)
-            
-            # --- DivPrune # 
-            # if image_feat is not None and 'LAYER_INDEX' in os.environ:
-            #     orig_img_len = image_feat.shape[0]
-            #     try:
-            #         setattr(self.config, 'img_feature_len', int(orig_img_len))
-            #     except Exception:
-            #         print('image feature len setattr has problem')
-            # # only try divprune before decoder
-            # if os.environ.get('LAYER_INDEX') == '0' and 'SUBSET_RATIO' in os.environ:
-            #     ratio = float(os.environ['SUBSET_RATIO'])
-            #     selected_visual_index, _ = self.DivPrune(
-            #         visual_feature_vectors=image_feat,
-            #         image_feature_length=orig_img_len,
-            #         cosine_matrix=None,
-            #         threshold_ratio=ratio
-            #     )
-            #     selected_visual_index, _ = torch.sort(selected_visual_index) # sort by visual token order
-            #     image_feat = image_feat.index_select(0, selected_visual_index) # pruned visual tokens
                         
             concat_feat = []
             if image_feat is not None:
-                image_feat = self._apply_temporal_embedding(image_feat)
+                if getattr(self.config, "add_visual_time_token", False):
+                    image_feat = self._append_visual_time_tokens(image_feat)
+                else:
+                    image_feat = self._apply_temporal_embedding(image_feat)
                 concat_feat.append(image_feat) 
             if audio_feat is not None:
                 audio_feat = self._apply_temporal_embedding(audio_feat)

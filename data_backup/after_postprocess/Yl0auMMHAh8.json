@@ -1,0 +1,1597 @@
+{
+  "video_id": "Yl0auMMHAh8",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 190.156633,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 40.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 14.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 14.5,
+                "children": [],
+                "caption": "A woman in a vibrant blue dress, adorned with a floral pattern, stands on a stage bathed in blue light, singing into a microphone as the audience cheers and claps along to the pop song playing.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A woman in a vibrant blue dress, adorned with a floral pattern, stands on a stage bathed in blue light, singing into a microphone as the audience cheers and claps along to the pop song playing.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_0_14.5",
+                    "tags": [
+                      "pop_music",
+                      "live_performance",
+                      "audience",
+                      "stage"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "color": "blue",
+                          "pattern": "floral"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "stage",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "audience",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_0_14.5",
+                      "name": "pop song performance",
+                      "time": {
+                        "start": "0",
+                        "end": "14.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music"
+                      ],
+                      "scene_topic": "A woman performs a pop song on stage",
+                      "summary": "A woman in a vibrant blue dress, adorned with a floral pattern, stands on a stage bathed in blue light, singing into a microphone as the audience cheers and claps along to the pop song playing.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "A woman in a vibrant blue dress, adorned with a floral pattern, stands on a stage bathed in blue light.",
+                        "audio": "singing; cheering; clapping; pop song",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A pop singer performs on stage, dressed in a vibrant blue dress with a floral pattern, as the audience cheers and claps along to the music.",
+            "summary": "A woman in a blue dress with a floral pattern performs on stage, singing a pop song as the audience cheers and claps along."
+          },
+          {
+            "level": 2,
+            "start_time": 14.5,
+            "end_time": 18.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 14.5,
+                "end_time": 18.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_14.5_18.5",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "singing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "hands": "clasped in front",
+                          "action": "singing",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_14.5_18.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "14.5",
+                        "end": "18.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings on stage, her voice clear and powerful.",
+                      "summary": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                        "audio": "singing",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman sings on stage with a powerful and clear voice.",
+            "summary": "A woman, dressed in a vibrant blue dress, sings into a microphone on stage with a clear and powerful voice."
+          },
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 24.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 18.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_18.5_24.5",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "singing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "hands": "clasped in front",
+                          "voice": "clear and powerful"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "stage",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "singer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_18.5_24.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "18.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings on stage, her voice clear and powerful.",
+                      "summary": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                        "audio": "singing",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman with a powerful voice sings on stage, her vibrant blue dress adding to the impact of her performance.",
+            "summary": "A woman, dressed in a vibrant blue dress, sings into a microphone on stage with a clear and powerful voice."
+          },
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 40.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 40.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_24.5_40.5",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "singing",
+                      "woman",
+                      "stage"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stage",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_24.5_40.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "24.5",
+                        "end": "40.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, performs on stage.",
+                        "audio": "singing; voice",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with powerful and clear vocals.",
+            "summary": "The woman, dressed in a vibrant blue dress, performs on stage with a powerful and clear voice, singing passionately into the microphone."
+          }
+        ],
+        "caption": "A pop singer performs on stage, showcasing her powerful and clear vocals in a vibrant blue dress with a floral pattern, as the audience cheers and claps along to the music.",
+        "summary": "A woman in a vibrant blue dress performs on stage, singing a pop song with a clear and powerful voice, as the audience cheers and claps along. She sings passionately into the microphone, captivating the crowd with her energetic performance."
+      },
+      {
+        "level": 1,
+        "start_time": 40.5,
+        "end_time": 90.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 40.5,
+            "end_time": 52.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 52.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_40.5_52.5",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "singing",
+                      "woman",
+                      "stage"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stage",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_40.5_52.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "40.5",
+                        "end": "52.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, performs on stage.",
+                        "audio": "singing; voice",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, performs on stage with a powerful and clear voice, singing passionately into the microphone."
+          },
+          {
+            "level": 2,
+            "start_time": 52.5,
+            "end_time": 66.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 52.5,
+                "end_time": 66.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_52_66",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "singing",
+                      "woman",
+                      "stage"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stage",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_52_66",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "52.5",
+                        "end": "66.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, sings passionately into the microphone, performs on stage.",
+                        "audio": "singing; voice",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, performs on stage with a powerful and clear voice, singing passionately into the microphone."
+          },
+          {
+            "level": 2,
+            "start_time": 66.5,
+            "end_time": 74.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 66.5,
+                "end_time": 74.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_66.5_74.5",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_66.5_74.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "66.5",
+                        "end": "74.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          },
+          {
+            "level": 2,
+            "start_time": 74.5,
+            "end_time": 90.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 74.5,
+                "end_time": 90.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_74_90",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_74_90",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "74.5",
+                        "end": "90.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          }
+        ],
+        "caption": "A talented singer performs with passion and power on stage.",
+        "summary": "The woman, dressed in a vibrant blue dress, performs on stage with a powerful and clear voice, singing passionately into the microphone. She delivers a strong and emotive performance, her voice ringing out across the audience."
+      },
+      {
+        "level": 1,
+        "start_time": 90.5,
+        "end_time": 114.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 90.5,
+            "end_time": 101.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 90.5,
+                "end_time": 101.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_90.5_101.5",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_90.5_101.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "90.5",
+                        "end": "101.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          },
+          {
+            "level": 2,
+            "start_time": 101.5,
+            "end_time": 108.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 101.5,
+                "end_time": 108.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_101_108",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_101_108",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "101.5",
+                        "end": "108.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          },
+          {
+            "level": 2,
+            "start_time": 108.5,
+            "end_time": 114.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 108.5,
+                "end_time": 114.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_108_114",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "singing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "hands": "clasped in front",
+                          "action": "singing",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_108_114",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "108.5",
+                        "end": "114.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings on stage, her voice clear and powerful.",
+                      "summary": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                        "audio": "singing",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman sings with powerful vocals on stage, her blue dress adding a pop of color to the performance.",
+            "summary": "A woman, dressed in a vibrant blue dress, sings into a microphone on stage with a clear and powerful voice."
+          }
+        ],
+        "caption": "A woman performs an energetic and powerful singing performance on stage, showcasing her vocal talents with a burst of color from her blue dress.",
+        "summary": "A woman, dressed in a vibrant blue dress, sings with a clear and powerful voice on stage, her passion evident in her performance."
+      },
+      {
+        "level": 1,
+        "start_time": 114.5,
+        "end_time": 135.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 114.5,
+            "end_time": 125.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 114.5,
+                "end_time": 125.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_114_125",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_114_125",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "114.5",
+                        "end": "125.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          },
+          {
+            "level": 2,
+            "start_time": 125.5,
+            "end_time": 135.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 125.5,
+                "end_time": 135.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_125_135",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_125_135",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "125.5",
+                        "end": "135.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          }
+        ],
+        "caption": "A talented singer performs on stage with great passion and power.",
+        "summary": "The woman, dressed in a vibrant blue dress, performs on stage with a powerful and clear voice, singing passionately. Her strong vocals fill the air as she takes center stage."
+      },
+      {
+        "level": 1,
+        "start_time": 135.5,
+        "end_time": 151.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 135.5,
+            "end_time": 145.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 135.5,
+                "end_time": 145.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_135_145",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_135_145",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "135.5",
+                        "end": "145.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          },
+          {
+            "level": 2,
+            "start_time": 145.5,
+            "end_time": 151.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 145.5,
+                "end_time": 151.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_145.5_151.5",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_145.5_151.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "145.5",
+                        "end": "151.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          }
+        ],
+        "caption": "A singer performs with passion and power on stage.",
+        "summary": "The woman, dressed in a vibrant blue dress, performs on stage with a powerful and clear voice, singing passionately. Her strong vocals fill the air as she takes center stage."
+      },
+      {
+        "level": 1,
+        "start_time": 151.5,
+        "end_time": 190.156633,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 151.5,
+            "end_time": 159.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 151.5,
+                "end_time": 159.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_151.5_159.5",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_151.5_159.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "151.5",
+                        "end": "159.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          },
+          {
+            "level": 2,
+            "start_time": 159.5,
+            "end_time": 167.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 159.5,
+                "end_time": 167.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_159.5_167.5",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_159.5_167.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "159.5",
+                        "end": "167.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman performs on stage, singing with passion and power.",
+            "summary": "The woman, dressed in a vibrant blue dress, sings passionately on stage with a clear and powerful voice."
+          },
+          {
+            "level": 2,
+            "start_time": 167.5,
+            "end_time": 190.156633,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 167.5,
+                "end_time": 184.5,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_167.5_184.5",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "stage",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_167.5_184.5",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "167.5",
+                        "end": "184.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman sings passionately into the microphone on stage.",
+                      "summary": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, continues to sing passionately into the microphone, her voice clear and powerful as she performs on stage.",
+                        "audio": "singing; microphone",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 184.5,
+                "end_time": 190.156633,
+                "children": [],
+                "caption": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                  "result": {
+                    "video_id": "Yl0auMMHAh8",
+                    "event_id": "E_Yl0auMMHAh8_184.5_190.16",
+                    "tags": [
+                      "music",
+                      "singing",
+                      "performance",
+                      "woman",
+                      "stage"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dressed": "vibrant blue dress",
+                          "hands": "clasped in front",
+                          "voice": "clear and powerful"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stage",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "singer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Yl0auMMHAh8_184.5_190.16",
+                      "name": "The woman sings on stage",
+                      "time": {
+                        "start": "184.5",
+                        "end": "190.16"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                      "summary": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The woman, dressed in a vibrant blue dress, stands on stage, her hands clasped in front of her as she sings into the microphone, her voice clear and powerful.",
+                        "audio": "singing",
+                        "speech": "The speaker enthusiastically declares their affection, stating that the person is their favorite and exclaiming \"You're mine!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman in a vibrant blue dress sings passionately on stage, her voice clear and powerful.",
+            "summary": "The woman, dressed in a vibrant blue dress, performs on stage with a clear and powerful voice, singing passionately into the microphone. She stands with her hands clasped in front of her, her voice filling the space as she takes center stage."
+          }
+        ],
+        "caption": "A woman sings with passion and power on stage, her voice clear and powerful in a vibrant blue dress.",
+        "summary": "The woman, dressed in a vibrant blue dress, performs on stage with a clear and powerful voice, singing passionately into the microphone. She stands confidently, her hands clasped in front of her, filling the space with her voice as she takes center stage."
+      }
+    ],
+    "caption": "A pop singer performs an energetic and powerful concert, showcasing her vocal talents in a vibrant blue dress with a floral pattern, as the audience cheers and claps along to the music.",
+    "summary": "A woman in a vibrant blue dress performs on stage with a powerful and clear voice, captivating the crowd with her energetic and passionate performance. Her strong vocals fill the air as she takes center stage, delivering a strong and emotive performance that resonates with the audience."
+  }
+}

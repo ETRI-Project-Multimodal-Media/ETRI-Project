@@ -1,0 +1,1289 @@
+{
+  "video_id": "7GkZ7PLMaZk",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 55.933333,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 15.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 5.5,
+            "children": [],
+            "caption": "The video opens with a close-up of a baking pan filled with golden-brown cookies, as a woman's voice begins to speak.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "The video opens with a close-up of a baking pan filled with golden-brown cookies, as a woman's voice begins to speak.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_0_5.5",
+                "tags": [
+                  "baking",
+                  "cookies",
+                  "woman",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "baking pan",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "cookies",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_0_5.5",
+                  "name": "video opening",
+                  "time": {
+                    "start": "0",
+                    "end": "5.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "food",
+                    "video"
+                  ],
+                  "scene_topic": "The video opens with a close-up of a baking pan filled with golden-brown cookies, as a woman's voice begins to speak.",
+                  "summary": "The video opens with a close-up of a baking pan filled with golden-brown cookies, as a woman's voice begins to speak.",
+                  "implications": "Major food, video news event",
+                  "modalities": {
+                    "visual": "The video opens with a close-up of a baking pan filled with golden-brown cookies, as a woman's voice begins to speak.",
+                    "audio": "",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 5.5,
+            "end_time": 7.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a golden-brown cookie to a close-up of a golden-brown cookie cutter, while a woman speaks in a foreign language, her words unclear.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "The video transitions from a close-up of a golden-brown cookie to a close-up of a golden-brown cookie cutter, while a woman speaks in a foreign language, her words unclear.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_5_7",
+                "tags": [
+                  "cookie",
+                  "baking",
+                  "foreign_language"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cookie",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "cookie cutter",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_5_7",
+                  "name": "cookie transition",
+                  "time": {
+                    "start": "5.5",
+                    "end": "7.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "A woman speaks in a foreign language while showing a cookie and a cookie cutter.",
+                  "summary": "The video transitions from a close-up of a golden-brown cookie to a close-up of a golden-brown cookie cutter, while a woman speaks in a foreign language, her words unclear.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a golden-brown cookie to a close-up of a golden-brown cookie cutter.",
+                    "audio": "Woman speaking in a foreign language.",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 11.5,
+            "children": [],
+            "caption": "A hand reaches out to pet a small, fluffy dog on a beach, as a woman's voice excitedly exclaims \"Oh my god!\"",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "A hand reaches out to pet a small, fluffy dog on a beach, as a woman's voice excitedly exclaims \"Oh my god!\"",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_7.5_11.5",
+                "tags": [
+                  "petting",
+                  "dog",
+                  "beach",
+                  "excitement"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "hand",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "small, fluffy dog",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "petter",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_7.5_11.5",
+                  "name": "Petting a small, fluffy dog on a beach",
+                  "time": {
+                    "start": "7.5",
+                    "end": "11.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human behavior",
+                    "animal interaction"
+                  ],
+                  "scene_topic": "A woman excitedly pets a small, fluffy dog on a beach.",
+                  "summary": "A hand reaches out to pet a small, fluffy dog on a beach, as a woman's voice excitedly exclaims \"Oh my god!\"",
+                  "implications": "Major animal, human interaction event",
+                  "modalities": {
+                    "visual": "A hand reaches out to pet a small, fluffy dog on a beach, as a woman's voice excitedly exclaims.",
+                    "audio": "'Oh my god!'",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 11.5,
+            "end_time": 15.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word \"PANE\" is prominently displayed in bold, capitalized letters.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word \"PANE\" is prominently displayed in bold, capitalized letters.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_11.5_15.5",
+                "tags": [
+                  "visual_effect",
+                  "color",
+                  "text"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "burning_match",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "orange_background",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "PANE_text",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_11.5_15.5",
+                  "name": "transition",
+                  "time": {
+                    "start": "11.5",
+                    "end": "15.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "visual_effect"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word 'PANE' is prominently displayed in bold, capitalized letters.",
+                  "summary": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word \"PANE\" is prominently displayed in bold, capitalized letters.",
+                  "implications": "Major visual effect",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word 'PANE' is prominently displayed in bold, capitalized letters.",
+                    "audio": "",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word Pangolin, repeating it slowly."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The video opens with a shot of a baking pan filled with golden-brown cookies, and a woman's voice speaks in a language that is unclear. The video then cuts to a close-up of a golden-brown cookie cutter, followed by a shot of a small, fluffy dog on a beach. The video then transitions to a burning match and a vibrant orange background with the word \"PANE\" prominently displayed.",
+        "summary": "The video opens with a shot of golden-brown cookies and a woman speaking in a foreign language, before transitioning to a close-up of a cookie cutter and a hand petting a small dog on a beach. The video then cuts to a burning match and a vibrant orange background with the word \"PANE\" displayed prominently."
+      },
+      {
+        "level": 1,
+        "start_time": 15.5,
+        "end_time": 25.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 15.5,
+            "end_time": 18.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word \"PANA\" is prominently displayed in bold, capitalized letters.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word \"PANA\" is prominently displayed in bold, capitalized letters.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_15.5_18.5",
+                "tags": [
+                  "visual_effect",
+                  "color",
+                  "text"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "burning_match",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "vibrant_orange_background",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "PANA_text",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_15.5_18.5",
+                  "name": "Transition to orange background",
+                  "time": {
+                    "start": "15.5",
+                    "end": "18.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "visual_effect"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word 'PANA' is prominently displayed in bold, capitalized letters.",
+                  "summary": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word \"PANA\" is prominently displayed in bold, capitalized letters.",
+                  "implications": "Major visual effect, branding event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a burning match to a vibrant orange background, where the word 'PANA' is prominently displayed in bold, capitalized letters.",
+                    "audio": "",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word Pangolin, repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 22.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a golden \"Bakery\" sign to a vibrant orange background, where the word \"Bakery\" is prominently displayed in bold, capitalized letters, accompanied by a woman's voice.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "The video transitions from a close-up of a golden \"Bakery\" sign to a vibrant orange background, where the word \"Bakery\" is prominently displayed in bold, capitalized letters, accompanied by a woman's voice.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_18.5_22.5",
+                "tags": [
+                  "bakery",
+                  "sign",
+                  "background",
+                  "woman",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Bakery sign",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Background",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_18.5_22.5",
+                  "name": "Bakery sign transition",
+                  "time": {
+                    "start": "18.5",
+                    "end": "22.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "visual scene"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a golden 'Bakery' sign to a vibrant orange background, where the word 'Bakery' is prominently displayed in bold, capitalized letters, accompanied by a woman's voice.",
+                  "summary": "The video transitions from a close-up of a golden \"Bakery\" sign to a vibrant orange background, where the word \"Bakery\" is prominently displayed in bold, capitalized letters, accompanied by a woman's voice.",
+                  "implications": "Visual scene description",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a golden 'Bakery' sign to a vibrant orange background, where the word 'Bakery' is prominently displayed in bold, capitalized letters.",
+                    "audio": "a woman's voice.",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 22.5,
+            "end_time": 25.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a golden \"BANANA\" logo to a wider shot, revealing a vibrant yellow background with the word \"BANANA\" prominently displayed in a playful, stylized font.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "The video transitions from a close-up of a golden \"BANANA\" logo to a wider shot, revealing a vibrant yellow background with the word \"BANANA\" prominently displayed in a playful, stylized font.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_22.5_25.5",
+                "tags": [
+                  "banana",
+                  "logo",
+                  "font",
+                  "background",
+                  "yellow"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "BANANA logo",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Vibrant yellow background",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_22.5_25.5",
+                  "name": "Transition to banana background",
+                  "time": {
+                    "start": "22.5",
+                    "end": "25.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "product branding"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a golden 'BANANA' logo to a wider shot, revealing a vibrant yellow background with the word 'BANANA' prominently displayed in a playful, stylized font.",
+                  "summary": "The video transitions from a close-up of a golden \"BANANA\" logo to a wider shot, revealing a vibrant yellow background with the word \"BANANA\" prominently displayed in a playful, stylized font.",
+                  "implications": "Major product branding event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a golden 'BANANA' logo to a wider shot, revealing a vibrant yellow background with the word 'BANANA' prominently displayed in a playful, stylized font.",
+                    "audio": "",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word Pangolin, repeating it slowly."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The video opens with a close-up of a burning match, followed by a vibrant orange background with the word \"PANA\" prominently displayed in bold, capitalized letters. The video then transitions to a close-up of a golden \"Bakery\" sign, followed by a vibrant orange background with the word \"Bakery\" prominently displayed in bold, capitalized letters, accompanied by a woman's voice. Finally, the video transitions to a close-up of a golden \"BANANA\" logo, followed by a",
+        "summary": "The video features a series of transitions, showcasing a burning match, a golden \"Bakery\" sign, and a golden \"BANANA\" logo, each leading to a vibrant orange or yellow background with bold, capitalized text prominently displayed. The video is accompanied by a woman's voice, adding to the visual display."
+      },
+      {
+        "level": 1,
+        "start_time": 25.5,
+        "end_time": 42.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 25.5,
+            "end_time": 27.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a golden \"Bakery\" sign to a wider shot of a bustling bakery, where a person in a white apron is carefully placing a tray of golden-brown cookies onto a rack.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "The video transitions from a close-up of a golden \"Bakery\" sign to a wider shot of a bustling bakery, where a person in a white apron is carefully placing a tray of golden-brown cookies onto a rack.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_25.5_27.5",
+                "tags": [
+                  "bakery",
+                  "cookies",
+                  "sign",
+                  "transition"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Bakery sign",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Bakery",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Cookies",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Person in white apron",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Person in white apron",
+                    "ref_object": "O004",
+                    "role": "baker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_25.5_27.5",
+                  "name": "Bakery scene",
+                  "time": {
+                    "start": "25.5",
+                    "end": "27.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a golden 'Bakery' sign to a wider shot of a bustling bakery, where a person in a white apron is carefully placing a tray of golden-brown cookies onto a rack.",
+                  "summary": "The video transitions from a close-up of a golden \"Bakery\" sign to a wider shot of a bustling bakery, where a person in a white apron is carefully placing a tray of golden-brown cookies onto a rack.",
+                  "implications": "Major food, retail news event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a golden 'Bakery' sign to a wider shot of a bustling bakery, where a person in a white apron is carefully placing a tray of golden-brown cookies onto a rack.",
+                    "audio": "",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 27.5,
+            "end_time": 29.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a golden \"PANA\" logo to a wider shot, revealing a vibrant orange background with the word \"PANA\" prominently displayed in a bold, sans-serif font.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "The video transitions from a close-up of a golden \"PANA\" logo to a wider shot, revealing a vibrant orange background with the word \"PANA\" prominently displayed in a bold, sans-serif font.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_27.5_29.5",
+                "tags": [
+                  "pana",
+                  "logo",
+                  "background",
+                  "font"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "PANA logo",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Vibrant orange background",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "PANA font",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_27.5_29.5",
+                  "name": "PANA logo transition",
+                  "time": {
+                    "start": "27.5",
+                    "end": "29.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "visual effects"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a golden PANA logo to a wider shot, revealing a vibrant orange background with the word PANA prominently displayed in a bold, sans-serif font.",
+                  "summary": "The video transitions from a close-up of a golden \"PANA\" logo to a wider shot, revealing a vibrant orange background with the word \"PANA\" prominently displayed in a bold, sans-serif font.",
+                  "implications": "Major visual effects event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a golden 'PANA' logo to a wider shot, revealing a vibrant orange background with the word 'PANA' prominently displayed in a bold, sans-serif font.",
+                    "audio": "",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word Pangolin, repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 30.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a golden \"Bakery\" sign to a wider shot of a bustling bakery, where a person in a white apron is carefully placing a tray of freshly baked cookies onto a rack.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "The video transitions from a close-up of a golden \"Bakery\" sign to a wider shot of a bustling bakery, where a person in a white apron is carefully placing a tray of freshly baked cookies onto a rack.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_29.5_30.5",
+                "tags": [
+                  "bakery",
+                  "cookies",
+                  "baking",
+                  "food",
+                  "industry"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Bakery sign",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Bakery",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Person in white apron",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Tray of freshly baked cookies",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "Rack",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Person in white apron",
+                    "ref_object": "O003",
+                    "role": "baker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_29.5_30.5",
+                  "name": "Bakery scene",
+                  "time": {
+                    "start": "29.5",
+                    "end": "30.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "industry news"
+                  ],
+                  "scene_topic": "The video shows a bustling bakery with a person baking cookies.",
+                  "summary": "The video transitions from a close-up of a golden \"Bakery\" sign to a wider shot of a bustling bakery, where a person in a white apron is carefully placing a tray of freshly baked cookies onto a rack.",
+                  "implications": "Major food industry news event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a golden 'Bakery' sign to a wider shot of a bustling bakery, where a person in a white apron is carefully placing a tray of freshly baked cookies onto a rack.",
+                    "audio": "",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 30.5,
+            "end_time": 32.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a golden \"BANANA\" logo to a wider shot, revealing a vibrant yellow background with the word \"BANANA\" prominently displayed in a playful, stylized font.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "The video transitions from a close-up of a golden \"BANANA\" logo to a wider shot, revealing a vibrant yellow background with the word \"BANANA\" prominently displayed in a playful, stylized font.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_30.5_32.5",
+                "tags": [
+                  "banana",
+                  "logo",
+                  "background",
+                  "font"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "banana logo",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "vibrant yellow background",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "stylized font",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_30.5_32.5",
+                  "name": "banana logo transition",
+                  "time": {
+                    "start": "30.5",
+                    "end": "32.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "product branding"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a golden banana logo to a wider shot, revealing a vibrant yellow background with the word banana prominently displayed in a playful, stylized font.",
+                  "summary": "The video transitions from a close-up of a golden \"BANANA\" logo to a wider shot, revealing a vibrant yellow background with the word \"BANANA\" prominently displayed in a playful, stylized font.",
+                  "implications": "Major product branding event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a golden 'BANANA' logo to a wider shot, revealing a vibrant yellow background with the word 'BANANA' prominently displayed in a playful, stylized font.",
+                    "audio": "",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word Pangolin, repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 32.5,
+            "end_time": 38.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a burning match to a vibrant orange screen displaying the word \"PANA\" in bold, capitalized letters, accompanied by a cheerful children's song.",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "The video transitions from a close-up of a burning match to a vibrant orange screen displaying the word \"PANA\" in bold, capitalized letters, accompanied by a cheerful children's song.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_32_38",
+                "tags": [
+                  "video_transition",
+                  "match_burning",
+                  "orange_screen",
+                  "pana_word",
+                  "childrens_song"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "match",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "orange_screen",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "pana_word",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_32_38",
+                  "name": "",
+                  "time": {
+                    "start": "32.5",
+                    "end": "38.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "video_transition"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a burning match to a vibrant orange screen displaying the word 'PANA' in bold, capitalized letters, accompanied by a cheerful children's song.",
+                  "summary": "The video transitions from a close-up of a burning match to a vibrant orange screen displaying the word \"PANA\" in bold, capitalized letters, accompanied by a cheerful children's song.",
+                  "implications": "Major video event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a burning match to a vibrant orange screen displaying the word 'PANA' in bold, capitalized letters.",
+                    "audio": "children's song",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 38.5,
+            "end_time": 40.5,
+            "children": [],
+            "caption": "The camera zooms in on a vibrant orange and yellow logo for \"PALANGGA,\" featuring a stylized letter \"A\" with a playful exclamation mark, as a woman's voice excitedly announces the word.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "The camera zooms in on a vibrant orange and yellow logo for \"PALANGGA,\" featuring a stylized letter \"A\" with a playful exclamation mark, as a woman's voice excitedly announces the word.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_38.5_40.5",
+                "tags": [
+                  "branding",
+                  "animation",
+                  "announcement"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "PALANGGA logo",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Woman",
+                    "ref_object": "O001",
+                    "role": "Announcer",
+                    "entity": "Person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_38.5_40.5",
+                  "name": "PALANGGA logo announcement",
+                  "time": {
+                    "start": "38.5",
+                    "end": "40.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "branding news"
+                  ],
+                  "scene_topic": "The camera zooms in on a vibrant orange and yellow logo for 'PALANGGA,' featuring a stylized letter 'A' with a playful exclamation mark, as a woman's voice excitedly announces the word.",
+                  "summary": "The camera zooms in on a vibrant orange and yellow logo for \"PALANGGA,\" featuring a stylized letter \"A\" with a playful exclamation mark, as a woman's voice excitedly announces the word.",
+                  "implications": "Major branding news event",
+                  "modalities": {
+                    "visual": "The camera zooms in on a vibrant orange and yellow logo for 'PALANGGA', featuring a stylized letter 'A' with a playful exclamation mark, as a woman's voice announces the word.",
+                    "audio": "woman's voice; announcement",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 40.5,
+            "end_time": 42.5,
+            "children": [],
+            "caption": "The camera zooms in on a vibrant orange and yellow \"PALAGUINA\" logo, showcasing its bold design against a white background, while a woman's voice can be heard faintly in the background.",
+            "postprocess": {
+              "event_id": 13,
+              "original_answer": "The camera zooms in on a vibrant orange and yellow \"PALAGUINA\" logo, showcasing its bold design against a white background, while a woman's voice can be heard faintly in the background.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_40.5_42.5",
+                "tags": [
+                  "logo",
+                  "design",
+                  "branding",
+                  "marketing",
+                  "advertising"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "PALAGUINA logo",
+                    "attributes": {
+                      "color": "orange and yellow",
+                      "background": "white"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Woman's voice",
+                    "ref_object": "",
+                    "role": "narrator",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_40.5_42.5",
+                  "name": "PALAGUINA logo showcase",
+                  "time": {
+                    "start": "40.5",
+                    "end": "42.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "branding news"
+                  ],
+                  "scene_topic": "The camera zooms in on a vibrant orange and yellow PALAGUINA logo, showcasing its bold design against a white background, while a woman's voice can be heard faintly in the background.",
+                  "summary": "The camera zooms in on a vibrant orange and yellow \"PALAGUINA\" logo, showcasing its bold design against a white background, while a woman's voice can be heard faintly in the background.",
+                  "implications": "Major branding and marketing event",
+                  "modalities": {
+                    "visual": "The camera zooms in on a vibrant orange and yellow 'PALAGUINA' logo, showcasing its bold design against a white background, a woman's voice can be heard faintly in the background.",
+                    "audio": "a woman's voice",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word Pangolin, repeating it slowly."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The video showcases various logos and scenes related to the themes of bakeries, food, and fun. The logos include \"Bakery,\" \"PANA,\" \"BANANA,\" and \"PALANGGA,\" each with a unique design and color scheme. The scenes show a person baking cookies, a vibrant orange background with the \"PANA\" logo, and a burning match transitioning to a cheerful children's song. The video also features a logo for \"PALAGUINA\" with a bold design and a",
+        "summary": "The video showcases a bakery scene with a person placing cookies on a rack, interspersed with logo transitions featuring \"PANA\", \"BANANA\", and \"PALANGGA\" logos on vibrant backgrounds. The video also includes a match burning and a cheerful children's song, accompanied by the \"PANA\" logo and a woman's excited announcement."
+      },
+      {
+        "level": 1,
+        "start_time": 42.5,
+        "end_time": 52.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 42.5,
+            "end_time": 48.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a vibrant orange \"Ponga\" logo to a wider shot, revealing a lush green background with the word \"Ponga\" prominently displayed, all while a cheerful children's song plays in the background.",
+            "postprocess": {
+              "event_id": 14,
+              "original_answer": "The video transitions from a close-up of a vibrant orange \"Ponga\" logo to a wider shot, revealing a lush green background with the word \"Ponga\" prominently displayed, all while a cheerful children's song plays in the background.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_42.5_48.5",
+                "tags": [
+                  "ponga",
+                  "logo",
+                  "background",
+                  "childrens_song"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Ponga logo",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Lush green background",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O002",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_42.5_48.5",
+                  "name": "",
+                  "time": {
+                    "start": "42.5",
+                    "end": "48.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "visual transition"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a vibrant orange Ponga logo to a wider shot, revealing a lush green background with the word Ponga prominently displayed, all while a cheerful children's song plays in the background.",
+                  "summary": "The video transitions from a close-up of a vibrant orange \"Ponga\" logo to a wider shot, revealing a lush green background with the word \"Ponga\" prominently displayed, all while a cheerful children's song plays in the background.",
+                  "implications": "Major visual event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a vibrant orange 'Ponga' logo to a wider shot, revealing a lush green background with the word 'Ponga' prominently displayed, all while a wider shot.",
+                    "audio": "cheerful children's song",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 48.5,
+            "end_time": 50.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a vibrant orange \"BANANA\" logo to a wider shot, revealing a lush green background with the word \"BANANA\" prominently displayed in bold yellow letters, all while a cheerful children's song plays in the background.",
+            "postprocess": {
+              "event_id": 15,
+              "original_answer": "The video transitions from a close-up of a vibrant orange \"BANANA\" logo to a wider shot, revealing a lush green background with the word \"BANANA\" prominently displayed in bold yellow letters, all while a cheerful children's song plays in the background.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_48.5_50.5",
+                "tags": [
+                  "banana",
+                  "logo",
+                  "background",
+                  "song",
+                  "children"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "banana logo",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "lush green background",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "bold yellow letters",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_48.5_50.5",
+                  "name": "",
+                  "time": {
+                    "start": "48.5",
+                    "end": "50.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "visual effects"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a vibrant orange logo to a wider shot, revealing a lush green background with the word 'BANANA' prominently displayed in bold yellow letters, all while a cheerful children's song plays in the background.",
+                  "summary": "The video transitions from a close-up of a vibrant orange \"BANANA\" logo to a wider shot, revealing a lush green background with the word \"BANANA\" prominently displayed in bold yellow letters, all while a cheerful children's song plays in the background.",
+                  "implications": "Major visual effects event",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a vibrant orange 'BANANA' logo to a wider shot, revealing a lush green background with the word 'BANANA' prominently displayed in bold yellow letters, all while a wider shot.",
+                    "audio": "cheerful children's song",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 50.5,
+            "end_time": 52.5,
+            "children": [],
+            "caption": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest, all while a cheerful children's song plays in the background.",
+            "postprocess": {
+              "event_id": 16,
+              "original_answer": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest, all while a cheerful children's song plays in the background.",
+              "result": {
+                "video_id": "7GkZ7PLMaZk",
+                "event_id": "E_7GkZ7PLMaZk_50.5_52.5",
+                "tags": [
+                  "visual_transition",
+                  "color_change",
+                  "childrens_music"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "pineapple",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "forest",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_7GkZ7PLMaZk_50.5_52.5",
+                  "name": "",
+                  "time": {
+                    "start": "50.5",
+                    "end": "52.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "visual_content"
+                  ],
+                  "scene_topic": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest, all while a cheerful children's song plays in the background.",
+                  "summary": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest, all while a cheerful children's song plays in the background.",
+                  "implications": "Minor visual content change",
+                  "modalities": {
+                    "visual": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest.",
+                    "audio": "cheerful children's song",
+                    "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word Pangolin, repeating it slowly."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The video showcases the Ponga and Banana brands, with colorful logos and a lush green background, set to a cheerful children's song. The video then transitions to a wide shot of a lush green forest.",
+        "summary": "The video features a series of transitions from close-ups of colorful logos and a pineapple to wider shots of lush green backgrounds, all set to a cheerful children's song. The visuals prominently display the words \"Ponga\", \"BANANA\", and the pineapple, creating a playful and vibrant atmosphere."
+      },
+      {
+        "level": 1,
+        "start_time": 52.5,
+        "end_time": 55.933333,
+        "children": [],
+        "caption": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest, all while a cheerful children's song plays in the background.",
+        "postprocess": {
+          "event_id": 17,
+          "original_answer": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest, all while a cheerful children's song plays in the background.",
+          "result": {
+            "video_id": "7GkZ7PLMaZk",
+            "event_id": "E_7GkZ7PLMaZk_52.5_55.93",
+            "tags": [
+              "video_transition",
+              "fruit",
+              "nature",
+              "childrens_song",
+              "background_music"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "pineapple",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "forest",
+                "attributes": {}
+              }
+            ],
+            "actors": [],
+            "event": {
+              "event_id": "E_7GkZ7PLMaZk_52.5_55.93",
+              "name": "Video Transition",
+              "time": {
+                "start": "52.5",
+                "end": "55.93"
+              },
+              "actors": [],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "video_transition"
+              ],
+              "scene_topic": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest, all while a cheerful children's song plays in the background.",
+              "summary": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest, all while a cheerful children's song plays in the background.",
+              "implications": "Minor visual storytelling event",
+              "modalities": {
+                "visual": "The video transitions from a close-up of a vibrant orange pineapple to a wide shot of a lush green forest.",
+                "audio": "cheerful children's song",
+                "speech": "The speaker thanks viewers for visiting their channel and demonstrates how to pronounce the word \"Pangolin\", repeating it slowly."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "The video showcases various logos and scenes related to bakeries, food, and fun. The logos include \"Bakery,\" \"PANA,\" \"BANANA,\" and \"PALANGGA,\" each with a unique design and color scheme. The scenes show a person baking cookies, a vibrant orange background with the \"PANA\" logo, and a burning match transitioning to a cheerful children's song. The video also features a logo for \"PALAGUINA\" with a bold design and a lush green background",
+    "summary": "The video features a series of vibrant and playful transitions, showcasing colorful logos, a bakery scene, and a cheerful children's song, all set against a backdrop of lush green backgrounds and vibrant orange and yellow hues. The visuals prominently display the words \"Ponga\", \"BANANA\", and the pineapple, creating a playful and lively atmosphere."
+  }
+}

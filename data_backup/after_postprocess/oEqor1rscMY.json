@@ -1,0 +1,3694 @@
+{
+  "video_id": "oEqor1rscMY",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 170.920756,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 90.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 27.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 7.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 0.0,
+                    "end_time": 4.5,
+                    "children": [],
+                    "caption": "A hand, wearing a black watch, meticulously cuts through a piece of dark meat, the sharp knife slicing through the flesh with a crisp sound, as a man's voice can be heard in the background.",
+                    "postprocess": {
+                      "event_id": 0,
+                      "original_answer": "A hand, wearing a black watch, meticulously cuts through a piece of dark meat, the sharp knife slicing through the flesh with a crisp sound, as a man's voice can be heard in the background.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_0_4.5",
+                        "tags": [
+                          "meat",
+                          "knife",
+                          "cutting",
+                          "sound",
+                          "voice"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {
+                              "wearing": "black watch"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "knife",
+                            "attributes": {
+                              "sharp": "true",
+                              "sound": "crisp"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "dark meat",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_0_4.5",
+                          "name": "Cutting meat",
+                          "time": {
+                            "start": "0",
+                            "end": "4.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "food preparation"
+                          ],
+                          "scene_topic": "A man cuts through a piece of dark meat with a sharp knife, accompanied by a man's voice in the background.",
+                          "summary": "A hand, wearing a black watch, meticulously cuts through a piece of dark meat, the sharp knife slicing through the flesh with a crisp sound, as a man's voice can be heard in the background.",
+                          "implications": "Major food preparation event",
+                          "modalities": {
+                            "visual": "A hand, wearing a black watch, meticulously cuts through a piece of dark meat.",
+                            "audio": "crisp sound; man's voice",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 4.5,
+                    "end_time": 7.5,
+                    "children": [],
+                    "caption": "A hand reaches into the frame, scooping up a piece of food from a plate, as a woman's voice begins to speak, though the source of the voice is not visible.",
+                    "postprocess": {
+                      "event_id": 1,
+                      "original_answer": "A hand reaches into the frame, scooping up a piece of food from a plate, as a woman's voice begins to speak, though the source of the voice is not visible.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_4.5_7.5",
+                        "tags": [
+                          "food",
+                          "hand",
+                          "voice",
+                          "woman"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "food",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "plate",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "actor",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_4.5_7.5",
+                          "name": "woman speaks",
+                          "time": {
+                            "start": "4.5",
+                            "end": "7.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "A woman speaks while eating",
+                          "summary": "A hand reaches into the frame, scooping up a piece of food from a plate, as a woman's voice begins to speak, though the source of the voice is not visible.",
+                          "implications": "Major social interaction event",
+                          "modalities": {
+                            "visual": "A hand reaches into the frame, scooping up a piece of food from a plate, as a woman's voice begins to speak, though the source of the voice is not visible.",
+                            "audio": "woman's voice",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A hand expertly cuts through a piece of dark meat, while a man's voice can be heard in the background. Meanwhile, another hand reaches into the frame and picks up food from a plate, as a woman's voice speaks off-camera.",
+                "summary": "A hand is seen cutting through dark meat with a sharp knife, accompanied by a man's voice in the background, while a hand reaches for food from a plate. A woman's voice is also heard, though her source is not visible."
+              },
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 27.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 7.5,
+                    "end_time": 15.5,
+                    "children": [],
+                    "caption": "A man, wearing a cap and headphones, sits in a dimly lit room, his face illuminated by the soft light as he speaks directly to the camera, explaining the recipe for a dish called \"Chicken and Vegetable Stir Fry.\"",
+                    "postprocess": {
+                      "event_id": 2,
+                      "original_answer": "A man, wearing a cap and headphones, sits in a dimly lit room, his face illuminated by the soft light as he speaks directly to the camera, explaining the recipe for a dish called \"Chicken and Vegetable Stir Fry.\"",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_7.5_15.5",
+                        "tags": [
+                          "cooking",
+                          "recipe",
+                          "stir_fry",
+                          "chicken",
+                          "vegetable"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "wearing_cap": "",
+                              "wearing_headphones": ""
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "room",
+                            "attributes": {
+                              "dimly_lit": "",
+                              "soft_light": ""
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "camera",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "dish",
+                            "attributes": {
+                              "name": "Chicken and Vegetable Stir Fry"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_7.5_15.5",
+                          "name": "Cooking Recipe",
+                          "time": {
+                            "start": "7.5",
+                            "end": "15.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A man explains a recipe for Chicken and Vegetable Stir Fry.",
+                          "summary": "A man, wearing a cap and headphones, sits in a dimly lit room, his face illuminated by the soft light as he speaks directly to the camera, explaining the recipe for a dish called \"Chicken and Vegetable Stir Fry.\"",
+                          "implications": "Major food news event",
+                          "modalities": {
+                            "visual": "A man sits in a dimly lit room, his face illuminated by the soft light as he speaks directly to the camera.",
+                            "audio": "speaks; explaining the recipe for 'Chicken and Vegetable Stir Fry'.",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 15.5,
+                    "end_time": 19.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bowl, scooping up a piece of chicken as a woman's voice, barely audible over the upbeat pop music, asks \"What's that?\"",
+                    "postprocess": {
+                      "event_id": 3,
+                      "original_answer": "A hand reaches into the bowl, scooping up a piece of chicken as a woman's voice, barely audible over the upbeat pop music, asks \"What's that?\"",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_15.5_19.5",
+                        "tags": [
+                          "hand",
+                          "bowl",
+                          "chicken",
+                          "woman",
+                          "voice",
+                          "music"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "chicken",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "actor",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_15.5_19.5",
+                          "name": "woman asks about food",
+                          "time": {
+                            "start": "15.5",
+                            "end": "19.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity",
+                            "food"
+                          ],
+                          "scene_topic": "A woman asks about food while eating",
+                          "summary": "A hand reaches into the bowl, scooping up a piece of chicken as a woman's voice, barely audible over the upbeat pop music, asks \"What's that?\"",
+                          "implications": "Major food, human activity news event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bowl, scooping up a piece of chicken as a woman's voice asks 'What's that?'",
+                            "audio": "woman's voice; upbeat pop music",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 19.5,
+                    "end_time": 23.5,
+                    "children": [],
+                    "caption": "A hand reaches into a glass jar filled with a vibrant green liquid, scooping out a spoonful of the liquid and bringing it to their mouth to take a sip.",
+                    "postprocess": {
+                      "event_id": 4,
+                      "original_answer": "A hand reaches into a glass jar filled with a vibrant green liquid, scooping out a spoonful of the liquid and bringing it to their mouth to take a sip.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_19.5_23.5",
+                        "tags": [
+                          "hand",
+                          "jar",
+                          "liquid",
+                          "scoop",
+                          "sip"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "jar",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "hand",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O002",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_19.5_23.5",
+                          "name": "",
+                          "time": {
+                            "start": "19.5",
+                            "end": "23.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity"
+                          ],
+                          "scene_topic": "A person scoops a spoonful of liquid from a jar and takes a sip.",
+                          "summary": "A hand reaches into a glass jar filled with a vibrant green liquid, scooping out a spoonful of the liquid and bringing it to their mouth to take a sip.",
+                          "implications": "Minor daily activity",
+                          "modalities": {
+                            "visual": "A hand reaches into a glass jar filled with a vibrant green liquid, scooping out a spoonful of the liquid and bringing it to their mouth to take a sip.",
+                            "audio": "",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 23.5,
+                    "end_time": 27.5,
+                    "children": [],
+                    "caption": "A hand reaches into a bowl of vibrant red tomato sauce, scooping out a generous portion as a woman's voice, barely audible over the upbeat pop music, asks \"What's that?\"",
+                    "postprocess": {
+                      "event_id": 5,
+                      "original_answer": "A hand reaches into a bowl of vibrant red tomato sauce, scooping out a generous portion as a woman's voice, barely audible over the upbeat pop music, asks \"What's that?\"",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_23.5_27.5",
+                        "tags": [
+                          "sauce",
+                          "hand",
+                          "woman",
+                          "music",
+                          "pop"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "tomato sauce",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O002",
+                            "role": "actor",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_23.5_27.5",
+                          "name": "woman scoops tomato sauce",
+                          "time": {
+                            "start": "23.5",
+                            "end": "27.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity",
+                            "food"
+                          ],
+                          "scene_topic": "A woman scoops tomato sauce as upbeat pop music plays in the background.",
+                          "summary": "A hand reaches into a bowl of vibrant red tomato sauce, scooping out a generous portion as a woman's voice, barely audible over the upbeat pop music, asks \"What's that?\"",
+                          "implications": "A significant moment in a cooking or food-related scene",
+                          "modalities": {
+                            "visual": "A hand reaches into a bowl of vibrant red tomato sauce, scooping out a generous portion as a woman's voice asks 'What's that?'",
+                            "audio": "woman's voice; upbeat pop music",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A chef prepares a stir-fry dish, explaining the recipe to the camera while cooking, while a voice off-camera asks questions and a hand reaches into various containers to taste and measure ingredients.",
+                "summary": "A person prepares a Chicken and Vegetable Stir Fry in a dimly lit room, occasionally pausing to taste and respond to questions from an off-camera voice. The recipe involves using various ingredients, including chicken, vegetables, and a vibrant green liquid, all mixed together with a generous portion of red tomato sauce."
+              }
+            ],
+            "caption": "A chef prepares a stir-fry dish while explaining the recipe and cooking, while another hand reaches into containers to taste and measure ingredients.",
+            "summary": "A person prepares a Chicken and Vegetable Stir Fry in a dimly lit room, using a sharp knife to cut through dark meat and mixing it with various ingredients, including chicken, vegetables, and red tomato sauce. The recipe is prepared while a man's voice and a woman's voice are heard in the background, occasionally pausing to taste and respond to questions."
+          },
+          {
+            "level": 2,
+            "start_time": 27.5,
+            "end_time": 56.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 27.5,
+                "end_time": 40.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 27.5,
+                    "end_time": 34.5,
+                    "children": [],
+                    "caption": "A hand stirs a pot of vibrant red tomato sauce on the stovetop, the camera zooming in to highlight the ingredients as a woman explains the recipe in a foreign language.",
+                    "postprocess": {
+                      "event_id": 6,
+                      "original_answer": "A hand stirs a pot of vibrant red tomato sauce on the stovetop, the camera zooming in to highlight the ingredients as a woman explains the recipe in a foreign language.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_27.5_34.5",
+                        "tags": [
+                          "cooking",
+                          "recipe",
+                          "tomato_sauce",
+                          "stirring",
+                          "ingredients"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "pot",
+                            "attributes": {
+                              "color": "red",
+                              "contents": "tomato sauce"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "stovetop",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "camera",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "woman",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O004",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_27.5_34.5",
+                          "name": "Cooking tomato sauce",
+                          "time": {
+                            "start": "27.5",
+                            "end": "34.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman stirs a pot of tomato sauce on the stovetop while explaining the recipe in a foreign language.",
+                          "summary": "A hand stirs a pot of vibrant red tomato sauce on the stovetop, the camera zooming in to highlight the ingredients as a woman explains the recipe in a foreign language.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand stirs a pot of vibrant red tomato sauce on the stovetop, the camera zooming in to highlight the ingredients as a woman explains the recipe in a foreign language.",
+                            "audio": "",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 34.5,
+                    "end_time": 38.5,
+                    "children": [],
+                    "caption": "A hand reaches into a bowl of chicken pieces, stirring them with a spoon as a woman explains how to cook the chicken in a pot on the stove.",
+                    "postprocess": {
+                      "event_id": 7,
+                      "original_answer": "A hand reaches into a bowl of chicken pieces, stirring them with a spoon as a woman explains how to cook the chicken in a pot on the stove.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_34.5_38.5",
+                        "tags": [
+                          "cooking",
+                          "chicken",
+                          "stirring",
+                          "pot",
+                          "stove"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "spoon",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "pot",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "stove",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O004",
+                            "role": "cook",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_34.5_38.5",
+                          "name": "Cooking chicken",
+                          "time": {
+                            "start": "34.5",
+                            "end": "38.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman cooks chicken in a pot on the stove.",
+                          "summary": "A hand reaches into a bowl of chicken pieces, stirring them with a spoon as a woman explains how to cook the chicken in a pot on the stove.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into a bowl of chicken pieces, stirring them with a spoon as a woman explains how to cook the chicken in a pot on the stove.",
+                            "audio": "",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 38.5,
+                    "end_time": 40.5,
+                    "children": [],
+                    "caption": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon, the clinking of the spoon against the metal bowl audible as they work.",
+                    "postprocess": {
+                      "event_id": 8,
+                      "original_answer": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon, the clinking of the spoon against the metal bowl audible as they work.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_38.5_40.5",
+                        "tags": [
+                          "cooking",
+                          "chicken",
+                          "seasoning",
+                          "kitchen"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "chicken pieces",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "spoon",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "metal bowl",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_38.5_40.5",
+                          "name": "seasoning chicken",
+                          "time": {
+                            "start": "38.5",
+                            "end": "40.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A person carefully seasons a bowl of chicken pieces with a spoon.",
+                          "summary": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon, the clinking of the spoon against the metal bowl audible as they work.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon.",
+                            "audio": "clinking of the spoon against the metal bowl",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A cook prepares two dishes, a tomato sauce and chicken, by following a recipe and carefully measuring and seasoning the ingredients.",
+                "summary": "A woman prepares a dish, stirring a pot of tomato sauce and cooking chicken in a separate pot, while another person seasons the chicken with a spoon. The camera focuses on the ingredients and cooking process, highlighting the steps involved in preparing the meal."
+              },
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 49.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 40.5,
+                    "end_time": 42.5,
+                    "children": [],
+                    "caption": "A hand reaches into a bowl of golden-brown, crispy chicken pieces, scooping them out as a woman's voice continues to describe the recipe, now focusing on the next step of adding the chicken to the pot.",
+                    "postprocess": {
+                      "event_id": 9,
+                      "original_answer": "A hand reaches into a bowl of golden-brown, crispy chicken pieces, scooping them out as a woman's voice continues to describe the recipe, now focusing on the next step of adding the chicken to the pot.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_40.5_42.5",
+                        "tags": [
+                          "food",
+                          "recipe",
+                          "cooking",
+                          "chicken",
+                          "pot"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "chicken pieces",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "pot",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O002",
+                            "role": "cook",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_40.5_42.5",
+                          "name": "Adding chicken to the pot",
+                          "time": {
+                            "start": "40.5",
+                            "end": "42.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman adds chicken to a pot while describing a recipe.",
+                          "summary": "A hand reaches into a bowl of golden-brown, crispy chicken pieces, scooping them out as a woman's voice continues to describe the recipe, now focusing on the next step of adding the chicken to the pot.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into a bowl of golden-brown, crispy chicken pieces, scooping them out as a woman's voice continues to describe the recipe, now focusing on the next step of adding the chicken to the pot.",
+                            "audio": "woman's voice; chicken pieces; pot",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 42.5,
+                    "end_time": 49.5,
+                    "children": [],
+                    "caption": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon, the clinking of the spoon against the metal bowl audible as they work.",
+                    "postprocess": {
+                      "event_id": 10,
+                      "original_answer": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon, the clinking of the spoon against the metal bowl audible as they work.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_42.5_49.5",
+                        "tags": [
+                          "cooking",
+                          "chicken",
+                          "seasoning",
+                          "kitchen"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "chicken pieces",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "spoon",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "metal bowl",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_42.5_49.5",
+                          "name": "seasoning chicken",
+                          "time": {
+                            "start": "42.5",
+                            "end": "49.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A person carefully seasons a bowl of chicken pieces with a spoon.",
+                          "summary": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon, the clinking of the spoon against the metal bowl audible as they work.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon.",
+                            "audio": "clinking of the spoon against the metal bowl",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person prepares a recipe for crispy chicken by seasoning the chicken pieces and adding them to a pot, following the instructions of a woman's voice.",
+                "summary": "A woman's voice guides the preparation of crispy chicken pieces, instructing the addition of the chicken to a pot. Meanwhile, a person in a white apron and gloves seasons the chicken with a spoon, the clinking of the spoon against the metal bowl audible as they work."
+              },
+              {
+                "level": 3,
+                "start_time": 49.5,
+                "end_time": 56.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 49.5,
+                    "end_time": 54.5,
+                    "children": [],
+                    "caption": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon, the clinking of the spoon against the metal bowl audible as they work.",
+                    "postprocess": {
+                      "event_id": 11,
+                      "original_answer": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon, the clinking of the spoon against the metal bowl audible as they work.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_49.5_54.5",
+                        "tags": [
+                          "cooking",
+                          "chicken",
+                          "seasoning",
+                          "kitchen"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "chicken pieces",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "spoon",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "metal bowl",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_49.5_54.5",
+                          "name": "seasoning chicken",
+                          "time": {
+                            "start": "49.5",
+                            "end": "54.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A person carefully seasons a bowl of chicken pieces with a spoon.",
+                          "summary": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon, the clinking of the spoon against the metal bowl audible as they work.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A person wearing a white apron and gloves carefully seasons a bowl of chicken pieces with a spoon.",
+                            "audio": "clinking of the spoon against the metal bowl",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 54.5,
+                    "end_time": 56.5,
+                    "children": [],
+                    "caption": "A pair of hands, adorned with rings, deftly chop a piece of meat on a wooden cutting board, the rhythmic thudding of the knife echoing in the kitchen as a woman's voice, barely audible over the sound of the chopping, asks \"What's that?\"",
+                    "postprocess": {
+                      "event_id": 12,
+                      "original_answer": "A pair of hands, adorned with rings, deftly chop a piece of meat on a wooden cutting board, the rhythmic thudding of the knife echoing in the kitchen as a woman's voice, barely audible over the sound of the chopping, asks \"What's that?\"",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_54.5_56.5",
+                        "tags": [
+                          "cooking",
+                          "kitchen",
+                          "meat",
+                          "rings",
+                          "wooden_cutting_board"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "pair_of_hands",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "piece_of_meat",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "wooden_cutting_board",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "knife",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_54.5_56.5",
+                          "name": "cooking",
+                          "time": {
+                            "start": "54.5",
+                            "end": "56.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman is cooking meat on a wooden cutting board.",
+                          "summary": "A pair of hands, adorned with rings, deftly chop a piece of meat on a wooden cutting board, the rhythmic thudding of the knife echoing in the kitchen as a woman's voice, barely audible over the sound of the chopping, asks \"What's that?\"",
+                          "implications": "Major food preparation event",
+                          "modalities": {
+                            "visual": "A pair of hands, adorned with rings, deftly chop a piece of meat on a wooden cutting board, the woman's voice asks 'What's that?'",
+                            "audio": "chopping; woman's voice; 'What's that?'",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person seasons a bowl of chicken pieces with a spoon, while a pair of hands, adorned with rings, chop a piece of meat on a wooden cutting board.",
+                "summary": "A person is seasoning chicken pieces in a bowl, the sound of the spoon clinking against the metal audible. Meanwhile, a woman is chopping meat on a wooden cutting board, the rhythmic thudding of the knife filling the kitchen as she asks \"What's that?\""
+              }
+            ],
+            "caption": "A cook prepares two dishes, tomato sauce and chicken, by measuring and seasoning ingredients according to a recipe. Another person prepares crispy chicken by seasoning the chicken pieces and adding them to a pot, following a woman's voice. Finally, a person seasons a bowl of chicken pieces with a spoon while chopping meat on a cutting board.",
+            "summary": "A woman prepares a dish by cooking chicken and tomato sauce, while another person seasons the chicken with a spoon, highlighting the steps involved in preparing the meal. Meanwhile, a person chops meat on a wooden cutting board, and a woman's voice guides the preparation of crispy chicken pieces."
+          },
+          {
+            "level": 2,
+            "start_time": 56.5,
+            "end_time": 90.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 56.5,
+                "end_time": 62.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 56.5,
+                    "end_time": 60.5,
+                    "children": [],
+                    "caption": "A person wearing a white apron and gloves carefully stirs a pot of bubbling, reddish-brown gravy on the stovetop, the clinking of utensils audible in the background.",
+                    "postprocess": {
+                      "event_id": 13,
+                      "original_answer": "A person wearing a white apron and gloves carefully stirs a pot of bubbling, reddish-brown gravy on the stovetop, the clinking of utensils audible in the background.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_56_60",
+                        "tags": [
+                          "cooking",
+                          "kitchen",
+                          "food"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "pot",
+                            "attributes": {
+                              "color": "reddish-brown",
+                              "state": "bubbling"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "stovetop",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "utensils",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_56_60",
+                          "name": "Cooking Gravy",
+                          "time": {
+                            "start": "56.5",
+                            "end": "60.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A person carefully stirs a pot of bubbling gravy on the stovetop.",
+                          "summary": "A person wearing a white apron and gloves carefully stirs a pot of bubbling, reddish-brown gravy on the stovetop, the clinking of utensils audible in the background.",
+                          "implications": "Major food preparation event",
+                          "modalities": {
+                            "visual": "A person wearing a white apron and gloves carefully stirs a pot of bubbling, reddish-brown gravy on the stovetop, the clinking of utensils audible in the background.",
+                            "audio": "clinking of utensils",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 60.5,
+                    "end_time": 62.5,
+                    "children": [],
+                    "caption": "A pair of hands, adorned with rings, deftly chop a piece of meat on a wooden cutting board, the rhythmic thudding of the knife echoing in the kitchen as a woman's voice, barely audible over the sound of the chopping, asks \"What's that?\"",
+                    "postprocess": {
+                      "event_id": 14,
+                      "original_answer": "A pair of hands, adorned with rings, deftly chop a piece of meat on a wooden cutting board, the rhythmic thudding of the knife echoing in the kitchen as a woman's voice, barely audible over the sound of the chopping, asks \"What's that?\"",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_60.5_62.5",
+                        "tags": [
+                          "cooking",
+                          "kitchen",
+                          "meat",
+                          "rings",
+                          "wooden_cutting_board"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "pair_of_hands",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "piece_of_meat",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "wooden_cutting_board",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "knife",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "chopper",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_60.5_62.5",
+                          "name": "chopping_meat",
+                          "time": {
+                            "start": "60.5",
+                            "end": "62.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman chops meat on a wooden cutting board while asking a question.",
+                          "summary": "A pair of hands, adorned with rings, deftly chop a piece of meat on a wooden cutting board, the rhythmic thudding of the knife echoing in the kitchen as a woman's voice, barely audible over the sound of the chopping, asks \"What's that?\"",
+                          "implications": "Major food preparation event",
+                          "modalities": {
+                            "visual": "A pair of hands, adorned with rings, deftly chop a piece of meat on a wooden cutting board, the woman's voice asks 'What's that?'",
+                            "audio": "chopping; woman's voice; 'What's that?'",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "In the kitchen, a person stirs a pot of gravy while another person chops meat, creating a rhythmic soundtrack of clinks and thuds.",
+                "summary": "A person in a kitchen is preparing a meal, stirring a pot of reddish-brown gravy and chopping a piece of meat on a cutting board. Meanwhile, a woman's voice asks \"What's that?\" in the background, barely audible over the sounds of cooking."
+              },
+              {
+                "level": 3,
+                "start_time": 62.5,
+                "end_time": 68.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 62.5,
+                    "end_time": 66.5,
+                    "children": [],
+                    "caption": "A pair of hands, adorned with rings, deftly scoop a vibrant red sauce from a bowl onto a plate, preparing to serve it alongside the golden-brown chicken pieces.",
+                    "postprocess": {
+                      "event_id": 15,
+                      "original_answer": "A pair of hands, adorned with rings, deftly scoop a vibrant red sauce from a bowl onto a plate, preparing to serve it alongside the golden-brown chicken pieces.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_62.5_66.5",
+                        "tags": [
+                          "food",
+                          "cooking",
+                          "sauce",
+                          "chicken",
+                          "service"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hands",
+                            "attributes": {
+                              "adorned_with_rings": "true",
+                              "scoop_sauce": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "plate",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "vibrant_red_sauce",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O005",
+                            "name": "golden_brown_chicken_pieces",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "pair_of_hands",
+                            "ref_object": "O001",
+                            "role": "server",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_62.5_66.5",
+                          "name": "serving_chicken",
+                          "time": {
+                            "start": "62.5",
+                            "end": "66.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004",
+                            "O005"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "food"
+                          ],
+                          "scene_topic": "A pair of hands, adorned with rings, deftly scoop a vibrant red sauce from a bowl onto a plate, preparing to serve it alongside the golden-brown chicken pieces.",
+                          "summary": "A pair of hands, adorned with rings, deftly scoop a vibrant red sauce from a bowl onto a plate, preparing to serve it alongside the golden-brown chicken pieces.",
+                          "implications": "Major food, cooking news event",
+                          "modalities": {
+                            "visual": "A pair of hands, adorned with rings, deftly scoop a vibrant red sauce from a bowl onto a plate, preparing to serve it alongside the golden-brown chicken pieces.",
+                            "audio": "",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 66.5,
+                    "end_time": 68.5,
+                    "children": [],
+                    "caption": "A pair of hands, adorned with rings, meticulously mix a vibrant red sauce in a bowl, the clinking of utensils audible as they stir the ingredients.",
+                    "postprocess": {
+                      "event_id": 16,
+                      "original_answer": "A pair of hands, adorned with rings, meticulously mix a vibrant red sauce in a bowl, the clinking of utensils audible as they stir the ingredients.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_66.5_68.5",
+                        "tags": [
+                          "cooking",
+                          "hands",
+                          "utensils",
+                          "sauce",
+                          "ingredients"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hands",
+                            "attributes": {
+                              "adorned_with_rings": "",
+                              "mixing": ""
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {
+                              "contains_sauce": ""
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "utensils",
+                            "attributes": {
+                              "clinking": ""
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "pair_of_hands",
+                            "ref_object": "O001",
+                            "role": "mixing",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_66.5_68.5",
+                          "name": "mixing_red_sauce",
+                          "time": {
+                            "start": "66.5",
+                            "end": "68.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A pair of hands mix a vibrant red sauce in a bowl.",
+                          "summary": "A pair of hands, adorned with rings, meticulously mix a vibrant red sauce in a bowl, the clinking of utensils audible as they stir the ingredients.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A pair of hands, adorned with rings, meticulously mix a vibrant red sauce in a bowl.",
+                            "audio": "clinking of utensils; stir",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A pair of hands, adorned with rings, expertly prepare and serve a vibrant red sauce to accompany golden-brown chicken pieces.",
+                "summary": "A pair of hands, adorned with rings, prepares a vibrant red sauce to serve alongside golden-brown chicken pieces, carefully scooping the sauce onto a plate. The hands also mix the sauce in a bowl, stirring the ingredients with a clinking of utensils."
+              },
+              {
+                "level": 3,
+                "start_time": 68.5,
+                "end_time": 90.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 68.5,
+                    "end_time": 74.5,
+                    "children": [],
+                    "caption": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice explains the process of making the dumplings.",
+                    "postprocess": {
+                      "event_id": 17,
+                      "original_answer": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice explains the process of making the dumplings.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_68.5_74.5",
+                        "tags": [
+                          "cooking",
+                          "dumplings",
+                          "food",
+                          "kneading",
+                          "pastry"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hands",
+                            "attributes": {
+                              "adorned_with_rings": "",
+                              "kneading_dough": ""
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "dough",
+                            "attributes": {
+                              "reddish_brown": "",
+                              "kneaded": ""
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "countertop",
+                            "attributes": {
+                              "light_colored": ""
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_68.5_74.5",
+                          "name": "making_dumplings",
+                          "time": {
+                            "start": "68.5",
+                            "end": "74.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman explains the process of making dumplings.",
+                          "summary": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice explains the process of making the dumplings.",
+                          "implications": "Major food news event",
+                          "modalities": {
+                            "visual": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice explains the process of making the dumplings.",
+                            "audio": "woman's voice",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 74.5,
+                    "end_time": 77.5,
+                    "children": [],
+                    "caption": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice can be heard in the background, though her words are unclear.",
+                    "postprocess": {
+                      "event_id": 18,
+                      "original_answer": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice can be heard in the background, though her words are unclear.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_74.5_77.5",
+                        "tags": [
+                          "kneading",
+                          "dough",
+                          "countertop",
+                          "hands",
+                          "rings"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "dough",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "countertop",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "hands",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "rings",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O003",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_74.5_77.5",
+                          "name": "",
+                          "time": {
+                            "start": "74.5",
+                            "end": "77.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman's hands knead dough on a countertop.",
+                          "summary": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice can be heard in the background, though her words are unclear.",
+                          "implications": "Major food preparation event",
+                          "modalities": {
+                            "visual": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice can be heard in the background, though her words are unclear.",
+                            "audio": "woman's voice",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 77.5,
+                    "end_time": 81.5,
+                    "children": [],
+                    "caption": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice explains the process of making the dumplings.",
+                    "postprocess": {
+                      "event_id": 19,
+                      "original_answer": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice explains the process of making the dumplings.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_77.5_81.5",
+                        "tags": [
+                          "cooking",
+                          "dumplings",
+                          "food",
+                          "kneading",
+                          "pastry"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hands",
+                            "attributes": {
+                              "adorned_with_rings": "",
+                              "kneading_dough": ""
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "dough",
+                            "attributes": {
+                              "reddish_brown": "",
+                              "kneaded": ""
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "countertop",
+                            "attributes": {
+                              "light_colored": ""
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_77.5_81.5",
+                          "name": "making_dumplings",
+                          "time": {
+                            "start": "77.5",
+                            "end": "81.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman explains the process of making dumplings.",
+                          "summary": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice explains the process of making the dumplings.",
+                          "implications": "Major food news event",
+                          "modalities": {
+                            "visual": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, as a woman's voice explains the process of making the dumplings.",
+                            "audio": "woman's voice",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 81.5,
+                    "end_time": 88.5,
+                    "children": [],
+                    "caption": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, the rhythmic thudding of the dough against the counter creating a soothing soundtrack to the cooking process.",
+                    "postprocess": {
+                      "event_id": 20,
+                      "original_answer": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, the rhythmic thudding of the dough against the counter creating a soothing soundtrack to the cooking process.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_81.5_88.5",
+                        "tags": [
+                          "cooking",
+                          "kneading",
+                          "dough",
+                          "countertop"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hands",
+                            "attributes": {
+                              "adorned_with_rings": "",
+                              "color": "reddish-brown"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "dough",
+                            "attributes": {
+                              "color": "reddish-brown"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "countertop",
+                            "attributes": {
+                              "color": "light-colored"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "pair_of_hands",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_81.5_88.5",
+                          "name": "",
+                          "time": {
+                            "start": "81.5",
+                            "end": "88.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, the rhythmic thudding of the dough against the counter creating a soothing soundtrack to the cooking process.",
+                          "summary": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop, the rhythmic thudding of the dough against the counter creating a soothing soundtrack to the cooking process.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A pair of hands, adorned with rings, meticulously kneads a reddish-brown dough on a light-colored countertop.",
+                            "audio": "thudding; cooking process",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 88.5,
+                    "end_time": 90.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                    "postprocess": {
+                      "event_id": 21,
+                      "original_answer": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_88.5_90.5",
+                        "tags": [
+                          "food",
+                          "recipe",
+                          "typewriter"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "food",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "typewriter",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_88.5_90.5",
+                          "name": "Cooking",
+                          "time": {
+                            "start": "88.5",
+                            "end": "90.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman cooks while typing on a typewriter.",
+                          "summary": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe.",
+                            "audio": "woman's voice; typewriter clatter.",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person makes dumplings by kneading and shaping the dough, as a woman's voice provides instructions and explanations. The hands are adorned with rings, adding a decorative touch to the process. The sound of the dough being kneaded creates a soothing background noise, while the woman's voice is sometimes clear and sometimes drowned out by other sounds.",
+                "summary": "A woman's hands, adorned with rings, knead a reddish-brown dough on a light-colored countertop as she explains the process of making dumplings, the rhythmic thudding of the dough creating a soothing soundtrack. Meanwhile, a typewriter's rhythmic clatter drowns out her words, but the scene still conveys the peaceful atmosphere of cooking."
+              }
+            ],
+            "caption": "In the kitchen, a person stirs a pot of gravy while another person chops meat, creating a rhythmic soundtrack of clinks and thuds. A pair of hands, adorned with rings, expertly prepare and serve a vibrant red sauce to accompany golden-brown chicken pieces. Meanwhile, a person makes dumplings by kneading and shaping the dough, with a woman's voice providing instructions and explanations. The hands are adorned with rings, adding a decorative touch to the process, while the",
+            "summary": "A person is cooking a meal, stirring a pot of gravy and chopping meat, while a woman's voice asks a question in the background. Meanwhile, another woman is preparing a vibrant red sauce and kneading reddish-brown dough to make dumplings, creating a peaceful atmosphere with the rhythmic sounds of cooking."
+          }
+        ],
+        "caption": "In the kitchen, multiple people prepare and cook various dishes, including a stir-fry, tomato sauce, chicken, crispy chicken, and dumplings. The process is accompanied by a rhythmic soundtrack of clinks and thuds, and the hands of the cooks are adorned with rings, adding a decorative touch to the process.",
+        "summary": "A person prepares a Chicken and Vegetable Stir Fry in a dimly lit room, expertly cutting and mixing ingredients while a man and woman's voices provide background commentary. The recipe involves cooking chicken, seasoning with a spoon, and preparing a vibrant red sauce, all set to the soothing sounds of cooking and rhythmic kneading of dough."
+      },
+      {
+        "level": 1,
+        "start_time": 90.5,
+        "end_time": 170.920756,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 90.5,
+            "end_time": 133.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 90.5,
+                "end_time": 94.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 90.5,
+                    "end_time": 92.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                    "postprocess": {
+                      "event_id": 22,
+                      "original_answer": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_90.5_92.5",
+                        "tags": [
+                          "food",
+                          "recipe",
+                          "typewriter"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "food",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "typewriter",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_90.5_92.5",
+                          "name": "Cooking",
+                          "time": {
+                            "start": "90.5",
+                            "end": "92.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman cooks while typing on a typewriter.",
+                          "summary": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe.",
+                            "audio": "woman's voice; typewriter clatter.",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 92.5,
+                    "end_time": 94.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words barely audible over the clinking of silverware.",
+                    "postprocess": {
+                      "event_id": 23,
+                      "original_answer": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words barely audible over the clinking of silverware.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_92.5_94.5",
+                        "tags": [
+                          "food",
+                          "recipe",
+                          "kitchen"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "food",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "silverware",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O002",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_92.5_94.5",
+                          "name": "woman cooking",
+                          "time": {
+                            "start": "92.5",
+                            "end": "94.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman cooks in a kitchen",
+                          "summary": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words barely audible over the clinking of silverware.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe.",
+                            "audio": "woman's voice; clinking of silverware",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person prepares a dish while a voice in the background describes the recipe, but the sound of a typewriter or silverware creates a distraction.",
+                "summary": "A woman's voice describes a recipe while a hand scoops up food from a bowl, the words barely audible over the clinking of silverware. The scene is accompanied by the rhythmic clatter of a typewriter, creating a unique and immersive atmosphere."
+              },
+              {
+                "level": 3,
+                "start_time": 94.5,
+                "end_time": 104.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 94.5,
+                    "end_time": 99.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                    "postprocess": {
+                      "event_id": 24,
+                      "original_answer": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_94.5_99.5",
+                        "tags": [
+                          "food",
+                          "recipe",
+                          "typewriter"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "food",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "typewriter",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_94.5_99.5",
+                          "name": "Cooking",
+                          "time": {
+                            "start": "94.5",
+                            "end": "99.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman cooks while typing on a typewriter.",
+                          "summary": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe.",
+                            "audio": "woman's voice; typewriter clatter.",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 99.5,
+                    "end_time": 102.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bubbling pot of oil, scooping out a piece of food and taking a bite, as a woman's voice can be heard in the background, likely describing the cooking process.",
+                    "postprocess": {
+                      "event_id": 25,
+                      "original_answer": "A hand reaches into the bubbling pot of oil, scooping out a piece of food and taking a bite, as a woman's voice can be heard in the background, likely describing the cooking process.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_99.5_102.5",
+                        "tags": [
+                          "cooking",
+                          "food",
+                          "oil",
+                          "pot",
+                          "woman"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "pot",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "food",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cooking",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_99.5_102.5",
+                          "name": "woman cooking",
+                          "time": {
+                            "start": "99.5",
+                            "end": "102.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman cooks food in a pot.",
+                          "summary": "A hand reaches into the bubbling pot of oil, scooping out a piece of food and taking a bite, as a woman's voice can be heard in the background, likely describing the cooking process.",
+                          "implications": "Major food preparation event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bubbling pot of oil, scooping out a piece of food and taking a bite, as a woman's voice can be heard in the background.",
+                            "audio": "woman's voice; food sounds.",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 102.5,
+                    "end_time": 104.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                    "postprocess": {
+                      "event_id": 26,
+                      "original_answer": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_102.5_104.5",
+                        "tags": [
+                          "food",
+                          "recipe",
+                          "typewriter"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "food",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "typewriter",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_102.5_104.5",
+                          "name": "Cooking",
+                          "time": {
+                            "start": "102.5",
+                            "end": "104.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman cooks while typing on a typewriter.",
+                          "summary": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe.",
+                            "audio": "woman's voice; typewriter clatter.",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person cooks or prepares food while a voice in the background describes the recipe or cooking process, with the sound of a typewriter providing a rhythmic background noise that drowns out the voice.",
+                "summary": "A woman is cooking and describing a recipe while a typewriter clatters in the background, with hands scooping up food from a bowl and pot of oil. The sounds of cooking and typing create a rhythmic background noise as the woman continues to narrate the recipe."
+              },
+              {
+                "level": 3,
+                "start_time": 104.5,
+                "end_time": 115.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 104.5,
+                    "end_time": 106.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words barely audible over the clinking of silverware.",
+                    "postprocess": {
+                      "event_id": 27,
+                      "original_answer": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words barely audible over the clinking of silverware.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_104.5_106.5",
+                        "tags": [
+                          "food",
+                          "recipe",
+                          "kitchen"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "food",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "silverware",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_104.5_106.5",
+                          "name": "Cooking",
+                          "time": {
+                            "start": "104.5",
+                            "end": "106.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman cooks in a kitchen",
+                          "summary": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words barely audible over the clinking of silverware.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe.",
+                            "audio": "woman's voice; clinking of silverware",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 106.5,
+                    "end_time": 115.5,
+                    "children": [],
+                    "caption": "A pair of hands, adorned with rings, meticulously chop fresh herbs on a wooden cutting board, the rhythmic sound of the knife cutting through the greenery filling the air as a woman's voice, speaking in a foreign language, can be heard in the background.",
+                    "postprocess": {
+                      "event_id": 28,
+                      "original_answer": "A pair of hands, adorned with rings, meticulously chop fresh herbs on a wooden cutting board, the rhythmic sound of the knife cutting through the greenery filling the air as a woman's voice, speaking in a foreign language, can be heard in the background.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_106.5_115.5",
+                        "tags": [
+                          "cooking",
+                          "herbs",
+                          "kitchen",
+                          "sound",
+                          "background_voice"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hands",
+                            "attributes": {
+                              "adorned_with_rings": "",
+                              "holding_knife": "",
+                              "holding_herbs": ""
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "knife",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "cutting_board",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "herbs",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "performer",
+                            "entity": "woman"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_106.5_115.5",
+                          "name": "",
+                          "time": {
+                            "start": "106.5",
+                            "end": "115.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman is chopping fresh herbs in a kitchen.",
+                          "summary": "A pair of hands, adorned with rings, meticulously chop fresh herbs on a wooden cutting board, the rhythmic sound of the knife cutting through the greenery filling the air as a woman's voice, speaking in a foreign language, can be heard in the background.",
+                          "implications": "Minor cooking event",
+                          "modalities": {
+                            "visual": "A pair of hands, adorned with rings, meticulously chop fresh herbs on a wooden cutting board.",
+                            "audio": "Knife cutting; woman's voice speaking in a foreign language.",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A cook prepares a dish while a woman's voice provides instructions and a foreign language can be heard in the background. Another pair of hands chops fresh herbs on a cutting board with meticulous care.",
+                "summary": "A woman is cooking, her voice barely audible over the sounds of clinking silverware and chopping fresh herbs on a wooden cutting board. In the background, another woman's voice can be heard speaking in a foreign language."
+              },
+              {
+                "level": 3,
+                "start_time": 115.5,
+                "end_time": 120.5,
+                "children": [],
+                "caption": "A pair of hands, adorned with rings, meticulously chop fresh green herbs on a wooden cutting board, the rhythmic sound of the knife cutting through the leaves filling the air.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "A pair of hands, adorned with rings, meticulously chop fresh green herbs on a wooden cutting board, the rhythmic sound of the knife cutting through the leaves filling the air.",
+                  "result": {
+                    "video_id": "oEqor1rscMY",
+                    "event_id": "E_oEqor1rscMY_115.5_120.5",
+                    "tags": [
+                      "cooking",
+                      "herbs",
+                      "kitchen",
+                      "food",
+                      "prep"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "pair of hands",
+                        "attributes": {
+                          "adorned_with_rings": "",
+                          "holding_knife": "",
+                          "holding_green_herbs": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "knife",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "wooden cutting board",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "fresh green herbs",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "hands",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oEqor1rscMY_115.5_120.5",
+                      "name": "Chopping fresh green herbs",
+                      "time": {
+                        "start": "115.5",
+                        "end": "120.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cooking"
+                      ],
+                      "scene_topic": "A pair of hands meticulously chop fresh green herbs on a wooden cutting board.",
+                      "summary": "A pair of hands, adorned with rings, meticulously chop fresh green herbs on a wooden cutting board, the rhythmic sound of the knife cutting through the leaves filling the air.",
+                      "implications": "Major food preparation event",
+                      "modalities": {
+                        "visual": "A pair of hands, adorned with rings, meticulously chop fresh green herbs on a wooden cutting board.",
+                        "audio": "rhythmic sound of the knife cutting through the leaves",
+                        "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 120.5,
+                "end_time": 126.5,
+                "children": [],
+                "caption": "A pair of hands, adorned with rings, meticulously chop fresh herbs on a green cutting board, the rhythmic sound of the knife cutting through the leaves filling the air.",
+                "postprocess": {
+                  "event_id": 30,
+                  "original_answer": "A pair of hands, adorned with rings, meticulously chop fresh herbs on a green cutting board, the rhythmic sound of the knife cutting through the leaves filling the air.",
+                  "result": {
+                    "video_id": "oEqor1rscMY",
+                    "event_id": "E_oEqor1rscMY_120_126",
+                    "tags": [
+                      "cooking",
+                      "herbs",
+                      "kitchen",
+                      "food",
+                      "prep"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "hands",
+                        "attributes": {
+                          "adorned_with_rings": "",
+                          "holding_knife": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "rings",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "knife",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "herbs",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "cutting_board",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "hands",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oEqor1rscMY_120_126",
+                      "name": "Chopping fresh herbs",
+                      "time": {
+                        "start": "120.5",
+                        "end": "126.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cooking"
+                      ],
+                      "scene_topic": "A pair of hands, adorned with rings, meticulously chop fresh herbs on a green cutting board, the rhythmic sound of the knife cutting through the leaves filling the air.",
+                      "summary": "A pair of hands, adorned with rings, meticulously chop fresh herbs on a green cutting board, the rhythmic sound of the knife cutting through the leaves filling the air.",
+                      "implications": "Major food preparation event",
+                      "modalities": {
+                        "visual": "A pair of hands, adorned with rings, meticulously chop fresh herbs on a green cutting board.",
+                        "audio": "knife cutting; sound of knife cutting through leaves.",
+                        "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 126.5,
+                "end_time": 133.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 126.5,
+                    "end_time": 130.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bowl, carefully selecting a piece of food from the vibrant green herbs and vegetables, as a woman's voice continues to describe the dish.",
+                    "postprocess": {
+                      "event_id": 31,
+                      "original_answer": "A hand reaches into the bowl, carefully selecting a piece of food from the vibrant green herbs and vegetables, as a woman's voice continues to describe the dish.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_126.5_130.5",
+                        "tags": [
+                          "food",
+                          "cooking",
+                          "kitchen",
+                          "herbs",
+                          "vegetables"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "food",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "herbs",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O005",
+                            "name": "vegetables",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_126.5_130.5",
+                          "name": "Selecting food from bowl",
+                          "time": {
+                            "start": "126.5",
+                            "end": "130.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004",
+                            "O005"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman selects food from a bowl while cooking",
+                          "summary": "A hand reaches into the bowl, carefully selecting a piece of food from the vibrant green herbs and vegetables, as a woman's voice continues to describe the dish.",
+                          "implications": "Major food, cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bowl, carefully selecting a piece of food from the vibrant green herbs and vegetables, as a woman's voice continues to describe the dish.",
+                            "audio": "",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 130.5,
+                    "end_time": 133.5,
+                    "children": [],
+                    "caption": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                    "postprocess": {
+                      "event_id": 32,
+                      "original_answer": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_130.5_133.5",
+                        "tags": [
+                          "food",
+                          "recipe",
+                          "typewriter"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "food",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "typewriter",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_130.5_133.5",
+                          "name": "Cooking",
+                          "time": {
+                            "start": "130.5",
+                            "end": "133.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A woman cooks while typing on a typewriter.",
+                          "summary": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe, her words drowned out by the rhythmic clatter of a typewriter.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A hand reaches into the bowl, scooping up a piece of food, as a woman's voice continues to describe the recipe.",
+                            "audio": "woman's voice; typewriter clatter.",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person selects a piece of food from a colorful bowl of herbs and vegetables while a woman's voice describes the dish, or a person scoops up a piece of food from the same bowl while a typewriter clacks away, drowning out the woman's voice.",
+                "summary": "A woman's voice describes a dish as a hand selects a piece of food from a bowl of vibrant green herbs and vegetables, while the sound of a typewriter provides a rhythmic background. The voice continues to narrate the recipe, its words momentarily drowned out by the clatter of the typewriter."
+              }
+            ],
+            "caption": "In these captions, a person is preparing food while someone in the background provides instructions or a voiceover, but there are various distractions that interfere with the audio. The distractions include the sound of a typewriter, silverware clattering, and a foreign language being spoken. Despite these distractions, the person continues to prepare the food with focus and attention to detail.",
+            "summary": "A woman cooks and narrates a recipe while a typewriter clatters in the background, creating a unique atmosphere with the sounds of clinking silverware, chopping herbs, and typing. The voice is barely audible at times, but continues to describe the dish as hands select ingredients from a bowl and pot of oil."
+          },
+          {
+            "level": 2,
+            "start_time": 133.5,
+            "end_time": 170.920756,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 133.5,
+                "end_time": 147.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 133.5,
+                    "end_time": 137.5,
+                    "children": [],
+                    "caption": "A hand reaches into a bowl of fried chicken, pulling out a piece as a woman's voice continues to describe the recipe, her words occasionally drowned out by the clatter of dishes.",
+                    "postprocess": {
+                      "event_id": 33,
+                      "original_answer": "A hand reaches into a bowl of fried chicken, pulling out a piece as a woman's voice continues to describe the recipe, her words occasionally drowned out by the clatter of dishes.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_133.5_137.5",
+                        "tags": [
+                          "food",
+                          "recipe",
+                          "kitchen"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "bowl of fried chicken",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "piece of fried chicken",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "dishes",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O002",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_133.5_137.5",
+                          "name": "woman cooking fried chicken",
+                          "time": {
+                            "start": "133.5",
+                            "end": "137.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "food news"
+                          ],
+                          "scene_topic": "A woman cooks fried chicken while describing a recipe.",
+                          "summary": "A hand reaches into a bowl of fried chicken, pulling out a piece as a woman's voice continues to describe the recipe, her words occasionally drowned out by the clatter of dishes.",
+                          "implications": "Major food news event",
+                          "modalities": {
+                            "visual": "A hand reaches into a bowl of fried chicken, pulling out a piece as a woman's voice continues to describe the recipe.",
+                            "audio": "woman's voice; clatter of dishes",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 137.5,
+                    "end_time": 139.5,
+                    "children": [],
+                    "caption": "A hand reaches for a plate of crispy, golden-brown fried chicken, the camera focusing on the delicious-looking food as a woman's voice encourages viewers to subscribe to the channel.",
+                    "postprocess": {
+                      "event_id": 34,
+                      "original_answer": "A hand reaches for a plate of crispy, golden-brown fried chicken, the camera focusing on the delicious-looking food as a woman's voice encourages viewers to subscribe to the channel.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_137.5_139.5",
+                        "tags": [
+                          "food",
+                          "chicken",
+                          "recipe",
+                          "cooking",
+                          "subscription"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "plate of crispy, golden-brown fried chicken",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "voiceover",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_137.5_139.5",
+                          "name": "Food promotion",
+                          "time": {
+                            "start": "137.5",
+                            "end": "139.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "food news"
+                          ],
+                          "scene_topic": "A woman promotes a food recipe on a video channel.",
+                          "summary": "A hand reaches for a plate of crispy, golden-brown fried chicken, the camera focusing on the delicious-looking food as a woman's voice encourages viewers to subscribe to the channel.",
+                          "implications": "Major food, recipe news event",
+                          "modalities": {
+                            "visual": "A hand reaches for a plate of crispy, golden-brown fried chicken, the camera focusing on the delicious-looking food as a woman's voice encourages viewers to subscribe to the channel.",
+                            "audio": "woman's voice",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 139.5,
+                    "end_time": 141.5,
+                    "children": [],
+                    "caption": "A person wearing a black shirt and a white apron carefully pours a creamy white sauce from a small white bowl into a larger bowl, the clinking of silverware audible in the background.",
+                    "postprocess": {
+                      "event_id": 35,
+                      "original_answer": "A person wearing a black shirt and a white apron carefully pours a creamy white sauce from a small white bowl into a larger bowl, the clinking of silverware audible in the background.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_139.5_141.5",
+                        "tags": [
+                          "cooking",
+                          "sauce",
+                          "kitchen",
+                          "food",
+                          "recipe"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "small white bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "larger bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "silverware",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_139.5_141.5",
+                          "name": "pouring sauce",
+                          "time": {
+                            "start": "139.5",
+                            "end": "141.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking"
+                          ],
+                          "scene_topic": "A person wearing a black shirt and a white apron carefully pours a creamy white sauce from a small white bowl into a larger bowl, the clinking of silverware audible in the background.",
+                          "summary": "A person wearing a black shirt and a white apron carefully pours a creamy white sauce from a small white bowl into a larger bowl, the clinking of silverware audible in the background.",
+                          "implications": "Major cooking event",
+                          "modalities": {
+                            "visual": "A person wearing a black shirt and a white apron carefully pours a creamy white sauce from a small white bowl into a larger bowl, the clinking of silverware audible in the background.",
+                            "audio": "clinking of silverware",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 141.5,
+                    "end_time": 144.5,
+                    "children": [],
+                    "caption": "A person wearing a black shirt and a white apron carefully pours a creamy white sauce from a small white bowl onto a plate of crispy, golden-brown fried chicken, as a woman's voice can be heard in the background.",
+                    "postprocess": {
+                      "event_id": 36,
+                      "original_answer": "A person wearing a black shirt and a white apron carefully pours a creamy white sauce from a small white bowl onto a plate of crispy, golden-brown fried chicken, as a woman's voice can be heard in the background.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_141.5_144.5",
+                        "tags": [
+                          "food",
+                          "cooking",
+                          "recipe"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "plate",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "fried chicken",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "small white bowl",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "white apron",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O005",
+                            "name": "black shirt",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O004",
+                            "role": "cook",
+                            "entity": "human"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "woman",
+                            "ref_object": "",
+                            "role": "voice",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_141.5_144.5",
+                          "name": "Cooking Fried Chicken",
+                          "time": {
+                            "start": "141.5",
+                            "end": "144.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004",
+                            "O005"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "food preparation"
+                          ],
+                          "scene_topic": "A person cooks fried chicken",
+                          "summary": "A person wearing a black shirt and a white apron carefully pours a creamy white sauce from a small white bowl onto a plate of crispy, golden-brown fried chicken, as a woman's voice can be heard in the background.",
+                          "implications": "Major food news event",
+                          "modalities": {
+                            "visual": "A person wearing a black shirt and a white apron carefully pours a creamy white sauce from a small white bowl onto a plate of crispy, golden-brown fried chicken, as a woman's voice can be heard in the background.",
+                            "audio": "woman's voice",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 144.5,
+                    "end_time": 147.5,
+                    "children": [],
+                    "caption": "A woman, wearing a black jacket and a pink scarf, smiles at the camera as she washes her hands in a brightly lit kitchen, the sound of running water audible.",
+                    "postprocess": {
+                      "event_id": 37,
+                      "original_answer": "A woman, wearing a black jacket and a pink scarf, smiles at the camera as she washes her hands in a brightly lit kitchen, the sound of running water audible.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_144.5_147.5",
+                        "tags": [
+                          "kitchen",
+                          "woman",
+                          "hand_washing",
+                          "smiling",
+                          "camera"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "clothing": "black_jacket",
+                              "accessory": "pink_scarf"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "kitchen",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "camera",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "main",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_144.5_147.5",
+                          "name": "woman washing hands",
+                          "time": {
+                            "start": "144.5",
+                            "end": "147.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person",
+                            "kitchen"
+                          ],
+                          "scene_topic": "A woman washes her hands in a brightly lit kitchen.",
+                          "summary": "A woman, wearing a black jacket and a pink scarf, smiles at the camera as she washes her hands in a brightly lit kitchen, the sound of running water audible.",
+                          "implications": "Major daily life event",
+                          "modalities": {
+                            "visual": "A woman, wearing a black jacket and a pink scarf, smiles at the camera as she washes her hands in a brightly lit kitchen.",
+                            "audio": "running water",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A person prepares a delicious-looking plate of fried chicken, while a woman's voice provides instructions and encourages viewers to subscribe to the channel. The camera shows close-up shots of the food and the person preparing it, with background sounds of clattering dishes and running water.",
+                "summary": "A woman prepares crispy fried chicken and a creamy white sauce in a kitchen, occasionally interrupted by the sounds of clattering dishes and running water. She encourages viewers to subscribe to the channel as she carefully assembles the dish and presents it to the camera."
+              },
+              {
+                "level": 3,
+                "start_time": 147.5,
+                "end_time": 159.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 147.5,
+                    "end_time": 151.5,
+                    "children": [],
+                    "caption": "A woman, wearing a black jacket and a pink scarf, smiles at the camera as she holds up a plate of fried chicken, explaining that she's going to show how to make a \"sweet and sour\" sauce.",
+                    "postprocess": {
+                      "event_id": 38,
+                      "original_answer": "A woman, wearing a black jacket and a pink scarf, smiles at the camera as she holds up a plate of fried chicken, explaining that she's going to show how to make a \"sweet and sour\" sauce.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_147.5_151.5",
+                        "tags": [
+                          "cooking",
+                          "recipe",
+                          "food"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "plate of fried chicken",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "pink scarf",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "black jacket",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_147.5_151.5",
+                          "name": "Cooking demonstration",
+                          "time": {
+                            "start": "147.5",
+                            "end": "151.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "cooking demonstration"
+                          ],
+                          "scene_topic": "A woman shows how to make a sweet and sour sauce",
+                          "summary": "A woman, wearing a black jacket and a pink scarf, smiles at the camera as she holds up a plate of fried chicken, explaining that she's going to show how to make a \"sweet and sour\" sauce.",
+                          "implications": "Major food, cooking news event",
+                          "modalities": {
+                            "visual": "A woman, wearing a black jacket and a pink scarf, smiles at the camera as she holds up a plate of fried chicken, explaining that she's going to show how to make a'sweet and sour' sauce.",
+                            "audio": "",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 151.5,
+                    "end_time": 159.5,
+                    "children": [],
+                    "caption": "A woman, wearing a black jacket and a blue headband, smiles at the camera as she washes her hands in a brightly lit kitchen, the sound of running water audible.",
+                    "postprocess": {
+                      "event_id": 39,
+                      "original_answer": "A woman, wearing a black jacket and a blue headband, smiles at the camera as she washes her hands in a brightly lit kitchen, the sound of running water audible.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_151.5_159.5",
+                        "tags": [
+                          "kitchen",
+                          "handwashing",
+                          "woman",
+                          "smile",
+                          "camera"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "wearing": "blue headband"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "kitchen",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "camera",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "main",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_151.5_159.5",
+                          "name": "woman washes hands",
+                          "time": {
+                            "start": "151.5",
+                            "end": "159.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person",
+                            "daily life"
+                          ],
+                          "scene_topic": "A woman washes her hands in a kitchen.",
+                          "summary": "A woman, wearing a black jacket and a blue headband, smiles at the camera as she washes her hands in a brightly lit kitchen, the sound of running water audible.",
+                          "implications": "Minor daily life event",
+                          "modalities": {
+                            "visual": "A woman, wearing a black jacket and a blue headband, smiles at the camera as she washes her hands in a brightly lit kitchen.",
+                            "audio": "running water",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A woman prepares to demonstrate how to make a \"sweet and sour\" sauce, while another woman washes her hands in a brightly lit kitchen.",
+                "summary": "A woman is preparing to demonstrate how to make a sweet and sour sauce, holding up a plate of fried chicken as she begins. She is joined by another woman, who washes her hands in a brightly lit kitchen before the cooking process begins."
+              },
+              {
+                "level": 3,
+                "start_time": 159.5,
+                "end_time": 170.920756,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 159.5,
+                    "end_time": 163.5,
+                    "children": [],
+                    "caption": "A woman, wearing a black jacket and a pink scarf, stands in a well-lit kitchen, smiling at the camera as she explains how to make a delicious chicken dish, her voice clear and audible over the upbeat pop music playing in the background.",
+                    "postprocess": {
+                      "event_id": 40,
+                      "original_answer": "A woman, wearing a black jacket and a pink scarf, stands in a well-lit kitchen, smiling at the camera as she explains how to make a delicious chicken dish, her voice clear and audible over the upbeat pop music playing in the background.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_159.5_163.5",
+                        "tags": [
+                          "cooking",
+                          "recipe",
+                          "kitchen",
+                          "food",
+                          "woman"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {
+                              "wearing": "pink scarf"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "kitchen",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "cook",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_159.5_163.5",
+                          "name": "Cooking a delicious chicken dish",
+                          "time": {
+                            "start": "159.5",
+                            "end": "163.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "food news"
+                          ],
+                          "scene_topic": "A woman explains a cooking recipe in a kitchen.",
+                          "summary": "A woman, wearing a black jacket and a pink scarf, stands in a well-lit kitchen, smiling at the camera as she explains how to make a delicious chicken dish, her voice clear and audible over the upbeat pop music playing in the background.",
+                          "implications": "Major food news event",
+                          "modalities": {
+                            "visual": "A woman stands in a well-lit kitchen, smiling at the camera.",
+                            "audio": "voice; upbeat pop music",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 163.5,
+                    "end_time": 167.5,
+                    "children": [],
+                    "caption": "The video transitions from a close-up of a woman's hand washing dishes in a brightly lit kitchen to a wider shot of her standing in the kitchen, now wearing a black jacket and a pink headband, as she continues to speak to the camera.",
+                    "postprocess": {
+                      "event_id": 41,
+                      "original_answer": "The video transitions from a close-up of a woman's hand washing dishes in a brightly lit kitchen to a wider shot of her standing in the kitchen, now wearing a black jacket and a pink headband, as she continues to speak to the camera.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_163.5_167.5",
+                        "tags": [
+                          "kitchen",
+                          "woman",
+                          "hand",
+                          "washing",
+                          "dishes",
+                          "camera"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "woman",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "hand",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "kitchen",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "camera",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_163.5_167.5",
+                          "name": "woman speaking in kitchen",
+                          "time": {
+                            "start": "163.5",
+                            "end": "167.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person speaking"
+                          ],
+                          "scene_topic": "The woman continues speaking to the camera in the kitchen.",
+                          "summary": "The video transitions from a close-up of a woman's hand washing dishes in a brightly lit kitchen to a wider shot of her standing in the kitchen, now wearing a black jacket and a pink headband, as she continues to speak to the camera.",
+                          "implications": "Major communication event",
+                          "modalities": {
+                            "visual": "The video transitions from a close-up of a woman's hand washing dishes in a brightly lit kitchen to a wider shot of her standing in the kitchen, now wearing a black jacket and a pink headband, as she continues to speak to the camera.",
+                            "audio": "",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 167.5,
+                    "end_time": 170.920756,
+                    "children": [],
+                    "caption": "The video transitions from the cooking scene to a black screen with the \"The Elite\" logo, a stylized \"E\" in white, as a woman begins to speak.",
+                    "postprocess": {
+                      "event_id": 42,
+                      "original_answer": "The video transitions from the cooking scene to a black screen with the \"The Elite\" logo, a stylized \"E\" in white, as a woman begins to speak.",
+                      "result": {
+                        "video_id": "oEqor1rscMY",
+                        "event_id": "E_oEqor1rscMY_167.5_170.92",
+                        "tags": [
+                          "video_transition",
+                          "logo_appearance",
+                          "female_speaker"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "black_screen",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "The_Elite_logo",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "female_speaker",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_oEqor1rscMY_167.5_170.92",
+                          "name": "video_transition",
+                          "time": {
+                            "start": "167.5",
+                            "end": "170.92"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "video_transition"
+                          ],
+                          "scene_topic": "The video transitions from the cooking scene to a black screen with the 'The Elite' logo, a stylized 'E' in white, as a woman begins to speak.",
+                          "summary": "The video transitions from the cooking scene to a black screen with the \"The Elite\" logo, a stylized \"E\" in white, as a woman begins to speak.",
+                          "implications": "Major video event",
+                          "modalities": {
+                            "visual": "The video transitions from the cooking scene to a black screen with the 'The Elite' logo, a stylized 'E' in white, as a woman begins to speak.",
+                            "audio": "",
+                            "speech": "Chef Mia shares her recipe for Spanish Fried Chicken, emphasizing the importance of using a special flour blend with garlic, onion, and paprika to achieve a crunchy exterior without excess flour."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A woman demonstrates how to make a delicious chicken dish in a well-lit kitchen, while a pop music plays in the background. The video cuts between close-up shots of her hands washing dishes and wider shots of her standing in the kitchen, speaking to the camera. The video then transitions to a black screen with the logo of \"The Elite\".",
+                "summary": "A woman in a black jacket and pink scarf demonstrates how to make a delicious chicken dish in a well-lit kitchen, speaking clearly over upbeat pop music. The video transitions to a black screen with the \"The Elite\" logo, featuring a stylized \"E\" in white, as a woman begins to speak."
+              }
+            ],
+            "caption": "A person prepares fried chicken and encourages viewers to subscribe to their channel, while another person prepares a \"sweet and sour\" sauce in a brightly lit kitchen. A third person demonstrates how to make a delicious chicken dish in a well-lit kitchen, with a pop music playing in the background, and the video ends with a black screen featuring the logo of \"The Elite\".",
+            "summary": "A woman prepares crispy fried chicken and a creamy white sauce in a kitchen, occasionally interrupted by kitchen sounds, while encouraging viewers to subscribe to the channel. She is joined by another woman to demonstrate how to make a sweet and sour sauce, all set to upbeat pop music in a well-lit kitchen."
+          }
+        ],
+        "caption": "In the first set of captions, a person is preparing food despite distractions such as typing, clattering silverware, and a foreign language being spoken. Despite these interruptions, the person remains focused and attentive to their task. In the second set of captions, a person prepares fried chicken and encourages viewers to subscribe to their channel, while another person prepares a \"sweet and sour\" sauce in a brightly lit kitchen. A third person demonstrates how to make a delicious chicken dish in a",
+        "summary": "A woman cooks crispy fried chicken and creamy white sauce in a kitchen, narrating the recipe while a typewriter clatters in the background, occasionally interrupted by kitchen sounds. She is joined by another woman to demonstrate a sweet and sour sauce, all set to upbeat pop music."
+      }
+    ],
+    "caption": "In the first set of captions, a person is shown preparing food in a kitchen with multiple distractions, yet they remain focused and attentive to their task. In the second set of captions, two people are shown preparing food in a brightly lit kitchen, with one person encouraging viewers to subscribe to their channel. A third person demonstrates how to make a delicious chicken dish in a separate kitchen.",
+    "summary": "A person prepares a Chicken and Vegetable Stir Fry in a dimly lit room, expertly cutting and mixing ingredients while a man and woman's voices provide background commentary. The recipe involves cooking chicken, seasoning with a spoon, and preparing a vibrant red sauce, all set to the soothing sounds of cooking and rhythmic kneading of dough."
+  }
+}

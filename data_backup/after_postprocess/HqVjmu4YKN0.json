@@ -1,0 +1,2148 @@
+{
+  "video_id": "HqVjmu4YKN0",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 118.398544,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 48.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 10.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "A young child, wearing a blue shirt, sits on a bed, their eyes wide with surprise as they watch a woman in a blue shirt and pink pants playfully interact with a man in a blue shirt.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A young child, wearing a blue shirt, sits on a bed, their eyes wide with surprise as they watch a woman in a blue shirt and pink pants playfully interact with a man in a blue shirt.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_0_3.5",
+                    "tags": [
+                      "child",
+                      "bed",
+                      "surprise",
+                      "woman",
+                      "man",
+                      "playful"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bed",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "child",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "child",
+                        "ref_object": "O004",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_0_3.5",
+                      "name": "playful interaction",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "family life"
+                      ],
+                      "scene_topic": "A woman and a man playfully interact with a child on a bed.",
+                      "summary": "A young child, wearing a blue shirt, sits on a bed, their eyes wide with surprise as they watch a woman in a blue shirt and pink pants playfully interact with a man in a blue shirt.",
+                      "implications": "Major family life event",
+                      "modalities": {
+                        "visual": "A young child sits on a bed, wearing a blue shirt, with eyes wide with surprise, watching a woman in a blue shirt and pink pants playfully interact with a man in a blue shirt.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 5.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_3.5_5.5",
+                    "tags": [
+                      "girl",
+                      "bed",
+                      "smile",
+                      "camera",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "bed",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_3.5_5.5",
+                      "name": "girl smiling on bed",
+                      "time": {
+                        "start": "3.5",
+                        "end": "5.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "home"
+                      ],
+                      "scene_topic": "A young girl sits on a bed and smiles at the camera.",
+                      "summary": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 5.5,
+                "end_time": 7.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on the floor and smiles at the camera as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on the floor and smiles at the camera as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_5.5_7.5",
+                    "tags": [
+                      "girl",
+                      "pink_shirt",
+                      "smiling",
+                      "camera",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink_shirt"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_5.5_7.5",
+                      "name": "girl smiling at camera",
+                      "time": {
+                        "start": "5.5",
+                        "end": "7.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person"
+                      ],
+                      "scene_topic": "A young girl smiles at the camera as a woman's voice is heard in the background.",
+                      "summary": "A young girl, wearing a pink shirt, sits on the floor and smiles at the camera as a woman's voice can be heard in the background.",
+                      "implications": "Minor social interaction event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on the floor and smiles at the camera as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 10.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_7.5_10.5",
+                    "tags": [
+                      "girl",
+                      "bed",
+                      "smile",
+                      "camera",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "bed",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_7.5_10.5",
+                      "name": "girl smiling on bed",
+                      "time": {
+                        "start": "7.5",
+                        "end": "10.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "home"
+                      ],
+                      "scene_topic": "A young girl sits on a bed and smiles at the camera.",
+                      "summary": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl is shown smiling and interacting with two adults, a man and a woman, both wearing blue shirts, in different settings.",
+            "summary": "A young child and multiple young girls, all wearing pink shirts, sit on beds or the floor, smiling at the camera as a woman's voice is heard in the background. The scene appears to be a playful and joyful atmosphere, with the woman possibly interacting with the children or others off-camera."
+          },
+          {
+            "level": 2,
+            "start_time": 10.5,
+            "end_time": 24.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 10.5,
+                "end_time": 16.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_10.5_16.5",
+                    "tags": [
+                      "girl",
+                      "bed",
+                      "smile",
+                      "camera",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "bed",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_10.5_16.5",
+                      "name": "girl smiling on bed",
+                      "time": {
+                        "start": "10.5",
+                        "end": "16.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "scene"
+                      ],
+                      "scene_topic": "A young girl sits on a bed and smiles at the camera.",
+                      "summary": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                      "implications": "Minor entertainment news event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 16.5,
+                "end_time": 18.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens intently to a woman's voice, her expression softening as she smiles.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens intently to a woman's voice, her expression softening as she smiles.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_16.5_18.5",
+                    "tags": [
+                      "child",
+                      "woman",
+                      "cozy",
+                      "listening",
+                      "smiling"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt",
+                          "location": "floor",
+                          "room": "cozy"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "speaker",
+                          "voice": "soft"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "child"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "adult"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_16.5_18.5",
+                      "name": "girl listening to woman",
+                      "time": {
+                        "start": "16.5",
+                        "end": "18.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "child development",
+                        "parenting"
+                      ],
+                      "scene_topic": "A young girl listens intently to a woman's voice",
+                      "summary": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens intently to a woman's voice, her expression softening as she smiles.",
+                      "implications": "Major child development news event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens intently to a woman's voice, her expression softening as she smiles.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 18.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_18.5_21.5",
+                    "tags": [
+                      "girl",
+                      "bed",
+                      "smile",
+                      "camera",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "bed",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_18.5_21.5",
+                      "name": "girl smiling on bed",
+                      "time": {
+                        "start": "18.5",
+                        "end": "21.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "scene"
+                      ],
+                      "scene_topic": "A young girl sits on a bed and smiles at the camera.",
+                      "summary": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on a bed and smiles at the camera as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_21.5_24.5",
+                    "tags": [
+                      "child",
+                      "cozy",
+                      "listening",
+                      "relaxation",
+                      "softening"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt",
+                          "location": "floor",
+                          "room": "cozy"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "speaker",
+                          "voice": "soft"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_21.5_24.5",
+                      "name": "girl listening to woman's voice",
+                      "time": {
+                        "start": "21.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "relaxation"
+                      ],
+                      "scene_topic": "A young girl listens to a woman's voice, her expression softening as she smiles.",
+                      "summary": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                      "implications": "Major human behavior, relaxation news event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl listens intently to a woman's voice, smiling and looking content in a cozy room.",
+            "summary": "A young girl, wearing a pink shirt, sits in a cozy room, listening intently to a woman's voice, her expression softening as she smiles. The scene is repeated multiple times, showcasing the girl's calm and peaceful demeanor as she absorbs the woman's words."
+          },
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 28.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 28.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_24.5_28.5",
+                    "tags": [
+                      "child",
+                      "cozy",
+                      "listening",
+                      "relaxation",
+                      "softening"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt",
+                          "expression": "softening",
+                          "location": "floor",
+                          "room": "cozy"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "speaker",
+                          "voice": "soft"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "child"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "adult"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_24.5_28.5",
+                      "name": "girl listening to woman's voice",
+                      "time": {
+                        "start": "24.5",
+                        "end": "28.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "child development",
+                        "relaxation techniques"
+                      ],
+                      "scene_topic": "A young girl listens to a woman's voice, relaxing and smiling.",
+                      "summary": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                      "implications": "Major child development, relaxation techniques news event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl listens intently to a soothing voice, her expression softening into a smile.",
+            "summary": "A young girl sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles."
+          },
+          {
+            "level": 2,
+            "start_time": 28.5,
+            "end_time": 35.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 28.5,
+                "end_time": 33.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_28.5_33.5",
+                    "tags": [
+                      "child",
+                      "cozy",
+                      "listening",
+                      "relaxation",
+                      "softening"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt",
+                          "location": "floor",
+                          "room": "cozy"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "child"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "adult"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_28.5_33.5",
+                      "name": "girl listening to woman's voice",
+                      "time": {
+                        "start": "28.5",
+                        "end": "33.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "child development",
+                        "relaxation techniques"
+                      ],
+                      "scene_topic": "A young girl listens to a woman's voice, relaxing and smiling.",
+                      "summary": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                      "implications": "Major child development, relaxation techniques news event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes closed as she listens to a woman's voice, her expression softening as she smiles.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 33.5,
+                "end_time": 35.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes wide with surprise as she looks up at the camera.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes wide with surprise as she looks up at the camera.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_33.5_35.5",
+                    "tags": [
+                      "girl",
+                      "pink_shirt",
+                      "cozy_room",
+                      "surprise"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink_shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "room",
+                        "attributes": {
+                          "description": "cozy"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_33.5_35.5",
+                      "name": "girl's surprise",
+                      "time": {
+                        "start": "33.5",
+                        "end": "35.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_behavior"
+                      ],
+                      "scene_topic": "A young girl sits on the floor in a cozy room, looking surprised.",
+                      "summary": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes wide with surprise as she looks up at the camera.",
+                      "implications": "Minor human interest news event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on the floor in a cozy room, her eyes wide with surprise as she looks up at the camera.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl listens intently to a voice, her expression softening into a smile, and then looks up in surprise as she is captured on camera.",
+            "summary": "A young girl sits on the floor in a cozy room, initially with her eyes closed and a soft expression, and later with her eyes wide with surprise as she looks up at the camera."
+          },
+          {
+            "level": 2,
+            "start_time": 35.5,
+            "end_time": 48.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 35.5,
+                "end_time": 48.5,
+                "children": [],
+                "caption": "A young child, wearing a pink shirt, sits on the floor in a brightly lit room, their attention focused on a small, white object in their hand as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "A young child, wearing a pink shirt, sits on the floor in a brightly lit room, their attention focused on a small, white object in their hand as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_35.5_48.5",
+                    "tags": [
+                      "child",
+                      "pink_shirt",
+                      "brightly_lit",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "small_white_object",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young_child",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "background",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_35.5_48.5",
+                      "name": "Child playing with object",
+                      "time": {
+                        "start": "35.5",
+                        "end": "48.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "child_play"
+                      ],
+                      "scene_topic": "A young child plays with a small object in a brightly lit room.",
+                      "summary": "A young child, wearing a pink shirt, sits on the floor in a brightly lit room, their attention focused on a small, white object in their hand as a woman's voice can be heard in the background.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A young child sits on the floor in a brightly lit room, wearing a pink shirt, focused on a small, white object in their hand.",
+                        "audio": "woman's voice",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young child focuses intently on a small object in their hand, oblivious to their surroundings, as a woman's voice can be heard in the background.",
+            "summary": "A young child sits on the floor in a brightly lit room, intensely focused on a small white object in their hand."
+          }
+        ],
+        "caption": "A young girl is shown interacting with adults and listening intently to a soothing voice, smiling and looking content.",
+        "summary": "A group of young girls, all wearing pink shirts, sit in cozy rooms, listening intently to a woman's voice, their expressions softening as they smile, exuding a sense of calm and peacefulness. The scenes showcase the girls' absorption of the woman's words, with some displaying surprise and others remaining focused on small objects."
+      },
+      {
+        "level": 1,
+        "start_time": 48.5,
+        "end_time": 84.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 48.5,
+            "end_time": 59.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 48.5,
+                "end_time": 56.5,
+                "children": [],
+                "caption": "A young child, wearing a pink shirt, sits on the floor and playfully sticks out their tongue, their eyes wide with amusement as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "A young child, wearing a pink shirt, sits on the floor and playfully sticks out their tongue, their eyes wide with amusement as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_48.5_56.5",
+                    "tags": [
+                      "child",
+                      "play",
+                      "amusement",
+                      "woman",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "child",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "unknown",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_48.5_56.5",
+                      "name": "playful child",
+                      "time": {
+                        "start": "48.5",
+                        "end": "56.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "child development"
+                      ],
+                      "scene_topic": "A young child plays and laughs",
+                      "summary": "A young child, wearing a pink shirt, sits on the floor and playfully sticks out their tongue, their eyes wide with amusement as a woman's voice can be heard in the background.",
+                      "implications": "Major child development event",
+                      "modalities": {
+                        "visual": "A young child, wearing a pink shirt, sits on the floor and playfully sticks out their tongue, their eyes wide with amusement as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 56.5,
+                "end_time": 59.5,
+                "children": [],
+                "caption": "A young child, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A young child, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_56.5_59.5",
+                    "tags": [
+                      "child",
+                      "pink_shirt",
+                      "neutral_expression",
+                      "background_voice",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "child",
+                        "attributes": {
+                          "age": "",
+                          "expression": "neutral",
+                          "clothing": "pink_shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "age": "",
+                          "expression": "",
+                          "voice": "background"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "child",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "background",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_56.5_59.5",
+                      "name": "child_sits_on_floor",
+                      "time": {
+                        "start": "56.5",
+                        "end": "59.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_behavior"
+                      ],
+                      "scene_topic": "A young child sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                      "summary": "A young child, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                      "implications": "Major human behavior event",
+                      "modalities": {
+                        "visual": "A young child, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression.",
+                        "audio": "woman's voice",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young child sits on the floor and plays or looks directly at the camera, with a woman's voice heard in the background.",
+            "summary": "A young child, wearing a pink shirt, is seen playing and laughing on the floor, with a woman's voice audible in the background. The child's expression changes from playful to neutral as they look directly at the camera."
+          },
+          {
+            "level": 2,
+            "start_time": 59.5,
+            "end_time": 64.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 59.5,
+                "end_time": 64.5,
+                "children": [],
+                "caption": "The young girl, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The young girl, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_59_64",
+                    "tags": [
+                      "girl",
+                      "pink_shirt",
+                      "neutral_expression",
+                      "background_voice",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "expression": "neutral"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_59_64",
+                      "name": "girl sitting on floor",
+                      "time": {
+                        "start": "59.5",
+                        "end": "64.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person"
+                      ],
+                      "scene_topic": "The woman's voice can be heard in the background as a young girl sits on the floor.",
+                      "summary": "The young girl, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                      "implications": "Major social, family news event",
+                      "modalities": {
+                        "visual": "The young girl, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression.",
+                        "audio": "woman's voice",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl sits on the floor and looks directly at the camera with a neutral expression, while a woman's voice can be heard in the background.",
+            "summary": "A young girl sits on the floor, looking directly at the camera with a neutral expression, while a woman's voice can be heard in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 64.5,
+            "end_time": 72.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 64.5,
+                "end_time": 67.5,
+                "children": [],
+                "caption": "A young girl, illuminated by the soft light of a lamp, looks up with wide eyes as a woman's voice, seemingly from off-screen, asks \"What's that?\"",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "A young girl, illuminated by the soft light of a lamp, looks up with wide eyes as a woman's voice, seemingly from off-screen, asks \"What's that?\"",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_64.5_67.5",
+                    "tags": [
+                      "girl",
+                      "lamp",
+                      "voice",
+                      "question"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "lamp",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "voice"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_64.5_67.5",
+                      "name": "girl looks up at lamp",
+                      "time": {
+                        "start": "64.5",
+                        "end": "67.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A woman's voice asks a question, a girl looks up at a lamp",
+                      "summary": "A young girl, illuminated by the soft light of a lamp, looks up with wide eyes as a woman's voice, seemingly from off-screen, asks \"What's that?\"",
+                      "implications": "Major human behavior event",
+                      "modalities": {
+                        "visual": "A young girl, illuminated by the soft light of a lamp, looks up with wide eyes as a woman's voice asks 'What's that?'",
+                        "audio": "woman's voice; 'What's that?'",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 67.5,
+                "end_time": 70.5,
+                "children": [],
+                "caption": "A young child, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "A young child, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_67.5_70.5",
+                    "tags": [
+                      "child",
+                      "pink_shirt",
+                      "neutral_expression",
+                      "background_voice",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "child",
+                        "attributes": {
+                          "age": "young",
+                          "expression": "neutral",
+                          "clothing": "pink_shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_67.5_70.5",
+                      "name": "A young child sits on the floor",
+                      "time": {
+                        "start": "67.5",
+                        "end": "70.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "child",
+                        "woman"
+                      ],
+                      "scene_topic": "A woman's voice can be heard in the background as a young child sits on the floor.",
+                      "summary": "A young child, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression, as a woman's voice can be heard in the background.",
+                      "implications": "Major family, child development news event",
+                      "modalities": {
+                        "visual": "A young child, wearing a pink shirt, sits on the floor and looks directly at the camera with a neutral expression.",
+                        "audio": "woman's voice",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 70.5,
+                "end_time": 72.5,
+                "children": [],
+                "caption": "A young child, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "A young child, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_70.5_72.5",
+                    "tags": [
+                      "child",
+                      "curious",
+                      "woman",
+                      "background"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "child",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_70.5_72.5",
+                      "name": "A young child looks up at the camera",
+                      "time": {
+                        "start": "70.5",
+                        "end": "72.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "scene"
+                      ],
+                      "scene_topic": "A young child looks up at the camera with a curious expression",
+                      "summary": "A young child, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                      "implications": "Minor scene, no significant impact",
+                      "modalities": {
+                        "visual": "A young child, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young child looks up at the camera with a curious expression, while a woman's voice can be heard in the background asking questions.",
+            "summary": "A young girl sits on the floor, looking up at the camera with wide eyes, as a woman's voice asks \"What's that?\" in the background. The girl's expression is neutral, and she looks directly at the camera, while a second child in a pink shirt appears, also looking up at the camera with curiosity."
+          },
+          {
+            "level": 2,
+            "start_time": 72.5,
+            "end_time": 84.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 72.5,
+                "end_time": 78.5,
+                "children": [],
+                "caption": "The young girl, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background, saying \"I'm sorry\" and \"I'm sorry\".",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "The young girl, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background, saying \"I'm sorry\" and \"I'm sorry\".",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_72.5_78.5",
+                    "tags": [
+                      "girl",
+                      "camera",
+                      "apology"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_72.5_78.5",
+                      "name": "apology",
+                      "time": {
+                        "start": "72.5",
+                        "end": "78.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "apology"
+                      ],
+                      "scene_topic": "A woman apologizes to a girl",
+                      "summary": "The young girl, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background, saying \"I'm sorry\" and \"I'm sorry\".",
+                      "implications": "Personal interaction",
+                      "modalities": {
+                        "visual": "The young girl, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                        "audio": "Woman's voice: 'I'm sorry'; 'I'm sorry'.",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 78.5,
+                "end_time": 81.5,
+                "children": [],
+                "caption": "The young girl, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background, saying \"I'm sorry\" and \"I'm sorry\".",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "The young girl, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background, saying \"I'm sorry\" and \"I'm sorry\".",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_78.5_81.5",
+                    "tags": [
+                      "girl",
+                      "camera",
+                      "apology"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_78.5_81.5",
+                      "name": "apology",
+                      "time": {
+                        "start": "78.5",
+                        "end": "81.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "apology"
+                      ],
+                      "scene_topic": "A woman apologizes to a girl",
+                      "summary": "The young girl, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background, saying \"I'm sorry\" and \"I'm sorry\".",
+                      "implications": "Personal interaction",
+                      "modalities": {
+                        "visual": "The young girl, wearing a pink shirt, looks up at the camera with a curious expression as a woman's voice can be heard in the background.",
+                        "audio": "Woman's voice: 'I'm sorry'; 'I'm sorry'.",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 81.5,
+                "end_time": 84.5,
+                "children": [],
+                "caption": "The young girl, wearing a pink shirt, sits on the floor and playfully sticks out her tongue, her eyes wide with amusement as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "The young girl, wearing a pink shirt, sits on the floor and playfully sticks out her tongue, her eyes wide with amusement as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_81.5_84.5",
+                    "tags": [
+                      "child",
+                      "play",
+                      "amusement",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young girl",
+                        "attributes": {
+                          "age": "child",
+                          "clothing": "pink shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_81.5_84.5",
+                      "name": "playful scene",
+                      "time": {
+                        "start": "81.5",
+                        "end": "84.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "child development"
+                      ],
+                      "scene_topic": "A young girl plays and laughs with a woman's voice in the background.",
+                      "summary": "The young girl, wearing a pink shirt, sits on the floor and playfully sticks out her tongue, her eyes wide with amusement as a woman's voice can be heard in the background.",
+                      "implications": "Major child development news event",
+                      "modalities": {
+                        "visual": "The young girl, wearing a pink shirt, sits on the floor and playfully sticks out her tongue, her eyes wide with amusement as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl wears a pink shirt and displays various expressions, including curiosity and amusement, as a woman's voice can be heard in the background apologizing multiple times.",
+            "summary": "A young girl wearing a pink shirt is seen looking curious and playful, with a woman's apologetic voice heard in the background. The girl's expression changes to one of amusement as she sticks out her tongue and sits on the floor."
+          }
+        ],
+        "caption": "A young child and a young girl are shown looking directly at the camera, with a woman's voice heard in the background asking questions or making apologies.",
+        "summary": "A young girl is seen playing and interacting with a woman's voice in the background, her expression changing from playful to neutral as she looks directly at the camera. The girl's curiosity and amusement are evident as she sticks out her tongue and sits on the floor, with a second child in a pink shirt also appearing to share in the playful moment."
+      },
+      {
+        "level": 1,
+        "start_time": 84.5,
+        "end_time": 118.398544,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 84.5,
+            "end_time": 92.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 84.5,
+                "end_time": 92.5,
+                "children": [],
+                "caption": "The young girl, wearing a pink shirt, sits on the floor and playfully sticks out her tongue, her eyes wide with amusement as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "The young girl, wearing a pink shirt, sits on the floor and playfully sticks out her tongue, her eyes wide with amusement as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_84.5_92.5",
+                    "tags": [
+                      "child",
+                      "play",
+                      "amusement",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young girl",
+                        "attributes": {
+                          "age": "child",
+                          "clothing": "pink shirt"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_84.5_92.5",
+                      "name": "playful scene",
+                      "time": {
+                        "start": "84.5",
+                        "end": "92.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "child development"
+                      ],
+                      "scene_topic": "A young girl plays and laughs on the floor.",
+                      "summary": "The young girl, wearing a pink shirt, sits on the floor and playfully sticks out her tongue, her eyes wide with amusement as a woman's voice can be heard in the background.",
+                      "implications": "Major child development event",
+                      "modalities": {
+                        "visual": "The young girl, wearing a pink shirt, sits on the floor and playfully sticks out her tongue, her eyes wide with amusement as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl plays and sticks out her tongue in amusement, with a woman's voice heard in the background.",
+            "summary": "A young girl, wearing a pink shirt, sits on the floor, playfully sticking out her tongue and displaying a wide-eyed expression of amusement. In the background, a woman's voice can be heard."
+          },
+          {
+            "level": 2,
+            "start_time": 92.5,
+            "end_time": 100.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 92.5,
+                "end_time": 100.5,
+                "children": [],
+                "caption": "A young child, wearing a pink shirt, sits on the floor and playfully sticks out their tongue, their eyes wide with amusement as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "A young child, wearing a pink shirt, sits on the floor and playfully sticks out their tongue, their eyes wide with amusement as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_92.5_100.5",
+                    "tags": [
+                      "child",
+                      "play",
+                      "amusement",
+                      "woman",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "child",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "child",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_92.5_100.5",
+                      "name": "playful child",
+                      "time": {
+                        "start": "92.5",
+                        "end": "100.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "child development"
+                      ],
+                      "scene_topic": "A young child playfully sticks out their tongue, their eyes wide with amusement.",
+                      "summary": "A young child, wearing a pink shirt, sits on the floor and playfully sticks out their tongue, their eyes wide with amusement as a woman's voice can be heard in the background.",
+                      "implications": "Major human behavior, child development news event",
+                      "modalities": {
+                        "visual": "A young child, wearing a pink shirt, sits on the floor and playfully sticks out their tongue, their eyes wide with amusement as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young child sticks out their tongue and laughs playfully as an unseen woman's voice provides a humorous commentary.",
+            "summary": "A young child, wearing a pink shirt, sits on the floor, sticking out their tongue with a look of amusement on their face. In the background, a woman's voice can be heard, adding to the playful atmosphere."
+          },
+          {
+            "level": 2,
+            "start_time": 100.5,
+            "end_time": 110.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 100.5,
+                "end_time": 106.5,
+                "children": [],
+                "caption": "A young child, wearing a pink shirt, sits on the floor and playfully interacts with a red toy, their laughter blending with the sounds of a woman's voice and a baby crying in the background.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "A young child, wearing a pink shirt, sits on the floor and playfully interacts with a red toy, their laughter blending with the sounds of a woman's voice and a baby crying in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_100_106",
+                    "tags": [
+                      "child",
+                      "toy",
+                      "laughter",
+                      "background_noise"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red toy",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "pink shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young child",
+                        "ref_object": "O002",
+                        "role": "player",
+                        "entity": "child"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_100_106",
+                      "name": "playful interaction",
+                      "time": {
+                        "start": "100.5",
+                        "end": "106.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "family life"
+                      ],
+                      "scene_topic": "A young child plays with a toy while a woman's voice and a baby's crying are heard in the background.",
+                      "summary": "A young child, wearing a pink shirt, sits on the floor and playfully interacts with a red toy, their laughter blending with the sounds of a woman's voice and a baby crying in the background.",
+                      "implications": "Family life and child development",
+                      "modalities": {
+                        "visual": "A young child, wearing a pink shirt, sits on the floor and playfully interacts with a red toy, their laughter.",
+                        "audio": "woman's voice; baby crying",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 106.5,
+                "end_time": 110.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on the floor and playfully interacts with a red toy, her laughter blending with the chatter of a woman and a man in the background.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on the floor and playfully interacts with a red toy, her laughter blending with the chatter of a woman and a man in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_106.5_110.5",
+                    "tags": [
+                      "child",
+                      "toy",
+                      "laughter",
+                      "background_chatter"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red toy",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "pink shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young girl",
+                        "ref_object": "O002",
+                        "role": "player",
+                        "entity": "child"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "background",
+                        "entity": "adult"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "background",
+                        "entity": "adult"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_106.5_110.5",
+                      "name": "playful interaction",
+                      "time": {
+                        "start": "106.5",
+                        "end": "110.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "child development"
+                      ],
+                      "scene_topic": "A young girl plays with a toy while a woman and a man chat in the background.",
+                      "summary": "A young girl, wearing a pink shirt, sits on the floor and playfully interacts with a red toy, her laughter blending with the chatter of a woman and a man in the background.",
+                      "implications": "Major child development news event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on the floor and playfully interacts with a red toy.",
+                        "audio": "laughter; chatter",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young child and a young girl playfully interact with a red toy, their laughter and the sounds of their surroundings blending together.",
+            "summary": "A young child and a young girl, both wearing pink shirts, playfully interact with red toys while surrounded by background noise of a woman's voice, a baby's crying, and adult chatter. Their laughter fills the air as they engage in joyful play."
+          },
+          {
+            "level": 2,
+            "start_time": 110.5,
+            "end_time": 118.398544,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 110.5,
+                "end_time": 118.5,
+                "children": [],
+                "caption": "A young girl, wearing a pink shirt, sits on the floor in a brightly lit room, intently focused on a toy in her hand as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "A young girl, wearing a pink shirt, sits on the floor in a brightly lit room, intently focused on a toy in her hand as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "HqVjmu4YKN0",
+                    "event_id": "E_HqVjmu4YKN0_110.5_118.5",
+                    "tags": [
+                      "child",
+                      "toy",
+                      "room",
+                      "woman",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "pink shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "toy",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "brightly lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "background",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_HqVjmu4YKN0_110.5_118.5",
+                      "name": "",
+                      "time": {
+                        "start": "110.5",
+                        "end": "118.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "child development"
+                      ],
+                      "scene_topic": "A young girl plays with a toy in a brightly lit room.",
+                      "summary": "A young girl, wearing a pink shirt, sits on the floor in a brightly lit room, intently focused on a toy in her hand as a woman's voice can be heard in the background.",
+                      "implications": "Major child development news event",
+                      "modalities": {
+                        "visual": "A young girl, wearing a pink shirt, sits on the floor in a brightly lit room, intently focused on a toy in her hand as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Lulu is upset because her mommy is gone and is making funny noises, possibly due to hiccups. She is trying to get a pony out of a machine and mentions having an accident, likely referring to soiling herself."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl plays intently with a toy in a brightly lit room, while a woman's voice can be heard in the background.",
+            "summary": "A young girl sits on the floor in a brightly lit room, engrossed in a toy in her hand, while a woman's voice can be heard in the background."
+          }
+        ],
+        "caption": "A young girl and a young child playfully interact with each other and a toy, their laughter and the sounds of their surroundings blending together.",
+        "summary": "A young girl and child, both wearing pink shirts, playfully interact with red toys in a brightly lit room, surrounded by background noise, and fill the air with joyful laughter. The atmosphere is lively and playful, with a woman's voice and occasional baby's crying and adult chatter adding to the scene."
+      }
+    ],
+    "caption": "A young girl and a young child are shown interacting with adults and each other, smiling and laughing.",
+    "summary": "A group of young girls, dressed in pink, sit in cozy rooms listening to a woman's soothing voice, their expressions softening as they absorb her words. Meanwhile, other scenes show the girls playing and interacting with the woman's voice, exuding joy and curiosity as they engage with toys and each other in lively and playful moments."
+  }
+}

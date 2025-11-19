@@ -1,0 +1,2167 @@
+{
+  "video_id": "UqBQqY1g-ps",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 240.373467,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 68.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 24.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 7.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 0.0,
+                    "end_time": 4.5,
+                    "children": [],
+                    "caption": "The video opens with a close-up shot of a race car speeding down a winding track, its tires screeching as it navigates the curves. The camera then pans out to reveal the car speeding down the track, surrounded by other cars and the cheering crowd.",
+                    "postprocess": {
+                      "event_id": 0,
+                      "original_answer": "The video opens with a close-up shot of a race car speeding down a winding track, its tires screeching as it navigates the curves. The camera then pans out to reveal the car speeding down the track, surrounded by other cars and the cheering crowd.",
+                      "result": {
+                        "video_id": "UqBQqY1g_ps",
+                        "event_id": "E_UqBQqY1g_ps_0_4.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "speed",
+                          "crowd"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "track",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "cars",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "crowd",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g_ps_0_4.5",
+                          "name": "",
+                          "time": {
+                            "start": "0",
+                            "end": "4.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "racing"
+                          ],
+                          "scene_topic": "The video opens with a close-up shot of a race car speeding down a winding track, its tires screeching as it navigates the curves.",
+                          "summary": "The video opens with a close-up shot of a race car speeding down a winding track, its tires screeching as it navigates the curves. The camera then pans out to reveal the car speeding down the track, surrounded by other cars and the cheering crowd.",
+                          "implications": "Major racing event",
+                          "modalities": {
+                            "visual": "The video opens with a close-up shot of a race car speeding down a winding track, its tires screeching as it navigates the curves. The camera then pans out to reveal the car speeding down the track, surrounded by other cars and the cheering crowd.",
+                            "audio": "tires screeching; cheering crowd",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 4.5,
+                    "end_time": 7.5,
+                    "children": [],
+                    "caption": "The race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the announcer excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 1,
+                      "original_answer": "The race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the announcer excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_4.5_7.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "speed",
+                          "curves"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "number": "11",
+                              "grid_position": "on the grid"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "track",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "crowd",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "announcer",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "driver",
+                            "ref_object": "O001",
+                            "role": "driver",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_4.5_7.5",
+                          "name": "racing",
+                          "time": {
+                            "start": "4.5",
+                            "end": "7.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The race car speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the announcer excitedly describes the action.",
+                          "summary": "The race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the announcer excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car speeds around the track, its tires screeching as it navigates the curves.",
+                            "audio": "cheers; announcer",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A race car speeds down a winding track, surrounded by other cars and a cheering crowd, as an announcer excitedly describes the action.",
+                "summary": "A race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the announcer excitedly describes the action. The camera captures the car's speed and agility as it zooms around the winding track, surrounded by other cars and cheering spectators."
+              },
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 24.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 7.5,
+                    "end_time": 18.5,
+                    "children": [],
+                    "caption": "The race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                    "postprocess": {
+                      "event_id": 2,
+                      "original_answer": "The race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_7.5_18.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "crowd",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "number": "11",
+                              "grid_position": "on the grid"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "track",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "crowd",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_7.5_18.5",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "7.5",
+                            "end": "18.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The race car speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                          "summary": "The race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car speeds around the track, its tires screeching as it navigates the turns.",
+                            "audio": "crowd cheers; commentator describes the action",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 18.5,
+                    "end_time": 21.5,
+                    "children": [],
+                    "caption": "As the race car speeds around the track, its tires screeching against the asphalt, the crowd cheers and the commentator excitedly describes the action, his voice rising above the roar of the engines.",
+                    "postprocess": {
+                      "event_id": 3,
+                      "original_answer": "As the race car speeds around the track, its tires screeching against the asphalt, the crowd cheers and the commentator excitedly describes the action, his voice rising above the roar of the engines.",
+                      "result": {
+                        "video_id": "UqBQqY1g_ps",
+                        "event_id": "E_UqBQqY1g_ps_18.5_21.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "crowd",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "track",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "crowd",
+                            "attributes": {}
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "commentator",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O004",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g_ps_18.5_21.5",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "18.5",
+                            "end": "21.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "A commentator describes a racing event to a cheering crowd.",
+                          "summary": "As the race car speeds around the track, its tires screeching against the asphalt, the crowd cheers and the commentator excitedly describes the action, his voice rising above the roar of the engines.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "As the race car speeds around the track, its tires screeching against the asphalt, the commentator describes the action.",
+                            "audio": "Screeching; crowd cheers; commentator's voice; engine roar.",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 21.5,
+                    "end_time": 24.5,
+                    "children": [],
+                    "caption": "The race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the commentator describes the action.",
+                    "postprocess": {
+                      "event_id": 4,
+                      "original_answer": "The race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the commentator describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_21.5_24.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "crowd",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "driver",
+                            "ref_object": "O001",
+                            "role": "driver",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_21.5_24.5",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "21.5",
+                            "end": "24.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The race car speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the commentator describes the action.",
+                          "summary": "The race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the commentator describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car speeds around the track, its tires screeching as it navigates the curves.",
+                            "audio": "crowd cheers; commentator describes the action",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A race car speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a commentator excitedly describes the action.",
+                "summary": "The number 11 race car speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator excitedly describes the action. The car's tires screech against the asphalt as it takes the curves, with the commentator's voice rising above the roar of the engines."
+              }
+            ],
+            "caption": "A race car speeds around the track, its tires screeching as it navigates the turns, while a crowd cheers and a commentator excitedly describes the action.",
+            "summary": "A race car, number 11 on the grid, speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the announcer excitedly describes the action. The car's speed and agility are captured by the camera as it zooms around the winding track, surrounded by other cars and cheering spectators."
+          },
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 68.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 40.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 24.5,
+                    "end_time": 40.5,
+                    "children": [],
+                    "caption": "The race car, number 10, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                    "postprocess": {
+                      "event_id": 5,
+                      "original_answer": "The race car, number 10, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                      "result": {
+                        "video_id": "UqBQqY1g_ps",
+                        "event_id": "E_UqBQqY1g_ps_24.5_40.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g_ps_24.5_40.5",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "24.5",
+                            "end": "40.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator excitedly describes the racing action.",
+                          "summary": "The race car, number 10, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car speeds around the track, its tires screeching as it navigates the curves.",
+                            "audio": "Engine roar; commentator's voice.",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A race car, number 10, speeds around a track with its tires screeching as it navigates curves, while a commentator excitedly describes the action.",
+                "summary": "The number 10 race car zooms around the track, its tires squealing as it takes the curves, while the commentator's enthusiastic voice rises above the engine's roar."
+              },
+              {
+                "level": 3,
+                "start_time": 40.5,
+                "end_time": 48.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 40.5,
+                    "end_time": 48.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 6,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_40.5_48.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_40.5_48.5",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "40.5",
+                            "end": "48.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator describes the race car speeding around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, speeds around the track with incredible agility, its tires squealing as it takes tight turns, while a commentator provides a play-by-play of the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              },
+              {
+                "level": 3,
+                "start_time": 48.5,
+                "end_time": 53.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 48.5,
+                    "end_time": 53.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 7,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_48.5_53.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "number": "17"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_48.5_53.5",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "48.5",
+                            "end": "53.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The race car speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, zooms around the track at high speed, its tires squealing as it takes sharp turns, with a commentator providing a play-by-play of the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              },
+              {
+                "level": 3,
+                "start_time": 53.5,
+                "end_time": 68.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 53.5,
+                    "end_time": 68.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 8,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_53_68",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_53_68",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "53.5",
+                            "end": "68.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator describes the race car speeding around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, zooms around the track at high speed, its tires squealing as it takes sharp turns, with a commentator providing a play-by-play of the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              }
+            ],
+            "caption": "A race car, number 17, speeds around a track with incredible agility, its tires squealing as it takes tight turns, with a commentator providing a play-by-play of the action.",
+            "summary": "The number 10 and 17 race cars zoom around the track, their tires squealing as they take the curves, with the commentator's enthusiastic narration rising above the engine's roar. The number 17 car is repeatedly shown taking the curves, with the commentator enthusiastically narrating the action."
+          }
+        ],
+        "caption": "A race car speeds around the track with incredible agility, its tires squealing as it takes tight turns, with a commentator providing a play-by-play of the action.",
+        "summary": "A race car, number 11, speeds around the track, its tires screeching as it navigates the curves, while the crowd cheers and the announcer excitedly describes the action. The camera captures the car's speed and agility as it zooms around the winding track, surrounded by other cars and cheering spectators."
+      },
+      {
+        "level": 1,
+        "start_time": 68.5,
+        "end_time": 240.373467,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 68.5,
+            "end_time": 108.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 68.5,
+                "end_time": 76.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 68.5,
+                    "end_time": 76.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 9,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_68.5_76.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_68.5_76.5",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "68.5",
+                            "end": "76.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "A commentator describes a racing car speeding around a track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, zooms around the track at high speed, its tires squealing as it takes sharp turns, with a commentator providing a play-by-play of the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              },
+              {
+                "level": 3,
+                "start_time": 76.5,
+                "end_time": 83.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 76.5,
+                    "end_time": 83.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 10,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_76.5_83.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "number": "17"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_76.5_83.5",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "76.5",
+                            "end": "83.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The race car speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, zooms around the track at high speed, its tires squealing as it takes tight turns, with a commentator providing a play-by-play of the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              },
+              {
+                "level": 3,
+                "start_time": 83.5,
+                "end_time": 91.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 83.5,
+                    "end_time": 91.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 11,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_83_91",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_83_91",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "83.5",
+                            "end": "91.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator describes the race car speeding around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, accelerates around the track with a high-speed screech, as the commentator excitedly narrates the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              },
+              {
+                "level": 3,
+                "start_time": 91.5,
+                "end_time": 97.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 91.5,
+                    "end_time": 97.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 12,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_91.5_97.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_91.5_97.5",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "91.5",
+                            "end": "97.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator describes the race car speeding around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, zooms around the track at high speed, its tires squealing as it takes tight turns, with a commentator providing a play-by-play of the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              },
+              {
+                "level": 3,
+                "start_time": 97.5,
+                "end_time": 108.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 97.5,
+                    "end_time": 108.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 13,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_97.5_108.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "number": "17"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_97.5_108.5",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "97.5",
+                            "end": "108.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator describes the race car speeding around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, accelerates around the track with a high-pitched screech, as the commentator excitedly describes the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              }
+            ],
+            "caption": "A race car, number 17, speeds around the track with a commentator providing a play-by-play of the action, highlighting the car's sharp turns and high-speed acceleration.",
+            "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action. The car repeats this process multiple times, with the commentator's excitement building throughout."
+          },
+          {
+            "level": 2,
+            "start_time": 108.5,
+            "end_time": 123.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 108.5,
+                "end_time": 116.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 108.5,
+                    "end_time": 116.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 14,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_108_116",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_108_116",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "108.5",
+                            "end": "116.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator describes the race car speeding around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, zooms around the track at high speed, its tires squealing as it takes tight turns, with a commentator providing a play-by-play of the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              },
+              {
+                "level": 3,
+                "start_time": 116.5,
+                "end_time": 123.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 116.5,
+                    "end_time": 123.5,
+                    "children": [],
+                    "caption": "The race car, number 11, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 15,
+                      "original_answer": "The race car, number 11, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_116_123",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_116_123",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "116.5",
+                            "end": "123.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator describes the race car speeding around the track.",
+                          "summary": "The race car, number 11, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 11, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 11, zooms around the track at high speed, its tires squealing as it takes tight turns, with a commentator providing a play-by-play of the action.",
+                "summary": "The number 11 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              }
+            ],
+            "caption": "Two race cars, numbered 11 and 17, speed around a track at high speeds, taking tight turns and causing their tires to squeal as they race. A commentator provides a play-by-play of the action.",
+            "summary": "The number 17 and 11 race cars speed around the track, their tires screeching as they take the curves, with the commentator's energetic narration capturing the excitement of the action."
+          },
+          {
+            "level": 2,
+            "start_time": 123.5,
+            "end_time": 188.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 123.5,
+                "end_time": 139.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 123.5,
+                    "end_time": 139.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                    "postprocess": {
+                      "event_id": 16,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_123_139",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "number": "17"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_123_139",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "123.5",
+                            "end": "139.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator excitedly describes the action as the race car speeds around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "engine roar; commentator's voice",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, speeds around the track with its tires screeching as the commentator excitedly describes the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, while the commentator's enthusiastic voice echoes above the engine's roar."
+              },
+              {
+                "level": 3,
+                "start_time": 139.5,
+                "end_time": 147.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 139.5,
+                    "end_time": 147.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                    "postprocess": {
+                      "event_id": 17,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_139_147",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_139_147",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "139.5",
+                            "end": "147.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator excitedly describes the action as the race car speeds around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "engine roar; commentator's voice",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A race car, number 17, speeds around a track with screeching tires, as a commentator excitedly describes the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, while the commentator's enthusiastic voice echoes above the engine's roar."
+              },
+              {
+                "level": 3,
+                "start_time": 147.5,
+                "end_time": 159.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 147.5,
+                    "end_time": 159.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                    "postprocess": {
+                      "event_id": 18,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                      "result": {
+                        "video_id": "UqBQqY1g_ps",
+                        "event_id": "E_UqBQqY1g_ps_147_159",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g_ps_147_159",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "147.5",
+                            "end": "159.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator describes the race car speeding around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "engine roar; commentator's voice",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, accelerates around the track with a high-pitched screech, as the commentator's excited voice rises above the roar of the engine.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, while the commentator's enthusiastic voice echoes above the engine's roar."
+              },
+              {
+                "level": 3,
+                "start_time": 159.5,
+                "end_time": 164.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 159.5,
+                    "end_time": 164.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 19,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_159_164",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_159_164",
+                          "name": "Racing scene",
+                          "time": {
+                            "start": "159.5",
+                            "end": "164.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The race car speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "screeching; commentator",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, zooms around the track at high speed, its tires squealing as it takes sharp turns, with a commentator providing a play-by-play of the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, with the commentator enthusiastically narrating the action."
+              },
+              {
+                "level": 3,
+                "start_time": 164.5,
+                "end_time": 175.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 164.5,
+                    "end_time": 175.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                    "postprocess": {
+                      "event_id": 20,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_164.5_175.5",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "number": "17"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_164.5_175.5",
+                          "name": "Racing action",
+                          "time": {
+                            "start": "164.5",
+                            "end": "175.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator describes the race car speeding around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "engine roar; commentator's voice",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A race car, number 17, speeds around a track with its tires screeching as it navigates curves, while a commentator excitedly describes the action.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, while the commentator's enthusiastic voice echoes above the engine's roar."
+              },
+              {
+                "level": 3,
+                "start_time": 175.5,
+                "end_time": 188.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 175.5,
+                    "end_time": 188.5,
+                    "children": [],
+                    "caption": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                    "postprocess": {
+                      "event_id": 21,
+                      "original_answer": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_175_188",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "number": "17"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_175_188",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "175.5",
+                            "end": "188.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The commentator excitedly describes the action as the race car speeds around the track.",
+                          "summary": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action, his voice rising above the roar of the engine.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car, number 17, speeds around the track, its tires screeching as it navigates the curves, while the commentator excitedly describes the action.",
+                            "audio": "engine roar; commentator's voice",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The race car, number 17, accelerates around the track with a high-pitched screech, as the commentator's excited voice rises above the roar of the engine.",
+                "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, while the commentator's enthusiastic voice echoes above the engine's roar."
+              }
+            ],
+            "caption": "A race car, number 17, speeds around a track with screeching tires, as a commentator excitedly describes the action.",
+            "summary": "The number 17 race car zooms around the track, its tires squealing as it takes the curves, accompanied by the commentator's enthusiastic narration. The car's speed and the commentator's energy create a thrilling atmosphere as it speeds around the track."
+          },
+          {
+            "level": 2,
+            "start_time": 188.5,
+            "end_time": 240.373467,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 188.5,
+                "end_time": 199.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 188.5,
+                    "end_time": 199.5,
+                    "children": [],
+                    "caption": "The race car, its engine roaring, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                    "postprocess": {
+                      "event_id": 22,
+                      "original_answer": "The race car, its engine roaring, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_188_199",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "crowd",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "track",
+                            "attributes": {
+                              "type": "location"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "crowd",
+                            "attributes": {
+                              "type": "group"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O003",
+                            "role": "narrator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_188_199",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "188.5",
+                            "end": "199.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The race car speeds around the track, its engine roaring, while the crowd cheers and the commentator describes the action.",
+                          "summary": "The race car, its engine roaring, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car speeds around the track, its tires screeching as it navigates the turns.",
+                            "audio": "engine roaring; crowd cheers; commentator describes the action.",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A race car speeds around the track, its engine roaring and tires screeching as it navigates turns, with a cheering crowd and a commentator describing the action.",
+                "summary": "A race car zooms around the track, its engine roaring and tires screeching as it takes the turns, while the crowd cheers and the commentator provides play-by-play commentary."
+              },
+              {
+                "level": 3,
+                "start_time": 199.5,
+                "end_time": 208.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 199.5,
+                    "end_time": 208.5,
+                    "children": [],
+                    "caption": "The race car, its engine roaring, speeds around the track, leaving a trail of smoke as it navigates the curves and straightaways, while the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 23,
+                      "original_answer": "The race car, its engine roaring, speeds around the track, leaving a trail of smoke as it navigates the curves and straightaways, while the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_199_208",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "smoke",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_199_208",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "199.5",
+                            "end": "208.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "A race car speeds around the track, leaving a trail of smoke.",
+                          "summary": "The race car, its engine roaring, speeds around the track, leaving a trail of smoke as it navigates the curves and straightaways, while the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car speeds around the track, leaving a trail of smoke as it navigates the curves and straightaways.",
+                            "audio": "engine roaring; commentator excitedly describes the action",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A race car speeds around a track, its engine roaring and leaving a trail of smoke as it navigates the turns and straightaways, with a commentator providing an excited play-by-play of the action.",
+                "summary": "A race car zooms around the track, its engine roaring and leaving a trail of smoke as it takes the curves and straightaways, with the commentator enthusiastically narrating the action."
+              },
+              {
+                "level": 3,
+                "start_time": 208.5,
+                "end_time": 217.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 208.5,
+                    "end_time": 217.5,
+                    "children": [],
+                    "caption": "The race car, its engine roaring, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator excitedly describes the action.",
+                    "postprocess": {
+                      "event_id": 24,
+                      "original_answer": "The race car, its engine roaring, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator excitedly describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_208_217",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "crowd",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "type": "vehicle",
+                              "sound": "roaring",
+                              "action": "speeding"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "track",
+                            "attributes": {
+                              "type": "location",
+                              "feature": "turns"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "crowd",
+                            "attributes": {
+                              "type": "audience",
+                              "action": "cheering"
+                            }
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "commentator",
+                            "attributes": {
+                              "type": "person",
+                              "action": "describing"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "driver",
+                            "ref_object": "O001",
+                            "role": "driver",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_208_217",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "208.5",
+                            "end": "217.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The race car speeds around the track, its tires screeching, while the crowd cheers and the commentator excitedly describes the action.",
+                          "summary": "The race car, its engine roaring, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator excitedly describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car speeds around the track, its tires screeching as it navigates the turns.",
+                            "audio": "Engine roaring; tires screeching; crowd cheers; commentator excitedly describes the action.",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A race car speeds around the track, its engine roaring and tires screeching as it navigates turns, with a cheering crowd and an excited commentator providing the action.",
+                "summary": "A race car zooms around the track, its engine roaring and tires screeching as it takes the turns, while the crowd cheers and the commentator enthusiastically describes the action."
+              },
+              {
+                "level": 3,
+                "start_time": 217.5,
+                "end_time": 240.373467,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 217.5,
+                    "end_time": 235.5,
+                    "children": [],
+                    "caption": "The race car, its engine roaring, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                    "postprocess": {
+                      "event_id": 25,
+                      "original_answer": "The race car, its engine roaring, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_217_235",
+                        "tags": [
+                          "racing",
+                          "cars",
+                          "track",
+                          "crowd",
+                          "commentary"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "",
+                              "speed": ""
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "commentator",
+                            "ref_object": "O001",
+                            "role": "narrator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_217_235",
+                          "name": "Racing Event",
+                          "time": {
+                            "start": "217.5",
+                            "end": "235.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "A race car speeds around the track, with the crowd cheering and the commentator describing the action.",
+                          "summary": "The race car, its engine roaring, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and the commentator describes the action.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The race car speeds around the track, its tires screeching as it navigates the turns.",
+                            "audio": "engine roaring; crowd cheers; commentator describes the action.",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 235.5,
+                    "end_time": 240.373467,
+                    "children": [],
+                    "caption": "The video cuts to a close-up of a race car, its sleek design and aerodynamic features highlighted as a man's voice continues to describe the intense action of the race.",
+                    "postprocess": {
+                      "event_id": 26,
+                      "original_answer": "The video cuts to a close-up of a race car, its sleek design and aerodynamic features highlighted as a man's voice continues to describe the intense action of the race.",
+                      "result": {
+                        "video_id": "UqBQqY1g-ps",
+                        "event_id": "E_UqBQqY1g-ps_235.5_240.37",
+                        "tags": [
+                          "racing",
+                          "car",
+                          "action",
+                          "sport",
+                          "competition"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "race car",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "commentator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_UqBQqY1g-ps_235.5_240.37",
+                          "name": "Close-up of a race car",
+                          "time": {
+                            "start": "235.5",
+                            "end": "240.37"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "sports news"
+                          ],
+                          "scene_topic": "The video cuts to a close-up of a race car, its sleek design and aerodynamic features highlighted as a man's voice continues to describe the intense action of the race.",
+                          "summary": "The video cuts to a close-up of a race car, its sleek design and aerodynamic features highlighted as a man's voice continues to describe the intense action of the race.",
+                          "implications": "Major sports news event",
+                          "modalities": {
+                            "visual": "The video cuts to a close-up of a race car, its sleek design and aerodynamic features highlighted.",
+                            "audio": "man's voice; race action.",
+                            "speech": "Andy Priot takes the lead at the start of the World Touring Car Championship's round 11 at Spa-Francorchamps, with Augusto Farfus defending his second position and pushing rivals off the track."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A race car speeds around the track, its engine roaring and tires screeching as it navigates turns, while a commentator describes the action in detail. The video then cuts to a close-up of the race car, highlighting its sleek design and aerodynamic features.",
+                "summary": "A race car speeds around the track, its engine roaring and tires screeching as it navigates turns, with the crowd cheering and a commentator describing the action. The video then cuts to a close-up of the car, showcasing its sleek design and aerodynamic features."
+              }
+            ],
+            "caption": "A race car speeds around a track, its engine roaring and tires screeching as it navigates turns and straightaways, with a cheering crowd and an excited commentator providing a play-by-play of the action.",
+            "summary": "A race car zooms around the track, its engine roaring and tires screeching as it takes turns and straightaways, with the crowd cheering and a commentator enthusiastically describing the action. The video then cuts to a close-up of the car, showcasing its sleek design and aerodynamic features."
+          }
+        ],
+        "caption": "A race car, number 17, speeds around a track with a commentator providing a play-by-play of the action, highlighting the car's sharp turns and high-speed acceleration.",
+        "summary": "The number 17 race car zooms around the track, its tires squealing and commentator enthusiastically narrating the action, creating a thrilling atmosphere. The car's speed and the commentator's energy are matched by the crowd's cheers as it takes turns and straightaways, with a close-up shot showcasing its sleek design and aerodynamic features."
+      }
+    ],
+    "caption": "A race car performs incredible maneuvers on the track, its tires squealing as it takes tight turns, with a commentator providing a play-by-play of the action.",
+    "summary": "A high-speed race car, number 11, zooms around the track, its tires screeching as it navigates the curves, while the crowd cheers and the announcer excitedly describes the action. The car's speed, agility, and sleek design are matched by the commentator's energy and the crowd's enthusiasm, creating a thrilling atmosphere."
+  }
+}

@@ -1,0 +1,2419 @@
+{
+  "video_id": "oRcqr_Em2oY",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 118.267,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 35.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 19.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "The video opens with a panoramic view of a bustling city street, showcasing the towering skyscrapers and the hustle and bustle of everyday life.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a panoramic view of a bustling city street, showcasing the towering skyscrapers and the hustle and bustle of everyday life.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_0_6.5",
+                    "tags": [
+                      "city",
+                      "street",
+                      "skyscrapers",
+                      "hustle",
+                      "bustle"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city street",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_0_6.5",
+                      "name": "City Street Panorama",
+                      "time": {
+                        "start": "0",
+                        "end": "6.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban scene"
+                      ],
+                      "scene_topic": "The video opens with a panoramic view of a bustling city street, showcasing the towering skyscrapers and the hustle and bustle of everyday life.",
+                      "summary": "The video opens with a panoramic view of a bustling city street, showcasing the towering skyscrapers and the hustle and bustle of everyday life.",
+                      "implications": "Urban life",
+                      "modalities": {
+                        "visual": "The video opens with a panoramic view of a bustling city street, showcasing the towering skyscrapers and the hustle and bustle of everyday life.",
+                        "audio": "",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 13.5,
+                "children": [],
+                "caption": "In a lively restaurant, a woman in a pink dress and a chef's hat serves herself from a large tray of food, while a man in a black jacket and a woman in a black dress observe her.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "In a lively restaurant, a woman in a pink dress and a chef's hat serves herself from a large tray of food, while a man in a black jacket and a woman in a black dress observe her.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_6.5_13.5",
+                    "tags": [
+                      "restaurant",
+                      "food",
+                      "people",
+                      "observation",
+                      "serving"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "color": "pink",
+                          "hat": "chef's hat"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "color": "black",
+                          "jacket": "black"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman",
+                        "attributes": {
+                          "color": "black",
+                          "dress": "black"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "tray",
+                        "attributes": {
+                          "size": "large"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "server",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "observer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "woman",
+                        "ref_object": "O003",
+                        "role": "observer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_6.5_13.5",
+                      "name": "woman serves food",
+                      "time": {
+                        "start": "6.5",
+                        "end": "13.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "food"
+                      ],
+                      "scene_topic": "A woman serves food in a restaurant.",
+                      "summary": "In a lively restaurant, a woman in a pink dress and a chef's hat serves herself from a large tray of food, while a man in a black jacket and a woman in a black dress observe her.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a lively restaurant, a woman in a pink dress and a chef's hat serves herself from a large tray of food, while a man in a black jacket and a woman in a black dress observe her.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 13.5,
+                "end_time": 16.5,
+                "children": [],
+                "caption": "In a bustling cafeteria, a young woman in a pink dress and a chef's hat stands at a table, carefully arranging a plate of food while a man in a black jacket and a woman in a black dress observe her.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "In a bustling cafeteria, a young woman in a pink dress and a chef's hat stands at a table, carefully arranging a plate of food while a man in a black jacket and a woman in a black dress observe her.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_13.5_16.5",
+                    "tags": [
+                      "cafe",
+                      "food",
+                      "people",
+                      "observation",
+                      "kitchen"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young woman",
+                        "attributes": {
+                          "dress": "pink",
+                          "hat": "chef's"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in black jacket",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman in black dress",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "plate of food",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young woman",
+                        "ref_object": "O001",
+                        "role": "food arranger",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in black jacket",
+                        "ref_object": "O002",
+                        "role": "observer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "woman in black dress",
+                        "ref_object": "O003",
+                        "role": "observer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_13.5_16.5",
+                      "name": "Food arrangement in a cafeteria",
+                      "time": {
+                        "start": "13.5",
+                        "end": "16.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "food"
+                      ],
+                      "scene_topic": "A young woman arranges a plate of food in a cafeteria while a man and a woman observe her.",
+                      "summary": "In a bustling cafeteria, a young woman in a pink dress and a chef's hat stands at a table, carefully arranging a plate of food while a man in a black jacket and a woman in a black dress observe her.",
+                      "implications": "Major social, food news event",
+                      "modalities": {
+                        "visual": "In a bustling cafeteria, a young woman in a pink dress and a chef's hat stands at a table, carefully arranging a plate of food while a man in a black jacket and a woman in a black dress observe her.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 16.5,
+                "end_time": 19.5,
+                "children": [],
+                "caption": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_16.5_19.5",
+                    "tags": [
+                      "restaurant",
+                      "conversation",
+                      "surprise",
+                      "amusement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_jacket": "black"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "color_dress": "pink"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_16.5_19.5",
+                      "name": "Conversation in a restaurant",
+                      "time": {
+                        "start": "16.5",
+                        "end": "19.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man and a woman engage in a conversation in a lively restaurant.",
+                      "summary": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                      "implications": "Social interaction",
+                      "modalities": {
+                        "visual": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A bustling city street is filled with the hustle and bustle of everyday life, while a lively restaurant and cafeteria serve as the backdrop for a series of interactions between characters.",
+            "summary": "The video showcases a city street and various scenes of people enjoying food in restaurants and a cafeteria, with a focus on a woman in a pink dress and chef's hat serving and preparing meals. The scenes are lively and convey a sense of surprise and amusement among the characters."
+          },
+          {
+            "level": 2,
+            "start_time": 19.5,
+            "end_time": 28.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 19.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_195_215",
+                    "tags": [
+                      "restaurant",
+                      "conversation",
+                      "surprise",
+                      "amusement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "restaurant",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_195_215",
+                      "name": "Conversation in a restaurant",
+                      "time": {
+                        "start": "19.5",
+                        "end": "21.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man and a woman engage in a conversation in a restaurant, conveying surprise and amusement.",
+                      "summary": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                      "implications": "Social interaction, human behavior",
+                      "modalities": {
+                        "visual": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "A man in a black jacket smiles at the camera, holding a plate of food as a woman's voice off-screen asks him if he's ready to eat.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A man in a black jacket smiles at the camera, holding a plate of food as a woman's voice off-screen asks him if he's ready to eat.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_21.5_24.5",
+                    "tags": [
+                      "food",
+                      "smile",
+                      "camera",
+                      "woman",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "plate_of_food",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man_in_black_jacket",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_21.5_24.5",
+                      "name": "man_smiling_at_camera",
+                      "time": {
+                        "start": "21.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "A man in a black jacket smiles at the camera, holding a plate of food as a woman's voice off-screen asks him if he's ready to eat.",
+                      "summary": "A man in a black jacket smiles at the camera, holding a plate of food as a woman's voice off-screen asks him if he's ready to eat.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "A man in a black jacket smiles at the camera, holding a plate of food.",
+                        "audio": "Woman's voice; 'Are you ready to eat'.",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 28.5,
+                "children": [],
+                "caption": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_24.5_28.5",
+                    "tags": [
+                      "restaurant",
+                      "conversation",
+                      "surprise",
+                      "amusement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_jacket": "black"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "color_dress": "pink"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_24.5_28.5",
+                      "name": "Conversation in a restaurant",
+                      "time": {
+                        "start": "24.5",
+                        "end": "28.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man and a woman engage in a conversation in a lively restaurant.",
+                      "summary": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                      "implications": "Social interaction and human behavior",
+                      "modalities": {
+                        "visual": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a black jacket and a woman in a pink dress are seen conversing in a lively restaurant, their facial expressions revealing a mix of surprise and amusement. Later, the same man is seen smiling at the camera while holding a plate of food, with a woman's voice off-screen asking if he is ready to eat.",
+            "summary": "A man in a black jacket and a woman in a pink dress engage in a lively conversation in a restaurant, their expressions showing surprise and amusement."
+          },
+          {
+            "level": 2,
+            "start_time": 28.5,
+            "end_time": 35.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 28.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_28.5_31.5",
+                    "tags": [
+                      "restaurant",
+                      "conversation",
+                      "surprise",
+                      "amusement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "restaurant",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_28.5_31.5",
+                      "name": "Conversation in a restaurant",
+                      "time": {
+                        "start": "28.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "social interaction"
+                      ],
+                      "scene_topic": "A man and a woman engage in a conversation in a lively restaurant.",
+                      "summary": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                      "implications": "Social interaction and human behavior",
+                      "modalities": {
+                        "visual": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 35.5,
+                "children": [],
+                "caption": "A man in a black jacket and a woman in a pink dress are having a conversation in a room with a red wall, the man gesturing with his hands as he speaks.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A man in a black jacket and a woman in a pink dress are having a conversation in a room with a red wall, the man gesturing with his hands as he speaks.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_31.5_35.5",
+                    "tags": [
+                      "human_conversation",
+                      "room",
+                      "gesturing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_jacket": "black",
+                          "color_dress": "pink",
+                          "wall_color": "red"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "listener",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_31.5_35.5",
+                      "name": "Conversation",
+                      "time": {
+                        "start": "31.5",
+                        "end": "35.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "A man and a woman are having a conversation in a room.",
+                      "summary": "A man in a black jacket and a woman in a pink dress are having a conversation in a room with a red wall, the man gesturing with his hands as he speaks.",
+                      "implications": "Social interaction",
+                      "modalities": {
+                        "visual": "A man in a black jacket and a woman in a pink dress are having a conversation in a room with a red wall, the man gesturing with his hands as he speaks.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two people, a man in a black jacket and a woman in a pink dress, are having a lively conversation in a colorful room, their expressions and gestures conveying a mix of surprise and amusement.",
+            "summary": "A man and a woman, both dressed in contrasting colors, engage in a lively conversation in a room with a red wall, their expressions revealing a mix of surprise and amusement. The man uses gestures as he speaks, adding to the animated atmosphere."
+          }
+        ],
+        "caption": "A bustling city street and restaurant serve as the backdrop for various interactions between characters, showcasing a mix of surprise, amusement, and anticipation.",
+        "summary": "The video features a city street and various scenes of people enjoying food in restaurants and a cafeteria, showcasing a lively atmosphere with characters expressing surprise and amusement. A woman in a pink dress and chef's hat is prominently featured, serving and preparing meals, while others engage in lively conversations with animated gestures."
+      },
+      {
+        "level": 1,
+        "start_time": 35.5,
+        "end_time": 57.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 35.5,
+            "end_time": 49.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 35.5,
+                "end_time": 45.5,
+                "children": [],
+                "caption": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_35.5_45.5",
+                    "tags": [
+                      "restaurant",
+                      "conversation",
+                      "surprise",
+                      "amusement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "color_jacket": "black"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "color_dress": "pink"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_35.5_45.5",
+                      "name": "Conversation in a restaurant",
+                      "time": {
+                        "start": "35.5",
+                        "end": "45.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man and a woman engage in a conversation in a lively restaurant.",
+                      "summary": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                      "implications": "Social interaction and human behavior",
+                      "modalities": {
+                        "visual": "In a lively restaurant, a man in a black jacket and a woman in a pink dress engage in a conversation, their expressions conveying a mix of surprise and amusement.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 45.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a black jacket and white shirt stands in front of a man in a suit, who is holding a plate of food, as they engage in a conversation.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "In a brightly lit room, a young man in a black jacket and white shirt stands in front of a man in a suit, who is holding a plate of food, as they engage in a conversation.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_45.5_47.5",
+                    "tags": [
+                      "scene",
+                      "conversation",
+                      "food",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black jacket and white shirt",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in suit holding plate of food",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man in black jacket and white shirt",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in suit",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_45.5_47.5",
+                      "name": "Conversation about food",
+                      "time": {
+                        "start": "45.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "scene"
+                      ],
+                      "scene_topic": "A young man in a black jacket and white shirt stands in front of a man in a suit, who is holding a plate of food, as they engage in a conversation.",
+                      "summary": "In a brightly lit room, a young man in a black jacket and white shirt stands in front of a man in a suit, who is holding a plate of food, as they engage in a conversation.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a black jacket and white shirt stands in front of a man in a suit, who is holding a plate of food, as they engage in a conversation.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 49.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a black jacket and white shirt stands in front of a man in a suit, who is gesturing with his hands as he speaks.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "In a brightly lit room, a young man in a black jacket and white shirt stands in front of a man in a suit, who is gesturing with his hands as he speaks.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_47.5_49.5",
+                    "tags": [
+                      "room",
+                      "man",
+                      "jacket",
+                      "shirt",
+                      "suit"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in suit",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in suit",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_47.5_49.5",
+                      "name": "Conversation",
+                      "time": {
+                        "start": "47.5",
+                        "end": "49.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man in a suit gestures as he speaks to a young man in a black jacket and white shirt.",
+                      "summary": "In a brightly lit room, a young man in a black jacket and white shirt stands in front of a man in a suit, who is gesturing with his hands as he speaks.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a black jacket and white shirt stands in front of a man in a suit, who is gesturing with his hands as he speaks.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a series of lively settings, people engage in conversations, their facial expressions and body language conveying a mix of surprise, amusement, and interest.",
+            "summary": "In a restaurant, a man in a black jacket and a woman in a pink dress, as well as a young man in a black jacket and white shirt, engage in conversations with others, their expressions conveying surprise and amusement. The scenes take place in brightly lit rooms, with the young man standing in front of a man in a suit, who is holding food or gesturing as he speaks."
+          },
+          {
+            "level": 2,
+            "start_time": 49.5,
+            "end_time": 57.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 49.5,
+                "end_time": 57.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a suit stands in front of a man in a plaid shirt, who is gesturing with his hands as he speaks.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "In a brightly lit room, a young man in a suit stands in front of a man in a plaid shirt, who is gesturing with his hands as he speaks.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_49.5_57.5",
+                    "tags": [
+                      "human_interaction",
+                      "business",
+                      "meeting"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young man in a suit",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in a plaid shirt",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man in a suit",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in a plaid shirt",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_49.5_57.5",
+                      "name": "",
+                      "time": {
+                        "start": "49.5",
+                        "end": "57.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "A person speaks to another person in a meeting.",
+                      "summary": "In a brightly lit room, a young man in a suit stands in front of a man in a plaid shirt, who is gesturing with his hands as he speaks.",
+                      "implications": "Major business news event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a suit stands in front of a man in a plaid shirt, who is gesturing with his hands as he speaks.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young man in a suit listens intently to a man in a plaid shirt as he speaks, gesturing with his hands.",
+            "summary": "A young man in a suit stands before a man in a plaid shirt, who is gesturing as he speaks in a brightly lit room."
+          }
+        ],
+        "caption": "A series of conversations take place in various settings, with people expressing a range of emotions through their facial expressions and body language. A young man listens intently to an older man as he speaks with gestures.",
+        "summary": "In a restaurant, a group of people engage in conversations with others, displaying surprise and amusement on their faces. The scenes take place in brightly lit rooms, with individuals standing in front of others, often gesturing as they speak."
+      },
+      {
+        "level": 1,
+        "start_time": 57.5,
+        "end_time": 87.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 57.5,
+            "end_time": 69.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 57.5,
+                "end_time": 60.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a suit stands in front of a window, his serious expression and gestures suggesting an important conversation or presentation.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "In a brightly lit room, a young man in a suit stands in front of a window, his serious expression and gestures suggesting an important conversation or presentation.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_57_60",
+                    "tags": [
+                      "room",
+                      "man",
+                      "window",
+                      "serious",
+                      "presentation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_57_60",
+                      "name": "important conversation or presentation",
+                      "time": {
+                        "start": "57.5",
+                        "end": "60.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room"
+                      ],
+                      "scene_topic": "A young man stands in front of a window, looking serious.",
+                      "summary": "In a brightly lit room, a young man in a suit stands in front of a window, his serious expression and gestures suggesting an important conversation or presentation.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a suit stands in front of a window, his serious expression and gestures suggesting an important conversation or presentation.",
+                        "audio": "",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 60.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, his serious expression and gestures suggesting an important conversation.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, his serious expression and gestures suggesting an important conversation.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_60_63",
+                    "tags": [
+                      "room",
+                      "man",
+                      "bookshelf",
+                      "conversation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bookshelf",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "young man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_60_63",
+                      "name": "important conversation",
+                      "time": {
+                        "start": "60.5",
+                        "end": "63.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room"
+                      ],
+                      "scene_topic": "A young man stands in front of a bookshelf, having an important conversation.",
+                      "summary": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, his serious expression and gestures suggesting an important conversation.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, his serious expression and gestures suggesting an important conversation.",
+                        "audio": "",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 65.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man with short, dark hair and a serious expression stands in front of a bookshelf, his gaze fixed on something off-camera as he listens to a woman's voice.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "In a brightly lit room, a young man with short, dark hair and a serious expression stands in front of a bookshelf, his gaze fixed on something off-camera as he listens to a woman's voice.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_63_65",
+                    "tags": [
+                      "room",
+                      "man",
+                      "woman",
+                      "bookshelf",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bookshelf",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_63_65",
+                      "name": "",
+                      "time": {
+                        "start": "63.5",
+                        "end": "65.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room"
+                      ],
+                      "scene_topic": "A young man listens to a woman's voice in a room.",
+                      "summary": "In a brightly lit room, a young man with short, dark hair and a serious expression stands in front of a bookshelf, his gaze fixed on something off-camera as he listens to a woman's voice.",
+                      "implications": "Minor social interaction event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man with short, dark hair and a serious expression stands in front of a bookshelf, his gaze fixed on something off-camera as he listens to a woman's voice.",
+                        "audio": "woman's voice",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 65.5,
+                "end_time": 69.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, listening intently as a woman's voice off-screen expresses her desire to be a princess.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, listening intently as a woman's voice off-screen expresses her desire to be a princess.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_65_69",
+                    "tags": [
+                      "romance",
+                      "princess",
+                      "bookshelf",
+                      "intently",
+                      "listening"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bookshelf",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "young man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man",
+                        "ref_object": "O002",
+                        "role": "main character",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman's voice",
+                        "ref_object": "",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_65_69",
+                      "name": "woman's desire to be a princess",
+                      "time": {
+                        "start": "65.5",
+                        "end": "69.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "romance"
+                      ],
+                      "scene_topic": "A young man listens intently as a woman's voice expresses her desire to be a princess.",
+                      "summary": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, listening intently as a woman's voice off-screen expresses her desire to be a princess.",
+                      "implications": "Major romance news event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, listening intently as a woman's voice off-screen expresses her desire to be a princess.",
+                        "audio": "woman's voice; off-screen",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young man in a suit, blue shirt, or short, dark hair stands in a brightly lit room, engaging in an important conversation or presentation, or listening intently to a woman's voice, suggesting a serious and focused exchange.",
+            "summary": "A young man is engaged in a serious conversation or presentation in a brightly lit room, standing in front of a bookshelf or window. The scene shifts to show the man listening intently to a woman's voice, who expresses her desire to be a princess."
+          },
+          {
+            "level": 2,
+            "start_time": 69.5,
+            "end_time": 75.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 69.5,
+                "end_time": 71.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a dark jacket stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "In a brightly lit room, a young man in a dark jacket stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_69.5_71.5",
+                    "tags": [
+                      "room",
+                      "man",
+                      "woman",
+                      "voice",
+                      "tension"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "mirror",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_69.5_71.5",
+                      "name": "man listens to woman's voice",
+                      "time": {
+                        "start": "69.5",
+                        "end": "71.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A young man listens to a woman's voice off-screen in a brightly lit room.",
+                      "summary": "In a brightly lit room, a young man in a dark jacket stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen.",
+                      "implications": "Major scene, character development",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a dark jacket stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen.",
+                        "audio": "",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 71.5,
+                "end_time": 75.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a suit stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen, her words suggesting a past conflict.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "In a brightly lit room, a young man in a suit stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen, her words suggesting a past conflict.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_71_75",
+                    "tags": [
+                      "conflict",
+                      "tension",
+                      "mirror",
+                      "woman",
+                      "man"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "mirror",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "off-screen",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_71_75",
+                      "name": "man listens to woman's voice",
+                      "time": {
+                        "start": "71.5",
+                        "end": "75.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "conflict"
+                      ],
+                      "scene_topic": "A man listens to a woman's voice off-screen, reflecting tension in the air.",
+                      "summary": "In a brightly lit room, a young man in a suit stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen, her words suggesting a past conflict.",
+                      "implications": "Major drama, emotional event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a suit stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen, her words suggesting a past conflict.",
+                        "audio": "woman's voice",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two young men, one in a dark jacket and the other in a suit, listen to a woman's voice off-screen in a tense atmosphere, the past conflict between them evident in their expressions and the woman's words.",
+            "summary": "A young man stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen, her words hinting at a past conflict."
+          },
+          {
+            "level": 2,
+            "start_time": 75.5,
+            "end_time": 87.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 75.5,
+                "end_time": 82.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a suit stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen, her words suggesting a past conflict.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "In a brightly lit room, a young man in a suit stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen, her words suggesting a past conflict.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_75_82",
+                    "tags": [
+                      "conflict",
+                      "tension",
+                      "communication",
+                      "past"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "mirror",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman's voice",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_75_82",
+                      "name": "conflict resolution",
+                      "time": {
+                        "start": "75.5",
+                        "end": "82.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "communication"
+                      ],
+                      "scene_topic": "A man listens to a woman's voice, reflecting on a past conflict.",
+                      "summary": "In a brightly lit room, a young man in a suit stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen, her words suggesting a past conflict.",
+                      "implications": "Major personal development news event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a suit stands in front of a mirror, his serious expression reflecting the tension in the air as he listens to a woman's voice off-screen, her words suggesting a past conflict.",
+                        "audio": "woman's voice",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 82.5,
+                "end_time": 87.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, listening intently as a woman's voice off-screen expresses her desire to be a princess.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, listening intently as a woman's voice off-screen expresses her desire to be a princess.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_82.5_87.5",
+                    "tags": [
+                      "romance",
+                      "princess",
+                      "bookshelf",
+                      "intently",
+                      "listening"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bookshelf",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "young man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young man",
+                        "ref_object": "O002",
+                        "role": "main character",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman's voice",
+                        "ref_object": "",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_82.5_87.5",
+                      "name": "woman's desire to be a princess",
+                      "time": {
+                        "start": "82.5",
+                        "end": "87.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "romance"
+                      ],
+                      "scene_topic": "A young man listens to a woman's desire to be a princess.",
+                      "summary": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, listening intently as a woman's voice off-screen expresses her desire to be a princess.",
+                      "implications": "Major romance news event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a blue shirt and tie stands in front of a bookshelf, listening intently as a woman's voice off-screen expresses her desire to be a princess.",
+                        "audio": "woman's voice; off-screen",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two scenes are depicted, one of a young man in a suit listening to a woman's voice off-screen with a tense expression, and the other of a young man in a blue shirt and tie listening intently to a woman's voice off-screen as she expresses a desire to be a princess.",
+            "summary": "A young man stands in front of a mirror or bookshelf, intently listening to a woman's voice off-screen, her words hinting at past conflicts and desires."
+          }
+        ],
+        "caption": "Two scenes are depicted, one of a young man engaged in a serious conversation or presentation, and the other of a young man listening intently to a woman's voice, with a focus on the emotions and intensity of the exchange.",
+        "summary": "A young man is engaged in a serious conversation or presentation, shifting to scenes where he listens intently to a woman's voice expressing her desire to be a princess and hinting at past conflicts."
+      },
+      {
+        "level": 1,
+        "start_time": 87.5,
+        "end_time": 118.267,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 87.5,
+            "end_time": 98.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 87.5,
+                "end_time": 89.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young man in a blue shirt and tie stands before a woman in a pink dress, who is seated at a table. The woman smiles and gestures with her hands as she speaks, while the man listens attentively.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "In a brightly lit room, a young man in a blue shirt and tie stands before a woman in a pink dress, who is seated at a table. The woman smiles and gestures with her hands as she speaks, while the man listens attentively.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_87.5_89.5",
+                    "tags": [
+                      "human_interaction",
+                      "conversation",
+                      "business"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_87.5_89.5",
+                      "name": "Conversation",
+                      "time": {
+                        "start": "87.5",
+                        "end": "89.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "A man and a woman have a conversation in a brightly lit room.",
+                      "summary": "In a brightly lit room, a young man in a blue shirt and tie stands before a woman in a pink dress, who is seated at a table. The woman smiles and gestures with her hands as she speaks, while the man listens attentively.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young man in a blue shirt and tie stands before a woman in a pink dress, who is seated at a table. The woman smiles and gestures with her hands as she speaks, while the man listens attentively.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 89.5,
+                "end_time": 93.5,
+                "children": [],
+                "caption": "In a room with a red wall, a young woman with a pink hat and a blue dress smiles and talks to a man in a black jacket, who listens attentively.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "In a room with a red wall, a young woman with a pink hat and a blue dress smiles and talks to a man in a black jacket, who listens attentively.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_89.5_93.5",
+                    "tags": [
+                      "room",
+                      "woman",
+                      "man",
+                      "red",
+                      "pink",
+                      "blue",
+                      "black"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "color_hair": "",
+                          "color_clothing": "pink"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "color_clothing": "black"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "red wall",
+                        "attributes": {
+                          "color": "red"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_89.5_93.5",
+                      "name": "",
+                      "time": {
+                        "start": "89.5",
+                        "end": "93.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A woman talks to a man in a room.",
+                      "summary": "In a room with a red wall, a young woman with a pink hat and a blue dress smiles and talks to a man in a black jacket, who listens attentively.",
+                      "implications": "Social interaction",
+                      "modalities": {
+                        "visual": "In a room with a red wall, a young woman with a pink hat and a blue dress smiles and talks to a man in a black jacket, who listens attentively.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 93.5,
+                "end_time": 98.5,
+                "children": [],
+                "caption": "In a room with a red wall, a man in a black suit and a woman in a pink dress are engaged in a conversation, with the woman gesturing animatedly while the man listens attentively.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "In a room with a red wall, a man in a black suit and a woman in a pink dress are engaged in a conversation, with the woman gesturing animatedly while the man listens attentively.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_93.5_98.5",
+                    "tags": [
+                      "room",
+                      "conversation",
+                      "man",
+                      "woman",
+                      "gesturing",
+                      "attentive"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red wall",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in black suit",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman in pink dress",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_93.5_98.5",
+                      "name": "Conversation in a room",
+                      "time": {
+                        "start": "93.5",
+                        "end": "98.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "social interaction"
+                      ],
+                      "scene_topic": "A man and a woman engage in a conversation in a room.",
+                      "summary": "In a room with a red wall, a man in a black suit and a woman in a pink dress are engaged in a conversation, with the woman gesturing animatedly while the man listens attentively.",
+                      "implications": "Social interaction and communication",
+                      "modalities": {
+                        "visual": "In a room with a red wall, a man in a black suit and a woman in a pink dress are engaged in a conversation, with the woman gesturing animatedly while the man listens attentively.",
+                        "audio": "",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In three different rooms, people are engaged in conversations, with one person speaking and the other listening attentively.",
+            "summary": "In a series of scenes, individuals engage in conversations in various rooms, with participants displaying a range of emotions and body language. The scenes feature a mix of men and women, dressed in various attire, interacting with each other in a seemingly friendly and attentive manner."
+          },
+          {
+            "level": 2,
+            "start_time": 98.5,
+            "end_time": 103.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 98.5,
+                "end_time": 103.5,
+                "children": [],
+                "caption": "In a room with a red wall, a man in a black suit and a woman in a pink dress are engaged in a conversation, with the woman gesturing animatedly while the man listens attentively.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "In a room with a red wall, a man in a black suit and a woman in a pink dress are engaged in a conversation, with the woman gesturing animatedly while the man listens attentively.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_98.5_103.5",
+                    "tags": [
+                      "room",
+                      "conversation",
+                      "man",
+                      "woman",
+                      "gesturing",
+                      "listening"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red wall",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in black suit",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman in pink dress",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_98.5_103.5",
+                      "name": "Conversation in a room",
+                      "time": {
+                        "start": "98.5",
+                        "end": "103.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man and a woman are engaged in a conversation in a room.",
+                      "summary": "In a room with a red wall, a man in a black suit and a woman in a pink dress are engaged in a conversation, with the woman gesturing animatedly while the man listens attentively.",
+                      "implications": "Social interaction",
+                      "modalities": {
+                        "visual": "In a room with a red wall, a man in a black suit and a woman in a pink dress are engaged in a conversation, with the woman gesturing animatedly while the man listens attentively.",
+                        "audio": "",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man and a woman are having a passionate conversation in a room, with the woman gesturing energetically and the man listening intently.",
+            "summary": "A man in a black suit and a woman in a pink dress are having a conversation in a room with a red wall, with the woman gesturing animatedly and the man listening intently."
+          },
+          {
+            "level": 2,
+            "start_time": 103.5,
+            "end_time": 111.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 103.5,
+                "end_time": 111.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young woman with a pink hat and a blue dress smiles and chats with a man in a black jacket, while a woman in a white dress stands nearby, listening to their conversation.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "In a brightly lit room, a young woman with a pink hat and a blue dress smiles and chats with a man in a black jacket, while a woman in a white dress stands nearby, listening to their conversation.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_103.5_111.5",
+                    "tags": [
+                      "social_event",
+                      "conversation",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in black jacket",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman in white dress",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in black jacket",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "woman in white dress",
+                        "ref_object": "O003",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_103.5_111.5",
+                      "name": "Social conversation",
+                      "time": {
+                        "start": "103.5",
+                        "end": "111.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_event"
+                      ],
+                      "scene_topic": "A young woman and a man chat with a woman listening nearby.",
+                      "summary": "In a brightly lit room, a young woman with a pink hat and a blue dress smiles and chats with a man in a black jacket, while a woman in a white dress stands nearby, listening to their conversation.",
+                      "implications": "Social interaction and communication",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young woman with a pink hat and a blue dress smiles and chats with a man in a black jacket, while a woman in a white dress stands nearby, listening to their conversation.",
+                        "audio": "",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Three people are having a conversation in a brightly lit room, with one woman wearing a pink hat and blue dress, another man in a black jacket, and a third woman in a white dress listening in.",
+            "summary": "A young woman with a pink hat and blue dress converses with a man in a black jacket, while a woman in a white dress listens in. The scene is set in a brightly lit room, with the three individuals engaged in a casual and social interaction."
+          },
+          {
+            "level": 2,
+            "start_time": 111.5,
+            "end_time": 118.267,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 111.5,
+                "end_time": 115.5,
+                "children": [],
+                "caption": "In a brightly lit room, a young woman with long blonde hair and a pink top smiles and waves at the camera, while a man in a black jacket stands behind her, looking at his phone.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "In a brightly lit room, a young woman with long blonde hair and a pink top smiles and waves at the camera, while a man in a black jacket stands behind her, looking at his phone.",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_111.5_115.5",
+                    "tags": [
+                      "human_interaction",
+                      "social_event",
+                      "fashion",
+                      "technology"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "young woman",
+                        "attributes": {
+                          "hair_color": "blonde",
+                          "clothing": "pink top"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black jacket"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young woman",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "supporting",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_111.5_115.5",
+                      "name": "social interaction",
+                      "time": {
+                        "start": "111.5",
+                        "end": "115.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human interaction"
+                      ],
+                      "scene_topic": "A young woman smiles and waves at the camera, while a man looks at his phone.",
+                      "summary": "In a brightly lit room, a young woman with long blonde hair and a pink top smiles and waves at the camera, while a man in a black jacket stands behind her, looking at his phone.",
+                      "implications": "Major social news event",
+                      "modalities": {
+                        "visual": "In a brightly lit room, a young woman with long blonde hair and a pink top smiles and waves at the camera, while a man in a black jacket stands behind her, looking at his phone.",
+                        "audio": "",
+                        "speech": "tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 115.5,
+                "end_time": 118.267,
+                "children": [],
+                "caption": "A cartoon character with a red hat and a yellow shirt is standing in a brightly lit room, looking surprised as a woman's voice can be heard saying \"Oh, my God.\"",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "A cartoon character with a red hat and a yellow shirt is standing in a brightly lit room, looking surprised as a woman's voice can be heard saying \"Oh, my God.\"",
+                  "result": {
+                    "video_id": "oRcqr_Em2oY",
+                    "event_id": "E_oRcqr_Em2oY_115.5_118.27",
+                    "tags": [
+                      "cartoon",
+                      "character",
+                      "room",
+                      "surprised",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cartoon character",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_oRcqr_Em2oY_115.5_118.27",
+                      "name": "Surprised reaction",
+                      "time": {
+                        "start": "115.5",
+                        "end": "118.27"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cartoon scene"
+                      ],
+                      "scene_topic": "A woman's voice is heard saying 'Oh, my God.'",
+                      "summary": "A cartoon character with a red hat and a yellow shirt is standing in a brightly lit room, looking surprised as a woman's voice can be heard saying \"Oh, my God.\"",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "A cartoon character with a red hat and a yellow shirt is standing in a brightly lit room, looking surprised as a woman's voice can be heard saying 'Oh, my God'.",
+                        "audio": "woman's voice saying 'Oh; my God'",
+                        "speech": "James Conroy tries to charm his way through lunch with a cafeteria lady and later asks a woman out on a date"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young woman smiles and waves at the camera while a man looks at his phone in a brightly lit room. In another scene, a cartoon character looks surprised as a voice off-camera exclaims in shock.",
+            "summary": "A young woman with blonde hair and a pink top smiles and waves at the camera, accompanied by a man in a black jacket, while a cartoon character looks surprised in a separate scene. The scene is set in a brightly lit room, where a woman's voice can be heard exclaiming \"Oh, my God\"."
+          }
+        ],
+        "caption": "In various rooms, people are engaged in conversations, ranging from passionate and intense to casual and lighthearted. A young woman smiles and waves at the camera, while a man looks at his phone in another scene. A cartoon character looks surprised as a voice off-camera exclaims in shock.",
+        "summary": "The scenes depict a group of individuals, including men and women, engaging in friendly and attentive conversations in a brightly lit room, showcasing a range of emotions and body language. The interactions are casual and social, with participants displaying gestures and facial expressions, and a woman's voice can be heard exclaiming \"Oh, my God\" in one scene."
+      }
+    ],
+    "caption": "A series of scenes show various interactions between characters in different settings, conveying a range of emotions through facial expressions, body language, and voice inflections. The scenes depict conversations that are intense, passionate, casual, and lighthearted, with people expressing surprise, amusement, and anticipation.",
+    "summary": "The video showcases a lively atmosphere in various restaurants and a cafeteria, featuring people enjoying food and engaging in lively conversations with animated gestures. A woman in a pink dress and chef's hat is prominently featured, serving and preparing meals, while others display a range of emotions and body language in casual and social interactions."
+  }
+}

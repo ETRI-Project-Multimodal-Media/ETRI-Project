@@ -4,15 +4,21 @@ import json
 import ast
 import math
 import time
+import argparse
+import copy
 import psutil
 import wandb
 from typing import Optional, Tuple
 from tqdm import tqdm
 from collections import Counter, defaultdict
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+from transformers import AutoTokenizer, AutoModelForCausalLM
 from jsonschema import validate, ValidationError
 import torch, re, textwrap
 
+
+LOG_DIR = os.environ.get("LONGVALE_LOG_DIR", "/home/kylee/kylee/LongVALE/logs")
+PERFORMANCE_LOG_PATH = os.path.join(LOG_DIR, "performance_log.jsonl")
+ATTRIBUTE_VALUE_MAX_LEN = int(os.environ.get("ATTRIBUTE_VALUE_MAX_LEN", 512))
 
 from huggingface_hub import login
 login(token=os.environ["HUGGINGFACE_HUB_TOKEN"])
@@ -61,7 +67,8 @@ def log_function_performance(func_name, start_time, end_time, start_memory, end_
         "timestamp": time.time()
     }
     
-    with open("/home/kylee/kylee/LongVALE/logs/performance_log.jsonl", "a", encoding="utf-8") as f:
+    os.makedirs(LOG_DIR, exist_ok=True)
+    with open(PERFORMANCE_LOG_PATH, "a", encoding="utf-8") as f:
         f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
 
 tokenizer = AutoTokenizer.from_pretrained(model_id)
@@ -481,6 +488,55 @@ def merge_segments_by_jsd(segments, similarity_threshold=JSD_SIMILARITY_THRESHOL
 
     return merged
 
+def _merge_segments_by_level(segments, similarity_threshold=JSD_SIMILARITY_THRESHOLD):
+    if not segments:
+        return []
+
+    segments_by_level = defaultdict(list)
+    for seg in segments:
+        level = seg.get("level", 0)
+        segments_by_level[level].append(seg)
+
+    merged_segments = []
+    for level, items in segments_by_level.items():
+        items.sort(key=lambda seg: (_safe_float(seg["start"]), _safe_float(seg["end"])))
+        idx = 0
+        total = len(items)
+
+        while idx < total:
+            current = items[idx]
+            start = current["start"]
+            end = current["end"]
+            text_parts = [current["text"]]
+            nodes = [current["node"]]
+            prev_dist = _token_distribution(current["text"])
+            next_idx = idx + 1
+
+            while next_idx < total:
+                nxt = items[next_idx]
+                next_dist = _token_distribution(nxt["text"])
+                divergence = _js_divergence(prev_dist, next_dist)
+                if divergence >= similarity_threshold:
+                    break
+                end = nxt["end"]
+                text_parts.append(nxt["text"])
+                nodes.append(nxt["node"])
+                prev_dist = next_dist
+                next_idx += 1
+
+            merged_segments.append({
+                "start": start,
+                "end": end,
+                "text": " ".join(text_parts).strip(),
+                "node": nodes[0],
+                "nodes": nodes,
+                "level": level,
+            })
+            idx = next_idx
+
+    merged_segments.sort(key=lambda seg: (_safe_float(seg["start"]), _safe_float(seg["end"]), seg.get("level", 0)))
+    return merged_segments
+
 # JSON 보정 유틸
 def _has_colon_outside_quotes(text: str) -> bool:
     in_string = False
@@ -525,7 +581,17 @@ def _fix_attribute_content(content: str) -> str:
                 value_obj = json.loads(base)
             except Exception:
                 value_obj = base.strip('"')
-            value_json = json.dumps(value_obj, ensure_ascii=False)
+
+            if isinstance(value_obj, (dict, list)):
+                value_text = json.dumps(value_obj, ensure_ascii=False)
+            else:
+                value_text = str(value_obj).strip()
+
+            limit = max(4, ATTRIBUTE_VALUE_MAX_LEN)
+            if len(value_text) > limit:
+                value_text = value_text[:limit - 3] + "..."
+
+            value_json = json.dumps(value_text, ensure_ascii=False)
             new_body = f'{indent}"attr_{attr_counter:03d}": {value_json}'
             if has_trailing_comma:
                 new_body += ','
@@ -686,6 +752,7 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
     - Use double quotes for all keys/strings. No comments. No trailing commas.
     - If a field is unknown, use "" (empty string) or [] (empty array). Do NOT invent facts.
     - Keep key order exactly as the schema lists. Do not add extra keys.
+    - Escape any double quotes inside string values (use \\"), and avoid raw newlines inside strings unless necessary.
 
     ID & REFERENTIAL INTEGRITY
     - "event_id" must be "E_<video_id>_<start>_<end>".
@@ -745,6 +812,7 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
     e.g., "The Bank of Korea governor announces that the base rate is kept on hold."
     - "LOD.implications": short phrase on significance/impact.
     e.g., "Major economics,finance news event"
+    - "objects[].attributes.*" values must be concise (<=2 sentences / ~200 chars) and descriptive of the object. Apply the same limit to "LOD.scene_topic" and "LOD.implications".
     """
     user_prompt = f"""
 
@@ -972,11 +1040,11 @@ def _iter_caption_segments(node, min_level=1, prefer_leaves=True):
         yield from _iter_caption_segments(child, min_level=min_level, prefer_leaves=prefer_leaves)
 
     if caption and start and end and level >= min_level and (is_leaf or not prefer_leaves):
-        yield {"start": start, "end": end, "text": caption, "node": node}
+        yield {"start": start, "end": end, "text": caption, "node": node, "level": level}
 
 # node를 재귀적으로 가져오고 start_time, end_time으로 sort 
-def _collect_segments(video_tree): 
-    segments = list(_iter_caption_segments(video_tree))
+def _collect_segments(video_tree, min_level=0, prefer_leaves=False):
+    segments = list(_iter_caption_segments(video_tree, min_level=min_level, prefer_leaves=prefer_leaves))
     segments.sort(key=lambda seg: (_safe_float(seg["start"]), _safe_float(seg["end"])))
     return segments
 
@@ -1040,6 +1108,10 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
         if not segments:
             continue
 
+        segments = _merge_segments_by_level(segments)
+        if not segments:
+            continue
+
         duration = _format_timestamp(video_tree.get("end_time"))
         if not duration:
             duration = segments[-1]["end"]
@@ -1055,6 +1127,7 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
         # merge time split 
         # segments = repeated_ngram_ratio(segments)
         # segments = merge_segments_by_kl(segments)
+        # segments = merge_segments_by_jsd(segments)
         # unused
         # segments = merge_segments_by_text(segments) 
 
@@ -1063,14 +1136,23 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
         speech_translation = translate_speech(video_id, speech_json_dir)       
 
         for idx, segment in enumerate(segments):
+            start = segment["start"]
+            end = segment["end"]
+            text = segment["text"]
+            target_nodes = segment.get("nodes") or ([segment.get("node")] if segment.get("node") else [])
+            if not target_nodes:
+                continue
             # node 는 값이 아니고 참조변수
-            start = segment["start"]; end = segment["end"]; text = segment["text"]; node = segment["node"]
             result = extract_info_with_llm(video_id, idx, start, end, text, not_json_dir)
 
             # LLM 결과에 관계없이 실제 start/end로 덮어쓰기
             result.setdefault('event', {}).setdefault('time', {})
             result['event']['time']['start'] = str(start)
             result['event']['time']['end'] = str(end)
+            
+            # LLM Summary를 그냥 caption으로 사용
+            lod = result.setdefault('LOD', {})
+            lod['summary'] = text
 
             # Visual, Audio modality split
             split_result = split_modality_caption_with_llm(text)
@@ -1083,11 +1165,12 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
             result['LOD']['modalities'] = split_result_dict
             
             # node에 저장 
-            node["postprocess"] = {
-                "event_id": idx,
-                "original_answer": text,
-                "result": result,
-            }
+            for node in target_nodes:
+                node["postprocess"] = {
+                    "event_id": idx,
+                    "original_answer": text,
+                    "result": copy.deepcopy(result),
+                }
         # summarize child node's caption 
         _aggregate_child_captions(video_tree)
         # save result
@@ -1104,9 +1187,42 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
 
 # === 실행 예시 ===
 if __name__ == "__main__":
-    input_file = "/home/kylee/kylee/LongVALE/data/postprocess/tree_sample_20_refine.json"
-    # output_file = "/home/kylee/kylee/LongVALE/logs/pipeline_1028.json"   # 결과 저장 json
-    output_dir = "/home/kylee/kylee/LongVALE/data/postprocess"
-    os.makedirs(output_dir, exist_ok=True)
-    # os.makedirs(os.path.dirname(output_file), exist_ok=True)
-    process_txt_file(input_file, output_dir, speech_json_dir="/home/kylee/kylee/LongVALE/data/speech_asr_1171", not_json_dir="/home/kylee/kylee/LongVALE/logs/wrong_sample_1015.txt")
+    parser = argparse.ArgumentParser(description="Run postprocess pipeline on one or more JSON inputs.")
+    parser.add_argument(
+        "--input",
+        dest="input_files",
+        nargs="+",
+        default=[
+            "/home/kylee/workspace/LongVALE/data_backup/before_postprocess/Tree-Step3_part1.json",
+            "/home/kylee/workspace/LongVALE/data_backup/before_postprocess/Tree-Step3_part2.json",
+            "/home/kylee/workspace/LongVALE/data_backup/before_postprocess/Tree-Step3_part3.json",
+            "/home/kylee/workspace/LongVALE/data_backup/before_postprocess/Tree-Step3_part4.json",
+        ],
+        help="One or more JSON tree files to process.",
+    )
+    parser.add_argument(
+        "--output-dir",
+        default="/home/kylee/kylee/LongVALE/data/postprocess",
+        help="Directory to store processed outputs.",
+    )
+    parser.add_argument(
+        "--speech-json-dir",
+        default="/home/kylee/kylee/LongVALE/data/speech_asr_1171",
+        help="Directory containing speech ASR JSON files.",
+    )
+    parser.add_argument(
+        "--not-json-dir",
+        default="/home/kylee/kylee/LongVALE/logs/wrong_sample_1015.txt",
+        help="Path to log samples that fail JSON validation.",
+    )
+    args = parser.parse_args()
+
+    os.makedirs(args.output_dir, exist_ok=True)
+
+    for input_file in args.input_files:
+        process_txt_file(
+            input_file,
+            args.output_dir,
+            speech_json_dir=args.speech_json_dir,
+            not_json_dir=args.not_json_dir,
+        )
