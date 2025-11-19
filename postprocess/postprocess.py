@@ -488,54 +488,72 @@ def merge_segments_by_jsd(segments, similarity_threshold=JSD_SIMILARITY_THRESHOL
 
     return merged
 
-def _merge_segments_by_level(segments, similarity_threshold=JSD_SIMILARITY_THRESHOLD):
-    if not segments:
+
+def _child_sort_key(node):
+    return (_safe_float(node.get("start_time")), _safe_float(node.get("end_time")))
+
+
+def _merge_node_list(nodes, similarity_threshold=JSD_SIMILARITY_THRESHOLD):
+    valid_nodes = [node for node in nodes if isinstance(node, dict)]
+    if not valid_nodes:
         return []
 
-    segments_by_level = defaultdict(list)
-    for seg in segments:
-        level = seg.get("level", 0)
-        segments_by_level[level].append(seg)
+    sorted_nodes = sorted(valid_nodes, key=_child_sort_key)
+    merged = []
+    idx = 0
+    total = len(sorted_nodes)
 
-    merged_segments = []
-    for level, items in segments_by_level.items():
-        items.sort(key=lambda seg: (_safe_float(seg["start"]), _safe_float(seg["end"])))
-        idx = 0
-        total = len(items)
+    while idx < total:
+        current = sorted_nodes[idx]
+        level = current.get("level")
+        caption = (current.get("caption") or "").strip()
+        caption_parts = [caption] if caption else []
+        start_time = _safe_float(current.get("start_time"))
+        end_time = _safe_float(current.get("end_time"))
+        combined_children = list(current.get("children") or [])
+        prev_dist = _token_distribution(caption)
+        next_idx = idx + 1
 
-        while idx < total:
-            current = items[idx]
-            start = current["start"]
-            end = current["end"]
-            text_parts = [current["text"]]
-            nodes = [current["node"]]
-            prev_dist = _token_distribution(current["text"])
-            next_idx = idx + 1
+        while next_idx < total:
+            nxt = sorted_nodes[next_idx]
+            next_caption = (nxt.get("caption") or "").strip()
+            next_dist = _token_distribution(next_caption)
+            divergence = _js_divergence(prev_dist, next_dist)
+            if divergence >= similarity_threshold:
+                break
+            start_time = min(start_time, _safe_float(nxt.get("start_time")))
+            end_time = max(end_time, _safe_float(nxt.get("end_time")))
+            if next_caption:
+                caption_parts.append(next_caption)
+                prev_dist = _token_distribution(next_caption)
+            combined_children.extend(nxt.get("children") or [])
+            next_idx += 1
 
-            while next_idx < total:
-                nxt = items[next_idx]
-                next_dist = _token_distribution(nxt["text"])
-                divergence = _js_divergence(prev_dist, next_dist)
-                if divergence >= similarity_threshold:
-                    break
-                end = nxt["end"]
-                text_parts.append(nxt["text"])
-                nodes.append(nxt["node"])
-                prev_dist = next_dist
-                next_idx += 1
+        current["start_time"] = start_time
+        current["end_time"] = end_time
+        if caption_parts:
+            current["caption"] = " ".join(caption_parts).strip()
+        current["children"] = sorted(combined_children, key=_child_sort_key)
+        current["level"] = level
+        merged.append(current)
+        idx = next_idx
 
-            merged_segments.append({
-                "start": start,
-                "end": end,
-                "text": " ".join(text_parts).strip(),
-                "node": nodes[0],
-                "nodes": nodes,
-                "level": level,
-            })
-            idx = next_idx
+    return merged
 
-    merged_segments.sort(key=lambda seg: (_safe_float(seg["start"]), _safe_float(seg["end"]), seg.get("level", 0)))
-    return merged_segments
+
+def _merge_children_recursive(node, similarity_threshold=JSD_SIMILARITY_THRESHOLD):
+    if not isinstance(node, dict):
+        return
+
+    children = node.get("children") or []
+    if not children:
+        node["children"] = []
+        return
+
+    for child in children:
+        _merge_children_recursive(child, similarity_threshold)
+
+    node["children"] = _merge_node_list(children, similarity_threshold)
 
 # JSON 보정 유틸
 def _has_colon_outside_quotes(text: str) -> bool:
@@ -1104,11 +1122,9 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
         if not isinstance(video_tree, dict):
             continue
 
-        segments = _collect_segments(video_tree)
-        if not segments:
-            continue
+        _merge_children_recursive(video_tree)
 
-        segments = _merge_segments_by_level(segments)
+        segments = _collect_segments(video_tree)
         if not segments:
             continue
 
