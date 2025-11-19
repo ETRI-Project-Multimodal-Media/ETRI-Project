@@ -1,0 +1,3300 @@
+{
+  "video_id": "Fvj9I7MGPhc",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 108.541767,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 34.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 4.5,
+            "children": [],
+            "caption": "The video opens with a black screen displaying the date \"August 10th, 2010\" in white text, accompanied by a woman's voice.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "The video opens with a black screen displaying the date \"August 10th, 2010\" in white text, accompanied by a woman's voice.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_0_4.5",
+                "tags": [
+                  "video_opening",
+                  "black_screen",
+                  "date_display"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "black_screen",
+                    "attributes": {
+                      "displayed_text": "August 10th, 2010"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman's_voice",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_0_4.5",
+                  "name": "video_opening",
+                  "time": {
+                    "start": "0",
+                    "end": "4.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "video_opening"
+                  ],
+                  "scene_topic": "The video opens with a black screen displaying the date 'August 10th, 2010' in white text, accompanied by a woman's voice.",
+                  "summary": "The video opens with a black screen displaying the date \"August 10th, 2010\" in white text, accompanied by a woman's voice.",
+                  "implications": "Major video opening event",
+                  "modalities": {
+                    "visual": "The video opens with a black screen displaying the date 'August 10th, 2010' in white text, accompanied by a woman's voice.",
+                    "audio": "",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 4.5,
+            "end_time": 11.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 4.5,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "A young boy, wearing a dark shirt and shorts, stands on the porch, looking curiously at the camera as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "A young boy, wearing a dark shirt and shorts, stands on the porch, looking curiously at the camera as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_4.5_6.5",
+                    "tags": [
+                      "child",
+                      "porch",
+                      "curiosity"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "boy",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "dark shirt and shorts"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "background"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "boy",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "child"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_4.5_6.5",
+                      "name": "boy on porch",
+                      "time": {
+                        "start": "4.5",
+                        "end": "6.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "child development"
+                      ],
+                      "scene_topic": "A young boy stands on the porch, looking curiously at the camera.",
+                      "summary": "A young boy, wearing a dark shirt and shorts, stands on the porch, looking curiously at the camera as a woman's voice can be heard in the background.",
+                      "implications": "Child development, curiosity",
+                      "modalities": {
+                        "visual": "A young boy, wearing a dark shirt and shorts, stands on the porch, looking curiously at the camera as a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 11.5,
+                "children": [],
+                "caption": "A young boy, illuminated by the warm glow of the porch light, walks towards the camera, his footsteps echoing on the wooden stairs as a woman's voice can be heard, though her words are unclear.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A young boy, illuminated by the warm glow of the porch light, walks towards the camera, his footsteps echoing on the wooden stairs as a woman's voice can be heard, though her words are unclear.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_6_11",
+                    "tags": [
+                      "porch",
+                      "boy",
+                      "woman",
+                      "voice",
+                      "stair"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "boy",
+                        "attributes": {
+                          "age": "young",
+                          "direction": "towards camera",
+                          "lighting": "warm glow"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "porch",
+                        "attributes": {
+                          "type": "outdoor",
+                          "lighting": "warm glow"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stairs",
+                        "attributes": {
+                          "material": "wooden",
+                          "sound": "footsteps echoing"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "boy",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "background",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_6_11",
+                      "name": "",
+                      "time": {
+                        "start": "6.5",
+                        "end": "11.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "outdoor"
+                      ],
+                      "scene_topic": "A young boy walks towards the camera, his footsteps echoing on the wooden stairs.",
+                      "summary": "A young boy, illuminated by the warm glow of the porch light, walks towards the camera, his footsteps echoing on the wooden stairs as a woman's voice can be heard, though her words are unclear.",
+                      "implications": "A significant event in the life of the boy",
+                      "modalities": {
+                        "visual": "A young boy walks towards the camera, illuminated by the warm glow of the porch light, his footsteps echoing on the wooden stairs.",
+                        "audio": "woman's voice",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young boy stands on the porch, curiously looking at the camera, as a woman's voice can be heard in the background. He then walks towards the camera, his footsteps echoing on the wooden stairs, as the woman's voice remains unclear.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "A young boy stands on the porch, curiously looking at the camera, as a woman's voice can be heard in the background. He then walks towards the camera, his footsteps echoing on the wooden stairs, as the woman's voice remains unclear.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_4_11",
+                "tags": [
+                  "child",
+                  "porch",
+                  "camera",
+                  "woman",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "boy",
+                    "attributes": {
+                      "age": "young",
+                      "action": "curiously looking",
+                      "location": "porch"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "voice": "unclear"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "boy",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "child"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_4_11",
+                  "name": "boy on porch",
+                  "time": {
+                    "start": "4.5",
+                    "end": "11.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "child development"
+                  ],
+                  "scene_topic": "A young boy stands on the porch, curiously looking at the camera, as a woman's voice can be heard in the background.",
+                  "summary": "A young boy stands on the porch, curiously looking at the camera, as a woman's voice can be heard in the background. He then walks towards the camera, his footsteps echoing on the wooden stairs, as the woman's voice remains unclear.",
+                  "implications": "Major child development event",
+                  "modalities": {
+                    "visual": "A young boy stands on the porch, curiously looking at the camera, as he walks towards the camera.",
+                    "audio": "woman's voice; footsteps echoing on the wooden stairs",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "A young boy stands on a porch, looking at the camera with curiosity, as a woman's voice is heard in the background. He then walks towards the camera, his footsteps echoing on the stairs, as the woman's voice continues to be heard, though her words are unclear."
+          },
+          {
+            "level": 2,
+            "start_time": 11.5,
+            "end_time": 18.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 11.5,
+                "end_time": 14.5,
+                "children": [],
+                "caption": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face etched with concern as she listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face etched with concern as she listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_11.5_14.5",
+                    "tags": [
+                      "girl",
+                      "room",
+                      "concern",
+                      "voice",
+                      "car"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "hair_color": "dark",
+                          "clothing": "black top"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "barely audible"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "car",
+                        "attributes": {
+                          "sound": "starting up"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_11.5_14.5",
+                      "name": "",
+                      "time": {
+                        "start": "11.5",
+                        "end": "14.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room",
+                        "sound"
+                      ],
+                      "scene_topic": "A young girl listens to a woman's voice in a dimly lit room as a car engine starts up.",
+                      "summary": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face etched with concern as she listens to a woman's voice, her words barely audible over the sound of a car engine starting up.",
+                      "implications": "Major drama, emotional event",
+                      "modalities": {
+                        "visual": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face etched with concern.",
+                        "audio": "woman's voice; car engine starting up",
+                        "speech": "Alice a prettier ingirl is trying to help a woman in labor who is struggling to deliver a baby"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 14.5,
+                "end_time": 18.5,
+                "children": [],
+                "caption": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face etched with concern as she listens to a woman's voice, her words barely audible over the sound of a baby crying.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face etched with concern as she listens to a woman's voice, her words barely audible over the sound of a baby crying.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_14.5_18.5",
+                    "tags": [
+                      "girl",
+                      "woman",
+                      "baby",
+                      "concern",
+                      "listening"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "hair_color": "dark",
+                          "clothing": "black top"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "barely audible"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "baby",
+                        "attributes": {
+                          "sound": "crying"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "supporting",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_14.5_18.5",
+                      "name": "girl listens to woman's voice",
+                      "time": {
+                        "start": "14.5",
+                        "end": "18.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "family"
+                      ],
+                      "scene_topic": "A young girl listens to a woman's voice in a dimly lit room.",
+                      "summary": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face etched with concern as she listens to a woman's voice, her words barely audible over the sound of a baby crying.",
+                      "implications": "Emotional significance of the scene",
+                      "modalities": {
+                        "visual": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face etched with concern.",
+                        "audio": "woman's voice; baby crying",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl listens intently to a woman's voice, the sound of a car engine or a baby crying drowning out the words.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "A young girl listens intently to a woman's voice, the sound of a car engine or a baby crying drowning out the words.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_11.5_18.5",
+                "tags": [
+                  "child",
+                  "woman",
+                  "car",
+                  "baby"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "age": "young",
+                      "listening": "intently"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "speaking": "voice"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "car",
+                    "attributes": {
+                      "sound": "engine"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "baby",
+                    "attributes": {
+                      "sound": "crying"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "listener",
+                    "entity": "child"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "adult"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_11.5_18.5",
+                  "name": "girl listens to woman",
+                  "time": {
+                    "start": "11.5",
+                    "end": "18.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "child development"
+                  ],
+                  "scene_topic": "A young girl listens intently to a woman's voice, the sound of a car engine or a baby crying drowning out the words.",
+                  "summary": "A young girl listens intently to a woman's voice, the sound of a car engine or a baby crying drowning out the words.",
+                  "implications": "Major child development news event",
+                  "modalities": {
+                    "visual": "A young girl listens intently to a woman's voice.",
+                    "audio": "woman's voice; car engine; baby crying",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "A young girl with long dark hair stands in a dimly lit room, her face etched with concern as she listens to a woman's voice, barely audible over the sound of a car engine starting up and a baby crying."
+          },
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 21.5,
+            "children": [],
+            "caption": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face illuminated by a soft light as she speaks directly to the camera.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face illuminated by a soft light as she speaks directly to the camera.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_18.5_21.5",
+                "tags": [
+                  "girl",
+                  "room",
+                  "camera",
+                  "light"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "hair_color": "dark",
+                      "clothing": "black top"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_18.5_21.5",
+                  "name": "girl speaking to camera",
+                  "time": {
+                    "start": "18.5",
+                    "end": "21.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person speaking"
+                  ],
+                  "scene_topic": "A young girl speaks directly to the camera in a dimly lit room.",
+                  "summary": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face illuminated by a soft light as she speaks directly to the camera.",
+                  "implications": "Personal, emotional, or intimate moment",
+                  "modalities": {
+                    "visual": "A young girl with long dark hair, wearing a black top, stands in a dimly lit room, her face illuminated by a soft light as she speaks directly to the camera.",
+                    "audio": "",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 21.5,
+            "end_time": 34.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 25.5,
+                "children": [],
+                "caption": "A young girl, illuminated by soft lighting, gazes at the camera with a neutral expression as a woman's voice, seemingly unrelated to the girl, can be heard in the background.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A young girl, illuminated by soft lighting, gazes at the camera with a neutral expression as a woman's voice, seemingly unrelated to the girl, can be heard in the background.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_21.5_25.5",
+                    "tags": [
+                      "girl",
+                      "soft_lighting",
+                      "neutral_expression",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "expression": "neutral",
+                          "illumination": "soft_lighting"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "background"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_21.5_25.5",
+                      "name": "",
+                      "time": {
+                        "start": "21.5",
+                        "end": "25.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_behavior"
+                      ],
+                      "scene_topic": "A young girl gazes at the camera with a neutral expression.",
+                      "summary": "A young girl, illuminated by soft lighting, gazes at the camera with a neutral expression as a woman's voice, seemingly unrelated to the girl, can be heard in the background.",
+                      "implications": "Minor human behavior event",
+                      "modalities": {
+                        "visual": "A young girl, illuminated by soft lighting, gazes at the camera with a neutral expression as a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 25.5,
+                "end_time": 32.5,
+                "children": [],
+                "caption": "A young girl, dressed in a white shirt and black pants, stands in a room with a light-colored wall, her face illuminated by soft light as she speaks directly to the camera.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "A young girl, dressed in a white shirt and black pants, stands in a room with a light-colored wall, her face illuminated by soft light as she speaks directly to the camera.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_25.5_32.5",
+                    "tags": [
+                      "girl",
+                      "room",
+                      "light",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "clothing": "white shirt and black pants",
+                          "illumination": "soft light",
+                          "location": "room with light-colored wall"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young girl",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_25.5_32.5",
+                      "name": "girl speaking to camera",
+                      "time": {
+                        "start": "25.5",
+                        "end": "32.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A young girl speaks directly to the camera.",
+                      "summary": "A young girl, dressed in a white shirt and black pants, stands in a room with a light-colored wall, her face illuminated by soft light as she speaks directly to the camera.",
+                      "implications": "Minor event in a person's life",
+                      "modalities": {
+                        "visual": "A young girl stands in a room with a light-colored wall, her face illuminated by soft light.",
+                        "audio": "",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 32.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "A young girl, dressed in a white shirt and black pants, stands in a grassy field, her face etched with concern as she looks up at someone off-camera.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A young girl, dressed in a white shirt and black pants, stands in a grassy field, her face etched with concern as she looks up at someone off-camera.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_32.5_34.5",
+                    "tags": [
+                      "girl",
+                      "field",
+                      "concern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "description": "A young girl, dressed in a white shirt and black pants, stands in a grassy field, her face etched with concern as she looks up at someone off-camera."
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_32.5_34.5",
+                      "name": "",
+                      "time": {
+                        "start": "32.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people"
+                      ],
+                      "scene_topic": "A young girl stands in a grassy field, looking up at someone off-camera with concern.",
+                      "summary": "A young girl, dressed in a white shirt and black pants, stands in a grassy field, her face etched with concern as she looks up at someone off-camera.",
+                      "implications": "Minor emotional event",
+                      "modalities": {
+                        "visual": "A young girl, dressed in a white shirt and black pants, stands in a grassy field, her face etched with concern as she looks up at someone off-camera.",
+                        "audio": "",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl is shown in various settings, expressing different emotions, as an unrelated voice speaks in the background.",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "A young girl is shown in various settings, expressing different emotions, as an unrelated voice speaks in the background.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_21.5_34.5",
+                "tags": [
+                  "child",
+                  "emotions",
+                  "background_voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "unrelated voice",
+                    "ref_object": "",
+                    "role": "speaker",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_21.5_34.5",
+                  "name": "girl's emotional expressions",
+                  "time": {
+                    "start": "21.5",
+                    "end": "34.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "child development"
+                  ],
+                  "scene_topic": "A young girl is shown in various settings, expressing different emotions, as an unrelated voice speaks in the background.",
+                  "summary": "A young girl is shown in various settings, expressing different emotions, as an unrelated voice speaks in the background.",
+                  "implications": "Child development and emotional intelligence",
+                  "modalities": {
+                    "visual": "A young girl is shown in various settings, expressing different emotions.",
+                    "audio": "unrelated voice speaks in the background",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "A young girl is shown in three different settings, each with a neutral or concerned expression, as a woman's voice is heard in the background. The girl is dressed in a white shirt and black pants, and is seen standing in a room and a grassy field, speaking directly to the camera or looking up at someone off-camera."
+          }
+        ],
+        "caption": "A young girl is shown in various settings, expressing different emotions, while an unrelated voice speaks in the background.",
+        "postprocess": {
+          "event_id": 1,
+          "original_answer": "A young girl is shown in various settings, expressing different emotions, while an unrelated voice speaks in the background.",
+          "result": {
+            "video_id": "Fvj9I7MGPhc",
+            "event_id": "E_Fvj9I7MGPhc_0_34.5",
+            "tags": [
+              "child",
+              "emotions",
+              "background_voice"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "girl",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "unrelated voice",
+                "ref_object": "",
+                "role": "speaker",
+                "entity": "voice"
+              }
+            ],
+            "event": {
+              "event_id": "E_Fvj9I7MGPhc_0_34.5",
+              "name": "girl's emotional expressions",
+              "time": {
+                "start": "0",
+                "end": "34.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "child development"
+              ],
+              "scene_topic": "A young girl is shown in various settings, expressing different emotions, while an unrelated voice speaks in the background.",
+              "summary": "A young girl is shown in various settings, expressing different emotions, while an unrelated voice speaks in the background.",
+              "implications": "Minor child development, emotional intelligence",
+              "modalities": {
+                "visual": "A young girl is shown in various settings, expressing different emotions.",
+                "audio": "unrelated voice speaks in the background.",
+                "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+              }
+            }
+          }
+        },
+        "summary": "A young girl with long dark hair is shown in three different settings, each with a neutral or concerned expression, as a woman's voice is heard in the background. The girl is seen speaking directly to the camera or looking up at someone off-camera, with the woman's voice barely audible over the sound of a car engine and a baby crying."
+      },
+      {
+        "level": 1,
+        "start_time": 34.5,
+        "end_time": 48.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 34.5,
+            "end_time": 43.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 43.5,
+                "children": [],
+                "caption": "A young boy, dressed in a light-colored shirt, stands on a grassy field, his gaze fixed on something off-camera as a woman's voice can be heard, her words unclear but her tone suggesting a playful interaction.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "A young boy, dressed in a light-colored shirt, stands on a grassy field, his gaze fixed on something off-camera as a woman's voice can be heard, her words unclear but her tone suggesting a playful interaction.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_34.5_43.5",
+                    "tags": [
+                      "boy",
+                      "grass",
+                      "field",
+                      "woman",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "boy",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "light-colored shirt",
+                          "location": "grassy field"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "voice",
+                          "tone": "playful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "boy",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "boy"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_34.5_43.5",
+                      "name": "playful interaction",
+                      "time": {
+                        "start": "34.5",
+                        "end": "43.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "family",
+                        "play"
+                      ],
+                      "scene_topic": "A young boy stands on a grassy field, interacting with a woman's voice.",
+                      "summary": "A young boy, dressed in a light-colored shirt, stands on a grassy field, his gaze fixed on something off-camera as a woman's voice can be heard, her words unclear but her tone suggesting a playful interaction.",
+                      "implications": "Minor family event",
+                      "modalities": {
+                        "visual": "A young boy stands on a grassy field, his gaze fixed on something off-camera, dressed in a light-colored shirt.",
+                        "audio": "woman's voice; unclear words; playful tone.",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young boy stands on a grassy field, engrossed in an unknown activity, while a woman's voice can be heard in the background, seemingly involved in a playful interaction with him.",
+            "postprocess": {
+              "event_id": 15,
+              "original_answer": "A young boy stands on a grassy field, engrossed in an unknown activity, while a woman's voice can be heard in the background, seemingly involved in a playful interaction with him.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_34.5_43.5",
+                "tags": [
+                  "child",
+                  "outdoor",
+                  "play",
+                  "family"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "boy",
+                    "attributes": {
+                      "age": "young",
+                      "activity": "unknown"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "role": "voice",
+                      "activity": "playful interaction"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "boy",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "child"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "supporting",
+                    "entity": "adult"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_34.5_43.5",
+                  "name": "Playful interaction between child and adult",
+                  "time": {
+                    "start": "34.5",
+                    "end": "43.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family life"
+                  ],
+                  "scene_topic": "A young boy plays with a woman in a grassy field.",
+                  "summary": "A young boy stands on a grassy field, engrossed in an unknown activity, while a woman's voice can be heard in the background, seemingly involved in a playful interaction with him.",
+                  "implications": "A significant family bonding moment.",
+                  "modalities": {
+                    "visual": "A young boy stands on a grassy field, engrossed in an unknown activity, while a woman's voice can be heard in the background.",
+                    "audio": "woman's voice",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "A young boy stands on a grassy field, gazing off-camera, while a woman's voice can be heard in the background, suggesting a playful interaction."
+          },
+          {
+            "level": 2,
+            "start_time": 43.5,
+            "end_time": 48.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 43.5,
+                "end_time": 48.5,
+                "children": [],
+                "caption": "A young boy, dressed in a light-colored shirt, stands in a grassy field, his gaze fixed on something off-camera as a woman's voice can be heard, her words unclear but her tone suggesting a playful interaction.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "A young boy, dressed in a light-colored shirt, stands in a grassy field, his gaze fixed on something off-camera as a woman's voice can be heard, her words unclear but her tone suggesting a playful interaction.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_43.5_48.5",
+                    "tags": [
+                      "boy",
+                      "field",
+                      "woman",
+                      "voice",
+                      "playful"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "boy",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "light-colored shirt",
+                          "location": "grassy field"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "playful",
+                          "tone": "unclear"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "boy",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "supporting",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_43.5_48.5",
+                      "name": "playful interaction",
+                      "time": {
+                        "start": "43.5",
+                        "end": "48.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "play"
+                      ],
+                      "scene_topic": "A young boy stands in a grassy field, interacting with a woman's voice.",
+                      "summary": "A young boy, dressed in a light-colored shirt, stands in a grassy field, his gaze fixed on something off-camera as a woman's voice can be heard, her words unclear but her tone suggesting a playful interaction.",
+                      "implications": "Minor social interaction",
+                      "modalities": {
+                        "visual": "A young boy, dressed in a light-colored shirt, stands in a grassy field, his gaze fixed on something off-camera as a woman's voice can be heard, her words unclear but her tone suggesting a playful interaction.",
+                        "audio": "woman's voice",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young boy stands in a grassy field, engrossed in something off-camera, while a woman's voice can be heard in the background, though her words are unclear.",
+            "postprocess": {
+              "event_id": 18,
+              "original_answer": "A young boy stands in a grassy field, engrossed in something off-camera, while a woman's voice can be heard in the background, though her words are unclear.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_43.5_48.5",
+                "tags": [
+                  "boy",
+                  "field",
+                  "voice",
+                  "background"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "boy",
+                    "attributes": {
+                      "age": "young",
+                      "location": "grassy field",
+                      "engagement": "off-camera"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "",
+                    "role": "voice",
+                    "entity": "background"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_43.5_48.5",
+                  "name": "",
+                  "time": {
+                    "start": "43.5",
+                    "end": "48.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family life"
+                  ],
+                  "scene_topic": "A young boy stands in a grassy field, engrossed in something off-camera, while a woman's voice can be heard in the background, though her words are unclear.",
+                  "summary": "A young boy stands in a grassy field, engrossed in something off-camera, while a woman's voice can be heard in the background, though her words are unclear.",
+                  "implications": "Family life event",
+                  "modalities": {
+                    "visual": "A young boy stands in a grassy field, engrossed in something off-camera, while a woman's voice can be heard in the background.",
+                    "audio": "woman's voice",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "A young boy stands in a grassy field, gazing off-camera, while a woman's voice can be heard in the background, suggesting a playful interaction."
+          }
+        ],
+        "caption": "A young boy is engrossed in an activity off-camera, while a woman's voice can be heard in the background, seemingly interacting with him in a playful manner.",
+        "postprocess": {
+          "event_id": 16,
+          "original_answer": "A young boy is engrossed in an activity off-camera, while a woman's voice can be heard in the background, seemingly interacting with him in a playful manner.",
+          "result": {
+            "video_id": "Fvj9I7MGPhc",
+            "event_id": "E_Fvj9I7MGPhc_34.5_48.5",
+            "tags": [
+              "child",
+              "play",
+              "interaction"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "boy",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "woman",
+                "ref_object": "O001",
+                "role": "interactor",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_Fvj9I7MGPhc_34.5_48.5",
+              "name": "Playful interaction",
+              "time": {
+                "start": "34.5",
+                "end": "48.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "family life"
+              ],
+              "scene_topic": "A woman's voice is heard interacting with a young boy in a playful manner.",
+              "summary": "A young boy is engrossed in an activity off-camera, while a woman's voice can be heard in the background, seemingly interacting with him in a playful manner.",
+              "implications": "Family bonding and playful interaction",
+              "modalities": {
+                "visual": "A young boy is engrossed in an activity off-camera, while a woman's voice can be heard in the background, seemingly interacting with him in a playful manner.",
+                "audio": "woman's voice",
+                "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+              }
+            }
+          }
+        },
+        "summary": "A young boy stands in a grassy field, gazing off-camera, while a woman's voice can be heard in the background, suggesting a playful interaction."
+      },
+      {
+        "level": 1,
+        "start_time": 48.5,
+        "end_time": 83.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 48.5,
+            "end_time": 58.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 48.5,
+                "end_time": 58.5,
+                "children": [],
+                "caption": "A young boy, dressed in a black shirt and pants, stands in a grassy field, intently watching something off-camera as a woman's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "A young boy, dressed in a black shirt and pants, stands in a grassy field, intently watching something off-camera as a woman's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_48.5_58.5",
+                    "tags": [
+                      "child",
+                      "field",
+                      "farewell"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "boy",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "black shirt and pants"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "woman's voice"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "boy",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "child"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "voice",
+                        "entity": "adult"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_48.5_58.5",
+                      "name": "Farewell",
+                      "time": {
+                        "start": "48.5",
+                        "end": "58.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "family"
+                      ],
+                      "scene_topic": "A young boy says goodbye to a woman in a grassy field.",
+                      "summary": "A young boy, dressed in a black shirt and pants, stands in a grassy field, intently watching something off-camera as a woman's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                      "implications": "Emotional moment between a child and an adult.",
+                      "modalities": {
+                        "visual": "A young boy, dressed in a black shirt and pants, stands in a grassy field, intently watching something off-camera as a woman's voice can be heard saying 'Bye' and 'I'll see you later'.",
+                        "audio": "Woman's voice saying 'Bye' and 'I'll see you later'.",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young boy watches something off-camera while a woman's voice says goodbye and will see him later.",
+            "postprocess": {
+              "event_id": 20,
+              "original_answer": "A young boy watches something off-camera while a woman's voice says goodbye and will see him later.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_48.5_58.5",
+                "tags": [
+                  "child",
+                  "farewell",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "boy",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "off-camera",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_48.5_58.5",
+                  "name": "Goodbye",
+                  "time": {
+                    "start": "48.5",
+                    "end": "58.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "family"
+                  ],
+                  "scene_topic": "A woman says goodbye to a young boy, promising to see him later.",
+                  "summary": "A young boy watches something off-camera while a woman's voice says goodbye and will see him later.",
+                  "implications": "Emotional moment in a family",
+                  "modalities": {
+                    "visual": "A young boy watches something off-camera while a woman's voice says goodbye and will see him later.",
+                    "audio": "",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "A young boy stands in a grassy field, intently watching something off-camera as a woman's voice says goodbye and promises to see him later."
+          },
+          {
+            "level": 2,
+            "start_time": 58.5,
+            "end_time": 72.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 58.5,
+                "end_time": 68.5,
+                "children": [],
+                "caption": "A young girl, dressed in a white dress, sits at a table in a simple room, speaking directly to the camera with a serious expression.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "A young girl, dressed in a white dress, sits at a table in a simple room, speaking directly to the camera with a serious expression.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_58_68",
+                    "tags": [
+                      "girl",
+                      "table",
+                      "room",
+                      "camera",
+                      "serious"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "dressed": "white dress",
+                          "expression": "serious"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young girl",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_58_68",
+                      "name": "girl speaking to camera",
+                      "time": {
+                        "start": "58.5",
+                        "end": "68.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A young girl sits at a table in a simple room, speaking directly to the camera with a serious expression.",
+                      "summary": "A young girl, dressed in a white dress, sits at a table in a simple room, speaking directly to the camera with a serious expression.",
+                      "implications": "Minor event in a person's life",
+                      "modalities": {
+                        "visual": "A young girl, dressed in a white dress, sits at a table in a simple room, speaking directly to the camera with a serious expression.",
+                        "audio": "",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 68.5,
+                "end_time": 72.5,
+                "children": [],
+                "caption": "A young girl, dressed in a white blouse and black skirt, sits at a table in a simple room, her hands clasped in her lap as she listens intently to a man's voice, his words barely audible over the sound of a car engine starting up.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "A young girl, dressed in a white blouse and black skirt, sits at a table in a simple room, her hands clasped in her lap as she listens intently to a man's voice, his words barely audible over the sound of a car engine starting up.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_68.5_72.5",
+                    "tags": [
+                      "girl",
+                      "man",
+                      "car",
+                      "room"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "white blouse, black skirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "role": "speaker",
+                          "voice": "barely audible"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "table",
+                        "attributes": {
+                          "type": "simple"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "room",
+                        "attributes": {
+                          "description": "simple"
+                        }
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "car",
+                        "attributes": {
+                          "state": "starting up"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_68.5_72.5",
+                      "name": "girl listening to man",
+                      "time": {
+                        "start": "68.5",
+                        "end": "72.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "scene"
+                      ],
+                      "scene_topic": "A young girl listens intently to a man's voice in a simple room.",
+                      "summary": "A young girl, dressed in a white blouse and black skirt, sits at a table in a simple room, her hands clasped in her lap as she listens intently to a man's voice, his words barely audible over the sound of a car engine starting up.",
+                      "implications": "Major scene, person interaction",
+                      "modalities": {
+                        "visual": "A young girl, dressed in a white blouse and black skirt, sits at a table in a simple room, her hands clasped in her lap as she listens intently to a man's voice.",
+                        "audio": "man's voice; car engine starting up.",
+                        "speech": "Alice a prettier ingirl is trying to help a woman in labor"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl sits in a simple room, speaking directly to the camera with a serious expression, or listens intently to a man's voice while the sound of a car engine starts up in the background.",
+            "postprocess": {
+              "event_id": 23,
+              "original_answer": "A young girl sits in a simple room, speaking directly to the camera with a serious expression, or listens intently to a man's voice while the sound of a car engine starts up in the background.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_58_72",
+                "tags": [
+                  "girl",
+                  "room",
+                  "camera",
+                  "serious",
+                  "intently"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "age": "young",
+                      "expression": "serious"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {
+                      "role": "speaker"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "car",
+                    "attributes": {
+                      "state": "starting"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_58_72",
+                  "name": "",
+                  "time": {
+                    "start": "58.5",
+                    "end": "72.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "scene"
+                  ],
+                  "scene_topic": "A young girl sits in a simple room, speaking directly to the camera with a serious expression, or listens intently to a man's voice while the sound of a car engine starts up in the background.",
+                  "summary": "A young girl sits in a simple room, speaking directly to the camera with a serious expression, or listens intently to a man's voice while the sound of a car engine starts up in the background.",
+                  "implications": "Major scene, person event",
+                  "modalities": {
+                    "visual": "A young girl sits in a simple room, speaking directly to the camera with a serious expression, or listens intently to a man's voice while the sound of a car engine starts up in the background.",
+                    "audio": "speaking; man's voice; car engine",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "A young girl sits at a table in a simple room, speaking directly to the camera with a serious expression, while another girl listens intently to a man's voice in the background. The scene is set with a car engine starting up, creating a sense of tension and uncertainty."
+          },
+          {
+            "level": 2,
+            "start_time": 72.5,
+            "end_time": 83.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 72.5,
+                "end_time": 78.5,
+                "children": [],
+                "caption": "A young girl, dressed in a white blouse and black skirt, sits at a table in a simple room, her hands clasped in her lap as she speaks directly to the camera, her voice filled with a mix of curiosity and concern.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "A young girl, dressed in a white blouse and black skirt, sits at a table in a simple room, her hands clasped in her lap as she speaks directly to the camera, her voice filled with a mix of curiosity and concern.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_72.5_78.5",
+                    "tags": [
+                      "girl",
+                      "table",
+                      "room",
+                      "camera",
+                      "curiosity",
+                      "concern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "dressed": "white blouse and black skirt",
+                          "position": "sits at a table",
+                          "hand_position": "clasped in her lap",
+                          "direction": "speaks directly to the camera"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young girl",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_72.5_78.5",
+                      "name": "girl speaks to camera",
+                      "time": {
+                        "start": "72.5",
+                        "end": "78.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A young girl speaks directly to the camera, expressing curiosity and concern.",
+                      "summary": "A young girl, dressed in a white blouse and black skirt, sits at a table in a simple room, her hands clasped in her lap as she speaks directly to the camera, her voice filled with a mix of curiosity and concern.",
+                      "implications": "Significant event in the life of a young girl",
+                      "modalities": {
+                        "visual": "A young girl sits at a table in a simple room, dressed in a white blouse and black skirt, her hands clasped in her lap as she speaks directly to the camera.",
+                        "audio": "speaks directly to the camera",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 78.5,
+                "end_time": 83.5,
+                "children": [],
+                "caption": "A young girl, dressed in a white blouse and black skirt, sits at a table in a well-lit room, her hands clasped in her lap as she listens intently to a woman's voice, her expression serious and contemplative.",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "A young girl, dressed in a white blouse and black skirt, sits at a table in a well-lit room, her hands clasped in her lap as she listens intently to a woman's voice, her expression serious and contemplative.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_78.5_83.5",
+                    "tags": [
+                      "girl",
+                      "woman",
+                      "table",
+                      "room",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "white blouse, black skirt",
+                          "expression": "serious and contemplative",
+                          "posture": "sitting, hands clasped"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "speaker",
+                          "expression": "unknown"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "table",
+                        "attributes": {
+                          "type": "furniture",
+                          "location": "room"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "room",
+                        "attributes": {
+                          "type": "interior",
+                          "lighting": "well-lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_78.5_83.5",
+                      "name": "girl listening to woman",
+                      "time": {
+                        "start": "78.5",
+                        "end": "83.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "voice"
+                      ],
+                      "scene_topic": "A young girl listens intently to a woman's voice.",
+                      "summary": "A young girl, dressed in a white blouse and black skirt, sits at a table in a well-lit room, her hands clasped in her lap as she listens intently to a woman's voice, her expression serious and contemplative.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "A young girl sits at a table in a well-lit room, her hands clasped in her lap, her expression serious and contemplative.",
+                        "audio": "",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl sits in a room, either speaking directly to the camera or listening intently to someone else's voice, with a mix of curiosity and concern or a serious and contemplative expression.",
+            "postprocess": {
+              "event_id": 26,
+              "original_answer": "A young girl sits in a room, either speaking directly to the camera or listening intently to someone else's voice, with a mix of curiosity and concern or a serious and contemplative expression.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_72.5_83.5",
+                "tags": [
+                  "child",
+                  "room",
+                  "voice",
+                  "expression"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "expression": "curiosity and concern",
+                      "orientation": "sitting"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "speaker/listener",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_72.5_83.5",
+                  "name": "girl's conversation",
+                  "time": {
+                    "start": "72.5",
+                    "end": "83.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "child development"
+                  ],
+                  "scene_topic": "A young girl sits in a room, either speaking directly to the camera or listening intently to someone else's voice, with a mix of curiosity and concern or a serious and contemplative expression.",
+                  "summary": "A young girl sits in a room, either speaking directly to the camera or listening intently to someone else's voice, with a mix of curiosity and concern or a serious and contemplative expression.",
+                  "implications": "Child development, social skills",
+                  "modalities": {
+                    "visual": "A young girl sits in a room with a mix of curiosity and concern or a serious and contemplative expression.",
+                    "audio": "",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "A young girl sits at a table, her hands clasped in her lap, speaking directly to the camera with a mix of curiosity and concern. She is also shown listening intently to a woman's voice, her expression serious and contemplative."
+          }
+        ],
+        "caption": "Three young children are shown in various scenarios, each with a different emotional tone. The first child watches something off-camera while a woman's voice says goodbye and will see him later, suggesting a sense of separation and longing. The second child sits in a simple room and speaks directly to the camera with a serious expression, or listens intently to a man’s voice while the sound of a car engine starts up in the background, conveying a sense of focus and attention. The third child sits in a room, either speaking directly to the camera",
+        "postprocess": {
+          "event_id": 21,
+          "original_answer": "Three young children are shown in various scenarios, each with a different emotional tone. The first child watches something off-camera while a woman's voice says goodbye and will see him later, suggesting a sense of separation and longing. The second child sits in a simple room and speaks directly to the camera with a serious expression, or listens intently to a man’s voice while the sound of a car engine starts up in the background, conveying a sense of focus and attention. The third child sits in a room, either speaking directly to the camera",
+          "result": {
+            "video_id": "Fvj9I7MGPhc",
+            "event_id": "E_Fvj9I7MGPhc_48.5_83.5",
+            "tags": [
+              "children",
+              "emotions",
+              "separation",
+              "focus",
+              "attention"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Child 1",
+                "attributes": {
+                  "emotional_tone": "longing",
+                  "scenario": "watching something off-camera"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Child 2",
+                "attributes": {
+                  "emotional_tone": "focus",
+                  "scenario": "speaking to camera or listening to man's voice"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Child 3",
+                "attributes": {
+                  "emotional_tone": "",
+                  "scenario": "speaking to camera"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Woman",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Man",
+                "ref_object": "O002",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_Fvj9I7MGPhc_48.5_83.5",
+              "name": "Children's scenarios",
+              "time": {
+                "start": "48.5",
+                "end": "83.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "children's emotions"
+              ],
+              "scene_topic": "Three children are shown in various scenarios, each with a different emotional tone.",
+              "summary": "Three young children are shown in various scenarios, each with a different emotional tone. The first child watches something off-camera while a woman's voice says goodbye and will see him later, suggesting a sense of separation and longing. The second child sits in a simple room and speaks directly to the camera with a serious expression, or listens intently to a man’s voice while the sound of a car engine starts up in the background, conveying a sense of focus and attention. The third child sits in a room, either speaking directly to the camera",
+              "implications": "Major emotional development and understanding event",
+              "modalities": {
+                "visual": "Three young children are shown in various scenarios, each with a different emotional tone. The first child watches something off-camera while a woman's voice says goodbye and will see him later, suggesting a sense of separation and longing. The second child sits in a simple room and speaks directly to the camera with a serious expression, or listens intently to a man’s voice while the sound of a car engine starts up in the background, conveying a sense of focus and attention. The third child sits in a room, either speaking directly to the camera",
+                "audio": "woman's voice; man's voice; car engine",
+                "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+              }
+            }
+          }
+        },
+        "summary": "A young girl sits at a table, speaking directly to the camera with a mix of curiosity and concern, while a woman's voice is heard in the background. The scene is set with a sense of tension and uncertainty, as the girl listens intently to the woman's words and contemplates her next move."
+      },
+      {
+        "level": 1,
+        "start_time": 83.5,
+        "end_time": 108.541767,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 83.5,
+            "end_time": 90.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 83.5,
+                "end_time": 86.5,
+                "children": [],
+                "caption": "A young girl, dressed in a white shirt and black skirt, sits at a table in a well-lit room, intently focused on something in front of her as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "A young girl, dressed in a white shirt and black skirt, sits at a table in a well-lit room, intently focused on something in front of her as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_83_86",
+                    "tags": [
+                      "girl",
+                      "woman",
+                      "table",
+                      "room"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "girl",
+                        "attributes": {
+                          "age": "young",
+                          "clothing": "white shirt, black skirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "table",
+                        "attributes": {
+                          "description": "furniture"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "room",
+                        "attributes": {
+                          "description": "well-lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "girl",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "background",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_83_86",
+                      "name": "",
+                      "time": {
+                        "start": "83.5",
+                        "end": "86.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room"
+                      ],
+                      "scene_topic": "A young girl sits at a table in a well-lit room, focused on something.",
+                      "summary": "A young girl, dressed in a white shirt and black skirt, sits at a table in a well-lit room, intently focused on something in front of her as a woman's voice can be heard in the background.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "A young girl, dressed in a white shirt and black skirt, sits at a table in a well-lit room, intently focused on something in front of her as a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 86.5,
+                "end_time": 90.5,
+                "children": [],
+                "caption": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks directly to the camera, her voice filled with concern.",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks directly to the camera, her voice filled with concern.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_86_90",
+                    "tags": [
+                      "video_transition",
+                      "woman_speech",
+                      "serious_expression"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black_screen",
+                        "attributes": {
+                          "color": "black",
+                          "text": "white"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman_face",
+                        "attributes": {
+                          "expression": "serious",
+                          "voice": "concerned"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_86_90",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "86.5",
+                        "end": "90.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks directly to the camera, her voice filled with concern.",
+                      "summary": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks directly to the camera, her voice filled with concern.",
+                      "implications": "Major video content event",
+                      "modalities": {
+                        "visual": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks directly to the camera.",
+                        "audio": "her voice filled with concern.",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young girl is intensely focused on something in front of her, while a concerned woman's voice can be heard in the background.",
+            "postprocess": {
+              "event_id": 29,
+              "original_answer": "A young girl is intensely focused on something in front of her, while a concerned woman's voice can be heard in the background.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_83_90",
+                "tags": [
+                  "girl",
+                  "concerned_woman",
+                  "focused"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "focused": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "concerned_woman",
+                    "attributes": {
+                      "voice": "concerned"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "girl",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "concerned_woman",
+                    "ref_object": "O002",
+                    "role": "background",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_83_90",
+                  "name": "girl focused",
+                  "time": {
+                    "start": "83.5",
+                    "end": "90.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "scene"
+                  ],
+                  "scene_topic": "A young girl is intensely focused on something in front of her, while a concerned woman's voice can be heard in the background.",
+                  "summary": "A young girl is intensely focused on something in front of her, while a concerned woman's voice can be heard in the background.",
+                  "implications": "Minor scene with a person focused on something",
+                  "modalities": {
+                    "visual": "A young girl is intensely focused on something in front of her, while a concerned woman's voice can be heard in the background.",
+                    "audio": "concerned woman's voice",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "A young girl sits at a table, intently focused on something, while a woman's voice can be heard in the background. The scene then cuts to a close-up of the woman's face, speaking directly to the camera with a serious expression and concerned tone."
+          },
+          {
+            "level": 2,
+            "start_time": 90.5,
+            "end_time": 101.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 90.5,
+                "end_time": 94.5,
+                "children": [],
+                "caption": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks, the sound of a car engine starting and driving away audible in the background.",
+                "postprocess": {
+                  "event_id": 32,
+                  "original_answer": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks, the sound of a car engine starting and driving away audible in the background.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_90.5_94.5",
+                    "tags": [
+                      "video_transition",
+                      "woman_speaking",
+                      "car_sound"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black_screen",
+                        "attributes": {
+                          "background_color": "black",
+                          "text_color": "white"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman_face",
+                        "attributes": {
+                          "expression": "serious",
+                          "speaker": "woman"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "car_sound",
+                        "attributes": {
+                          "sound_type": "engine_start",
+                          "sound_direction": "background"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_90.5_94.5",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "90.5",
+                        "end": "94.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks, the sound of a car engine starting and driving away audible in the background.",
+                      "summary": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks, the sound of a car engine starting and driving away audible in the background.",
+                      "implications": "Major video content event",
+                      "modalities": {
+                        "visual": "The video transitions from a black screen with white text to a close-up of a woman's face, her expression serious as she speaks.",
+                        "audio": "car engine starting and driving away",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 94.5,
+                "end_time": 101.5,
+                "children": [],
+                "caption": "The video transitions from a black screen with white text to a list of credits, thanking the cast and crew, while a woman's voice can be heard faintly in the background.",
+                "postprocess": {
+                  "event_id": 34,
+                  "original_answer": "The video transitions from a black screen with white text to a list of credits, thanking the cast and crew, while a woman's voice can be heard faintly in the background.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_94.5_101.5",
+                    "tags": [
+                      "credits",
+                      "cast",
+                      "crew"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black screen",
+                        "attributes": {
+                          "background": "black",
+                          "text": "white"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "list of credits",
+                        "attributes": {
+                          "type": "text",
+                          "content": "cast and crew"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman's voice",
+                        "attributes": {
+                          "type": "audio",
+                          "volume": "faint"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "voice",
+                        "entity": "woman"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_94.5_101.5",
+                      "name": "credits roll",
+                      "time": {
+                        "start": "94.5",
+                        "end": "101.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "credits"
+                      ],
+                      "scene_topic": "The video transitions from a black screen with white text to a list of credits, thanking the cast and crew, while a woman's voice can be heard faintly in the background.",
+                      "summary": "The video transitions from a black screen with white text to a list of credits, thanking the cast and crew, while a woman's voice can be heard faintly in the background.",
+                      "implications": "Major video credits event",
+                      "modalities": {
+                        "visual": "The video transitions from a black screen with white text to a list of credits, thanking the cast and crew.",
+                        "audio": "woman's voice",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video opens with a serious-looking woman speaking, then cuts to a list of credits thanking the cast and crew.",
+            "postprocess": {
+              "event_id": 33,
+              "original_answer": "The video opens with a serious-looking woman speaking, then cuts to a list of credits thanking the cast and crew.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_90.5_101.5",
+                "tags": [
+                  "video_opening",
+                  "credits",
+                  "cast_crew"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "serious-looking woman",
+                    "attributes": {
+                      "speaker": "serious-looking woman"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "list of credits",
+                    "attributes": {
+                      "type": "credits"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "serious-looking woman",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_90.5_101.5",
+                  "name": "Video opening and credits",
+                  "time": {
+                    "start": "90.5",
+                    "end": "101.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "video_opening"
+                  ],
+                  "scene_topic": "The video opens with a serious-looking woman speaking, then cuts to a list of credits thanking the cast and crew.",
+                  "summary": "The video opens with a serious-looking woman speaking, then cuts to a list of credits thanking the cast and crew.",
+                  "implications": "Major video event",
+                  "modalities": {
+                    "visual": "The video opens with a serious-looking woman speaking, then cuts to a list of credits thanking the cast and crew.",
+                    "audio": "speaking",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "The video begins with a close-up of a woman's serious face, with a car engine sound in the background, before transitioning to a list of credits thanking the cast and crew, with a faint woman's voice audible in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 101.5,
+            "end_time": 108.541767,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 101.5,
+                "end_time": 106.5,
+                "children": [],
+                "caption": "The video transitions from a black screen with white text to a close-up of a woman's face as she speaks, then pans out to show her lying on a bed with a pregnant woman beside her, both smiling at the camera.",
+                "postprocess": {
+                  "event_id": 35,
+                  "original_answer": "The video transitions from a black screen with white text to a close-up of a woman's face as she speaks, then pans out to show her lying on a bed with a pregnant woman beside her, both smiling at the camera.",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_101_106",
+                    "tags": [
+                      "video_transition",
+                      "woman_speaking",
+                      "pregnant_woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black_screen",
+                        "attributes": {
+                          "text_color": "white"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman_speaking",
+                        "attributes": {
+                          "face_expression": "smiling"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "bed",
+                        "attributes": {
+                          "occupants": "two_women"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "pregnant_woman",
+                        "ref_object": "O003",
+                        "role": "occupant",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_101_106",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "101.5",
+                        "end": "106.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "A woman speaks and lies on a bed with a pregnant woman.",
+                      "summary": "The video transitions from a black screen with white text to a close-up of a woman's face as she speaks, then pans out to show her lying on a bed with a pregnant woman beside her, both smiling at the camera.",
+                      "implications": "Major video event",
+                      "modalities": {
+                        "visual": "The video transitions from a black screen with white text to a close-up of a woman's face as she speaks, then pans out to show her lying on a bed with a pregnant woman beside her, both smiling at the camera.",
+                        "audio": "",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 106.5,
+                "end_time": 108.541767,
+                "children": [],
+                "caption": "A woman lies on her side on a bed, her face contorted in pain as a man's voice can be heard off-screen, followed by a woman's voice saying \"Bye.\"",
+                "postprocess": {
+                  "event_id": 37,
+                  "original_answer": "A woman lies on her side on a bed, her face contorted in pain as a man's voice can be heard off-screen, followed by a woman's voice saying \"Bye.\"",
+                  "result": {
+                    "video_id": "Fvj9I7MGPhc",
+                    "event_id": "E_Fvj9I7MGPhc_106.5_108.54",
+                    "tags": [
+                      "woman",
+                      "man",
+                      "voice",
+                      "pain",
+                      "bed"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "position": "lying on her side",
+                          "expression": "contorted in pain"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "voice": "off-screen"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "bed",
+                        "attributes": {
+                          "type": "bed"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "off-screen",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_Fvj9I7MGPhc_106.5_108.54",
+                      "name": "woman in pain",
+                      "time": {
+                        "start": "106.5",
+                        "end": "108.54"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "emotional state"
+                      ],
+                      "scene_topic": "A woman lies on her side on a bed, her face contorted in pain as a man's voice can be heard off-screen, followed by a woman's voice saying 'Bye.'",
+                      "summary": "A woman lies on her side on a bed, her face contorted in pain as a man's voice can be heard off-screen, followed by a woman's voice saying \"Bye.\"",
+                      "implications": "Major emotional event",
+                      "modalities": {
+                        "visual": "A woman lies on her side on a bed, her face contorted in pain as a man's voice can be heard off-screen.",
+                        "audio": "Man's voice; woman's voice saying 'Bye'.",
+                        "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman lies on a bed, smiling and speaking to the camera, while another woman lies beside her, also smiling. Later, the scene cuts to a woman in pain on a bed, with a man's voice off-screen and a woman's voice saying goodbye.",
+            "postprocess": {
+              "event_id": 36,
+              "original_answer": "A woman lies on a bed, smiling and speaking to the camera, while another woman lies beside her, also smiling. Later, the scene cuts to a woman in pain on a bed, with a man's voice off-screen and a woman's voice saying goodbye.",
+              "result": {
+                "video_id": "Fvj9I7MGPhc",
+                "event_id": "E_Fvj9I7MGPhc_101.5_108.54",
+                "tags": [
+                  "woman",
+                  "bed",
+                  "smiling",
+                  "speaking",
+                  "camera"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Woman on bed",
+                    "attributes": {
+                      "smiling": "yes",
+                      "speaking": "yes",
+                      "camera": "on"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Woman beside her",
+                    "attributes": {
+                      "smiling": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Woman in pain",
+                    "attributes": {
+                      "in_pain": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Man's voice",
+                    "attributes": {
+                      "voice": "off-screen"
+                    }
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "Woman's voice",
+                    "attributes": {
+                      "voice": "goodbye"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Woman on bed",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Woman beside her",
+                    "ref_object": "O002",
+                    "role": "supporting",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "Woman in pain",
+                    "ref_object": "O003",
+                    "role": "main",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A004",
+                    "name": "Man's voice",
+                    "ref_object": "O004",
+                    "role": "off-screen",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A005",
+                    "name": "Woman's voice",
+                    "ref_object": "O005",
+                    "role": "off-screen",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_Fvj9I7MGPhc_101.5_108.54",
+                  "name": "Women on bed",
+                  "time": {
+                    "start": "101.5",
+                    "end": "108.54"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003",
+                    "A004",
+                    "A005"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "A woman lies on a bed, smiling and speaking to the camera, while another woman lies beside her, also smiling. Later, the scene cuts to a woman in pain on a bed, with a man's voice off-screen and a woman's voice saying goodbye.",
+                  "summary": "A woman lies on a bed, smiling and speaking to the camera, while another woman lies beside her, also smiling. Later, the scene cuts to a woman in pain on a bed, with a man's voice off-screen and a woman's voice saying goodbye.",
+                  "implications": "Major social, emotional news event",
+                  "modalities": {
+                    "visual": "A woman lies on a bed, smiling and speaking to the camera, while another woman lies beside her, also smiling. The scene cuts to a woman in pain on a bed.",
+                    "audio": "speaking; man's voice; woman's voice saying goodbye.",
+                    "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+                  }
+                }
+              }
+            },
+            "summary": "The video shows a woman speaking in close-up, then lying on a bed with a pregnant woman, both smiling. The scene cuts to another woman in pain on a bed, with a man's voice heard off-screen, followed by a woman saying \"Bye\"."
+          }
+        ],
+        "caption": "A young girl is intensely focused on something, while a concerned voice is heard in the background. The video then cuts to a serious-looking woman speaking, followed by a list of credits thanking the cast and crew. The scene then shifts to a woman lying on a bed, smiling and speaking to the camera, before cutting to a woman lying beside her, also smiling. Later, the scene cuts to a woman in pain on a bed, with a man's voice off-screen and a woman's voice saying goodbye.",
+        "postprocess": {
+          "event_id": 30,
+          "original_answer": "A young girl is intensely focused on something, while a concerned voice is heard in the background. The video then cuts to a serious-looking woman speaking, followed by a list of credits thanking the cast and crew. The scene then shifts to a woman lying on a bed, smiling and speaking to the camera, before cutting to a woman lying beside her, also smiling. Later, the scene cuts to a woman in pain on a bed, with a man's voice off-screen and a woman's voice saying goodbye.",
+          "result": {
+            "video_id": "Fvj9I7MGPhc",
+            "event_id": "E_Fvj9I7MGPhc_83.5_108.54",
+            "tags": [
+              "girl",
+              "concern",
+              "voice",
+              "woman",
+              "bed",
+              "pain"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "girl",
+                "attributes": {
+                  "focused": "yes",
+                  "intense": "yes"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "concerned voice",
+                "attributes": {
+                  "concerned": "yes"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "serious-looking woman",
+                "attributes": {
+                  "serious": "yes"
+                }
+              },
+              {
+                "object_id": "O004",
+                "name": "woman on bed",
+                "attributes": {
+                  "smiling": "yes",
+                  "speaking": "yes"
+                }
+              },
+              {
+                "object_id": "O005",
+                "name": "woman lying beside",
+                "attributes": {
+                  "smiling": "yes"
+                }
+              },
+              {
+                "object_id": "O006",
+                "name": "woman in pain",
+                "attributes": {
+                  "in_pain": "yes"
+                }
+              },
+              {
+                "object_id": "O007",
+                "name": "man's voice",
+                "attributes": {
+                  "off-screen": "yes"
+                }
+              },
+              {
+                "object_id": "O008",
+                "name": "woman's voice",
+                "attributes": {
+                  "saying_goodbye": "yes"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "girl",
+                "ref_object": "O001",
+                "role": "main",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "concerned voice",
+                "ref_object": "O002",
+                "role": "voice",
+                "entity": "voice"
+              },
+              {
+                "actor_id": "A003",
+                "name": "serious-looking woman",
+                "ref_object": "O003",
+                "role": "main",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A004",
+                "name": "woman on bed",
+                "ref_object": "O004",
+                "role": "main",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A005",
+                "name": "woman lying beside",
+                "ref_object": "O005",
+                "role": "main",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A006",
+                "name": "woman in pain",
+                "ref_object": "O006",
+                "role": "main",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A007",
+                "name": "man's voice",
+                "ref_object": "O007",
+                "role": "voice",
+                "entity": "voice"
+              },
+              {
+                "actor_id": "A008",
+                "name": "woman's voice",
+                "ref_object": "O008",
+                "role": "voice",
+                "entity": "voice"
+              }
+            ],
+            "event": {
+              "event_id": "E_Fvj9I7MGPhc_83.5_108.54",
+              "name": "A young girl is intensely focused on something, while a concerned voice is heard in the background.",
+              "time": {
+                "start": "83.5",
+                "end": "108.54"
+              },
+              "actors": [
+                "A001",
+                "A002",
+                "A003",
+                "A004",
+                "A005",
+                "A006",
+                "A007",
+                "A008"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004",
+                "O005",
+                "O006",
+                "O007",
+                "O008"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "person",
+                "voice",
+                "scene"
+              ],
+              "scene_topic": "A young girl is intensely focused on something, while a concerned voice is heard in the background.",
+              "summary": "A young girl is intensely focused on something, while a concerned voice is heard in the background. The video then cuts to a serious-looking woman speaking, followed by a list of credits thanking the cast and crew. The scene then shifts to a woman lying on a bed, smiling and speaking to the camera, before cutting to a woman lying beside her, also smiling. Later, the scene cuts to a woman in pain on a bed, with a man's voice off-screen and a woman's voice saying goodbye.",
+              "implications": "Major scene, person, and voice event",
+              "modalities": {
+                "visual": "A young girl is intensely focused on something, while a concerned voice is heard in the background. The video then cuts to a serious-looking woman speaking, followed by a list of credits thanking the cast and crew. The scene then shifts to a woman lying on a bed, smiling and speaking to the camera, before cutting to a woman lying beside her, also smiling. Later, the scene cuts to a woman in pain on a bed, with a man's voice off-screen and a woman's voice saying goodbye.",
+                "audio": "concerned voice; serious-looking woman speaking; man's voice off-screen; woman's voice saying goodbye.",
+                "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+              }
+            }
+          }
+        },
+        "summary": "A woman speaks directly to the camera with a serious expression, discussing an unknown topic, while a young girl is shown focused on something in the background. The video cuts between scenes of women speaking, lying in bed, and experiencing pain, with a man's voice and car engine sounds audible in the background."
+      }
+    ],
+    "caption": "The video depicts various scenes of young children expressing different emotions, accompanied by an unrelated voice in the background. The scenes show a young girl feeling separated from someone or something, a young boy engrossed in an activity, and three young children experiencing different emotional tones. The video then cuts to a serious-looking woman speaking, followed by a list of credits thanking the cast and crew. The scene then shifts to a woman lying on a bed, smiling and speaking to the camera, before cutting to a woman lying beside her. The video",
+    "postprocess": {
+      "event_id": 2,
+      "original_answer": "The video depicts various scenes of young children expressing different emotions, accompanied by an unrelated voice in the background. The scenes show a young girl feeling separated from someone or something, a young boy engrossed in an activity, and three young children experiencing different emotional tones. The video then cuts to a serious-looking woman speaking, followed by a list of credits thanking the cast and crew. The scene then shifts to a woman lying on a bed, smiling and speaking to the camera, before cutting to a woman lying beside her. The video",
+      "result": {
+        "video_id": "Fvj9I7MGPhc",
+        "event_id": "E_Fvj9I7MGPhc_0_108.54",
+        "tags": [
+          "childhood",
+          "emotions",
+          "family"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "young girl",
+            "attributes": {
+              "emotional_state": "separated",
+              "target": "someone or something"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "young boy",
+            "attributes": {
+              "activity": "engrossed"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "three young children",
+            "attributes": {
+              "emotional_tones": "different"
+            }
+          },
+          {
+            "object_id": "O004",
+            "name": "serious-looking woman",
+            "attributes": {
+              "role": "speaker"
+            }
+          },
+          {
+            "object_id": "O005",
+            "name": "woman lying on a bed",
+            "attributes": {
+              "emotional_state": "smiling"
+            }
+          },
+          {
+            "object_id": "O006",
+            "name": "woman lying beside her",
+            "attributes": {
+              "relationship": "companion"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "young girl",
+            "ref_object": "O001",
+            "role": "protagonist",
+            "entity": "child"
+          },
+          {
+            "actor_id": "A002",
+            "name": "young boy",
+            "ref_object": "O002",
+            "role": "protagonist",
+            "entity": "child"
+          },
+          {
+            "actor_id": "A003",
+            "name": "serious-looking woman",
+            "ref_object": "O004",
+            "role": "narrator",
+            "entity": "adult"
+          },
+          {
+            "actor_id": "A004",
+            "name": "woman lying on a bed",
+            "ref_object": "O005",
+            "role": "protagonist",
+            "entity": "adult"
+          },
+          {
+            "actor_id": "A005",
+            "name": "woman lying beside her",
+            "ref_object": "O006",
+            "role": "companion",
+            "entity": "adult"
+          }
+        ],
+        "event": {
+          "event_id": "E_Fvj9I7MGPhc_0_108.54",
+          "name": "The video depicts various scenes of young children expressing different emotions",
+          "time": {
+            "start": "0",
+            "end": "108.54"
+          },
+          "actors": [
+            "A001",
+            "A002",
+            "A003",
+            "A004",
+            "A005"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003",
+            "O004",
+            "O005",
+            "O006"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "childhood",
+            "emotions"
+          ],
+          "scene_topic": "The video depicts various scenes of young children expressing different emotions, accompanied by an unrelated voice in the background.",
+          "summary": "The video depicts various scenes of young children expressing different emotions, accompanied by an unrelated voice in the background. The scenes show a young girl feeling separated from someone or something, a young boy engrossed in an activity, and three young children experiencing different emotional tones. The video then cuts to a serious-looking woman speaking, followed by a list of credits thanking the cast and crew. The scene then shifts to a woman lying on a bed, smiling and speaking to the camera, before cutting to a woman lying beside her. The video",
+          "implications": "Major family, childhood news event",
+          "modalities": {
+            "visual": "The video depicts various scenes of young children expressing different emotions, a young girl feeling separated from someone or something, a young boy engrossed in an activity, three young children experiencing different emotional tones, a serious-looking woman speaking, a woman lying on a bed smiling and speaking to the camera, a woman lying beside her.",
+            "audio": "unrelated voice in the background; serious-looking woman speaking; woman speaking to the camera.",
+            "speech": "Alice, a prettier ingirl, is trying to help a woman in labor, who is struggling to deliver a baby, while reminiscing about a previous ingirl who ran away, citing her lack of intelligence and poor company."
+          }
+        }
+      }
+    },
+    "summary": "The video features a series of scenes with women speaking in the background, often with a sense of tension and uncertainty, as they discuss unknown topics with young girls who listen intently and contemplate their next move. The scenes are set in various settings, including a car, a grassy field, and a table, with the girls displaying a range of emotions from concern to curiosity."
+  }
+}

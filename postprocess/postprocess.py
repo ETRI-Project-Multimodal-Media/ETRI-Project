@@ -8,9 +8,16 @@ import argparse
 import copy
 import psutil
 import wandb
+from tree_merger import (
+    merge_tree,
+    merge_segments_by_kl,
+    merge_segments_by_jsd,
+    KL_SIMILARITY_THRESHOLD,
+    JSD_SIMILARITY_THRESHOLD,
+)
 from typing import Optional, Tuple
 from tqdm import tqdm
-from collections import Counter, defaultdict
+from collections import defaultdict
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from jsonschema import validate, ValidationError
 import torch, re, textwrap
@@ -19,6 +26,8 @@ import torch, re, textwrap
 LOG_DIR = os.environ.get("LONGVALE_LOG_DIR", "/home/kylee/kylee/LongVALE/logs")
 PERFORMANCE_LOG_PATH = os.path.join(LOG_DIR, "performance_log.jsonl")
 ATTRIBUTE_VALUE_MAX_LEN = int(os.environ.get("ATTRIBUTE_VALUE_MAX_LEN", 512))
+ENABLE_WANDB = os.environ.get("ENABLE_WANDB", "0") == "1"
+ENABLE_PERF_LOG = os.environ.get("ENABLE_PERF_LOG", "0") == "1"
 
 from huggingface_hub import login
 login(token=os.environ["HUGGINGFACE_HUB_TOKEN"])
@@ -28,17 +37,18 @@ model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 
 
 # wandb 초기화 (파일 상단에 추가)
-wandb.init(
-    project="postprocess_comparison2",
-    name=f"plain_{int(time.time())}",
-    config={
-        "version": "plain",
-        "model": model_id,
-        "description": "Plain version without NER processing",
-        "features": ["basic_processing", "llm_calls"]
-    },
-    tags=["plain", "baseline", "comparison"]
-)
+if ENABLE_WANDB:
+    wandb.init(
+        project="postprocess_comparison2",
+        name=f"plain_{int(time.time())}",
+        config={
+            "version": "plain",
+            "model": model_id,
+            "description": "Plain version without NER processing",
+            "features": ["basic_processing", "llm_calls"]
+        },
+        tags=["plain", "baseline", "comparison"]
+    )
 
 def get_gpu_memory():
     """GPU 메모리 사용량 반환 (MB)"""
@@ -52,11 +62,12 @@ def log_function_performance(func_name, start_time, end_time, start_memory, end_
     memory_used = end_memory - start_memory
     
     # wandb 로깅
-    wandb.log({
-        f"{func_name}_duration": duration,
-        f"{func_name}_memory_used": memory_used,
-        f"{func_name}_end_memory": end_memory
-    })
+    if ENABLE_WANDB:
+        wandb.log({
+            f"{func_name}_duration": duration,
+            f"{func_name}_memory_used": memory_used,
+            f"{func_name}_end_memory": end_memory
+        })
     
     # 로그 파일에 기록
     log_entry = {
@@ -67,9 +78,10 @@ def log_function_performance(func_name, start_time, end_time, start_memory, end_
         "timestamp": time.time()
     }
     
-    os.makedirs(LOG_DIR, exist_ok=True)
-    with open(PERFORMANCE_LOG_PATH, "a", encoding="utf-8") as f:
-        f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
+    if ENABLE_PERF_LOG:
+        os.makedirs(LOG_DIR, exist_ok=True)
+        with open(PERFORMANCE_LOG_PATH, "a", encoding="utf-8") as f:
+            f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
 
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
@@ -302,9 +314,6 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
 MIN_SEGMENT_REPEAT = 2
 MIN_NGRAM_REPEAT = 3
 NGRAM_OVERLAP_THRESHOLD = 0.8
-KL_SIMILARITY_THRESHOLD = 0.01
-KL_EPS = 1e-8
-JSD_SIMILARITY_THRESHOLD = 0.02
 # deprecated
 # def split_segments(caption: str):
 #     # pattern = r'From (\d+) to (\d+), (.*?)(?=From \d+ to \d+|$)' # 정수 
@@ -385,175 +394,7 @@ def repeated_ngram_ratio(segments, min_ngram_repeat=MIN_NGRAM_REPEAT, overlap_th
 
     return merged
 
-def _token_distribution(text: str) -> dict[str, float]:
-    tokens = text.split()
-    if not tokens:
-        return {}
-
-    counter = Counter(tokens)
-    total = sum(counter.values())
-    if total == 0:
-        return {}
-
-    return {token: count / total for token, count in counter.items()}
-
-def _kl_divergence(p: dict[str, float], q: dict[str, float], eps: float = KL_EPS) -> float:
-    if not p:
-        return 0.0
-
-    tokens = set(p) | set(q)
-    divergence = 0.0
-    for token in tokens:
-        p_val = p.get(token, eps)
-        q_val = q.get(token, eps)
-        divergence += p_val * math.log((p_val + eps) / (q_val + eps))
-    return divergence
-
-def _js_divergence(p: dict[str, float], q: dict[str, float], eps: float = KL_EPS) -> float:
-    # p,q가 모두 빈 분포면 0
-    if not p and not q:
-        return 0.0
-
-    tokens = set(p) | set(q)
-    # 공통 토큰 집합 기준으로 확률 벡터 구성
-    P = {t: p.get(t, eps) for t in tokens}
-    Q = {t: q.get(t, eps) for t in tokens}
-    M = {t: 0.5 * (P[t] + Q[t]) for t in tokens}
-
-    def _kl(A, B):
-        s = 0.0
-        for t in tokens:
-            s += A[t] * math.log((A[t] + eps) / (B[t] + eps))
-        return s
-
-    return 0.5 * _kl(P, M) + 0.5 * _kl(Q, M)
-
-def merge_segments_by_kl(segments, similarity_threshold=KL_SIMILARITY_THRESHOLD):
-    if not segments:
-        return []
-
-    merged = []
-    idx = 0
-    total = len(segments)
-
-    while idx < total:
-        start, end, text = segments[idx]
-        first_text = text
-        prev_dist = _token_distribution(text)
-        last_end = end
-        next_idx = idx + 1
-
-        while next_idx < total:
-            next_text = segments[next_idx][2]
-            next_dist = _token_distribution(next_text)
-            divergence = _kl_divergence(prev_dist, next_dist)
-            if divergence >= similarity_threshold:
-                break
-            last_end = segments[next_idx][1]
-            prev_dist = next_dist
-            next_idx += 1
-
-        merged.append((start, last_end, first_text.strip()))
-        idx = next_idx
-
-    return merged
-
-def merge_segments_by_jsd(segments, similarity_threshold=JSD_SIMILARITY_THRESHOLD):
-    if not segments:
-        return []
-
-    merged = []
-    idx = 0
-    total = len(segments)
-
-    while idx < total:
-        start, end, text = segments[idx]
-        first_text = text
-        prev_dist = _token_distribution(text)
-        last_end = end
-        next_idx = idx + 1
-
-        while next_idx < total:
-            next_text = segments[next_idx][2]
-            next_dist = _token_distribution(next_text)
-            divergence = _js_divergence(prev_dist, next_dist)
-            if divergence >= similarity_threshold:
-                break
-            last_end = segments[next_idx][1]
-            prev_dist = next_dist
-            next_idx += 1
-
-        merged.append((start, last_end, first_text.strip()))
-        idx = next_idx
-
-    return merged
-
-
-def _child_sort_key(node):
-    return (_safe_float(node.get("start_time")), _safe_float(node.get("end_time")))
-
-
-def _merge_node_list(nodes, similarity_threshold=JSD_SIMILARITY_THRESHOLD):
-    valid_nodes = [node for node in nodes if isinstance(node, dict)]
-    if not valid_nodes:
-        return []
-
-    sorted_nodes = sorted(valid_nodes, key=_child_sort_key)
-    merged = []
-    idx = 0
-    total = len(sorted_nodes)
-
-    while idx < total:
-        current = sorted_nodes[idx]
-        level = current.get("level")
-        caption = (current.get("caption") or "").strip()
-        caption_parts = [caption] if caption else []
-        start_time = _safe_float(current.get("start_time"))
-        end_time = _safe_float(current.get("end_time"))
-        combined_children = list(current.get("children") or [])
-        prev_dist = _token_distribution(caption)
-        next_idx = idx + 1
-
-        while next_idx < total:
-            nxt = sorted_nodes[next_idx]
-            next_caption = (nxt.get("caption") or "").strip()
-            next_dist = _token_distribution(next_caption)
-            divergence = _js_divergence(prev_dist, next_dist)
-            if divergence >= similarity_threshold:
-                break
-            start_time = min(start_time, _safe_float(nxt.get("start_time")))
-            end_time = max(end_time, _safe_float(nxt.get("end_time")))
-            if next_caption:
-                caption_parts.append(next_caption)
-                prev_dist = _token_distribution(next_caption)
-            combined_children.extend(nxt.get("children") or [])
-            next_idx += 1
-
-        current["start_time"] = start_time
-        current["end_time"] = end_time
-        if caption_parts:
-            current["caption"] = " ".join(caption_parts).strip()
-        current["children"] = sorted(combined_children, key=_child_sort_key)
-        current["level"] = level
-        merged.append(current)
-        idx = next_idx
-
-    return merged
-
-
-def _merge_children_recursive(node, similarity_threshold=JSD_SIMILARITY_THRESHOLD):
-    if not isinstance(node, dict):
-        return
-
-    children = node.get("children") or []
-    if not children:
-        node["children"] = []
-        return
-
-    for child in children:
-        _merge_children_recursive(child, similarity_threshold)
-
-    node["children"] = _merge_node_list(children, similarity_threshold)
+ 
 
 # JSON 보정 유틸
 def _has_colon_outside_quotes(text: str) -> bool:
@@ -1122,7 +963,7 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
         if not isinstance(video_tree, dict):
             continue
 
-        _merge_children_recursive(video_tree)
+        merge_tree(video_tree)
 
         segments = _collect_segments(video_tree)
         if not segments:

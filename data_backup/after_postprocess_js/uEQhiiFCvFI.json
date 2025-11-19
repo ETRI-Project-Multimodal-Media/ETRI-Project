@@ -1,0 +1,1594 @@
+{
+  "video_id": "uEQhiiFCvFI",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 41.9,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 18.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 5.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "A black dog walks on a treadmill in a well-lit room, its paws moving rhythmically as it follows a leash held by a person off-camera.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A black dog walks on a treadmill in a well-lit room, its paws moving rhythmically as it follows a leash held by a person off-camera.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_0_3.5",
+                    "tags": [
+                      "animal",
+                      "pet",
+                      "exercise",
+                      "treadmill",
+                      "leash"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black dog",
+                        "attributes": {
+                          "species": "Canis lupus familiaris",
+                          "breed": "unknown",
+                          "color": "black"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "treadmill",
+                        "attributes": {
+                          "type": "exercise equipment",
+                          "function": "walking"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "leash",
+                        "attributes": {
+                          "type": "accessory",
+                          "function": "control"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O003",
+                        "role": "holder",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_0_3.5",
+                      "name": "dog walking on treadmill",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal behavior"
+                      ],
+                      "scene_topic": "A person holds a leash while a black dog walks on a treadmill.",
+                      "summary": "A black dog walks on a treadmill in a well-lit room, its paws moving rhythmically as it follows a leash held by a person off-camera.",
+                      "implications": "Minor entertainment news event",
+                      "modalities": {
+                        "visual": "A black dog walks on a treadmill in a well-lit room, its paws moving rhythmically as it follows a leash held by a person off-camera.",
+                        "audio": "",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 5.5,
+                "children": [],
+                "caption": "A small dog, wearing a red harness, trots along a treadmill in a well-lit room, its tail wagging excitedly as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A small dog, wearing a red harness, trots along a treadmill in a well-lit room, its tail wagging excitedly as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_3.5_5.5",
+                    "tags": [
+                      "pet",
+                      "dog",
+                      "treadmill",
+                      "woman",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "small dog",
+                        "attributes": {
+                          "species": "dog",
+                          "color": "red",
+                          "harness": "wearing",
+                          "tail": "wagging",
+                          "room": "well-lit"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "treadmill",
+                        "attributes": {
+                          "type": "exercise",
+                          "room": "well-lit"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "voice",
+                          "background": "heard"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O003",
+                        "role": "voice",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_3.5_5.5",
+                      "name": "dog on treadmill",
+                      "time": {
+                        "start": "3.5",
+                        "end": "5.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "pet behavior"
+                      ],
+                      "scene_topic": "A small dog trots along a treadmill in a well-lit room, its tail wagging excitedly as a woman's voice can be heard in the background.",
+                      "summary": "A small dog, wearing a red harness, trots along a treadmill in a well-lit room, its tail wagging excitedly as a woman's voice can be heard in the background.",
+                      "implications": "Pet exercise and behavior",
+                      "modalities": {
+                        "visual": "A small dog, wearing a red harness, trots along a treadmill in a well-lit room, its tail wagging excitedly as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two dogs, a black dog and a small dog, are seen walking on treadmills in a well-lit room. The black dog follows a leash held by an off-camera person, while the small dog trots along the treadmill with its tail wagging excitedly.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "Two dogs, a black dog and a small dog, are seen walking on treadmills in a well-lit room. The black dog follows a leash held by an off-camera person, while the small dog trots along the treadmill with its tail wagging excitedly.",
+              "result": {
+                "video_id": "uEQhiiFCvFI",
+                "event_id": "E_uEQhiiFCvFI_0_5.5",
+                "tags": [
+                  "animal",
+                  "dog",
+                  "exercise",
+                  "treadmill",
+                  "room"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "black dog",
+                    "attributes": {
+                      "species": "dog",
+                      "color": "black",
+                      "action": "walking"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "small dog",
+                    "attributes": {
+                      "species": "dog",
+                      "size": "small",
+                      "action": "trotting"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "leash",
+                    "attributes": {
+                      "type": "leash",
+                      "action": "held"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "treadmill",
+                    "attributes": {
+                      "type": "treadmill",
+                      "action": "used"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "off-camera person",
+                    "ref_object": "O003",
+                    "role": "holder",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_uEQhiiFCvFI_0_5.5",
+                  "name": "Two dogs on treadmills",
+                  "time": {
+                    "start": "0",
+                    "end": "5.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "animal behavior"
+                  ],
+                  "scene_topic": "Two dogs, a black dog and a small dog, are seen walking on treadmills in a well-lit room.",
+                  "summary": "Two dogs, a black dog and a small dog, are seen walking on treadmills in a well-lit room. The black dog follows a leash held by an off-camera person, while the small dog trots along the treadmill with its tail wagging excitedly.",
+                  "implications": "Minor entertainment news event",
+                  "modalities": {
+                    "visual": "Two dogs, a black dog and a small dog, are seen walking on treadmills in a well-lit room. The black dog follows a leash held by an off-camera person, while the small dog trots along the treadmill with its tail wagging excitedly.",
+                    "audio": "",
+                    "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                  }
+                }
+              }
+            },
+            "summary": "A black dog and a small dog, both wearing harnesses, walk on treadmills in a well-lit room, their paws moving in rhythm as they follow leashes held by unseen individuals. The small dog's tail wags excitedly as a woman's voice is heard in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 5.5,
+            "end_time": 18.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 5.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "A small dog, wearing a red harness, trots along a treadmill, its paws clicking on the machine as a woman's voice can be heard, though the source of the sound is not visible.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A small dog, wearing a red harness, trots along a treadmill, its paws clicking on the machine as a woman's voice can be heard, though the source of the sound is not visible.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_5.5_9.5",
+                    "tags": [
+                      "pet",
+                      "dog",
+                      "treadmill",
+                      "harness"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "small dog",
+                        "attributes": {
+                          "species": "dog",
+                          "color": "red",
+                          "harness": "wearing"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "treadmill",
+                        "attributes": {
+                          "type": "exercise machine"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "owner",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_5.5_9.5",
+                      "name": "dog on treadmill",
+                      "time": {
+                        "start": "5.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "pet behavior"
+                      ],
+                      "scene_topic": "A small dog trots along a treadmill, its paws clicking on the machine.",
+                      "summary": "A small dog, wearing a red harness, trots along a treadmill, its paws clicking on the machine as a woman's voice can be heard, though the source of the sound is not visible.",
+                      "implications": "Pet exercise and health",
+                      "modalities": {
+                        "visual": "A small dog, wearing a red harness, trots along a treadmill, its paws clicking on the machine as a woman's voice can be heard, though the source of the sound is not visible.",
+                        "audio": "woman's voice; paws clicking",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 13.5,
+                "children": [],
+                "caption": "A small dog, wearing a red harness, trots along a treadmill, its paws moving rhythmically as it follows a person's commands to \"walk\" and \"run.\"",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A small dog, wearing a red harness, trots along a treadmill, its paws moving rhythmically as it follows a person's commands to \"walk\" and \"run.\"",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_9.5_13.5",
+                    "tags": [
+                      "pet",
+                      "dog",
+                      "treadmill",
+                      "training"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "small dog",
+                        "attributes": {
+                          "species": "dog",
+                          "color": "red",
+                          "harness": "wearing"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "treadmill",
+                        "attributes": {
+                          "type": "exercise equipment"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "person",
+                        "attributes": {
+                          "role": "trainer"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O003",
+                        "role": "trainer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_9.5_13.5",
+                      "name": "dog training",
+                      "time": {
+                        "start": "9.5",
+                        "end": "13.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "pet training"
+                      ],
+                      "scene_topic": "A person trains a small dog on a treadmill.",
+                      "summary": "A small dog, wearing a red harness, trots along a treadmill, its paws moving rhythmically as it follows a person's commands to \"walk\" and \"run.\"",
+                      "implications": "Pet training and exercise",
+                      "modalities": {
+                        "visual": "A small dog, wearing a red harness, trots along a treadmill, its paws moving rhythmically as it follows a person's commands.",
+                        "audio": "'walk'; 'run'",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 13.5,
+                "end_time": 18.5,
+                "children": [],
+                "caption": "A small dog, wearing a red harness, trots along a treadmill in a well-lit room, its paws moving rhythmically as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A small dog, wearing a red harness, trots along a treadmill in a well-lit room, its paws moving rhythmically as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_13.5_18.5",
+                    "tags": [
+                      "pet",
+                      "dog",
+                      "treadmill",
+                      "woman",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "small dog",
+                        "attributes": {
+                          "species": "dog",
+                          "color": "red",
+                          "harness": "wearing"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "treadmill",
+                        "attributes": {
+                          "type": "exercise equipment"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "well-lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "owner",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_13.5_18.5",
+                      "name": "dog on treadmill",
+                      "time": {
+                        "start": "13.5",
+                        "end": "18.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "pet behavior"
+                      ],
+                      "scene_topic": "A small dog trots along a treadmill in a well-lit room.",
+                      "summary": "A small dog, wearing a red harness, trots along a treadmill in a well-lit room, its paws moving rhythmically as a woman's voice can be heard in the background.",
+                      "implications": "Pet exercise and health",
+                      "modalities": {
+                        "visual": "A small dog, wearing a red harness, trots along a treadmill in a well-lit room, its paws moving rhythmically as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A small dog wears a red harness and trots along a treadmill, following commands from a person off-camera.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A small dog wears a red harness and trots along a treadmill, following commands from a person off-camera.",
+              "result": {
+                "video_id": "uEQhiiFCvFI",
+                "event_id": "E_uEQhiiFCvFI_5.5_18.5",
+                "tags": [
+                  "pet",
+                  "dog",
+                  "treadmill",
+                  "training"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "small dog",
+                    "attributes": {
+                      "species": "canine",
+                      "color": "red",
+                      "harness": "wearing"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "treadmill",
+                    "attributes": {
+                      "type": "exercise",
+                      "state": "in use"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "person",
+                    "attributes": {
+                      "role": "trainer"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "person",
+                    "ref_object": "O003",
+                    "role": "trainer",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_uEQhiiFCvFI_5.5_18.5",
+                  "name": "Dog training on treadmill",
+                  "time": {
+                    "start": "5.5",
+                    "end": "18.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "pet training"
+                  ],
+                  "scene_topic": "A person trains a small dog on a treadmill.",
+                  "summary": "A small dog wears a red harness and trots along a treadmill, following commands from a person off-camera.",
+                  "implications": "Pet training and exercise",
+                  "modalities": {
+                    "visual": "A small dog wears a red harness and trots along a treadmill, following commands from a person off-camera.",
+                    "audio": "",
+                    "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                  }
+                }
+              }
+            },
+            "summary": "A small dog wearing a red harness trots along a treadmill, its paws clicking in rhythm as it follows commands to \"walk\" and \"run\" in a well-lit room. A woman's voice can be heard in the background, but the source of the sound is not visible."
+          }
+        ],
+        "caption": "Two dogs, one black and one small, walk on treadmills in a well-lit room, while a small dog wears a red harness and follows commands from an off-camera person on a treadmill.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "Two dogs, one black and one small, walk on treadmills in a well-lit room, while a small dog wears a red harness and follows commands from an off-camera person on a treadmill.",
+          "result": {
+            "video_id": "uEQhiiFCvFI",
+            "event_id": "E_uEQhiiFCvFI_0_18.5",
+            "tags": [
+              "animal_training",
+              "dog",
+              "exercise",
+              "pet"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "black dog",
+                "attributes": {
+                  "color": "black",
+                  "breed": ""
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "small dog",
+                "attributes": {
+                  "color": "",
+                  "breed": ""
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "red harness",
+                "attributes": {
+                  "color": "red",
+                  "type": "harness"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "off-camera person",
+                "ref_object": "O003",
+                "role": "trainer",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_uEQhiiFCvFI_0_18.5",
+              "name": "dog training",
+              "time": {
+                "start": "0",
+                "end": "18.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "animal behavior"
+              ],
+              "scene_topic": "Two dogs walk on treadmills while a third dog follows commands.",
+              "summary": "Two dogs, one black and one small, walk on treadmills in a well-lit room, while a small dog wears a red harness and follows commands from an off-camera person on a treadmill.",
+              "implications": "Major animal training event",
+              "modalities": {
+                "visual": "Two dogs, one black and one small, walk on treadmills in a well-lit room, while a small dog wears a red harness and follows commands from an off-camera person on a treadmill.",
+                "audio": "",
+                "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+              }
+            }
+          }
+        },
+        "summary": "Two dogs, one small and one black, walk on treadmills in a well-lit room, their paws moving in rhythm as they follow leashes held by unseen individuals, with a small dog's tail wagging excitedly in response to a woman's voice in the background. The dogs follow commands to \"walk\" and \"run\" as they move along the treadmills."
+      },
+      {
+        "level": 1,
+        "start_time": 18.5,
+        "end_time": 41.9,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 33.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 18.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "A black and white dog walks across a treadmill, its tail wagging as it moves forward, while a man and a woman can be heard talking in the background.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A black and white dog walks across a treadmill, its tail wagging as it moves forward, while a man and a woman can be heard talking in the background.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_18.5_21.5",
+                    "tags": [
+                      "animal",
+                      "pet",
+                      "treadmill",
+                      "background_noise"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black and white dog",
+                        "attributes": {
+                          "type": "animal",
+                          "breed": "unknown",
+                          "action": "walking"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "treadmill",
+                        "attributes": {
+                          "type": "machine",
+                          "purpose": "exercise"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {
+                          "type": "human",
+                          "action": "talking"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "woman",
+                        "attributes": {
+                          "type": "human",
+                          "action": "talking"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "talking",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O004",
+                        "role": "talking",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_18.5_21.5",
+                      "name": "dog on treadmill",
+                      "time": {
+                        "start": "18.5",
+                        "end": "21.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal behavior"
+                      ],
+                      "scene_topic": "A black and white dog walks across a treadmill, its tail wagging as it moves forward, while a man and a woman can be heard talking in the background.",
+                      "summary": "A black and white dog walks across a treadmill, its tail wagging as it moves forward, while a man and a woman can be heard talking in the background.",
+                      "implications": "Minor entertainment news event",
+                      "modalities": {
+                        "visual": "A black and white dog walks across a treadmill, its tail wagging as it moves forward, while a man and a woman can be heard.",
+                        "audio": "background talking",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 23.5,
+                "children": [],
+                "caption": "A man and a woman are walking their dogs on a treadmill, the dogs are playfully running around on the machine as the man and woman chat and laugh.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "A man and a woman are walking their dogs on a treadmill, the dogs are playfully running around on the machine as the man and woman chat and laugh.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_21.5_23.5",
+                    "tags": [
+                      "human_activity",
+                      "pet_activity",
+                      "fitness"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "human": "true",
+                          "walking": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "human": "true",
+                          "walking": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "dogs",
+                        "attributes": {
+                          "pet": "true",
+                          "running": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "treadmill",
+                        "attributes": {
+                          "machine": "true",
+                          "fitness": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "walker",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "walker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_21.5_23.5",
+                      "name": "Walking with dogs on treadmill",
+                      "time": {
+                        "start": "21.5",
+                        "end": "23.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_activity",
+                        "pet_activity"
+                      ],
+                      "scene_topic": "A man and a woman are walking their dogs on a treadmill, the dogs are playfully running around on the machine as the man and woman chat and laugh.",
+                      "summary": "A man and a woman are walking their dogs on a treadmill, the dogs are playfully running around on the machine as the man and woman chat and laugh.",
+                      "implications": "Major entertainment, leisure news event",
+                      "modalities": {
+                        "visual": "A man and a woman are walking their dogs on a treadmill, the dogs are playfully running around on the machine as the man and woman chat and laugh.",
+                        "audio": "",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 23.5,
+                "end_time": 27.5,
+                "children": [],
+                "caption": "A black and white dog, wearing a red harness, trots along a treadmill in a well-lit room, its tail wagging as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A black and white dog, wearing a red harness, trots along a treadmill in a well-lit room, its tail wagging as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_23.5_27.5",
+                    "tags": [
+                      "animal",
+                      "dog",
+                      "treadmill",
+                      "woman",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black and white dog",
+                        "attributes": {
+                          "color": "black and white",
+                          "accessory": "red harness",
+                          "action": "trotting",
+                          "location": "treadmill",
+                          "environment": "well-lit room"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_23.5_27.5",
+                      "name": "dog on treadmill",
+                      "time": {
+                        "start": "23.5",
+                        "end": "27.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal behavior"
+                      ],
+                      "scene_topic": "A woman's voice can be heard in the background as a black and white dog trots along a treadmill.",
+                      "summary": "A black and white dog, wearing a red harness, trots along a treadmill in a well-lit room, its tail wagging as a woman's voice can be heard in the background.",
+                      "implications": "Minor entertainment news event",
+                      "modalities": {
+                        "visual": "A black and white dog, wearing a red harness, trots along a treadmill in a well-lit room, its tail wagging.",
+                        "audio": "woman's voice",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 27.5,
+                "end_time": 33.5,
+                "children": [],
+                "caption": "Two dogs, one black and white and the other brown and white, are walking on a treadmill in a well-lit room, their paws moving rhythmically as they follow a person's commands.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "Two dogs, one black and white and the other brown and white, are walking on a treadmill in a well-lit room, their paws moving rhythmically as they follow a person's commands.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_27.5_33.5",
+                    "tags": [
+                      "animal",
+                      "treadmill",
+                      "training",
+                      "dogs"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black and white dog",
+                        "attributes": {
+                          "color": "black and white",
+                          "breed": "unknown"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "brown and white dog",
+                        "attributes": {
+                          "color": "brown and white",
+                          "breed": "unknown"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "treadmill",
+                        "attributes": {
+                          "type": "exercise equipment"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "well-lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O004",
+                        "role": "trainer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_27.5_33.5",
+                      "name": "dogs on treadmill",
+                      "time": {
+                        "start": "27.5",
+                        "end": "33.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal behavior"
+                      ],
+                      "scene_topic": "Two dogs are walking on a treadmill in a well-lit room, following a person's commands.",
+                      "summary": "Two dogs, one black and white and the other brown and white, are walking on a treadmill in a well-lit room, their paws moving rhythmically as they follow a person's commands.",
+                      "implications": "Major animal training event",
+                      "modalities": {
+                        "visual": "Two dogs, one black and white and the other brown and white, are walking on a treadmill in a well-lit room, their paws moving rhythmically as they follow a person's commands.",
+                        "audio": "",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background.",
+              "result": {
+                "video_id": "uEQhiiFCvFI",
+                "event_id": "E_uEQhiiFCvFI_18.5_33.5",
+                "tags": [
+                  "dog",
+                  "treadmill",
+                  "pet",
+                  "owner"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "dog",
+                    "attributes": {
+                      "breed": "",
+                      "color": ""
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "owner",
+                    "ref_object": "O001",
+                    "role": "companion",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_uEQhiiFCvFI_18.5_33.5",
+                  "name": "Dogs on treadmills",
+                  "time": {
+                    "start": "18.5",
+                    "end": "33.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "pet behavior"
+                  ],
+                  "scene_topic": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background.",
+                  "summary": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background.",
+                  "implications": "Pet care and exercise",
+                  "modalities": {
+                    "visual": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background.",
+                    "audio": "",
+                    "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                  }
+                }
+              }
+            },
+            "summary": "A man and a woman walk their dogs on a treadmill, with the dogs playfully running around and wagging their tails as the couple chats and laughs. The dogs, including a black and white dog and a brown and white dog, move rhythmically on the machine, following commands in a well-lit room."
+          },
+          {
+            "level": 2,
+            "start_time": 33.5,
+            "end_time": 41.9,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 33.5,
+                "end_time": 36.5,
+                "children": [],
+                "caption": "Two dogs, one black and white and the other brown and white, are walking on a treadmill in a well-lit room, their paws moving rhythmically as they follow a person's commands.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "Two dogs, one black and white and the other brown and white, are walking on a treadmill in a well-lit room, their paws moving rhythmically as they follow a person's commands.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_33.5_36.5",
+                    "tags": [
+                      "animal",
+                      "treadmill",
+                      "training",
+                      "dogs"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black and white dog",
+                        "attributes": {
+                          "color": "black and white",
+                          "breed": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "brown and white dog",
+                        "attributes": {
+                          "color": "brown and white",
+                          "breed": ""
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "treadmill",
+                        "attributes": {
+                          "type": "exercise equipment"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "well-lit"
+                        }
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "person",
+                        "attributes": {
+                          "role": "trainer"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O005",
+                        "role": "trainer",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_33.5_36.5",
+                      "name": "Dogs on treadmill",
+                      "time": {
+                        "start": "33.5",
+                        "end": "36.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal behavior"
+                      ],
+                      "scene_topic": "Two dogs are walking on a treadmill in a well-lit room, following a person's commands.",
+                      "summary": "Two dogs, one black and white and the other brown and white, are walking on a treadmill in a well-lit room, their paws moving rhythmically as they follow a person's commands.",
+                      "implications": "Major animal training event",
+                      "modalities": {
+                        "visual": "Two dogs, one black and white and the other brown and white, are walking on a treadmill in a well-lit room, their paws moving rhythmically as they follow a person's commands.",
+                        "audio": "",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 36.5,
+                "end_time": 41.9,
+                "children": [],
+                "caption": "A black dog, wearing a red harness, walks steadily on a treadmill in a well-lit room, its paws moving rhythmically as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "A black dog, wearing a red harness, walks steadily on a treadmill in a well-lit room, its paws moving rhythmically as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "uEQhiiFCvFI",
+                    "event_id": "E_uEQhiiFCvFI_36.5_41.9",
+                    "tags": [
+                      "animal",
+                      "dog",
+                      "treadmill",
+                      "woman",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black dog",
+                        "attributes": {
+                          "color": "black",
+                          "harness": "red",
+                          "paws": "moving rhythmically"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "treadmill",
+                        "attributes": {
+                          "type": "exercise equipment"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "well-lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_uEQhiiFCvFI_36.5_41.9",
+                      "name": "dog on treadmill",
+                      "time": {
+                        "start": "36.5",
+                        "end": "41.9"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal behavior"
+                      ],
+                      "scene_topic": "A woman's voice can be heard in the background as a black dog walks steadily on a treadmill.",
+                      "summary": "A black dog, wearing a red harness, walks steadily on a treadmill in a well-lit room, its paws moving rhythmically as a woman's voice can be heard in the background.",
+                      "implications": "Pet exercise and training",
+                      "modalities": {
+                        "visual": "A black dog, wearing a red harness, walks steadily on a treadmill in a well-lit room, its paws moving rhythmically as a woman's voice can be heard in the background.",
+                        "audio": "",
+                        "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two dogs, one black and white and the other brown and white, are seen walking on a treadmill in a well-lit room, their paws moving in a rhythmic manner as they follow their owner's commands. A black dog, wearing a red harness, is also shown walking steadily on a treadmill in the same room, with a woman's voice heard in the background.",
+            "postprocess": {
+              "event_id": 16,
+              "original_answer": "Two dogs, one black and white and the other brown and white, are seen walking on a treadmill in a well-lit room, their paws moving in a rhythmic manner as they follow their owner's commands. A black dog, wearing a red harness, is also shown walking steadily on a treadmill in the same room, with a woman's voice heard in the background.",
+              "result": {
+                "video_id": "uEQhiiFCvFI",
+                "event_id": "E_uEQhiiFCvFI_33.5_41.9",
+                "tags": [
+                  "animals",
+                  "dogs",
+                  "treadmill",
+                  "training"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "black and white dog",
+                    "attributes": {
+                      "color": "black and white",
+                      "breed": "",
+                      "paws": "moving in a rhythmic manner"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "brown and white dog",
+                    "attributes": {
+                      "color": "brown and white",
+                      "breed": "",
+                      "paws": "moving in a rhythmic manner"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "black dog with red harness",
+                    "attributes": {
+                      "color": "black",
+                      "breed": "",
+                      "harness": "red"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "owner",
+                    "ref_object": "O001",
+                    "role": "trainer",
+                    "entity": "human"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "",
+                    "role": "voice",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_uEQhiiFCvFI_33.5_41.9",
+                  "name": "Dogs on treadmill",
+                  "time": {
+                    "start": "33.5",
+                    "end": "41.9"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "animals",
+                    "training"
+                  ],
+                  "scene_topic": "Two dogs are seen walking on a treadmill in a well-lit room, following their owner's commands.",
+                  "summary": "Two dogs, one black and white and the other brown and white, are seen walking on a treadmill in a well-lit room, their paws moving in a rhythmic manner as they follow their owner's commands. A black dog, wearing a red harness, is also shown walking steadily on a treadmill in the same room, with a woman's voice heard in the background.",
+                  "implications": "Major animal training event",
+                  "modalities": {
+                    "visual": "Two dogs, one black and white and the other brown and white, are seen walking on a treadmill in a well-lit room, their paws moving in a rhythmic manner as they follow their owner's commands. A black dog, wearing a red harness, is also shown walking steadily on a treadmill in the same room.",
+                    "audio": "woman's voice",
+                    "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+                  }
+                }
+              }
+            },
+            "summary": "Two dogs, one black and white and the other brown and white, are walking on treadmills in a well-lit room, their paws moving in rhythm to a person's commands. A black dog, wearing a red harness, is also walking steadily on a treadmill, accompanied by a woman's voice in the background."
+          }
+        ],
+        "caption": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background. Two specific dogs, a black and white dog and a brown and white dog, are shown walking on treadmills, their paws moving in a rhythmic manner as they follow their owner's commands.",
+        "postprocess": {
+          "event_id": 11,
+          "original_answer": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background. Two specific dogs, a black and white dog and a brown and white dog, are shown walking on treadmills, their paws moving in a rhythmic manner as they follow their owner's commands.",
+          "result": {
+            "video_id": "uEQhiiFCvFI",
+            "event_id": "E_uEQhiiFCvFI_18.5_41.9",
+            "tags": [
+              "dogs",
+              "treadmills",
+              "owners",
+              "breeds",
+              "colors"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "black and white dog",
+                "attributes": {
+                  "breed": "mixed",
+                  "color": "black and white",
+                  "paws": "moving in a rhythmic manner"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "brown and white dog",
+                "attributes": {
+                  "breed": "mixed",
+                  "color": "brown and white",
+                  "paws": "moving in a rhythmic manner"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "owner",
+                "ref_object": "O001",
+                "role": "owner",
+                "entity": "human"
+              },
+              {
+                "actor_id": "A002",
+                "name": "owner",
+                "ref_object": "O002",
+                "role": "owner",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_uEQhiiFCvFI_18.5_41.9",
+              "name": "Dogs on treadmills",
+              "time": {
+                "start": "18.5",
+                "end": "41.9"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "animals",
+                "exercise"
+              ],
+              "scene_topic": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background.",
+              "summary": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background. Two specific dogs, a black and white dog and a brown and white dog, are shown walking on treadmills, their paws moving in a rhythmic manner as they follow their owner's commands.",
+              "implications": "Major animal behavior, exercise event",
+              "modalities": {
+                "visual": "Dogs of various breeds and colors are seen walking on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background. Two specific dogs, a black and white dog and a brown and white dog, are shown walking on treadmills, their paws moving in a rhythmic manner as they follow their owner's commands.",
+                "audio": "",
+                "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+              }
+            }
+          }
+        },
+        "summary": "A couple walks their dogs on treadmills in a well-lit room, with the dogs moving in rhythm to commands as the couple chats and laughs. The dogs, including a black and white dog, a brown and white dog, and a black dog with a red harness, are all walking steadily on the machines."
+      }
+    ],
+    "caption": "Dogs of various breeds and colors walk on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background. Two specific dogs, a black and white dog and a brown and white dog, are shown walking on treadmills, their paws moving in a rhythmic manner as they follow their owner's commands.",
+    "postprocess": {
+      "event_id": 3,
+      "original_answer": "Dogs of various breeds and colors walk on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background. Two specific dogs, a black and white dog and a brown and white dog, are shown walking on treadmills, their paws moving in a rhythmic manner as they follow their owner's commands.",
+      "result": {
+        "video_id": "uEQhiiFCvFI",
+        "event_id": "E_uEQhiiFCvFI_0_41.9",
+        "tags": [
+          "dogs",
+          "treadmills",
+          "owners",
+          "breeds",
+          "colors"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "black and white dog",
+            "attributes": {
+              "breed": "mixed",
+              "color": "black and white",
+              "paws": "rhythmic"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "brown and white dog",
+            "attributes": {
+              "breed": "mixed",
+              "color": "brown and white",
+              "paws": "rhythmic"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "owner",
+            "ref_object": "O001",
+            "role": "owner",
+            "entity": "person"
+          },
+          {
+            "actor_id": "A002",
+            "name": "owner",
+            "ref_object": "O002",
+            "role": "owner",
+            "entity": "person"
+          }
+        ],
+        "event": {
+          "event_id": "E_uEQhiiFCvFI_0_41.9",
+          "name": "Dogs on treadmills",
+          "time": {
+            "start": "0",
+            "end": "41.9"
+          },
+          "actors": [
+            "A001",
+            "A002"
+          ],
+          "objects": [
+            "O001",
+            "O002"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "animals",
+            "exercise"
+          ],
+          "scene_topic": "Dogs of various breeds and colors walk on treadmills, accompanied by their owners.",
+          "summary": "Dogs of various breeds and colors walk on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background. Two specific dogs, a black and white dog and a brown and white dog, are shown walking on treadmills, their paws moving in a rhythmic manner as they follow their owner's commands.",
+          "implications": "Interesting and entertaining scene",
+          "modalities": {
+            "visual": "Dogs of various breeds and colors walk on treadmills in a well-lit room, accompanied by their owners who are talking and laughing in the background. Two specific dogs, a black and white dog and a brown and white dog, are shown walking on treadmills, their paws moving in a rhythmic manner as they follow their owner's commands.",
+            "audio": "talking; laughing",
+            "speech": "Someone is encouraging a dog named Max to keep moving, using positive reinforcement by praising him with \"good boy\" and calling his name."
+          }
+        }
+      }
+    },
+    "summary": "Two dogs, one small and one black, walk on treadmills in a well-lit room, following commands and moving in rhythm to their leashes, with one dog's tail wagging excitedly in response to a woman's voice. The dogs, including multiple breeds, are walked by a couple and other unseen individuals, moving steadily on the machines as they chat and laugh."
+  }
+}

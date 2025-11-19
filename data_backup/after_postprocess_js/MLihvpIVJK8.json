@@ -1,0 +1,3055 @@
+{
+  "video_id": "MLihvpIVJK8",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 124.916458,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 7.5,
+        "children": [],
+        "caption": "The video opens with a black screen displaying the title \"Avengers: Infinity War\" in white text, while a woman's voice can be heard faintly in the background.",
+        "postprocess": {
+          "event_id": 0,
+          "original_answer": "The video opens with a black screen displaying the title \"Avengers: Infinity War\" in white text, while a woman's voice can be heard faintly in the background.",
+          "result": {
+            "video_id": "MLihvpIVJK8",
+            "event_id": "E_MLihvpIVJK8_0_7.5",
+            "tags": [
+              "avengers",
+              "infinity_war",
+              "title_sequence",
+              "black_screen"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Title Screen",
+                "attributes": {
+                  "text": "Avengers: Infinity War",
+                  "color": "white",
+                  "background": "black"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Audio",
+                "attributes": {
+                  "source": "woman's voice",
+                  "volume": "faint"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Woman's Voice",
+                "ref_object": "O002",
+                "role": "narrator",
+                "entity": "voice"
+              }
+            ],
+            "event": {
+              "event_id": "E_MLihvpIVJK8_0_7.5",
+              "name": "Title Sequence",
+              "time": {
+                "start": "0",
+                "end": "7.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "title_sequence"
+              ],
+              "scene_topic": "The video opens with a black screen displaying the title 'Avengers: Infinity War' in white text, while a woman's voice can be heard faintly in the background.",
+              "summary": "The video opens with a black screen displaying the title \"Avengers: Infinity War\" in white text, while a woman's voice can be heard faintly in the background.",
+              "implications": "Major movie introduction event",
+              "modalities": {
+                "visual": "The video opens with a black screen displaying the title 'Avengers: Infinity War' in white text.",
+                "audio": "woman's voice",
+                "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 7.5,
+        "end_time": 37.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 29.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and the busy streets below, as a man's voice can be heard, his words drowned out by the roar of a car engine.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and the busy streets below, as a man's voice can be heard, his words drowned out by the roar of a car engine.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_7.5_12.5",
+                    "tags": [
+                      "cityscape",
+                      "skyscrapers",
+                      "busy_streets",
+                      "car_engine",
+                      "man_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cityscape",
+                        "attributes": {
+                          "description": "bustling cityscape with towering skyscrapers and busy streets"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "skyscrapers",
+                        "attributes": {
+                          "description": "tall buildings in the city"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "busy_streets",
+                        "attributes": {
+                          "description": "crowded streets in the city"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "car_engine",
+                        "attributes": {
+                          "description": "roaring car engine"
+                        }
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "man_voice",
+                        "attributes": {
+                          "description": "man's voice in the background"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O005",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_7.5_12.5",
+                      "name": "cityscape",
+                      "time": {
+                        "start": "7.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cityscape"
+                      ],
+                      "scene_topic": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and the busy streets below, as a man's voice can be heard, his words drowned out by the roar of a car engine.",
+                      "summary": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and the busy streets below, as a man's voice can be heard, his words drowned out by the roar of a car engine.",
+                      "implications": "Major urban development news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling cityscape, capturing the towering skyscrapers and the busy streets below.",
+                        "audio": "man's voice; car engine roar.",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "A group of police officers, their weapons drawn, cautiously navigate a dimly lit, debris-strewn room, their footsteps echoing as they search for a missing person. A group of police officers, their weapons drawn, cautiously navigate a dimly lit, debris-strewn room, their footsteps echoing as they search for a missing person.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A group of police officers, their weapons drawn, cautiously navigate a dimly lit, debris-strewn room, their footsteps echoing as they search for a missing person. A group of police officers, their weapons drawn, cautiously navigate a dimly lit, debris-strewn room, their footsteps echoing as they search for a missing person.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_12.5_24.5",
+                    "tags": [
+                      "police",
+                      "search",
+                      "missing_person",
+                      "room",
+                      "debris"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Police officers",
+                        "attributes": {
+                          "drawn_weapons": "yes",
+                          "cautious_navigation": "yes",
+                          "searching_missing_person": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Police officers",
+                        "ref_object": "O001",
+                        "role": "searching",
+                        "entity": "police"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_12.5_24.5",
+                      "name": "Police search for missing person",
+                      "time": {
+                        "start": "12.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "police news"
+                      ],
+                      "scene_topic": "Police officers search for a missing person in a dimly lit, debris-strewn room.",
+                      "summary": "A group of police officers, their weapons drawn, cautiously navigate a dimly lit, debris-strewn room, their footsteps echoing as they search for a missing person. A group of police officers, their weapons drawn, cautiously navigate a dimly lit, debris-strewn room, their footsteps echoing as they search for a missing person.",
+                      "implications": "Major news event",
+                      "modalities": {
+                        "visual": "A group of police officers, their weapons drawn, cautiously navigate a dimly lit, debris-strewn room, their footsteps echoing as they search for a missing person.",
+                        "audio": "footsteps echoing",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 29.5,
+                "children": [],
+                "caption": "A man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light, as a woman's voice, barely audible over the sound of the wind, asks \"What's going on?\"",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light, as a woman's voice, barely audible over the sound of the wind, asks \"What's going on?\"",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_24.5_29.5",
+                    "tags": [
+                      "corridor",
+                      "emergency_light",
+                      "wind",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "dark_suit"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "barely_audible"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "emergency_light",
+                        "attributes": {
+                          "type": "flickering"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_24.5_29.5",
+                      "name": "man walks through corridor",
+                      "time": {
+                        "start": "24.5",
+                        "end": "29.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent_scene"
+                      ],
+                      "scene_topic": "A man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light, as a woman's voice, barely audible over the sound of the wind, asks 'What's going on?'",
+                      "summary": "A man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light, as a woman's voice, barely audible over the sound of the wind, asks \"What's going on?\"",
+                      "implications": "Major scene setting event",
+                      "modalities": {
+                        "visual": "A man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light, as a woman's voice asks 'What's going on?'",
+                        "audio": "wind; woman's voice 'What's going on?'",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A tense and chaotic scene unfolds in a bustling city, with a man's voice drowned out by the roar of a car engine. Meanwhile, a group of police officers search for a missing person in a dimly lit, debris-strewn room, their weapons drawn and their footsteps echoing. The atmosphere is fraught with danger and uncertainty, as a man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light, and a woman's voice asks",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "A tense and chaotic scene unfolds in a bustling city, with a man's voice drowned out by the roar of a car engine. Meanwhile, a group of police officers search for a missing person in a dimly lit, debris-strewn room, their weapons drawn and their footsteps echoing. The atmosphere is fraught with danger and uncertainty, as a man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light, and a woman's voice asks",
+              "result": {
+                "video_id": "MLihvpIVJK8",
+                "event_id": "E_MLihvpIVJK8_7.5_29.5",
+                "tags": [
+                  "chaos",
+                  "police",
+                  "missing_person",
+                  "danger",
+                  "uncertainty"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Car",
+                    "attributes": {
+                      "type": "vehicle",
+                      "sound": "roar"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Police officers",
+                    "attributes": {
+                      "role": "searching",
+                      "location": "debris-strewn room"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Man in dark suit",
+                    "attributes": {
+                      "location": "dimly lit corridor",
+                      "lighting": "flickering emergency light"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Woman",
+                    "attributes": {
+                      "voice": "asking"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man's voice",
+                    "ref_object": "O004",
+                    "role": "speaking",
+                    "entity": "voice"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Police officers",
+                    "ref_object": "O002",
+                    "role": "searching",
+                    "entity": "officers"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "Man in dark suit",
+                    "ref_object": "O003",
+                    "role": "walking",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_MLihvpIVJK8_7.5_29.5",
+                  "name": "Tense and chaotic scene",
+                  "time": {
+                    "start": "7.5",
+                    "end": "29.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "action",
+                    "crime"
+                  ],
+                  "scene_topic": "A group of police officers search for a missing person in a dimly lit, debris-strewn room, while a man's voice is drowned out by the roar of a car engine.",
+                  "summary": "A tense and chaotic scene unfolds in a bustling city, with a man's voice drowned out by the roar of a car engine. Meanwhile, a group of police officers search for a missing person in a dimly lit, debris-strewn room, their weapons drawn and their footsteps echoing. The atmosphere is fraught with danger and uncertainty, as a man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light, and a woman's voice asks",
+                  "implications": "Major action, crime news event",
+                  "modalities": {
+                    "visual": "A tense and chaotic scene unfolds in a bustling city, with a man in a dark suit walks through a dimly lit corridor, and a woman's voice asks.",
+                    "audio": "car engine; footsteps; police officers' voices.",
+                    "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                  }
+                }
+              }
+            },
+            "summary": "A man's voice is heard amidst the city sounds, while police officers search a dimly lit room for a missing person, their footsteps echoing through the debris-strewn space. Meanwhile, a man in a dark suit walks through a dimly lit corridor, where a woman's voice is barely audible over the wind, asking \"What's going on?\""
+          },
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 37.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "A man in a dark suit walks down a dimly lit hallway, the only light coming from a small, flickering light source, as a woman's voice can be heard speaking in a foreign language.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A man in a dark suit walks down a dimly lit hallway, the only light coming from a small, flickering light source, as a woman's voice can be heard speaking in a foreign language.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_29.5_34.5",
+                    "tags": [
+                      "dark_suit",
+                      "hallway",
+                      "light_source",
+                      "foreign_language"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "dark_suit",
+                          "location": "hallway"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "light_source",
+                        "attributes": {
+                          "type": "flickering",
+                          "size": "small"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_29.5_34.5",
+                      "name": "man walks down hallway",
+                      "time": {
+                        "start": "29.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent_scene"
+                      ],
+                      "scene_topic": "A man walks down a dimly lit hallway, the only light coming from a small, flickering light source, as a woman's voice can be heard speaking in a foreign language.",
+                      "summary": "A man in a dark suit walks down a dimly lit hallway, the only light coming from a small, flickering light source, as a woman's voice can be heard speaking in a foreign language.",
+                      "implications": "Major scene setting event",
+                      "modalities": {
+                        "visual": "A man in a dark suit walks down a dimly lit hallway, the only light coming from a small, flickering light source, as a woman's voice can be heard speaking in a foreign language.",
+                        "audio": "woman's voice speaking in a foreign language",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 37.5,
+                "children": [],
+                "caption": "A man in a dark suit stands in a dimly lit room, his serious expression illuminated by a single light source as he speaks, his voice echoing in the silence.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A man in a dark suit stands in a dimly lit room, his serious expression illuminated by a single light source as he speaks, his voice echoing in the silence.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_34.5_37.5",
+                    "tags": [
+                      "man",
+                      "suit",
+                      "room",
+                      "light",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "expression": "serious",
+                          "illumination": "single light source"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "dimly lit"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "light source",
+                        "attributes": {
+                          "type": "single"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_34.5_37.5",
+                      "name": "man speaking",
+                      "time": {
+                        "start": "34.5",
+                        "end": "37.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man in a dark suit stands in a dimly lit room, his serious expression illuminated by a single light source as he speaks, his voice echoing in the silence.",
+                      "summary": "A man in a dark suit stands in a dimly lit room, his serious expression illuminated by a single light source as he speaks, his voice echoing in the silence.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "A man in a dark suit stands in a dimly lit room, his serious expression illuminated by a single light source as he speaks.",
+                        "audio": "speaks; voice echoing",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a dark suit is seen in a dimly lit setting, his face illuminated by a small light source as he speaks in a serious tone, the woman's voice in the background adding an air of mystery to the scene.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "A man in a dark suit is seen in a dimly lit setting, his face illuminated by a small light source as he speaks in a serious tone, the woman's voice in the background adding an air of mystery to the scene.",
+              "result": {
+                "video_id": "MLihvpIVJK8",
+                "event_id": "E_MLihvpIVJK8_29.5_37.5",
+                "tags": [
+                  "man",
+                  "suit",
+                  "dimly_lit",
+                  "serious_tone",
+                  "mystery"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "face_illuminated": "by small light source",
+                      "serious_tone": "speaking"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "voice": "in background",
+                      "mystery": "adding air"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_MLihvpIVJK8_29.5_37.5",
+                  "name": "man speaking in dimly lit setting",
+                  "time": {
+                    "start": "29.5",
+                    "end": "37.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "speech"
+                  ],
+                  "scene_topic": "A man in a dark suit is seen in a dimly lit setting, his face illuminated by a small light source as he speaks in a serious tone, the woman's voice in the background adding an air of mystery to the scene.",
+                  "summary": "A man in a dark suit is seen in a dimly lit setting, his face illuminated by a small light source as he speaks in a serious tone, the woman's voice in the background adding an air of mystery to the scene.",
+                  "implications": "Major news event",
+                  "modalities": {
+                    "visual": "A man in a dark suit is seen in a dimly lit setting, his face illuminated by a small light source as he speaks in a serious tone, the woman's voice in the background adding an air of mystery to the scene.",
+                    "audio": "speaks; woman's voice",
+                    "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a dark suit is seen in a dimly lit setting, where a woman's voice is heard speaking in a foreign language, and he stands with a serious expression."
+          }
+        ],
+        "caption": "A tense and chaotic scene unfolds in a bustling city, while a group of police officers search for a missing person in a dimly lit room. Meanwhile, a man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light. The atmosphere is fraught with danger and uncertainty.",
+        "postprocess": {
+          "event_id": 4,
+          "original_answer": "A tense and chaotic scene unfolds in a bustling city, while a group of police officers search for a missing person in a dimly lit room. Meanwhile, a man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light. The atmosphere is fraught with danger and uncertainty.",
+          "result": {
+            "video_id": "MLihvpIVJK8",
+            "event_id": "E_MLihvpIVJK8_7.5_37.5",
+            "tags": [
+              "police",
+              "missing_person",
+              "chaos",
+              "danger",
+              "uncertainty"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Police officers",
+                "attributes": {
+                  "searching": "for a missing person",
+                  "location": "dimly lit room"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Man in dark suit",
+                "attributes": {
+                  "walking": "through a dimly lit corridor",
+                  "light_source": "flickering emergency light"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Police officers",
+                "ref_object": "O001",
+                "role": "searching",
+                "entity": "police"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Man in dark suit",
+                "ref_object": "O002",
+                "role": "walking",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_MLihvpIVJK8_7.5_37.5",
+              "name": "Tense and chaotic scene",
+              "time": {
+                "start": "7.5",
+                "end": "37.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "chaos",
+                "danger",
+                "uncertainty"
+              ],
+              "scene_topic": "A tense and chaotic scene unfolds in a bustling city, while a group of police officers search for a missing person in a dimly lit room.",
+              "summary": "A tense and chaotic scene unfolds in a bustling city, while a group of police officers search for a missing person in a dimly lit room. Meanwhile, a man in a dark suit walks through a dimly lit corridor, the only light coming from a flickering emergency light. The atmosphere is fraught with danger and uncertainty.",
+              "implications": "Major news event",
+              "modalities": {
+                "visual": "A tense and chaotic scene unfolds in a bustling city, a group of police officers search for a missing person in a dimly lit room, a man in a dark suit walks through a dimly lit corridor, a flickering emergency light.",
+                "audio": "",
+                "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+              }
+            }
+          }
+        },
+        "summary": "Police officers search a dimly lit room for a missing person, their footsteps echoing through the debris-strewn space, while a man in a dark suit walks through a dimly lit corridor, where a woman's voice is heard asking \"What's going on?\""
+      },
+      {
+        "level": 1,
+        "start_time": 37.5,
+        "end_time": 71.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 37.5,
+            "end_time": 63.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 37.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "A man in a dark suit walks down a hallway, passing a large, metallic object, as a woman's voice expresses concern about the situation.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A man in a dark suit walks down a hallway, passing a large, metallic object, as a woman's voice expresses concern about the situation.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_37.5_47.5",
+                    "tags": [
+                      "man",
+                      "hallway",
+                      "metallic_object",
+                      "concern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "actor": "man",
+                          "action": "walking",
+                          "object": "dark_suit"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "metallic_object",
+                        "attributes": {
+                          "type": "large",
+                          "material": "metal"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_37.5_47.5",
+                      "name": "man walks down hallway",
+                      "time": {
+                        "start": "37.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent_scene"
+                      ],
+                      "scene_topic": "A man in a dark suit walks down a hallway, passing a large, metallic object, as a woman's voice expresses concern about the situation.",
+                      "summary": "A man in a dark suit walks down a hallway, passing a large, metallic object, as a woman's voice expresses concern about the situation.",
+                      "implications": "Major scene event",
+                      "modalities": {
+                        "visual": "A man in a dark suit walks down a hallway, passing a large, metallic object, as a woman's voice expresses concern about the situation.",
+                        "audio": "woman's voice; concern",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 49.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man in a suit stands before a large, metallic door, his serious expression and the tense atmosphere hinting at an important conversation or decision.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "In a dimly lit room, a man in a suit stands before a large, metallic door, his serious expression and the tense atmosphere hinting at an important conversation or decision.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_47.5_49.5",
+                    "tags": [
+                      "room",
+                      "man",
+                      "door",
+                      "conversation",
+                      "decision"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "expression": "serious",
+                          "atmosphere": "tense"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "door",
+                        "attributes": {
+                          "type": "metallic",
+                          "size": "large"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_47.5_49.5",
+                      "name": "important conversation or decision",
+                      "time": {
+                        "start": "47.5",
+                        "end": "49.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "room scene"
+                      ],
+                      "scene_topic": "A man stands before a metallic door, hinting at an important conversation or decision.",
+                      "summary": "In a dimly lit room, a man in a suit stands before a large, metallic door, his serious expression and the tense atmosphere hinting at an important conversation or decision.",
+                      "implications": "Major scene, important event",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a man in a suit stands before a large, metallic door, his serious expression and the tense atmosphere hinting at an important conversation or decision.",
+                        "audio": "",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 49.5,
+                "end_time": 53.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man in a suit stands before a large, metallic door, his serious expression and the weight of his responsibility evident as he prepares to enter.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "In a dimly lit room, a man in a suit stands before a large, metallic door, his serious expression and the weight of his responsibility evident as he prepares to enter.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_49.5_53.5",
+                    "tags": [
+                      "room",
+                      "man",
+                      "door",
+                      "responsibility"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "expression": "serious",
+                          "responsibility": "weight"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "door",
+                        "attributes": {
+                          "type": "metallic",
+                          "size": "large"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_49.5_53.5",
+                      "name": "man prepares to enter the room",
+                      "time": {
+                        "start": "49.5",
+                        "end": "53.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room",
+                        "door"
+                      ],
+                      "scene_topic": "A man prepares to enter a room, his serious expression and weight of responsibility evident.",
+                      "summary": "In a dimly lit room, a man in a suit stands before a large, metallic door, his serious expression and the weight of his responsibility evident as he prepares to enter.",
+                      "implications": "Major event in the story",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a man in a suit stands before a large, metallic door, his serious expression and the weight of his responsibility evident as he prepares to enter.",
+                        "audio": "",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 53.5,
+                "end_time": 57.5,
+                "children": [],
+                "caption": "A man in a dark suit stands in a dimly lit room, his serious expression illuminated by a single light source as he speaks, his voice echoing slightly.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "A man in a dark suit stands in a dimly lit room, his serious expression illuminated by a single light source as he speaks, his voice echoing slightly.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_53_57",
+                    "tags": [
+                      "man",
+                      "suit",
+                      "room",
+                      "light",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "expression": "serious",
+                          "illumination": "single light source",
+                          "echo": "slightly"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_53_57",
+                      "name": "man speaking",
+                      "time": {
+                        "start": "53.5",
+                        "end": "57.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man speaks in a dimly lit room.",
+                      "summary": "A man in a dark suit stands in a dimly lit room, his serious expression illuminated by a single light source as he speaks, his voice echoing slightly.",
+                      "implications": "Important news or announcement",
+                      "modalities": {
+                        "visual": "A man in a dark suit stands in a dimly lit room, his serious expression illuminated by a single light source as he speaks.",
+                        "audio": "speaks; voice echoing",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 57.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "A man in a suit, standing in a dimly lit room with a large, metallic object in the background, speaks with a serious expression, his voice echoing slightly as he says, \"I'm not a hero. I'm not a villain. I'm just a man.\"",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "A man in a suit, standing in a dimly lit room with a large, metallic object in the background, speaks with a serious expression, his voice echoing slightly as he says, \"I'm not a hero. I'm not a villain. I'm just a man.\"",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_57.5_63.5",
+                    "tags": [
+                      "man",
+                      "suit",
+                      "room",
+                      "object",
+                      "speech"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "actor": "man",
+                          "expression": "serious",
+                          "background": "dimly lit room",
+                          "object": "large, metallic object"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "man"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_57.5_63.5",
+                      "name": "man speaking",
+                      "time": {
+                        "start": "57.5",
+                        "end": "63.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man speaks in a dimly lit room.",
+                      "summary": "A man in a suit, standing in a dimly lit room with a large, metallic object in the background, speaks with a serious expression, his voice echoing slightly as he says, \"I'm not a hero. I'm not a villain. I'm just a man.\"",
+                      "implications": "Significant event in the story",
+                      "modalities": {
+                        "visual": "A man in a suit, standing in a dimly lit room with a large, metallic object in the background, speaks with a serious expression, his voice echoing slightly as he says, 'I'm not a hero. I'm not a villain. I'm just a man.'",
+                        "audio": "",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a suit is shown in various dimly lit settings, each with a different atmosphere and hinting at a significant event or decision. The man's serious expression and the weight of his responsibility are evident in each scene, suggesting that he is grappling with an important choice or situation. The final scene reveals that the man is not a hero or villain, but rather a complex and nuanced individual, highlighting the complexity of the situation he is facing.",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "A man in a suit is shown in various dimly lit settings, each with a different atmosphere and hinting at a significant event or decision. The man's serious expression and the weight of his responsibility are evident in each scene, suggesting that he is grappling with an important choice or situation. The final scene reveals that the man is not a hero or villain, but rather a complex and nuanced individual, highlighting the complexity of the situation he is facing.",
+              "result": {
+                "video_id": "MLihvpIVJK8",
+                "event_id": "E_MLihvpIVJK8_37.5_63.5",
+                "tags": [
+                  "man",
+                  "suit",
+                  "decision",
+                  "responsibility",
+                  "complex"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "expression": "serious",
+                      "atmosphere": "dimly lit",
+                      "responsibility": "weight of"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_MLihvpIVJK8_37.5_63.5",
+                  "name": "A man in a suit is shown in various dimly lit settings",
+                  "time": {
+                    "start": "37.5",
+                    "end": "63.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "decision",
+                    "responsibility"
+                  ],
+                  "scene_topic": "A man in a suit is shown in various dimly lit settings, each with a different atmosphere and hinting at a significant event or decision.",
+                  "summary": "A man in a suit is shown in various dimly lit settings, each with a different atmosphere and hinting at a significant event or decision. The man's serious expression and the weight of his responsibility are evident in each scene, suggesting that he is grappling with an important choice or situation. The final scene reveals that the man is not a hero or villain, but rather a complex and nuanced individual, highlighting the complexity of the situation he is facing.",
+                  "implications": "Major life event or decision",
+                  "modalities": {
+                    "visual": "A man in a suit is shown in various dimly lit settings, each with a different atmosphere and hinting at a significant event or decision. The man's serious expression and the weight of his responsibility are evident in each scene, suggesting that he is grappling with an important choice or situation. The final scene reveals that the man is not a hero or villain, but rather a complex and nuanced individual, highlighting the complexity of the situation he is facing.",
+                    "audio": "",
+                    "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a suit is seen in various dimly lit rooms, standing before metallic doors or objects, his serious expression and tone hinting at important conversations or decisions. He emphasizes his ordinary nature, stating \"I'm not a hero. I'm not a villain. I'm just a man.\""
+          },
+          {
+            "level": 2,
+            "start_time": 63.5,
+            "end_time": 71.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 71.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man in a suit stands before a large, metallic object, his serious expression and the object's intricate design suggesting a moment of contemplation or decision-making.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "In a dimly lit room, a man in a suit stands before a large, metallic object, his serious expression and the object's intricate design suggesting a moment of contemplation or decision-making.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_63.5_71.5",
+                    "tags": [
+                      "room",
+                      "man",
+                      "object",
+                      "contemplation",
+                      "decision"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "metallic object",
+                        "attributes": {
+                          "description": "large, intricate design"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in suit",
+                        "attributes": {
+                          "description": "serious expression"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in suit",
+                        "ref_object": "O002",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_63.5_71.5",
+                      "name": "Moment of Contemplation",
+                      "time": {
+                        "start": "63.5",
+                        "end": "71.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "contemplation"
+                      ],
+                      "scene_topic": "A man stands before a metallic object, contemplating or making a decision.",
+                      "summary": "In a dimly lit room, a man in a suit stands before a large, metallic object, his serious expression and the object's intricate design suggesting a moment of contemplation or decision-making.",
+                      "implications": "Major event in the story",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a man in a suit stands before a large, metallic object, his serious expression and the object's intricate design suggesting a moment of contemplation or decision-making.",
+                        "audio": "",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man stands before a mysterious metallic object, deep in thought as he weighs his options.",
+            "postprocess": {
+              "event_id": 18,
+              "original_answer": "A man stands before a mysterious metallic object, deep in thought as he weighs his options.",
+              "result": {
+                "video_id": "MLihvpIVJK8",
+                "event_id": "E_MLihvpIVJK8_63_71",
+                "tags": [
+                  "man",
+                  "object",
+                  "thought"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "mysterious metallic object",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_MLihvpIVJK8_63_71",
+                  "name": "A man stands before a mysterious metallic object",
+                  "time": {
+                    "start": "63.5",
+                    "end": "71.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person",
+                    "object"
+                  ],
+                  "scene_topic": "A man stands before a mysterious metallic object, deep in thought as he weighs his options.",
+                  "summary": "A man stands before a mysterious metallic object, deep in thought as he weighs his options.",
+                  "implications": "Major person, object news event",
+                  "modalities": {
+                    "visual": "A man stands before a mysterious metallic object, deep in thought as he weighs his options.",
+                    "audio": "",
+                    "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a suit stands before a large metallic object, his serious expression indicating contemplation or decision-making."
+          }
+        ],
+        "caption": "A complex and nuanced individual grapples with an important choice or situation in a series of dimly lit settings, each with a different atmosphere. The final scene reveals the man's inner struggle and the complexity of the situation he is facing.",
+        "postprocess": {
+          "event_id": 12,
+          "original_answer": "A complex and nuanced individual grapples with an important choice or situation in a series of dimly lit settings, each with a different atmosphere. The final scene reveals the man's inner struggle and the complexity of the situation he is facing.",
+          "result": {
+            "video_id": "MLihvpIVJK8",
+            "event_id": "E_MLihvpIVJK8_37.5_71.5",
+            "tags": [
+              "complex_individual",
+              "important_choice",
+              "nuanced_situation"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "atmosphere": "dimly_lit",
+                  "settings": "different"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "main",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_MLihvpIVJK8_37.5_71.5",
+              "name": "inner_struggle",
+              "time": {
+                "start": "37.5",
+                "end": "71.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "complex_individual"
+              ],
+              "scene_topic": "The man grapples with an important choice in a series of dimly lit settings.",
+              "summary": "A complex and nuanced individual grapples with an important choice or situation in a series of dimly lit settings, each with a different atmosphere. The final scene reveals the man's inner struggle and the complexity of the situation he is facing.",
+              "implications": "Major character development",
+              "modalities": {
+                "visual": "A complex and nuanced individual grapples with an important choice or situation in a series of dimly lit settings, each with a different atmosphere. The final scene reveals the man's inner struggle and the complexity of the situation he is facing.",
+                "audio": "",
+                "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+              }
+            }
+          }
+        },
+        "summary": "A man in a suit is seen in various dimly lit rooms, standing before metallic doors or objects, conveying a sense of importance and gravity through his serious expression and tone. He emphasizes his ordinary nature, stating he is neither a hero nor a villain, but simply a man."
+      },
+      {
+        "level": 1,
+        "start_time": 71.5,
+        "end_time": 122.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 71.5,
+            "end_time": 80.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 71.5,
+                "end_time": 76.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man in a suit stands in contemplation, his face etched with concern as he listens to a woman's voice, her words echoing the weight of his thoughts.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "In a dimly lit room, a man in a suit stands in contemplation, his face etched with concern as he listens to a woman's voice, her words echoing the weight of his thoughts.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_71.5_76.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "concern",
+                      "contemplation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "role": "actor",
+                          "expression": "concerned"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "speaker",
+                          "voice": "echoing"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_71.5_76.5",
+                      "name": "man listens to woman's voice",
+                      "time": {
+                        "start": "71.5",
+                        "end": "76.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "concern",
+                        "contemplation"
+                      ],
+                      "scene_topic": "A man listens to a woman's voice, his face etched with concern.",
+                      "summary": "In a dimly lit room, a man in a suit stands in contemplation, his face etched with concern as he listens to a woman's voice, her words echoing the weight of his thoughts.",
+                      "implications": "Major emotional event",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a man in a suit stands in contemplation, his face etched with concern as he listens to a woman's voice.",
+                        "audio": "woman's voice",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 76.5,
+                "end_time": 80.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, looks intently at the camera as a woman's voice, seemingly from off-screen, asks \"What are you doing?\".",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, looks intently at the camera as a woman's voice, seemingly from off-screen, asks \"What are you doing?\".",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_76.5_80.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "camera",
+                      "room",
+                      "window"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "blue shirt, black vest",
+                          "expression": "intently looking"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "off-screen"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "camera",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "dimly lit",
+                          "features": "large window"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_76.5_80.5",
+                      "name": "man questioned by woman",
+                      "time": {
+                        "start": "76.5",
+                        "end": "80.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room",
+                        "camera"
+                      ],
+                      "scene_topic": "A man is questioned by a woman in a dimly lit room.",
+                      "summary": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, looks intently at the camera as a woman's voice, seemingly from off-screen, asks \"What are you doing?\".",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, looks intently at the camera as a woman's voice asks 'What are you doing?'",
+                        "audio": "woman's voice; 'What are you doing?'",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two people are shown in dimly lit rooms, each engaged in a different activity. The first man is deep in thought, listening to a woman's voice that seems to be carrying the weight of his own thoughts. The second man is focused intently on the camera, with a woman's voice off-screen asking him a question.",
+            "postprocess": {
+              "event_id": 20,
+              "original_answer": "Two people are shown in dimly lit rooms, each engaged in a different activity. The first man is deep in thought, listening to a woman's voice that seems to be carrying the weight of his own thoughts. The second man is focused intently on the camera, with a woman's voice off-screen asking him a question.",
+              "result": {
+                "video_id": "MLihvpIVJK8",
+                "event_id": "E_MLihvpIVJK8_71.5_80.5",
+                "tags": [
+                  "people",
+                  "rooms",
+                  "thought",
+                  "voice",
+                  "camera"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "engaged_in": "thought",
+                      "listening_to": "woman's voice"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {
+                      "focused_on": "camera",
+                      "being_asked": "question"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman",
+                    "attributes": {
+                      "speaking": "off-screen"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "subject",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "subject",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "woman",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_MLihvpIVJK8_71.5_80.5",
+                  "name": "Two people are shown in dimly lit rooms",
+                  "time": {
+                    "start": "71.5",
+                    "end": "80.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "people",
+                    "rooms"
+                  ],
+                  "scene_topic": "Two people are shown in dimly lit rooms, each engaged in a different activity.",
+                  "summary": "Two people are shown in dimly lit rooms, each engaged in a different activity. The first man is deep in thought, listening to a woman's voice that seems to be carrying the weight of his own thoughts. The second man is focused intently on the camera, with a woman's voice off-screen asking him a question.",
+                  "implications": "Major scene, people interaction",
+                  "modalities": {
+                    "visual": "Two people are shown in dimly lit rooms, each engaged in a different activity.",
+                    "audio": "woman's voice; woman's voice",
+                    "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a suit stands in contemplation, his face etched with concern, as a woman's voice echoes his thoughts. Meanwhile, a man in a blue shirt and black vest is asked by an off-screen woman \"What are you doing?\" as he looks intently at the camera."
+          },
+          {
+            "level": 2,
+            "start_time": 80.5,
+            "end_time": 92.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 80.5,
+                "end_time": 84.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, reacts with surprise as a woman's voice exclaims \"Oh my God!\"",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, reacts with surprise as a woman's voice exclaims \"Oh my God!\"",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_80_84",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "surprise",
+                      "room",
+                      "window"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "blue shirt, black vest",
+                          "location": "dimly lit room",
+                          "reaction": "surprise"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "Oh my God!"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "reactant",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_80_84",
+                      "name": "woman's voice exclaims 'Oh my God!'",
+                      "time": {
+                        "start": "80.5",
+                        "end": "84.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man reacts with surprise to a woman's voice saying 'Oh my God!'",
+                      "summary": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, reacts with surprise as a woman's voice exclaims \"Oh my God!\"",
+                      "implications": "Major human behavior event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, reacts with surprise as a woman's voice exclaims 'Oh my God!'",
+                        "audio": "woman's voice exclaims 'Oh my God!'",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 84.5,
+                "end_time": 92.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, raises his arms in a gesture of surprise or concern as a woman's voice, seemingly from off-screen, asks \"What is that?\"",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, raises his arms in a gesture of surprise or concern as a woman's voice, seemingly from off-screen, asks \"What is that?\"",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_84_92",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "surprise",
+                      "concern"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "blue shirt, black vest",
+                          "gestures": "raises arms in surprise or concern"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "off-screen"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_84_92",
+                      "name": "woman's voice asking a question",
+                      "time": {
+                        "start": "84.5",
+                        "end": "92.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "communication"
+                      ],
+                      "scene_topic": "A man reacts to a woman's off-screen question",
+                      "summary": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, raises his arms in a gesture of surprise or concern as a woman's voice, seemingly from off-screen, asks \"What is that?\"",
+                      "implications": "Human interaction and communication",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, raises his arms in a gesture of surprise or concern as a woman's voice asks 'What is that?'",
+                        "audio": "",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a blue shirt and black vest is surprised or concerned by something he sees or hears, possibly in a dimly lit room with a large window.",
+            "postprocess": {
+              "event_id": 24,
+              "original_answer": "A man in a blue shirt and black vest is surprised or concerned by something he sees or hears, possibly in a dimly lit room with a large window.",
+              "result": {
+                "video_id": "MLihvpIVJK8",
+                "event_id": "E_MLihvpIVJK8_80_92",
+                "tags": [
+                  "man",
+                  "blue_shirt",
+                  "black_vest",
+                  "surprised",
+                  "concerned"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "actor": "man",
+                      "clothing": "blue_shirt, black_vest",
+                      "room": "dimly_lit_room",
+                      "window": "large_window"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "man"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_MLihvpIVJK8_80_92",
+                  "name": "man surprised or concerned",
+                  "time": {
+                    "start": "80.5",
+                    "end": "92.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human_behavior"
+                  ],
+                  "scene_topic": "A man is surprised or concerned by something he sees or hears.",
+                  "summary": "A man in a blue shirt and black vest is surprised or concerned by something he sees or hears, possibly in a dimly lit room with a large window.",
+                  "implications": "Human behavior, emotional response",
+                  "modalities": {
+                    "visual": "A man in a blue shirt and black vest is surprised or concerned by something he sees or hears, possibly in a dimly lit room with a large window.",
+                    "audio": "",
+                    "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a blue shirt and black vest reacts with surprise in a dimly lit room with a large window as a woman's voice exclaims \"Oh my God!\" and asks \"What is that?\""
+          },
+          {
+            "level": 2,
+            "start_time": 92.5,
+            "end_time": 98.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 92.5,
+                "end_time": 94.5,
+                "children": [],
+                "caption": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, raises his arms in a gesture of surprise or concern as a woman's voice, seemingly from off-screen, asks \"What is that?\"",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, raises his arms in a gesture of surprise or concern as a woman's voice, seemingly from off-screen, asks \"What is that?\"",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_92.5_94.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "room",
+                      "window",
+                      "surprise"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "blue shirt, black vest",
+                          "gestures": "raises arms in surprise or concern"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "off-screen"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "dimly lit",
+                          "features": "large window"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_92.5_94.5",
+                      "name": "woman's voice asks 'What is that?'",
+                      "time": {
+                        "start": "92.5",
+                        "end": "94.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "communication"
+                      ],
+                      "scene_topic": "A man in a blue shirt and black vest raises his arms in surprise or concern as a woman's voice asks 'What is that?'",
+                      "summary": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, raises his arms in a gesture of surprise or concern as a woman's voice, seemingly from off-screen, asks \"What is that?\"",
+                      "implications": "Major human behavior, communication news event",
+                      "modalities": {
+                        "visual": "A man in a blue shirt and black vest, standing in a dimly lit room with a large window, raises his arms in a gesture of surprise or concern as a woman's voice asks 'What is that?'",
+                        "audio": "",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 94.5,
+                "end_time": 98.5,
+                "children": [],
+                "caption": "A man in a suit, standing in a dimly lit room with a large window, looks out at the city skyline as a woman's voice, seemingly from a different scene, asks \"What are you doing?\".",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "A man in a suit, standing in a dimly lit room with a large window, looks out at the city skyline as a woman's voice, seemingly from a different scene, asks \"What are you doing?\".",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_94.5_98.5",
+                    "tags": [
+                      "man",
+                      "suit",
+                      "city",
+                      "window",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "standing": "",
+                          "looking_out_window": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "speaking": "",
+                          "voice_from_different_scene": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_94.5_98.5",
+                      "name": "man looking out window",
+                      "time": {
+                        "start": "94.5",
+                        "end": "98.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "scene"
+                      ],
+                      "scene_topic": "A man in a suit looks out at the city skyline as a woman's voice asks 'What are you doing?'",
+                      "summary": "A man in a suit, standing in a dimly lit room with a large window, looks out at the city skyline as a woman's voice, seemingly from a different scene, asks \"What are you doing?\".",
+                      "implications": "Major scene, dialogue event",
+                      "modalities": {
+                        "visual": "A man in a suit, standing in a dimly lit room with a large window, looks out at the city skyline.",
+                        "audio": "woman's voice; 'What are you doing?'",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two people, one in a blue shirt and black vest, and the other in a suit, are shown in different scenes, both expressing surprise or concern as they look out at their surroundings.",
+            "postprocess": {
+              "event_id": 27,
+              "original_answer": "Two people, one in a blue shirt and black vest, and the other in a suit, are shown in different scenes, both expressing surprise or concern as they look out at their surroundings.",
+              "result": {
+                "video_id": "MLihvpIVJK8",
+                "event_id": "E_MLihvpIVJK8_92.5_98.5",
+                "tags": [
+                  "people",
+                  "surprise",
+                  "concern"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Person in blue shirt and black vest",
+                    "attributes": {
+                      "expression": "surprise",
+                      "orientation": "looking out at surroundings"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Person in suit",
+                    "attributes": {
+                      "expression": "concern",
+                      "orientation": "looking out at surroundings"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Person in blue shirt and black vest",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Person in suit",
+                    "ref_object": "O002",
+                    "role": "actor",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_MLihvpIVJK8_92.5_98.5",
+                  "name": "Two people expressing surprise or concern",
+                  "time": {
+                    "start": "92.5",
+                    "end": "98.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "people",
+                    "surprise",
+                    "concern"
+                  ],
+                  "scene_topic": "Two people, one in a blue shirt and black vest, and the other in a suit, are shown in different scenes, both expressing surprise or concern as they look out at their surroundings.",
+                  "summary": "Two people, one in a blue shirt and black vest, and the other in a suit, are shown in different scenes, both expressing surprise or concern as they look out at their surroundings.",
+                  "implications": "Major social, emotional event",
+                  "modalities": {
+                    "visual": "Two people, one in a blue shirt and black vest, and the other in a suit, are shown in different scenes, both expressing surprise or concern as they look out at their surroundings.",
+                    "audio": "",
+                    "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a dimly lit room with a large window reacts with surprise or concern to a woman's off-screen question, while another man in a suit looks out at the city skyline in response to a different woman's question about his actions."
+          },
+          {
+            "level": 2,
+            "start_time": 98.5,
+            "end_time": 103.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 98.5,
+                "end_time": 103.5,
+                "children": [],
+                "caption": "A man in a suit, standing in a dimly lit room with a large window, is talking on the phone, his serious expression reflecting the tension in the air as he listens to the other person.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "A man in a suit, standing in a dimly lit room with a large window, is talking on the phone, his serious expression reflecting the tension in the air as he listens to the other person.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_98.5_103.5",
+                    "tags": [
+                      "man",
+                      "phone",
+                      "room",
+                      "window",
+                      "serious"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "standing": "",
+                          "talking_on_phone": "",
+                          "serious_expression": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "room",
+                        "attributes": {
+                          "dimly_lit": "",
+                          "large_window": ""
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "phone",
+                        "attributes": {
+                          "being_used": ""
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "window",
+                        "attributes": {
+                          "large": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_98.5_103.5",
+                      "name": "",
+                      "time": {
+                        "start": "98.5",
+                        "end": "103.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "phone_call"
+                      ],
+                      "scene_topic": "A man is talking on the phone in a dimly lit room.",
+                      "summary": "A man in a suit, standing in a dimly lit room with a large window, is talking on the phone, his serious expression reflecting the tension in the air as he listens to the other person.",
+                      "implications": "Important conversation",
+                      "modalities": {
+                        "visual": "A man in a suit, standing in a dimly lit room with a large window, is serious and listens to the other person.",
+                        "audio": "Talking on the phone.",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a suit is on the phone, his serious expression reflecting the tension in the air as he listens to the other person.",
+            "postprocess": {
+              "event_id": 30,
+              "original_answer": "A man in a suit is on the phone, his serious expression reflecting the tension in the air as he listens to the other person.",
+              "result": {
+                "video_id": "MLihvpIVJK8",
+                "event_id": "E_MLihvpIVJK8_98.5_103.5",
+                "tags": [
+                  "phone_call",
+                  "serious_expression",
+                  "tension"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "expression": "serious",
+                      "phone_call": "yes"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "caller",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_MLihvpIVJK8_98.5_103.5",
+                  "name": "Phone Call",
+                  "time": {
+                    "start": "98.5",
+                    "end": "103.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human_interaction"
+                  ],
+                  "scene_topic": "A man is on the phone, looking serious.",
+                  "summary": "A man in a suit is on the phone, his serious expression reflecting the tension in the air as he listens to the other person.",
+                  "implications": "Human interaction",
+                  "modalities": {
+                    "visual": "A man in a suit is on the phone, his serious expression reflecting the tension in the air as he listens to the other person.",
+                    "audio": "",
+                    "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a suit stands in a dimly lit room, his serious expression reflecting the tension in the air as he listens to someone on the phone."
+          },
+          {
+            "level": 2,
+            "start_time": 103.5,
+            "end_time": 122.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 103.5,
+                "end_time": 107.5,
+                "children": [],
+                "caption": "A man in a suit, standing in a dimly lit room with a large window, looks intently at the camera as a woman's voice, seemingly from off-screen, asks \"What are you doing?\", followed by a man's voice saying \"I'm sorry.\"",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "A man in a suit, standing in a dimly lit room with a large window, looks intently at the camera as a woman's voice, seemingly from off-screen, asks \"What are you doing?\", followed by a man's voice saying \"I'm sorry.\"",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_103.5_107.5",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "camera",
+                      "room",
+                      "window"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "standing": "",
+                          "looking_at_camera": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "off-screen"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "camera",
+                        "attributes": {
+                          "facing_man": ""
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "room",
+                        "attributes": {
+                          "dimly_lit": "",
+                          "large_window": ""
+                        }
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "window",
+                        "attributes": {
+                          "large": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_103.5_107.5",
+                      "name": "Man questioned by woman",
+                      "time": {
+                        "start": "103.5",
+                        "end": "107.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room",
+                        "camera"
+                      ],
+                      "scene_topic": "A man is questioned by a woman in a dimly lit room.",
+                      "summary": "A man in a suit, standing in a dimly lit room with a large window, looks intently at the camera as a woman's voice, seemingly from off-screen, asks \"What are you doing?\", followed by a man's voice saying \"I'm sorry.\"",
+                      "implications": "A significant conversation is taking place.",
+                      "modalities": {
+                        "visual": "A man in a suit, standing in a dimly lit room with a large window, looks intently at the camera as a woman's voice asks 'What are you doing?' and a man's voice says 'I'm sorry'.",
+                        "audio": "Woman's voice: 'What are you doing?'; man's voice: 'I'm sorry'.",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 107.5,
+                "end_time": 109.5,
+                "children": [],
+                "caption": "A man in a suit, standing in a dimly lit room with a large window, gestures emphatically as he speaks, his words drowned out by the roar of a powerful engine.",
+                "postprocess": {
+                  "event_id": 33,
+                  "original_answer": "A man in a suit, standing in a dimly lit room with a large window, gestures emphatically as he speaks, his words drowned out by the roar of a powerful engine.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_107.5_109.5",
+                    "tags": [
+                      "man",
+                      "suit",
+                      "room",
+                      "window",
+                      "engine"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "actor": "man",
+                          "action": "gestures",
+                          "location": "dimly lit room",
+                          "context": "standing"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "suit",
+                        "attributes": {
+                          "type": "business attire"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "room",
+                        "attributes": {
+                          "lighting": "dim",
+                          "features": "large window"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "window",
+                        "attributes": {
+                          "size": "large"
+                        }
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "engine",
+                        "attributes": {
+                          "type": "powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_107.5_109.5",
+                      "name": "man speaking",
+                      "time": {
+                        "start": "107.5",
+                        "end": "109.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man in a suit, standing in a dimly lit room with a large window, gestures emphatically as he speaks, his words drowned out by the roar of a powerful engine.",
+                      "summary": "A man in a suit, standing in a dimly lit room with a large window, gestures emphatically as he speaks, his words drowned out by the roar of a powerful engine.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "A man in a suit, standing in a dimly lit room with a large window, gestures emphatically as he speaks.",
+                        "audio": "engine roar.",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 109.5,
+                "end_time": 117.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a man in a suit to a wider shot of a dimly lit room, where he stands in deep thought, the only sound a woman's voice speaking in a foreign language.",
+                "postprocess": {
+                  "event_id": 34,
+                  "original_answer": "The video transitions from a close-up of a man in a suit to a wider shot of a dimly lit room, where he stands in deep thought, the only sound a woman's voice speaking in a foreign language.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_109_117",
+                    "tags": [
+                      "video_transition",
+                      "man_in_suit",
+                      "dimly_lit_room"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_suit",
+                        "attributes": {
+                          "clothing": "suit",
+                          "expression": "deep thought"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman_speaking",
+                        "attributes": {
+                          "voice": "foreign language"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "dimly_lit_room",
+                        "attributes": {
+                          "lighting": "dimly lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_suit",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_109_117",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "109.5",
+                        "end": "117.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a man in a suit to a wider shot of a dimly lit room, where he stands in deep thought, the only sound a woman's voice speaking in a foreign language.",
+                      "summary": "The video transitions from a close-up of a man in a suit to a wider shot of a dimly lit room, where he stands in deep thought, the only sound a woman's voice speaking in a foreign language.",
+                      "implications": "Major video transition event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a man in a suit to a wider shot of a dimly lit room, where he stands in deep thought.",
+                        "audio": "woman's voice speaking in a foreign language.",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 117.5,
+                "end_time": 122.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a metallic object to a wide shot of a cityscape at night, while a man's voice can be heard speaking in a foreign language.",
+                "postprocess": {
+                  "event_id": 35,
+                  "original_answer": "The video transitions from a close-up of a metallic object to a wide shot of a cityscape at night, while a man's voice can be heard speaking in a foreign language.",
+                  "result": {
+                    "video_id": "MLihvpIVJK8",
+                    "event_id": "E_MLihvpIVJK8_117.5_122.5",
+                    "tags": [
+                      "object_transition",
+                      "cityscape",
+                      "foreign_language"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "metallic object",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "cityscape",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_MLihvpIVJK8_117.5_122.5",
+                      "name": "Object Transition",
+                      "time": {
+                        "start": "117.5",
+                        "end": "122.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "object_transition"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a metallic object to a wide shot of a cityscape at night, while a man's voice can be heard speaking in a foreign language.",
+                      "summary": "The video transitions from a close-up of a metallic object to a wide shot of a cityscape at night, while a man's voice can be heard speaking in a foreign language.",
+                      "implications": "Major visual storytelling event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a metallic object to a wide shot of a cityscape at night.",
+                        "audio": "man's voice speaking in a foreign language.",
+                        "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video shows a man in a suit in various settings, each with a different atmosphere and audio. The man is seen speaking in a dimly lit room, with the sound of an engine drowning out his words, and in a foreign language. The video also shows a close-up of a metallic object and a wide shot of a cityscape at night, with a man's voice speaking in a foreign language. Overall, the video is mysterious and ominous, with a focus on the man's intense gaze and the foreign language spoken.",
+            "postprocess": {
+              "event_id": 32,
+              "original_answer": "The video shows a man in a suit in various settings, each with a different atmosphere and audio. The man is seen speaking in a dimly lit room, with the sound of an engine drowning out his words, and in a foreign language. The video also shows a close-up of a metallic object and a wide shot of a cityscape at night, with a man's voice speaking in a foreign language. Overall, the video is mysterious and ominous, with a focus on the man's intense gaze and the foreign language spoken.",
+              "result": {
+                "video_id": "MLihvpIVJK8",
+                "event_id": "E_MLihvpIVJK8_103.5_122.5",
+                "tags": [
+                  "mystery",
+                  "ominous",
+                  "foreign_language"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man_in_suit",
+                    "attributes": {
+                      "speaker": "yes",
+                      "foreign_language": "yes",
+                      "intense_gaze": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "metallic_object",
+                    "attributes": {
+                      "close_up": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "cityscape",
+                    "attributes": {
+                      "wide_shot": "yes",
+                      "nighttime": "yes"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man_in_suit",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_MLihvpIVJK8_103.5_122.5",
+                  "name": "Mysterious Video",
+                  "time": {
+                    "start": "103.5",
+                    "end": "122.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "mystery"
+                  ],
+                  "scene_topic": "A man in a suit is seen speaking in a foreign language in various settings.",
+                  "summary": "The video shows a man in a suit in various settings, each with a different atmosphere and audio. The man is seen speaking in a dimly lit room, with the sound of an engine drowning out his words, and in a foreign language. The video also shows a close-up of a metallic object and a wide shot of a cityscape at night, with a man's voice speaking in a foreign language. Overall, the video is mysterious and ominous, with a focus on the man's intense gaze and the foreign language spoken.",
+                  "implications": "Major mystery and suspense event",
+                  "modalities": {
+                    "visual": "The video shows a man in a suit in various settings, each with a different atmosphere and audio. The man is seen speaking in a dimly lit room, with a close-up of a metallic object and a wide shot of a cityscape at night. The man's intense gaze is also focused on.",
+                    "audio": "Speaking; engine noise; man's voice in a foreign language.",
+                    "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a suit is seen in a dimly lit room, initially responding to a woman's question with \"I'm sorry\" before being interrupted by the sound of a powerful engine. The video then cuts to various scenes, including the man in thought, a metallic object, and a cityscape at night, with voices speaking in foreign languages in the background."
+          }
+        ],
+        "caption": "The video shows a series of scenes featuring a man in a suit, each with a different atmosphere and audio. The man is seen in various settings, including dimly lit rooms, cityscapes at night, and foreign locations, and is heard speaking in different languages. The video is mysterious and ominous, with a focus on the man's intense gaze and the foreign language spoken.",
+        "postprocess": {
+          "event_id": 21,
+          "original_answer": "The video shows a series of scenes featuring a man in a suit, each with a different atmosphere and audio. The man is seen in various settings, including dimly lit rooms, cityscapes at night, and foreign locations, and is heard speaking in different languages. The video is mysterious and ominous, with a focus on the man's intense gaze and the foreign language spoken.",
+          "result": {
+            "video_id": "MLihvpIVJK8",
+            "event_id": "E_MLihvpIVJK8_71.5_122.5",
+            "tags": [
+              "mystery",
+              "ominous",
+              "foreign_language"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Man in suit",
+                "attributes": {
+                  "atmosphere": "mysterious",
+                  "audio": "different languages"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man in suit",
+                "ref_object": "O001",
+                "role": "main character",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_MLihvpIVJK8_71.5_122.5",
+              "name": "Mysterious scenes with man in suit",
+              "time": {
+                "start": "71.5",
+                "end": "122.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "mystery"
+              ],
+              "scene_topic": "A man in a suit is seen in various settings, speaking in different languages.",
+              "summary": "The video shows a series of scenes featuring a man in a suit, each with a different atmosphere and audio. The man is seen in various settings, including dimly lit rooms, cityscapes at night, and foreign locations, and is heard speaking in different languages. The video is mysterious and ominous, with a focus on the man's intense gaze and the foreign language spoken.",
+              "implications": "Major plot twist, character development",
+              "modalities": {
+                "visual": "The video shows a series of scenes featuring a man in a suit, each with a different atmosphere and audio. The man is seen in various settings, including dimly lit rooms, cityscapes at night, and foreign locations, and is heard speaking in different languages. The video is mysterious and ominous, with a focus on the man's intense gaze and the foreign language spoken.",
+                "audio": "speaking in different languages",
+                "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+              }
+            }
+          }
+        },
+        "summary": "A man in a suit and another in a blue shirt are shown reacting with concern and surprise to various situations, including a mysterious object and a woman's off-screen questions. Meanwhile, a third man in a suit is seen on the phone, his serious expression reflecting the tension in the air."
+      },
+      {
+        "level": 1,
+        "start_time": 122.5,
+        "end_time": 124.916458,
+        "children": [],
+        "caption": "The video transitions from a black screen to a white one, displaying the title \"Avengers: Infinity War\" in bold, capitalized letters against a dark background, while a man's voice can be heard faintly in the background.",
+        "postprocess": {
+          "event_id": 36,
+          "original_answer": "The video transitions from a black screen to a white one, displaying the title \"Avengers: Infinity War\" in bold, capitalized letters against a dark background, while a man's voice can be heard faintly in the background.",
+          "result": {
+            "video_id": "MLihvpIVJK8",
+            "event_id": "E_MLihvpIVJK8_122.5_124.92",
+            "tags": [
+              "movie_title",
+              "title_screen",
+              "background_sound"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Title Screen",
+                "attributes": {
+                  "text": "Avengers: Infinity War",
+                  "font": "bold",
+                  "color": "white",
+                  "background": "dark"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Background Sound",
+                "attributes": {
+                  "sound": "man's voice",
+                  "volume": "faint"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Unspecified Man",
+                "ref_object": "O002",
+                "role": "speaker",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_MLihvpIVJK8_122.5_124.92",
+              "name": "Title Screen Transition",
+              "time": {
+                "start": "122.5",
+                "end": "124.92"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "movie"
+              ],
+              "scene_topic": "The video transitions from a black screen to a white one, displaying the title 'Avengers: Infinity War' in bold, capitalized letters against a dark background, while a man's voice can be heard faintly in the background.",
+              "summary": "The video transitions from a black screen to a white one, displaying the title \"Avengers: Infinity War\" in bold, capitalized letters against a dark background, while a man's voice can be heard faintly in the background.",
+              "implications": "Major movie event",
+              "modalities": {
+                "visual": "The video transitions from a black screen to a white one, displaying the title 'Avengers: Infinity War' in bold, capitalized letters against a dark background.",
+                "audio": "a man's voice",
+                "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "The video opens with a mysterious and ominous atmosphere, showcasing a man in a suit navigating various settings with different audio and atmospheric elements. The man is seen in dimly lit rooms, cityscapes at night, and foreign locations, and is heard speaking in different languages. The video then transitions to a black screen with the title \"Avengers: Infinity War\" in bold, capitalized letters against a dark background, setting the stage for an intense and action-packed scene. Throughout the video, the atmosphere is fraught",
+    "postprocess": {
+      "event_id": 1,
+      "original_answer": "The video opens with a mysterious and ominous atmosphere, showcasing a man in a suit navigating various settings with different audio and atmospheric elements. The man is seen in dimly lit rooms, cityscapes at night, and foreign locations, and is heard speaking in different languages. The video then transitions to a black screen with the title \"Avengers: Infinity War\" in bold, capitalized letters against a dark background, setting the stage for an intense and action-packed scene. Throughout the video, the atmosphere is fraught",
+      "result": {
+        "video_id": "MLihvpIVJK8",
+        "event_id": "E_MLihvpIVJK8_0_124.92",
+        "tags": [
+          "mystery",
+          "atmosphere",
+          "avengers",
+          "infinity_war"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "Man in suit",
+            "attributes": {
+              "language": "multiple",
+              "setting": "various",
+              "atmosphere": "ominous"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "Cityscape at night",
+            "attributes": {
+              "setting": "urban",
+              "time_of_day": "night"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "Foreign location",
+            "attributes": {
+              "setting": "foreign",
+              "atmosphere": "mysterious"
+            }
+          },
+          {
+            "object_id": "O004",
+            "name": "Black screen with title",
+            "attributes": {
+              "text": "Avengers: Infinity War",
+              "background": "dark"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "Man in suit",
+            "ref_object": "O001",
+            "role": "main",
+            "entity": "person"
+          }
+        ],
+        "event": {
+          "event_id": "E_MLihvpIVJK8_0_124.92",
+          "name": "Mysterious atmosphere",
+          "time": {
+            "start": "0",
+            "end": "124.92"
+          },
+          "actors": [
+            "A001"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003",
+            "O004"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "mystery",
+            "atmosphere"
+          ],
+          "scene_topic": "The video opens with a mysterious and ominous atmosphere, showcasing a man in a suit navigating various settings with different audio and atmospheric elements.",
+          "summary": "The video opens with a mysterious and ominous atmosphere, showcasing a man in a suit navigating various settings with different audio and atmospheric elements. The man is seen in dimly lit rooms, cityscapes at night, and foreign locations, and is heard speaking in different languages. The video then transitions to a black screen with the title \"Avengers: Infinity War\" in bold, capitalized letters against a dark background, setting the stage for an intense and action-packed scene. Throughout the video, the atmosphere is fraught",
+          "implications": "Major entertainment news event",
+          "modalities": {
+            "visual": "The video opens with a mysterious and ominous atmosphere, showcasing a man in a suit navigating various settings with different audio and atmospheric elements. The man is seen in dimly lit rooms, cityscapes at night, and foreign locations, and is heard speaking in different languages. The video then transitions to a black screen with the title 'Avengers: Infinity War' in bold, capitalized letters against a dark background, setting the stage for an intense and action-packed scene. Throughout the video, the atmosphere is fraught.",
+            "audio": "",
+            "speech": "A group of remarkable individuals is being brought together to fight battles that cannot be won alone, and they must be prepared to make sacrifices and work together to protect the earth."
+          }
+        }
+      }
+    },
+    "summary": "The video opens with a black screen displaying the title \"Avengers: Infinity War\" and features a series of dimly lit scenes showing police officers searching for a missing person, a man in a suit walking through a corridor, and others reacting with concern and surprise to various situations. The video emphasizes the ordinary nature of the characters, who are neither heroes nor villains, and sets a tone of gravity and tension through their serious expressions and the mysterious events unfolding around them."
+  }
+}

@@ -1,0 +1,2004 @@
+{
+  "video_id": "th7TroOitYM",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 56.044325,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 25.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 7.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 2.5,
+                "children": [],
+                "caption": "A person walks along a dirt path, their footsteps crunching on the leaves, as a man's voice can be heard in the background, though the source of the voice is not visible.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A person walks along a dirt path, their footsteps crunching on the leaves, as a man's voice can be heard in the background, though the source of the voice is not visible.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_0_2.5",
+                    "tags": [
+                      "person",
+                      "dirt_path",
+                      "leaves",
+                      "voice",
+                      "background"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "person",
+                        "attributes": {
+                          "type": "human",
+                          "action": "walking"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "dirt_path",
+                        "attributes": {
+                          "type": "natural",
+                          "surface": "dirt"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "leaves",
+                        "attributes": {
+                          "type": "natural",
+                          "material": "leaves"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_0_2.5",
+                      "name": "person walking along a dirt path",
+                      "time": {
+                        "start": "0",
+                        "end": "2.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A person walks along a dirt path, their footsteps crunching on the leaves, as a man's voice can be heard in the background.",
+                      "summary": "A person walks along a dirt path, their footsteps crunching on the leaves, as a man's voice can be heard in the background, though the source of the voice is not visible.",
+                      "implications": "Minor human activity",
+                      "modalities": {
+                        "visual": "A person walks along a dirt path, their footsteps crunching on the leaves, as a man's voice can be heard in the background, though the source of the voice is not visible.",
+                        "audio": "footsteps; man's voice",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 2.5,
+                "end_time": 4.5,
+                "children": [],
+                "caption": "A man in a black jacket walks through a grassy field, the sound of his footsteps echoing as he approaches a group of people gathered around a tree.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A man in a black jacket walks through a grassy field, the sound of his footsteps echoing as he approaches a group of people gathered around a tree.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_2.5_4.5",
+                    "tags": [
+                      "man",
+                      "jacket",
+                      "field",
+                      "people",
+                      "tree"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "description": "A man in a black jacket"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "grass",
+                        "attributes": {
+                          "description": "Grassy field"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "tree",
+                        "attributes": {
+                          "description": "Tree"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_2.5_4.5",
+                      "name": "Man walks through a grassy field",
+                      "time": {
+                        "start": "2.5",
+                        "end": "4.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man in a black jacket walks through a grassy field, the sound of his footsteps echoing as he approaches a group of people gathered around a tree.",
+                      "summary": "A man in a black jacket walks through a grassy field, the sound of his footsteps echoing as he approaches a group of people gathered around a tree.",
+                      "implications": "Minor event",
+                      "modalities": {
+                        "visual": "A man in a black jacket walks through a grassy field, approaches a group of people gathered around a tree.",
+                        "audio": "footsteps; echo",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 4.5,
+                "end_time": 7.5,
+                "children": [],
+                "caption": "The camera pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, as a man's voice can be heard in the background, though his words are unclear.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The camera pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, as a man's voice can be heard in the background, though his words are unclear.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_4.5_7.5",
+                    "tags": [
+                      "autumn",
+                      "grass",
+                      "leaves",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Grassy Field",
+                        "attributes": {
+                          "color": "vibrant",
+                          "type": "natural"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Autumn Leaves",
+                        "attributes": {
+                          "color": "vibrant",
+                          "type": "natural"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_4.5_7.5",
+                      "name": "Man's Voice in Grassy Field",
+                      "time": {
+                        "start": "4.5",
+                        "end": "7.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "natural scene"
+                      ],
+                      "scene_topic": "The camera pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, as a man's voice can be heard in the background, though his words are unclear.",
+                      "summary": "The camera pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, as a man's voice can be heard in the background, though his words are unclear.",
+                      "implications": "Minor scene with natural sounds",
+                      "modalities": {
+                        "visual": "The camera pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground.",
+                        "audio": "man's voice",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person walks through a scenic area, their footsteps echoing, while a man's voice can be heard in the background, though the source of the voice is not visible. The camera then pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, while a man's voice can be heard in the background, though his words are unclear.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A person walks through a scenic area, their footsteps echoing, while a man's voice can be heard in the background, though the source of the voice is not visible. The camera then pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, while a man's voice can be heard in the background, though his words are unclear.",
+              "result": {
+                "video_id": "th7TroOitYM",
+                "event_id": "E_th7TroOitYM_0_7.5",
+                "tags": [
+                  "autumn",
+                  "nature",
+                  "walking"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "person",
+                    "attributes": {
+                      "is_human": "true",
+                      "is_walking": "true"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "grass",
+                    "attributes": {
+                      "is_grass": "true",
+                      "is_colored": "true"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "autumn_leaves",
+                    "attributes": {
+                      "is_leaves": "true",
+                      "is_colored": "true"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "person",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_th7TroOitYM_0_7.5",
+                  "name": "person walking in autumn",
+                  "time": {
+                    "start": "0",
+                    "end": "7.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "nature"
+                  ],
+                  "scene_topic": "A person walks through a scenic area, their footsteps echoing, while a man's voice can be heard in the background.",
+                  "summary": "A person walks through a scenic area, their footsteps echoing, while a man's voice can be heard in the background, though the source of the voice is not visible. The camera then pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, while a man's voice can be heard in the background, though his words are unclear.",
+                  "implications": "Nature and human interaction",
+                  "modalities": {
+                    "visual": "A person walks through a scenic area, their footsteps echoing, while the camera pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground.",
+                    "audio": "footsteps echoing; man's voice; man's voice",
+                    "speech": "Get up and leave, with the speaker becoming increasingly agitated and threatening to shoot them."
+                  }
+                }
+              }
+            },
+            "summary": "A person walks along a dirt path, their footsteps crunching on leaves, while a man's voice is heard in the background. Meanwhile, a man in a black jacket approaches a group of people gathered around a tree in a grassy field, amidst the vibrant colors of autumn leaves."
+          },
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 12.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "A man in a black shirt and blue jeans stands in a grassy field, gesturing with his hands as he speaks to a group of people gathered around him, their laughter and chatter blending with the sounds of the wind.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A man in a black shirt and blue jeans stands in a grassy field, gesturing with his hands as he speaks to a group of people gathered around him, their laughter and chatter blending with the sounds of the wind.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_7.5_9.5",
+                    "tags": [
+                      "man",
+                      "group",
+                      "field",
+                      "gesturing",
+                      "speaking"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black shirt, blue jeans",
+                          "gesturing": "with hands"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "group",
+                        "attributes": {
+                          "people": "gathered around",
+                          "laughter": "and chatter"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "field",
+                        "attributes": {
+                          "location": "grassy"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_7.5_9.5",
+                      "name": "man speaking to group",
+                      "time": {
+                        "start": "7.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior",
+                        "social interaction"
+                      ],
+                      "scene_topic": "A man speaks to a group of people in a grassy field.",
+                      "summary": "A man in a black shirt and blue jeans stands in a grassy field, gesturing with his hands as he speaks to a group of people gathered around him, their laughter and chatter blending with the sounds of the wind.",
+                      "implications": "Social interaction and communication",
+                      "modalities": {
+                        "visual": "A man in a black shirt and blue jeans stands in a grassy field, gesturing with his hands as he speaks to a group of people gathered around him.",
+                        "audio": "laughter; chatter; wind.",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "In a grassy field, a group of people gather around a man in a black shirt who is speaking into a microphone, while a man in a white shirt stands nearby, observing the scene.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "In a grassy field, a group of people gather around a man in a black shirt who is speaking into a microphone, while a man in a white shirt stands nearby, observing the scene.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_9.5_12.5",
+                    "tags": [
+                      "gathering",
+                      "public_speaking",
+                      "observation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black shirt",
+                        "attributes": {
+                          "speaker": "true",
+                          "microphone": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in white shirt",
+                        "attributes": {
+                          "observer": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "grassy field",
+                        "attributes": {
+                          "location": "outdoor"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "microphone",
+                        "attributes": {
+                          "equipment": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black shirt",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in white shirt",
+                        "ref_object": "O002",
+                        "role": "observer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_9.5_12.5",
+                      "name": "Public Speaking Event",
+                      "time": {
+                        "start": "9.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public speaking event"
+                      ],
+                      "scene_topic": "A man speaks into a microphone in a grassy field, while another man observes the scene.",
+                      "summary": "In a grassy field, a group of people gather around a man in a black shirt who is speaking into a microphone, while a man in a white shirt stands nearby, observing the scene.",
+                      "implications": "Major public speaking event",
+                      "modalities": {
+                        "visual": "In a grassy field, a group of people gather around a man in a black shirt who is speaking into a microphone, while a man in a white shirt stands nearby, observing the scene.",
+                        "audio": "",
+                        "speech": "Get up and leave, with the speaker becoming increasingly agitated and threatening to shoot them."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man speaks to a group of people in a grassy field, gesturing with his hands, while another man observes the scene from nearby.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "A man speaks to a group of people in a grassy field, gesturing with his hands, while another man observes the scene from nearby.",
+              "result": {
+                "video_id": "th7TroOitYM",
+                "event_id": "E_th7TroOitYM_7.5_12.5",
+                "tags": [
+                  "man",
+                  "group",
+                  "field",
+                  "gesturing",
+                  "observing"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "speaking": "",
+                      "gesturing": ""
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "group",
+                    "attributes": {
+                      "people": ""
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "field",
+                    "attributes": {
+                      "grassy": ""
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "man2",
+                    "attributes": {
+                      "observing": ""
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man2",
+                    "ref_object": "O004",
+                    "role": "observer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_th7TroOitYM_7.5_12.5",
+                  "name": "",
+                  "time": {
+                    "start": "7.5",
+                    "end": "12.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "A man speaks to a group of people in a grassy field, gesturing with his hands, while another man observes the scene from nearby.",
+                  "summary": "A man speaks to a group of people in a grassy field, gesturing with his hands, while another man observes the scene from nearby.",
+                  "implications": "Minor social event",
+                  "modalities": {
+                    "visual": "A man speaks to a group of people in a grassy field, gesturing with his hands, while another man observes the scene from nearby.",
+                    "audio": "",
+                    "speech": "Get up and leave, get up and leave, turn left and exit."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a black shirt speaks to a group of people in a grassy field, gesturing with his hands as they laugh and chat."
+          },
+          {
+            "level": 2,
+            "start_time": 12.5,
+            "end_time": 25.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 15.5,
+                "children": [],
+                "caption": "In a grassy field, a man in a black shirt and another in a white shirt engage in a lively conversation, their gestures and expressions conveying a sense of camaraderie and engagement.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "In a grassy field, a man in a black shirt and another in a white shirt engage in a lively conversation, their gestures and expressions conveying a sense of camaraderie and engagement.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_12.5_15.5",
+                    "tags": [
+                      "grass_field",
+                      "conversing_people",
+                      "camaraderie"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black shirt",
+                        "attributes": {
+                          "color": "black",
+                          "garment": "shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in white shirt",
+                        "attributes": {
+                          "color": "white",
+                          "garment": "shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "grassy field",
+                        "attributes": {
+                          "type": "natural",
+                          "location": "outdoor"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black shirt",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in white shirt",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_12.5_15.5",
+                      "name": "lively conversation",
+                      "time": {
+                        "start": "12.5",
+                        "end": "15.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human interaction",
+                        "social scene"
+                      ],
+                      "scene_topic": "Two men engage in a lively conversation in a grassy field.",
+                      "summary": "In a grassy field, a man in a black shirt and another in a white shirt engage in a lively conversation, their gestures and expressions conveying a sense of camaraderie and engagement.",
+                      "implications": "Social interaction and human connection",
+                      "modalities": {
+                        "visual": "In a grassy field, a man in a black shirt and another in a white shirt engage in a lively conversation, their gestures and expressions conveying a sense of camaraderie and engagement.",
+                        "audio": "",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 15.5,
+                "end_time": 17.5,
+                "children": [],
+                "caption": "A man in a black shirt and blue jeans stands in a grassy field, gesturing with his hands as he speaks to a group of people gathered around him, their laughter and chatter blending with the sound of a car engine starting up in the background.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "A man in a black shirt and blue jeans stands in a grassy field, gesturing with his hands as he speaks to a group of people gathered around him, their laughter and chatter blending with the sound of a car engine starting up in the background.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_15.5_17.5",
+                    "tags": [
+                      "public_speaking",
+                      "group_discussion",
+                      "grass_field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black shirt, blue jeans",
+                          "gesturing": "with hands"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "group_of_people",
+                        "attributes": {
+                          "number": "multiple",
+                          "laughter": "and chatter"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "car",
+                        "attributes": {
+                          "sound": "engine starting up"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_15.5_17.5",
+                      "name": "public speaking",
+                      "time": {
+                        "start": "15.5",
+                        "end": "17.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man in a black shirt and blue jeans stands in a grassy field, gesturing with his hands as he speaks to a group of people gathered around him, their laughter and chatter blending with the sound of a car engine starting up in the background.",
+                      "summary": "A man in a black shirt and blue jeans stands in a grassy field, gesturing with his hands as he speaks to a group of people gathered around him, their laughter and chatter blending with the sound of a car engine starting up in the background.",
+                      "implications": "Major public speaking event",
+                      "modalities": {
+                        "visual": "A man in a black shirt and blue jeans stands in a grassy field, gesturing with his hands as he speaks to a group of people gathered around him.",
+                        "audio": "laughter; chatter; car engine starting up.",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 17.5,
+                "end_time": 20.5,
+                "children": [],
+                "caption": "In a grassy field, a man in a black shirt and another in a white shirt engage in a physical altercation, their movements captured in a blur of motion as they grapple and struggle.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "In a grassy field, a man in a black shirt and another in a white shirt engage in a physical altercation, their movements captured in a blur of motion as they grapple and struggle.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_17.5_20.5",
+                    "tags": [
+                      "physical_altercation",
+                      "grass_field",
+                      "man",
+                      "fight"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black shirt",
+                        "attributes": {
+                          "color": "black",
+                          "clothing": "shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in white shirt",
+                        "attributes": {
+                          "color": "white",
+                          "clothing": "shirt"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black shirt",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man in white shirt",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_17.5_20.5",
+                      "name": "physical altercation",
+                      "time": {
+                        "start": "17.5",
+                        "end": "20.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "physical altercation"
+                      ],
+                      "scene_topic": "Two men engage in a physical fight in a grassy field.",
+                      "summary": "In a grassy field, a man in a black shirt and another in a white shirt engage in a physical altercation, their movements captured in a blur of motion as they grapple and struggle.",
+                      "implications": "Major conflict event",
+                      "modalities": {
+                        "visual": "In a grassy field, a man in a black shirt and another in a white shirt engage in a physical altercation, their movements captured in a blur of motion as they grapple and struggle.",
+                        "audio": "",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 20.5,
+                "end_time": 25.5,
+                "children": [],
+                "caption": "In a grassy field, two men in casual attire engage in a physical altercation, their movements captured in a blur of motion as they grapple and wrestle.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "In a grassy field, two men in casual attire engage in a physical altercation, their movements captured in a blur of motion as they grapple and wrestle.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_20.5_25.5",
+                    "tags": [
+                      "physical_altercation",
+                      "casual_attire",
+                      "grassy_field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_1",
+                        "attributes": {
+                          "casual_attire": "yes",
+                          "engaged_in_altercation": "yes"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man_2",
+                        "attributes": {
+                          "casual_attire": "yes",
+                          "engaged_in_altercation": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_1",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_2",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_20.5_25.5",
+                      "name": "physical_altercation",
+                      "time": {
+                        "start": "20.5",
+                        "end": "25.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "physical_altercation"
+                      ],
+                      "scene_topic": "Two men engage in a physical altercation in a grassy field.",
+                      "summary": "In a grassy field, two men in casual attire engage in a physical altercation, their movements captured in a blur of motion as they grapple and wrestle.",
+                      "implications": "Major physical altercation event",
+                      "modalities": {
+                        "visual": "In a grassy field, two men in casual attire engage in a physical altercation, their movements captured in a blur of motion as they grapple and wrestle.",
+                        "audio": "",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A series of scenes depicting interactions between two or more people in a grassy field, with a focus on their body language and facial expressions, which convey a sense of camaraderie, engagement, and even physical altercation.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "A series of scenes depicting interactions between two or more people in a grassy field, with a focus on their body language and facial expressions, which convey a sense of camaraderie, engagement, and even physical altercation.",
+              "result": {
+                "video_id": "th7TroOitYM",
+                "event_id": "E_th7TroOitYM_12.5_25.5",
+                "tags": [
+                  "human_interaction",
+                  "body_language",
+                  "facial_expression",
+                  "camaraderie",
+                  "engagement",
+                  "physical_altercation"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "people",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_th7TroOitYM_12.5_25.5",
+                  "name": "Human Interaction",
+                  "time": {
+                    "start": "12.5",
+                    "end": "25.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human_interaction"
+                  ],
+                  "scene_topic": "A series of scenes depicting interactions between two or more people in a grassy field, with a focus on their body language and facial expressions, which convey a sense of camaraderie, engagement, and even physical altercation.",
+                  "summary": "A series of scenes depicting interactions between two or more people in a grassy field, with a focus on their body language and facial expressions, which convey a sense of camaraderie, engagement, and even physical altercation.",
+                  "implications": "Major social dynamics event",
+                  "modalities": {
+                    "visual": "A series of scenes depicting interactions between two or more people in a grassy field, with a focus on their body language and facial expressions, which convey a sense of camaraderie, engagement, and even physical altercation.",
+                    "audio": "",
+                    "speech": "Get up and leave, with the speaker becoming increasingly agitated and threatening to shoot them."
+                  }
+                }
+              }
+            },
+            "summary": "Two men, one in a black shirt and the other in a white shirt, engage in a lively conversation and later a physical altercation in a grassy field, their gestures and expressions conveying a sense of camaraderie and engagement. The scene is set against a backdrop of a group of people gathered around, with the sound of a car engine starting up in the background."
+          }
+        ],
+        "caption": "A person walks through a scenic area, while a man's voice can be heard in the background, though the source of the voice is not visible. The camera then pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, while a man's voice can be heard in the background, though his words are unclear. The scene then shifts to a man speaking to a group of people in a grassy field, gesturing with his hands, while another man observes the scene from nearby. The camera then captures",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "A person walks through a scenic area, while a man's voice can be heard in the background, though the source of the voice is not visible. The camera then pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, while a man's voice can be heard in the background, though his words are unclear. The scene then shifts to a man speaking to a group of people in a grassy field, gesturing with his hands, while another man observes the scene from nearby. The camera then captures",
+          "result": {
+            "video_id": "th7TroOitYM",
+            "event_id": "E_th7TroOitYM_0_25.5",
+            "tags": [
+              "autumn",
+              "nature",
+              "speech"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "person",
+                "attributes": {
+                  "visible": "true",
+                  "walking": "true"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "man",
+                "attributes": {
+                  "speaking": "true",
+                  "gesturing": "true"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "grass_field",
+                "attributes": {
+                  "scenic": "true",
+                  "autumn_leaves": "true"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O002",
+                "role": "speaker",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "observer",
+                "ref_object": "",
+                "role": "observer",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_th7TroOitYM_0_25.5",
+              "name": "person walks through scenic area",
+              "time": {
+                "start": "0",
+                "end": "25.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "nature scene"
+              ],
+              "scene_topic": "A person walks through a scenic area while a man's voice can be heard in the background.",
+              "summary": "A person walks through a scenic area, while a man's voice can be heard in the background, though the source of the voice is not visible. The camera then pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground, while a man's voice can be heard in the background, though his words are unclear. The scene then shifts to a man speaking to a group of people in a grassy field, gesturing with his hands, while another man observes the scene from nearby. The camera then captures",
+              "implications": "A scenic area with a man's voice in the background.",
+              "modalities": {
+                "visual": "A person walks through a scenic area. The camera then pans across a grassy field, capturing the vibrant colors of autumn leaves scattered across the ground. The scene then shifts to a man speaking to a group of people in a grassy field, gesturing with his hands. The camera then captures a man observing the scene from nearby.",
+                "audio": "Man's voice in the background; man's voice in the background (unclear); man speaking to a group of people.",
+                "speech": "Get up and leave, with the speaker becoming increasingly agitated and threatening to shoot them."
+              }
+            }
+          }
+        },
+        "summary": "A man approaches a group of people in a grassy field, where a lively conversation and physical altercation unfold, set against a backdrop of autumn colors and the distant sound of a car engine. Meanwhile, a person walks along a dirt path, their footsteps crunching on leaves, while a man's voice is heard in the background."
+      },
+      {
+        "level": 1,
+        "start_time": 25.5,
+        "end_time": 56.044325,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 25.5,
+            "end_time": 38.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 25.5,
+                "end_time": 28.5,
+                "children": [],
+                "caption": "As the wrestling match continues, the two men grapple on the grassy field, their movements blurred by the camera's shaky handheld shot, while a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "As the wrestling match continues, the two men grapple on the grassy field, their movements blurred by the camera's shaky handheld shot, while a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_25.5_28.5",
+                    "tags": [
+                      "wrestling",
+                      "match",
+                      "grappling",
+                      "handheld",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "wrestling_match",
+                        "attributes": {
+                          "location": "grassy_field",
+                          "camera_type": "handheld"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "wrestling_participants",
+                        "ref_object": "O001",
+                        "role": "wrestlers",
+                        "entity": "people"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_25.5_28.5",
+                      "name": "wrestling_match",
+                      "time": {
+                        "start": "25.5",
+                        "end": "28.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports"
+                      ],
+                      "scene_topic": "Two men grapple on a grassy field during a wrestling match.",
+                      "summary": "As the wrestling match continues, the two men grapple on the grassy field, their movements blurred by the camera's shaky handheld shot, while a woman's voice can be heard in the background.",
+                      "implications": "Major sports event",
+                      "modalities": {
+                        "visual": "As the wrestling match continues, the two men grapple on the grassy field, their movements blurred by the camera's shaky handheld shot.",
+                        "audio": "woman's voice",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 28.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "On a grassy field, two men in casual attire grapple fiercely, their movements blurred as they struggle for dominance, the sounds of their grunts and the cheers of the crowd adding to the intensity of the scene.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "On a grassy field, two men in casual attire grapple fiercely, their movements blurred as they struggle for dominance, the sounds of their grunts and the cheers of the crowd adding to the intensity of the scene.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_28.5_38.5",
+                    "tags": [
+                      "fight",
+                      "sports",
+                      "casual",
+                      "grassy_field"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Grassy Field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Man 1",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Man 2",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man 1",
+                        "ref_object": "O002",
+                        "role": "competitor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "Man 2",
+                        "ref_object": "O003",
+                        "role": "competitor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_28.5_38.5",
+                      "name": "Fierce Grappling",
+                      "time": {
+                        "start": "28.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports"
+                      ],
+                      "scene_topic": "Two men grapple fiercely on a grassy field.",
+                      "summary": "On a grassy field, two men in casual attire grapple fiercely, their movements blurred as they struggle for dominance, the sounds of their grunts and the cheers of the crowd adding to the intensity of the scene.",
+                      "implications": "Major sports event",
+                      "modalities": {
+                        "visual": "On a grassy field, two men in casual attire grapple fiercely, their movements blurred as they struggle for dominance, the sounds of their grunts and the cheers of the crowd adding to the intensity of the scene.",
+                        "audio": "Grunts; cheers",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two men grapple fiercely on a grassy field, their movements blurred by a shaky camera and the sounds of their grunts and the crowd adding to the intensity of the scene.",
+            "postprocess": {
+              "event_id": 15,
+              "original_answer": "Two men grapple fiercely on a grassy field, their movements blurred by a shaky camera and the sounds of their grunts and the crowd adding to the intensity of the scene.",
+              "result": {
+                "video_id": "th7TroOitYM",
+                "event_id": "E_th7TroOitYM_25.5_38.5",
+                "tags": [
+                  "fight",
+                  "grapple",
+                  "sports",
+                  "outdoor"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Grass",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Men",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Camera",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man 1",
+                    "ref_object": "O002",
+                    "role": "Participant",
+                    "entity": "Human"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Man 2",
+                    "ref_object": "O002",
+                    "role": "Participant",
+                    "entity": "Human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_th7TroOitYM_25.5_38.5",
+                  "name": "Fierce Grapple",
+                  "time": {
+                    "start": "25.5",
+                    "end": "38.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports event"
+                  ],
+                  "scene_topic": "Two men grapple fiercely on a grassy field",
+                  "summary": "Two men grapple fiercely on a grassy field, their movements blurred by a shaky camera and the sounds of their grunts and the crowd adding to the intensity of the scene.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "Two men grapple fiercely on a grassy field, their movements blurred by a shaky camera.",
+                    "audio": "Grunts; crowd reactions",
+                    "speech": "Get up and leave, get up and leave, turn left and exit."
+                  }
+                }
+              }
+            },
+            "summary": "Two men engage in a fierce wrestling match on a grassy field, their movements blurred by the camera's shaky shot, as a woman's voice is heard in the background. The scene is intense, with the sounds of grunts and crowd cheers adding to the action."
+          },
+          {
+            "level": 2,
+            "start_time": 38.5,
+            "end_time": 47.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "On a grassy field, two men in casual attire grapple fiercely, their movements blurred as they struggle for dominance, the sounds of their grunts and the cheers of the crowd filling the air.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "On a grassy field, two men in casual attire grapple fiercely, their movements blurred as they struggle for dominance, the sounds of their grunts and the cheers of the crowd filling the air.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_38.5_47.5",
+                    "tags": [
+                      "fight",
+                      "sports",
+                      "casual_attire",
+                      "grass_field",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Grassy Field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Two Men",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man 1",
+                        "ref_object": "O002",
+                        "role": "Participant",
+                        "entity": "Person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "Man 2",
+                        "ref_object": "O002",
+                        "role": "Participant",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_38.5_47.5",
+                      "name": "Fierce Grapple",
+                      "time": {
+                        "start": "38.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports event"
+                      ],
+                      "scene_topic": "Two men grapple fiercely on a grassy field, with the crowd cheering.",
+                      "summary": "On a grassy field, two men in casual attire grapple fiercely, their movements blurred as they struggle for dominance, the sounds of their grunts and the cheers of the crowd filling the air.",
+                      "implications": "Major sports event",
+                      "modalities": {
+                        "visual": "On a grassy field, two men in casual attire grapple fiercely, their movements blurred as they struggle for dominance.",
+                        "audio": "grunts; cheers",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two men engage in a fierce and intense grappling match on a grassy field, their movements blurred and their grunts and the cheers of the crowd filling the air.",
+            "postprocess": {
+              "event_id": 19,
+              "original_answer": "Two men engage in a fierce and intense grappling match on a grassy field, their movements blurred and their grunts and the cheers of the crowd filling the air.",
+              "result": {
+                "video_id": "th7TroOitYM",
+                "event_id": "E_th7TroOitYM_38.5_47.5",
+                "tags": [
+                  "wrestling",
+                  "competition",
+                  "athletes",
+                  "grappling",
+                  "match"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Grass field",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Two men",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man 1",
+                    "ref_object": "O002",
+                    "role": "Participant",
+                    "entity": "Person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Man 2",
+                    "ref_object": "O002",
+                    "role": "Participant",
+                    "entity": "Person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_th7TroOitYM_38.5_47.5",
+                  "name": "Wrestling match",
+                  "time": {
+                    "start": "38.5",
+                    "end": "47.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "Two men engage in a fierce and intense grappling match on a grassy field.",
+                  "summary": "Two men engage in a fierce and intense grappling match on a grassy field, their movements blurred and their grunts and the cheers of the crowd filling the air.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "Two men engage in a fierce and intense grappling match on a grassy field, their movements blurred.",
+                    "audio": "Grunts; cheers of the crowd.",
+                    "speech": "Get up and leave, get up and leave, turn left and exit."
+                  }
+                }
+              }
+            },
+            "summary": "Two men in casual attire engage in a fierce physical struggle on a grassy field, their movements rapid and intense as they vie for dominance. The atmosphere is electric, with the sounds of their grunts and the cheers of the crowd creating a dynamic and energetic scene."
+          },
+          {
+            "level": 2,
+            "start_time": 47.5,
+            "end_time": 56.044325,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 53.5,
+                "children": [],
+                "caption": "Two men, one in a blue shirt and the other in a white shirt, grapple on the grassy field as a woman's voice can be heard in the background, her words unclear but her tone suggesting a playful interaction.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "Two men, one in a blue shirt and the other in a white shirt, grapple on the grassy field as a woman's voice can be heard in the background, her words unclear but her tone suggesting a playful interaction.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_47.5_53.5",
+                    "tags": [
+                      "grass_field",
+                      "playful_interaction",
+                      "two_men",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_blue_shirt",
+                        "attributes": {
+                          "color": "blue",
+                          "garment": "shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man_in_white_shirt",
+                        "attributes": {
+                          "color": "white",
+                          "garment": "shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "background",
+                          "tone": "playful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_blue_shirt",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man_in_white_shirt",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "woman",
+                        "ref_object": "O003",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_47.5_53.5",
+                      "name": "playful_interaction",
+                      "time": {
+                        "start": "47.5",
+                        "end": "53.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "Two men, one in a blue shirt and the other in a white shirt, grapple on the grassy field as a woman's voice can be heard in the background, her words unclear but her tone suggesting a playful interaction.",
+                      "summary": "Two men, one in a blue shirt and the other in a white shirt, grapple on the grassy field as a woman's voice can be heard in the background, her words unclear but her tone suggesting a playful interaction.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "Two men, one in a blue shirt and the other in a white shirt, grapple on the grassy field as a woman's voice can be heard in the background, her words unclear but her tone suggesting a playful interaction.",
+                        "audio": "woman's voice",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 53.5,
+                "end_time": 56.044325,
+                "children": [],
+                "caption": "A man in a black shirt and blue jeans is lying on the grass, his head resting on his hand as a woman's voice can be heard saying \"Bye\" in the background.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "A man in a black shirt and blue jeans is lying on the grass, his head resting on his hand as a woman's voice can be heard saying \"Bye\" in the background.",
+                  "result": {
+                    "video_id": "th7TroOitYM",
+                    "event_id": "E_th7TroOitYM_53.5_56.04",
+                    "tags": [
+                      "man",
+                      "woman",
+                      "grass",
+                      "background"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black shirt and blue jeans",
+                          "position": "lying on the grass"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_th7TroOitYM_53.5_56.04",
+                      "name": "",
+                      "time": {
+                        "start": "53.5",
+                        "end": "56.04"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man is lying on the grass, saying goodbye.",
+                      "summary": "A man in a black shirt and blue jeans is lying on the grass, his head resting on his hand as a woman's voice can be heard saying \"Bye\" in the background.",
+                      "implications": "A normal human behavior",
+                      "modalities": {
+                        "visual": "A man in a black shirt and blue jeans is lying on the grass, his head resting on his hand as a woman's voice can be heard saying 'Bye' in the background.",
+                        "audio": "Woman's voice saying 'Bye'.",
+                        "speech": "Get up and leave, get up and leave, turn left and exit."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two men engage in a playful grappling match on a grassy field, while a woman's voice can be heard in the background, although her words are unclear. Later, a man lies on the grass, listening to a woman say \"bye\" as he rests his head on his hand.",
+            "postprocess": {
+              "event_id": 21,
+              "original_answer": "Two men engage in a playful grappling match on a grassy field, while a woman's voice can be heard in the background, although her words are unclear. Later, a man lies on the grass, listening to a woman say \"bye\" as he rests his head on his hand.",
+              "result": {
+                "video_id": "th7TroOitYM",
+                "event_id": "E_th7TroOitYM_47.5_56.04",
+                "tags": [
+                  "playful",
+                  "grappling",
+                  "outdoor"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Grassy field",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Two men",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Woman's voice",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Man lying on grass",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Two men",
+                    "ref_object": "O002",
+                    "role": "Participants",
+                    "entity": "Human"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Woman",
+                    "ref_object": "",
+                    "role": "Voice in background",
+                    "entity": "Human"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "Man",
+                    "ref_object": "O004",
+                    "role": "Lying down",
+                    "entity": "Human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_th7TroOitYM_47.5_56.04",
+                  "name": "Playful grappling match",
+                  "time": {
+                    "start": "47.5",
+                    "end": "56.04"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human behavior",
+                    "outdoor activity"
+                  ],
+                  "scene_topic": "Two men engage in a playful grappling match on a grassy field, while a woman's voice can be heard in the background.",
+                  "summary": "Two men engage in a playful grappling match on a grassy field, while a woman's voice can be heard in the background, although her words are unclear. Later, a man lies on the grass, listening to a woman say \"bye\" as he rests his head on his hand.",
+                  "implications": "A casual, friendly interaction between two individuals.",
+                  "modalities": {
+                    "visual": "Two men engage in a playful grappling match on a grassy field, a woman's voice can be heard in the background, a man lies on the grass, resting his head on his hand.",
+                    "audio": "woman's voice; 'bye'",
+                    "speech": "Get up and leave, get up and leave, turn left and exit."
+                  }
+                }
+              }
+            },
+            "summary": "Two men, one in a blue shirt and the other in a white shirt, engage in a playful struggle on a grassy field, while a woman's voice can be heard in the background. Meanwhile, a man in a black shirt and blue jeans lies on the grass, seemingly lost in thought, as a woman says \"Bye\" in the distance."
+          }
+        ],
+        "caption": "Two men engage in a grappling match on a grassy field, with varying levels of intensity and crowd reaction.",
+        "postprocess": {
+          "event_id": 16,
+          "original_answer": "Two men engage in a grappling match on a grassy field, with varying levels of intensity and crowd reaction.",
+          "result": {
+            "video_id": "th7TroOitYM",
+            "event_id": "E_th7TroOitYM_25.5_56.04",
+            "tags": [
+              "wrestling",
+              "grappling",
+              "sports",
+              "competition",
+              "crowd"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Grass field",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "Two men",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man 1",
+                "ref_object": "O002",
+                "role": "Participant",
+                "entity": "Person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Man 2",
+                "ref_object": "O002",
+                "role": "Participant",
+                "entity": "Person"
+              }
+            ],
+            "event": {
+              "event_id": "E_th7TroOitYM_25.5_56.04",
+              "name": "Grappling match",
+              "time": {
+                "start": "25.5",
+                "end": "56.04"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports event"
+              ],
+              "scene_topic": "Two men engage in a grappling match on a grassy field, with varying levels of intensity and crowd reaction.",
+              "summary": "Two men engage in a grappling match on a grassy field, with varying levels of intensity and crowd reaction.",
+              "implications": "Major sports event",
+              "modalities": {
+                "visual": "Two men engage in a grappling match on a grassy field.",
+                "audio": "grappling; crowd reaction",
+                "speech": "Get up and leave, get up and leave, turn left and exit."
+              }
+            }
+          }
+        },
+        "summary": "Two men engage in a fierce and intense wrestling match on a grassy field, their movements rapid and energetic as they vie for dominance, accompanied by the sounds of grunts and crowd cheers. Meanwhile, a woman's voice is heard in the background, and a man lies on the grass, lost in thought, as a woman says \"Bye\" in the distance."
+      }
+    ],
+    "caption": "A person explores a scenic area while listening to a man's voice in the background, which is unclear. The camera then pans across a field of autumn leaves, showing vibrant colors. The scene shifts to a man speaking to a group of people in a field, gesturing with his hands. The camera then captures a grappling match between two men on a grassy field, with varying levels of intensity and crowd reaction.",
+    "postprocess": {
+      "event_id": 3,
+      "original_answer": "A person explores a scenic area while listening to a man's voice in the background, which is unclear. The camera then pans across a field of autumn leaves, showing vibrant colors. The scene shifts to a man speaking to a group of people in a field, gesturing with his hands. The camera then captures a grappling match between two men on a grassy field, with varying levels of intensity and crowd reaction.",
+      "result": {
+        "video_id": "th7TroOitYM",
+        "event_id": "E_th7TroOitYM_0_56.04",
+        "tags": [
+          "autumn",
+          "field",
+          "grappling",
+          "man",
+          "people",
+          "scenic",
+          "voice"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "person",
+            "attributes": {
+              "exploring": "scenic area",
+              "listening": "man's voice"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "camera",
+            "attributes": {
+              "panning": "field of autumn leaves",
+              "capturing": "grappling match"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "man",
+            "attributes": {
+              "speaking": "group of people",
+              "gesturing": "hands"
+            }
+          },
+          {
+            "object_id": "O004",
+            "name": "field",
+            "attributes": {
+              "grass": "grassy field"
+            }
+          },
+          {
+            "object_id": "O005",
+            "name": "leaves",
+            "attributes": {
+              "vibrant": "colors"
+            }
+          },
+          {
+            "object_id": "O006",
+            "name": "group",
+            "attributes": {
+              "people": "field"
+            }
+          },
+          {
+            "object_id": "O007",
+            "name": "crowd",
+            "attributes": {
+              "reaction": "grappling match"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "man",
+            "ref_object": "O003",
+            "role": "speaker",
+            "entity": "person"
+          },
+          {
+            "actor_id": "A002",
+            "name": "person",
+            "ref_object": "O001",
+            "role": "explorer",
+            "entity": "person"
+          }
+        ],
+        "event": {
+          "event_id": "E_th7TroOitYM_0_56.04",
+          "name": "Scenic exploration and grappling match",
+          "time": {
+            "start": "0",
+            "end": "56.04"
+          },
+          "actors": [
+            "A001",
+            "A002"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003",
+            "O004",
+            "O005",
+            "O006",
+            "O007"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "scenic exploration",
+            "grappling match"
+          ],
+          "scene_topic": "A person explores a scenic area while listening to a man's voice in the background, which is unclear.",
+          "summary": "A person explores a scenic area while listening to a man's voice in the background, which is unclear. The camera then pans across a field of autumn leaves, showing vibrant colors. The scene shifts to a man speaking to a group of people in a field, gesturing with his hands. The camera then captures a grappling match between two men on a grassy field, with varying levels of intensity and crowd reaction.",
+          "implications": "Major event in scenic exploration and grappling match",
+          "modalities": {
+            "visual": "A person explores a scenic area, the camera pans across a field of autumn leaves, the scene shifts to a man speaking to a group of people in a field, a grappling match between two men on a grassy field.",
+            "audio": "a man's voice; crowd reaction",
+            "speech": "Get up and leave, with the speaker becoming increasingly agitated and threatening to shoot them."
+          }
+        }
+      }
+    },
+    "summary": "A group of people gather in a grassy field, where a lively conversation and physical altercation unfold, accompanied by the sounds of grunts, crowd cheers, and a distant car engine. Meanwhile, a person walks along a dirt path, and a man lies on the grass, lost in thought, as a woman says \"Bye\" in the distance."
+  }
+}

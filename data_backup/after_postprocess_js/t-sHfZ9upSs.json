@@ -1,0 +1,1227 @@
+{
+  "video_id": "t-sHfZ9upSs",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 30.096733,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 7.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 2.5,
+            "children": [],
+            "caption": "A cartoon character, dressed in yellow and black, dances energetically against a vibrant green background, their movements captured in a dynamic sequence of still images.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "A cartoon character, dressed in yellow and black, dances energetically against a vibrant green background, their movements captured in a dynamic sequence of still images.",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_0_2.5",
+                "tags": [
+                  "cartoon",
+                  "animation",
+                  "dance"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon character",
+                    "attributes": {
+                      "color": "yellow and black",
+                      "background": "vibrant green"
+                    }
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_0_2.5",
+                  "name": "cartoon character dancing",
+                  "time": {
+                    "start": "0",
+                    "end": "2.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "animation"
+                  ],
+                  "scene_topic": "A cartoon character dances energetically against a vibrant green background.",
+                  "summary": "A cartoon character, dressed in yellow and black, dances energetically against a vibrant green background, their movements captured in a dynamic sequence of still images.",
+                  "implications": "Major animation event",
+                  "modalities": {
+                    "visual": "A cartoon character, dressed in yellow and black, dances energetically against a vibrant green background, their movements captured in a dynamic sequence of still images.",
+                    "audio": "",
+                    "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 2.5,
+            "end_time": 7.5,
+            "children": [],
+            "caption": "A young girl, dressed in a pink shirt and jeans, dances energetically in a room with a blue couch and a television, her joyful movements captured in a close-up shot as a man's voice announces the start of \"KIDS CLUB COUNTDOWN\" on Channel 2.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "A young girl, dressed in a pink shirt and jeans, dances energetically in a room with a blue couch and a television, her joyful movements captured in a close-up shot as a man's voice announces the start of \"KIDS CLUB COUNTDOWN\" on Channel 2.",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_2_5_7_5",
+                "tags": [
+                  "kids",
+                  "club",
+                  "countdown",
+                  "children",
+                  "dancing"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "girl",
+                    "attributes": {
+                      "color": "pink",
+                      "clothing": "shirt and jeans",
+                      "location": "room",
+                      "furniture": "blue couch and television"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "announcer",
+                    "entity": "Channel 2"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_2_5_7_5",
+                  "name": "KIDS CLUB COUNTDOWN",
+                  "time": {
+                    "start": "2.5",
+                    "end": "7.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "children's entertainment"
+                  ],
+                  "scene_topic": "A young girl dances energetically in a room as a man announces the start of 'KIDS CLUB COUNTDOWN' on Channel 2.",
+                  "summary": "A young girl, dressed in a pink shirt and jeans, dances energetically in a room with a blue couch and a television, her joyful movements captured in a close-up shot as a man's voice announces the start of \"KIDS CLUB COUNTDOWN\" on Channel 2.",
+                  "implications": "Major entertainment event for children",
+                  "modalities": {
+                    "visual": "A young girl, dressed in a pink shirt and jeans, dances energetically in a room with a blue couch and a television, her joyful movements captured in a close-up shot.",
+                    "audio": "man's voice; 'KIDS CLUB COUNTDOWN' on Channel 2.",
+                    "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A cartoon character and a young girl both showcase their energetic dancing skills in vibrant settings, capturing the excitement and joy of movement in still images and video.",
+        "postprocess": {
+          "event_id": 1,
+          "original_answer": "A cartoon character and a young girl both showcase their energetic dancing skills in vibrant settings, capturing the excitement and joy of movement in still images and video.",
+          "result": {
+            "video_id": "t_sHfZ9upSs",
+            "event_id": "E_t_sHfZ9upSs_0_7.5",
+            "tags": [
+              "dance",
+              "cartoon",
+              "kids",
+              "joy",
+              "movement"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "cartoon character",
+                "attributes": {
+                  "type": "cartoon",
+                  "description": "a cartoon character"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "young girl",
+                "attributes": {
+                  "type": "human",
+                  "description": "a young girl"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "cartoon character",
+                "ref_object": "O001",
+                "role": "dancer",
+                "entity": "cartoon"
+              },
+              {
+                "actor_id": "A002",
+                "name": "young girl",
+                "ref_object": "O002",
+                "role": "dancer",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_t_sHfZ9upSs_0_7.5",
+              "name": "Dancing",
+              "time": {
+                "start": "0",
+                "end": "7.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "kids entertainment"
+              ],
+              "scene_topic": "A cartoon character and a young girl showcase their energetic dancing skills in vibrant settings.",
+              "summary": "A cartoon character and a young girl both showcase their energetic dancing skills in vibrant settings, capturing the excitement and joy of movement in still images and video.",
+              "implications": "Major entertainment news event",
+              "modalities": {
+                "visual": "A cartoon character and a young girl showcase their energetic dancing skills in vibrant settings, capturing the excitement and joy of movement in still images and video.",
+                "audio": "",
+                "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+              }
+            }
+          }
+        },
+        "summary": "A cartoon character and a young girl dance energetically in separate settings, their joyful movements captured in dynamic sequences of still images and close-up shots. The scene is set to the announcement of \"KIDS CLUB COUNTDOWN\" on Channel 2."
+      },
+      {
+        "level": 1,
+        "start_time": 7.5,
+        "end_time": 13.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 10.5,
+            "children": [],
+            "caption": "A young boy with spiky blonde hair, wearing a green shirt, dances energetically in a brightly lit room, his joyous movements captured in a close-up shot.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "A young boy with spiky blonde hair, wearing a green shirt, dances energetically in a brightly lit room, his joyous movements captured in a close-up shot.",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_7_5_10_5",
+                "tags": [
+                  "boy",
+                  "dance",
+                  "joy",
+                  "room",
+                  "close_up"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "boy",
+                    "attributes": {
+                      "hair_color": "blonde",
+                      "shirt_color": "green"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "boy",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_7_5_10_5",
+                  "name": "boy dancing",
+                  "time": {
+                    "start": "7.5",
+                    "end": "10.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "children",
+                    "entertainment"
+                  ],
+                  "scene_topic": "A young boy with spiky blonde hair, wearing a green shirt, dances energetically in a brightly lit room, his joyous movements captured in a close-up shot.",
+                  "summary": "A young boy with spiky blonde hair, wearing a green shirt, dances energetically in a brightly lit room, his joyous movements captured in a close-up shot.",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "A young boy with spiky blonde hair, wearing a green shirt, dances energetically in a brightly lit room, his joyous movements captured in a close-up shot.",
+                    "audio": "",
+                    "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 10.5,
+            "end_time": 13.5,
+            "children": [],
+            "caption": "The video transitions from a vibrant, colorful graphic to a close-up of a young boy with a wide smile, as a man's voice excitedly announces the start of \"KIDS CLUB COUNTDOWN,\" the title of the show flashing on the screen.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "The video transitions from a vibrant, colorful graphic to a close-up of a young boy with a wide smile, as a man's voice excitedly announces the start of \"KIDS CLUB COUNTDOWN,\" the title of the show flashing on the screen.",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_10.5_13.5",
+                "tags": [
+                  "kids",
+                  "club",
+                  "countdown",
+                  "graphic",
+                  "animation"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "graphic",
+                    "attributes": {
+                      "colorful": "vibrant",
+                      "type": "animation"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "boy",
+                    "attributes": {
+                      "age": "young",
+                      "expression": "wide smile"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "title",
+                    "attributes": {
+                      "text": "KIDS CLUB COUNTDOWN"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "announcer",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_10.5_13.5",
+                  "name": "KIDS CLUB COUNTDOWN start",
+                  "time": {
+                    "start": "10.5",
+                    "end": "13.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "children's entertainment"
+                  ],
+                  "scene_topic": "The video transitions from a colorful graphic to a close-up of a young boy with a wide smile, as a man's voice excitedly announces the start of 'KIDS CLUB COUNTDOWN'.",
+                  "summary": "The video transitions from a vibrant, colorful graphic to a close-up of a young boy with a wide smile, as a man's voice excitedly announces the start of \"KIDS CLUB COUNTDOWN,\" the title of the show flashing on the screen.",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "The video transitions from a vibrant, colorful graphic to a close-up of a young boy with a wide smile, as the title of the show flashing on the screen.",
+                    "audio": "Man's voice excitedly announces 'KIDS CLUB COUNTDOWN'.",
+                    "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A young boy with spiky blonde hair dances energetically in a brightly lit room, his joyous movements captured in a close-up shot, as the show \"KIDS CLUB COUNTDOWN\" begins with an excitable announcement by a man's voice.",
+        "postprocess": {
+          "event_id": 5,
+          "original_answer": "A young boy with spiky blonde hair dances energetically in a brightly lit room, his joyous movements captured in a close-up shot, as the show \"KIDS CLUB COUNTDOWN\" begins with an excitable announcement by a man's voice.",
+          "result": {
+            "video_id": "t_sHfZ9upSs",
+            "event_id": "E_t_sHfZ9upSs_7.5_13.5",
+            "tags": [
+              "kids",
+              "club",
+              "countdown",
+              "dance",
+              "joy"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "boy",
+                "attributes": {
+                  "age": "young",
+                  "hair_color": "blonde",
+                  "hair_style": "spiky"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "room",
+                "attributes": {
+                  "lighting": "brightly lit"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "camera",
+                "attributes": {
+                  "shot_type": "close-up"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "announcer",
+                "entity": "voice"
+              }
+            ],
+            "event": {
+              "event_id": "E_t_sHfZ9upSs_7.5_13.5",
+              "name": "KIDS CLUB COUNTDOWN",
+              "time": {
+                "start": "7.5",
+                "end": "13.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "kids entertainment"
+              ],
+              "scene_topic": "A young boy dances energetically in a brightly lit room as the show 'KIDS CLUB COUNTDOWN' begins.",
+              "summary": "A young boy with spiky blonde hair dances energetically in a brightly lit room, his joyous movements captured in a close-up shot, as the show \"KIDS CLUB COUNTDOWN\" begins with an excitable announcement by a man's voice.",
+              "implications": "Major kids entertainment event",
+              "modalities": {
+                "visual": "A young boy with spiky blonde hair dances energetically in a brightly lit room, his joyous movements captured in a close-up shot.",
+                "audio": "excitable announcement; man's voice",
+                "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+              }
+            }
+          }
+        },
+        "summary": "A young boy with spiky blonde hair and a green shirt dances enthusiastically in a brightly lit room, captured in a close-up shot. The scene transitions to a title sequence announcing the start of \"KIDS CLUB COUNTDOWN,\" a show that promises to be an exciting and engaging experience."
+      },
+      {
+        "level": 1,
+        "start_time": 13.5,
+        "end_time": 24.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 13.5,
+            "end_time": 15.5,
+            "children": [],
+            "caption": "The video transitions from a vibrant, colorful graphic to a close-up of a man with a mustache and glasses, who smiles and gestures as if speaking to the camera, while a woman's voice can be heard in the background.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "The video transitions from a vibrant, colorful graphic to a close-up of a man with a mustache and glasses, who smiles and gestures as if speaking to the camera, while a woman's voice can be heard in the background.",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_13.5_15.5",
+                "tags": [
+                  "graphic_transition",
+                  "person",
+                  "voiceover"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "graphic",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_13.5_15.5",
+                  "name": "graphic transition",
+                  "time": {
+                    "start": "13.5",
+                    "end": "15.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "graphic_transition"
+                  ],
+                  "scene_topic": "A man with a mustache and glasses smiles and gestures as if speaking to the camera, while a woman's voice can be heard in the background.",
+                  "summary": "The video transitions from a vibrant, colorful graphic to a close-up of a man with a mustache and glasses, who smiles and gestures as if speaking to the camera, while a woman's voice can be heard in the background.",
+                  "implications": "Major visual and auditory event",
+                  "modalities": {
+                    "visual": "The video transitions from a vibrant, colorful graphic to a close-up of a man with a mustache and glasses, who smiles and gestures as if speaking to the camera, while a woman's face is seen in the background.",
+                    "audio": "woman's voice",
+                    "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 15.5,
+            "end_time": 17.5,
+            "children": [],
+            "caption": "The video transitions from a vibrant, colorful graphic to a close-up of a man with a mustache and glasses, his serious expression illuminated by a spotlight as he speaks directly to the camera.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "The video transitions from a vibrant, colorful graphic to a close-up of a man with a mustache and glasses, his serious expression illuminated by a spotlight as he speaks directly to the camera.",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_15.5_17.5",
+                "tags": [
+                  "video_transition",
+                  "graphic",
+                  "man",
+                  "mustache",
+                  "glasses"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "graphic",
+                    "attributes": {
+                      "colorful": "vibrant",
+                      "type": "graphic"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {
+                      "expression": "serious",
+                      "accessory": "glasses"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_15.5_17.5",
+                  "name": "video transition",
+                  "time": {
+                    "start": "15.5",
+                    "end": "17.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "video content"
+                  ],
+                  "scene_topic": "A man with a serious expression speaks directly to the camera.",
+                  "summary": "The video transitions from a vibrant, colorful graphic to a close-up of a man with a mustache and glasses, his serious expression illuminated by a spotlight as he speaks directly to the camera.",
+                  "implications": "Major video content event",
+                  "modalities": {
+                    "visual": "The video transitions from a vibrant, colorful graphic to a close-up of a man with a mustache and glasses, his serious expression illuminated by a spotlight as he speaks directly to the camera.",
+                    "audio": "",
+                    "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 17.5,
+            "end_time": 20.5,
+            "children": [],
+            "caption": "A man with a mustache and sunglasses, wearing a blue shirt, smiles at the camera as he speaks, his words drowned out by the upbeat pop music playing in the background.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "A man with a mustache and sunglasses, wearing a blue shirt, smiles at the camera as he speaks, his words drowned out by the upbeat pop music playing in the background.",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_17.5_20.5",
+                "tags": [
+                  "man",
+                  "mustache",
+                  "sunglasses",
+                  "blue_shirt",
+                  "smile"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "clothing": "blue_shirt",
+                      "accessories": "mustache",
+                      "eye_wear": "sunglasses"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_17.5_20.5",
+                  "name": "man speaking",
+                  "time": {
+                    "start": "17.5",
+                    "end": "20.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "person"
+                  ],
+                  "scene_topic": "A man with a mustache and sunglasses, wearing a blue shirt, smiles at the camera as he speaks.",
+                  "summary": "A man with a mustache and sunglasses, wearing a blue shirt, smiles at the camera as he speaks, his words drowned out by the upbeat pop music playing in the background.",
+                  "implications": "Minor entertainment news event",
+                  "modalities": {
+                    "visual": "A man with a mustache and sunglasses, wearing a blue shirt, smiles at the camera as he speaks.",
+                    "audio": "upbeat pop music",
+                    "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 20.5,
+            "end_time": 24.5,
+            "children": [],
+            "caption": "A man in a white suit and hat, his face painted with a wide grin, dances energetically in a dimly lit room, his movements captured in a close-up shot as a woman's voice excitedly announces the start of \"Kids' Fun Club.\"",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "A man in a white suit and hat, his face painted with a wide grin, dances energetically in a dimly lit room, his movements captured in a close-up shot as a woman's voice excitedly announces the start of \"Kids' Fun Club.\"",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_20.5_24.5",
+                "tags": [
+                  "kids",
+                  "fun",
+                  "club",
+                  "dance",
+                  "entertainment"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "clothing": "white suit and hat",
+                      "face": "painted with a wide grin"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "voice": "excitedly announces"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "dancer",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "announcer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_20.5_24.5",
+                  "name": "Kids' Fun Club",
+                  "time": {
+                    "start": "20.5",
+                    "end": "24.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "kids entertainment"
+                  ],
+                  "scene_topic": "A man dances in a close-up shot as a woman announces the start of 'Kids' Fun Club'.",
+                  "summary": "A man in a white suit and hat, his face painted with a wide grin, dances energetically in a dimly lit room, his movements captured in a close-up shot as a woman's voice excitedly announces the start of \"Kids' Fun Club.\"",
+                  "implications": "Major entertainment event",
+                  "modalities": {
+                    "visual": "A man in a white suit and hat, his face painted with a wide grin, dances energetically in a dimly lit room, his movements captured in a close-up shot as a woman's voice excitedly announces the start of 'Kids' Fun Club'.",
+                    "audio": "woman's voice; announcement 'Kids' Fun Club'.",
+                    "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The video opens with a vibrant, colorful graphic before transitioning to a close-up of a man with a mustache and glasses, who smiles and gestures as he speaks to the camera. The video then cuts to a serious-looking man with a mustache and glasses, who speaks directly to the camera in a spotlight. Next, the video shows a man with a mustache and sunglasses smiling and speaking, but the sound is drowned out by upbeat pop music. Finally, the video shows a man",
+        "postprocess": {
+          "event_id": 8,
+          "original_answer": "The video opens with a vibrant, colorful graphic before transitioning to a close-up of a man with a mustache and glasses, who smiles and gestures as he speaks to the camera. The video then cuts to a serious-looking man with a mustache and glasses, who speaks directly to the camera in a spotlight. Next, the video shows a man with a mustache and sunglasses smiling and speaking, but the sound is drowned out by upbeat pop music. Finally, the video shows a man",
+          "result": {
+            "video_id": "t_sHfZ9upSs",
+            "event_id": "E_t_sHfZ9upSs_13.5_24.5",
+            "tags": [
+              "video",
+              "man",
+              "mustache",
+              "glasses",
+              "sunglasses"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Man with mustache and glasses",
+                "attributes": {
+                  "description": "A man with a mustache and glasses speaking to the camera"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Man with mustache and sunglasses",
+                "attributes": {
+                  "description": "A man with a mustache and sunglasses speaking, but with drowned out sound"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man with mustache and glasses",
+                "ref_object": "O001",
+                "role": "Speaker",
+                "entity": "Person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Man with mustache and sunglasses",
+                "ref_object": "O002",
+                "role": "Speaker",
+                "entity": "Person"
+              }
+            ],
+            "event": {
+              "event_id": "E_t_sHfZ9upSs_13.5_24.5",
+              "name": "Man with mustache and glasses speaking",
+              "time": {
+                "start": "13.5",
+                "end": "24.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "video",
+                "man",
+                "speaking"
+              ],
+              "scene_topic": "The video shows a man with a mustache and glasses speaking to the camera.",
+              "summary": "The video opens with a vibrant, colorful graphic before transitioning to a close-up of a man with a mustache and glasses, who smiles and gestures as he speaks to the camera. The video then cuts to a serious-looking man with a mustache and glasses, who speaks directly to the camera in a spotlight. Next, the video shows a man with a mustache and sunglasses smiling and speaking, but the sound is drowned out by upbeat pop music. Finally, the video shows a man",
+              "implications": "Major video event",
+              "modalities": {
+                "visual": "The video opens with a vibrant, colorful graphic before transitioning to a close-up of a man with a mustache and glasses, who smiles and gestures as he speaks to the camera. The video then cuts to a serious-looking man with a mustache and glasses, who speaks directly to the camera in a spotlight. Next, the video shows a man with a mustache and sunglasses smiling and speaking, but the sound is drowned out by upbeat pop music. Finally, the video shows a man.",
+                "audio": "speaks to the camera; speaks directly to the camera; upbeat pop music.",
+                "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+              }
+            }
+          }
+        },
+        "summary": "The video features a series of close-ups of men with distinctive facial features, including a mustachioed man with glasses, a man with sunglasses, and a man in a white suit with a painted-on grin, each speaking or performing in a different setting. The scenes are interspersed with vibrant graphics and upbeat music, culminating in the announcement of the \"Kids' Fun Club\" by a woman's voice."
+      },
+      {
+        "level": 1,
+        "start_time": 24.5,
+        "end_time": 30.096733,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 28.5,
+            "children": [],
+            "caption": "The video transitions from a vibrant graphic of a cartoon character to a close-up of a young person with a neutral expression, all while a man's voice can be heard saying \"I'm gonna be a star.\"",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "The video transitions from a vibrant graphic of a cartoon character to a close-up of a young person with a neutral expression, all while a man's voice can be heard saying \"I'm gonna be a star.\"",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_24.5_28.5",
+                "tags": [
+                  "cartoon",
+                  "graphic",
+                  "person",
+                  "expression",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon character",
+                    "attributes": {
+                      "graphic": "vibrant",
+                      "expression": "neutral"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "young person",
+                    "attributes": {
+                      "expression": "neutral"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "voice",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_24.5_28.5",
+                  "name": "Transition to close-up",
+                  "time": {
+                    "start": "24.5",
+                    "end": "28.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "entertainment news"
+                  ],
+                  "scene_topic": "A man's voice is heard saying 'I'm gonna be a star' as a cartoon character transitions to a close-up of a young person.",
+                  "summary": "The video transitions from a vibrant graphic of a cartoon character to a close-up of a young person with a neutral expression, all while a man's voice can be heard saying \"I'm gonna be a star.\"",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "The video transitions from a vibrant graphic of a cartoon character to a close-up of a young person with a neutral expression.",
+                    "audio": "Man's voice; 'I'm gonna be a star'.",
+                    "speech": "It's a fun and interactive show that brings together stars from music, TV, and sports to help you have a blast."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 28.5,
+            "end_time": 30.096733,
+            "children": [],
+            "caption": "Two cartoon characters, a boy and a girl, stand side by side, their neutral expressions contrasting with the vibrant, colorful background.",
+            "postprocess": {
+              "event_id": 14,
+              "original_answer": "Two cartoon characters, a boy and a girl, stand side by side, their neutral expressions contrasting with the vibrant, colorful background.",
+              "result": {
+                "video_id": "t_sHfZ9upSs",
+                "event_id": "E_t_sHfZ9upSs_28.5_30.1",
+                "tags": [
+                  "cartoon",
+                  "characters",
+                  "background"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "boy",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "girl",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "boy",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "boy"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "girl",
+                    "ref_object": "O002",
+                    "role": "actor",
+                    "entity": "girl"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_t_sHfZ9upSs_28.5_30.1",
+                  "name": "Two cartoon characters stand side by side",
+                  "time": {
+                    "start": "28.5",
+                    "end": "30.1"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon"
+                  ],
+                  "scene_topic": "Two cartoon characters, a boy and a girl, stand side by side, their neutral expressions contrasting with the vibrant, colorful background.",
+                  "summary": "Two cartoon characters, a boy and a girl, stand side by side, their neutral expressions contrasting with the vibrant, colorful background.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "Two cartoon characters, a boy and a girl, stand side by side, their neutral expressions contrasting with the vibrant, colorful background.",
+                    "audio": "",
+                    "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A young person expresses ambition to become a star, while cartoon characters appear in a contrasting setting.",
+        "postprocess": {
+          "event_id": 13,
+          "original_answer": "A young person expresses ambition to become a star, while cartoon characters appear in a contrasting setting.",
+          "result": {
+            "video_id": "t_sHfZ9upSs",
+            "event_id": "E_t_sHfZ9upSs_24.5_30.1",
+            "tags": [
+              "ambition",
+              "star",
+              "cartoon"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Young person",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "Cartoon characters",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Young person",
+                "ref_object": "O001",
+                "role": "protagonist",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_t_sHfZ9upSs_24.5_30.1",
+              "name": "Ambition to become a star",
+              "time": {
+                "start": "24.5",
+                "end": "30.1"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "ambition"
+              ],
+              "scene_topic": "A young person expresses ambition to become a star, while cartoon characters appear in a contrasting setting.",
+              "summary": "A young person expresses ambition to become a star, while cartoon characters appear in a contrasting setting.",
+              "implications": "Major personal development event",
+              "modalities": {
+                "visual": "A young person expresses ambition to become a star, while cartoon characters appear in a contrasting setting.",
+                "audio": "",
+                "speech": "It's a fun and interactive show that brings together stars from music, TV, and sports to help you have a blast."
+              }
+            }
+          }
+        },
+        "summary": "A cartoon character's graphic transitions to a close-up of a young person with a neutral expression, accompanied by a man's voice saying \"I'm gonna be a star\". Two cartoon characters, a boy and a girl, stand side by side with neutral expressions, contrasting with the vibrant background."
+      }
+    ],
+    "caption": "A young boy and a cartoon character showcase their dancing skills, while a man introduces the show \"KIDS CLUB COUNTDOWN.\" The video then cuts to a serious-looking man speaking directly to the camera, followed by a man with a mustache and sunglasses smiling and speaking, but with the sound drowned out by upbeat music. Finally, a young person expresses ambition to become a star, while cartoon characters appear in a contrasting setting.",
+    "postprocess": {
+      "event_id": 2,
+      "original_answer": "A young boy and a cartoon character showcase their dancing skills, while a man introduces the show \"KIDS CLUB COUNTDOWN.\" The video then cuts to a serious-looking man speaking directly to the camera, followed by a man with a mustache and sunglasses smiling and speaking, but with the sound drowned out by upbeat music. Finally, a young person expresses ambition to become a star, while cartoon characters appear in a contrasting setting.",
+      "result": {
+        "video_id": "t_sHfZ9upSs",
+        "event_id": "E_t_sHfZ9upSs_0_30.1",
+        "tags": [
+          "kids",
+          "dancing",
+          "cartoon",
+          "music",
+          "ambition"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "boy",
+            "attributes": {
+              "age": "young",
+              "dancing_skills": "showcase"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "cartoon character",
+            "attributes": {
+              "type": "dancing",
+              "appearance": "cartoon"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "man with introduction",
+            "attributes": {
+              "role": "introducer",
+              "show": "KIDS CLUB COUNTDOWN"
+            }
+          },
+          {
+            "object_id": "O004",
+            "name": "serious-looking man",
+            "attributes": {
+              "expression": "serious",
+              "action": "speaking"
+            }
+          },
+          {
+            "object_id": "O005",
+            "name": "man with mustache and sunglasses",
+            "attributes": {
+              "expression": "smiling",
+              "action": "speaking"
+            }
+          },
+          {
+            "object_id": "O006",
+            "name": "young person",
+            "attributes": {
+              "ambition": "become a star"
+            }
+          },
+          {
+            "object_id": "O007",
+            "name": "cartoon characters",
+            "attributes": {
+              "setting": "contrasting"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "boy",
+            "ref_object": "O001",
+            "role": "dancer",
+            "entity": "person"
+          },
+          {
+            "actor_id": "A002",
+            "name": "man with introduction",
+            "ref_object": "O003",
+            "role": "introducer",
+            "entity": "person"
+          },
+          {
+            "actor_id": "A003",
+            "name": "serious-looking man",
+            "ref_object": "O004",
+            "role": "speaker",
+            "entity": "person"
+          },
+          {
+            "actor_id": "A004",
+            "name": "man with mustache and sunglasses",
+            "ref_object": "O005",
+            "role": "speaker",
+            "entity": "person"
+          },
+          {
+            "actor_id": "A005",
+            "name": "young person",
+            "ref_object": "O006",
+            "role": "ambitious",
+            "entity": "person"
+          }
+        ],
+        "event": {
+          "event_id": "E_t_sHfZ9upSs_0_30.1",
+          "name": "KIDS CLUB COUNTDOWN",
+          "time": {
+            "start": "0",
+            "end": "30.1"
+          },
+          "actors": [
+            "A001",
+            "A002",
+            "A003",
+            "A004",
+            "A005"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003",
+            "O004",
+            "O005",
+            "O006",
+            "O007"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "kids entertainment"
+          ],
+          "scene_topic": "A young boy and a cartoon character showcase their dancing skills, while a man introduces the show 'KIDS CLUB COUNTDOWN'.",
+          "summary": "A young boy and a cartoon character showcase their dancing skills, while a man introduces the show \"KIDS CLUB COUNTDOWN.\" The video then cuts to a serious-looking man speaking directly to the camera, followed by a man with a mustache and sunglasses smiling and speaking, but with the sound drowned out by upbeat music. Finally, a young person expresses ambition to become a star, while cartoon characters appear in a contrasting setting.",
+          "implications": "Major entertainment event for kids",
+          "modalities": {
+            "visual": "A young boy and a cartoon character showcase their dancing skills, while a man introduces the show 'KIDS CLUB COUNTDOWN'. The video then cuts to a serious-looking man speaking directly to the camera, followed by a man with a mustache and sunglasses smiling and speaking, but with the sound drowned out by upbeat music. A young person expresses ambition to become a star, while cartoon characters appear in a contrasting setting.",
+            "audio": "introduction; speaking; upbeat music; sound drowned out",
+            "speech": "Fox Kids! Countdown is a Sunday morning radio show that's all about the groove, featuring a great guy who lets you choose the song to play."
+          }
+        }
+      }
+    },
+    "summary": "The \"KIDS CLUB COUNTDOWN\" introduction features a dynamic sequence of still images and close-up shots of a young boy and a cartoon character dancing, interspersed with vibrant graphics and upbeat music. The scene transitions to a title sequence announcing the start of the show, featuring a series of close-ups of men with distinctive facial features, culminating in the announcement of the \"Kids' Fun Club\"."
+  }
+}

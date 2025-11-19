@@ -878,10 +878,10 @@
                 "caption": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
                 "postprocess": {
                   "event_id": 14,
-                  "original_answer": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race. The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                  "original_answer": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
                   "result": {
                     "video_id": "w2nmzwknVco",
-                    "event_id": "E_w2nmzwknVco_39.5_46.5",
+                    "event_id": "E_w2nmzwknVco_39.5_42.5",
                     "tags": [
                       "sports",
                       "track_and_field",
@@ -893,8 +893,7 @@
                         "name": "Female Athlete",
                         "attributes": {
                           "uniform_color": "red and white",
-                          "determined_stride": "yes",
-                          "focused_expression": "yes"
+                          "expression": "focused"
                         }
                       }
                     ],
@@ -903,16 +902,16 @@
                         "actor_id": "A001",
                         "name": "Female Athlete",
                         "ref_object": "O001",
-                        "role": "athlete",
-                        "entity": "human"
+                        "role": "Participant",
+                        "entity": "Person"
                       }
                     ],
                     "event": {
-                      "event_id": "E_w2nmzwknVco_39.5_46.5",
+                      "event_id": "E_w2nmzwknVco_39.5_42.5",
                       "name": "Female Athlete Sprinting",
                       "time": {
                         "start": "39.5",
-                        "end": "46.5"
+                        "end": "42.5"
                       },
                       "actors": [
                         "A001"
@@ -926,7 +925,7 @@
                         "sports news"
                       ],
                       "scene_topic": "The crowd erupts in cheers as a female athlete sprints down the track.",
-                      "summary": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race. The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                      "summary": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
                       "implications": "Major sports news event",
                       "modalities": {
                         "visual": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
@@ -1032,15 +1031,16 @@
                 "children": [],
                 "caption": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
                 "postprocess": {
-                  "event_id": 14,
-                  "original_answer": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race. The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                  "event_id": 15,
+                  "original_answer": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
                   "result": {
                     "video_id": "w2nmzwknVco",
-                    "event_id": "E_w2nmzwknVco_39.5_46.5",
+                    "event_id": "E_w2nmzwknVco_42.5_46.5",
                     "tags": [
                       "sports",
                       "track_and_field",
-                      "female_athlete"
+                      "female_athlete",
+                      "competition"
                     ],
                     "objects": [
                       {
@@ -1048,8 +1048,7 @@
                         "name": "Female Athlete",
                         "attributes": {
                           "uniform_color": "red and white",
-                          "determined_stride": "yes",
-                          "focused_expression": "yes"
+                          "expression": "focused"
                         }
                       }
                     ],
@@ -1058,15 +1057,15 @@
                         "actor_id": "A001",
                         "name": "Female Athlete",
                         "ref_object": "O001",
-                        "role": "athlete",
-                        "entity": "human"
+                        "role": "competitor",
+                        "entity": "person"
                       }
                     ],
                     "event": {
-                      "event_id": "E_w2nmzwknVco_39.5_46.5",
-                      "name": "Female Athlete Sprinting",
+                      "event_id": "E_w2nmzwknVco_42.5_46.5",
+                      "name": "Female Athlete Sprinting Down the Track",
                       "time": {
-                        "start": "39.5",
+                        "start": "42.5",
                         "end": "46.5"
                       },
                       "actors": [
@@ -1081,7 +1080,7 @@
                         "sports news"
                       ],
                       "scene_topic": "The crowd erupts in cheers as a female athlete sprints down the track.",
-                      "summary": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race. The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                      "summary": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
                       "implications": "Major sports news event",
                       "modalities": {
                         "visual": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
@@ -1099,7 +1098,7 @@
                 "children": [],
                 "caption": "The woman, wearing a red and white uniform, stands on the track, her gaze fixed on the scoreboard in the distance, as the crowd cheers and claps, their excitement building with each passing moment.",
                 "postprocess": {
-                  "event_id": 16,
+                  "event_id": 17,
                   "original_answer": "The woman, wearing a red and white uniform, stands on the track, her gaze fixed on the scoreboard in the distance, as the crowd cheers and claps, their excitement building with each passing moment.",
                   "result": {
                     "video_id": "w2nmzwknVco",
@@ -1167,7 +1166,7 @@
                 "children": [],
                 "caption": "The woman, wearing a red and white uniform, sprints down the track, her long hair flowing behind her as she prepares to throw the javelin.",
                 "postprocess": {
-                  "event_id": 17,
+                  "event_id": 18,
                   "original_answer": "The woman, wearing a red and white uniform, sprints down the track, her long hair flowing behind her as she prepares to throw the javelin.",
                   "result": {
                     "video_id": "w2nmzwknVco",
@@ -1248,7 +1247,7 @@
             ],
             "caption": "A female athlete, wearing a red and white uniform, competes in a race or event, showcasing her determination and focus as she sprints down the track and prepares to throw the javelin.",
             "postprocess": {
-              "event_id": 15,
+              "event_id": 16,
               "original_answer": "A female athlete, wearing a red and white uniform, competes in a race or event, showcasing her determination and focus as she sprints down the track and prepares to throw the javelin.",
               "result": {
                 "video_id": "w2nmzwknVco",
@@ -1324,7 +1323,7 @@
                 "children": [],
                 "caption": "The female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused gaze reflecting the intensity of the race as the crowd cheers her on.",
                 "postprocess": {
-                  "event_id": 18,
+                  "event_id": 19,
                   "original_answer": "The female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused gaze reflecting the intensity of the race as the crowd cheers her on.",
                   "result": {
                     "video_id": "w2nmzwknVco",
@@ -1393,7 +1392,7 @@
                 "children": [],
                 "caption": "The female athlete, wearing a red and white uniform, sprints down the track, her long hair flowing behind her, as the crowd cheers and the announcer excitedly describes the ongoing javelin throw event.",
                 "postprocess": {
-                  "event_id": 20,
+                  "event_id": 21,
                   "original_answer": "The female athlete, wearing a red and white uniform, sprints down the track, her long hair flowing behind her, as the crowd cheers and the announcer excitedly describes the ongoing javelin throw event.",
                   "result": {
                     "video_id": "w2nmzwknVco",
@@ -1456,7 +1455,7 @@
             ],
             "caption": "A female athlete sprints down the track with determination and focus, as the crowd cheers her on, and an announcer describes the ongoing javelin throw event.",
             "postprocess": {
-              "event_id": 19,
+              "event_id": 20,
               "original_answer": "A female athlete sprints down the track with determination and focus, as the crowd cheers her on, and an announcer describes the ongoing javelin throw event.",
               "result": {
                 "video_id": "w2nmzwknVco",
@@ -1655,7 +1654,7 @@
                 "children": [],
                 "caption": "The female athlete, wearing a red and white uniform, sprints down the track, her determined expression and focused gaze conveying her determination as she approaches the finish line.",
                 "postprocess": {
-                  "event_id": 21,
+                  "event_id": 22,
                   "original_answer": "The female athlete, wearing a red and white uniform, sprints down the track, her determined expression and focused gaze conveying her determination as she approaches the finish line.",
                   "result": {
                     "video_id": "w2nmzwknVco",
@@ -1722,7 +1721,7 @@
                 "children": [],
                 "caption": "The female athlete, wearing a red and blue uniform, raises her arms in triumph as she crosses the finish line, her face beaming with joy as the crowd cheers her on.",
                 "postprocess": {
-                  "event_id": 24,
+                  "event_id": 25,
                   "original_answer": "The female athlete, wearing a red and blue uniform, raises her arms in triumph as she crosses the finish line, her face beaming with joy as the crowd cheers her on.",
                   "result": {
                     "video_id": "w2nmzwknVco",
@@ -1790,7 +1789,7 @@
                 "children": [],
                 "caption": "The female athlete, wearing a red and blue uniform, stands on the track, her gaze fixed on the scoreboard that displays her score of 16.91, as the crowd cheers and claps for her performance.",
                 "postprocess": {
-                  "event_id": 25,
+                  "event_id": 26,
                   "original_answer": "The female athlete, wearing a red and blue uniform, stands on the track, her gaze fixed on the scoreboard that displays her score of 16.91, as the crowd cheers and claps for her performance.",
                   "result": {
                     "video_id": "w2nmzwknVco",
@@ -1871,7 +1870,7 @@
             ],
             "caption": "A female athlete competes in a track and field event, showing determination and joy as she sprints towards the finish line and crosses it with a triumphant gesture, with the crowd cheering and clapping for her impressive performance.",
             "postprocess": {
-              "event_id": 22,
+              "event_id": 23,
               "original_answer": "A female athlete competes in a track and field event, showing determination and joy as she sprints towards the finish line and crosses it with a triumphant gesture, with the crowd cheering and clapping for her impressive performance.",
               "result": {
                 "video_id": "w2nmzwknVco",
@@ -2035,7 +2034,7 @@
             ],
             "caption": "The athlete, determined to beat her personal best, focuses intently on the scoreboard as the crowd cheers her on.",
             "postprocess": {
-              "event_id": 26,
+              "event_id": 28,
               "original_answer": "The athlete, determined to beat her personal best, focuses intently on the scoreboard as the crowd cheers her on.",
               "result": {
                 "video_id": "w2nmzwknVco",
@@ -2127,7 +2126,7 @@
                 "children": [],
                 "caption": "The female athlete, wearing a blue and red uniform, stands on the track, her gaze fixed on the scoreboard displaying her personal best of 12.91, as the crowd cheers her on.",
                 "postprocess": {
-                  "event_id": 28,
+                  "event_id": 29,
                   "original_answer": "The female athlete, wearing a blue and red uniform, stands on the track, her gaze fixed on the scoreboard displaying her personal best of 12.91, as the crowd cheers her on.",
                   "result": {
                     "video_id": "w2nmzwknVco",
@@ -2196,7 +2195,7 @@
                 "children": [],
                 "caption": "As the crowd cheers, the female athlete, wearing a red and blue uniform, raises her arms in triumph, her face beaming with joy as she crosses the finish line, her time of 12.24 seconds displayed on the scoreboard.",
                 "postprocess": {
-                  "event_id": 30,
+                  "event_id": 31,
                   "original_answer": "As the crowd cheers, the female athlete, wearing a red and blue uniform, raises her arms in triumph, her face beaming with joy as she crosses the finish line, her time of 12.24 seconds displayed on the scoreboard.",
                   "result": {
                     "video_id": "w2nmzwknVco",
@@ -2269,7 +2268,7 @@
             ],
             "caption": "A female athlete competes in a track and field event, setting a personal best time of 12.24 seconds and crossing the finish line with a triumphant gesture and joyful expression.",
             "postprocess": {
-              "event_id": 29,
+              "event_id": 30,
               "original_answer": "A female athlete competes in a track and field event, setting a personal best time of 12.24 seconds and crossing the finish line with a triumphant gesture and joyful expression.",
               "result": {
                 "video_id": "w2nmzwknVco",
@@ -2333,7 +2332,7 @@
         ],
         "caption": "A female athlete competes in a track and field event, setting a personal best time of 12.24 seconds and crossing the finish line with a triumphant gesture and joyful expression, demonstrating determination and joy throughout the race.",
         "postprocess": {
-          "event_id": 23,
+          "event_id": 24,
           "original_answer": "A female athlete competes in a track and field event, setting a personal best time of 12.24 seconds and crossing the finish line with a triumphant gesture and joyful expression, demonstrating determination and joy throughout the race.",
           "result": {
             "video_id": "w2nmzwknVco",

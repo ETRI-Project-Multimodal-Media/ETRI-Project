@@ -1,0 +1,2992 @@
+{
+  "video_id": "UldXRipkEno",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 98.531767,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 14.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 6.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "A man in a black jacket and blue jeans stands on a wet asphalt road, illuminated by the headlights of his car, as he prepares to drive away.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A man in a black jacket and blue jeans stands on a wet asphalt road, illuminated by the headlights of his car, as he prepares to drive away.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_0_3.5",
+                    "tags": [
+                      "man",
+                      "car",
+                      "road",
+                      "night",
+                      "driving"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black jacket, blue jeans",
+                          "location": "wet asphalt road"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "car",
+                        "attributes": {
+                          "type": "vehicle",
+                          "state": "parked"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "driver",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_0_3.5",
+                      "name": "man prepares to drive away",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A man prepares to drive away from a wet asphalt road at night.",
+                      "summary": "A man in a black jacket and blue jeans stands on a wet asphalt road, illuminated by the headlights of his car, as he prepares to drive away.",
+                      "implications": "A significant event in the life of the man",
+                      "modalities": {
+                        "visual": "A man in a black jacket and blue jeans stands on a wet asphalt road, illuminated by the headlights of his car, as he prepares to drive away.",
+                        "audio": "",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "A man in a yellow and black racing suit stands on a wet asphalt racetrack, illuminated by the headlights of a car, as he prepares to race, the roar of the engine echoing through the night.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A man in a yellow and black racing suit stands on a wet asphalt racetrack, illuminated by the headlights of a car, as he prepares to race, the roar of the engine echoing through the night.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_3_6",
+                    "tags": [
+                      "racing",
+                      "asphalt",
+                      "night",
+                      "car",
+                      "engine"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Racing Suit",
+                        "attributes": {
+                          "color": "yellow and black",
+                          "material": "unknown"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Racetrack",
+                        "attributes": {
+                          "surface": "asphalt",
+                          "wet": "yes"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Car",
+                        "attributes": {
+                          "type": "unknown",
+                          "headlights": "illuminated"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Racing Driver",
+                        "ref_object": "O001",
+                        "role": "driver",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_3_6",
+                      "name": "Racing Preparation",
+                      "time": {
+                        "start": "3.5",
+                        "end": "6.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A man in a yellow and black racing suit stands on a wet asphalt racetrack, illuminated by the headlights of a car, as he prepares to race, the roar of the engine echoing through the night.",
+                      "summary": "A man in a yellow and black racing suit stands on a wet asphalt racetrack, illuminated by the headlights of a car, as he prepares to race, the roar of the engine echoing through the night.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A man in a yellow and black racing suit stands on a wet asphalt racetrack, illuminated by the headlights of a car, as he prepares to race.",
+                        "audio": "roar of the engine",
+                        "speech": "Jeffrey Earnhardt born to win has been driven to be first since childhood fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two men, one in a black jacket and blue jeans, and the other in a yellow and black racing suit, prepare to drive and race respectively, both illuminated by the headlights of their vehicles on wet asphalt roads.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "Two men, one in a black jacket and blue jeans, and the other in a yellow and black racing suit, prepare to drive and race respectively, both illuminated by the headlights of their vehicles on wet asphalt roads.",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_0_6.5",
+                "tags": [
+                  "racing",
+                  "driving",
+                  "vehicles",
+                  "roads",
+                  "asphalt"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "black_jacket",
+                    "attributes": {
+                      "color": "black",
+                      "type": "jacket",
+                      "worn_by": "man1"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "blue_jeans",
+                    "attributes": {
+                      "color": "blue",
+                      "type": "jeans",
+                      "worn_by": "man1"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "yellow_and_black_racing_suit",
+                    "attributes": {
+                      "color": "yellow_and_black",
+                      "type": "racing_suit",
+                      "worn_by": "man2"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "headlights",
+                    "attributes": {
+                      "type": "headlights",
+                      "illuminates": "vehicles"
+                    }
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "wet_asphalt_roads",
+                    "attributes": {
+                      "type": "roads",
+                      "surface": "wet_asphalt"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man1",
+                    "ref_object": "O001",
+                    "role": "driver",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man2",
+                    "ref_object": "O003",
+                    "role": "racer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_0_6.5",
+                  "name": "Racing and Driving",
+                  "time": {
+                    "start": "0",
+                    "end": "6.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "racing"
+                  ],
+                  "scene_topic": "Two men prepare to drive and race respectively, both illuminated by the headlights of their vehicles on wet asphalt roads.",
+                  "summary": "Two men, one in a black jacket and blue jeans, and the other in a yellow and black racing suit, prepare to drive and race respectively, both illuminated by the headlights of their vehicles on wet asphalt roads.",
+                  "implications": "Major transportation news event",
+                  "modalities": {
+                    "visual": "Two men, one in a black jacket and blue jeans, and the other in a yellow and black racing suit, prepare to drive and race respectively, both illuminated by the headlights of their vehicles on wet asphalt roads.",
+                    "audio": "",
+                    "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a black jacket and blue jeans prepares to drive away from a wet asphalt road, while another man in a yellow and black racing suit prepares to race on a wet asphalt track, both illuminated by car headlights. The scene is set at night, with the sound of an engine roaring in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 6.5,
+            "end_time": 14.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 10.5,
+                "children": [],
+                "caption": "A man in a yellow racing suit stands on a racetrack, his gaze fixed on the camera as he speaks about his passion for racing and the support of his family and fans.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A man in a yellow racing suit stands on a racetrack, his gaze fixed on the camera as he speaks about his passion for racing and the support of his family and fans.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_6.5_10.5",
+                    "tags": [
+                      "racing",
+                      "motorsport",
+                      "passion",
+                      "family",
+                      "fans"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Racing Suit",
+                        "attributes": {
+                          "color": "yellow",
+                          "type": "racing"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Racetrack",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Man",
+                        "attributes": {
+                          "occupation": "racing driver",
+                          "expression": "serious"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Racing Driver",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_6.5_10.5",
+                      "name": "Racing Driver's Passion",
+                      "time": {
+                        "start": "6.5",
+                        "end": "10.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "motorsport"
+                      ],
+                      "scene_topic": "A racing driver speaks about his passion for racing and the support of his family and fans.",
+                      "summary": "A man in a yellow racing suit stands on a racetrack, his gaze fixed on the camera as he speaks about his passion for racing and the support of his family and fans.",
+                      "implications": "Major motorsport news event",
+                      "modalities": {
+                        "visual": "A man in a yellow racing suit stands on a racetrack, his gaze fixed on the camera as he speaks about his passion for racing and the support of his family and fans.",
+                        "audio": "",
+                        "speech": "born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 10.5,
+                "end_time": 14.5,
+                "children": [],
+                "caption": "A man in a yellow and black jacket stands on a wet track, the sound of a car engine idling in the background, as he prepares for a race.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A man in a yellow and black jacket stands on a wet track, the sound of a car engine idling in the background, as he prepares for a race.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_10.5_14.5",
+                    "tags": [
+                      "racing",
+                      "car",
+                      "track",
+                      "driver",
+                      "preparation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "yellow and black jacket",
+                          "location": "wet track"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "car",
+                        "attributes": {
+                          "sound": "idling engine"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "driver",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_10.5_14.5",
+                      "name": "Racing preparation",
+                      "time": {
+                        "start": "10.5",
+                        "end": "14.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A man prepares for a race on a wet track.",
+                      "summary": "A man in a yellow and black jacket stands on a wet track, the sound of a car engine idling in the background, as he prepares for a race.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A man in a yellow and black jacket stands on a wet track.",
+                        "audio": "car engine idling",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A passionate race car driver speaks about his love for the sport and the support of his family and fans, while preparing for an upcoming race on a wet track.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A passionate race car driver speaks about his love for the sport and the support of his family and fans, while preparing for an upcoming race on a wet track.",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_6.5_14.5",
+                "tags": [
+                  "racing",
+                  "motorsport",
+                  "driver",
+                  "family",
+                  "fans"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Racing Car",
+                    "attributes": {
+                      "type": "Formula 1",
+                      "track_condition": "wet"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Passionate Racing Driver",
+                    "ref_object": "O001",
+                    "role": "Driver",
+                    "entity": "Person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_6.5_14.5",
+                  "name": "Pre-Race Interview",
+                  "time": {
+                    "start": "6.5",
+                    "end": "14.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "motorsport news"
+                  ],
+                  "scene_topic": "A passionate racing driver speaks about his love for the sport and the support of his family and fans, while preparing for an upcoming race on a wet track.",
+                  "summary": "A passionate race car driver speaks about his love for the sport and the support of his family and fans, while preparing for an upcoming race on a wet track.",
+                  "implications": "Major motorsport news event",
+                  "modalities": {
+                    "visual": "A passionate race car driver prepares for an upcoming race on a wet track.",
+                    "audio": "speaks; speech",
+                    "speech": "Jeffrey Earnhardt born to win has been driven to be first since childhood fueled by his family's racing legacy and his own passion for performance."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a yellow racing suit shares his passion for racing, crediting his family and fans for their support, while another man in a yellow and black jacket prepares for a race on a wet track, the sound of a car engine idling in the background."
+          }
+        ],
+        "caption": "Two race car drivers prepare for an upcoming race on a wet track, one focusing on driving and the other on the support of their family and fans.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "Two race car drivers prepare for an upcoming race on a wet track, one focusing on driving and the other on the support of their family and fans.",
+          "result": {
+            "video_id": "UldXRipkEno",
+            "event_id": "E_UldXRipkEno_0_14.5",
+            "tags": [
+              "racing",
+              "drivers",
+              "family",
+              "fans"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "race car",
+                "attributes": {
+                  "type": "vehicle",
+                  "track_condition": "wet"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "driver",
+                "attributes": {
+                  "role": "racing",
+                  "family_support": "yes"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "family",
+                "attributes": {
+                  "relation": "support"
+                }
+              },
+              {
+                "object_id": "O004",
+                "name": "fans",
+                "attributes": {
+                  "role": "support"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "driver",
+                "ref_object": "O002",
+                "role": "racing",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_UldXRipkEno_0_14.5",
+              "name": "Pre-race preparation",
+              "time": {
+                "start": "0",
+                "end": "14.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports news"
+              ],
+              "scene_topic": "Two race car drivers prepare for an upcoming race on a wet track, one focusing on driving and the other on the support of their family and fans.",
+              "summary": "Two race car drivers prepare for an upcoming race on a wet track, one focusing on driving and the other on the support of their family and fans.",
+              "implications": "Major sports news event",
+              "modalities": {
+                "visual": "Two race car drivers prepare for an upcoming race on a wet track, one focusing on driving and the other on the support of their family and fans.",
+                "audio": "",
+                "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+              }
+            }
+          }
+        },
+        "summary": "A man prepares to drive away from a wet road at night, while another man gets ready to race on a wet track, both illuminated by headlights. The scene is set amidst the sound of an engine roaring, as the racing enthusiast shares his passion for the sport, crediting his family and fans for their support."
+      },
+      {
+        "level": 1,
+        "start_time": 14.5,
+        "end_time": 55.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 14.5,
+            "end_time": 27.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 14.5,
+                "end_time": 17.5,
+                "children": [],
+                "caption": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks about the importance of preparation for a race.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks about the importance of preparation for a race.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_14.5_17.5",
+                    "tags": [
+                      "racing",
+                      "preparation",
+                      "motivation",
+                      "sports"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "yellow and black jacket",
+                          "expression": "serious",
+                          "location": "grassy field"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_14.5_17.5",
+                      "name": "man speaks about preparation for a race",
+                      "time": {
+                        "start": "14.5",
+                        "end": "17.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A man in a yellow and black jacket speaks about the importance of preparation for a race.",
+                      "summary": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks about the importance of preparation for a race.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks about the importance of preparation for a race.",
+                        "audio": "speaks",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 17.5,
+                "end_time": 20.5,
+                "children": [],
+                "caption": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks directly to the camera.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks directly to the camera.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_17.5_20.5",
+                    "tags": [
+                      "man",
+                      "jacket",
+                      "field",
+                      "sunlight",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "yellow and black jacket",
+                          "expression": "serious",
+                          "location": "grassy field"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_17.5_20.5",
+                      "name": "man speaks to camera",
+                      "time": {
+                        "start": "17.5",
+                        "end": "20.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks directly to the camera.",
+                      "summary": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks directly to the camera.",
+                      "implications": "Significant event in a person's life",
+                      "modalities": {
+                        "visual": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks directly to the camera.",
+                        "audio": "speaks",
+                        "speech": "born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 20.5,
+                "end_time": 27.5,
+                "children": [],
+                "caption": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks about the importance of preparation for a race.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks about the importance of preparation for a race.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_20.5_27.5",
+                    "tags": [
+                      "racing",
+                      "preparation",
+                      "motivation",
+                      "sports"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "yellow and black jacket",
+                          "expression": "serious",
+                          "location": "grassy field"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_20.5_27.5",
+                      "name": "man speaks about preparation for a race",
+                      "time": {
+                        "start": "20.5",
+                        "end": "27.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A man in a yellow and black jacket speaks about the importance of preparation for a race.",
+                      "summary": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks about the importance of preparation for a race.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A man in a yellow and black jacket stands in a grassy field, his serious expression illuminated by the sunlight as he speaks about the importance of preparation for a race.",
+                        "audio": "speaks",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a yellow and black jacket discusses the importance of preparation for a race, speaking seriously and directly to the camera.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "A man in a yellow and black jacket discusses the importance of preparation for a race, speaking seriously and directly to the camera.",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_14.5_27.5",
+                "tags": [
+                  "race",
+                  "preparation",
+                  "importance",
+                  "serious",
+                  "direct"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "color_jacket": "yellow and black",
+                      "expression": "serious"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_14.5_27.5",
+                  "name": "Importance of Preparation for a Race",
+                  "time": {
+                    "start": "14.5",
+                    "end": "27.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A man discusses the importance of preparation for a race.",
+                  "summary": "A man in a yellow and black jacket discusses the importance of preparation for a race, speaking seriously and directly to the camera.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "A man in a yellow and black jacket discusses the importance of preparation for a race, speaking seriously and directly to the camera.",
+                    "audio": "",
+                    "speech": "born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance"
+                  }
+                }
+              }
+            },
+            "summary": "A man in a yellow and black jacket stands in a grassy field, emphasizing the importance of preparation for a race."
+          },
+          {
+            "level": 2,
+            "start_time": 27.5,
+            "end_time": 35.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 27.5,
+                "end_time": 35.5,
+                "children": [],
+                "caption": "A man in a yellow and black jacket stands on a wet asphalt racetrack, his serious expression illuminated by the bright sunlight as he speaks about the challenges of racing in the rain.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A man in a yellow and black jacket stands on a wet asphalt racetrack, his serious expression illuminated by the bright sunlight as he speaks about the challenges of racing in the rain.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_27.5_35.5",
+                    "tags": [
+                      "racing",
+                      "rain",
+                      "asphalt",
+                      "challenges",
+                      "motorsport"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "yellow and black jacket",
+                          "expression": "serious",
+                          "location": "wet asphalt racetrack"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_27.5_35.5",
+                      "name": "man speaks about racing in the rain",
+                      "time": {
+                        "start": "27.5",
+                        "end": "35.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "motorsport news"
+                      ],
+                      "scene_topic": "A man speaks about the challenges of racing in the rain on a wet asphalt track.",
+                      "summary": "A man in a yellow and black jacket stands on a wet asphalt racetrack, his serious expression illuminated by the bright sunlight as he speaks about the challenges of racing in the rain.",
+                      "implications": "Major motorsport news event",
+                      "modalities": {
+                        "visual": "A man in a yellow and black jacket stands on a wet asphalt racetrack, his serious expression illuminated by the bright sunlight.",
+                        "audio": "speaks about the challenges of racing in the rain",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A racecar driver discusses the difficulties of competing in wet conditions.",
+            "postprocess": {
+              "event_id": 14,
+              "original_answer": "A racecar driver discusses the difficulties of competing in wet conditions.",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_27.5_35.5",
+                "tags": [
+                  "racing",
+                  "wet_conditions",
+                  "difficulties",
+                  "driver"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "racecar",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "racecar driver",
+                    "ref_object": "O001",
+                    "role": "driver",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_27.5_35.5",
+                  "name": "Discussion on racing in wet conditions",
+                  "time": {
+                    "start": "27.5",
+                    "end": "35.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A racecar driver discusses the difficulties of competing in wet conditions.",
+                  "summary": "A racecar driver discusses the difficulties of competing in wet conditions.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "A racecar driver discusses the difficulties of competing in wet conditions.",
+                    "audio": "",
+                    "speech": "born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance"
+                  }
+                }
+              }
+            },
+            "summary": "A man in a yellow and black jacket stands on a wet asphalt racetrack, his serious expression illuminated by the bright sunlight as he speaks about the challenges of racing in the rain."
+          },
+          {
+            "level": 2,
+            "start_time": 35.5,
+            "end_time": 43.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 35.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a man in a yellow racing suit to a wide shot of a racetrack, where a man in a yellow racing suit stands on the track, gazing at the camera with a serious expression.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "The video transitions from a close-up of a man in a yellow racing suit to a wide shot of a racetrack, where a man in a yellow racing suit stands on the track, gazing at the camera with a serious expression.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_35.5_38.5",
+                    "tags": [
+                      "racing",
+                      "driver",
+                      "track"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in yellow racing suit",
+                        "attributes": {
+                          "clothing": "yellow racing suit",
+                          "expression": "serious"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "racetrack",
+                        "attributes": {
+                          "location": "track"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in yellow racing suit",
+                        "ref_object": "O001",
+                        "role": "driver",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_35.5_38.5",
+                      "name": "Racing scene",
+                      "time": {
+                        "start": "35.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A man in a yellow racing suit stands on a racetrack, gazing at the camera with a serious expression.",
+                      "summary": "The video transitions from a close-up of a man in a yellow racing suit to a wide shot of a racetrack, where a man in a yellow racing suit stands on the track, gazing at the camera with a serious expression.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a man in a yellow racing suit to a wide shot of a racetrack, where a man in a yellow racing suit stands on the track, gazing at the camera with a serious expression.",
+                        "audio": "",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 43.5,
+                "children": [],
+                "caption": "A man stands on a bridge overlooking a winding road, lost in thought as a voice encourages viewers to \"get your gear\" for an upcoming off-road adventure.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "A man stands on a bridge overlooking a winding road, lost in thought as a voice encourages viewers to \"get your gear\" for an upcoming off-road adventure.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_38.5_43.5",
+                    "tags": [
+                      "offroad",
+                      "adventure",
+                      "gear",
+                      "bridge",
+                      "road"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "standing": "on a bridge",
+                          "lost_in_thought": "yes"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "bridge",
+                        "attributes": {
+                          "overlooking": "winding road"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "road",
+                        "attributes": {
+                          "winding": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_38.5_43.5",
+                      "name": "man on bridge",
+                      "time": {
+                        "start": "38.5",
+                        "end": "43.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "adventure"
+                      ],
+                      "scene_topic": "A man stands on a bridge overlooking a winding road, lost in thought as a voice encourages viewers to 'get your gear' for an upcoming off-road adventure.",
+                      "summary": "A man stands on a bridge overlooking a winding road, lost in thought as a voice encourages viewers to \"get your gear\" for an upcoming off-road adventure.",
+                      "implications": "Major adventure news event",
+                      "modalities": {
+                        "visual": "A man stands on a bridge overlooking a winding road, lost in thought.",
+                        "audio": "voice; 'get your gear'",
+                        "speech": "Jeffrey Earnhardt born to win has been driven to be first since childhood fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A serious-looking man in a yellow racing suit stands on a racetrack, while a voice encourages viewers to prepare for an upcoming off-road adventure.",
+            "postprocess": {
+              "event_id": 16,
+              "original_answer": "A serious-looking man in a yellow racing suit stands on a racetrack, while a voice encourages viewers to prepare for an upcoming off-road adventure.",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_35.5_43.5",
+                "tags": [
+                  "racing",
+                  "adventure",
+                  "offroad",
+                  "driver",
+                  "track"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "serious-looking man",
+                    "attributes": {
+                      "wearing": "yellow racing suit",
+                      "standing": "on a racetrack"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "voice",
+                    "ref_object": "O001",
+                    "role": "narrator",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_35.5_43.5",
+                  "name": "Preparation for off-road adventure",
+                  "time": {
+                    "start": "35.5",
+                    "end": "43.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "adventure news"
+                  ],
+                  "scene_topic": "A serious-looking man in a yellow racing suit stands on a racetrack, while a voice encourages viewers to prepare for an upcoming off-road adventure.",
+                  "summary": "A serious-looking man in a yellow racing suit stands on a racetrack, while a voice encourages viewers to prepare for an upcoming off-road adventure.",
+                  "implications": "Major adventure news event",
+                  "modalities": {
+                    "visual": "A serious-looking man in a yellow racing suit stands on a racetrack.",
+                    "audio": "voice; encouragement",
+                    "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a yellow racing suit is shown standing on a racetrack and a bridge overlooking a winding road, both with serious expressions, as a voice encourages viewers to prepare for an off-road adventure."
+          },
+          {
+            "level": 2,
+            "start_time": 43.5,
+            "end_time": 55.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 43.5,
+                "end_time": 46.5,
+                "children": [],
+                "caption": "A man in a black jacket stands on a wet asphalt parking lot, gazing at the rain-soaked race track in the distance, as a woman's voice encourages him to \"get it done.\"",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "A man in a black jacket stands on a wet asphalt parking lot, gazing at the rain-soaked race track in the distance, as a woman's voice encourages him to \"get it done.\"",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_43.5_46.5",
+                    "tags": [
+                      "man",
+                      "parking_lot",
+                      "rain",
+                      "encouragement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black_jacket",
+                          "location": "wet_asphalt_parking_lot",
+                          "gaze": "rain-soaked_race_track"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_43.5_46.5",
+                      "name": "man's encouragement",
+                      "time": {
+                        "start": "43.5",
+                        "end": "46.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_behavior",
+                        "encouragement"
+                      ],
+                      "scene_topic": "A man is encouraged to take action.",
+                      "summary": "A man in a black jacket stands on a wet asphalt parking lot, gazing at the rain-soaked race track in the distance, as a woman's voice encourages him to \"get it done.\"",
+                      "implications": "Major motivation and encouragement event",
+                      "modalities": {
+                        "visual": "A man in a black jacket stands on a wet asphalt parking lot, gazing at the rain-soaked race track in the distance.",
+                        "audio": "woman's voice; 'get it done'.",
+                        "speech": "born to win has been driven to be first since childhood fueled by his family's racing legacy and his own passion for performance"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 46.5,
+                "end_time": 51.5,
+                "children": [],
+                "caption": "A man in a black jacket stands on a wet asphalt parking lot, gazing at the rain-soaked trees and buildings beyond the fence, as a woman's voice encourages him to \"get out there and ride.\"",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "A man in a black jacket stands on a wet asphalt parking lot, gazing at the rain-soaked trees and buildings beyond the fence, as a woman's voice encourages him to \"get out there and ride.\"",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_46.5_51.5",
+                    "tags": [
+                      "weather",
+                      "parking_lot",
+                      "encouragement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black_jacket",
+                          "location": "wet_asphalt_parking_lot",
+                          "gaze": "rain-soaked_trees_and_buildings"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": "encouraging"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_46.5_51.5",
+                      "name": "encouragement_to_ride",
+                      "time": {
+                        "start": "46.5",
+                        "end": "51.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "weather"
+                      ],
+                      "scene_topic": "A man is encouraged to ride in the rain.",
+                      "summary": "A man in a black jacket stands on a wet asphalt parking lot, gazing at the rain-soaked trees and buildings beyond the fence, as a woman's voice encourages him to \"get out there and ride.\"",
+                      "implications": "Major weather event",
+                      "modalities": {
+                        "visual": "A man in a black jacket stands on a wet asphalt parking lot, gazing at the rain-soaked trees and buildings beyond the fence.",
+                        "audio": "woman's voice; 'get out there and ride'",
+                        "speech": "Jeffrey Earnhardt born to win has been driven to be first since childhood fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 51.5,
+                "end_time": 55.5,
+                "children": [],
+                "caption": "A man in a black jacket and yellow cap stands on a wet asphalt parking lot, looking at the camera with a serious expression as a woman's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "A man in a black jacket and yellow cap stands on a wet asphalt parking lot, looking at the camera with a serious expression as a woman's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_51.5_55.5",
+                    "tags": [
+                      "man",
+                      "parking_lot",
+                      "asphalt",
+                      "serious_expression",
+                      "background_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "expression": "serious",
+                          "clothing": "black_jacket",
+                          "headwear": "yellow_cap"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_51.5_55.5",
+                      "name": "",
+                      "time": {
+                        "start": "51.5",
+                        "end": "55.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_activity"
+                      ],
+                      "scene_topic": "A man stands on a parking lot, looking at the camera.",
+                      "summary": "A man in a black jacket and yellow cap stands on a wet asphalt parking lot, looking at the camera with a serious expression as a woman's voice can be heard in the background.",
+                      "implications": "Minor human activity event",
+                      "modalities": {
+                        "visual": "A man in a black jacket and yellow cap stands on a wet asphalt parking lot, looking at the camera with a serious expression as a woman's voice can be heard in the background.",
+                        "audio": "woman's voice",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man is motivated to take action, either to race or to ride, despite the rain and gloom in the background.",
+            "postprocess": {
+              "event_id": 19,
+              "original_answer": "A man is motivated to take action, either to race or to ride, despite the rain and gloom in the background.",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_43.5_55.5",
+                "tags": [
+                  "action",
+                  "motivation",
+                  "weather"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "actor": "man",
+                      "action": "take action",
+                      "weather": "rain and gloom"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_43.5_55.5",
+                  "name": "man takes action",
+                  "time": {
+                    "start": "43.5",
+                    "end": "55.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human behavior"
+                  ],
+                  "scene_topic": "A man takes action despite the rain and gloom.",
+                  "summary": "A man is motivated to take action, either to race or to ride, despite the rain and gloom in the background.",
+                  "implications": "Major human behavior event",
+                  "modalities": {
+                    "visual": "A man is motivated to take action, either to race or to ride, despite the rain and gloom in the background.",
+                    "audio": "",
+                    "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a black jacket stands on a wet parking lot, gazing at the rain-soaked race track or trees and buildings, as a woman's voice encourages him to \"get it done\" or \"get out there and ride\"."
+          }
+        ],
+        "caption": "A racecar driver discusses the challenges of competing in wet conditions, while a motivational voice encourages viewers to prepare for an off-road adventure.",
+        "postprocess": {
+          "event_id": 10,
+          "original_answer": "A racecar driver discusses the challenges of competing in wet conditions, while a motivational voice encourages viewers to prepare for an off-road adventure.",
+          "result": {
+            "video_id": "UldXRipkEno",
+            "event_id": "E_UldXRipkEno_14.5_55.5",
+            "tags": [
+              "racing",
+              "wet_conditions",
+              "motivation",
+              "offroad"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "racecar",
+                "attributes": {
+                  "type": "vehicle",
+                  "condition": "wet"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "voice",
+                "attributes": {
+                  "type": "audio",
+                  "role": "motivational"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "racecar driver",
+                "ref_object": "O001",
+                "role": "driver",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_UldXRipkEno_14.5_55.5",
+              "name": "Motivational Off-Road Adventure",
+              "time": {
+                "start": "14.5",
+                "end": "55.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "motivation",
+                "offroad"
+              ],
+              "scene_topic": "A racecar driver discusses the challenges of competing in wet conditions, while a motivational voice encourages viewers to prepare for an off-road adventure.",
+              "summary": "A racecar driver discusses the challenges of competing in wet conditions, while a motivational voice encourages viewers to prepare for an off-road adventure.",
+              "implications": "Major adventure, motivation news event",
+              "modalities": {
+                "visual": "A racecar driver discusses the challenges of competing in wet conditions, while a motivational voice encourages viewers to prepare for an off-road adventure.",
+                "audio": "Motivational voice; voice; engine noise.",
+                "speech": "Jeffrey Earnhardt has been driven to be first since childhood fueled by his family's racing legacy and his own passion for performance."
+              }
+            }
+          }
+        },
+        "summary": "A man in a yellow and black jacket emphasizes the importance of preparation for racing, whether on a dry or wet track, and encourages viewers to be ready for an off-road adventure. He stands in various locations, including a grassy field, a wet asphalt racetrack, and a bridge overlooking a winding road, as a voice urges him to \"get it done\" or \"get out there and ride\"."
+      },
+      {
+        "level": 1,
+        "start_time": 55.5,
+        "end_time": 98.531767,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 55.5,
+            "end_time": 69.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 55.5,
+                "end_time": 61.5,
+                "children": [],
+                "caption": "The man, now wearing a black \"KAWASAKI\" cap, stands by his orange and black ATV, preparing to ride as a woman's voice encourages him to \"get it done.\"",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "The man, now wearing a black \"KAWASAKI\" cap, stands by his orange and black ATV, preparing to ride as a woman's voice encourages him to \"get it done.\"",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_55.5_61.5",
+                    "tags": [
+                      "man",
+                      "atv",
+                      "encouragement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "wearing": "black KAWASAKI cap",
+                          "standing_by": "orange and black ATV"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "ATV",
+                        "attributes": {
+                          "color": "orange and black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_55.5_61.5",
+                      "name": "man prepares to ride ATV",
+                      "time": {
+                        "start": "55.5",
+                        "end": "61.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person activity"
+                      ],
+                      "scene_topic": "The man prepares to ride his ATV as a woman encourages him.",
+                      "summary": "The man, now wearing a black \"KAWASAKI\" cap, stands by his orange and black ATV, preparing to ride as a woman's voice encourages him to \"get it done.\"",
+                      "implications": "Major action event",
+                      "modalities": {
+                        "visual": "The man stands by his orange and black ATV, wearing a black 'KAWASAKI' cap.",
+                        "audio": "woman's voice; 'get it done'",
+                        "speech": "born to win has been driven to be first since childhood fueled by his family's racing legacy and his own passion for performance"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 61.5,
+                "end_time": 69.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a motorcycle helmet to a thrilling ride through a dusty field, showcasing the rider's skill as they navigate the terrain.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "The video transitions from a close-up of a motorcycle helmet to a thrilling ride through a dusty field, showcasing the rider's skill as they navigate the terrain.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_61.5_69.5",
+                    "tags": [
+                      "motorcycle",
+                      "riding",
+                      "terrain",
+                      "dusty_field",
+                      "thrilling"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "motorcycle_helmet",
+                        "attributes": {
+                          "type": "motorcycle helmet",
+                          "description": "close-up shot"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "motorcycle",
+                        "attributes": {
+                          "type": "motorcycle",
+                          "description": "thrilling ride"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "dusty_field",
+                        "attributes": {
+                          "type": "natural terrain",
+                          "description": "dusty field"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "rider",
+                        "ref_object": "O002",
+                        "role": "driver",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_61.5_69.5",
+                      "name": "thrilling_motorcycle_ride",
+                      "time": {
+                        "start": "61.5",
+                        "end": "69.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "action",
+                        "sports"
+                      ],
+                      "scene_topic": "The rider navigates a dusty field on a motorcycle.",
+                      "summary": "The video transitions from a close-up of a motorcycle helmet to a thrilling ride through a dusty field, showcasing the rider's skill as they navigate the terrain.",
+                      "implications": "Exciting and skillful driving",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a motorcycle helmet to a thrilling ride through a dusty field, showcasing the rider's skill as they navigate the terrain.",
+                        "audio": "",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A thrill-seeker wears a black \"KAWASAKI\" cap and rides an orange and black ATV through a dusty field, showcasing their skill and agility as they navigate the terrain.",
+            "postprocess": {
+              "event_id": 23,
+              "original_answer": "A thrill-seeker wears a black \"KAWASAKI\" cap and rides an orange and black ATV through a dusty field, showcasing their skill and agility as they navigate the terrain.",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_55.5_69.5",
+                "tags": [
+                  "thrill_seeker",
+                  "atv",
+                  "dusty_field"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "KAWASAKI cap",
+                    "attributes": {
+                      "color": "black",
+                      "brand": "KAWASAKI"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "orange and black ATV",
+                    "attributes": {
+                      "color": "orange and black",
+                      "type": "ATV"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "thrill-seeker",
+                    "ref_object": "O002",
+                    "role": "rider",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_55.5_69.5",
+                  "name": "ATV ride",
+                  "time": {
+                    "start": "55.5",
+                    "end": "69.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "action",
+                    "sports"
+                  ],
+                  "scene_topic": "A thrill-seeker rides an ATV through a dusty field, showcasing their skill and agility.",
+                  "summary": "A thrill-seeker wears a black \"KAWASAKI\" cap and rides an orange and black ATV through a dusty field, showcasing their skill and agility as they navigate the terrain.",
+                  "implications": "Exciting and skillful action",
+                  "modalities": {
+                    "visual": "A thrill-seeker wears a black 'KAWASAKI' cap and rides an orange and black ATV through a dusty field, showcasing their skill and agility as they navigate the terrain.",
+                    "audio": "",
+                    "speech": "Jeffrey Earnhardt born to win has been driven to be first since childhood fueled by his family's racing legacy and his own passion for performance."
+                  }
+                }
+              }
+            },
+            "summary": "A man, wearing a black \"KAWASAKI\" cap, prepares to ride his orange and black ATV as a woman's voice urges him to \"get it done\". The video then cuts to a thrilling ride through a dusty field, showcasing the rider's skills as they navigate the terrain."
+          },
+          {
+            "level": 2,
+            "start_time": 69.5,
+            "end_time": 77.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 69.5,
+                "end_time": 75.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a person's hands adjusting a camera lens to a first-person perspective of a dirt bike rider navigating a winding dirt road, the roar of the engine and the rider's voice narrating the experience.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "The video transitions from a close-up of a person's hands adjusting a camera lens to a first-person perspective of a dirt bike rider navigating a winding dirt road, the roar of the engine and the rider's voice narrating the experience.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_69.5_75.5",
+                    "tags": [
+                      "camera",
+                      "dirt_bike",
+                      "narration",
+                      "off_road",
+                      "perspective"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "camera",
+                        "attributes": {
+                          "camera_type": "DSLR",
+                          "lens": "adjusting"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "dirt_bike",
+                        "attributes": {
+                          "make": "unknown",
+                          "model": "unknown"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "rider",
+                        "ref_object": "O002",
+                        "role": "driver",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_69.5_75.5",
+                      "name": "dirt_bike_riding",
+                      "time": {
+                        "start": "69.5",
+                        "end": "75.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "action",
+                        "transportation"
+                      ],
+                      "scene_topic": "A person rides a dirt bike on a winding dirt road.",
+                      "summary": "The video transitions from a close-up of a person's hands adjusting a camera lens to a first-person perspective of a dirt bike rider navigating a winding dirt road, the roar of the engine and the rider's voice narrating the experience.",
+                      "implications": "Exciting and thrilling experience",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a person's hands adjusting a camera lens to a first-person perspective of a dirt bike rider navigating a winding dirt road.",
+                        "audio": "roar of the engine; rider's voice",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 75.5,
+                "end_time": 77.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a person's hands gripping a steering wheel to a wider shot of a person riding a dirt bike, the engine roaring as they navigate a dirt track.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "The video transitions from a close-up of a person's hands gripping a steering wheel to a wider shot of a person riding a dirt bike, the engine roaring as they navigate a dirt track.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_75.5_77.5",
+                    "tags": [
+                      "action",
+                      "motorcycle",
+                      "dirt_track"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "steering wheel",
+                        "attributes": {
+                          "type": "vehicle part",
+                          "material": "plastic"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "dirt bike",
+                        "attributes": {
+                          "type": "vehicle",
+                          "engine_type": "gasoline"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "rider",
+                        "ref_object": "O002",
+                        "role": "operator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_75.5_77.5",
+                      "name": "dirt bike ride",
+                      "time": {
+                        "start": "75.5",
+                        "end": "77.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "action scene"
+                      ],
+                      "scene_topic": "A person rides a dirt bike on a dirt track.",
+                      "summary": "The video transitions from a close-up of a person's hands gripping a steering wheel to a wider shot of a person riding a dirt bike, the engine roaring as they navigate a dirt track.",
+                      "implications": "Exciting action scene",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a person's hands gripping a steering wheel to a wider shot of a person riding a dirt bike, the engine roaring as they navigate a dirt track.",
+                        "audio": "engine roaring",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video switches between a close-up of a person adjusting a camera lens and a first-person perspective of a dirt bike rider navigating a winding dirt road, with the rider's voice narrating the experience. The video then cuts to a close-up of a person gripping a steering wheel and then to a wider shot of a person riding a dirt bike, with the engine roaring as they navigate a dirt track.",
+            "postprocess": {
+              "event_id": 27,
+              "original_answer": "The video switches between a close-up of a person adjusting a camera lens and a first-person perspective of a dirt bike rider navigating a winding dirt road, with the rider's voice narrating the experience. The video then cuts to a close-up of a person gripping a steering wheel and then to a wider shot of a person riding a dirt bike, with the engine roaring as they navigate a dirt track.",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_69.5_77.5",
+                "tags": [
+                  "action",
+                  "adventure",
+                  "motorcycle"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "camera",
+                    "attributes": {
+                      "type": "digital",
+                      "lens": "adjusting"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "dirt bike",
+                    "attributes": {
+                      "type": "motorcycle",
+                      "engine": "roaring"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "steering wheel",
+                    "attributes": {
+                      "type": "vehicle",
+                      "gripped": "firmly"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "dirt bike rider",
+                    "ref_object": "O002",
+                    "role": "driver",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_69.5_77.5",
+                  "name": "dirt bike ride",
+                  "time": {
+                    "start": "69.5",
+                    "end": "77.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "action",
+                    "adventure"
+                  ],
+                  "scene_topic": "A person rides a dirt bike on a winding dirt road, with the engine roaring.",
+                  "summary": "The video switches between a close-up of a person adjusting a camera lens and a first-person perspective of a dirt bike rider navigating a winding dirt road, with the rider's voice narrating the experience. The video then cuts to a close-up of a person gripping a steering wheel and then to a wider shot of a person riding a dirt bike, with the engine roaring as they navigate a dirt track.",
+                  "implications": "Exciting and thrilling experience",
+                  "modalities": {
+                    "visual": "The video switches between a close-up of a person adjusting a camera lens, a first-person perspective of a dirt bike rider navigating a winding dirt road, a close-up of a person gripping a steering wheel, and a wider shot of a person riding a dirt bike.",
+                    "audio": "Rider's voice; engine roaring.",
+                    "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                  }
+                }
+              }
+            },
+            "summary": "The video features a dirt bike rider navigating winding dirt roads and tracks, with the sound of the engine and the rider's voice providing an immersive experience. The camera transitions between close-ups of the rider's hands and wider shots of the bike in action, capturing the thrill of the ride."
+          },
+          {
+            "level": 2,
+            "start_time": 77.5,
+            "end_time": 90.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 77.5,
+                "end_time": 83.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a blue and black all-terrain vehicle speeding through a dusty field to a man in a yellow jacket standing beside it, as a woman's voice encourages viewers to \"get your KONTENDERS\" and \"get your KONTENDERS\" can be heard.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "The video transitions from a close-up of a blue and black all-terrain vehicle speeding through a dusty field to a man in a yellow jacket standing beside it, as a woman's voice encourages viewers to \"get your KONTENDERS\" and \"get your KONTENDERS\" can be heard.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_77.5_83.5",
+                    "tags": [
+                      "terrain_vehicle",
+                      "dusty_field",
+                      "man",
+                      "woman",
+                      "voiceover"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "all-terrain vehicle",
+                        "attributes": {
+                          "color": "blue and black",
+                          "type": "terrain vehicle"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man in yellow jacket",
+                        "attributes": {
+                          "clothing": "yellow jacket",
+                          "position": "standing beside the vehicle"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "voiceover",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_77.5_83.5",
+                      "name": "Transition scene",
+                      "time": {
+                        "start": "77.5",
+                        "end": "83.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "scene transition"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a blue and black all-terrain vehicle speeding through a dusty field to a man in a yellow jacket standing beside it.",
+                      "summary": "The video transitions from a close-up of a blue and black all-terrain vehicle speeding through a dusty field to a man in a yellow jacket standing beside it, as a woman's voice encourages viewers to \"get your KONTENDERS\" and \"get your KONTENDERS\" can be heard.",
+                      "implications": "Major scene transition event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a blue and black all-terrain vehicle speeding through a dusty field to a man in a yellow jacket standing beside it.",
+                        "audio": "Woman's voice; 'get your KONTENDERS'; 'get your KONTENDERS'.",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 83.5,
+                "end_time": 85.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a man in a yellow racing suit to a wider shot of him standing on a dirt track, as a man's voice encourages viewers to \"get your gear\" for an upcoming event.",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "The video transitions from a close-up of a man in a yellow racing suit to a wider shot of him standing on a dirt track, as a man's voice encourages viewers to \"get your gear\" for an upcoming event.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_83.5_85.5",
+                    "tags": [
+                      "racing",
+                      "event",
+                      "gear"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in yellow racing suit",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man standing on dirt track",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "voice encouraging viewers",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in yellow racing suit",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man standing on dirt track",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "voice encouraging viewers",
+                        "ref_object": "O003",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_83.5_85.5",
+                      "name": "video transition",
+                      "time": {
+                        "start": "83.5",
+                        "end": "85.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "racing"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a man in a yellow racing suit to a wider shot of him standing on a dirt track, as a man's voice encourages viewers to 'get your gear' for an upcoming event.",
+                      "summary": "The video transitions from a close-up of a man in a yellow racing suit to a wider shot of him standing on a dirt track, as a man's voice encourages viewers to \"get your gear\" for an upcoming event.",
+                      "implications": "Major event, racing news",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a man in a yellow racing suit to a wider shot of him standing on a dirt track, as a man's voice encourages viewers to get your gear for an upcoming event.",
+                        "audio": "man's voice; 'get your gear'",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 85.5,
+                "end_time": 90.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a man in a yellow and black racing suit to a group of people in a field, then to a man in a yellow and black racing suit standing in a field, and finally to a group of people in a field, all while a man's voice can be heard talking about the importance of teamwork in racing.",
+                "postprocess": {
+                  "event_id": 32,
+                  "original_answer": "The video transitions from a close-up of a man in a yellow and black racing suit to a group of people in a field, then to a man in a yellow and black racing suit standing in a field, and finally to a group of people in a field, all while a man's voice can be heard talking about the importance of teamwork in racing.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_85.5_90.5",
+                    "tags": [
+                      "racing",
+                      "teamwork",
+                      "motivation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in yellow and black racing suit",
+                        "attributes": {
+                          "clothing": "yellow and black racing suit",
+                          "location": "close-up"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "group of people in a field",
+                        "attributes": {
+                          "location": "field",
+                          "number": "group"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in yellow and black racing suit standing in a field",
+                        "attributes": {
+                          "clothing": "yellow and black racing suit",
+                          "location": "field"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_85.5_90.5",
+                      "name": "The importance of teamwork in racing",
+                      "time": {
+                        "start": "85.5",
+                        "end": "90.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A man talks about the importance of teamwork in racing while showing different scenes of people in a field.",
+                      "summary": "The video transitions from a close-up of a man in a yellow and black racing suit to a group of people in a field, then to a man in a yellow and black racing suit standing in a field, and finally to a group of people in a field, all while a man's voice can be heard talking about the importance of teamwork in racing.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a man in a yellow and black racing suit to a group of people in a field, then to a man in a yellow and black racing suit standing in a field, and finally to a group of people in a field.",
+                        "audio": "man's voice talking about the importance of teamwork in racing.",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork in racing. The video transitions between close-up shots of a blue and black all-terrain vehicle, a man in a yellow jacket, and a man in a yellow racing suit, with the voiceover encouraging viewers to \"get your KONTENDERS\" and \"get your gear\" for an upcoming event. The video also features a group of people in a field and a man in a yellow and black racing suit standing in a",
+            "postprocess": {
+              "event_id": 30,
+              "original_answer": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork in racing. The video transitions between close-up shots of a blue and black all-terrain vehicle, a man in a yellow jacket, and a man in a yellow racing suit, with the voiceover encouraging viewers to \"get your KONTENDERS\" and \"get your gear\" for an upcoming event. The video also features a group of people in a field and a man in a yellow and black racing suit standing in a",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_77.5_90.5",
+                "tags": [
+                  "racing",
+                  "teamwork",
+                  "kondenders"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "All-terrain vehicle",
+                    "attributes": {
+                      "color": "blue and black",
+                      "type": "vehicle"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Man in yellow jacket",
+                    "attributes": {
+                      "clothing": "yellow jacket"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Man in yellow racing suit",
+                    "attributes": {
+                      "clothing": "yellow racing suit"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Group of people in a field",
+                    "attributes": {
+                      "location": "field"
+                    }
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "Man in yellow and black racing suit",
+                    "attributes": {
+                      "clothing": "yellow and black racing suit"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Voiceover",
+                    "ref_object": "",
+                    "role": "narrator",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_77.5_90.5",
+                  "name": "KONTENDERS brand showcase",
+                  "time": {
+                    "start": "77.5",
+                    "end": "90.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "racing"
+                  ],
+                  "scene_topic": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork in racing.",
+                  "summary": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork in racing. The video transitions between close-up shots of a blue and black all-terrain vehicle, a man in a yellow jacket, and a man in a yellow racing suit, with the voiceover encouraging viewers to \"get your KONTENDERS\" and \"get your gear\" for an upcoming event. The video also features a group of people in a field and a man in a yellow and black racing suit standing in a",
+                  "implications": "Major racing and sports event",
+                  "modalities": {
+                    "visual": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork in racing. The video transitions between close-up shots of a blue and black all-terrain vehicle, a man in a yellow jacket, and a man in a yellow racing suit.",
+                    "audio": "voiceover; 'get your KONTENDERS'; 'get your gear'",
+                    "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                  }
+                }
+              }
+            },
+            "summary": "The video showcases a man in a yellow racing suit preparing for an event, encouraging viewers to \"get their gear\" and highlighting the importance of teamwork in racing. The footage transitions between close-ups of the man and wider shots of a group of people in a field, emphasizing the theme of racing and teamwork."
+          },
+          {
+            "level": 2,
+            "start_time": 90.5,
+            "end_time": 98.531767,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 90.5,
+                "end_time": 94.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a black car to a wider shot of a group of people standing in front of a building, as a man's voice continues to speak about the importance of teamwork in racing.",
+                "postprocess": {
+                  "event_id": 33,
+                  "original_answer": "The video transitions from a close-up of a black car to a wider shot of a group of people standing in front of a building, as a man's voice continues to speak about the importance of teamwork in racing.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_90.5_94.5",
+                    "tags": [
+                      "racing",
+                      "teamwork",
+                      "car",
+                      "people",
+                      "building"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black car",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "group of people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "building",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_90.5_94.5",
+                      "name": "The video transitions from a close-up to a wider shot",
+                      "time": {
+                        "start": "90.5",
+                        "end": "94.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "racing news"
+                      ],
+                      "scene_topic": "The Bank of Korea governor announces that the base rate is kept on hold.",
+                      "summary": "The video transitions from a close-up of a black car to a wider shot of a group of people standing in front of a building, as a man's voice continues to speak about the importance of teamwork in racing.",
+                      "implications": "Major racing news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a black car to a wider shot of a group of people standing in front of a building.",
+                        "audio": "a man's voice",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 94.5,
+                "end_time": 96.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a black and yellow helmet to a wider shot of a group of people in a natural setting, their faces illuminated by the sunlight, as a man's voice begins to speak.",
+                "postprocess": {
+                  "event_id": 35,
+                  "original_answer": "The video transitions from a close-up of a black and yellow helmet to a wider shot of a group of people in a natural setting, their faces illuminated by the sunlight, as a man's voice begins to speak.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_94.5_96.5",
+                    "tags": [
+                      "video_transition",
+                      "natural_setting",
+                      "group_people",
+                      "sunlight",
+                      "man_s_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black_and_yellow_helmet",
+                        "attributes": {
+                          "object_type": "headwear",
+                          "color": "black_and_yellow"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "group_of_people",
+                        "attributes": {
+                          "group_size": "multiple",
+                          "setting": "natural"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {
+                          "role": "speaker",
+                          "voice_type": "male"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_94.5_96.5",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "94.5",
+                        "end": "96.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a black and yellow helmet to a wider shot of a group of people in a natural setting, their faces illuminated by the sunlight, as a man's voice begins to speak.",
+                      "summary": "The video transitions from a close-up of a black and yellow helmet to a wider shot of a group of people in a natural setting, their faces illuminated by the sunlight, as a man's voice begins to speak.",
+                      "implications": "Major video content event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a black and yellow helmet to a wider shot of a group of people in a natural setting, their faces illuminated by the sunlight.",
+                        "audio": "a man's voice",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 96.5,
+                "end_time": 98.531767,
+                "children": [],
+                "caption": "The video transitions from a close-up of the \"KONTENDER\" logo to a wider shot, revealing a group of people gathered around a table, their faces illuminated by the glow of their phones as they engage in a lively discussion.",
+                "postprocess": {
+                  "event_id": 36,
+                  "original_answer": "The video transitions from a close-up of the \"KONTENDER\" logo to a wider shot, revealing a group of people gathered around a table, their faces illuminated by the glow of their phones as they engage in a lively discussion.",
+                  "result": {
+                    "video_id": "UldXRipkEno",
+                    "event_id": "E_UldXRipkEno_96.5_98.53",
+                    "tags": [
+                      "video_transition",
+                      "logo",
+                      "group_discussion"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "KONTENDER logo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "group of people",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "phones",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O002",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_UldXRipkEno_96.5_98.53",
+                      "name": "Video Transition",
+                      "time": {
+                        "start": "96.5",
+                        "end": "98.53"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the KONTENDER logo to a wider shot, revealing a group of people gathered around a table, their faces illuminated by the glow of their phones as they engage in a lively discussion.",
+                      "summary": "The video transitions from a close-up of the \"KONTENDER\" logo to a wider shot, revealing a group of people gathered around a table, their faces illuminated by the glow of their phones as they engage in a lively discussion.",
+                      "implications": "Major video content event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the 'KONTENDER' logo to a wider shot, revealing a group of people gathered around a table, their faces illuminated by the glow of their phones as they engage in a lively discussion.",
+                        "audio": "",
+                        "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video transitions between different scenes, showing people working together, wearing helmets, and gathered around a table, highlighting the importance of teamwork and collaboration.",
+            "postprocess": {
+              "event_id": 34,
+              "original_answer": "The video transitions between different scenes, showing people working together, wearing helmets, and gathered around a table, highlighting the importance of teamwork and collaboration.",
+              "result": {
+                "video_id": "UldXRipkEno",
+                "event_id": "E_UldXRipkEno_90.5_98.53",
+                "tags": [
+                  "teamwork",
+                  "collaboration",
+                  "team_building",
+                  "workplace"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "people",
+                    "attributes": {
+                      "number": "multiple",
+                      "activity": "working",
+                      "wearing": "helmets"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "table",
+                    "attributes": {
+                      "type": "workplace",
+                      "purpose": "meeting"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "people",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_UldXRipkEno_90.5_98.53",
+                  "name": "teamwork and collaboration",
+                  "time": {
+                    "start": "90.5",
+                    "end": "98.53"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "teamwork news"
+                  ],
+                  "scene_topic": "The video shows people working together, highlighting the importance of teamwork and collaboration.",
+                  "summary": "The video transitions between different scenes, showing people working together, wearing helmets, and gathered around a table, highlighting the importance of teamwork and collaboration.",
+                  "implications": "Major workplace, team building news event",
+                  "modalities": {
+                    "visual": "The video transitions between different scenes, showing people working together, wearing helmets, and gathered around a table, highlighting the importance of teamwork and collaboration.",
+                    "audio": "",
+                    "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+                  }
+                }
+              }
+            },
+            "summary": "The video showcases the importance of teamwork in racing, transitioning between shots of people in various settings, including a group standing in front of a building, a group in a natural setting, and a group gathered around a table. The visuals are accompanied by a man's voiceover, highlighting the value of collaboration and teamwork."
+          }
+        ],
+        "caption": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork and collaboration in racing. It features a thrill-seeker riding an ATV through a dusty field, a dirt bike rider navigating a winding dirt road, and a group of people working together in a field. The video also includes close-up shots of a person adjusting a camera lens and a person gripping a steering wheel. The voiceover encourages viewers to \"get your KONTENDER",
+        "postprocess": {
+          "event_id": 24,
+          "original_answer": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork and collaboration in racing. It features a thrill-seeker riding an ATV through a dusty field, a dirt bike rider navigating a winding dirt road, and a group of people working together in a field. The video also includes close-up shots of a person adjusting a camera lens and a person gripping a steering wheel. The voiceover encourages viewers to \"get your KONTENDER",
+          "result": {
+            "video_id": "UldXRipkEno",
+            "event_id": "E_UldXRipkEno_55.5_98.53",
+            "tags": [
+              "racing",
+              "teamwork",
+              "collaboration",
+              "adventure",
+              "motorsports"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "ATV",
+                "attributes": {
+                  "type": "all-terrain vehicle",
+                  "features": "dusty field"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "dirt bike",
+                "attributes": {
+                  "type": "dirt bike",
+                  "features": "winding dirt road"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "camera",
+                "attributes": {
+                  "type": "camera",
+                  "features": "close-up shot"
+                }
+              },
+              {
+                "object_id": "O004",
+                "name": "steering wheel",
+                "attributes": {
+                  "type": "steering wheel",
+                  "features": "close-up shot"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "thrill-seeker",
+                "ref_object": "O001",
+                "role": "rider",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "dirt bike rider",
+                "ref_object": "O002",
+                "role": "rider",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A003",
+                "name": "camera operator",
+                "ref_object": "O003",
+                "role": "operator",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A004",
+                "name": "driver",
+                "ref_object": "O004",
+                "role": "operator",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_UldXRipkEno_55.5_98.53",
+              "name": "KONTENDERS brand showcase",
+              "time": {
+                "start": "55.5",
+                "end": "98.53"
+              },
+              "actors": [
+                "A001",
+                "A002",
+                "A003",
+                "A004"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "adventure",
+                "motorsports"
+              ],
+              "scene_topic": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork and collaboration in racing.",
+              "summary": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork and collaboration in racing. It features a thrill-seeker riding an ATV through a dusty field, a dirt bike rider navigating a winding dirt road, and a group of people working together in a field. The video also includes close-up shots of a person adjusting a camera lens and a person gripping a steering wheel. The voiceover encourages viewers to \"get your KONTENDER",
+              "implications": "Major adventure, motorsports news event",
+              "modalities": {
+                "visual": "The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork and collaboration in racing. It features a thrill-seeker riding an ATV through a dusty field, a dirt bike rider navigating a winding dirt road, and a group of people working together in a field. The video also includes close-up shots of a person adjusting a camera lens and a person gripping a steering wheel.",
+                "audio": "",
+                "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+              }
+            }
+          }
+        },
+        "summary": "The video showcases a thrilling ride through a dusty field on an ATV and dirt bike, highlighting the rider's skills and the importance of teamwork in racing. The footage transitions between close-ups of the riders and wider shots of the bikes in action, emphasizing the value of collaboration and teamwork."
+      }
+    ],
+    "caption": "Two race car drivers prepare for an upcoming race on a wet track, while a motivational voice encourages viewers to prepare for an off-road adventure. The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork and collaboration in racing.",
+    "postprocess": {
+      "event_id": 3,
+      "original_answer": "Two race car drivers prepare for an upcoming race on a wet track, while a motivational voice encourages viewers to prepare for an off-road adventure. The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork and collaboration in racing.",
+      "result": {
+        "video_id": "UldXRipkEno",
+        "event_id": "E_UldXRipkEno_0_98.53",
+        "tags": [
+          "racing",
+          "motivation",
+          "teamwork",
+          "collaboration",
+          "kondenders"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "race car drivers",
+            "attributes": {
+              "number": "2",
+              "role": "drivers"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "wet track",
+            "attributes": {
+              "condition": "wet"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "motivational voice",
+            "attributes": {
+              "role": "motivator"
+            }
+          },
+          {
+            "object_id": "O004",
+            "name": "KONTENDERS brand",
+            "attributes": {
+              "product": "racing products"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "race car drivers",
+            "ref_object": "O001",
+            "role": "driver",
+            "entity": "human"
+          }
+        ],
+        "event": {
+          "event_id": "E_UldXRipkEno_0_98.53",
+          "name": "Pre-race preparation",
+          "time": {
+            "start": "0",
+            "end": "98.53"
+          },
+          "actors": [
+            "A001"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003",
+            "O004"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "sports news"
+          ],
+          "scene_topic": "Two race car drivers prepare for an upcoming race on a wet track, while a motivational voice encourages viewers to prepare for an off-road adventure.",
+          "summary": "Two race car drivers prepare for an upcoming race on a wet track, while a motivational voice encourages viewers to prepare for an off-road adventure. The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork and collaboration in racing.",
+          "implications": "Major sports news event",
+          "modalities": {
+            "visual": "Two race car drivers prepare for an upcoming race on a wet track, while a motivational voice encourages viewers to prepare for an off-road adventure. The video showcases the KONTENDERS brand and its products, highlighting the importance of teamwork and collaboration in racing.",
+            "audio": "motivational voice; racing sounds",
+            "speech": "Jeffrey Earnhardt, born to win, has been driven to be first since childhood, fueled by his family's racing legacy and his own passion for performance."
+          }
+        }
+      }
+    },
+    "summary": "A racing enthusiast shares his passion for the sport, crediting his family and fans for their support, while emphasizing the importance of preparation for racing on both dry and wet tracks. The video showcases a thrilling ride through a dusty field on an ATV and dirt bike, highlighting the rider's skills and the value of teamwork in racing."
+  }
+}

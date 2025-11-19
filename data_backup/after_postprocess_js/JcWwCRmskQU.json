@@ -1,0 +1,2080 @@
+{
+  "video_id": "JcWwCRmskQU",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 88.054633,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 34.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 15.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "In a soccer field, a group of young boys in matching uniforms practice their drills, their movements precise and coordinated as they run, pass, and kick the ball under the guidance of a coach.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "In a soccer field, a group of young boys in matching uniforms practice their drills, their movements precise and coordinated as they run, pass, and kick the ball under the guidance of a coach.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_0_3.5",
+                    "tags": [
+                      "soccer",
+                      "youth",
+                      "practice",
+                      "drills",
+                      "coach"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer Field",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Young Boys",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Coach",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "Ball",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Coach",
+                        "ref_object": "O003",
+                        "role": "Guide",
+                        "entity": "Person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "Young Boys",
+                        "ref_object": "O002",
+                        "role": "Players",
+                        "entity": "Group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_0_3.5",
+                      "name": "Soccer Practice",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A group of young boys practice soccer drills under the guidance of a coach.",
+                      "summary": "In a soccer field, a group of young boys in matching uniforms practice their drills, their movements precise and coordinated as they run, pass, and kick the ball under the guidance of a coach.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "In a soccer field, a group of young boys in matching uniforms practice their drills, their movements precise and coordinated as they run, pass, and kick the ball under the guidance of a coach.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 5.5,
+                "children": [],
+                "caption": "The soccer team, dressed in blue and white, practices their drills on the well-maintained field, their movements synchronized as they pass and shoot the ball.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The soccer team, dressed in blue and white, practices their drills on the well-maintained field, their movements synchronized as they pass and shoot the ball.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_3.5_5.5",
+                    "tags": [
+                      "soccer",
+                      "practice",
+                      "drills",
+                      "field",
+                      "team"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer Team",
+                        "attributes": {
+                          "color": "blue and white",
+                          "field_condition": "well-maintained"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Soccer Ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Soccer Field",
+                        "attributes": {
+                          "condition": "well-maintained"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Soccer Team",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_3.5_5.5",
+                      "name": "Soccer Team Practice",
+                      "time": {
+                        "start": "3.5",
+                        "end": "5.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer team practices their drills on the well-maintained field.",
+                      "summary": "The soccer team, dressed in blue and white, practices their drills on the well-maintained field, their movements synchronized as they pass and shoot the ball.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer team, dressed in blue and white, practices their drills on the well-maintained field, their movements synchronized as they pass and shoot the ball.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 5.5,
+                "end_time": 7.5,
+                "children": [],
+                "caption": "In a spacious indoor soccer field, a group of young boys in matching uniforms are actively engaged in a practice session, dribbling, passing, and kicking the ball with enthusiasm and focus.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "In a spacious indoor soccer field, a group of young boys in matching uniforms are actively engaged in a practice session, dribbling, passing, and kicking the ball with enthusiasm and focus.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_5.5_7.5",
+                    "tags": [
+                      "indoor_soccer",
+                      "practice",
+                      "youth",
+                      "sports"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "indoor_soccer_field",
+                        "attributes": {
+                          "type": "indoor",
+                          "size": "spacious"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "soccer_ball",
+                        "attributes": {
+                          "type": "ball"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "young_boys",
+                        "attributes": {
+                          "age_group": "youth",
+                          "uniform": "matching"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "young_boys",
+                        "ref_object": "O003",
+                        "role": "players",
+                        "entity": "group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_5.5_7.5",
+                      "name": "indoor_soccer_practice",
+                      "time": {
+                        "start": "5.5",
+                        "end": "7.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports"
+                      ],
+                      "scene_topic": "A group of young boys are actively engaged in an indoor soccer practice session.",
+                      "summary": "In a spacious indoor soccer field, a group of young boys in matching uniforms are actively engaged in a practice session, dribbling, passing, and kicking the ball with enthusiasm and focus.",
+                      "implications": "Major sports event",
+                      "modalities": {
+                        "visual": "In a spacious indoor soccer field, a group of young boys in matching uniforms are actively engaged in a practice session, dribbling, passing, and kicking the ball with enthusiasm and focus.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "The soccer team, dressed in blue and white, practices their drills on the well-maintained field, their movements in sync as they dribble, pass, and kick the ball.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The soccer team, dressed in blue and white, practices their drills on the well-maintained field, their movements in sync as they dribble, pass, and kick the ball.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_7.5_12.5",
+                    "tags": [
+                      "soccer",
+                      "practice",
+                      "drills",
+                      "field",
+                      "team"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer field",
+                        "attributes": {
+                          "type": "grass",
+                          "condition": "well-maintained"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Soccer ball",
+                        "attributes": {
+                          "type": "leather",
+                          "color": "brown"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Soccer team",
+                        "attributes": {
+                          "uniform": "blue and white",
+                          "formation": "synced movements"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Soccer team",
+                        "ref_object": "O003",
+                        "role": "player",
+                        "entity": "team"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_7.5_12.5",
+                      "name": "Soccer team practice",
+                      "time": {
+                        "start": "7.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The soccer team practices their drills on the well-maintained field.",
+                      "summary": "The soccer team, dressed in blue and white, practices their drills on the well-maintained field, their movements in sync as they dribble, pass, and kick the ball.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The soccer team, dressed in blue and white, practices their drills on the well-maintained field, their movements in sync as they dribble, pass, and kick the ball.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 15.5,
+                "children": [],
+                "caption": "A young soccer player, wearing a white jersey with the number 10, practices dribbling and shooting on a grassy field, the sounds of the game echoing around him.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A young soccer player, wearing a white jersey with the number 10, practices dribbling and shooting on a grassy field, the sounds of the game echoing around him.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_12.5_15.5",
+                    "tags": [
+                      "soccer",
+                      "practice",
+                      "dribbling",
+                      "shooting",
+                      "grass"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "jersey_color": "white",
+                          "jersey_number": "10"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Grassy field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Young soccer player",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_12.5_15.5",
+                      "name": "Soccer practice",
+                      "time": {
+                        "start": "12.5",
+                        "end": "15.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player practices dribbling and shooting on a grassy field.",
+                      "summary": "A young soccer player, wearing a white jersey with the number 10, practices dribbling and shooting on a grassy field, the sounds of the game echoing around him.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A young soccer player, wearing a white jersey with the number 10, practices dribbling and shooting on a grassy field.",
+                        "audio": "game sounds.",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of young boys practice soccer drills under the guidance of a coach on a well-maintained field, their movements precise and coordinated. The team, dressed in blue and white, practices their drills with enthusiasm and focus. A young player practices dribbling and shooting on a grassy field, the sounds of the game echoing around him.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A group of young boys practice soccer drills under the guidance of a coach on a well-maintained field, their movements precise and coordinated. The team, dressed in blue and white, practices their drills with enthusiasm and focus. A young player practices dribbling and shooting on a grassy field, the sounds of the game echoing around him.",
+              "result": {
+                "video_id": "JcWwCRmskQU",
+                "event_id": "E_JcWwCRmskQU_0_15.5",
+                "tags": [
+                  "soccer",
+                  "youth",
+                  "practice",
+                  "drills",
+                  "coach"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Soccer field",
+                    "attributes": {
+                      "type": "grass",
+                      "condition": "well-maintained"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Soccer ball",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Coach",
+                    "attributes": {
+                      "role": "trainer"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Young player",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Coach",
+                    "ref_object": "O003",
+                    "role": "trainer",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Young player",
+                    "ref_object": "O004",
+                    "role": "player",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_JcWwCRmskQU_0_15.5",
+                  "name": "Soccer practice",
+                  "time": {
+                    "start": "0",
+                    "end": "15.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A group of young boys practice soccer drills under the guidance of a coach on a well-maintained field, their movements precise and coordinated.",
+                  "summary": "A group of young boys practice soccer drills under the guidance of a coach on a well-maintained field, their movements precise and coordinated. The team, dressed in blue and white, practices their drills with enthusiasm and focus. A young player practices dribbling and shooting on a grassy field, the sounds of the game echoing around him.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "A group of young boys practice soccer drills under the guidance of a coach on a well-maintained field, their movements precise and coordinated. The team, dressed in blue and white, practices their drills with enthusiasm and focus. A young player practices dribbling and shooting on a grassy field, the sounds of the game echoing around him.",
+                    "audio": "echoing sounds of the game",
+                    "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                  }
+                }
+              }
+            },
+            "summary": "A group of young boys in matching blue and white uniforms practice their soccer drills on a well-maintained field, their movements precise and synchronized as they dribble, pass, and kick the ball under the guidance of a coach. The team's enthusiasm and focus are evident as they engage in a lively practice session, honing their skills on the grassy field."
+          },
+          {
+            "level": 2,
+            "start_time": 15.5,
+            "end_time": 22.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 15.5,
+                "end_time": 17.5,
+                "children": [],
+                "caption": "A young soccer player, wearing a white jersey with the number 10, practices dribbling and shooting on a grassy field, the sounds of the game filling the air as a man's voice can be heard in the background.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A young soccer player, wearing a white jersey with the number 10, practices dribbling and shooting on a grassy field, the sounds of the game filling the air as a man's voice can be heard in the background.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_15.5_17.5",
+                    "tags": [
+                      "soccer",
+                      "practice",
+                      "dribbling",
+                      "shooting",
+                      "grass"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "jersey_color": "white",
+                          "jersey_number": "10"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Grassy field",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Soccer player",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_15.5_17.5",
+                      "name": "Soccer practice",
+                      "time": {
+                        "start": "15.5",
+                        "end": "17.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player practices dribbling and shooting on a grassy field.",
+                      "summary": "A young soccer player, wearing a white jersey with the number 10, practices dribbling and shooting on a grassy field, the sounds of the game filling the air as a man's voice can be heard in the background.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A young soccer player, wearing a white jersey with the number 10, practices dribbling and shooting on a grassy field, a man's voice can be heard in the background.",
+                        "audio": "game sounds; man's voice.",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 17.5,
+                "end_time": 22.5,
+                "children": [],
+                "caption": "A young soccer player, wearing a white jersey with the number 10, dribbles the ball down the field, his movements fluid and controlled as he maneuvers past his teammates.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A young soccer player, wearing a white jersey with the number 10, dribbles the ball down the field, his movements fluid and controlled as he maneuvers past his teammates.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_17.5_22.5",
+                    "tags": [
+                      "soccer",
+                      "player",
+                      "dribbling",
+                      "teamwork",
+                      "ball_control"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "jersey_color": "white",
+                          "jersey_number": "10"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Soccer ball",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Young soccer player",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_17.5_22.5",
+                      "name": "Soccer player dribbles the ball",
+                      "time": {
+                        "start": "17.5",
+                        "end": "22.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player dribbles the ball down the field, his movements fluid and controlled as he maneuvers past his teammates.",
+                      "summary": "A young soccer player, wearing a white jersey with the number 10, dribbles the ball down the field, his movements fluid and controlled as he maneuvers past his teammates.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A young soccer player, wearing a white jersey with the number 10, dribbles the ball down the field, his movements fluid and controlled as he maneuvers past his teammates.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young soccer player practices dribbling and shooting on a grassy field, showcasing their skills and control.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "A young soccer player practices dribbling and shooting on a grassy field, showcasing their skills and control.",
+              "result": {
+                "video_id": "JcWwCRmskQU",
+                "event_id": "E_JcWwCRmskQU_15.5_22.5",
+                "tags": [
+                  "soccer",
+                  "practice",
+                  "dribbling",
+                  "shooting",
+                  "skills"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Soccer player",
+                    "attributes": {
+                      "type": "human",
+                      "activity": "practicing",
+                      "location": "grassy field"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Soccer player",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_JcWwCRmskQU_15.5_22.5",
+                  "name": "Soccer player practices dribbling and shooting",
+                  "time": {
+                    "start": "15.5",
+                    "end": "22.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A young soccer player practices dribbling and shooting on a grassy field, showcasing their skills and control.",
+                  "summary": "A young soccer player practices dribbling and shooting on a grassy field, showcasing their skills and control.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "A young soccer player practices dribbling and shooting on a grassy field, showcasing their skills and control.",
+                    "audio": "",
+                    "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                  }
+                }
+              }
+            },
+            "summary": "A young soccer player with the number 10 jersey practices dribbling and shooting on a grassy field, his movements fluid and controlled as he navigates past teammates. The sounds of the game fill the air, accompanied by a man's voice in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 22.5,
+            "end_time": 26.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 22.5,
+                "end_time": 24.5,
+                "children": [],
+                "caption": "A young soccer player in a white jersey with the number 10, skillfully dribbles the ball down the field, his movements fluid and controlled as he maneuvers past his teammates.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "A young soccer player in a white jersey with the number 10, skillfully dribbles the ball down the field, his movements fluid and controlled as he maneuvers past his teammates.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_22.5_24.5",
+                    "tags": [
+                      "soccer",
+                      "player",
+                      "dribbling",
+                      "teamwork",
+                      "skills"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "jersey_color": "white",
+                          "jersey_number": "10"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Young soccer player",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_22.5_24.5",
+                      "name": "Soccer player dribbles the ball",
+                      "time": {
+                        "start": "22.5",
+                        "end": "24.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player skillfully dribbles the ball down the field.",
+                      "summary": "A young soccer player in a white jersey with the number 10, skillfully dribbles the ball down the field, his movements fluid and controlled as he maneuvers past his teammates.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A young soccer player in a white jersey with the number 10 skillfully dribbles the ball down the field, his movements fluid and controlled as he maneuvers past his teammates.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 24.5,
+                "end_time": 26.5,
+                "children": [],
+                "caption": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his eyes focused on the ball as he maneuvers past his teammates.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his eyes focused on the ball as he maneuvers past his teammates.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_24.5_26.5",
+                    "tags": [
+                      "soccer",
+                      "player",
+                      "dribbling",
+                      "team"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "uniform_color": "blue and white",
+                          "jersey_number": "10"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Young soccer player",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_24.5_26.5",
+                      "name": "Soccer player dribbles the ball",
+                      "time": {
+                        "start": "24.5",
+                        "end": "26.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his eyes focused on the ball as he maneuvers past his teammates.",
+                      "summary": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his eyes focused on the ball as he maneuvers past his teammates.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his eyes focused on the ball as he maneuvers past his teammates.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two young soccer players, one in a white jersey and the other in a blue and white uniform, both display impressive dribbling skills as they move the ball down the field with fluid and controlled movements, their eyes fixed on the ball as they maneuver past their teammates.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "Two young soccer players, one in a white jersey and the other in a blue and white uniform, both display impressive dribbling skills as they move the ball down the field with fluid and controlled movements, their eyes fixed on the ball as they maneuver past their teammates.",
+              "result": {
+                "video_id": "JcWwCRmskQU",
+                "event_id": "E_JcWwCRmskQU_22.5_26.5",
+                "tags": [
+                  "soccer",
+                  "dribbling",
+                  "players",
+                  "ball",
+                  "field"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Soccer ball",
+                    "attributes": {
+                      "color": "brown",
+                      "size": "standard"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "White jersey",
+                    "attributes": {
+                      "color": "white",
+                      "type": "uniform"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Blue and white uniform",
+                    "attributes": {
+                      "color": "blue and white",
+                      "type": "uniform"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Young soccer player 1",
+                    "ref_object": "O002",
+                    "role": "player",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Young soccer player 2",
+                    "ref_object": "O003",
+                    "role": "player",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_JcWwCRmskQU_22.5_26.5",
+                  "name": "Soccer players display impressive dribbling skills",
+                  "time": {
+                    "start": "22.5",
+                    "end": "26.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "Two young soccer players display impressive dribbling skills as they move the ball down the field with fluid and controlled movements.",
+                  "summary": "Two young soccer players, one in a white jersey and the other in a blue and white uniform, both display impressive dribbling skills as they move the ball down the field with fluid and controlled movements, their eyes fixed on the ball as they maneuver past their teammates.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "Two young soccer players display impressive dribbling skills as they move the ball down the field with fluid and controlled movements, their eyes fixed on the ball as they maneuver past their teammates.",
+                    "audio": "",
+                    "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                  }
+                }
+              }
+            },
+            "summary": "A young soccer player with the number 10 on his jersey skillfully dribbles the ball down the field, maneuvering past his teammates with fluid and controlled movements."
+          },
+          {
+            "level": 2,
+            "start_time": 26.5,
+            "end_time": 34.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 26.5,
+                "end_time": 29.5,
+                "children": [],
+                "caption": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his determined expression and focused movements reflecting the intensity of the game.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his determined expression and focused movements reflecting the intensity of the game.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_26.5_29.5",
+                    "tags": [
+                      "soccer",
+                      "player",
+                      "dribble",
+                      "game",
+                      "intensity"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer Player",
+                        "attributes": {
+                          "uniform_color": "blue and white",
+                          "jersey_number": "10"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Young Soccer Player",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_26.5_29.5",
+                      "name": "Soccer Player Dribbles the Ball",
+                      "time": {
+                        "start": "26.5",
+                        "end": "29.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his determined expression and focused movements reflecting the intensity of the game.",
+                      "summary": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his determined expression and focused movements reflecting the intensity of the game.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A young soccer player in a blue and white uniform, number 10 on his back, dribbles the ball down the field, his determined expression and focused movements reflecting the intensity of the game.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "In a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball with his feet, showcasing his agility and control as he maneuvers around cones and other obstacles.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "In a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball with his feet, showcasing his agility and control as he maneuvers around cones and other obstacles.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_29.5_34.5",
+                    "tags": [
+                      "soccer",
+                      "dribbling",
+                      "agility",
+                      "control",
+                      "obstacles"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "uniform": "blue and white",
+                          "age": "young"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Ball",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Cones",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Soccer player",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_29.5_34.5",
+                      "name": "Soccer player dribbles ball",
+                      "time": {
+                        "start": "29.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports"
+                      ],
+                      "scene_topic": "A young soccer player skillfully dribbles the ball around cones and obstacles.",
+                      "summary": "In a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball with his feet, showcasing his agility and control as he maneuvers around cones and other obstacles.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "In a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball with his feet, showcasing his agility and control as he maneuvers around cones and other obstacles.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young soccer player demonstrates exceptional skill and determination as he dribbles the ball down the field, showcasing his agility and control in a grassy field.",
+            "postprocess": {
+              "event_id": 15,
+              "original_answer": "A young soccer player demonstrates exceptional skill and determination as he dribbles the ball down the field, showcasing his agility and control in a grassy field.",
+              "result": {
+                "video_id": "JcWwCRmskQU",
+                "event_id": "E_JcWwCRmskQU_26.5_34.5",
+                "tags": [
+                  "soccer",
+                  "determination",
+                  "agility",
+                  "control",
+                  "field"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Soccer player",
+                    "attributes": {
+                      "player_type": "young",
+                      "skill_level": "exceptional",
+                      "field_type": "grassy"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Soccer player",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_JcWwCRmskQU_26.5_34.5",
+                  "name": "Soccer player demonstrates exceptional skill and determination",
+                  "time": {
+                    "start": "26.5",
+                    "end": "34.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A young soccer player demonstrates exceptional skill and determination as he dribbles the ball down the field, showcasing his agility and control in a grassy field.",
+                  "summary": "A young soccer player demonstrates exceptional skill and determination as he dribbles the ball down the field, showcasing his agility and control in a grassy field.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "A young soccer player demonstrates exceptional skill and determination as he dribbles the ball down the field, showcasing his agility and control in a grassy field.",
+                    "audio": "",
+                    "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                  }
+                }
+              }
+            },
+            "summary": "A young soccer player in a blue and white uniform, number 10 on his back, skillfully dribbles the ball down the field, showcasing his agility and control as he navigates around obstacles. His determined expression and focused movements reflect the intensity of the game."
+          }
+        ],
+        "caption": "A group of young boys and a single soccer player demonstrate impressive skills and determination as they practice their drills and dribbling on a well-maintained field. Their movements are precise and coordinated, showcasing their control and agility.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "A group of young boys and a single soccer player demonstrate impressive skills and determination as they practice their drills and dribbling on a well-maintained field. Their movements are precise and coordinated, showcasing their control and agility.",
+          "result": {
+            "video_id": "JcWwCRmskQU",
+            "event_id": "E_JcWwCRmskQU_0_34.5",
+            "tags": [
+              "soccer",
+              "drills",
+              "dribbling",
+              "practice",
+              "field"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Soccer field",
+                "attributes": {
+                  "type": "grass",
+                  "condition": "well-maintained"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Soccer players",
+                "attributes": {
+                  "number": "group",
+                  "age": "young",
+                  "skill": "impressive"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Soccer ball",
+                "attributes": {
+                  "type": "leather"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Soccer players",
+                "ref_object": "O002",
+                "role": "player",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_JcWwCRmskQU_0_34.5",
+              "name": "Soccer practice",
+              "time": {
+                "start": "0",
+                "end": "34.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports"
+              ],
+              "scene_topic": "A group of young boys and a single soccer player demonstrate impressive skills and determination as they practice their drills and dribbling on a well-maintained field.",
+              "summary": "A group of young boys and a single soccer player demonstrate impressive skills and determination as they practice their drills and dribbling on a well-maintained field. Their movements are precise and coordinated, showcasing their control and agility.",
+              "implications": "Major sports event",
+              "modalities": {
+                "visual": "A group of young boys and a single soccer player demonstrate impressive skills and determination as they practice their drills and dribbling on a well-maintained field. Their movements are precise and coordinated, showcasing their control and agility.",
+                "audio": "",
+                "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+              }
+            }
+          }
+        },
+        "summary": "A group of young boys in blue and white uniforms practice their soccer skills on a well-maintained field, their movements precise and synchronized under the guidance of a coach. A young player with the number 10 jersey showcases his agility and control as he skillfully dribbles the ball down the field, navigating past teammates with fluid and controlled movements."
+      },
+      {
+        "level": 1,
+        "start_time": 34.5,
+        "end_time": 56.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 34.5,
+            "end_time": 56.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 46.5,
+                "children": [],
+                "caption": "In a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting their practice.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "In a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting their practice.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_34.5_46.5",
+                    "tags": [
+                      "soccer",
+                      "player",
+                      "goal",
+                      "practice",
+                      "determination"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "uniform": "blue and white",
+                          "expression": "determined",
+                          "movements": "focused"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Young soccer player",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_34.5_46.5",
+                      "name": "Soccer player dribbles the ball",
+                      "time": {
+                        "start": "34.5",
+                        "end": "46.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player skillfully dribbles the ball towards the goal.",
+                      "summary": "In a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting their practice.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "In a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting their practice.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 46.5,
+                "end_time": 56.5,
+                "children": [],
+                "caption": "On a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting their practice.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "On a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting their practice.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_46.5_56.5",
+                    "tags": [
+                      "soccer",
+                      "player",
+                      "dribbling",
+                      "goal",
+                      "practice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "uniform": "blue and white",
+                          "expression": "determined",
+                          "movements": "focused"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Young soccer player",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_46.5_56.5",
+                      "name": "Soccer player dribbles the ball",
+                      "time": {
+                        "start": "46.5",
+                        "end": "56.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player skillfully dribbles the ball towards the goal.",
+                      "summary": "On a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting their practice.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "On a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting their practice.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young soccer player dribbles the ball with skill and determination towards the goal, reflecting their dedication to practice. A young soccer player dribbles the ball with skill and determination towards the goal, reflecting their dedication to practice.",
+            "postprocess": {
+              "event_id": 18,
+              "original_answer": "A young soccer player dribbles the ball with skill and determination towards the goal, reflecting their dedication to practice. A young soccer player dribbles the ball with skill and determination towards the goal, reflecting their dedication to practice.",
+              "result": {
+                "video_id": "JcWwCRmskQU",
+                "event_id": "E_JcWwCRmskQU_34.5_56.5",
+                "tags": [
+                  "soccer",
+                  "determination",
+                  "practice",
+                  "goal",
+                  "dedication"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Soccer Ball",
+                    "attributes": {
+                      "type": "leather",
+                      "color": "brown"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Soccer Player",
+                    "attributes": {
+                      "age": "young",
+                      "skill": "high"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Soccer Player",
+                    "ref_object": "O002",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_JcWwCRmskQU_34.5_56.5",
+                  "name": "Soccer Player Dribbles Ball",
+                  "time": {
+                    "start": "34.5",
+                    "end": "56.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A young soccer player dribbles the ball with skill and determination towards the goal, reflecting their dedication to practice.",
+                  "summary": "A young soccer player dribbles the ball with skill and determination towards the goal, reflecting their dedication to practice. A young soccer player dribbles the ball with skill and determination towards the goal, reflecting their dedication to practice.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "A young soccer player dribbles the ball with skill and determination towards the goal, reflecting their dedication to practice.",
+                    "audio": "",
+                    "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                  }
+                }
+              }
+            },
+            "summary": "A young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting their practice."
+          }
+        ],
+        "caption": "A young soccer player demonstrates their dedication to practice by dribbling the ball with skill and determination towards the goal.",
+        "postprocess": {
+          "event_id": 19,
+          "original_answer": "A young soccer player demonstrates their dedication to practice by dribbling the ball with skill and determination towards the goal.",
+          "result": {
+            "video_id": "JcWwCRmskQU",
+            "event_id": "E_JcWwCRmskQU_34_56",
+            "tags": [
+              "soccer",
+              "practice",
+              "determination",
+              "goal",
+              "dribbling"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Soccer Ball",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "Young Soccer Player",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Young Soccer Player",
+                "ref_object": "O002",
+                "role": "Player",
+                "entity": "Person"
+              }
+            ],
+            "event": {
+              "event_id": "E_JcWwCRmskQU_34_56",
+              "name": "Soccer Player Demonstrates Dedication",
+              "time": {
+                "start": "34.5",
+                "end": "56.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports news"
+              ],
+              "scene_topic": "A young soccer player demonstrates their dedication to practice by dribbling the ball with skill and determination towards the goal.",
+              "summary": "A young soccer player demonstrates their dedication to practice by dribbling the ball with skill and determination towards the goal.",
+              "implications": "Major sports news event",
+              "modalities": {
+                "visual": "A young soccer player demonstrates their dedication to practice by dribbling the ball with skill and determination towards the goal.",
+                "audio": "",
+                "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+              }
+            }
+          }
+        },
+        "summary": "A young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determination and focus evident in their movements."
+      },
+      {
+        "level": 1,
+        "start_time": 56.5,
+        "end_time": 76.5,
+        "children": [],
+        "caption": "On a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+        "postprocess": {
+          "event_id": 21,
+          "original_answer": "On a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+          "result": {
+            "video_id": "JcWwCRmskQU",
+            "event_id": "E_JcWwCRmskQU_56_76",
+            "tags": [
+              "soccer",
+              "player",
+              "goal",
+              "dribble",
+              "intensity"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Soccer player",
+                "attributes": {
+                  "uniform": "blue and white",
+                  "expression": "determined",
+                  "movements": "focused"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Soccer player",
+                "ref_object": "O001",
+                "role": "player",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_JcWwCRmskQU_56_76",
+              "name": "Soccer player dribbles the ball",
+              "time": {
+                "start": "56.5",
+                "end": "76.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports news"
+              ],
+              "scene_topic": "A young soccer player skillfully dribbles the ball towards the goal.",
+              "summary": "On a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+              "implications": "Major sports news event",
+              "modalities": {
+                "visual": "On a grassy field, a young soccer player in a blue and white uniform skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+                "audio": "",
+                "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 76.5,
+        "end_time": 88.054633,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 76.5,
+            "end_time": 83.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 76.5,
+                "end_time": 83.5,
+                "children": [],
+                "caption": "In a grassy field, a young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "In a grassy field, a young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_76.5_83.5",
+                    "tags": [
+                      "soccer",
+                      "dribbling",
+                      "goal",
+                      "intensity",
+                      "determination"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "jersey_color": "blue and white",
+                          "jersey_pattern": "striped"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Soccer player",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_76.5_83.5",
+                      "name": "Soccer player dribbles the ball",
+                      "time": {
+                        "start": "76.5",
+                        "end": "83.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player skillfully dribbles the ball towards the goal.",
+                      "summary": "In a grassy field, a young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "In a grassy field, a young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young soccer player dribbles the ball with determination towards the goal, their focus and skill evident in their movements.",
+            "postprocess": {
+              "event_id": 23,
+              "original_answer": "A young soccer player dribbles the ball with determination towards the goal, their focus and skill evident in their movements.",
+              "result": {
+                "video_id": "JcWwCRmskQU",
+                "event_id": "E_JcWwCRmskQU_76.5_83.5",
+                "tags": [
+                  "soccer",
+                  "determination",
+                  "goal",
+                  "focus",
+                  "skill"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Soccer player",
+                    "attributes": {
+                      "type": "human",
+                      "action": "dribbling",
+                      "goal": "scoring"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Young soccer player",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_JcWwCRmskQU_76.5_83.5",
+                  "name": "Soccer player dribbles towards goal",
+                  "time": {
+                    "start": "76.5",
+                    "end": "83.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A young soccer player dribbles the ball with determination towards the goal, their focus and skill evident in their movements.",
+                  "summary": "A young soccer player dribbles the ball with determination towards the goal, their focus and skill evident in their movements.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "A young soccer player dribbles the ball with determination towards the goal, their focus and skill evident in their movements.",
+                    "audio": "",
+                    "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                  }
+                }
+              }
+            },
+            "summary": "A young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game."
+          },
+          {
+            "level": 2,
+            "start_time": 83.5,
+            "end_time": 88.054633,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 83.5,
+                "end_time": 88.054633,
+                "children": [],
+                "caption": "In a grassy field, a young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "In a grassy field, a young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+                  "result": {
+                    "video_id": "JcWwCRmskQU",
+                    "event_id": "E_JcWwCRmskQU_83.5_88.05",
+                    "tags": [
+                      "soccer",
+                      "dribbling",
+                      "goal",
+                      "intensity",
+                      "determination"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Soccer player",
+                        "attributes": {
+                          "jersey_color": "blue and white",
+                          "jersey_pattern": "striped"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Soccer player",
+                        "ref_object": "O001",
+                        "role": "player",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_JcWwCRmskQU_83.5_88.05",
+                      "name": "Soccer player dribbles the ball",
+                      "time": {
+                        "start": "83.5",
+                        "end": "88.05"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A young soccer player skillfully dribbles the ball towards the goal.",
+                      "summary": "In a grassy field, a young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "In a grassy field, a young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game.",
+                        "audio": "",
+                        "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A young soccer player dribbles the ball with determination and focus towards the goal, showcasing their skills and intensity in the game.",
+            "postprocess": {
+              "event_id": 26,
+              "original_answer": "A young soccer player dribbles the ball with determination and focus towards the goal, showcasing their skills and intensity in the game.",
+              "result": {
+                "video_id": "JcWwCRmskQU",
+                "event_id": "E_JcWwCRmskQU_83.5_88.05",
+                "tags": [
+                  "soccer",
+                  "dribbling",
+                  "goal",
+                  "intensity",
+                  "skills"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Soccer Ball",
+                    "attributes": {
+                      "type": "leather",
+                      "color": "brown"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Young Soccer Player",
+                    "attributes": {
+                      "age": "young",
+                      "position": "midfielder"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Young Soccer Player",
+                    "ref_object": "O002",
+                    "role": "player",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_JcWwCRmskQU_83.5_88.05",
+                  "name": "Soccer Player Dribbles the Ball",
+                  "time": {
+                    "start": "83.5",
+                    "end": "88.05"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A young soccer player dribbles the ball with determination and focus towards the goal, showcasing their skills and intensity in the game.",
+                  "summary": "A young soccer player dribbles the ball with determination and focus towards the goal, showcasing their skills and intensity in the game.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "A young soccer player dribbles the ball with determination and focus towards the goal, showcasing their skills and intensity in the game.",
+                    "audio": "",
+                    "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+                  }
+                }
+              }
+            },
+            "summary": "A young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game."
+          }
+        ],
+        "caption": "A young soccer player demonstrates determination and focus as they dribble the ball towards the goal, showcasing their skills and intensity in the game.",
+        "postprocess": {
+          "event_id": 24,
+          "original_answer": "A young soccer player demonstrates determination and focus as they dribble the ball towards the goal, showcasing their skills and intensity in the game.",
+          "result": {
+            "video_id": "JcWwCRmskQU",
+            "event_id": "E_JcWwCRmskQU_76.5_88.05",
+            "tags": [
+              "soccer",
+              "determination",
+              "focus",
+              "skills",
+              "intensity"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Soccer player",
+                "attributes": {
+                  "player_position": "forward",
+                  "ball_control": "good"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Young soccer player",
+                "ref_object": "O001",
+                "role": "main",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_JcWwCRmskQU_76.5_88.05",
+              "name": "Soccer player demonstrates determination and focus",
+              "time": {
+                "start": "76.5",
+                "end": "88.05"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports news"
+              ],
+              "scene_topic": "A young soccer player demonstrates determination and focus as they dribble the ball towards the goal, showcasing their skills and intensity in the game.",
+              "summary": "A young soccer player demonstrates determination and focus as they dribble the ball towards the goal, showcasing their skills and intensity in the game.",
+              "implications": "Major sports news event",
+              "modalities": {
+                "visual": "A young soccer player demonstrates determination and focus as they dribble the ball towards the goal, showcasing their skills and intensity in the game.",
+                "audio": "",
+                "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals."
+              }
+            }
+          }
+        },
+        "summary": "A young soccer player in a blue and white striped jersey skillfully dribbles the ball towards the goal, their determined expression and focused movements reflecting the intensity of the game."
+      }
+    ],
+    "caption": "A group of young soccer players and a single player demonstrate impressive skills and determination during a practice session on a well-maintained field. Their movements are precise and coordinated, showcasing their control and agility. A young player demonstrates their dedication to practice by dribbling the ball towards the goal with skill and determination. Another player skillfully dribbles the ball towards the goal, reflecting the intensity of the game with their focused expression and movements.",
+    "postprocess": {
+      "event_id": 3,
+      "original_answer": "A group of young soccer players and a single player demonstrate impressive skills and determination during a practice session on a well-maintained field. Their movements are precise and coordinated, showcasing their control and agility. A young player demonstrates their dedication to practice by dribbling the ball towards the goal with skill and determination. Another player skillfully dribbles the ball towards the goal, reflecting the intensity of the game with their focused expression and movements.",
+      "result": {
+        "video_id": "JcWwCRmskQU",
+        "event_id": "E_JcWwCRmskQU_0_88.05",
+        "tags": [
+          "soccer",
+          "practice",
+          "determination",
+          "agility",
+          "control"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "Soccer players",
+            "attributes": {
+              "number": "group",
+              "age": "young",
+              "skill": "impressive",
+              "determination": "high"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "Soccer ball",
+            "attributes": {
+              "type": "official",
+              "condition": "well-maintained"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "Soccer field",
+            "attributes": {
+              "type": "grass",
+              "condition": "well-maintained"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "Young soccer player",
+            "ref_object": "O001",
+            "role": "player",
+            "entity": "individual"
+          }
+        ],
+        "event": {
+          "event_id": "E_JcWwCRmskQU_0_88.05",
+          "name": "Soccer practice session",
+          "time": {
+            "start": "0",
+            "end": "88.05"
+          },
+          "actors": [
+            "A001"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "sports news"
+          ],
+          "scene_topic": "A group of young soccer players demonstrate impressive skills and determination during a practice session.",
+          "summary": "A group of young soccer players and a single player demonstrate impressive skills and determination during a practice session on a well-maintained field. Their movements are precise and coordinated, showcasing their control and agility. A young player demonstrates their dedication to practice by dribbling the ball towards the goal with skill and determination. Another player skillfully dribbles the ball towards the goal, reflecting the intensity of the game with their focused expression and movements.",
+          "implications": "Major sports news event",
+          "modalities": {
+            "visual": "A group of young soccer players and a single player demonstrate impressive skills and determination during a practice session on a well-maintained field. Their movements are precise and coordinated, showcasing their control and agility. A young player demonstrates their dedication to practice by dribbling the ball towards the goal with skill and determination. Another player skillfully dribbles the ball towards the goal, reflecting the intensity of the game with their focused expression and movements.",
+            "audio": "",
+            "speech": "In 1v1 centre circle competitions, players use various moves such as fakes, feints, and changes of direction to beat their opponent and score by dribbling through one of two small goals. This drill is an excellent way to practice technique and conditioning."
+          }
+        }
+      }
+    },
+    "summary": "A group of young soccer players in blue and white uniforms practice their skills on a well-maintained field, showcasing their agility and control as they dribble the ball down the field. With determination and focus, they navigate past teammates and work towards scoring goals, reflecting the intensity of the game."
+  }
+}
