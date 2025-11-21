@@ -1,0 +1,74 @@
+import os 
+import json 
+import argparse
+import numpy as np 
+import utils
+import node 
+
+def main(args): 
+    result = {}
+    js = json.load(open(args.data_path))
+    
+    os.makedirs(os.path.dirname(args.save_path), exist_ok=True)
+    
+    for video_id, data in js.items():
+        duration = data['duration']
+        
+        features = utils.load_avs_features(
+            video_id=video_id,
+            video_path=args.video_feat_folder,
+            audio_path=args.audio_feat_folder,
+            speech_path=args.speech_feat_folder
+        )
+        
+        avs_features = np.concatenate([
+            features['video_features'],
+            features['audio_features'],
+            features['speech_features']
+        ], axis=1)
+        
+        root_node = node.EventNode(
+            video_id=video_id,
+            start_time=0.0,
+            end_time=duration,
+            level=0,
+        )
+
+        node.build_tree(
+            features=avs_features,
+            root_node=root_node,
+        )
+    
+        def node_to_dict(node):
+            start_time = node.start_time - 0.5 if node.start_time > 0.0 else node.start_time
+            end_time = node.end_time + 0.5 if node.end_time < duration else node.end_time
+
+            return {
+                'level': node.level,
+                'start_time': start_time,
+                'end_time': end_time,
+                'children': [node_to_dict(child) for child in node.children]
+            }
+            
+        root_video_id = root_node.video_id
+        root_content = {
+            'level': root_node.level,
+            'start_time': root_node.start_time,
+            'end_time': root_node.end_time,
+            'children': [node_to_dict(child) for child in root_node.children]
+        }
+
+        result[root_video_id] = root_content
+    with open(args.save_path, 'w') as f:
+        json.dump(result, f, indent=4)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data_path', type=str, help='Path to the JSON data file')
+    parser.add_argument('--video_feat_folder', type=str, default='./data/features_tree/video_features')
+    parser.add_argument('--audio_feat_folder', type=str, default='./data/features_tree/audio_features')
+    parser.add_argument('--speech_feat_folder', type=str, default='./data/features_tree/speech_features')
+    parser.add_argument('--save_path', type=str, default='./outputs/tree.json')
+    args = parser.parse_args()
+    
+    main(args)
