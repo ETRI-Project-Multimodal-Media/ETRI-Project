@@ -1,8 +1,8 @@
 #!/bin/bash
 
 MODEL_VERSION=vicuna-v1-5-7b
-gpu_vis=0 # per_device_train_batch_size * gradient_accumulation_steps * n_gpus = 128
-MASTER_PORT=29580
+gpu_vis=7 # per_device_train_batch_size * gradient_accumulation_steps * n_gpus = 128
+MASTER_PORT=29581
 
 
 deepspeed --include localhost:$gpu_vis --master_port $MASTER_PORT longvalellm/train/train_mem.py \
@@ -12,10 +12,10 @@ deepspeed --include localhost:$gpu_vis --master_port $MASTER_PORT longvalellm/tr
     --model_name_or_path ./checkpoints/vicuna-7b-v1.5 \
     --version v1 \
     --data_path ./data/longvale-sft-it-61k.json \
-    --feat_folder /path/to/data/it_visual_feat \
-    --audio_feat_folder /path/to/data/it_audio_feat \
-    --asr_feat_folder /path/to/data/it_speech_feat \
-    --pretrain_mm_mlp_adapter ./checkpoint/vtimellm_stage1_mm_projector.bin \
+    --feat_folder /root/datasets/jinho/LongVALE/data/features_training/video_features_it \
+    --audio_feat_folder /root/datasets/jinho/LongVALE/data/features_training/audio_features_aligned \
+    --asr_feat_folder /root/datasets/jinho/LongVALE/data/features_training/speech_features_aligned \
+    --pretrain_mm_mlp_adapter ./checkpoints/vtimellm_stage1_mm_projector.bin \
     --stage2_path ./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp \
     --output_dir ./checkpoints/longvale-$MODEL_VERSION-stage3-it \
     --bf16 True \

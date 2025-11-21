@@ -1,0 +1,3801 @@
+{
+  "video_id": "3MI7OZ-BlgE",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 133.84,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 16.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 9.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 7.5,
+                "children": [],
+                "caption": "The camera pans across a vast, dimly lit tunnel, showcasing its high ceiling and rough concrete walls, as a man's voice narrates the impressive scale of the Crossrail project.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The camera pans across a vast, dimly lit tunnel, showcasing its high ceiling and rough concrete walls, as a man's voice narrates the impressive scale of the Crossrail project.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_0_7.5",
+                    "tags": [
+                      "tunnel",
+                      "crossrail",
+                      "construction",
+                      "narration",
+                      "scale"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Tunnel",
+                        "attributes": {
+                          "description": "Vast, dimly lit tunnel with high ceiling and rough concrete walls"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Narrator",
+                        "attributes": {
+                          "description": "Man's voice narrating the Crossrail project"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Narrator",
+                        "ref_object": "O002",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_0_7.5",
+                      "name": "Crossrail project narration",
+                      "time": {
+                        "start": "0",
+                        "end": "7.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "The camera pans across a vast, dimly lit tunnel, showcasing its high ceiling and rough concrete walls, as a man's voice narrates the impressive scale of the Crossrail project.",
+                      "summary": "The camera pans across a vast, dimly lit tunnel, showcasing its high ceiling and rough concrete walls, as a man's voice narrates the impressive scale of the Crossrail project.",
+                      "implications": "Major infrastructure project news event",
+                      "modalities": {
+                        "visual": "The camera pans across a vast, dimly lit tunnel, showcasing its high ceiling and rough concrete walls.",
+                        "audio": "man's voice narration",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "The camera pans across the vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that stretch out of view, while a man's voice narrates the impressive scale of the project.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The camera pans across the vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that stretch out of view, while a man's voice narrates the impressive scale of the project.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_7.5_9.5",
+                    "tags": [
+                      "tunnel",
+                      "pipes",
+                      "wires",
+                      "narration"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Tunnel",
+                        "attributes": {
+                          "description": "Vast, dimly lit tunnel with intricate network of pipes and wires"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Pipes and wires",
+                        "attributes": {
+                          "description": "Intricate network of pipes and wires stretching out of view"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Narrator",
+                        "attributes": {
+                          "description": "Man's voice narrating the impressive scale of the project"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Narrator",
+                        "ref_object": "O003",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_7.5_9.5",
+                      "name": "Tunnel description",
+                      "time": {
+                        "start": "7.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "infrastructure"
+                      ],
+                      "scene_topic": "The camera pans across the vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that stretch out of view, while a man's voice narrates the impressive scale of the project.",
+                      "summary": "The camera pans across the vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that stretch out of view, while a man's voice narrates the impressive scale of the project.",
+                      "implications": "Significant infrastructure project",
+                      "modalities": {
+                        "visual": "The camera pans across the vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that stretch out of view.",
+                        "audio": "man's voice narration",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_0_9.5",
+                "tags": [
+                  "crossrail",
+                  "tunnel",
+                  "infrastructure",
+                  "engineering",
+                  "construction"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Crossrail tunnel",
+                    "attributes": {
+                      "description": "vast, dimly lit tunnel"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Pipes and wires",
+                    "attributes": {
+                      "description": "intrastructure network"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_0_9.5",
+                  "name": "Crossrail project",
+                  "time": {
+                    "start": "0",
+                    "end": "9.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "infrastructure news"
+                  ],
+                  "scene_topic": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires.",
+                  "summary": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires.",
+                  "implications": "Major infrastructure news event",
+                  "modalities": {
+                    "visual": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires.",
+                    "audio": "",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "The Crossrail project is a massive undertaking, as evident from the vast, dimly lit tunnel shown in the footage, with its high ceiling and rough concrete walls. The camera also highlights the intricate network of pipes and wires that stretch out of view, emphasizing the project's impressive scale."
+          },
+          {
+            "level": 2,
+            "start_time": 9.5,
+            "end_time": 16.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 14.5,
+                "children": [],
+                "caption": "The camera pans across a vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that illuminate the space with a soft, blue glow.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The camera pans across a vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that illuminate the space with a soft, blue glow.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_BlgE_9.5_14.5",
+                    "tags": [
+                      "tunnel",
+                      "pipes",
+                      "wires",
+                      "illumination",
+                      "blue_glow"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Tunnel",
+                        "attributes": {
+                          "description": "Vast, dimly lit tunnel with intricate network of pipes and wires"
+                        }
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_3MI7OZ_BlgE_9.5_14.5",
+                      "name": "Camera Pans Across Tunnel",
+                      "time": {
+                        "start": "9.5",
+                        "end": "14.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "industrial"
+                      ],
+                      "scene_topic": "The camera pans across a vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that illuminate the space with a soft, blue glow.",
+                      "summary": "The camera pans across a vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that illuminate the space with a soft, blue glow.",
+                      "implications": "Significant industrial infrastructure",
+                      "modalities": {
+                        "visual": "The camera pans across a vast, dimly lit tunnel, showcasing the intricate network of pipes and wires that illuminate the space with a soft, blue glow.",
+                        "audio": "",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 14.5,
+                "end_time": 16.5,
+                "children": [],
+                "caption": "The camera pans across the dimly lit tunnel, revealing the intricate network of pipes and wires that illuminate the space with a soft glow, as a man's voice narrates the construction of the tunnel.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The camera pans across the dimly lit tunnel, revealing the intricate network of pipes and wires that illuminate the space with a soft glow, as a man's voice narrates the construction of the tunnel.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_14.5_16.5",
+                    "tags": [
+                      "tunnel",
+                      "construction",
+                      "narration",
+                      "engineering"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Tunnel",
+                        "attributes": {
+                          "description": "Dimly lit tunnel with intricate network of pipes and wires"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Pipes and wires",
+                        "attributes": {
+                          "description": "Illuminate the space with a soft glow"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Man's voice",
+                        "attributes": {
+                          "description": "Narrates the construction of the tunnel"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O003",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_14.5_16.5",
+                      "name": "Tunnel construction",
+                      "time": {
+                        "start": "14.5",
+                        "end": "16.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "engineering"
+                      ],
+                      "scene_topic": "The camera pans across the dimly lit tunnel, revealing the intricate network of pipes and wires that illuminate the space with a soft glow, as a man's voice narrates the construction of the tunnel.",
+                      "summary": "The camera pans across the dimly lit tunnel, revealing the intricate network of pipes and wires that illuminate the space with a soft glow, as a man's voice narrates the construction of the tunnel.",
+                      "implications": "Major engineering event",
+                      "modalities": {
+                        "visual": "The camera pans across the dimly lit tunnel, revealing the intricate network of pipes and wires that illuminate the space with a soft glow.",
+                        "audio": "man's voice narration",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A vast, dimly lit tunnel is illuminated by an intricate network of pipes and wires, which are revealed in a pan of the camera.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A vast, dimly lit tunnel is illuminated by an intricate network of pipes and wires, which are revealed in a pan of the camera.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_9.5_16.5",
+                "tags": [
+                  "tunnel",
+                  "illumination",
+                  "pipes",
+                  "wires",
+                  "pan"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Tunnel",
+                    "attributes": {
+                      "description": "A vast, dimly lit tunnel"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Illumination",
+                    "attributes": {
+                      "description": "Intricate network of pipes and wires"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Camera",
+                    "attributes": {
+                      "description": "Pan of the camera"
+                    }
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_3MI7OZ_9.5_16.5",
+                  "name": "Tunnel Illumination",
+                  "time": {
+                    "start": "9.5",
+                    "end": "16.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "scene"
+                  ],
+                  "scene_topic": "A vast, dimly lit tunnel is illuminated by an intricate network of pipes and wires, which are revealed in a pan of the camera.",
+                  "summary": "A vast, dimly lit tunnel is illuminated by an intricate network of pipes and wires, which are revealed in a pan of the camera.",
+                  "implications": "Significant scene",
+                  "modalities": {
+                    "visual": "A vast, dimly lit tunnel is illuminated by an intricate network of pipes and wires, which are revealed in a pan of the camera.",
+                    "audio": "",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "The camera shows a dimly lit tunnel with a network of pipes and wires that emit a soft blue glow, while a narrator describes the construction of the tunnel."
+          }
+        ],
+        "caption": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires. The tunnel is illuminated by an intricate network of pipes and wires, which are revealed in a pan of the camera.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires. The tunnel is illuminated by an intricate network of pipes and wires, which are revealed in a pan of the camera.",
+          "result": {
+            "video_id": "3MI7OZ_BlgE",
+            "event_id": "E_3MI7OZ_0_16.5",
+            "tags": [
+              "infrastructure",
+              "construction",
+              "transportation"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Tunnel",
+                "attributes": {
+                  "description": "Vast, dimly lit tunnel highlighting Crossrail project's scale and network of pipes and wires"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Pipes and wires",
+                "attributes": {
+                  "description": "Intricate network of pipes and wires illuminating the tunnel"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Camera",
+                "attributes": {
+                  "description": "Camera panning to reveal the network of pipes and wires"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Unknown",
+                "ref_object": "O001",
+                "role": "Unknown",
+                "entity": "Unknown"
+              }
+            ],
+            "event": {
+              "event_id": "E_3MI7OZ_0_16.5",
+              "name": "Crossrail project tunnel",
+              "time": {
+                "start": "0",
+                "end": "16.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "infrastructure news"
+              ],
+              "scene_topic": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires.",
+              "summary": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires. The tunnel is illuminated by an intricate network of pipes and wires, which are revealed in a pan of the camera.",
+              "implications": "Major infrastructure news event",
+              "modalities": {
+                "visual": "The Crossrail project is shown in a vast, dimly lit tunnel, highlighting its impressive scale and intricate network of pipes and wires. The tunnel is illuminated by an intricate network of pipes and wires, which are revealed in a pan of the camera.",
+                "audio": "",
+                "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+              }
+            }
+          }
+        },
+        "summary": "The Crossrail project involves the construction of a massive tunnel with a high ceiling and rough concrete walls, featuring an intricate network of pipes and wires that stretch out of view. The tunnel is dimly lit, with a soft blue glow emanating from the pipes and wires."
+      },
+      {
+        "level": 1,
+        "start_time": 16.5,
+        "end_time": 34.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 16.5,
+            "end_time": 22.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 16.5,
+                "end_time": 22.5,
+                "children": [],
+                "caption": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction of the Northern Line Extension, his voice echoing slightly in the vast, unfinished space.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction of the Northern Line Extension, his voice echoing slightly in the vast, unfinished space.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_16.5_22.5",
+                    "tags": [
+                      "construction",
+                      "northern_line_extension",
+                      "tunnel",
+                      "transportation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Man in hard hat and safety vest",
+                        "attributes": {
+                          "role": "explainer",
+                          "location": "tunnel"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man in hard hat and safety vest",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_16.5_22.5",
+                      "name": "Construction of Northern Line Extension",
+                      "time": {
+                        "start": "16.5",
+                        "end": "22.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "A man explains the construction of the Northern Line Extension in a tunnel.",
+                      "summary": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction of the Northern Line Extension, his voice echoing slightly in the vast, unfinished space.",
+                      "implications": "Major transportation infrastructure news event",
+                      "modalities": {
+                        "visual": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction of the Northern Line Extension, in the vast, unfinished space.",
+                        "audio": "voice echoing",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man explains the construction of the Northern Line Extension in an unfinished tunnel, his voice echoing slightly in the vast space.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "A man explains the construction of the Northern Line Extension in an unfinished tunnel, his voice echoing slightly in the vast space.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_16.5_22.5",
+                "tags": [
+                  "construction",
+                  "northern_line_extension",
+                  "tunnel",
+                  "transportation"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Man",
+                    "attributes": {
+                      "explaining": "construction of the Northern Line Extension",
+                      "location": "unfinished tunnel"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_16.5_22.5",
+                  "name": "Man explains construction of Northern Line Extension",
+                  "time": {
+                    "start": "16.5",
+                    "end": "22.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "construction news"
+                  ],
+                  "scene_topic": "A man explains the construction of the Northern Line Extension in an unfinished tunnel.",
+                  "summary": "A man explains the construction of the Northern Line Extension in an unfinished tunnel, his voice echoing slightly in the vast space.",
+                  "implications": "Major transportation news event",
+                  "modalities": {
+                    "visual": "A man explains the construction of the Northern Line Extension in an unfinished tunnel, his voice echoing slightly in the vast space.",
+                    "audio": "voice echoing",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a hard hat and safety vest explains the construction of the Northern Line Extension, his voice echoing in the vast, unfinished tunnel space."
+          },
+          {
+            "level": 2,
+            "start_time": 22.5,
+            "end_time": 34.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 22.5,
+                "end_time": 28.5,
+                "children": [],
+                "caption": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction of the Northern Line Extension, his voice echoing slightly in the vast, unfinished space.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction of the Northern Line Extension, his voice echoing slightly in the vast, unfinished space.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_22.5_28.5",
+                    "tags": [
+                      "construction",
+                      "northern_line_extension",
+                      "tunnel",
+                      "transportation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Man in hard hat and safety vest",
+                        "attributes": {
+                          "role": "explainer",
+                          "location": "tunnel"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man in hard hat and safety vest",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_22.5_28.5",
+                      "name": "Construction of Northern Line Extension",
+                      "time": {
+                        "start": "22.5",
+                        "end": "28.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "A man explains the construction of the Northern Line Extension in a tunnel.",
+                      "summary": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction of the Northern Line Extension, his voice echoing slightly in the vast, unfinished space.",
+                      "implications": "Major transportation infrastructure news event",
+                      "modalities": {
+                        "visual": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction of the Northern Line Extension, in the vast, unfinished space.",
+                        "audio": "voice echoing",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 28.5,
+                "end_time": 31.5,
+                "children": [],
+                "caption": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction process to someone off-camera, his voice echoing slightly in the vast, unfinished space.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction process to someone off-camera, his voice echoing slightly in the vast, unfinished space.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_28.5_31.5",
+                    "tags": [
+                      "construction",
+                      "tunnel",
+                      "explainer"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "role": "explainer",
+                          "location": "tunnel"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_28.5_31.5",
+                      "name": "construction process explanation",
+                      "time": {
+                        "start": "28.5",
+                        "end": "31.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "A man explains the construction process in a tunnel.",
+                      "summary": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction process to someone off-camera, his voice echoing slightly in the vast, unfinished space.",
+                      "implications": "Important construction news event",
+                      "modalities": {
+                        "visual": "A man in a hard hat and safety vest, illuminated by the bright lights of the tunnel, explains the construction process to someone off-camera, in a vast, unfinished space.",
+                        "audio": "explains; echoing voice.",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "The camera focuses on a large yellow excavator, its powerful arm scooping up rocks and debris as it digs into the ground, while a man's voice explains the challenges of working in the confined space of the tunnel.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The camera focuses on a large yellow excavator, its powerful arm scooping up rocks and debris as it digs into the ground, while a man's voice explains the challenges of working in the confined space of the tunnel.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_31.5_34.5",
+                    "tags": [
+                      "excavation",
+                      "tunnel",
+                      "construction"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "excavator",
+                        "attributes": {
+                          "type": "yellow",
+                          "function": "scooping up rocks and debris"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "O001",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_31.5_34.5",
+                      "name": "excavation in tunnel",
+                      "time": {
+                        "start": "31.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "The excavator digs into the ground while a man explains the challenges of working in the tunnel.",
+                      "summary": "The camera focuses on a large yellow excavator, its powerful arm scooping up rocks and debris as it digs into the ground, while a man's voice explains the challenges of working in the confined space of the tunnel.",
+                      "implications": "Major construction news event",
+                      "modalities": {
+                        "visual": "The camera focuses on a large yellow excavator, its powerful arm scooping up rocks and debris as it digs into the ground, a man.",
+                        "audio": "man's voice; scooping; digging; beep",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The construction of the Northern Line Extension is being explained by a man in a hard hat and safety vest, with the camera showing the vast, unfinished space and the bright lights illuminating the area. The man's voice echoes slightly as he discusses the challenges of working in the confined space of the tunnel, while a large yellow excavator is shown digging into the ground and scooping up rocks and debris.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "The construction of the Northern Line Extension is being explained by a man in a hard hat and safety vest, with the camera showing the vast, unfinished space and the bright lights illuminating the area. The man's voice echoes slightly as he discusses the challenges of working in the confined space of the tunnel, while a large yellow excavator is shown digging into the ground and scooping up rocks and debris.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_22.5_34.5",
+                "tags": [
+                  "construction",
+                  "northern_line_extension",
+                  "tunnel",
+                  "excavator"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Man in hard hat and safety vest",
+                    "attributes": {
+                      "speaker": "explaining construction",
+                      "location": "tunnel"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Yellow excavator",
+                    "attributes": {
+                      "function": "digging and scooping rocks and debris"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man in hard hat and safety vest",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_22.5_34.5",
+                  "name": "Construction of Northern Line Extension",
+                  "time": {
+                    "start": "22.5",
+                    "end": "34.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "construction news"
+                  ],
+                  "scene_topic": "The construction of the Northern Line Extension is being explained by a man in a hard hat and safety vest.",
+                  "summary": "The construction of the Northern Line Extension is being explained by a man in a hard hat and safety vest, with the camera showing the vast, unfinished space and the bright lights illuminating the area. The man's voice echoes slightly as he discusses the challenges of working in the confined space of the tunnel, while a large yellow excavator is shown digging into the ground and scooping up rocks and debris.",
+                  "implications": "Major infrastructure project",
+                  "modalities": {
+                    "visual": "The construction of the Northern Line Extension is being explained by a man in a hard hat and safety vest, with the camera showing the vast, unfinished space and the bright lights illuminating the area. The man's voice echoes slightly as he discusses the challenges of working in the confined space of the tunnel, while a large yellow excavator is shown digging into the ground and scooping up rocks and debris.",
+                    "audio": "man's voice; excavator",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "The Northern Line Extension is being constructed through a tunnel, with workers using heavy machinery like excavators to dig through the ground and remove rocks and debris. The process is challenging due to the confined space, but workers are making progress in building the new line."
+          }
+        ],
+        "caption": "A man explains the construction of the Northern Line Extension in an unfinished tunnel, highlighting the challenges of working in a confined space.",
+        "postprocess": {
+          "event_id": 10,
+          "original_answer": "A man explains the construction of the Northern Line Extension in an unfinished tunnel, highlighting the challenges of working in a confined space.",
+          "result": {
+            "video_id": "3MI7OZ_BlgE",
+            "event_id": "E_3MI7OZ_16.5_34.5",
+            "tags": [
+              "construction",
+              "northern_line_extension",
+              "tunnel",
+              "challenges"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Man",
+                "attributes": {
+                  "explaining": "construction of the Northern Line Extension",
+                  "working": "in a confined space"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man",
+                "ref_object": "O001",
+                "role": "explainer",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_3MI7OZ_16.5_34.5",
+              "name": "Construction of Northern Line Extension",
+              "time": {
+                "start": "16.5",
+                "end": "34.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "construction news"
+              ],
+              "scene_topic": "A man explains the construction of the Northern Line Extension in an unfinished tunnel, highlighting the challenges of working in a confined space.",
+              "summary": "A man explains the construction of the Northern Line Extension in an unfinished tunnel, highlighting the challenges of working in a confined space.",
+              "implications": "Major infrastructure news event",
+              "modalities": {
+                "visual": "A man explains the construction of the Northern Line Extension in an unfinished tunnel, highlighting the challenges of working in a confined space.",
+                "audio": "",
+                "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+              }
+            }
+          }
+        },
+        "summary": "The Northern Line Extension is being built through a tunnel, where workers use heavy machinery to dig through the ground and remove rocks and debris, despite the challenging confined space. Despite the difficulties, progress is being made in constructing the new line."
+      },
+      {
+        "level": 1,
+        "start_time": 34.5,
+        "end_time": 58.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 34.5,
+            "end_time": 43.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 43.5,
+                "children": [],
+                "caption": "The camera focuses on a large yellow excavator working in a dimly lit tunnel, its powerful arm scooping up rocks and debris as a man explains the tunnel's construction and the challenges of working in a confined space.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "The camera focuses on a large yellow excavator working in a dimly lit tunnel, its powerful arm scooping up rocks and debris as a man explains the tunnel's construction and the challenges of working in a confined space.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_34.5_43.5",
+                    "tags": [
+                      "construction",
+                      "tunnel",
+                      "excavator",
+                      "mining",
+                      "engineering"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Excavator",
+                        "attributes": {
+                          "type": "yellow",
+                          "function": "rock and debris scooping"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Man",
+                        "attributes": {
+                          "role": "explainer"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O002",
+                        "role": "explainer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_34.5_43.5",
+                      "name": "Tunnel construction",
+                      "time": {
+                        "start": "34.5",
+                        "end": "43.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "The camera focuses on a man explaining the tunnel's construction and the challenges of working in a confined space.",
+                      "summary": "The camera focuses on a large yellow excavator working in a dimly lit tunnel, its powerful arm scooping up rocks and debris as a man explains the tunnel's construction and the challenges of working in a confined space.",
+                      "implications": "Major construction news event",
+                      "modalities": {
+                        "visual": "The camera focuses on a large yellow excavator working in a dimly lit tunnel, its powerful arm scooping up rocks and debris, a man explaining the tunnel's construction and the challenges of working in a confined space.",
+                        "audio": "",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "An excavator works in a dimly lit tunnel, removing rocks and debris as a man explains the challenges of constructing the tunnel and the importance of safety measures.",
+            "postprocess": {
+              "event_id": 16,
+              "original_answer": "An excavator works in a dimly lit tunnel, removing rocks and debris as a man explains the challenges of constructing the tunnel and the importance of safety measures.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_34.5_43.5",
+                "tags": [
+                  "tunnel",
+                  "excavation",
+                  "safety",
+                  "construction"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Excavator",
+                    "attributes": {
+                      "type": "heavy machinery",
+                      "function": "removing rocks and debris"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Man",
+                    "attributes": {
+                      "role": "explainer",
+                      "function": "explaining challenges and importance of safety measures"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man",
+                    "ref_object": "O002",
+                    "role": "explainer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_34.5_43.5",
+                  "name": "Excavator works in tunnel",
+                  "time": {
+                    "start": "34.5",
+                    "end": "43.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "construction news"
+                  ],
+                  "scene_topic": "An excavator works in a dimly lit tunnel, removing rocks and debris as a man explains the challenges of constructing the tunnel and the importance of safety measures.",
+                  "summary": "An excavator works in a dimly lit tunnel, removing rocks and debris as a man explains the challenges of constructing the tunnel and the importance of safety measures.",
+                  "implications": "Major construction news event",
+                  "modalities": {
+                    "visual": "An excavator works in a dimly lit tunnel, removing rocks and debris as a man explains the challenges of constructing the tunnel and the importance of safety measures.",
+                    "audio": "",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "A large yellow excavator is working in a dimly lit tunnel, scooping up rocks and debris as a man explains the construction process and the challenges of working in a confined space."
+          },
+          {
+            "level": 2,
+            "start_time": 43.5,
+            "end_time": 53.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 43.5,
+                "end_time": 51.5,
+                "children": [],
+                "caption": "The camera focuses on a large yellow excavator working in a dimly lit tunnel, its powerful arm scooping up rocks and debris as a man's voice explains the tunnel's construction.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "The camera focuses on a large yellow excavator working in a dimly lit tunnel, its powerful arm scooping up rocks and debris as a man's voice explains the tunnel's construction.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_43.5_51.5",
+                    "tags": [
+                      "construction",
+                      "excavation",
+                      "tunnel",
+                      "mining"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "excavator",
+                        "attributes": {
+                          "type": "yellow",
+                          "function": "scooping up rocks and debris"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "tunnel",
+                        "attributes": {
+                          "location": "dimly lit",
+                          "construction": "in progress"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {
+                          "role": "explaining",
+                          "voice": "male"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "explaining",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_43.5_51.5",
+                      "name": "Tunnel construction",
+                      "time": {
+                        "start": "43.5",
+                        "end": "51.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "The camera focuses on a large yellow excavator working in a dimly lit tunnel, its powerful arm scooping up rocks and debris as a man's voice explains the tunnel's construction.",
+                      "summary": "The camera focuses on a large yellow excavator working in a dimly lit tunnel, its powerful arm scooping up rocks and debris as a man's voice explains the tunnel's construction.",
+                      "implications": "Major construction news event",
+                      "modalities": {
+                        "visual": "The camera focuses on a large yellow excavator working in a dimly lit tunnel, its powerful arm scooping up rocks and debris as a man's voice explains the tunnel's construction.",
+                        "audio": "man's voice",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 51.5,
+                "end_time": 53.5,
+                "children": [],
+                "caption": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_51.5_53.5",
+                    "tags": [
+                      "construction",
+                      "tunnel",
+                      "excavator",
+                      "site"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "excavator",
+                        "attributes": {
+                          "type": "yellow",
+                          "function": "digging"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "role": "explaining"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "tunnel",
+                        "attributes": {
+                          "dimensions": "unknown"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "explaining",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_51.5_53.5",
+                      "name": "construction site",
+                      "time": {
+                        "start": "51.5",
+                        "end": "53.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                      "summary": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                      "implications": "Major construction news event",
+                      "modalities": {
+                        "visual": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man explains the tunnel's dimensions.",
+                        "audio": "man's voice",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A large yellow excavator is used in the construction of a dimly lit tunnel, digging into the ground and removing rocks and debris as a man's voice explains the tunnel's dimensions and construction process.",
+            "postprocess": {
+              "event_id": 19,
+              "original_answer": "A large yellow excavator is used in the construction of a dimly lit tunnel, digging into the ground and removing rocks and debris as a man's voice explains the tunnel's dimensions and construction process.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_43.5_53.5",
+                "tags": [
+                  "construction",
+                  "tunnel",
+                  "excavator",
+                  "mining"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "excavator",
+                    "attributes": {
+                      "type": "yellow",
+                      "function": "digging",
+                      "material": "rock"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "tunnel",
+                    "attributes": {
+                      "type": "dimly lit",
+                      "function": "construction",
+                      "material": "ground"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "rocks and debris",
+                    "attributes": {
+                      "type": "natural",
+                      "function": "obstacle",
+                      "material": "rock"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man's voice",
+                    "ref_object": "O001",
+                    "role": "explainer",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_43.5_53.5",
+                  "name": "Tunnel construction",
+                  "time": {
+                    "start": "43.5",
+                    "end": "53.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "construction news"
+                  ],
+                  "scene_topic": "A man explains the construction of a tunnel using an excavator.",
+                  "summary": "A large yellow excavator is used in the construction of a dimly lit tunnel, digging into the ground and removing rocks and debris as a man's voice explains the tunnel's dimensions and construction process.",
+                  "implications": "Major construction news event",
+                  "modalities": {
+                    "visual": "A large yellow excavator is used in the construction of a dimly lit tunnel, digging into the ground and removing rocks and debris as a man explains the tunnel's dimensions and construction process.",
+                    "audio": "man's voice",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "A large yellow excavator is working in a dimly lit tunnel, scooping up rocks and debris as a man's voice explains the tunnel's construction. The camera pans across the site, showcasing the excavator's powerful arm digging into the ground as the voice provides details on the tunnel's dimensions."
+          },
+          {
+            "level": 2,
+            "start_time": 53.5,
+            "end_time": 58.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 53.5,
+                "end_time": 58.5,
+                "children": [],
+                "caption": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_53_58",
+                    "tags": [
+                      "construction",
+                      "tunnel",
+                      "excavator",
+                      "site"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "excavator",
+                        "attributes": {
+                          "type": "yellow",
+                          "function": "digging"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "role": "explaining"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "tunnel",
+                        "attributes": {
+                          "dimensions": "unknown"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "explaining",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_53_58",
+                      "name": "construction site",
+                      "time": {
+                        "start": "53.5",
+                        "end": "58.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                      "summary": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                      "implications": "Major construction news event",
+                      "modalities": {
+                        "visual": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man explains the tunnel's dimensions.",
+                        "audio": "man's voice",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "An excavator works in a dimly lit tunnel, digging into the ground as a man's voice provides details about the tunnel's dimensions.",
+            "postprocess": {
+              "event_id": 22,
+              "original_answer": "An excavator works in a dimly lit tunnel, digging into the ground as a man's voice provides details about the tunnel's dimensions.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_53_58",
+                "tags": [
+                  "tunnel",
+                  "excavation",
+                  "construction",
+                  "engineering",
+                  "geology"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Excavator",
+                    "attributes": {
+                      "type": "heavy machinery",
+                      "function": "digging"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Man",
+                    "attributes": {
+                      "role": "narrator",
+                      "function": "providing details"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man",
+                    "ref_object": "O002",
+                    "role": "narrator",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_53_58",
+                  "name": "Excavation in a tunnel",
+                  "time": {
+                    "start": "53.5",
+                    "end": "58.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "construction news"
+                  ],
+                  "scene_topic": "An excavator works in a dimly lit tunnel, digging into the ground as a man's voice provides details about the tunnel's dimensions.",
+                  "summary": "An excavator works in a dimly lit tunnel, digging into the ground as a man's voice provides details about the tunnel's dimensions.",
+                  "implications": "Major construction news event",
+                  "modalities": {
+                    "visual": "An excavator works in a dimly lit tunnel, digging into the ground as a man's voice provides details about the tunnel's dimensions.",
+                    "audio": "man's voice",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "The camera shows a massive yellow excavator working in a dimly lit tunnel, digging into the ground as a man's voice explains the tunnel's dimensions."
+          }
+        ],
+        "caption": "An excavator is used in the construction of a dimly lit tunnel, removing rocks and debris as a man explains the challenges of building the tunnel and the importance of safety measures.",
+        "postprocess": {
+          "event_id": 17,
+          "original_answer": "An excavator is used in the construction of a dimly lit tunnel, removing rocks and debris as a man explains the challenges of building the tunnel and the importance of safety measures.",
+          "result": {
+            "video_id": "3MI7OZ_BlgE",
+            "event_id": "E_3MI7OZ_34.5_58.5",
+            "tags": [
+              "construction",
+              "tunnel",
+              "excavator",
+              "safety",
+              "engineering"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Excavator",
+                "attributes": {
+                  "type": "heavy machinery",
+                  "function": "removing rocks and debris"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Man",
+                "attributes": {
+                  "role": "explainer",
+                  "function": "explaining challenges and importance of safety measures"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man",
+                "ref_object": "O002",
+                "role": "explainer",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_3MI7OZ_34.5_58.5",
+              "name": "Tunnel construction",
+              "time": {
+                "start": "34.5",
+                "end": "58.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "construction news"
+              ],
+              "scene_topic": "An excavator is used in the construction of a dimly lit tunnel, removing rocks and debris as a man explains the challenges of building the tunnel and the importance of safety measures.",
+              "summary": "An excavator is used in the construction of a dimly lit tunnel, removing rocks and debris as a man explains the challenges of building the tunnel and the importance of safety measures.",
+              "implications": "Major engineering news event",
+              "modalities": {
+                "visual": "An excavator is used in the construction of a dimly lit tunnel, removing rocks and debris as a man explains the challenges of building the tunnel and the importance of safety measures.",
+                "audio": "",
+                "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+              }
+            }
+          }
+        },
+        "summary": "A large yellow excavator is working in a dimly lit tunnel, scooping up rocks and debris as a man explains the construction process and the challenges of working in a confined space. The excavator's powerful arm digs into the ground as the voice provides details on the tunnel's dimensions."
+      },
+      {
+        "level": 1,
+        "start_time": 58.5,
+        "end_time": 86.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 58.5,
+            "end_time": 68.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 58.5,
+                "end_time": 66.5,
+                "children": [],
+                "caption": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_58_66",
+                    "tags": [
+                      "construction",
+                      "tunnel",
+                      "excavator",
+                      "site"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "excavator",
+                        "attributes": {
+                          "type": "yellow",
+                          "function": "digging"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "role": "explaining"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "explaining",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_58_66",
+                      "name": "Tunnel construction",
+                      "time": {
+                        "start": "58.5",
+                        "end": "66.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction news"
+                      ],
+                      "scene_topic": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                      "summary": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man's voice explains the tunnel's dimensions.",
+                      "implications": "Major construction news event",
+                      "modalities": {
+                        "visual": "The camera pans across the dimly lit tunnel, showcasing the massive yellow excavator working on the construction site, its powerful arm digging into the ground as a man explains the tunnel's dimensions.",
+                        "audio": "man's voice",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 66.5,
+                "end_time": 68.5,
+                "children": [],
+                "caption": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_66.5_68.5",
+                    "tags": [
+                      "construction",
+                      "project",
+                      "workers",
+                      "equipment",
+                      "narration"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "construction_site",
+                        "attributes": {
+                          "scale": "impressive",
+                          "workers": "diligent",
+                          "equipment": "various"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "narrator",
+                        "ref_object": "O001",
+                        "role": "voice_over",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_66.5_68.5",
+                      "name": "construction_site_panorama",
+                      "time": {
+                        "start": "66.5",
+                        "end": "68.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction"
+                      ],
+                      "scene_topic": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                      "summary": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                      "implications": "Major infrastructure development",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment.",
+                        "audio": "man's voice narration",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A massive yellow excavator works on a construction site, digging into the ground as a man's voice explains the tunnel's dimensions. The camera then pans across a bustling construction site, showcasing workers operating machinery and equipment while a man's voice narrates the impressive scale of the project.",
+            "postprocess": {
+              "event_id": 24,
+              "original_answer": "A massive yellow excavator works on a construction site, digging into the ground as a man's voice explains the tunnel's dimensions. The camera then pans across a bustling construction site, showcasing workers operating machinery and equipment while a man's voice narrates the impressive scale of the project.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_58_68",
+                "tags": [
+                  "construction",
+                  "excavator",
+                  "tunnel",
+                  "construction_site"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "excavator",
+                    "attributes": {
+                      "type": "yellow",
+                      "function": "digging"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "construction_site",
+                    "attributes": {
+                      "scale": "bustling",
+                      "workers": "operating machinery and equipment"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man's voice",
+                    "ref_object": "O001",
+                    "role": "narrator",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_58_68",
+                  "name": "construction site",
+                  "time": {
+                    "start": "58.5",
+                    "end": "68.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "construction news"
+                  ],
+                  "scene_topic": "A massive yellow excavator works on a construction site, digging into the ground as a man's voice explains the tunnel's dimensions.",
+                  "summary": "A massive yellow excavator works on a construction site, digging into the ground as a man's voice explains the tunnel's dimensions. The camera then pans across a bustling construction site, showcasing workers operating machinery and equipment while a man's voice narrates the impressive scale of the project.",
+                  "implications": "Major construction news event",
+                  "modalities": {
+                    "visual": "A massive yellow excavator works on a construction site, digging into the ground as a man's voice explains the tunnel's dimensions. The camera then pans across a bustling construction site, showcasing workers operating machinery and equipment.",
+                    "audio": "man's voice; machinery; equipment",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "The camera shows a massive yellow excavator digging into the ground as a man's voice explains the tunnel's dimensions, while the surrounding construction site is bustling with workers operating machinery and equipment. The project's impressive scale is narrated by the man's voice, showcasing the massive undertaking."
+          },
+          {
+            "level": 2,
+            "start_time": 68.5,
+            "end_time": 76.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 68.5,
+                "end_time": 76.5,
+                "children": [],
+                "caption": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_68.5_76.5",
+                    "tags": [
+                      "construction",
+                      "project",
+                      "workers",
+                      "equipment",
+                      "narration"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "construction_site",
+                        "attributes": {
+                          "scale": "impressive",
+                          "workers": "diligent",
+                          "equipment": "various"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "narrator",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "man"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_68.5_76.5",
+                      "name": "construction_site_panorama",
+                      "time": {
+                        "start": "68.5",
+                        "end": "76.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction"
+                      ],
+                      "scene_topic": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                      "summary": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                      "implications": "Major construction project",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment.",
+                        "audio": "man's voice narration",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A construction site is bustling with workers in hard hats and high-visibility vests operating machinery and equipment, as a man's voice narrates the impressive scale of the project.",
+            "postprocess": {
+              "event_id": 28,
+              "original_answer": "A construction site is bustling with workers in hard hats and high-visibility vests operating machinery and equipment, as a man's voice narrates the impressive scale of the project.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_68.5_76.5",
+                "tags": [
+                  "construction",
+                  "workers",
+                  "site",
+                  "project"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "construction site",
+                    "attributes": {
+                      "description": "A construction site with workers operating machinery and equipment"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "narrator",
+                    "ref_object": "O001",
+                    "role": "narrator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_68.5_76.5",
+                  "name": "Construction site scene",
+                  "time": {
+                    "start": "68.5",
+                    "end": "76.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "construction news"
+                  ],
+                  "scene_topic": "A construction site is bustling with workers operating machinery and equipment, as a man's voice narrates the impressive scale of the project.",
+                  "summary": "A construction site is bustling with workers in hard hats and high-visibility vests operating machinery and equipment, as a man's voice narrates the impressive scale of the project.",
+                  "implications": "Major construction news event",
+                  "modalities": {
+                    "visual": "A construction site is bustling with workers in hard hats and high-visibility vests operating machinery and equipment, as a man narrates the impressive scale of the project.",
+                    "audio": "man's voice",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "The camera captures a busy construction site where workers in hard hats and vests operate machinery, showcasing the impressive scale of the project."
+          },
+          {
+            "level": 2,
+            "start_time": 76.5,
+            "end_time": 86.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 76.5,
+                "end_time": 86.5,
+                "children": [],
+                "caption": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_76.5_86.5",
+                    "tags": [
+                      "construction",
+                      "project",
+                      "workers",
+                      "equipment",
+                      "narration"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "construction_site",
+                        "attributes": {
+                          "scale": "impressive",
+                          "workers": "diligent",
+                          "equipment": "various"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "narrator",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "man"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_76.5_86.5",
+                      "name": "construction_site_panorama",
+                      "time": {
+                        "start": "76.5",
+                        "end": "86.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction"
+                      ],
+                      "scene_topic": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                      "summary": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment, while a man's voice narrates the impressive scale of the project.",
+                      "implications": "Major construction project",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling construction site, showcasing workers in hard hats and high-visibility vests diligently operating machinery and equipment.",
+                        "audio": "man's voice narration",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A construction site is bustling with workers operating machinery and equipment, showcasing the impressive scale of the project as a man's voice narrates.",
+            "postprocess": {
+              "event_id": 30,
+              "original_answer": "A construction site is bustling with workers operating machinery and equipment, showcasing the impressive scale of the project as a man's voice narrates.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_76.5_86.5",
+                "tags": [
+                  "construction",
+                  "workers",
+                  "machinery",
+                  "equipment",
+                  "project"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "construction site",
+                    "attributes": {
+                      "scale": "impressive",
+                      "workers": "operating machinery and equipment"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man's voice",
+                    "ref_object": "O001",
+                    "role": "narrator",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_76.5_86.5",
+                  "name": "construction site scene",
+                  "time": {
+                    "start": "76.5",
+                    "end": "86.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "construction news"
+                  ],
+                  "scene_topic": "A construction site is bustling with workers operating machinery and equipment, showcasing the impressive scale of the project as a man's voice narrates.",
+                  "summary": "A construction site is bustling with workers operating machinery and equipment, showcasing the impressive scale of the project as a man's voice narrates.",
+                  "implications": "Major construction news event",
+                  "modalities": {
+                    "visual": "A construction site is bustling with workers operating machinery and equipment, showcasing the impressive scale of the project as a man narrates.",
+                    "audio": "man's voice narration",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "The camera captures a busy construction site where workers in hard hats and vests operate machinery, showcasing the impressive scale of the project."
+          }
+        ],
+        "caption": "A construction site is shown with a massive yellow excavator digging into the ground while a man's voice explains the tunnel's dimensions. The camera then pans across the bustling site, showing workers operating machinery and equipment while a man's voice narrates the impressive scale of the project.",
+        "postprocess": {
+          "event_id": 25,
+          "original_answer": "A construction site is shown with a massive yellow excavator digging into the ground while a man's voice explains the tunnel's dimensions. The camera then pans across the bustling site, showing workers operating machinery and equipment while a man's voice narrates the impressive scale of the project.",
+          "result": {
+            "video_id": "3MI7OZ_BlgE",
+            "event_id": "E_3MI7OZ_58_86",
+            "tags": [
+              "construction",
+              "excavator",
+              "tunnel",
+              "workers",
+              "machinery"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "excavator",
+                "attributes": {
+                  "type": "yellow",
+                  "function": "digging"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "workers",
+                "attributes": {
+                  "number": "multiple",
+                  "task": "operating machinery"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man's voice",
+                "ref_object": "O001",
+                "role": "narrator",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_3MI7OZ_58_86",
+              "name": "construction site",
+              "time": {
+                "start": "58.5",
+                "end": "86.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "construction news"
+              ],
+              "scene_topic": "A construction site is shown with a massive yellow excavator digging into the ground.",
+              "summary": "A construction site is shown with a massive yellow excavator digging into the ground while a man's voice explains the tunnel's dimensions. The camera then pans across the bustling site, showing workers operating machinery and equipment while a man's voice narrates the impressive scale of the project.",
+              "implications": "Major infrastructure project",
+              "modalities": {
+                "visual": "A construction site is shown with a massive yellow excavator digging into the ground while a man's voice explains the tunnel's dimensions. The camera then pans across the bustling site, showing workers operating machinery and equipment.",
+                "audio": "man's voice; machinery; equipment",
+                "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+              }
+            }
+          }
+        },
+        "summary": "A massive yellow excavator digs into the ground as workers operate machinery and equipment on a bustling construction site, showcasing the impressive scale of the project. The camera captures the busy scene, highlighting the massive undertaking."
+      },
+      {
+        "level": 1,
+        "start_time": 86.5,
+        "end_time": 133.84,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 86.5,
+            "end_time": 101.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 86.5,
+                "end_time": 91.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing, while a man's voice narrates the construction of a new tunnel, his words occasionally drowned out by the upbeat pop music playing in the background.",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing, while a man's voice narrates the construction of a new tunnel, his words occasionally drowned out by the upbeat pop music playing in the background.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_86_5_91_5",
+                    "tags": [
+                      "city",
+                      "construction",
+                      "tunnel",
+                      "pedestrian",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city_street",
+                        "attributes": {
+                          "description": "bustling city street with modern buildings and pedestrian crossing"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "tunnel",
+                        "attributes": {
+                          "description": "newly constructed tunnel"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "pedestrian_crossing",
+                        "attributes": {
+                          "description": "pedestrian crossing on the city street"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "camera",
+                        "attributes": {
+                          "description": "camera panning across the city street"
+                        }
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "narrator",
+                        "attributes": {
+                          "description": "man's voice narrating the construction of the tunnel"
+                        }
+                      },
+                      {
+                        "object_id": "O006",
+                        "name": "music",
+                        "attributes": {
+                          "description": "upbeat pop music playing in the background"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "narrator",
+                        "ref_object": "O005",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_86_5_91_5",
+                      "name": "city_street_scene",
+                      "time": {
+                        "start": "86.5",
+                        "end": "91.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005",
+                        "O006"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "city_scene"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing, while a man's voice narrates the construction of a new tunnel, his words occasionally drowned out by the upbeat pop music playing in the background.",
+                      "summary": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing, while a man's voice narrates the construction of a new tunnel, his words occasionally drowned out by the upbeat pop music playing in the background.",
+                      "implications": "Major urban development news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing.",
+                        "audio": "man's voice; upbeat pop music",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 91.5,
+                "end_time": 95.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing, while a man's voice narrates the construction of a new metro line.",
+                "postprocess": {
+                  "event_id": 34,
+                  "original_answer": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing, while a man's voice narrates the construction of a new metro line.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_91.5_95.5",
+                    "tags": [
+                      "city",
+                      "construction",
+                      "metro",
+                      "narration",
+                      "pedestrian"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city street",
+                        "attributes": {
+                          "description": "bustling city street with modern buildings and pedestrian crossing"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "metro line",
+                        "attributes": {
+                          "description": "new metro line under construction"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "pedestrian crossing",
+                        "attributes": {
+                          "description": "pedestrian crossing on city street"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "modern buildings",
+                        "attributes": {
+                          "description": "modern buildings on city street"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "narrator",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_91.5_95.5",
+                      "name": "city street construction",
+                      "time": {
+                        "start": "91.5",
+                        "end": "95.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban development"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing, while a man's voice narrates the construction of a new metro line.",
+                      "summary": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing, while a man's voice narrates the construction of a new metro line.",
+                      "implications": "Major urban development news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street, showcasing modern buildings and a pedestrian crossing.",
+                        "audio": "man's voice narration; construction sounds",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 95.5,
+                "end_time": 101.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street, showcasing modern buildings and a prominent red double-decker bus, while a man's voice narrates the construction of a new tunnel, his words occasionally drowned out by the sounds of the city.",
+                "postprocess": {
+                  "event_id": 35,
+                  "original_answer": "The camera pans across a bustling city street, showcasing modern buildings and a prominent red double-decker bus, while a man's voice narrates the construction of a new tunnel, his words occasionally drowned out by the sounds of the city.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_95.5_101.5",
+                    "tags": [
+                      "city",
+                      "construction",
+                      "tunnel",
+                      "narration",
+                      "bus"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city street",
+                        "attributes": {
+                          "description": "bustling city street with modern buildings and a red double-decker bus"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "red double-decker bus",
+                        "attributes": {
+                          "description": "a prominent red double-decker bus on the city street"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man's voice",
+                        "attributes": {
+                          "description": "a man's voice narrating the construction of a new tunnel"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "O003",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_95.5_101.5",
+                      "name": "city street construction",
+                      "time": {
+                        "start": "95.5",
+                        "end": "101.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban development"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street, showcasing modern buildings and a prominent red double-decker bus, while a man's voice narrates the construction of a new tunnel.",
+                      "summary": "The camera pans across a bustling city street, showcasing modern buildings and a prominent red double-decker bus, while a man's voice narrates the construction of a new tunnel, his words occasionally drowned out by the sounds of the city.",
+                      "implications": "Major urban development news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street, showcasing modern buildings and a prominent red double-decker bus.",
+                        "audio": "man's voice; city sounds.",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A new tunnel is being constructed in a bustling city, as narrated by a man's voice. The construction is occasionally drowned out by the upbeat pop music playing in the background and the sounds of the city.",
+            "postprocess": {
+              "event_id": 32,
+              "original_answer": "A new tunnel is being constructed in a bustling city, as narrated by a man's voice. The construction is occasionally drowned out by the upbeat pop music playing in the background and the sounds of the city.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_86_101",
+                "tags": [
+                  "city",
+                  "construction",
+                  "music",
+                  "narration"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Tunnel",
+                    "attributes": {
+                      "description": "A new tunnel being constructed in a bustling city"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "City",
+                    "attributes": {
+                      "description": "A bustling city with sounds of daily life"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Music",
+                    "attributes": {
+                      "description": "Upbeat pop music playing in the background"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Narration",
+                    "attributes": {
+                      "description": "A man's voice narrating the construction"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Narrator",
+                    "ref_object": "O004",
+                    "role": "Narrator",
+                    "entity": "Person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_86_101",
+                  "name": "Tunnel Construction",
+                  "time": {
+                    "start": "86.5",
+                    "end": "101.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "urban development"
+                  ],
+                  "scene_topic": "A new tunnel is being constructed in a bustling city, as narrated by a man's voice.",
+                  "summary": "A new tunnel is being constructed in a bustling city, as narrated by a man's voice. The construction is occasionally drowned out by the upbeat pop music playing in the background and the sounds of the city.",
+                  "implications": "Major urban development news event",
+                  "modalities": {
+                    "visual": "A new tunnel is being constructed in a bustling city, as narrated by a man's voice.",
+                    "audio": "man's voice; upbeat pop music; city sounds.",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "The camera captures a bustling city street, showcasing modern buildings and infrastructure, as a narrator describes the construction of a new tunnel and metro line. The sounds of the city, including upbeat pop music and city noises, occasionally drown out the narrator's voice."
+          },
+          {
+            "level": 2,
+            "start_time": 101.5,
+            "end_time": 111.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 101.5,
+                "end_time": 105.5,
+                "children": [],
+                "caption": "The video transitions from a bustling city street scene to a modern building with a large glass facade, as a man's voice continues to describe the construction of the Elizabeth line, now with a focus on the tunnel boring machines.",
+                "postprocess": {
+                  "event_id": 36,
+                  "original_answer": "The video transitions from a bustling city street scene to a modern building with a large glass facade, as a man's voice continues to describe the construction of the Elizabeth line, now with a focus on the tunnel boring machines.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_101.5_105.5",
+                    "tags": [
+                      "city",
+                      "construction",
+                      "elizabeth_line",
+                      "tunnel_boring_machines"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city_street",
+                        "attributes": {
+                          "scene": "bustling",
+                          "description": "city street scene"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "modern_building",
+                        "attributes": {
+                          "facade": "large glass",
+                          "description": "modern building with large glass facade"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "tunnel_boring_machine",
+                        "attributes": {
+                          "description": "tunnel boring machine"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_101.5_105.5",
+                      "name": "construction_of_elizabeth_line",
+                      "time": {
+                        "start": "101.5",
+                        "end": "105.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "construction"
+                      ],
+                      "scene_topic": "The video transitions from a bustling city street scene to a modern building with a large glass facade, as a man's voice continues to describe the construction of the Elizabeth line, now with a focus on the tunnel boring machines.",
+                      "summary": "The video transitions from a bustling city street scene to a modern building with a large glass facade, as a man's voice continues to describe the construction of the Elizabeth line, now with a focus on the tunnel boring machines.",
+                      "implications": "Major infrastructure development",
+                      "modalities": {
+                        "visual": "The video transitions from a bustling city street scene to a modern building with a large glass facade, as a man's voice continues to describe the construction of the Elizabeth line, now with a focus on the tunnel boring machines.",
+                        "audio": "man's voice; construction sounds",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 105.5,
+                "end_time": 107.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city street at night, showcasing the modern architecture and illuminated buildings, while a man's voice narrates the impressive scale of the Crossrail project.",
+                "postprocess": {
+                  "event_id": 38,
+                  "original_answer": "The camera pans across a bustling city street at night, showcasing the modern architecture and illuminated buildings, while a man's voice narrates the impressive scale of the Crossrail project.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_105_5_107_5",
+                    "tags": [
+                      "city",
+                      "architecture",
+                      "night",
+                      "narration",
+                      "infrastructure"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city street",
+                        "attributes": {
+                          "location": "bustling city",
+                          "time_of_day": "night",
+                          "features": "modern architecture, illuminated buildings"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Crossrail project",
+                        "attributes": {
+                          "description": "impressive scale of the Crossrail project"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man's voice",
+                        "attributes": {
+                          "role": "narrator"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "O003",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_105_5_107_5",
+                      "name": "Crossrail project narration",
+                      "time": {
+                        "start": "105.5",
+                        "end": "107.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "infrastructure news"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city street at night, showcasing the modern architecture and illuminated buildings, while a man's voice narrates the impressive scale of the Crossrail project.",
+                      "summary": "The camera pans across a bustling city street at night, showcasing the modern architecture and illuminated buildings, while a man's voice narrates the impressive scale of the Crossrail project.",
+                      "implications": "Major infrastructure news event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city street at night, showcasing the modern architecture and illuminated buildings.",
+                        "audio": "man's voice narration; Crossrail project narration",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 107.5,
+                "end_time": 109.5,
+                "children": [],
+                "caption": "The video transitions from a bustling city street scene to a digital map, highlighting the location of \"100 Victoria Embankment\" as a man's voice continues to describe the construction project.",
+                "postprocess": {
+                  "event_id": 39,
+                  "original_answer": "The video transitions from a bustling city street scene to a digital map, highlighting the location of \"100 Victoria Embankment\" as a man's voice continues to describe the construction project.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_107.5_109.5",
+                    "tags": [
+                      "city",
+                      "construction",
+                      "location",
+                      "map",
+                      "project"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city street scene",
+                        "attributes": {
+                          "location": "100 Victoria Embankment",
+                          "description": "bustling city street scene"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "digital map",
+                        "attributes": {
+                          "location": "100 Victoria Embankment",
+                          "description": "digital map highlighting location"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_107.5_109.5",
+                      "name": "construction project description",
+                      "time": {
+                        "start": "107.5",
+                        "end": "109.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "location news"
+                      ],
+                      "scene_topic": "The video transitions from a bustling city street scene to a digital map, highlighting the location of '100 Victoria Embankment' as a man's voice continues to describe the construction project.",
+                      "summary": "The video transitions from a bustling city street scene to a digital map, highlighting the location of \"100 Victoria Embankment\" as a man's voice continues to describe the construction project.",
+                      "implications": "Major construction news event",
+                      "modalities": {
+                        "visual": "The video transitions from a bustling city street scene to a digital map, highlighting the location of '100 Victoria Embankment'.",
+                        "audio": "a man's voice",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 109.5,
+                "end_time": 111.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a person's hand holding a small, reflective object to a wider shot of a person's face, all while a pop song plays in the background.",
+                "postprocess": {
+                  "event_id": 40,
+                  "original_answer": "The video transitions from a close-up of a person's hand holding a small, reflective object to a wider shot of a person's face, all while a pop song plays in the background.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_109.5_111.5",
+                    "tags": [
+                      "object",
+                      "person",
+                      "hand",
+                      "face",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "small, reflective object",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person's hand",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "person's face",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_109.5_111.5",
+                      "name": "video transition",
+                      "time": {
+                        "start": "109.5",
+                        "end": "111.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "object manipulation"
+                      ],
+                      "scene_topic": "A person holds a small object and then shows their face while a pop song plays.",
+                      "summary": "The video transitions from a close-up of a person's hand holding a small, reflective object to a wider shot of a person's face, all while a pop song plays in the background.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a person's hand holding a small, reflective object to a wider shot of a person's face.",
+                        "audio": "pop song",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video transitions between scenes of a bustling city, a modern building, and a digital map, showcasing the construction of the Elizabeth line and Crossrail project. The video also features a person building a bookcase and a person holding a small object, while a pop song plays in the background.",
+            "postprocess": {
+              "event_id": 37,
+              "original_answer": "The video transitions between scenes of a bustling city, a modern building, and a digital map, showcasing the construction of the Elizabeth line and Crossrail project. The video also features a person building a bookcase and a person holding a small object, while a pop song plays in the background.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_101.5_111.5",
+                "tags": [
+                  "city",
+                  "construction",
+                  "transportation",
+                  "building",
+                  "map"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "bustling city",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "modern building",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "digital map",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "bookcase",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "small object",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "person building bookcase",
+                    "ref_object": "O004",
+                    "role": "builder",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "person holding small object",
+                    "ref_object": "O005",
+                    "role": "holder",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_101.5_111.5",
+                  "name": "Construction of Elizabeth line and Crossrail project",
+                  "time": {
+                    "start": "101.5",
+                    "end": "111.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "construction news"
+                  ],
+                  "scene_topic": "The video showcases the construction of the Elizabeth line and Crossrail project, featuring a person building a bookcase and holding a small object.",
+                  "summary": "The video transitions between scenes of a bustling city, a modern building, and a digital map, showcasing the construction of the Elizabeth line and Crossrail project. The video also features a person building a bookcase and a person holding a small object, while a pop song plays in the background.",
+                  "implications": "Major infrastructure development news event",
+                  "modalities": {
+                    "visual": "The video transitions between scenes of a bustling city, a modern building, and a digital map, showcasing the construction of the Elizabeth line and Crossrail project. A person builds a bookcase and a person holds a small object.",
+                    "audio": "pop song",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                  }
+                }
+              }
+            },
+            "summary": "The video showcases the construction of the Elizabeth line and Crossrail project, featuring tunnel boring machines and modern city architecture, with a narrator describing the impressive scale of the project. The video also includes a digital map highlighting the location of \"100 Victoria Embankment\" and a pop song playing in the background."
+          },
+          {
+            "level": 2,
+            "start_time": 111.5,
+            "end_time": 133.84,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 111.5,
+                "end_time": 114.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a person's hand holding a small, reflective object to a wider shot of a person standing in a dimly lit room, their face obscured by a bright light that illuminates the room.",
+                "postprocess": {
+                  "event_id": 41,
+                  "original_answer": "The video transitions from a close-up of a person's hand holding a small, reflective object to a wider shot of a person standing in a dimly lit room, their face obscured by a bright light that illuminates the room.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_111.5_114.5",
+                    "tags": [
+                      "object",
+                      "person",
+                      "room",
+                      "light"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "small, reflective object",
+                        "attributes": {
+                          "object_type": "small, reflective object",
+                          "size": "small",
+                          "material": "reflective"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "person's hand",
+                        "attributes": {
+                          "body_part": "hand",
+                          "person": "person"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "person",
+                        "attributes": {
+                          "person": "person",
+                          "face_obscured": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "bright light",
+                        "attributes": {
+                          "light_type": "bright",
+                          "illumination": "room"
+                        }
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "dimly lit room",
+                        "attributes": {
+                          "room_type": "dimly lit",
+                          "lighting": "dim"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O003",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_111.5_114.5",
+                      "name": "Transition from close-up to wider shot",
+                      "time": {
+                        "start": "111.5",
+                        "end": "114.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "object manipulation"
+                      ],
+                      "scene_topic": "The person holds a small, reflective object and then stands in a dimly lit room with their face obscured by a bright light.",
+                      "summary": "The video transitions from a close-up of a person's hand holding a small, reflective object to a wider shot of a person standing in a dimly lit room, their face obscured by a bright light that illuminates the room.",
+                      "implications": "Major scene transition event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a person's hand holding a small, reflective object to a wider shot of a person standing in a dimly lit room, their face obscured by a bright light that illuminates the room.",
+                        "audio": "",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 114.5,
+                "end_time": 117.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a sleek, modern interface to a wider shot, revealing a person's hands interacting with the interface, possibly typing or clicking on a digital map or graphic design software.",
+                "postprocess": {
+                  "event_id": 43,
+                  "original_answer": "The video transitions from a close-up of a sleek, modern interface to a wider shot, revealing a person's hands interacting with the interface, possibly typing or clicking on a digital map or graphic design software.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_114.5_117.5",
+                    "tags": [
+                      "interface",
+                      "graphic_design",
+                      "digital_map"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "interface",
+                        "attributes": {
+                          "type": "digital",
+                          "description": "sleek, modern"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "hands",
+                        "attributes": {
+                          "action": "typing or clicking"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "digital_map",
+                        "attributes": {
+                          "description": "possibly a digital map"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "graphic_design_software",
+                        "attributes": {
+                          "description": "possibly graphic design software"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O002",
+                        "role": "operator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_114.5_117.5",
+                      "name": "interface transition",
+                      "time": {
+                        "start": "114.5",
+                        "end": "117.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human-computer interaction"
+                      ],
+                      "scene_topic": "A person interacts with a digital interface.",
+                      "summary": "The video transitions from a close-up of a sleek, modern interface to a wider shot, revealing a person's hands interacting with the interface, possibly typing or clicking on a digital map or graphic design software.",
+                      "implications": "Significant for human-computer interaction and digital design.",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a sleek, modern interface to a wider shot, revealing a person's hands interacting with the interface, possibly typing or clicking on a digital map or graphic design software.",
+                        "audio": "",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 117.5,
+                "end_time": 119.5,
+                "children": [],
+                "caption": "The video transitions to a close-up of a sleek, metallic surface, possibly a futuristic device, as a man's voice begins to speak, though the words are unclear.",
+                "postprocess": {
+                  "event_id": 44,
+                  "original_answer": "The video transitions to a close-up of a sleek, metallic surface, possibly a futuristic device, as a man's voice begins to speak, though the words are unclear.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_117.5_119.5",
+                    "tags": [
+                      "video_transition",
+                      "close_up",
+                      "futuristic_device",
+                      "man_s_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "futuristic_device",
+                        "attributes": {
+                          "description": "sleek, metallic surface"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_117.5_119.5",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "117.5",
+                        "end": "119.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions to a close-up of a sleek, metallic surface, possibly a futuristic device, as a man's voice begins to speak, though the words are unclear.",
+                      "summary": "The video transitions to a close-up of a sleek, metallic surface, possibly a futuristic device, as a man's voice begins to speak, though the words are unclear.",
+                      "implications": "Major video event",
+                      "modalities": {
+                        "visual": "The video transitions to a close-up of a sleek, metallic surface, possibly a futuristic device.",
+                        "audio": "man's voice",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 119.5,
+                "end_time": 131.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a sleek, metallic surface to a wider shot, revealing a person's hands interacting with a digital interface, all while a pop song plays in the background.",
+                "postprocess": {
+                  "event_id": 45,
+                  "original_answer": "The video transitions from a close-up of a sleek, metallic surface to a wider shot, revealing a person's hands interacting with a digital interface, all while a pop song plays in the background.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_119_131",
+                    "tags": [
+                      "interface",
+                      "digital",
+                      "hands",
+                      "metallic",
+                      "pop_song"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "metallic_surface",
+                        "attributes": {
+                          "material": "metal",
+                          "color": "silver"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "digital_interface",
+                        "attributes": {
+                          "type": "touchscreen",
+                          "function": "interactive"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "person_hands",
+                        "attributes": {
+                          "body_part": "hands",
+                          "action": "interacting"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O003",
+                        "role": "operator",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_119_131",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "119.5",
+                        "end": "131.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_computer_interaction"
+                      ],
+                      "scene_topic": "A person interacts with a digital interface.",
+                      "summary": "The video transitions from a close-up of a sleek, metallic surface to a wider shot, revealing a person's hands interacting with a digital interface, all while a pop song plays in the background.",
+                      "implications": "Major human-computer interaction event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a sleek, metallic surface to a wider shot, revealing a person's hands interacting with a digital interface.",
+                        "audio": "pop song",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 131.5,
+                "end_time": 133.84,
+                "children": [],
+                "caption": "The video transitions to a close-up of a sleek, metallic surface, reflecting the surrounding environment, while a man's voice begins to speak.",
+                "postprocess": {
+                  "event_id": 46,
+                  "original_answer": "The video transitions to a close-up of a sleek, metallic surface, reflecting the surrounding environment, while a man's voice begins to speak.",
+                  "result": {
+                    "video_id": "3MI7OZ_BlgE",
+                    "event_id": "E_3MI7OZ_131.5_133.84",
+                    "tags": [
+                      "video_transition",
+                      "close_up",
+                      "metallic_surface",
+                      "reflection",
+                      "voice_over"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "metallic_surface",
+                        "attributes": {
+                          "material": "metal",
+                          "reflection": "environment"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_3MI7OZ_131.5_133.84",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "131.5",
+                        "end": "133.84"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions to a close-up of a sleek, metallic surface, reflecting the surrounding environment, while a man's voice begins to speak.",
+                      "summary": "The video transitions to a close-up of a sleek, metallic surface, reflecting the surrounding environment, while a man's voice begins to speak.",
+                      "implications": "Major visual storytelling event",
+                      "modalities": {
+                        "visual": "The video transitions to a close-up of a sleek, metallic surface, reflecting the surrounding environment, while a man's voice begins to speak.",
+                        "audio": "man's voice",
+                        "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video transitions between different scenes, showing a person interacting with various digital interfaces, a bright light illuminating a dark room, and a sleek, metallic surface reflecting the surrounding environment. The person's face is obscured in some shots, and a man's voice speaks unclearly in one scene. A pop song plays in the background.",
+            "postprocess": {
+              "event_id": 42,
+              "original_answer": "The video transitions between different scenes, showing a person interacting with various digital interfaces, a bright light illuminating a dark room, and a sleek, metallic surface reflecting the surrounding environment. The person's face is obscured in some shots, and a man's voice speaks unclearly in one scene. A pop song plays in the background.",
+              "result": {
+                "video_id": "3MI7OZ_BlgE",
+                "event_id": "E_3MI7OZ_111.5_133.84",
+                "tags": [
+                  "digital_interface",
+                  "lighting",
+                  "reflection",
+                  "person",
+                  "voice",
+                  "music"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "digital_interface",
+                    "attributes": {
+                      "type": "touchscreen",
+                      "function": "interactive"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "bright_light",
+                    "attributes": {
+                      "color": "white",
+                      "intensity": "high"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "metallic_surface",
+                    "attributes": {
+                      "material": "aluminum",
+                      "finish": "polished"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "person",
+                    "ref_object": "O001",
+                    "role": "user",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_3MI7OZ_111.5_133.84",
+                  "name": "video_transition",
+                  "time": {
+                    "start": "111.5",
+                    "end": "133.84"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "video_transition"
+                  ],
+                  "scene_topic": "A person interacts with digital interfaces in a dark room.",
+                  "summary": "The video transitions between different scenes, showing a person interacting with various digital interfaces, a bright light illuminating a dark room, and a sleek, metallic surface reflecting the surrounding environment. The person's face is obscured in some shots, and a man's voice speaks unclearly in one scene. A pop song plays in the background.",
+                  "implications": "Major multimedia, entertainment news event",
+                  "modalities": {
+                    "visual": "The video transitions between different scenes, showing a person interacting with various digital interfaces, a bright light illuminating a dark room, and a sleek, metallic surface reflecting the surrounding environment. The person's face is obscured in some shots.",
+                    "audio": "a man's voice; pop song",
+                    "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station. The project is expected to be completed in about two to three years, with the new tunnel connecting to the existing station with minimal disruption."
+                  }
+                }
+              }
+            },
+            "summary": "The video features a series of close-ups and wider shots showcasing a person interacting with various digital interfaces, including a futuristic device, graphic design software, and a digital map, while a pop song plays in the background. The video also includes shots of a person's hands and a sleek, metallic surface, with a man's voice speaking unclearly at times."
+          }
+        ],
+        "caption": "The video shows various scenes of construction, technology, and urban life, set to an upbeat pop song. The scenes include a new tunnel being built in a bustling city, a person building a bookcase, and a person interacting with digital interfaces. The video also features a person holding a small object and a bright light illuminating a dark room. The scenes are intercut with shots of a modern building and a digital map, showcasing the construction of the Elizabeth line and Crossrail project. The person's face is obscured in some shots,",
+        "postprocess": {
+          "event_id": 33,
+          "original_answer": "The video shows various scenes of construction, technology, and urban life, set to an upbeat pop song. The scenes include a new tunnel being built in a bustling city, a person building a bookcase, and a person interacting with digital interfaces. The video also features a person holding a small object and a bright light illuminating a dark room. The scenes are intercut with shots of a modern building and a digital map, showcasing the construction of the Elizabeth line and Crossrail project. The person's face is obscured in some shots,",
+          "result": {
+            "video_id": "3MI7OZ_BlgE",
+            "event_id": "E_3MI7OZ_86.5_133.84",
+            "tags": [
+              "construction",
+              "technology",
+              "urban_life",
+              "pop_music"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Tunnel",
+                "attributes": {
+                  "type": "construction",
+                  "location": "bustling_city"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Bookcase",
+                "attributes": {
+                  "type": "furniture",
+                  "purpose": "storage"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Digital Interfaces",
+                "attributes": {
+                  "type": "technology",
+                  "function": "interaction"
+                }
+              },
+              {
+                "object_id": "O004",
+                "name": "Small Object",
+                "attributes": {
+                  "type": "unknown",
+                  "description": "held by person"
+                }
+              },
+              {
+                "object_id": "O005",
+                "name": "Bright Light",
+                "attributes": {
+                  "type": "illumination",
+                  "location": "dark_room"
+                }
+              },
+              {
+                "object_id": "O006",
+                "name": "Modern Building",
+                "attributes": {
+                  "type": "architecture",
+                  "location": "city"
+                }
+              },
+              {
+                "object_id": "O007",
+                "name": "Digital Map",
+                "attributes": {
+                  "type": "technology",
+                  "function": "navigation"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Unknown",
+                "ref_object": "O002",
+                "role": "builder",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Unknown",
+                "ref_object": "O003",
+                "role": "user",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A003",
+                "name": "Unknown",
+                "ref_object": "O004",
+                "role": "holder",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_3MI7OZ_86.5_133.84",
+              "name": "Construction and Technology Scenes",
+              "time": {
+                "start": "86.5",
+                "end": "133.84"
+              },
+              "actors": [
+                "A001",
+                "A002",
+                "A003"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004",
+                "O005",
+                "O006",
+                "O007"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "construction",
+                "technology"
+              ],
+              "scene_topic": "The video shows various scenes of construction, technology, and urban life, set to an upbeat pop song.",
+              "summary": "The video shows various scenes of construction, technology, and urban life, set to an upbeat pop song. The scenes include a new tunnel being built in a bustling city, a person building a bookcase, and a person interacting with digital interfaces. The video also features a person holding a small object and a bright light illuminating a dark room. The scenes are intercut with shots of a modern building and a digital map, showcasing the construction of the Elizabeth line and Crossrail project. The person's face is obscured in some shots,",
+              "implications": "Major infrastructure development news event",
+              "modalities": {
+                "visual": "The video shows various scenes of construction, technology, and urban life, set to an upbeat pop song. The scenes include a new tunnel being built in a bustling city, a person building a bookcase, and a person interacting with digital interfaces. The video also features a person holding a small object and a bright light illuminating a dark room. The scenes are intercut with shots of a modern building and a digital map, showcasing the construction of the Elizabeth line and Crossrail project. The person's face is obscured in some shots.",
+                "audio": "",
+                "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+              }
+            }
+          }
+        },
+        "summary": "The video showcases the construction of the Elizabeth line and Crossrail project, featuring tunnel boring machines and modern city architecture, with a narrator describing the impressive scale of the project. The video also includes shots of people interacting with digital interfaces and futuristic devices, set to upbeat pop music and city noises."
+      }
+    ],
+    "caption": "The video showcases the construction of the Elizabeth line and Crossrail project, highlighting the impressive scale and complexity of the project. The video intercuts between scenes of construction, technology, and urban life, set to an upbeat pop song. The scenes include a new tunnel being built in a bustling city, a person building a bookcase, and a person interacting with digital interfaces. The video also features a person holding a small object and a bright light illuminating a dark room. The scenes are intercut with shots of a modern building and a digital",
+    "postprocess": {
+      "event_id": 3,
+      "original_answer": "The video showcases the construction of the Elizabeth line and Crossrail project, highlighting the impressive scale and complexity of the project. The video intercuts between scenes of construction, technology, and urban life, set to an upbeat pop song. The scenes include a new tunnel being built in a bustling city, a person building a bookcase, and a person interacting with digital interfaces. The video also features a person holding a small object and a bright light illuminating a dark room. The scenes are intercut with shots of a modern building and a digital",
+      "result": {
+        "video_id": "3MI7OZ_BlgE",
+        "event_id": "E_3MI7OZ_0_133.84",
+        "tags": [
+          "construction",
+          "infrastructure",
+          "transportation",
+          "technology",
+          "urban_life"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "Tunnel",
+            "attributes": {
+              "construction": "new",
+              "location": "bustling city"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "Bookcase",
+            "attributes": {
+              "purpose": "furniture"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "Digital Interfaces",
+            "attributes": {
+              "type": "interactive"
+            }
+          },
+          {
+            "object_id": "O004",
+            "name": "Small Object",
+            "attributes": {
+              "description": "unknown"
+            }
+          },
+          {
+            "object_id": "O005",
+            "name": "Bright Light",
+            "attributes": {
+              "purpose": "illumination"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "Person",
+            "ref_object": "O002",
+            "role": "builder",
+            "entity": "human"
+          },
+          {
+            "actor_id": "A002",
+            "name": "Person",
+            "ref_object": "O003",
+            "role": "user",
+            "entity": "human"
+          },
+          {
+            "actor_id": "A003",
+            "name": "Person",
+            "ref_object": "O004",
+            "role": "holder",
+            "entity": "human"
+          }
+        ],
+        "event": {
+          "event_id": "E_3MI7OZ_0_133.84",
+          "name": "Construction of Elizabeth line and Crossrail project",
+          "time": {
+            "start": "0",
+            "end": "133.84"
+          },
+          "actors": [
+            "A001",
+            "A002",
+            "A003"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003",
+            "O004",
+            "O005"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "infrastructure news"
+          ],
+          "scene_topic": "The video showcases the construction of the Elizabeth line and Crossrail project, highlighting the impressive scale and complexity of the project.",
+          "summary": "The video showcases the construction of the Elizabeth line and Crossrail project, highlighting the impressive scale and complexity of the project. The video intercuts between scenes of construction, technology, and urban life, set to an upbeat pop song. The scenes include a new tunnel being built in a bustling city, a person building a bookcase, and a person interacting with digital interfaces. The video also features a person holding a small object and a bright light illuminating a dark room. The scenes are intercut with shots of a modern building and a digital",
+          "implications": "Major infrastructure news event",
+          "modalities": {
+            "visual": "The video showcases the construction of the Elizabeth line and Crossrail project, highlighting the impressive scale and complexity of the project. The video intercuts between scenes of construction, technology, and urban life, set to an upbeat pop song. The scenes include a new tunnel being built in a bustling city, a person building a bookcase, and a person interacting with digital interfaces. The video also features a person holding a small object and a bright light illuminating a dark room. The scenes are intercut with shots of a modern building and a digital.",
+            "audio": "",
+            "speech": "The Bank Station Capacity Upgrade Project is constructing a new Northern Line southbound running tunnel parallel to the existing one between Monument and Bank Station, aiming to increase capacity and reduce congestion in the heavily used station."
+          }
+        }
+      }
+    },
+    "summary": "The Crossrail project involves constructing a massive tunnel with intricate pipes and wires, featuring a dimly lit and confined space where workers use heavy machinery to dig through the ground and remove rocks and debris. Despite the challenges, progress is being made in constructing the new line, with a large yellow excavator scooping up rocks and debris as workers operate machinery and equipment on a bustling construction site."
+  }
+}

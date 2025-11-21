@@ -5,7 +5,7 @@ import torch
 import argparse
 from torch.utils.data import Dataset, DataLoader
 from torchvision.transforms import Compose, Resize, CenterCrop, Normalize
-from longvalellm.mm_utils import VideoExtractor 
+from .mm_utils import VideoExtractor 
 import json
 import os
 from tqdm import tqdm

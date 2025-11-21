@@ -162,12 +162,14 @@ class LongVALELLMMetaForCausalLM(ABC):
                 audio_features = [self.get_model().audio_mm_projector(a) if a is not None else None for a in audio]
             else:
                 audio_features = self.get_model().audio_mm_projector(audio.to(torch.float16)) ##改过
+                # audio_features = self.get_model().audio_mm_projector(audio)
 
         if asr is not None:
             if type(asr) is list:
                 asr_features = [self.get_model().asr_mm_projector(a) if a is not None else None for a in asr]
             else:
                 asr_features = self.get_model().asr_mm_projector(asr.to(torch.float16)) ##改过
+                # asr_features = self.get_model().asr_mm_projector(asr)
 
         if type(images) is list: # if input is batch
             concat_images = torch.cat([image for image in images], dim=0) # concat

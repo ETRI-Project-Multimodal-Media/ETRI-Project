@@ -1,0 +1,593 @@
+{
+  "video_id": "mvl5ZOIy_sM",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 336.2359,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 68.5,
+        "children": [],
+        "caption": "The video opens with a close-up of the Northwestern University logo, then pans out to show a group of athletes in blue and white uniforms running on a track, their movements captured in slow motion as a man's voice narrates the event.",
+        "postprocess": {
+          "event_id": 0,
+          "original_answer": "The video opens with a close-up of the Northwestern University logo, then pans out to show a group of athletes in blue and white uniforms running on a track, their movements captured in slow motion as a man's voice narrates the event.",
+          "result": {
+            "video_id": "mvl5ZOIy_sM",
+            "event_id": "E_mvl5ZOIy_sM_0_68.5",
+            "tags": [
+              "university",
+              "athletics",
+              "narration",
+              "slow_motion"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Northwestern University logo",
+                "attributes": {
+                  "description": "University logo"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Athletes in blue and white uniforms",
+                "attributes": {
+                  "description": "Group of athletes in uniforms"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Track",
+                "attributes": {
+                  "description": "Running track"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Narrator",
+                "ref_object": "",
+                "role": "Narrator",
+                "entity": "Person"
+              }
+            ],
+            "event": {
+              "event_id": "E_mvl5ZOIy_sM_0_68.5",
+              "name": "Northwestern University Athletics Event",
+              "time": {
+                "start": "0",
+                "end": "68.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "education",
+                "sports"
+              ],
+              "scene_topic": "The video opens with a close-up of the Northwestern University logo, then pans out to show a group of athletes in blue and white uniforms running on a track, their movements captured in slow motion as a man's voice narrates the event.",
+              "summary": "The video opens with a close-up of the Northwestern University logo, then pans out to show a group of athletes in blue and white uniforms running on a track, their movements captured in slow motion as a man's voice narrates the event.",
+              "implications": "Major sports event",
+              "modalities": {
+                "visual": "The video opens with a close-up of the Northwestern University logo, then pans out to show a group of athletes in blue and white uniforms running on a track, their movements captured in slow motion.",
+                "audio": "man's voice narration",
+                "speech": "Chris Miedema took first in the men's 800, with Max Klink and Luke Chunk finishing second and third, while Ian Sa took first in the 1500 meter run with a personal best time of 3:52."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 68.5,
+        "end_time": 148.5,
+        "children": [],
+        "caption": "The video transitions from a track and field event to a man in a blue jacket speaking into a microphone, then to a woman in a blue jacket speaking into a microphone, and finally to a man in a blue jacket speaking into a microphone, all while the audio transitions from the cheering crowd to a man speaking.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "The video transitions from a track and field event to a man in a blue jacket speaking into a microphone, then to a woman in a blue jacket speaking into a microphone, and finally to a man in a blue jacket speaking into a microphone, all while the audio transitions from the cheering crowd to a man speaking.",
+          "result": {
+            "video_id": "mvl5ZOIy_sM",
+            "event_id": "E_mvl5ZOIy_sM_68_148",
+            "tags": [
+              "track_and_field",
+              "speech",
+              "audio_transition"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Track and field event",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "Man in blue jacket",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "Woman in blue jacket",
+                "attributes": {}
+              },
+              {
+                "object_id": "O004",
+                "name": "Microphone",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man in blue jacket",
+                "ref_object": "O002",
+                "role": "Speaker",
+                "entity": "Person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Woman in blue jacket",
+                "ref_object": "O003",
+                "role": "Speaker",
+                "entity": "Person"
+              }
+            ],
+            "event": {
+              "event_id": "E_mvl5ZOIy_sM_68_148",
+              "name": "Speech and audio transition",
+              "time": {
+                "start": "68.5",
+                "end": "148.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports news"
+              ],
+              "scene_topic": "A man and a woman give speeches while the audio transitions from a crowd to a single speaker.",
+              "summary": "The video transitions from a track and field event to a man in a blue jacket speaking into a microphone, then to a woman in a blue jacket speaking into a microphone, and finally to a man in a blue jacket speaking into a microphone, all while the audio transitions from the cheering crowd to a man speaking.",
+              "implications": "Major sports news event",
+              "modalities": {
+                "visual": "The video transitions from a track and field event to a man in a blue jacket speaking into a microphone, then to a woman in a blue jacket speaking into a microphone, and finally to a man in a blue jacket speaking into a microphone.",
+                "audio": "Cheering crowd; man speaking.",
+                "speech": "Chris Miedema took first in the men's 800, with Max Klink and Luke Chunk finishing second and third, while Ian Sa took first in the 1500 meter run with a personal best time of 3:52."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 148.5,
+        "end_time": 177.5,
+        "children": [],
+        "caption": "A man in a blue jacket speaks into a microphone, his voice amplified as he interviews a young man in a blue shirt about his experience at the Drake Relays, the lively atmosphere of the track and field event audible in the background.",
+        "postprocess": {
+          "event_id": 3,
+          "original_answer": "A man in a blue jacket speaks into a microphone, his voice amplified as he interviews a young man in a blue shirt about his experience at the Drake Relays, the lively atmosphere of the track and field event audible in the background.",
+          "result": {
+            "video_id": "mvl5ZOIy_sM",
+            "event_id": "E_mvl5ZOIy_sM_148.5_177.5",
+            "tags": [
+              "track_and_field",
+              "drake_relays",
+              "interview",
+              "event"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man_in_blue_jacket",
+                "attributes": {
+                  "speaker": "yes",
+                  "amplified": "yes"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "man_in_blue_shirt",
+                "attributes": {
+                  "interviewee": "yes"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "microphone",
+                "attributes": {
+                  "amplification": "yes"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man_in_blue_jacket",
+                "ref_object": "O001",
+                "role": "interviewer",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "man_in_blue_shirt",
+                "ref_object": "O002",
+                "role": "interviewee",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_mvl5ZOIy_sM_148.5_177.5",
+              "name": "Drake Relays Interview",
+              "time": {
+                "start": "148.5",
+                "end": "177.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "event",
+                "interview"
+              ],
+              "scene_topic": "A man in a blue jacket interviews a young man in a blue shirt at the Drake Relays.",
+              "summary": "A man in a blue jacket speaks into a microphone, his voice amplified as he interviews a young man in a blue shirt about his experience at the Drake Relays, the lively atmosphere of the track and field event audible in the background.",
+              "implications": "Major event, sports news",
+              "modalities": {
+                "visual": "A man in a blue jacket speaks into a microphone, his voice amplified as he interviews a young man in a blue shirt about his experience at the Drake Relays, the lively atmosphere of the track and field event.",
+                "audio": "voice amplified; lively atmosphere",
+                "speech": "Chris Miedema took first in the men's 800, with Max Klink and Luke Chunk finishing second and third, while Ian Sa took first in the 1500 meter run with a personal best time of 3:52."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 177.5,
+        "end_time": 259.5,
+        "children": [],
+        "caption": "The video transitions from a track and field event to a man speaking about the event, then to a woman interviewing a man about the competition. The scene shifts to a woman practicing her throwing technique in a field, followed by a man speaking about the event. The video then shows a woman practicing her throwing technique in a field, followed by a man speaking about the event. Finally, the video shows a woman practicing her throwing technique in a field, followed by a man speaking about the event.",
+        "postprocess": {
+          "event_id": 4,
+          "original_answer": "The video transitions from a track and field event to a man speaking about the event, then to a woman interviewing a man about the competition. The scene shifts to a woman practicing her throwing technique in a field, followed by a man speaking about the event. The video then shows a woman practicing her throwing technique in a field, followed by a man speaking about the event. Finally, the video shows a woman practicing her throwing technique in a field, followed by a man speaking about the event.",
+          "result": {
+            "video_id": "mvl5ZOIy_sM",
+            "event_id": "E_mvl5ZOIy_sM_177_259",
+            "tags": [
+              "track_and_field",
+              "interview",
+              "competition",
+              "throwing"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Track and field event",
+                "attributes": {
+                  "event_type": "track_and_field",
+                  "description": "A track and field event is taking place"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Man speaking",
+                "attributes": {
+                  "speaker_type": "man",
+                  "description": "A man is speaking about the event"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Woman interviewing",
+                "attributes": {
+                  "interviewer_type": "woman",
+                  "description": "A woman is interviewing a man about the competition"
+                }
+              },
+              {
+                "object_id": "O004",
+                "name": "Woman practicing throwing technique",
+                "attributes": {
+                  "activity_type": "practicing",
+                  "description": "A woman is practicing her throwing technique in a field"
+                }
+              },
+              {
+                "object_id": "O005",
+                "name": "Man speaking about event",
+                "attributes": {
+                  "speaker_type": "man",
+                  "description": "A man is speaking about the event"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man",
+                "ref_object": "O002",
+                "role": "speaker",
+                "entity": "man"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Woman",
+                "ref_object": "O003",
+                "role": "interviewer",
+                "entity": "woman"
+              },
+              {
+                "actor_id": "A003",
+                "name": "Man",
+                "ref_object": "O005",
+                "role": "speaker",
+                "entity": "man"
+              },
+              {
+                "actor_id": "A004",
+                "name": "Woman",
+                "ref_object": "O004",
+                "role": "actor",
+                "entity": "woman"
+              }
+            ],
+            "event": {
+              "event_id": "E_mvl5ZOIy_sM_177_259",
+              "name": "Track and field event",
+              "time": {
+                "start": "177.5",
+                "end": "259.5"
+              },
+              "actors": [
+                "A001",
+                "A002",
+                "A003",
+                "A004"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004",
+                "O005"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports news"
+              ],
+              "scene_topic": "The video shows a track and field event, followed by interviews and practice",
+              "summary": "The video transitions from a track and field event to a man speaking about the event, then to a woman interviewing a man about the competition. The scene shifts to a woman practicing her throwing technique in a field, followed by a man speaking about the event. The video then shows a woman practicing her throwing technique in a field, followed by a man speaking about the event. Finally, the video shows a woman practicing her throwing technique in a field, followed by a man speaking about the event.",
+              "implications": "Major sports news event",
+              "modalities": {
+                "visual": "The video transitions from a track and field event to a man speaking about the event, then to a woman interviewing a man about the competition. The scene shifts to a woman practicing her throwing technique in a field, followed by a man speaking about the event. The video then shows a woman practicing her throwing technique in a field, followed by a man speaking about the event. Finally, the video shows a woman practicing her throwing technique in a field, followed by a man speaking about the event.",
+                "audio": "speaking; interviewing; speaking",
+                "speech": "Chris Miedema took first in the men's 800, with Max Klink and Luke Chunk finishing second and third, while Ian Sa took first in the 1500 meter run with a personal best time of 3:52. The team had a strong performance, with several athletes setting personal bests and qualifying for conference."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 259.5,
+        "end_time": 336.2359,
+        "children": [],
+        "caption": "The video transitions from a close-up of a woman in a blue shirt, possibly a coach, to a wide shot of a track and field event, where athletes in blue and red uniforms are running and jumping on the blue track. The crowd cheers enthusiastically, and a man's voice can be heard commenting on the race.",
+        "postprocess": {
+          "event_id": 5,
+          "original_answer": "The video transitions from a close-up of a woman in a blue shirt, possibly a coach, to a wide shot of a track and field event, where athletes in blue and red uniforms are running and jumping on the blue track. The crowd cheers enthusiastically, and a man's voice can be heard commenting on the race.",
+          "result": {
+            "video_id": "mvl5ZOIy_sM",
+            "event_id": "E_mvl5ZOIy_sM_259.5_336.24",
+            "tags": [
+              "track_and_field",
+              "athletics",
+              "competition",
+              "coach",
+              "commentary"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Woman in blue shirt",
+                "attributes": {
+                  "description": "Possibly a coach, close-up shot"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Track and field event",
+                "attributes": {
+                  "description": "Wide shot, athletes in blue and red uniforms, blue track"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Crowd",
+                "attributes": {
+                  "description": "Cheering enthusiastically"
+                }
+              },
+              {
+                "object_id": "O004",
+                "name": "Man's voice",
+                "attributes": {
+                  "description": "Commenting on the race"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Woman in blue shirt",
+                "ref_object": "O001",
+                "role": "Coach",
+                "entity": "Person"
+              }
+            ],
+            "event": {
+              "event_id": "E_mvl5ZOIy_sM_259.5_336.24",
+              "name": "Track and field event",
+              "time": {
+                "start": "259.5",
+                "end": "336.24"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports news"
+              ],
+              "scene_topic": "The video transitions from a close-up of a woman in a blue shirt, possibly a coach, to a wide shot of a track and field event, where athletes in blue and red uniforms are running and jumping on the blue track.",
+              "summary": "The video transitions from a close-up of a woman in a blue shirt, possibly a coach, to a wide shot of a track and field event, where athletes in blue and red uniforms are running and jumping on the blue track. The crowd cheers enthusiastically, and a man's voice can be heard commenting on the race.",
+              "implications": "Major sports news event",
+              "modalities": {
+                "visual": "The video transitions from a close-up of a woman in a blue shirt, possibly a coach, to a wide shot of a track and field event, where athletes in blue and red uniforms are running and jumping on the blue track.",
+                "audio": "Crowd cheers; man's voice commenting on the race.",
+                "speech": "Chris Miedema took first in the men's 800, with Max Klink and Luke Chunk finishing second and third, while Ian Sa took first in the 1500 meter run with a personal best time of 3:52."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "The video opens with a close-up shot of the Northwestern University logo, followed by footage of athletes running on a track in slow motion. The audio transitions from the cheering crowd to a man's voice narrating the event. The video then cuts to a man in a blue jacket speaking into a microphone, followed by a woman in a blue jacket speaking into a microphone. The audio transitions from the man's voice to the woman's voice, and then to a man in a blue jacket speaking into a microphone. The video",
+    "postprocess": {
+      "event_id": 1,
+      "original_answer": "The video opens with a close-up shot of the Northwestern University logo, followed by footage of athletes running on a track in slow motion. The audio transitions from the cheering crowd to a man's voice narrating the event. The video then cuts to a man in a blue jacket speaking into a microphone, followed by a woman in a blue jacket speaking into a microphone. The audio transitions from the man's voice to the woman's voice, and then to a man in a blue jacket speaking into a microphone. The video",
+      "result": {
+        "video_id": "mvl5ZOIy_sM",
+        "event_id": "E_mvl5ZOIy_sM_0_336.24",
+        "tags": [
+          "university",
+          "athletics",
+          "narration",
+          "presentation"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "Northwestern University logo",
+            "attributes": {
+              "description": "Close-up shot of the Northwestern University logo"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "Athletes running on a track",
+            "attributes": {
+              "description": "Slow-motion footage of athletes running on a track"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "Man in blue jacket speaking into a microphone",
+            "attributes": {
+              "description": "Man speaking into a microphone in a blue jacket"
+            }
+          },
+          {
+            "object_id": "O004",
+            "name": "Woman in blue jacket speaking into a microphone",
+            "attributes": {
+              "description": "Woman speaking into a microphone in a blue jacket"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "Narrator",
+            "ref_object": "O001",
+            "role": "Narrator",
+            "entity": "Person"
+          },
+          {
+            "actor_id": "A002",
+            "name": "Man in blue jacket",
+            "ref_object": "O003",
+            "role": "Speaker",
+            "entity": "Person"
+          },
+          {
+            "actor_id": "A003",
+            "name": "Woman in blue jacket",
+            "ref_object": "O004",
+            "role": "Speaker",
+            "entity": "Person"
+          }
+        ],
+        "event": {
+          "event_id": "E_mvl5ZOIy_sM_0_336.24",
+          "name": "Northwestern University event",
+          "time": {
+            "start": "0",
+            "end": "336.24"
+          },
+          "actors": [
+            "A001",
+            "A002",
+            "A003"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003",
+            "O004"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "university event"
+          ],
+          "scene_topic": "The video opens with a close-up shot of the Northwestern University logo, followed by footage of athletes running on a track in slow motion.",
+          "summary": "The video opens with a close-up shot of the Northwestern University logo, followed by footage of athletes running on a track in slow motion. The audio transitions from the cheering crowd to a man's voice narrating the event. The video then cuts to a man in a blue jacket speaking into a microphone, followed by a woman in a blue jacket speaking into a microphone. The audio transitions from the man's voice to the woman's voice, and then to a man in a blue jacket speaking into a microphone. The video",
+          "implications": "Major university event",
+          "modalities": {
+            "visual": "The video opens with a close-up shot of the Northwestern University logo, followed by footage of athletes running on a track in slow motion. The video then cuts to a man in a blue jacket speaking into a microphone, followed by a woman in a blue jacket speaking into a microphone.",
+            "audio": "cheering crowd; man's voice; woman's voice; man in a blue jacket speaking into a microphone",
+            "speech": "Chris Miedema took first in the men's 800, with Max Klink and Luke Chunk finishing second and third, while Ian Sa took first in the 1500 meter run with a personal best time of 3:52."
+          }
+        }
+      }
+    },
+    "summary": "The video showcases the Drake Relays track and field event, featuring athletes in blue and red uniforms competing in various events, interspersed with interviews from coaches and athletes discussing their experiences and the competition. The footage captures the lively atmosphere of the event, with close-ups of athletes in action and wide shots of the track and field. A person cheers enthusiastically, accompanied by a man's voice commenting on the race."
+  }
+}

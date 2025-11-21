@@ -1,0 +1,3977 @@
+{
+  "video_id": "GbU_T2XiFgA",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 178.311467,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 30.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 11.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 1.5,
+                "children": [],
+                "caption": "The video opens with the Parks & Recreation logo, a stylized green leaf and a blue \"P\" on a white background, accompanied by upbeat electronic music.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with the Parks & Recreation logo, a stylized green leaf and a blue \"P\" on a white background, accompanied by upbeat electronic music.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_0_1.5",
+                    "tags": [
+                      "parks",
+                      "recreation",
+                      "logo",
+                      "music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Parks & Recreation logo",
+                        "attributes": {
+                          "description": "Stylized green leaf and blue 'P' on a white background"
+                        }
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_0_1.5",
+                      "name": "Video opening",
+                      "time": {
+                        "start": "0",
+                        "end": "1.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video opening"
+                      ],
+                      "scene_topic": "The video opens with the Parks & Recreation logo, a stylized green leaf and a blue 'P' on a white background, accompanied by upbeat electronic music.",
+                      "summary": "The video opens with the Parks & Recreation logo, a stylized green leaf and a blue \"P\" on a white background, accompanied by upbeat electronic music.",
+                      "implications": "Initial setup for the video",
+                      "modalities": {
+                        "visual": "The video opens with the Parks & Recreation logo, a stylized green leaf and a blue 'P' on a white background.",
+                        "audio": "upbeat electronic music",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 1.5,
+                "end_time": 4.5,
+                "children": [],
+                "caption": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and the iconic Bethesda Terrace, as a man begins to speak.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and the iconic Bethesda Terrace, as a man begins to speak.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_1.5_4.5",
+                    "tags": [
+                      "central_park",
+                      "bethesda_terrace",
+                      "man",
+                      "speech"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "panoramic_view",
+                        "attributes": {
+                          "description": "panoramic view of Central Park"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "lush_greenery",
+                        "attributes": {
+                          "description": "lush greenery of Central Park"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Bethesda_Terrace",
+                        "attributes": {
+                          "description": "iconic Bethesda Terrace"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "man",
+                        "attributes": {
+                          "description": "a man begins to speak"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O004",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_1.5_4.5",
+                      "name": "video_opening",
+                      "time": {
+                        "start": "1.5",
+                        "end": "4.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "central_park"
+                      ],
+                      "scene_topic": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and the iconic Bethesda Terrace, as a man begins to speak.",
+                      "summary": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and the iconic Bethesda Terrace, as a man begins to speak.",
+                      "implications": "Major scenic event",
+                      "modalities": {
+                        "visual": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and the iconic Bethesda Terrace, as a man begins to speak.",
+                        "audio": "",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 4.5,
+                "end_time": 11.5,
+                "children": [],
+                "caption": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and vibrant atmosphere, before focusing on a group of people enjoying a sunny day outdoors.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and vibrant atmosphere, before focusing on a group of people enjoying a sunny day outdoors.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_4.5_11.5",
+                    "tags": [
+                      "central_park",
+                      "outdoor",
+                      "sunny",
+                      "people",
+                      "greenery"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Central Park",
+                        "attributes": {
+                          "description": "lush greenery and vibrant atmosphere"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_4.5_11.5",
+                      "name": "",
+                      "time": {
+                        "start": "4.5",
+                        "end": "11.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor scene"
+                      ],
+                      "scene_topic": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and vibrant atmosphere, before focusing on a group of people enjoying a sunny day outdoors.",
+                      "summary": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and vibrant atmosphere, before focusing on a group of people enjoying a sunny day outdoors.",
+                      "implications": "Major outdoor scene",
+                      "modalities": {
+                        "visual": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and vibrant atmosphere, before focusing on a group of people enjoying a sunny day outdoors.",
+                        "audio": "",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video opens with the Parks & Recreation logo and upbeat electronic music, showcasing Central Park's lush greenery and iconic Bethesda Terrace.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "The video opens with the Parks & Recreation logo and upbeat electronic music, showcasing Central Park's lush greenery and iconic Bethesda Terrace.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_0_11.5",
+                "tags": [
+                  "parks",
+                  "recreation",
+                  "central_park",
+                  "bethesda_terrace"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Parks & Recreation logo",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Upbeat electronic music",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Central Park's lush greenery",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Bethesda Terrace",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_0_11.5",
+                  "name": "Video opening",
+                  "time": {
+                    "start": "0",
+                    "end": "11.5"
+                  },
+                  "actors": [],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "video_opening"
+                  ],
+                  "scene_topic": "The video opens with the Parks & Recreation logo and upbeat electronic music, showcasing Central Park's lush greenery and iconic Bethesda Terrace.",
+                  "summary": "The video opens with the Parks & Recreation logo and upbeat electronic music, showcasing Central Park's lush greenery and iconic Bethesda Terrace.",
+                  "implications": "Introduction to the video",
+                  "modalities": {
+                    "visual": "The video opens with the Parks & Recreation logo and showcasing Central Park's lush greenery and iconic Bethesda Terrace.",
+                    "audio": "upbeat electronic music",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "The video opens with the Parks & Recreation logo and a panoramic view of Central Park, showcasing its lush greenery and vibrant atmosphere. The scene then focuses on a group of people enjoying a sunny day outdoors."
+          },
+          {
+            "level": 2,
+            "start_time": 11.5,
+            "end_time": 20.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 11.5,
+                "end_time": 15.5,
+                "children": [],
+                "caption": "The camera pans across a bustling city square, capturing the vibrant energy of people enjoying the sunny day, their laughter and chatter blending with the sounds of the city.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The camera pans across a bustling city square, capturing the vibrant energy of people enjoying the sunny day, their laughter and chatter blending with the sounds of the city.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_11.5_15.5",
+                    "tags": [
+                      "city",
+                      "square",
+                      "people",
+                      "sunny",
+                      "day"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "city_square",
+                        "attributes": {
+                          "description": "bustling city square"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "people",
+                        "attributes": {
+                          "description": "people enjoying the sunny day"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "city_sounds",
+                        "attributes": {
+                          "description": "sounds of the city"
+                        }
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_11.5_15.5",
+                      "name": "city_square_scene",
+                      "time": {
+                        "start": "11.5",
+                        "end": "15.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "urban_landscape"
+                      ],
+                      "scene_topic": "The camera pans across a bustling city square, capturing the vibrant energy of people enjoying the sunny day, their laughter and chatter blending with the sounds of the city.",
+                      "summary": "The camera pans across a bustling city square, capturing the vibrant energy of people enjoying the sunny day, their laughter and chatter blending with the sounds of the city.",
+                      "implications": "Urban landscape, city life",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling city square, capturing the vibrant energy of people enjoying the sunny day, their laughter and chatter.",
+                        "audio": "laughter; chatter; city sounds.",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 15.5,
+                "end_time": 20.5,
+                "children": [],
+                "caption": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard faintly in the background.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard faintly in the background.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_15.5_20.5",
+                    "tags": [
+                      "outdoor",
+                      "cafe",
+                      "atmosphere",
+                      "people",
+                      "conversations"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "outdoor_cafe",
+                        "attributes": {
+                          "description": "bustling outdoor café",
+                          "features": "people, meals, conversations"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "voice_in_background",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_15.5_20.5",
+                      "name": "outdoor_cafe_scene",
+                      "time": {
+                        "start": "15.5",
+                        "end": "20.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor_scene"
+                      ],
+                      "scene_topic": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard faintly in the background.",
+                      "summary": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard faintly in the background.",
+                      "implications": "Major scene, outdoor setting",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations.",
+                        "audio": "man's voice",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A bustling city square and outdoor café come alive with the energy of people enjoying a sunny day, creating a vibrant atmosphere filled with laughter and conversation.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "A bustling city square and outdoor café come alive with the energy of people enjoying a sunny day, creating a vibrant atmosphere filled with laughter and conversation.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_11.5_20.5",
+                "tags": [
+                  "city",
+                  "square",
+                  "outdoor",
+                  "cafe",
+                  "people",
+                  "sunny",
+                  "day"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "city square",
+                    "attributes": {
+                      "location": "urban",
+                      "atmosphere": "vibrant"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "outdoor café",
+                    "attributes": {
+                      "type": "outdoor",
+                      "ambiance": "lively"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "people",
+                    "ref_object": "O001",
+                    "role": "occupant",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_11.5_20.5",
+                  "name": "City square and outdoor café scene",
+                  "time": {
+                    "start": "11.5",
+                    "end": "20.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "urban scene"
+                  ],
+                  "scene_topic": "A bustling city square and outdoor café come alive with the energy of people enjoying a sunny day, creating a vibrant atmosphere filled with laughter and conversation.",
+                  "summary": "A bustling city square and outdoor café come alive with the energy of people enjoying a sunny day, creating a vibrant atmosphere filled with laughter and conversation.",
+                  "implications": "Urban life, community, and social interaction",
+                  "modalities": {
+                    "visual": "A bustling city square and outdoor café come alive with the energy of people enjoying a sunny day, creating a vibrant atmosphere filled with laughter and conversation.",
+                    "audio": "",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "The camera captures the lively atmosphere of a bustling city square, showcasing people enjoying the sunny day and the sounds of the city. In the background, a man's voice can be heard faintly as people gather at an outdoor café to socialize and enjoy their meals."
+          },
+          {
+            "level": 2,
+            "start_time": 20.5,
+            "end_time": 30.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 20.5,
+                "end_time": 30.5,
+                "children": [],
+                "caption": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard in the background, likely giving a presentation or interview. The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard in the background, likely giving a presentation or interview.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard in the background, likely giving a presentation or interview. The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard in the background, likely giving a presentation or interview.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_20.5_30.5",
+                    "tags": [
+                      "outdoor_cafe",
+                      "cafe",
+                      "people",
+                      "meals",
+                      "conversations"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "outdoor_cafe",
+                        "attributes": {
+                          "description": "bustling outdoor café",
+                          "atmosphere": "lively"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_20.5_30.5",
+                      "name": "outdoor_cafe_scene",
+                      "time": {
+                        "start": "20.5",
+                        "end": "30.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor_scene"
+                      ],
+                      "scene_topic": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard in the background, likely giving a presentation or interview.",
+                      "summary": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard in the background, likely giving a presentation or interview. The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations, while a man's voice can be heard in the background, likely giving a presentation or interview.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "The camera pans across a bustling outdoor café, capturing the lively atmosphere as people enjoy their meals and conversations.",
+                        "audio": "man's voice; presentation/interview",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A bustling outdoor café is filled with people enjoying their meals and conversations, while a man's voice can be heard in the background giving a presentation or interview.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "A bustling outdoor café is filled with people enjoying their meals and conversations, while a man's voice can be heard in the background giving a presentation or interview.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_20.5_30.5",
+                "tags": [
+                  "outdoor",
+                  "cafe",
+                  "people",
+                  "meals",
+                  "conversations"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "outdoor_cafe",
+                    "attributes": {
+                      "location": "outdoor",
+                      "setting": "cafe"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "people",
+                    "attributes": {
+                      "number": "bustling",
+                      "activity": "enjoying_meals_and_conversations"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man",
+                    "attributes": {
+                      "role": "speaker",
+                      "activity": "giving_presentation_or_interview"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_20.5_30.5",
+                  "name": "outdoor_cafe_scene",
+                  "time": {
+                    "start": "20.5",
+                    "end": "30.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "outdoor_scene"
+                  ],
+                  "scene_topic": "A bustling outdoor café is filled with people enjoying their meals and conversations, while a man's voice can be heard in the background giving a presentation or interview.",
+                  "summary": "A bustling outdoor café is filled with people enjoying their meals and conversations, while a man's voice can be heard in the background giving a presentation or interview.",
+                  "implications": "Major scene, social event",
+                  "modalities": {
+                    "visual": "A bustling outdoor café is filled with people enjoying their meals and conversations.",
+                    "audio": "man's voice; presentation; interview",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "The camera captures the lively atmosphere of a bustling outdoor café, where people enjoy their meals and conversations, accompanied by a man's voice in the background likely giving a presentation or interview. The scene is set with a sense of activity and socializing."
+          }
+        ],
+        "caption": "The video opens on Central Park's picturesque Bethesda Terrace, set to upbeat music, before cutting to a bustling city square filled with people enjoying a sunny day. The camera pans to an outdoor café, where people are laughing and chatting over meals, while a man's voice can be heard in the background giving a presentation or interview.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "The video opens on Central Park's picturesque Bethesda Terrace, set to upbeat music, before cutting to a bustling city square filled with people enjoying a sunny day. The camera pans to an outdoor café, where people are laughing and chatting over meals, while a man's voice can be heard in the background giving a presentation or interview.",
+          "result": {
+            "video_id": "GbU_T2XiFgA",
+            "event_id": "E_GbU_T2XiFgA_0_30.5",
+            "tags": [
+              "central_park",
+              "new_york",
+              "outdoor_cafe",
+              "sunny_day",
+              "city_square"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Bethesda Terrace",
+                "attributes": {
+                  "location": "Central Park",
+                  "description": "Picnic area"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "City Square",
+                "attributes": {
+                  "location": "New York City",
+                  "description": "Public gathering space"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Outdoor Café",
+                "attributes": {
+                  "location": "City Square",
+                  "description": "Food and beverage establishment"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man",
+                "ref_object": "O003",
+                "role": "Presenter",
+                "entity": "Person"
+              }
+            ],
+            "event": {
+              "event_id": "E_GbU_T2XiFgA_0_30.5",
+              "name": "Central Park Scene",
+              "time": {
+                "start": "0",
+                "end": "30.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "outdoor_scene",
+                "public_space"
+              ],
+              "scene_topic": "The video opens on Central Park's picturesque Bethesda Terrace, set to upbeat music, before cutting to a bustling city square filled with people enjoying a sunny day.",
+              "summary": "The video opens on Central Park's picturesque Bethesda Terrace, set to upbeat music, before cutting to a bustling city square filled with people enjoying a sunny day. The camera pans to an outdoor café, where people are laughing and chatting over meals, while a man's voice can be heard in the background giving a presentation or interview.",
+              "implications": "Major public space, outdoor activities event",
+              "modalities": {
+                "visual": "The video opens on Central Park's picturesque Bethesda Terrace, set to upbeat music, before cutting to a bustling city square filled with people enjoying a sunny day. The camera pans to an outdoor café, where people are laughing and chatting over meals.",
+                "audio": "upbeat music; man's voice giving a presentation or interview",
+                "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+              }
+            }
+          }
+        },
+        "summary": "The video opens with a panoramic view of Central Park, showcasing its lush greenery and vibrant atmosphere, before focusing on a group of people enjoying a sunny day outdoors in a bustling city square. The scene captures the lively atmosphere of an outdoor café, where people socialize and enjoy their meals, accompanied by a man's voice in the background."
+      },
+      {
+        "level": 1,
+        "start_time": 30.5,
+        "end_time": 60.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 30.5,
+            "end_time": 41.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 30.5,
+                "end_time": 32.5,
+                "children": [],
+                "caption": "A man in a white t-shirt and black shorts stands in a park, gesturing with his hands as he speaks to the camera, the lush greenery and trees behind him suggesting a relaxed outdoor setting.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "A man in a white t-shirt and black shorts stands in a park, gesturing with his hands as he speaks to the camera, the lush greenery and trees behind him suggesting a relaxed outdoor setting.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_30.5_32.5",
+                    "tags": [
+                      "man",
+                      "park",
+                      "gesturing",
+                      "speaking",
+                      "outdoor"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "white t-shirt and black shorts",
+                          "gesturing": "with his hands",
+                          "setting": "relaxed outdoor setting"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_30.5_32.5",
+                      "name": "man speaking in park",
+                      "time": {
+                        "start": "30.5",
+                        "end": "32.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man speaks to the camera in a park.",
+                      "summary": "A man in a white t-shirt and black shorts stands in a park, gesturing with his hands as he speaks to the camera, the lush greenery and trees behind him suggesting a relaxed outdoor setting.",
+                      "implications": "Minor event",
+                      "modalities": {
+                        "visual": "A man in a white t-shirt and black shorts stands in a park, gesturing with his hands as he speaks to the camera, the lush greenery and trees behind him suggesting a relaxed outdoor setting.",
+                        "audio": "",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 32.5,
+                "end_time": 41.5,
+                "children": [],
+                "caption": "A man with a beard and a microphone stands before a lush green backdrop, addressing the audience about the importance of reading and the impact it has on people's lives.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "A man with a beard and a microphone stands before a lush green backdrop, addressing the audience about the importance of reading and the impact it has on people's lives.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_325_415",
+                    "tags": [
+                      "reading",
+                      "importance",
+                      "impact",
+                      "people",
+                      "lives"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "has_beard": "true",
+                          "holds_microphone": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "backdrop",
+                        "attributes": {
+                          "color": "green",
+                          "lush": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_325_415",
+                      "name": "Importance of Reading",
+                      "time": {
+                        "start": "32.5",
+                        "end": "41.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "education"
+                      ],
+                      "scene_topic": "A man emphasizes the importance of reading to the audience.",
+                      "summary": "A man with a beard and a microphone stands before a lush green backdrop, addressing the audience about the importance of reading and the impact it has on people's lives.",
+                      "implications": "Major personal development event",
+                      "modalities": {
+                        "visual": "A man with a beard and a microphone stands before a lush green backdrop, addressing the audience about the importance of reading and the impact it has on people's lives.",
+                        "audio": "",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a park discusses the importance of reading while a separate man with a microphone speaks about the same topic in front of a green backdrop.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "A man in a park discusses the importance of reading while a separate man with a microphone speaks about the same topic in front of a green backdrop.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_30_41",
+                "tags": [
+                  "reading",
+                  "importance",
+                  "public_speaking",
+                  "backdrop"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man_in_park",
+                    "attributes": {
+                      "speaker": "man_in_park",
+                      "topic": "reading"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man_with_microphone",
+                    "attributes": {
+                      "speaker": "man_with_microphone",
+                      "topic": "reading"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "green_backdrop",
+                    "attributes": {
+                      "background": "green"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man_in_park",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man_with_microphone",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_30_41",
+                  "name": "reading_importance_discussion",
+                  "time": {
+                    "start": "30.5",
+                    "end": "41.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "public_speaking"
+                  ],
+                  "scene_topic": "A man in a park discusses the importance of reading while a separate man with a microphone speaks about the same topic in front of a green backdrop.",
+                  "summary": "A man in a park discusses the importance of reading while a separate man with a microphone speaks about the same topic in front of a green backdrop.",
+                  "implications": "Major public speaking event",
+                  "modalities": {
+                    "visual": "A man in a park discusses the importance of reading, a man with a microphone speaks about the same topic in front of a green backdrop.",
+                    "audio": "",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "A man speaks to the camera in a park, gesturing as he discusses the importance of reading, while a bearded man with a microphone stands before a green backdrop, emphasizing the impact of reading on people's lives."
+          },
+          {
+            "level": 2,
+            "start_time": 41.5,
+            "end_time": 54.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 41.5,
+                "end_time": 54.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, his voice clear and audible as he engages with the audience.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, his voice clear and audible as he engages with the audience.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_41.5_54.5",
+                    "tags": [
+                      "outdoor",
+                      "public_speaking",
+                      "man",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "hair_color": "dark",
+                          "beard": "present",
+                          "voice": "clear",
+                          "audible": "yes"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {
+                          "type": "public_speaking"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_41.5_54.5",
+                      "name": "Public Speaking",
+                      "time": {
+                        "start": "41.5",
+                        "end": "54.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man speaks into a microphone in an outdoor setting.",
+                      "summary": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, his voice clear and audible as he engages with the audience.",
+                      "implications": "Public speaking event",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, his voice clear and audible as he engages with the audience.",
+                        "audio": "speaks; voice",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man speaks into a microphone in an outdoor setting, engaging with the audience through his clear and audible voice.",
+            "postprocess": {
+              "event_id": 16,
+              "original_answer": "A man speaks into a microphone in an outdoor setting, engaging with the audience through his clear and audible voice.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_41.5_54.5",
+                "tags": [
+                  "public_speaking",
+                  "outdoor",
+                  "audience"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "speaker": "true",
+                      "audible": "true",
+                      "clear_voice": "true"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "microphone",
+                    "attributes": {
+                      "type": "public_speaking"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "outdoor_setting",
+                    "attributes": {
+                      "location": "outdoor"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "audience",
+                    "attributes": {
+                      "engaged": "true"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_41.5_54.5",
+                  "name": "public_speaking_event",
+                  "time": {
+                    "start": "41.5",
+                    "end": "54.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "public_speaking"
+                  ],
+                  "scene_topic": "A man speaks into a microphone in an outdoor setting, engaging with the audience through his clear and audible voice.",
+                  "summary": "A man speaks into a microphone in an outdoor setting, engaging with the audience through his clear and audible voice.",
+                  "implications": "Major public speaking event",
+                  "modalities": {
+                    "visual": "A man speaks into a microphone in an outdoor setting, engaging with the audience through his clear and audible voice.",
+                    "audio": "speaks; voice",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "A man with short, dark hair and a beard speaks clearly into a microphone in an outdoor setting, engaging with the audience."
+          },
+          {
+            "level": 2,
+            "start_time": 54.5,
+            "end_time": 60.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 54.5,
+                "end_time": 60.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, his voice amplified for the audience gathered around him.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, his voice amplified for the audience gathered around him.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_54_60",
+                    "tags": [
+                      "outdoor",
+                      "public_speaking",
+                      "microphone",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "hair_color": "dark",
+                          "beard": "present"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "audience",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_54_60",
+                      "name": "",
+                      "time": {
+                        "start": "54.5",
+                        "end": "60.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man speaks into a microphone in an outdoor setting.",
+                      "summary": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, his voice amplified for the audience gathered around him.",
+                      "implications": "Public speaking event",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, his audience gathered around him.",
+                        "audio": "speaks; amplified voice",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man speaks into a microphone in an outdoor setting, his voice amplified for the audience.",
+            "postprocess": {
+              "event_id": 18,
+              "original_answer": "A man speaks into a microphone in an outdoor setting, his voice amplified for the audience.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_54.5_60.5",
+                "tags": [
+                  "outdoor_speech",
+                  "public_address",
+                  "microphone"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "speaker": "yes",
+                      "amplified": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "microphone",
+                    "attributes": {
+                      "type": "public_address",
+                      "amplified": "yes"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_54.5_60.5",
+                  "name": "outdoor speech",
+                  "time": {
+                    "start": "54.5",
+                    "end": "60.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "outdoor_event"
+                  ],
+                  "scene_topic": "A man speaks into a microphone in an outdoor setting, his voice amplified for the audience.",
+                  "summary": "A man speaks into a microphone in an outdoor setting, his voice amplified for the audience.",
+                  "implications": "Significant public event",
+                  "modalities": {
+                    "visual": "A man speaks into a microphone in an outdoor setting.",
+                    "audio": "speaking; amplified voice",
+                    "speech": "every individual will face obstacles in their chosen path"
+                  }
+                }
+              }
+            },
+            "summary": "A man with short, dark hair and a beard speaks into a microphone in an outdoor setting, his voice amplified for the audience gathered around him."
+          }
+        ],
+        "caption": "Two men discuss the importance of reading, one in a park and the other in front of a green backdrop with a microphone, while a third man speaks into a microphone in an outdoor setting, engaging with the audience through his clear and audible voice.",
+        "postprocess": {
+          "event_id": 13,
+          "original_answer": "Two men discuss the importance of reading, one in a park and the other in front of a green backdrop with a microphone, while a third man speaks into a microphone in an outdoor setting, engaging with the audience through his clear and audible voice.",
+          "result": {
+            "video_id": "GbU_T2XiFgA",
+            "event_id": "E_GbU_T2XiFgA_30_60",
+            "tags": [
+              "reading",
+              "importance",
+              "public_speaking",
+              "audience_engagement"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "park",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "green_backdrop",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "microphone",
+                "attributes": {}
+              },
+              {
+                "object_id": "O004",
+                "name": "outdoor_setting",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "speaker",
+                "ref_object": "O003",
+                "role": "speaker",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "man_in_park",
+                "ref_object": "O001",
+                "role": "discussant",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A003",
+                "name": "man_with_mic",
+                "ref_object": "O004",
+                "role": "discussant",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_GbU_T2XiFgA_30_60",
+              "name": "Discussion on the importance of reading",
+              "time": {
+                "start": "30.5",
+                "end": "60.5"
+              },
+              "actors": [
+                "A001",
+                "A002",
+                "A003"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "public_speaking",
+                "reading"
+              ],
+              "scene_topic": "Two men discuss the importance of reading in different settings.",
+              "summary": "Two men discuss the importance of reading, one in a park and the other in front of a green backdrop with a microphone, while a third man speaks into a microphone in an outdoor setting, engaging with the audience through his clear and audible voice.",
+              "implications": "Major public speaking and reading event",
+              "modalities": {
+                "visual": "Two men discuss the importance of reading, one in a park and the other in front of a green backdrop with a microphone, while a third man speaks into a microphone in an outdoor setting, engaging with the audience through his clear and audible voice.",
+                "audio": "clear and audible voice",
+                "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+              }
+            }
+          }
+        },
+        "summary": "A man emphasizes the significance of reading, highlighting its profound impact on people's lives, as he speaks to the camera in a park."
+      },
+      {
+        "level": 1,
+        "start_time": 60.5,
+        "end_time": 112.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 60.5,
+            "end_time": 77.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 60.5,
+                "end_time": 67.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a man with a beard and sunglasses speaks into a microphone, addressing a large audience seated on the grass. In a lively outdoor setting, a man with a beard and sunglasses speaks into a microphone, addressing a large audience seated on the grass.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "In a lively outdoor setting, a man with a beard and sunglasses speaks into a microphone, addressing a large audience seated on the grass. In a lively outdoor setting, a man with a beard and sunglasses speaks into a microphone, addressing a large audience seated on the grass.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_60_67",
+                    "tags": [
+                      "outdoor_speech",
+                      "public_talk",
+                      "audience",
+                      "grass"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "bearded": "true",
+                          "sunglasses": "true",
+                          "speaking": "true",
+                          "microphone": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "audience",
+                        "attributes": {
+                          "seated": "true",
+                          "grass": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_60_67",
+                      "name": "outdoor speech",
+                      "time": {
+                        "start": "60.5",
+                        "end": "67.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor_event",
+                        "public_speech"
+                      ],
+                      "scene_topic": "A man speaks into a microphone in an outdoor setting, addressing a large audience.",
+                      "summary": "In a lively outdoor setting, a man with a beard and sunglasses speaks into a microphone, addressing a large audience seated on the grass. In a lively outdoor setting, a man with a beard and sunglasses speaks into a microphone, addressing a large audience seated on the grass.",
+                      "implications": "Major public event",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a man with a beard and sunglasses speaks into a microphone, addressing a large audience seated on the grass.",
+                        "audio": "speaking",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 67.5,
+                "end_time": 77.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, addressing a large audience seated on the grass.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, addressing a large audience seated on the grass.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_67.5_77.5",
+                    "tags": [
+                      "outdoor",
+                      "public_speaking",
+                      "audience",
+                      "grass"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "hair_color": "dark",
+                          "beard": "present",
+                          "microphone": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_67.5_77.5",
+                      "name": "Public Speaking",
+                      "time": {
+                        "start": "67.5",
+                        "end": "77.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man speaks into a microphone in an outdoor setting.",
+                      "summary": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, addressing a large audience seated on the grass.",
+                      "implications": "Major public speaking event",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a man with short, dark hair and a beard speaks into a microphone, addressing a large audience seated on the grass.",
+                        "audio": "speaking",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man with a beard and sunglasses, and later a man with short, dark hair and a beard, speaks into a microphone in an outdoor setting, addressing a large audience seated on the grass.",
+            "postprocess": {
+              "event_id": 20,
+              "original_answer": "A man with a beard and sunglasses, and later a man with short, dark hair and a beard, speaks into a microphone in an outdoor setting, addressing a large audience seated on the grass.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_60_77",
+                "tags": [
+                  "public_speaking",
+                  "outdoor_event",
+                  "audience"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man_with_beard_and_sunglasses",
+                    "attributes": {
+                      "speaker": "yes",
+                      "hair_color": "blond",
+                      "beard": "yes",
+                      "sunglasses": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man_with_short_dark_hair_and_beard",
+                    "attributes": {
+                      "speaker": "yes",
+                      "hair_color": "dark",
+                      "beard": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "microphone",
+                    "attributes": {
+                      "type": "handheld",
+                      "use": "speaking"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "outdoor_setting",
+                    "attributes": {
+                      "location": "grass",
+                      "audience": "large"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "speaker",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "speaker",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_60_77",
+                  "name": "Public Speaking Event",
+                  "time": {
+                    "start": "60.5",
+                    "end": "77.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "public_speaking",
+                    "outdoor_event"
+                  ],
+                  "scene_topic": "A man speaks into a microphone in an outdoor setting, addressing a large audience.",
+                  "summary": "A man with a beard and sunglasses, and later a man with short, dark hair and a beard, speaks into a microphone in an outdoor setting, addressing a large audience seated on the grass.",
+                  "implications": "Major public speaking event",
+                  "modalities": {
+                    "visual": "A man with a beard and sunglasses, and later a man with short, dark hair and a beard, speaks into a microphone in an outdoor setting, addressing a large audience seated on the grass.",
+                    "audio": "speaks; microphone",
+                    "speech": "every individual will face obstacles in their chosen path"
+                  }
+                }
+              }
+            },
+            "summary": "A man with a beard and sunglasses or short, dark hair and a beard speaks to a large audience seated on the grass in a lively outdoor setting."
+          },
+          {
+            "level": 2,
+            "start_time": 77.5,
+            "end_time": 89.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 77.5,
+                "end_time": 89.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a man with a beard and mustache speaks into a microphone, addressing a large audience seated on the grass.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "In a lively outdoor setting, a man with a beard and mustache speaks into a microphone, addressing a large audience seated on the grass.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_77_89",
+                    "tags": [
+                      "outdoor",
+                      "public_speaking",
+                      "audience",
+                      "grass"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "bearded": "true",
+                          "mustachioed": "true",
+                          "speaking": "true",
+                          "microphone": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_77_89",
+                      "name": "outdoor public speaking",
+                      "time": {
+                        "start": "77.5",
+                        "end": "89.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor event"
+                      ],
+                      "scene_topic": "A man speaks into a microphone in an outdoor setting.",
+                      "summary": "In a lively outdoor setting, a man with a beard and mustache speaks into a microphone, addressing a large audience seated on the grass.",
+                      "implications": "Significant public speaking event",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a man with a beard and mustache speaks into a microphone, addressing a large audience seated on the grass.",
+                        "audio": "speaking; microphone",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man with a beard and mustache speaks to a large audience in an outdoor setting.",
+            "postprocess": {
+              "event_id": 24,
+              "original_answer": "A man with a beard and mustache speaks to a large audience in an outdoor setting.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_77.5_89.5",
+                "tags": [
+                  "public_speech",
+                  "outdoor_event",
+                  "man_with_beard"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man_with_beard",
+                    "attributes": {
+                      "speaker": "man_with_beard",
+                      "audience": "large",
+                      "setting": "outdoor"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man_with_beard",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_77.5_89.5",
+                  "name": "public_speech",
+                  "time": {
+                    "start": "77.5",
+                    "end": "89.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "public_speech"
+                  ],
+                  "scene_topic": "A man with a beard and mustache speaks to a large audience in an outdoor setting.",
+                  "summary": "A man with a beard and mustache speaks to a large audience in an outdoor setting.",
+                  "implications": "Major public speaking event",
+                  "modalities": {
+                    "visual": "A man with a beard and mustache speaks to a large audience in an outdoor setting.",
+                    "audio": "",
+                    "speech": "every individual will face obstacles in their chosen path"
+                  }
+                }
+              }
+            },
+            "summary": "A man with a beard and mustache speaks to a large audience seated on the grass in a lively outdoor setting."
+          },
+          {
+            "level": 2,
+            "start_time": 89.5,
+            "end_time": 112.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 89.5,
+                "end_time": 104.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man with a beard and mustache speaks into a microphone, his voice amplified for the audience gathered around him.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "In a bustling outdoor setting, a man with a beard and mustache speaks into a microphone, his voice amplified for the audience gathered around him.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_89_104",
+                    "tags": [
+                      "outdoor",
+                      "public_speaking",
+                      "microphone",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "has_beard": "true",
+                          "has_mustache": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "audience",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_89_104",
+                      "name": "",
+                      "time": {
+                        "start": "89.5",
+                        "end": "104.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man speaks into a microphone in a bustling outdoor setting.",
+                      "summary": "In a bustling outdoor setting, a man with a beard and mustache speaks into a microphone, his voice amplified for the audience gathered around him.",
+                      "implications": "Public speaking event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man with a beard and mustache speaks into a microphone, his voice amplified for the audience gathered around him.",
+                        "audio": "speaks; amplified voice",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 104.5,
+                "end_time": 107.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a black shirt and cap stands before a crowd, passionately addressing them while gesturing with his hands.",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "In a bustling outdoor setting, a man in a black shirt and cap stands before a crowd, passionately addressing them while gesturing with his hands.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_104.5_107.5",
+                    "tags": [
+                      "outdoor",
+                      "public_speaking",
+                      "gesturing",
+                      "passionate"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black shirt and cap",
+                          "gesturing": "with his hands"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_104.5_107.5",
+                      "name": "Public Speaking",
+                      "time": {
+                        "start": "104.5",
+                        "end": "107.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man passionately addresses a crowd in an outdoor setting.",
+                      "summary": "In a bustling outdoor setting, a man in a black shirt and cap stands before a crowd, passionately addressing them while gesturing with his hands.",
+                      "implications": "Major public speaking event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man in a black shirt and cap stands before a crowd, passionately addressing them while gesturing with his hands.",
+                        "audio": "",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 107.5,
+                "end_time": 112.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman in a white shirt, their animated gestures and expressions conveying the intensity of their discussion.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman in a white shirt, their animated gestures and expressions conveying the intensity of their discussion.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_107_112",
+                    "tags": [
+                      "outdoor",
+                      "conversation",
+                      "gestures",
+                      "expressions"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black shirt and cap",
+                          "gestures": "animated"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "white shirt",
+                          "gestures": "animated"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_107_112",
+                      "name": "lively conversation",
+                      "time": {
+                        "start": "107.5",
+                        "end": "112.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human interaction"
+                      ],
+                      "scene_topic": "A man and a woman engage in a lively conversation in an outdoor setting.",
+                      "summary": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman in a white shirt, their animated gestures and expressions conveying the intensity of their discussion.",
+                      "implications": "Social interaction and communication",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman in a white shirt, their animated gestures and expressions conveying the intensity of their discussion.",
+                        "audio": "",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a bustling outdoor setting, a charismatic speaker captivates a crowd with their words, while another speaker passionately engages in a lively conversation with a member of the audience.",
+            "postprocess": {
+              "event_id": 26,
+              "original_answer": "In a bustling outdoor setting, a charismatic speaker captivates a crowd with their words, while another speaker passionately engages in a lively conversation with a member of the audience.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_89.5_112.5",
+                "tags": [
+                  "public_speaking",
+                  "communication",
+                  "audience_engagement",
+                  "conversation"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Charismatic speaker",
+                    "attributes": {
+                      "speaker_type": "public_speaker",
+                      "audience_engagement": "captivating"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Passionate speaker",
+                    "attributes": {
+                      "speaker_type": "public_speaker",
+                      "audience_engagement": "engaging"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Member of the audience",
+                    "attributes": {
+                      "audience_type": "member",
+                      "engagement": "interactive"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Charismatic speaker",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Passionate speaker",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "Member of the audience",
+                    "ref_object": "O003",
+                    "role": "audience_member",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_89.5_112.5",
+                  "name": "Public speaking event",
+                  "time": {
+                    "start": "89.5",
+                    "end": "112.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "public_speaking",
+                    "communication"
+                  ],
+                  "scene_topic": "A charismatic speaker captivates a crowd with their words, while another speaker passionately engages in a lively conversation with a member of the audience.",
+                  "summary": "In a bustling outdoor setting, a charismatic speaker captivates a crowd with their words, while another speaker passionately engages in a lively conversation with a member of the audience.",
+                  "implications": "Major communication and public speaking event",
+                  "modalities": {
+                    "visual": "In a bustling outdoor setting, a charismatic speaker captivates a crowd with their words, while another speaker passionately engages in a lively conversation with a member of the audience.",
+                    "audio": "words; conversation",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "A man with a beard and mustache speaks to a crowd in an outdoor setting, his voice amplified and gestures conveying his passion. He engages in a lively conversation with a woman, their animated expressions and gestures intensifying the discussion."
+          }
+        ],
+        "caption": "A charismatic speaker captivates a large audience in an outdoor setting with their words, while another speaker engages in a passionate conversation with a member of the audience.",
+        "postprocess": {
+          "event_id": 21,
+          "original_answer": "A charismatic speaker captivates a large audience in an outdoor setting with their words, while another speaker engages in a passionate conversation with a member of the audience.",
+          "result": {
+            "video_id": "GbU_T2XiFgA",
+            "event_id": "E_GbU_T2XiFgA_60_112",
+            "tags": [
+              "public_speaking",
+              "audience_engagement",
+              "outdoor_event",
+              "communication"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "speaker",
+                "attributes": {
+                  "speaker_type": "charismatic",
+                  "audience_size": "large",
+                  "setting": "outdoor"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "audience_member",
+                "attributes": {
+                  "role": "passionate_conversationalist"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "speaker",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "audience_member",
+                "ref_object": "O002",
+                "role": "audience_member",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_GbU_T2XiFgA_60_112",
+              "name": "Public Speaking Event",
+              "time": {
+                "start": "60.5",
+                "end": "112.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "public_speaking",
+                "communication"
+              ],
+              "scene_topic": "A charismatic speaker captivates a large audience in an outdoor setting with their words, while another speaker engages in a passionate conversation with a member of the audience.",
+              "summary": "A charismatic speaker captivates a large audience in an outdoor setting with their words, while another speaker engages in a passionate conversation with a member of the audience.",
+              "implications": "Major communication event",
+              "modalities": {
+                "visual": "A charismatic speaker captivates a large audience in an outdoor setting with their words, while another speaker engages in a passionate conversation with a member of the audience.",
+                "audio": "words; conversation",
+                "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+              }
+            }
+          }
+        },
+        "summary": "A man with a beard and sunglasses or mustache speaks to a large audience in an outdoor setting, conveying his passion through amplified voice and gestures. He engages in a lively conversation with a woman, their animated expressions and gestures intensifying the discussion."
+      },
+      {
+        "level": 1,
+        "start_time": 112.5,
+        "end_time": 178.311467,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 112.5,
+            "end_time": 122.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 112.5,
+                "end_time": 122.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a microphone, while a man in a white shirt and cap listens attentively nearby.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a microphone, while a man in a white shirt and cap listens attentively nearby.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_112_122",
+                    "tags": [
+                      "outdoor",
+                      "conversation",
+                      "people",
+                      "setting",
+                      "event"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black shirt and cap",
+                        "attributes": {
+                          "role": "speaker",
+                          "action": "engaging in conversation"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman holding microphone",
+                        "attributes": {
+                          "role": "interviewer",
+                          "action": "conducting interview"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in white shirt and cap",
+                        "attributes": {
+                          "role": "listener",
+                          "action": "attentively listening"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black shirt and cap",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman holding microphone",
+                        "ref_object": "O002",
+                        "role": "interviewer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "man in white shirt and cap",
+                        "ref_object": "O003",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_112_122",
+                      "name": "Conversation in outdoor setting",
+                      "time": {
+                        "start": "112.5",
+                        "end": "122.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "event",
+                        "setting"
+                      ],
+                      "scene_topic": "A man in a black shirt and cap engages in a lively conversation with a woman holding a microphone, while a man in a white shirt and cap listens attentively nearby.",
+                      "summary": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a microphone, while a man in a white shirt and cap listens attentively nearby.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a microphone, while a man in a white shirt and cap listens attentively nearby.",
+                        "audio": "",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a vibrant outdoor setting, a man in a black shirt and cap discusses something passionately with a woman holding a microphone, while another man in a white shirt and cap listens intently nearby.",
+            "postprocess": {
+              "event_id": 30,
+              "original_answer": "In a vibrant outdoor setting, a man in a black shirt and cap discusses something passionately with a woman holding a microphone, while another man in a white shirt and cap listens intently nearby.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_112_122",
+                "tags": [
+                  "outdoor",
+                  "discussion",
+                  "passion",
+                  "communication",
+                  "people"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man in black shirt and cap",
+                    "attributes": {
+                      "role": "speaker",
+                      "action": "discussing"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman holding microphone",
+                    "attributes": {
+                      "role": "listener",
+                      "action": "listening"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man in white shirt and cap",
+                    "attributes": {
+                      "role": "observer",
+                      "action": "listening"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man in black shirt and cap",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman holding microphone",
+                    "ref_object": "O002",
+                    "role": "listener",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "man in white shirt and cap",
+                    "ref_object": "O003",
+                    "role": "observer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_112_122",
+                  "name": "Discussion in outdoor setting",
+                  "time": {
+                    "start": "112.5",
+                    "end": "122.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "outdoor scene",
+                    "people interaction"
+                  ],
+                  "scene_topic": "A man discusses something passionately with a woman, while another man listens intently.",
+                  "summary": "In a vibrant outdoor setting, a man in a black shirt and cap discusses something passionately with a woman holding a microphone, while another man in a white shirt and cap listens intently nearby.",
+                  "implications": "Major social interaction event",
+                  "modalities": {
+                    "visual": "In a vibrant outdoor setting, a man in a black shirt and cap discusses something passionately with a woman holding a microphone, while another man in a white shirt and cap listens intently nearby.",
+                    "audio": "",
+                    "speech": "every individual will face obstacles in their chosen path"
+                  }
+                }
+              }
+            },
+            "summary": "A man in a black shirt and cap is having a lively conversation with a woman holding a microphone in an outdoor setting, while a man in a white shirt and cap listens nearby."
+          },
+          {
+            "level": 2,
+            "start_time": 122.5,
+            "end_time": 134.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 122.5,
+                "end_time": 134.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                "postprocess": {
+                  "event_id": 32,
+                  "original_answer": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_122_134",
+                    "tags": [
+                      "outdoor",
+                      "conversation",
+                      "people",
+                      "scene",
+                      "lively"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black shirt and cap",
+                        "attributes": {
+                          "role": "speaker",
+                          "action": "talking"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman holding a book",
+                        "attributes": {
+                          "role": "listener",
+                          "action": "listening"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in white shirt and cap",
+                        "attributes": {
+                          "role": "observer",
+                          "action": "listening"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black shirt and cap",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman holding a book",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "man in white shirt and cap",
+                        "ref_object": "O003",
+                        "role": "observer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_122_134",
+                      "name": "lively conversation",
+                      "time": {
+                        "start": "122.5",
+                        "end": "134.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "scene"
+                      ],
+                      "scene_topic": "A man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                      "summary": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                        "audio": "",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Three people engage in a lively conversation in an outdoor setting, with one man in a black shirt and cap speaking with a woman holding a book, while another man in a white shirt and cap listens attentively nearby.",
+            "postprocess": {
+              "event_id": 33,
+              "original_answer": "Three people engage in a lively conversation in an outdoor setting, with one man in a black shirt and cap speaking with a woman holding a book, while another man in a white shirt and cap listens attentively nearby.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_122_134",
+                "tags": [
+                  "outdoor",
+                  "conversation",
+                  "people",
+                  "setting"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man in black shirt and cap",
+                    "attributes": {
+                      "speaker": "yes",
+                      "book_holder": "no"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman holding book",
+                    "attributes": {
+                      "book_holder": "yes",
+                      "speaker": "no"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man in white shirt and cap",
+                    "attributes": {
+                      "speaker": "no",
+                      "book_holder": "no",
+                      "listener": "yes"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man in black shirt and cap",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman holding book",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "man in white shirt and cap",
+                    "ref_object": "O003",
+                    "role": "listener",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_122_134",
+                  "name": "Three people engage in a lively conversation",
+                  "time": {
+                    "start": "122.5",
+                    "end": "134.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "outdoor scene"
+                  ],
+                  "scene_topic": "Three people engage in a lively conversation in an outdoor setting",
+                  "summary": "Three people engage in a lively conversation in an outdoor setting, with one man in a black shirt and cap speaking with a woman holding a book, while another man in a white shirt and cap listens attentively nearby.",
+                  "implications": "Social interaction",
+                  "modalities": {
+                    "visual": "Three people engage in a lively conversation in an outdoor setting, with one man in a black shirt and cap speaking with a woman holding a book, while another man in a white shirt and cap listens attentively nearby.",
+                    "audio": "",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "A man in a black shirt and cap converses with a woman holding a book in an outdoor setting, while another man in a white shirt and cap listens intently nearby. The scene is lively and engaging, with the three individuals interacting in a relaxed atmosphere."
+          },
+          {
+            "level": 2,
+            "start_time": 134.5,
+            "end_time": 146.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 134.5,
+                "end_time": 138.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                "postprocess": {
+                  "event_id": 34,
+                  "original_answer": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_134.5_138.5",
+                    "tags": [
+                      "outdoor",
+                      "conversation",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black shirt and cap",
+                        "attributes": {
+                          "role": "speaker",
+                          "action": "talking"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman holding a book",
+                        "attributes": {
+                          "role": "listener",
+                          "action": "listening"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in white shirt and cap",
+                        "attributes": {
+                          "role": "observer",
+                          "action": "listening"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black shirt and cap",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman holding a book",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "man in white shirt and cap",
+                        "ref_object": "O003",
+                        "role": "observer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_134.5_138.5",
+                      "name": "Conversation in outdoor setting",
+                      "time": {
+                        "start": "134.5",
+                        "end": "138.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "outdoor"
+                      ],
+                      "scene_topic": "A man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                      "summary": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                        "audio": "",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 138.5,
+                "end_time": 142.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a white shirt and black vest diligently writes on a piece of paper, his focused expression and the sounds of the crowd around him suggesting he is deeply engaged in his work.",
+                "postprocess": {
+                  "event_id": 36,
+                  "original_answer": "In a bustling outdoor setting, a man in a white shirt and black vest diligently writes on a piece of paper, his focused expression and the sounds of the crowd around him suggesting he is deeply engaged in his work.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_138_142",
+                    "tags": [
+                      "outdoor",
+                      "man",
+                      "writing",
+                      "focused",
+                      "work"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "white shirt and black vest",
+                          "activity": "writing",
+                          "expression": "focused"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "paper",
+                        "attributes": {
+                          "type": "piece of paper"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "crowd",
+                        "attributes": {
+                          "type": "outdoor setting"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_138_142",
+                      "name": "man writing",
+                      "time": {
+                        "start": "138.5",
+                        "end": "142.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor scene"
+                      ],
+                      "scene_topic": "A man is writing in a busy outdoor setting.",
+                      "summary": "In a bustling outdoor setting, a man in a white shirt and black vest diligently writes on a piece of paper, his focused expression and the sounds of the crowd around him suggesting he is deeply engaged in his work.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "A man in a white shirt and black vest writes on a piece of paper.",
+                        "audio": "crowd sounds.",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 142.5,
+                "end_time": 144.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                "postprocess": {
+                  "event_id": 37,
+                  "original_answer": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_142.5_144.5",
+                    "tags": [
+                      "outdoor",
+                      "conversation",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black shirt and cap",
+                        "attributes": {
+                          "role": "speaker",
+                          "action": "talking"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman holding a book",
+                        "attributes": {
+                          "role": "listener",
+                          "action": "listening"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in white shirt and cap",
+                        "attributes": {
+                          "role": "observer",
+                          "action": "listening"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black shirt and cap",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman holding a book",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "man in white shirt and cap",
+                        "ref_object": "O003",
+                        "role": "observer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_142.5_144.5",
+                      "name": "Conversation in outdoor setting",
+                      "time": {
+                        "start": "142.5",
+                        "end": "144.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "outdoor"
+                      ],
+                      "scene_topic": "A man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                      "summary": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                        "audio": "",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 144.5,
+                "end_time": 146.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, intently writing or drawing on a piece of paper with a black pen.",
+                "postprocess": {
+                  "event_id": 38,
+                  "original_answer": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, intently writing or drawing on a piece of paper with a black pen.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_144.5_146.5",
+                    "tags": [
+                      "outdoor",
+                      "man",
+                      "paper",
+                      "pen"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "white shirt and black vest",
+                          "action": "writing or drawing"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "paper",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "pen",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_144.5_146.5",
+                      "name": "man writing or drawing",
+                      "time": {
+                        "start": "144.5",
+                        "end": "146.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor scene"
+                      ],
+                      "scene_topic": "A man is writing or drawing in an outdoor setting.",
+                      "summary": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, intently writing or drawing on a piece of paper with a black pen.",
+                      "implications": "Minor event",
+                      "modalities": {
+                        "visual": "A man in a white shirt and black vest stands before a table, intently writing or drawing on a piece of paper with a black pen.",
+                        "audio": "",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a bustling outdoor setting, people engage in various activities such as conversing, writing, and listening, while the sounds of the crowd create a lively atmosphere.",
+            "postprocess": {
+              "event_id": 35,
+              "original_answer": "In a bustling outdoor setting, people engage in various activities such as conversing, writing, and listening, while the sounds of the crowd create a lively atmosphere.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_134.5_146.5",
+                "tags": [
+                  "outdoor",
+                  "people",
+                  "activities",
+                  "atmosphere"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "",
+                    "attributes": {
+                      "description": "people engaging in various activities"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "",
+                    "attributes": {
+                      "description": "sounds of the crowd"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_134.5_146.5",
+                  "name": "",
+                  "time": {
+                    "start": "134.5",
+                    "end": "146.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "outdoor scene"
+                  ],
+                  "scene_topic": "People engage in various activities in a bustling outdoor setting.",
+                  "summary": "In a bustling outdoor setting, people engage in various activities such as conversing, writing, and listening, while the sounds of the crowd create a lively atmosphere.",
+                  "implications": "Major scene, everyday life",
+                  "modalities": {
+                    "visual": "In a bustling outdoor setting, people engage in various activities such as conversing, writing, and listening, while the sounds of the crowd create a lively atmosphere.",
+                    "audio": "crowd sounds",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "In a bustling outdoor setting, a man in a white shirt and black vest is deeply engaged in his work, writing or drawing on a piece of paper, while a man in a black shirt and cap converses with a woman holding a book nearby. Another man in a white shirt and cap listens attentively to their conversation."
+          },
+          {
+            "level": 2,
+            "start_time": 146.5,
+            "end_time": 168.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 146.5,
+                "end_time": 152.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                "postprocess": {
+                  "event_id": 39,
+                  "original_answer": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_146.5_152.5",
+                    "tags": [
+                      "outdoor",
+                      "conversation",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in black shirt and cap",
+                        "attributes": {
+                          "role": "speaker",
+                          "action": "talking"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman holding a book",
+                        "attributes": {
+                          "role": "listener",
+                          "action": "listening"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in white shirt and cap",
+                        "attributes": {
+                          "role": "observer",
+                          "action": "listening"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in black shirt and cap",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman holding a book",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "man in white shirt and cap",
+                        "ref_object": "O003",
+                        "role": "observer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_146.5_152.5",
+                      "name": "Conversation in outdoor setting",
+                      "time": {
+                        "start": "146.5",
+                        "end": "152.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "outdoor"
+                      ],
+                      "scene_topic": "A man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                      "summary": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                      "implications": "Major social interaction event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man in a black shirt and cap engages in a lively conversation with a woman holding a book, while a man in a white shirt and cap listens attentively nearby.",
+                        "audio": "",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 152.5,
+                "end_time": 155.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, intently writing or drawing on a piece of paper with a black pen.",
+                "postprocess": {
+                  "event_id": 41,
+                  "original_answer": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, intently writing or drawing on a piece of paper with a black pen.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_152.5_155.5",
+                    "tags": [
+                      "outdoor",
+                      "man",
+                      "paper",
+                      "pen"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "white shirt and black vest",
+                          "action": "writing or drawing"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "paper",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "pen",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_152.5_155.5",
+                      "name": "man writing or drawing",
+                      "time": {
+                        "start": "152.5",
+                        "end": "155.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor scene"
+                      ],
+                      "scene_topic": "A man is writing or drawing in an outdoor setting.",
+                      "summary": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, intently writing or drawing on a piece of paper with a black pen.",
+                      "implications": "Minor event",
+                      "modalities": {
+                        "visual": "A man in a white shirt and black vest stands before a table, intently writing or drawing on a piece of paper with a black pen.",
+                        "audio": "",
+                        "speech": "every individual will face obstacles in their chosen path"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 155.5,
+                "end_time": 157.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, passionately addressing a group of people, his gestures emphasizing his points.",
+                "postprocess": {
+                  "event_id": 42,
+                  "original_answer": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, passionately addressing a group of people, his gestures emphasizing his points.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_155.5_157.5",
+                    "tags": [
+                      "outdoor",
+                      "public_speaking",
+                      "gestures",
+                      "passion"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "white shirt and black vest",
+                          "gestures": "passionately emphasizing points"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "table",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "group of people",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_155.5_157.5",
+                      "name": "public speaking",
+                      "time": {
+                        "start": "155.5",
+                        "end": "157.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public speaking"
+                      ],
+                      "scene_topic": "A man passionately addresses a group of people outdoors.",
+                      "summary": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, passionately addressing a group of people, his gestures emphasizing his points.",
+                      "implications": "Major public speaking event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man in a white shirt and black vest stands before a table, passionately addressing a group of people, his gestures emphasizing his points.",
+                        "audio": "",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 157.5,
+                "end_time": 168.5,
+                "children": [],
+                "caption": "In a lively outdoor setting, a man with a beard and mustache speaks into a microphone, his voice amplified for the audience, while a second man, partially obscured by the camera, listens intently.",
+                "postprocess": {
+                  "event_id": 43,
+                  "original_answer": "In a lively outdoor setting, a man with a beard and mustache speaks into a microphone, his voice amplified for the audience, while a second man, partially obscured by the camera, listens intently.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_157.5_168.5",
+                    "tags": [
+                      "outdoor",
+                      "public_speaking",
+                      "audience",
+                      "microphone",
+                      "beard",
+                      "mustache"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man with beard and mustache",
+                        "attributes": {
+                          "speaker": "true",
+                          "amplified": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "second man",
+                        "attributes": {
+                          "listener": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {
+                          "amplification": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man with beard and mustache",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "second man",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_157.5_168.5",
+                      "name": "Public Speaking Event",
+                      "time": {
+                        "start": "157.5",
+                        "end": "168.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man speaks into a microphone in an outdoor setting, with another man listening intently.",
+                      "summary": "In a lively outdoor setting, a man with a beard and mustache speaks into a microphone, his voice amplified for the audience, while a second man, partially obscured by the camera, listens intently.",
+                      "implications": "Significant event in public speaking",
+                      "modalities": {
+                        "visual": "In a lively outdoor setting, a man with a beard and mustache speaks into a microphone, his voice amplified for the audience, while a second man, partially obscured by the camera, listens intently.",
+                        "audio": "speaks; amplified voice; listening",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a bustling outdoor setting, several people engage in various activities, including conversation, writing, and public speaking.",
+            "postprocess": {
+              "event_id": 40,
+              "original_answer": "In a bustling outdoor setting, several people engage in various activities, including conversation, writing, and public speaking.",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_146.5_168.5",
+                "tags": [
+                  "outdoor",
+                  "people",
+                  "activities",
+                  "conversation",
+                  "writing",
+                  "public_speaking"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_146.5_168.5",
+                  "name": "",
+                  "time": {
+                    "start": "146.5",
+                    "end": "168.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "people"
+                  ],
+                  "scene_topic": "Several people engage in various activities in an outdoor setting.",
+                  "summary": "In a bustling outdoor setting, several people engage in various activities, including conversation, writing, and public speaking.",
+                  "implications": "Major social event",
+                  "modalities": {
+                    "visual": "In a bustling outdoor setting, several people engage in various activities.",
+                    "audio": "conversation; writing; public speaking.",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "In a bustling outdoor setting, multiple individuals engage in various activities, including conversation, writing, drawing, and public speaking, with some using gestures and a microphone to convey their messages. The scene is characterized by a sense of energy and attention, with individuals listening intently to one another."
+          },
+          {
+            "level": 2,
+            "start_time": 168.5,
+            "end_time": 178.311467,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 168.5,
+                "end_time": 170.5,
+                "children": [],
+                "caption": "In a bustling outdoor setting, a man with a beard and mustache, wearing a black t-shirt, speaks into a microphone, his voice amplified for the audience.",
+                "postprocess": {
+                  "event_id": 44,
+                  "original_answer": "In a bustling outdoor setting, a man with a beard and mustache, wearing a black t-shirt, speaks into a microphone, his voice amplified for the audience.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_168_170",
+                    "tags": [
+                      "outdoor",
+                      "public_speaking",
+                      "man",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "bearded": "true",
+                          "mustached": "true",
+                          "wearing": "black_t_shirt"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {
+                          "amplified": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_168_170",
+                      "name": "public_speaking",
+                      "time": {
+                        "start": "168.5",
+                        "end": "170.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man speaks into a microphone in an outdoor setting.",
+                      "summary": "In a bustling outdoor setting, a man with a beard and mustache, wearing a black t-shirt, speaks into a microphone, his voice amplified for the audience.",
+                      "implications": "Public speaking event",
+                      "modalities": {
+                        "visual": "In a bustling outdoor setting, a man with a beard and mustache, wearing a black t-shirt.",
+                        "audio": "speaks into a microphone; amplified voice.",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 170.5,
+                "end_time": 178.311467,
+                "children": [],
+                "caption": "The video transitions from a lively outdoor scene to a black screen displaying the \"WB\" logo and the text \"Produced by WB,\" while a man's voice can be heard faintly in the background.",
+                "postprocess": {
+                  "event_id": 46,
+                  "original_answer": "The video transitions from a lively outdoor scene to a black screen displaying the \"WB\" logo and the text \"Produced by WB,\" while a man's voice can be heard faintly in the background.",
+                  "result": {
+                    "video_id": "GbU_T2XiFgA",
+                    "event_id": "E_GbU_T2XiFgA_170.5_178.31",
+                    "tags": [
+                      "video_transition",
+                      "wb_logo",
+                      "man_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "outdoor_scene",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "black_screen",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "wb_logo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "text",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_GbU_T2XiFgA_170.5_178.31",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "170.5",
+                        "end": "178.31"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions from a lively outdoor scene to a black screen displaying the 'WB' logo and the text 'Produced by WB,' while a man's voice can be heard faintly in the background.",
+                      "summary": "The video transitions from a lively outdoor scene to a black screen displaying the \"WB\" logo and the text \"Produced by WB,\" while a man's voice can be heard faintly in the background.",
+                      "implications": "Major video transition event",
+                      "modalities": {
+                        "visual": "The video transitions from a lively outdoor scene to a black screen displaying the 'WB' logo and the text 'Produced by WB,'.",
+                        "audio": "man's voice",
+                        "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man speaks into a microphone in an outdoor setting, his voice amplified for the audience, while the video transitions to a black screen with the \"WB\" logo and text \"Produced by WB.\"",
+            "postprocess": {
+              "event_id": 45,
+              "original_answer": "A man speaks into a microphone in an outdoor setting, his voice amplified for the audience, while the video transitions to a black screen with the \"WB\" logo and text \"Produced by WB.\"",
+              "result": {
+                "video_id": "GbU_T2XiFgA",
+                "event_id": "E_GbU_T2XiFgA_168.5_178.31",
+                "tags": [
+                  "outdoor",
+                  "public_speaking",
+                  "audio",
+                  "video_transition"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "speaker": "yes",
+                      "outdoor": "yes",
+                      "amplified": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "microphone",
+                    "attributes": {
+                      "audio_capture": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "black_screen",
+                    "attributes": {
+                      "video_transition": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "WB_logo",
+                    "attributes": {
+                      "branding": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "text",
+                    "attributes": {
+                      "credits": "yes"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_GbU_T2XiFgA_168.5_178.31",
+                  "name": "man speaks into microphone",
+                  "time": {
+                    "start": "168.5",
+                    "end": "178.31"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "public_speaking"
+                  ],
+                  "scene_topic": "A man speaks into a microphone in an outdoor setting, his voice amplified for the audience, while the video transitions to a black screen with the 'WB' logo and text 'Produced by WB.'",
+                  "summary": "A man speaks into a microphone in an outdoor setting, his voice amplified for the audience, while the video transitions to a black screen with the \"WB\" logo and text \"Produced by WB.\"",
+                  "implications": "Major event in public speaking",
+                  "modalities": {
+                    "visual": "A man speaks into a microphone in an outdoor setting, the video transitions to a black screen with the 'WB' logo and text 'Produced by WB'.",
+                    "audio": "speaks; amplified voice",
+                    "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+                  }
+                }
+              }
+            },
+            "summary": "A man with a beard and mustache speaks into a microphone in a lively outdoor setting, his voice amplified for the audience. The scene transitions to a black screen displaying the WB logo and a faint background voice."
+          }
+        ],
+        "caption": "In a vibrant outdoor setting, people engage in passionate conversations and lively activities, including public speaking and writing.",
+        "postprocess": {
+          "event_id": 31,
+          "original_answer": "In a vibrant outdoor setting, people engage in passionate conversations and lively activities, including public speaking and writing.",
+          "result": {
+            "video_id": "GbU_T2XiFgA",
+            "event_id": "E_GbU_T2XiFgA_112.5_178.31",
+            "tags": [
+              "outdoor",
+              "conversations",
+              "activities",
+              "public_speaking",
+              "writing"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "people",
+                "attributes": {
+                  "number": "multiple",
+                  "activity": "conversations",
+                  "setting": "outdoor"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "public_speaking",
+                "attributes": {
+                  "type": "activity",
+                  "description": "passionate conversations"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "writing",
+                "attributes": {
+                  "type": "activity",
+                  "description": "lively activities"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "people",
+                "ref_object": "O001",
+                "role": "actor",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_GbU_T2XiFgA_112.5_178.31",
+              "name": "outdoor gathering",
+              "time": {
+                "start": "112.5",
+                "end": "178.31"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "outdoor_event"
+              ],
+              "scene_topic": "People engage in passionate conversations and lively activities in an outdoor setting.",
+              "summary": "In a vibrant outdoor setting, people engage in passionate conversations and lively activities, including public speaking and writing.",
+              "implications": "Major social event",
+              "modalities": {
+                "visual": "In a vibrant outdoor setting, people engage in passionate conversations and lively activities, including public speaking and writing.",
+                "audio": "",
+                "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+              }
+            }
+          }
+        },
+        "summary": "In a lively outdoor setting, multiple individuals engage in various activities such as conversation, writing, drawing, and public speaking, with a sense of energy and attention as they listen intently to one another. The scene features individuals with distinct attire, including men in black and white shirts and caps, and a man with a beard and mustache speaking into a microphone."
+      }
+    ],
+    "caption": "A vibrant outdoor setting is filled with people engaging in various activities, including public speaking, writing, and lively conversations. The scene shifts between different locations, showcasing the importance of reading and the power of clear and audible voices.",
+    "postprocess": {
+      "event_id": 3,
+      "original_answer": "A vibrant outdoor setting is filled with people engaging in various activities, including public speaking, writing, and lively conversations. The scene shifts between different locations, showcasing the importance of reading and the power of clear and audible voices.",
+      "result": {
+        "video_id": "GbU_T2XiFgA",
+        "event_id": "E_GbU_T2XiFgA_0_178.31",
+        "tags": [
+          "outdoor",
+          "people",
+          "activities",
+          "public_speaking",
+          "writing",
+          "conversations"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "outdoor_setting",
+            "attributes": {
+              "description": "A vibrant outdoor setting filled with people"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "people",
+            "attributes": {
+              "description": "Engaging in various activities"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "public_speaking",
+            "attributes": {
+              "description": "Public speaking activity"
+            }
+          },
+          {
+            "object_id": "O004",
+            "name": "writing",
+            "attributes": {
+              "description": "Writing activity"
+            }
+          },
+          {
+            "object_id": "O005",
+            "name": "conversations",
+            "attributes": {
+              "description": "Lively conversations"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "",
+            "ref_object": "O001",
+            "role": "",
+            "entity": ""
+          }
+        ],
+        "event": {
+          "event_id": "E_GbU_T2XiFgA_0_178.31",
+          "name": "",
+          "time": {
+            "start": "0",
+            "end": "178.31"
+          },
+          "actors": [
+            "A001"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003",
+            "O004",
+            "O005"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "outdoor_scene"
+          ],
+          "scene_topic": "The scene shifts between different locations, showcasing the importance of reading and the power of clear and audible voices.",
+          "summary": "A vibrant outdoor setting is filled with people engaging in various activities, including public speaking, writing, and lively conversations. The scene shifts between different locations, showcasing the importance of reading and the power of clear and audible voices.",
+          "implications": "Major scene, setting, and activity description",
+          "modalities": {
+            "visual": "A vibrant outdoor setting is filled with people engaging in various activities, including public speaking, writing, and lively conversations. The scene shifts between different locations, showcasing the importance of reading and the power of clear voices.",
+            "audio": "public speaking; writing; conversations; voices",
+            "speech": "The speaker shares a personal anecdote about a coach who struggled to hit 50 home runs, emphasizing that every individual will face obstacles in their chosen path."
+          }
+        }
+      }
+    },
+    "summary": "The video showcases a lively outdoor setting in Central Park, featuring people enjoying their day, socializing, and engaging in various activities such as reading, writing, and public speaking. A passionate speaker with a beard and sunglasses conveys his enthusiasm to a large audience, while others listen intently, creating a sense of energy and attention."
+  }
+}

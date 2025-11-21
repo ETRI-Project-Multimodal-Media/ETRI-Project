@@ -9,7 +9,7 @@ from typing import Any, Dict, List, Optional
 
 KL_SIMILARITY_THRESHOLD = 0.01
 KL_EPS = 1e-8
-JSD_SIMILARITY_THRESHOLD = 0.02
+JSD_SIMILARITY_THRESHOLD = 0.25
 
 
 def _safe_float(value: Optional[float], default: float = 0.0) -> float:
@@ -232,7 +232,8 @@ def main():
 
     for video_id, tree in data.items():
         merge_tree(tree, similarity_threshold=args.threshold, save_path=args.output)
-    _save_tree(data, args.output)
+    output_path = "/home/kylee/workspace/LongVALE/data_backup/tree_merge_{}.json".format(args.threshold)
+    _save_tree(data, output_path)
 
     print(f"[INFO] Saved merged tree → {args.output}")
 

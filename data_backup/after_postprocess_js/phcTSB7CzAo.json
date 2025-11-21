@@ -1,0 +1,2721 @@
+{
+  "video_id": "phcTSB7CzAo",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 235.48,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 21.5,
+        "children": [],
+        "caption": "A man, standing in front of a red truck in a field, smiles as he talks about his off-road adventure, the truck's headlights illuminating the dusty terrain.",
+        "postprocess": {
+          "event_id": 0,
+          "original_answer": "A man, standing in front of a red truck in a field, smiles as he talks about his off-road adventure, the truck's headlights illuminating the dusty terrain.",
+          "result": {
+            "video_id": "phcTSB7CzAo",
+            "event_id": "E_phcTSB7CzAo_0_21.5",
+            "tags": [
+              "offroad",
+              "adventure",
+              "truck",
+              "field",
+              "smile"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "actor": "man",
+                  "action": "smiling",
+                  "location": "field",
+                  "vehicle": "red truck"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "red truck",
+                "attributes": {
+                  "type": "vehicle",
+                  "color": "red",
+                  "headlights": "illuminating"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "main",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_phcTSB7CzAo_0_21.5",
+              "name": "off-road adventure",
+              "time": {
+                "start": "0",
+                "end": "21.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "adventure news"
+              ],
+              "scene_topic": "A man talks about his off-road adventure in a field.",
+              "summary": "A man, standing in front of a red truck in a field, smiles as he talks about his off-road adventure, the truck's headlights illuminating the dusty terrain.",
+              "implications": "Major adventure news event",
+              "modalities": {
+                "visual": "A man standing in front of a red truck in a field smiles as he talks about his off-road adventure, the truck's headlights illuminating the dusty terrain.",
+                "audio": "",
+                "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 21.5,
+        "end_time": 51.5,
+        "children": [],
+        "caption": "A man in a red and white striped shirt stands in front of a red Land Cruiser, smiling as he talks about the vehicle's off-road capabilities, then the scene shifts to a rugged red Land Cruiser driving through a sandy landscape, the engine roaring as it navigates the challenging terrain.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "A man in a red and white striped shirt stands in front of a red Land Cruiser, smiling as he talks about the vehicle's off-road capabilities, then the scene shifts to a rugged red Land Cruiser driving through a sandy landscape, the engine roaring as it navigates the challenging terrain.",
+          "result": {
+            "video_id": "phcTSB7CzAo",
+            "event_id": "E_phcTSB7CzAo_21.5_51.5",
+            "tags": [
+              "offroad",
+              "land_cruiser",
+              "terrain",
+              "vehicle"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Land Cruiser",
+                "attributes": {
+                  "color": "red",
+                  "type": "off-road vehicle"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man in red and white striped shirt",
+                "ref_object": "O001",
+                "role": "driver",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_phcTSB7CzAo_21.5_51.5",
+              "name": "Land Cruiser off-road demonstration",
+              "time": {
+                "start": "21.5",
+                "end": "51.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "vehicle demonstration"
+              ],
+              "scene_topic": "A man demonstrates the off-road capabilities of a Land Cruiser.",
+              "summary": "A man in a red and white striped shirt stands in front of a red Land Cruiser, smiling as he talks about the vehicle's off-road capabilities, then the scene shifts to a rugged red Land Cruiser driving through a sandy landscape, the engine roaring as it navigates the challenging terrain.",
+              "implications": "Major vehicle demonstration event",
+              "modalities": {
+                "visual": "A man in a red and white striped shirt stands in front of a red Land Cruiser, smiling as he talks about the vehicle's off-road capabilities, then the scene shifts to a rugged red Land Cruiser driving through a sandy landscape.",
+                "audio": "smiling; talking; engine roaring",
+                "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 51.5,
+        "end_time": 91.5,
+        "children": [],
+        "caption": "The video transitions from a close-up of a red SUV driving through a rugged desert landscape to a wide shot of a group of vehicles navigating the terrain, with a man's voice narrating the challenges of the off-road journey.",
+        "postprocess": {
+          "event_id": 3,
+          "original_answer": "The video transitions from a close-up of a red SUV driving through a rugged desert landscape to a wide shot of a group of vehicles navigating the terrain, with a man's voice narrating the challenges of the off-road journey.",
+          "result": {
+            "video_id": "phcTSB7CzAo",
+            "event_id": "E_phcTSB7CzAo_51.5_91.5",
+            "tags": [
+              "offroad",
+              "desert",
+              "suv",
+              "narration"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Red SUV",
+                "attributes": {
+                  "vehicle_type": "SUV",
+                  "color": "red"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Group of vehicles",
+                "attributes": {
+                  "vehicle_type": "various",
+                  "quantity": "multiple"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Narrator",
+                "ref_object": "O001",
+                "role": "narrator",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_phcTSB7CzAo_51.5_91.5",
+              "name": "Off-road journey",
+              "time": {
+                "start": "51.5",
+                "end": "91.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "travel",
+                "adventure"
+              ],
+              "scene_topic": "A group of vehicles navigates a rugged desert terrain, with a narrator describing the challenges of off-road driving.",
+              "summary": "The video transitions from a close-up of a red SUV driving through a rugged desert landscape to a wide shot of a group of vehicles navigating the terrain, with a man's voice narrating the challenges of the off-road journey.",
+              "implications": "Major travel, adventure news event",
+              "modalities": {
+                "visual": "The video transitions from a close-up of a red SUV driving through a rugged desert landscape to a wide shot of a group of vehicles navigating the terrain, with a man's voice narrating the challenges of the off-road journey.",
+                "audio": "man's voice",
+                "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable. With its ample space, torque, and comfortable suspension, it's perfect for overland travel and navigating rough terrain, making it a quintessential safari car. The Defender performed well, with only minor issues such as fuel and rattling noises, and its low-down torque surprised the speaker with its performance. Despite not being the speaker's usual favorite car, the Defender proved to be a reliable and capable vehicle, making it a standout on the trip."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 91.5,
+        "end_time": 215.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 91.5,
+            "end_time": 173.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 91.5,
+                "end_time": 103.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 91.5,
+                    "end_time": 103.5,
+                    "children": [],
+                    "caption": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                    "postprocess": {
+                      "event_id": 4,
+                      "original_answer": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_91.5_103.5",
+                        "tags": [
+                          "suv",
+                          "road",
+                          "landscape",
+                          "journey",
+                          "sound"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "red SUV",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red",
+                              "illumination": "headlights"
+                            }
+                          }
+                        ],
+                        "actors": [],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_91.5_103.5",
+                          "name": "The red SUV continues its journey",
+                          "time": {
+                            "start": "91.5",
+                            "end": "103.5"
+                          },
+                          "actors": [],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "vehicle movement"
+                          ],
+                          "scene_topic": "The red SUV continues its journey through the vast, barren landscape",
+                          "summary": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                          "implications": "Major transportation event",
+                          "modalities": {
+                            "visual": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape.",
+                            "audio": "tires on gravel road; crunch",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A red SUV drives through a desolate landscape, the only sound being the crunch of its tires on the gravel road.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A red SUV drives through a desolate landscape, the only sound being the crunch of its tires on the gravel road.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_91.5_103.5",
+                    "tags": [
+                      "desolate",
+                      "landscape",
+                      "suv",
+                      "gravel",
+                      "road"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red SUV",
+                        "attributes": {
+                          "color": "red",
+                          "type": "SUV",
+                          "sound": "tires on gravel"
+                        }
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_91.5_103.5",
+                      "name": "Red SUV drives through desolate landscape",
+                      "time": {
+                        "start": "91.5",
+                        "end": "103.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "landscape"
+                      ],
+                      "scene_topic": "A red SUV drives through a desolate landscape, the only sound being the crunch of its tires on the gravel road.",
+                      "summary": "A red SUV drives through a desolate landscape, the only sound being the crunch of its tires on the gravel road.",
+                      "implications": "Desolate landscape event",
+                      "modalities": {
+                        "visual": "A red SUV drives through a desolate landscape.",
+                        "audio": "tires on gravel road",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "A red SUV travels through a desolate landscape, its headlights casting light on the gravel road as the only sound is the crunch of its tires."
+              },
+              {
+                "level": 3,
+                "start_time": 103.5,
+                "end_time": 110.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 103.5,
+                    "end_time": 105.5,
+                    "children": [],
+                    "caption": "A man in a red hard hat and vest is working on a large red truck in a dusty, rocky landscape, the sound of his voice explaining the truck's off-road capabilities and the challenges of the terrain audible over the engine's roar.",
+                    "postprocess": {
+                      "event_id": 8,
+                      "original_answer": "A man in a red hard hat and vest is working on a large red truck in a dusty, rocky landscape, the sound of his voice explaining the truck's off-road capabilities and the challenges of the terrain audible over the engine's roar.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_103.5_105.5",
+                        "tags": [
+                          "offroad",
+                          "truck",
+                          "terrain",
+                          "exploration",
+                          "adventure"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "Red Truck",
+                            "attributes": {
+                              "type": "off-road vehicle",
+                              "color": "red"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "Man in Red Hard Hat and Vest",
+                            "attributes": {
+                              "role": "explainer",
+                              "occupation": "engineer"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "Dusty, Rocky Landscape",
+                            "attributes": {
+                              "terrain": "rocky",
+                              "environment": "outdoor"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "The Man",
+                            "ref_object": "O002",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_103.5_105.5",
+                          "name": "Explaining Off-Road Truck Capabilities",
+                          "time": {
+                            "start": "103.5",
+                            "end": "105.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "adventure",
+                            "exploration"
+                          ],
+                          "scene_topic": "A man explains the off-road capabilities of a truck in a rocky terrain.",
+                          "summary": "A man in a red hard hat and vest is working on a large red truck in a dusty, rocky landscape, the sound of his voice explaining the truck's off-road capabilities and the challenges of the terrain audible over the engine's roar.",
+                          "implications": "Major adventure and exploration news event",
+                          "modalities": {
+                            "visual": "A man in a red hard hat and vest is working on a large red truck in a dusty, rocky landscape.",
+                            "audio": "voice explaining; engine's roar",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 105.5,
+                    "end_time": 108.5,
+                    "children": [],
+                    "caption": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                    "postprocess": {
+                      "event_id": 10,
+                      "original_answer": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_105.5_108.5",
+                        "tags": [
+                          "suv",
+                          "road",
+                          "landscape",
+                          "journey",
+                          "sound"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "red SUV",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red",
+                              "illumination": "headlights"
+                            }
+                          }
+                        ],
+                        "actors": [],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_105.5_108.5",
+                          "name": "",
+                          "time": {
+                            "start": "105.5",
+                            "end": "108.5"
+                          },
+                          "actors": [],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "vehicle movement"
+                          ],
+                          "scene_topic": "The red SUV continues its journey through the vast, barren landscape.",
+                          "summary": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                          "implications": "Minor transportation event",
+                          "modalities": {
+                            "visual": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape.",
+                            "audio": "tires on gravel road; crunch",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 108.5,
+                    "end_time": 110.5,
+                    "children": [],
+                    "caption": "A man in a red hard hat and a black jacket stands in front of a white truck, explaining that they are about to embark on a 10-day off-road adventure in Western Australia.",
+                    "postprocess": {
+                      "event_id": 11,
+                      "original_answer": "A man in a red hard hat and a black jacket stands in front of a white truck, explaining that they are about to embark on a 10-day off-road adventure in Western Australia.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_108.5_110.5",
+                        "tags": [
+                          "offroad",
+                          "adventure",
+                          "western_australia",
+                          "truck",
+                          "exploration"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "wearing_red_hard_hat": "yes",
+                              "wearing_black_jacket": "yes"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "white_truck",
+                            "attributes": {}
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_108.5_110.5",
+                          "name": "off-road adventure announcement",
+                          "time": {
+                            "start": "108.5",
+                            "end": "110.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "adventure news"
+                          ],
+                          "scene_topic": "A man explains an off-road adventure in Western Australia.",
+                          "summary": "A man in a red hard hat and a black jacket stands in front of a white truck, explaining that they are about to embark on a 10-day off-road adventure in Western Australia.",
+                          "implications": "Major adventure news event",
+                          "modalities": {
+                            "visual": "A man in a red hard hat and a black jacket stands in front of a white truck.",
+                            "audio": "",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man in a red hard hat is working on a red truck in a rugged landscape, discussing its off-road capabilities and the challenges of the terrain. Meanwhile, a red SUV continues its journey through the barren landscape, and another man in a red hard hat prepares for a 10-day off-road adventure in Western Australia.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A man in a red hard hat is working on a red truck in a rugged landscape, discussing its off-road capabilities and the challenges of the terrain. Meanwhile, a red SUV continues its journey through the barren landscape, and another man in a red hard hat prepares for a 10-day off-road adventure in Western Australia.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_103.5_110.5",
+                    "tags": [
+                      "offroad",
+                      "terrain",
+                      "adventure",
+                      "western_australia",
+                      "red_truck",
+                      "red_suv"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red Truck",
+                        "attributes": {
+                          "color": "red",
+                          "type": "off-road",
+                          "terrain": "rugged"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Red SUV",
+                        "attributes": {
+                          "color": "red",
+                          "type": "off-road",
+                          "terrain": "barren"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Man in Red Hard Hat (1)",
+                        "attributes": {
+                          "role": "driver",
+                          "terrain": "rugged"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "Man in Red Hard Hat (2)",
+                        "attributes": {
+                          "role": "driver",
+                          "terrain": "barren"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man in Red Hard Hat (1)",
+                        "ref_object": "O003",
+                        "role": "driver",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "Man in Red Hard Hat (2)",
+                        "ref_object": "O004",
+                        "role": "driver",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_103.5_110.5",
+                      "name": "Off-road discussion and adventure preparation",
+                      "time": {
+                        "start": "103.5",
+                        "end": "110.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "adventure",
+                        "off-road"
+                      ],
+                      "scene_topic": "A man discusses the off-road capabilities of a red truck in a rugged landscape.",
+                      "summary": "A man in a red hard hat is working on a red truck in a rugged landscape, discussing its off-road capabilities and the challenges of the terrain. Meanwhile, a red SUV continues its journey through the barren landscape, and another man in a red hard hat prepares for a 10-day off-road adventure in Western Australia.",
+                      "implications": "Major off-road adventure event",
+                      "modalities": {
+                        "visual": "A man in a red hard hat is working on a red truck in a rugged landscape, a red SUV continues its journey through the barren landscape, another man in a red hard hat prepares for a 10-day off-road adventure in Western Australia.",
+                        "audio": "",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "A man is preparing to embark on a 10-day off-road adventure in Western Australia, explaining the capabilities of his red truck and the challenges of the terrain. The truck, equipped with headlights, navigates through a vast and barren landscape, its tires crunching on the gravel road."
+              },
+              {
+                "level": 3,
+                "start_time": 110.5,
+                "end_time": 117.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 110.5,
+                    "end_time": 114.5,
+                    "children": [],
+                    "caption": "A man in a red hard hat and vest stands in front of a red truck, explaining that they are about to embark on a 10-day off-road adventure in the Australian outback.",
+                    "postprocess": {
+                      "event_id": 12,
+                      "original_answer": "A man in a red hard hat and vest stands in front of a red truck, explaining that they are about to embark on a 10-day off-road adventure in the Australian outback.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_110.5_114.5",
+                        "tags": [
+                          "offroad",
+                          "adventure",
+                          "australian_outback",
+                          "truck",
+                          "man"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "Red truck",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "Man in red hard hat and vest",
+                            "attributes": {
+                              "role": "explainer",
+                              "clothing": "red hard hat and vest"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "The man",
+                            "ref_object": "O002",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_110.5_114.5",
+                          "name": "Off-road adventure announcement",
+                          "time": {
+                            "start": "110.5",
+                            "end": "114.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "adventure news"
+                          ],
+                          "scene_topic": "A man explains an off-road adventure in the Australian outback.",
+                          "summary": "A man in a red hard hat and vest stands in front of a red truck, explaining that they are about to embark on a 10-day off-road adventure in the Australian outback.",
+                          "implications": "Major adventure news event",
+                          "modalities": {
+                            "visual": "A man in a red hard hat and vest stands in front of a red truck, explaining that they are about to embark on a 10-day off-road adventure in the Australian outback.",
+                            "audio": "",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 114.5,
+                    "end_time": 117.5,
+                    "children": [],
+                    "caption": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                    "postprocess": {
+                      "event_id": 14,
+                      "original_answer": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_114.5_117.5",
+                        "tags": [
+                          "suv",
+                          "road",
+                          "landscape",
+                          "journey",
+                          "sound"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "red SUV",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red",
+                              "lighting": "headlights"
+                            }
+                          }
+                        ],
+                        "actors": [],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_114.5_117.5",
+                          "name": "The red SUV continues its journey",
+                          "time": {
+                            "start": "114.5",
+                            "end": "117.5"
+                          },
+                          "actors": [],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "transportation news"
+                          ],
+                          "scene_topic": "The red SUV continues its journey through the vast, barren landscape.",
+                          "summary": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                          "implications": "Major transportation news event",
+                          "modalities": {
+                            "visual": "The red SUV, illuminated by its headlights, continues its journey through the vast, barren landscape.",
+                            "audio": "tires on gravel road; crunch",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A group of adventurers embark on a 10-day off-road journey through the Australian outback in a red truck, ready to face the challenges of the vast and barren landscape.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A group of adventurers embark on a 10-day off-road journey through the Australian outback in a red truck, ready to face the challenges of the vast and barren landscape.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_110.5_117.5",
+                    "tags": [
+                      "offroad",
+                      "adventure",
+                      "australian_outback",
+                      "truck",
+                      "landscape"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red Truck",
+                        "attributes": {
+                          "type": "vehicle",
+                          "color": "red",
+                          "purpose": "transportation"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Adventurers",
+                        "ref_object": "O001",
+                        "role": "driver",
+                        "entity": "group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_110.5_117.5",
+                      "name": "Off-road Journey",
+                      "time": {
+                        "start": "110.5",
+                        "end": "117.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "adventure",
+                        "travel"
+                      ],
+                      "scene_topic": "A group of adventurers embark on a 10-day off-road journey through the Australian outback in a red truck, ready to face the challenges of the vast and barren landscape.",
+                      "summary": "A group of adventurers embark on a 10-day off-road journey through the Australian outback in a red truck, ready to face the challenges of the vast and barren landscape.",
+                      "implications": "Major travel, adventure news event",
+                      "modalities": {
+                        "visual": "A group of adventurers embark on a 10-day off-road journey through the Australian outback in a red truck, ready to face the challenges of the vast and barren landscape.",
+                        "audio": "",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "A man in a red hard hat and vest stands in front of a red truck, preparing for a 10-day off-road adventure in the Australian outback. The truck, lit by its headlights, begins its journey through the vast, barren landscape, its tires crunching on the gravel road."
+              },
+              {
+                "level": 3,
+                "start_time": 117.5,
+                "end_time": 136.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 117.5,
+                    "end_time": 122.5,
+                    "children": [],
+                    "caption": "A man in a red shirt stands in front of a white truck, explaining that they are about to embark on a 10-day off-road adventure in Australia, with the truck's headlights illuminating the dusty terrain.",
+                    "postprocess": {
+                      "event_id": 15,
+                      "original_answer": "A man in a red shirt stands in front of a white truck, explaining that they are about to embark on a 10-day off-road adventure in Australia, with the truck's headlights illuminating the dusty terrain.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_117.5_122.5",
+                        "tags": [
+                          "offroad",
+                          "adventure",
+                          "australia",
+                          "truck",
+                          "terrain"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "role": "explainer",
+                              "clothing": "red shirt"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "white truck",
+                            "attributes": {
+                              "type": "vehicle",
+                              "lighting": "headlights"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "dusty terrain",
+                            "attributes": {
+                              "type": "environment",
+                              "condition": "dusty"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "explainer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_117.5_122.5",
+                          "name": "off-road adventure explanation",
+                          "time": {
+                            "start": "117.5",
+                            "end": "122.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "adventure news"
+                          ],
+                          "scene_topic": "A man explains an off-road adventure in Australia, with a truck's headlights illuminating the dusty terrain.",
+                          "summary": "A man in a red shirt stands in front of a white truck, explaining that they are about to embark on a 10-day off-road adventure in Australia, with the truck's headlights illuminating the dusty terrain.",
+                          "implications": "Major adventure news event",
+                          "modalities": {
+                            "visual": "A man in a red shirt stands in front of a white truck, with the truck's headlights illuminating the dusty terrain.",
+                            "audio": "",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 122.5,
+                    "end_time": 136.5,
+                    "children": [],
+                    "caption": "The red SUV, illuminated by its headlights, continues its journey through the rugged terrain, the only sound the crunch of its tires on the gravel road.",
+                    "postprocess": {
+                      "event_id": 17,
+                      "original_answer": "The red SUV, illuminated by its headlights, continues its journey through the rugged terrain, the only sound the crunch of its tires on the gravel road.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_122.5_136.5",
+                        "tags": [
+                          "terrain",
+                          "road",
+                          "suv",
+                          "headlights",
+                          "tires"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "red SUV",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red",
+                              "lighting": "headlights"
+                            }
+                          }
+                        ],
+                        "actors": [],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_122.5_136.5",
+                          "name": "",
+                          "time": {
+                            "start": "122.5",
+                            "end": "136.5"
+                          },
+                          "actors": [],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "terrain"
+                          ],
+                          "scene_topic": "The red SUV continues its journey through the rugged terrain.",
+                          "summary": "The red SUV, illuminated by its headlights, continues its journey through the rugged terrain, the only sound the crunch of its tires on the gravel road.",
+                          "implications": "Major transportation event",
+                          "modalities": {
+                            "visual": "The red SUV, illuminated by its headlights, continues its journey through the rugged terrain.",
+                            "audio": "tires on gravel road; crunch",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A group of adventurers embark on a 10-day off-road journey in Australia, with a red SUV leading the way through rugged terrain.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "A group of adventurers embark on a 10-day off-road journey in Australia, with a red SUV leading the way through rugged terrain.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_117.5_136.5",
+                    "tags": [
+                      "offroad",
+                      "adventure",
+                      "australia",
+                      "suv",
+                      "terrain"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red SUV",
+                        "attributes": {
+                          "type": "vehicle",
+                          "color": "red"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Adventurers",
+                        "ref_object": "O001",
+                        "role": "driver",
+                        "entity": "group"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_117.5_136.5",
+                      "name": "Off-road journey",
+                      "time": {
+                        "start": "117.5",
+                        "end": "136.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "adventure news"
+                      ],
+                      "scene_topic": "A group of adventurers embark on a 10-day off-road journey in Australia, with a red SUV leading the way through rugged terrain.",
+                      "summary": "A group of adventurers embark on a 10-day off-road journey in Australia, with a red SUV leading the way through rugged terrain.",
+                      "implications": "Major adventure news event",
+                      "modalities": {
+                        "visual": "A group of adventurers embark on a 10-day off-road journey in Australia, with a red SUV leading the way through rugged terrain.",
+                        "audio": "",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "A man in a red shirt stands in front of a white truck, preparing for a 10-day off-road adventure in Australia, with the truck's headlights illuminating the dusty terrain. The truck then begins its journey, its tires crunching on the gravel road as it navigates the rugged terrain."
+              },
+              {
+                "level": 3,
+                "start_time": 136.5,
+                "end_time": 148.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 136.5,
+                    "end_time": 148.5,
+                    "children": [],
+                    "caption": "The red SUV, illuminated by its headlights, continues its journey through the rugged terrain, the only sound the crunch of its tires on the gravel road.",
+                    "postprocess": {
+                      "event_id": 18,
+                      "original_answer": "The red SUV, illuminated by its headlights, continues its journey through the rugged terrain, the only sound the crunch of its tires on the gravel road.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_136.5_148.5",
+                        "tags": [
+                          "terrain",
+                          "road",
+                          "suv",
+                          "headlights",
+                          "tires"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "red SUV",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red",
+                              "lighting": "headlights"
+                            }
+                          }
+                        ],
+                        "actors": [],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_136.5_148.5",
+                          "name": "",
+                          "time": {
+                            "start": "136.5",
+                            "end": "148.5"
+                          },
+                          "actors": [],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "terrain"
+                          ],
+                          "scene_topic": "The red SUV continues its journey through the rugged terrain.",
+                          "summary": "The red SUV, illuminated by its headlights, continues its journey through the rugged terrain, the only sound the crunch of its tires on the gravel road.",
+                          "implications": "Major transportation event",
+                          "modalities": {
+                            "visual": "The red SUV, illuminated by its headlights, continues its journey through the rugged terrain.",
+                            "audio": "tires on gravel road; crunch",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A red SUV drives through rugged terrain, the only sound being the crunch of its tires on the gravel road.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "A red SUV drives through rugged terrain, the only sound being the crunch of its tires on the gravel road.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_136.5_148.5",
+                    "tags": [
+                      "terrain",
+                      "suv",
+                      "road",
+                      "sound"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red SUV",
+                        "attributes": {
+                          "type": "vehicle",
+                          "color": "red",
+                          "terrain": "rugged"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "driver",
+                        "entity": "vehicle"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_136.5_148.5",
+                      "name": "",
+                      "time": {
+                        "start": "136.5",
+                        "end": "148.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "vehicle movement"
+                      ],
+                      "scene_topic": "A red SUV drives through rugged terrain, the only sound being the crunch of its tires on the gravel road.",
+                      "summary": "A red SUV drives through rugged terrain, the only sound being the crunch of its tires on the gravel road.",
+                      "implications": "Major vehicle movement event",
+                      "modalities": {
+                        "visual": "A red SUV drives through rugged terrain.",
+                        "audio": "tires on gravel road",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "A red SUV travels through rugged terrain, its headlights illuminating the path as it moves along the gravel road, the only sound being the crunch of its tires."
+              },
+              {
+                "level": 3,
+                "start_time": 148.5,
+                "end_time": 173.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 148.5,
+                    "end_time": 166.5,
+                    "children": [],
+                    "caption": "The video transitions from a close-up of a red SUV driving through a rugged desert landscape to a wider shot of the vehicle navigating a dirt road, as a man's voice describes the challenges of off-roading in Australia.",
+                    "postprocess": {
+                      "event_id": 20,
+                      "original_answer": "The video transitions from a close-up of a red SUV driving through a rugged desert landscape to a wider shot of the vehicle navigating a dirt road, as a man's voice describes the challenges of off-roading in Australia.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_148.5_166.5",
+                        "tags": [
+                          "off_roading",
+                          "australia",
+                          "desert",
+                          "suv",
+                          "dirt_road"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "Red SUV",
+                            "attributes": {
+                              "vehicle_type": "SUV",
+                              "color": "red"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "Desert landscape",
+                            "attributes": {
+                              "environment": "desert",
+                              "terrain": "rugged"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "Dirt road",
+                            "attributes": {
+                              "road_type": "dirt",
+                              "terrain": "rugged"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "Man's voice",
+                            "ref_object": "",
+                            "role": "narrator",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_148.5_166.5",
+                          "name": "Off-roading in Australia",
+                          "time": {
+                            "start": "148.5",
+                            "end": "166.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "travel",
+                            "adventure"
+                          ],
+                          "scene_topic": "A man narrates the challenges of off-roading in Australia as a red SUV navigates a rugged desert landscape and a dirt road.",
+                          "summary": "The video transitions from a close-up of a red SUV driving through a rugged desert landscape to a wider shot of the vehicle navigating a dirt road, as a man's voice describes the challenges of off-roading in Australia.",
+                          "implications": "Major travel and adventure news event",
+                          "modalities": {
+                            "visual": "The video transitions from a close-up of a red SUV driving through a rugged desert landscape to a wider shot of the vehicle navigating a dirt road, as a man's voice describes the challenges of off-roading in Australia.",
+                            "audio": "man's voice",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 166.5,
+                    "end_time": 170.5,
+                    "children": [],
+                    "caption": "A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                    "postprocess": {
+                      "event_id": 22,
+                      "original_answer": "A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_166.5_170.5",
+                        "tags": [
+                          "off_roading",
+                          "australia",
+                          "adventure",
+                          "landscape",
+                          "man"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "speaker": "yes",
+                              "wearing_red_shirt": "yes",
+                              "wearing_blue_jeans": "yes"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_166.5_170.5",
+                          "name": "man speaks about off-roading in Australia",
+                          "time": {
+                            "start": "166.5",
+                            "end": "170.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "adventure",
+                            "travel"
+                          ],
+                          "scene_topic": "A man speaks about off-roading in Australia",
+                          "summary": "A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                          "implications": "Major adventure and travel news event",
+                          "modalities": {
+                            "visual": "A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks.",
+                            "audio": "speaking; echoing",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 170.5,
+                    "end_time": 173.5,
+                    "children": [],
+                    "caption": "The red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the crunch of its tires on the rough road.",
+                    "postprocess": {
+                      "event_id": 23,
+                      "original_answer": "The red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the crunch of its tires on the rough road.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_170.5_173.5",
+                        "tags": [
+                          "suv",
+                          "terrain",
+                          "journey",
+                          "road"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "red SUV",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red",
+                              "headlights": "illuminating"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_170.5_173.5",
+                          "name": "",
+                          "time": {
+                            "start": "170.5",
+                            "end": "173.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "vehicle movement"
+                          ],
+                          "scene_topic": "The red SUV continues its journey across the vast, barren landscape.",
+                          "summary": "The red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the crunch of its tires on the rough road.",
+                          "implications": "Major transportation event",
+                          "modalities": {
+                            "visual": "The red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape.",
+                            "audio": "tires on the rough road",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A man describes the challenges of off-roading in Australia, while a red SUV navigates a dirt road in the vast, dry landscape.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "A man describes the challenges of off-roading in Australia, while a red SUV navigates a dirt road in the vast, dry landscape.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_148.5_173.5",
+                    "tags": [
+                      "off_roading",
+                      "australia",
+                      "dirt_road",
+                      "suv",
+                      "landscape"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red SUV",
+                        "attributes": {
+                          "vehicle_type": "SUV",
+                          "color": "Red"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Dirt Road",
+                        "attributes": {
+                          "surface_type": "Dirt",
+                          "terrain": "Off-Road"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Australian Landscape",
+                        "attributes": {
+                          "environment": "Desert",
+                          "location": "Australia"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O001",
+                        "role": "Driver",
+                        "entity": "Human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_148.5_173.5",
+                      "name": "Off-Roading in Australia",
+                      "time": {
+                        "start": "148.5",
+                        "end": "173.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "travel",
+                        "adventure"
+                      ],
+                      "scene_topic": "A man drives a red SUV on a dirt road in the Australian desert.",
+                      "summary": "A man describes the challenges of off-roading in Australia, while a red SUV navigates a dirt road in the vast, dry landscape.",
+                      "implications": "Major travel, adventure news event",
+                      "modalities": {
+                        "visual": "A man describes the challenges of off-roading in Australia, while a red SUV navigates a dirt road in the vast, dry landscape.",
+                        "audio": "",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "A man describes the challenges of off-roading in Australia while standing in a vast, dry landscape, as a red SUV navigates a dirt road in the background. The vehicle's headlights illuminate the dusty terrain, and the only sound is the crunch of its tires on the rough road."
+              }
+            ],
+            "caption": "A red SUV and a red truck are featured in a rugged landscape, with adventurers embarking on off-road journeys in Australia. The group faces challenges in the vast and barren terrain, but is prepared for the adventure.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A red SUV and a red truck are featured in a rugged landscape, with adventurers embarking on off-road journeys in Australia. The group faces challenges in the vast and barren terrain, but is prepared for the adventure.",
+              "result": {
+                "video_id": "phcTSB7CzAo",
+                "event_id": "E_phcTSB7CzAo_91.5_173.5",
+                "tags": [
+                  "offroad",
+                  "adventure",
+                  "australia",
+                  "landscape",
+                  "terrain"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Red SUV",
+                    "attributes": {
+                      "color": "red",
+                      "type": "SUV"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Red Truck",
+                    "attributes": {
+                      "color": "red",
+                      "type": "truck"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Adventurers",
+                    "ref_object": "O001",
+                    "role": "driver",
+                    "entity": "group"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_phcTSB7CzAo_91.5_173.5",
+                  "name": "Off-road adventure",
+                  "time": {
+                    "start": "91.5",
+                    "end": "173.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "adventure news"
+                  ],
+                  "scene_topic": "Adventurers embark on off-road journeys in Australia, facing challenges in the rugged terrain.",
+                  "summary": "A red SUV and a red truck are featured in a rugged landscape, with adventurers embarking on off-road journeys in Australia. The group faces challenges in the vast and barren terrain, but is prepared for the adventure.",
+                  "implications": "Major adventure, travel news event",
+                  "modalities": {
+                    "visual": "A red SUV and a red truck are featured in a rugged landscape, with adventurers embarking on off-road journeys in Australia.",
+                    "audio": "",
+                    "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable. With its ample space, torque, and comfortable suspension, it's perfect for overland travel and navigating rough terrain, making it a quintessential safari car. The Defender performed well, with only minor issues such as fuel and rattling noises, and its low-down torque surprised the speaker with its performance. Despite not being the speaker's usual favorite car, the Defender proved to be a reliable and capable vehicle, making it a standout on the trip."
+                  }
+                }
+              }
+            },
+            "summary": "A man prepares for a 10-day off-road adventure in Western Australia, standing in front of his red truck equipped with headlights, as he explains the capabilities of the vehicle and the challenges of navigating the rugged terrain. The truck then begins its journey, its tires crunching on the gravel road as it illuminates the dusty path with its headlights."
+          },
+          {
+            "level": 2,
+            "start_time": 173.5,
+            "end_time": 215.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 173.5,
+                "end_time": 184.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 173.5,
+                    "end_time": 177.5,
+                    "children": [],
+                    "caption": "The red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                    "postprocess": {
+                      "event_id": 24,
+                      "original_answer": "The red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_173.5_177.5",
+                        "tags": [
+                          "suv",
+                          "terrain",
+                          "journey",
+                          "road"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "red SUV",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red",
+                              "headlights": "illuminating"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_173.5_177.5",
+                          "name": "",
+                          "time": {
+                            "start": "173.5",
+                            "end": "177.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "vehicle movement"
+                          ],
+                          "scene_topic": "The red SUV continues its journey across the vast, barren landscape.",
+                          "summary": "The red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the crunch of its tires on the gravel road.",
+                          "implications": "Major transportation event",
+                          "modalities": {
+                            "visual": "The red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape.",
+                            "audio": "tires on gravel road",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 177.5,
+                    "end_time": 184.5,
+                    "children": [],
+                    "caption": "A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness. A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                    "postprocess": {
+                      "event_id": 27,
+                      "original_answer": "A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness. A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_177.5_184.5",
+                        "tags": [
+                          "off_roading",
+                          "australia",
+                          "adventure",
+                          "landscape",
+                          "man"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "Man in red shirt and blue jeans",
+                            "attributes": {
+                              "speaker": "yes",
+                              "gesturing": "yes",
+                              "echoing": "slightly"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "Man in red shirt and blue jeans",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_177.5_184.5",
+                          "name": "Off-roading challenges in Australia",
+                          "time": {
+                            "start": "177.5",
+                            "end": "184.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "adventure",
+                            "travel"
+                          ],
+                          "scene_topic": "A man speaks about off-roading challenges in Australia",
+                          "summary": "A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness. A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                          "implications": "Major adventure and travel news event",
+                          "modalities": {
+                            "visual": "A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness. A man in a red shirt and blue jeans stands in a vast, dry landscape, gesturing as he speaks about the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                            "audio": "his voice echoing",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A red SUV drives through a barren landscape, the only sound being the crunch of its tires on the gravel road. A man in a red shirt and blue jeans stands in the vast landscape, discussing the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                "postprocess": {
+                  "event_id": 25,
+                  "original_answer": "A red SUV drives through a barren landscape, the only sound being the crunch of its tires on the gravel road. A man in a red shirt and blue jeans stands in the vast landscape, discussing the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_173.5_184.5",
+                    "tags": [
+                      "off_roading",
+                      "australia",
+                      "landscape",
+                      "suv",
+                      "man"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red SUV",
+                        "attributes": {
+                          "color": "red",
+                          "type": "SUV",
+                          "sound": "crunch of tires on gravel road"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Man in red shirt and blue jeans",
+                        "attributes": {
+                          "clothing": "red shirt and blue jeans",
+                          "voice": "echoing slightly in the vastness"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O002",
+                        "role": "driver",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_173.5_184.5",
+                      "name": "Off-roading in Australia",
+                      "time": {
+                        "start": "173.5",
+                        "end": "184.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "outdoor",
+                        "adventure"
+                      ],
+                      "scene_topic": "A man discusses off-roading in Australia while driving a red SUV through a barren landscape.",
+                      "summary": "A red SUV drives through a barren landscape, the only sound being the crunch of its tires on the gravel road. A man in a red shirt and blue jeans stands in the vast landscape, discussing the challenges of off-roading in Australia, his voice echoing slightly in the vastness.",
+                      "implications": "Major outdoor and adventure news event",
+                      "modalities": {
+                        "visual": "A red SUV drives through a barren landscape, a man in a red shirt and blue jeans stands in the vast landscape.",
+                        "audio": "tires on gravel road; voice echoing",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "A man in a red shirt and blue jeans stands in a vast, dry Australian landscape, gesturing as he speaks about the challenges of off-roading, his voice echoing in the vastness. The only sound is the crunch of the SUV's tires on the gravel road as it journeys across the barren terrain."
+              },
+              {
+                "level": 3,
+                "start_time": 184.5,
+                "end_time": 189.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 184.5,
+                    "end_time": 186.5,
+                    "children": [],
+                    "caption": "The man, standing in the vast desert landscape, continues his story about the challenges of the trip, his voice echoing slightly as he speaks.",
+                    "postprocess": {
+                      "event_id": 28,
+                      "original_answer": "The man, standing in the vast desert landscape, continues his story about the challenges of the trip, his voice echoing slightly as he speaks.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_184.5_186.5",
+                        "tags": [
+                          "desert",
+                          "storytelling",
+                          "travel"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "speaker": "yes",
+                              "location": "desert"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_184.5_186.5",
+                          "name": "man continues his story",
+                          "time": {
+                            "start": "184.5",
+                            "end": "186.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "travel story"
+                          ],
+                          "scene_topic": "The man continues his story about the challenges of the trip.",
+                          "summary": "The man, standing in the vast desert landscape, continues his story about the challenges of the trip, his voice echoing slightly as he speaks.",
+                          "implications": "Major travel story event",
+                          "modalities": {
+                            "visual": "The man standing in the vast desert landscape continues his story about the challenges of the trip.",
+                            "audio": "his voice echoing as he speaks.",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 186.5,
+                    "end_time": 189.5,
+                    "children": [],
+                    "caption": "The man, now wearing a black cap and sunglasses, continues his journey through the rugged landscape, the dusty terrain stretching out behind him as he drives his red SUV.",
+                    "postprocess": {
+                      "event_id": 30,
+                      "original_answer": "The man, now wearing a black cap and sunglasses, continues his journey through the rugged landscape, the dusty terrain stretching out behind him as he drives his red SUV.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_186.5_189.5",
+                        "tags": [
+                          "man",
+                          "journey",
+                          "landscape",
+                          "terrain",
+                          "suv"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "man",
+                            "attributes": {
+                              "wearing": "black cap and sunglasses",
+                              "driving": "red SUV"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "man",
+                            "ref_object": "O001",
+                            "role": "driver",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_186.5_189.5",
+                          "name": "The man continues his journey",
+                          "time": {
+                            "start": "186.5",
+                            "end": "189.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "person",
+                            "journey"
+                          ],
+                          "scene_topic": "The man drives his red SUV through the rugged landscape.",
+                          "summary": "The man, now wearing a black cap and sunglasses, continues his journey through the rugged landscape, the dusty terrain stretching out behind him as he drives his red SUV.",
+                          "implications": "Major travel news event",
+                          "modalities": {
+                            "visual": "The man, now wearing a black cap and sunglasses, continues his journey through the rugged landscape, the dusty terrain stretching out behind him as he drives his red SUV.",
+                            "audio": "",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The man continues his journey through the rugged desert landscape, recounting the challenges of his trip in a voice that echoes slightly. He is now wearing a black cap and sunglasses, and drives his red SUV through the dusty terrain.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "The man continues his journey through the rugged desert landscape, recounting the challenges of his trip in a voice that echoes slightly. He is now wearing a black cap and sunglasses, and drives his red SUV through the dusty terrain.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_184.5_189.5",
+                    "tags": [
+                      "desert",
+                      "journey",
+                      "travel",
+                      "adventure",
+                      "landscape"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black cap and sunglasses",
+                          "vehicle": "red SUV"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "driver",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_184.5_189.5",
+                      "name": "man drives through desert",
+                      "time": {
+                        "start": "184.5",
+                        "end": "189.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "travel news"
+                      ],
+                      "scene_topic": "The man drives his red SUV through the desert landscape.",
+                      "summary": "The man continues his journey through the rugged desert landscape, recounting the challenges of his trip in a voice that echoes slightly. He is now wearing a black cap and sunglasses, and drives his red SUV through the dusty terrain.",
+                      "implications": "Major travel news event",
+                      "modalities": {
+                        "visual": "The man continues his journey through the rugged desert landscape, wearing a black cap and sunglasses, and drives his red SUV through the dusty terrain.",
+                        "audio": "voice that echoes slightly",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "The man recounts the challenges of his trip as he stands in the vast desert landscape, his voice echoing slightly. He continues his journey in his red SUV, navigating the rugged terrain with a black cap and sunglasses."
+              },
+              {
+                "level": 3,
+                "start_time": 189.5,
+                "end_time": 199.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 189.5,
+                    "end_time": 199.5,
+                    "children": [],
+                    "caption": "The rugged red SUV continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog, as the man driving comments on the vehicle's performance.",
+                    "postprocess": {
+                      "event_id": 31,
+                      "original_answer": "The rugged red SUV continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog, as the man driving comments on the vehicle's performance.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_189.5_199.5",
+                        "tags": [
+                          "suv",
+                          "landscape",
+                          "engine",
+                          "dog",
+                          "driver"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "SUV",
+                            "attributes": {
+                              "type": "rugged red",
+                              "state": "in motion"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "Landscape",
+                            "attributes": {
+                              "type": "vast barren"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "Engine",
+                            "attributes": {
+                              "type": "roaring"
+                            }
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "Dog",
+                            "attributes": {
+                              "type": "barking"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "Driver",
+                            "ref_object": "O001",
+                            "role": "operator",
+                            "entity": "human"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_189.5_199.5",
+                          "name": "SUV journey",
+                          "time": {
+                            "start": "189.5",
+                            "end": "199.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "vehicle movement"
+                          ],
+                          "scene_topic": "The rugged red SUV continues its journey across the vast, barren landscape.",
+                          "summary": "The rugged red SUV continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog, as the man driving comments on the vehicle's performance.",
+                          "implications": "Significant event in the SUV's journey",
+                          "modalities": {
+                            "visual": "The rugged red SUV continues its journey across the vast, barren landscape, the man driving comments on the vehicle's performance.",
+                            "audio": "engine roar; dog barks; comments",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A rugged red SUV drives across a barren landscape, with the driver commenting on its performance.",
+                "postprocess": {
+                  "event_id": 32,
+                  "original_answer": "A rugged red SUV drives across a barren landscape, with the driver commenting on its performance.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_189.5_199.5",
+                    "tags": [
+                      "offroad",
+                      "suv",
+                      "driver",
+                      "commentary"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red SUV",
+                        "attributes": {
+                          "type": "vehicle",
+                          "color": "red"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "driver",
+                        "ref_object": "O001",
+                        "role": "driver",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_189.5_199.5",
+                      "name": "SUV driving",
+                      "time": {
+                        "start": "189.5",
+                        "end": "199.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "vehicle performance"
+                      ],
+                      "scene_topic": "A rugged red SUV drives across a barren landscape, with the driver commenting on its performance.",
+                      "summary": "A rugged red SUV drives across a barren landscape, with the driver commenting on its performance.",
+                      "implications": "Major vehicle review event",
+                      "modalities": {
+                        "visual": "A rugged red SUV drives across a barren landscape, with the driver commenting on its performance.",
+                        "audio": "",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "The rugged red SUV travels across the barren landscape, its engine roaring and a dog occasionally barking, as the driver comments on its performance."
+              },
+              {
+                "level": 3,
+                "start_time": 199.5,
+                "end_time": 215.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 199.5,
+                    "end_time": 208.5,
+                    "children": [],
+                    "caption": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog.",
+                    "postprocess": {
+                      "event_id": 33,
+                      "original_answer": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_199.5_208.5",
+                        "tags": [
+                          "suv",
+                          "terrain",
+                          "landscape",
+                          "engine",
+                          "dog"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "SUV",
+                            "attributes": {
+                              "type": "rugged red",
+                              "features": "headlights, engine"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "Terrain",
+                            "attributes": {
+                              "description": "dusty, barren landscape"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "Dog",
+                            "attributes": {
+                              "sound": "bark"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_199.5_208.5",
+                          "name": "",
+                          "time": {
+                            "start": "199.5",
+                            "end": "208.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "landscape"
+                          ],
+                          "scene_topic": "The rugged red SUV continues its journey across the vast, barren landscape.",
+                          "summary": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog.",
+                          "implications": "Major transportation event",
+                          "modalities": {
+                            "visual": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape.",
+                            "audio": "engine roar; dog barks.",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 208.5,
+                    "end_time": 215.5,
+                    "children": [],
+                    "caption": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog.",
+                    "postprocess": {
+                      "event_id": 35,
+                      "original_answer": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog.",
+                      "result": {
+                        "video_id": "phcTSB7CzAo",
+                        "event_id": "E_phcTSB7CzAo_208.5_215.5",
+                        "tags": [
+                          "terrain",
+                          "landscape",
+                          "engine",
+                          "dog"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "red SUV",
+                            "attributes": {
+                              "type": "vehicle",
+                              "color": "red",
+                              "headlights": "illuminating"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "",
+                            "ref_object": "O001",
+                            "role": "",
+                            "entity": ""
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_phcTSB7CzAo_208.5_215.5",
+                          "name": "",
+                          "time": {
+                            "start": "208.5",
+                            "end": "215.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "landscape"
+                          ],
+                          "scene_topic": "The red SUV continues its journey across the vast, barren landscape.",
+                          "summary": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog.",
+                          "implications": "Major transportation event",
+                          "modalities": {
+                            "visual": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape.",
+                            "audio": "engine roar; dog barks.",
+                            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A rugged red SUV travels across a vast, barren landscape, the only sounds being the roar of the engine and the occasional bark of a dog. A rugged red SUV travels across a vast, barren landscape, the only sounds being the roar of the engine and the occasional bark of a dog.",
+                "postprocess": {
+                  "event_id": 34,
+                  "original_answer": "A rugged red SUV travels across a vast, barren landscape, the only sounds being the roar of the engine and the occasional bark of a dog. A rugged red SUV travels across a vast, barren landscape, the only sounds being the roar of the engine and the occasional bark of a dog.",
+                  "result": {
+                    "video_id": "phcTSB7CzAo",
+                    "event_id": "E_phcTSB7CzAo_199.5_215.5",
+                    "tags": [
+                      "suv",
+                      "barren_landscape",
+                      "engine_sound",
+                      "dog_sound"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Rugged Red SUV",
+                        "attributes": {
+                          "color": "red",
+                          "type": "suv",
+                          "sound": "engine"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_phcTSB7CzAo_199.5_215.5",
+                      "name": "SUV travels across barren landscape",
+                      "time": {
+                        "start": "199.5",
+                        "end": "215.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A rugged red SUV travels across a vast, barren landscape, the only sounds being the roar of the engine and the occasional bark of a dog.",
+                      "summary": "A rugged red SUV travels across a vast, barren landscape, the only sounds being the roar of the engine and the occasional bark of a dog. A rugged red SUV travels across a vast, barren landscape, the only sounds being the roar of the engine and the occasional bark of a dog.",
+                      "implications": "Non-violent scene with engine and dog sounds.",
+                      "modalities": {
+                        "visual": "A rugged red SUV travels across a vast, barren landscape.",
+                        "audio": "engine roar; dog barks.",
+                        "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                      }
+                    }
+                  }
+                },
+                "summary": "A rugged red SUV travels across a vast, barren landscape, its headlights illuminating the dusty terrain, accompanied only by the sound of its engine and the occasional bark of a dog. The vehicle continues on its journey, its presence a solitary one in the desolate environment."
+              }
+            ],
+            "caption": "A rugged red SUV travels through a barren landscape, with the driver commenting on its performance and the challenges of off-roading in Australia.",
+            "postprocess": {
+              "event_id": 26,
+              "original_answer": "A rugged red SUV travels through a barren landscape, with the driver commenting on its performance and the challenges of off-roading in Australia.",
+              "result": {
+                "video_id": "phcTSB7CzAo",
+                "event_id": "E_phcTSB7CzAo_173.5_215.5",
+                "tags": [
+                  "off_roading",
+                  "australia",
+                  "suv",
+                  "performance",
+                  "challenges"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "red SUV",
+                    "attributes": {
+                      "type": "vehicle",
+                      "color": "red",
+                      "terrain": "off-road"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "driver",
+                    "ref_object": "O001",
+                    "role": "driver",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_phcTSB7CzAo_173.5_215.5",
+                  "name": "Off-roading in Australia",
+                  "time": {
+                    "start": "173.5",
+                    "end": "215.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "transportation news"
+                  ],
+                  "scene_topic": "A rugged red SUV travels through a barren landscape, with the driver commenting on its performance and the challenges of off-roading in Australia.",
+                  "summary": "A rugged red SUV travels through a barren landscape, with the driver commenting on its performance and the challenges of off-roading in Australia.",
+                  "implications": "Major transportation news event",
+                  "modalities": {
+                    "visual": "A rugged red SUV travels through a barren landscape, with the driver commenting on its performance and the challenges of off-roading in Australia.",
+                    "audio": "",
+                    "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+                  }
+                }
+              }
+            },
+            "summary": "A man drives a rugged red SUV across a vast, barren Australian desert landscape, navigating the challenging terrain and commenting on the vehicle's performance as the sound of its engine and occasional dog barks fill the air. The driver's voice echoes slightly as he recounts the challenges of his trip, his presence a solitary one in the desolate environment."
+          }
+        ],
+        "caption": "A red SUV and truck embark on off-road adventures in Australia's rugged landscape, facing challenges but well-prepared for the journey. The SUV is shown in a solo shot, navigating the barren terrain with the driver commenting on its performance.",
+        "postprocess": {
+          "event_id": 7,
+          "original_answer": "A red SUV and truck embark on off-road adventures in Australia's rugged landscape, facing challenges but well-prepared for the journey. The SUV is shown in a solo shot, navigating the barren terrain with the driver commenting on its performance.",
+          "result": {
+            "video_id": "phcTSB7CzAo",
+            "event_id": "E_phcTSB7CzAo_91.5_215.5",
+            "tags": [
+              "offroad",
+              "australia",
+              "suv",
+              "truck",
+              "adventure"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Red SUV",
+                "attributes": {
+                  "type": "vehicle",
+                  "color": "red",
+                  "purpose": "off-road adventure"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Red Truck",
+                "attributes": {
+                  "type": "vehicle",
+                  "color": "red",
+                  "purpose": "off-road adventure"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Driver",
+                "ref_object": "O001",
+                "role": "driver",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_phcTSB7CzAo_91.5_215.5",
+              "name": "Off-road adventure",
+              "time": {
+                "start": "91.5",
+                "end": "215.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "outdoor",
+                "adventure"
+              ],
+              "scene_topic": "A red SUV and truck embark on off-road adventures in Australia's rugged landscape, facing challenges but well-prepared for the journey.",
+              "summary": "A red SUV and truck embark on off-road adventures in Australia's rugged landscape, facing challenges but well-prepared for the journey. The SUV is shown in a solo shot, navigating the barren terrain with the driver commenting on its performance.",
+              "implications": "Major off-road adventure event",
+              "modalities": {
+                "visual": "A red SUV and truck embark on off-road adventures in Australia's rugged landscape, facing challenges but well-prepared for the journey. The SUV is shown in a solo shot, navigating the barren terrain with the driver commenting on its performance.",
+                "audio": "",
+                "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable. With its ample space, torque, and comfortable suspension, it's perfect for overland travel and navigating rough terrain, making it a quintessential safari car. The Defender performed well, with only minor issues such as fuel and rattling noises, and its low-down torque surprised the speaker with its performance. Despite not being the speaker's usual favorite car, the Defender proved to be a reliable and capable vehicle, making it a standout on the trip."
+              }
+            }
+          }
+        },
+        "summary": "A man embarks on a 10-day off-road adventure in Western Australia, navigating his rugged red truck through the challenging terrain of the desert landscape."
+      },
+      {
+        "level": 1,
+        "start_time": 215.5,
+        "end_time": 235.48,
+        "children": [],
+        "caption": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog.",
+        "postprocess": {
+          "event_id": 36,
+          "original_answer": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog.",
+          "result": {
+            "video_id": "phcTSB7CzAo",
+            "event_id": "E_phcTSB7CzAo_215.5_235.48",
+            "tags": [
+              "terrain",
+              "landscape",
+              "engine",
+              "dog"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "red SUV",
+                "attributes": {
+                  "type": "vehicle",
+                  "color": "red",
+                  "headlights": "illuminating"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "",
+                "ref_object": "O001",
+                "role": "",
+                "entity": ""
+              }
+            ],
+            "event": {
+              "event_id": "E_phcTSB7CzAo_215.5_235.48",
+              "name": "",
+              "time": {
+                "start": "215.5",
+                "end": "235.48"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "landscape"
+              ],
+              "scene_topic": "The red SUV continues its journey across the vast, barren landscape.",
+              "summary": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape, the only sound the roar of the engine and the occasional bark of a dog.",
+              "implications": "Major transportation event",
+              "modalities": {
+                "visual": "The rugged red SUV, its headlights illuminating the dusty terrain, continues its journey across the vast, barren landscape.",
+                "audio": "engine roar; dog barks.",
+                "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "A red off-road vehicle, either a truck or SUV, embarks on a challenging journey through rugged terrain, navigating through dusty landscapes and sandy terrain. The vehicle's headlights illuminate the dark landscape, and the driver's voice is heard commenting on the vehicle's performance. The video shows various shots of the vehicle in action, including close-ups of the driver and wide shots of the landscape. The summary highlights the vehicle's capabilities and the challenges of the off-road journey.",
+    "postprocess": {
+      "event_id": 1,
+      "original_answer": "A red off-road vehicle, either a truck or SUV, embarks on a challenging journey through rugged terrain, navigating through dusty landscapes and sandy terrain. The vehicle's headlights illuminate the dark landscape, and the driver's voice is heard commenting on the vehicle's performance. The video shows various shots of the vehicle in action, including close-ups of the driver and wide shots of the landscape. The summary highlights the vehicle's capabilities and the challenges of the off-road journey.",
+      "result": {
+        "video_id": "phcTSB7CzAo",
+        "event_id": "E_phcTSB7CzAo_0_235.48",
+        "tags": [
+          "offroad",
+          "vehicle",
+          "terrain",
+          "headlights",
+          "driver"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "Red Off-Road Vehicle",
+            "attributes": {
+              "type": "truck or SUV",
+              "terrain": "rugged",
+              "lighting": "headlights"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "Driver",
+            "ref_object": "O001",
+            "role": "driver",
+            "entity": "person"
+          }
+        ],
+        "event": {
+          "event_id": "E_phcTSB7CzAo_0_235.48",
+          "name": "Off-Road Journey",
+          "time": {
+            "start": "0",
+            "end": "235.48"
+          },
+          "actors": [
+            "A001"
+          ],
+          "objects": [
+            "O001"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "vehicle",
+            "terrain"
+          ],
+          "scene_topic": "The driver navigates a red off-road vehicle through rugged terrain.",
+          "summary": "A red off-road vehicle, either a truck or SUV, embarks on a challenging journey through rugged terrain, navigating through dusty landscapes and sandy terrain. The vehicle's headlights illuminate the dark landscape, and the driver's voice is heard commenting on the vehicle's performance. The video shows various shots of the vehicle in action, including close-ups of the driver and wide shots of the landscape. The summary highlights the vehicle's capabilities and the challenges of the off-road journey.",
+          "implications": "Major off-road driving event",
+          "modalities": {
+            "visual": "A red off-road vehicle embarks on a challenging journey through rugged terrain, navigating through dusty landscapes and sandy terrain, with various shots of the vehicle in action, including close-ups of the driver and wide shots of the landscape.",
+            "audio": "The driver's voice; headlights",
+            "speech": "The Defender is a rugged and iconic vehicle that embodies heritage, with its 300 TDI engine providing a unique driving experience that's both rattly and pleasurable. With its ample space, torque, and comfortable suspension, it's perfect for overland travel and navigating rough terrain, making it a quintessential safari car. The Defender performed well, with only minor issues such as fuel and rattling noises, and its low-down torque surprised the speaker with its performance. Despite not being the speaker's usual favorite car, the Defender proved to be a reliable and capable vehicle, making it a standout on the trip."
+          }
+        }
+      }
+    },
+    "summary": "A man embarks on a 10-day off-road adventure in Western Australia, navigating his rugged red truck through the challenging terrain of the desert landscape, with the vehicle's headlights illuminating the dusty terrain. The journey features a group of vehicles navigating the rugged terrain, with the only sounds being the roar of the engine and the occasional bark of a dog."
+  }
+}

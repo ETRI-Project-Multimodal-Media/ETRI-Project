@@ -1,0 +1,3460 @@
+{
+  "video_id": "VuJ3KndEhiA",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 167.64,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 29.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 17.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "A person in a red jacket walks down a city sidewalk, passing parked cars and buildings, while a man's voice can be heard saying \"I'm gonna go\" and \"I'm gonna go, I'm gonna go.\"",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A person in a red jacket walks down a city sidewalk, passing parked cars and buildings, while a man's voice can be heard saying \"I'm gonna go\" and \"I'm gonna go, I'm gonna go.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_0_6.5",
+                    "tags": [
+                      "city",
+                      "person",
+                      "voice",
+                      "jacket"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "person",
+                        "attributes": {
+                          "clothing": "red jacket",
+                          "action": "walking"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "cars",
+                        "attributes": {
+                          "type": "parked"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "buildings",
+                        "attributes": {
+                          "type": "city"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "person",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_0_6.5",
+                      "name": "person walking down city sidewalk",
+                      "time": {
+                        "start": "0",
+                        "end": "6.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A person in a red jacket walks down a city sidewalk, passing parked cars and buildings, while a man's voice can be heard saying 'I'm gonna go' and 'I'm gonna go, I'm gonna go.'",
+                      "summary": "A person in a red jacket walks down a city sidewalk, passing parked cars and buildings, while a man's voice can be heard saying \"I'm gonna go\" and \"I'm gonna go, I'm gonna go.\"",
+                      "implications": "Minor human activity",
+                      "modalities": {
+                        "visual": "A person in a red jacket walks down a city sidewalk, passing parked cars and buildings.",
+                        "audio": "Man's voice: 'I'm gonna go'; 'I'm gonna go; I'm gonna go'.",
+                        "speech": "I'm gonna go, I'm gonna go, I'm gonna go."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 10.5,
+                "children": [],
+                "caption": "A person's hand reaches out to pick up a small, dark object from the ground, as a man's voice can be heard saying \"I'm gonna get it.\"",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A person's hand reaches out to pick up a small, dark object from the ground, as a man's voice can be heard saying \"I'm gonna get it.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_6_10",
+                    "tags": [
+                      "hand",
+                      "object",
+                      "ground",
+                      "voice",
+                      "man"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "small, dark object",
+                        "attributes": {
+                          "size": "small",
+                          "color": "dark"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_6_10",
+                      "name": "Object picked up",
+                      "time": {
+                        "start": "6.5",
+                        "end": "10.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A person's hand reaches out to pick up a small, dark object from the ground, as a man's voice can be heard saying 'I'm gonna get it.'",
+                      "summary": "A person's hand reaches out to pick up a small, dark object from the ground, as a man's voice can be heard saying \"I'm gonna get it.\"",
+                      "implications": "Minor event",
+                      "modalities": {
+                        "visual": "A person's hand reaches out to pick up a small, dark object from the ground, as a man's voice can be heard saying 'I'm gonna get it'.",
+                        "audio": "Man's voice saying 'I'm gonna get it'",
+                        "speech": "I'm gonna get it."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 10.5,
+                "end_time": 17.5,
+                "children": [],
+                "caption": "A smartphone screen displays a vibrant, colorful graphic of a stylized bird with a large beak and a small body, its wings spread wide against a dark background, while a man's voice can be heard, seemingly unrelated to the image.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A smartphone screen displays a vibrant, colorful graphic of a stylized bird with a large beak and a small body, its wings spread wide against a dark background, while a man's voice can be heard, seemingly unrelated to the image.",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_10.5_17.5",
+                    "tags": [
+                      "graphic",
+                      "bird",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Stylized Bird",
+                        "attributes": {
+                          "description": "Vibrant, colorful graphic of a stylized bird with a large beak and a small body, its wings spread wide against a dark background"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "",
+                        "role": "Voice",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_10.5_17.5",
+                      "name": "Smartphone Screen Display",
+                      "time": {
+                        "start": "10.5",
+                        "end": "17.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "graphic design"
+                      ],
+                      "scene_topic": "A smartphone screen displays a stylized bird graphic with a man's voice in the background.",
+                      "summary": "A smartphone screen displays a vibrant, colorful graphic of a stylized bird with a large beak and a small body, its wings spread wide against a dark background, while a man's voice can be heard, seemingly unrelated to the image.",
+                      "implications": "Minor visual and auditory event",
+                      "modalities": {
+                        "visual": "A smartphone screen displays a vibrant, colorful graphic of a stylized bird with a large beak and a small body, its wings spread wide against a dark background.",
+                        "audio": "a man's voice",
+                        "speech": "trying to make sense of their surroundings and interacting with others"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A person is seen walking in a city while a voice is heard saying \"I'm gonna go\" and \"I'm gonna go, I'm gonna go.\" Another person's hand reaches out to pick up an object from the ground while a voice says \"I'm gonna get it.\" Finally, a smartphone screen displays a colorful graphic of a bird while a man's voice is heard, seemingly unrelated to the image.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A person is seen walking in a city while a voice is heard saying \"I'm gonna go\" and \"I'm gonna go, I'm gonna go.\" Another person's hand reaches out to pick up an object from the ground while a voice says \"I'm gonna get it.\" Finally, a smartphone screen displays a colorful graphic of a bird while a man's voice is heard, seemingly unrelated to the image.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_0_17.5",
+                "tags": [
+                  "city",
+                  "walking",
+                  "voice",
+                  "object",
+                  "smartphone",
+                  "graphic"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "person",
+                    "attributes": {
+                      "type": "human",
+                      "action": "walking"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "hand",
+                    "attributes": {
+                      "type": "body_part",
+                      "action": "reaching"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "object",
+                    "attributes": {
+                      "type": "unknown",
+                      "action": "picked_up"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "smartphone",
+                    "attributes": {
+                      "type": "device",
+                      "action": "displaying"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "person",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "human"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "man",
+                    "ref_object": "",
+                    "role": "voice",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_0_17.5",
+                  "name": "Person walking in city",
+                  "time": {
+                    "start": "0",
+                    "end": "17.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "city life"
+                  ],
+                  "scene_topic": "A person is seen walking in a city while a voice is heard saying 'I'm gonna go' and 'I'm gonna go, I'm gonna go.'",
+                  "summary": "A person is seen walking in a city while a voice is heard saying \"I'm gonna go\" and \"I'm gonna go, I'm gonna go.\" Another person's hand reaches out to pick up an object from the ground while a voice says \"I'm gonna get it.\" Finally, a smartphone screen displays a colorful graphic of a bird while a man's voice is heard, seemingly unrelated to the image.",
+                  "implications": "Major everyday life event",
+                  "modalities": {
+                    "visual": "A person is seen walking in a city, another person's hand reaches out to pick up an object from the ground, a smartphone screen displays a colorful graphic of a bird.",
+                    "audio": "",
+                    "speech": "I'm gonna go, I'm gonna go. I'm gonna get it."
+                  }
+                }
+              }
+            },
+            "summary": "A person walks down a city street, passing by parked cars and buildings, while a man's voice is heard saying he's going to get something. Meanwhile, a smartphone screen displays a colorful graphic of a stylized bird, seemingly unrelated to the man's voice."
+          },
+          {
+            "level": 2,
+            "start_time": 17.5,
+            "end_time": 29.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 17.5,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "A small, red toy bird with a surprised expression sits on a concrete surface, while a man's voice can be heard in the background, saying \"Oh, I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "A small, red toy bird with a surprised expression sits on a concrete surface, while a man's voice can be heard in the background, saying \"Oh, I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_17.5_21.5",
+                    "tags": [
+                      "toy",
+                      "bird",
+                      "concrete",
+                      "apology"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "small, red toy bird",
+                        "attributes": {
+                          "expression": "surprised"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "concrete surface",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_17.5_21.5",
+                      "name": "apology",
+                      "time": {
+                        "start": "17.5",
+                        "end": "21.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man apologizes while a toy bird sits on a concrete surface.",
+                      "summary": "A small, red toy bird with a surprised expression sits on a concrete surface, while a man's voice can be heard in the background, saying \"Oh, I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                      "implications": "Minor social interaction",
+                      "modalities": {
+                        "visual": "A small, red toy bird with a surprised expression sits on a concrete surface.",
+                        "audio": "Man's voice: 'Oh; I'm sorry'; 'I'm sorry; I'm sorry'.",
+                        "speech": "I'm sorry, I'm sorry."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 23.5,
+                "children": [],
+                "caption": "A red and black smartphone, resting on a weathered concrete surface, displays a vibrant, colorful graphic of a cartoon bird with a surprised expression, while a man's voice can be heard in the background, seemingly unrelated to the phone's display.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A red and black smartphone, resting on a weathered concrete surface, displays a vibrant, colorful graphic of a cartoon bird with a surprised expression, while a man's voice can be heard in the background, seemingly unrelated to the phone's display.",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_21.5_23.5",
+                    "tags": [
+                      "phone",
+                      "graphic",
+                      "cartoon",
+                      "background_sound"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Smartphone",
+                        "attributes": {
+                          "display": "vibrant, colorful graphic of a cartoon bird with a surprised expression"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Concrete surface",
+                        "attributes": {
+                          "material": "weathered"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O002",
+                        "role": "background",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_21.5_23.5",
+                      "name": "Smartphone display",
+                      "time": {
+                        "start": "21.5",
+                        "end": "23.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "visual content"
+                      ],
+                      "scene_topic": "A man's voice can be heard in the background, seemingly unrelated to the phone's display.",
+                      "summary": "A red and black smartphone, resting on a weathered concrete surface, displays a vibrant, colorful graphic of a cartoon bird with a surprised expression, while a man's voice can be heard in the background, seemingly unrelated to the phone's display.",
+                      "implications": "Minor visual content event",
+                      "modalities": {
+                        "visual": "A red and black smartphone, resting on a weathered concrete surface, displays a vibrant, colorful graphic of a cartoon bird with a surprised expression.",
+                        "audio": "a man's voice",
+                        "speech": "A person is in a state of confusion and distress, trying to make sense of their surroundings and interacting with others who seem to be in a surreal or fantastical environment."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 23.5,
+                "end_time": 29.5,
+                "children": [],
+                "caption": "A red bird toy, resembling a cartoon character with a big head and beady eyes, sits on a concrete surface as a man's voice can be heard saying \"I'm gonna get you, you little pig.\"",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A red bird toy, resembling a cartoon character with a big head and beady eyes, sits on a concrete surface as a man's voice can be heard saying \"I'm gonna get you, you little pig.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_23.5_29.5",
+                    "tags": [
+                      "toy",
+                      "bird",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red Bird Toy",
+                        "attributes": {
+                          "description": "A red bird toy, resembling a cartoon character with a big head and beady eyes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "",
+                        "role": "Speaker",
+                        "entity": "Human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_23.5_29.5",
+                      "name": "Man speaking to a toy bird",
+                      "time": {
+                        "start": "23.5",
+                        "end": "29.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "toys",
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man speaks to a toy bird",
+                      "summary": "A red bird toy, resembling a cartoon character with a big head and beady eyes, sits on a concrete surface as a man's voice can be heard saying \"I'm gonna get you, you little pig.\"",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A red bird toy, resembling a cartoon character with a big head and beady eyes, sits on a concrete surface as a man's voice can be heard saying 'I'm gonna get you, you little pig.'",
+                        "audio": "man's voice saying 'I'm gonna get you; you little pig'",
+                        "speech": "I'm gonna get you, you little pig."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A red bird toy, a smartphone display, and a small red toy bird with a surprised expression are all shown in various scenes, with a man's voice heard in the background in each scene, saying various apologies and insults.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "A red bird toy, a smartphone display, and a small red toy bird with a surprised expression are all shown in various scenes, with a man's voice heard in the background in each scene, saying various apologies and insults.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_17.5_29.5",
+                "tags": [
+                  "bird",
+                  "smartphone",
+                  "apology",
+                  "insult"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "red bird toy",
+                    "attributes": {
+                      "color": "red",
+                      "type": "toy"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "smartphone display",
+                    "attributes": {
+                      "type": "display"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "small red toy bird",
+                    "attributes": {
+                      "color": "red",
+                      "type": "toy",
+                      "expression": "surprised"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_17.5_29.5",
+                  "name": "",
+                  "time": {
+                    "start": "17.5",
+                    "end": "29.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "A man's voice is heard in the background saying various apologies and insults.",
+                  "summary": "A red bird toy, a smartphone display, and a small red toy bird with a surprised expression are all shown in various scenes, with a man's voice heard in the background in each scene, saying various apologies and insults.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A red bird toy, a smartphone display, and a small red toy bird with a surprised expression are all shown in various scenes.",
+                    "audio": "Man's voice; apologies; insults",
+                    "speech": "trying to make sense of their surroundings and interacting with others"
+                  }
+                }
+              }
+            },
+            "summary": "A man's voice is heard in the background, apologizing and making a threatening statement, while a small red toy bird and a red and black smartphone display cartoon birds with surprised expressions. The scene is set on a concrete surface, with a red bird toy also present, creating a surreal atmosphere."
+          }
+        ],
+        "caption": "A person is seen walking in a city while a voice is heard saying \"I'm gonna go\" and \"I'm gonna go, I'm gonna go.\" Another person's hand reaches out to pick up an object from the ground while a voice says \"I'm gonna get it.\" Finally, a smartphone screen displays a colorful graphic of a bird while a man's voice is heard, seemingly unrelated to the image.\n\nIn another series of scenes, a red bird toy, a smartphone display, and a small",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "A person is seen walking in a city while a voice is heard saying \"I'm gonna go\" and \"I'm gonna go, I'm gonna go.\" Another person's hand reaches out to pick up an object from the ground while a voice says \"I'm gonna get it.\" Finally, a smartphone screen displays a colorful graphic of a bird while a man's voice is heard, seemingly unrelated to the image.\n\nIn another series of scenes, a red bird toy, a smartphone display, and a small",
+          "result": {
+            "video_id": "VuJ3KndEhiA",
+            "event_id": "E_VuJ3KndEhiA_0_29.5",
+            "tags": [
+              "city",
+              "walking",
+              "voice",
+              "object",
+              "smartphone",
+              "graphic",
+              "bird"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "person",
+                "attributes": {
+                  "walking": "yes",
+                  "voice": "heard"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "hand",
+                "attributes": {
+                  "reaching_out": "yes",
+                  "picking_up_object": "yes"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "object",
+                "attributes": {
+                  "ground": "yes",
+                  "picked_up": "yes"
+                }
+              },
+              {
+                "object_id": "O004",
+                "name": "smartphone",
+                "attributes": {
+                  "display": "colorful_graphic",
+                  "bird_image": "yes"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "person",
+                "ref_object": "O001",
+                "role": "main",
+                "entity": "human"
+              },
+              {
+                "actor_id": "A002",
+                "name": "man",
+                "ref_object": "",
+                "role": "voice",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_VuJ3KndEhiA_0_29.5",
+              "name": "Person walking in city",
+              "time": {
+                "start": "0",
+                "end": "29.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "human activity",
+                "city scene"
+              ],
+              "scene_topic": "A person is seen walking in a city while a voice is heard saying 'I'm gonna go' and 'I'm gonna go, I'm gonna go.'",
+              "summary": "A person is seen walking in a city while a voice is heard saying \"I'm gonna go\" and \"I'm gonna go, I'm gonna go.\" Another person's hand reaches out to pick up an object from the ground while a voice says \"I'm gonna get it.\" Finally, a smartphone screen displays a colorful graphic of a bird while a man's voice is heard, seemingly unrelated to the image.\n\nIn another series of scenes, a red bird toy, a smartphone display, and a small",
+              "implications": "Major human activity, city scene event",
+              "modalities": {
+                "visual": "A person is seen walking in a city, another person's hand reaches out to pick up an object from the ground, a smartphone screen displays a colorful graphic of a bird.",
+                "audio": "",
+                "speech": "I'm gonna go, I'm gonna go. I'm gonna get it."
+              }
+            }
+          }
+        },
+        "summary": "A person walks down a city street, passing by parked cars and buildings, while a man's voice is heard in the background, apologizing and making a threatening statement. The scene is set on a concrete surface, with a red bird toy and a smartphone display cartoon birds with surprised expressions, creating a surreal atmosphere."
+      },
+      {
+        "level": 1,
+        "start_time": 29.5,
+        "end_time": 42.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 29.5,
+            "end_time": 36.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 29.5,
+                "end_time": 32.5,
+                "children": [],
+                "caption": "A red and yellow bird toy, resembling a cartoon character, sits on a concrete surface, its beady eyes staring intently as a man's voice can be heard off-screen, saying \"I'm gonna go.\"",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A red and yellow bird toy, resembling a cartoon character, sits on a concrete surface, its beady eyes staring intently as a man's voice can be heard off-screen, saying \"I'm gonna go.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_29.5_32.5",
+                    "tags": [
+                      "bird_toy",
+                      "concrete_surface",
+                      "man_voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red and yellow bird toy",
+                        "attributes": {
+                          "description": "A red and yellow bird toy, resembling a cartoon character"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": "man"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_29.5_32.5",
+                      "name": "",
+                      "time": {
+                        "start": "29.5",
+                        "end": "32.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal_toys"
+                      ],
+                      "scene_topic": "A man's voice is heard off-screen saying 'I'm gonna go' as a bird toy sits on a concrete surface.",
+                      "summary": "A red and yellow bird toy, resembling a cartoon character, sits on a concrete surface, its beady eyes staring intently as a man's voice can be heard off-screen, saying \"I'm gonna go.\"",
+                      "implications": "Minor scene with a man's voice and a bird toy",
+                      "modalities": {
+                        "visual": "A red and yellow bird toy, resembling a cartoon character, sits on a concrete surface, its beady eyes staring intently as a man's voice can be heard off-screen.",
+                        "audio": "Man's voice; 'I'm gonna go'.",
+                        "speech": "I'm gonna go."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 32.5,
+                "end_time": 36.5,
+                "children": [],
+                "caption": "A red and yellow cartoon bird, its beady eyes wide with surprise, sits on a concrete surface as a man's voice excitedly exclaims \"Oh, oh, oh!\"",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "A red and yellow cartoon bird, its beady eyes wide with surprise, sits on a concrete surface as a man's voice excitedly exclaims \"Oh, oh, oh!\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_32.5_36.5",
+                    "tags": [
+                      "cartoon",
+                      "bird",
+                      "concrete",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bird",
+                        "attributes": {
+                          "color": "red and yellow",
+                          "eyes": "beady",
+                          "expression": "surprise"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_32.5_36.5",
+                      "name": "",
+                      "time": {
+                        "start": "32.5",
+                        "end": "36.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cartoon scene"
+                      ],
+                      "scene_topic": "A man's voice excitedly exclaims 'Oh, oh, oh!' as a cartoon bird sits on a concrete surface.",
+                      "summary": "A red and yellow cartoon bird, its beady eyes wide with surprise, sits on a concrete surface as a man's voice excitedly exclaims \"Oh, oh, oh!\"",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A red and yellow cartoon bird, its beady eyes wide with surprise, sits on a concrete surface as a man's voice excitedly exclaims.",
+                        "audio": "Man's voice exclaims 'Oh; oh; oh!'",
+                        "speech": "Oh oh oh"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A red and yellow bird toy and a cartoon bird are shown on a concrete surface, with a man's voice heard off-screen in the background.",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "A red and yellow bird toy and a cartoon bird are shown on a concrete surface, with a man's voice heard off-screen in the background.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_29.5_36.5",
+                "tags": [
+                  "bird",
+                  "toy",
+                  "concrete",
+                  "man",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "red and yellow bird toy",
+                    "attributes": {
+                      "color": "red and yellow",
+                      "shape": "toy"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "cartoon bird",
+                    "attributes": {
+                      "type": "cartoon",
+                      "characteristics": "bird"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "concrete surface",
+                    "attributes": {
+                      "material": "concrete",
+                      "location": "surface"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "",
+                    "role": "voice",
+                    "entity": "man"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_29.5_36.5",
+                  "name": "",
+                  "time": {
+                    "start": "29.5",
+                    "end": "36.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "animal",
+                    "toy"
+                  ],
+                  "scene_topic": "A man's voice is heard in the background as a red and yellow bird toy and a cartoon bird are shown on a concrete surface.",
+                  "summary": "A red and yellow bird toy and a cartoon bird are shown on a concrete surface, with a man's voice heard off-screen in the background.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A red and yellow bird toy and a cartoon bird are shown on a concrete surface.",
+                    "audio": "man's voice",
+                    "speech": "trying to make sense of their surroundings and interacting with others"
+                  }
+                }
+              }
+            },
+            "summary": "A red and yellow bird toy sits on a concrete surface, its beady eyes fixed intently as a man's voice is heard off-screen saying \"I'm gonna go\". The bird's eyes widen in surprise as the man excitedly exclaims \"Oh, oh, oh!\""
+          },
+          {
+            "level": 2,
+            "start_time": 36.5,
+            "end_time": 42.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 36.5,
+                "end_time": 42.5,
+                "children": [],
+                "caption": "A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying \"I'm gonna get you, you little pig.\"",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying \"I'm gonna get you, you little pig.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_36.5_42.5",
+                    "tags": [
+                      "cartoon",
+                      "bird",
+                      "rooster",
+                      "pig",
+                      "man"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red and yellow cartoon bird",
+                        "attributes": {
+                          "color": "red and yellow",
+                          "species": "rooster",
+                          "expression": "intently staring"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_36.5_42.5",
+                      "name": "Man threatens cartoon bird",
+                      "time": {
+                        "start": "36.5",
+                        "end": "42.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cartoon scene"
+                      ],
+                      "scene_topic": "A man threatens a cartoon bird",
+                      "summary": "A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying \"I'm gonna get you, you little pig.\"",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying 'I'm gonna get you, you little pig.'",
+                        "audio": "man's voice saying 'I'm gonna get you; you little pig'",
+                        "speech": "I'm gonna get you, you little pig."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A cartoon bird, resembling a rooster, watches as a man's voice threatens to harm it.",
+            "postprocess": {
+              "event_id": 15,
+              "original_answer": "A cartoon bird, resembling a rooster, watches as a man's voice threatens to harm it.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_36.5_42.5",
+                "tags": [
+                  "cartoon",
+                  "bird",
+                  "rooster",
+                  "threat",
+                  "harm"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon bird",
+                    "attributes": {
+                      "type": "cartoon",
+                      "description": "A cartoon bird, resembling a rooster"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man's voice",
+                    "ref_object": "",
+                    "role": "threatener",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_36.5_42.5",
+                  "name": "Threat to cartoon bird",
+                  "time": {
+                    "start": "36.5",
+                    "end": "42.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon scene"
+                  ],
+                  "scene_topic": "A man's voice threatens to harm a cartoon bird.",
+                  "summary": "A cartoon bird, resembling a rooster, watches as a man's voice threatens to harm it.",
+                  "implications": "Minor entertainment news event",
+                  "modalities": {
+                    "visual": "A cartoon bird, resembling a rooster, watches as a man's voice threatens to harm it.",
+                    "audio": "man's voice; threat",
+                    "speech": "trying to make sense of their surroundings"
+                  }
+                }
+              }
+            },
+            "summary": "A cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes fixed intently as a man's voice is heard threatening a \"little pig\". The bird's gaze and the man's ominous words create a sense of tension and foreboding."
+          }
+        ],
+        "caption": "A man's voice threatens to harm a cartoon bird, while a red and yellow bird toy watches nearby.",
+        "postprocess": {
+          "event_id": 12,
+          "original_answer": "A man's voice threatens to harm a cartoon bird, while a red and yellow bird toy watches nearby.",
+          "result": {
+            "video_id": "VuJ3KndEhiA",
+            "event_id": "E_VuJ3KndEhiA_29.5_42.5",
+            "tags": [
+              "man",
+              "voice",
+              "bird",
+              "threat"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "speaker": "man",
+                  "voice": "threatening"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "cartoon bird",
+                "attributes": {
+                  "target": "bird",
+                  "vulnerable": "yes"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "red and yellow bird toy",
+                "attributes": {
+                  "observer": "yes",
+                  "neutral": "yes"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_VuJ3KndEhiA_29.5_42.5",
+              "name": "man threatens cartoon bird",
+              "time": {
+                "start": "29.5",
+                "end": "42.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "human behavior",
+                "animal"
+              ],
+              "scene_topic": "A man's voice threatens to harm a cartoon bird, while a red and yellow bird toy watches nearby.",
+              "summary": "A man's voice threatens to harm a cartoon bird, while a red and yellow bird toy watches nearby.",
+              "implications": "Major animal welfare concern",
+              "modalities": {
+                "visual": "A man's voice threatens to harm a cartoon bird, while a red and yellow bird toy watches nearby.",
+                "audio": "man's voice; threat; bird toy",
+                "speech": "trying to make sense of their surroundings and interacting with others"
+              }
+            }
+          }
+        },
+        "summary": "A red and yellow bird toy and a cartoon bird are shown with intense gazes, reacting to off-screen voices, including a man's excited exclamation and a threatening tone. The scene creates a sense of tension and foreboding, with the birds' reactions amplifying the ominous atmosphere."
+      },
+      {
+        "level": 1,
+        "start_time": 42.5,
+        "end_time": 70.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 42.5,
+            "end_time": 55.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 42.5,
+                "end_time": 50.5,
+                "children": [],
+                "caption": "A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying \"I'm gonna get you, you little pig.\" A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying \"I'm gonna get you, you little pig.\"",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying \"I'm gonna get you, you little pig.\" A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying \"I'm gonna get you, you little pig.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_42.5_50.5",
+                    "tags": [
+                      "cartoon",
+                      "bird",
+                      "rooster",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red and yellow cartoon bird",
+                        "attributes": {
+                          "description": "Resembles a rooster, beady eyes, standing on a sidewalk"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O001",
+                        "role": "Voice",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_42.5_50.5",
+                      "name": "Man threatens cartoon bird",
+                      "time": {
+                        "start": "42.5",
+                        "end": "50.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cartoon scene"
+                      ],
+                      "scene_topic": "A man threatens a cartoon bird",
+                      "summary": "A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying \"I'm gonna get you, you little pig.\" A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying \"I'm gonna get you, you little pig.\"",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A red and yellow cartoon bird, resembling a rooster, stands on a sidewalk, its beady eyes staring intently as a man's voice can be heard saying 'I'm gonna get you, you little pig'.",
+                        "audio": "Man's voice saying 'I'm gonna get you; you little pig'.",
+                        "speech": "I'm gonna get you, you little pig."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 50.5,
+                "end_time": 55.5,
+                "children": [],
+                "caption": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_50.5_55.5",
+                    "tags": [
+                      "apology",
+                      "toy",
+                      "concrete",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red plush toy",
+                        "attributes": {
+                          "description": "A red plush toy, resembling a cartoon bird with a surprised expression"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_50.5_55.5",
+                      "name": "apology",
+                      "time": {
+                        "start": "50.5",
+                        "end": "55.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man apologizes while holding a red plush toy.",
+                      "summary": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                      "implications": "Minor emotional event",
+                      "modalities": {
+                        "visual": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface.",
+                        "audio": "Man's voice: 'I'm sorry'; 'I'm sorry; I'm sorry'.",
+                        "speech": "I'm sorry, I'm sorry."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A red and yellow cartoon bird, resembling a rooster, is shown standing on a sidewalk while a man's voice can be heard saying \"I'm gonna get you, you little pig.\" The bird appears to be staring intently at something. The scene then cuts to a red plush toy, also resembling a cartoon bird, sitting on a concrete surface while a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+            "postprocess": {
+              "event_id": 17,
+              "original_answer": "A red and yellow cartoon bird, resembling a rooster, is shown standing on a sidewalk while a man's voice can be heard saying \"I'm gonna get you, you little pig.\" The bird appears to be staring intently at something. The scene then cuts to a red plush toy, also resembling a cartoon bird, sitting on a concrete surface while a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_42.5_55.5",
+                "tags": [
+                  "cartoon",
+                  "bird",
+                  "rooster",
+                  "pig",
+                  "plush"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Red and yellow cartoon bird",
+                    "attributes": {
+                      "description": "A red and yellow cartoon bird, resembling a rooster, is shown standing on a sidewalk"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Red plush toy",
+                    "attributes": {
+                      "description": "A red plush toy, also resembling a cartoon bird, sitting on a concrete surface"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man",
+                    "ref_object": "O001",
+                    "role": "Speaker",
+                    "entity": "Person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_42.5_55.5",
+                  "name": "Man speaking to cartoon bird",
+                  "time": {
+                    "start": "42.5",
+                    "end": "55.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon scene"
+                  ],
+                  "scene_topic": "A man speaks to a cartoon bird, saying 'I'm gonna get you, you little pig' and 'I'm sorry'.",
+                  "summary": "A red and yellow cartoon bird, resembling a rooster, is shown standing on a sidewalk while a man's voice can be heard saying \"I'm gonna get you, you little pig.\" The bird appears to be staring intently at something. The scene then cuts to a red plush toy, also resembling a cartoon bird, sitting on a concrete surface while a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A red and yellow cartoon bird, resembling a rooster, is shown standing on a sidewalk. The bird appears to be staring intently at something. The scene then cuts to a red plush toy, also resembling a cartoon bird, sitting on a concrete surface.",
+                    "audio": "Man's voice: 'I'm gonna get you; you little pig'; 'I'm sorry'; 'I'm sorry; I'm sorry'.",
+                    "speech": "I'm gonna get you, you little pig. I'm sorry, I'm sorry."
+                  }
+                }
+              }
+            },
+            "summary": "A man's voice is heard threatening a red and yellow cartoon bird, resembling a rooster, on a sidewalk, followed by a red plush toy with a surprised expression, as the man apologizes for his actions. The scene features a man's angry and apologetic outbursts towards the cartoon bird and plush toy."
+          },
+          {
+            "level": 2,
+            "start_time": 55.5,
+            "end_time": 60.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 55.5,
+                "end_time": 60.5,
+                "children": [],
+                "caption": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_55_60",
+                    "tags": [
+                      "apology",
+                      "toy",
+                      "concrete",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red plush toy",
+                        "attributes": {
+                          "description": "A red plush toy, resembling a cartoon bird with a surprised expression"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_55_60",
+                      "name": "",
+                      "time": {
+                        "start": "55.5",
+                        "end": "60.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man apologizes saying 'I'm sorry' and 'I'm sorry, I'm sorry' while holding a red plush toy.",
+                      "summary": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                      "implications": "Major emotional event",
+                      "modalities": {
+                        "visual": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface.",
+                        "audio": "Man's voice: 'I'm sorry'; 'I'm sorry; I'm sorry'.",
+                        "speech": "I'm sorry, I'm sorry."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man apologizes to a red plush toy that resembles a cartoon bird, saying \"I'm sorry\" and \"I'm sorry, I'm sorry\" multiple times.",
+            "postprocess": {
+              "event_id": 21,
+              "original_answer": "A man apologizes to a red plush toy that resembles a cartoon bird, saying \"I'm sorry\" and \"I'm sorry, I'm sorry\" multiple times.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_55_60",
+                "tags": [
+                  "apology",
+                  "toy",
+                  "bird",
+                  "emotional"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Red Plush Toy",
+                    "attributes": {
+                      "description": "A cartoon bird-like plush toy"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "The Man",
+                    "ref_object": "O001",
+                    "role": "Apologizer",
+                    "entity": "Human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_55_60",
+                  "name": "Apology to Red Plush Toy",
+                  "time": {
+                    "start": "55.5",
+                    "end": "60.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "emotional scene"
+                  ],
+                  "scene_topic": "A man apologizes to a red plush toy saying 'I'm sorry' multiple times.",
+                  "summary": "A man apologizes to a red plush toy that resembles a cartoon bird, saying \"I'm sorry\" and \"I'm sorry, I'm sorry\" multiple times.",
+                  "implications": "Emotional significance of apology",
+                  "modalities": {
+                    "visual": "A man apologizes to a red plush toy that resembles a cartoon bird.",
+                    "audio": "Saying 'I'm sorry'; 'I'm sorry; I'm sorry'.",
+                    "speech": "I'm sorry I'm sorry"
+                  }
+                }
+              }
+            },
+            "summary": "A red plush toy resembling a cartoon bird sits on a concrete surface, accompanied by a man's apologetic voice, repeatedly saying \"I'm sorry\" and \"I'm sorry, I'm sorry\"."
+          },
+          {
+            "level": 2,
+            "start_time": 60.5,
+            "end_time": 70.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 60.5,
+                "end_time": 70.5,
+                "children": [],
+                "caption": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, followed by a woman's voice saying \"Bye.\"",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, followed by a woman's voice saying \"Bye.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_60_70",
+                    "tags": [
+                      "toy",
+                      "concrete",
+                      "voice",
+                      "bird",
+                      "man",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red plush toy",
+                        "attributes": {
+                          "description": "A red plush toy, resembling a cartoon bird with a surprised expression"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_60_70",
+                      "name": "",
+                      "time": {
+                        "start": "60.5",
+                        "end": "70.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man and a woman say goodbye",
+                      "summary": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, followed by a woman's voice saying \"Bye.\"",
+                      "implications": "Minor social interaction",
+                      "modalities": {
+                        "visual": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, followed by a woman's voice saying 'Bye'.",
+                        "audio": "Man's voice; woman's voice saying 'Bye'.",
+                        "speech": "trying to make sense of their surroundings and interacting with others"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A red plush toy bird sits on a concrete surface as a man's voice and a woman's voice can be heard off-screen, with the woman saying \"Bye\" before the scene ends.",
+            "postprocess": {
+              "event_id": 23,
+              "original_answer": "A red plush toy bird sits on a concrete surface as a man's voice and a woman's voice can be heard off-screen, with the woman saying \"Bye\" before the scene ends.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_60_70",
+                "tags": [
+                  "toy",
+                  "concrete",
+                  "voice",
+                  "woman",
+                  "man"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "red plush toy bird",
+                    "attributes": {
+                      "color": "red",
+                      "material": "plush",
+                      "shape": "bird"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_60_70",
+                  "name": "",
+                  "time": {
+                    "start": "60.5",
+                    "end": "70.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human activity"
+                  ],
+                  "scene_topic": "A man and a woman's voices can be heard off-screen as a woman says 'Bye' before the scene ends.",
+                  "summary": "A red plush toy bird sits on a concrete surface as a man's voice and a woman's voice can be heard off-screen, with the woman saying \"Bye\" before the scene ends.",
+                  "implications": "Minor scene with no significant implications.",
+                  "modalities": {
+                    "visual": "A red plush toy bird sits on a concrete surface as a man's voice and a woman's voice can be heard off-screen, with the woman saying 'Bye' before the scene ends.",
+                    "audio": "Man's voice; woman's voice; 'Bye'",
+                    "speech": "trying to make sense of their surroundings and interacting with others"
+                  }
+                }
+              }
+            },
+            "summary": "A red plush toy resembling a cartoon bird sits on a concrete surface, accompanied by a man's voice and a woman's farewell, \"Bye.\""
+          }
+        ],
+        "caption": "A red plush toy bird is the focus of attention in a scene where a man's voice can be heard apologizing to it, while a red and yellow cartoon bird is shown standing on a sidewalk and staring intently at something. The scene then cuts to the man apologizing to the plush toy bird multiple times, before ending with the woman's voice saying \"Bye\".",
+        "postprocess": {
+          "event_id": 18,
+          "original_answer": "A red plush toy bird is the focus of attention in a scene where a man's voice can be heard apologizing to it, while a red and yellow cartoon bird is shown standing on a sidewalk and staring intently at something. The scene then cuts to the man apologizing to the plush toy bird multiple times, before ending with the woman's voice saying \"Bye\".",
+          "result": {
+            "video_id": "VuJ3KndEhiA",
+            "event_id": "E_VuJ3KndEhiA_42.5_70.5",
+            "tags": [
+              "toy",
+              "apology",
+              "scene",
+              "man",
+              "woman"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "red plush toy bird",
+                "attributes": {
+                  "type": "toy",
+                  "color": "red",
+                  "focus": "attention"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "red and yellow cartoon bird",
+                "attributes": {
+                  "type": "cartoon",
+                  "color": "red and yellow",
+                  "action": "staring"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "apologizer",
+                "entity": "human"
+              },
+              {
+                "actor_id": "A002",
+                "name": "woman",
+                "ref_object": "",
+                "role": "speaker",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_VuJ3KndEhiA_42.5_70.5",
+              "name": "apology scene",
+              "time": {
+                "start": "42.5",
+                "end": "70.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "human behavior",
+                "apology"
+              ],
+              "scene_topic": "A man apologizes to a plush toy bird, while a cartoon bird watches.",
+              "summary": "A red plush toy bird is the focus of attention in a scene where a man's voice can be heard apologizing to it, while a red and yellow cartoon bird is shown standing on a sidewalk and staring intently at something. The scene then cuts to the man apologizing to the plush toy bird multiple times, before ending with the woman's voice saying \"Bye\".",
+              "implications": "Emotional significance of apology",
+              "modalities": {
+                "visual": "A red plush toy bird is the focus of attention in a scene where a man's voice can be heard apologizing to it, while a red and yellow cartoon bird is shown standing on a sidewalk and staring intently at something. The scene then cuts to the man apologizing to the plush toy bird multiple times, before ending with the woman's voice saying 'Bye'.",
+                "audio": "Man's voice apologizing; woman's voice saying 'Bye'.",
+                "speech": "trying to make sense of their surroundings and interacting with others who seem to be in a surreal or fantastical environment"
+              }
+            }
+          }
+        },
+        "summary": "A man's angry outbursts are directed at a red and yellow cartoon bird and a red plush toy, with the man repeatedly apologizing for his actions, saying \"I'm sorry\" and \"I'm sorry, I'm sorry\". The scene ends with the man's apologetic voice and a woman's farewell, \"Bye\"."
+      },
+      {
+        "level": 1,
+        "start_time": 70.5,
+        "end_time": 167.64,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 70.5,
+            "end_time": 89.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 70.5,
+                "end_time": 82.5,
+                "children": [],
+                "caption": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, followed by a woman's voice saying \"Bye\" and a man's voice saying \"I'm sorry.\"",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, followed by a woman's voice saying \"Bye\" and a man's voice saying \"I'm sorry.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_70.5_82.5",
+                    "tags": [
+                      "toy",
+                      "concrete",
+                      "voice",
+                      "apology"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red plush toy",
+                        "attributes": {
+                          "description": "A red plush toy, resembling a cartoon bird with a surprised expression"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_70.5_82.5",
+                      "name": "",
+                      "time": {
+                        "start": "70.5",
+                        "end": "82.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human behavior"
+                      ],
+                      "scene_topic": "A man and a woman have a conversation, with a toy sitting nearby.",
+                      "summary": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, followed by a woman's voice saying \"Bye\" and a man's voice saying \"I'm sorry.\"",
+                      "implications": "Minor social interaction",
+                      "modalities": {
+                        "visual": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, followed by a woman's voice saying 'Bye' and a man's voice saying 'I'm sorry'.",
+                        "audio": "Man's voice; woman's voice saying 'Bye'; man's voice saying 'I'm sorry'.",
+                        "speech": "trying to make sense of their surroundings and interacting with others"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 82.5,
+                "end_time": 85.5,
+                "children": [],
+                "caption": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, saying \"I'm gonna go with the red one.\"",
+                "postprocess": {
+                  "event_id": 27,
+                  "original_answer": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, saying \"I'm gonna go with the red one.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_82.5_85.5",
+                    "tags": [
+                      "toy",
+                      "concrete",
+                      "voice",
+                      "off_screen"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red plush toy",
+                        "attributes": {
+                          "description": "A red plush toy, resembling a cartoon bird with a surprised expression"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "off-screen"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_82.5_85.5",
+                      "name": "",
+                      "time": {
+                        "start": "82.5",
+                        "end": "85.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "toy"
+                      ],
+                      "scene_topic": "A man's voice is heard off-screen saying 'I'm gonna go with the red one' as a red plush toy sits on a concrete surface.",
+                      "summary": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, saying \"I'm gonna go with the red one.\"",
+                      "implications": "Minor event in a video",
+                      "modalities": {
+                        "visual": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, saying 'I'm gonna go with the red one'.",
+                        "audio": "Man's voice; saying 'I'm gonna go with the red one'.",
+                        "speech": "I'm gonna go with the red one."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 85.5,
+                "end_time": 89.5,
+                "children": [],
+                "caption": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying \"I'm sorry\" in the background.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying \"I'm sorry\" in the background.",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_85.5_89.5",
+                    "tags": [
+                      "toy",
+                      "concrete",
+                      "apology"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red plush toy",
+                        "attributes": {
+                          "description": "A red plush toy, resembling a cartoon bird with a surprised expression"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "",
+                        "role": "",
+                        "entity": "man"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_85.5_89.5",
+                      "name": "",
+                      "time": {
+                        "start": "85.5",
+                        "end": "89.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "scene"
+                      ],
+                      "scene_topic": "A man's voice apologizes in the background as a red plush toy sits on a concrete surface.",
+                      "summary": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying \"I'm sorry\" in the background.",
+                      "implications": "Minor scene with a man apologizing",
+                      "modalities": {
+                        "visual": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard saying 'I'm sorry' in the background.",
+                        "audio": "Man's voice saying 'I'm sorry'.",
+                        "speech": "I'm sorry"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man is seen talking to someone off-screen, followed by a woman's voice saying \"Bye\" and a man's voice saying \"I'm sorry.\" The scene then cuts to a red plush toy of a cartoon bird sitting on a concrete surface, with a man's voice saying \"I'm gonna go with the red one.\" Finally, the scene cuts back to the red plush toy sitting on the concrete surface, with a man's voice saying \"I'm sorry\" in the background.",
+            "postprocess": {
+              "event_id": 25,
+              "original_answer": "A man is seen talking to someone off-screen, followed by a woman's voice saying \"Bye\" and a man's voice saying \"I'm sorry.\" The scene then cuts to a red plush toy of a cartoon bird sitting on a concrete surface, with a man's voice saying \"I'm gonna go with the red one.\" Finally, the scene cuts back to the red plush toy sitting on the concrete surface, with a man's voice saying \"I'm sorry\" in the background.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_70_89",
+                "tags": [
+                  "man",
+                  "woman",
+                  "red_plush_toy",
+                  "concrete_surface"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "speaking": "yes",
+                      "off_screen": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "speaking": "yes",
+                      "off_screen": "no"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "red_plush_toy",
+                    "attributes": {
+                      "sitting": "yes",
+                      "concrete_surface": "yes"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_70_89",
+                  "name": "man talking to someone off-screen",
+                  "time": {
+                    "start": "70.5",
+                    "end": "89.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human_interaction"
+                  ],
+                  "scene_topic": "A man is seen talking to someone off-screen, followed by a woman's voice saying 'Bye' and a man's voice saying 'I'm sorry.'",
+                  "summary": "A man is seen talking to someone off-screen, followed by a woman's voice saying \"Bye\" and a man's voice saying \"I'm sorry.\" The scene then cuts to a red plush toy of a cartoon bird sitting on a concrete surface, with a man's voice saying \"I'm gonna go with the red one.\" Finally, the scene cuts back to the red plush toy sitting on the concrete surface, with a man's voice saying \"I'm sorry\" in the background.",
+                  "implications": "Major human interaction event",
+                  "modalities": {
+                    "visual": "A man is seen talking to someone off-screen, a woman's voice says 'Bye', a man's voice says 'I'm sorry', a red plush toy of a cartoon bird sits on a concrete surface, a man's voice says 'I'm gonna go with the red one', a man's voice says 'I'm sorry' in the background.",
+                    "audio": "'Bye'; 'I'm sorry'; 'I'm gonna go with the red one'",
+                    "speech": "I'm trying to find the most relevant speech in the given time segment (70.5-89.5) and its caption."
+                  }
+                }
+              }
+            },
+            "summary": "A man's voice is heard off-screen, making a decision and apologizing, while a woman says goodbye. The scene features a red plush toy resembling a cartoon bird with a surprised expression sitting on a concrete surface throughout."
+          },
+          {
+            "level": 2,
+            "start_time": 89.5,
+            "end_time": 99.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 89.5,
+                "end_time": 92.5,
+                "children": [],
+                "caption": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_89.5_92.5",
+                    "tags": [
+                      "apology",
+                      "toy",
+                      "concrete",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red plush toy",
+                        "attributes": {
+                          "description": "A red plush toy, resembling a cartoon bird with a surprised expression"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_89.5_92.5",
+                      "name": "",
+                      "time": {
+                        "start": "89.5",
+                        "end": "92.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "apology"
+                      ],
+                      "scene_topic": "A man apologizes off-screen while a toy sits on a concrete surface.",
+                      "summary": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen, saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                      "implications": "Minor emotional event",
+                      "modalities": {
+                        "visual": "A red plush toy, resembling a cartoon bird with a surprised expression, sits on a concrete surface as a man's voice can be heard off-screen.",
+                        "audio": "Man's voice: 'I'm sorry'; 'I'm sorry; I'm sorry'.",
+                        "speech": "I'm sorry, I'm sorry."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 92.5,
+                "end_time": 99.5,
+                "children": [],
+                "caption": "A red plush toy, resembling a cartoon bird with a menacing grin, sits on a concrete surface as a man's voice can be heard, seemingly unrelated to the toy.",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "A red plush toy, resembling a cartoon bird with a menacing grin, sits on a concrete surface as a man's voice can be heard, seemingly unrelated to the toy.",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_92.5_99.5",
+                    "tags": [
+                      "toy",
+                      "man",
+                      "voice",
+                      "concrete"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red plush toy",
+                        "attributes": {
+                          "description": "resembling a cartoon bird with a menacing grin"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": "man"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_92.5_99.5",
+                      "name": "",
+                      "time": {
+                        "start": "92.5",
+                        "end": "99.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "A man's voice can be heard, seemingly unrelated to a red plush toy.",
+                      "summary": "A red plush toy, resembling a cartoon bird with a menacing grin, sits on a concrete surface as a man's voice can be heard, seemingly unrelated to the toy.",
+                      "implications": "Minor scene with no significant implications.",
+                      "modalities": {
+                        "visual": "A red plush toy, resembling a cartoon bird with a menacing grin, sits on a concrete surface as a man's voice can be heard.",
+                        "audio": "man's voice",
+                        "speech": "trying to make sense of their surroundings and interacting with others"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "Two different scenarios are depicted in the captions:\n\n1. A man apologizes off-screen while a red plush toy of a bird with a surprised expression sits on a concrete surface.\n2. A man's voice can be heard, seemingly unrelated to a red plush toy of a bird with a menacing grin, which sits on a concrete surface.",
+            "postprocess": {
+              "event_id": 30,
+              "original_answer": "Two different scenarios are depicted in the captions:\n\n1. A man apologizes off-screen while a red plush toy of a bird with a surprised expression sits on a concrete surface.\n2. A man's voice can be heard, seemingly unrelated to a red plush toy of a bird with a menacing grin, which sits on a concrete surface.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_89_99",
+                "tags": [
+                  "toy",
+                  "apology",
+                  "concrete"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "red plush toy of a bird",
+                    "attributes": {
+                      "expression": "surprised",
+                      "grin": "menacing"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_89_99",
+                  "name": "Two scenarios with a red plush toy",
+                  "time": {
+                    "start": "89.5",
+                    "end": "99.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "toy",
+                    "apology"
+                  ],
+                  "scene_topic": "A man apologizes off-screen while a red plush toy sits on a concrete surface.",
+                  "summary": "Two different scenarios are depicted in the captions:\n\n1. A man apologizes off-screen while a red plush toy of a bird with a surprised expression sits on a concrete surface.\n2. A man's voice can be heard, seemingly unrelated to a red plush toy of a bird with a menacing grin, which sits on a concrete surface.",
+                  "implications": "Minor emotional event",
+                  "modalities": {
+                    "visual": "A man apologizes off-screen, a red plush toy of a bird with a surprised expression sits on a concrete surface, a red plush toy of a bird with a menacing grin sits on a concrete surface.",
+                    "audio": "Man's voice; man apologizes.",
+                    "speech": "A person is in a state of confusion and distress, trying to make sense of their surroundings and interacting with others who seem to be in a surreal or fantastical environment."
+                  }
+                }
+              }
+            },
+            "summary": "A man's voice apologizes repeatedly off-screen, while two red plush toys, one with a surprised and one with a menacing expression, sit on a concrete surface. The toys appear to be unrelated to the man's apologetic words."
+          },
+          {
+            "level": 2,
+            "start_time": 99.5,
+            "end_time": 103.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 99.5,
+                "end_time": 103.5,
+                "children": [],
+                "caption": "A red and yellow cartoon bird, with a surprised expression, stands on a green surface as a man's voice excitedly exclaims \"Oh my god!\"",
+                "postprocess": {
+                  "event_id": 32,
+                  "original_answer": "A red and yellow cartoon bird, with a surprised expression, stands on a green surface as a man's voice excitedly exclaims \"Oh my god!\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_99.5_103.5",
+                    "tags": [
+                      "cartoon",
+                      "bird",
+                      "man",
+                      "voice",
+                      "excited"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "bird",
+                        "attributes": {
+                          "color": "red and yellow",
+                          "expression": "surprised"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_99.5_103.5",
+                      "name": "Excited Voice",
+                      "time": {
+                        "start": "99.5",
+                        "end": "103.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cartoon scene"
+                      ],
+                      "scene_topic": "A man's voice excitedly exclaims 'Oh my god!' as a cartoon bird stands on a green surface.",
+                      "summary": "A red and yellow cartoon bird, with a surprised expression, stands on a green surface as a man's voice excitedly exclaims \"Oh my god!\"",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A red and yellow cartoon bird, with a surprised expression, stands on a green surface as a man's voice excitedly exclaims.",
+                        "audio": "Man's voice: 'Oh my god!'",
+                        "speech": "Oh my god!"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A cartoon bird is surprised by something, as expressed by the man's excited voice.",
+            "postprocess": {
+              "event_id": 33,
+              "original_answer": "A cartoon bird is surprised by something, as expressed by the man's excited voice.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_99.5_103.5",
+                "tags": [
+                  "cartoon",
+                  "bird",
+                  "surprise",
+                  "excitement",
+                  "voice"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon bird",
+                    "attributes": {
+                      "type": "cartoon",
+                      "character": "bird"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man",
+                    "attributes": {
+                      "type": "human",
+                      "role": "speaker"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_99.5_103.5",
+                  "name": "Surprise by a cartoon bird",
+                  "time": {
+                    "start": "99.5",
+                    "end": "103.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon",
+                    "human"
+                  ],
+                  "scene_topic": "A cartoon bird is surprised by something, as expressed by the man's excited voice.",
+                  "summary": "A cartoon bird is surprised by something, as expressed by the man's excited voice.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A cartoon bird is surprised by something.",
+                    "audio": "excited voice",
+                    "speech": "trying to make sense of their surroundings"
+                  }
+                }
+              }
+            },
+            "summary": "A cartoon bird with a surprised expression stands on a green surface as a man's voice exclaims \"Oh my god!\" in excitement."
+          },
+          {
+            "level": 2,
+            "start_time": 103.5,
+            "end_time": 114.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 103.5,
+                "end_time": 114.5,
+                "children": [],
+                "caption": "A red and yellow cartoon bird, its beak open in a surprised expression, is shown against a plain background, while a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                "postprocess": {
+                  "event_id": 34,
+                  "original_answer": "A red and yellow cartoon bird, its beak open in a surprised expression, is shown against a plain background, while a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_103.5_114.5",
+                    "tags": [
+                      "cartoon",
+                      "bird",
+                      "apology",
+                      "voiceover"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Cartoon Bird",
+                        "attributes": {
+                          "color": "red and yellow",
+                          "expression": "surprised"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "",
+                        "role": "voiceover",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_103.5_114.5",
+                      "name": "Apology",
+                      "time": {
+                        "start": "103.5",
+                        "end": "114.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cartoon scene"
+                      ],
+                      "scene_topic": "A man's voice apologizes while a cartoon bird is shown.",
+                      "summary": "A red and yellow cartoon bird, its beak open in a surprised expression, is shown against a plain background, while a man's voice can be heard saying \"I'm sorry\" and \"I'm sorry, I'm sorry.\"",
+                      "implications": "Minor emotional event",
+                      "modalities": {
+                        "visual": "A red and yellow cartoon bird, its beak open in a surprised expression, is shown against a plain background.",
+                        "audio": "Man's voice: 'I'm sorry'; 'I'm sorry; I'm sorry'.",
+                        "speech": "I'm sorry, I'm sorry."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A cartoon bird looks surprised as a man's voice apologizes repeatedly.",
+            "postprocess": {
+              "event_id": 35,
+              "original_answer": "A cartoon bird looks surprised as a man's voice apologizes repeatedly.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_103.5_114.5",
+                "tags": [
+                  "cartoon",
+                  "apology",
+                  "surprise"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon bird",
+                    "attributes": {
+                      "type": "cartoon character",
+                      "expression": "surprised"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_103.5_114.5",
+                  "name": "apology",
+                  "time": {
+                    "start": "103.5",
+                    "end": "114.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon"
+                  ],
+                  "scene_topic": "A man apologizes repeatedly as a cartoon bird looks surprised.",
+                  "summary": "A cartoon bird looks surprised as a man's voice apologizes repeatedly.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A cartoon bird looks surprised as a man's voice apologizes repeatedly.",
+                    "audio": "Man's voice apologizes repeatedly.",
+                    "speech": "trying to make sense of their surroundings and interacting with others"
+                  }
+                }
+              }
+            },
+            "summary": "A cartoon bird is shown with a surprised expression, while a man's voice apologizes repeatedly, saying \"I'm sorry\" and \"I'm sorry, I'm sorry\"."
+          },
+          {
+            "level": 2,
+            "start_time": 114.5,
+            "end_time": 127.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 114.5,
+                "end_time": 127.5,
+                "children": [],
+                "caption": "A red and yellow cartoon bird, its beak open in a surprised expression, is perched on a green surface as a man's voice excitedly exclaims \"Oh, oh, oh!\"",
+                "postprocess": {
+                  "event_id": 36,
+                  "original_answer": "A red and yellow cartoon bird, its beak open in a surprised expression, is perched on a green surface as a man's voice excitedly exclaims \"Oh, oh, oh!\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_114_127",
+                    "tags": [
+                      "cartoon",
+                      "bird",
+                      "man",
+                      "voice",
+                      "excitement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red and yellow cartoon bird",
+                        "attributes": {
+                          "color": "red and yellow",
+                          "expression": "surprised"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Green surface",
+                        "attributes": {
+                          "color": "green"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_114_127",
+                      "name": "Excited bird scene",
+                      "time": {
+                        "start": "114.5",
+                        "end": "127.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cartoon scene"
+                      ],
+                      "scene_topic": "A man's voice excitedly exclaims 'Oh, oh, oh!' as a cartoon bird looks surprised.",
+                      "summary": "A red and yellow cartoon bird, its beak open in a surprised expression, is perched on a green surface as a man's voice excitedly exclaims \"Oh, oh, oh!\"",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A red and yellow cartoon bird, its beak open in a surprised expression, is perched on a green surface as a man's voice excitedly exclaims 'Oh, oh, oh!'",
+                        "audio": "Man's voice exclaims 'Oh; oh; oh!'",
+                        "speech": "Oh oh oh"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A cartoon bird is surprised by something, as indicated by its open beak and the excited voice of a man.",
+            "postprocess": {
+              "event_id": 37,
+              "original_answer": "A cartoon bird is surprised by something, as indicated by its open beak and the excited voice of a man.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_114_127",
+                "tags": [
+                  "cartoon",
+                  "bird",
+                  "surprise",
+                  "voice",
+                  "man"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "cartoon bird",
+                    "attributes": {
+                      "type": "cartoon",
+                      "character": "bird"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_114_127",
+                  "name": "Surprise by a man",
+                  "time": {
+                    "start": "114.5",
+                    "end": "127.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "cartoon scene"
+                  ],
+                  "scene_topic": "A man surprises a cartoon bird with his excited voice.",
+                  "summary": "A cartoon bird is surprised by something, as indicated by its open beak and the excited voice of a man.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A cartoon bird is surprised by something, as indicated by its open beak.",
+                    "audio": "excited voice of a man",
+                    "speech": "trying to make sense of their surroundings and interacting with others"
+                  }
+                }
+              }
+            },
+            "summary": "A cartoon bird with a surprised expression sits on a green surface as a man's voice exclaims \"Oh, oh, oh!\" in excitement."
+          },
+          {
+            "level": 2,
+            "start_time": 127.5,
+            "end_time": 156.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 127.5,
+                "end_time": 146.5,
+                "children": [],
+                "caption": "A red bird with a yellow beak and a blue eye stares intently at the camera, its beak slightly open as if about to speak, while a man's voice can be heard in the background, followed by a woman's voice.",
+                "postprocess": {
+                  "event_id": 38,
+                  "original_answer": "A red bird with a yellow beak and a blue eye stares intently at the camera, its beak slightly open as if about to speak, while a man's voice can be heard in the background, followed by a woman's voice.",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_127.5_146.5",
+                    "tags": [
+                      "bird",
+                      "man",
+                      "woman",
+                      "voice",
+                      "camera"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Red Bird",
+                        "attributes": {
+                          "color": "red",
+                          "beak_color": "yellow",
+                          "eye_color": "blue"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "Woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_127.5_146.5",
+                      "name": "Red Bird with Voices",
+                      "time": {
+                        "start": "127.5",
+                        "end": "146.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal behavior"
+                      ],
+                      "scene_topic": "A man and a woman's voices are heard in the background as a red bird stares at the camera.",
+                      "summary": "A red bird with a yellow beak and a blue eye stares intently at the camera, its beak slightly open as if about to speak, while a man's voice can be heard in the background, followed by a woman's voice.",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "A red bird with a yellow beak and a blue eye stares intently at the camera, its beak slightly open as if about to speak.",
+                        "audio": "man's voice; woman's voice",
+                        "speech": "trying to make sense of their surroundings and interacting with others"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 146.5,
+                "end_time": 149.5,
+                "children": [],
+                "caption": "A cartoon bird with a red beak and yellow eyes, perched on a branch, looks around curiously as a man's voice can be heard saying \"I'm gonna go\" in the background.",
+                "postprocess": {
+                  "event_id": 40,
+                  "original_answer": "A cartoon bird with a red beak and yellow eyes, perched on a branch, looks around curiously as a man's voice can be heard saying \"I'm gonna go\" in the background.",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_146.5_149.5",
+                    "tags": [
+                      "cartoon",
+                      "bird",
+                      "man",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "cartoon bird",
+                        "attributes": {
+                          "beak": "red",
+                          "eyes": "yellow"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_146.5_149.5",
+                      "name": "man's voice in background",
+                      "time": {
+                        "start": "146.5",
+                        "end": "149.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal scene"
+                      ],
+                      "scene_topic": "A cartoon bird looks around curiously as a man's voice can be heard saying 'I'm gonna go' in the background.",
+                      "summary": "A cartoon bird with a red beak and yellow eyes, perched on a branch, looks around curiously as a man's voice can be heard saying \"I'm gonna go\" in the background.",
+                      "implications": "Minor scene with a cartoon bird and a man's voice",
+                      "modalities": {
+                        "visual": "A cartoon bird with a red beak and yellow eyes, perched on a branch, looks around curiously as a man's voice can be heard saying 'I'm gonna go' in the background.",
+                        "audio": "man's voice saying 'I'm gonna go'",
+                        "speech": "I'm gonna go"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 149.5,
+                "end_time": 156.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a red bird to a wider shot of a grassy field, where a yellow bird stands out against the greenery, as a man's voice can be heard saying \"Bye, bye\" and \"I'll see you later.\"",
+                "postprocess": {
+                  "event_id": 41,
+                  "original_answer": "The video transitions from a close-up of a red bird to a wider shot of a grassy field, where a yellow bird stands out against the greenery, as a man's voice can be heard saying \"Bye, bye\" and \"I'll see you later.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_149.5_156.5",
+                    "tags": [
+                      "bird",
+                      "field",
+                      "voice",
+                      "man",
+                      "goodbye"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red bird",
+                        "attributes": {
+                          "color": "red",
+                          "type": "bird"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "yellow bird",
+                        "attributes": {
+                          "color": "yellow",
+                          "type": "bird"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {
+                          "role": "speaker",
+                          "voice": "male"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "grassy field",
+                        "attributes": {
+                          "environment": "natural",
+                          "terrain": "grass"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_149.5_156.5",
+                      "name": "Birds in a field",
+                      "time": {
+                        "start": "149.5",
+                        "end": "156.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "natural scene"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a red bird to a wider shot of a grassy field, where a yellow bird stands out against the greenery, as a man's voice can be heard saying 'Bye, bye' and 'I'll see you later.'",
+                      "summary": "The video transitions from a close-up of a red bird to a wider shot of a grassy field, where a yellow bird stands out against the greenery, as a man's voice can be heard saying \"Bye, bye\" and \"I'll see you later.\"",
+                      "implications": "Minor entertainment event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a red bird to a wider shot of a grassy field, where a yellow bird stands out against the greenery.",
+                        "audio": "Man's voice saying 'Bye; bye'; 'I'll see you later'.",
+                        "speech": "I'll see you later."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A red bird and a yellow bird are shown in different scenes, with a man's and a woman's voices heard in the background. The red bird stares intently at the camera, while the yellow bird looks around curiously. The video then transitions to a wider shot of a grassy field, where the yellow bird stands out against the greenery.",
+            "postprocess": {
+              "event_id": 39,
+              "original_answer": "A red bird and a yellow bird are shown in different scenes, with a man's and a woman's voices heard in the background. The red bird stares intently at the camera, while the yellow bird looks around curiously. The video then transitions to a wider shot of a grassy field, where the yellow bird stands out against the greenery.",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_127.5_156.5",
+                "tags": [
+                  "bird",
+                  "man",
+                  "woman",
+                  "grass",
+                  "field"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "red bird",
+                    "attributes": {
+                      "color": "red",
+                      "behavior": "stares intently"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "yellow bird",
+                    "attributes": {
+                      "color": "yellow",
+                      "behavior": "looks around curiously"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man",
+                    "attributes": {
+                      "role": "voice in background"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "woman",
+                    "attributes": {
+                      "role": "voice in background"
+                    }
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "grassy field",
+                    "attributes": {
+                      "environment": "natural"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "voice",
+                    "entity": "human"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O004",
+                    "role": "voice",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_127.5_156.5",
+                  "name": "Birds in a field",
+                  "time": {
+                    "start": "127.5",
+                    "end": "156.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "animal behavior",
+                    "natural environment"
+                  ],
+                  "scene_topic": "A man and a woman's voices are heard in the background as a red and yellow bird are shown in different scenes.",
+                  "summary": "A red bird and a yellow bird are shown in different scenes, with a man's and a woman's voices heard in the background. The red bird stares intently at the camera, while the yellow bird looks around curiously. The video then transitions to a wider shot of a grassy field, where the yellow bird stands out against the greenery.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "A red bird and a yellow bird are shown in different scenes, with a man's and a woman's voices heard in the background. The red bird stares intently at the camera, while the yellow bird looks around curiously. The video then transitions to a wider shot of a grassy field, where the yellow bird stands out against the greenery.",
+                    "audio": "man's and woman's voices",
+                    "speech": "A person is in a state of confusion and distress, trying to make sense of their surroundings and interacting with others who seem to be in a surreal or fantastical environment."
+                  }
+                }
+              }
+            },
+            "summary": "A red bird with a yellow beak and blue eye is shown in a close-up, while a man's voice is heard in the background, followed by a woman's voice. The scene transitions to a wider shot of a grassy field, where a yellow bird stands out, as the man's voice says goodbye and he departs."
+          },
+          {
+            "level": 2,
+            "start_time": 156.5,
+            "end_time": 167.64,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 156.5,
+                "end_time": 161.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a red bird to a wider shot of a green bird perched on a branch, as a man's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                "postprocess": {
+                  "event_id": 42,
+                  "original_answer": "The video transitions from a close-up of a red bird to a wider shot of a green bird perched on a branch, as a man's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_156.5_161.5",
+                    "tags": [
+                      "bird",
+                      "man",
+                      "voice",
+                      "goodbye"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red bird",
+                        "attributes": {
+                          "color": "red"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "green bird",
+                        "attributes": {
+                          "color": "green",
+                          "branch": "perched"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_156.5_161.5",
+                      "name": "Bird Transition",
+                      "time": {
+                        "start": "156.5",
+                        "end": "161.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "animal behavior"
+                      ],
+                      "scene_topic": "A man says goodbye to someone as a bird transitions from red to green.",
+                      "summary": "The video transitions from a close-up of a red bird to a wider shot of a green bird perched on a branch, as a man's voice can be heard saying \"Bye\" and \"I'll see you later.\"",
+                      "implications": "Minor event in a person's life",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a red bird to a wider shot of a green bird perched on a branch.",
+                        "audio": "Man's voice saying 'Bye'; 'I'll see you later'.",
+                        "speech": "I'll see you later."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 161.5,
+                "end_time": 167.64,
+                "children": [],
+                "caption": "The video transitions from a close-up of a red bird to a wider shot of a city street, where a man and a woman are having a conversation about a game called \"Angry Birds.\"",
+                "postprocess": {
+                  "event_id": 44,
+                  "original_answer": "The video transitions from a close-up of a red bird to a wider shot of a city street, where a man and a woman are having a conversation about a game called \"Angry Birds.\"",
+                  "result": {
+                    "video_id": "VuJ3KndEhiA",
+                    "event_id": "E_VuJ3KndEhiA_161.5_167.64",
+                    "tags": [
+                      "birds",
+                      "game",
+                      "conversation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red bird",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "city street",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "woman",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "Angry Birds",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "actor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O004",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_VuJ3KndEhiA_161.5_167.64",
+                      "name": "Conversation about Angry Birds",
+                      "time": {
+                        "start": "161.5",
+                        "end": "167.64"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "game",
+                        "conversation"
+                      ],
+                      "scene_topic": "A man and a woman discuss Angry Birds on a city street.",
+                      "summary": "The video transitions from a close-up of a red bird to a wider shot of a city street, where a man and a woman are having a conversation about a game called \"Angry Birds.\"",
+                      "implications": "Minor entertainment news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a red bird to a wider shot of a city street, where a man and a woman are having a conversation.",
+                        "audio": "",
+                        "speech": "A person is in a state of confusion and distress"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video cuts between a close-up of a red bird and a wider shot of a green bird, with a man's voice saying \"Bye\" and \"I'll see you later.\" The scene then shifts to a city street where two people are talking about the game \"Angry Birds.\"",
+            "postprocess": {
+              "event_id": 43,
+              "original_answer": "The video cuts between a close-up of a red bird and a wider shot of a green bird, with a man's voice saying \"Bye\" and \"I'll see you later.\" The scene then shifts to a city street where two people are talking about the game \"Angry Birds.\"",
+              "result": {
+                "video_id": "VuJ3KndEhiA",
+                "event_id": "E_VuJ3KndEhiA_156.5_167.64",
+                "tags": [
+                  "birds",
+                  "game",
+                  "angry_birds"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "red bird",
+                    "attributes": {
+                      "color": "red"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "green bird",
+                    "attributes": {
+                      "color": "green"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man",
+                    "attributes": {
+                      "voice": "I'll see you later"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "city street",
+                    "attributes": {
+                      "location": "city"
+                    }
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "two people",
+                    "attributes": {
+                      "conversation": "game Angry Birds"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_VuJ3KndEhiA_156.5_167.64",
+                  "name": "Birds and Angry Birds",
+                  "time": {
+                    "start": "156.5",
+                    "end": "167.64"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "animals",
+                    "game"
+                  ],
+                  "scene_topic": "The video cuts between a close-up of a red bird and a wider shot of a green bird, with a man's voice saying 'Bye' and 'I'll see you later.' The scene then shifts to a city street where two people are talking about the game 'Angry Birds.'",
+                  "summary": "The video cuts between a close-up of a red bird and a wider shot of a green bird, with a man's voice saying \"Bye\" and \"I'll see you later.\" The scene then shifts to a city street where two people are talking about the game \"Angry Birds.\"",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "The video cuts between a close-up of a red bird and a wider shot of a green bird, with a man's voice saying 'Bye' and 'I'll see you later.' The scene then shifts to a city street where two people are talking.",
+                    "audio": "man's voice saying 'Bye' and 'I'll see you later'; city street ambient noise",
+                    "speech": "I'll see you later."
+                  }
+                }
+              }
+            },
+            "summary": "A video transitions from a close-up of a red bird to a wider shot of a green bird and then to a city street, where a man and a woman discuss the game \"Angry Birds\"."
+          }
+        ],
+        "caption": "The captions depict two different scenarios involving a red plush toy of a cartoon bird. In the first scenario, a man apologizes off-screen while the toy sits on a concrete surface with a surprised expression. In the second scenario, a man's voice can be heard, seemingly unrelated to the toy, which sits on a concrete surface with a menacing grin. The captions also show a cartoon bird being surprised by something, as expressed by the man's excited voice. Additionally, the captions show the red bird staring",
+        "postprocess": {
+          "event_id": 26,
+          "original_answer": "The captions depict two different scenarios involving a red plush toy of a cartoon bird. In the first scenario, a man apologizes off-screen while the toy sits on a concrete surface with a surprised expression. In the second scenario, a man's voice can be heard, seemingly unrelated to the toy, which sits on a concrete surface with a menacing grin. The captions also show a cartoon bird being surprised by something, as expressed by the man's excited voice. Additionally, the captions show the red bird staring",
+          "result": {
+            "video_id": "VuJ3KndEhiA",
+            "event_id": "E_VuJ3KndEhiA_70.5_167.64",
+            "tags": [
+              "cartoon",
+              "bird",
+              "toy",
+              "apology",
+              "menace"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Red plush toy of a cartoon bird",
+                "attributes": {
+                  "expression": "surprised",
+                  "surface": "concrete"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "human"
+              }
+            ],
+            "event": {
+              "event_id": "E_VuJ3KndEhiA_70.5_167.64",
+              "name": "Red plush toy scenarios",
+              "time": {
+                "start": "70.5",
+                "end": "167.64"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "cartoon",
+                "toy"
+              ],
+              "scene_topic": "A man apologizes off-screen while a red plush toy sits on a concrete surface with a surprised expression.",
+              "summary": "The captions depict two different scenarios involving a red plush toy of a cartoon bird. In the first scenario, a man apologizes off-screen while the toy sits on a concrete surface with a surprised expression. In the second scenario, a man's voice can be heard, seemingly unrelated to the toy, which sits on a concrete surface with a menacing grin. The captions also show a cartoon bird being surprised by something, as expressed by the man's excited voice. Additionally, the captions show the red bird staring",
+              "implications": "Major entertainment news event",
+              "modalities": {
+                "visual": "The captions depict two different scenarios involving a red plush toy of a cartoon bird. In the first scenario, a man apologizes off-screen while the toy sits on a concrete surface with a surprised expression. In the second scenario, a man's voice can be heard, seemingly unrelated to the toy, which sits on a concrete surface with a menacing grin. The captions also show a cartoon bird being surprised by something, as expressed by the man's excited voice. Additionally, the captions show the red bird staring.",
+                "audio": "",
+                "speech": "A person is in a state of confusion and distress, trying to make sense of their surroundings and interacting with others who seem to be in a surreal or fantastical environment."
+              }
+            }
+          }
+        },
+        "summary": "A man's voice apologizes repeatedly while cartoon birds with surprised expressions appear on screen, seemingly unrelated to the apologetic words. The scene transitions to a wider shot of a grassy field and eventually a city street, where the man and a woman discuss the game \"Angry Birds\"."
+      }
+    ],
+    "caption": "The captions depict two different scenarios involving a red plush toy of a cartoon bird. In the first scenario, a man apologizes off-screen while the toy sits on a concrete surface with a surprised expression. In the second scenario, a man's voice can be heard, seemingly unrelated to the toy, which sits on a concrete surface with a menacing grin. The captions also show a cartoon bird being surprised by something, as expressed by the man's excited voice. Additionally, the captions show the red bird staring",
+    "postprocess": {
+      "event_id": 3,
+      "original_answer": "The captions depict two different scenarios involving a red plush toy of a cartoon bird. In the first scenario, a man apologizes off-screen while the toy sits on a concrete surface with a surprised expression. In the second scenario, a man's voice can be heard, seemingly unrelated to the toy, which sits on a concrete surface with a menacing grin. The captions also show a cartoon bird being surprised by something, as expressed by the man's excited voice. Additionally, the captions show the red bird staring",
+      "result": {
+        "video_id": "VuJ3KndEhiA",
+        "event_id": "E_VuJ3KndEhiA_0_167.64",
+        "tags": [
+          "cartoon",
+          "bird",
+          "toy",
+          "apology",
+          "menace"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "red plush toy of a cartoon bird",
+            "attributes": {
+              "expression": "surprised",
+              "grin": "menacing"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "man",
+            "ref_object": "O001",
+            "role": "speaker",
+            "entity": "human"
+          }
+        ],
+        "event": {
+          "event_id": "E_VuJ3KndEhiA_0_167.64",
+          "name": "cartoon bird scenarios",
+          "time": {
+            "start": "0",
+            "end": "167.64"
+          },
+          "actors": [
+            "A001"
+          ],
+          "objects": [
+            "O001"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "cartoon",
+            "toy"
+          ],
+          "scene_topic": "A man apologizes off-screen while a cartoon bird toy sits on a concrete surface with a surprised expression.",
+          "summary": "The captions depict two different scenarios involving a red plush toy of a cartoon bird. In the first scenario, a man apologizes off-screen while the toy sits on a concrete surface with a surprised expression. In the second scenario, a man's voice can be heard, seemingly unrelated to the toy, which sits on a concrete surface with a menacing grin. The captions also show a cartoon bird being surprised by something, as expressed by the man's excited voice. Additionally, the captions show the red bird staring",
+          "implications": "Major animation news event",
+          "modalities": {
+            "visual": "The captions depict two different scenarios involving a red plush toy of a cartoon bird. In the first scenario, a man apologizes off-screen while the toy sits on a concrete surface with a surprised expression. In the second scenario, a man's voice can be heard, seemingly unrelated to the toy, which sits on a concrete surface with a menacing grin. The captions also show a cartoon bird being surprised by something, as expressed by the man's excited voice. Additionally, the captions show the red bird staring.",
+            "audio": "",
+            "speech": "A person is in a state of confusion and distress, trying to make sense of their surroundings and interacting with others who seem to be in a surreal or fantastical environment."
+          }
+        }
+      }
+    },
+    "summary": "A man's apologetic and threatening voice is heard in the background as he walks down a city street, while cartoon birds on a smartphone display react with surprise and intensity to the off-screen voices. The scene transitions to a wider shot of a grassy field and city street, where the man and a woman discuss the game \"Angry Birds\"."
+  }
+}

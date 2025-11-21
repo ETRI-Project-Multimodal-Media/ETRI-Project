@@ -927,23 +927,23 @@ def _iter_video_payloads(raw_data):
         raise ValueError("Unsupported input format: expected dict or list.")
 
 # 자식 node의 caption을 재귀 탐색 후 summary
-def _aggregate_child_captions(node):
-    children = node.get("children") or []
-    if not children:
-        return (node.get("caption") or "").strip()
+# def _aggregate_child_captions(node):
+#     children = node.get("children") or []
+#     if not children:
+#         return (node.get("caption") or "").strip()
 
-    child_captions = []
-    for child in children:
-        child_summary = _aggregate_child_captions(child)
-        if child_summary:
-            child_captions.append(child_summary)
+#     child_captions = []
+#     for child in children:
+#         child_summary = _aggregate_child_captions(child)
+#         if child_summary:
+#             child_captions.append(child_summary)
 
 
-    before_summary = " ".join(child_captions).strip()
-    summary = summarize_text(before_summary)
-    if summary:
-        node["summary"] = summary  # 또는 node["caption"] = summary
-    return summary or (node.get("caption") or "").strip()
+#     before_summary = " ".join(child_captions).strip()
+#     summary = summarize_text(before_summary)
+#     if summary:
+#         node["summary"] = summary  # 또는 node["caption"] = summary
+#     return summary or (node.get("caption") or "").strip()
 
 
 # 전체 
@@ -1000,7 +1000,7 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
             if not target_nodes:
                 continue
             # node 는 값이 아니고 참조변수
-            result = extract_info_with_llm(video_id, idx, start, end, text, not_json_dir)
+            result = extract_info_with_llm(video_id, idx, start, end, text, not_json_dir) # llama 1
 
             # LLM 결과에 관계없이 실제 start/end로 덮어쓰기
             result.setdefault('event', {}).setdefault('time', {})
@@ -1012,10 +1012,10 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
             lod['summary'] = text
 
             # Visual, Audio modality split
-            split_result = split_modality_caption_with_llm(text)
+            split_result = split_modality_caption_with_llm(text) # llama 1~2
             
             # speech summary and extract time speech
-            speech_timesplit = extract_speech_from_caption_with_llm(text, speech_translation, start, end, duration)
+            speech_timesplit = extract_speech_from_caption_with_llm(text, speech_translation, start, end, duration) # llama 1
             # modality to dict
             split_result_dict = parse_split_caption_to_dict(split_result, speech_timesplit)
             
@@ -1028,8 +1028,8 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
                     "original_answer": text,
                     "result": copy.deepcopy(result),
                 }
-        # summarize child node's caption 
-        _aggregate_child_captions(video_tree)
+        # summarize child node's caption -> deprecated
+        # _aggregate_child_captions(video_tree)
         # save result
         output_path = os.path.join(output_dir, f"{video_id}.json")
         with open(output_path, "w", encoding="utf-8") as out_f:
