@@ -51,7 +51,9 @@ data/
 ## How to Run
 ```shell
 bash scripts/run.sh
+```
 
+```shell
 ... 
 
 source /root/anaconda3/etc/profile.d/conda.sh
