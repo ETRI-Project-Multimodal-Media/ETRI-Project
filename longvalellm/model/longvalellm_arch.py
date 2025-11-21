@@ -57,84 +57,6 @@ class LongVALELLMMetaForCausalLM(ABC):
     @abstractmethod
     def get_model(self):
         pass
-
-    def _build_sinusoidal_temporal_embedding(self, sequence_length, hidden_size, device, dtype):
-        if sequence_length <= 0:
-            return None
-
-        position = torch.arange(sequence_length, device=device, dtype=torch.float32).unsqueeze(1)
-        div_term = torch.exp(
-            torch.arange(0, hidden_size, 2, device=device, dtype=torch.float32)
-            * (-math.log(10000.0) / max(hidden_size, 1))
-        )
-        embeddings = torch.zeros(sequence_length, hidden_size, device=device, dtype=torch.float32)
-        embeddings[:, 0::2] = torch.sin(position * div_term)
-        embeddings[:, 1::2] = torch.cos(position * div_term)
-
-        if hidden_size % 2 == 1:
-            embeddings[:, -1] = 0.0
-
-        return embeddings.to(dtype=dtype)
-
-    def _apply_temporal_embedding(self, feature):
-        if feature is None or feature.numel() == 0:
-            return feature
-        if feature.dim() < 2:
-            return feature
-
-        sequence_length = feature.shape[-2]
-        hidden_size = feature.shape[-1]
-        positional_emb = self._build_sinusoidal_temporal_embedding(
-            sequence_length, hidden_size, feature.device, feature.dtype
-        )
-        if positional_emb is None:
-            return feature
-
-        if feature.dim() == 2:
-            return feature + positional_emb
-        else:
-            return feature + positional_emb.unsqueeze(0)
-
-    def _build_visual_time_tokens(self, sequence_length, device, dtype):
-        if not hasattr(self, "tokenizer"):
-            return None
-        embedding_layer = self.get_model().get_input_embeddings()
-        step = getattr(self.config, "visual_time_step", 1.0)
-        time_embeds = []
-        for idx in range(sequence_length):
-            time_text = f"{(idx + 1) * step:.1f}"
-            tokenized = self.tokenizer(
-                time_text,
-                return_tensors="pt",
-                add_special_tokens=False,
-            )
-            token_ids = tokenized["input_ids"].to(device)
-            token_embed = embedding_layer(token_ids)
-            token_embed = token_embed.mean(dim=1).squeeze(0)
-            time_embeds.append(token_embed.to(dtype))
-        return torch.stack(time_embeds, dim=0)
-
-    def _append_visual_time_tokens(self, image_feat):
-        if image_feat is None or not getattr(self.config, "add_visual_time_token", False):
-            return image_feat
-        if image_feat.dim() < 2:
-            return image_feat
-
-        seq_len = image_feat.shape[-2]
-        time_embeds = self._build_visual_time_tokens(seq_len, image_feat.device, image_feat.dtype)
-        if time_embeds is None:
-            return image_feat
-
-        if image_feat.dim() == 2:
-            return torch.cat([image_feat, time_embeds], dim=0)
-        else:
-            time_embeds = time_embeds.unsqueeze(0).expand(image_feat.shape[0], -1, -1)
-            return torch.cat([image_feat, time_embeds], dim=-2)
-    
-    def pairwise_cosine_similarity(self, matrix):
-        norm_matrix = matrix / matrix.norm(dim=1, keepdim=True)
-        cosine_similarity = torch.mm(norm_matrix, norm_matrix.t())
-        return cosine_similarity    
     
     def prepare_inputs_labels_for_multimodal(
         self, input_ids, position_ids, attention_mask, past_key_values, labels, images, audio=None, asr=None
@@ -189,16 +111,10 @@ class LongVALELLMMetaForCausalLM(ABC):
                         
             concat_feat = []
             if image_feat is not None:
-                if getattr(self.config, "add_visual_time_token", False):
-                    image_feat = self._append_visual_time_tokens(image_feat)
-                else:
-                    image_feat = self._apply_temporal_embedding(image_feat)
                 concat_feat.append(image_feat) 
             if audio_feat is not None:
-                audio_feat = self._apply_temporal_embedding(audio_feat)
                 concat_feat.append(audio_feat)
             if asr_feat is not None:
-                asr_feat = self._apply_temporal_embedding(asr_feat)
                 concat_feat.append(asr_feat)
 
             concat_feat = torch.cat(concat_feat, dim=-2) # [133,4096] every modality is projected to 4096 channels
