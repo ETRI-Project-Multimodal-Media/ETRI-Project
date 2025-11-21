@@ -51,4 +51,39 @@ data/
 ## How to Run
 ```shell
 bash scripts/run.sh
+
+... 
+
+source /root/anaconda3/etc/profile.d/conda.sh
+conda activate eventtree
+
+# Tree Construct 
+python src/eventtree/tree/tree.py \
+    --data_path $DATA_PATH \
+    --video_feat_folder $TREE_V_FEAT \
+    --audio_feat_folder $TREE_A_FEAT \
+    --speech_feat_folder $TREE_S_FEAT \
+    --save_path $SAVE_PATH
+
+# LongVALE - Leaf Node Captioning
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
+    --tree_path $SAVE_PATH \
+    --prompt_path $PROMPT_PATH \
+    --save_path $SAVE_PATH \
+    --video_feat_folder $MODEL_V_FEAT \
+    --audio_feat_folder $MODEL_A_FEAT \
+    --asr_feat_folder $MODEL_S_FEAT \
+    --model_base $MODEL_BASE \
+    --stage2 $MODEL_STAGE2 \
+    --stage3 $MODEL_STAGE3 \
+    --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
+    --similarity_threshold 0.9
+
+# LLaMA3 - Internal Node Captioning
+conda activate eventtree2
+
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
+    --tree_path $SAVE_PATH \
+    --prompt_path $PROMPT_PATH \
+    --save_path $SAVE_PATH \
 ```
