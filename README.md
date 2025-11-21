@@ -22,6 +22,15 @@ pip install transformers==4.40.0
 ```
 
 ## Data Setup
+```shell
+# Tree Features Extraction 
+bash scripts/features_tree.sh
+
+# LongVALE Features Extraction 
+# https://github.com/ttgeng233/LongVALE
+bash scripts/features_longvale.sh
+```
+
 ```
 data/
 ├── annotation.json
@@ -40,15 +49,6 @@ data/
 ```
 
 ## How to Run
-```shell
-# Tree Features Extraction 
-bash scripts/features_tree.sh
-
-# LongVALE Features Extraction 
-# https://github.com/ttgeng233/LongVALE
-bash scripts/features_longvale.sh
-```
-
 ```shell
 bash scripts/run.sh
 ```
