@@ -1,4 +1,4 @@
-# ETRI-Project
+# ETRI Project
 
 멀티모달 AI 기반 미디어 핵심 정보 분석 및 요약 기술
 
