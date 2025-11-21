@@ -27,6 +27,8 @@ share/python-wheels/
 *.egg
 MANIFEST
 data/
+data_backup/
+logs/
 checkpoints/
 
 # PyInstaller
@@ -220,3 +222,6 @@ __marimo__/
 
 .checkpoints/
 .data/wandb/
+eval_logs/
+wandb/
+eval_logs/

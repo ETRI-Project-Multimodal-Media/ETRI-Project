@@ -1,0 +1,1278 @@
+{
+  "video_id": "w2nmzwknVco",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 81.76,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 61.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 21.5,
+            "children": [
+              {
+                "start_time": 0.0,
+                "level": 3,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "A female athlete, dressed in a vibrant red and white uniform, stands poised on the field, her gaze fixed on the javelin she holds, as the crowd cheers and a man announces the start of the women's javelin throw event.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "A female athlete, dressed in a vibrant red and white uniform, stands poised on the field, her gaze fixed on the javelin she holds, as the crowd cheers and a man announces the start of the women's javelin throw event.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_0_3.5",
+                    "tags": [
+                      "women_s_javelin_throw",
+                      "athletics",
+                      "competition",
+                      "event",
+                      "sports"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "javelin",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "female_athlete",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "female_athlete",
+                        "ref_object": "O002",
+                        "role": "competitor",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "announcer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_0_3.5",
+                      "name": "women's javelin throw event",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The female athlete prepares to throw the javelin as the announcer starts the event.",
+                      "summary": "The women's javelin throw event begins with the female athlete poised to throw.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "A female athlete, dressed in a vibrant red and white uniform, stands poised on the field, her gaze fixed on the javelin she holds, as the crowd cheers and a man stands poised on the field, her gaze fixed on the javelin she holds, as the crowd cheers and a man announces the start of the women's javelin throw event.",
+                        "audio": "Crowd cheers; announcer",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "end_time": 21.5,
+                "children": [],
+                "caption": "The female athlete, dressed in a vibrant red and blue uniform, stands poised on the track, her gaze fixed on the finish line as the crowd cheers her on."
+              }
+            ],
+            "caption": "The female athlete is ready to compete in the women's javelin throw event, with her gaze fixed on the javelin she holds, as the crowd cheers and a man announces the start of the women's javelin throw event.",
+            "summary": "A female athlete stands poised on the field, her gaze fixed on the javelin, as the crowd cheers and the event begins."
+          },
+          {
+            "level": 2,
+            "start_time": 21.5,
+            "end_time": 33.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 21.5,
+                "end_time": 25.5,
+                "children": [],
+                "caption": "The female athlete, wearing a red and blue uniform, stands poised on the track, her gaze fixed on the finish line as the crowd cheers her on.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The female athlete, wearing a red and blue uniform, stands poised on the track, her gaze fixed on the finish line as the crowd cheers her on.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_21.5_25.5",
+                    "tags": [
+                      "athletics",
+                      "track_and_field",
+                      "female_athlete",
+                      "competition",
+                      "crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Female Athlete",
+                        "attributes": {
+                          "uniform": "red and blue"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Female Athlete",
+                        "ref_object": "O001",
+                        "role": "competitor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_21.5_25.5",
+                      "name": "Female Athlete Competing",
+                      "time": {
+                        "start": "21.5",
+                        "end": "25.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The female athlete stands poised on the track, her gaze fixed on the finish line as the crowd cheers her on.",
+                      "summary": "The female athlete competes in a track and field event.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The female athlete, wearing a red and blue uniform, stands poised on the track, her gaze fixed on the finish line as the crowd cheers her on.",
+                        "audio": "crowd cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 25.5,
+                "end_time": 28.5,
+                "children": [],
+                "caption": "In the stadium, a female athlete in a red and white uniform stands poised, her gaze fixed on the track ahead as she prepares to run.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "In the stadium, a female athlete in a red and white uniform stands poised, her gaze fixed on the track ahead as she prepares to run.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_25.5_28.5",
+                    "tags": [
+                      "athletics",
+                      "stadium",
+                      "female_athlete",
+                      "running"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "female_athlete",
+                        "attributes": {
+                          "uniform": "red_and_white"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "female_athlete",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_25.5_28.5",
+                      "name": "female_athlete_preparing_to_run",
+                      "time": {
+                        "start": "25.5",
+                        "end": "28.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports"
+                      ],
+                      "scene_topic": "A female athlete prepares to run in a stadium.",
+                      "summary": "A female athlete prepares to run in a stadium.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "In the stadium, a female athlete in a red and white uniform stands poised, her gaze fixed on the track ahead as she prepares to run.",
+                        "audio": "",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 28.5,
+                "end_time": 33.5,
+                "children": [],
+                "caption": "In a stadium filled with spectators, a female athlete in a red and white uniform prepares to throw a javelin, her focus evident as she takes a step forward and releases the javelin into the air.",
+                "postprocess": {
+                  "event_id": 3,
+                  "original_answer": "In a stadium filled with spectators, a female athlete in a red and white uniform prepares to throw a javelin, her focus evident as she takes a step forward and releases the javelin into the air.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_28.5_33.5",
+                    "tags": [
+                      "athletics",
+                      "javelin_throw",
+                      "female_athlete",
+                      "stadium"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "javelin",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "female_athlete",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stadium",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "female_athlete",
+                        "ref_object": "O002",
+                        "role": "thrower",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_28.5_33.5",
+                      "name": "javelin_throw",
+                      "time": {
+                        "start": "28.5",
+                        "end": "33.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports"
+                      ],
+                      "scene_topic": "A female athlete throws a javelin in a stadium.",
+                      "summary": "A female athlete prepares and throws a javelin in a stadium.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "In a stadium filled with spectators, a female athlete in a red and white uniform prepares to throw a javelin, her focus evident as she takes a step forward and releases the javelin into the air.",
+                        "audio": "",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The female athlete, wearing a red and white uniform, stands poised on the track, preparing to run as the crowd cheers her, and finally releases a javelin into the air.",
+            "summary": "Female athletes in red and white uniforms prepare to compete in a stadium, one poised to run and the other to throw a javelin, their focus evident as they take their positions."
+          },
+          {
+            "level": 2,
+            "start_time": 33.5,
+            "end_time": 42.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 33.5,
+                "end_time": 39.5,
+                "children": [],
+                "caption": "As the crowd cheers, the woman in the red and white uniform, number 12 visible on her chest, sprints down the track, her determined stride carrying her towards the finish line.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "As the crowd cheers, the woman in the red and white uniform, number 12 visible on her chest, sprints down the track, her determined stride carrying her towards the finish line.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_33.5_39.5",
+                    "tags": [
+                      "track",
+                      "finish_line",
+                      "sprint",
+                      "determined",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "uniform": "red and white",
+                          "number": "12"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "athlete",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_33.5_39.5",
+                      "name": "woman sprints towards finish line",
+                      "time": {
+                        "start": "33.5",
+                        "end": "39.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The woman sprints towards the finish line.",
+                      "summary": "The woman sprints towards the finish line.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "As the crowd cheers, the woman in the red and white uniform, number 12 visible on her chest, sprints down the track, her determined stride carrying her towards the finish line.",
+                        "audio": "cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 39.5,
+                "end_time": 42.5,
+                "children": [],
+                "caption": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_39.5_42.5",
+                    "tags": [
+                      "sports",
+                      "track_and_field",
+                      "female_athlete"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Female Athlete",
+                        "attributes": {
+                          "uniform_color": "red and white"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Female Athlete",
+                        "ref_object": "O001",
+                        "role": "Participant",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_39.5_42.5",
+                      "name": "Female Athlete Sprinting",
+                      "time": {
+                        "start": "39.5",
+                        "end": "42.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The crowd erupts in cheers as a female athlete sprints down the track.",
+                      "summary": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                        "audio": "cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The woman in the red and white uniform, number 12, sprints down the track with determination, leading to a triumphant finish as the crowd cheers.",
+            "summary": "A female athlete, wearing a red and white uniform, sprints down the track with determination and focus, carrying her towards the finish line as the crowd cheers. The crowd erupts in cheers as she approaches the finish line, reflecting the intensity of the race."
+          },
+          {
+            "level": 2,
+            "start_time": 42.5,
+            "end_time": 53.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 42.5,
+                "end_time": 46.5,
+                "children": [],
+                "caption": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_42.5_46.5",
+                    "tags": [
+                      "sports",
+                      "track_and_field",
+                      "female_athlete",
+                      "determination",
+                      "intensity"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Female Athlete",
+                        "attributes": {
+                          "uniform_color": "red and white"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Female Athlete",
+                        "ref_object": "O001",
+                        "role": "Participant",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_42.5_46.5",
+                      "name": "Female Athlete Sprinting Down the Track",
+                      "time": {
+                        "start": "42.5",
+                        "end": "46.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The crowd erupts in cheers as a female athlete sprints down the track.",
+                      "summary": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The crowd erupts in cheers as a female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused expression reflecting the intensity of the race.",
+                        "audio": "cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 46.5,
+                "end_time": 48.5,
+                "children": [],
+                "caption": "As the crowd cheers, the woman in the red and white uniform, number 12 visible on her chest, raises her arms in triumph, her face beaming with joy as she crosses the finish line.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "As the crowd cheers, the woman in the red and white uniform, number 12 visible on her chest, raises her arms in triumph, her face beaming with joy as she crosses the finish line.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_46.5_48.5",
+                    "tags": [
+                      "sports",
+                      "finish_line",
+                      "cheering_crowd",
+                      "triumph",
+                      "joy"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "uniform": "red and white",
+                          "number": "12",
+                          "chest": "visible"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "finisher",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_46.5_48.5",
+                      "name": "Finish Line Celebration",
+                      "time": {
+                        "start": "46.5",
+                        "end": "48.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "A woman crosses the finish line, beaming with joy, as the crowd cheers.",
+                      "summary": "A woman crosses the finish line, beaming with joy, as the crowd cheers.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "As the crowd cheers, the woman in the red and white uniform, number 12 visible on her chest, raises her arms in triumph, her face beaming with joy as she crosses the finish line.",
+                        "audio": "cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 48.5,
+                "end_time": 53.5,
+                "children": [],
+                "caption": "As the crowd cheers, the woman in the red and white uniform, number 12 visible on her chest, sprints down the track, her determined stride carrying her towards the finish line.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "As the crowd cheers, the woman in the red and white uniform, number 12 visible on her chest, sprints down the track, her determined stride carrying her towards the finish line.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_48.5_53.5",
+                    "tags": [
+                      "track",
+                      "finish_line",
+                      "sprinting",
+                      "determined",
+                      "woman"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Woman",
+                        "attributes": {
+                          "uniform": "red and white",
+                          "number": "12"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "Athlete",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_48.5_53.5",
+                      "name": "Woman sprints towards the finish line",
+                      "time": {
+                        "start": "48.5",
+                        "end": "53.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The woman sprints towards the finish line.",
+                      "summary": "The woman sprints towards the finish line.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "As the crowd cheers, the woman in the red and white uniform, number 12 visible on her chest, sprints down the track, her determined stride carrying her towards the finish line.",
+                        "audio": "cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The female athlete, wearing a red and white uniform, races down the track with determination and focus, leading to a triumphant finish as she raises her arms in victory and crosses the finish line.",
+            "summary": "A female athlete, wearing a red and white uniform with number 12 on her chest, sprints down the track with determination and focus, crossing the finish line with a triumphant expression. As she raises her arms in victory, the crowd erupts in cheers, celebrating her achievement."
+          },
+          {
+            "level": 2,
+            "start_time": 53.5,
+            "end_time": 61.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 53.5,
+                "end_time": 56.5,
+                "children": [],
+                "caption": "The female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused gaze evident as she approaches the finish line.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused gaze evident as she approaches the finish line.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_53.5_56.5",
+                    "tags": [
+                      "athletics",
+                      "track",
+                      "sprint",
+                      "female",
+                      "determined"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "track",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "finish_line",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "female_athlete",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "female_athlete",
+                        "ref_object": "O003",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_53.5_56.5",
+                      "name": "sprint",
+                      "time": {
+                        "start": "53.5",
+                        "end": "56.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The female athlete sprints down the track, approaching the finish line.",
+                      "summary": "The female athlete sprints down the track, approaching the finish line.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The female athlete, wearing a red and white uniform, sprints down the track, her determined stride and focused gaze evident as she approaches the finish line.",
+                        "audio": "",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 56.5,
+                "end_time": 61.5,
+                "children": [],
+                "caption": "The female athlete, wearing a red and white uniform, runs with determination down the track, her long hair flowing behind her as she approaches the finish line, where a crowd eagerly awaits her time.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The female athlete, wearing a red and white uniform, runs with determination down the track, her long hair flowing behind her as she approaches the finish line, where a crowd eagerly awaits her time.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_56.5_61.5",
+                    "tags": [
+                      "track",
+                      "athlete",
+                      "finish_line",
+                      "crowd",
+                      "determination"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Female Athlete",
+                        "attributes": {
+                          "uniform": "red and white",
+                          "hair": "long"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Female Athlete",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_56.5_61.5",
+                      "name": "Female Athlete Running",
+                      "time": {
+                        "start": "56.5",
+                        "end": "61.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The female athlete runs down the track, approaching the finish line.",
+                      "summary": "The female athlete runs down the track, approaching the finish line.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The female athlete, wearing a red and white uniform, runs with determination down the track, her long hair flowing behind her as she approaches the finish line, where a crowd eagerly awaits her time.",
+                        "audio": "",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The female athlete sprints down the track with determination and focus, approaching the finish line where a cheering crowd awaits her time.",
+            "summary": "A female athlete, dressed in a red and white uniform, sprints down the track with determination and focus, her long hair flowing behind her as she approaches the finish line."
+          }
+        ],
+        "caption": "The female athlete prepares for and competes in various track and field events, including the women's javelin throw and a track race. She stands poised for the javelin throw as the crowd cheer and a man announces the event, then prepares to run, throws the javelin, and sprints down the track to a triumphant finish.",
+        "summary": "Female athletes in red and white uniforms compete in a track and field event, showcasing their determination and focus as they sprint down the track and throw javelins. One athlete in particular crosses the finish line with a triumphant expression, raising her arms in victory as the crowd erupts in cheers."
+      },
+      {
+        "level": 1,
+        "start_time": 61.5,
+        "end_time": 81.76,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 61.5,
+            "end_time": 67.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 61.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "The female athlete, wearing a red and white uniform, sprints down the track, her determined expression and focused gaze conveying her determination as she approaches the finish line.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The female athlete, wearing a red and white uniform, sprints down the track, her determined expression and focused gaze conveying her determination as she approaches the finish line.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_61.5_63.5",
+                    "tags": [
+                      "athletics",
+                      "track",
+                      "sprint",
+                      "determination",
+                      "finish_line"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Female Athlete",
+                        "attributes": {
+                          "uniform": "red and white"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Female Athlete",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_61.5_63.5",
+                      "name": "Female Athlete Sprinting",
+                      "time": {
+                        "start": "61.5",
+                        "end": "63.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The female athlete sprints down the track, determined to reach the finish line.",
+                      "summary": "The female athlete sprints down the track, her determination evident as she approaches the finish line.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The female athlete, wearing a red and white uniform, sprints down the track, her determined expression and focused gaze conveying her determination as she approaches the finish line.",
+                        "audio": "",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 65.5,
+                "children": [],
+                "caption": "The female athlete, wearing a red and white uniform, raises her arms in triumph as she crosses the finish line, her face beaming with joy as the crowd cheers her on.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "The female athlete, wearing a red and white uniform, raises her arms in triumph as she crosses the finish line, her face beaming with joy as the crowd cheers her on.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_63.5_65.5",
+                    "tags": [
+                      "female_athlete",
+                      "finish_line",
+                      "triumph",
+                      "joy",
+                      "cheering_crowd"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Female Athlete",
+                        "attributes": {
+                          "uniform": "red and white"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Female Athlete",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_63.5_65.5",
+                      "name": "Crossing the Finish Line",
+                      "time": {
+                        "start": "63.5",
+                        "end": "65.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The female athlete crosses the finish line, beaming with joy, as the crowd cheers her on.",
+                      "summary": "The female athlete crosses the finish line, beaming with joy, as the crowd cheers her on.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The female athlete, wearing a red and white uniform, raises her arms in triumph as she crosses the finish line, her face beaming with joy as she crosses the finish line.",
+                        "audio": "cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 65.5,
+                "end_time": 67.5,
+                "children": [],
+                "caption": "The female athlete, wearing a red and blue uniform, raises her arms in triumph as the crowd cheers, her score of 18.00 displayed on the scoreboard behind her.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "The female athlete, wearing a red and blue uniform, raises her arms in triumph as the crowd cheers, her score of 18.00 displayed on the scoreboard behind her.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_65.5_67.5",
+                    "tags": [
+                      "gymnastics",
+                      "competition",
+                      "athletics",
+                      "score",
+                      "uniform"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "scoreboard",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "athlete",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "female athlete",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_65.5_67.5",
+                      "name": "Gymnastics competition",
+                      "time": {
+                        "start": "65.5",
+                        "end": "67.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports news"
+                      ],
+                      "scene_topic": "The female athlete raises her arms in triumph as the crowd cheers.",
+                      "summary": "The female athlete scores 18.00 in a gymnastics competition.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "The female athlete, wearing a red and blue uniform, raises her arms in triumph as the crowd cheers, her score of 18.00 displayed on the scoreboard behind her.",
+                        "audio": "cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The female athlete, wearing a red and white uniform, wins the race with a score of 18.00, crossing the finish line with a triumphant gesture and a beaming face, as the crowd cheers her on.",
+            "summary": "A female athlete, wearing a red and white uniform, crosses the finish line with a triumphant expression, her face beaming with joy as the crowd cheers her on. She is later joined by another athlete, wearing a red and blue uniform, who also raises her arms in triumph as her score of 18.00 is displayed on the scoreboard."
+          },
+          {
+            "level": 2,
+            "start_time": 67.5,
+            "end_time": 74.5,
+            "children": [],
+            "caption": "The female athlete, wearing a blue and red uniform, stands on the track, her gaze fixed on the scoreboard that displays her personal best of 14.91 seconds, as the crowd cheers her on.",
+            "postprocess": {
+              "event_id": 14,
+              "original_answer": "The female athlete, wearing a blue and red uniform, stands on the track, her gaze fixed on the scoreboard that displays her personal best of 14.91 seconds, as the crowd cheers her on.",
+              "result": {
+                "video_id": "w2nmzwknVco",
+                "event_id": "E_w2nmzwknVco_67.5_74.5",
+                "tags": [
+                  "athlete",
+                  "track",
+                  "scoreboard",
+                  "personal_best",
+                  "crowd"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "scoreboard",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "track",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "female athlete",
+                    "ref_object": "O002",
+                    "role": "performer",
+                    "entity": "athlete"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_w2nmzwknVco_67.5_74.5",
+                  "name": "female athlete on track",
+                  "time": {
+                    "start": "67.5",
+                    "end": "74.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "The female athlete stands on the track, gazing at her personal best on the scoreboard.",
+                  "summary": "The female athlete stands on the track, gazing at her personal best on the scoreboard.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "The female athlete, wearing a blue and red uniform, stands on the track, her gaze fixed on the scoreboard that displays her personal best of 14.91 seconds, as she stands on the track.",
+                    "audio": "crowd cheers",
+                    "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 74.5,
+            "end_time": 81.76,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 74.5,
+                "end_time": 79.5,
+                "children": [],
+                "caption": "As the crowd cheers, the woman in the red and white uniform celebrates her victory, her joyous expression reflecting the excitement of the moment.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "As the crowd cheers, the woman in the red and white uniform celebrates her victory, her joyous expression reflecting the excitement of the moment.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_74.5_79.5",
+                    "tags": [
+                      "celebration",
+                      "victory",
+                      "joy",
+                      "excitement"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "uniform": "red and white"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "celebrant",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_74.5_79.5",
+                      "name": "Celebration of Victory",
+                      "time": {
+                        "start": "74.5",
+                        "end": "79.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "celebration"
+                      ],
+                      "scene_topic": "The woman in the red and white uniform celebrates her victory, her joyous expression reflecting the excitement of the moment.",
+                      "summary": "The woman celebrates her victory with joy and excitement.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "As the crowd cheers, the woman in the red and white uniform celebrates her victory, her joyous expression reflecting the excitement of the moment.",
+                        "audio": "cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 79.5,
+                "end_time": 81.76,
+                "children": [],
+                "caption": "As the crowd cheers, the female athlete, wearing a red and blue uniform, raises her arms in triumph, her face beaming with joy as she crosses the finish line of the javelin throw event.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "As the crowd cheers, the female athlete, wearing a red and blue uniform, raises her arms in triumph, her face beaming with joy as she crosses the finish line of the javelin throw event.",
+                  "result": {
+                    "video_id": "w2nmzwknVco",
+                    "event_id": "E_w2nmzwknVco_79.5_81.76",
+                    "tags": [
+                      "javelin_throw",
+                      "athletics",
+                      "female_athlete",
+                      "triumph",
+                      "finish_line"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "female_athlete",
+                        "attributes": {
+                          "uniform_color": "red_and_blue"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "female_athlete",
+                        "ref_object": "O001",
+                        "role": "competitor",
+                        "entity": "athlete"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_w2nmzwknVco_79.5_81.76",
+                      "name": "javelin_throw_event",
+                      "time": {
+                        "start": "79.5",
+                        "end": "81.76"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "sports"
+                      ],
+                      "scene_topic": "The female athlete crosses the finish line of the javelin throw event, beaming with joy.",
+                      "summary": "The female athlete wins the javelin throw event.",
+                      "implications": "Major sports news event",
+                      "modalities": {
+                        "visual": "As the crowd cheers, the female athlete, wearing a red and blue uniform, raises her arms in triumph, her face beaming with joy as she crosses the finish line of the javelin throw event.",
+                        "audio": "cheers",
+                        "speech": "Steffi Nereus leads the javelin competition with a throw of 65.96, but world record holder Maria Menendez is close behind, throwing a massive 71.70 meters on her first attempt, which also sets a new world record."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The woman in red and white celebrates her victory, and raises her arms in triumph after crossing the finish line in the javelin throw event.",
+            "summary": "A female athlete celebrates her victory in the javelin throw event, her joyous expression and triumphant pose reflecting her excitement as she crosses the finish line."
+          }
+        ],
+        "caption": "The female athlete in red and white and blue stands on the track, gaze fixed on the scoreboard that displays her personal best of 14.91 seconds, as the crowd cheers her and she celebrates her own victory in the javelin throw event.",
+        "summary": "A female athlete crosses the finish line with a triumphant expression, her face beaming with joy as the crowd cheers her on, with her score of 18.00 displayed on the scoreboard. She is later joined by another athlete who also raises her arms in triumph, as the crowd continues to cheer on the athletes."
+      }
+    ],
+    "caption": "The female athlete competes in track and field events, including the women's javelin throw and a track race. She prepares for her events, throwing the javelin, and sprinting down the track to win her race, concluding with her celebrating as her score and personal best are displayed.",
+    "summary": "Female athletes compete in a track and field event, showcasing their determination and focus as they sprint and throw javelins. One athlete crosses the finish line with a triumphant expression, raising her arms in victory as the crowd cheers, with her score of 18.00 displayed on the scoreboard."
+  }
+}

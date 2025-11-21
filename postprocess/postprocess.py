@@ -926,7 +926,7 @@ def _iter_video_payloads(raw_data):
     else:
         raise ValueError("Unsupported input format: expected dict or list.")
 
-# 자식 node의 caption을 재귀 탐색 후 summary
+# 자식 node의 caption을 재귀 탐색 후 summary   # deprecated
 # def _aggregate_child_captions(node):
 #     children = node.get("children") or []
 #     if not children:
