@@ -3,6 +3,7 @@
 멀티모달 AI 기반 미디어 핵심 정보 분석 및 요약 기술
 
 ## Environment Setup
+  LongVALE: https://github.com/ttgeng233/LongVALE
 ```bash
 # Environment 1 for LongVALE
 # 1-1. Tree Construct
@@ -14,6 +15,7 @@ pip install -r requirements.txt
 pip install flash-attn==2.3.6 --no-build-isolation
 ```
 
+  LLaMA3: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 ```bash
 # Environment 2 for LLaMA3
 # 2-1. Internal Node Captioning
@@ -37,7 +39,6 @@ bash scripts/features_tree.sh <TYPE>
 ```shell
 # LongVALE Features Extraction 
 # Type: all, video, audio, speech, speech_asr
-# https://github.com/ttgeng233/LongVALE
 bash scripts/features_longvale.sh <TYPE>
 ```
 
