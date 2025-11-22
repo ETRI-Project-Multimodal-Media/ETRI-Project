@@ -5,7 +5,7 @@
 ## Environment Setup
 ```bash
 # Environment 1 for LongVALE 
-conda create -n eventtree python=3.10
+conda create --name eventtree python=3.10
 conda activate eventtree
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
@@ -14,10 +14,8 @@ pip install flash-attn==2.3.6 --no-build-isolation
 
 ```bash
 # Environment 2 for LLaMA3 
-conda create -n eventtree2 python=3.10
+conda create --name eventtree2 --clone eventtree
 conda activate eventtree2
-pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
-pip install -r requirements.txt
 pip install transformers==4.40.0
 ```
 
