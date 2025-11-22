@@ -22,11 +22,13 @@ pip install transformers==4.40.0
 ## Data Setup
 ```shell
 # Tree Features Extraction 
-bash scripts/features_tree.sh
+# Type: all, video, audio, speech
+bash scripts/features_tree.sh <TYPE>
 
 # LongVALE Features Extraction 
+# Type: all, video, audio, speech, speech_asr
 # https://github.com/ttgeng233/LongVALE
-bash scripts/features_longvale.sh
+bash scripts/features_longvale.sh <TYPE>
 ```
 
 ```
@@ -49,6 +51,7 @@ data/
 
 ## How to Run
 ```shell
+# Main
 bash scripts/run.sh
 ```
 
