@@ -1,0 +1,875 @@
+{
+  "video_id": "sO3wd7X-l7U",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 60.08,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 31.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 14.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 4.5,
+                "children": [],
+                "caption": "The video opens with a close-up shot of a black Ford SUV, showcasing its sleek design and modern features, while a woman's voice narrates the car's specifications.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a close-up shot of a black Ford SUV, showcasing its sleek design and modern features, while a woman's voice narrates the car's specifications.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_0_4.5",
+                    "tags": [
+                      "car",
+                      "ford",
+                      "suv",
+                      "design",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black Ford SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "narrator",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_0_4.5",
+                      "name": "Ford SUV introduction",
+                      "time": {
+                        "start": "0",
+                        "end": "4.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product introduction"
+                      ],
+                      "scene_topic": "The video opens with a close-up shot of a black Ford SUV, showcasing its sleek design and modern features, while a woman's voice narrates the car's specifications.",
+                      "summary": "The video introduces the black Ford SUV, highlighting its design and features.",
+                      "implications": "Major car news event",
+                      "modalities": {
+                        "visual": "The video opens with a close-up shot of a black Ford SUV, showcasing its sleek design and modern features.",
+                        "audio": "woman's voice narrating car's specifications.",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 4.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "The video showcases a sleek black Ford SUV, parked in a dealership lot with its headlights illuminating the surrounding area, while a woman's voice encourages viewers to \"call now\" for more information.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "The video showcases a sleek black Ford SUV, parked in a dealership lot with its headlights illuminating the surrounding area, while a woman's voice encourages viewers to \"call now\" for more information.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_4_9",
+                    "tags": [
+                      "suv",
+                      "car",
+                      "dealership",
+                      "advertising",
+                      "phone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Ford SUV",
+                        "attributes": {
+                          "color": "black",
+                          "type": "suv",
+                          "parked": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman's voice",
+                        "ref_object": "",
+                        "role": "speaker",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_4_9",
+                      "name": "Ford SUV advertisement",
+                      "time": {
+                        "start": "4.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "advertising"
+                      ],
+                      "scene_topic": "The video showcases a sleek black Ford SUV in a dealership lot.",
+                      "summary": "The video is an advertisement for a Ford SUV.",
+                      "implications": "Major advertising event",
+                      "modalities": {
+                        "visual": "The video showcases a sleek black Ford SUV, parked in a dealership lot with its headlights illuminating the surrounding area, while a woman's voice encourages viewers to call now for more information.",
+                        "audio": "",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 14.5,
+                "children": [],
+                "caption": "The video showcases a sleek black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and a spacious interior with comfortable seating.",
+                "postprocess": {
+                  "event_id": 2,
+                  "original_answer": "The video showcases a sleek black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and a spacious interior with comfortable seating.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_9_14",
+                    "tags": [
+                      "suv",
+                      "ford",
+                      "car",
+                      "design",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Ford SUV",
+                        "attributes": {
+                          "color": "black",
+                          "design": "modern",
+                          "features": "panoramic sunroof, spacious interior, comfortable seating"
+                        }
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_9_14",
+                      "name": "Ford SUV showcase",
+                      "time": {
+                        "start": "9.5",
+                        "end": "14.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product demonstration"
+                      ],
+                      "scene_topic": "The video showcases a sleek black Ford SUV, highlighting its modern design and features.",
+                      "summary": "The video showcases a sleek black Ford SUV, highlighting its modern design and features.",
+                      "implications": "Product demonstration and marketing",
+                      "modalities": {
+                        "visual": "The video showcases a sleek black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and a spacious interior with comfortable seating.",
+                        "audio": "",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the features and design of a sleek black Ford SUV, highlighting its modern features and encouraging viewers to call for more information.",
+            "summary": "The video showcases a sleek black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and spacious interior with comfortable seating. The narrator encourages viewers to \"call now\" for more information, while the SUV is parked in a dealership lot with its headlights illuminating the surrounding area."
+          },
+          {
+            "level": 2,
+            "start_time": 14.5,
+            "end_time": 31.5,
+            "children": [],
+            "caption": "The video showcases the interior of a car, highlighting the dashboard, steering wheel, and various controls, while a woman's voice describes the features of the vehicle.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "The video showcases the interior of a car, highlighting the dashboard, steering wheel, and various controls, while a woman's voice describes the features of the vehicle.",
+              "result": {
+                "video_id": "sO3wd7X_l7U",
+                "event_id": "E_sO3wd7X_l7U_14.5_31.5",
+                "tags": [
+                  "car",
+                  "dashboard",
+                  "steering_wheel",
+                  "controls",
+                  "description"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "car",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "dashboard",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "steering_wheel",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "controls",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O001",
+                    "role": "narrator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_sO3wd7X_l7U_14.5_31.5",
+                  "name": "car features description",
+                  "time": {
+                    "start": "14.5",
+                    "end": "31.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "description"
+                  ],
+                  "scene_topic": "The video showcases the interior of a car, highlighting the dashboard, steering wheel, and various controls, while a woman's voice describes the features of the vehicle.",
+                  "summary": "The video describes the features of a car's interior.",
+                  "implications": "Major automotive news event",
+                  "modalities": {
+                    "visual": "The video showcases the interior of a car, highlighting the dashboard, steering wheel, and various controls.",
+                    "audio": "a woman's voice",
+                    "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The video showcases the features and design of a sleek black Ford SUV, highlighting its modern features and encouraging viewers to call for more information. The video also showcases the interior of the car, highlighting the dashboard, steering wheel, and various controls, while a woman's voice describes the features of the vehicle.",
+        "summary": "The video showcases a sleek black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and spacious interior with comfortable seating. The narrator encourages viewers to \"call now\" for more information, while the video also takes a closer look at the interior's dashboard, steering wheel, and controls."
+      },
+      {
+        "level": 1,
+        "start_time": 31.5,
+        "end_time": 60.08,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 31.5,
+            "end_time": 43.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 31.5,
+                "end_time": 36.5,
+                "children": [],
+                "caption": "The video showcases the interior of a car, focusing on the dashboard and steering wheel, while a woman's voice continues to describe the vehicle's features.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "The video showcases the interior of a car, focusing on the dashboard and steering wheel, while a woman's voice continues to describe the vehicle's features.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_31_36",
+                    "tags": [
+                      "car",
+                      "dashboard",
+                      "steering_wheel",
+                      "voice_description"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice_description",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_31_36",
+                      "name": "car interior description",
+                      "time": {
+                        "start": "31.5",
+                        "end": "36.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "vehicle description"
+                      ],
+                      "scene_topic": "The video showcases the interior of a car, focusing on the dashboard and steering wheel, while a woman's voice continues to describe the vehicle's features.",
+                      "summary": "The video describes the interior of a car.",
+                      "implications": "Major vehicle description event",
+                      "modalities": {
+                        "visual": "The video showcases the interior of a car, focusing on the dashboard and steering wheel.",
+                        "audio": "a woman's voice",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 36.5,
+                "end_time": 41.5,
+                "children": [],
+                "caption": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features, while a woman's voice continues to describe the car's specifications.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features, while a woman's voice continues to describe the car's specifications.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_3650415",
+                    "tags": [
+                      "car",
+                      "ford",
+                      "suv",
+                      "design",
+                      "features"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Ford SUV",
+                        "attributes": {
+                          "make": "Ford",
+                          "model": "SUV",
+                          "color": "black"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_3650415",
+                      "name": "Ford SUV Presentation",
+                      "time": {
+                        "start": "36.5",
+                        "end": "41.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product presentation"
+                      ],
+                      "scene_topic": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features, while a woman's voice continues to describe the car's specifications.",
+                      "summary": "The video presents a Ford SUV, highlighting its design and features.",
+                      "implications": "Major product presentation event",
+                      "modalities": {
+                        "visual": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features.",
+                        "audio": "woman's voice",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system. With low mileage and a smooth ride, it's a great option for those looking for a reliable and comfortable ride."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 41.5,
+                "end_time": 43.5,
+                "children": [],
+                "caption": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and a spacious interior with comfortable seating.",
+                "postprocess": {
+                  "event_id": 6,
+                  "original_answer": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and a spacious interior with comfortable seating.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_41.5_43.5",
+                    "tags": [
+                      "design",
+                      "features",
+                      "suv",
+                      "ford",
+                      "interior",
+                      "seating"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Ford SUV",
+                        "attributes": {
+                          "color": "black",
+                          "design": "modern",
+                          "features": "panoramic sunroof, spacious interior"
+                        }
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_41.5_43.5",
+                      "name": "Ford SUV showcase",
+                      "time": {
+                        "start": "41.5",
+                        "end": "43.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product demonstration"
+                      ],
+                      "scene_topic": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features.",
+                      "summary": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and a spacious interior with comfortable seating.",
+                        "audio": "",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and spacious interior with comfortable seating. The woman's voice continues to describe the car's specifications, emphasizing its luxurious features.",
+            "summary": "The video showcases a sleek, black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and spacious interior with comfortable seating. A woman's voice continues to describe the car's specifications throughout the video."
+          },
+          {
+            "level": 2,
+            "start_time": 43.5,
+            "end_time": 52.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 43.5,
+                "end_time": 47.5,
+                "children": [],
+                "caption": "The video showcases a sleek, black Ford SUV, highlighting its exterior design and features, while a woman's voice continues to describe the car's specifications.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "The video showcases a sleek, black Ford SUV, highlighting its exterior design and features, while a woman's voice continues to describe the car's specifications.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_43_47",
+                    "tags": [
+                      "car",
+                      "ford",
+                      "suv",
+                      "exterior",
+                      "design"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Ford SUV",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "Narrator",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_43_47",
+                      "name": "Ford SUV Exterior Design",
+                      "time": {
+                        "start": "43.5",
+                        "end": "47.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product review"
+                      ],
+                      "scene_topic": "The video showcases a sleek, black Ford SUV, highlighting its exterior design and features, while a woman's voice continues to describe the car's specifications.",
+                      "summary": "The video showcases a sleek, black Ford SUV, highlighting its exterior design and features.",
+                      "implications": "Major product review event",
+                      "modalities": {
+                        "visual": "The video showcases a sleek, black Ford SUV, highlighting its exterior design and features.",
+                        "audio": "a woman's voice",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system. With low mileage and a smooth ride, it's a great option for those looking for a reliable and comfortable ride."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 47.5,
+                "end_time": 50.5,
+                "children": [],
+                "caption": "The video transitions from the exterior of the Ford SUV to the interior, showcasing the sleek black dashboard and modern design of the car's interior.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "The video transitions from the exterior of the Ford SUV to the interior, showcasing the sleek black dashboard and modern design of the car's interior.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_4750_505",
+                    "tags": [
+                      "car",
+                      "ford",
+                      "suv",
+                      "dashboard",
+                      "design"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Ford SUV",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "black dashboard",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O001",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_4750_505",
+                      "name": "",
+                      "time": {
+                        "start": "47.5",
+                        "end": "50.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "automotive news"
+                      ],
+                      "scene_topic": "The video transitions from the exterior of the Ford SUV to the interior, showcasing the sleek black dashboard and modern design of the car's interior.",
+                      "summary": "The video transitions from the exterior to the interior of a Ford SUV, showcasing the dashboard and design.",
+                      "implications": "Major automotive news event",
+                      "modalities": {
+                        "visual": "The video transitions from the exterior of the Ford SUV to the interior, showcasing the sleek black dashboard and modern design of the car's interior.",
+                        "audio": "",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 50.5,
+                "end_time": 52.5,
+                "children": [],
+                "caption": "The camera pans across the sleek, black SUV, showcasing its modern design and shiny interior, while a woman's voice continues to describe its features.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The camera pans across the sleek, black SUV, showcasing its modern design and shiny interior, while a woman's voice continues to describe its features.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_50.5_52.5",
+                    "tags": [
+                      "design",
+                      "suv",
+                      "features",
+                      "description"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "SUV",
+                        "attributes": {
+                          "color": "black",
+                          "design": "modern",
+                          "interior": "shiny"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_50.5_52.5",
+                      "name": "SUV showcase",
+                      "time": {
+                        "start": "50.5",
+                        "end": "52.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product demonstration"
+                      ],
+                      "scene_topic": "The camera pans across the sleek, black SUV, showcasing its modern design and shiny interior, while a woman's voice continues to describe its features.",
+                      "summary": "The camera showcases the features of a sleek, black SUV.",
+                      "implications": "Major product demonstration event",
+                      "modalities": {
+                        "visual": "The camera pans across the sleek, black SUV, showcasing its modern design and shiny interior.",
+                        "audio": "woman's voice",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the sleek and modern design of a Ford SUV, highlighting its exterior and interior features through a voiceover.",
+            "summary": "The video showcases the sleek black Ford SUV's exterior and interior design, highlighting its modern features and specifications. The camera pans across the car's interior and exterior, providing a comprehensive look at its design and features."
+          },
+          {
+            "level": 2,
+            "start_time": 52.5,
+            "end_time": 60.08,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 52.5,
+                "end_time": 55.5,
+                "children": [],
+                "caption": "The video transitions from the car's interior to a close-up of its exterior, showcasing its sleek design and shiny finish as a woman's voice continues to describe its features.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The video transitions from the car's interior to a close-up of its exterior, showcasing its sleek design and shiny finish as a woman's voice continues to describe its features.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_52.5_55.5",
+                    "tags": [
+                      "car",
+                      "design",
+                      "exterior",
+                      "interior",
+                      "sleek",
+                      "shiny"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_52.5_55.5",
+                      "name": "car exterior showcase",
+                      "time": {
+                        "start": "52.5",
+                        "end": "55.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "product presentation"
+                      ],
+                      "scene_topic": "The video transitions from the car's interior to a close-up of its exterior, showcasing its sleek design and shiny finish as a woman's voice continues to describe its features.",
+                      "summary": "The video showcases the car's exterior design and features.",
+                      "implications": "Major product presentation event",
+                      "modalities": {
+                        "visual": "The video transitions from the car's interior to a close-up of its exterior, showcasing its sleek design and shiny finish as a woman's voice continues to describe its features.",
+                        "audio": "",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 55.5,
+                "end_time": 60.08,
+                "children": [],
+                "caption": "The video transitions from the car showroom to a black screen displaying the Ford Olathe phone number and address, while a woman's voice continues to describe the car's features.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "The video transitions from the car showroom to a black screen displaying the Ford Olathe phone number and address, while a woman's voice continues to describe the car's features.",
+                  "result": {
+                    "video_id": "sO3wd7X_l7U",
+                    "event_id": "E_sO3wd7X_l7U_55.5_60.08",
+                    "tags": [
+                      "car",
+                      "showroom",
+                      "phone_number",
+                      "address"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "car",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "black_screen",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_sO3wd7X_l7U_55.5_60.08",
+                      "name": "Ford Olathe phone number and address display",
+                      "time": {
+                        "start": "55.5",
+                        "end": "60.08"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "non-violent scene"
+                      ],
+                      "scene_topic": "The video transitions from the car showroom to a black screen displaying the Ford Olathe phone number and address, while a woman's voice continues to describe the car's features.",
+                      "summary": "The video transitions from the car showroom to a black screen displaying the Ford Olathe phone number and address.",
+                      "implications": "Major marketing event",
+                      "modalities": {
+                        "visual": "The video transitions from the car showroom to a black screen displaying the Ford Olathe phone number and address, while a woman's voice continues to describe the car's features.",
+                        "audio": "woman's voice",
+                        "speech": "This 2018 Ford Explorer XLT is a stylish and feature-packed vehicle, equipped with four-wheel drive, power seats, parking assist, and a premium audio system."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The video showcases the sleek design and features of a Ford car, with a focus on its exterior and interior. The video then transitions to a black screen with the Ford Olathe phone number and address, highlighting the car's features and where to purchase it.",
+            "summary": "The video showcases the sleek design and features of a car, with a woman's voiceover describing its details. The video then transitions to a black screen displaying the Ford Olathe phone number and address, continuing the voiceover."
+          }
+        ],
+        "caption": "The video showcases the sleek and modern design of a Ford SUV, highlighting its luxurious features and specifications through a voiceover. The video then transitions to a black screen with the Ford Olathe phone number and address, providing information on where to purchase the car.",
+        "summary": "The video showcases a sleek black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and spacious interior with comfortable seating. The camera pans across the car's interior and exterior, providing a comprehensive look at its design and features, with a woman's voiceover describing its details."
+      }
+    ],
+    "caption": "The video showcases the features and design of a sleek black Ford SUV, highlighting its modern features and encouraging viewers to call for more information. The video also provides information on where to purchase the car.",
+    "summary": "The video showcases a sleek black Ford SUV, highlighting its modern design and features, including a panoramic sunroof and spacious interior with comfortable seating. The camera takes a closer look at the interior's dashboard, steering wheel, and controls, with a woman's voiceover describing its details."
+  }
+}
