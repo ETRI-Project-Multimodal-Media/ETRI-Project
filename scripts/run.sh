@@ -21,7 +21,7 @@ MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin
 
 GPU_ID=0
 
-source /root/anaconda3/etc/profile.d/conda.sh
+source ~/anaconda3/etc/profile.d/conda.sh
 conda activate eventtree
 
 python src/eventtree/tree/tree.py \
