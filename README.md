@@ -4,7 +4,9 @@
 
 ## Environment Setup
 ```bash
-# Environment 1 for LongVALE 
+# Environment 1 for LongVALE
+# 1-1. Tree Construct
+# 1-2. Leaf Node Captioning  
 conda create --name eventtree python=3.10
 conda activate eventtree
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
@@ -13,25 +15,17 @@ pip install flash-attn==2.3.6 --no-build-isolation
 ```
 
 ```bash
-# Environment 2 for LLaMA3 
-conda create --name eventtree2 --clone eventtree
-conda activate eventtree2
-pip install transformers==4.40.0
-```
-
-```bash
-# Environment 3 for Postprocess 
-conda create --name postprocess
-conda activate postprocess
+# Environment 2 for LLaMA3
+# 2-1. Internal Node Captioning
+# 2-2. Structured Data Postprocessing
+conda create --name eventtree-post python=3.10
+conda activate eventtree-post
+pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+pip install cuda-toolkit==12.8.1
 pip install transformers accelerate peft
 pip install decord
 pip install jsonschema
-pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
-pip install cuda-toolkit==12.8.1
 ```
-
-
-
 
 ## Data Setup
 ```shell
@@ -121,17 +115,15 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
     --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
     --similarity_threshold 0.9
 
-# LLaMA3 - Internal Node Captioning
-conda activate eventtree2
+conda activate eventtree-post
 
+# LLaMA3 - Internal Node Captioning
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
     --tree_path $SAVE_PATH \
     --prompt_path $PROMPT_PATH \
     --save_path $SAVE_PATH \
 
-# LLaMA3 - Postprocess
-conda activate postprocess
-
+# LLaMA3 - Postprocessing
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
   --input "$SAVE_PATH" \
   --output-dir "$POST_OUTPUT_DIR" \
