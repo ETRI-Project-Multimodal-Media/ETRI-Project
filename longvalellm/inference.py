@@ -26,17 +26,17 @@ import clip
 
 def inference(model, image, audio, asr, query, tokenizer):
     conv = conv_templates["v1"].copy()
-    conv.append_message(conv.roles[0], query) # add User prompt
-    conv.append_message(conv.roles[1], None) # add ASSISTANT prompt
-    prompt = conv.get_prompt() # get prompt from Conversation object
-    input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()# change image prompt to token number (image token index = -200 , BOS token )
-    ## input_ids.shape [1,88]
-    
-    stop_str = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2 # Define stop_str by conv instacne ex) conv.sep = ' ' , conv.sep2= </s>  
-    keywords = [stop_str]
-    stopping_criteria = KeywordsStoppingCriteria(keywords, tokenizer, input_ids) # custom end class for generate(huggingface), model stops generation when meets stop_str
 
-    with torch.inference_mode(): # num_beams : not beam search, sampling or greedy # max_new_token : num of max generation token # use_cache: use cache for faster decoding
+    conv.append_message(conv.roles[0], query)
+    conv.append_message(conv.roles[1], None)
+    prompt = conv.get_prompt()
+    input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
+
+    stop_str = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2
+    keywords = [stop_str]
+    stopping_criteria = KeywordsStoppingCriteria(keywords, tokenizer, input_ids)
+
+    with torch.inference_mode():
         output_ids = model.generate(
             input_ids,
             images=image[None,].cuda(),
@@ -48,31 +48,21 @@ def inference(model, image, audio, asr, query, tokenizer):
             # no_repeat_ngram_size=3,
             max_new_tokens=1024,
             use_cache=True)
-        # max_new_tokens : max generation token except prompt
+
         # https://github.com/huggingface/transformers/blob/main/src/transformers/generation/utils.py#L1295
 
-    input_token_len = input_ids.shape[1] 
+    input_token_len = input_ids.shape[1]
     n_diff_input_output = (input_ids != output_ids[:, :input_token_len]).sum().item()
     if n_diff_input_output > 0:
-        print(f'[Warning] {n_diff_input_output} output_ids are not the same as the input_ids') # check if output ids isn't same as input ids (ex. different num of token)
-    outputs = tokenizer.batch_decode(output_ids[:, input_token_len:], skip_special_tokens=True)[0] # change generated tokens to text
+        print(f'[Warning] {n_diff_input_output} output_ids are not the same as the input_ids')
+    outputs = tokenizer.batch_decode(output_ids[:, input_token_len:], skip_special_tokens=True)[0]
     outputs = outputs.strip()
-    if outputs.endswith(stop_str): # remove stop_str
-        outputs = outputs[:-len(stop_str)] 
+    if outputs.endswith(stop_str):
+        outputs = outputs[:-len(stop_str)]
     outputs = outputs.strip()
     return outputs
 
-def write_log(log_path, video_id, task, query_id, answer, info=None):
-    log = {
-        'video_id': video_id,
-        'task': task,
-        'query_id': query_id,
-        'answer': answer
-    }
-    if info is not None:
-        log['info'] = info
-    with open(log_path, 'a') as f:
-        f.write(json.dumps(log) + '\n')
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Demo")
@@ -82,8 +72,6 @@ def parse_args():
     parser.add_argument("--stage2", type=str, default="checkpoints/longvale-vicuna-v1-5-7b-bp")
     parser.add_argument("--stage3", type=str, default="checkpoints/longvale-vicuna-v1-5-7b-it")
     parser.add_argument("--video_path", type=str, default="images/demo.mp4")
-    parser.add_argument("--log_path", type=str, default='longvalellm/eval/log/example_log.txt')
-
     args = parser.parse_args()
 
     return args
@@ -116,10 +104,8 @@ if __name__ == "__main__":
         features = clip_model.encode_image(images.to('cuda'))
 
     query = "describe the video."
-    # query = ['Could you please detail the events that took place during different time segments in the video? List the events in the json format including start_time, end_time, visual, audio, speech information, actors \n  ...']
     print("query: ", query)
     print("answer: ", inference(model, features, "<video>\n " + query, tokenizer))
-    # write_log(args.log_path, id, 'captioning', args.video_path)
-    
+
 
 

@@ -5,8 +5,6 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, BitsAn
 import torch
 from longvalellm.model import *
 from peft import PeftModel
-# override dycoke ver. longvale llm
-from longvalellm.model import longvalellm_llama_dycoke, longvalellm_arch_dycoke  
 
 def load_lora(model, lora_path):
     non_lora_trainables_path = os.path.join(lora_path, 'non_lora_trainables.bin')
@@ -21,7 +19,8 @@ def load_lora(model, lora_path):
     return model
 
 def load_pretrained_model(args, stage2=None, stage3=None):
-    kwargs = {'torch_dtype': torch.float16} # weights_only=False for pytorch ver issue. 
+
+    kwargs = {'torch_dtype': torch.float16}
 
     # model_path = os.path.expanduser(args.model_path)
     model_base = args.model_base

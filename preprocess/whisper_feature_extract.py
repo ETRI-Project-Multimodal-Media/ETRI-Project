@@ -52,8 +52,6 @@ def create_data_loader(annotation, video_dir, model, batch_size=1, num_workers=4
     data_loader = DataLoader(dataset, batch_size=batch_size, num_workers=num_workers, shuffle=False, collate_fn=collate_fn)
     return data_loader
 
-# 1.extract spectogram (from transformers import WhisperFeatureExtractor)
-# 2.feature extraction(whisper-large-v2)
 if __name__ =='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotation", type=str, default='./data/longvale-annotations-eval.json')

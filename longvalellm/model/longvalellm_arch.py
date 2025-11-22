@@ -2,12 +2,6 @@ import torch
 import torch.nn as nn
 from longvalellm.constants import IMAGE_TOKEN_INDEX, IGNORE_INDEX
 from abc import ABC, abstractmethod
-from torch.nn.utils.rnn import pad_sequence
-import os
-import torch.nn.functional as F
-import numpy as np
-import math
-
 
 
 class LongVALELLMMetaModel:
@@ -43,8 +37,7 @@ class LongVALELLMMetaModel:
 
             self.audio_mm_projector.load_state_dict(get_w(mm_projector_weights, 'audio_mm_projector'))
             print("load audio mlp:", pretrain_audio_mlp_adapter)
-
-        if pretrain_asr_mlp_adapter is not None: # if path exists, load weights for adapter
+        if pretrain_asr_mlp_adapter is not None:
             mm_projector_weights = torch.load(pretrain_asr_mlp_adapter, map_location='cpu')
             def get_w(weights, keyword):
                 return {k.split(keyword + '.')[1]: v for k, v in weights.items() if keyword in k}
@@ -84,31 +77,28 @@ class LongVALELLMMetaForCausalLM(ABC):
                 audio_features = [self.get_model().audio_mm_projector(a) if a is not None else None for a in audio]
             else:
                 audio_features = self.get_model().audio_mm_projector(audio.to(torch.float16)) ##改过
-                # audio_features = self.get_model().audio_mm_projector(audio)
 
         if asr is not None:
             if type(asr) is list:
                 asr_features = [self.get_model().asr_mm_projector(a) if a is not None else None for a in asr]
             else:
                 asr_features = self.get_model().asr_mm_projector(asr.to(torch.float16)) ##改过
-                # asr_features = self.get_model().asr_mm_projector(asr)
 
-        if type(images) is list: # if input is batch
-            concat_images = torch.cat([image for image in images], dim=0) # concat
-            image_features = self.get_model().mm_projector(concat_images) # project
+        if type(images) is list:
+            concat_images = torch.cat([image for image in images], dim=0)
+            image_features = self.get_model().mm_projector(concat_images)
             split_sizes = [image.shape[0] for image in images]
-            image_features = torch.split(image_features, split_sizes, dim=0) # split again
+            image_features = torch.split(image_features, split_sizes, dim=0)
             # image_features = [x.flatten(0, 1) for x in image_features]
         else:
             image_features = self.get_model().mm_projector(images)
         # print([image.shape for image in image_features])
 
-        concated_features = [] # feature concatenation
-        # concat for same frame
+        concated_features = []
         for (audio_feat, image_feat, asr_feat) in zip(audio_features, image_features, asr_features):
         # for (audio_feat, image_feat) in zip(audio_features, image_features):    
             assert not (audio_feat == None and image_feat == None and asr_features == None) 
-                        
+            # assert not (audio_feat == None and image_feat == None)
             concat_feat = []
             if image_feat is not None:
                 concat_feat.append(image_feat) 
@@ -120,7 +110,7 @@ class LongVALELLMMetaForCausalLM(ABC):
             concat_feat = torch.cat(concat_feat, dim=-2) # [133,4096] every modality is projected to 4096 channels
             concated_features.append(concat_feat)
 
-        image_features = concated_features # replace image_features to concated_features
+        image_features = concated_features # replace image_features to concated_featuress
         
         _labels = labels
         _position_ids = position_ids
@@ -135,7 +125,6 @@ class LongVALELLMMetaForCausalLM(ABC):
             labels = torch.full_like(input_ids, IGNORE_INDEX)
 
         # remove the padding using attention_mask -- TODO: double check
-        ## output new input embeddings (replace image token to real image embedding)
         input_ids = [cur_input_ids[cur_attention_mask] for cur_input_ids, cur_attention_mask in zip(input_ids, attention_mask)]
         labels = [cur_labels[cur_attention_mask] for cur_labels, cur_attention_mask in zip(labels, attention_mask)]
 
@@ -158,16 +147,16 @@ class LongVALELLMMetaForCausalLM(ABC):
             cur_labels = labels[batch_idx]
             cur_labels_noim = []
             for i in range(len(image_token_indices) - 1):
-                cur_input_ids_noim.append(cur_input_ids[image_token_indices[i]+1:image_token_indices[i+1]]) # only text prompt index
+                cur_input_ids_noim.append(cur_input_ids[image_token_indices[i]+1:image_token_indices[i+1]])
                 cur_labels_noim.append(cur_labels[image_token_indices[i]+1:image_token_indices[i+1]])
             split_sizes = [x.shape[0] for x in cur_labels_noim]
             cur_input_embeds = self.get_model().get_input_embeddings()(torch.cat(cur_input_ids_noim))
-            cur_input_embeds_no_im = torch.split(cur_input_embeds, split_sizes, dim=0) # only text embeddings
+            cur_input_embeds_no_im = torch.split(cur_input_embeds, split_sizes, dim=0)
             cur_new_input_embeds = []
             cur_new_labels = []
 
             for i in range(num_images + 1):
-                cur_new_input_embeds.append(cur_input_embeds_no_im[i]) # append text embeddings
+                cur_new_input_embeds.append(cur_input_embeds_no_im[i])
                 cur_new_labels.append(cur_labels_noim[i])
                 if i < num_images:
                     cur_image_features = image_features[cur_image_idx]
@@ -176,20 +165,19 @@ class LongVALELLMMetaForCausalLM(ABC):
                     cur_new_labels.append(torch.full((cur_image_features.shape[0],), IGNORE_INDEX, device=cur_labels.device, dtype=cur_labels.dtype))
 
             cur_new_input_embeds = torch.cat(cur_new_input_embeds) # concat text + image embeddings
+
             cur_new_labels = torch.cat(cur_new_labels)
 
             new_input_embeds.append(cur_new_input_embeds)
             new_labels.append(cur_new_labels)
 
         # Truncate sequences to max length as image embeddings can make the sequence longer
-        ## cut embeddings/labels to max_length
         tokenizer_model_max_length = getattr(self.config, 'tokenizer_model_max_length', None)
         if tokenizer_model_max_length is not None:
             new_input_embeds = [x[:tokenizer_model_max_length] for x in new_input_embeds]
             new_labels = [x[:tokenizer_model_max_length] for x in new_labels]
 
         # Combine them
-        ## padding to make same size for all batch samples 
         max_len = max(x.shape[0] for x in new_input_embeds)
         batch_size = len(new_input_embeds)
 
@@ -201,7 +189,7 @@ class LongVALELLMMetaForCausalLM(ABC):
         for i, (cur_new_embed, cur_new_labels) in enumerate(zip(new_input_embeds, new_labels)):
             cur_len = cur_new_embed.shape[0]
             if getattr(self.config, 'tokenizer_padding_side', 'right') == "left":
-                # concat zero to left 
+
                 new_input_embeds_padded.append(torch.cat((
                     torch.zeros((max_len - cur_len, cur_new_embed.shape[1]), dtype=cur_new_embed.dtype, device=cur_new_embed.device),
                     cur_new_embed
@@ -211,7 +199,7 @@ class LongVALELLMMetaForCausalLM(ABC):
                     attention_mask[i, -cur_len:] = True
                     position_ids[i, -cur_len:] = torch.arange(0, cur_len, dtype=position_ids.dtype, device=position_ids.device)
             else:
-                # concat zero to right
+
                 new_input_embeds_padded.append(torch.cat((
                     cur_new_embed,
                     torch.zeros((max_len - cur_len, cur_new_embed.shape[1]), dtype=cur_new_embed.dtype, device=cur_new_embed.device)
@@ -222,7 +210,6 @@ class LongVALELLMMetaForCausalLM(ABC):
                     position_ids[i, :cur_len] = torch.arange(0, cur_len, dtype=position_ids.dtype, device=position_ids.device)
 
         new_input_embeds = torch.stack(new_input_embeds_padded, dim=0)
-        
         if _labels is None:
             new_labels = None
         else:
@@ -235,7 +222,6 @@ class LongVALELLMMetaForCausalLM(ABC):
 
         if _position_ids is None:
             position_ids = None
-
 
         if self.get_model().config.model_type == 'chatglm':
             fake_input_ids = torch.full((new_input_embeds.shape[0], new_input_embeds.shape[1]), -10000, 

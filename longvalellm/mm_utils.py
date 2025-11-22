@@ -23,14 +23,15 @@ def tokenizer_image_token(prompt, tokenizer, image_token_index=IMAGE_TOKEN_INDEX
     prompt_chunks = [tokenizer(chunk).input_ids for chunk in prompt.split(DEFAULT_IMAGE_TOKEN)]
 
     def insert_separator(X, sep):
-        return [ele for sublist in zip(X, [sep]*len(X)) for ele in sublist][:-1] # dual for ex) ["a", "<SEP>", "b", "<SEP>", "c"]
+        return [ele for sublist in zip(X, [sep]*len(X)) for ele in sublist][:-1]
+
 
     input_ids = []
     offset = 0
     if len(prompt_chunks) > 0 and len(prompt_chunks[0]) > 0 and prompt_chunks[0][0] == tokenizer.bos_token_id:
         offset = 1
         input_ids.append(prompt_chunks[0][0])
-    elif tokenizer.name == "GLMTokenizer": 
+    elif tokenizer.name == "GLMTokenizer":
         offset = 2
         input_ids = prompt_chunks[0][:2]
 

@@ -5,7 +5,7 @@ import torch
 import argparse
 from torch.utils.data import Dataset, DataLoader
 from torchvision.transforms import Compose, Resize, CenterCrop, Normalize
-from .mm_utils import VideoExtractor 
+from longvalellm.mm_utils import VideoExtractor 
 import json
 import os
 from tqdm import tqdm
@@ -25,7 +25,7 @@ def prepare_model(checkpoint, gpu_id):
     return model, device
 
 
-class AudioDataset(Dataset): # Actually VisualDataset
+class AudioDataset(Dataset):
     def __init__(self, annotation, video_dir):
         with open(annotation, 'r') as f:
             self.data = json.load(f)

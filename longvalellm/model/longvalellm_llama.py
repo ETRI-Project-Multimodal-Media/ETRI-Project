@@ -5,26 +5,24 @@ from transformers import AutoConfig, AutoModelForCausalLM, LlamaConfig, LlamaMod
 from transformers.modeling_outputs import CausalLMOutputWithPast
 from .longvalellm_arch import LongVALELLMMetaModel, LongVALELLMMetaForCausalLM
 
-class LongVALELLMConfig(LlamaConfig): # inherit llama and register  "LongVALE-LLM" model # used for AutoConfig.from_pretrained()
+class LongVALELLMConfig(LlamaConfig):
     model_type = "LongVALE-LLM"
 
-class LongVALELLMLlamaModel(LlamaModel, LongVALELLMMetaModel): # inherit LlamaModel + LongVALELLMMetaModel(Custom Model)
+class LongVALELLMLlamaModel(LlamaModel, LongVALELLMMetaModel):
     config_class = LongVALELLMConfig
 
     def __init__(self, config: LlamaConfig):
         super(LongVALELLMLlamaModel, self).__init__(config)
 
-class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):  # inherit LlamaForCausalLM(Llama + LM head) + LongVALELLMMetaForCausalLM(Custom, prepare_inputs_labels_for_multimodal)
-    # LlamaForCausalLM used for generating text (forward, prepare_inputs_for_generation)
-    # LongVALELLMMetaForCausalLM used for embedding multimodal input (prepare_inputs_labels_for_multimodal)
-    config_class = LongVALELLMConfig 
+class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
+    config_class = LongVALELLMConfig
 
     def __init__(self, config):
-        super(LlamaForCausalLM, self).__init__(config) # if use super().__init__(config) then LlamaForCausalLM.__init__ (parent) / we want to set model (LongVALELLMLlamaModel/custom head) not (llamamodel/head)
-        self.model = LongVALELLMLlamaModel(config) # backbone = llama + multimodal 
+        super(LlamaForCausalLM, self).__init__(config)
+        self.model = LongVALELLMLlamaModel(config)
         self.pretraining_tp = config.pretraining_tp
         self.vocab_size = config.vocab_size
-        self.lm_head = nn.Linear(config.hidden_size, config.vocab_size, bias=False) # lm head
+        self.lm_head = nn.Linear(config.hidden_size, config.vocab_size, bias=False)
 
         # Initialize weights and apply final processing
         self.post_init()
@@ -32,10 +30,6 @@ class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
     def get_model(self):
         return self.model
 
-        # super().forward used by  LlamaForCausalLM  / well constructed 
-            ## inside of super().forward there is self.model which is LongVALELLMLlamaModel
-            ## so use LlamaForCausalLM's forward but change only model to LongVALELLMLlamaModel
-        # use LLM forward but make input_embeds(concat multimodal embedding)  and use it for inputs
     def forward(
         self,
         input_ids: torch.LongTensor = None,
@@ -52,7 +46,6 @@ class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
         asr = None,
         return_dict: Optional[bool] = None,
     ) -> Union[Tuple, CausalLMOutputWithPast]:
-         
         if inputs_embeds is None:
             (
                 input_ids,
@@ -70,7 +63,7 @@ class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
                 images,
                 audio=audio,
                 asr=asr
-            ) 
+            )
 
         return super().forward(
             input_ids=input_ids,
@@ -100,5 +93,5 @@ class LongVALELLMLlamaForCausalLM(LlamaForCausalLM, LongVALELLMMetaForCausalLM):
             _inputs["asr"] = asr
         return _inputs
 
-AutoConfig.register("LongVALE-LLM", LongVALELLMConfig) 
+AutoConfig.register("LongVALE-LLM", LongVALELLMConfig)
 AutoModelForCausalLM.register(LongVALELLMConfig, LongVALELLMLlamaForCausalLM)
