@@ -133,7 +133,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
 conda activate postprocess
 
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
-    --input "$SAVE_PATH" \
+  --input "$SAVE_PATH" \
   --output-dir "$POST_OUTPUT_DIR" \
   --speech-json-dir "$SPEECH_JSON_DIR" \
   --not-json-dir "$DEBUG_LOG"
