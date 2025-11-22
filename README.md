@@ -130,9 +130,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
     --output-dir "$POST_SAVE_DIR" \
     --speech-json-dir "$SPEECH_ASR_DIR" \
     --not-json-dir "$DEBUG_PATH"
-```
 
-```shell
 # Query
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
     --input "$VIDEO_JSON" \
