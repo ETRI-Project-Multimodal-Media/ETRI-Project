@@ -31,13 +31,13 @@ pip install jsonschema
 
 ## Data Setup
 ```shell
-# Tree Features Extraction 
+# Tree Feature Extraction 
 # Type: all, video, audio, speech
 bash scripts/features_tree.sh <TYPE>
 ```
 
 ```shell
-# LongVALE Features Extraction 
+# LongVALE Feature Extraction 
 # Type: all, video, audio, speech, speech_asr
 bash scripts/features_longvale.sh <TYPE>
 ```
