@@ -47,7 +47,7 @@ bash scripts/features_tree.sh <TYPE>
 bash scripts/features_longvale.sh <TYPE>
 ```
 
-기본 데이터 및 피처 디렉터리 구성 예시는 다음과 같습니다.
+기본 데이터 디렉터리 구성 예시는 다음과 같습니다.
 
 ```text
 data/
@@ -139,20 +139,16 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
   --not-json-dir "$DEBUG_LOG"
 
 # Query
-
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
   --input "$VIDEO_JSON" \
   --query "$QUERY_STR" \
   --mode text_embed \
   --output "$REPO_ROOT/query/example_result.json"
 
-
-# Query Experiment1
-
+# Query Experiment 1
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/benchmark_queries.py
 
-# Query Experiment2
-
+# Query Experiment 2
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/domain_threshold_analysis.py \
   --tree-file "$TREE_FILE" \
   --video-dir "$VIDEO_DIR" \
