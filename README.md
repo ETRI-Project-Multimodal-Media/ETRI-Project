@@ -58,7 +58,7 @@ bash scripts/run.sh
 ```shell
 ... 
 
-source /root/anaconda3/etc/profile.d/conda.sh
+source ~/anaconda3/etc/profile.d/conda.sh
 conda activate eventtree
 
 # Tree Construct 
