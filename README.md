@@ -55,11 +55,11 @@ data/
 │   ├── video_features/{video_id}.npy
 │   ├── audio_features/{video_id}.npy
 │   └── speech_features/{video_id}.npy
-├── features_eval/
-│   ├── video_features/{video_id}.npy
-│   ├── audio_features/{video_id}.npy
-│   ├── speech_features/{video_id}.npy
-│   └── speech_asr/{video_id}.json
+└── features_eval/
+    ├── video_features/{video_id}.npy
+    ├── audio_features/{video_id}.npy
+    ├── speech_features/{video_id}.npy
+    └── speech_asr/{video_id}.json
 ```
 
 `scripts/postprocess.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
