@@ -44,7 +44,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
     --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
     --similarity_threshold 0.9
 
-conda activate eventtree2
+conda activate eventtree-post
 
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
     --tree_path $SAVE_PATH \
