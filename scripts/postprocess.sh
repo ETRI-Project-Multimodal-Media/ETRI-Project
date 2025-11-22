@@ -16,7 +16,7 @@ conda activate postprocess
 
 # 1) postprocess
 
-python postprocess/postprocess.py \
+python src/postprocess/postprocess.py \
   --input "${POST_INPUTS[@]}" \
   --output-dir "$POST_OUTPUT_DIR" \
   --speech-json-dir "$SPEECH_JSON_DIR" \
@@ -24,7 +24,7 @@ python postprocess/postprocess.py \
 
 # 2) query search 
 
-python query/search_queries.py \
+python src/query/search_queries.py \
   --input "$VIDEO_JSON" \
   --query "$QUERY_STR" \
   --mode heuristic \

@@ -20,7 +20,7 @@ pip install transformers==4.40.0
 ```
 
 ```bash
-# Environment 2 for Postprocess 
+# Environment 3 for Postprocess 
 conda create --name postprocess
 conda activate postprocess
 pip install transformers accelerate peft
@@ -132,7 +132,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
 # LLaMA3 - Postprocess
 conda activate postprocess
 
-CUDA_VISIBLE_DEVICES=$GPU_ID python postprocess/postprocess.py \
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
     --input "$SAVE_PATH" \
   --output-dir "$POST_OUTPUT_DIR" \
   --speech-json-dir "$SPEECH_JSON_DIR" \
@@ -140,7 +140,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python postprocess/postprocess.py \
 
 # Query
 
-CUDA_VISIBLE_DEVICES=$GPU_ID python query/search_queries.py \
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
   --input "$VIDEO_JSON" \
   --query "$QUERY_STR" \
   --mode text_embed \
@@ -149,11 +149,11 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python query/search_queries.py \
 
 # Query Experiment1
 
-CUDA_VISIBLE_DEVICES=$GPU_ID python query/benchmark_queries.py
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/benchmark_queries.py
 
 # Query Experiment2
 
-CUDA_VISIBLE_DEVICES=$GPU_ID python query/domain_threshold_analysis.py \
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/domain_threshold_analysis.py \
   --tree-file "$TREE_FILE" \
   --video-dir "$VIDEO_DIR" \
   --output "$REPO_ROOT/query/domain_topk_stats.json"
