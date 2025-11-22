@@ -24,7 +24,9 @@ pip install transformers==4.40.0
 # Tree Features Extraction 
 # Type: all, video, audio, speech
 bash scripts/features_tree.sh <TYPE>
+```
 
+```shell
 # LongVALE Features Extraction 
 # Type: all, video, audio, speech, speech_asr
 # https://github.com/ttgeng233/LongVALE
