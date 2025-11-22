@@ -34,6 +34,7 @@ bash scripts/features_longvale.sh
 ```
 data/
 ├── annotation.json
+├── prompt.json
 ├── raw_data
     ├── video_test/{video_id}.mp4
     ├── audio_test/{video_id}.wav
