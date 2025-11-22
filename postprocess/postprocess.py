@@ -1050,21 +1050,21 @@ if __name__ == "__main__":
         dest="input_files",
         nargs="+",
         default=[
-            "/home/kylee/workspace/LongVALE/data_backup/before_postprocess/Tree-Step3_part1.json",
-            "/home/kylee/workspace/LongVALE/data_backup/before_postprocess/Tree-Step3_part2.json",
-            "/home/kylee/workspace/LongVALE/data_backup/before_postprocess/Tree-Step3_part3.json",
-            "/home/kylee/workspace/LongVALE/data_backup/before_postprocess/Tree-Step3_part4.json",
+            "../Example/Tree-Step3_part1.json",
+            "../Example/Tree-Step3_part2.json",
+            "../Example/Tree-Step3_part3.json",
+            "../Example/Tree-Step3_part4.json",
         ],
         help="One or more JSON tree files to process.",
     )
     parser.add_argument(
         "--output-dir",
-        default="/home/kylee/kylee/LongVALE/data/postprocess",
+        default="../Example/postprocess",
         help="Directory to store processed outputs.",
     )
     parser.add_argument(
         "--speech-json-dir",
-        default="/home/kylee/kylee/LongVALE/data/speech_asr_1171",
+        default="../Example/speech_asr_1171",
         help="Directory containing speech ASR JSON files.",
     )
     parser.add_argument(
