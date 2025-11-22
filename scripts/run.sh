@@ -7,7 +7,7 @@ PROMPT_PATH=./data/prompt.json
 
 TREE_SAVE_PATH=./outputs/log.json
 POST_SAVE_DIR=./outputs/postprocess
-DEBUG_PATH=./outputs/debug.text
+DEBUG_PATH=./logs/debug.text
 
 TREE_V_FEAT=./data/features_tree/video_features
 TREE_A_FEAT=./data/features_tree/audio_features
