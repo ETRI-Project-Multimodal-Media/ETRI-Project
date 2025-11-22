@@ -1,9 +1,14 @@
+#!/bin/bash
+
+REPO_ROOT=./  # change properly
+POST_OUTPUT_DIR="$REPO_ROOT/Example/postprocess"    
+TREE_FILE="$REPO_ROOT/Example/Tree-Step3_part1.json"   
+VIDEO_DIR="$POST_OUTPUT_DIR"                           
+
 # 3) benchmark 실험
 python query/benchmark_queries.py
 
 # 4) domain threshold analysis
-TREE_FILE="$REPO_ROOT/data_backup/before_postprocess/Tree-Step3.json"   # 전체 트리 (level-1 caption용)
-VIDEO_DIR="$POST_OUTPUT_DIR"                                            # 1번 output 디렉토리
 
 python query/domain_threshold_analysis.py \
   --tree-file "$TREE_FILE" \

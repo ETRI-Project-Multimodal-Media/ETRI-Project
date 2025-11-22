@@ -4,7 +4,7 @@ Query search utility for LongVALE postprocess outputs.
 
 Supports two scoring modes:
 1. Heuristic (token overlap on tags or scene topics/summaries)
-2. CLIP text encoder similarity
+2. Sentence Embedding similarity
 """
 
 from __future__ import annotations
@@ -170,7 +170,7 @@ def rank_with_heuristic(query_tokens: List[str], segments: List[Dict[str, Any]],
     return select_top(dedupe_best(raw_matches), threshold, top_k)
 
 
-def rank_with_clip(
+def rank_with_text_embed(
     query: str,
     segments: List[Dict[str, Any]],
     threshold: float,
@@ -179,7 +179,6 @@ def rank_with_clip(
     model_name: str,
     batch_size: int = 64,
 ) -> Tuple[List[Dict[str, Any]], Optional[str], Dict[str, Dict[str, float]], Optional[int]]:
-    # 이제는 CLIP이 아니라 sentence-transformers 기반 텍스트 임베딩을 사용
     if SentenceTransformer is None:
         raise RuntimeError(
             "Text-embedding mode requires sentence-transformers. "
@@ -263,7 +262,7 @@ def rank_with_clip(
                     "matched_text": text,
                     "matched_field": field,
                     "file_path": seg["file_path"],
-                    "score_type": "text_embed",  # 구분을 위해 clip 대신 text_embed 로 써도 좋음
+                    "score_type": "text_embed",  
                 }
             )
 
@@ -283,16 +282,16 @@ def measure_memory() -> Tuple[float, float]:
     return (current, peak)
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Search LongVALE postprocess JSON with heuristic or CLIP scores.")
-    parser.add_argument("--input", type=Path, default=Path("/home/kylee/LongVALE/temp_data/sO3wd7X-l7U.json"))
+    parser = argparse.ArgumentParser(description="Search LongVALE postprocess JSON with heuristic or Text Embed scores.")
+    parser.add_argument("--input", type=Path, default=Path("../Example/postprocess/sO3wd7X-l7U.json"))
     parser.add_argument("--query", required=True, help="Query string to search for.")
     parser.add_argument("--mode", choices=("heuristic", "text_embed", "both"), default="heuristic")
     parser.add_argument("--top-k", type=int, default=20, dest="top_k")
     parser.add_argument("--threshold", type=float, default=0.2, help="Minimum score required to keep a match.")
-    parser.add_argument("--output", type=Path, default=Path("/home/kylee/LongVALE/temp_data/query/clip_results.json"))
-    parser.add_argument("--device", type=str, default=None, help="Device override for CLIP (e.g., cuda:0).")
+    parser.add_argument("--output", type=Path, default=Path("../Example/postprocess/query/clip_results.json"))
+    parser.add_argument("--device", type=str, default=None, help="Device override for Senetence Embedding Model (e.g., cuda:0).")
     parser.add_argument(
-        "--clip-model",
+        "--text-model",
         type=str,
         default="BAAI/bge-m3",
         help="sentence-transformers model name for text embedding mode (was CLIP).",
@@ -324,15 +323,15 @@ def main() -> None:
     query_embedding_bytes: Optional[int] = None
 
     if args.mode in {"text_embed", "both"}:
-        clip_matches, resolved_device, text_embed_profile, query_embedding_bytes = rank_with_clip(
+        embed_matches, resolved_device, text_embed_profile, query_embedding_bytes = rank_with_text_embed(
             args.query,
             segments,
             args.threshold,
             args.top_k,
             args.device,
-            args.clip_model,
+            args.text_model,
         )
-        matches.extend(clip_matches)
+        matches.extend(embed_matches)
         device_used = resolved_device
     
     elapsed = time.time() - start_time

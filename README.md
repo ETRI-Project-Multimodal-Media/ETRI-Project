@@ -19,6 +19,20 @@ conda activate eventtree2
 pip install transformers==4.40.0
 ```
 
+```bash
+# Environment 2 for Postprocess 
+conda create --name postprocess
+conda activate postprocess
+pip install transformers accelerate peft
+pip install decord
+pip install jsonschema
+pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+pip install cuda-toolkit==12.8.1
+```
+
+
+
+
 ## Data Setup
 ```shell
 # Tree Features Extraction 
@@ -33,22 +47,44 @@ bash scripts/features_tree.sh <TYPE>
 bash scripts/features_longvale.sh <TYPE>
 ```
 
-```
+기본 데이터 및 피처 디렉터리 구성 예시는 다음과 같습니다.
+
+```text
 data/
 ├── annotation.json
 ├── prompt.json
-├── raw_data
-    ├── video_test/{video_id}.mp4
-    ├── audio_test/{video_id}.wav
-├──  features_tree
-    ├── video_features/{video_id}.npy
-    ├── audeo_features/{video_id}.npy
-    ├── speech_features/{video_id}.npy
-├──  features_eval
-    ├── video_features/{video_id}.npy
-    ├── audio_features/{video_id}.npy
-    ├── speech_features/{video_id}.npy
-    ├── speech_asr/{video_id}.json
+├── raw_data/
+│   ├── video_test/{video_id}.mp4
+│   └── audio_test/{video_id}.wav
+├── features_tree/
+│   ├── video_features/{video_id}.npy
+│   ├── audio_features/{video_id}.npy
+│   └── speech_features/{video_id}.npy
+├── features_eval/
+│   ├── video_features/{video_id}.npy
+│   ├── audio_features/{video_id}.npy
+│   ├── speech_features/{video_id}.npy
+│   └── speech_asr/{video_id}.json
+```
+
+`scripts/postprocess.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
+
+```text
+Example/
+├── Tree-Step3_part1.json
+├── Tree-Step3_part2.json
+├── Tree-Step3_part3.json
+├── Tree-Step3_part4.json
+├── speech_asr_1171/
+│   └── {video_id}.json        # ASR JSON (SPEECH_JSON_DIR)
+└── postprocess/               # postprocess.py 출력 (POST_OUTPUT_DIR)
+    └── {video_id}.json
+
+outputs/
+└── log.json                   # Tree/LongVALE 파이프라인 결과 (SAVE_PATH)
+
+logs/
+└── debug.txt                  # 잘못된 샘플 로그 (DEBUG_LOG)
 ```
 
 ## How to Run
@@ -92,4 +128,33 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
     --tree_path $SAVE_PATH \
     --prompt_path $PROMPT_PATH \
     --save_path $SAVE_PATH \
+
+# LLaMA3 - Postprocess
+conda activate postprocess
+
+CUDA_VISIBLE_DEVICES=$GPU_ID python postprocess/postprocess.py \
+    --input "$SAVE_PATH" \
+  --output-dir "$POST_OUTPUT_DIR" \
+  --speech-json-dir "$SPEECH_JSON_DIR" \
+  --not-json-dir "$DEBUG_LOG"
+
+# Query
+
+CUDA_VISIBLE_DEVICES=$GPU_ID python query/search_queries.py \
+  --input "$VIDEO_JSON" \
+  --query "$QUERY_STR" \
+  --mode text_embed \
+  --output "$REPO_ROOT/query/example_result.json"
+
+
+# Query Experiment1
+
+CUDA_VISIBLE_DEVICES=$GPU_ID python query/benchmark_queries.py
+
+# Query Experiment2
+
+CUDA_VISIBLE_DEVICES=$GPU_ID python query/domain_threshold_analysis.py \
+  --tree-file "$TREE_FILE" \
+  --video-dir "$VIDEO_DIR" \
+  --output "$REPO_ROOT/query/domain_topk_stats.json"
 ```
