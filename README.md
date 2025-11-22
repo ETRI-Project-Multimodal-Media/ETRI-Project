@@ -126,24 +126,26 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
 
 # LLaMA3 - Postprocessing
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
-  --input "$SAVE_PATH" \
-  --output-dir "$POST_OUTPUT_DIR" \
-  --speech-json-dir "$SPEECH_JSON_DIR" \
-  --not-json-dir "$DEBUG_LOG"
+    --input "$TREE_SAVE_PATH" \
+    --output-dir "$POST_SAVE_DIR" \
+    --speech-json-dir "$SPEECH_ASR_DIR" \
+    --not-json-dir "$DEBUG_PATH"
+```
 
+```shell
 # Query
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
-  --input "$VIDEO_JSON" \
-  --query "$QUERY_STR" \
-  --mode text_embed \
-  --output "$REPO_ROOT/query/example_result.json"
+    --input "$VIDEO_JSON" \
+    --query "$QUERY_STR" \
+    --mode text_embed \
+    --output "$REPO_ROOT/query/example_result.json"
 
 # Query Experiment 1
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/benchmark_queries.py
 
 # Query Experiment 2
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/domain_threshold_analysis.py \
-  --tree-file "$TREE_FILE" \
-  --video-dir "$VIDEO_DIR" \
-  --output "$REPO_ROOT/query/domain_topk_stats.json"
+    --tree-file "$TREE_FILE" \
+    --video-dir "$VIDEO_DIR" \
+    --output "$REPO_ROOT/query/domain_topk_stats.json"
 ```
