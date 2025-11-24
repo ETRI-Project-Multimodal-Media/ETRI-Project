@@ -120,19 +120,20 @@ ssh -L 8501:172.17.0.7:8501 Docker_206 # in-case portforward
 
 ```shell
 # Demo (Video file)
-bash scripts/run_demo.sh
+# Ex. bash scripts/run_demo.sh Abc123 'Event'
+bash scripts/run_demo.sh <VIDEO_ID> <QUERY>
 
 ...
+VIDEO_ID=$1 # Input: Video ID
+QUERY_STR=$2 # Input: Query 
 
 BASE_DIR=/path/to/base_dir # Set this to base directory 
 DEMO_DIR=/path/to/demo_dir # Set this to demo directory
-
-VIDEO_NAME=sample # Set this to video filename
-QUERY_STR=query # Set this to query 
 ```
 
 ```shell
 # Demo (Video link)
+# Ex. bash scripts/run_demo_url.sh https://www.youtube.com/watch?v=Abc123 'Event'
 bash scripts/run_demo_url.sh <VIDEO_LINK> <QUERY>
 
 ...

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 export PYTHONPATH=src:$PYTHONPATH
-export HUGGINGFACE_HUB_TOKEN="hf token" # Set this to Huggingface token
 
 GPU_ID=0
 
@@ -25,6 +24,15 @@ MODEL_BASE=./checkpoints/vicuna-7b-v1.5
 MODEL_STAGE2=./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp
 MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b-stage3-it
 MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
+
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -n "$HF_TOKEN" ]; then
+    export HUGGINGFACE_HUB_TOKEN="$HF_TOKEN"
+fi
+
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -z "$HF_TOKEN" ]; then
+    echo "No HuggingFace token in environment."
+    exit 1
+fi
 
 source ~/anaconda3/etc/profile.d/conda.sh
 conda activate eventtree
