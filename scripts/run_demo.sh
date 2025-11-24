@@ -1,21 +1,19 @@
 #!/bin/bash
 export PYTHONPATH=src:$PYTHONPATH
-export HUGGINGFACE_HUB_TOKEN="hf token" # Set this to Huggingface token
 
-GPU_ID=0 # Set this to GPU ID
+VIDEO_ID=$1 # Input: Video ID
+QUERY_STR=$2 # Input: Query 
 
-BASE_DIR=/path/to/base_dir # Set this to base directory 
-DEMO_DIR=/path/to/demo_dir # Set this to demo directory
+GPU_ID=1 # Set this to GPU ID
+BASE_DIR=/root/datasets/jinho/ETRI # Set this to base directory 
+DEMO_DIR=/root/datasets/jinho/ETRI/demo # Set this to demo directory
 
-VIDEO_NAME=sample # Set this to video filename
-QUERY_STR=query # Set this to query 
-
-VIDEO_PATH=$DEMO_DIR/$VIDEO_NAME.mp4 
+VIDEO_PATH=$DEMO_DIR/$VIDEO_ID.mp4 
 
 TREE_SAVE_PATH=$DEMO_DIR/outputs/log.json 
 POST_SAVE_DIR=$DEMO_DIR/outputs 
-RESULT_SAVE_DIR=$POST_SAVE_DIR/$VIDEO_NAME.json
-QUERY_SAVE_DIR=$POST_SAVE_DIR/query/$VIDEO_NAME.json
+RESULT_SAVE_DIR=$POST_SAVE_DIR/$VIDEO_ID.json
+QUERY_SAVE_DIR=$POST_SAVE_DIR/query/$VIDEO_ID.json
 
 PROMPT_PATH=$BASE_DIR/data/prompt.json
 
@@ -28,11 +26,24 @@ MODEL_STAGE2=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1
 MODEL_STAGE3=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it
 MODEL_MM_MLP=$BASE_DIR/checkpoints/vtimellm_stage1_mm_projector.bin 
 
-[ -f "$VIDEO_PATH" ] || { echo "Missing video: $VIDEO_PATH"; exit 1; }
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -n "$HF_TOKEN" ]; then
+    export HUGGINGFACE_HUB_TOKEN="$HF_TOKEN"
+fi
+
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -z "$HF_TOKEN" ]; then
+    echo "No HuggingFace token in environment."
+    exit 1
+fi
+
+if [ -z "$VIDEO_ID" ] || [ -z "$QUERY_STR" ]; then
+    echo "Usage: $0 <VIDEO_ID> <QUERY>"
+    echo "Example: $0 abc123 'event'"
+    exit 1
+fi
 
 if ! command -v ffmpeg >/dev/null 2>&1; then
     echo "ffmpeg not found. Please install ffmpeg."
-    exit 2
+    exit 1
 fi
 
 TEMP_DIR=$(mktemp -d "${DEMO_DIR}/tmp.XXXXXX")
@@ -46,8 +57,8 @@ cleanup() {
 }
 trap cleanup EXIT
 
-DATA_PATH=$TEMP_DIR/$VIDEO_NAME.json
-AUDIO_PATH=$TEMP_DIR/$VIDEO_NAME.wav 
+DATA_PATH=$TEMP_DIR/$VIDEO_ID.json
+AUDIO_PATH=$TEMP_DIR/$VIDEO_ID.wav 
 
 TREE_FEAT=$TEMP_DIR/features_tree
 MODEL_FEAT=$TEMP_DIR/features_model
@@ -59,7 +70,7 @@ DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wr
 python3 -c "
 import json
 data = {
-    'demo': {
+    '${VIDEO_ID}': {
         'duration': float('${DURATION}')
     }
 }

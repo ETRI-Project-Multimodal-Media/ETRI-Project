@@ -1,9 +1,8 @@
 #!/bin/bash
 export PYTHONPATH=src:$PYTHONPATH
-export HUGGINGFACE_HUB_TOKEN="hf token" # Set this to Huggingface token
 
-INPUT_SOURCE=$1 # Input Video Link (source)
-QUERY_STR=$2 # Input Query 
+INPUT_SOURCE=$1 # Input: Video Link 
+QUERY_STR=$2 # Input: Query 
 
 GPU_ID=0 # Set this to GPU ID
 BASE_DIR=/path/to/base_dir # Set this to base directory 
@@ -25,9 +24,18 @@ MODEL_STAGE2=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1
 MODEL_STAGE3=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it
 MODEL_MM_MLP=$BASE_DIR/checkpoints/vtimellm_stage1_mm_projector.bin 
 
-if [ -z "$INPUT_SOURCE" ]; then
-    echo "Usage: $0 <VIDEO_URL_OR_FILE_PATH>"
-    echo "Example: $0 https://www.youtube.com/watch?v=..."
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -n "$HF_TOKEN" ]; then
+    export HUGGINGFACE_HUB_TOKEN="$HF_TOKEN"
+fi
+
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -z "$HF_TOKEN" ]; then
+    echo "No HuggingFace token in environment."
+    exit 1
+fi
+
+if [ -z "$INPUT_SOURCE" ] || [ -z "$QUERY_STR" ]; then
+    echo "Usage: $0 <VIDEO_URL> <QUERY>"
+    echo "Example: $0 https://www.youtube.com/watch?v=abc123 'event'"
     exit 1
 fi
 
