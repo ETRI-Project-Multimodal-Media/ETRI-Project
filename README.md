@@ -89,61 +89,6 @@ bash scripts/run.sh
 ```
 
 ```shell
-... 
-
-source ~/anaconda3/etc/profile.d/conda.sh
-conda activate eventtree
-
-# Tree Construct 
-python src/eventtree/tree/tree.py \
-    --data_path $DATA_PATH \
-    --video_feat_folder $TREE_V_FEAT \
-    --audio_feat_folder $TREE_A_FEAT \
-    --speech_feat_folder $TREE_S_FEAT \
-    --save_path $SAVE_PATH
-
-# LongVALE - Leaf Node Captioning
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
-    --tree_path $SAVE_PATH \
-    --prompt_path $PROMPT_PATH \
-    --save_path $SAVE_PATH \
-    --video_feat_folder $MODEL_V_FEAT \
-    --audio_feat_folder $MODEL_A_FEAT \
-    --asr_feat_folder $MODEL_S_FEAT \
-    --model_base $MODEL_BASE \
-    --stage2 $MODEL_STAGE2 \
-    --stage3 $MODEL_STAGE3 \
-    --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
-    --similarity_threshold 0.9
-
-conda activate eventtree-post
-
-# LLaMA3 - Internal Node Captioning
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
-    --tree_path $SAVE_PATH \
-    --prompt_path $PROMPT_PATH \
-    --save_path $SAVE_PATH \
-
-# LLaMA3 - Postprocessing
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
-    --input "$TREE_SAVE_PATH" \
-    --output-dir "$POST_SAVE_DIR" \
-    --speech-json-dir "$SPEECH_ASR_DIR" \
-    --not-json-dir "$DEBUG_PATH"
-
-# Query
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
-    --input "$VIDEO_JSON" \
-    --query "$QUERY_STR" \
-    --mode text_embed \
-    --output "$REPO_ROOT/query/example_result.json"
-
-# Query Experiment 1
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/benchmark_queries.py
-
-# Query Experiment 2
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/domain_threshold_analysis.py \
-    --tree-file "$TREE_FILE" \
-    --video-dir "$VIDEO_DIR" \
-    --output "$REPO_ROOT/query/domain_topk_stats.json"
+# Demo
+bash scripts/run_demo.sh
 ```
