@@ -34,16 +34,16 @@ pip install sentence-transformers
 
 ## Data Setup
 - `annotation.json`, `{video_id}.mp4`, `{video_id}.wav`이 필요합니다. 
-- `annotation.json` 형식은 `data/example.json`와 같으며, video_id와 duration이 필요합니다. 
+- `annotation.json` 형식은 `data/example.json`와 같으며, video id와 duration이 필요합니다. 
 
 ```shell
-# Tree Feature Extraction 
+# Tree Feature Extraction (features_tree)
 # Type: all, video, audio, speech
 bash scripts/features_tree.sh <TYPE>
 ```
 
 ```shell
-# LongVALE Feature Extraction 
+# LongVALE Feature Extraction (features_eval)
 # Type: all, video, audio, speech, speech_asr
 bash scripts/features_longvale.sh <TYPE>
 ```
@@ -82,7 +82,7 @@ logs/
 └── debug.txt                  # 잘못된 샘플 로그 (DEBUG_LOG)
 ```
     
-## Checkpoint Setu
+## Checkpoint Setup
 
 | Modality      | Encoder | Checkpoint path                           | Download checkpoint                                                                 |
 |---------------|---------|-------------------------------------------|-------------------------------------------------------------------------------------|
