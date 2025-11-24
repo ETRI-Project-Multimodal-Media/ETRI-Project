@@ -2,15 +2,14 @@
 export PYTHONPATH=src:$PYTHONPATH
 
 GPU_ID=0 # Set this to GPU ID
-
 BASE_DIR=/path/to/base_dir # Set this to base directory 
 DEMO_DIR=/path/to/demo_dir # Set this to demo directory
+VIDEO_NAME=sample # Set this to video filename
 
-DATA_PATH=$DEMO_DIR/sample.json # Path to the demo annotation
-VIDEO_PATH=$DEMO_DIR/sample.mp4 # Path to the demo video file
+VIDEO_PATH=$DEMO_DIR/$VIDEO_NAME.mp4 
 
-TREE_SAVE_PATH=$DEMO_DIR/outputs/log.json # Path to save tree result
-POST_SAVE_DIR=$DEMO_DIR/outputs # Directory to save final result 
+TREE_SAVE_PATH=$DEMO_DIR/outputs/log.json 
+POST_SAVE_DIR=$DEMO_DIR/outputs 
 
 PROMPT_PATH=$BASE_DIR/data/prompt.json
 
@@ -24,7 +23,11 @@ MODEL_STAGE3=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1
 MODEL_MM_MLP=$BASE_DIR/checkpoints/vtimellm_stage1_mm_projector.bin 
 
 [ -f "$VIDEO_PATH" ] || { echo "Missing video: $VIDEO_PATH"; exit 1; }
-[ -f "$DATA_PATH" ] || { echo "Missing data json: $DATA_PATH"; exit 1; }
+
+if ! command -v ffmpeg >/dev/null 2>&1; then
+    echo "ffmpeg not found. Please install ffmpeg."
+    exit 2
+fi
 
 TEMP_DIR=$(mktemp -d "${DEMO_DIR}/tmp.XXXXXX")
 cleanup() {
@@ -37,18 +40,28 @@ cleanup() {
 }
 trap cleanup EXIT
 
-AUDIO_PATH=$TEMP_DIR/sample.wav 
-DEBUG_PATH=$TEMP_DIR/debug.text
+DATA_PATH=$TEMP_DIR/$VIDEO_NAME.json
+AUDIO_PATH=$TEMP_DIR/$VIDEO_NAME.wav 
 
 TREE_FEAT=$TEMP_DIR/features_tree
 MODEL_FEAT=$TEMP_DIR/features_model
+DEBUG_PATH=$TEMP_DIR/debug.text
 
-if ! command -v ffmpeg >/dev/null 2>&1; then
-    echo "ffmpeg not found. Please install ffmpeg."
-    exit 2
-fi
+echo "Generating metadata (.json) ..."
+DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO_PATH")
 
-echo "Running audio extraction ..."
+python3 -c "
+import json
+data = {
+    'demo': {
+        'duration': float('${DURATION}')
+    }
+}
+with open('${DATA_PATH}', 'w') as f:
+    json.dump(data, f, indent=4)
+"
+
+echo "Extracting audio (.wav)..."
 ffmpeg -y -i "$VIDEO_PATH" -vn -acodec pcm_s16le -ar 16000 -ac 1 "$AUDIO_PATH"
 
 source ~/anaconda3/etc/profile.d/conda.sh
