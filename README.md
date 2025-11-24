@@ -79,9 +79,7 @@ logs/
 └── debug.txt                  # 잘못된 샘플 로그 (DEBUG_LOG)
 ```
     
-## Checkpoint Setup
-
-### Download model weights
+## Checkpoint Setu
 
 | Modality      | Encoder | Checkpoint path                           | Download checkpoint                                                                 |
 |---------------|---------|-------------------------------------------|-------------------------------------------------------------------------------------|
