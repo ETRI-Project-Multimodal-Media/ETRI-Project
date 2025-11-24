@@ -11,7 +11,6 @@ from tqdm import tqdm
 import numpy as np
 
 def prepare_model(checkpoint_path, gpu_id):
-    # checkpoint_path = '.cache/BEATs_iter3_plus_AS20K.pt'
     device = torch.device('cuda:{}'.format(gpu_id))
     checkpoint = torch.load(checkpoint_path)
     cfg = BEATsConfig(checkpoint['cfg'])
@@ -34,7 +33,6 @@ class AudioDataset(Dataset):
     
     def __getitem__(self, index):
         video_id, _ = self.data[index]
-        # video_path = os.path.join(self.audio_dir, '{}.mp4'.format(video_id))
         video_path = os.path.join(self.audio_dir, '{}.wav'.format(video_id))
         sample = {'video': video_path}
         fbank = self.processor.extract(sample)
@@ -78,7 +76,7 @@ if __name__ =='__main__':
     
     with torch.no_grad():
         for (fbank, video_ids) in tqdm(data_loader):
-            if fbank.numel() == 0:  # 전부 스킵된 경우
+            if fbank.numel() == 0: 
                 continue
             fbank = fbank.to(device)
             video_id = video_ids[0]
