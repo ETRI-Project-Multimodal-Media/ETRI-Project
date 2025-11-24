@@ -1,15 +1,21 @@
 #!/bin/bash
 export PYTHONPATH=src:$PYTHONPATH
+export HUGGINGFACE_HUB_TOKEN="hf token" # Set this to Huggingface token
 
 GPU_ID=0 # Set this to GPU ID
+
 BASE_DIR=/path/to/base_dir # Set this to base directory 
 DEMO_DIR=/path/to/demo_dir # Set this to demo directory
+
 VIDEO_NAME=sample # Set this to video filename
+QUERY_STR=query # Set this to query 
 
 VIDEO_PATH=$DEMO_DIR/$VIDEO_NAME.mp4 
 
 TREE_SAVE_PATH=$DEMO_DIR/outputs/log.json 
 POST_SAVE_DIR=$DEMO_DIR/outputs 
+RESULT_SAVE_DIR=$POST_SAVE_DIR/$VIDEO_NAME.json
+QUERY_SAVE_DIR=$POST_SAVE_DIR/query/$VIDEO_NAME.json
 
 PROMPT_PATH=$BASE_DIR/data/prompt.json
 
@@ -128,6 +134,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
     --similarity_threshold 0.9
 
 conda activate eventtree-post
+
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
     --tree_path $TREE_SAVE_PATH \
     --prompt_path $PROMPT_PATH \
@@ -139,4 +146,10 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
     --speech-json-dir $MODEL_FEAT/speech_asr \
     --not-json-dir $DEBUG_PATH
 
-echo "Demo completed. (Results are saved in $POST_SAVE_DIR)"
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
+    --input "$RESULT_SAVE_DIR" \
+    --query "$QUERY_STR" \
+    --mode text_embed \
+    --output "$QUERY_SAVE_DIR"
+
+echo "Demo completed. (Results are saved in $POST_SAVE_DIR, $QUERY_SAVE_DIR)"
