@@ -33,6 +33,10 @@ pip install sentence-transformers
 ```
 
 ## Data Setup
+`annotation.json`, `{video_id}.mp4`, `{video_id}.wav`이 필요합니다. 
+`annotation.json` 형식은 `data/example.json`를 참고하며, video_id와 duration이 필요합니다. 
+
+
 ```shell
 # Tree Feature Extraction 
 # Type: all, video, audio, speech
