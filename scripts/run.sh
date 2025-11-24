@@ -1,41 +1,35 @@
 #!/bin/bash
 
 export PYTHONPATH=src:$PYTHONPATH
-export HUGGINGFACE_HUB_TOKEN="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" # change
+export HUGGINGFACE_HUB_TOKEN="hf token" # Set this to Huggingface token
 
+GPU_ID=0
 
-DATA_PATH=./data/example.json
+DATA_PATH=./data/longvale-annotations-eval.json
 PROMPT_PATH=./data/prompt.json
 
-DATA_PATH=$BASE_DIR/data/longvale-annotations-eval.json
-PROMPT_PATH=$BASE_DIR/data/prompt.json
+TREE_SAVE_PATH=./outputs/log.json
+POST_SAVE_DIR=./outputs/postprocess
+DEBUG_PATH=./logs/debug.text
 
-TREE_SAVE_PATH=$BASE_DIR/outputs/log.json
-POST_SAVE_DIR=$BASE_DIR/outputs/postprocess
-DEBUG_PATH=$BASE_DIR/logs/debug.text
-
-TREE_V_FEAT=$BASE_DIR/data/features_tree/video_features
-TREE_A_FEAT=$BASE_DIR/data/features_tree/audio_features
-TREE_S_FEAT=$BASE_DIR/data/features_tree/speech_features
-
-MODEL_BASE=./checkpoints/vicuna-7b-v1.5
-MODEL_STAGE2=./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp
-MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b-stage3-it
-MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
+TREE_V_FEAT=./data/features_tree/video_features
+TREE_A_FEAT=./data/features_tree/audio_features
+TREE_S_FEAT=./data/features_tree/speech_features
 
 MODEL_V_FEAT=./data/features_eval/video_features
 MODEL_A_FEAT=./data/features_eval/audio_features
 MODEL_S_FEAT=./data/features_eval/speech_features
 SPEECH_ASR_DIR=./data/features_eval/speech_asr
 
-
-GPU_ID=7
-QUERY_STR="indoor market"
-VIDEO_JSON="$POST_SAVE_DIR/olZPuJTwh0s.json"   
-QUERY_SAVE_DIR=./outputs/query/example.json
+MODEL_BASE=./checkpoints/vicuna-7b-v1.5
+MODEL_STAGE2=./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp
+MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b-stage3-it
+MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
 
 source ~/anaconda3/etc/profile.d/conda.sh
 conda activate eventtree
+
+echo "Running main pipeline ..."
 
 python src/eventtree/tree/tree.py \
     --data_path $DATA_PATH \
@@ -69,9 +63,3 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
     --output-dir "$POST_SAVE_DIR" \
     --speech-json-dir "$SPEECH_ASR_DIR" \
     --not-json-dir "$DEBUG_PATH"
-
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
-    --input "$VIDEO_JSON" \
-    --query "$QUERY_STR" \
-    --mode text_embed \
-    --output "$QUERY_SAVE_DIR"

@@ -128,15 +128,17 @@ BASE_DIR=/path/to/base_dir # Set this to base directory
 DEMO_DIR=/path/to/demo_dir # Set this to demo directory
 
 VIDEO_NAME=sample # Set this to video filename
-VIDEO_PATH=$DEMO_DIR/$VIDEO_NAME.mp4 
+QUERY_STR=query # Set this to query 
 ```
+
 ```shell
 # Demo (Video link)
-bash scripts/run_demo_url.sh <VIDEO_LINK>
+bash scripts/run_demo_url.sh <VIDEO_LINK> <QUERY>
 
 ...
 
-INPUT_SOURCE=$1 # Input: Video Link (source)
+INPUT_SOURCE=$1 # Input: Video Link 
+QUERY_STR=$2 # Input: Query 
 
 BASE_DIR=/path/to/base_dir # Set this to base directory 
 DEMO_DIR=/path/to/demo_dir # Set this to demo directory
