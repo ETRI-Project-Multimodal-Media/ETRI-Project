@@ -110,6 +110,12 @@ bash scripts/run.sh
 ```
 
 ```shell
+# Streamlit
+streamlit run streamlit_demo.py --server.address 0.0.0.0 --server.port 8501
+ssh -L 8501:172.17.0.7:8501 Docker_206 # in-case portforward
+```
+
+```shell
 # Demo (Video file)
 bash scripts/run_demo.sh
 

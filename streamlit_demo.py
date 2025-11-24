@@ -1,6 +1,6 @@
 import os
 import subprocess
-
+import json
 import streamlit as st
 
 
@@ -109,6 +109,10 @@ model_stage3 = st.sidebar.text_input(
 model_mm_mlp = st.sidebar.text_input(
     "MODEL_MM_MLP",
     "./checkpoints/vtimellm_stage1_mm_projector.bin",
+)
+hf_token = st.sidebar.text_input(
+    "HF_TOKEN",
+    "",
 )
 
 gpu_id = st.sidebar.text_input("GPU_ID (CUDA_VISIBLE_DEVICES)", "6")
@@ -249,6 +253,7 @@ if st.button("선택한 단계 실행"):
             "bash -lc "
             "\"source ~/anaconda3/etc/profile.d/conda.sh && "
             "conda activate eventtree-post && "
+            f"HF_TOKEN={hf_token} "
             f"CUDA_VISIBLE_DEVICES={gpu_id} "
             "python src/eventtree/summary_llama3.py "
             f"--tree_path {tree_save_path} "
@@ -270,6 +275,7 @@ if st.button("선택한 단계 실행"):
             "bash -lc "
             "\"source ~/anaconda3/etc/profile.d/conda.sh && "
             "conda activate eventtree-post && "
+            f"HUGGINGFACE_HUB_TOKEN={hf_token} "
             f"CUDA_VISIBLE_DEVICES={gpu_id} "
             "python src/postprocess/postprocess.py "
             f'--input \\"{tree_save_path}\\" '
@@ -277,6 +283,7 @@ if st.button("선택한 단계 실행"):
             f'--speech-json-dir \\"{speech_asr_dir}\\" '
             f'--not-json-dir \\"{debug_path}\\"\"'
         )
+             
         code, out = run_command(cmd)
         append_log(f"$ {cmd}\n{out}")
         append_log(f"[4] 종료 코드: {code}")
