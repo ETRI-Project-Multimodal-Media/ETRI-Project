@@ -52,8 +52,8 @@ data/
 ├── annotation.json
 ├── prompt.json
 ├── raw_data/
-│   ├── video_test/{video_id}.mp4
-│   └── audio_test/{video_id}.wav
+│   ├── video_test/{video_id}.mp4 # input
+│   └── audio_test/{video_id}.wav # input
 ├── features_tree/
 │   ├── video_features/{video_id}.npy
 │   ├── audio_features/{video_id}.npy
