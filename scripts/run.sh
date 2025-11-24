@@ -2,26 +2,28 @@
 
 export PYTHONPATH=src:$PYTHONPATH
 
-DATA_PATH=./data/longvale-annotations-eval.json
-PROMPT_PATH=./data/prompt.json
+BASE_DIR=/path/to/base_dir # Set this to base directory
 
-TREE_SAVE_PATH=./outputs/log.json
-POST_SAVE_DIR=./outputs/postprocess
-DEBUG_PATH=./logs/debug.text
+DATA_PATH=$BASE_DIR/data/longvale-annotations-eval.json
+PROMPT_PATH=$BASE_DIR/data/prompt.json
 
-TREE_V_FEAT=./data/features_tree/video_features
-TREE_A_FEAT=./data/features_tree/audio_features
-TREE_S_FEAT=./data/features_tree/speech_features
+TREE_SAVE_PATH=$BASE_DIR/outputs/log.json
+POST_SAVE_DIR=$BASE_DIR/outputs/postprocess
+DEBUG_PATH=$BASE_DIR/logs/debug.text
 
-MODEL_V_FEAT=./data/features_eval/video_features
-MODEL_A_FEAT=./data/features_eval/audio_features
-MODEL_S_FEAT=./data/features_eval/speech_features
-SPEECH_ASR_DIR=./data/features_eval/speech_asr
+TREE_V_FEAT=$BASE_DIR/data/features_tree/video_features
+TREE_A_FEAT=$BASE_DIR/data/features_tree/audio_features
+TREE_S_FEAT=$BASE_DIR/data/features_tree/speech_features
 
-MODEL_BASE=./checkpoints/vicuna-7b-v1.5
-MODEL_STAGE2=./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp
-MODEL_STAGE3=./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it
-MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
+MODEL_V_FEAT=$BASE_DIR/data/features_eval/video_features
+MODEL_A_FEAT=$BASE_DIR/data/features_eval/audio_features
+MODEL_S_FEAT=$BASE_DIR/data/features_eval/speech_features
+SPEECH_ASR_DIR=$BASE_DIR/data/features_eval/speech_asr
+
+MODEL_BASE=$BASE_DIR/checkpoints/vicuna-7b-v1.5
+MODEL_STAGE2=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp
+MODEL_STAGE3=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it
+MODEL_MM_MLP=$BASE_DIR/checkpoints/vtimellm_stage1_mm_projector.bin 
 
 GPU_ID=0
 
@@ -56,7 +58,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
     --save_path $TREE_SAVE_PATH \
     
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
-    --input "$TREE_SAVE_PATH" \
-    --output-dir "$POST_SAVE_DIR" \
-    --speech-json-dir "$SPEECH_ASR_DIR" \
-    --not-json-dir "$DEBUG_PATH"
+    --input $TREE_SAVE_PATH \
+    --output-dir $POST_SAVE_DIR \
+    --speech-json-dir $SPEECH_ASR_DIR \
+    --not-json-dir $DEBUG_PATH
