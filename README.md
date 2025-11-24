@@ -126,6 +126,7 @@ bash scripts/run_demo.sh
 
 BASE_DIR=/path/to/base_dir # Set this to base directory 
 DEMO_DIR=/path/to/demo_dir # Set this to demo directory
+
 VIDEO_NAME=sample # Set this to video filename
 VIDEO_PATH=$DEMO_DIR/$VIDEO_NAME.mp4 
 ```
@@ -135,36 +136,8 @@ bash scripts/run_demo_url.sh <VIDEO_LINK>
 
 ...
 
-INPUT_SOURCE=$1 # Input Video Link (source)
+INPUT_SOURCE=$1 # Input: Video Link (source)
+
 BASE_DIR=/path/to/base_dir # Set this to base directory 
 DEMO_DIR=/path/to/demo_dir # Set this to demo directory
-
-# LLaMA3 - Internal Node Captioning
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
-    --tree_path $SAVE_PATH \
-    --prompt_path $PROMPT_PATH \
-    --save_path $SAVE_PATH \
-
-# LLaMA3 - Postprocessing
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
-    --input "$TREE_SAVE_PATH" \
-    --output-dir "$POST_SAVE_DIR" \
-    --speech-json-dir "$SPEECH_ASR_DIR" \
-    --not-json-dir "$DEBUG_PATH"
-
-# Query
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
-    --input "$VIDEO_JSON" \
-    --query "$QUERY_STR" \
-    --mode text_embed \
-    --output "$QUERY_SAVE_DIR"
-
-# Query Experiment 1
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/benchmark_queries.py
-
-# Query Experiment 2
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/domain_threshold_analysis.py \
-    --tree-file "$TREE_FILE" \
-    --video-dir "$VIDEO_DIR" \
-    --output "$REPO_ROOT/query/domain_topk_stats.json"
 ```
