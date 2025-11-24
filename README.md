@@ -92,19 +92,13 @@ checkpoints/
 `scripts/postprocess.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
 
 ```text
-Example/
-├── Tree-Step3_part1.json
-├── Tree-Step3_part2.json
-├── Tree-Step3_part3.json
-├── Tree-Step3_part4.json
-├── speech_asr_1171/
-│   └── {video_id}.json        # ASR JSON (SPEECH_JSON_DIR)
-└── postprocess/               # postprocess.py 출력 (POST_OUTPUT_DIR)
-    └── {video_id}.json
-
 outputs/
-└── log.json                   # Tree/LongVALE 파이프라인 결과 (SAVE_PATH)
-
+├── log.json  # Tree/LongVALE 파이프라인 결과 (SAVE_PATH)
+├── postprocess/
+│   └── {video_id}.json  
+└── query/               
+    └── example.json
+    
 logs/
 └── debug.txt                  # 잘못된 샘플 로그 (DEBUG_LOG)
 ```

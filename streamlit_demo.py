@@ -9,6 +9,12 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def run_command(cmd, env=None):
     full_env = os.environ.copy()
+    # Ensure local Python packages (e.g., longvalellm) are importable
+    src_path = os.path.join(BASE_DIR, "src")
+    if full_env.get("PYTHONPATH"):
+        full_env["PYTHONPATH"] = f"{src_path}{os.pathsep}{full_env['PYTHONPATH']}"
+    else:
+        full_env["PYTHONPATH"] = src_path
     if env:
         full_env.update(env)
 
@@ -119,6 +125,10 @@ if "log_text" not in st.session_state:
 
 
 log_area = st.empty()
+tree_preview_area = st.empty()
+caption_preview_area = st.empty()
+summary_preview_area = st.empty()
+post_preview_area = st.empty()
 
 
 def append_log(text):
@@ -127,6 +137,64 @@ def append_log(text):
     else:
         st.session_state.log_text = text
     log_area.text(st.session_state.log_text)
+
+
+def show_tree_preview(path):
+    if not os.path.isfile(path):
+        tree_preview_area.info(f"Tree 파일을 찾을 수 없습니다: {path}")
+        return
+    with open(path, "r") as f:
+        data = json.load(f)
+    if not data:
+        tree_preview_area.info("Tree 파일이 비어 있습니다.")
+        return
+    first_video_id = next(iter(data))
+    tree_preview_area.markdown(f"**[1] Event Tree 미리보기 - video_id: {first_video_id}**")
+    tree_preview_area.json(data[first_video_id])
+
+
+def show_caption_preview(path):
+    if not os.path.isfile(path):
+        caption_preview_area.info(f"캡션이 포함된 Tree 파일이 없습니다: {path}")
+        return
+    with open(path, "r") as f:
+        data = json.load(f)
+    if not data:
+        caption_preview_area.info("캡션이 포함된 Tree 데이터가 비어 있습니다.")
+        return
+    first_video_id = next(iter(data))
+    caption_preview_area.markdown(f"**[2] Caption 미리보기 - video_id: {first_video_id}**")
+    caption_preview_area.json(data[first_video_id])
+
+
+def show_summary_preview(path):
+    if not os.path.isfile(path):
+        summary_preview_area.info(f"Summary가 저장된 Tree 파일이 없습니다: {path}")
+        return
+    with open(path, "r") as f:
+        data = json.load(f)
+    if not data:
+        summary_preview_area.info("Summary 데이터가 비어 있습니다.")
+        return
+    first_video_id = next(iter(data))
+    summary_preview_area.markdown(f"**[3] Summary 미리보기 - video_id: {first_video_id}**")
+    summary_preview_area.json(data[first_video_id])
+
+
+def show_postprocess_preview(output_dir):
+    if not os.path.isdir(output_dir):
+        post_preview_area.info(f"Postprocess 출력 디렉토리를 찾을 수 없습니다: {output_dir}")
+        return
+    json_files = [f for f in os.listdir(output_dir) if f.endswith(".json")]
+    if not json_files:
+        post_preview_area.info("Postprocess 결과 JSON 파일이 없습니다.")
+        return
+    first_file = sorted(json_files)[0]
+    first_path = os.path.join(output_dir, first_file)
+    with open(first_path, "r") as f:
+        data = json.load(f)
+    post_preview_area.markdown(f"**[4] Postprocess 미리보기 - {first_file}**")
+    post_preview_area.json(data)
 
 
 if st.button("선택한 단계 실행"):
@@ -147,6 +215,8 @@ if st.button("선택한 단계 실행"):
         code, out = run_command(cmd)
         append_log(f"$ {cmd}\n{out}")
         append_log(f"[1] 종료 코드: {code}")
+        if code == 0:
+            show_tree_preview(tree_save_path)
 
     # 2. Caption 생성
     if run_caption:
@@ -169,36 +239,48 @@ if st.button("선택한 단계 실행"):
         code, out = run_command(cmd, env=env)
         append_log(f"$ CUDA_VISIBLE_DEVICES={gpu_id} {cmd}\n{out}")
         append_log(f"[2] 종료 코드: {code}")
+        if code == 0:
+            show_caption_preview(tree_save_path)
 
-    # 3. Summary 생성
+    # 3. Summary 생성 (eventtree-post 환경)
     if run_summary:
-        append_log("[3] Summary 생성 시작...")
-        env = {"CUDA_VISIBLE_DEVICES": gpu_id}
+        append_log("[3] Summary 생성 시작 (conda env: eventtree-post)...")
         cmd = (
+            "bash -lc "
+            "\"source ~/anaconda3/etc/profile.d/conda.sh && "
+            "conda activate eventtree-post && "
+            f"CUDA_VISIBLE_DEVICES={gpu_id} "
             "python src/eventtree/summary_llama3.py "
             f"--tree_path {tree_save_path} "
             f"--prompt_path {prompt_path} "
-            f"--save_path {tree_save_path}"
+            f"--save_path {tree_save_path}\""
         )
-        code, out = run_command(cmd, env=env)
-        append_log(f"$ CUDA_VISIBLE_DEVICES={gpu_id} {cmd}\n{out}")
+        code, out = run_command(cmd)
+        append_log(f"$ {cmd}\n{out}")
         append_log(f"[3] 종료 코드: {code}")
+        if code == 0:
+            show_summary_preview(tree_save_path)
 
-    # 4. Postprocess
+    # 4. Postprocess (eventtree-post 환경)
     if run_postprocess:
-        append_log("[4] Postprocess 시작...")
-        env = {"CUDA_VISIBLE_DEVICES": gpu_id}
+        append_log("[4] Postprocess 시작 (conda env: eventtree-post)...")
         os.makedirs(os.path.dirname(post_save_dir), exist_ok=True)
         os.makedirs(os.path.dirname(debug_path), exist_ok=True)
         cmd = (
+            "bash -lc "
+            "\"source ~/anaconda3/etc/profile.d/conda.sh && "
+            "conda activate eventtree-post && "
+            f"CUDA_VISIBLE_DEVICES={gpu_id} "
             "python src/postprocess/postprocess.py "
-            f'--input "{tree_save_path}" '
-            f'--output-dir "{post_save_dir}" '
-            f'--speech-json-dir "{speech_asr_dir}" '
-            f'--not-json-dir "{debug_path}"'
+            f'--input \\"{tree_save_path}\\" '
+            f'--output-dir \\"{post_save_dir}\\" '
+            f'--speech-json-dir \\"{speech_asr_dir}\\" '
+            f'--not-json-dir \\"{debug_path}\\"\"'
         )
-        code, out = run_command(cmd, env=env)
-        append_log(f"$ CUDA_VISIBLE_DEVICES={gpu_id} {cmd}\n{out}")
+        code, out = run_command(cmd)
+        append_log(f"$ {cmd}\n{out}")
         append_log(f"[4] 종료 코드: {code}")
+        if code == 0:
+            show_postprocess_preview(post_save_dir)
 
     append_log("선택한 단계 실행이 모두 완료되었습니다.")

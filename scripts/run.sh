@@ -26,39 +26,39 @@ MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b-stage3-it
 MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
 
 GPU_ID=7
-QUERY_STR="Throws javelin in the air"
-VIDEO_JSON="$POST_SAVE_DIR/sO3wd7X-l7U.json"   
+QUERY_STR="indoor market"
+VIDEO_JSON="$POST_SAVE_DIR/olZPuJTwh0s.json"   
 QUERY_SAVE_DIR=./outputs/query/example.json
 
 source ~/anaconda3/etc/profile.d/conda.sh
 conda activate eventtree
 
-# python src/eventtree/tree/tree.py \
-#     --data_path $DATA_PATH \
-#     --video_feat_folder $TREE_V_FEAT \
-#     --audio_feat_folder $TREE_A_FEAT \
-#     --speech_feat_folder $TREE_S_FEAT \
-#     --save_path $TREE_SAVE_PATH
+python src/eventtree/tree/tree.py \
+    --data_path $DATA_PATH \
+    --video_feat_folder $TREE_V_FEAT \
+    --audio_feat_folder $TREE_A_FEAT \
+    --speech_feat_folder $TREE_S_FEAT \
+    --save_path $TREE_SAVE_PATH
 
-# CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
-#     --tree_path $TREE_SAVE_PATH \
-#     --prompt_path $PROMPT_PATH \
-#     --save_path $TREE_SAVE_PATH \
-#     --video_feat_folder $MODEL_V_FEAT \
-#     --audio_feat_folder $MODEL_A_FEAT \
-#     --asr_feat_folder $MODEL_S_FEAT \
-#     --model_base $MODEL_BASE \
-#     --stage2 $MODEL_STAGE2 \
-#     --stage3 $MODEL_STAGE3 \
-#     --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
-#     --similarity_threshold 0.9
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
+    --tree_path $TREE_SAVE_PATH \
+    --prompt_path $PROMPT_PATH \
+    --save_path $TREE_SAVE_PATH \
+    --video_feat_folder $MODEL_V_FEAT \
+    --audio_feat_folder $MODEL_A_FEAT \
+    --asr_feat_folder $MODEL_S_FEAT \
+    --model_base $MODEL_BASE \
+    --stage2 $MODEL_STAGE2 \
+    --stage3 $MODEL_STAGE3 \
+    --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
+    --similarity_threshold 0.9
 
 conda activate eventtree-post
 
-# CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
-#     --tree_path $TREE_SAVE_PATH \
-#     --prompt_path $PROMPT_PATH \
-#     --save_path $TREE_SAVE_PATH \
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
+    --tree_path $TREE_SAVE_PATH \
+    --prompt_path $PROMPT_PATH \
+    --save_path $TREE_SAVE_PATH \
 
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
     --input "$TREE_SAVE_PATH" \
@@ -66,8 +66,8 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
     --speech-json-dir "$SPEECH_ASR_DIR" \
     --not-json-dir "$DEBUG_PATH"
 
-# CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
-#     --input "$VIDEO_JSON" \
-#     --query "$QUERY_STR" \
-#     --mode text_embed \
-#     --output "$QUERY_SAVE_DIR"
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
+    --input "$VIDEO_JSON" \
+    --query "$QUERY_STR" \
+    --mode text_embed \
+    --output "$QUERY_SAVE_DIR"
