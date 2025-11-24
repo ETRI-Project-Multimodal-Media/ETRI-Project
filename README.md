@@ -107,40 +107,28 @@ checkpoints/
 ```
 
 ## How to Run
+
+Main 
 ```shell
-# Main
 bash scripts/run.sh
 ```
 
+Streamlit Demo 
 ```shell
-# Streamlit
 streamlit run streamlit_demo.py --server.address 0.0.0.0 --server.port 8501
 ssh -L 8501:172.17.0.7:8501 Docker_206 # in-case portforward
 ```
 
+Demo (Video file)
+Ex. bash scripts/run_demo.sh Abc123 'Event'
+
 ```shell
-# Demo (Video file)
-# Ex. bash scripts/run_demo.sh Abc123 'Event'
 bash scripts/run_demo.sh <VIDEO_ID> <QUERY>
-
-...
-VIDEO_ID=$1 # Input: Video ID
-QUERY_STR=$2 # Input: Query 
-
-BASE_DIR=/path/to/base_dir # Set this to base directory 
-DEMO_DIR=/path/to/demo_dir # Set this to demo directory
 ```
 
+Demo (Video link)
+Ex. bash scripts/run_demo_url.sh https://www.youtube.com/watch?v=Abc123 'Event'
+
 ```shell
-# Demo (Video link)
-# Ex. bash scripts/run_demo_url.sh https://www.youtube.com/watch?v=Abc123 'Event'
 bash scripts/run_demo_url.sh <VIDEO_LINK> <QUERY>
-
-...
-
-INPUT_SOURCE=$1 # Input: Video Link 
-QUERY_STR=$2 # Input: Query 
-
-BASE_DIR=/path/to/base_dir # Set this to base directory 
-DEMO_DIR=/path/to/demo_dir # Set this to demo directory
 ```
