@@ -32,9 +32,6 @@ def summary_captions(model, prompts, captions):
             max_new_tokens=120, 
             min_length=10,      
             do_sample=False,   
-            # do_sample=True,   
-            # temperature=0.2, 
-            # top_p=0.9,
             eos_token_id=model.tokenizer.eos_token_id,
             pad_token_id=model.tokenizer.eos_token_id 
         )
@@ -53,7 +50,7 @@ if __name__ == "__main__":
     model = pipeline(
         "text-generation",
         model="meta-llama/Meta-Llama-3-8B-Instruct",
-        model_kwargs={"torch_dtype": torch.bfloat16}, 
+        model_kwargs={"dtype": torch.bfloat16}, 
         device='cuda'
     )
     

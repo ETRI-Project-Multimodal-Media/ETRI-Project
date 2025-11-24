@@ -7,23 +7,27 @@ export HUGGINGFACE_HUB_TOKEN="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" # change
 DATA_PATH=./data/example.json
 PROMPT_PATH=./data/prompt.json
 
-TREE_SAVE_PATH=./outputs/log.json
-POST_SAVE_DIR=./outputs/postprocess
-DEBUG_PATH=./logs/debug.text
+DATA_PATH=$BASE_DIR/data/longvale-annotations-eval.json
+PROMPT_PATH=$BASE_DIR/data/prompt.json
 
-TREE_V_FEAT=./data/features_tree/video_features
-TREE_A_FEAT=./data/features_tree/audio_features
-TREE_S_FEAT=./data/features_tree/speech_features
+TREE_SAVE_PATH=$BASE_DIR/outputs/log.json
+POST_SAVE_DIR=$BASE_DIR/outputs/postprocess
+DEBUG_PATH=$BASE_DIR/logs/debug.text
+
+TREE_V_FEAT=$BASE_DIR/data/features_tree/video_features
+TREE_A_FEAT=$BASE_DIR/data/features_tree/audio_features
+TREE_S_FEAT=$BASE_DIR/data/features_tree/speech_features
+
+MODEL_BASE=./checkpoints/vicuna-7b-v1.5
+MODEL_STAGE2=./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp
+MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b-stage3-it
+MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
 
 MODEL_V_FEAT=./data/features_eval/video_features
 MODEL_A_FEAT=./data/features_eval/audio_features
 MODEL_S_FEAT=./data/features_eval/speech_features
 SPEECH_ASR_DIR=./data/features_eval/speech_asr
 
-MODEL_BASE=./checkpoints/vicuna-7b-v1.5
-MODEL_STAGE2=./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp
-MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b-stage3-it
-MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
 
 GPU_ID=7
 QUERY_STR="indoor market"

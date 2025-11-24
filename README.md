@@ -110,34 +110,25 @@ bash scripts/run.sh
 ```
 
 ```shell
-... 
+# Demo (Video file)
+bash scripts/run_demo.sh
 
-source ~/anaconda3/etc/profile.d/conda.sh
-conda activate eventtree
+...
 
-# Tree Construct 
-python src/eventtree/tree/tree.py \
-    --data_path $DATA_PATH \
-    --video_feat_folder $TREE_V_FEAT \
-    --audio_feat_folder $TREE_A_FEAT \
-    --speech_feat_folder $TREE_S_FEAT \
-    --save_path $SAVE_PATH
+BASE_DIR=/path/to/base_dir # Set this to base directory 
+DEMO_DIR=/path/to/demo_dir # Set this to demo directory
+VIDEO_NAME=sample # Set this to video filename
+VIDEO_PATH=$DEMO_DIR/$VIDEO_NAME.mp4 
+```
+```shell
+# Demo (Video link)
+bash scripts/run_demo_url.sh <VIDEO_LINK>
 
-# LongVALE - Leaf Node Captioning
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
-    --tree_path $SAVE_PATH \
-    --prompt_path $PROMPT_PATH \
-    --save_path $SAVE_PATH \
-    --video_feat_folder $MODEL_V_FEAT \
-    --audio_feat_folder $MODEL_A_FEAT \
-    --asr_feat_folder $MODEL_S_FEAT \
-    --model_base $MODEL_BASE \
-    --stage2 $MODEL_STAGE2 \
-    --stage3 $MODEL_STAGE3 \
-    --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
-    --similarity_threshold 0.9
+...
 
-conda activate eventtree-post
+INPUT_SOURCE=$1 # Input Video Link (source)
+BASE_DIR=/path/to/base_dir # Set this to base directory 
+DEMO_DIR=/path/to/demo_dir # Set this to demo directory
 
 # LLaMA3 - Internal Node Captioning
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
