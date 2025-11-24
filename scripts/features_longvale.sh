@@ -15,12 +15,6 @@ WHISPER_CKPT=./checkpoints/openai-whisper-large-v2
 
 GPU_ID=7
 
-# Check if DATA_PATH exists
-if [[ ! -f "$DATA_PATH" ]]; then
-    echo "Annotation file $DATA_PATH not found. Skipping feature extraction."
-    exit 0
-fi
-
 if [[ "$EXTRACT_MODALITY" == "video" || "$EXTRACT_MODALITY" == "all" ]]; then
     echo "Extracting Video features..."
     python src/preprocess/clip_feature_extract.py \
