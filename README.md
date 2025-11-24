@@ -34,7 +34,7 @@ pip install sentence-transformers
 
 ## Data Setup
 - `annotation.json`, `{video_id}.mp4`, `{video_id}.wav`이 필요합니다. 
-- `annotation.json` 형식은 `data/example.json`와 같으며, video id와 duration이 필요합니다. 
+- `annotation.json` 형식은 `data/example.json`와 같으며, video id (YouTube id)와 duration이 필요합니다. 
 
 ```shell
 # Tree Feature Extraction (features_tree)
@@ -90,8 +90,8 @@ logs/
 | Audio         | BEATs   | `./checkpoints/BEATs_iter3_plus_AS20K.pt` | [BEATs_iter3_plus_AS20K](https://github.com/microsoft/unilm/tree/master/BEATs)     |
 | Speech        | Whisper | `./checkpoints/openai-whisper-large-v2`   | [whisper-large-v2](https://huggingface.co/openai/whisper-large-v2)                 |
 
-- Download [Vicuna v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5) and [vtimellm_stage1](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/vtimellm_stage1_mm_projector.bin) weights, and place them into the `checkpoints` directory.
-- Download LongVALE-LLM model from [longvalellm-vicuna-v1-5-7b.tar.gz](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/longvalellm-vicuna-v1-5-7b.tar.gz), and place it into the `checkpoints` directory.
+- LongVALE: Download [Vicuna v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5) and [vtimellm_stage1](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/vtimellm_stage1_mm_projector.bin) weights.
+- LongVALE: Download LongVALE-LLM model from [longvalellm-vicuna-v1-5-7b.tar.gz](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/longvalellm-vicuna-v1-5-7b.tar.gz).
   
 기본 checkpoints 디렉터리 구성 예시는 다음과 같습니다.
 
