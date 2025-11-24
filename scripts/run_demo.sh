@@ -4,9 +4,9 @@ export PYTHONPATH=src:$PYTHONPATH
 VIDEO_ID=$1 # Input: Video ID
 QUERY_STR=$2 # Input: Query 
 
-GPU_ID=1 # Set this to GPU ID
-BASE_DIR=/root/datasets/jinho/ETRI # Set this to base directory 
-DEMO_DIR=/root/datasets/jinho/ETRI/demo # Set this to demo directory
+GPU_ID=0 # Set this to GPU ID
+BASE_DIR=/path/to/base_dir # Set this to base directory 
+DEMO_DIR=/path/to/demo_dir # Set this to demo directory
 
 VIDEO_PATH=$DEMO_DIR/$VIDEO_ID.mp4 
 
