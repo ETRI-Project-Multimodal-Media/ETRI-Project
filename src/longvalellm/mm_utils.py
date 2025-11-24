@@ -10,7 +10,7 @@ from moviepy.editor import VideoFileClip
 import torchaudio
 import torchaudio.compliance.kaldi as ta_kaldi
 from transformers import WhisperFeatureExtractor
-
+import os
 def load_image_from_base64(image):
     return Image.open(BytesIO(base64.b64decode(image)))
 
@@ -101,7 +101,9 @@ class VideoExtractor():
     def extract(self, data):
         video_path = data['video']
         id = data['id']
-        
+        if not os.path.exists(video_path):
+            print(f"{video_path} not found. Skipping.")
+            return id, None
         try:
             video_reader = decord.VideoReader(video_path)
             total_frames = len(video_reader)
@@ -141,7 +143,12 @@ class BEATSAudioExtractor():
         
         def empty_audio_tensor():
             return torch.zeros((self.n_frames, self.frame_length, 128))
-        aupath = data['video']
+        
+        aupath = data.get('video', None)
+        if not aupath or not os.path.exists(aupath):
+            print(f"Audio file {aupath} not found. Skipping extraction.")
+            return None
+        
         split = data.get('split', None)
         start_sec = None
         end_sec = None
@@ -157,7 +164,8 @@ class BEATSAudioExtractor():
             try:
                 audio_np = video.audio.to_soundarray(fps=self.sampling_rate)
             except:
-                print(aupath, 'can not extract')
+                print(f"{aupath} cannot extract audio.")
+                return empty_audio_tensor()
             # import librosa, os
             # root_path = '' #for audios that cannot be loaded.
             # wav_path = os.path.join(root_path, os.path.basename(aupath).split('.')[0] + '.wav')
@@ -169,7 +177,11 @@ class BEATSAudioExtractor():
             sr = self.sampling_rate
         # Handle WAV files
         else:
-            waveform, sr = torchaudio.load(aupath)
+            try:
+                waveform, sr = torchaudio.load(aupath)
+            except:
+                print(f"{aupath} cannot be loaded.")
+                return empty_audio_tensor()
 
         # print('waveform', waveform.shape) # [channel, time] 
         # Validate waveform
@@ -227,6 +239,9 @@ class SpeechExtractor():
 
     def extract(self, data):
         aupath = data['video']
+        if not aupath or not os.path.exists(aupath):
+            print(f"Speech audio file {aupath} not found. Skipping extraction.")
+            return None
         split = data.get('split', None)
         start_sec = None
         end_sec = None

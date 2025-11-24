@@ -14,6 +14,11 @@ def main(args):
     for video_id, data in js.items():
         duration = data['duration']
         
+        video_path = os.path.join(args.video_feat_folder, f"{video_id}.npy")
+        if not os.path.exists(video_path):
+            # print(f"Video file not found: {video_path}")
+            continue
+        
         features = utils.load_avs_features(
             video_id=video_id,
             video_path=args.video_feat_folder,

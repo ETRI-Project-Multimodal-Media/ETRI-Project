@@ -13,7 +13,7 @@ CLIP_CKPT=./checkpoints/ViT-L-14.pt
 BEATS_CKPT=./checkpoints/BEATs_iter3_plus_AS20K.pt
 WHISPER_CKPT=./checkpoints/openai-whisper-large-v2
 
-GPU_ID=0
+GPU_ID=7
 
 python src/preprocess/tree_feature_extract.py \
     --data_path $DATA_PATH \

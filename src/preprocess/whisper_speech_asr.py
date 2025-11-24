@@ -31,10 +31,15 @@ class AudioDataset(Dataset):
         video_path = os.path.join(self.audio_dir, '{}.wav'.format(video_id))
         sample = {'video': video_path}
         spectrogram = self.processor.extract(sample)
+        if spectrogram is None:
+            return None
         return spectrogram, video_id
 
 
 def collate_fn(batch):
+    batch = [b for b in batch if b is not None]
+    if len(batch) == 0:
+        return torch.empty(0), []
     spectrogram, video_ids = zip(*batch)
     spectrogram = torch.cat(spectrogram, dim=0)
     video_ids = list(video_ids)
@@ -63,6 +68,8 @@ if __name__ =='__main__':
 
     with torch.no_grad():
         for (spectrogram, video_ids) in tqdm(data_loader):
+            if spectrogram.numel() == 0:  # 전부 스킵된 경우
+                continue
             video_id = video_ids[0]
             save_path = os.path.join(args.save_dir, '{}.json'.format(video_id))
             

@@ -13,6 +13,8 @@ conda activate eventtree
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 pip install flash-attn==2.3.6 --no-build-isolation
+pip install soundfile
+pip install streamlit
 ```
 
   LLaMA3: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
@@ -27,6 +29,7 @@ pip install cuda-toolkit==12.8.1
 pip install transformers accelerate peft
 pip install decord
 pip install jsonschema
+pip install sentence-transformers
 ```
 
 ## Data Setup
@@ -61,6 +64,30 @@ data/
     ├── speech_features/{video_id}.npy
     └── speech_asr/{video_id}.json
 ```
+
+기본 checkpoints 디렉터리 구성 예시는 다음과 같습니다.
+
+```text
+checkpoints/
+├── vicuna-7b-v1.5
+├── longvale-vicuna-v1-5-7b-stage2-bp
+├── longvale-vicuna-v1-5-7b-stage3-it
+├── vtimellm_stage1_mm_projector.bin 
+```
+
+### Extracted features of LongVALE
+
+| Modality      | Encoder | Checkpoint path                           | Download checkpoint                                                                 |
+|---------------|---------|-------------------------------------------|-------------------------------------------------------------------------------------|
+| Visual frames | CLIP    | `./checkpoints/ViT-L-14.pt`               | [ViT-L/14](https://github.com/openai/CLIP)                                         |
+| Audio         | BEATs   | `./checkpoints/BEATs_iter3_plus_AS20K.pt` | [BEATs_iter3_plus_AS20K](https://github.com/microsoft/unilm/tree/master/BEATs)     |
+| Speech        | Whisper | `./checkpoints/openai-whisper-large-v2`   | [whisper-large-v2](https://huggingface.co/openai/whisper-large-v2)                 |
+
+
+### Download model weights
+- Download [Vicuna v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5) and [vtimellm_stage1](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/vtimellm_stage1_mm_projector.bin) weights, and place them into the `checkpoints` directory.
+- Download LongVALE-LLM model from [longvalellm-vicuna-v1-5-7b.tar.gz](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/longvalellm-vicuna-v1-5-7b.tar.gz), and place it into the `checkpoints` directory.
+  
 
 `scripts/postprocess.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
 
@@ -136,7 +163,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
     --input "$VIDEO_JSON" \
     --query "$QUERY_STR" \
     --mode text_embed \
-    --output "$REPO_ROOT/query/example_result.json"
+    --output "$QUERY_SAVE_DIR"
 
 # Query Experiment 1
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/benchmark_queries.py

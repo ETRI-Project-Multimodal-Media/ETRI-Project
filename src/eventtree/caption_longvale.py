@@ -152,13 +152,32 @@ if __name__ == "__main__":
     parser.add_argument("--audio_feat_folder", type=str, default="./data/features_eval/audio_features_1171")
     parser.add_argument("--asr_feat_folder", type=str, default="./data/features_eval/speech_features_1171") 
     parser.add_argument("--model_base", type=str, default="./checkpoints/vicuna-7b-v1.5")
-    parser.add_argument("--stage2", type=str, default="./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp")
-    parser.add_argument("--stage3", type=str, default="./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it")
+    parser.add_argument("--stage2", type=str, default="./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp")
+    parser.add_argument("--stage3", type=str, default="./checkpoints/longvale-vicuna-v1-5-7b-stage3-it")
     parser.add_argument("--pretrain_mm_mlp_adapter", type=str, default="./checkpoints/vtimellm_stage1_mm_projector.bin")
     parser.add_argument("--pretrain_audio_mlp_adapter", type=str, default=None)
     parser.add_argument("--pretrain_asr_mlp_adapter", type=str, default=None)
     parser.add_argument("--similarity_threshold", type=float, default=0.9)
     args = parser.parse_args()
+
+    # Ensure tree file exists; create empty if missing
+    if not os.path.isfile(args.tree_path):
+        print(f"Tree file {args.tree_path} not found. Creating an empty tree file.")
+        os.makedirs(os.path.dirname(args.tree_path), exist_ok=True)
+        with open(args.tree_path, 'w') as f:
+            json.dump({}, f, indent=4)
+
+    # Ensure prompt file exists; create a default template if missing
+    if not os.path.isfile(args.prompt_path):
+        print(f"Prompt file {args.prompt_path} not found. Creating a default prompt file.")
+        os.makedirs(os.path.dirname(args.prompt_path), exist_ok=True)
+        default_prompt = {
+            "question": "Provide a detailed caption for the video segment between frames <start> and <end>.",
+            "summary": "You are an assistant that summarizes a list of captions into a concise, coherent description of the video.",
+            "summary_shots": []
+        }
+        with open(args.prompt_path, 'w') as f:
+            json.dump(default_prompt, f, indent=4)
     
     disable_torch_init()
     tokenizer, model, context_len = load_pretrained_model(args, args.stage2, args.stage3)

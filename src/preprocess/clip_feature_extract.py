@@ -42,10 +42,15 @@ class AudioDataset(Dataset):
         video_path = os.path.join(self.video_dir, '{}.mp4'.format(video_id))
         sample = {'id' : video_id, 'video': video_path}
         _, images = self.processor.extract(sample)
+        if images is None:
+            return None  
         images = self.transform(images / 255.0)
         return images, video_id
     
 def collate_fn(batch):
+    batch = [b for b in batch if b is not None]
+    if len(batch) == 0:
+        return torch.empty(0), []
     images, video_ids = zip(*batch)
     images = torch.cat(images, dim=0)
     video_ids = list(video_ids)
@@ -73,6 +78,8 @@ if __name__ =='__main__':
     data_loader = create_data_loader(args.annotation, args.video_dir)
     with torch.no_grad():
         for (images, video_ids) in tqdm(data_loader):
+            if images.numel() == 0:  # 전부 스킵된 경우
+                continue
             images = images.to(device)
             video_id = video_ids[0]
             save_path = os.path.join(args.save_dir, '{}.npy'.format(video_id))

@@ -7,7 +7,6 @@ import time
 import argparse
 import copy
 import psutil
-import wandb
 from tree_merger import (
     merge_tree,
     merge_segments_by_kl,
@@ -23,65 +22,12 @@ from jsonschema import validate, ValidationError
 import torch, re, textwrap
 
 
-LOG_DIR = os.environ.get("LONGVALE_LOG_DIR", "/home/kylee/kylee/LongVALE/logs")
-PERFORMANCE_LOG_PATH = os.path.join(LOG_DIR, "performance_log.jsonl")
-ATTRIBUTE_VALUE_MAX_LEN = int(os.environ.get("ATTRIBUTE_VALUE_MAX_LEN", 512))
-ENABLE_WANDB = os.environ.get("ENABLE_WANDB", "0") == "1"
-ENABLE_PERF_LOG = os.environ.get("ENABLE_PERF_LOG", "0") == "1"
-
 from huggingface_hub import login
 login(token=os.environ["HUGGINGFACE_HUB_TOKEN"])
 
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 # model_id = "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8"
 
-
-# wandb 초기화 (파일 상단에 추가)
-if ENABLE_WANDB:
-    wandb.init(
-        project="postprocess_comparison2",
-        name=f"plain_{int(time.time())}",
-        config={
-            "version": "plain",
-            "model": model_id,
-            "description": "Plain version without NER processing",
-            "features": ["basic_processing", "llm_calls"]
-        },
-        tags=["plain", "baseline", "comparison"]
-    )
-
-def get_gpu_memory():
-    """GPU 메모리 사용량 반환 (MB)"""
-    if torch.cuda.is_available():
-        return torch.cuda.memory_allocated() / 1024 / 1024
-    return 0
-
-def log_function_performance(func_name, start_time, end_time, start_memory, end_memory):
-    """함수 실행 시간과 메모리 사용량을 wandb와 로그 파일에 기록"""
-    duration = end_time - start_time
-    memory_used = end_memory - start_memory
-    
-    # wandb 로깅
-    if ENABLE_WANDB:
-        wandb.log({
-            f"{func_name}_duration": duration,
-            f"{func_name}_memory_used": memory_used,
-            f"{func_name}_end_memory": end_memory
-        })
-    
-    # 로그 파일에 기록
-    log_entry = {
-        "function": func_name,
-        "duration_seconds": duration,
-        "memory_used_mb": memory_used,
-        "end_memory_mb": end_memory,
-        "timestamp": time.time()
-    }
-    
-    if ENABLE_PERF_LOG:
-        os.makedirs(LOG_DIR, exist_ok=True)
-        with open(PERFORMANCE_LOG_PATH, "a", encoding="utf-8") as f:
-            f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
 
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
@@ -187,8 +133,6 @@ def clean_meta(text: str) -> str:
     return text or "None"
 
 def llm(system_prompt,user_prompt):
-    start_time = time.time()
-    start_memory = get_gpu_memory()
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
@@ -216,14 +160,10 @@ def llm(system_prompt,user_prompt):
 
     response = tokenizer.decode(outputs[0][input_ids.shape[-1]:], skip_special_tokens=True)
     response = response.strip()
-    end_time = time.time()
-    end_memory = get_gpu_memory()
-    log_function_performance("llm", start_time, end_time, start_memory, end_memory)
+    
     return response
 
 def split_modality_caption_with_llm(caption_text: str) -> str:
-    start_time = time.time()
-    start_memory = get_gpu_memory()
     
     """LLM을 이용해 Visual/Audio로 분리"""
     # Few-shot 프롬프트
@@ -304,9 +244,6 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
     if any(re.search(p, audio, flags=re.IGNORECASE) for p in speech_markers):
         audio = ""  # 필요시 더 정교한 필터 로직 적용
 
-    end_time = time.time()
-    end_memory = get_gpu_memory()
-    log_function_performance("split_modality_caption_with_llm", start_time, end_time, start_memory, end_memory)
     return {"visual": visual.strip(), "audio": audio.strip()}
 
 
@@ -314,12 +251,6 @@ def split_modality_caption_with_llm(caption_text: str) -> str:
 MIN_SEGMENT_REPEAT = 2
 MIN_NGRAM_REPEAT = 3
 NGRAM_OVERLAP_THRESHOLD = 0.8
-# deprecated
-# def split_segments(caption: str):
-#     # pattern = r'From (\d+) to (\d+), (.*?)(?=From \d+ to \d+|$)' # 정수 
-#     pattern = r'From (\d+(?:\.\d+)?) to (\d+(?:\.\d+)?), (.*?)(?=From \d+(?:\.\d+)? to \d+(?:\.\d+)?|$)'
-#     matches = re.findall(pattern, caption, flags=re.S)
-#     return [(m[0], m[1], m[2].strip()) for m in matches]
 
 def merge_segments_by_text(segments, min_repeat_count=MIN_SEGMENT_REPEAT):
     if not segments:
@@ -446,7 +377,7 @@ def _fix_attribute_content(content: str) -> str:
             else:
                 value_text = str(value_obj).strip()
 
-            limit = max(4, ATTRIBUTE_VALUE_MAX_LEN)
+            limit = 512
             if len(value_text) > limit:
                 value_text = value_text[:limit - 3] + "..."
 
@@ -544,64 +475,9 @@ def _normalize_object_attributes(obj: dict) -> None:
         else:
             item["attributes"] = {}
 
-def extract_answer_from_line(line: str) -> str:
-    start_time = time.time()
-    start_memory = get_gpu_memory()
-    
-    """
-    한 줄 문자열에서 "answer": "..." 부분만 뽑아냄
-    """
-    key = '"answer":'
-    start = line.find(key)
-    if start == -1:
-        return ""
-
-    # answer 뒤 첫 따옴표
-    start = line.find('"', start + len(key))
-    if start == -1:
-        return ""
-
-    # answer 끝 따옴표
-    end = line.find('"', start + 1)
-    if end == -1:
-        return ""
-
-    end_time = time.time()
-    end_memory = get_gpu_memory()
-    log_function_performance("extract_answer_from_line", start_time, end_time, start_memory, end_memory)
-    return line[start + 1:end]
-
-def extract_videoinform_from_line(line: str) -> Optional[Tuple[str, str]]:
-    """
-    한 줄 문자열에서 "video_id"와 "duration" 값을 추출해 (video_id, duration) 튜플로 반환한다.
-    두 필드 중 하나라도 없으면 None을 반환한다.
-    """
-    def _find_value(key: str) -> Optional[str]:
-        idx = line.find(key)
-        if idx == -1:
-            return None
-
-        start = line.find('"', idx + len(key))
-        if start == -1:
-            return None
-
-        end = line.find('"', start + 1)
-        if end == -1:
-            return None
-
-        return line[start + 1:end]
-
-    video_id = _find_value('"video_id":')
-    duration = _find_value('"duration":')
-    if video_id is None or duration is None:
-        return None
-
-    return video_id, duration
 
 # === LLM 호출 프롬프트 ===
 def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
-    start_time = time.time()
-    start_memory = get_gpu_memory()
     system_prompt = """
     You are a structured information extraction engine that outputs ONLY valid JSON for an MPEG-7–style schema.
     Follow ALL rules strictly:
@@ -692,9 +568,6 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
         obj = json.loads(response)
         _normalize_object_attributes(obj)
         validate(obj, SCHEMA)
-        end_time = time.time()
-        end_memory = get_gpu_memory()
-        log_function_performance("extract_info_with_llm", start_time, end_time, start_memory, end_memory)
         return obj
     except (json.JSONDecodeError, ValidationError):
         # 리페어는 system을 그대로 두고, user에 'ORIGINAL+SCHEMA'를 넣습니다.
@@ -710,9 +583,6 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
             obj2 = json.loads(text2)
             _normalize_object_attributes(obj2)
             validate(obj2, SCHEMA)
-            end_time = time.time()
-            end_memory = get_gpu_memory()
-            log_function_performance("extract_info_with_llm", start_time, end_time, start_memory, end_memory)
             return obj2
         except Exception as e:
             # append 저장
@@ -723,8 +593,7 @@ def extract_info_with_llm(video_id, seg_idx, start, end, text, not_json_dir):
 
 
 def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str, start: str, end: str, duration:str) -> str:
-    start_time = time.time()
-    start_memory = get_gpu_memory()
+
     """
     LLaMA를 이용해 특정 시간대 caption + 전체 speech summary를 기반으로
     그 시간대의 speech 내용을 추출
@@ -757,9 +626,6 @@ def extract_speech_from_caption_with_llm(caption_text: str, speech_summary: str,
     if not output or output.lower() in {"none", "(none)"}:
         return "None"
     
-    end_time = time.time()
-    end_memory = get_gpu_memory()
-    log_function_performance("extract_speech_from_caption_with_llm", start_time, end_time, start_memory, end_memory)
     return output
 
 
@@ -767,8 +633,6 @@ def chunk_text(text, max_chars=1500):
     return [text[i:i+max_chars] for i in range(0, len(text), max_chars)]
 
 def summarize_text(text):
-    start_time = time.time()
-    start_memory = get_gpu_memory()
     chunks = chunk_text(text)
     summaries = []
     system_prompt = textwrap.dedent("""
@@ -785,15 +649,10 @@ def summarize_text(text):
         user_prompt = f"Transcript:\n{chunk}\n\nSummarize in one concise paragraph (1–2 sentences):"
         chunk_summary = llm(system_prompt, user_prompt)
         summaries.append(chunk_summary)
-    end_time = time.time()
-    end_memory = get_gpu_memory()
-    log_function_performance("summarize_text", start_time, end_time, start_memory, end_memory)
     return " ".join(summaries)
 
 
 def translate_speech(video_id, speech_json_dir):
-    start_time = time.time()
-    start_memory = get_gpu_memory()
     # speech json 경로
     speech_json_path = os.path.join(speech_json_dir, f"{video_id}.json")
     if not os.path.isfile(speech_json_path):
@@ -806,9 +665,6 @@ def translate_speech(video_id, speech_json_dir):
 
     # 요약
     summary = summarize_text(transcription)
-    end_time = time.time()
-    end_memory = get_gpu_memory()
-    log_function_performance("translate_speech", start_time, end_time, start_memory, end_memory)
     return summary
 
 import json, re
@@ -926,30 +782,9 @@ def _iter_video_payloads(raw_data):
     else:
         raise ValueError("Unsupported input format: expected dict or list.")
 
-# 자식 node의 caption을 재귀 탐색 후 summary   # deprecated
-# def _aggregate_child_captions(node):
-#     children = node.get("children") or []
-#     if not children:
-#         return (node.get("caption") or "").strip()
-
-#     child_captions = []
-#     for child in children:
-#         child_summary = _aggregate_child_captions(child)
-#         if child_summary:
-#             child_captions.append(child_summary)
-
-
-#     before_summary = " ".join(child_captions).strip()
-#     summary = summarize_text(before_summary)
-#     if summary:
-#         node["summary"] = summary  # 또는 node["caption"] = summary
-#     return summary or (node.get("caption") or "").strip()
-
 
 # 전체 
 def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
-    start_time = time.time()
-    start_memory = get_gpu_memory()
     video_results = defaultdict(list)
 
     with open(input_file, "r", encoding="utf-8") as f:
@@ -972,14 +807,6 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
         duration = _format_timestamp(video_tree.get("end_time"))
         if not duration:
             duration = segments[-1]["end"]
-
-        # answer만 추출
-        # caption_text = extract_answer_from_line(line)
-        # if not caption_text:
-        #     continue
-
-        # time split
-        # segments = split_segments(caption_text)
         
         # merge time split 
         # segments = repeated_ngram_ratio(segments)
@@ -987,7 +814,6 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
         # segments = merge_segments_by_jsd(segments)
         # unused
         # segments = merge_segments_by_text(segments) 
-
         
         # speech translation with summarized
         speech_translation = translate_speech(video_id, speech_json_dir)       
@@ -1028,17 +854,10 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
                     "original_answer": text,
                     "result": copy.deepcopy(result),
                 }
-        # summarize child node's caption -> deprecated
-        # _aggregate_child_captions(video_tree)
         # save result
         output_path = os.path.join(output_dir, f"{video_id}.json")
         with open(output_path, "w", encoding="utf-8") as out_f:
             json.dump({"video_id": video_id, "tree": video_tree}, out_f, ensure_ascii=False, indent=2)
-
-    
-    end_time = time.time()
-    end_memory = get_gpu_memory()
-    log_function_performance("pipeline", start_time, end_time, start_memory, end_memory)
 
 
 
@@ -1069,8 +888,13 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--not-json-dir",
-        default="/home/kylee/kylee/LongVALE/logs/wrong_sample_1015.txt",
+        default="../Example/debug.txt",
         help="Path to log samples that fail JSON validation.",
+    )
+    parser.add_argument(
+        "--log-dir",
+        default="../Example/logs",
+        help="Path to logs.",
     )
     args = parser.parse_args()
 
