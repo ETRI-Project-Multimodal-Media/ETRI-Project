@@ -25,6 +25,8 @@ MODEL_STAGE2=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1
 MODEL_STAGE3=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it
 MODEL_MM_MLP=$BASE_DIR/checkpoints/vtimellm_stage1_mm_projector.bin 
 
+SIMILARITY_THRESHOLD=0.9
+
 if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -n "$HF_TOKEN" ]; then
     export HUGGINGFACE_HUB_TOKEN="$HF_TOKEN"
 fi
@@ -62,7 +64,7 @@ VIDEO_PATH=$TEMP_DIR/demo.mp4
 AUDIO_PATH=$TEMP_DIR/demo.wav 
 
 if [[ "$INPUT_SOURCE" =~ ^http.* ]]; then
-    echo "Downloading video from URL ..."
+    echo "Downloading video from URL..."
     yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" \
         --force-overwrites -o "$VIDEO_PATH" "$INPUT_SOURCE"
     
@@ -75,7 +77,7 @@ else
     exit 1
 fi
 
-echo "Generating metadata (.json) ..."
+echo "Generating metadata (.json)..."
 DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO_PATH")
 
 python3 -c "
@@ -96,7 +98,7 @@ DEBUG_PATH=$TEMP_DIR/debug.text
 echo "Extracting audio (.wav)..."
 ffmpeg -y -i "$VIDEO_PATH" -vn -acodec pcm_s16le -ar 16000 -ac 1 "$AUDIO_PATH"
 
-echo "Running feature extraction ..."
+echo "Running feature extraction..."
 conda activate eventtree
 
 python src/preprocess/tree_feature_extract.py \
@@ -137,7 +139,7 @@ python src/preprocess/whisper_speech_asr.py \
     --checkpoint "$WHISPER_CKPT" \
     --gpu_id $GPU_ID
 
-echo "Running main pipeline ..."
+echo "Running main pipeline..."
 
 python src/eventtree/tree/tree.py \
     --data_path $DATA_PATH \
@@ -157,7 +159,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
     --stage2 $MODEL_STAGE2 \
     --stage3 $MODEL_STAGE3 \
     --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
-    --similarity_threshold 0.9
+    --similarity_threshold $SIMILARITY_THRESHOLD
 
 conda activate eventtree-post
 

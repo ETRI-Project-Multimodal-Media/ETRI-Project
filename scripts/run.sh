@@ -25,6 +25,8 @@ MODEL_STAGE2=./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp
 MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b-stage3-it
 MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
 
+SIMILARITY_THRESHOLD=0.9
+
 if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -n "$HF_TOKEN" ]; then
     export HUGGINGFACE_HUB_TOKEN="$HF_TOKEN"
 fi
@@ -34,8 +36,8 @@ if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -z "$HF_TOKEN" ]; then
     exit 1
 fi
 
-echo "Running main pipeline ..."
-conda activate eventtree
+echo "Running main pipeline..."
+conda activate eventtree-pre
 
 python src/eventtree/tree/tree.py \
     --data_path $DATA_PATH \
@@ -55,7 +57,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
     --stage2 $MODEL_STAGE2 \
     --stage3 $MODEL_STAGE3 \
     --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
-    --similarity_threshold 0.9
+    --similarity_threshold $SIMILARITY_THRESHOLD
 
 conda activate eventtree-post
 
@@ -65,7 +67,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
     --save_path $TREE_SAVE_PATH \
 
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
-    --input "$TREE_SAVE_PATH" \
-    --output-dir "$POST_SAVE_DIR" \
-    --speech-json-dir "$SPEECH_ASR_DIR" \
-    --not-json-dir "$DEBUG_PATH"
+    --input $TREE_SAVE_PATH \
+    --output-dir $POST_SAVE_DIR \
+    --speech-json-dir $SPEECH_ASR_DIR \
+    --not-json-dir $DEBUG_PATH
