@@ -50,7 +50,7 @@ if __name__ == "__main__":
     model = pipeline(
         "text-generation",
         model="meta-llama/Meta-Llama-3-8B-Instruct",
-        model_kwargs={"dtype": torch.bfloat16}, 
+        model_kwargs={"torch_dtype": torch.bfloat16}, 
         device='cuda'
     )
     

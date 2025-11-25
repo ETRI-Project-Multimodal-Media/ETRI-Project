@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source $HOME/anaconda3/etc/profile.d/conda.sh
 export PYTHONPATH=src:$PYTHONPATH
 
 GPU_ID=0
@@ -34,10 +34,8 @@ if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -z "$HF_TOKEN" ]; then
     exit 1
 fi
 
-source ~/anaconda3/etc/profile.d/conda.sh
-conda activate eventtree
-
 echo "Running main pipeline ..."
+conda activate eventtree
 
 python src/eventtree/tree/tree.py \
     --data_path $DATA_PATH \
