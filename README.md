@@ -33,19 +33,23 @@ pip install sentence-transformers
 ```
 
 ## Data Setup
+- `annotation.json`, `prompt.json`, (`video.mp4`, `audio.wav`)이 필요합니다. 
+- `annotation.json` 형식은 `data/example.json`와 같으며, video id (YouTube id)와 duration이 필요합니다. 
+- `prompt.json`은 Leaf (LongVALE) 및 Internal (LLaMA3) Node Captioning에 입력되는 프롬프트가 포함되어 있습니다. 
+
 ```shell
-# Tree Feature Extraction 
+# Tree Feature Extraction (features_tree)
 # Type: all, video, audio, speech
 bash scripts/features_tree.sh <TYPE>
 ```
 
 ```shell
-# LongVALE Feature Extraction 
+# LongVALE Feature Extraction (features_eval)
 # Type: all, video, audio, speech, speech_asr
 bash scripts/features_longvale.sh <TYPE>
 ```
 
-기본 데이터 디렉터리 구성 예시는 다음과 같습니다.
+`data` 디렉터리 구성 예시는 다음과 같습니다.
 
 ```text
 data/
@@ -64,31 +68,7 @@ data/
     ├── speech_features/{video_id}.npy
     └── speech_asr/{video_id}.json
 ```
-
-기본 checkpoints 디렉터리 구성 예시는 다음과 같습니다.
-
-```text
-checkpoints/
-├── vicuna-7b-v1.5
-├── longvale-vicuna-v1-5-7b-stage2-bp
-├── longvale-vicuna-v1-5-7b-stage3-it
-├── vtimellm_stage1_mm_projector.bin 
-```
-
-### Extracted features of LongVALE
-
-| Modality      | Encoder | Checkpoint path                           | Download checkpoint                                                                 |
-|---------------|---------|-------------------------------------------|-------------------------------------------------------------------------------------|
-| Visual frames | CLIP    | `./checkpoints/ViT-L-14.pt`               | [ViT-L/14](https://github.com/openai/CLIP)                                         |
-| Audio         | BEATs   | `./checkpoints/BEATs_iter3_plus_AS20K.pt` | [BEATs_iter3_plus_AS20K](https://github.com/microsoft/unilm/tree/master/BEATs)     |
-| Speech        | Whisper | `./checkpoints/openai-whisper-large-v2`   | [whisper-large-v2](https://huggingface.co/openai/whisper-large-v2)                 |
-
-
-### Download model weights
-- Download [Vicuna v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5) and [vtimellm_stage1](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/vtimellm_stage1_mm_projector.bin) weights, and place them into the `checkpoints` directory.
-- Download LongVALE-LLM model from [longvalellm-vicuna-v1-5-7b.tar.gz](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/longvalellm-vicuna-v1-5-7b.tar.gz), and place it into the `checkpoints` directory.
-  
-
+    
 `scripts/postprocess.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
 
 ```text
@@ -101,6 +81,31 @@ outputs/
     
 logs/
 └── debug.txt                  # 잘못된 샘플 로그 (DEBUG_LOG)
+```
+    
+## Checkpoint Setup
+
+| Modality      | Encoder | Checkpoint path                           | Download checkpoint                                                                 |
+|---------------|---------|-------------------------------------------|-------------------------------------------------------------------------------------|
+| Visual        | CLIP    | `./checkpoints/ViT-L-14.pt`               | [ViT-L/14](https://github.com/openai/CLIP)                                         |
+| Audio         | BEATs   | `./checkpoints/BEATs_iter3_plus_AS20K.pt` | [BEATs_iter3_plus_AS20K](https://github.com/microsoft/unilm/tree/master/BEATs)     |
+| Speech        | Whisper | `./checkpoints/openai-whisper-large-v2`   | [whisper-large-v2](https://huggingface.co/openai/whisper-large-v2)                 |
+
+- LongVALE: Download [Vicuna v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5) and [vtimellm_stage1](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/vtimellm_stage1_mm_projector.bin) weights.
+- LongVALE: Download LongVALE-LLM model from [longvalellm-vicuna-v1-5-7b.tar.gz](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/longvalellm-vicuna-v1-5-7b.tar.gz).
+  
+`checkpoints` 디렉터리 구성 예시는 다음과 같습니다.
+
+```text
+checkpoints/
+├── ViT-L-14.pt
+├── BEATs_iter3_plus_AS20K.pt
+├── openai-whisper-large-v2
+├── vicuna-7b-v1.5
+├── vtimellm_stage1_mm_projector.bin 
+└── longvalellm-vicuna-v1-5-7b
+    ├── longvale-vicuna-v1-5-7b-stage2-bp
+    └── longvale-vicuna-v1-5-7b-stage3-it
 ```
 
 ## How to Run
@@ -117,51 +122,12 @@ ssh -L 8501:172.17.0.7:8501 Docker_206 # in-case portforward
 
 ```shell
 # Demo (Video file)
-bash scripts/run_demo.sh
-
-...
-
-BASE_DIR=/path/to/base_dir # Set this to base directory 
-DEMO_DIR=/path/to/demo_dir # Set this to demo directory
-VIDEO_NAME=sample # Set this to video filename
-VIDEO_PATH=$DEMO_DIR/$VIDEO_NAME.mp4 
+# Ex. bash scripts/run_demo.sh Abc123 'Event'
+bash scripts/run_demo.sh <VIDEO_ID> <QUERY>
 ```
+
 ```shell
 # Demo (Video link)
-bash scripts/run_demo_url.sh <VIDEO_LINK>
-
-...
-
-INPUT_SOURCE=$1 # Input Video Link (source)
-BASE_DIR=/path/to/base_dir # Set this to base directory 
-DEMO_DIR=/path/to/demo_dir # Set this to demo directory
-
-# LLaMA3 - Internal Node Captioning
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
-    --tree_path $SAVE_PATH \
-    --prompt_path $PROMPT_PATH \
-    --save_path $SAVE_PATH \
-
-# LLaMA3 - Postprocessing
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
-    --input "$TREE_SAVE_PATH" \
-    --output-dir "$POST_SAVE_DIR" \
-    --speech-json-dir "$SPEECH_ASR_DIR" \
-    --not-json-dir "$DEBUG_PATH"
-
-# Query
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
-    --input "$VIDEO_JSON" \
-    --query "$QUERY_STR" \
-    --mode text_embed \
-    --output "$QUERY_SAVE_DIR"
-
-# Query Experiment 1
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/benchmark_queries.py
-
-# Query Experiment 2
-CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/domain_threshold_analysis.py \
-    --tree-file "$TREE_FILE" \
-    --video-dir "$VIDEO_DIR" \
-    --output "$REPO_ROOT/query/domain_topk_stats.json"
+# Ex. bash scripts/run_demo_url.sh https://www.youtube.com/watch?v=Abc123 'Event'
+bash scripts/run_demo_url.sh <VIDEO_LINK> <QUERY>
 ```

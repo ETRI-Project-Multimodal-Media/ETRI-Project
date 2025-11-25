@@ -39,10 +39,18 @@ def main(args):
             level=0,
         )
 
-        node.build_tree(
-            features=avs_features,
-            root_node=root_node,
-        )
+        if args.split_method == 'kmeans':
+            node.build_tree_top_down(
+                features=avs_features,
+                parent_node=root_node,
+                args=args
+            )
+        elif args.split_method == 'twfinch':
+            node.build_tree_bottom_up(
+                features=avs_features,
+                root_node=root_node,
+                args=args
+            )
     
         def node_to_dict(node):
             start_time = node.start_time - 0.5 if node.start_time > 0.0 else node.start_time
@@ -64,6 +72,7 @@ def main(args):
         }
 
         result[root_video_id] = root_content
+
     with open(args.save_path, 'w') as f:
         json.dump(result, f, indent=4)
 
@@ -74,6 +83,10 @@ if __name__ == "__main__":
     parser.add_argument('--audio_feat_folder', type=str, default='./data/features_tree/audio_features')
     parser.add_argument('--speech_feat_folder', type=str, default='./data/features_tree/speech_features')
     parser.add_argument('--save_path', type=str, default='./outputs/tree.json')
+    parser.add_argument('--split_method', type=str, choices=['kmeans', 'twfinch'], default='twfinch', help='Method to split segments')
+    parser.add_argument('--split_n_clusters', type=int, default=3, help='Number of clusters for kmeans splitting')
+    parser.add_argument('--max_depth', type=lambda x: None if str(x).lower() == 'none' else int(x), default=None, help='Maximum depth of the video tree ')
+    parser.add_argument('--min_segment_length', type=float, default=3.0, help='Minimum length of a segment to consider splitting')
     args = parser.parse_args()
     
     main(args)

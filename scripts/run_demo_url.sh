@@ -1,14 +1,18 @@
 #!/bin/bash
+source $HOME/anaconda3/etc/profile.d/conda.sh
 export PYTHONPATH=src:$PYTHONPATH
 
-INPUT_SOURCE=$1 # Input Video Link (source)
+INPUT_SOURCE=$1 # Input: Video Link 
+QUERY_STR=$2 # Input: Query 
 
 GPU_ID=0 # Set this to GPU ID
-BASE_DIR=/path/to/base_dir # Set this to base directory 
-DEMO_DIR=/path/to/demo_dir # Set this to demo directory
+BASE_DIR=path # Set this to base directory 
+DEMO_DIR=path/demo # Set this to demo directory
 
 TREE_SAVE_PATH=$DEMO_DIR/outputs/log.json 
 POST_SAVE_DIR=$DEMO_DIR/outputs 
+RESULT_SAVE_DIR=$POST_SAVE_DIR/demo.json
+QUERY_SAVE_DIR=$POST_SAVE_DIR/query/demo.json
 
 PROMPT_PATH=$BASE_DIR/data/prompt.json
 
@@ -21,15 +25,26 @@ MODEL_STAGE2=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1
 MODEL_STAGE3=$BASE_DIR/checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it
 MODEL_MM_MLP=$BASE_DIR/checkpoints/vtimellm_stage1_mm_projector.bin 
 
-if [ -z "$INPUT_SOURCE" ]; then
-    echo "Usage: $0 <VIDEO_URL_OR_FILE_PATH>"
-    echo "Example: $0 https://www.youtube.com/watch?v=..."
+SIMILARITY_THRESHOLD=0.9
+
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -n "$HF_TOKEN" ]; then
+    export HUGGINGFACE_HUB_TOKEN="$HF_TOKEN"
+fi
+
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -z "$HF_TOKEN" ]; then
+    echo "No HuggingFace token in environment."
+    exit 1
+fi
+
+if [ -z "$INPUT_SOURCE" ] || [ -z "$QUERY_STR" ]; then
+    echo "Usage: $0 <VIDEO_URL> <QUERY>"
+    echo "Example: $0 https://www.youtube.com/watch?v=abc123 'event'"
     exit 1
 fi
 
 for cmd in ffmpeg ffprobe yt-dlp; do
     if ! command -v $cmd >/dev/null 2>&1; then
-        echo "Error: $cmd is not installed."
+        echo "Error: $cmd is not installed. Please install $cmd."
         exit 1
     fi
 done
@@ -49,7 +64,7 @@ VIDEO_PATH=$TEMP_DIR/demo.mp4
 AUDIO_PATH=$TEMP_DIR/demo.wav 
 
 if [[ "$INPUT_SOURCE" =~ ^http.* ]]; then
-    echo "Downloading video from URL ..."
+    echo "Downloading video from URL..."
     yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" \
         --force-overwrites -o "$VIDEO_PATH" "$INPUT_SOURCE"
     
@@ -62,7 +77,7 @@ else
     exit 1
 fi
 
-echo "Generating metadata (.json) ..."
+echo "Generating metadata (.json)..."
 DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$VIDEO_PATH")
 
 python3 -c "
@@ -83,10 +98,9 @@ DEBUG_PATH=$TEMP_DIR/debug.text
 echo "Extracting audio (.wav)..."
 ffmpeg -y -i "$VIDEO_PATH" -vn -acodec pcm_s16le -ar 16000 -ac 1 "$AUDIO_PATH"
 
-source ~/anaconda3/etc/profile.d/conda.sh
+echo "Running feature extraction..."
 conda activate eventtree
 
-echo "Running feature extraction ..."
 python src/preprocess/tree_feature_extract.py \
     --data_path $DATA_PATH \
     --video_dir $TEMP_DIR \
@@ -125,7 +139,8 @@ python src/preprocess/whisper_speech_asr.py \
     --checkpoint "$WHISPER_CKPT" \
     --gpu_id $GPU_ID
 
-echo "Running main pipeline ..."
+echo "Running main pipeline..."
+
 python src/eventtree/tree/tree.py \
     --data_path $DATA_PATH \
     --video_feat_folder $TREE_FEAT/video_features \
@@ -144,9 +159,10 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
     --stage2 $MODEL_STAGE2 \
     --stage3 $MODEL_STAGE3 \
     --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
-    --similarity_threshold 0.9
+    --similarity_threshold $SIMILARITY_THRESHOLD
 
 conda activate eventtree-post
+
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
     --tree_path $TREE_SAVE_PATH \
     --prompt_path $PROMPT_PATH \
@@ -158,4 +174,10 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
     --speech-json-dir $MODEL_FEAT/speech_asr \
     --not-json-dir $DEBUG_PATH
 
-echo "Demo completed. (Results are saved in $POST_SAVE_DIR)"
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
+    --input "$RESULT_SAVE_DIR" \
+    --query "$QUERY_STR" \
+    --mode text_embed \
+    --output "$QUERY_SAVE_DIR"
+
+echo "Demo completed. (Results are saved in $POST_SAVE_DIR, $QUERY_SAVE_DIR)"

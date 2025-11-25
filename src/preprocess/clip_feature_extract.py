@@ -78,7 +78,7 @@ if __name__ =='__main__':
     data_loader = create_data_loader(args.annotation, args.video_dir)
     with torch.no_grad():
         for (images, video_ids) in tqdm(data_loader):
-            if images.numel() == 0:  # 전부 스킵된 경우
+            if images.numel() == 0: 
                 continue
             images = images.to(device)
             video_id = video_ids[0]

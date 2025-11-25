@@ -1,41 +1,51 @@
 #!/bin/bash
-
+source $HOME/anaconda3/etc/profile.d/conda.sh
 export PYTHONPATH=src:$PYTHONPATH
-export HUGGINGFACE_HUB_TOKEN="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" # change
 
-
-DATA_PATH=./data/example.json
-PROMPT_PATH=./data/prompt.json
+GPU_ID=0
 
 DATA_PATH=./data/longvale-annotations-eval.json
 PROMPT_PATH=./data/prompt.json
 
+DATA_PATH=./data/longvale-annotations-eval.json
+PROMPT_PATH=./data/prompt.json
+TREE_V_FEAT=./data/features_tree/video_features
+TREE_A_FEAT=./data/features_tree/audio_features
+TREE_S_FEAT=./data/features_tree/speech_features
 TREE_SAVE_PATH=./outputs/log.json
 POST_SAVE_DIR=./outputs/postprocess
 DEBUG_PATH=./logs/debug.text
+QUERY_STR="indoor market"
+VIDEO_JSON="$POST_SAVE_DIR/olZPuJTwh0s.json"   
+QUERY_SAVE_DIR=./outputs/query/example.json
 
 TREE_V_FEAT=./data/features_tree/video_features
 TREE_A_FEAT=./data/features_tree/audio_features
 TREE_S_FEAT=./data/features_tree/speech_features
-
-MODEL_BASE=./checkpoints/vicuna-7b-v1.5
-MODEL_STAGE2=./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp
-MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b-stage3-it
-MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
 
 MODEL_V_FEAT=./data/features_eval/video_features
 MODEL_A_FEAT=./data/features_eval/audio_features
 MODEL_S_FEAT=./data/features_eval/speech_features
 SPEECH_ASR_DIR=./data/features_eval/speech_asr
 
+MODEL_BASE=./checkpoints/vicuna-7b-v1.5
+MODEL_STAGE2=./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp
+MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b-stage3-it
+MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
 
-GPU_ID=7
-QUERY_STR="indoor market"
-VIDEO_JSON="$POST_SAVE_DIR/olZPuJTwh0s.json"   
-QUERY_SAVE_DIR=./outputs/query/example.json
+SIMILARITY_THRESHOLD=0.9
 
-source ~/anaconda3/etc/profile.d/conda.sh
-conda activate eventtree
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -n "$HF_TOKEN" ]; then
+    export HUGGINGFACE_HUB_TOKEN="$HF_TOKEN"
+fi
+
+if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -z "$HF_TOKEN" ]; then
+    echo "No HuggingFace token in environment."
+    exit 1
+fi
+
+echo "Running main pipeline..."
+conda activate eventtree-pre
 
 python src/eventtree/tree/tree.py \
     --data_path $DATA_PATH \
@@ -55,7 +65,7 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/caption_longvale.py \
     --stage2 $MODEL_STAGE2 \
     --stage3 $MODEL_STAGE3 \
     --pretrain_mm_mlp_adapter $MODEL_MM_MLP \
-    --similarity_threshold 0.9
+    --similarity_threshold $SIMILARITY_THRESHOLD
 
 conda activate eventtree-post
 
@@ -65,10 +75,10 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/eventtree/summary_llama3.py \
     --save_path $TREE_SAVE_PATH \
 
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
-    --input "$TREE_SAVE_PATH" \
-    --output-dir "$POST_SAVE_DIR" \
-    --speech-json-dir "$SPEECH_ASR_DIR" \
-    --not-json-dir "$DEBUG_PATH"
+    --input $TREE_SAVE_PATH \
+    --output-dir $POST_SAVE_DIR \
+    --speech-json-dir $SPEECH_ASR_DIR \
+    --not-json-dir $DEBUG_PATH
 
 CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
     --input "$VIDEO_JSON" \
