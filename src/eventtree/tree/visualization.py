@@ -43,10 +43,17 @@ def visualize_tree_structure(full_df, save_path='visualization.html'):
         stroke='black',
         strokeWidth=0.5
     ).encode(
-        x=alt.X('start_time', title='timeline (s)', axis=alt.Axis(format='~s')),
+        x=alt.X('start_time', 
+                title='Time (s)',  
+                axis=alt.Axis(
+                    format='~s',
+                    titleFontSize=20,       
+                    titleFontWeight='bold', 
+                    labelFontSize=14        
+        )),
         x2=alt.X2('end_time'),
-        y=alt.Y('level:O', title='Level (Depth)', axis=alt.Axis(labels=True), scale=alt.Scale(reverse=False)),
-        color=alt.Color('level:N', title='Level'),
+        y=alt.Y('level:O', title='Level (Depth)', axis=alt.Axis(labels=True, titleFontSize=20, titleFontWeight='bold', labelFontSize=14), scale=alt.Scale(reverse=False,)),
+        color=alt.Color('level:N'),
         tooltip=[
             alt.Tooltip('video_id', title='Video ID'),
             alt.Tooltip('result', title='Result'),
@@ -55,12 +62,19 @@ def visualize_tree_structure(full_df, save_path='visualization.html'):
             alt.Tooltip('end_time', title='End', format='.2f'),
             alt.Tooltip('duration', title='Duration', format='.2f')
         ],
-        row=alt.Row('result:N', title='Result', header=alt.Header(titleOrient="top", labelOrient="top"))
+        row=alt.Row('result:N', 
+                    title='', 
+                    header=alt.Header(
+                        titleOrient="top", 
+                        labelOrient="top",
+                        labelFontSize=18,      
+                        labelFontWeight='bold'  
+        ))
     ).properties(
     ).properties(
-        title='Comparison of Hierarchical Structures',
-        width=1200,
-        height=200 
+    ).properties(
+        width=1500,
+        height=300 
     ).add_params(
         video_select
     ).transform_filter(
