@@ -33,8 +33,9 @@ pip install sentence-transformers
 ```
 
 ## Data Setup
-- `annotation.json`, `{video_id}.mp4`, `{video_id}.wav`이 필요합니다. 
+- `annotation.json`, `prompt.json`, (`video.mp4`, `audio.wav`)이 필요합니다. 
 - `annotation.json` 형식은 `data/example.json`와 같으며, video id (YouTube id)와 duration이 필요합니다. 
+- `prompt.json`은 Leaf (LongVALE) 및 Internal (LLaMA3) Node Captioning에 입력되는 프롬프트가 포함되어 있습니다. 
 
 ```shell
 # Tree Feature Extraction (features_tree)
