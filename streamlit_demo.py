@@ -109,11 +109,11 @@ model_base = st.sidebar.text_input(
 )
 model_stage2 = st.sidebar.text_input(
     "MODEL_STAGE2",
-    "./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp",
+    "./checkpoints/longvale-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp",
 )
 model_stage3 = st.sidebar.text_input(
     "MODEL_STAGE3",
-    "./checkpoints/longvale-vicuna-v1-5-7b-stage3-it",
+    "./checkpoints/longvale-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it",
 )
 model_mm_mlp = st.sidebar.text_input(
     "MODEL_MM_MLP",
