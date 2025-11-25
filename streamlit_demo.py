@@ -63,6 +63,15 @@ debug_path = st.sidebar.text_input(
     "DEBUG_PATH",
     "./logs/debug.text",
 )
+query_save_dir = st.sidebar.text_input(
+    "QUERY_SAVE_DIR",
+    "./outputs/query/example.json",
+)
+video_json = st.sidebar.text_input(
+    "VIDEO_JSON_PATH",
+    "./outputs/postprocess/olZPuJTwh0s.json",
+)
+
 
 tree_v_feat = st.sidebar.text_input(
     "TREE_V_FEAT",
@@ -114,6 +123,15 @@ hf_token = st.sidebar.text_input(
     "HF_TOKEN",
     "",
 )
+mode = st.sidebar.text_input(
+    "MODE_text_embed_or_heuristic",
+    "text_embed",
+)
+query_str = st.sidebar.text_input(
+    "QUERY_STR",
+    "indoor market",
+)
+
 
 gpu_id = st.sidebar.text_input("GPU_ID (CUDA_VISIBLE_DEVICES)", "6")
 
@@ -123,6 +141,7 @@ run_tree = st.sidebar.checkbox("1. Event Tree 생성 (tree.py)", value=False)
 run_caption = st.sidebar.checkbox("2. Tree 캡셔닝 (caption_longvale.py)", value=False)
 run_summary = st.sidebar.checkbox("3. Tree 요약 (summary_llama3.py)", value=False)
 run_postprocess = st.sidebar.checkbox("4. Postprocess (postprocess.py)", value=True)
+query_process = st.sidebar.checkbox("5. Query (search_queries.py)", value=True)
 
 if "log_text" not in st.session_state:
     st.session_state.log_text = ""
@@ -200,6 +219,21 @@ def show_postprocess_preview(output_dir):
     post_preview_area.markdown(f"**[4] Postprocess 미리보기 - {first_file}**")
     post_preview_area.json(data)
 
+def show_query_preview(output_dir):
+    output_dir = os.path.dirname(output_dir)
+    if not os.path.isdir(output_dir):
+        post_preview_area.info(f"query 출력 디렉토리를 찾을 수 없습니다: {output_dir}")
+        return
+    json_files = [f for f in os.listdir(output_dir) if f.endswith(".json")]
+    if not json_files:
+        post_preview_area.info("query 결과 JSON 파일이 없습니다.")
+        return
+    first_file = sorted(json_files)[0]
+    first_path = os.path.join(output_dir, first_file)
+    with open(first_path, "r") as f:
+        data = json.load(f)
+    post_preview_area.markdown(f"**[5] query 미리보기 - {first_file}**")
+    post_preview_area.json(data)
 
 if st.button("선택한 단계 실행"):
     st.session_state.log_text = ""
@@ -289,5 +323,27 @@ if st.button("선택한 단계 실행"):
         append_log(f"[4] 종료 코드: {code}")
         if code == 0:
             show_postprocess_preview(post_save_dir)
+            
+    # 5. Query (eventtree-post 환경)
+    if query_process:
+        append_log("[5] Query 시작 (conda env: eventtree-post)...")
+        os.makedirs(os.path.dirname(query_save_dir), exist_ok=True)
+        cmd = (
+            "bash -lc "
+            "\"source ~/anaconda3/etc/profile.d/conda.sh && "
+            "conda activate eventtree-post && "
+            f"CUDA_VISIBLE_DEVICES={gpu_id} "
+            "python src/query/search_queries.py "
+            f'--input \\"{video_json}\\" '
+            f'--query \\"{query_str}\\" '
+            f'--mode \\"{mode}\\" '
+            f'--output \\"{query_save_dir}\\"\"'
+        )
+             
+        code, out = run_command(cmd)
+        append_log(f"$ {cmd}\n{out}")
+        append_log(f"[5] 종료 코드: {code}")
+        if code == 0:
+            show_query_preview(query_save_dir)
 
     append_log("선택한 단계 실행이 모두 완료되었습니다.")

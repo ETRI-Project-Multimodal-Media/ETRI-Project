@@ -5,11 +5,21 @@
   "top_k": 20,
   "similarity_threshold": 0.2,
   "device": "cuda",
-  "elapsed_seconds": 8.382914066314697,
-  "current_memory_mib": 2182.8515625,
-  "peak_memory_mib": 4019.765625,
+  "elapsed_seconds": 6.762911319732666,
+  "current_memory_mib": 2171.93359375,
+  "peak_memory_mib": 4018.484375,
   "match_count": 20,
   "matches": [
+    {
+      "video_id": "olZPuJTwh0s",
+      "start_time": 281.5,
+      "end_time": 290.5,
+      "score": 0.7011219263076782,
+      "matched_text": "A man and a woman interact in a bustling indoor market.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
+      "score_type": "text_embed"
+    },
     {
       "video_id": "olZPuJTwh0s",
       "start_time": 249.5,
@@ -24,7 +34,7 @@
       "video_id": "olZPuJTwh0s",
       "start_time": 189.5,
       "end_time": 207.5,
-      "score": 0.68238365650177,
+      "score": 0.6823835372924805,
       "matched_text": "A man and a woman walk together in an indoor market.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
@@ -44,7 +54,7 @@
       "video_id": "olZPuJTwh0s",
       "start_time": 223.5,
       "end_time": 230.5,
-      "score": 0.6731940507888794,
+      "score": 0.673194169998169,
       "matched_text": "A man and a woman purchase fresh produce from a vendor in a bustling indoor market.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
@@ -52,20 +62,10 @@
     },
     {
       "video_id": "olZPuJTwh0s",
-      "start_time": 230.5,
-      "end_time": 240.5,
-      "score": 0.6731940507888794,
-      "matched_text": "A man and a woman purchase fresh produce from a vendor in a bustling indoor market.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "olZPuJTwh0s",
-      "start_time": 303.5,
-      "end_time": 307.5,
-      "score": 0.6731940507888794,
-      "matched_text": "A man and a woman purchase fresh produce from a vendor in a bustling indoor market.",
+      "start_time": 215.5,
+      "end_time": 223.5,
+      "score": 0.6694594621658325,
+      "matched_text": "A man carries a large object in an indoor market, followed by a woman.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
       "score_type": "text_embed"
@@ -84,28 +84,8 @@
       "video_id": "olZPuJTwh0s",
       "start_time": 260.5,
       "end_time": 281.5,
-      "score": 0.6535913944244385,
+      "score": 0.6535912156105042,
       "matched_text": "A man purchases fresh produce in an indoor market, while a woman and another man browse the market stalls.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "olZPuJTwh0s",
-      "start_time": 281.5,
-      "end_time": 321.5,
-      "score": 0.6490305662155151,
-      "matched_text": "Vendors and customers navigate the vibrant atmosphere of a bustling indoor market, where fresh produce and food items are expertly arranged and displayed, amidst a lively atmosphere of transactions and conversations.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "olZPuJTwh0s",
-      "start_time": 215.5,
-      "end_time": 223.5,
-      "score": 0.6488378047943115,
-      "matched_text": "A couple walks together in an indoor market, carrying a piece of furniture.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
       "score_type": "text_embed"
@@ -114,7 +94,7 @@
       "video_id": "olZPuJTwh0s",
       "start_time": 180.5,
       "end_time": 189.5,
-      "score": 0.6442452669143677,
+      "score": 0.6442451477050781,
       "matched_text": "A man carefully carries a large object in an indoor market, accompanied by a woman.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
@@ -122,50 +102,20 @@
     },
     {
       "video_id": "olZPuJTwh0s",
-      "start_time": 0.0,
-      "end_time": 105.5,
-      "score": 0.6436728835105896,
-      "matched_text": "A lively indoor market is showcased, featuring a diverse array of products and sounds, as a narrator describes the offerings amidst upbeat music.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "olZPuJTwh0s",
-      "start_time": 0.0,
-      "end_time": 21.5,
-      "score": 0.6436728835105896,
-      "matched_text": "A lively indoor market is showcased, featuring a diverse array of products and sounds, as a narrator describes the offerings amidst upbeat music.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "olZPuJTwh0s",
-      "start_time": 281.5,
-      "end_time": 290.5,
-      "score": 0.6316762566566467,
-      "matched_text": "In a bustling indoor market, a man in a white shirt and black pants carefully selects and arranges colorful, freshly cut fruits and vegetables on a tray, while a woman in a black dress and a man in a white shirt and black pants observe the display.",
+      "start_time": 230.5,
+      "end_time": 240.5,
+      "score": 0.629413902759552,
+      "matched_text": "In a bustling indoor market, a man in a white shirt and black pants carefully selects and purchases fresh produce from a colorful display of fruits and vegetables, while a woman in a black dress and white headscarf smiles at the camera.",
       "matched_field": "summary",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
       "score_type": "text_embed"
     },
     {
       "video_id": "olZPuJTwh0s",
-      "start_time": 189.5,
-      "end_time": 321.5,
-      "score": 0.6315203309059143,
-      "matched_text": "A man and woman shop for fresh produce together in a bustling indoor market, navigating the vibrant atmosphere and interacting with vendors amidst a lively scene of transactions and conversations.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "olZPuJTwh0s",
-      "start_time": 0.0,
-      "end_time": 15.5,
-      "score": 0.6308046579360962,
-      "matched_text": "A bustling indoor market is showcased, featuring vibrant products and sounds of a foreign language and upbeat music, as a man's voice describes the market's offerings.",
+      "start_time": 168.5,
+      "end_time": 170.5,
+      "score": 0.6293699741363525,
+      "matched_text": "A man walks through a bustling indoor market, passing by a table with colorful cakes and pastries.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
       "score_type": "text_embed"
@@ -182,19 +132,29 @@
     },
     {
       "video_id": "olZPuJTwh0s",
-      "start_time": 156.5,
-      "end_time": 166.5,
-      "score": 0.6123775243759155,
-      "matched_text": "A man walks through a bustling indoor market, passing by a crowd gathered around a table with colorful balloons and decorations.",
+      "start_time": 300.5,
+      "end_time": 303.5,
+      "score": 0.6238248944282532,
+      "matched_text": "In a bustling indoor market, a man in a white shirt and black pants carefully selects and purchases fresh produce from a colorful display of fruits and vegetables, while a woman in a black dress and white headscarf stands nearby, seemingly observing the transaction.",
+      "matched_field": "summary",
+      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "olZPuJTwh0s",
+      "start_time": 166.5,
+      "end_time": 168.5,
+      "score": 0.6086470484733582,
+      "matched_text": "A man carefully carries a colorful cake in a bustling indoor market, accompanied by a woman.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
       "score_type": "text_embed"
     },
     {
       "video_id": "olZPuJTwh0s",
-      "start_time": 135.5,
-      "end_time": 145.5,
-      "score": 0.6079605221748352,
+      "start_time": 130.5,
+      "end_time": 138.5,
+      "score": 0.6079604625701904,
       "matched_text": "The camera pans across a bustling indoor market, capturing the vibrant energy of the crowd and the lively atmosphere as people browse the stalls and vendors display their goods.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
@@ -202,10 +162,50 @@
     },
     {
       "video_id": "olZPuJTwh0s",
-      "start_time": 300.5,
-      "end_time": 303.5,
-      "score": 0.6048250794410706,
+      "start_time": 140.5,
+      "end_time": 143.5,
+      "score": 0.6079604625701904,
+      "matched_text": "The camera pans across a bustling indoor market, capturing the vibrant energy of the crowd and the lively atmosphere as people browse the stalls and vendors display their goods.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "olZPuJTwh0s",
+      "start_time": 145.5,
+      "end_time": 147.5,
+      "score": 0.6079604625701904,
+      "matched_text": "The camera pans across a bustling indoor market, capturing the vibrant energy of the crowd and the lively atmosphere as people browse the stalls and vendors display their goods.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "olZPuJTwh0s",
+      "start_time": 3.5,
+      "end_time": 10.5,
+      "score": 0.6060897707939148,
+      "matched_text": "The camera pans across a bustling indoor market, showcasing aisles filled with colorful fruits and vegetables, while upbeat pop music plays in the background.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "olZPuJTwh0s",
+      "start_time": 303.5,
+      "end_time": 307.5,
+      "score": 0.6048253774642944,
       "matched_text": "In a bustling indoor market, a man in a white shirt and black pants carefully selects and arranges colorful, translucent noodles from a large plastic container, while a woman's voice can be heard in the background.",
+      "matched_field": "summary",
+      "file_path": "outputs/postprocess/olZPuJTwh0s.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "olZPuJTwh0s",
+      "start_time": 240.5,
+      "end_time": 249.5,
+      "score": 0.6023725271224976,
+      "matched_text": "In a bustling indoor market, a man in a white shirt and black pants carefully carries a large tray of food, while a woman in a black dress walks behind him, her white handbag contrasting with the vibrant colors of the market.",
       "matched_field": "summary",
       "file_path": "outputs/postprocess/olZPuJTwh0s.json",
       "score_type": "text_embed"
@@ -213,35 +213,30 @@
   ],
   "text_embed_profile": {
     "model_ready": {
-      "elapsed": 6.96130133792758,
-      "current_memory_mib": 1854.76953125,
-      "peak_memory_mib": 4019.765625
+      "elapsed": 5.823971550911665,
+      "current_memory_mib": 1855.92578125,
+      "peak_memory_mib": 4018.484375
     },
     "query_embedding": {
-      "elapsed": 0.62017622590065,
-      "current_memory_mib": 2175.93359375,
-      "peak_memory_mib": 4019.765625,
+      "elapsed": 0.4378424286842346,
+      "current_memory_mib": 2163.0625,
+      "peak_memory_mib": 4018.484375,
       "embedding_bytes": 4096
     },
     "batch_000": {
-      "elapsed": 0.2050476297736168,
-      "current_memory_mib": 2182.83984375,
-      "peak_memory_mib": 4019.765625
+      "elapsed": 0.1818174459040165,
+      "current_memory_mib": 2170.48046875,
+      "peak_memory_mib": 4018.484375
     },
     "batch_001": {
-      "elapsed": 0.20604495704174042,
-      "current_memory_mib": 2182.8515625,
-      "peak_memory_mib": 4019.765625
+      "elapsed": 0.22351116314530373,
+      "current_memory_mib": 2171.22265625,
+      "peak_memory_mib": 4018.484375
     },
     "batch_002": {
-      "elapsed": 0.22128555551171303,
-      "current_memory_mib": 2182.8515625,
-      "peak_memory_mib": 4019.765625
-    },
-    "batch_003": {
-      "elapsed": 0.141267791390419,
-      "current_memory_mib": 2182.8515625,
-      "peak_memory_mib": 4019.765625
+      "elapsed": 0.06742002069950104,
+      "current_memory_mib": 2171.93359375,
+      "peak_memory_mib": 4018.484375
     }
   },
   "query_embedding_bytes": 4096
