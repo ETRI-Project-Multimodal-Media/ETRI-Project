@@ -97,13 +97,14 @@ logs/
 
 ```text
 checkpoints/
-├── vicuna-7b-v1.5
-├── longvale-vicuna-v1-5-7b-stage2-bp
-├── longvale-vicuna-v1-5-7b-stage3-it
-├── vtimellm_stage1_mm_projector.bin 
 ├── ViT-L-14.pt
 ├── BEATs_iter3_plus_AS20K.pt
-└── openai-whisper-large-v2
+├── openai-whisper-large-v2
+├── vicuna-7b-v1.5
+├── vtimellm_stage1_mm_projector.bin 
+└── longvalellm-vicuna-v1-5-7b
+    ├── longvale-vicuna-v1-5-7b-stage2-bp
+    └── longvale-vicuna-v1-5-7b-stage3-it
 ```
 
 ## How to Run

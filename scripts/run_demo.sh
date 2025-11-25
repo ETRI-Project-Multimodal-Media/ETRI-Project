@@ -1,12 +1,13 @@
 #!/bin/bash
+source $HOME/anaconda3/etc/profile.d/conda.sh
 export PYTHONPATH=src:$PYTHONPATH
 
 VIDEO_ID=$1 # Input: Video ID
 QUERY_STR=$2 # Input: Query 
 
 GPU_ID=0 # Set this to GPU ID
-BASE_DIR=/path/to/base_dir # Set this to base directory 
-DEMO_DIR=/path/to/demo_dir # Set this to demo directory
+BASE_DIR=path # Set this to base directory 
+DEMO_DIR=path/demo # Set this to demo directory
 
 VIDEO_PATH=$DEMO_DIR/$VIDEO_ID.mp4 
 
@@ -81,10 +82,9 @@ with open('${DATA_PATH}', 'w') as f:
 echo "Extracting audio (.wav)..."
 ffmpeg -y -i "$VIDEO_PATH" -vn -acodec pcm_s16le -ar 16000 -ac 1 "$AUDIO_PATH"
 
-source ~/anaconda3/etc/profile.d/conda.sh
+echo "Running feature extraction ..."
 conda activate eventtree
 
-echo "Running feature extraction ..."
 python src/preprocess/tree_feature_extract.py \
     --data_path $DATA_PATH \
     --video_dir $DEMO_DIR \
@@ -124,6 +124,7 @@ python src/preprocess/whisper_speech_asr.py \
     --gpu_id $GPU_ID
 
 echo "Running main pipeline ..."
+
 python src/eventtree/tree/tree.py \
     --data_path $DATA_PATH \
     --video_feat_folder $TREE_FEAT/video_features \
