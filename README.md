@@ -108,6 +108,20 @@ checkpoints/
     └── longvale-vicuna-v1-5-7b-stage3-it
 ```
 
+## How to Download Checkpoints
+### Files(ViT-L-14.pt / BEATs_iter3_plus_AS20K.pt / vtimellm_stage1_mm_projector.bin) Folder (longvalellm-vicuna-v1-5-7b.tar.gz)
+Just push Download checkpoint
+```shell
+tar -xvf ./longvalellm-vicuna-v1-5-7b.tar.gz
+```
+### Folder (whisper-large-v2 / vicuna-7b-v1.5)
+```shell
+sudo apt install git-lfs
+git lfs install
+git clone https://huggingface.co/openai/whisper-large-v2 # whisper-large-v2
+git clone https://huggingface.co/lmsys/vicuna-7b-v1.5
+```
+
 ## How to Run
 ```shell
 # Main
