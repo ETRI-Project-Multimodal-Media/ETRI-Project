@@ -87,8 +87,8 @@ logs/
 
 | Modality      | Encoder | Checkpoint path                           | Download checkpoint                                                                 |
 |---------------|---------|-------------------------------------------|-------------------------------------------------------------------------------------|
-| Visual        | CLIP    | `./checkpoints/ViT-L-14.pt`               | [ViT-L/14](https://github.com/openai/CLIP)                                         |
-| Audio         | BEATs   | `./checkpoints/BEATs_iter3_plus_AS20K.pt` | [BEATs_iter3_plus_AS20K](https://github.com/microsoft/unilm/tree/master/BEATs)     |
+| Visual        | CLIP    | `./checkpoints/ViT-L-14.pt`               | [ViT-L/14](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/checkpoints/ViT-L-14.pt?download=true)                                         |
+| Audio         | BEATs   | `./checkpoints/BEATs_iter3_plus_AS20K.pt` | [BEATs_iter3_plus_AS20K](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/checkpoints/BEATs_iter3_plus_AS20K.pt?download=true)     |
 | Speech        | Whisper | `./checkpoints/openai-whisper-large-v2`   | [whisper-large-v2](https://huggingface.co/openai/whisper-large-v2)                 |
 
 - LongVALE: Download [Vicuna v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5) and [vtimellm_stage1](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/vtimellm_stage1_mm_projector.bin) weights.
