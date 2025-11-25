@@ -45,7 +45,7 @@ st.markdown(
 st.sidebar.header("기본 설정")
 data_path = st.sidebar.text_input(
     "DATA_PATH",
-    "./data/longvale-annotations-eval.json",
+    "./data/annotation.json",
 )
 prompt_path = st.sidebar.text_input(
     "PROMPT_PATH",
@@ -88,19 +88,19 @@ tree_s_feat = st.sidebar.text_input(
 
 model_v_feat = st.sidebar.text_input(
     "MODEL_V_FEAT",
-    "./data/features_eval/video_features",
+    "./data/features_model/video_features",
 )
 model_a_feat = st.sidebar.text_input(
     "MODEL_A_FEAT",
-    "./data/features_eval/audio_features",
+    "./data/features_model/audio_features",
 )
 model_s_feat = st.sidebar.text_input(
     "MODEL_S_FEAT",
-    "./data/features_eval/speech_features",
+    "./data/features_model/speech_features",
 )
 speech_asr_dir = st.sidebar.text_input(
     "SPEECH_ASR_DIR",
-    "./data/features_eval/speech_asr",
+    "./data/features_model/speech_asr",
 )
 
 model_base = st.sidebar.text_input(
@@ -109,11 +109,11 @@ model_base = st.sidebar.text_input(
 )
 model_stage2 = st.sidebar.text_input(
     "MODEL_STAGE2",
-    "./checkpoints/longvale-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp",
+    "./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp",
 )
 model_stage3 = st.sidebar.text_input(
     "MODEL_STAGE3",
-    "./checkpoints/longvale-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it",
+    "./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it",
 )
 model_mm_mlp = st.sidebar.text_input(
     "MODEL_MM_MLP",

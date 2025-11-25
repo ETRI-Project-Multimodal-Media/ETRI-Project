@@ -1,4 +1,4 @@
-    #!/bin/bash
+#!/bin/bash
 source $HOME/anaconda3/etc/profile.d/conda.sh
 export PYTHONPATH=src:$PYTHONPATH
 
@@ -26,6 +26,10 @@ MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage
 MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
 
 SIMILARITY_THRESHOLD=0.9
+
+QUERY_STR="indoor market"
+VIDEO_JSON="$POST_SAVE_DIR/olZPuJTwh0s.json" # example
+QUERY_SAVE_DIR=./outputs/query/example.json
 
 if [ -z "$HUGGINGFACE_HUB_TOKEN" ] && [ -n "$HF_TOKEN" ]; then
     export HUGGINGFACE_HUB_TOKEN="$HF_TOKEN"
@@ -71,3 +75,10 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
     --output-dir $POST_SAVE_DIR \
     --speech-json-dir $SPEECH_ASR_DIR \
     --not-json-dir $DEBUG_PATH
+
+# Query
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
+    --input "$VIDEO_JSON" \
+    --query "$QUERY_STR" \
+    --mode text_embed \
+    --output "$QUERY_SAVE_DIR"

@@ -139,8 +139,8 @@ bash scripts/run.sh
 
 ```shell
 # Streamlit
-streamlit run streamlit_demo.py --server.address 0.0.0.0 --server.port 8501
-ssh -L 8501:172.17.0.7:8501 Docker_206 # in-case portforward
+streamlit run streamlit_demo.py --server.address 0.0.0.0 --server.port <PORT> # --server.address : expose to external ip, --server.port : exposed port number 
+ssh -L <LOCALPORT>:<SERVER_IP>:<PORT> <USER>@<CLIENT_IP>  
 ```
 
 ```shell
