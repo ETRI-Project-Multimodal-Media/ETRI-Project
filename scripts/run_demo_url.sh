@@ -7,7 +7,7 @@ QUERY_STR=$2 # Input: Query
 
 GPU_ID=0 # Set this to GPU ID
 BASE_DIR=path # Set this to base directory 
-DEMO_DIR=path/demo # Set this to demo directory
+DEMO_DIR=$BASE_DIR/demo
 
 TREE_SAVE_PATH=$DEMO_DIR/outputs/log.json 
 POST_SAVE_DIR=$DEMO_DIR/outputs 
