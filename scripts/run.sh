@@ -7,9 +7,17 @@ GPU_ID=0
 DATA_PATH=./data/longvale-annotations-eval.json
 PROMPT_PATH=./data/prompt.json
 
+DATA_PATH=./data/longvale-annotations-eval.json
+PROMPT_PATH=./data/prompt.json
+TREE_V_FEAT=./data/features_tree/video_features
+TREE_A_FEAT=./data/features_tree/audio_features
+TREE_S_FEAT=./data/features_tree/speech_features
 TREE_SAVE_PATH=./outputs/log.json
 POST_SAVE_DIR=./outputs/postprocess
 DEBUG_PATH=./logs/debug.text
+QUERY_STR="indoor market"
+VIDEO_JSON="$POST_SAVE_DIR/olZPuJTwh0s.json"   
+QUERY_SAVE_DIR=./outputs/query/example.json
 
 TREE_V_FEAT=./data/features_tree/video_features
 TREE_A_FEAT=./data/features_tree/audio_features
@@ -71,3 +79,9 @@ CUDA_VISIBLE_DEVICES=$GPU_ID python src/postprocess/postprocess.py \
     --output-dir $POST_SAVE_DIR \
     --speech-json-dir $SPEECH_ASR_DIR \
     --not-json-dir $DEBUG_PATH
+
+CUDA_VISIBLE_DEVICES=$GPU_ID python src/query/search_queries.py \
+    --input "$VIDEO_JSON" \
+    --query "$QUERY_STR" \
+    --mode text_embed \
+    --output "$QUERY_SAVE_DIR"
