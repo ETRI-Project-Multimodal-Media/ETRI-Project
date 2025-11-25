@@ -6,9 +6,9 @@ EXTRACT_MODALITY=${1:-all}
 
 GPU_ID=0
 
-DATA_PATH=./data/longvale-annotations-eval.json
-VIDEO_DIR=./data/raw_data/video_test
-AUDIO_DIR=./data/raw_data/audio_test
+DATA_PATH=./data/annotation.json
+VIDEO_DIR=./data/raw_data/video
+AUDIO_DIR=./data/raw_data/audio
 SAVE_DIR=./data/features_tree
 
 CLIP_CKPT=./checkpoints/ViT-L-14.pt
