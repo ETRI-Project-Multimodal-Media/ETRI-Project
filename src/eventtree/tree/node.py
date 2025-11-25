@@ -29,14 +29,55 @@ class EventNode:
         timestamps=({self.start_time:.2f}, {self.end_time:.2f}), \
         level={self.level}, n_child={len(self.children)})"
 
-def build_tree(
+# K-means Clustering 
+def build_tree_top_down(
+    features: np.ndarray, 
+    parent_node: EventNode, 
+    args
+    ): 
+    
+    if args.max_depth is not None and parent_node.level >= args.max_depth:
+        return 
+
+    if parent_node.get_duration() < args.min_segment_length * 2: 
+        return 
+
+    start_idx = int(parent_node.start_time)
+    end_idx = int(parent_node.end_time)
+
+    segment_features = features[start_idx:end_idx+1]
+    if segment_features.shape[0] < 2:
+        return
+    
+    new_segments = split.find_split_points(
+        segment_features,
+        parent_node.start_time,
+        parent_node.end_time,
+        args
+    )
+    
+    if new_segments:
+        for (start, end) in new_segments:
+            child_node = EventNode(
+                start_time=start,
+                end_time=end,
+                level=parent_node.level+ 1,
+                # video_id=current_node.video_id
+            )
+            parent_node.add_child(child_node)
+            build_tree_top_down(features, child_node, args)
+
+# TW-FINCH Clustering
+def build_tree_bottom_up(
     features: np.ndarray, 
     root_node: EventNode,  
+    args
 ): 
     hier_segments = split.find_split_points(
         features,
         root_node.start_time,
         root_node.end_time,
+        args
     )
     
     def build_subtree(parent_node: EventNode): 

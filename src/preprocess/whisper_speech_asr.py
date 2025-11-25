@@ -68,7 +68,7 @@ if __name__ =='__main__':
 
     with torch.no_grad():
         for (spectrogram, video_ids) in tqdm(data_loader):
-            if spectrogram.numel() == 0:  # 전부 스킵된 경우
+            if spectrogram.numel() == 0: 
                 continue
             video_id = video_ids[0]
             save_path = os.path.join(args.save_dir, '{}.json'.format(video_id))
