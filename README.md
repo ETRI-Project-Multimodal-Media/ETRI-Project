@@ -109,9 +109,17 @@ checkpoints/
 ```
 
 ## How to Download Checkpoints
-### Files(ViT-L-14.pt / BEATs_iter3_plus_AS20K.pt / vtimellm_stage1_mm_projector.bin) Folder (longvalellm-vicuna-v1-5-7b.tar.gz)
+### **Files**
+- `ViT-L-14.pt`  
+- `BEATs_iter3_plus_AS20K.pt`  
+- `vtimellm_stage1_mm_projector.bin`  
 Just push Download checkpoint
+
+### **Folder**
+- `longvalellm-vicuna-v1-5-7b.tar.gz`
+1. Just push Download checkpoint 
 ```shell
+# 2.
 tar -xvf ./longvalellm-vicuna-v1-5-7b.tar.gz
 ```
 ### Folder (whisper-large-v2 / vicuna-7b-v1.5)
