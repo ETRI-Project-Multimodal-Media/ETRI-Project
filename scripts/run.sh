@@ -21,8 +21,8 @@ MODEL_S_FEAT=./data/features_model/speech_features
 SPEECH_ASR_DIR=./data/features_model/speech_asr
 
 MODEL_BASE=./checkpoints/vicuna-7b-v1.5
-MODEL_STAGE2=./checkpoints/longvale-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp
-MODEL_STAGE3=./checkpoints/longvale-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it
+MODEL_STAGE2=./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp
+MODEL_STAGE3=./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it
 MODEL_MM_MLP=./checkpoints/vtimellm_stage1_mm_projector.bin 
 
 SIMILARITY_THRESHOLD=0.9

@@ -33,10 +33,10 @@ pip install sentence-transformers
 ```
 
 ## Data Setup
-- `annotation.json`, `prompt.json`, (`video.mp4`, `audio.wav`)이 필요합니다. 
-- `annotation.json` 형식은 `data/example.json`와 같으며, video id (YouTube id)와 duration이 필요합니다. 
-- `prompt.json`은 Leaf (LongVALE) 및 Internal (LLaMA3) Node Captioning에 입력되는 프롬프트가 포함되어 있습니다. 
-
+- `annotation.json`, `prompt.json`, (`video.mp4`, `audio.wav`) 필요합니다. 
+- `annotation.json`: video id (YouTube id)와 duration이 포함되어 있어야 합니다. 
+- `prompt.json`: Node Captioning 과정에서 입력되는 프롬프트가 포함되어 있습니다. 
+- `audio.wav`: `video.mp4`로부터 오디오를 추출해주셔야 합니다 (ffmpeg 이용).
 ```shell
 # Tree Feature Extraction (features_tree)
 # Type: all, video, audio, speech
@@ -138,12 +138,6 @@ bash scripts/run.sh
 ```
 
 ```shell
-# Streamlit
-streamlit run streamlit_demo.py --server.address 0.0.0.0 --server.port <PORT> # --server.address : expose to external ip, --server.port : exposed port number 
-ssh -L <LOCALPORT>:<SERVER_IP>:<PORT> <USER>@<CLIENT_IP>  
-```
-
-```shell
 # Demo (Video file)
 # Ex. bash scripts/run_demo.sh Abc123 'Event'
 bash scripts/run_demo.sh <VIDEO_ID> <QUERY>
@@ -153,4 +147,10 @@ bash scripts/run_demo.sh <VIDEO_ID> <QUERY>
 # Demo (Video link)
 # Ex. bash scripts/run_demo_url.sh https://www.youtube.com/watch?v=Abc123 'Event'
 bash scripts/run_demo_url.sh <VIDEO_LINK> <QUERY>
+
+```
+```shell
+# Streamlit
+streamlit run streamlit_demo.py --server.address 0.0.0.0 --server.port <PORT> # --server.address : expose to external ip, --server.port : exposed port number 
+ssh -L <LOCALPORT>:<SERVER_IP>:<PORT> <USER>@<CLIENT_IP>  
 ```
