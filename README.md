@@ -140,14 +140,15 @@ git clone https://huggingface.co/lmsys/vicuna-7b-v1.5
 ```
 
 ## How to Run
+### **Main**
 ```shell
-# Main
 bash scripts/run.sh
 ```
 
+### **Demo 1**
+Input: Video file (.mp4)
+Ex. `bash scripts/run_demo.sh Abc123 'Event'`
 ```shell
-# Demo (Video file)
-# Ex. bash scripts/run_demo.sh Abc123 'Event'
 bash scripts/run_demo.sh <VIDEO_ID> <QUERY>
 ```
 `scripts/run_demo.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
@@ -166,9 +167,10 @@ demo/
         └── {video_id}.json # Query result
 ```
 
+### **Demo 2**
+Input: Video link (URL)
+Ex. `bash scripts/run_demo_url.sh https://www.youtube.com/watch?v=Abc123 'Event'`
 ```shell
-# Demo (Video link)
-# Ex. bash scripts/run_demo_url.sh https://www.youtube.com/watch?v=Abc123 'Event'
 bash scripts/run_demo_url.sh <VIDEO_LINK> <QUERY>
 ```
 `scripts/run_demo_url.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
@@ -184,9 +186,8 @@ demo/
 └── └── query/ 
         └── demo.json # Query result
 ```
-
+### **Streamlit**
 ```shell
-# Streamlit
 streamlit run streamlit_demo.py --server.address 0.0.0.0 --server.port <PORT> # --server.address : expose to external ip, --server.port : exposed port number 
 ssh -L <LOCALPORT>:<SERVER_IP>:<PORT> <USER>@<CLIENT_IP>  
 ```
