@@ -32,6 +32,14 @@ pip install jsonschema
 pip install sentence-transformers
 ```
 
+```bash
+# System package
+# If it's not installed, install it
+sudo apt update
+sudo apt install -y ffmpeg yt-dlp
+(conda install -c conda-forge ffmpeg yt-dlp)
+```
+
 ## Data Setup
 - `annotation.json`, `prompt.json`, (`video.mp4`, `audio.wav`) 필요합니다. 
 - `annotation.json`: video id (YouTube id)와 duration이 포함되어 있어야 합니다. 
@@ -142,13 +150,41 @@ bash scripts/run.sh
 # Ex. bash scripts/run_demo.sh Abc123 'Event'
 bash scripts/run_demo.sh <VIDEO_ID> <QUERY>
 ```
+`scripts/run_demo.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
+
+```text
+data/
+└── prompt.json
+
+demo/
+├── {video_id}.mp4 # run_demo.sh (input)
+│ 
+├── outputs/
+│   ├── log.json # Tree (Caption) result
+│   ├── {video_id}.json # Tree (Structured Data) result 
+└── └── query/ 
+        └── {video_id}.json # Query result
+```
 
 ```shell
 # Demo (Video link)
 # Ex. bash scripts/run_demo_url.sh https://www.youtube.com/watch?v=Abc123 'Event'
 bash scripts/run_demo_url.sh <VIDEO_LINK> <QUERY>
-
 ```
+`scripts/run_demo_url.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
+
+```text
+data/
+└── prompt.json
+
+demo/
+├── outputs/
+│   ├── log.json # Tree (Caption) result
+│   ├── demo.json # Tree (Structured Data) result 
+└── └── query/ 
+        └── demo.json # Query result
+```
+
 ```shell
 # Streamlit
 streamlit run streamlit_demo.py --server.address 0.0.0.0 --server.port <PORT> # --server.address : expose to external ip, --server.port : exposed port number 

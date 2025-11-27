@@ -1,5 +1,5 @@
 #!/bin/bash
-source $HOME/anaconda3/etc/profile.d/conda.sh
+source $HOME/anaconda3/etc/profile.d/conda.sh # or miniconda
 export PYTHONPATH=src:$PYTHONPATH
 
 INPUT_SOURCE=$1 # Input: Video Link 
