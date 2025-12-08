@@ -4,16 +4,16 @@ export PYTHONPATH=src:$PYTHONPATH
 
 EXTRACT_MODALITY=${1:-all}
 
-DATA_PATH=./data/longvale-annotations-eval.json
-VIDEO_DIR=./data/raw_data/video_test
-AUDIO_DIR=./data/raw_data/audio_test
+GPU_ID=0
+
+DATA_PATH=./data/annotation.json
+VIDEO_DIR=./data/raw_data/video
+AUDIO_DIR=./data/raw_data/audio
 SAVE_DIR=./data/features_tree
 
 CLIP_CKPT=./checkpoints/ViT-L-14.pt
 BEATS_CKPT=./checkpoints/BEATs_iter3_plus_AS20K.pt
 WHISPER_CKPT=./checkpoints/openai-whisper-large-v2
-
-GPU_ID=7
 
 python src/preprocess/tree_feature_extract.py \
     --data_path $DATA_PATH \

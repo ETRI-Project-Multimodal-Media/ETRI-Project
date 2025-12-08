@@ -159,25 +159,6 @@ if __name__ == "__main__":
     parser.add_argument("--pretrain_asr_mlp_adapter", type=str, default=None)
     parser.add_argument("--similarity_threshold", type=float, default=0.9)
     args = parser.parse_args()
-
-    # Ensure tree file exists; create empty if missing
-    if not os.path.isfile(args.tree_path):
-        print(f"Tree file {args.tree_path} not found. Creating an empty tree file.")
-        os.makedirs(os.path.dirname(args.tree_path), exist_ok=True)
-        with open(args.tree_path, 'w') as f:
-            json.dump({}, f, indent=4)
-
-    # Ensure prompt file exists; create a default template if missing
-    if not os.path.isfile(args.prompt_path):
-        print(f"Prompt file {args.prompt_path} not found. Creating a default prompt file.")
-        os.makedirs(os.path.dirname(args.prompt_path), exist_ok=True)
-        default_prompt = {
-            "question": "Provide a detailed caption for the video segment between frames <start> and <end>.",
-            "summary": "You are an assistant that summarizes a list of captions into a concise, coherent description of the video.",
-            "summary_shots": []
-        }
-        with open(args.prompt_path, 'w') as f:
-            json.dump(default_prompt, f, indent=4)
     
     disable_torch_init()
     tokenizer, model, context_len = load_pretrained_model(args, args.stage2, args.stage3)
