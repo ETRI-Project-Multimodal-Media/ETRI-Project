@@ -1,0 +1,982 @@
+{
+  "video_id": "2lJMU_78m7A",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 44.884167,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 39.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 6.5,
+            "children": [],
+            "caption": "The race car, adorned with the number 19 and a vibrant blue and white design, speeds around the track, its tires screeching as it navigates the turns.",
+            "postprocess": {
+              "event_id": 0,
+              "original_answer": "The race car, adorned with the number 19 and a vibrant blue and white design, speeds around the track, its tires screeching as it navigates the turns.",
+              "result": {
+                "video_id": "2lJMU_78m7A",
+                "event_id": "E_2lJMU_78m7A_0_6.5",
+                "tags": [
+                  "racing",
+                  "cars",
+                  "track",
+                  "speed",
+                  "turns"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "race car",
+                    "attributes": {
+                      "number": "19",
+                      "color": "blue and white"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2lJMU_78m7A_0_6.5",
+                  "name": "",
+                  "time": {
+                    "start": "0",
+                    "end": "6.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "racing"
+                  ],
+                  "scene_topic": "A race car speeds around the track, navigating turns.",
+                  "summary": "The race car, adorned with the number 19 and a vibrant blue and white design, speeds around the track, its tires screeching as it navigates the turns.",
+                  "implications": "Major racing event",
+                  "modalities": {
+                    "visual": "The race car, adorned with the number 19 and a vibrant blue and white design, speeds around the track, its tires screeching as it navigates the turns.",
+                    "audio": "tires screeching",
+                    "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 6.5,
+            "end_time": 13.5,
+            "children": [],
+            "caption": "The race car, number 19, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+            "postprocess": {
+              "event_id": 3,
+              "original_answer": "The race car, number 19, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+              "result": {
+                "video_id": "2lJMU_78m7A",
+                "event_id": "E_2lJMU_78m7A_6.5_13.5",
+                "tags": [
+                  "racing",
+                  "cars",
+                  "track",
+                  "crowd",
+                  "commentary"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "race car",
+                    "attributes": {
+                      "number": "19",
+                      "tires": "screeching"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "crowd",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man",
+                    "attributes": {
+                      "voice": "excitedly describing the action"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "commentator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2lJMU_78m7A_6.5_13.5",
+                  "name": "Racing Event",
+                  "time": {
+                    "start": "6.5",
+                    "end": "13.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A race car speeds around the track, with the crowd cheering and a commentator describing the action.",
+                  "summary": "The race car, number 19, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "The race car, number 19, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers.",
+                    "audio": "screeching; crowd cheers; man's voice",
+                    "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 13.5,
+            "end_time": 18.5,
+            "children": [],
+            "caption": "The race car, number 19, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+            "postprocess": {
+              "event_id": 4,
+              "original_answer": "The race car, number 19, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+              "result": {
+                "video_id": "2lJMU_78m7A",
+                "event_id": "E_2lJMU_78m7A_13.5_18.5",
+                "tags": [
+                  "racing",
+                  "cars",
+                  "track",
+                  "crowd",
+                  "commentary"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "race car",
+                    "attributes": {
+                      "number": "19",
+                      "tires": "screeching"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "crowd",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man",
+                    "attributes": {
+                      "voice": "excitedly describing the action"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "commentator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2lJMU_78m7A_13.5_18.5",
+                  "name": "Racing Event",
+                  "time": {
+                    "start": "13.5",
+                    "end": "18.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A race car speeds around the track, with the crowd cheering and a commentator describing the action.",
+                  "summary": "The race car, number 19, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "The race car, number 19, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers.",
+                    "audio": "screeching; crowd cheers; man's voice",
+                    "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 18.5,
+            "end_time": 20.5,
+            "children": [],
+            "caption": "The camera pans across the crowd, capturing their excitement as they wave flags and cheer, their voices a mix of cheers and shouts, before settling on a man in a blue shirt, his face a picture of concentration as he watches the race unfold.",
+            "postprocess": {
+              "event_id": 5,
+              "original_answer": "The camera pans across the crowd, capturing their excitement as they wave flags and cheer, their voices a mix of cheers and shouts, before settling on a man in a blue shirt, his face a picture of concentration as he watches the race unfold.",
+              "result": {
+                "video_id": "2lJMU_78m7A",
+                "event_id": "E_2lJMU_78m7A_18.5_20.5",
+                "tags": [
+                  "crowd",
+                  "excitement",
+                  "flags",
+                  "cheering"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "crowd",
+                    "attributes": {
+                      "description": "people waving flags and cheering"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man in blue shirt",
+                    "attributes": {
+                      "description": "person watching the race"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man in blue shirt",
+                    "ref_object": "O002",
+                    "role": "spectator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2lJMU_78m7A_18.5_20.5",
+                  "name": "Crowd watching a race",
+                  "time": {
+                    "start": "18.5",
+                    "end": "20.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "crowd scene"
+                  ],
+                  "scene_topic": "The camera pans across the crowd, capturing their excitement as they wave flags and cheer, before settling on a man in a blue shirt, his face a picture of concentration as he watches the race unfold.",
+                  "summary": "The camera pans across the crowd, capturing their excitement as they wave flags and cheer, their voices a mix of cheers and shouts, before settling on a man in a blue shirt, his face a picture of concentration as he watches the race unfold.",
+                  "implications": "Major sports event",
+                  "modalities": {
+                    "visual": "The camera pans across the crowd, capturing their excitement as they wave flags and their faces.",
+                    "audio": "cheers; shouts; voices",
+                    "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 20.5,
+            "end_time": 24.5,
+            "children": [],
+            "caption": "The camera pans across the cheering crowd, their excitement reaching a fever pitch as a man's voice booms through the speakers, his words barely audible over the roar of the crowd.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "The camera pans across the cheering crowd, their excitement reaching a fever pitch as a man's voice booms through the speakers, his words barely audible over the roar of the crowd.",
+              "result": {
+                "video_id": "2lJMU_78m7A",
+                "event_id": "E_2lJMU_78m7A_20.5_24.5",
+                "tags": [
+                  "crowd",
+                  "cheering",
+                  "excitement",
+                  "man",
+                  "voice",
+                  "speakers"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Crowd",
+                    "attributes": {
+                      "size": "large",
+                      "emotion": "excited"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Man",
+                    "attributes": {
+                      "role": "speaker",
+                      "voice": "loud"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Speakers",
+                    "attributes": {
+                      "type": "public address"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2lJMU_78m7A_20.5_24.5",
+                  "name": "Crowd cheering",
+                  "time": {
+                    "start": "20.5",
+                    "end": "24.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "crowd event"
+                  ],
+                  "scene_topic": "The camera pans across the cheering crowd, their excitement reaching a fever pitch as a man's voice booms through the speakers, his words barely audible over the roar of the crowd.",
+                  "summary": "The camera pans across the cheering crowd, their excitement reaching a fever pitch as a man's voice booms through the speakers, his words barely audible over the roar of the crowd.",
+                  "implications": "Major crowd event",
+                  "modalities": {
+                    "visual": "The camera pans across the cheering crowd, their excitement reaching a fever pitch as a man's voice booms through the speakers.",
+                    "audio": "man's voice; crowd roar",
+                    "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 24.5,
+            "end_time": 34.5,
+            "children": [],
+            "caption": "The race car, number 18, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+            "postprocess": {
+              "event_id": 7,
+              "original_answer": "The race car, number 18, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+              "result": {
+                "video_id": "2lJMU_78m7A",
+                "event_id": "E_2lJMU_78m7A_24.5_34.5",
+                "tags": [
+                  "racing",
+                  "cars",
+                  "track",
+                  "crowd",
+                  "commentary"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "race car",
+                    "attributes": {
+                      "number": "18",
+                      "tires": "screeching"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "crowd",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man",
+                    "attributes": {
+                      "voice": "excitedly",
+                      "description": "action"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "commentator",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2lJMU_78m7A_24.5_34.5",
+                  "name": "Racing Event",
+                  "time": {
+                    "start": "24.5",
+                    "end": "34.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "sports news"
+                  ],
+                  "scene_topic": "A man excitedly describes a racing event as a car speeds around the track.",
+                  "summary": "The race car, number 18, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+                  "implications": "Major sports news event",
+                  "modalities": {
+                    "visual": "The race car, number 18, speeds around the track, its tires screeching as it navigates the turns, while the crowd cheers and a man's voice excitedly describes the action.",
+                    "audio": "screeching; crowd cheers; man's voice",
+                    "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 34.5,
+            "end_time": 39.5,
+            "children": [],
+            "caption": "In a dimly lit room, a man in a blue shirt and cap is deeply engrossed in a conversation, his animated gestures and focused expression conveying his passion for the topic at hand.",
+            "postprocess": {
+              "event_id": 8,
+              "original_answer": "In a dimly lit room, a man in a blue shirt and cap is deeply engrossed in a conversation, his animated gestures and focused expression conveying his passion for the topic at hand.",
+              "result": {
+                "video_id": "2lJMU_78m7A",
+                "event_id": "E_2lJMU_78m7A_34.5_39.5",
+                "tags": [
+                  "human",
+                  "conversation",
+                  "gestures",
+                  "expression"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "clothing": "blue shirt",
+                      "headwear": "cap"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2lJMU_78m7A_34.5_39.5",
+                  "name": "conversation",
+                  "time": {
+                    "start": "34.5",
+                    "end": "39.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human behavior"
+                  ],
+                  "scene_topic": "A man is engaged in a conversation, using animated gestures and focused expression.",
+                  "summary": "In a dimly lit room, a man in a blue shirt and cap is deeply engrossed in a conversation, his animated gestures and focused expression conveying his passion for the topic at hand.",
+                  "implications": "Human interaction and communication",
+                  "modalities": {
+                    "visual": "In a dimly lit room, a man in a blue shirt and cap is deeply engrossed in a conversation, his animated gestures and focused expression conveying his passion for the topic at hand.",
+                    "audio": "",
+                    "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead. Despite the unexpected twist, he still managed to win the race with a good car, executing a plan to come back strong after an initial poor performance."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The number 19 race car speeds around the track, its tires screeching as it takes the turns, with the crowd cheering and an announcer's excited voice describing the action.",
+        "postprocess": {
+          "event_id": 1,
+          "original_answer": "The number 19 race car speeds around the track, its tires screeching as it takes the turns, with the crowd cheering and an announcer's excited voice describing the action.",
+          "result": {
+            "video_id": "2lJMU_78m7A",
+            "event_id": "E_2lJMU_78m7A_0_39.5",
+            "tags": [
+              "racing",
+              "cars",
+              "track",
+              "crowd",
+              "announcer"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Number 19 race car",
+                "attributes": {
+                  "type": "vehicle",
+                  "description": "A racing car speeding around the track"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Crowd",
+                "attributes": {
+                  "type": "audience",
+                  "description": "People cheering and watching the race"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Announcer",
+                "attributes": {
+                  "type": "person",
+                  "description": "A person describing the action of the race"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Announcer",
+                "ref_object": "O003",
+                "role": "commentator",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_2lJMU_78m7A_0_39.5",
+              "name": "Racing event",
+              "time": {
+                "start": "0",
+                "end": "39.5"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "sports news"
+              ],
+              "scene_topic": "The number 19 race car speeds around the track, its tires screeching as it takes the turns, with the crowd cheering and an announcer's excited voice describing the action.",
+              "summary": "The number 19 race car speeds around the track, its tires screeching as it takes the turns, with the crowd cheering and an announcer's excited voice describing the action.",
+              "implications": "Exciting sports event",
+              "modalities": {
+                "visual": "The number 19 race car speeds around the track, its tires screeching as it takes the turns, with the crowd cheering and an announcer's excited voice describing the action.",
+                "audio": "screeching; crowd cheering; announcer's excited voice",
+                "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 39.5,
+        "end_time": 44.884167,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 39.5,
+            "end_time": 42.5,
+            "children": [],
+            "caption": "In a dimly lit room, a man in a blue and white striped shirt stands in front of a large screen, intently focused on the race footage playing on it.",
+            "postprocess": {
+              "event_id": 9,
+              "original_answer": "In a dimly lit room, a man in a blue and white striped shirt stands in front of a large screen, intently focused on the race footage playing on it.",
+              "result": {
+                "video_id": "2lJMU_78m7A",
+                "event_id": "E_2lJMU_78m7A_395_425",
+                "tags": [
+                  "racing",
+                  "screen",
+                  "man",
+                  "room"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "color": "blue and white",
+                      "shirt": "striped"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "screen",
+                    "attributes": {
+                      "type": "large",
+                      "content": "race footage"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2lJMU_78m7A_395_425",
+                  "name": "man watching racing footage",
+                  "time": {
+                    "start": "39.5",
+                    "end": "42.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "non-violent scene"
+                  ],
+                  "scene_topic": "A man watches racing footage on a screen.",
+                  "summary": "In a dimly lit room, a man in a blue and white striped shirt stands in front of a large screen, intently focused on the race footage playing on it.",
+                  "implications": "Minor entertainment event",
+                  "modalities": {
+                    "visual": "In a dimly lit room, a man in a blue and white striped shirt stands in front of a large screen, intently focused on the race footage playing on it.",
+                    "audio": "",
+                    "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 42.5,
+            "end_time": 44.884167,
+            "children": [],
+            "caption": "The video transitions from the race to a close-up of a red and white race car, its number 17 prominently displayed, as the roar of the engine fades and a man's voice can be heard, though his words are unclear.",
+            "postprocess": {
+              "event_id": 11,
+              "original_answer": "The video transitions from the race to a close-up of a red and white race car, its number 17 prominently displayed, as the roar of the engine fades and a man's voice can be heard, though his words are unclear.",
+              "result": {
+                "video_id": "2lJMU_78m7A",
+                "event_id": "E_2lJMU_78m7A_42.5_44.88",
+                "tags": [
+                  "racing",
+                  "car",
+                  "driver",
+                  "engine"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Red and White Race Car",
+                    "attributes": {
+                      "number": "17",
+                      "color": "red and white"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Man's Voice",
+                    "attributes": {
+                      "unclear_words": ""
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "",
+                    "ref_object": "O001",
+                    "role": "",
+                    "entity": ""
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2lJMU_78m7A_42.5_44.88",
+                  "name": "",
+                  "time": {
+                    "start": "42.5",
+                    "end": "44.88"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "racing"
+                  ],
+                  "scene_topic": "The video transitions from the race to a close-up of a red and white race car, its number 17 prominently displayed, as the roar of the engine fades and a man's voice can be heard, though his words are unclear.",
+                  "summary": "The video transitions from the race to a close-up of a red and white race car, its number 17 prominently displayed, as the roar of the engine fades and a man's voice can be heard, though his words are unclear.",
+                  "implications": "Major racing event",
+                  "modalities": {
+                    "visual": "The video transitions from the race to a close-up of a red and white race car, its number 17 prominently displayed.",
+                    "audio": "Engine roar; man's voice",
+                    "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man watches a racing video on a large screen, intently focused on the action, as the sound of the engine and a distant voice fill the dimly lit room.",
+        "postprocess": {
+          "event_id": 10,
+          "original_answer": "A man watches a racing video on a large screen, intently focused on the action, as the sound of the engine and a distant voice fill the dimly lit room.",
+          "result": {
+            "video_id": "2lJMU_78m7A",
+            "event_id": "E_2lJMU_78m7A_39.5_44.88",
+            "tags": [
+              "racing",
+              "gaming",
+              "focus"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "action": "watching",
+                  "focus": "intently"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "racing video",
+                "attributes": {
+                  "type": "video",
+                  "content": "racing"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "large screen",
+                "attributes": {
+                  "size": "large",
+                  "type": "screen"
+                }
+              },
+              {
+                "object_id": "O004",
+                "name": "engine sound",
+                "attributes": {
+                  "type": "sound",
+                  "source": "engine"
+                }
+              },
+              {
+                "object_id": "O005",
+                "name": "distant voice",
+                "attributes": {
+                  "type": "sound",
+                  "source": "voice"
+                }
+              },
+              {
+                "object_id": "O006",
+                "name": "dimly lit room",
+                "attributes": {
+                  "lighting": "dim",
+                  "type": "room"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "main",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_2lJMU_78m7A_39.5_44.88",
+              "name": "man watches racing video",
+              "time": {
+                "start": "39.5",
+                "end": "44.88"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004",
+                "O005",
+                "O006"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "gaming"
+              ],
+              "scene_topic": "A man watches a racing video on a large screen, intently focused on the action.",
+              "summary": "A man watches a racing video on a large screen, intently focused on the action, as the sound of the engine and a distant voice fill the dimly lit room.",
+              "implications": "Major gaming event",
+              "modalities": {
+                "visual": "A man watches a racing video on a large screen, intently focused on the action, as the room is dimly lit.",
+                "audio": "engine; distant voice",
+                "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead. Despite the unexpected twist, he still managed to win the race with a good car, executing a plan to come back strong after an initial poor performance."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "The number 19 race car speeds around the track, accompanied by the cheers of the crowd and a commentator's enthusiastic description, as fans show their excitement.",
+    "postprocess": {
+      "event_id": 2,
+      "original_answer": "The number 19 race car speeds around the track, accompanied by the cheers of the crowd and a commentator's enthusiastic description, as fans show their excitement.",
+      "result": {
+        "video_id": "2lJMU_78m7A",
+        "event_id": "E_2lJMU_78m7A_0_44.88",
+        "tags": [
+          "racing",
+          "cars",
+          "track",
+          "fans",
+          "excitement"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "Number 19 race car",
+            "attributes": {
+              "type": "vehicle",
+              "description": "A racing car speeding around the track"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "Crowd",
+            "attributes": {
+              "type": "group",
+              "description": "Fans cheering and showing excitement"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "Commentator",
+            "attributes": {
+              "type": "person",
+              "description": "Enthusiastic commentator describing the race"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "Commentator",
+            "ref_object": "O003",
+            "role": "commentator",
+            "entity": "person"
+          }
+        ],
+        "event": {
+          "event_id": "E_2lJMU_78m7A_0_44.88",
+          "name": "Racing event",
+          "time": {
+            "start": "0",
+            "end": "44.88"
+          },
+          "actors": [
+            "A001"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "sports news"
+          ],
+          "scene_topic": "The number 19 race car speeds around the track, accompanied by the cheers of the crowd and a commentator's enthusiastic description, as fans show their excitement.",
+          "summary": "The number 19 race car speeds around the track, accompanied by the cheers of the crowd and a commentator's enthusiastic description, as fans show their excitement.",
+          "implications": "Exciting sports news event",
+          "modalities": {
+            "visual": "The number 19 race car speeds around the track, as fans show their excitement.",
+            "audio": "cheers of the crowd; commentator's enthusiastic description",
+            "speech": "Dale Earnhardt Jr. led the race until he ran out of gas on the final lap, slowing down and ultimately losing the lead."
+          }
+        }
+      }
+    }
+  }
+}

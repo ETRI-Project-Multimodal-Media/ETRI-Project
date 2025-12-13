@@ -15,6 +15,7 @@ pip install -r requirements.txt
 pip install flash-attn==2.3.6 --no-build-isolation
 pip install soundfile
 pip install streamlit
+pip install graphviz
 ```
 
   LLaMA3: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
@@ -30,6 +31,7 @@ pip install transformers accelerate peft
 pip install decord
 pip install jsonschema
 pip install sentence-transformers
+pip install graphviz
 ```
 
 ```bash

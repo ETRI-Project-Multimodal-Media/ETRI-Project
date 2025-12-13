@@ -1,0 +1,3395 @@
+{
+  "video_id": "-QEfaBLGPQk",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 433.075333,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 433.075333,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 107.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 55.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 0.0,
+                    "end_time": 5.5,
+                    "children": [],
+                    "caption": "The video opens with a close-up shot of a person's feet, then pans up to reveal a person playing an electric guitar on a dimly lit stage, their fingers moving quickly over the strings as they perform a bluesy tune.",
+                    "postprocess": {
+                      "event_id": 0,
+                      "original_answer": "The video opens with a close-up shot of a person's feet, then pans up to reveal a person playing an electric guitar on a dimly lit stage, their fingers moving quickly over the strings as they perform a bluesy tune.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_0_5.5",
+                        "tags": [
+                          "music",
+                          "guitar",
+                          "blues",
+                          "performance"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "electric guitar",
+                            "attributes": {
+                              "instrument": "electric guitar",
+                              "played_by": "person"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "stage",
+                            "attributes": {
+                              "location": "stage",
+                              "lighting": "dimly lit"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "person",
+                            "attributes": {
+                              "role": "musician",
+                              "action": "playing"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "person",
+                            "ref_object": "O003",
+                            "role": "musician",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_0_5.5",
+                          "name": "music performance",
+                          "time": {
+                            "start": "0",
+                            "end": "5.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music"
+                          ],
+                          "scene_topic": "The person plays an electric guitar on a dimly lit stage.",
+                          "summary": "The video opens with a close-up shot of a person's feet, then pans up to reveal a person playing an electric guitar on a dimly lit stage, their fingers moving quickly over the strings as they perform a bluesy tune.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The video opens with a close-up shot of a person's feet, then pans up to reveal a person playing an electric guitar on a dimly lit stage, their fingers moving quickly over the strings as they perform a bluesy tune.",
+                            "audio": "",
+                            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 5.5,
+                    "end_time": 8.5,
+                    "children": [],
+                    "caption": "The camera pans across a dimly lit stage, capturing the silhouettes of musicians playing their instruments under a spotlight, as the audience cheers and claps along to the upbeat pop music.",
+                    "postprocess": {
+                      "event_id": 5,
+                      "original_answer": "The camera pans across a dimly lit stage, capturing the silhouettes of musicians playing their instruments under a spotlight, as the audience cheers and claps along to the upbeat pop music.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_5_8",
+                        "tags": [
+                          "music",
+                          "concert",
+                          "pop",
+                          "audience",
+                          "stage"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "musicians",
+                            "attributes": {
+                              "instrument": "various",
+                              "playing_style": "upbeat"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "spotlight",
+                            "attributes": {
+                              "type": "stage",
+                              "position": "center"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "audience",
+                            "attributes": {
+                              "reaction": "cheering",
+                              "participation": "clapping"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "musicians",
+                            "ref_object": "O001",
+                            "role": "performers",
+                            "entity": "group"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_5_8",
+                          "name": "pop concert",
+                          "time": {
+                            "start": "5.5",
+                            "end": "8.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music event"
+                          ],
+                          "scene_topic": "The camera pans across a dimly lit stage, capturing the silhouettes of musicians playing their instruments under a spotlight, as the audience cheers and claps along to the upbeat pop music.",
+                          "summary": "The camera pans across a dimly lit stage, capturing the silhouettes of musicians playing their instruments under a spotlight, as the audience cheers and claps along to the upbeat pop music.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The camera pans across a dimly lit stage, capturing the silhouettes of musicians playing their instruments under a spotlight, as the audience cheers and claps along to the upbeat pop music.",
+                            "audio": "cheers; claps; music",
+                            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 8.5,
+                    "end_time": 30.5,
+                    "children": [],
+                    "caption": "The band, dressed in matching red and black outfits, plays a lively pop song on stage, their instruments flashing under the bright lights as the lead singer, a woman with long blonde hair, sings into the microphone.",
+                    "postprocess": {
+                      "event_id": 6,
+                      "original_answer": "The band, dressed in matching red and black outfits, plays a lively pop song on stage, their instruments flashing under the bright lights as the lead singer, a woman with long blonde hair, sings into the microphone.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_8.5_30.5",
+                        "tags": [
+                          "music",
+                          "pop",
+                          "concert",
+                          "band",
+                          "singer"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "band",
+                            "attributes": {
+                              "instruments": "guitar, drums, bass",
+                              "outfits": "red and black"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "lead singer",
+                            "attributes": {
+                              "hair": "long blonde",
+                              "instrument": "microphone"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O002",
+                            "role": "singer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_8.5_30.5",
+                          "name": "Concert",
+                          "time": {
+                            "start": "8.5",
+                            "end": "30.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music event"
+                          ],
+                          "scene_topic": "The band plays a lively pop song on stage.",
+                          "summary": "The band, dressed in matching red and black outfits, plays a lively pop song on stage, their instruments flashing under the bright lights as the lead singer, a woman with long blonde hair, sings into the microphone.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, dressed in matching red and black outfits, plays a lively pop song on stage, their instruments flashing under the bright lights as the lead singer, a woman with long blonde hair, sings into the microphone.",
+                            "audio": "singing into the microphone",
+                            "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 30.5,
+                    "end_time": 41.5,
+                    "children": [],
+                    "caption": "The band, illuminated by stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                    "postprocess": {
+                      "event_id": 7,
+                      "original_answer": "The band, illuminated by stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_30.5_41.5",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "pop",
+                          "band",
+                          "stage"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage lights",
+                            "attributes": {
+                              "type": "lighting",
+                              "description": "Illuminating the band"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "lead singer",
+                            "attributes": {
+                              "role": "vocalist",
+                              "description": "Belted out a pop song"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "guitarist",
+                            "attributes": {
+                              "role": "musician",
+                              "description": "Played in sync"
+                            }
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "keyboardist",
+                            "attributes": {
+                              "role": "musician",
+                              "description": "Played in sync"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O002",
+                            "role": "performer",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "guitarist",
+                            "ref_object": "O003",
+                            "role": "performer",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A003",
+                            "name": "keyboardist",
+                            "ref_object": "O004",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_30.5_41.5",
+                          "name": "The band performs a pop song",
+                          "time": {
+                            "start": "30.5",
+                            "end": "41.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002",
+                            "A003"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band, illuminated by stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                          "summary": "The band, illuminated by stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, illuminated by stage lights, continues their energetic performance.",
+                            "audio": "pop song; belting; guitar; keyboard",
+                            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "A musician performs a high-energy blues-rock song on stage, accompanied by a backing band, as the audience cheers and claps along.",
+                "postprocess": {
+                  "event_id": 1,
+                  "original_answer": "A musician performs a high-energy blues-rock song on stage, accompanied by a backing band, as the audience cheers and claps along.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_0_55.5",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "blues",
+                      "rock",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "musician",
+                        "attributes": {
+                          "instrument": "guitar",
+                          "style": "blues-rock"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "backing_band",
+                        "attributes": {
+                          "type": "rock_band"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "audience",
+                        "attributes": {
+                          "role": "spectators"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "musician",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_0_55.5",
+                      "name": "music performance",
+                      "time": {
+                        "start": "0",
+                        "end": "55.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music news"
+                      ],
+                      "scene_topic": "A musician performs a high-energy blues-rock song on stage, accompanied by a backing band, as the audience cheers and claps along.",
+                      "summary": "A musician performs a high-energy blues-rock song on stage, accompanied by a backing band, as the audience cheers and claps along.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "A musician performs a high-energy blues-rock song on stage, accompanied by a backing band, as the audience cheers and claps along.",
+                        "audio": "cheers; claps",
+                        "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 55.5,
+                "end_time": 89.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 55.5,
+                    "end_time": 66.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                    "postprocess": {
+                      "event_id": 8,
+                      "original_answer": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_55_66",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "pop",
+                          "band",
+                          "lights"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "band",
+                            "attributes": {
+                              "performance": "energetic",
+                              "singer": "lead singer",
+                              "instrumentation": "guitarist and keyboardist"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O002",
+                            "role": "singer",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "guitarist",
+                            "ref_object": "O002",
+                            "role": "musician",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A003",
+                            "name": "keyboardist",
+                            "ref_object": "O002",
+                            "role": "musician",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_55_66",
+                          "name": "The band's performance",
+                          "time": {
+                            "start": "55.5",
+                            "end": "66.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002",
+                            "A003"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                          "summary": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer and the guitarist and keyboardist play in sync.",
+                            "audio": "",
+                            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The band performs an energetic pop song, with the lead singer's powerful vocals and the guitarist and keyboardist playing in sync, all set against a backdrop of purple and blue stage lights.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "The band performs an energetic pop song, with the lead singer's powerful vocals and the guitarist and keyboardist playing in sync, all set against a backdrop of purple and blue stage lights.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_55_89",
+                    "tags": [
+                      "pop_song",
+                      "live_performance",
+                      "music",
+                      "concert"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "lead_singer",
+                        "attributes": {
+                          "vocal_style": "powerful",
+                          "instrument": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "guitarist",
+                        "attributes": {
+                          "instrument": "guitar",
+                          "playing_style": "in_sync"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "keyboardist",
+                        "attributes": {
+                          "instrument": "keyboard",
+                          "playing_style": "in_sync"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "stage_lights",
+                        "attributes": {
+                          "color": "purple_and_blue"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "lead_singer",
+                        "ref_object": "O001",
+                        "role": "performer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "guitarist",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "keyboardist",
+                        "ref_object": "O003",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_55_89",
+                      "name": "pop_song_performance",
+                      "time": {
+                        "start": "55.5",
+                        "end": "89.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music_event"
+                      ],
+                      "scene_topic": "The band performs an energetic pop song, with the lead singer's powerful vocals and the guitarist and keyboardist playing in sync, all set against a backdrop of purple and blue stage lights.",
+                      "summary": "The band performs an energetic pop song, with the lead singer's powerful vocals and the guitarist and keyboardist playing in sync, all set against a backdrop of purple and blue stage lights.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band performs an energetic pop song, with the lead singer's powerful vocals and the guitarist and keyboardist playing in sync, all set against a backdrop of purple and blue stage lights.",
+                        "audio": "",
+                        "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 89.5,
+                "end_time": 107.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 97.5,
+                    "end_time": 107.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                    "postprocess": {
+                      "event_id": 11,
+                      "original_answer": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_97.5_107.5",
+                        "tags": [
+                          "music",
+                          "pop",
+                          "concert",
+                          "stage",
+                          "lights"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue",
+                              "setup": "lively pop song"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {
+                              "type": "singing"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O002",
+                            "role": "singer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_97.5_107.5",
+                          "name": "pop song performance",
+                          "time": {
+                            "start": "97.5",
+                            "end": "107.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band launches into a lively pop song.",
+                          "summary": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, launches into a lively pop song.",
+                            "audio": "singing into the microphone",
+                            "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_89_107",
+                    "tags": [
+                      "music",
+                      "pop",
+                      "concert",
+                      "stage",
+                      "lights"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "stage",
+                        "attributes": {
+                          "lighting": "purple and blue"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {
+                          "usage": "singing"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "lead singer",
+                        "attributes": {
+                          "voice": "clear and powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "lead singer",
+                        "ref_object": "O003",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_89_107",
+                      "name": "pop song performance",
+                      "time": {
+                        "start": "89.5",
+                        "end": "107.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The band launches into a lively pop song.",
+                      "summary": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band, bathed in purple and blue stage lights, launches into a lively pop song.",
+                        "audio": "singing into the microphone",
+                        "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The band delivers an energetic and dynamic concert, performing a high-energy set that showcases their musical skills and engages the enthusiastic audience.",
+            "postprocess": {
+              "event_id": 2,
+              "original_answer": "The band delivers an energetic and dynamic concert, performing a high-energy set that showcases their musical skills and engages the enthusiastic audience.",
+              "result": {
+                "video_id": "QEfaBLGPQk",
+                "event_id": "E_QEfaBLGPQk_0_107.5",
+                "tags": [
+                  "concert",
+                  "music",
+                  "performance",
+                  "entertainment",
+                  "audience"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Concert",
+                    "attributes": {
+                      "description": "energetic and dynamic concert",
+                      "genre": "music"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "The band",
+                    "ref_object": "O001",
+                    "role": "performer",
+                    "entity": "group"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_QEfaBLGPQk_0_107.5",
+                  "name": "Concert",
+                  "time": {
+                    "start": "0",
+                    "end": "107.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "entertainment news"
+                  ],
+                  "scene_topic": "The band delivers an energetic and dynamic concert, performing a high-energy set that showcases their musical skills and engages the enthusiastic audience.",
+                  "summary": "The band delivers an energetic and dynamic concert, performing a high-energy set that showcases their musical skills and engages the enthusiastic audience.",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "The band delivers an energetic and dynamic concert, performing a high-energy set that showcases their musical skills and engages the enthusiastic audience.",
+                    "audio": "",
+                    "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 107.5,
+            "end_time": 212.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 107.5,
+                "end_time": 131.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 107.5,
+                    "end_time": 116.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                    "postprocess": {
+                      "event_id": 12,
+                      "original_answer": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_107.5_116.5",
+                        "tags": [
+                          "music",
+                          "pop",
+                          "concert",
+                          "stage",
+                          "lights"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {
+                              "usage": "by lead singer"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O002",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_107.5_116.5",
+                          "name": "pop song performance",
+                          "time": {
+                            "start": "107.5",
+                            "end": "116.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music event"
+                          ],
+                          "scene_topic": "The band launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                          "summary": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, launches into a lively pop song.",
+                            "audio": "singing into the microphone",
+                            "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 116.5,
+                    "end_time": 131.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                    "postprocess": {
+                      "event_id": 15,
+                      "original_answer": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_116.5_131.5",
+                        "tags": [
+                          "music",
+                          "pop",
+                          "concert",
+                          "stage",
+                          "lights"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {
+                              "usage": "singing"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "lead singer",
+                            "attributes": {
+                              "voice": "clear and powerful"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O003",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_116.5_131.5",
+                          "name": "pop song performance",
+                          "time": {
+                            "start": "116.5",
+                            "end": "131.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music event"
+                          ],
+                          "scene_topic": "The band performs a lively pop song on stage.",
+                          "summary": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, launches into a lively pop song.",
+                            "audio": "singing into the microphone",
+                            "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The band performs a lively pop song on stage, with the lead singer's powerful voice filling the air.",
+                "postprocess": {
+                  "event_id": 13,
+                  "original_answer": "The band performs a lively pop song on stage, with the lead singer's powerful voice filling the air.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_107.5_131.5",
+                    "tags": [
+                      "music",
+                      "pop",
+                      "performance",
+                      "stage",
+                      "singer"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "band",
+                        "attributes": {
+                          "performing": "pop song",
+                          "location": "stage"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "lead singer",
+                        "attributes": {
+                          "voice": "powerful"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "lead singer",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_107.5_131.5",
+                      "name": "pop song performance",
+                      "time": {
+                        "start": "107.5",
+                        "end": "131.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music news"
+                      ],
+                      "scene_topic": "The band performs a lively pop song on stage, with the lead singer's powerful voice filling the air.",
+                      "summary": "The band performs a lively pop song on stage, with the lead singer's powerful voice filling the air.",
+                      "implications": "Major music news event",
+                      "modalities": {
+                        "visual": "The band performs a lively pop song on stage, with the lead singer.",
+                        "audio": "powerful voice; music",
+                        "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 131.5,
+                "end_time": 154.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 139.5,
+                    "end_time": 146.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the drummer keeps the beat.",
+                    "postprocess": {
+                      "event_id": 17,
+                      "original_answer": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the drummer keeps the beat.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_139.5_146.5",
+                        "tags": [
+                          "music",
+                          "pop",
+                          "concert",
+                          "guitar",
+                          "drums"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "band",
+                            "attributes": {
+                              "music_genre": "pop",
+                              "energy_level": "high"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "lead_singer",
+                            "attributes": {
+                              "voice_type": "soaring"
+                            }
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "drummer",
+                            "attributes": {
+                              "beat_keeping": "driving"
+                            }
+                          },
+                          {
+                            "object_id": "O005",
+                            "name": "guitar",
+                            "attributes": {
+                              "riff_type": "driving"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead_singer",
+                            "ref_object": "O003",
+                            "role": "vocalist",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "drummer",
+                            "ref_object": "O004",
+                            "role": "musician",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_139.5_146.5",
+                          "name": "Concert Performance",
+                          "time": {
+                            "start": "139.5",
+                            "end": "146.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004",
+                            "O005"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music"
+                          ],
+                          "scene_topic": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the drummer keeps the beat.",
+                          "summary": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the drummer keeps the beat.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the drummer keeps the beat.",
+                            "audio": "lead singer's voice; driving guitar riff; drumming",
+                            "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_131.5_154.5",
+                    "tags": [
+                      "music",
+                      "pop",
+                      "concert",
+                      "stage",
+                      "lights"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "stage",
+                        "attributes": {
+                          "lighting": "purple and blue"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {
+                          "usage": "by lead singer"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "lead singer",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_131.5_154.5",
+                      "name": "pop song performance",
+                      "time": {
+                        "start": "131.5",
+                        "end": "154.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music event"
+                      ],
+                      "scene_topic": "The band launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                      "summary": "The band, bathed in purple and blue stage lights, launches into a lively pop song, the lead singer's voice clear and powerful as she sings into the microphone.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band, bathed in purple and blue stage lights, launches into a lively pop song.",
+                        "audio": "singing into the microphone",
+                        "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 154.5,
+                "end_time": 177.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 154.5,
+                    "end_time": 164.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the camera captures the dynamic performance.",
+                    "postprocess": {
+                      "event_id": 18,
+                      "original_answer": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the camera captures the dynamic performance.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_154.5_164.5",
+                        "tags": [
+                          "music",
+                          "pop",
+                          "concert",
+                          "performance",
+                          "guitar"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue",
+                              "description": "dynamic performance"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "camera",
+                            "attributes": {
+                              "description": "captures the dynamic performance"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "guitar",
+                            "attributes": {
+                              "description": "driving guitar riff"
+                            }
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "lead singer",
+                            "attributes": {
+                              "description": "voice soaring"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O004",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_154.5_164.5",
+                          "name": "pop song performance",
+                          "time": {
+                            "start": "154.5",
+                            "end": "164.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff.",
+                          "summary": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the camera captures the dynamic performance.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the camera captures the dynamic performance.",
+                            "audio": "Lead singer's voice; driving guitar riff.",
+                            "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 164.5,
+                    "end_time": 177.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the camera captures the dynamic performance.",
+                    "postprocess": {
+                      "event_id": 20,
+                      "original_answer": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the camera captures the dynamic performance.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_164.5_177.5",
+                        "tags": [
+                          "music",
+                          "pop",
+                          "concert",
+                          "performance",
+                          "guitar"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue",
+                              "setup": "dynamic performance"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "camera",
+                            "attributes": {
+                              "function": "capturing the performance"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "guitar",
+                            "attributes": {
+                              "type": "driving guitar riff"
+                            }
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "lead singer",
+                            "attributes": {
+                              "voice": "soaring"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O004",
+                            "role": "performer",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_164.5_177.5",
+                          "name": "pop concert performance",
+                          "time": {
+                            "start": "164.5",
+                            "end": "177.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band launches into a high-energy pop song.",
+                          "summary": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the camera captures the dynamic performance.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the camera captures the dynamic performance.",
+                            "audio": "Lead singer's voice; driving guitar riff.",
+                            "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The band performs a high-energy pop song on stage, with the lead singer's powerful vocals and the driving guitar riff captivating the audience.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "The band performs a high-energy pop song on stage, with the lead singer's powerful vocals and the driving guitar riff captivating the audience.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_154.5_177.5",
+                    "tags": [
+                      "pop_music",
+                      "live_performance",
+                      "rock_band",
+                      "audience"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "band",
+                        "attributes": {
+                          "genre": "pop",
+                          "instrumentation": "guitar"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "lead_singer",
+                        "attributes": {
+                          "vocal_style": "powerful"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "audience",
+                        "attributes": {
+                          "reaction": "captivated"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "lead_singer",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_154.5_177.5",
+                      "name": "pop_song_performance",
+                      "time": {
+                        "start": "154.5",
+                        "end": "177.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music"
+                      ],
+                      "scene_topic": "The band performs a high-energy pop song on stage, with the lead singer's powerful vocals and the driving guitar riff captivating the audience.",
+                      "summary": "The band performs a high-energy pop song on stage, with the lead singer's powerful vocals and the driving guitar riff captivating the audience.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band performs a high-energy pop song on stage, with the lead singer and the driving guitar riff captivating the audience.",
+                        "audio": "powerful vocals; driving guitar riff",
+                        "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 177.5,
+                "end_time": 212.5,
+                "children": [],
+                "caption": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the drummer keeps the beat.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the drummer keeps the beat.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_177_212",
+                    "tags": [
+                      "music",
+                      "pop",
+                      "concert",
+                      "stage",
+                      "lights"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "stage",
+                        "attributes": {
+                          "lighting": "purple and blue"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "guitar",
+                        "attributes": {
+                          "type": "driving riff"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "drum",
+                        "attributes": {
+                          "type": "keeping the beat"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "lead singer",
+                        "attributes": {
+                          "voice": "soaring"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "lead singer",
+                        "ref_object": "O004",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_177_212",
+                      "name": "pop concert",
+                      "time": {
+                        "start": "177.5",
+                        "end": "212.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music event"
+                      ],
+                      "scene_topic": "The band launches into a high-energy pop song.",
+                      "summary": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the drummer keeps the beat.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band, bathed in purple and blue stage lights, launches into a high-energy pop song, the lead singer's voice soaring over the driving guitar riff as the drummer keeps the beat.",
+                        "audio": "lead singer's voice; driving guitar riff; drumming",
+                        "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The band performs a high-energy pop song on stage, with the lead singer's powerful voice captivating the audience.",
+            "postprocess": {
+              "event_id": 14,
+              "original_answer": "The band performs a high-energy pop song on stage, with the lead singer's powerful voice captivating the audience.",
+              "result": {
+                "video_id": "QEfaBLGPQk",
+                "event_id": "E_QEfaBLGPQk_107_212",
+                "tags": [
+                  "pop_music",
+                  "live_performance",
+                  "entertainment",
+                  "music"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Band",
+                    "attributes": {
+                      "performing": "yes",
+                      "genre": "pop"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Lead Singer",
+                    "attributes": {
+                      "vocal_style": "powerful",
+                      "captivating": "yes"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Audience",
+                    "attributes": {
+                      "engaged": "yes"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Lead Singer",
+                    "ref_object": "O002",
+                    "role": "performer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_QEfaBLGPQk_107_212",
+                  "name": "Live Music Performance",
+                  "time": {
+                    "start": "107.5",
+                    "end": "212.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "entertainment news"
+                  ],
+                  "scene_topic": "The band performs a high-energy pop song on stage, with the lead singer's powerful voice captivating the audience.",
+                  "summary": "The band performs a high-energy pop song on stage, with the lead singer's powerful voice captivating the audience.",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "The band performs a high-energy pop song on stage, with the lead singer's powerful voice captivating the audience.",
+                    "audio": "powerful voice; music",
+                    "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 212.5,
+            "end_time": 306.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 212.5,
+                "end_time": 267.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 212.5,
+                    "end_time": 229.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer passionately singing into the microphone as the guitarist and keyboardist play in sync.",
+                    "postprocess": {
+                      "event_id": 22,
+                      "original_answer": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer passionately singing into the microphone as the guitarist and keyboardist play in sync.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_212.5_229.5",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "concert",
+                          "band",
+                          "singer",
+                          "guitarist",
+                          "keyboardist"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage lights",
+                            "attributes": {
+                              "color": "purple and blue"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "microphone",
+                            "attributes": {
+                              "type": "singing"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "guitar",
+                            "attributes": {
+                              "type": "electric"
+                            }
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "keyboard",
+                            "attributes": {
+                              "type": "electronic"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O002",
+                            "role": "singer",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "guitarist",
+                            "ref_object": "O003",
+                            "role": "musician",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A003",
+                            "name": "keyboardist",
+                            "ref_object": "O004",
+                            "role": "musician",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_212.5_229.5",
+                          "name": "The band's performance",
+                          "time": {
+                            "start": "212.5",
+                            "end": "229.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002",
+                            "A003"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer passionately singing into the microphone as the guitarist and keyboardist play in sync.",
+                          "summary": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer passionately singing into the microphone as the guitarist and keyboardist play in sync.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer passionately singing into the microphone as the guitarist and keyboardist play in sync.",
+                            "audio": "Passionate singing; guitar; keyboard.",
+                            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 256.5,
+                    "end_time": 267.5,
+                    "children": [],
+                    "caption": "The woman in the vibrant blue dress continues to play her electric guitar with passion, her fingers moving quickly over the strings as she sings into the microphone, her voice blending with the lively music.",
+                    "postprocess": {
+                      "event_id": 25,
+                      "original_answer": "The woman in the vibrant blue dress continues to play her electric guitar with passion, her fingers moving quickly over the strings as she sings into the microphone, her voice blending with the lively music.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_256_267",
+                        "tags": [
+                          "music",
+                          "guitar",
+                          "singing",
+                          "performance",
+                          "fashion"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "Electric Guitar",
+                            "attributes": {
+                              "instrument": "electric guitar",
+                              "played_by": "the woman"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "Microphone",
+                            "attributes": {
+                              "audio_device": "microphone",
+                              "used_by": "the woman"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "Vibrant Blue Dress",
+                            "attributes": {
+                              "clothing": "dress",
+                              "color": "vibrant blue"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "The Woman",
+                            "ref_object": "O001",
+                            "role": "musician",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_256_267",
+                          "name": "The Woman Plays Electric Guitar",
+                          "time": {
+                            "start": "256.5",
+                            "end": "267.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The woman plays her electric guitar with passion, singing into the microphone.",
+                          "summary": "The woman in the vibrant blue dress continues to play her electric guitar with passion, her fingers moving quickly over the strings as she sings into the microphone, her voice blending with the lively music.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The woman in the vibrant blue dress continues to play her electric guitar with passion, her fingers moving quickly over the strings as she sings into the microphone, her voice blending with the lively music.",
+                            "audio": "singing; music",
+                            "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The band performs an energetic concert, with the lead singer and guitarist delivering a passionate performance, their music filling the air as the crowd is captivated.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "The band performs an energetic concert, with the lead singer and guitarist delivering a passionate performance, their music filling the air as the crowd is captivated.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_212_267",
+                    "tags": [
+                      "concert",
+                      "music",
+                      "performance",
+                      "crowd",
+                      "energetic"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "band",
+                        "attributes": {
+                          "music_genre": "rock",
+                          "performance_style": "energetic"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "lead_singer",
+                        "attributes": {
+                          "role": "vocalist",
+                          "performance_style": "passionate"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "guitarist",
+                        "attributes": {
+                          "role": "instrumentalist",
+                          "performance_style": "passionate"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "crowd",
+                        "attributes": {
+                          "reaction": "captivated"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "lead_singer",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "guitarist",
+                        "ref_object": "O003",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_212_267",
+                      "name": "concert",
+                      "time": {
+                        "start": "212.5",
+                        "end": "267.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music news"
+                      ],
+                      "scene_topic": "The band performs an energetic concert, with the lead singer and guitarist delivering a passionate performance, their music filling the air as the crowd is captivated.",
+                      "summary": "The band performs an energetic concert, with the lead singer and guitarist delivering a passionate performance, their music filling the air as the crowd is captivated.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band performs an energetic concert, with the lead singer and guitarist delivering a passionate performance, their music filling the air as the crowd is captivated.",
+                        "audio": "music; crowd reactions",
+                        "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 267.5,
+                "end_time": 306.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 271.5,
+                    "end_time": 281.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                    "postprocess": {
+                      "event_id": 27,
+                      "original_answer": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_271_281",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "pop",
+                          "band",
+                          "lights"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "band",
+                            "attributes": {
+                              "performance": "energetic",
+                              "singer": "lead singer",
+                              "instrumentation": "guitarist and keyboardist"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "singer",
+                            "attributes": {
+                              "action": "belting out a pop song"
+                            }
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "guitarist",
+                            "attributes": {
+                              "action": "playing in sync"
+                            }
+                          },
+                          {
+                            "object_id": "O005",
+                            "name": "keyboardist",
+                            "attributes": {
+                              "action": "playing in sync"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "lead singer",
+                            "ref_object": "O003",
+                            "role": "singer",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "guitarist",
+                            "ref_object": "O004",
+                            "role": "musician",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A003",
+                            "name": "keyboardist",
+                            "ref_object": "O005",
+                            "role": "musician",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_271_281",
+                          "name": "The band performs a pop song",
+                          "time": {
+                            "start": "271.5",
+                            "end": "281.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002",
+                            "A003"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004",
+                            "O005"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                          "summary": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer and the guitarist and keyboardist play in sync.",
+                            "audio": "",
+                            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 289.5,
+                    "end_time": 306.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                    "postprocess": {
+                      "event_id": 28,
+                      "original_answer": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_289_306",
+                        "tags": [
+                          "music",
+                          "punk",
+                          "guitar",
+                          "drums"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "guitarist",
+                            "attributes": {
+                              "instrument": "guitar",
+                              "playing_style": "quickly"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "drummer",
+                            "attributes": {
+                              "instrument": "drums",
+                              "playing_style": "keeping the beat"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "guitarist",
+                            "ref_object": "O001",
+                            "role": "musician",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "drummer",
+                            "ref_object": "O002",
+                            "role": "musician",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_289_306",
+                          "name": "punk song performance",
+                          "time": {
+                            "start": "289.5",
+                            "end": "306.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band launches into a high-energy punk song.",
+                          "summary": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                            "audio": "",
+                            "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_267_306",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "pop",
+                      "band",
+                      "lights"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "stage",
+                        "attributes": {
+                          "lighting": "purple and blue"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "lead singer",
+                        "attributes": {
+                          "action": "belting out a pop song"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "guitarist",
+                        "attributes": {
+                          "action": "playing in sync"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "keyboardist",
+                        "attributes": {
+                          "action": "playing in sync"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "lead singer",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "guitarist",
+                        "ref_object": "O003",
+                        "role": "performer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A003",
+                        "name": "keyboardist",
+                        "ref_object": "O004",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_267_306",
+                      "name": "The band's performance",
+                      "time": {
+                        "start": "267.5",
+                        "end": "306.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002",
+                        "A003"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                      "summary": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer belting out a pop song as the guitarist and keyboardist play in sync.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band, bathed in purple and blue stage lights, continues their energetic performance, the lead singer and the guitarist and keyboardist play in sync.",
+                        "audio": "",
+                        "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The band delivers an energetic and passionate concert, with the lead singer and guitarist performing with enthusiasm, captivating the audience with their music and stage presence.",
+            "postprocess": {
+              "event_id": 24,
+              "original_answer": "The band delivers an energetic and passionate concert, with the lead singer and guitarist performing with enthusiasm, captivating the audience with their music and stage presence.",
+              "result": {
+                "video_id": "QEfaBLGPQk",
+                "event_id": "E_QEfaBLGPQk_212_306",
+                "tags": [
+                  "concert",
+                  "music",
+                  "performance"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "band",
+                    "attributes": {
+                      "performing": "energetic and passionate",
+                      "captivating": "audience"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "lead singer",
+                    "attributes": {
+                      "performing": "with enthusiasm"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "guitarist",
+                    "attributes": {
+                      "performing": "with enthusiasm"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "audience",
+                    "attributes": {
+                      "captivated": "by music and stage presence"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "lead singer",
+                    "ref_object": "O002",
+                    "role": "performer",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "guitarist",
+                    "ref_object": "O003",
+                    "role": "performer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_QEfaBLGPQk_212_306",
+                  "name": "Concert",
+                  "time": {
+                    "start": "212.5",
+                    "end": "306.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "music news"
+                  ],
+                  "scene_topic": "The band delivers an energetic and passionate concert, with the lead singer and guitarist performing with enthusiasm, captivating the audience with their music and stage presence.",
+                  "summary": "The band delivers an energetic and passionate concert, with the lead singer and guitarist performing with enthusiasm, captivating the audience with their music and stage presence.",
+                  "implications": "Major music event",
+                  "modalities": {
+                    "visual": "The band delivers an energetic and passionate concert, with the lead singer and guitarist performing with enthusiasm, captivating the audience with their music and stage presence.",
+                    "audio": "",
+                    "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 306.5,
+            "end_time": 433.075333,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 306.5,
+                "end_time": 357.5,
+                "children": [],
+                "caption": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_306_357",
+                    "tags": [
+                      "music",
+                      "punk",
+                      "guitar",
+                      "drums"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "guitarist",
+                        "attributes": {
+                          "instrument": "guitar",
+                          "playing_style": "quickly"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "drummer",
+                        "attributes": {
+                          "instrument": "drums",
+                          "playing_style": "keeping the beat"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stage",
+                        "attributes": {
+                          "lighting": "purple and blue"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "guitarist",
+                        "ref_object": "O001",
+                        "role": "musician",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "drummer",
+                        "ref_object": "O002",
+                        "role": "musician",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_306_357",
+                      "name": "punk song performance",
+                      "time": {
+                        "start": "306.5",
+                        "end": "357.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The band launches into a high-energy punk song.",
+                      "summary": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                        "audio": "",
+                        "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 357.5,
+                "end_time": 373.5,
+                "children": [],
+                "caption": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_357_373",
+                    "tags": [
+                      "music",
+                      "punk",
+                      "guitar",
+                      "drums"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "guitarist",
+                        "attributes": {
+                          "instrument": "guitar",
+                          "playing_style": "quickly"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "drummer",
+                        "attributes": {
+                          "instrument": "drums",
+                          "playing_style": "keeping the beat"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "stage",
+                        "attributes": {
+                          "lighting": "purple and blue"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "guitarist",
+                        "ref_object": "O001",
+                        "role": "musician",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "drummer",
+                        "ref_object": "O002",
+                        "role": "musician",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_357_373",
+                      "name": "punk song performance",
+                      "time": {
+                        "start": "357.5",
+                        "end": "373.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The band launches into a high-energy punk song.",
+                      "summary": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band, bathed in purple and blue stage lights, launches into a high-energy punk song, the guitarist's fingers moving quickly over the strings as the drummer keeps the beat.",
+                        "audio": "",
+                        "speech": "to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 373.5,
+                "end_time": 389.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 381.5,
+                    "end_time": 389.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                    "postprocess": {
+                      "event_id": 33,
+                      "original_answer": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_381_389",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "electronic",
+                          "pop"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "drummer",
+                            "attributes": {
+                              "instrument": "drums",
+                              "action": "flashing sticks"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "drummer",
+                            "ref_object": "O002",
+                            "role": "performer",
+                            "entity": "band"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_381_389",
+                          "name": "The band's performance",
+                          "time": {
+                            "start": "381.5",
+                            "end": "389.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band transitions from a pop song to a more electronic sound.",
+                          "summary": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                            "audio": "",
+                            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                "postprocess": {
+                  "event_id": 32,
+                  "original_answer": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_373_389",
+                    "tags": [
+                      "music",
+                      "performance",
+                      "electronic",
+                      "pop"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "stage",
+                        "attributes": {
+                          "lighting": "purple and blue"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "drummer",
+                        "attributes": {
+                          "instrument": "drums",
+                          "action": "flashing sticks"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "drummer",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "musician"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_373_389",
+                      "name": "The band's performance",
+                      "time": {
+                        "start": "373.5",
+                        "end": "389.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "The band transitions from a pop song to a more electronic sound.",
+                      "summary": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                        "audio": "",
+                        "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 389.5,
+                "end_time": 410.5,
+                "children": [
+                  {
+                    "level": 4,
+                    "start_time": 389.5,
+                    "end_time": 395.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer pounding out a rhythm as the guitarist and keyboardist trade licks and the singer belts out a pop song.",
+                    "postprocess": {
+                      "event_id": 34,
+                      "original_answer": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer pounding out a rhythm as the guitarist and keyboardist trade licks and the singer belts out a pop song.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_389_395",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "concert",
+                          "band",
+                          "drummer",
+                          "guitarist",
+                          "keyboardist",
+                          "singer"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "drummer",
+                            "attributes": {
+                              "action": "pounding out a rhythm"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "guitarist",
+                            "attributes": {
+                              "action": "trading licks"
+                            }
+                          },
+                          {
+                            "object_id": "O004",
+                            "name": "keyboardist",
+                            "attributes": {
+                              "action": "trading licks"
+                            }
+                          },
+                          {
+                            "object_id": "O005",
+                            "name": "singer",
+                            "attributes": {
+                              "action": "belting out a pop song"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "drummer",
+                            "ref_object": "O002",
+                            "role": "musician",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A002",
+                            "name": "guitarist",
+                            "ref_object": "O003",
+                            "role": "musician",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A003",
+                            "name": "keyboardist",
+                            "ref_object": "O004",
+                            "role": "musician",
+                            "entity": "person"
+                          },
+                          {
+                            "actor_id": "A004",
+                            "name": "singer",
+                            "ref_object": "O005",
+                            "role": "musician",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_389_395",
+                          "name": "The band performs",
+                          "time": {
+                            "start": "389.5",
+                            "end": "395.5"
+                          },
+                          "actors": [
+                            "A001",
+                            "A002",
+                            "A003",
+                            "A004"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002",
+                            "O003",
+                            "O004",
+                            "O005"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer pounding out a rhythm as the guitarist and keyboardist trade licks and the singer belts out a pop song.",
+                          "summary": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer pounding out a rhythm as the guitarist and keyboardist trade licks and the singer belts out a pop song.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, continues their energetic performance.",
+                            "audio": "drummer pounding; guitarist and keyboardist trading; singer belting out a pop song.",
+                            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 395.5,
+                    "end_time": 410.5,
+                    "children": [],
+                    "caption": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                    "postprocess": {
+                      "event_id": 36,
+                      "original_answer": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                      "result": {
+                        "video_id": "QEfaBLGPQk",
+                        "event_id": "E_QEfaBLGPQk_395_410",
+                        "tags": [
+                          "music",
+                          "performance",
+                          "electronic",
+                          "pop"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "stage",
+                            "attributes": {
+                              "lighting": "purple and blue"
+                            }
+                          },
+                          {
+                            "object_id": "O002",
+                            "name": "drummer",
+                            "attributes": {
+                              "instrument": "drums",
+                              "action": "flashing sticks"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "drummer",
+                            "ref_object": "O002",
+                            "role": "performer",
+                            "entity": "band"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_QEfaBLGPQk_395_410",
+                          "name": "The band's performance",
+                          "time": {
+                            "start": "395.5",
+                            "end": "410.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001",
+                            "O002"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "music performance"
+                          ],
+                          "scene_topic": "The band transitions from a pop song to a more electronic sound.",
+                          "summary": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                          "implications": "Major music event",
+                          "modalities": {
+                            "visual": "The band, bathed in purple and blue stage lights, continues their energetic performance, the drummer's sticks flashing as they transition from a pop song to a more electronic sound.",
+                            "audio": "",
+                            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "caption": "The band performs an energetic concert, transitioning between pop and electronic music, with the drummer and other musicians showcasing their skills under purple and blue stage lights.",
+                "postprocess": {
+                  "event_id": 35,
+                  "original_answer": "The band performs an energetic concert, transitioning between pop and electronic music, with the drummer and other musicians showcasing their skills under purple and blue stage lights.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_389_410",
+                    "tags": [
+                      "concert",
+                      "music",
+                      "performance",
+                      "drumming",
+                      "stage_lights"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "stage",
+                        "attributes": {
+                          "lighting": "purple and blue",
+                          "setup": "pop and electronic music"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "drummer",
+                        "attributes": {
+                          "skill": "showcasing",
+                          "instrument": "drums"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "musicians",
+                        "attributes": {
+                          "skill": "showcasing",
+                          "instrument": "various"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "drummer",
+                        "ref_object": "O002",
+                        "role": "performer",
+                        "entity": "musician"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_389_410",
+                      "name": "concert",
+                      "time": {
+                        "start": "389.5",
+                        "end": "410.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music news"
+                      ],
+                      "scene_topic": "The band performs an energetic concert, transitioning between pop and electronic music, with the drummer and other musicians showcasing their skills under purple and blue stage lights.",
+                      "summary": "The band performs an energetic concert, transitioning between pop and electronic music, with the drummer and other musicians showcasing their skills under purple and blue stage lights.",
+                      "implications": "Major music news event",
+                      "modalities": {
+                        "visual": "The band performs an energetic concert, transitioning between pop and electronic music, with the drummer and other musicians showcasing their skills under purple and blue stage lights.",
+                        "audio": "",
+                        "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 410.5,
+                "end_time": 433.075333,
+                "children": [],
+                "caption": "The video transitions from a live performance to a black screen displaying the credits, while a man and a woman speak in the background.",
+                "postprocess": {
+                  "event_id": 37,
+                  "original_answer": "The video transitions from a live performance to a black screen displaying the credits, while a man and a woman speak in the background.",
+                  "result": {
+                    "video_id": "QEfaBLGPQk",
+                    "event_id": "E_QEfaBLGPQk_410.5_433.08",
+                    "tags": [
+                      "video_transition",
+                      "credits",
+                      "background_conversation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "black_screen",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_QEfaBLGPQk_410.5_433.08",
+                      "name": "video_transition",
+                      "time": {
+                        "start": "410.5",
+                        "end": "433.08"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions from a live performance to a black screen displaying the credits, while a man and a woman speak in the background.",
+                      "summary": "The video transitions from a live performance to a black screen displaying the credits, while a man and a woman speak in the background.",
+                      "implications": "Major video event",
+                      "modalities": {
+                        "visual": "The video transitions from a live performance to a black screen displaying the credits.",
+                        "audio": "speaking; background noise",
+                        "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The band performs a high-energy punk song on stage, with the guitarist and drummer playing rapidly as the audience is bathed in purple and blue lights.",
+            "postprocess": {
+              "event_id": 30,
+              "original_answer": "The band performs a high-energy punk song on stage, with the guitarist and drummer playing rapidly as the audience is bathed in purple and blue lights.",
+              "result": {
+                "video_id": "QEfaBLGPQk",
+                "event_id": "E_QEfaBLGPQk_306.5_433.08",
+                "tags": [
+                  "punk",
+                  "music",
+                  "concert",
+                  "lights"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "guitarist",
+                    "attributes": {
+                      "playing_style": "rapidly",
+                      "instrument": "guitar"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "drummer",
+                    "attributes": {
+                      "playing_style": "rapidly",
+                      "instrument": "drums"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "audience",
+                    "attributes": {
+                      "environment": "bathed in purple and blue lights"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "guitarist",
+                    "ref_object": "O001",
+                    "role": "musician",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "drummer",
+                    "ref_object": "O002",
+                    "role": "musician",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_QEfaBLGPQk_306.5_433.08",
+                  "name": "punk concert",
+                  "time": {
+                    "start": "306.5",
+                    "end": "433.08"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "music news"
+                  ],
+                  "scene_topic": "The band performs a high-energy punk song on stage, with the guitarist and drummer playing rapidly as the audience is bathed in purple and blue lights.",
+                  "summary": "The band performs a high-energy punk song on stage, with the guitarist and drummer playing rapidly as the audience is bathed in purple and blue lights.",
+                  "implications": "Major music event",
+                  "modalities": {
+                    "visual": "The band performs a high-energy punk song on stage, with the guitarist and drummer playing rapidly as the audience is bathed in purple and blue lights.",
+                    "audio": "",
+                    "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The band delivers a high-energy concert, performing a dynamic set that showcases their musical skills and engages the enthusiastic audience with powerful vocals and synchronized instrumentation.",
+        "postprocess": {
+          "event_id": 3,
+          "original_answer": "The band delivers a high-energy concert, performing a dynamic set that showcases their musical skills and engages the enthusiastic audience with powerful vocals and synchronized instrumentation.",
+          "result": {
+            "video_id": "QEfaBLGPQk",
+            "event_id": "E_QEfaBLGPQk_0_433.08",
+            "tags": [
+              "music",
+              "concert",
+              "performance",
+              "band",
+              "audience"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "band",
+                "attributes": {
+                  "musical_skills": "high-energy",
+                  "vocals": "powerful",
+                  "instrumentation": "synchronized"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "band",
+                "ref_object": "O001",
+                "role": "performer",
+                "entity": "band"
+              }
+            ],
+            "event": {
+              "event_id": "E_QEfaBLGPQk_0_433.08",
+              "name": "Concert",
+              "time": {
+                "start": "0",
+                "end": "433.08"
+              },
+              "actors": [
+                "A001"
+              ],
+              "objects": [
+                "O001"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "music news"
+              ],
+              "scene_topic": "The band delivers a high-energy concert, performing a dynamic set that showcases their musical skills and engages the enthusiastic audience with powerful vocals and synchronized instrumentation.",
+              "summary": "The band delivers a high-energy concert, performing a dynamic set that showcases their musical skills and engages the enthusiastic audience with powerful vocals and synchronized instrumentation.",
+              "implications": "Major music event",
+              "modalities": {
+                "visual": "The band delivers a high-energy concert, performing a dynamic set that showcases their musical skills and engages the enthusiastic audience with powerful vocals and synchronized instrumentation.",
+                "audio": "powerful vocals; instrumentation",
+                "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "The band delivers a high-energy concert, performing a dynamic set of pop, punk, and electronic songs, captivating the audience with their synchronized instrumentation, powerful vocals, and enthusiastic stage presence.",
+    "postprocess": {
+      "event_id": 4,
+      "original_answer": "The band delivers a high-energy concert, performing a dynamic set of pop, punk, and electronic songs, captivating the audience with their synchronized instrumentation, powerful vocals, and enthusiastic stage presence.",
+      "result": {
+        "video_id": "QEfaBLGPQk",
+        "event_id": "E_QEfaBLGPQk_0_433.08",
+        "tags": [
+          "music",
+          "concert",
+          "pop",
+          "punk",
+          "electronic"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "band",
+            "attributes": {
+              "instrumentation": "synchronized",
+              "vocals": "powerful",
+              "stage_presence": "enthusiastic"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "band members",
+            "ref_object": "O001",
+            "role": "performers",
+            "entity": "group"
+          }
+        ],
+        "event": {
+          "event_id": "E_QEfaBLGPQk_0_433.08",
+          "name": "Concert",
+          "time": {
+            "start": "0",
+            "end": "433.08"
+          },
+          "actors": [
+            "A001"
+          ],
+          "objects": [
+            "O001"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "music event"
+          ],
+          "scene_topic": "The band delivers a high-energy concert, performing a dynamic set of pop, punk, and electronic songs, captivating the audience with their synchronized instrumentation, powerful vocals, and enthusiastic stage presence.",
+          "summary": "The band delivers a high-energy concert, performing a dynamic set of pop, punk, and electronic songs, captivating the audience with their synchronized instrumentation, powerful vocals, and enthusiastic stage presence.",
+          "implications": "Major music event",
+          "modalities": {
+            "visual": "The band delivers a high-energy concert, performing a dynamic set of pop, punk, and electronic songs, captivating the audience with their synchronized instrumentation, powerful vocals, and enthusiastic stage presence.",
+            "audio": "",
+            "speech": "The speaker expresses their determination to never slack off again, seeking to evolve and innovate, and is willing to fight for freedom, even if it means death."
+          }
+        }
+      }
+    }
+  }
+}

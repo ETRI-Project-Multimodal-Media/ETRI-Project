@@ -1,0 +1,2094 @@
+{
+  "video_id": "2Vh-xCGMLzg",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 83.800781,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 44.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 7.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 3.5,
+                "children": [],
+                "caption": "The video opens with the Me Gusta Music logo, a stylized \"M\" in a circular design, accompanied by a brief, upbeat jingle, before transitioning to a close-up of a person's hand opening a door, revealing a dimly lit hallway.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with the Me Gusta Music logo, a stylized \"M\" in a circular design, accompanied by a brief, upbeat jingle, before transitioning to a close-up of a person's hand opening a door, revealing a dimly lit hallway.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_0_3.5",
+                    "tags": [
+                      "music",
+                      "logo",
+                      "door",
+                      "hallway"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Me Gusta Music logo",
+                        "attributes": {
+                          "description": "Stylized 'M' in a circular design"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Person's hand",
+                        "attributes": {
+                          "description": "Opening a door"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Door",
+                        "attributes": {
+                          "description": "Revealing a dimly lit hallway"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "Hallway",
+                        "attributes": {
+                          "description": "Dimly lit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Unknown",
+                        "ref_object": "O002",
+                        "role": "Hand",
+                        "entity": "Person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_0_3.5",
+                      "name": "Video opening",
+                      "time": {
+                        "start": "0",
+                        "end": "3.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music"
+                      ],
+                      "scene_topic": "The video opens with the Me Gusta Music logo, a stylized 'M' in a circular design, accompanied by a brief, upbeat jingle, before transitioning to a close-up of a person's hand opening a door, revealing a dimly lit hallway.",
+                      "summary": "The video opens with the Me Gusta Music logo, a stylized \"M\" in a circular design, accompanied by a brief, upbeat jingle, before transitioning to a close-up of a person's hand opening a door, revealing a dimly lit hallway.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "The video opens with the Me Gusta Music logo, a stylized 'M' in a circular design, accompanied by a brief, upbeat jingle, before transitioning to a close-up of a person's hand opening a door, revealing a dimly lit hallway.",
+                        "audio": "Upbeat jingle.",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 3.5,
+                "end_time": 7.5,
+                "children": [],
+                "caption": "A man in a dark suit and tie, holding a key, stands in a dimly lit hallway, his expression serious as he looks at the camera.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "A man in a dark suit and tie, holding a key, stands in a dimly lit hallway, his expression serious as he looks at the camera.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_3.5_7.5",
+                    "tags": [
+                      "man",
+                      "dark_suit",
+                      "tie",
+                      "key",
+                      "hallway"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "expression": "serious",
+                          "looking_at": "camera"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "key",
+                        "attributes": {
+                          "held_by": "man"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "dark_suit",
+                        "attributes": {
+                          "worn_by": "man"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "tie",
+                        "attributes": {
+                          "worn_by": "man"
+                        }
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "hallway",
+                        "attributes": {
+                          "lit": "dimly"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_3.5_7.5",
+                      "name": "man holding key in hallway",
+                      "time": {
+                        "start": "3.5",
+                        "end": "7.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "scene"
+                      ],
+                      "scene_topic": "A man in a dark suit and tie, holding a key, stands in a dimly lit hallway, his expression serious as he looks at the camera.",
+                      "summary": "A man in a dark suit and tie, holding a key, stands in a dimly lit hallway, his expression serious as he looks at the camera.",
+                      "implications": "Major scene, person event",
+                      "modalities": {
+                        "visual": "A man in a dark suit and tie, holding a key, stands in a dimly lit hallway, his expression serious as he looks at the camera.",
+                        "audio": "",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "The Me Gusta Music logo and jingle introduce a mysterious scene where a man in a dark suit stands in a dimly lit hallway, looking serious and holding a key.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "The Me Gusta Music logo and jingle introduce a mysterious scene where a man in a dark suit stands in a dimly lit hallway, looking serious and holding a key.",
+              "result": {
+                "video_id": "2Vh_xCGMLzg",
+                "event_id": "E_2Vh_xCGMLzg_0_7.5",
+                "tags": [
+                  "music",
+                  "mystery",
+                  "man"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Me Gusta Music logo",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Man in dark suit",
+                    "attributes": {
+                      "attr_001": "serious\", \"holding key"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Man in dark suit",
+                    "ref_object": "O002",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2Vh_xCGMLzg_0_7.5",
+                  "name": "Mysterious scene introduction",
+                  "time": {
+                    "start": "0",
+                    "end": "7.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "music news"
+                  ],
+                  "scene_topic": "The Me Gusta Music logo and jingle introduce a mysterious scene where a man in a dark suit stands in a dimly lit hallway, looking serious and holding a key.",
+                  "summary": "The Me Gusta Music logo and jingle introduce a mysterious scene where a man in a dark suit stands in a dimly lit hallway, looking serious and holding a key.",
+                  "implications": "Major music news event",
+                  "modalities": {
+                    "visual": "The Me Gusta Music logo and jingle introduce a mysterious scene where a man in a dark suit stands in a dimly lit hallway, looking serious and holding a key.",
+                    "audio": "Me Gusta Music jingle.",
+                    "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 7.5,
+            "end_time": 20.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 7.5,
+                "end_time": 10.5,
+                "children": [],
+                "caption": "A man in a black shirt and tie, standing in a well-lit room with a white door and a white wall, smiles as he opens the door and walks through it, the sound of his footsteps echoing slightly.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "A man in a black shirt and tie, standing in a well-lit room with a white door and a white wall, smiles as he opens the door and walks through it, the sound of his footsteps echoing slightly.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_7.5_10.5",
+                    "tags": [
+                      "man",
+                      "door",
+                      "room"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black shirt and tie",
+                          "location": "well-lit room",
+                          "action": "opens door and walks through it"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_7.5_10.5",
+                      "name": "man opens door and walks through it",
+                      "time": {
+                        "start": "7.5",
+                        "end": "10.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person action"
+                      ],
+                      "scene_topic": "A man opens a door and walks through it",
+                      "summary": "A man in a black shirt and tie, standing in a well-lit room with a white door and a white wall, smiles as he opens the door and walks through it, the sound of his footsteps echoing slightly.",
+                      "implications": "Minor action event",
+                      "modalities": {
+                        "visual": "A man in a black shirt and tie, standing in a well-lit room with a white door and a white wall, smiles as he opens the door and walks through it.",
+                        "audio": "footsteps echoing slightly",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 10.5,
+                "end_time": 14.5,
+                "children": [],
+                "caption": "A man in a black shirt and apron carefully slices a piece of fish on a wooden cutting board, the sharp knife gliding through the meat with a satisfying thud.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A man in a black shirt and apron carefully slices a piece of fish on a wooden cutting board, the sharp knife gliding through the meat with a satisfying thud.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_10.5_14.5",
+                    "tags": [
+                      "cooking",
+                      "fish",
+                      "kitchen",
+                      "food",
+                      "prep"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "fish",
+                        "attributes": {
+                          "type": "raw",
+                          "state": "cut"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "cutting_board",
+                        "attributes": {
+                          "material": "wood"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "knife",
+                        "attributes": {
+                          "type": "sharp",
+                          "state": "in_use"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black_shirt",
+                          "occupation": "cook"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O004",
+                        "role": "cook",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_10.5_14.5",
+                      "name": "Cooking fish",
+                      "time": {
+                        "start": "10.5",
+                        "end": "14.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cooking"
+                      ],
+                      "scene_topic": "A man carefully slices a piece of fish on a wooden cutting board.",
+                      "summary": "A man in a black shirt and apron carefully slices a piece of fish on a wooden cutting board, the sharp knife gliding through the meat with a satisfying thud.",
+                      "implications": "Major food preparation event",
+                      "modalities": {
+                        "visual": "A man in a black shirt and apron carefully slices a piece of fish on a wooden cutting board.",
+                        "audio": "thud",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 14.5,
+                "end_time": 20.5,
+                "children": [],
+                "caption": "A man in a black shirt and apron carefully slices a piece of fish on a wooden cutting board, the sharp knife gliding through the meat with a satisfying thud.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A man in a black shirt and apron carefully slices a piece of fish on a wooden cutting board, the sharp knife gliding through the meat with a satisfying thud.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_14.5_20.5",
+                    "tags": [
+                      "cooking",
+                      "fish",
+                      "kitchen",
+                      "food",
+                      "prep"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "fish",
+                        "attributes": {
+                          "type": "raw",
+                          "state": "cut"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "cutting_board",
+                        "attributes": {
+                          "material": "wood"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "knife",
+                        "attributes": {
+                          "type": "sharp",
+                          "state": "in_use"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "black_shirt",
+                          "occupation": "cook"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O004",
+                        "role": "cook",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_14.5_20.5",
+                      "name": "Cooking fish",
+                      "time": {
+                        "start": "14.5",
+                        "end": "20.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "cooking"
+                      ],
+                      "scene_topic": "A man carefully slices a piece of fish on a wooden cutting board.",
+                      "summary": "A man in a black shirt and apron carefully slices a piece of fish on a wooden cutting board, the sharp knife gliding through the meat with a satisfying thud.",
+                      "implications": "Major food preparation event",
+                      "modalities": {
+                        "visual": "A man in a black shirt and apron carefully slices a piece of fish on a wooden cutting board.",
+                        "audio": "thud",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home where a qualified chef prepares authentic meals and explains the ingredients and techniques used followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man, dressed in a black shirt and tie, enters a room and then transforms into a chef, expertly preparing a piece of fish in a well-lit kitchen.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A man, dressed in a black shirt and tie, enters a room and then transforms into a chef, expertly preparing a piece of fish in a well-lit kitchen.",
+              "result": {
+                "video_id": "2Vh_xCGMLzg",
+                "event_id": "E_2Vh_xCGMLzg_7.5_20.5",
+                "tags": [
+                  "kitchen",
+                  "chef",
+                  "cooking",
+                  "transformation",
+                  "man"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "description": "A man, dressed in a black shirt and tie"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "kitchen",
+                    "attributes": {
+                      "description": "well-lit kitchen"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "fish",
+                    "attributes": {
+                      "description": "piece of fish"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "chef",
+                    "attributes": {
+                      "description": "expertly preparing"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "actor",
+                    "entity": "man"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2Vh_xCGMLzg_7.5_20.5",
+                  "name": "man transforms into chef",
+                  "time": {
+                    "start": "7.5",
+                    "end": "20.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "human transformation"
+                  ],
+                  "scene_topic": "A man, dressed in a black shirt and tie, enters a room and then transforms into a chef, expertly preparing a piece of fish in a well-lit kitchen.",
+                  "summary": "A man, dressed in a black shirt and tie, enters a room and then transforms into a chef, expertly preparing a piece of fish in a well-lit kitchen.",
+                  "implications": "Major cooking event",
+                  "modalities": {
+                    "visual": "A man, dressed in a black shirt and tie, enters a room and then transforms into a chef, expertly preparing a piece of fish in a well-lit kitchen.",
+                    "audio": "",
+                    "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 20.5,
+            "end_time": 44.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 20.5,
+                "end_time": 32.5,
+                "children": [],
+                "caption": "A hand reaches out to a plate of cooked shrimp, then a man in a white shirt and black tie, holding a glass of red wine, smiles at the camera as he enjoys the meal.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A hand reaches out to a plate of cooked shrimp, then a man in a white shirt and black tie, holding a glass of red wine, smiles at the camera as he enjoys the meal.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_20.5_32.5",
+                    "tags": [
+                      "food",
+                      "entertainment",
+                      "social"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "plate of cooked shrimp",
+                        "attributes": {
+                          "food_type": "seafood",
+                          "cooked_state": "cooked"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "glass of red wine",
+                        "attributes": {
+                          "beverage_type": "wine",
+                          "color": "red"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "hand",
+                        "attributes": {
+                          "body_part": "hand"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "man in white shirt and black tie",
+                        "attributes": {
+                          "clothing": "formal"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in white shirt and black tie",
+                        "ref_object": "O004",
+                        "role": "actor",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_20.5_32.5",
+                      "name": "enjoying a meal",
+                      "time": {
+                        "start": "20.5",
+                        "end": "32.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social event"
+                      ],
+                      "scene_topic": "A man enjoys a meal with wine and shrimp",
+                      "summary": "A hand reaches out to a plate of cooked shrimp, then a man in a white shirt and black tie, holding a glass of red wine, smiles at the camera as he enjoys the meal.",
+                      "implications": "Social event, food and drink",
+                      "modalities": {
+                        "visual": "A hand reaches out to a plate of cooked shrimp, then a man in a white shirt and black tie, holding a glass of red wine, smiles at the camera as he enjoys the meal.",
+                        "audio": "",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 32.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "In a well-lit room, a man in a suit and a woman in a black dress share a moment of celebration, their smiles reflecting the joy of the occasion as they raise their glasses in a toast.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "In a well-lit room, a man in a suit and a woman in a black dress share a moment of celebration, their smiles reflecting the joy of the occasion as they raise their glasses in a toast.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_32.5_44.5",
+                    "tags": [
+                      "celebration",
+                      "party",
+                      "glasses",
+                      "toast",
+                      "smile"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "suit",
+                          "expression": "joy"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "clothing": "black dress",
+                          "expression": "joy"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "glasses",
+                        "attributes": {
+                          "type": "drinking"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "celebrant",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "celebrant",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_32.5_44.5",
+                      "name": "Celebration",
+                      "time": {
+                        "start": "32.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "celebration"
+                      ],
+                      "scene_topic": "A man and a woman share a moment of celebration, raising their glasses in a toast.",
+                      "summary": "In a well-lit room, a man in a suit and a woman in a black dress share a moment of celebration, their smiles reflecting the joy of the occasion as they raise their glasses in a toast.",
+                      "implications": "Major social event",
+                      "modalities": {
+                        "visual": "In a well-lit room, a man in a suit and a woman in a black dress share a moment of celebration, their smiles reflecting the joy of the occasion as they raise their glasses in a toast.",
+                        "audio": "",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A group of people, including a man in a suit and a woman in a black dress, gather to celebrate and enjoy a luxurious experience, toasting with champagne and savoring a meal, as a woman's voice invites viewers to join in.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "A group of people, including a man in a suit and a woman in a black dress, gather to celebrate and enjoy a luxurious experience, toasting with champagne and savoring a meal, as a woman's voice invites viewers to join in.",
+              "result": {
+                "video_id": "2Vh_xCGMLzg",
+                "event_id": "E_2Vh_xCGMLzg_20.5_44.5",
+                "tags": [
+                  "luxury",
+                  "celebration",
+                  "champagne",
+                  "dinner",
+                  "party"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "people",
+                    "attributes": {
+                      "number": "group",
+                      "dressing": "casual"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "man in suit",
+                    "attributes": {
+                      "clothing": "suit",
+                      "role": "guest"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman in black dress",
+                    "attributes": {
+                      "clothing": "dress",
+                      "role": "guest"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "champagne",
+                    "attributes": {
+                      "type": "alcoholic drink"
+                    }
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "meal",
+                    "attributes": {
+                      "type": "food"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman's voice",
+                    "ref_object": "O001",
+                    "role": "host",
+                    "entity": "voice"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2Vh_xCGMLzg_20.5_44.5",
+                  "name": "Luxurious celebration",
+                  "time": {
+                    "start": "20.5",
+                    "end": "44.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "luxury event"
+                  ],
+                  "scene_topic": "A group of people gather to celebrate and enjoy a luxurious experience, toasting with champagne and savoring a meal.",
+                  "summary": "A group of people, including a man in a suit and a woman in a black dress, gather to celebrate and enjoy a luxurious experience, toasting with champagne and savoring a meal, as a woman's voice invites viewers to join in.",
+                  "implications": "Major social event",
+                  "modalities": {
+                    "visual": "A group of people, including a man in a suit and a woman in a black dress, gather to celebrate and enjoy a luxurious experience, toasting with champagne and savoring a meal, as a woman's voice invites viewers to join in.",
+                    "audio": "woman's voice; champagne toasting; meal savoring",
+                    "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "The Me Gusta Music logo introduces a mysterious scene that transforms into a luxurious culinary experience, showcasing a chef's skills and a romantic dinner, as a narrator and a woman's voice invite viewers to join in the celebration.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "The Me Gusta Music logo introduces a mysterious scene that transforms into a luxurious culinary experience, showcasing a chef's skills and a romantic dinner, as a narrator and a woman's voice invite viewers to join in the celebration.",
+          "result": {
+            "video_id": "2Vh_xCGMLzg",
+            "event_id": "E_2Vh_xCGMLzg_0_44.5",
+            "tags": [
+              "music",
+              "food",
+              "romance",
+              "celebration",
+              "luxury"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Me Gusta Music logo",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "Mysterious scene",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "Luxurious culinary experience",
+                "attributes": {}
+              },
+              {
+                "object_id": "O004",
+                "name": "Chef",
+                "attributes": {}
+              },
+              {
+                "object_id": "O005",
+                "name": "Romantic dinner",
+                "attributes": {}
+              },
+              {
+                "object_id": "O006",
+                "name": "Narrator",
+                "attributes": {}
+              },
+              {
+                "object_id": "O007",
+                "name": "Woman's voice",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Chef",
+                "ref_object": "O004",
+                "role": "cook",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Narrator",
+                "ref_object": "O006",
+                "role": "narrator",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A003",
+                "name": "Woman's voice",
+                "ref_object": "O007",
+                "role": "voice",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_2Vh_xCGMLzg_0_44.5",
+              "name": "Mysterious scene transforms into luxurious culinary experience",
+              "time": {
+                "start": "0",
+                "end": "44.5"
+              },
+              "actors": [
+                "A001",
+                "A002",
+                "A003"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004",
+                "O005",
+                "O006",
+                "O007"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "music news"
+              ],
+              "scene_topic": "The Me Gusta Music logo introduces a mysterious scene that transforms into a luxurious culinary experience, showcasing a chef's skills and a romantic dinner, as a narrator and a woman's voice invite viewers to join in the celebration.",
+              "summary": "The Me Gusta Music logo introduces a mysterious scene that transforms into a luxurious culinary experience, showcasing a chef's skills and a romantic dinner, as a narrator and a woman's voice invite viewers to join in the celebration.",
+              "implications": "Major entertainment news event",
+              "modalities": {
+                "visual": "The Me Gusta Music logo introduces a mysterious scene that transforms into a luxurious culinary experience, showcasing a chef's skills and a romantic dinner, as a woman's voice invites viewers to join in the celebration.",
+                "audio": "Narrator; woman's voice.",
+                "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 44.5,
+        "end_time": 83.800781,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 44.5,
+            "end_time": 62.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 52.5,
+                "end_time": 55.5,
+                "children": [],
+                "caption": "The camera focuses on a plate of food, showcasing a variety of seafood, including shrimp, crab, and lobster, arranged on a bed of pasta and vegetables, while a man and a woman can be heard discussing the restaurant's menu.",
+                "postprocess": {
+                  "event_id": 14,
+                  "original_answer": "The camera focuses on a plate of food, showcasing a variety of seafood, including shrimp, crab, and lobster, arranged on a bed of pasta and vegetables, while a man and a woman can be heard discussing the restaurant's menu.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_52.5_55.5",
+                    "tags": [
+                      "food",
+                      "seafood",
+                      "restaurant",
+                      "menu"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "plate of food",
+                        "attributes": {
+                          "food_type": "seafood",
+                          "ingredients": "shrimp, crab, lobster, pasta, vegetables"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "",
+                        "role": "customer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "customer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_52.5_55.5",
+                      "name": "Restaurant menu discussion",
+                      "time": {
+                        "start": "52.5",
+                        "end": "55.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "food news"
+                      ],
+                      "scene_topic": "A couple discusses the restaurant's menu while focusing on a plate of seafood.",
+                      "summary": "The camera focuses on a plate of food, showcasing a variety of seafood, including shrimp, crab, and lobster, arranged on a bed of pasta and vegetables, while a man and a woman can be heard discussing the restaurant's menu.",
+                      "implications": "Major food news event",
+                      "modalities": {
+                        "visual": "The camera focuses on a plate of food, showcasing a variety of seafood, including shrimp, crab, and lobster, arranged on a bed of pasta and vegetables, a man and a woman.",
+                        "audio": "discussing the restaurant's menu.",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home where a qualified chef prepares authentic meals and explains the ingredients and techniques used followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 55.5,
+                "end_time": 57.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man and a woman sit closely together, their faces illuminated by the warm glow of a lamp as they engage in a lively conversation, their laughter and animated gestures conveying a sense of camaraderie.",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "In a dimly lit room, a man and a woman sit closely together, their faces illuminated by the warm glow of a lamp as they engage in a lively conversation, their laughter and animated gestures conveying a sense of camaraderie.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_55.5_57.5",
+                    "tags": [
+                      "human_interaction",
+                      "social_scene",
+                      "intimate_conversation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "human": "true",
+                          "sex": "male",
+                          "role": "actor"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "human": "true",
+                          "sex": "female",
+                          "role": "actor"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "lamp",
+                        "attributes": {
+                          "object_type": "lighting",
+                          "function": "illumination"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "actor",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "actor",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_55.5_57.5",
+                      "name": "intimate conversation",
+                      "time": {
+                        "start": "55.5",
+                        "end": "57.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "A man and a woman engage in a lively conversation in a dimly lit room.",
+                      "summary": "In a dimly lit room, a man and a woman sit closely together, their faces illuminated by the warm glow of a lamp as they engage in a lively conversation, their laughter and animated gestures conveying a sense of camaraderie.",
+                      "implications": "Emotional connection and understanding between two people.",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a man and a woman sit closely together, their faces illuminated by the warm glow of a lamp as they engage in a lively conversation, their laughter and animated gestures conveying a sense of camaraderie.",
+                        "audio": "",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 57.5,
+                "end_time": 59.5,
+                "children": [],
+                "caption": "The camera focuses on a plate of pasta and seafood, then pans out to reveal a woman in a black top enjoying the meal with a man in a suit, as a man's voice continues to describe the restaurant's offerings.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "The camera focuses on a plate of pasta and seafood, then pans out to reveal a woman in a black top enjoying the meal with a man in a suit, as a man's voice continues to describe the restaurant's offerings.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_57.5_59.5",
+                    "tags": [
+                      "food",
+                      "restaurant",
+                      "pasta",
+                      "seafood",
+                      "couple"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "plate of pasta and seafood",
+                        "attributes": {
+                          "food_type": "pasta and seafood",
+                          "description": "A plate of pasta and seafood"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in black top",
+                        "attributes": {
+                          "person_type": "woman",
+                          "description": "A woman in a black top"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man in suit",
+                        "attributes": {
+                          "person_type": "man",
+                          "description": "A man in a suit"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "diner",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "diner",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_57.5_59.5",
+                      "name": "Restaurant scene",
+                      "time": {
+                        "start": "57.5",
+                        "end": "59.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "food news"
+                      ],
+                      "scene_topic": "The camera focuses on a plate of pasta and seafood, then pans out to reveal a woman in a black top enjoying the meal with a man in a suit, as a man's voice continues to describe the restaurant's offerings.",
+                      "summary": "The camera focuses on a plate of pasta and seafood, then pans out to reveal a woman in a black top enjoying the meal with a man in a suit, as a man's voice continues to describe the restaurant's offerings.",
+                      "implications": "Major food news event",
+                      "modalities": {
+                        "visual": "The camera focuses on a plate of pasta and seafood, then pans out to reveal a woman in a black top enjoying the meal with a man in a suit.",
+                        "audio": "man's voice; restaurant's offerings",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 59.5,
+                "end_time": 62.5,
+                "children": [],
+                "caption": "The man and woman, illuminated by soft lighting, continue their lively conversation, the man gesturing with his hands as he speaks.",
+                "postprocess": {
+                  "event_id": 17,
+                  "original_answer": "The man and woman, illuminated by soft lighting, continue their lively conversation, the man gesturing with his hands as he speaks.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_59_62",
+                    "tags": [
+                      "human_conversation",
+                      "soft_lighting",
+                      "gesturing"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "illuminated": "soft_lighting",
+                          "gesturing": "hands"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "illuminated": "soft_lighting"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_59_62",
+                      "name": "lively conversation",
+                      "time": {
+                        "start": "59.5",
+                        "end": "62.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human_interaction"
+                      ],
+                      "scene_topic": "The man and woman continue their lively conversation, the man gesturing with his hands as he speaks.",
+                      "summary": "The man and woman, illuminated by soft lighting, continue their lively conversation, the man gesturing with his hands as he speaks.",
+                      "implications": "Human interaction and communication",
+                      "modalities": {
+                        "visual": "The man and woman, illuminated by soft lighting, continue their lively conversation, the man gesturing with his hands as he speaks.",
+                        "audio": "",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "In a cozy dining room, a woman savors a plate of seafood pasta, her face reflecting the enjoyment of the meal as she takes a bite and a sip of water.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "In a cozy dining room, a woman savors a plate of seafood pasta, her face reflecting the enjoyment of the meal as she takes a bite and a sip of water.",
+              "result": {
+                "video_id": "2Vh_xCGMLzg",
+                "event_id": "E_2Vh_xCGMLzg_44.5_62.5",
+                "tags": [
+                  "food",
+                  "seafood",
+                  "pasta",
+                  "enjoyment",
+                  "meal"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "plate of seafood pasta",
+                    "attributes": {
+                      "food_type": "seafood pasta",
+                      "meal_type": "dinner"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "person_type": "adult",
+                      "emotion": "enjoyment"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "water",
+                    "attributes": {
+                      "liquid_type": "water",
+                      "consumption_type": "drinking"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "consumer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2Vh_xCGMLzg_44.5_62.5",
+                  "name": "enjoying a meal",
+                  "time": {
+                    "start": "44.5",
+                    "end": "62.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "food news"
+                  ],
+                  "scene_topic": "A woman savors a plate of seafood pasta, enjoying the meal.",
+                  "summary": "In a cozy dining room, a woman savors a plate of seafood pasta, her face reflecting the enjoyment of the meal as she takes a bite and a sip of water.",
+                  "implications": "Major food news event",
+                  "modalities": {
+                    "visual": "In a cozy dining room, a woman savors a plate of seafood pasta, her face reflecting the enjoyment of the meal as she takes a bite and a sip of water.",
+                    "audio": "",
+                    "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 62.5,
+            "end_time": 83.800781,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 62.5,
+                "end_time": 70.5,
+                "children": [],
+                "caption": "A woman with long, dark hair, wearing a black top, smiles warmly at the camera as a man's voice begins to speak, the words \"I'm a musician\" barely audible over the gentle strumming of a guitar.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "A woman with long, dark hair, wearing a black top, smiles warmly at the camera as a man's voice begins to speak, the words \"I'm a musician\" barely audible over the gentle strumming of a guitar.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_62.5_70.5",
+                    "tags": [
+                      "music",
+                      "interview",
+                      "guitar"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Woman",
+                        "attributes": {
+                          "hair_color": "dark",
+                          "clothing": "black top"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Guitar",
+                        "attributes": {
+                          "type": "acoustic",
+                          "sound": "gentle strumming"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man",
+                        "ref_object": "O002",
+                        "role": "musician",
+                        "entity": "speaker"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_62.5_70.5",
+                      "name": "Musician Introduction",
+                      "time": {
+                        "start": "62.5",
+                        "end": "70.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music news"
+                      ],
+                      "scene_topic": "A musician introduces himself with a guitar accompaniment.",
+                      "summary": "A woman with long, dark hair, wearing a black top, smiles warmly at the camera as a man's voice begins to speak, the words \"I'm a musician\" barely audible over the gentle strumming of a guitar.",
+                      "implications": "Major music news event",
+                      "modalities": {
+                        "visual": "A woman with long, dark hair, wearing a black top, smiles warmly at the camera as a man's voice begins to speak.",
+                        "audio": "Man's voice; 'I'm a musician'; guitar strumming.",
+                        "speech": "I'm a musician"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 70.5,
+                "end_time": 72.5,
+                "children": [],
+                "caption": "A man in a suit, illuminated by soft lighting, passionately plays an acoustic guitar, his fingers moving quickly over the strings as he sings into the microphone.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "A man in a suit, illuminated by soft lighting, passionately plays an acoustic guitar, his fingers moving quickly over the strings as he sings into the microphone.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_70.5_72.5",
+                    "tags": [
+                      "music",
+                      "guitar",
+                      "singing",
+                      "performance",
+                      "entertainment"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Acoustic Guitar",
+                        "attributes": {
+                          "instrument": "acoustic guitar",
+                          "played_by": "man in a suit"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Microphone",
+                        "attributes": {
+                          "device": "microphone",
+                          "used_for": "singing"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Man in a suit",
+                        "attributes": {
+                          "person": "man",
+                          "clothing": "suit",
+                          "activity": "playing guitar"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Man in a suit",
+                        "ref_object": "O003",
+                        "role": "performer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_70.5_72.5",
+                      "name": "Guitar Performance",
+                      "time": {
+                        "start": "70.5",
+                        "end": "72.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music performance"
+                      ],
+                      "scene_topic": "A man in a suit passionately plays an acoustic guitar and sings into the microphone.",
+                      "summary": "A man in a suit, illuminated by soft lighting, passionately plays an acoustic guitar, his fingers moving quickly over the strings as he sings into the microphone.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "A man in a suit, illuminated by soft lighting, passionately plays an acoustic guitar, his fingers moving quickly over the strings as he sings into the microphone.",
+                        "audio": "Singing; guitar playing",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 72.5,
+                "end_time": 75.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a guitarist's hands playing a bluesy melody to a wide shot of a cityscape at night, where a bright light illuminates the sky, as a man's voice begins to speak.",
+                "postprocess": {
+                  "event_id": 21,
+                  "original_answer": "The video transitions from a close-up of a guitarist's hands playing a bluesy melody to a wide shot of a cityscape at night, where a bright light illuminates the sky, as a man's voice begins to speak.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_72.5_75.5",
+                    "tags": [
+                      "music",
+                      "cityscape",
+                      "night",
+                      "light",
+                      "voice"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "guitarist's hands",
+                        "attributes": {
+                          "playing": "bluesy melody"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "cityscape",
+                        "attributes": {
+                          "location": "night",
+                          "light": "bright"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "man's voice",
+                        "attributes": {
+                          "speaking": "unknown"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_72.5_75.5",
+                      "name": "video transition",
+                      "time": {
+                        "start": "72.5",
+                        "end": "75.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music news"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a guitarist's hands playing a bluesy melody to a wide shot of a cityscape at night, where a bright light illuminates the sky, as a man's voice begins to speak.",
+                      "summary": "The video transitions from a close-up of a guitarist's hands playing a bluesy melody to a wide shot of a cityscape at night, where a bright light illuminates the sky, as a man's voice begins to speak.",
+                      "implications": "Major music news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a guitarist's hands playing a bluesy melody to a wide shot of a cityscape at night, where a bright light illuminates the sky, as a man's voice begins to speak.",
+                        "audio": "man's voice",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 75.5,
+                "end_time": 83.800781,
+                "children": [],
+                "caption": "The video transitions from a close-up of the \"Mama Eat\" logo to a wider shot of the restaurant, showcasing its modern interior and inviting atmosphere as a woman's voice begins to speak.",
+                "postprocess": {
+                  "event_id": 22,
+                  "original_answer": "The video transitions from a close-up of the \"Mama Eat\" logo to a wider shot of the restaurant, showcasing its modern interior and inviting atmosphere as a woman's voice begins to speak.",
+                  "result": {
+                    "video_id": "2Vh_xCGMLzg",
+                    "event_id": "E_2Vh_xCGMLzg_75.5_83.8",
+                    "tags": [
+                      "restaurant",
+                      "logo",
+                      "interior",
+                      "atmosphere",
+                      "voiceover"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Mama Eat logo",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Restaurant interior",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "Woman's voice",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "",
+                        "ref_object": "O003",
+                        "role": "",
+                        "entity": ""
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_2Vh_xCGMLzg_75.5_83.8",
+                      "name": "",
+                      "time": {
+                        "start": "75.5",
+                        "end": "83.8"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "restaurant news"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of the 'Mama Eat' logo to a wider shot of the restaurant, showcasing its modern interior and inviting atmosphere as a woman's voice begins to speak.",
+                      "summary": "The video transitions from a close-up of the \"Mama Eat\" logo to a wider shot of the restaurant, showcasing its modern interior and inviting atmosphere as a woman's voice begins to speak.",
+                      "implications": "Major restaurant news event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of the 'Mama Eat' logo to a wider shot of the restaurant, showcasing its modern interior and inviting atmosphere as a woman's voice begins to speak.",
+                        "audio": "",
+                        "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A musician promotes a musical event, performing an acoustic guitar piece and encouraging viewers to \"get their ticket\" while showcasing the event's logo and a cityscape at night, transitioning to a promotional video for a restaurant.",
+            "postprocess": {
+              "event_id": 19,
+              "original_answer": "A musician promotes a musical event, performing an acoustic guitar piece and encouraging viewers to \"get their ticket\" while showcasing the event's logo and a cityscape at night, transitioning to a promotional video for a restaurant.",
+              "result": {
+                "video_id": "2Vh_xCGMLzg",
+                "event_id": "E_2Vh_xCGMLzg_62.5_83.8",
+                "tags": [
+                  "music",
+                  "event",
+                  "promotion"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Acoustic Guitar",
+                    "attributes": {
+                      "instrument": "acoustic guitar",
+                      "played_by": "musician"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Event Logo",
+                    "attributes": {
+                      "event_name": "musical event",
+                      "logo_type": "text"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Cityscape",
+                    "attributes": {
+                      "location": "city",
+                      "time_of_day": "night"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "Promotional Video",
+                    "attributes": {
+                      "content_type": "video",
+                      "topic": "restaurant"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Musician",
+                    "ref_object": "O001",
+                    "role": "performer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_2Vh_xCGMLzg_62.5_83.8",
+                  "name": "Musical Event Promotion",
+                  "time": {
+                    "start": "62.5",
+                    "end": "83.8"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "music news"
+                  ],
+                  "scene_topic": "A musician promotes a musical event, performing an acoustic guitar piece and encouraging viewers to 'get their ticket' while showcasing the event's logo and a cityscape at night, transitioning to a promotional video for a restaurant.",
+                  "summary": "A musician promotes a musical event, performing an acoustic guitar piece and encouraging viewers to \"get their ticket\" while showcasing the event's logo and a cityscape at night, transitioning to a promotional video for a restaurant.",
+                  "implications": "Major music event promotion",
+                  "modalities": {
+                    "visual": "A musician promotes a musical event, performing an acoustic guitar piece, showcasing the event's logo and a cityscape at night, transitioning to a promotional video for a restaurant.",
+                    "audio": "Encouraging viewers to 'get their ticket'; acoustic guitar piece.",
+                    "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A couple enjoys a romantic dinner at a restaurant, while a musician promotes a musical event, as a woman savors a delicious seafood pasta dish in a cozy setting.",
+        "postprocess": {
+          "event_id": 13,
+          "original_answer": "A couple enjoys a romantic dinner at a restaurant, while a musician promotes a musical event, as a woman savors a delicious seafood pasta dish in a cozy setting.",
+          "result": {
+            "video_id": "2Vh_xCGMLzg",
+            "event_id": "E_2Vh_xCGMLzg_44.5_83.8",
+            "tags": [
+              "romantic_dinner",
+              "restaurant",
+              "music",
+              "seafood_pasta"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "couple",
+                "attributes": {
+                  "number": "2",
+                  "relationship": "romantic"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "musician",
+                "attributes": {
+                  "role": "promoter",
+                  "event": "musical_event"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "woman",
+                "attributes": {
+                  "action": "savoring",
+                  "food": "seafood_pasta"
+                }
+              },
+              {
+                "object_id": "O004",
+                "name": "restaurant",
+                "attributes": {
+                  "setting": "cozy"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "couple",
+                "ref_object": "O001",
+                "role": "diners",
+                "entity": "people"
+              },
+              {
+                "actor_id": "A002",
+                "name": "musician",
+                "ref_object": "O002",
+                "role": "promoter",
+                "entity": "people"
+              },
+              {
+                "actor_id": "A003",
+                "name": "woman",
+                "ref_object": "O003",
+                "role": "diner",
+                "entity": "people"
+              }
+            ],
+            "event": {
+              "event_id": "E_2Vh_xCGMLzg_44.5_83.8",
+              "name": "romantic_dinner",
+              "time": {
+                "start": "44.5",
+                "end": "83.8"
+              },
+              "actors": [
+                "A001",
+                "A002",
+                "A003"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003",
+                "O004"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "romantic_scene"
+              ],
+              "scene_topic": "A couple enjoys a romantic dinner at a restaurant, while a musician promotes a musical event, as a woman savors a delicious seafood pasta dish in a cozy setting.",
+              "summary": "A couple enjoys a romantic dinner at a restaurant, while a musician promotes a musical event, as a woman savors a delicious seafood pasta dish in a cozy setting.",
+              "implications": "Major social, entertainment news event",
+              "modalities": {
+                "visual": "A couple enjoys a romantic dinner at a restaurant, while a woman savors a delicious seafood pasta dish in a cozy setting.",
+                "audio": "",
+                "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "A luxurious culinary experience is showcased, featuring a chef's skills and a romantic dinner, as a narrator and a woman's voice invite viewers to join in the celebration, set to the backdrop of a musical event.",
+    "postprocess": {
+      "event_id": 3,
+      "original_answer": "A luxurious culinary experience is showcased, featuring a chef's skills and a romantic dinner, as a narrator and a woman's voice invite viewers to join in the celebration, set to the backdrop of a musical event.",
+      "result": {
+        "video_id": "2Vh_xCGMLzg",
+        "event_id": "E_2Vh_xCGMLzg_0_83.8",
+        "tags": [
+          "luxury",
+          "culinary",
+          "romance",
+          "music",
+          "celebration"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "Chef",
+            "attributes": {
+              "role": "cook",
+              "skill": "culinary"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "Narrator",
+            "attributes": {
+              "voice": "male"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "Woman's Voice",
+            "attributes": {
+              "voice": "female"
+            }
+          },
+          {
+            "object_id": "O004",
+            "name": "Romantic Dinner",
+            "attributes": {
+              "setting": "intimate"
+            }
+          },
+          {
+            "object_id": "O005",
+            "name": "Musical Event",
+            "attributes": {
+              "genre": "background"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "Chef",
+            "ref_object": "O001",
+            "role": "performer",
+            "entity": "person"
+          },
+          {
+            "actor_id": "A002",
+            "name": "Narrator",
+            "ref_object": "O002",
+            "role": "narrator",
+            "entity": "person"
+          },
+          {
+            "actor_id": "A003",
+            "name": "Woman's Voice",
+            "ref_object": "O003",
+            "role": "narrator",
+            "entity": "person"
+          }
+        ],
+        "event": {
+          "event_id": "E_2Vh_xCGMLzg_0_83.8",
+          "name": "Luxurious Culinary Experience",
+          "time": {
+            "start": "0",
+            "end": "83.8"
+          },
+          "actors": [
+            "A001",
+            "A002",
+            "A003"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003",
+            "O004",
+            "O005"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "luxury lifestyle"
+          ],
+          "scene_topic": "A chef prepares a romantic dinner, accompanied by a narrator and a woman's voice, set to a musical background.",
+          "summary": "A luxurious culinary experience is showcased, featuring a chef's skills and a romantic dinner, as a narrator and a woman's voice invite viewers to join in the celebration, set to the backdrop of a musical event.",
+          "implications": "Major food and lifestyle event",
+          "modalities": {
+            "visual": "A luxurious culinary experience is showcased, featuring a chef's skills and a romantic dinner, set to the backdrop of a musical event.",
+            "audio": "Narrator; woman's voice; musical event.",
+            "speech": "MuSeat offers an Italian-style dining experience in the comfort of your own home, where a qualified chef prepares authentic meals and explains the ingredients and techniques used, followed by live music performances of beautiful Italian songs by professional musicians."
+          }
+        }
+      }
+    }
+  }
+}
