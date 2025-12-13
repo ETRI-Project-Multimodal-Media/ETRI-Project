@@ -1,61 +1,31 @@
 {
-  "query": "cartoon witch and skeleton singing a spooky song",
+  "query": "cartoon",
   "input_file": "outputs/postprocess/yCW_-SuVWGo.json",
   "mode": "text_embed",
-  "top_k": 10,
-  "similarity_threshold": 0.2,
+  "top_k": 3,
+  "similarity_threshold": 0.25,
   "device": "cuda",
-  "elapsed_seconds": 6.7334606647491455,
-  "current_memory_mib": 2184.57421875,
-  "peak_memory_mib": 4018.37890625,
-  "match_count": 10,
+  "elapsed_seconds": 7.271944046020508,
+  "current_memory_mib": 2165.98828125,
+  "peak_memory_mib": 4014.90234375,
+  "match_count": 3,
   "matches": [
+    {
+      "video_id": "yCW_-SuVWGo",
+      "start_time": 0.0,
+      "end_time": 9.5,
+      "score": 0.4969792664051056,
+      "matched_text": "A man introduces a TV guide or program, possibly an interview or event, featuring a group of men in suits.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
+      "score_type": "text_embed"
+    },
     {
       "video_id": "yCW_-SuVWGo",
       "start_time": 19.5,
       "end_time": 26.5,
-      "score": 0.4774935245513916,
+      "score": 0.48078998923301697,
       "matched_text": "A man gives a speech to an unseen audience, accompanied by a woman.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "yCW_-SuVWGo",
-      "start_time": 0.0,
-      "end_time": 26.5,
-      "score": 0.43644702434539795,
-      "matched_text": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "yCW_-SuVWGo",
-      "start_time": 9.5,
-      "end_time": 17.5,
-      "score": 0.43644702434539795,
-      "matched_text": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "yCW_-SuVWGo",
-      "start_time": 71.5,
-      "end_time": 73.5,
-      "score": 0.4277347922325134,
-      "matched_text": "The video transitions from a close-up of a red and white 'TV Guide' logo to a dynamic montage of abstract shapes and lines, all set to a fast-paced electronic soundtrack.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "yCW_-SuVWGo",
-      "start_time": 73.5,
-      "end_time": 77.810026,
-      "score": 0.42721766233444214,
-      "matched_text": "The video transitions from a close-up of a red 'A' logo to a dynamic montage of abstract shapes and lines, all while a woman speaks in a foreign language, her words occasionally punctuated by a man's voice.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
       "score_type": "text_embed"
@@ -64,48 +34,8 @@
       "video_id": "yCW_-SuVWGo",
       "start_time": 26.5,
       "end_time": 30.5,
-      "score": 0.42455238103866577,
+      "score": 0.4755822718143463,
       "matched_text": "A man in a suit addresses an unseen audience with a serious expression.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "yCW_-SuVWGo",
-      "start_time": 63.5,
-      "end_time": 77.810026,
-      "score": 0.42021673917770386,
-      "matched_text": "A man stands in contemplation in a dimly lit room, surrounded by sounds and visuals that transition between abstract shapes, logos, and a woman's voice speaking in a foreign language, creating a surreal and dynamic atmosphere.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "yCW_-SuVWGo",
-      "start_time": 17.5,
-      "end_time": 26.5,
-      "score": 0.419289767742157,
-      "matched_text": "A man delivers a speech, either in a noisy or private setting, with a woman standing beside him, as the audience listens attentively.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "yCW_-SuVWGo",
-      "start_time": 15.5,
-      "end_time": 17.5,
-      "score": 0.4074241816997528,
-      "matched_text": "The man in a suit and tie addresses the camera about the band's recent success and upcoming plans.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "yCW_-SuVWGo",
-      "start_time": 68.5,
-      "end_time": 71.5,
-      "score": 0.4036405086517334,
-      "matched_text": "The video transitions from a close-up of a man's face to a wider shot of him standing in a dimly lit room, as a woman's voice begins to speak, followed by the sound of a car engine starting up.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
       "score_type": "text_embed"
@@ -113,25 +43,25 @@
   ],
   "text_embed_profile": {
     "model_ready": {
-      "elapsed": 6.033012263476849,
-      "current_memory_mib": 1853.3203125,
-      "peak_memory_mib": 4018.37890625
+      "elapsed": 6.5254346914589405,
+      "current_memory_mib": 1852.28125,
+      "peak_memory_mib": 4014.90234375
     },
     "query_embedding": {
-      "elapsed": 0.4629785716533661,
-      "current_memory_mib": 2180.2734375,
-      "peak_memory_mib": 4018.37890625,
+      "elapsed": 0.4960976913571358,
+      "current_memory_mib": 2158.73046875,
+      "peak_memory_mib": 4014.90234375,
       "embedding_bytes": 4096
     },
     "batch_000": {
-      "elapsed": 0.17025285214185715,
-      "current_memory_mib": 2180.90234375,
-      "peak_memory_mib": 4018.37890625
+      "elapsed": 0.17724264785647392,
+      "current_memory_mib": 2160.26953125,
+      "peak_memory_mib": 4014.90234375
     },
     "batch_001": {
-      "elapsed": 0.024158630520105362,
-      "current_memory_mib": 2184.57421875,
-      "peak_memory_mib": 4018.37890625
+      "elapsed": 0.030160728842020035,
+      "current_memory_mib": 2165.98828125,
+      "peak_memory_mib": 4014.90234375
     }
   },
   "query_embedding_bytes": 4096

@@ -6,6 +6,7 @@ import json
 import math
 import html as html_module
 import shlex
+import csv
 from typing import List
 from string import Template
 
@@ -175,6 +176,7 @@ tree_save_dir = "./outputs/tree"
 post_save_dir = "./outputs/postprocess"
 debug_path = "./logs/debug.text"
 query_base_dir = "./outputs/query"
+query_recommendation_csv = os.path.join(BASE_DIR, "query_recommendations_wide.csv")
 
 tree_v_feat = "./data/features_tree/video_features"
 tree_a_feat = "./data/features_tree/audio_features"
@@ -476,6 +478,46 @@ def list_postprocess_jsons(output_dir: str) -> List[str]:
         if name.lower().endswith(".json"):
             files.append(os.path.join(output_dir, name))
     return sorted(files)
+
+
+@st.cache_data(show_spinner=False)
+def load_query_recommendations(csv_path: str):
+    """CSV에서 video_id별 good/bad Query 추천을 불러옵니다."""
+    if not os.path.isfile(csv_path):
+        return {}
+
+    recommendations: dict[str, dict[str, list[tuple[str, str]]]] = {}
+    try:
+        with open(csv_path, "r", encoding="utf-8", newline="") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                video_id = (row.get("video_id") or "").strip()
+                if not video_id:
+                    continue
+                video_entry = recommendations.setdefault(
+                    video_id, {"good": [], "bad": []}
+                )
+
+                def _add(field_name: str, quality: str):
+                    value = (row.get(field_name) or "").strip()
+                    if not value:
+                        return
+                    label_type = "sentence" if "sentence" in field_name else "word"
+                    label = f"{quality.title()} ({label_type}) · {value}"
+                    video_entry[quality].append((label, value))
+
+                for idx in range(1, 3):
+                    _add(f"sentence_good_{idx}", "good")
+                    _add(f"sentence_bad_{idx}", "bad")
+                    _add(f"word_good_{idx}", "good")
+                    _add(f"word_bad_{idx}", "bad")
+    except Exception:
+        return {}
+
+    return recommendations
+
+
+query_recommendations_data = load_query_recommendations(query_recommendation_csv)
 
 
 def flatten_tree_segments(tree_data: dict):
@@ -1419,7 +1461,53 @@ with tab_query:
         "- 1단계 Postprocess 결과(JSON)와 Query 결과(JSON)를 이용해 시각화합니다."
     )
 
-    query_str = st.text_input("Query 문자열", value=default_query_str)
+    selected_video_id = st.session_state.get("selected_video_id")
+    video_query_recos = (
+        query_recommendations_data.get(selected_video_id)
+        if selected_video_id
+        else None
+    )
+    has_recommendation = (
+        video_query_recos
+        and (video_query_recos.get("good") or video_query_recos.get("bad"))
+    )
+
+    if has_recommendation:
+        available_quality_options = []
+        if video_query_recos.get("good"):
+            available_quality_options.append("Good")
+        if video_query_recos.get("bad"):
+            available_quality_options.append("Bad")
+
+        query_quality = st.radio(
+            "추천 Query 유형",
+            available_quality_options,
+            horizontal=True,
+            key="query_recommendation_quality",
+        )
+        selected_options = video_query_recos.get(query_quality.lower()) or []
+
+        if selected_options:
+            selected_query_index = st.selectbox(
+                "Query 문자열",
+                range(len(selected_options)),
+                format_func=lambda i: selected_options[i][0],
+                key="query_recommendation_value",
+            )
+            query_str = selected_options[selected_query_index][1]
+        else:
+            st.info("선택한 유형의 추천 Query가 없어 직접 입력해야 합니다.")
+            query_str = st.text_input(
+                "Query 문자열",
+                value=default_query_str,
+                key="query_manual_fallback",
+            )
+    else:
+        query_str = st.text_input(
+            "Query 문자열",
+            value=default_query_str,
+            key="query_manual_input",
+        )
     query_mode = st.selectbox(
         "Query mode", ["text_embed", "heuristic"], index=["text_embed", "heuristic"].index(default_query_mode)
     )
