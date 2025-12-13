@@ -5,6 +5,7 @@ import base64
 import json
 import math
 import html as html_module
+import shlex
 from typing import List
 from string import Template
 
@@ -162,6 +163,9 @@ gpu_id = st.sidebar.text_input("GPU_ID (CUDA_VISIBLE_DEVICES)", "0")
 video_dir = st.sidebar.text_input(
     "VIDEO_DIR (원본 mp4 폴더)", "./data/raw_data/video"
 )
+audio_dir = st.sidebar.text_input(
+    "AUDIO_DIR (원본 wav 폴더)", "./data/raw_data/audio"
+)
 checkpoint_dir = st.sidebar.text_input("CHECKPOINT_DIR", "./checkpoints")
 
 # 고정 경로 설정 (좌측 경로 입력 대신 기본값 사용)
@@ -210,7 +214,7 @@ default_query_mode = st.sidebar.selectbox(
     "DEFAULT_QUERY_MODE", ["text_embed", "heuristic"], index=0
 )
 default_query_top_k = st.sidebar.number_input(
-    "DEFAULT_QUERY_TOP_K", min_value=1, max_value=50, value=20, step=1
+    "DEFAULT_QUERY_TOP_K", min_value=1, max_value=50, value=3, step=1
 )
 default_query_threshold = st.sidebar.slider(
     "DEFAULT_QUERY_THRESHOLD", min_value=0.0, max_value=1.0, value=0.2, step=0.05
@@ -230,6 +234,16 @@ def append_log(text):
     log_area.text(st.session_state.log_text)
 
 
+def get_primary_gpu_index(gpu_text: str | None) -> int:
+    if not gpu_text:
+        return 0
+    token = str(gpu_text).split(",")[0].strip()
+    try:
+        return int(token)
+    except ValueError:
+        return 0
+
+
 def resolve_path(path: str) -> str:
     """상대 경로를 LongVALE_new 기준 절대 경로로 변환."""
     if not path:
@@ -239,16 +253,71 @@ def resolve_path(path: str) -> str:
     return os.path.abspath(os.path.join(BASE_DIR, path))
 
 
-def ensure_tree_features(tree_v_feat_dir: str, tree_a_feat_dir: str, tree_s_feat_dir: str) -> int:
-    if all(
-        has_any_files(d, [".npy"])
-        for d in [tree_v_feat_dir, tree_a_feat_dir, tree_s_feat_dir]
-    ):
-        append_log("[0] Tree features 이미 존재하여 추출을 스킵합니다.")
+def ensure_tree_features(
+    tree_v_feat_dir: str,
+    tree_a_feat_dir: str,
+    tree_s_feat_dir: str,
+    video_id: str | None,
+    annotation_path: str | None,
+    video_dir_path: str,
+    audio_dir_path: str,
+    gpu_id_value: str,
+    checkpoint_dir_path: str,
+) -> int:
+    """선택된 video_id에 대한 Tree feature 존재 여부 확인 및 필요 시 생성."""
+
+    if not video_id:
+        append_log("[0] Tree features 추출 불가: video_id가 없습니다.")
+        return -1
+
+    def _has_features_for_video(vid: str) -> bool:
+        required_files = [
+            os.path.join(tree_v_feat_dir, f"{vid}.npy"),
+            os.path.join(tree_a_feat_dir, f"{vid}.npy"),
+            os.path.join(tree_s_feat_dir, f"{vid}.npy"),
+        ]
+        return all(os.path.isfile(path) for path in required_files)
+
+    if _has_features_for_video(video_id):
+        append_log(f"[0] Tree features 이미 존재 ({video_id}) → 추출 스킵")
         return 0
 
-    append_log("[0] Tree features 추출 시작 (bash scripts/features_tree.sh all)...")
-    cmd = "bash scripts/features_tree.sh all"
+    if not annotation_path or not os.path.isfile(annotation_path):
+        append_log("[0] Tree features 추출 실패: 임시 annotation 파일이 없습니다.")
+        return -1
+
+    video_dir_abs = resolve_path(video_dir_path)
+    audio_dir_abs = resolve_path(audio_dir_path)
+    annotation_abs = resolve_path(annotation_path)
+    tree_feat_root = resolve_path(os.path.dirname(tree_v_feat_dir))
+    clip_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "ViT-L-14.pt"))
+    beats_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "BEATs_iter3_plus_AS20K.pt"))
+    whisper_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "openai-whisper-large-v2"))
+    gpu_index = get_primary_gpu_index(gpu_id_value)
+
+    if not os.path.isdir(video_dir_abs):
+        append_log(f"[0] Tree features 추출 실패: VIDEO_DIR 경로가 잘못되었습니다 ({video_dir_abs})")
+        return -1
+    if not os.path.isdir(audio_dir_abs):
+        append_log(f"[0] Tree features 추출 실패: AUDIO_DIR 경로가 잘못되었습니다 ({audio_dir_abs})")
+        return -1
+
+    os.makedirs(tree_feat_root, exist_ok=True)
+
+    cmd = (
+        "python src/preprocess/tree_feature_extract.py "
+        f"--data_path {shlex.quote(annotation_abs)} "
+        f"--video_dir {shlex.quote(video_dir_abs)} "
+        f"--audio_dir {shlex.quote(audio_dir_abs)} "
+        f"--save_dir {shlex.quote(tree_feat_root)} "
+        f"--clip_checkpoint {shlex.quote(clip_ckpt)} "
+        f"--beats_checkpoint {shlex.quote(beats_ckpt)} "
+        f"--whisper_checkpoint {shlex.quote(whisper_ckpt)} "
+        "--extract_modality all "
+        f"--gpu_id {gpu_index}"
+    )
+
+    append_log(f"[0] Tree features 추출 시작 (video_id={video_id})...")
     code, out = run_command(cmd)
     append_log(f"$ {cmd}\n{out}")
     append_log(f"[0] Tree features 종료 코드: {code}")
@@ -260,22 +329,111 @@ def ensure_model_features(
     model_a_feat_dir: str,
     model_s_feat_dir: str,
     speech_asr_dir_path: str,
+    video_id: str | None,
+    annotation_path: str | None,
+    video_dir_path: str,
+    audio_dir_path: str,
+    gpu_id_value: str,
+    checkpoint_dir_path: str,
 ) -> int:
-    video_ok = has_any_files(model_v_feat_dir, [".npy"])
-    audio_ok = has_any_files(model_a_feat_dir, [".npy"])
-    speech_ok = has_any_files(model_s_feat_dir, [".npy"])
-    asr_ok = has_any_files(speech_asr_dir_path, [".json"])
+    """선택된 video_id에 대한 모델 feature 존재 여부 확인 및 필요 시 생성."""
 
-    if video_ok and audio_ok and speech_ok and asr_ok:
-        append_log("[0] Model features 이미 존재하여 추출을 스킵합니다.")
+    if not video_id:
+        append_log("[0] Model features 추출 불가: video_id가 없습니다.")
+        return -1
+
+    video_feat_path = os.path.join(model_v_feat_dir, f"{video_id}.npy")
+    audio_feat_path = os.path.join(model_a_feat_dir, f"{video_id}.npy")
+    speech_feat_path = os.path.join(model_s_feat_dir, f"{video_id}.npy")
+    speech_asr_path = os.path.join(speech_asr_dir_path, f"{video_id}.json")
+
+    missing_video = not os.path.isfile(video_feat_path)
+    missing_audio = not os.path.isfile(audio_feat_path)
+    missing_speech = not os.path.isfile(speech_feat_path)
+    missing_asr = not os.path.isfile(speech_asr_path)
+
+    if not any([missing_video, missing_audio, missing_speech, missing_asr]):
+        append_log(f"[0] Model features 이미 존재 ({video_id}) → 추출 스킵")
         return 0
 
-    append_log("[0] Model features 추출 시작 (bash scripts/features_longvale.sh all)...")
-    cmd = "bash scripts/features_longvale.sh all"
-    code, out = run_command(cmd)
-    append_log(f"$ {cmd}\n{out}")
-    append_log(f"[0] Model features 종료 코드: {code}")
-    return code
+    if not annotation_path or not os.path.isfile(annotation_path):
+        append_log("[0] Model features 추출 실패: 임시 annotation 파일이 없습니다.")
+        return -1
+
+    video_dir_abs = resolve_path(video_dir_path)
+    audio_dir_abs = resolve_path(audio_dir_path)
+    annotation_abs = resolve_path(annotation_path)
+    clip_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "ViT-L-14.pt"))
+    beats_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "BEATs_iter3_plus_AS20K.pt"))
+    whisper_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "openai-whisper-large-v2"))
+    gpu_index = get_primary_gpu_index(gpu_id_value)
+
+    if not os.path.isdir(video_dir_abs):
+        append_log(f"[0] Model features 추출 실패: VIDEO_DIR 경로가 잘못되었습니다 ({video_dir_abs})")
+        return -1
+    if not os.path.isdir(audio_dir_abs):
+        append_log(f"[0] Model features 추출 실패: AUDIO_DIR 경로가 잘못되었습니다 ({audio_dir_abs})")
+        return -1
+
+    commands: list[tuple[str, str]] = []
+    if missing_video:
+        os.makedirs(model_v_feat_dir, exist_ok=True)
+        cmd = (
+            "python src/preprocess/clip_feature_extract.py "
+            f"--annotation {shlex.quote(annotation_abs)} "
+            f"--video_dir {shlex.quote(video_dir_abs)} "
+            f"--save_dir {shlex.quote(resolve_path(model_v_feat_dir))} "
+            f"--checkpoint {shlex.quote(clip_ckpt)} "
+            f"--gpu_id {gpu_index}"
+        )
+        commands.append(("Video", cmd))
+
+    if missing_audio:
+        os.makedirs(model_a_feat_dir, exist_ok=True)
+        cmd = (
+            "python src/preprocess/beats_feature_extract.py "
+            f"--annotation {shlex.quote(annotation_abs)} "
+            f"--audio_dir {shlex.quote(audio_dir_abs)} "
+            f"--save_dir {shlex.quote(resolve_path(model_a_feat_dir))} "
+            f"--checkpoint {shlex.quote(beats_ckpt)} "
+            f"--gpu_id {gpu_index}"
+        )
+        commands.append(("Audio", cmd))
+
+    if missing_speech:
+        os.makedirs(model_s_feat_dir, exist_ok=True)
+        cmd = (
+            "python src/preprocess/whisper_feature_extract.py "
+            f"--annotation {shlex.quote(annotation_abs)} "
+            f"--audio_dir {shlex.quote(audio_dir_abs)} "
+            f"--save_dir {shlex.quote(resolve_path(model_s_feat_dir))} "
+            f"--checkpoint {shlex.quote(whisper_ckpt)} "
+            f"--gpu_id {gpu_index}"
+        )
+        commands.append(("Speech", cmd))
+
+    if missing_asr:
+        os.makedirs(speech_asr_dir_path, exist_ok=True)
+        cmd = (
+            "python src/preprocess/whisper_speech_asr.py "
+            f"--annotation {shlex.quote(annotation_abs)} "
+            f"--audio_dir {shlex.quote(audio_dir_abs)} "
+            f"--save_dir {shlex.quote(resolve_path(speech_asr_dir_path))} "
+            f"--checkpoint {shlex.quote(whisper_ckpt)} "
+            f"--gpu_id {gpu_index}"
+        )
+        commands.append(("Speech ASR", cmd))
+
+    for desc, cmd in commands:
+        append_log(f"[0] Model features {desc} 추출 시작 (video_id={video_id})...")
+        code, out = run_command(cmd)
+        append_log(f"$ {cmd}\n{out}")
+        append_log(f"[0] Model features {desc} 종료 코드: {code}")
+        if code != 0:
+            return code
+
+    return 0
+
 
 
 def list_video_files(video_dir_path: str) -> List[str]:
@@ -1091,7 +1249,17 @@ with tab_tree:
 
         if run_clicked and code == 0:
             step_start = time.time()
-            code = ensure_tree_features(tree_v_feat, tree_a_feat, tree_s_feat)
+            code = ensure_tree_features(
+                tree_v_feat,
+                tree_a_feat,
+                tree_s_feat,
+                video_id=selected_video_id,
+                annotation_path=data_path,
+                video_dir_path=video_dir,
+                audio_dir_path=audio_dir,
+                gpu_id_value=gpu_id,
+                checkpoint_dir_path=checkpoint_dir,
+            )
             if code != 0:
                 append_log(
                     f"Tree feature 추출 실패로 1단계를 중단합니다. (경과 {time.time() - step_start:.1f}초)"
@@ -1104,6 +1272,12 @@ with tab_tree:
                 model_a_feat,
                 model_s_feat,
                 speech_asr_dir,
+                video_id=selected_video_id,
+                annotation_path=data_path,
+                video_dir_path=video_dir,
+                audio_dir_path=audio_dir,
+                gpu_id_value=gpu_id,
+                checkpoint_dir_path=checkpoint_dir,
             )
             if code != 0:
                 append_log(
@@ -1111,22 +1285,6 @@ with tab_tree:
                 )
 
         if run_clicked and code == 0:
-            append_log("[1] Event Tree 생성 시작...")
-            step_start = time.time()
-            cmd = (
-                "python src/eventtree/tree/tree.py "
-                f"--data_path {data_path} "
-                f"--video_feat_folder {tree_v_feat} "
-                f"--audio_feat_folder {tree_a_feat} "
-                f"--speech_feat_folder {tree_s_feat} "
-                f"--save_dir {tree_save_dir} "
-            )
-
-            code, out = run_command(cmd)
-            append_log(f"$ {cmd}\n{out}")
-            append_log(
-                f"[1] 종료 코드: {code} (경과 {time.time() - step_start:.1f}초)"
-            )
             if code == 0:
                 effective_tree_path = os.path.join(
                     tree_save_dir, f"{selected_video_id}.json"
@@ -1136,6 +1294,22 @@ with tab_tree:
                         f"Tree 결과 파일을 찾을 수 없습니다: {effective_tree_path}"
                     )
                     code = -1
+            append_log("[1] Event Tree 생성 시작...")
+            step_start = time.time()
+            cmd = (
+                "python src/eventtree/tree/tree.py "
+                f"--data_path {data_path} "
+                f"--video_feat_folder {tree_v_feat} "
+                f"--audio_feat_folder {tree_a_feat} "
+                f"--speech_feat_folder {tree_s_feat} "
+                f"--save_path {effective_tree_path} "
+            )
+
+            code, out = run_command(cmd)
+            append_log(f"$ {cmd}\n{out}")
+            append_log(
+                f"[1] 종료 코드: {code} (경과 {time.time() - step_start:.1f}초)"
+            )
 
         if run_clicked and code == 0:
             append_log("[2] Caption 생성 시작...")
@@ -1308,31 +1482,59 @@ with tab_query:
             append_log("2단계 Query 검색이 완료되었습니다.")
 
     # 2단계 실행 여부와 관계없이, 현재 존재하는 Query 결과를 항상 시각화
+    postprocess_files = list_postprocess_jsons(post_save_dir)
     query_files = list_postprocess_jsons(query_base_dir)
-    if query_files:
-        labels = [os.path.basename(p) for p in query_files]
+
+    # video_id -> Query JSON 경로 매핑
+    query_file_map = {
+        os.path.splitext(os.path.basename(path))[0]: path for path in query_files
+    }
+
+    # Postprocess가 완료된 video_id도 항상 선택지로 제공
+    postprocess_video_ids = {
+        os.path.splitext(os.path.basename(path))[0] for path in postprocess_files
+    }
+    available_video_ids = sorted(postprocess_video_ids.union(query_file_map.keys()))
+
+    if available_video_ids:
+        label_map = {}
+        for vid in available_video_ids:
+            if vid in query_file_map:
+                label_map[vid] = f"{vid}.json"
+            else:
+                label_map[vid] = f"{vid}.json (Query 결과 없음)"
 
         default_index = 0
         current_video_id = st.session_state.get("selected_video_id")
-        if current_video_id is not None:
-            for i, lbl in enumerate(labels):
-                if os.path.splitext(lbl)[0] == str(current_video_id):
-                    default_index = i
-                    break
+        if current_video_id in available_video_ids:
+            default_index = available_video_ids.index(current_video_id)
 
         selected_q_index = st.selectbox(
             "시각화할 Query JSON (video_id) 선택",
-            range(len(query_files)),
+            range(len(available_video_ids)),
             index=default_index,
-            format_func=lambda i: labels[i],
+            format_func=lambda i: label_map[available_video_ids[i]],
         )
-        selected_query_json = query_files[selected_q_index]
+        selected_video_id_for_vis = available_video_ids[selected_q_index]
+        selected_query_json = query_file_map.get(selected_video_id_for_vis)
+        video_json_path = os.path.join(
+            post_save_dir, f"{selected_video_id_for_vis}.json"
+        )
 
-        # 선택된 query 파일 이름에서 video_id 복원
-        sel_video_id = os.path.splitext(os.path.basename(selected_query_json))[0]
-        video_json_path = os.path.join(post_save_dir, f"{sel_video_id}.json")
-
-        show_query_step_visual(video_json_path, selected_query_json, video_dir, query_vis_container)
+        if not os.path.isfile(video_json_path):
+            with query_vis_container:
+                st.info(
+                    f"{selected_video_id_for_vis}에 대한 Postprocess JSON을 찾을 수 없습니다. 1단계를 실행하세요."
+                )
+        elif not selected_query_json:
+            with query_vis_container:
+                st.info(
+                    f"{selected_video_id_for_vis}에 대한 Query 결과 JSON이 없습니다. 2단계를 실행하세요."
+                )
+        else:
+            show_query_step_visual(
+                video_json_path, selected_query_json, video_dir, query_vis_container
+            )
     else:
         with query_vis_container:
-            st.info("Query 결과 JSON이 없습니다. 2단계를 먼저 실행하세요.")
+            st.info("Postprocess 결과 JSON이 없습니다. 1단계를 먼저 실행하세요.")

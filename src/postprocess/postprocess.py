@@ -14,6 +14,7 @@ from tree_merger import (
     merge_segments_by_jsd,
     KL_SIMILARITY_THRESHOLD,
     JSD_SIMILARITY_THRESHOLD,
+    COSINE_SIMILARITY_THRESHOLD,
 )
 from info_extractor import extract_info_with_llm
 from model_loader import llm
@@ -209,7 +210,13 @@ def _iter_video_payloads(raw_data):
 
 
 # 전체 
-def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
+def process_txt_file(
+    input_file,
+    output_dir,
+    speech_json_dir,
+    not_json_dir,
+    merge_threshold=COSINE_SIMILARITY_THRESHOLD,
+):
     video_results = defaultdict(list)
 
     with open(input_file, "r", encoding="utf-8") as f:
@@ -223,7 +230,7 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
         if not isinstance(video_tree, dict):
             continue
 
-        merge_tree(video_tree)
+        merge_tree(video_tree, similarity_threshold=merge_threshold)
 
         segments = _collect_segments(video_tree)
         if not segments:
@@ -232,13 +239,7 @@ def process_txt_file(input_file, output_dir, speech_json_dir, not_json_dir):
         duration = _format_timestamp(video_tree.get("end_time"))
         if not duration:
             duration = segments[-1]["end"]
-        
-        # merge time split 
-        # segments = repeated_ngram_ratio(segments)
-        # segments = merge_segments_by_kl(segments)
-        # segments = merge_segments_by_jsd(segments)
-        # unused
-        # segments = merge_segments_by_text(segments) 
+    
         
         # speech translation with summarized
         speech_translation = translate_speech(video_id, speech_json_dir)       
@@ -321,6 +322,12 @@ if __name__ == "__main__":
         default="../Example/logs",
         help="Path to logs.",
     )
+    parser.add_argument(
+        "--merge-threshold",
+        type=float,
+        default=COSINE_SIMILARITY_THRESHOLD,
+        help="Cosine similarity threshold (0~1) for caption-based node merging.",
+    )
     args = parser.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)
@@ -331,4 +338,5 @@ if __name__ == "__main__":
             args.output_dir,
             speech_json_dir=args.speech_json_dir,
             not_json_dir=args.not_json_dir,
+            merge_threshold=args.merge_threshold,
         )

@@ -1,0 +1,2967 @@
+{
+  "video_id": "yCW_-SuVWGo",
+  "tree": {
+    "level": 0,
+    "start_time": 0.0,
+    "end_time": 77.810026,
+    "children": [
+      {
+        "level": 1,
+        "start_time": 0.0,
+        "end_time": 26.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 0.0,
+            "end_time": 9.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 0.0,
+                "end_time": 6.5,
+                "children": [],
+                "caption": "The video opens with a bold red background displaying the word \"TV Guide\" in white, while a man's voice begins to speak.",
+                "postprocess": {
+                  "event_id": 0,
+                  "original_answer": "The video opens with a bold red background displaying the word \"TV Guide\" in white, while a man's voice begins to speak.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_0_6.5",
+                    "tags": [
+                      "tv_guide",
+                      "man_voice",
+                      "bold_red"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "TV Guide",
+                        "attributes": {
+                          "background_color": "red",
+                          "text_color": "white",
+                          "text_content": "TV Guide"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man's voice",
+                        "ref_object": "",
+                        "role": "narrator",
+                        "entity": "voice"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_0_6.5",
+                      "name": "TV Guide introduction",
+                      "time": {
+                        "start": "0",
+                        "end": "6.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "tv_guide"
+                      ],
+                      "scene_topic": "The video opens with a bold red background displaying the word 'TV Guide' in white, while a man's voice begins to speak.",
+                      "summary": "The video opens with a bold red background displaying the word \"TV Guide\" in white, while a man's voice begins to speak.",
+                      "implications": "Major TV Guide event",
+                      "modalities": {
+                        "visual": "The video opens with a bold red background displaying the word 'TV Guide' in white, while a man's voice begins to speak.",
+                        "audio": "man's voice",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 6.5,
+                "end_time": 9.5,
+                "children": [],
+                "caption": "In a dimly lit room, a group of men in suits stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                "postprocess": {
+                  "event_id": 4,
+                  "original_answer": "In a dimly lit room, a group of men in suits stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_6.5_9.5",
+                    "tags": [
+                      "formal_event",
+                      "interview",
+                      "business",
+                      "meeting"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "Group of men in suits",
+                        "attributes": {
+                          "number_of_people": "group",
+                          "attire": "formal",
+                          "expression": "serious"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "Unknown",
+                        "ref_object": "O001",
+                        "role": "participant",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_6.5_9.5",
+                      "name": "Formal event or interview",
+                      "time": {
+                        "start": "6.5",
+                        "end": "9.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "business news"
+                      ],
+                      "scene_topic": "A group of men in suits stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                      "summary": "In a dimly lit room, a group of men in suits stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                      "implications": "Major business news event",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a group of men in suits stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                        "audio": "",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man introduces a TV guide or program, possibly an interview or event, featuring a group of men in suits.",
+            "postprocess": {
+              "event_id": 1,
+              "original_answer": "A man introduces a TV guide or program, possibly an interview or event, featuring a group of men in suits.",
+              "result": {
+                "video_id": "yCW_-SuVWGo",
+                "event_id": "E_yCW_-SuVWGo_0_9.5",
+                "tags": [
+                  "tv_guide",
+                  "program",
+                  "interview",
+                  "event"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "role": "introducer"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "TV guide",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "group of men in suits",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "introducer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_yCW_-SuVWGo_0_9.5",
+                  "name": "TV guide introduction",
+                  "time": {
+                    "start": "0",
+                    "end": "9.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "event",
+                    "information"
+                  ],
+                  "scene_topic": "A man introduces a TV guide or program, possibly an interview or event, featuring a group of men in suits.",
+                  "summary": "A man introduces a TV guide or program, possibly an interview or event, featuring a group of men in suits.",
+                  "implications": "Major media event",
+                  "modalities": {
+                    "visual": "A man introduces a TV guide or program, possibly an interview or event, featuring a group of men in suits.",
+                    "audio": "",
+                    "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 9.5,
+            "end_time": 17.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 9.5,
+                "end_time": 12.5,
+                "children": [],
+                "caption": "In a dimly lit room, a group of men in suits and ties stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                "postprocess": {
+                  "event_id": 5,
+                  "original_answer": "In a dimly lit room, a group of men in suits and ties stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_9.5_12.5",
+                    "tags": [
+                      "formal_event",
+                      "interview",
+                      "business",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "group_of_men",
+                        "attributes": {
+                          "number_of_people": "group",
+                          "attire": "suits_and_ties",
+                          "expression": "serious"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "unknown",
+                        "ref_object": "O001",
+                        "role": "unknown",
+                        "entity": "people"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_9.5_12.5",
+                      "name": "Formal Event or Interview",
+                      "time": {
+                        "start": "9.5",
+                        "end": "12.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "business"
+                      ],
+                      "scene_topic": "A group of men in suits and ties stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                      "summary": "In a dimly lit room, a group of men in suits and ties stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                      "implications": "Major business news event",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a group of men in suits and ties stand in a line, their serious expressions and formal attire suggesting a formal event or interview.",
+                        "audio": "",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 12.5,
+                "end_time": 15.5,
+                "children": [],
+                "caption": "A man in a suit and tie, illuminated by stage lights, addresses a microphone, his voice amplified as he speaks to a group of formally dressed men in a dimly lit room.",
+                "postprocess": {
+                  "event_id": 7,
+                  "original_answer": "A man in a suit and tie, illuminated by stage lights, addresses a microphone, his voice amplified as he speaks to a group of formally dressed men in a dimly lit room.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_12.5_15.5",
+                    "tags": [
+                      "man",
+                      "suit",
+                      "tie",
+                      "stage",
+                      "lights",
+                      "microphone",
+                      "group",
+                      "formal"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "speaker": "yes",
+                          "illuminated": "yes",
+                          "addressing": "microphone"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {
+                          "amplified": "yes"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "group",
+                        "attributes": {
+                          "formally_dressed": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_12.5_15.5",
+                      "name": "man addresses group",
+                      "time": {
+                        "start": "12.5",
+                        "end": "15.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "public_speaking"
+                      ],
+                      "scene_topic": "A man addresses a group of formally dressed men in a dimly lit room.",
+                      "summary": "A man in a suit and tie, illuminated by stage lights, addresses a microphone, his voice amplified as he speaks to a group of formally dressed men in a dimly lit room.",
+                      "implications": "Major public speaking event",
+                      "modalities": {
+                        "visual": "A man in a suit and tie, illuminated by stage lights, addresses a microphone, his voice amplified as he speaks to a group of formally dressed men in a dimly lit room.",
+                        "audio": "speaks",
+                        "speech": "J.C. Chazet shared his experience working with NSYNC and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 15.5,
+                "end_time": 17.5,
+                "children": [],
+                "caption": "A man in a suit and tie, standing before a backdrop of a red carpet event, addresses the camera, his voice amplified by a microphone as he speaks about the band's recent success and their upcoming plans.",
+                "postprocess": {
+                  "event_id": 8,
+                  "original_answer": "A man in a suit and tie, standing before a backdrop of a red carpet event, addresses the camera, his voice amplified by a microphone as he speaks about the band's recent success and their upcoming plans.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_15.5_17.5",
+                    "tags": [
+                      "music",
+                      "interview",
+                      "red_carpet"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_suit",
+                        "attributes": {
+                          "speaker": "yes",
+                          "backdrop": "red_carpet_event"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {
+                          "amplification": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_suit",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_15.5_17.5",
+                      "name": "interview",
+                      "time": {
+                        "start": "15.5",
+                        "end": "17.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "music news"
+                      ],
+                      "scene_topic": "The man in a suit and tie addresses the camera about the band's recent success and upcoming plans.",
+                      "summary": "A man in a suit and tie, standing before a backdrop of a red carpet event, addresses the camera, his voice amplified by a microphone as he speaks about the band's recent success and their upcoming plans.",
+                      "implications": "Major music news event",
+                      "modalities": {
+                        "visual": "A man in a suit and tie, standing before a backdrop of a red carpet event, addresses the camera.",
+                        "audio": "speaks; amplified voice",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans, his voice amplified by a microphone in a dimly lit room.",
+            "postprocess": {
+              "event_id": 6,
+              "original_answer": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans, his voice amplified by a microphone in a dimly lit room.",
+              "result": {
+                "video_id": "yCW_-SuVWGo",
+                "event_id": "E_yCW_-SuVWGo_9.5_17.5",
+                "tags": [
+                  "music",
+                  "speech",
+                  "band",
+                  "success",
+                  "future"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "speaker": "yes",
+                      "amplified": "yes",
+                      "room_type": "formal"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "microphone",
+                    "attributes": {
+                      "amplification": "yes",
+                      "type": "electronic"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "audience",
+                    "attributes": {
+                      "formal": "yes",
+                      "size": "unknown"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_yCW_-SuVWGo_9.5_17.5",
+                  "name": "speech",
+                  "time": {
+                    "start": "9.5",
+                    "end": "17.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "music news"
+                  ],
+                  "scene_topic": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans.",
+                  "summary": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans, his voice amplified by a microphone in a dimly lit room.",
+                  "implications": "Major music news event",
+                  "modalities": {
+                    "visual": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans, in a dimly lit room.",
+                    "audio": "Speech; amplified voice.",
+                    "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 17.5,
+            "end_time": 26.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 17.5,
+                "end_time": 19.5,
+                "children": [],
+                "caption": "A man in a suit and tie, standing before a backdrop of a cityscape, addresses the audience, his speech drowned out by the lively chatter of a nearby party.",
+                "postprocess": {
+                  "event_id": 9,
+                  "original_answer": "A man in a suit and tie, standing before a backdrop of a cityscape, addresses the audience, his speech drowned out by the lively chatter of a nearby party.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_17.5_19.5",
+                    "tags": [
+                      "man",
+                      "speech",
+                      "cityscape",
+                      "party"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "speaker": "yes",
+                          "dressed_in": "suit_and_tie"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "cityscape",
+                        "attributes": {
+                          "background": "yes"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "party",
+                        "attributes": {
+                          "noise_level": "lively"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_17.5_19.5",
+                      "name": "speech",
+                      "time": {
+                        "start": "17.5",
+                        "end": "19.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person speaking"
+                      ],
+                      "scene_topic": "A man in a suit and tie, standing before a backdrop of a cityscape, addresses the audience, his speech drowned out by the lively chatter of a nearby party.",
+                      "summary": "A man in a suit and tie, standing before a backdrop of a cityscape, addresses the audience, his speech drowned out by the lively chatter of a nearby party.",
+                      "implications": "Major event in the life of the person",
+                      "modalities": {
+                        "visual": "A man in a suit and tie, standing before a backdrop of a cityscape, addresses the audience.",
+                        "audio": "speech; lively chatter",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 19.5,
+                "end_time": 26.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man in a suit stands before a microphone, addressing an unseen audience, while a woman in a black dress stands beside him, listening intently.",
+                "postprocess": {
+                  "event_id": 11,
+                  "original_answer": "In a dimly lit room, a man in a suit stands before a microphone, addressing an unseen audience, while a woman in a black dress stands beside him, listening intently.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_19.5_26.5",
+                    "tags": [
+                      "speech",
+                      "meeting",
+                      "business",
+                      "people"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man in suit",
+                        "attributes": {
+                          "speaker": "true",
+                          "standing": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman in black dress",
+                        "attributes": {
+                          "listener": "true",
+                          "standing": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {
+                          "audio_device": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man in suit",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman in black dress",
+                        "ref_object": "O002",
+                        "role": "listener",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_19.5_26.5",
+                      "name": "speech",
+                      "time": {
+                        "start": "19.5",
+                        "end": "26.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "people",
+                        "business"
+                      ],
+                      "scene_topic": "A man gives a speech to an unseen audience, accompanied by a woman.",
+                      "summary": "In a dimly lit room, a man in a suit stands before a microphone, addressing an unseen audience, while a woman in a black dress stands beside him, listening intently.",
+                      "implications": "Major business news event",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a man in a suit stands before a microphone, while a woman in a black dress stands beside him, listening intently.",
+                        "audio": "",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man delivers a speech, either in a noisy or private setting, with a woman standing beside him, as the audience listens attentively.",
+            "postprocess": {
+              "event_id": 10,
+              "original_answer": "A man delivers a speech, either in a noisy or private setting, with a woman standing beside him, as the audience listens attentively.",
+              "result": {
+                "video_id": "yCW_-SuVWGo",
+                "event_id": "E_yCW_-SuVWGo_17.5_26.5",
+                "tags": [
+                  "speech",
+                  "man",
+                  "woman",
+                  "audience"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "speaker": "true",
+                      "setting": "private/noisy"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman",
+                    "attributes": {
+                      "standing": "beside speaker"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "audience",
+                    "attributes": {
+                      "listening": "attentively"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman",
+                    "ref_object": "O002",
+                    "role": "supporting",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_yCW_-SuVWGo_17.5_26.5",
+                  "name": "speech",
+                  "time": {
+                    "start": "17.5",
+                    "end": "26.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "speech event"
+                  ],
+                  "scene_topic": "A man delivers a speech, either in a noisy or private setting, with a woman standing beside him, as the audience listens attentively.",
+                  "summary": "A man delivers a speech, either in a noisy or private setting, with a woman standing beside him, as the audience listens attentively.",
+                  "implications": "Major communication event",
+                  "modalities": {
+                    "visual": "A man delivers a speech, a woman stands beside him, the audience listens attentively.",
+                    "audio": "speech",
+                    "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans, with a woman standing beside him, as the audience listens attentively.",
+        "postprocess": {
+          "event_id": 2,
+          "original_answer": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans, with a woman standing beside him, as the audience listens attentively.",
+          "result": {
+            "video_id": "yCW_-SuVWGo",
+            "event_id": "E_yCW_-SuVWGo_0_26.5",
+            "tags": [
+              "music",
+              "speech",
+              "audience",
+              "success",
+              "future"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "man",
+                "attributes": {
+                  "speaker": "yes",
+                  "standing": "yes"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "woman",
+                "attributes": {
+                  "standing": "yes"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "audience",
+                "attributes": {
+                  "listening": "yes"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "man",
+                "ref_object": "O001",
+                "role": "speaker",
+                "entity": "person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "woman",
+                "ref_object": "O002",
+                "role": "supporting",
+                "entity": "person"
+              }
+            ],
+            "event": {
+              "event_id": "E_yCW_-SuVWGo_0_26.5",
+              "name": "speech",
+              "time": {
+                "start": "0",
+                "end": "26.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "music news"
+              ],
+              "scene_topic": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans.",
+              "summary": "A man delivers a speech to a formal audience, discussing the band's recent success and future plans, with a woman standing beside him, as the audience listens attentively.",
+              "implications": "Major music news event",
+              "modalities": {
+                "visual": "A man delivers a speech to a formal audience, with a woman standing beside him, as the audience listens attentively.",
+                "audio": "speech",
+                "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 26.5,
+        "end_time": 44.5,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 26.5,
+            "end_time": 34.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 26.5,
+                "end_time": 30.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man in a suit stands before a microphone, addressing an unseen audience with a serious expression.",
+                "postprocess": {
+                  "event_id": 12,
+                  "original_answer": "In a dimly lit room, a man in a suit stands before a microphone, addressing an unseen audience with a serious expression.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_26.5_30.5",
+                    "tags": [
+                      "speech",
+                      "public_address",
+                      "serious_tone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_suit",
+                        "attributes": {
+                          "expression": "serious",
+                          "clothing": "suit",
+                          "location": "dimly_lit_room"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {
+                          "type": "public_address",
+                          "location": "dimly_lit_room"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man_in_suit",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_26.5_30.5",
+                      "name": "public_address",
+                      "time": {
+                        "start": "26.5",
+                        "end": "30.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "public_address"
+                      ],
+                      "scene_topic": "A man in a suit addresses an unseen audience with a serious expression.",
+                      "summary": "In a dimly lit room, a man in a suit stands before a microphone, addressing an unseen audience with a serious expression.",
+                      "implications": "Major public address event",
+                      "modalities": {
+                        "visual": "In a dimly lit room, a man in a suit stands before a microphone with a serious expression.",
+                        "audio": "",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 30.5,
+                "end_time": 34.5,
+                "children": [],
+                "caption": "A man in a suit, standing before a backdrop of a cityscape, speaks into a microphone, his voice amplified as he announces the winner of the \"Best Performance by an Actor in a New Television Series\" award, which goes to the show \"Gossip Girl.\"",
+                "postprocess": {
+                  "event_id": 15,
+                  "original_answer": "A man in a suit, standing before a backdrop of a cityscape, speaks into a microphone, his voice amplified as he announces the winner of the \"Best Performance by an Actor in a New Television Series\" award, which goes to the show \"Gossip Girl.\"",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_30.5_34.5",
+                    "tags": [
+                      "award",
+                      "actor",
+                      "television",
+                      "gossip_girl"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man_in_suit",
+                        "attributes": {
+                          "speaker": "yes",
+                          "award_winner": "yes"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "backdrop",
+                        "attributes": {
+                          "cityscape": "yes"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {
+                          "amplification": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "award_winner",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_30.5_34.5",
+                      "name": "award_announcement",
+                      "time": {
+                        "start": "30.5",
+                        "end": "34.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "award_ceremony"
+                      ],
+                      "scene_topic": "The award winner announces the winner of the 'Best Performance by an Actor in a New Television Series' award, which goes to the show 'Gossip Girl'.",
+                      "summary": "A man in a suit, standing before a backdrop of a cityscape, speaks into a microphone, his voice amplified as he announces the winner of the \"Best Performance by an Actor in a New Television Series\" award, which goes to the show \"Gossip Girl.\"",
+                      "implications": "Major television news event",
+                      "modalities": {
+                        "visual": "A man in a suit, standing before a backdrop of a cityscape, speaks into a microphone.",
+                        "audio": "Announces; amplified voice; applause.",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man presents awards at a ceremony, announcing the winners of the \"Best Performance by an Actor in a New Television Series\" and \"Best Actor\" awards, with \"Gossip Girl\" and another show taking the top honors.",
+            "postprocess": {
+              "event_id": 13,
+              "original_answer": "A man presents awards at a ceremony, announcing the winners of the \"Best Performance by an Actor in a New Television Series\" and \"Best Actor\" awards, with \"Gossip Girl\" and another show taking the top honors.",
+              "result": {
+                "video_id": "yCW_-SuVWGo",
+                "event_id": "E_yCW_-SuVWGo_26.5_34.5",
+                "tags": [
+                  "award",
+                  "ceremony",
+                  "gossip_girl",
+                  "television"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "award",
+                    "attributes": {
+                      "type": "Best Performance by an Actor in a New Television Series",
+                      "winner": "Gossip Girl"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "award",
+                    "attributes": {
+                      "type": "Best Actor",
+                      "winner": "another show"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "man",
+                    "attributes": {
+                      "role": "presenter"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O003",
+                    "role": "presenter",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_yCW_-SuVWGo_26.5_34.5",
+                  "name": "award ceremony",
+                  "time": {
+                    "start": "26.5",
+                    "end": "34.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "award ceremony"
+                  ],
+                  "scene_topic": "A man presents awards at a ceremony, announcing the winners of the 'Best Performance by an Actor in a New Television Series' and 'Best Actor' awards, with 'Gossip Girl' and another show taking the top honors.",
+                  "summary": "A man presents awards at a ceremony, announcing the winners of the \"Best Performance by an Actor in a New Television Series\" and \"Best Actor\" awards, with \"Gossip Girl\" and another show taking the top honors.",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "A man presents awards at a ceremony.",
+                    "audio": "announcing; Gossip Girl; another show",
+                    "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 34.5,
+            "end_time": 44.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 34.5,
+                "end_time": 38.5,
+                "children": [],
+                "caption": "A man in a suit, standing before a backdrop of a cityscape, speaks into a microphone, his voice clear and audible as he discusses the film's success and the positive reactions it has received.",
+                "postprocess": {
+                  "event_id": 16,
+                  "original_answer": "A man in a suit, standing before a backdrop of a cityscape, speaks into a microphone, his voice clear and audible as he discusses the film's success and the positive reactions it has received.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_34.5_38.5",
+                    "tags": [
+                      "film",
+                      "success",
+                      "reactions",
+                      "cityscape",
+                      "microphone"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "actor": "man",
+                          "clothing": "suit",
+                          "location": "cityscape",
+                          "action": "speaking"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "backdrop",
+                        "attributes": {
+                          "location": "cityscape"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {
+                          "object_type": "audio equipment"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_34.5_38.5",
+                      "name": "Film success discussion",
+                      "time": {
+                        "start": "34.5",
+                        "end": "38.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "film news"
+                      ],
+                      "scene_topic": "A man discusses the film's success and positive reactions.",
+                      "summary": "A man in a suit, standing before a backdrop of a cityscape, speaks into a microphone, his voice clear and audible as he discusses the film's success and the positive reactions it has received.",
+                      "implications": "Major film news event",
+                      "modalities": {
+                        "visual": "A man in a suit, standing before a backdrop of a cityscape, speaks into a microphone.",
+                        "audio": "speaks; discusses; positive reactions",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 38.5,
+                "end_time": 42.5,
+                "children": [],
+                "caption": "A woman with blonde hair, wearing a black top and a white scarf, speaks into a microphone at an event, her voice clear and audible as she answers a question about her favorite part of the experience.",
+                "postprocess": {
+                  "event_id": 18,
+                  "original_answer": "A woman with blonde hair, wearing a black top and a white scarf, speaks into a microphone at an event, her voice clear and audible as she answers a question about her favorite part of the experience.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_38.5_42.5",
+                    "tags": [
+                      "event",
+                      "woman",
+                      "microphone",
+                      "question",
+                      "answer"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "hair_color": "blonde",
+                          "clothing": "black top and white scarf"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "microphone",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_38.5_42.5",
+                      "name": "woman speaks at event",
+                      "time": {
+                        "start": "38.5",
+                        "end": "42.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "person"
+                      ],
+                      "scene_topic": "A woman speaks at an event, answering a question about her favorite part of the experience.",
+                      "summary": "A woman with blonde hair, wearing a black top and a white scarf, speaks into a microphone at an event, her voice clear and audible as she answers a question about her favorite part of the experience.",
+                      "implications": "Major event, person speaking",
+                      "modalities": {
+                        "visual": "A woman with blonde hair, wearing a black top and a white scarf, speaks into a microphone at an event.",
+                        "audio": "speaks; voice",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 42.5,
+                "end_time": 44.5,
+                "children": [],
+                "caption": "A woman, holding a microphone, interviews a man in a suit on a bustling city street, asking him about his experience at the \"MySpace\" event.",
+                "postprocess": {
+                  "event_id": 19,
+                  "original_answer": "A woman, holding a microphone, interviews a man in a suit on a bustling city street, asking him about his experience at the \"MySpace\" event.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_42.5_44.5",
+                    "tags": [
+                      "social_media",
+                      "event",
+                      "interview"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "interviewer",
+                          "holding": "microphone"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "role": "interviewee",
+                          "wearing": "suit"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "suit",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "interviewer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "interviewee",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_42.5_44.5",
+                      "name": "MySpace event interview",
+                      "time": {
+                        "start": "42.5",
+                        "end": "44.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "social_media",
+                        "event"
+                      ],
+                      "scene_topic": "A woman interviews a man about his experience at the MySpace event.",
+                      "summary": "A woman, holding a microphone, interviews a man in a suit on a bustling city street, asking him about his experience at the \"MySpace\" event.",
+                      "implications": "Major social media news event",
+                      "modalities": {
+                        "visual": "A woman, holding a microphone, interviews a man in a suit on a bustling city street.",
+                        "audio": "Interviewing; city sounds.",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man and two women give speeches and interviews at an event, discussing the success of a film and their experiences, with their voices clearly audible to the audience.",
+            "postprocess": {
+              "event_id": 17,
+              "original_answer": "A man and two women give speeches and interviews at an event, discussing the success of a film and their experiences, with their voices clearly audible to the audience.",
+              "result": {
+                "video_id": "yCW_-SuVWGo",
+                "event_id": "E_yCW_-SuVWGo_34_44",
+                "tags": [
+                  "film",
+                  "event",
+                  "interview",
+                  "speech"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman1",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "woman2",
+                    "attributes": {}
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman1",
+                    "ref_object": "O002",
+                    "role": "speaker",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A003",
+                    "name": "woman2",
+                    "ref_object": "O003",
+                    "role": "speaker",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_yCW_-SuVWGo_34_44",
+                  "name": "Film success event",
+                  "time": {
+                    "start": "34.5",
+                    "end": "44.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002",
+                    "A003"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "event",
+                    "film"
+                  ],
+                  "scene_topic": "A man and two women give speeches and interviews at an event, discussing the success of a film and their experiences.",
+                  "summary": "A man and two women give speeches and interviews at an event, discussing the success of a film and their experiences, with their voices clearly audible to the audience.",
+                  "implications": "Major film news event",
+                  "modalities": {
+                    "visual": "A man and two women give speeches and interviews at an event.",
+                    "audio": "Speeches; interviews; voices",
+                    "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A man presents awards at a ceremony, announcing the winners of the \"Best Performance by an Actor in a New Television Series\" and \"Best Actor\" awards, while the winners give speeches and interviews, discussing their success and experiences.",
+        "postprocess": {
+          "event_id": 14,
+          "original_answer": "A man presents awards at a ceremony, announcing the winners of the \"Best Performance by an Actor in a New Television Series\" and \"Best Actor\" awards, while the winners give speeches and interviews, discussing their success and experiences.",
+          "result": {
+            "video_id": "yCW_-SuVWGo",
+            "event_id": "E_yCW_-SuVWGo_26.5_44.5",
+            "tags": [
+              "awards",
+              "ceremony",
+              "actor",
+              "television"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Awards",
+                "attributes": {}
+              },
+              {
+                "object_id": "O002",
+                "name": "Man",
+                "attributes": {}
+              },
+              {
+                "object_id": "O003",
+                "name": "Winners",
+                "attributes": {}
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Man",
+                "ref_object": "O002",
+                "role": "Presenter",
+                "entity": "Person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Winners",
+                "ref_object": "O003",
+                "role": "Winner",
+                "entity": "Person"
+              }
+            ],
+            "event": {
+              "event_id": "E_yCW_-SuVWGo_26.5_44.5",
+              "name": "Awards Ceremony",
+              "time": {
+                "start": "26.5",
+                "end": "44.5"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "awards ceremony"
+              ],
+              "scene_topic": "A man presents awards at a ceremony, announcing the winners of the 'Best Performance by an Actor in a New Television Series' and 'Best Actor' awards, while the winners give speeches and interviews, discussing their success and experiences.",
+              "summary": "A man presents awards at a ceremony, announcing the winners of the \"Best Performance by an Actor in a New Television Series\" and \"Best Actor\" awards, while the winners give speeches and interviews, discussing their success and experiences.",
+              "implications": "Major entertainment news event",
+              "modalities": {
+                "visual": "A man presents awards at a ceremony.",
+                "audio": "announcing; speeches; interviews; discussing success and experiences.",
+                "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+              }
+            }
+          }
+        }
+      },
+      {
+        "level": 1,
+        "start_time": 44.5,
+        "end_time": 77.810026,
+        "children": [
+          {
+            "level": 2,
+            "start_time": 44.5,
+            "end_time": 51.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 44.5,
+                "end_time": 49.5,
+                "children": [],
+                "caption": "A woman, holding a microphone, interviews a man in a suit on a red carpet, asking him about his experience at the \"MySpace\" event.",
+                "postprocess": {
+                  "event_id": 20,
+                  "original_answer": "A woman, holding a microphone, interviews a man in a suit on a red carpet, asking him about his experience at the \"MySpace\" event.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_44.5_49.5",
+                    "tags": [
+                      "social_media",
+                      "event",
+                      "interview"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "interviewer",
+                          "holding": "microphone"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "role": "interviewee",
+                          "wearing": "suit"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "suit",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "red_carpet",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "interviewer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "interviewee",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_44.5_49.5",
+                      "name": "Interview on red carpet",
+                      "time": {
+                        "start": "44.5",
+                        "end": "49.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "interview"
+                      ],
+                      "scene_topic": "A woman, holding a microphone, interviews a man in a suit on a red carpet, asking him about his experience at the 'MySpace' event.",
+                      "summary": "A woman, holding a microphone, interviews a man in a suit on a red carpet, asking him about his experience at the \"MySpace\" event.",
+                      "implications": "Major social media news event",
+                      "modalities": {
+                        "visual": "A woman, holding a microphone, interviews a man in a suit on a red carpet, asking him about his experience at the 'MySpace' event.",
+                        "audio": "",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 49.5,
+                "end_time": 51.5,
+                "children": [],
+                "caption": "A woman, holding a microphone, interviews a man in a suit on a red carpet at what appears to be a film festival, as indicated by the \"BET\" logo in the background.",
+                "postprocess": {
+                  "event_id": 23,
+                  "original_answer": "A woman, holding a microphone, interviews a man in a suit on a red carpet at what appears to be a film festival, as indicated by the \"BET\" logo in the background.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_49.5_51.5",
+                    "tags": [
+                      "film_festival",
+                      "interview",
+                      "red_carpet",
+                      "bet_logo"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "interviewer",
+                          "holding": "microphone"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "role": "interviewee",
+                          "wearing": "suit"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "suit",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O005",
+                        "name": "red_carpet",
+                        "attributes": {}
+                      },
+                      {
+                        "object_id": "O006",
+                        "name": "bet_logo",
+                        "attributes": {}
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "interviewer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "interviewee",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_49.5_51.5",
+                      "name": "Interview at film festival",
+                      "time": {
+                        "start": "49.5",
+                        "end": "51.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004",
+                        "O005",
+                        "O006"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "film_festival"
+                      ],
+                      "scene_topic": "A woman, holding a microphone, interviews a man in a suit on a red carpet at what appears to be a film festival, as indicated by the \"BET\" logo in the background.",
+                      "summary": "A woman, holding a microphone, interviews a man in a suit on a red carpet at what appears to be a film festival, as indicated by the \"BET\" logo in the background.",
+                      "implications": "Major film industry event",
+                      "modalities": {
+                        "visual": "A woman, holding a microphone, interviews a man in a suit on a red carpet at what appears to be a film festival, as indicated by the 'BET' logo in the background.",
+                        "audio": "",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman conducts interviews with a man on the red carpet at a film festival, discussing his experience at the \"MySpace\" event and working with a band.",
+            "postprocess": {
+              "event_id": 21,
+              "original_answer": "A woman conducts interviews with a man on the red carpet at a film festival, discussing his experience at the \"MySpace\" event and working with a band.",
+              "result": {
+                "video_id": "yCW_-SuVWGo",
+                "event_id": "E_yCW_-SuVWGo_44.5_51.5",
+                "tags": [
+                  "film_festival",
+                  "interview",
+                  "red_carpet",
+                  "my_space",
+                  "band"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Woman",
+                    "attributes": {
+                      "role": "Interviewer",
+                      "entity": "Person"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Man",
+                    "attributes": {
+                      "role": "Interviewee",
+                      "entity": "Person"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "Red Carpet",
+                    "attributes": {
+                      "location": "Film Festival"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "MySpace Event",
+                    "attributes": {
+                      "event_type": "Conference"
+                    }
+                  },
+                  {
+                    "object_id": "O005",
+                    "name": "Band",
+                    "attributes": {
+                      "entity": "Music Group"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Woman",
+                    "ref_object": "O001",
+                    "role": "Interviewer",
+                    "entity": "Person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Man",
+                    "ref_object": "O002",
+                    "role": "Interviewee",
+                    "entity": "Person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_yCW_-SuVWGo_44.5_51.5",
+                  "name": "Interview on Red Carpet",
+                  "time": {
+                    "start": "44.5",
+                    "end": "51.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004",
+                    "O005"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "film festival"
+                  ],
+                  "scene_topic": "A woman conducts interviews with a man on the red carpet at a film festival, discussing his experience at the 'MySpace' event and working with a band.",
+                  "summary": "A woman conducts interviews with a man on the red carpet at a film festival, discussing his experience at the \"MySpace\" event and working with a band.",
+                  "implications": "Major film festival news event",
+                  "modalities": {
+                    "visual": "A woman conducts interviews with a man on the red carpet at a film festival, discussing his experience at the 'MySpace' event and working with a band.",
+                    "audio": "",
+                    "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 51.5,
+            "end_time": 58.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 51.5,
+                "end_time": 58.5,
+                "children": [],
+                "caption": "A woman, holding a microphone, interviews a man in a suit on a red carpet at an event, asking him about his experience working with the band.",
+                "postprocess": {
+                  "event_id": 24,
+                  "original_answer": "A woman, holding a microphone, interviews a man in a suit on a red carpet at an event, asking him about his experience working with the band.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_51.5_58.5",
+                    "tags": [
+                      "interview",
+                      "music",
+                      "event"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "role": "interviewer",
+                          "holding": "microphone"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "role": "interviewee",
+                          "wearing": "suit"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "red carpet",
+                        "attributes": {
+                          "location": "event"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "interviewer",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "interviewee",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_51.5_58.5",
+                      "name": "Interview on red carpet",
+                      "time": {
+                        "start": "51.5",
+                        "end": "58.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "event",
+                        "interview"
+                      ],
+                      "scene_topic": "A woman interviews a man on a red carpet at an event.",
+                      "summary": "A woman, holding a microphone, interviews a man in a suit on a red carpet at an event, asking him about his experience working with the band.",
+                      "implications": "Major music event",
+                      "modalities": {
+                        "visual": "A woman, holding a microphone, interviews a man in a suit on a red carpet at an event.",
+                        "audio": "Interviewing; microphone; man speaking; band experience.",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man in a suit is interviewed on the red carpet about his experience working with a band by a woman holding a microphone.",
+            "postprocess": {
+              "event_id": 25,
+              "original_answer": "A man in a suit is interviewed on the red carpet about his experience working with a band by a woman holding a microphone.",
+              "result": {
+                "video_id": "yCW_-SuVWGo",
+                "event_id": "E_yCW_-SuVWGo_51.5_58.5",
+                "tags": [
+                  "interview",
+                  "music",
+                  "red_carpet"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man_in_suit",
+                    "attributes": {
+                      "role": "interviewee",
+                      "occupation": "musician"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "woman_with_microphone",
+                    "attributes": {
+                      "role": "interviewer",
+                      "occupation": "journalist"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man_in_suit",
+                    "ref_object": "O001",
+                    "role": "interviewee",
+                    "entity": "person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "woman_with_microphone",
+                    "ref_object": "O002",
+                    "role": "interviewer",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_yCW_-SuVWGo_51.5_58.5",
+                  "name": "Interview on the red carpet",
+                  "time": {
+                    "start": "51.5",
+                    "end": "58.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "music news"
+                  ],
+                  "scene_topic": "A man in a suit is interviewed on the red carpet about his experience working with a band by a woman holding a microphone.",
+                  "summary": "A man in a suit is interviewed on the red carpet about his experience working with a band by a woman holding a microphone.",
+                  "implications": "Major music news event",
+                  "modalities": {
+                    "visual": "A man in a suit is interviewed on the red carpet about his experience working with a band by a woman holding a microphone.",
+                    "audio": "",
+                    "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 58.5,
+            "end_time": 63.5,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 58.5,
+                "end_time": 60.5,
+                "children": [],
+                "caption": "In a lively interview setting, a woman in a black dress engages in a conversation with a man in a suit, her animated gestures and expressive face conveying her enthusiasm as she speaks into the microphone.",
+                "postprocess": {
+                  "event_id": 26,
+                  "original_answer": "In a lively interview setting, a woman in a black dress engages in a conversation with a man in a suit, her animated gestures and expressive face conveying her enthusiasm as she speaks into the microphone.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_58_60",
+                    "tags": [
+                      "interview",
+                      "conversation",
+                      "gestures",
+                      "expressive"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "woman",
+                        "attributes": {
+                          "dress": "black",
+                          "gestures": "animated",
+                          "face": "expressive"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man",
+                        "attributes": {
+                          "clothing": "suit"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "microphone",
+                        "attributes": {
+                          "type": "interview"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O001",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O002",
+                        "role": "interviewer",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_58_60",
+                      "name": "Interview",
+                      "time": {
+                        "start": "58.5",
+                        "end": "60.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "interview",
+                        "conversation"
+                      ],
+                      "scene_topic": "A woman in a black dress engages in a lively conversation with a man in a suit.",
+                      "summary": "In a lively interview setting, a woman in a black dress engages in a conversation with a man in a suit, her animated gestures and expressive face conveying her enthusiasm as she speaks into the microphone.",
+                      "implications": "Major communication event",
+                      "modalities": {
+                        "visual": "In a lively interview setting, a woman in a black dress engages in a conversation with a man in a suit, her animated gestures and expressive face conveying her enthusiasm as she speaks into the microphone.",
+                        "audio": "",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 60.5,
+                "end_time": 63.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man with a beard and sunglasses stands in contemplation, his gaze fixed on the camera as he listens to a woman's voice discussing the importance of a strong support system in the entertainment industry.",
+                "postprocess": {
+                  "event_id": 28,
+                  "original_answer": "In a dimly lit room, a man with a beard and sunglasses stands in contemplation, his gaze fixed on the camera as he listens to a woman's voice discussing the importance of a strong support system in the entertainment industry.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_60.5_63.5",
+                    "tags": [
+                      "entertainment",
+                      "support_system",
+                      "industry"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "bearded": "true",
+                          "sunglasses": "true",
+                          "contemplative": "true"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "speaking": "true",
+                          "importance_of_support_system": "true"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "listener",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "O002",
+                        "role": "speaker",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_60.5_63.5",
+                      "name": "Importance of Support System in Entertainment Industry",
+                      "time": {
+                        "start": "60.5",
+                        "end": "63.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "entertainment news"
+                      ],
+                      "scene_topic": "A man listens to a woman discussing the importance of a support system in the entertainment industry.",
+                      "summary": "In a dimly lit room, a man with a beard and sunglasses stands in contemplation, his gaze fixed on the camera as he listens to a woman's voice discussing the importance of a strong support system in the entertainment industry.",
+                      "implications": "Major entertainment news event",
+                      "modalities": {
+                        "visual": "A man with a beard and sunglasses stands in contemplation, his gaze fixed on the camera.",
+                        "audio": "woman's voice; discussing the importance of a strong support system",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A woman enthusiastically discusses the importance of a strong support system in the entertainment industry in an interview, while a man in the background listens intently.",
+            "postprocess": {
+              "event_id": 27,
+              "original_answer": "A woman enthusiastically discusses the importance of a strong support system in the entertainment industry in an interview, while a man in the background listens intently.",
+              "result": {
+                "video_id": "yCW_-SuVWGo",
+                "event_id": "E_yCW_-SuVWGo_58_63",
+                "tags": [
+                  "entertainment",
+                  "support_system",
+                  "interview"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Woman",
+                    "attributes": {
+                      "role": "Interviewee",
+                      "description": "Discusses the importance of a strong support system"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Man",
+                    "attributes": {
+                      "role": "Listener",
+                      "description": "Listens intently"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Woman",
+                    "ref_object": "O001",
+                    "role": "Interviewee",
+                    "entity": "Person"
+                  },
+                  {
+                    "actor_id": "A002",
+                    "name": "Man",
+                    "ref_object": "O002",
+                    "role": "Listener",
+                    "entity": "Person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_yCW_-SuVWGo_58_63",
+                  "name": "Interview",
+                  "time": {
+                    "start": "58.5",
+                    "end": "63.5"
+                  },
+                  "actors": [
+                    "A001",
+                    "A002"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "entertainment news"
+                  ],
+                  "scene_topic": "A woman discusses the importance of a strong support system in the entertainment industry in an interview.",
+                  "summary": "A woman enthusiastically discusses the importance of a strong support system in the entertainment industry in an interview, while a man in the background listens intently.",
+                  "implications": "Major entertainment news event",
+                  "modalities": {
+                    "visual": "A woman enthusiastically discusses the importance of a strong support system in the entertainment industry in an interview, while a man in the background listens intently.",
+                    "audio": "",
+                    "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 63.5,
+            "end_time": 77.810026,
+            "children": [
+              {
+                "level": 3,
+                "start_time": 63.5,
+                "end_time": 68.5,
+                "children": [],
+                "caption": "In a dimly lit room, a man with long hair and a beard stands in contemplation, his gaze fixed on something off-camera, while a woman's voice can be heard in the background, her words unclear.",
+                "postprocess": {
+                  "event_id": 29,
+                  "original_answer": "In a dimly lit room, a man with long hair and a beard stands in contemplation, his gaze fixed on something off-camera, while a woman's voice can be heard in the background, her words unclear.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_63_68",
+                    "tags": [
+                      "room",
+                      "man",
+                      "woman",
+                      "voice",
+                      "contemplation"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man",
+                        "attributes": {
+                          "long_hair": "",
+                          "beard": "",
+                          "contemplation": ""
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "woman",
+                        "attributes": {
+                          "voice": ""
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_63_68",
+                      "name": "",
+                      "time": {
+                        "start": "63.5",
+                        "end": "68.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "person",
+                        "room"
+                      ],
+                      "scene_topic": "A man stands in contemplation in a dimly lit room.",
+                      "summary": "In a dimly lit room, a man with long hair and a beard stands in contemplation, his gaze fixed on something off-camera, while a woman's voice can be heard in the background, her words unclear.",
+                      "implications": "Minor scene",
+                      "modalities": {
+                        "visual": "A man with long hair and a beard stands in contemplation, his gaze fixed on something off-camera, while a woman's voice can be heard in the background.",
+                        "audio": "Woman's voice; unclear.",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 68.5,
+                "end_time": 71.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a man's face to a wider shot of him standing in a dimly lit room, as a woman's voice begins to speak, followed by the sound of a car engine starting up.",
+                "postprocess": {
+                  "event_id": 31,
+                  "original_answer": "The video transitions from a close-up of a man's face to a wider shot of him standing in a dimly lit room, as a woman's voice begins to speak, followed by the sound of a car engine starting up.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_68.5_71.5",
+                    "tags": [
+                      "video_transition",
+                      "man",
+                      "woman",
+                      "car"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "man's face",
+                        "attributes": {
+                          "type": "human",
+                          "orientation": "close-up"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "man standing in room",
+                        "attributes": {
+                          "type": "human",
+                          "orientation": "standing"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman's voice",
+                        "attributes": {
+                          "type": "audio",
+                          "source": "woman"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "car engine",
+                        "attributes": {
+                          "type": "audio",
+                          "source": "car"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "man",
+                        "ref_object": "O001",
+                        "role": "main",
+                        "entity": "human"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "woman",
+                        "ref_object": "",
+                        "role": "voice",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_68.5_71.5",
+                      "name": "Video transition",
+                      "time": {
+                        "start": "68.5",
+                        "end": "71.5"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a man's face to a wider shot of him standing in a dimly lit room, as a woman's voice begins to speak, followed by the sound of a car engine starting up.",
+                      "summary": "The video transitions from a close-up of a man's face to a wider shot of him standing in a dimly lit room, as a woman's voice begins to speak, followed by the sound of a car engine starting up.",
+                      "implications": "Major video event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a man's face to a wider shot of him standing in a dimly lit room.",
+                        "audio": "Woman's voice; car engine starting up.",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 71.5,
+                "end_time": 73.5,
+                "children": [],
+                "caption": "The video transitions from a close-up of a red and white \"TV Guide\" logo to a dynamic montage of abstract shapes and lines, all set to a fast-paced electronic soundtrack.",
+                "postprocess": {
+                  "event_id": 32,
+                  "original_answer": "The video transitions from a close-up of a red and white \"TV Guide\" logo to a dynamic montage of abstract shapes and lines, all set to a fast-paced electronic soundtrack.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_71.5_73.5",
+                    "tags": [
+                      "tv_guide",
+                      "montage",
+                      "electronic_music"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "TV Guide logo",
+                        "attributes": {
+                          "description": "Red and white logo"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "Abstract shapes and lines",
+                        "attributes": {
+                          "description": "Dynamic montage"
+                        }
+                      }
+                    ],
+                    "actors": [],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_71.5_73.5",
+                      "name": "Transition montage",
+                      "time": {
+                        "start": "71.5",
+                        "end": "73.5"
+                      },
+                      "actors": [],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "visual_effects"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a red and white 'TV Guide' logo to a dynamic montage of abstract shapes and lines, all set to a fast-paced electronic soundtrack.",
+                      "summary": "The video transitions from a close-up of a red and white \"TV Guide\" logo to a dynamic montage of abstract shapes and lines, all set to a fast-paced electronic soundtrack.",
+                      "implications": "Major visual effects event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a red and white 'TV Guide' logo to a dynamic montage of abstract shapes and lines, all set to a fast-paced electronic soundtrack.",
+                        "audio": "fast-paced electronic soundtrack",
+                        "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 73.5,
+                "end_time": 77.810026,
+                "children": [],
+                "caption": "The video transitions from a close-up of a red \"A\" logo to a dynamic montage of abstract shapes and lines, all while a woman speaks in a foreign language, her words occasionally punctuated by a man's voice.",
+                "postprocess": {
+                  "event_id": 33,
+                  "original_answer": "The video transitions from a close-up of a red \"A\" logo to a dynamic montage of abstract shapes and lines, all while a woman speaks in a foreign language, her words occasionally punctuated by a man's voice.",
+                  "result": {
+                    "video_id": "yCW_-SuVWGo",
+                    "event_id": "E_yCW_-SuVWGo_73.5_77.81",
+                    "tags": [
+                      "video_transition",
+                      "logo",
+                      "montage",
+                      "abstract_shapes",
+                      "foreign_language"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "red A logo",
+                        "attributes": {
+                          "object_type": "logo",
+                          "color": "red"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "dynamic montage",
+                        "attributes": {
+                          "object_type": "montage",
+                          "content": "abstract shapes and lines"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "woman speaking",
+                        "attributes": {
+                          "object_type": "person",
+                          "language": "foreign"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "man's voice",
+                        "attributes": {
+                          "object_type": "voice",
+                          "language": "unknown"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "woman",
+                        "ref_object": "O003",
+                        "role": "speaker",
+                        "entity": "person"
+                      },
+                      {
+                        "actor_id": "A002",
+                        "name": "man",
+                        "ref_object": "O004",
+                        "role": "voice",
+                        "entity": "person"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_yCW_-SuVWGo_73.5_77.81",
+                      "name": "video transition",
+                      "time": {
+                        "start": "73.5",
+                        "end": "77.81"
+                      },
+                      "actors": [
+                        "A001",
+                        "A002"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002",
+                        "O003",
+                        "O004"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "video_transition"
+                      ],
+                      "scene_topic": "The video transitions from a close-up of a red 'A' logo to a dynamic montage of abstract shapes and lines, all while a woman speaks in a foreign language, her words occasionally punctuated by a man's voice.",
+                      "summary": "The video transitions from a close-up of a red \"A\" logo to a dynamic montage of abstract shapes and lines, all while a woman speaks in a foreign language, her words occasionally punctuated by a man's voice.",
+                      "implications": "Major video, multimedia event",
+                      "modalities": {
+                        "visual": "The video transitions from a close-up of a red 'A' logo to a dynamic montage of abstract shapes and lines.",
+                        "audio": "Woman speaks in a foreign language; man's voice.",
+                        "speech": "J.C. Chazet"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "caption": "A man stands in contemplation in a dimly lit room, surrounded by sounds and visuals that transition between abstract shapes, logos, and a woman's voice speaking in a foreign language, creating a surreal and dynamic atmosphere.",
+            "postprocess": {
+              "event_id": 30,
+              "original_answer": "A man stands in contemplation in a dimly lit room, surrounded by sounds and visuals that transition between abstract shapes, logos, and a woman's voice speaking in a foreign language, creating a surreal and dynamic atmosphere.",
+              "result": {
+                "video_id": "yCW_-SuVWGo",
+                "event_id": "E_yCW_-SuVWGo_63.5_77.81",
+                "tags": [
+                  "surreal",
+                  "atmosphere",
+                  "contemplation",
+                  "abstract",
+                  "dynamic"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "man",
+                    "attributes": {
+                      "actor": "man",
+                      "mood": "contemplative",
+                      "location": "room"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "sounds",
+                    "attributes": {
+                      "type": "audio",
+                      "description": "abstract shapes and logos"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "visuals",
+                    "attributes": {
+                      "type": "video",
+                      "description": "abstract shapes and logos"
+                    }
+                  },
+                  {
+                    "object_id": "O004",
+                    "name": "woman's voice",
+                    "attributes": {
+                      "type": "audio",
+                      "language": "foreign"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "man",
+                    "ref_object": "O001",
+                    "role": "main",
+                    "entity": "person"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_yCW_-SuVWGo_63.5_77.81",
+                  "name": "man in contemplation",
+                  "time": {
+                    "start": "63.5",
+                    "end": "77.81"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002",
+                    "O003",
+                    "O004"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "surreal scene"
+                  ],
+                  "scene_topic": "A man stands in contemplation in a dimly lit room, surrounded by sounds and visuals that transition between abstract shapes, logos, and a woman's voice speaking in a foreign language, creating a surreal and dynamic atmosphere.",
+                  "summary": "A man stands in contemplation in a dimly lit room, surrounded by sounds and visuals that transition between abstract shapes, logos, and a woman's voice speaking in a foreign language, creating a surreal and dynamic atmosphere.",
+                  "implications": "Major atmosphere and mood setting event",
+                  "modalities": {
+                    "visual": "A man stands in contemplation in a dimly lit room, surrounded by abstract shapes, logos, and a woman's voice.",
+                    "audio": "woman's voice speaking in a foreign language",
+                    "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "caption": "A woman conducts interviews on the red carpet at a film festival, discussing the entertainment industry and the importance of a strong support system, while a man reflects on his experience working with a band in a surreal and dynamic atmosphere.",
+        "postprocess": {
+          "event_id": 22,
+          "original_answer": "A woman conducts interviews on the red carpet at a film festival, discussing the entertainment industry and the importance of a strong support system, while a man reflects on his experience working with a band in a surreal and dynamic atmosphere.",
+          "result": {
+            "video_id": "yCW_-SuVWGo",
+            "event_id": "E_yCW_-SuVWGo_44.5_77.81",
+            "tags": [
+              "entertainment",
+              "film_festival",
+              "interviews",
+              "support_system",
+              "music"
+            ],
+            "objects": [
+              {
+                "object_id": "O001",
+                "name": "Woman",
+                "attributes": {
+                  "role": "Interviewer",
+                  "industry": "Entertainment"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Man",
+                "attributes": {
+                  "role": "Interviewee",
+                  "experience": "Working with a band"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Red Carpet",
+                "attributes": {
+                  "location": "Film Festival"
+                }
+              }
+            ],
+            "actors": [
+              {
+                "actor_id": "A001",
+                "name": "Woman",
+                "ref_object": "O001",
+                "role": "Interviewer",
+                "entity": "Person"
+              },
+              {
+                "actor_id": "A002",
+                "name": "Man",
+                "ref_object": "O002",
+                "role": "Interviewee",
+                "entity": "Person"
+              }
+            ],
+            "event": {
+              "event_id": "E_yCW_-SuVWGo_44.5_77.81",
+              "name": "Film Festival Interviews",
+              "time": {
+                "start": "44.5",
+                "end": "77.81"
+              },
+              "actors": [
+                "A001",
+                "A002"
+              ],
+              "objects": [
+                "O001",
+                "O002",
+                "O003"
+              ]
+            },
+            "LOD": {
+              "abstract_topic": [
+                "entertainment news"
+              ],
+              "scene_topic": "A woman conducts interviews on the red carpet at a film festival, discussing the entertainment industry and the importance of a strong support system, while a man reflects on his experience working with a band in a surreal and dynamic atmosphere.",
+              "summary": "A woman conducts interviews on the red carpet at a film festival, discussing the entertainment industry and the importance of a strong support system, while a man reflects on his experience working with a band in a surreal and dynamic atmosphere.",
+              "implications": "Major entertainment news event",
+              "modalities": {
+                "visual": "A woman conducts interviews on the red carpet at a film festival, a man reflects on his experience working with a band in a surreal and dynamic atmosphere.",
+                "audio": "",
+                "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+              }
+            }
+          }
+        }
+      }
+    ],
+    "caption": "A man delivers a speech and presents awards at a ceremony, while a woman conducts interviews on the red carpet, discussing the entertainment industry and individual experiences.",
+    "postprocess": {
+      "event_id": 3,
+      "original_answer": "A man delivers a speech and presents awards at a ceremony, while a woman conducts interviews on the red carpet, discussing the entertainment industry and individual experiences.",
+      "result": {
+        "video_id": "yCW_-SuVWGo",
+        "event_id": "E_yCW_-SuVWGo_0_77.81",
+        "tags": [
+          "entertainment",
+          "awards",
+          "ceremony",
+          "interviews",
+          "red_carpet"
+        ],
+        "objects": [
+          {
+            "object_id": "O001",
+            "name": "man",
+            "attributes": {
+              "role": "speaker",
+              "award_presentation": "true"
+            }
+          },
+          {
+            "object_id": "O002",
+            "name": "woman",
+            "attributes": {
+              "role": "interviewer",
+              "industry_expertise": "entertainment"
+            }
+          },
+          {
+            "object_id": "O003",
+            "name": "ceremony",
+            "attributes": {
+              "type": "awards",
+              "location": "red_carpet"
+            }
+          }
+        ],
+        "actors": [
+          {
+            "actor_id": "A001",
+            "name": "man",
+            "ref_object": "O001",
+            "role": "speaker",
+            "entity": "person"
+          },
+          {
+            "actor_id": "A002",
+            "name": "woman",
+            "ref_object": "O002",
+            "role": "interviewer",
+            "entity": "person"
+          }
+        ],
+        "event": {
+          "event_id": "E_yCW_-SuVWGo_0_77.81",
+          "name": "Awards Ceremony and Interviews",
+          "time": {
+            "start": "0",
+            "end": "77.81"
+          },
+          "actors": [
+            "A001",
+            "A002"
+          ],
+          "objects": [
+            "O001",
+            "O002",
+            "O003"
+          ]
+        },
+        "LOD": {
+          "abstract_topic": [
+            "entertainment news"
+          ],
+          "scene_topic": "A man delivers a speech and presents awards at a ceremony, while a woman conducts interviews on the red carpet, discussing the entertainment industry and individual experiences.",
+          "summary": "A man delivers a speech and presents awards at a ceremony, while a woman conducts interviews on the red carpet, discussing the entertainment industry and individual experiences.",
+          "implications": "Major entertainment news event",
+          "modalities": {
+            "visual": "A man delivers a speech and presents awards at a ceremony, while a woman conducts interviews on the red carpet.",
+            "audio": "speech; awards; interviews; discussing",
+            "speech": "J.C. Chazet, a producer for NSYNC, shared his experience working with the group and offered advice to Britney Spears, saying she should enjoy her life and not be swayed by controversy."
+          }
+        }
+      }
+    }
+  }
+}

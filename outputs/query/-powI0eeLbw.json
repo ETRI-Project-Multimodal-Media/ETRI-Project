@@ -1,0 +1,123 @@
+{
+  "query": "마녀와 해골이 스푸키 송을 부르는 애니메이션",
+  "input_file": "outputs/postprocess/-powI0eeLbw.json",
+  "mode": "text_embed",
+  "top_k": 10,
+  "similarity_threshold": 0.2,
+  "device": "cuda",
+  "elapsed_seconds": 7.058243751525879,
+  "current_memory_mib": 1590.33984375,
+  "peak_memory_mib": 3711.5859375,
+  "match_count": 9,
+  "matches": [
+    {
+      "video_id": "powI0eeLbw",
+      "start_time": 2.5,
+      "end_time": 5.5,
+      "score": 0.48178380727767944,
+      "matched_text": "A cartoon witch and a skeleton stand on a dark background, singing about a spooky night.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-powI0eeLbw.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "powI0eeLbw",
+      "start_time": 45.5,
+      "end_time": 52.407422,
+      "score": 0.4721614718437195,
+      "matched_text": "A cartoon witch and a ghost appear, followed by a website display.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-powI0eeLbw.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "powI0eeLbw",
+      "start_time": 22.5,
+      "end_time": 43.5,
+      "score": 0.4545202851295471,
+      "matched_text": "A cartoon ghost, its menacing silhouette illuminated by a flickering candle, dances against a dark, stormy sky as a woman's voice, seemingly from the ghost's own mouth, sings about a \"witch\" who's \"got a spell.\"",
+      "matched_field": "summary",
+      "file_path": "outputs/postprocess/-powI0eeLbw.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "powI0eeLbw",
+      "start_time": 43.5,
+      "end_time": 45.5,
+      "score": 0.45423880219459534,
+      "matched_text": "A cartoon ghost reaches out as if to grab someone.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-powI0eeLbw.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "powI0eeLbw",
+      "start_time": 15.5,
+      "end_time": 52.407422,
+      "score": 0.45231717824935913,
+      "matched_text": "A menacing cartoon ghost is depicted in various eerie settings, accompanied by a woman's voice in the background, creating an ominous atmosphere.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-powI0eeLbw.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "powI0eeLbw",
+      "start_time": 0.0,
+      "end_time": 52.407422,
+      "score": 0.4443289041519165,
+      "matched_text": "A Halloween-themed video features a cartoon witch and skeleton, accompanied by a playful jingle and a woman's voice singing about a spooky night, setting a festive mood.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-powI0eeLbw.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "powI0eeLbw",
+      "start_time": 15.5,
+      "end_time": 22.5,
+      "score": 0.4406830668449402,
+      "matched_text": "A cartoon ghost stands silently against a dark background as a woman's voice is heard in the background.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-powI0eeLbw.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "powI0eeLbw",
+      "start_time": 0.0,
+      "end_time": 15.5,
+      "score": 0.4397668242454529,
+      "matched_text": "A Halloween-themed video, featuring a cartoon witch and skeleton, sets a festive mood with a playful jingle and a woman's voice singing about a spooky night.",
+      "matched_field": "summary",
+      "file_path": "outputs/postprocess/-powI0eeLbw.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "powI0eeLbw",
+      "start_time": 0.0,
+      "end_time": 2.5,
+      "score": 0.37076953053474426,
+      "matched_text": "The video opens with a vibrant orange background, featuring the title 'Halloween Night' in bold white letters, accompanied by a playful jingle that sets a festive mood.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-powI0eeLbw.json",
+      "score_type": "text_embed"
+    }
+  ],
+  "text_embed_profile": {
+    "model_ready": {
+      "elapsed": 6.282219972461462,
+      "current_memory_mib": 1548.96484375,
+      "peak_memory_mib": 3711.5859375
+    },
+    "query_embedding": {
+      "elapsed": 0.6813607104122639,
+      "current_memory_mib": 1589.19140625,
+      "peak_memory_mib": 3711.5859375,
+      "embedding_bytes": 4096
+    },
+    "batch_000": {
+      "elapsed": 0.06883284449577332,
+      "current_memory_mib": 1590.33984375,
+      "peak_memory_mib": 3711.5859375
+    }
+  },
+  "query_embedding_bytes": 4096
+}
