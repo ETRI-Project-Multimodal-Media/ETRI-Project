@@ -1,21 +1,21 @@
 {
-  "query": "indoor market",
+  "query": "nighttime street race with cars drifting",
   "input_file": "outputs/postprocess/-IiTYqQKXlg.json",
   "mode": "text_embed",
-  "top_k": 20,
+  "top_k": 3,
   "similarity_threshold": 0.2,
   "device": "cuda",
-  "elapsed_seconds": 6.921581745147705,
-  "current_memory_mib": 1431.5078125,
-  "peak_memory_mib": 3265.9296875,
-  "match_count": 16,
+  "elapsed_seconds": 6.729259252548218,
+  "current_memory_mib": 1446.36328125,
+  "peak_memory_mib": 3268.14453125,
+  "match_count": 3,
   "matches": [
     {
       "video_id": "IiTYqQKXlg",
-      "start_time": 109.5,
-      "end_time": 123.5,
-      "score": 0.4402213394641876,
-      "matched_text": "A hand arranges colorful shapes on a pink surface, then cuts them into smaller pieces.",
+      "start_time": 123.5,
+      "end_time": 198.971767,
+      "score": 0.518536388874054,
+      "matched_text": "A person builds a colorful structure to a lively soundtrack.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
       "score_type": "text_embed"
@@ -24,18 +24,8 @@
       "video_id": "IiTYqQKXlg",
       "start_time": 123.5,
       "end_time": 139.5,
-      "score": 0.4352796673774719,
-      "matched_text": "A person arranges colorful, pixelated blocks on a pink surface, accompanied by upbeat pop music.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 174.5,
-      "end_time": 198.971767,
-      "score": 0.42520904541015625,
-      "matched_text": "A person arranges colorful blocks on a table, accompanied by cheerful children's music.",
+      "score": 0.502851128578186,
+      "matched_text": "A person builds a colorful, pixelated structure using blocks to a lively soundtrack.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
       "score_type": "text_embed"
@@ -44,128 +34,8 @@
       "video_id": "IiTYqQKXlg",
       "start_time": 123.5,
       "end_time": 174.5,
-      "score": 0.4239577651023865,
-      "matched_text": "A person builds a colorful, pixelated structure using blocks to a lively soundtrack.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 0.0,
-      "end_time": 19.5,
-      "score": 0.4217568635940552,
-      "matched_text": "The video begins with a close-up of a pink, glossy surface, possibly a lip product, as a woman's voice can be heard in the background.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 102.5,
-      "end_time": 109.5,
-      "score": 0.4209250211715698,
-      "matched_text": "A person arranges colorful blocks on a table to a cheerful children's song.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 188.5,
-      "end_time": 198.971767,
-      "score": 0.41681337356567383,
-      "matched_text": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table, accompanied by upbeat pop music.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 0.0,
-      "end_time": 198.971767,
-      "score": 0.4148748517036438,
-      "matched_text": "A woman and child, or possibly a host, engage in a creative play session, building with blocks or crafting with Crayola, accompanied by upbeat music and occasional commentary.",
-      "matched_field": "summary",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 19.5,
-      "end_time": 28.5,
-      "score": 0.4146152436733246,
-      "matched_text": "A hand carefully arranges colorful, geometric blocks on a pink surface, the sound of a child's voice excitedly exclaiming \"Woo!\" in the background.",
-      "matched_field": "summary",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 0.0,
-      "end_time": 123.5,
-      "score": 0.41324174404144287,
-      "matched_text": "A woman and a child engage in creative play with blocks and objects.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 28.5,
-      "end_time": 42.5,
-      "score": 0.4091341495513916,
-      "matched_text": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 42.5,
-      "end_time": 56.5,
-      "score": 0.4091341495513916,
-      "matched_text": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 72.5,
-      "end_time": 123.5,
-      "score": 0.40857791900634766,
-      "matched_text": "A hand arranges colorful blocks on a pink surface to a cheerful children's song.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 123.5,
-      "end_time": 198.971767,
-      "score": 0.40775954723358154,
+      "score": 0.4917323589324951,
       "matched_text": "A person builds a colorful, pixelated structure to a lively soundtrack, creating a playful and vibrant scene.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 0.0,
-      "end_time": 42.5,
-      "score": 0.4070717692375183,
-      "matched_text": "A woman arranges a collection of pink and white polka dot items.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "IiTYqQKXlg",
-      "start_time": 42.5,
-      "end_time": 72.5,
-      "score": 0.40276744961738586,
-      "matched_text": "A person builds a block structure on a pink surface while a children's song plays and a woman says goodbye in the background.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/-IiTYqQKXlg.json",
       "score_type": "text_embed"
@@ -173,20 +43,25 @@
   ],
   "text_embed_profile": {
     "model_ready": {
-      "elapsed": 6.266287598758936,
-      "current_memory_mib": 1101.18359375,
-      "peak_memory_mib": 3265.9296875
+      "elapsed": 6.039111126214266,
+      "current_memory_mib": 1102.7109375,
+      "peak_memory_mib": 3268.14453125
     },
     "query_embedding": {
-      "elapsed": 0.5029942952096462,
-      "current_memory_mib": 1423.07421875,
-      "peak_memory_mib": 3265.9296875,
+      "elapsed": 0.4662332646548748,
+      "current_memory_mib": 1437.9765625,
+      "peak_memory_mib": 3268.14453125,
       "embedding_bytes": 4096
     },
     "batch_000": {
-      "elapsed": 0.13101086392998695,
-      "current_memory_mib": 1431.31640625,
-      "peak_memory_mib": 3265.9296875
+      "elapsed": 0.15593263506889343,
+      "current_memory_mib": 1446.33203125,
+      "peak_memory_mib": 3268.14453125
+    },
+    "batch_001": {
+      "elapsed": 0.01901012659072876,
+      "current_memory_mib": 1446.36328125,
+      "peak_memory_mib": 3268.14453125
     }
   },
   "query_embedding_bytes": 4096

@@ -7,6 +7,9 @@ import math
 import html as html_module
 import shlex
 import csv
+import sys
+import hashlib
+import importlib.util
 from typing import List
 from string import Template
 
@@ -224,6 +227,9 @@ default_query_threshold = st.sidebar.slider(
 
 if "log_text" not in st.session_state:
     st.session_state.log_text = ""
+
+if "timezero_cache" not in st.session_state:
+    st.session_state.timezero_cache = {}
 
 log_area = st.empty()
 

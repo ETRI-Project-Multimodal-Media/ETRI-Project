@@ -1,27 +1,25 @@
 import os
-import re
 import subprocess
+import time
+import base64
 import json
-from pathlib import Path
+import math
+import html as html_module
+import shlex
+import csv
+import hashlib
+from typing import List
+from string import Template
 
-import cv2
-import graphviz
 import streamlit as st
+import streamlit.components.v1 as components
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-FRAME_CACHE_DIR = os.path.join(BASE_DIR, "outputs", "frame_cache")
-CLIP_CACHE_DIR = os.path.join(BASE_DIR, "outputs", "clip_cache")
-HF_VTG_MODEL_ID = "RuizheChen/ColdStart_Temporal_GroundQA_Grounding_512"
-
-_VTG_MODEL = None
-_VTG_PROCESSOR = None
-_VTG_DEVICE = None
 
 
 def run_command(cmd, env=None):
     full_env = os.environ.copy()
-    # Ensure local Python packages (e.g., longvalellm) are importable
     src_path = os.path.join(BASE_DIR, "src")
     if full_env.get("PYTHONPATH"):
         full_env["PYTHONPATH"] = f"{src_path}{os.pathsep}{full_env['PYTHONPATH']}"
@@ -46,823 +44,1923 @@ def run_command(cmd, env=None):
     return result.returncode, output
 
 
-st.title("LongVALE Pipeline Demo (run.sh wrapper)")
+def has_any_files(folder: str, exts: List[str]) -> bool:
+    if not os.path.isdir(folder):
+        return False
+    for name in os.listdir(folder):
+        lower = name.lower()
+        if any(lower.endswith(ext) for ext in exts):
+            return True
+    return False
+
+
+def get_video_duration(video_path: str):
+    """ffprobe를 사용해 비디오 duration(초)을 구합니다. 실패 시 None 반환."""
+    if not os.path.isfile(video_path):
+        return None
+    try:
+        result = subprocess.run(
+            [
+                "ffprobe",
+                "-v",
+                "error",
+                "-show_entries",
+                "format=duration",
+                "-of",
+                "default=noprint_wrappers=1:nokey=1",
+                video_path,
+            ],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        if result.returncode != 0:
+            return None
+        return float(result.stdout.strip())
+    except Exception:
+        return None
+
+
+def get_frame_image_path(video_path: str, video_id: str, time_sec: float) -> str | None:
+    """지정된 시점의 첫 프레임을 jpg로 추출하고 경로를 반환합니다."""
+    if not os.path.isfile(video_path):
+        return None
+
+    safe_time = max(time_sec, 0.0)
+    frame_dir = os.path.join(BASE_DIR, "outputs", "frames", video_id)
+    os.makedirs(frame_dir, exist_ok=True)
+    frame_name = f"{int(round(safe_time))}.jpg"
+    frame_path = os.path.join(frame_dir, frame_name)
+
+    if os.path.isfile(frame_path):
+        return frame_path
+
+    cmd = (
+        f'ffmpeg -y -loglevel error -ss {safe_time:.2f} -i "{video_path}" '
+        f'-frames:v 1 -q:v 2 "{frame_path}"'
+    )
+    code, _ = run_command(cmd)
+    if code != 0 or not os.path.isfile(frame_path):
+        return None
+    return frame_path
+
+
+def image_file_to_base64(path: str) -> str | None:
+    if not os.path.isfile(path):
+        return None
+    try:
+        with open(path, "rb") as f:
+            return base64.b64encode(f.read()).decode("utf-8")
+    except Exception:
+        return None
+
+
+@st.cache_data(show_spinner=False)
+def get_frame_b64_cached(video_path: str, video_id: str, time_sec: float) -> str | None:
+    """지정 시점의 프레임을 추출해 base64로 캐싱하여 새로고침/재렌더링에서도 이미지가 유지되도록."""
+    frame_path = get_frame_image_path(video_path, video_id, time_sec)
+    if not frame_path:
+        return None
+    return image_file_to_base64(frame_path)
+
+
+def get_video_duration(video_path: str):
+    """ffprobe를 사용해 비디오 duration(초)을 구합니다. 실패 시 None 반환."""
+    if not os.path.isfile(video_path):
+        return None
+    try:
+        result = subprocess.run(
+            [
+                "ffprobe",
+                "-v",
+                "error",
+                "-show_entries",
+                "format=duration",
+                "-of",
+                "default=noprint_wrappers=1:nokey=1",
+                video_path,
+            ],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+        if result.returncode != 0:
+            return None
+        return float(result.stdout.strip())
+    except Exception:
+        return None
+
+
+def safe_float(value, default=0.0):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
+st.title("LongVALE Pipeline Demo (2-Step: Tree & Query)")
 
 st.markdown(
-    "이 데모는 `scripts/run.sh`가 수행하는 파이프라인 단계를 "
-    "Streamlit UI에서 하나씩 실행해볼 수 있도록 만든 것입니다."
+    "이 데모는 LongVALE 전체 파이프라인을 **두 단계**로 실행합니다.\n\n"
+    "1단계: Feature Extraction → Tree 생성 → Caption → Summary → Postprocess\n\n"
+    "2단계: Query 검색 및 해당 구간 영상/JSON 확인"
 )
 
-# 기본 경로/설정 (run.sh 기준)
 st.sidebar.header("기본 설정")
-data_path = st.sidebar.text_input(
-    "DATA_PATH",
-    "./data/annotation.json",
+hf_token = st.sidebar.text_input("HF_TOKEN", "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")
+gpu_id = st.sidebar.text_input("GPU_ID (CUDA_VISIBLE_DEVICES)", "0")
+video_dir = st.sidebar.text_input(
+    "VIDEO_DIR (원본 mp4 폴더)", "./data/raw_data/video"
 )
-prompt_path = st.sidebar.text_input(
-    "PROMPT_PATH",
-    "./data/prompt.json",
+audio_dir = st.sidebar.text_input(
+    "AUDIO_DIR (원본 wav 폴더)", "./data/raw_data/audio"
 )
-tree_save_path = st.sidebar.text_input(
-    "TREE_SAVE_PATH",
-    "./outputs/log.json",
-)
-post_save_dir = st.sidebar.text_input(
-    "POST_SAVE_DIR",
-    "./outputs/postprocess",
-)
-debug_path = st.sidebar.text_input(
-    "DEBUG_PATH",
-    "./logs/debug.text",
-)
-query_save_dir = st.sidebar.text_input(
-    "QUERY_SAVE_DIR",
-    "./outputs/query/example.json",
-)
-video_json = st.sidebar.text_input(
-    "VIDEO_JSON_PATH",
-    "./outputs/postprocess/olZPuJTwh0s.json",
-)
+checkpoint_dir = st.sidebar.text_input("CHECKPOINT_DIR", "./checkpoints")
 
+# 고정 경로 설정 (좌측 경로 입력 대신 기본값 사용)
+# annotation.json 없이, 선택한 비디오로부터 임시 annotation을 생성해 사용합니다.
+prompt_path = "./data/prompt.json"
+tree_save_dir = "./outputs/tree"
+post_save_dir = "./outputs/postprocess"
+debug_path = "./logs/debug.text"
+query_base_dir = "./outputs/query"
+query_recommendation_csv = os.path.join(BASE_DIR, "query_recommendations_wide.csv")
 
-tree_v_feat = st.sidebar.text_input(
-    "TREE_V_FEAT",
-    "./data/features_tree/video_features",
-)
-tree_a_feat = st.sidebar.text_input(
-    "TREE_A_FEAT",
-    "./data/features_tree/audio_features",
-)
-tree_s_feat = st.sidebar.text_input(
-    "TREE_S_FEAT",
-    "./data/features_tree/speech_features",
-)
+tree_v_feat = "./data/features_tree/video_features"
+tree_a_feat = "./data/features_tree/audio_features"
+tree_s_feat = "./data/features_tree/speech_features"
 
-model_v_feat = st.sidebar.text_input(
-    "MODEL_V_FEAT",
-    "./data/features_model/video_features",
-)
-model_a_feat = st.sidebar.text_input(
-    "MODEL_A_FEAT",
-    "./data/features_model/audio_features",
-)
-model_s_feat = st.sidebar.text_input(
-    "MODEL_S_FEAT",
-    "./data/features_model/speech_features",
-)
-speech_asr_dir = st.sidebar.text_input(
-    "SPEECH_ASR_DIR",
-    "./data/features_model/speech_asr",
-)
+model_v_feat = "./data/features_model/video_features"
+model_a_feat = "./data/features_model/audio_features"
+model_s_feat = "./data/features_model/speech_features"
+speech_asr_dir = "./data/features_model/speech_asr"
 
-model_base = st.sidebar.text_input(
-    "MODEL_BASE",
-    "./checkpoints/vicuna-7b-v1.5",
+model_base = os.path.join(checkpoint_dir, "vicuna-7b-v1.5")
+model_stage2 = os.path.join(
+    checkpoint_dir,
+    "longvalellm-vicuna-v1-5-7b",
+    "longvale-vicuna-v1-5-7b-stage2-bp",
 )
-model_stage2 = st.sidebar.text_input(
-    "MODEL_STAGE2",
-    "./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp",
+model_stage3 = os.path.join(
+    checkpoint_dir,
+    "longvalellm-vicuna-v1-5-7b",
+    "longvale-vicuna-v1-5-7b-stage3-it",
 )
-model_stage3 = st.sidebar.text_input(
-    "MODEL_STAGE3",
-    "./checkpoints/longvalellm-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it",
-)
-model_mm_mlp = st.sidebar.text_input(
-    "MODEL_MM_MLP",
-    "./checkpoints/vtimellm_stage1_mm_projector.bin",
-)
-hf_token = st.sidebar.text_input(
-    "HF_TOKEN",
-    "",
-)
-mode = st.sidebar.text_input(
-    "MODE_text_embed_or_heuristic",
-    "text_embed",
-)
-query_str = st.sidebar.text_input(
-    "QUERY_STR",
-    "indoor market",
-)
-
-
-gpu_id = st.sidebar.text_input("GPU_ID (CUDA_VISIBLE_DEVICES)", "6")
+model_mm_mlp = os.path.join(checkpoint_dir, "vtimellm_stage1_mm_projector.bin")
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("실행할 단계를 선택하세요:")
-run_tree = st.sidebar.checkbox("1. Event Tree 생성 (tree.py)", value=False)
-run_caption = st.sidebar.checkbox("2. Tree 캡셔닝 (caption_longvale.py)", value=False)
-run_summary = st.sidebar.checkbox("3. Tree 요약 (summary_llama3.py)", value=False)
-run_postprocess = st.sidebar.checkbox("4. Postprocess (postprocess.py)", value=True)
-query_process = st.sidebar.checkbox("5. Query (search_queries.py)", value=True)
+st.sidebar.markdown("Tree 파라미터")
+caption_similarity_threshold = st.sidebar.slider(
+    "Caption similarity_threshold (caption_longvale.py)", min_value=0.0, max_value=1.0, value=0.9, step=0.05
+)
+tree_merge_threshold = st.sidebar.slider(
+    "Tree merge similarity_threshold (postprocess.py)", min_value=0.0, max_value=1.0, value=0.8, step=0.05
+)
+
+st.sidebar.markdown("---")
+st.sidebar.markdown("Query 파라미터 (기본값)")
+default_query_str = st.sidebar.text_input("DEFAULT_QUERY_STR", "indoor market")
+default_query_mode = st.sidebar.selectbox(
+    "DEFAULT_QUERY_MODE", ["text_embed", "heuristic"], index=0
+)
+default_query_top_k = st.sidebar.number_input(
+    "DEFAULT_QUERY_TOP_K", min_value=1, max_value=50, value=3, step=1
+)
+default_query_threshold = st.sidebar.slider(
+    "DEFAULT_QUERY_THRESHOLD", min_value=0.0, max_value=1.0, value=0.2, step=0.05
+)
+
+st.sidebar.markdown("---")
+st.sidebar.markdown("TRACE Temporal Grounding")
+trace_repo_root = st.sidebar.text_input(
+    "TRACE_REPO_ROOT", "/root/workspace/kylee/TRACE"
+)
+default_trace_model_path = os.path.join(trace_repo_root, "trace-uni")
+trace_model_path = st.sidebar.text_input(
+    "TRACE_MODEL_PATH", default_trace_model_path
+)
+trace_conda_env = st.sidebar.text_input("TRACE_CONDA_ENV", "trace")
+trace_device = st.sidebar.text_input("TRACE_DEVICE", "cuda:0")
+trace_num_frames = st.sidebar.number_input(
+    "TRACE_NUM_FRAMES", min_value=8, max_value=128, value=64, step=8
+)
+trace_max_new_tokens = st.sidebar.number_input(
+    "TRACE_MAX_NEW_TOKENS", min_value=64, max_value=4096, value=512, step=64
+)
 
 if "log_text" not in st.session_state:
     st.session_state.log_text = ""
 
+if "trace_cache" not in st.session_state:
+    st.session_state.trace_cache = {}
 
 log_area = st.empty()
-tree_preview_area = st.empty()
-caption_preview_area = st.empty()
-summary_preview_area = st.empty()
-post_preview_area = st.empty()
-tree_view_area = st.empty()
 
 
 def append_log(text):
     if st.session_state.log_text:
-        st.session_state.log_text += "\n" + text
+        st.session_state.log_text += "\n" + str(text)
     else:
-        st.session_state.log_text = text
+        st.session_state.log_text = str(text)
     log_area.text(st.session_state.log_text)
 
 
-def _ensure_dir(path: str):
-    os.makedirs(path, exist_ok=True)
+def get_primary_gpu_index(gpu_text: str | None) -> int:
+    if not gpu_text:
+        return 0
+    token = str(gpu_text).split(",")[0].strip()
+    try:
+        return int(token)
+    except ValueError:
+        return 0
 
 
-def _mid_frame_capture(video_path: str, start_time: float, end_time: float) -> str | None:
-    """주어진 구간의 중간 프레임을 추출해 캐시 폴더에 저장하고 경로를 반환한다."""
+def resolve_path(path: str) -> str:
+    """상대 경로를 LongVALE_new 기준 절대 경로로 변환."""
+    if not path:
+        return path
+    if os.path.isabs(path):
+        return path
+    return os.path.abspath(os.path.join(BASE_DIR, path))
+
+
+def ensure_tree_features(
+    tree_v_feat_dir: str,
+    tree_a_feat_dir: str,
+    tree_s_feat_dir: str,
+    video_id: str | None,
+    annotation_path: str | None,
+    video_dir_path: str,
+    audio_dir_path: str,
+    gpu_id_value: str,
+    checkpoint_dir_path: str,
+) -> int:
+    """선택된 video_id에 대한 Tree feature 존재 여부 확인 및 필요 시 생성."""
+
+    if not video_id:
+        append_log("[0] Tree features 추출 불가: video_id가 없습니다.")
+        return -1
+
+    def _has_features_for_video(vid: str) -> bool:
+        required_files = [
+            os.path.join(tree_v_feat_dir, f"{vid}.npy"),
+            os.path.join(tree_a_feat_dir, f"{vid}.npy"),
+            os.path.join(tree_s_feat_dir, f"{vid}.npy"),
+        ]
+        return all(os.path.isfile(path) for path in required_files)
+
+    if _has_features_for_video(video_id):
+        append_log(f"[0] Tree features 이미 존재 ({video_id}) → 추출 스킵")
+        return 0
+
+    if not annotation_path or not os.path.isfile(annotation_path):
+        append_log("[0] Tree features 추출 실패: 임시 annotation 파일이 없습니다.")
+        return -1
+
+    video_dir_abs = resolve_path(video_dir_path)
+    audio_dir_abs = resolve_path(audio_dir_path)
+    annotation_abs = resolve_path(annotation_path)
+    tree_feat_root = resolve_path(os.path.dirname(tree_v_feat_dir))
+    clip_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "ViT-L-14.pt"))
+    beats_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "BEATs_iter3_plus_AS20K.pt"))
+    whisper_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "openai-whisper-large-v2"))
+    gpu_index = get_primary_gpu_index(gpu_id_value)
+
+    if not os.path.isdir(video_dir_abs):
+        append_log(f"[0] Tree features 추출 실패: VIDEO_DIR 경로가 잘못되었습니다 ({video_dir_abs})")
+        return -1
+    if not os.path.isdir(audio_dir_abs):
+        append_log(f"[0] Tree features 추출 실패: AUDIO_DIR 경로가 잘못되었습니다 ({audio_dir_abs})")
+        return -1
+
+    os.makedirs(tree_feat_root, exist_ok=True)
+
+    cmd = (
+        "python src/preprocess/tree_feature_extract.py "
+        f"--data_path {shlex.quote(annotation_abs)} "
+        f"--video_dir {shlex.quote(video_dir_abs)} "
+        f"--audio_dir {shlex.quote(audio_dir_abs)} "
+        f"--save_dir {shlex.quote(tree_feat_root)} "
+        f"--clip_checkpoint {shlex.quote(clip_ckpt)} "
+        f"--beats_checkpoint {shlex.quote(beats_ckpt)} "
+        f"--whisper_checkpoint {shlex.quote(whisper_ckpt)} "
+        "--extract_modality all "
+        f"--gpu_id {gpu_index}"
+    )
+
+    append_log(f"[0] Tree features 추출 시작 (video_id={video_id})...")
+    code, out = run_command(cmd)
+    append_log(f"$ {cmd}\n{out}")
+    append_log(f"[0] Tree features 종료 코드: {code}")
+    return code
+
+
+def ensure_model_features(
+    model_v_feat_dir: str,
+    model_a_feat_dir: str,
+    model_s_feat_dir: str,
+    speech_asr_dir_path: str,
+    video_id: str | None,
+    annotation_path: str | None,
+    video_dir_path: str,
+    audio_dir_path: str,
+    gpu_id_value: str,
+    checkpoint_dir_path: str,
+) -> int:
+    """선택된 video_id에 대한 모델 feature 존재 여부 확인 및 필요 시 생성."""
+
+    if not video_id:
+        append_log("[0] Model features 추출 불가: video_id가 없습니다.")
+        return -1
+
+    video_feat_path = os.path.join(model_v_feat_dir, f"{video_id}.npy")
+    audio_feat_path = os.path.join(model_a_feat_dir, f"{video_id}.npy")
+    speech_feat_path = os.path.join(model_s_feat_dir, f"{video_id}.npy")
+    speech_asr_path = os.path.join(speech_asr_dir_path, f"{video_id}.json")
+
+    missing_video = not os.path.isfile(video_feat_path)
+    missing_audio = not os.path.isfile(audio_feat_path)
+    missing_speech = not os.path.isfile(speech_feat_path)
+    missing_asr = not os.path.isfile(speech_asr_path)
+
+    if not any([missing_video, missing_audio, missing_speech, missing_asr]):
+        append_log(f"[0] Model features 이미 존재 ({video_id}) → 추출 스킵")
+        return 0
+
+    if not annotation_path or not os.path.isfile(annotation_path):
+        append_log("[0] Model features 추출 실패: 임시 annotation 파일이 없습니다.")
+        return -1
+
+    video_dir_abs = resolve_path(video_dir_path)
+    audio_dir_abs = resolve_path(audio_dir_path)
+    annotation_abs = resolve_path(annotation_path)
+    clip_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "ViT-L-14.pt"))
+    beats_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "BEATs_iter3_plus_AS20K.pt"))
+    whisper_ckpt = resolve_path(os.path.join(checkpoint_dir_path, "openai-whisper-large-v2"))
+    gpu_index = get_primary_gpu_index(gpu_id_value)
+
+    if not os.path.isdir(video_dir_abs):
+        append_log(f"[0] Model features 추출 실패: VIDEO_DIR 경로가 잘못되었습니다 ({video_dir_abs})")
+        return -1
+    if not os.path.isdir(audio_dir_abs):
+        append_log(f"[0] Model features 추출 실패: AUDIO_DIR 경로가 잘못되었습니다 ({audio_dir_abs})")
+        return -1
+
+    commands: list[tuple[str, str]] = []
+    if missing_video:
+        os.makedirs(model_v_feat_dir, exist_ok=True)
+        cmd = (
+            "python src/preprocess/clip_feature_extract.py "
+            f"--annotation {shlex.quote(annotation_abs)} "
+            f"--video_dir {shlex.quote(video_dir_abs)} "
+            f"--save_dir {shlex.quote(resolve_path(model_v_feat_dir))} "
+            f"--checkpoint {shlex.quote(clip_ckpt)} "
+            f"--gpu_id {gpu_index}"
+        )
+        commands.append(("Video", cmd))
+
+    if missing_audio:
+        os.makedirs(model_a_feat_dir, exist_ok=True)
+        cmd = (
+            "python src/preprocess/beats_feature_extract.py "
+            f"--annotation {shlex.quote(annotation_abs)} "
+            f"--audio_dir {shlex.quote(audio_dir_abs)} "
+            f"--save_dir {shlex.quote(resolve_path(model_a_feat_dir))} "
+            f"--checkpoint {shlex.quote(beats_ckpt)} "
+            f"--gpu_id {gpu_index}"
+        )
+        commands.append(("Audio", cmd))
+
+    if missing_speech:
+        os.makedirs(model_s_feat_dir, exist_ok=True)
+        cmd = (
+            "python src/preprocess/whisper_feature_extract.py "
+            f"--annotation {shlex.quote(annotation_abs)} "
+            f"--audio_dir {shlex.quote(audio_dir_abs)} "
+            f"--save_dir {shlex.quote(resolve_path(model_s_feat_dir))} "
+            f"--checkpoint {shlex.quote(whisper_ckpt)} "
+            f"--gpu_id {gpu_index}"
+        )
+        commands.append(("Speech", cmd))
+
+    if missing_asr:
+        os.makedirs(speech_asr_dir_path, exist_ok=True)
+        cmd = (
+            "python src/preprocess/whisper_speech_asr.py "
+            f"--annotation {shlex.quote(annotation_abs)} "
+            f"--audio_dir {shlex.quote(audio_dir_abs)} "
+            f"--save_dir {shlex.quote(resolve_path(speech_asr_dir_path))} "
+            f"--checkpoint {shlex.quote(whisper_ckpt)} "
+            f"--gpu_id {gpu_index}"
+        )
+        commands.append(("Speech ASR", cmd))
+
+    for desc, cmd in commands:
+        append_log(f"[0] Model features {desc} 추출 시작 (video_id={video_id})...")
+        code, out = run_command(cmd)
+        append_log(f"$ {cmd}\n{out}")
+        append_log(f"[0] Model features {desc} 종료 코드: {code}")
+        if code != 0:
+            return code
+
+    return 0
+
+
+
+def list_video_files(video_dir_path: str) -> List[str]:
+    if not os.path.isdir(video_dir_path):
+        return []
+    files = []
+    for name in os.listdir(video_dir_path):
+        if name.lower().endswith(".mp4"):
+            files.append(name)
+    return sorted(files)
+
+
+def list_video_ids_from_annotation(annotation_path: str) -> List[str]:
+    if not os.path.isfile(annotation_path):
+        return []
+    try:
+        with open(annotation_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return []
+
+    ids: List[str] = []
+    if isinstance(data, dict):
+        ids = list(data.keys())
+    elif isinstance(data, list):
+        for item in data:
+            if not isinstance(item, dict):
+                continue
+            vid = item.get("video_id") or item.get("id")
+            if vid:
+                ids.append(str(vid))
+    return sorted(set(ids))
+
+
+def list_postprocess_jsons(output_dir: str) -> List[str]:
+    if not os.path.isdir(output_dir):
+        return []
+    files = []
+    for name in os.listdir(output_dir):
+        if name.lower().endswith(".json"):
+            files.append(os.path.join(output_dir, name))
+    return sorted(files)
+
+
+@st.cache_data(show_spinner=False)
+def load_query_recommendations(csv_path: str):
+    """CSV에서 video_id별 good/bad Query 추천을 불러옵니다."""
+    if not os.path.isfile(csv_path):
+        return {}
+
+    recommendations: dict[str, dict[str, list[tuple[str, str]]]] = {}
+    try:
+        with open(csv_path, "r", encoding="utf-8", newline="") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                video_id = (row.get("video_id") or "").strip()
+                if not video_id:
+                    continue
+                video_entry = recommendations.setdefault(
+                    video_id, {"good": [], "bad": []}
+                )
+
+                def _add(field_name: str, quality: str):
+                    value = (row.get(field_name) or "").strip()
+                    if not value:
+                        return
+                    label_type = "sentence" if "sentence" in field_name else "word"
+                    label = f"{quality.title()} ({label_type}) · {value}"
+                    video_entry[quality].append((label, value))
+
+                for idx in range(1, 3):
+                    _add(f"sentence_good_{idx}", "good")
+                    _add(f"sentence_bad_{idx}", "bad")
+                    _add(f"word_good_{idx}", "good")
+                    _add(f"word_bad_{idx}", "bad")
+    except Exception:
+        return {}
+
+    return recommendations
+
+
+query_recommendations_data = load_query_recommendations(query_recommendation_csv)
+
+
+def flatten_tree_segments(tree_data: dict):
+    segments = []
+
+    def _dfs(node):
+        post = node.get("postprocess") or {}
+        result = post.get("result") or {}
+        lod = result.get("LOD") or result.get("lod") or {}
+        scene_topic = lod.get("scene_topic")
+
+        children = node.get("children") or []
+        is_leaf = len(children) == 0
+        seg = {
+            "node": node,
+            "level": node.get("level", 0),
+            "start": node.get("start_time", 0.0),
+            "end": node.get("end_time", 0.0),
+            "summary": scene_topic
+            or node.get("summary")
+            or node.get("caption")
+            or "",
+            "is_leaf": is_leaf,
+        }
+        segments.append(seg)
+        for child in children:
+            if isinstance(child, dict):
+                _dfs(child)
+
+    _dfs(tree_data)
+    return segments
+
+
+def collect_tree_segments_with_event(tree_data: dict):
+    segments = []
+
+    def _dfs(node):
+        post = node.get("postprocess") or {}
+        result = post.get("result") or {}
+        lod = result.get("LOD") or result.get("lod") or {}
+        scene_topic = lod.get("scene_topic")
+        event_id = post.get("event_id")
+        seg = {
+            "node": node,
+            "level": node.get("level", 0),
+            "start": node.get("start_time", 0.0),
+            "end": node.get("end_time", 0.0),
+            "summary": scene_topic
+            or node.get("summary")
+            or node.get("caption")
+            or "",
+            "event_id": event_id,
+        }
+        segments.append(seg)
+        for child in node.get("children") or []:
+            if isinstance(child, dict):
+                _dfs(child)
+
+    _dfs(tree_data)
+    return segments
+
+
+def get_query_video_selection_data(post_dir: str, query_dir: str):
+    post_files = list_postprocess_jsons(post_dir)
+    query_files = list_postprocess_jsons(query_dir)
+    query_file_map = {
+        os.path.splitext(os.path.basename(path))[0]: path for path in query_files
+    }
+    postprocess_video_ids = {
+        os.path.splitext(os.path.basename(path))[0] for path in post_files
+    }
+    available_video_ids = sorted(postprocess_video_ids.union(query_file_map.keys()))
+    return post_files, query_file_map, available_video_ids
+
+
+def extract_video_subclip(
+    video_path: str,
+    video_id: str,
+    start_time: float | None,
+    end_time: float | None,
+    label: str,
+) -> str | None:
     if not os.path.isfile(video_path):
         return None
-    _ensure_dir(FRAME_CACHE_DIR)
-    stem = Path(video_path).stem
-    mid = (start_time + end_time) / 2.0
-    cache_name = f"{stem}_{start_time:.3f}_{end_time:.3f}.jpg"
-    cache_path = os.path.join(FRAME_CACHE_DIR, cache_name)
-    if os.path.isfile(cache_path):
-        return cache_path
-
-    cap = cv2.VideoCapture(video_path)
-    if not cap.isOpened():
+    if start_time is None or end_time is None:
         return None
-    fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
-    target_frame = int(mid * fps)
-    cap.set(cv2.CAP_PROP_POS_FRAMES, target_frame)
-    success, frame = cap.read()
-    if not success or frame is None:
-        cap.release()
+    try:
+        start = float(start_time)
+        end = float(end_time)
+    except (TypeError, ValueError):
+        return None
+    if end <= start:
         return None
 
-    # 크기 축소 (너비 140px 기준 - 트리에서 너무 크지 않게)
-    height, width = frame.shape[:2]
-    target_w = 140
-    scale = target_w / width if width > 0 else 1.0
-    resized = cv2.resize(frame, (target_w, int(height * scale)))
-    cv2.imwrite(cache_path, resized)
-    cap.release()
-    return cache_path
-
-
-def _get_video_duration(video_path: str) -> float | None:
-    if not os.path.isfile(video_path):
-        return None
-    cap = cv2.VideoCapture(video_path)
-    if not cap.isOpened():
-        return None
-    fps = cap.get(cv2.CAP_PROP_FPS) or 0.0
-    frame_count = cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0.0
-    cap.release()
-    if fps <= 0.0 or frame_count <= 0.0:
-        return None
-    return float(frame_count / fps)
-
-
-def _extract_video_clip(video_path: str, start_time: float, end_time: float) -> str | None:
-    """ffmpeg을 사용해 해당 구간의 비디오 클립을 잘라 캐시 폴더에 저장하고 경로를 반환한다."""
-    if not os.path.isfile(video_path):
+    duration = get_video_duration(video_path)
+    if duration is None:
         return None
 
-    _ensure_dir(CLIP_CACHE_DIR)
-    stem = Path(video_path).stem
-    safe_start = max(0.0, float(start_time))
-    safe_end = max(safe_start, float(end_time))
-    if safe_end <= safe_start:
-        safe_end = safe_start + 2.0
-
-    clip_name = f"{stem}_{safe_start:.3f}_{safe_end:.3f}.mp4"
-    clip_path = os.path.join(CLIP_CACHE_DIR, clip_name)
+    safe_start = max(0.0, min(start, duration))
+    safe_end = max(safe_start + 0.1, min(end, duration))
+    clip_dir = os.path.join(BASE_DIR, "outputs", "comparison_clips", video_id)
+    os.makedirs(clip_dir, exist_ok=True)
+    digest = hashlib.md5(
+        f"{label}_{safe_start:.2f}_{safe_end:.2f}".encode("utf-8")
+    ).hexdigest()[:10]
+    clip_path = os.path.join(clip_dir, f"{label}_{digest}.mp4")
     if os.path.isfile(clip_path):
         return clip_path
 
-    cmd = [
-        "ffmpeg",
-        "-y",
-        "-ss",
-        f"{safe_start:.3f}",
-        "-to",
-        f"{safe_end:.3f}",
-        "-i",
-        video_path,
-        "-c",
-        "copy",
-        clip_path,
-    ]
-    try:
-        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    except FileNotFoundError:
-        st.error("ffmpeg 명령을 찾을 수 없습니다. ffmpeg를 설치해 주세요.")
+    cmd = (
+        f'ffmpeg -y -loglevel error -ss {safe_start:.3f} -to {safe_end:.3f} '
+        f'-i "{video_path}" -c copy "{clip_path}"'
+    )
+    code, _ = run_command(cmd)
+    if code != 0 or not os.path.isfile(clip_path):
         return None
-
-    if result.returncode != 0:
-        st.error("ffmpeg 실행 중 오류가 발생했습니다. stderr를 확인해 주세요.")
-        return None
-
     return clip_path
-def _load_video_frames(video_path: str, num_frames: int = 16):
-    """비디오에서 균일하게 num_frames 장의 프레임을 추출해 PIL 이미지 리스트로 반환."""
-    try:
-        from PIL import Image
-    except ImportError:
-        st.error("Pillow(PIL)가 설치되어 있지 않습니다. `pip install pillow` 후 다시 시도하세요.")
-        return None
-
-    if not os.path.isfile(video_path):
-        return None
-
-    cap = cv2.VideoCapture(video_path)
-    if not cap.isOpened():
-        return None
-
-    frame_count = cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0
-    if frame_count <= 0:
-        cap.release()
-        return None
-
-    step = max(int(frame_count // num_frames), 1)
-    frames = []
-    idx = 0
-    while len(frames) < num_frames and idx < frame_count:
-        cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
-        success, frame = cap.read()
-        if not success or frame is None:
-            break
-        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        frames.append(Image.fromarray(frame_rgb))
-        idx += step
-
-    cap.release()
-    if not frames:
-        return None
-    return frames
 
 
-def _parse_temporal_json(text: str, duration: float) -> tuple[float, float] | None:
-    """모델 출력 텍스트에서 {\"start\": float, \"end\": float} JSON을 파싱."""
-    text = text.strip()
-    if not text:
-        return None
-
-    match = re.search(r"\{.*\}", text, re.DOTALL)
-    if match:
-        candidate = match.group(0)
-    else:
-        candidate = text
-
-    try:
-        data = json.loads(candidate)
-        start = float(data.get("start", 0.0))
-        end = float(data.get("end", start))
-    except Exception:
-        nums = re.findall(r"-?\d+(?:\.\d+)?", text)
-        if len(nums) >= 2:
-            start = float(nums[0])
-            end = float(nums[1])
-        elif len(nums) == 1:
-            start = float(nums[0])
-            end = start + 2.0
-        else:
-            return None
-
-    start = max(0.0, start)
-    end = max(start, end)
-    if duration > 0:
-        start = min(start, duration)
-        end = min(end, duration)
-    if end <= start:
-        end = min(duration, start + 2.0) if duration > 0 else start + 2.0
-    return start, end
-
-
-def _run_hf_temporal_grounding(video_path: str, query_text: str) -> tuple[float, float] | None:
-    """HuggingFace Qwen2.5-VL 기반 Video Temporal Grounding (ColdStart_Temporal_GroundQA_Grounding_512) 호출."""
-    if not os.path.isfile(video_path):
-        st.warning(f"원본 비디오 파일을 찾을 수 없습니다: {video_path}")
-        return None
-
-    duration = _get_video_duration(video_path)
-    if duration is None or duration <= 0.0:
-        st.warning("비디오 길이를 계산할 수 없습니다.")
-        return None
-
-    frames = _load_video_frames(video_path, num_frames=16)
-    if not frames:
-        st.warning("비디오 프레임을 읽어오지 못했습니다.")
-        return None
-
-    global _VTG_MODEL, _VTG_PROCESSOR, _VTG_DEVICE
-
-    try:
-        import torch
-        from transformers import AutoModelForVision2Seq, AutoProcessor
-    except ImportError:
-        st.error(
-            "Temporal Grounding 모델을 사용하려면 `torch`와 `transformers`가 필요합니다. "
-            "`pip install torch transformers` 후 다시 시도하세요."
+def run_trace_temporal_grounding(
+    video_path: str,
+    query_text: str,
+    repo_root: str,
+    model_path: str,
+    device: str,
+    max_new_tokens: int,
+    num_frames: int,
+    conda_env: str,
+):
+    repo_abs = os.path.abspath(repo_root)
+    script_path = os.path.join(repo_abs, "scripts", "inference", "inference.py")
+    if not os.path.isfile(script_path):
+        raise FileNotFoundError(
+            f"TRACE inference.py를 찾을 수 없습니다: {script_path}"
         )
-        return None
+    video_abs = os.path.abspath(video_path)
+    if not os.path.isfile(video_abs):
+        raise FileNotFoundError(f"비디오 파일이 없습니다: {video_abs}")
+    model_abs = os.path.abspath(model_path) if model_path else None
+    if not model_abs:
+        model_abs = os.path.join(repo_abs, "trace-uni")
 
-    if _VTG_MODEL is None or _VTG_PROCESSOR is None:
+    run_id = hashlib.md5(
+        f"{video_abs}|{query_text}|{model_abs}|{device}|{max_new_tokens}|{num_frames}".encode(
+            "utf-8"
+        )
+    ).hexdigest()[:12]
+    output_dir = os.path.join(BASE_DIR, "outputs", "trace_results")
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, f"{run_id}.json")
+
+    cmd = (
+        "bash -lc "
+        "\"source ~/anaconda3/etc/profile.d/conda.sh && "
+        f"conda activate {shlex.quote(conda_env)} && "
+        f"python {shlex.quote(script_path)} "
+        f"--video_path {shlex.quote(video_abs)} "
+        f"--query {shlex.quote(query_text)} "
+        f"--model_path {shlex.quote(model_abs)} "
+        f"--device {shlex.quote(device)} "
+        f"--num_frames {int(num_frames)} "
+        f"--max_new_tokens {int(max_new_tokens)} "
+        f"--output {shlex.quote(output_path)}\""
+    )
+    code, out = run_command(cmd)
+    if code != 0:
+        raise RuntimeError(f"TRACE 추론 실패 (code={code}):\n{out}")
+    if not os.path.isfile(output_path):
+        raise RuntimeError("TRACE 추론 결과 파일을 찾을 수 없습니다.")
+    with open(output_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data
+
+
+TREE_NODE_STYLE_BLOCK = """
+<style>
+:root {
+  --tree-node-width: 192px;
+  --tree-node-image-width: 144px;
+  --tree-node-image-height: 80px;
+}
+.tree-container {
+  position: relative;
+  overflow: auto;
+  padding: 20px 28px 24px 160px;
+  background-color: #f8fafc;
+  border: 2px solid #4a90e2;
+  border-radius: 6px;
+}
+.tree-layout {
+  position: relative;
+  min-width: 100%;
+  min-height: 380px;
+}
+.tree-level-labels {
+  position: absolute;
+  top: 0;
+  left: -130px;
+  width: 110px;
+  pointer-events: none;
+}
+.tree-level-label {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4c5d78;
+  letter-spacing: 0.1px;
+}
+.tree-edges-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.tree-edges-overlay svg {
+  width: 100%;
+  height: 100%;
+}
+.tree-node {
+  position: absolute;
+  width: var(--tree-node-width);
+  transform: translate(-50%, 0);
+  font-size: 11px;
+  z-index: 2;
+}
+.tree-node-level-badge {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  font-size: 10px;
+  color: #6b7a99;
+  font-weight: 600;
+}
+.tree-node-box {
+  position: relative;
+  padding: 6px;
+  width: var(--tree-node-width);
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #c6d0e3;
+  box-shadow: 0 1px 4px rgba(15,32,77,0.15);
+  overflow: visible;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.tree-node-image {
+  width: var(--tree-node-image-width);
+  height: var(--tree-node-image-height);
+  object-fit: cover;
+  border: 1px solid #c0c6d4;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+.tree-node-tooltip {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  min-width: 240px;
+  max-width: 440px;
+  white-space: pre-wrap;
+  font-size: 10px;
+  border-radius: 4px;
+  word-break: break-word;
+}
+.tree-node-placeholder {
+  width: var(--tree-node-image-width);
+  height: var(--tree-node-image-height);
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  color: #666;
+  border-radius: 4px;
+  border: 1px dashed #ccc;
+}
+.tree-node-box.selected {
+  opacity: 1.0;
+  filter: none;
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.85);
+}
+.tree-node-box.dimmed {
+  opacity: 0.25;
+  filter: grayscale(0.9);
+}
+.tree-node-box:hover .tree-node-tooltip {
+  display: block;
+}
+.tree-node-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 0 rgba(0,0,0,0.1);
+  pointer-events: none;
+}
+.tree-node-box:hover {
+  transform: translateY(-2px);
+}
+</style>
+<script>
+(function() {
+  const STORAGE_KEY = "longvale_tree_scroll";
+  function attach() {
+    const container = document.querySelector(".tree-container");
+    if (!container) return;
+    const saved = window.localStorage.getItem(STORAGE_KEY);
+    if (saved !== null) {
+      const v = parseInt(saved, 10);
+      if (!Number.isNaN(v)) {
+        container.scrollTop = v;
+      }
+    }
+    container.addEventListener("scroll", function() {
+      try {
+        window.localStorage.setItem(STORAGE_KEY, String(container.scrollTop));
+      } catch (e) {
+        // ignore
+      }
+    }, { passive: true });
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", attach);
+  } else {
+    attach();
+  }
+})();
+</script>
+"""
+
+
+def ensure_tree_node_style():
+    """전체 Tree 노드 시각화를 위한 CSS 주입."""
+    st.markdown(TREE_NODE_STYLE_BLOCK, unsafe_allow_html=True)
+    # 매 rerun 시에도 스타일을 다시 주입해 트리가 깨지지 않도록 함.
+
+
+def render_tree_structure(
+    tree_data: dict,
+    video_id: str,
+    video_dir_path: str,
+    selected_event_id=None,
+    selected_time_range: tuple[float | None, float | None] | None = None,
+):
+    """
+    전체 Tree를 level(세로 축) 기준으로 썸네일 트리로 시각화.
+    각 노드는 첫 프레임 이미지이며 hover 시 정보를 보여줍니다.
+    Query 매치 노드는 강조 표시합니다.
+    """
+    video_path = os.path.join(video_dir_path, f"{video_id}.mp4")
+    if not os.path.isfile(video_path):
+        st.info(f"비디오 파일 없음: {video_path}")
+        return
+
+    video_duration = get_video_duration(video_path)
+
+    ensure_tree_node_style()
+
+    def _safe_level(value, default):
+        if value is None:
+            return default
         try:
-            _VTG_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-            _VTG_PROCESSOR = AutoProcessor.from_pretrained(
-                HF_VTG_MODEL_ID,
-                trust_remote_code=True,
-            )
-            _VTG_MODEL = AutoModelForVision2Seq.from_pretrained(
-                HF_VTG_MODEL_ID,
-                torch_dtype=torch.bfloat16 if torch.cuda.is_available() else torch.float32,
-                device_map="auto" if torch.cuda.is_available() else None,
-                trust_remote_code=True,
-            )
-            if not torch.cuda.is_available():
-                _VTG_MODEL.to(_VTG_DEVICE)
-        except Exception as e:
-            st.error(f"HuggingFace Temporal Grounding 모델 로드 중 오류가 발생했습니다: {e}")
-            return None
+            return int(value)
+        except (TypeError, ValueError):
+            return default
 
-    try:
-        prompt = (
-            "You are a video temporal grounding model. "
-            "Given the following video and a natural language query, "
-            "return only a JSON object with the start and end time (in seconds) "
-            "when the query is best grounded in the video. "
-            'Use the format: {\"start\": <float>, \"end\": <float>} with no extra text.\n\n'
-            f"Query: {query_text}"
+    nodes_by_id: dict[str, dict] = {}
+    edges: list[tuple[str, str]] = []
+    min_level = math.inf
+    max_level = -math.inf
+
+    def _build_node(node: dict, fallback_level: int, node_id: str, parent_id: str | None):
+        nonlocal min_level, max_level
+        level_val = _safe_level(node.get("level"), fallback_level)
+        min_level = min(min_level, level_val)
+        max_level = max(max_level, level_val)
+
+        start = float(node.get("start_time", 0.0) or 0.0)
+        end = float(node.get("end_time", 0.0) or 0.0)
+        post = node.get("postprocess") or {}
+        result = post.get("result") or {}
+        lod = result.get("LOD") or result.get("lod") or {}
+        tags = result.get("tags") or []
+        if not isinstance(tags, list):
+            tags = [str(tags)]
+        scene_topic = lod.get("scene_topic") if isinstance(lod, dict) else None
+        modalities = lod.get("modalities") if isinstance(lod, dict) else {}
+        modalities = modalities if isinstance(modalities, dict) else {}
+        node_event_id = result.get("event_id") or post.get("event_id")
+        scene_topic_text = (
+            scene_topic
+            if isinstance(scene_topic, str)
+            else (str(scene_topic) if scene_topic else None)
         )
-
-        inputs = _VTG_PROCESSOR(
-            videos=[frames],
-            text=[prompt],
-            return_tensors="pt",
+        label_text = (
+            scene_topic_text
+            or node.get("summary")
+            or node.get("caption")
+            or "-"
         )
+        if not isinstance(label_text, str):
+            label_text = str(label_text)
 
-        if _VTG_DEVICE:
-            inputs = {k: v.to(_VTG_DEVICE) for k, v in inputs.items()}
-
-        with torch.no_grad():
-            output_ids = _VTG_MODEL.generate(
-                **inputs,
-                max_new_tokens=64,
-                do_sample=False,
-            )
-
-        output_text = _VTG_PROCESSOR.batch_decode(
-            output_ids, skip_special_tokens=True
-        )[0]
-    except Exception as e:
-        st.error(f"HuggingFace Temporal Grounding 추론 중 오류가 발생했습니다: {e}")
-        return None
-
-    parsed = _parse_temporal_json(output_text, duration)
-    if not parsed:
-        st.warning(
-            "Temporal Grounding 모델 출력에서 구간을 파싱하지 못했습니다. "
-            "기본값 0~5초 구간을 사용합니다."
-        )
-        default_end = min(duration, 5.0)
-        return 0.0, default_end
-
-    return parsed
-
-
-def _node_tooltip_text(node: dict) -> str:
-    # caption이 우선, 없으면 postprocess LOD summary 사용
-    if node.get("caption"):
-        return node["caption"]
-    lod = node.get("postprocess", {}).get("result", {}).get("LOD", {})
-    return lod.get("summary") or lod.get("scene_topic") or ""
-
-
-def _build_graph_from_tree(tree_root: dict, video_path: str) -> graphviz.Digraph:
-    """트리 JSON을 Graphviz 트리로 변환 (레벨별 가로 정렬, 부모-자식 연결)."""
-    g = graphviz.Digraph(format="svg")
-    g.attr(rankdir="TB", splines="ortho")
-    g.attr("node", shape="box", style="rounded")
-
-    level_nodes: dict[int, list[str]] = {}
-    counter = {"n": 0}
-
-    def walk(node: dict, parent_id: str | None):
-        counter["n"] += 1
-        node_id = f"n{counter['n']}"
-        level = int(node.get("level", 0))
-        start_time = float(node.get("start_time", 0.0))
-        end_time = float(node.get("end_time", start_time))
-        tooltip = _node_tooltip_text(node)
-    img_path = _mid_frame_capture(video_path, start_time, end_time)
-
-    node_kwargs = {
-        "tooltip": tooltip,
-        "imagescale": "true",
-        "fixedsize": "true",
-        # 노드 크기를 줄여 전체 트리가 잘 보이도록 조정
-        "height": "0.9",
-        "width": "1.4",
-        }
-        if img_path:
-            node_kwargs.update({"label": "", "image": img_path})
+        # 구간의 중앙 프레임 사용
+        if end > start:
+            frame_time = (start + end) / 2.0
         else:
-            node_kwargs.update(
-                {
-                    "label": f"{start_time:.1f}-{end_time:.1f}",
-                    "style": "filled,rounded",
-                    "fillcolor": "#f5f5f5",
-                }
+            frame_time = start
+        if video_duration is not None:
+            frame_time = max(0.0, min(frame_time, max(video_duration - 0.1, 0.0)))
+
+        frame_b64 = get_frame_b64_cached(video_path, video_id, frame_time)
+        tags_text = ", ".join(str(t) for t in tags if t) if tags else "-"
+        tooltip_parts = [
+            f"<strong>Level</strong>: L{level_val}",
+            f"<strong>구간</strong>: {start:.1f}–{end:.1f}s",
+            f"<strong>scene_topic</strong>: {html_module.escape(scene_topic_text or '-')}",
+            f"<strong>tags</strong>: {html_module.escape(tags_text)}",
+        ]
+        if node_event_id is not None:
+            tooltip_parts.append(f"<strong>event_id</strong>: {html_module.escape(str(node_event_id))}")
+        if isinstance(modalities, dict):
+            for key in ["visual", "audio", "speech"]:
+                if modalities.get(key):
+                    tooltip_parts.append(
+                        f"<strong>{key}</strong>: {html_module.escape(str(modalities[key]))}"
+                    )
+        tooltip_html = "<br/>".join(tooltip_parts)
+
+        children = node.get("children") or []
+        filtered_children = [c for c in children if isinstance(c, dict)]
+        filtered_children.sort(key=lambda c: c.get("start_time", 0.0) or 0.0)
+
+        node_info = {
+            "id": node_id,
+            "parent_id": parent_id,
+            "level": level_val,
+            "start": start,
+            "end": end,
+            "event_id": node_event_id,
+            "label": label_text,
+            "tooltip": tooltip_html,
+            "frame_b64": frame_b64,
+            "children": [],
+        }
+        nodes_by_id[node_id] = node_info
+
+        for idx, child in enumerate(filtered_children):
+            child_id = f"{node_id}.{idx}"
+            node_info["children"].append(child_id)
+            edges.append((node_id, child_id))
+            _build_node(child, level_val + 1, child_id, node_id)
+
+    root_level = _safe_level(tree_data.get("level"), 0)
+    _build_node(tree_data, root_level, "0", None)
+
+    if not nodes_by_id:
+        st.info("Tree 노드가 없습니다.")
+        return
+
+    def _assign_positions(node_id: str):
+        node = nodes_by_id[node_id]
+        children = node.get("children", [])
+        if not children:
+            idx = _assign_positions.counter
+            node["x_index"] = idx
+            _assign_positions.counter += 1
+            return idx
+        positions = []
+        for child_id in children:
+            positions.append(_assign_positions(child_id))
+        node["x_index"] = sum(positions) / len(positions)
+        return node["x_index"]
+
+    _assign_positions.counter = 0
+    _assign_positions("0")
+    max_x_index = max((node.get("x_index", 0.0) for node in nodes_by_id.values()), default=0.0)
+
+    horizontal_spacing = 220
+    vertical_spacing = 160
+    padding_x = 90
+    padding_y = 60
+    level_label_width = 90
+    level_span = max(1, int(max_level - min_level + 1)) if math.isfinite(min_level) else 1
+
+    layout_width = int(
+        padding_x * 2 + level_label_width + (max_x_index + 1) * horizontal_spacing
+    )
+    layout_height = int(padding_y * 2 + level_span * vertical_spacing)
+    container_height = max(420, min(900, layout_height + 80))
+    iframe_height = min(1200, container_height + 150)
+
+    selected_event_str = str(selected_event_id) if selected_event_id is not None else None
+    highlight_node_id: str | None = None
+    if selected_event_str is not None:
+        for node_id, node in nodes_by_id.items():
+            node_event = node.get("event_id")
+            if node_event is not None and str(node_event) == selected_event_str:
+                highlight_node_id = node_id
+                break
+
+    def _best_range_match():
+        sel_range = selected_time_range
+        if not sel_range:
+            return None
+        sel_start, sel_end = sel_range
+        if sel_start is None or sel_end is None:
+            return None
+        sel_start = float(sel_start)
+        sel_end = float(sel_end)
+        if sel_end <= sel_start:
+            return None
+        best_score = 0.0
+        best_id = None
+        for node_id, node in nodes_by_id.items():
+            node_start = float(node.get("start", 0.0) or 0.0)
+            node_end = float(node.get("end", 0.0) or 0.0)
+            if node_end <= node_start:
+                continue
+            overlap = max(0.0, min(node_end, sel_end) - max(node_start, sel_start))
+            if overlap <= 0.0:
+                continue
+            union = (sel_end - sel_start) + (node_end - node_start) - overlap
+            if union <= 0.0:
+                continue
+            iou = overlap / union
+            if iou > best_score:
+                best_score = iou
+                best_id = node_id
+        return best_id if best_score > 0 else None
+
+    if highlight_node_id is None:
+        highlight_node_id = _best_range_match()
+    nodes_html_parts: list[str] = []
+    for node_info in sorted(
+        nodes_by_id.values(), key=lambda n: (n["level"], n.get("x_index", 0.0))
+    ):
+        level_val = node_info["level"]
+        level_offset = level_val - min_level if math.isfinite(min_level) else level_val
+        top_px = padding_y + level_offset * vertical_spacing
+        left_px = (
+            padding_x
+            + level_label_width
+            + node_info.get("x_index", 0.0) * horizontal_spacing
+        )
+        label_text = html_module.escape((node_info["label"] or "-")[:60])
+        range_text = f"{node_info['start']:.1f}–{node_info['end']:.1f}s"
+        tooltip_html = node_info["tooltip"]
+        frame_b64 = node_info.get("frame_b64")
+        if frame_b64:
+            img_html = f'<img src="data:image/jpeg;base64,{frame_b64}" class="tree-node-image" />'
+        else:
+            img_html = '<div class="tree-node-placeholder">No Frame</div>'
+
+        is_highlight = highlight_node_id is not None and node_info["id"] == highlight_node_id
+        classes = ["tree-node-box"]
+        if highlight_node_id is not None and not is_highlight:
+            classes.append("dimmed")
+        if is_highlight:
+            classes.append("selected")
+
+        node_html = f"""
+<div class="tree-node" data-node-id="{node_info['id']}" style="top:{top_px}px; left:{left_px}px;">
+  <div class="tree-node-level-badge">L{max(level_offset, 0)}</div>
+  <div class="{' '.join(classes)}">
+    {img_html}
+    <div class="tree-node-tooltip">{tooltip_html}</div>
+  </div>
+</div>
+        """
+        nodes_html_parts.append(node_html)
+
+    level_labels_html: list[str] = []
+    if math.isfinite(min_level) and math.isfinite(max_level):
+        for offset, level_val in enumerate(range(int(min_level), int(max_level) + 1)):
+            top_px = padding_y + (level_val - min_level) * vertical_spacing
+            level_labels_html.append(
+                f'<div class="tree-level-label" style="top:{top_px}px;">L{offset}</div>'
             )
 
-        g.node(node_id, **node_kwargs)
-        if parent_id:
-            g.edge(parent_id, node_id)
+    edges_json = json.dumps(edges)
+    container_id = f"tree-container-{video_id}-{int(time.time()*1000)}"
+    html_template = Template(
+        """
+$style_block
+<div id="$cid" class="tree-container" style="height: ${container_height}px;">
+  <div class="tree-layout" style="width: ${layout_width}px; height: ${layout_height}px;">
+    <div class="tree-level-labels">$level_labels</div>
+    <div class="tree-edges-overlay"><svg></svg></div>
+    $nodes
+  </div>
+</div>
+<script>
+(() => {
+  const edges = $edges;
+  const container = document.getElementById("$cid");
+  if (!container) return;
+  const layout = container.querySelector('.tree-layout');
+  if (!layout) return;
+  const svg = layout.querySelector('.tree-edges-overlay svg');
+  if (!svg) return;
 
-        level_nodes.setdefault(level, []).append(node_id)
-        for child in node.get("children", []):
-            walk(child, node_id)
+  const draw = () => {
+    const layoutRect = layout.getBoundingClientRect();
+    const nodes = {};
+    layout.querySelectorAll('[data-node-id]').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      nodes[el.dataset.nodeId] = {
+        x: rect.left + rect.width / 2 - layoutRect.left,
+        yTop: rect.top - layoutRect.top,
+        yBottom: rect.bottom - layoutRect.top
+      };
+    });
+    svg.setAttribute('width', layoutRect.width);
+    svg.setAttribute('height', layoutRect.height);
+    svg.setAttribute('viewBox', '0 0 ' + layoutRect.width + ' ' + layoutRect.height);
+    while (svg.firstChild) {
+      svg.removeChild(svg.firstChild);
+    }
+    edges.forEach(([p, c]) => {
+      const parent = nodes[p];
+      const child = nodes[c];
+      if (!parent || !child) return;
+      const midY = (parent.yBottom + child.yTop) / 2;
+      const d = 'M ' + parent.x + ' ' + parent.yBottom +
+                ' C ' + parent.x + ' ' + midY + ', ' +
+                child.x + ' ' + midY + ', ' +
+                child.x + ' ' + child.yTop;
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', d);
+      path.setAttribute('stroke', '#93a6c7');
+      path.setAttribute('stroke-width', '1');
+      path.setAttribute('fill', 'none');
+      svg.appendChild(path);
+    });
+  };
 
-    walk(tree_root, None)
+  requestAnimationFrame(draw);
+  const ro = new ResizeObserver(draw);
+  ro.observe(layout);
+  container.addEventListener('scroll', draw, { passive: true });
+})();
+</script>
+"""
+    )
 
-    # 같은 level을 같은 rank로 맞춰 가로 정렬
-    for level, nodes in sorted(level_nodes.items(), key=lambda x: x[0]):
-        with g.subgraph(name=f"rank_{level}") as sub:
-            sub.attr(rank="same")
-            for nid in nodes:
-                sub.node(nid)
-    return g
+    html_output = html_template.substitute(
+        cid=container_id,
+        nodes="".join(nodes_html_parts),
+        edges=edges_json,
+        container_height=int(container_height),
+        layout_width=int(layout_width),
+        layout_height=int(layout_height),
+        level_labels="".join(level_labels_html),
+        style_block=TREE_NODE_STYLE_BLOCK,
+    )
+
+    components.html(html_output, height=iframe_height, scrolling=True)
 
 
-def render_tree_view(tree_json_path: str, video_dir: str):
-    if not os.path.isfile(tree_json_path):
-        st.warning(f"트리 JSON을 찾을 수 없습니다: {tree_json_path}")
+def show_tree_step_visual(video_json_path: str, video_dir_path: str, container):
+    if not os.path.isfile(video_json_path):
+        with container:
+            st.info(f"Postprocess JSON을 찾을 수 없습니다: {video_json_path}")
         return
-    with open(tree_json_path, "r") as f:
+
+    with open(video_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # postprocess 결과 형식: {"video_id": "...", "tree": {...}}
-    if "tree" in data:
-        video_id = data.get("video_id") or Path(tree_json_path).stem
-        tree_root = data["tree"]
+    video_id = data.get("video_id")
+    tree_data = data.get("tree")
+    if not video_id or not tree_data:
+        with container:
+            st.info("video_id 또는 tree 정보가 없습니다.")
+        return
+
+    video_path = os.path.join(video_dir_path, f"{video_id}.mp4")
+    segments = flatten_tree_segments(tree_data)
+    leaf_segments = [s for s in segments if s["is_leaf"]]
+    if not leaf_segments:
+        with container:
+            st.info("Tree leaf segment가 없습니다.")
+        return
+
+    with container:
+        options = {
+            f"L{s['level']} | {s['start']:.1f}–{s['end']:.1f}s | {s['summary'][:40]}": idx
+            for idx, s in enumerate(leaf_segments)
+        }
+        label = st.selectbox("1단계 구간 선택 (leaf)", list(options.keys()))
+        selected = leaf_segments[options[label]]
+
+        col_video, col_info = st.columns([2, 3])
+        with col_video:
+            if os.path.isfile(video_path):
+                st.video(video_path, start_time=int(selected["start"]))
+            else:
+                st.info(f"비디오 파일 없음: {video_path}")
+
+        with col_info:
+            st.markdown("**선택 노드 Level 및 Caption**")
+            st.write(f"Level: L{selected['level']}")
+            st.write(selected["summary"])
+
+            st.markdown("**선택 구간 Node JSON**")
+            st.json(selected["node"])
+
+        st.markdown("**전체 Tree 구조 (노드 뷰)**")
+        render_tree_structure(tree_data, video_id, video_dir_path)
+
+
+def show_query_step_visual(video_json_path: str, query_json_path: str, video_dir_path: str, container):
+    if not os.path.isfile(video_json_path):
+        with container:
+            st.info(f"Postprocess JSON을 찾을 수 없습니다: {video_json_path}")
+        return
+    if not os.path.isfile(query_json_path):
+        with container:
+            st.info(f"Query JSON을 찾을 수 없습니다: {query_json_path}")
+        return
+
+    with open(video_json_path, "r", encoding="utf-8") as f:
+        tree_data_all = json.load(f)
+    with open(query_json_path, "r", encoding="utf-8") as f:
+        q = json.load(f)
+
+    video_id = tree_data_all.get("video_id")
+    tree_data = tree_data_all.get("tree")
+    if not video_id or not tree_data:
+        with container:
+            st.info("video_id 또는 tree 정보가 없습니다.")
+        return
+
+    video_path = os.path.join(video_dir_path, f"{video_id}.mp4")
+
+    matches = q.get("matches", [])
+    if not matches:
+        with container:
+            st.info("Query 매치 결과가 없습니다.")
+        return
+
+    segments = collect_tree_segments_with_event(tree_data)
+
+    with container:
+        options = {
+            f"[score={m.get('score',0):.3f}] {m.get('start_time',0):.1f}–{m.get('end_time',0):.1f}s | {(m.get('scene_topic') or m.get('summary',''))[:40]}": idx
+            for idx, m in enumerate(matches)
+        }
+        label = st.selectbox("Query 결과 구간 선택", list(options.keys()))
+        selected = matches[options[label]]
+        event_id = selected.get("event_id")
+
+        # 선택된 event_id에 해당하는 Tree 노드 level 찾기
+        selected_level = None
+        if event_id is not None:
+            for seg in segments:
+                if seg["event_id"] == event_id:
+                    selected_level = seg["level"]
+                    break
+
+        col_video, col_json = st.columns([2, 3])
+        with col_video:
+            if os.path.isfile(video_path):
+                st.video(video_path, start_time=int(selected.get("start_time", 0)))
+            else:
+                st.info(f"비디오 파일 없음: {video_path}")
+
+        with col_json:
+            st.markdown("**선택된 Query match 정보**")
+            if selected_level is not None:
+                st.write(f"Level: L{selected_level}")
+            st.write(selected.get("summary", ""))
+
+            st.markdown("**선택된 Query match JSON**")
+            st.json(selected)
+
+        st.markdown("**전체 Tree 구조 (Query 매치 하이라이트)**")
+        selected_range = (
+            float(selected.get("start_time", 0.0)) if selected.get("start_time") is not None else None,
+            float(selected.get("end_time", 0.0)) if selected.get("end_time") is not None else None,
+        )
+        render_tree_structure(
+            tree_data,
+            video_id,
+            video_dir_path,
+            selected_event_id=event_id,
+            selected_time_range=selected_range,
+        )
+
+
+tab_video, tab_tree, tab_query, tab_compare = st.tabs(
+    [
+        "0. 비디오 선택/미리보기",
+        "1. Tree 생성 (Feature 포함)",
+        "2. Query 검색",
+        "3. Query 비교 (TRACE)"
+    ]
+)
+
+with tab_video:
+    st.markdown(
+        "### 0단계: 비디오 선택 및 미리보기\n"
+        "- VIDEO_DIR 안의 mp4 파일 중에서 하나를 선택해 미리 재생합니다.\n"
+        "- 선택한 video_id는 1단계/2단계에서 기본값으로 사용됩니다."
+    )
+    available_videos = list_video_files(video_dir)
+    if available_videos:
+        selected_video_name = st.selectbox(
+            "비디오 선택 (mp4 파일명)",
+            available_videos,
+            key="video_select_tab0",
+        )
+        if selected_video_name:
+            selected_video_id = os.path.splitext(selected_video_name)[0]
+            st.session_state["selected_video_id"] = selected_video_id
+            video_path = os.path.join(video_dir, selected_video_name)
+            if os.path.isfile(video_path):
+                st.video(video_path)
+            else:
+                st.info(f"비디오 파일을 찾을 수 없습니다: {video_path}")
     else:
-        # tree 단계 형식: {video_id: tree}
-        video_id, tree_root = next(iter(data.items()))
+        st.info(f"VIDEO_DIR 경로에 mp4 파일이 없습니다: {video_dir}")
 
-    video_path = os.path.join(video_dir, f"{video_id}.mp4")
-    graph = _build_graph_from_tree(tree_root, video_path)
-    tree_view_area.graphviz_chart(graph, use_container_width=True)
-
-
-def show_tree_preview(path):
-    if not os.path.isfile(path):
-        tree_preview_area.info(f"Tree 파일을 찾을 수 없습니다: {path}")
-        return
-    with open(path, "r") as f:
-        data = json.load(f)
-    if not data:
-        tree_preview_area.info("Tree 파일이 비어 있습니다.")
-        return
-    first_video_id = next(iter(data))
-    tree_preview_area.markdown(f"**[1] Event Tree 미리보기 - video_id: {first_video_id}**")
-    tree_preview_area.json(data[first_video_id])
-
-
-def show_caption_preview(path):
-    if not os.path.isfile(path):
-        caption_preview_area.info(f"캡션이 포함된 Tree 파일이 없습니다: {path}")
-        return
-    with open(path, "r") as f:
-        data = json.load(f)
-    if not data:
-        caption_preview_area.info("캡션이 포함된 Tree 데이터가 비어 있습니다.")
-        return
-    first_video_id = next(iter(data))
-    caption_preview_area.markdown(f"**[2] Caption 미리보기 - video_id: {first_video_id}**")
-    caption_preview_area.json(data[first_video_id])
-
-
-def show_summary_preview(path):
-    if not os.path.isfile(path):
-        summary_preview_area.info(f"Summary가 저장된 Tree 파일이 없습니다: {path}")
-        return
-    with open(path, "r") as f:
-        data = json.load(f)
-    if not data:
-        summary_preview_area.info("Summary 데이터가 비어 있습니다.")
-        return
-    first_video_id = next(iter(data))
-    summary_preview_area.markdown(f"**[3] Summary 미리보기 - video_id: {first_video_id}**")
-    summary_preview_area.json(data[first_video_id])
-
-
-def show_postprocess_preview(output_dir):
-    if not os.path.isdir(output_dir):
-        post_preview_area.info(f"Postprocess 출력 디렉토리를 찾을 수 없습니다: {output_dir}")
-        return
-    json_files = [f for f in os.listdir(output_dir) if f.endswith(".json")]
-    if not json_files:
-        post_preview_area.info("Postprocess 결과 JSON 파일이 없습니다.")
-        return
-    first_file = sorted(json_files)[0]
-    first_path = os.path.join(output_dir, first_file)
-    with open(first_path, "r") as f:
-        data = json.load(f)
-    post_preview_area.markdown(f"**[4] Postprocess 미리보기 - {first_file}**")
-    post_preview_area.json(data)
-
-def show_query_preview(output_dir):
-    output_dir = os.path.dirname(output_dir)
-    if not os.path.isdir(output_dir):
-        post_preview_area.info(f"query 출력 디렉토리를 찾을 수 없습니다: {output_dir}")
-        return
-    json_files = [f for f in os.listdir(output_dir) if f.endswith(".json")]
-    if not json_files:
-        post_preview_area.info("query 결과 JSON 파일이 없습니다.")
-        return
-    first_file = sorted(json_files)[0]
-    first_path = os.path.join(output_dir, first_file)
-    with open(first_path, "r") as f:
-        data = json.load(f)
-    post_preview_area.markdown(f"**[5] query 미리보기 - {first_file}**")
-    post_preview_area.json(data)
-
-if st.button("선택한 단계 실행"):
-    st.session_state.log_text = ""
-    log_area.text("")
-
-    # 1. Event tree 생성
-    if run_tree:
-        append_log("[1] Event Tree 생성 시작...")
-        cmd = (
-            "python src/eventtree/tree/tree.py "
-            f"--data_path {data_path} "
-            f"--video_feat_folder {tree_v_feat} "
-            f"--audio_feat_folder {tree_a_feat} "
-            f"--speech_feat_folder {tree_s_feat} "
-            f"--save_path {tree_save_path}"
-        )
-        code, out = run_command(cmd)
-        append_log(f"$ {cmd}\n{out}")
-        append_log(f"[1] 종료 코드: {code}")
-        if code == 0:
-            show_tree_preview(tree_save_path)
-
-    # 2. Caption 생성
-    if run_caption:
-        append_log("[2] Caption 생성 시작...")
-        env = {"CUDA_VISIBLE_DEVICES": gpu_id}
-        cmd = (
-            "python src/eventtree/caption_longvale.py "
-            f"--tree_path {tree_save_path} "
-            f"--prompt_path {prompt_path} "
-            f"--save_path {tree_save_path} "
-            f"--video_feat_folder {model_v_feat} "
-            f"--audio_feat_folder {model_a_feat} "
-            f"--asr_feat_folder {model_s_feat} "
-            f"--model_base {model_base} "
-            f"--stage2 {model_stage2} "
-            f"--stage3 {model_stage3} "
-            f"--pretrain_mm_mlp_adapter {model_mm_mlp} "
-            "--similarity_threshold 0.9"
-        )
-        code, out = run_command(cmd, env=env)
-        append_log(f"$ CUDA_VISIBLE_DEVICES={gpu_id} {cmd}\n{out}")
-        append_log(f"[2] 종료 코드: {code}")
-        if code == 0:
-            show_caption_preview(tree_save_path)
-
-    # 3. Summary 생성 (eventtree-post 환경)
-    if run_summary:
-        append_log("[3] Summary 생성 시작 (conda env: eventtree-post)...")
-        cmd = (
-            "bash -lc "
-            "\"source ~/anaconda3/etc/profile.d/conda.sh && "
-            "conda activate eventtree-post && "
-            f"HF_TOKEN={hf_token} "
-            f"CUDA_VISIBLE_DEVICES={gpu_id} "
-            "python src/eventtree/summary_llama3.py "
-            f"--tree_path {tree_save_path} "
-            f"--prompt_path {prompt_path} "
-            f"--save_path {tree_save_path}\""
-        )
-        code, out = run_command(cmd)
-        append_log(f"$ {cmd}\n{out}")
-        append_log(f"[3] 종료 코드: {code}")
-        if code == 0:
-            show_summary_preview(tree_save_path)
-
-    # 4. Postprocess (eventtree-post 환경)
-    if run_postprocess:
-        append_log("[4] Postprocess 시작 (conda env: eventtree-post)...")
-        os.makedirs(os.path.dirname(post_save_dir), exist_ok=True)
-        os.makedirs(os.path.dirname(debug_path), exist_ok=True)
-        cmd = (
-            "bash -lc "
-            "\"source ~/anaconda3/etc/profile.d/conda.sh && "
-            "conda activate eventtree-post && "
-            f"HUGGINGFACE_HUB_TOKEN={hf_token} "
-            f"CUDA_VISIBLE_DEVICES={gpu_id} "
-            "python src/postprocess/postprocess.py "
-            f'--input \\"{tree_save_path}\\" '
-            f'--output-dir \\"{post_save_dir}\\" '
-            f'--speech-json-dir \\"{speech_asr_dir}\\" '
-            f'--not-json-dir \\"{debug_path}\\"\"'
-        )
-             
-        code, out = run_command(cmd)
-        append_log(f"$ {cmd}\n{out}")
-        append_log(f"[4] 종료 코드: {code}")
-        if code == 0:
-            show_postprocess_preview(post_save_dir)
-            
-    # 5. Query (eventtree-post 환경)
-    if query_process:
-        append_log("[5] Query 시작 (conda env: eventtree-post)...")
-        os.makedirs(os.path.dirname(query_save_dir), exist_ok=True)
-        cmd = (
-            "bash -lc "
-            "\"source ~/anaconda3/etc/profile.d/conda.sh && "
-            "conda activate eventtree-post && "
-            f"CUDA_VISIBLE_DEVICES={gpu_id} "
-            "python src/query/search_queries.py "
-            f'--input \\"{video_json}\\" '
-            f'--query \\"{query_str}\\" '
-            f'--mode \\"{mode}\\" '
-            f'--output \\"{query_save_dir}\\"\"'
-        )
-             
-        code, out = run_command(cmd)
-        append_log(f"$ {cmd}\n{out}")
-        append_log(f"[5] 종료 코드: {code}")
-        if code == 0:
-            show_query_preview(query_save_dir)
-
-    append_log("선택한 단계 실행이 모두 완료되었습니다.")
-
-
-st.markdown("---")
-tab_tree, tab_compare = st.tabs(["트리 구조(노드 뷰)", "Query 결과 비교"])
 
 with tab_tree:
-    st.markdown("### 트리 구조(노드 뷰)")
-
-    tree_view_json = st.text_input(
-        "트리 JSON 경로 (postprocess 또는 tree 결과)",
-        video_json,
-        key="tree_view_json",
-    )
-    video_raw_dir = st.text_input(
-        "원본 비디오 디렉터리 (video_id.mp4가 위치한 경로)",
-        "./data/raw_data/video",
-        key="video_raw_dir",
+    st.markdown(
+        "### 1단계: Feature Extraction + Tree 전체 파이프라인\n"
+        "- Feature가 이미 존재하면 재계산하지 않습니다.\n"
+        "- 순서: features_tree.sh → features_longvale.sh → tree.py → caption_longvale.py → summary_llama3.py → postprocess.py"
     )
 
-    if st.button("트리 시각화 갱신"):
-        try:
-            render_tree_view(tree_view_json, video_raw_dir)
-        except Exception as e:
-            st.error(f"트리 시각화 중 오류가 발생했습니다: {e}")
+    selected_video_id = st.session_state.get("selected_video_id")
+    if selected_video_id:
+        st.info(f"현재 선택된 비디오 ID: {selected_video_id}")
+    else:
+        st.warning("0단계에서 비디오를 먼저 선택해야 1단계를 실행할 수 있습니다.")
+
+    tree_vis_container = st.container()
+
+    # 1단계 실행 플로우에서 사용하는 상태 코드 기본값
+    code = 0
+    run_clicked = st.button("1단계 실행")
+    if run_clicked:
+        st.session_state.log_text = ""
+        log_area.text("")
+
+        code = 0
+
+        # 1) 선택된 비디오 ID 확인
+        selected_video_id = st.session_state.get("selected_video_id")
+        if not selected_video_id:
+            append_log("0단계에서 비디오를 먼저 선택하세요.")
+            code = -1
+        else:
+            # 2) 비디오 duration 계산 후, 임시 annotation JSON 생성
+            video_path = os.path.join(video_dir, f"{selected_video_id}.mp4")
+            if not os.path.isfile(video_path):
+                append_log(f"선택된 비디오 파일을 찾을 수 없습니다: {video_path}")
+                code = -1
+            else:
+                duration = get_video_duration(video_path)
+                if duration is None:
+                    append_log(f"비디오 duration을 계산하지 못했습니다: {video_path}")
+                    code = -1
+                else:
+                    tmp_anno_dir = os.path.join(BASE_DIR, "outputs", "tmp_annotation")
+                    os.makedirs(tmp_anno_dir, exist_ok=True)
+                    data_path = os.path.join(
+                        tmp_anno_dir, f"{selected_video_id}_annotation.json"
+                    )
+                    with open(data_path, "w", encoding="utf-8") as f:
+                        json.dump(
+                            {selected_video_id: {"duration": duration}},
+                            f,
+                            ensure_ascii=False,
+                            indent=2,
+                        )
+                    append_log(
+                        f"임시 annotation 생성: {data_path} (duration={duration:.2f}s)"
+                    )
+
+        if run_clicked and code == 0:
+            step_start = time.time()
+            code = ensure_tree_features(
+                tree_v_feat,
+                tree_a_feat,
+                tree_s_feat,
+                video_id=selected_video_id,
+                annotation_path=data_path,
+                video_dir_path=video_dir,
+                audio_dir_path=audio_dir,
+                gpu_id_value=gpu_id,
+                checkpoint_dir_path=checkpoint_dir,
+            )
+            if code != 0:
+                append_log(
+                    f"Tree feature 추출 실패로 1단계를 중단합니다. (경과 {time.time() - step_start:.1f}초)"
+                )
+
+        if run_clicked and code == 0:
+            step_start = time.time()
+            code = ensure_model_features(
+                model_v_feat,
+                model_a_feat,
+                model_s_feat,
+                speech_asr_dir,
+                video_id=selected_video_id,
+                annotation_path=data_path,
+                video_dir_path=video_dir,
+                audio_dir_path=audio_dir,
+                gpu_id_value=gpu_id,
+                checkpoint_dir_path=checkpoint_dir,
+            )
+            if code != 0:
+                append_log(
+                    f"Model feature 추출 실패로 1단계를 중단합니다. (경과 {time.time() - step_start:.1f}초)"
+                )
+
+        if run_clicked and code == 0:
+            if code == 0:
+                effective_tree_path = os.path.join(
+                    tree_save_dir, f"{selected_video_id}.json"
+                )
+                if not os.path.isfile(effective_tree_path):
+                    append_log(
+                        f"Tree 결과 파일을 찾을 수 없습니다: {effective_tree_path}"
+                    )
+                    code = -1
+            append_log("[1] Event Tree 생성 시작...")
+            step_start = time.time()
+            cmd = (
+                "python src/eventtree/tree/tree.py "
+                f"--data_path {data_path} "
+                f"--video_feat_folder {tree_v_feat} "
+                f"--audio_feat_folder {tree_a_feat} "
+                f"--speech_feat_folder {tree_s_feat} "
+                f"--save_path {effective_tree_path} "
+            )
+
+            code, out = run_command(cmd)
+            append_log(f"$ {cmd}\n{out}")
+            append_log(
+                f"[1] 종료 코드: {code} (경과 {time.time() - step_start:.1f}초)"
+            )
+
+        if run_clicked and code == 0:
+            append_log("[2] Caption 생성 시작...")
+            env = {"CUDA_VISIBLE_DEVICES": gpu_id}
+            resolved_model_base = resolve_path(model_base)
+            resolved_model_stage2 = resolve_path(model_stage2)
+            resolved_model_stage3 = resolve_path(model_stage3)
+            resolved_model_mm_mlp = resolve_path(model_mm_mlp)
+            cmd = (
+                "python src/eventtree/caption_longvale.py "
+                f"--tree_path {effective_tree_path} "
+                f"--prompt_path {prompt_path} "
+                f"--save_path {effective_tree_path} "
+                f"--video_feat_folder {model_v_feat} "
+                f"--audio_feat_folder {model_a_feat} "
+                f"--asr_feat_folder {model_s_feat} "
+                f"--model_base {resolved_model_base} "
+                f"--stage2 {resolved_model_stage2} "
+                f"--stage3 {resolved_model_stage3} "
+                f"--pretrain_mm_mlp_adapter {resolved_model_mm_mlp} "
+                f"--similarity_threshold {caption_similarity_threshold}"
+            )
+            step_start = time.time()
+            code, out = run_command(cmd, env=env)
+            append_log(f"$ CUDA_VISIBLE_DEVICES={gpu_id} {cmd}\n{out}")
+            append_log(
+                f"[2] 종료 코드: {code} (경과 {time.time() - step_start:.1f}초)"
+            )
+
+        if run_clicked and code == 0:
+            append_log("[3] Summary 생성 시작 (conda env: eventtree-post)...")
+            cmd = (
+                "bash -lc "
+                "\"source ~/anaconda3/etc/profile.d/conda.sh && "
+                "conda activate eventtree-post && "
+                f"HF_TOKEN={hf_token} "
+                f"CUDA_VISIBLE_DEVICES={gpu_id} "
+                "python src/eventtree/summary_llama3.py "
+                f"--tree_path {effective_tree_path} "
+                f"--prompt_path {prompt_path} "
+                f"--save_path {effective_tree_path}\""
+            )
+            step_start = time.time()
+            code, out = run_command(cmd)
+            append_log(f"$ {cmd}\n{out}")
+            append_log(
+                f"[3] 종료 코드: {code} (경과 {time.time() - step_start:.1f}초)"
+            )
+
+        if run_clicked and code == 0:
+            append_log("[4] Postprocess 시작 (conda env: eventtree-post)...")
+            os.makedirs(os.path.dirname(post_save_dir), exist_ok=True)
+            os.makedirs(os.path.dirname(debug_path), exist_ok=True)
+            cmd = (
+                "bash -lc "
+                "\"source ~/anaconda3/etc/profile.d/conda.sh && "
+                "conda activate eventtree-post && "
+                f"HUGGINGFACE_HUB_TOKEN={hf_token} "
+                f"CUDA_VISIBLE_DEVICES={gpu_id} "
+                "python src/postprocess/postprocess.py "
+                f'--input \\"{effective_tree_path}\\" '
+                f'--output-dir \\"{post_save_dir}\\" '
+                f'--speech-json-dir \\"{speech_asr_dir}\\" '
+                f'--merge-threshold {tree_merge_threshold} '
+                f'--not-json-dir \\"{debug_path}\\"\"'
+            )
+            step_start = time.time()
+            code, out = run_command(cmd)
+            append_log(f"$ {cmd}\n{out}")
+            append_log(
+                f"[4] 종료 코드: {code} (경과 {time.time() - step_start:.1f}초)"
+            )
+
+        if run_clicked and code == 0:
+            append_log("1단계 전체 파이프라인이 완료되었습니다.")
+
+    # 1단계 실행 여부와 관계없이, 현재 존재하는 Postprocess 결과를 항상 시각화
+    json_files = list_postprocess_jsons(post_save_dir)
+    if json_files:
+        labels = [os.path.basename(p) for p in json_files]
+
+        # Streamlit selectbox에서 기본 선택을 사용자가 선택한 video_id로 맞추기
+        default_index = 0
+        current_video_id = st.session_state.get("selected_video_id")
+        if current_video_id is not None:
+            for i, lbl in enumerate(labels):
+                if os.path.splitext(lbl)[0] == str(current_video_id):
+                    default_index = i
+                    break
+
+        selected_index = st.selectbox(
+            "시각화할 Postprocess JSON (video_id) 선택",
+            range(len(json_files)),
+            index=default_index,
+            format_func=lambda i: labels[i],
+        )
+        selected_video_json = json_files[selected_index]
+
+        show_tree_step_visual(selected_video_json, video_dir, tree_vis_container)
+    else:
+        st.info("Postprocess 결과 JSON이 없습니다. 1단계를 먼저 실행하세요.")
+
+
+with tab_query:
+    st.markdown(
+        "### 2단계: Query 검색\n"
+        "- 1단계 Postprocess 결과(JSON)와 Query 결과(JSON)를 이용해 시각화합니다."
+    )
+
+    selected_video_id = st.session_state.get("selected_video_id")
+    video_query_recos = (
+        query_recommendations_data.get(selected_video_id)
+        if selected_video_id
+        else None
+    )
+    has_recommendation = (
+        video_query_recos
+        and (video_query_recos.get("good") or video_query_recos.get("bad"))
+    )
+
+    if has_recommendation:
+        available_quality_options = []
+        if video_query_recos.get("good"):
+            available_quality_options.append("Good")
+        if video_query_recos.get("bad"):
+            available_quality_options.append("Bad")
+
+        query_quality = st.radio(
+            "추천 Query 유형",
+            available_quality_options,
+            horizontal=True,
+            key="query_recommendation_quality",
+        )
+        selected_options = video_query_recos.get(query_quality.lower()) or []
+
+        if selected_options:
+            selected_query_index = st.selectbox(
+                "Query 문자열",
+                range(len(selected_options)),
+                format_func=lambda i: selected_options[i][0],
+                key="query_recommendation_value",
+            )
+            query_str = selected_options[selected_query_index][1]
+        else:
+            st.info("선택한 유형의 추천 Query가 없어 직접 입력해야 합니다.")
+            query_str = st.text_input(
+                "Query 문자열",
+                value=default_query_str,
+                key="query_manual_fallback",
+            )
+    else:
+        query_str = st.text_input(
+            "Query 문자열",
+            value=default_query_str,
+            key="query_manual_input",
+        )
+    query_mode = st.selectbox(
+        "Query mode", ["text_embed", "heuristic"], index=["text_embed", "heuristic"].index(default_query_mode)
+    )
+    query_top_k = st.number_input(
+        "top_k", min_value=1, max_value=50, value=default_query_top_k, step=1
+    )
+    query_threshold = st.slider(
+        "similarity_threshold",
+        min_value=0.0,
+        max_value=1.0,
+        value=default_query_threshold,
+        step=0.05,
+    )
+
+    query_vis_container = st.container()
+
+    run_query_clicked = st.button("2단계 실행 (Query 검색)")
+    if run_query_clicked:
+        st.session_state.log_text = ""
+        log_area.text("")
+
+        append_log("[5] Query 시작 (conda env: eventtree-post)...")
+
+        code = 0
+
+        # 선택된 video_id 기준으로 Query 입출력 경로 결정
+        selected_video_id = st.session_state.get("selected_video_id")
+        if selected_video_id:
+            video_json_path = os.path.join(post_save_dir, f"{selected_video_id}.json")
+            query_save_path = os.path.join(query_base_dir, f"{selected_video_id}.json")
+        else:
+            append_log(
+                "video_id가 선택되지 않아 Query를 실행할 수 없습니다. 0단계에서 비디오를 선택하세요."
+            )
+            code = -1
+
+        if code == 0:
+            os.makedirs(os.path.dirname(query_save_path), exist_ok=True)
+            cmd = (
+                "bash -lc "
+                "\"source ~/anaconda3/etc/profile.d/conda.sh && "
+                "conda activate eventtree-post && "
+                f"CUDA_VISIBLE_DEVICES={gpu_id} "
+                "python src/query/search_queries.py "
+                f'--input \\"{video_json_path}\\" '
+                f'--query \\"{query_str}\\" '
+                f'--mode \\"{query_mode}\\" '
+                f'--top-k {query_top_k} '
+                f'--threshold {query_threshold} '
+                f'--output \\"{query_save_path}\\"\"'
+            )
+            step_start = time.time()
+            code, out = run_command(cmd)
+            append_log(f"$ {cmd}\n{out}")
+            append_log(
+                f"[5] 종료 코드: {code} (경과 {time.time() - step_start:.1f}초)"
+            )
+
+        if code == 0:
+            append_log("2단계 Query 검색이 완료되었습니다.")
+
+    # 2단계 실행 여부와 관계없이, 현재 존재하는 Query 결과를 항상 시각화
+    _, query_file_map, available_video_ids = get_query_video_selection_data(
+        post_save_dir, query_base_dir
+    )
+
+    if available_video_ids:
+        label_map = {}
+        for vid in available_video_ids:
+            if vid in query_file_map:
+                label_map[vid] = f"{vid}.json"
+            else:
+                label_map[vid] = f"{vid}.json (Query 결과 없음)"
+
+        default_index = 0
+        current_video_id = st.session_state.get("selected_video_id")
+        if current_video_id in available_video_ids:
+            default_index = available_video_ids.index(current_video_id)
+
+        selected_q_index = st.selectbox(
+            "시각화할 Query JSON (video_id) 선택",
+            range(len(available_video_ids)),
+            index=default_index,
+            format_func=lambda i: label_map[available_video_ids[i]],
+        )
+        selected_video_id_for_vis = available_video_ids[selected_q_index]
+        selected_query_json = query_file_map.get(selected_video_id_for_vis)
+        video_json_path = os.path.join(
+            post_save_dir, f"{selected_video_id_for_vis}.json"
+        )
+
+        if not os.path.isfile(video_json_path):
+            with query_vis_container:
+                st.info(
+                    f"{selected_video_id_for_vis}에 대한 Postprocess JSON을 찾을 수 없습니다. 1단계를 실행하세요."
+                )
+        elif not selected_query_json:
+            with query_vis_container:
+                st.info(
+                    f"{selected_video_id_for_vis}에 대한 Query 결과 JSON이 없습니다. 2단계를 실행하세요."
+                )
+        else:
+            show_query_step_visual(
+                video_json_path, selected_query_json, video_dir, query_vis_container
+            )
+    else:
+        with query_vis_container:
+            st.info("Postprocess 결과 JSON이 없습니다. 1단계를 먼저 실행하세요.")
 
 
 with tab_compare:
-    st.markdown("### Query 결과 비교 (기존 파이프라인 vs 다른 모델)")
-
-    compare_video_raw_dir = st.text_input(
-        "원본 비디오 디렉터리 (video_id.mp4가 위치한 경로)",
-        "./data/raw_data/video",
-        key="compare_video_raw_dir",
+    st.markdown(
+        "### 3단계: Query 결과 비교 (LongVALE vs TRACE)\n"
+        "- 2단계 Query JSON과 TRACE Temporal Grounding 결과를 동시에 확인합니다.\n"
+        "- 좌측은 LongVALE 2단계 결과, 우측은 TRACE 결과이며 Query 텍스트를 함께 표시합니다."
     )
 
-    available_video_ids: list[str] = []
-    if os.path.isdir(post_save_dir):
-        for fname in sorted(os.listdir(post_save_dir)):
-            if fname.endswith(".json"):
-                vid = os.path.splitext(fname)[0]
-                available_video_ids.append(vid)
+    _, compare_query_file_map, _ = get_query_video_selection_data(
+        post_save_dir, query_base_dir
+    )
+    compare_video_ids = sorted(compare_query_file_map.keys())
+
+    if not compare_video_ids:
+        st.info("비교할 Query JSON이 없습니다. 2단계를 먼저 실행하세요.")
     else:
-        st.info(f"Postprocess 출력 디렉터리를 찾을 수 없습니다: {post_save_dir}")
+        default_index = 0
+        current_video_id = st.session_state.get("selected_video_id")
+        if current_video_id in compare_video_ids:
+            default_index = compare_video_ids.index(current_video_id)
 
-    selected_video_id = st.selectbox(
-        "video_id 선택 (Postprocess JSON 기준)",
-        available_video_ids,
-        index=0 if available_video_ids else None,
-    ) if available_video_ids else ""
+        selected_compare_index = st.selectbox(
+            "비교할 video_id (Query JSON)",
+            range(len(compare_video_ids)),
+            index=default_index,
+            format_func=lambda i: f"{compare_video_ids[i]}.json",
+        )
+        compare_video_id = compare_video_ids[selected_compare_index]
+        query_json_path = compare_query_file_map.get(compare_video_id)
+        video_json_path = os.path.join(post_save_dir, f"{compare_video_id}.json")
+        video_path = os.path.join(video_dir, f"{compare_video_id}.mp4")
 
-    compare_query_text = st.text_input(
-        "Query 텍스트",
-        value=query_str,
-        key="compare_query_text",
-    )
-
-    if st.button("Query 결과 비교 실행"):
-        if not selected_video_id:
-            st.warning("video_id를 선택하세요.")
-        elif not compare_query_text:
-            st.warning("Query 텍스트를 입력하세요.")
+        if not os.path.isfile(video_json_path):
+            st.info(
+                f"{compare_video_id}에 대한 Postprocess JSON이 없습니다. 1단계를 먼저 실행하세요."
+            )
+        elif not query_json_path or not os.path.isfile(query_json_path):
+            st.info(
+                f"{compare_video_id}에 대한 Query JSON을 찾을 수 없습니다. 2단계를 실행하세요."
+            )
+        elif not os.path.isfile(video_path):
+            st.info(f"비디오 파일을 찾을 수 없습니다: {video_path}")
         else:
-            post_json_path = os.path.join(post_save_dir, f"{selected_video_id}.json")
-            if not os.path.isfile(post_json_path):
-                st.error(f"Postprocess JSON을 찾을 수 없습니다: {post_json_path}")
+            with open(query_json_path, "r", encoding="utf-8") as f:
+                query_payload = json.load(f)
+            matches = query_payload.get("matches") or []
+            if not matches:
+                st.info("선택한 Query JSON에 매치 결과가 없습니다. 2단계를 다시 실행하세요.")
             else:
-                query_dir = os.path.dirname(query_save_dir) or "./outputs/query"
-                _ensure_dir(query_dir)
-                compare_query_output = os.path.join(
-                    query_dir, f"{selected_video_id}_compare.json"
+                default_query_text = query_payload.get("query") or default_query_str
+                compare_query_text = st.text_input(
+                    "비교 Query (TRACE 입력)",
+                    value=default_query_text,
+                    key="compare_query_text_input",
+                )
+                match_index = st.selectbox(
+                    "LongVALE 비교 구간 선택",
+                    range(len(matches)),
+                    format_func=lambda i: (
+                        f"[score={matches[i].get('score', 0):.3f}] "
+                        f"{matches[i].get('start_time', 0):.1f}–"
+                        f"{matches[i].get('end_time', 0):.1f}s"
+                    ),
+                    key="compare_pipeline_match_index",
+                )
+                pipeline_match = matches[match_index]
+                pipeline_start = pipeline_match.get("start_time")
+                pipeline_end = pipeline_match.get("end_time")
+                pipeline_score = pipeline_match.get("score")
+                pipeline_summary = (
+                    pipeline_match.get("scene_topic")
+                    or pipeline_match.get("summary")
+                    or pipeline_match.get("matched_text")
+                    or ""
+                )
+                pipeline_start_val = safe_float(pipeline_start)
+                pipeline_end_val = safe_float(pipeline_end)
+                pipeline_score_str = (
+                    f"{pipeline_score:.3f}" if pipeline_score is not None else "N/A"
                 )
 
-                cmd = (
-                    "bash -lc "
-                    "\"source ~/anaconda3/etc/profile.d/conda.sh && "
-                    "conda activate eventtree-post && "
-                    f"CUDA_VISIBLE_DEVICES={gpu_id} "
-                    "python src/query/search_queries.py "
-                    f'--input \\\"{post_json_path}\\\" '
-                    f'--query \\\"{compare_query_text}\\\" '
-                    f'--mode \\\"{mode}\\\" '
-                    f'--output \\\"{compare_query_output}\\\"\"'
+                repo_abs_for_key = os.path.abspath(trace_repo_root)
+                model_path_for_key = (
+                    os.path.abspath(trace_model_path)
+                    if trace_model_path
+                    else os.path.join(repo_abs_for_key, "trace-uni")
                 )
+                cache_key = "|".join(
+                    [
+                        compare_video_id,
+                        compare_query_text,
+                        repo_abs_for_key,
+                        model_path_for_key,
+                        trace_device,
+                        trace_conda_env,
+                        str(int(trace_num_frames)),
+                        str(int(trace_max_new_tokens)),
+                    ]
+                )
+                trace_result = st.session_state.trace_cache.get(cache_key)
 
-                code, out = run_command(cmd)
-                if code != 0:
-                    st.error("기존 파이프라인 Query 실행 중 오류가 발생했습니다.")
-                    st.text(out)
-                else:
+                run_trace = st.button(
+                    "TRACE 추론 실행",
+                    key=f"trace_run_{compare_video_id}",
+                )
+                if run_trace:
                     try:
-                        with open(compare_query_output, "r", encoding="utf-8") as f:
-                            query_result = json.load(f)
-                    except Exception as e:
-                        st.error(f"Query 결과 JSON을 읽는 중 오류가 발생했습니다: {e}")
-                        query_result = None
+                        with st.spinner("TRACE 모델 추론 중..."):
+                            inference_result = run_trace_temporal_grounding(
+                                video_path,
+                                compare_query_text,
+                                trace_repo_root,
+                                trace_model_path,
+                                trace_device,
+                                int(trace_max_new_tokens),
+                                int(trace_num_frames),
+                                trace_conda_env,
+                            )
+                        outputs = (inference_result.get("outputs") or {})
+                        timestamps = outputs.get("timestamps") or []
+                        parsed_start = None
+                        parsed_end = None
+                        for event in timestamps:
+                            if isinstance(event, list) and len(event) >= 2:
+                                parsed_start = safe_float(event[0])
+                                parsed_end = safe_float(event[1])
+                                break
+                        inference_result["parsed_start_time"] = parsed_start
+                        inference_result["parsed_end_time"] = parsed_end
+                        captions = outputs.get("captions") or []
+                        inference_result["parsed_caption"] = captions[0] if captions else ""
+                        st.session_state.trace_cache[cache_key] = inference_result
+                        trace_result = inference_result
+                    except Exception as exc:  # pylint: disable=broad-except
+                        st.session_state.trace_cache[cache_key] = {
+                            "error": str(exc)
+                        }
+                        trace_result = st.session_state.trace_cache[cache_key]
 
-                    pipeline_segment = None
-                    if query_result and isinstance(query_result, dict):
-                        matches = query_result.get("matches") or []
-                        if matches:
-                            top = matches[0]
-                            pipeline_segment = {
-                                "start_time": float(top.get("start_time", 0.0)),
-                                "end_time": float(top.get("end_time", 0.0)),
-                                "score": top.get("score"),
-                                "matched_text": top.get("matched_text"),
-                                "mode": query_result.get("mode"),
-                            }
+                st.markdown("**Query:**")
+                st.write(compare_query_text)
+                col_left, col_right = st.columns(2)
 
-                    video_path = os.path.join(
-                        compare_video_raw_dir, f"{selected_video_id}.mp4"
+                with col_left:
+                    st.markdown("#### LongVALE 2단계 결과")
+                    st.write(
+                        f"시간: {pipeline_start_val:.2f}–{pipeline_end_val:.2f}s "
+                        f"(score={pipeline_score_str})"
                     )
-                    hf_segment = _run_hf_temporal_grounding(
-                        video_path, compare_query_text
+                    if pipeline_summary:
+                        st.write(pipeline_summary)
+                    pipeline_clip = extract_video_subclip(
+                        video_path,
+                        compare_video_id,
+                        pipeline_start_val,
+                        pipeline_end_val,
+                        "longvale",
                     )
+                    if pipeline_clip:
+                        st.video(pipeline_clip)
+                    else:
+                        st.video(
+                            video_path,
+                            start_time=int(pipeline_start_val),
+                        )
 
-                    st.markdown(f"**Query:** {compare_query_text} (video_id: {selected_video_id})")
-
-                    col_left, col_right = st.columns(2)
-
-                    with col_left:
-                        st.markdown("#### 기존 파이프라인 결과")
-                        if not pipeline_segment:
-                            st.info("기존 파이프라인에서 매칭된 구간을 찾지 못했습니다.")
-                        else:
-                            pl_start = pipeline_segment["start_time"]
-                            pl_end = pipeline_segment["end_time"]
-                            pl_clip = _extract_video_clip(video_path, pl_start, pl_end)
-
-                            st.markdown(
-                                f"- 시간 구간: {pl_start:.2f} ~ {pl_end:.2f}초"
-                            )
-                            if pipeline_segment.get("score") is not None:
-                                st.markdown(
-                                    f"- score: {pipeline_segment['score']:.3f}"
-                                )
-                            if pipeline_segment.get("matched_text"):
-                                st.markdown(
-                                    f"- matched text: {pipeline_segment['matched_text']}"
-                                )
-                            if pl_clip:
-                                st.video(pl_clip)
-                            else:
-                                st.info("비디오 클립을 생성하지 못했습니다.")
-
-                    with col_right:
-                        st.markdown("#### 다른 모델 결과 (HuggingFace VTG)")
-                        if not hf_segment:
-                            st.info(
-                                "다른 모델(HF Video Temporal Grounding) 결과를 사용할 수 없습니다."
+                with col_right:
+                    st.markdown("#### TRACE 결과")
+                    if not trace_result:
+                        st.info("오른쪽 버튼을 눌러 TRACE 결과를 생성하세요.")
+                    elif trace_result.get("error"):
+                        st.error(f"추론 실패: {trace_result['error']}")
+                    else:
+                        tz_start = trace_result.get("parsed_start_time")
+                        tz_end = trace_result.get("parsed_end_time")
+                        tz_raw = json.dumps(trace_result, ensure_ascii=False, indent=2)
+                        if tz_start is None or tz_end is None:
+                            st.warning(
+                                "TRACE 모델이 올바른 시간 구간을 반환하지 않았습니다."
                             )
                         else:
-                            hf_start, hf_end = hf_segment
-                            hf_clip = _extract_video_clip(
-                                video_path, hf_start, hf_end
+                            tz_start_val = safe_float(tz_start)
+                            tz_end_val = safe_float(tz_end, tz_start_val + 0.1)
+                            st.write(f"시간: {tz_start_val:.2f}–{tz_end_val:.2f}s")
+                            tz_clip = extract_video_subclip(
+                                video_path,
+                                compare_video_id,
+                                tz_start_val,
+                                tz_end_val,
+                                "trace",
                             )
-                            st.markdown(
-                                f"- 시간 구간: {hf_start:.2f} ~ {hf_end:.2f}초"
-                            )
-                            if hf_clip:
-                                st.video(hf_clip)
+                            if tz_clip:
+                                st.video(tz_clip)
                             else:
-                                st.info("비디오 클립을 생성하지 못했습니다.")
+                                st.video(video_path, start_time=int(tz_start_val))
+                        caption_text = trace_result.get("parsed_caption")
+                        if caption_text:
+                            st.write(caption_text)
+                        if tz_raw:
+                            with st.expander("TRACE 원본 출력"):
+                                st.code(tz_raw, language="json")
