@@ -1,0 +1,63 @@
+{
+  "query": "folding third-row seats inside an SUV",
+  "input_file": "outputs/postprocess/1zjizzVY_H4.json",
+  "mode": "text_embed",
+  "top_k": 3,
+  "similarity_threshold": 0.2,
+  "device": "cuda",
+  "elapsed_seconds": 6.501219272613525,
+  "current_memory_mib": 1589.29296875,
+  "peak_memory_mib": 3709.80078125,
+  "match_count": 3,
+  "matches": [
+    {
+      "video_id": "1zjizzVY_H4",
+      "start_time": 114.5,
+      "end_time": 142.013233,
+      "score": 0.4613959789276123,
+      "matched_text": "The camera pans across the interior of a car, showcasing the dashboard with its digital display and various controls, while upbeat pop music plays on the car stereo.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/1zjizzVY_H4.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "1zjizzVY_H4",
+      "start_time": 0.0,
+      "end_time": 16.5,
+      "score": 0.45190858840942383,
+      "matched_text": "A white pickup truck is showcased in a lot with other vehicles.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/1zjizzVY_H4.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "1zjizzVY_H4",
+      "start_time": 82.5,
+      "end_time": 114.5,
+      "score": 0.4499567151069641,
+      "matched_text": "A car is showcased in a promotional video, featuring a pop song and highlighting its sleek design and features.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/1zjizzVY_H4.json",
+      "score_type": "text_embed"
+    }
+  ],
+  "text_embed_profile": {
+    "model_ready": {
+      "elapsed": 5.99928393214941,
+      "current_memory_mib": 1546.5546875,
+      "peak_memory_mib": 3709.80078125
+    },
+    "query_embedding": {
+      "elapsed": 0.3741020895540714,
+      "current_memory_mib": 1587.39453125,
+      "peak_memory_mib": 3709.80078125,
+      "embedding_bytes": 4096
+    },
+    "batch_000": {
+      "elapsed": 0.08335696905851364,
+      "current_memory_mib": 1589.29296875,
+      "peak_memory_mib": 3709.80078125
+    }
+  },
+  "query_embedding_bytes": 4096
+}

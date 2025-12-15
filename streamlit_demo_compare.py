@@ -233,13 +233,14 @@ default_query_threshold = st.sidebar.slider(
 st.sidebar.markdown("---")
 st.sidebar.markdown("TRACE Temporal Grounding")
 trace_repo_root = st.sidebar.text_input(
-    "TRACE_REPO_ROOT", "/root/workspace/kylee/TRACE"
+    "TRACE_REPO_ROOT", "./TRACE"
 )
 default_trace_model_path = os.path.join(trace_repo_root, "trace-uni")
 trace_model_path = st.sidebar.text_input(
     "TRACE_MODEL_PATH", default_trace_model_path
 )
-trace_conda_env = st.sidebar.text_input("TRACE_CONDA_ENV", "trace")
+# trace_conda_env = st.sidebar.text_input("TRACE_CONDA_ENV", "trace")
+TRACE_CONDA_ENV = "trace"
 trace_device = st.sidebar.text_input("TRACE_DEVICE", "cuda:0")
 trace_num_frames = st.sidebar.number_input(
     "TRACE_NUM_FRAMES", min_value=8, max_value=128, value=64, step=8
@@ -620,6 +621,154 @@ def get_query_video_selection_data(post_dir: str, query_dir: str):
     }
     available_video_ids = sorted(postprocess_video_ids.union(query_file_map.keys()))
     return post_files, query_file_map, available_video_ids
+
+
+def render_query_inputs_for_video(
+    video_id: str | None,
+    prefix: str,
+    existing_query_text: str | None = None,
+):
+    """현재 선택된 video_id 기준으로 Query 입력 UI를 구성하고 값을 반환."""
+    video_query_recos = (
+        query_recommendations_data.get(video_id) if video_id else None
+    )
+    has_recommendation = (
+        video_query_recos
+        and (video_query_recos.get("good") or video_query_recos.get("bad"))
+    )
+    query_str = existing_query_text or default_query_str
+
+    if has_recommendation:
+        available_quality_options = []
+        if video_query_recos.get("good"):
+            available_quality_options.append("Good")
+        if video_query_recos.get("bad"):
+            available_quality_options.append("Bad")
+
+        if available_quality_options:
+            query_quality = st.radio(
+                "추천 Query 유형",
+                available_quality_options,
+                horizontal=True,
+                key=f"{prefix}_query_quality_{video_id or 'none'}",
+            )
+            selected_options = list(
+                video_query_recos.get(query_quality.lower()) or []
+            )
+            if existing_query_text:
+                existing_label = f"저장된 Query 결과 · {existing_query_text}"
+                if not any(existing_query_text == opt[1] for opt in selected_options):
+                    selected_options.insert(0, (existing_label, existing_query_text))
+            if selected_options:
+                query_str = selected_options[
+                    st.selectbox(
+                        "Query 문자열",
+                        range(len(selected_options)),
+                        format_func=lambda i: selected_options[i][0],
+                        key=f"{prefix}_query_value_{video_id or 'none'}_{query_quality}",
+                    )
+                ][1]
+            else:
+                st.info("선택한 유형의 추천 Query가 없어 직접 입력해야 합니다.")
+                query_str = st.text_input(
+                    "Query 문자열",
+                    value=existing_query_text or default_query_str,
+                    key=f"{prefix}_query_manual_{video_id or 'none'}",
+                )
+        else:
+            query_str = st.text_input(
+                "Query 문자열",
+                value=existing_query_text or default_query_str,
+                key=f"{prefix}_query_manual_{video_id or 'none'}",
+            )
+    else:
+        query_str = st.text_input(
+            "Query 문자열",
+            value=existing_query_text or default_query_str,
+            key=f"{prefix}_query_manual_{video_id or 'none'}",
+        )
+
+    query_mode = st.selectbox(
+        "Query mode",
+        ["text_embed", "heuristic"],
+        index=["text_embed", "heuristic"].index(default_query_mode),
+        key=f"{prefix}_query_mode",
+    )
+    query_top_k = st.number_input(
+        "top_k",
+        min_value=1,
+        max_value=50,
+        value=default_query_top_k,
+        step=1,
+        key=f"{prefix}_query_top_k",
+    )
+    query_threshold = st.slider(
+        "similarity_threshold",
+        min_value=0.0,
+        max_value=1.0,
+        value=default_query_threshold,
+        step=0.05,
+        key=f"{prefix}_query_threshold",
+    )
+
+    return {
+        "query_str": query_str,
+        "mode": query_mode,
+        "top_k": int(query_top_k),
+        "threshold": float(query_threshold),
+    }
+
+
+def run_query_command(
+    video_id: str | None,
+    query_str: str,
+    query_mode: str,
+    query_top_k: int,
+    query_threshold: float,
+    gpu_id_value: str,
+    post_dir: str,
+    query_dir: str,
+    log_prefix: str = "[5]",
+    success_message: str = "2단계 Query 검색이 완료되었습니다.",
+):
+    """선택된 video_id에 대해 LongVALE Query 파이프라인을 실행."""
+    append_log(f"{log_prefix} Query 시작 (conda env: eventtree-post)...")
+
+    if not video_id:
+        append_log("video_id가 선택되지 않아 Query를 실행할 수 없습니다.")
+        return -1, ""
+
+    video_json_path = os.path.join(post_dir, f"{video_id}.json")
+    if not os.path.isfile(video_json_path):
+        append_log(
+            f"{video_id}에 대한 Postprocess JSON을 찾을 수 없습니다. 1단계를 실행하세요."
+        )
+        return -1, ""
+
+    query_save_path = os.path.join(query_dir, f"{video_id}.json")
+    os.makedirs(os.path.dirname(query_save_path), exist_ok=True)
+    cmd = (
+        "bash -lc "
+        "\"source ~/anaconda3/etc/profile.d/conda.sh && "
+        "conda activate eventtree-post && "
+        f"CUDA_VISIBLE_DEVICES={gpu_id_value} "
+        "python src/query/search_queries.py "
+        f'--input \\"{video_json_path}\\" '
+        f'--query \\"{query_str}\\" '
+        f'--mode \\"{query_mode}\\" '
+        f'--top-k {query_top_k} '
+        f'--threshold {query_threshold} '
+        f'--output \\"{query_save_path}\\"\"'
+    )
+    step_start = time.time()
+    code, out = run_command(cmd)
+    append_log(f"$ {cmd}\n{out}")
+    append_log(
+        f"{log_prefix} 종료 코드: {code} (경과 {time.time() - step_start:.1f}초)"
+    )
+    if code == 0:
+        append_log(success_message)
+    return code, query_save_path
 
 
 def extract_video_subclip(
@@ -1385,14 +1534,14 @@ with tab_tree:
         "- 순서: features_tree.sh → features_longvale.sh → tree.py → caption_longvale.py → summary_llama3.py → postprocess.py"
     )
 
+    st.markdown("#### 현재 선택된 비디오 ID")
     selected_video_id = st.session_state.get("selected_video_id")
     if selected_video_id:
         st.info(f"현재 선택된 비디오 ID: {selected_video_id}")
     else:
         st.warning("0단계에서 비디오를 먼저 선택해야 1단계를 실행할 수 있습니다.")
 
-    tree_vis_container = st.container()
-
+    st.markdown("#### 1단계 실행")
     # 1단계 실행 플로우에서 사용하는 상태 코드 기본값
     code = 0
     run_clicked = st.button("1단계 실행")
@@ -1574,6 +1723,7 @@ with tab_tree:
         if run_clicked and code == 0:
             append_log("1단계 전체 파이프라인이 완료되었습니다.")
 
+    st.markdown("#### 시각화할 Postprocess JSON (video_id) 선택")
     # 1단계 실행 여부와 관계없이, 현재 존재하는 Postprocess 결과를 항상 시각화
     json_files = list_postprocess_jsons(post_save_dir)
     if json_files:
@@ -1596,6 +1746,7 @@ with tab_tree:
         )
         selected_video_json = json_files[selected_index]
 
+        tree_vis_container = st.container()
         show_tree_step_visual(selected_video_json, video_dir, tree_vis_container)
     else:
         st.info("Postprocess 결과 JSON이 없습니다. 1단계를 먼저 실행하세요.")
@@ -1607,309 +1758,306 @@ with tab_query:
         "- 1단계 Postprocess 결과(JSON)와 Query 결과(JSON)를 이용해 시각화합니다."
     )
 
-    selected_video_id = st.session_state.get("selected_video_id")
-    video_query_recos = (
-        query_recommendations_data.get(selected_video_id)
-        if selected_video_id
-        else None
-    )
-    has_recommendation = (
-        video_query_recos
-        and (video_query_recos.get("good") or video_query_recos.get("bad"))
-    )
-
-    if has_recommendation:
-        available_quality_options = []
-        if video_query_recos.get("good"):
-            available_quality_options.append("Good")
-        if video_query_recos.get("bad"):
-            available_quality_options.append("Bad")
-
-        query_quality = st.radio(
-            "추천 Query 유형",
-            available_quality_options,
-            horizontal=True,
-            key="query_recommendation_quality",
-        )
-        selected_options = video_query_recos.get(query_quality.lower()) or []
-
-        if selected_options:
-            selected_query_index = st.selectbox(
-                "Query 문자열",
-                range(len(selected_options)),
-                format_func=lambda i: selected_options[i][0],
-                key="query_recommendation_value",
-            )
-            query_str = selected_options[selected_query_index][1]
-        else:
-            st.info("선택한 유형의 추천 Query가 없어 직접 입력해야 합니다.")
-            query_str = st.text_input(
-                "Query 문자열",
-                value=default_query_str,
-                key="query_manual_fallback",
-            )
+    post_json_files = list_postprocess_jsons(post_save_dir)
+    if not post_json_files:
+        st.info("Postprocess 결과 JSON이 없습니다. 1단계를 먼저 실행하세요.")
     else:
-        query_str = st.text_input(
-            "Query 문자열",
-            value=default_query_str,
-            key="query_manual_input",
-        )
-    query_mode = st.selectbox(
-        "Query mode", ["text_embed", "heuristic"], index=["text_embed", "heuristic"].index(default_query_mode)
-    )
-    query_top_k = st.number_input(
-        "top_k", min_value=1, max_value=50, value=default_query_top_k, step=1
-    )
-    query_threshold = st.slider(
-        "similarity_threshold",
-        min_value=0.0,
-        max_value=1.0,
-        value=default_query_threshold,
-        step=0.05,
-    )
-
-    query_vis_container = st.container()
-
-    run_query_clicked = st.button("2단계 실행 (Query 검색)")
-    if run_query_clicked:
-        st.session_state.log_text = ""
-        log_area.text("")
-
-        append_log("[5] Query 시작 (conda env: eventtree-post)...")
-
-        code = 0
-
-        # 선택된 video_id 기준으로 Query 입출력 경로 결정
-        selected_video_id = st.session_state.get("selected_video_id")
-        if selected_video_id:
-            video_json_path = os.path.join(post_save_dir, f"{selected_video_id}.json")
-            query_save_path = os.path.join(query_base_dir, f"{selected_video_id}.json")
-        else:
-            append_log(
-                "video_id가 선택되지 않아 Query를 실행할 수 없습니다. 0단계에서 비디오를 선택하세요."
-            )
-            code = -1
-
-        if code == 0:
-            os.makedirs(os.path.dirname(query_save_path), exist_ok=True)
-            cmd = (
-                "bash -lc "
-                "\"source ~/anaconda3/etc/profile.d/conda.sh && "
-                "conda activate eventtree-post && "
-                f"CUDA_VISIBLE_DEVICES={gpu_id} "
-                "python src/query/search_queries.py "
-                f'--input \\"{video_json_path}\\" '
-                f'--query \\"{query_str}\\" '
-                f'--mode \\"{query_mode}\\" '
-                f'--top-k {query_top_k} '
-                f'--threshold {query_threshold} '
-                f'--output \\"{query_save_path}\\"\"'
-            )
-            step_start = time.time()
-            code, out = run_command(cmd)
-            append_log(f"$ {cmd}\n{out}")
-            append_log(
-                f"[5] 종료 코드: {code} (경과 {time.time() - step_start:.1f}초)"
-            )
-
-        if code == 0:
-            append_log("2단계 Query 검색이 완료되었습니다.")
-
-    # 2단계 실행 여부와 관계없이, 현재 존재하는 Query 결과를 항상 시각화
-    _, query_file_map, available_video_ids = get_query_video_selection_data(
-        post_save_dir, query_base_dir
-    )
-
-    if available_video_ids:
+        post_video_ids = [
+            os.path.splitext(os.path.basename(path))[0] for path in post_json_files
+        ]
+        post_video_ids.sort()
         label_map = {}
-        for vid in available_video_ids:
-            if vid in query_file_map:
-                label_map[vid] = f"{vid}.json"
-            else:
-                label_map[vid] = f"{vid}.json (Query 결과 없음)"
+        for vid in post_video_ids:
+            query_path = os.path.join(query_base_dir, f"{vid}.json")
+            exists = os.path.isfile(query_path)
+            suffix = "" if exists else " (Query 결과 없음)"
+            label_map[vid] = f"{vid}.json{suffix}"
 
         default_index = 0
         current_video_id = st.session_state.get("selected_video_id")
-        if current_video_id in available_video_ids:
-            default_index = available_video_ids.index(current_video_id)
+        if current_video_id in post_video_ids:
+            default_index = post_video_ids.index(current_video_id)
 
         selected_q_index = st.selectbox(
             "시각화할 Query JSON (video_id) 선택",
-            range(len(available_video_ids)),
+            range(len(post_video_ids)),
             index=default_index,
-            format_func=lambda i: label_map[available_video_ids[i]],
+            format_func=lambda i: label_map[post_video_ids[i]],
         )
-        selected_video_id_for_vis = available_video_ids[selected_q_index]
-        selected_query_json = query_file_map.get(selected_video_id_for_vis)
-        video_json_path = os.path.join(
-            post_save_dir, f"{selected_video_id_for_vis}.json"
+        selected_query_video_id = post_video_ids[selected_q_index]
+        selected_query_json_path = os.path.join(
+            query_base_dir, f"{selected_query_video_id}.json"
         )
 
+        existing_query_text = None
+        if os.path.isfile(selected_query_json_path):
+            try:
+                with open(selected_query_json_path, "r", encoding="utf-8") as f:
+                    payload = json.load(f)
+                existing_query_text = (payload.get("query") or "").strip()
+                if not existing_query_text:
+                    existing_query_text = None
+            except Exception:
+                existing_query_text = None
+
+        query_inputs = render_query_inputs_for_video(
+            selected_query_video_id,
+            "query_tab",
+            existing_query_text=existing_query_text,
+        )
+        query_str_input = query_inputs["query_str"]
+        query_str = query_str_input.strip()
+        query_mode = query_inputs["mode"]
+        query_top_k = query_inputs["top_k"]
+        query_threshold = query_inputs["threshold"]
+
+        query_vis_container = st.container()
+
+        run_query_clicked = st.button("2단계 실행 (Query 검색)", key="query_run_button")
+        if run_query_clicked:
+            st.session_state.log_text = ""
+            log_area.text("")
+            run_query_command(
+                selected_query_video_id,
+                query_str_input,
+                query_mode,
+                query_top_k,
+                query_threshold,
+                gpu_id,
+                post_save_dir,
+                query_base_dir,
+                log_prefix="[5]",
+                success_message="2단계 Query 검색이 완료되었습니다.",
+            )
+
+        video_json_path = os.path.join(
+            post_save_dir, f"{selected_query_video_id}.json"
+        )
         if not os.path.isfile(video_json_path):
             with query_vis_container:
                 st.info(
-                    f"{selected_video_id_for_vis}에 대한 Postprocess JSON을 찾을 수 없습니다. 1단계를 실행하세요."
+                    f"{selected_query_video_id}에 대한 Postprocess JSON을 찾을 수 없습니다. 1단계를 실행하세요."
                 )
-        elif not selected_query_json:
+        elif not os.path.isfile(selected_query_json_path):
             with query_vis_container:
                 st.info(
-                    f"{selected_video_id_for_vis}에 대한 Query 결과 JSON이 없습니다. 2단계를 실행하세요."
+                    f"{selected_query_video_id}에 대한 Query 결과 JSON이 없습니다. 2단계를 실행하세요."
                 )
         else:
-            show_query_step_visual(
-                video_json_path, selected_query_json, video_dir, query_vis_container
-            )
-    else:
-        with query_vis_container:
-            st.info("Postprocess 결과 JSON이 없습니다. 1단계를 먼저 실행하세요.")
+            try:
+                with open(selected_query_json_path, "r", encoding="utf-8") as f:
+                    query_payload = json.load(f)
+            except Exception:
+                query_payload = {}
+            payload_query_text = (query_payload.get("query") or "").strip()
+            if not payload_query_text or payload_query_text != query_str:
+                with query_vis_container:
+                    st.info(
+                        f"선택한 Query 문자열({query_str})에 대한 결과가 없습니다. 2단계를 실행하세요."
+                    )
+            else:
+                show_query_step_visual(
+                    video_json_path,
+                    selected_query_json_path,
+                    video_dir,
+                    query_vis_container,
+                )
 
 
 with tab_compare:
     st.markdown(
         "### 3단계: Query 결과 비교 (LongVALE vs TRACE)\n"
-        "- 2단계 Query JSON과 TRACE Temporal Grounding 결과를 동시에 확인합니다.\n"
-        "- 좌측은 LongVALE 2단계 결과, 우측은 TRACE 결과이며 Query 텍스트를 함께 표시합니다."
+        "- Postprocess가 완료된 video_id에 한해 LongVALE 2단계와 TRACE 결과를 동시에 확인합니다.\n"
+        "- 비교 실행 버튼을 누르면 선택한 설정대로 LongVALE Query와 TRACE 추론을 연속 실행합니다."
     )
 
-    _, compare_query_file_map, _ = get_query_video_selection_data(
-        post_save_dir, query_base_dir
-    )
-    compare_video_ids = sorted(compare_query_file_map.keys())
-
-    if not compare_video_ids:
-        st.info("비교할 Query JSON이 없습니다. 2단계를 먼저 실행하세요.")
+    post_json_files = list_postprocess_jsons(post_save_dir)
+    if not post_json_files:
+        st.info("Postprocess 결과 JSON이 없습니다. 1단계를 먼저 실행하세요.")
     else:
+        post_video_ids = [
+            os.path.splitext(os.path.basename(path))[0] for path in post_json_files
+        ]
+        post_video_ids.sort()
+        query_files = list_postprocess_jsons(query_base_dir)
+        query_file_map = {
+            os.path.splitext(os.path.basename(path))[0]: path for path in query_files
+        }
+
+        label_map = {}
+        for vid in post_video_ids:
+            label_suffix = "" if vid in query_file_map else " (Query 결과 없음)"
+            label_map[vid] = f"{vid}.json{label_suffix}"
+
         default_index = 0
         current_video_id = st.session_state.get("selected_video_id")
-        if current_video_id in compare_video_ids:
-            default_index = compare_video_ids.index(current_video_id)
+        if current_video_id in post_video_ids:
+            default_index = post_video_ids.index(current_video_id)
 
         selected_compare_index = st.selectbox(
             "비교할 video_id (Query JSON)",
-            range(len(compare_video_ids)),
+            range(len(post_video_ids)),
             index=default_index,
-            format_func=lambda i: f"{compare_video_ids[i]}.json",
+            format_func=lambda i: label_map[post_video_ids[i]],
         )
-        compare_video_id = compare_video_ids[selected_compare_index]
-        query_json_path = compare_query_file_map.get(compare_video_id)
+        compare_video_id = post_video_ids[selected_compare_index]
         video_json_path = os.path.join(post_save_dir, f"{compare_video_id}.json")
         video_path = os.path.join(video_dir, f"{compare_video_id}.mp4")
+        compare_query_json_path = os.path.join(query_base_dir, f"{compare_video_id}.json")
 
-        if not os.path.isfile(video_json_path):
-            st.info(
-                f"{compare_video_id}에 대한 Postprocess JSON이 없습니다. 1단계를 먼저 실행하세요."
+        existing_compare_query_text = None
+        if os.path.isfile(compare_query_json_path):
+            try:
+                with open(compare_query_json_path, "r", encoding="utf-8") as f:
+                    payload = json.load(f)
+                existing_compare_query_text = (
+                    payload.get("query") or ""
+                ).strip() or None
+            except Exception:
+                existing_compare_query_text = None
+
+        compare_query_inputs = render_query_inputs_for_video(
+            compare_video_id,
+            "compare_tab",
+            existing_query_text=existing_compare_query_text,
+        )
+        compare_query_str_input = compare_query_inputs["query_str"]
+        compare_query_str = compare_query_str_input.strip()
+        compare_query_mode = compare_query_inputs["mode"]
+        compare_query_top_k = compare_query_inputs["top_k"]
+        compare_query_threshold = compare_query_inputs["threshold"]
+
+        repo_abs_for_key = os.path.abspath(trace_repo_root)
+        model_path_for_key = (
+            os.path.abspath(trace_model_path)
+            if trace_model_path
+            else os.path.join(repo_abs_for_key, "trace-uni")
+        )
+        cache_key = "|".join(
+            [
+                compare_video_id,
+                compare_query_str,
+                repo_abs_for_key,
+                model_path_for_key,
+                trace_device,
+                TRACE_CONDA_ENV,
+                str(int(trace_num_frames)),
+                str(int(trace_max_new_tokens)),
+                compare_query_mode,
+                str(int(compare_query_top_k)),
+                f"{compare_query_threshold:.3f}",
+            ]
+        )
+        trace_result = st.session_state.trace_cache.get(cache_key)
+
+        run_compare_clicked = st.button(
+            "비교 실행",
+            key=f"compare_run_{compare_video_id}",
+        )
+        if run_compare_clicked:
+            st.session_state.log_text = ""
+            log_area.text("")
+            code, _ = run_query_command(
+                compare_video_id,
+                compare_query_str_input,
+                compare_query_mode,
+                compare_query_top_k,
+                compare_query_threshold,
+                gpu_id,
+                post_save_dir,
+                query_base_dir,
+                log_prefix="[5-compare]",
+                success_message="비교용 Query 검색이 완료되었습니다.",
             )
-        elif not query_json_path or not os.path.isfile(query_json_path):
-            st.info(
-                f"{compare_video_id}에 대한 Query JSON을 찾을 수 없습니다. 2단계를 실행하세요."
-            )
-        elif not os.path.isfile(video_path):
-            st.info(f"비디오 파일을 찾을 수 없습니다: {video_path}")
-        else:
-            with open(query_json_path, "r", encoding="utf-8") as f:
-                query_payload = json.load(f)
-            matches = query_payload.get("matches") or []
-            if not matches:
-                st.info("선택한 Query JSON에 매치 결과가 없습니다. 2단계를 다시 실행하세요.")
+            if code == 0 and os.path.isfile(video_path):
+                try:
+                    with st.spinner("TRACE 모델 추론 중..."):
+                        inference_result = run_trace_temporal_grounding(
+                            video_path,
+                            compare_query_str_input,
+                            trace_repo_root,
+                            trace_model_path,
+                            trace_device,
+                            int(trace_max_new_tokens),
+                            int(trace_num_frames),
+                            TRACE_CONDA_ENV,
+                        )
+                    outputs = (inference_result.get("outputs") or {})
+                    timestamps = outputs.get("timestamps") or []
+                    parsed_start = None
+                    parsed_end = None
+                    for event in timestamps:
+                        if isinstance(event, list) and len(event) >= 2:
+                            parsed_start = safe_float(event[0])
+                            parsed_end = safe_float(event[1])
+                            break
+                    inference_result["parsed_start_time"] = parsed_start
+                    inference_result["parsed_end_time"] = parsed_end
+                    captions = outputs.get("captions") or []
+                    inference_result["parsed_caption"] = captions[0] if captions else ""
+                    st.session_state.trace_cache[cache_key] = inference_result
+                    trace_result = inference_result
+                except Exception as exc:  # pylint: disable=broad-except
+                    st.session_state.trace_cache[cache_key] = {"error": str(exc)}
+                    trace_result = st.session_state.trace_cache[cache_key]
+            elif code == 0 and not os.path.isfile(video_path):
+                st.info(f"비디오 파일을 찾을 수 없습니다: {video_path}")
+
+        st.markdown("**비교 Query:**")
+        st.write(compare_query_str)
+
+        col_left, col_right = st.columns(2)
+
+        with col_left:
+            st.markdown("#### LongVALE 2단계 결과")
+            if not os.path.isfile(video_json_path):
+                st.info(
+                    f"{compare_video_id}에 대한 Postprocess JSON이 없습니다. 1단계를 먼저 실행하세요."
+                )
+            elif not os.path.isfile(compare_query_json_path):
+                st.info("비교할 Query JSON이 없습니다. 비교 실행 버튼을 눌러 생성하세요.")
             else:
-                default_query_text = query_payload.get("query") or default_query_str
-                compare_query_text = st.text_input(
-                    "비교 Query (TRACE 입력)",
-                    value=default_query_text,
-                    key="compare_query_text_input",
-                )
-                match_index = st.selectbox(
-                    "LongVALE 비교 구간 선택",
-                    range(len(matches)),
-                    format_func=lambda i: (
-                        f"[score={matches[i].get('score', 0):.3f}] "
-                        f"{matches[i].get('start_time', 0):.1f}–"
-                        f"{matches[i].get('end_time', 0):.1f}s"
-                    ),
-                    key="compare_pipeline_match_index",
-                )
-                pipeline_match = matches[match_index]
-                pipeline_start = pipeline_match.get("start_time")
-                pipeline_end = pipeline_match.get("end_time")
-                pipeline_score = pipeline_match.get("score")
-                pipeline_summary = (
-                    pipeline_match.get("scene_topic")
-                    or pipeline_match.get("summary")
-                    or pipeline_match.get("matched_text")
-                    or ""
-                )
-                pipeline_start_val = safe_float(pipeline_start)
-                pipeline_end_val = safe_float(pipeline_end)
-                pipeline_score_str = (
-                    f"{pipeline_score:.3f}" if pipeline_score is not None else "N/A"
-                )
-
-                repo_abs_for_key = os.path.abspath(trace_repo_root)
-                model_path_for_key = (
-                    os.path.abspath(trace_model_path)
-                    if trace_model_path
-                    else os.path.join(repo_abs_for_key, "trace-uni")
-                )
-                cache_key = "|".join(
-                    [
-                        compare_video_id,
-                        compare_query_text,
-                        repo_abs_for_key,
-                        model_path_for_key,
-                        trace_device,
-                        trace_conda_env,
-                        str(int(trace_num_frames)),
-                        str(int(trace_max_new_tokens)),
-                    ]
-                )
-                trace_result = st.session_state.trace_cache.get(cache_key)
-
-                run_trace = st.button(
-                    "TRACE 추론 실행",
-                    key=f"trace_run_{compare_video_id}",
-                )
-                if run_trace:
-                    try:
-                        with st.spinner("TRACE 모델 추론 중..."):
-                            inference_result = run_trace_temporal_grounding(
-                                video_path,
-                                compare_query_text,
-                                trace_repo_root,
-                                trace_model_path,
-                                trace_device,
-                                int(trace_max_new_tokens),
-                                int(trace_num_frames),
-                                trace_conda_env,
-                            )
-                        outputs = (inference_result.get("outputs") or {})
-                        timestamps = outputs.get("timestamps") or []
-                        parsed_start = None
-                        parsed_end = None
-                        for event in timestamps:
-                            if isinstance(event, list) and len(event) >= 2:
-                                parsed_start = safe_float(event[0])
-                                parsed_end = safe_float(event[1])
-                                break
-                        inference_result["parsed_start_time"] = parsed_start
-                        inference_result["parsed_end_time"] = parsed_end
-                        captions = outputs.get("captions") or []
-                        inference_result["parsed_caption"] = captions[0] if captions else ""
-                        st.session_state.trace_cache[cache_key] = inference_result
-                        trace_result = inference_result
-                    except Exception as exc:  # pylint: disable=broad-except
-                        st.session_state.trace_cache[cache_key] = {
-                            "error": str(exc)
-                        }
-                        trace_result = st.session_state.trace_cache[cache_key]
-
-                st.markdown("**Query:**")
-                st.write(compare_query_text)
-                col_left, col_right = st.columns(2)
-
-                with col_left:
-                    st.markdown("#### LongVALE 2단계 결과")
+                try:
+                    with open(compare_query_json_path, "r", encoding="utf-8") as f:
+                        compare_query_payload = json.load(f)
+                except Exception:
+                    compare_query_payload = {}
+                payload_query_text = (compare_query_payload.get("query") or "").strip()
+                matches = compare_query_payload.get("matches") or []
+                if not matches:
+                    st.info("비교 Query 결과가 없습니다. 비교 실행 버튼을 눌러 새로 생성하세요.")
+                elif payload_query_text != compare_query_str:
+                    st.info(
+                        "선택한 Query 문자열에 대한 결과가 없습니다. 비교 실행 버튼을 눌러 갱신하세요."
+                    )
+                else:
+                    match_index = st.selectbox(
+                        "비교할 LongVALE 구간 선택",
+                        range(len(matches)),
+                        format_func=lambda i: (
+                            f"[score={matches[i].get('score', 0):.3f}] "
+                            f"{matches[i].get('start_time', 0):.1f}–"
+                            f"{matches[i].get('end_time', 0):.1f}s"
+                        ),
+                        key=f"compare_pipeline_match_{compare_video_id}",
+                    )
+                    pipeline_match = matches[match_index]
+                    pipeline_start = safe_float(pipeline_match.get("start_time"))
+                    pipeline_end = safe_float(
+                        pipeline_match.get("end_time"), pipeline_start
+                    )
+                    pipeline_score = pipeline_match.get("score")
+                    pipeline_score_str = (
+                        f"{pipeline_score:.3f}" if pipeline_score is not None else "N/A"
+                    )
+                    pipeline_summary = (
+                        pipeline_match.get("scene_topic")
+                        or pipeline_match.get("summary")
+                        or pipeline_match.get("matched_text")
+                        or ""
+                    )
                     st.write(
-                        f"시간: {pipeline_start_val:.2f}–{pipeline_end_val:.2f}s "
+                        f"시간: {pipeline_start:.2f}–{pipeline_end:.2f}s "
                         f"(score={pipeline_score_str})"
                     )
                     if pipeline_summary:
@@ -1917,50 +2065,49 @@ with tab_compare:
                     pipeline_clip = extract_video_subclip(
                         video_path,
                         compare_video_id,
-                        pipeline_start_val,
-                        pipeline_end_val,
+                        pipeline_start,
+                        pipeline_end,
                         "longvale",
                     )
                     if pipeline_clip:
                         st.video(pipeline_clip)
+                    elif os.path.isfile(video_path):
+                        st.video(video_path, start_time=int(pipeline_start))
                     else:
-                        st.video(
-                            video_path,
-                            start_time=int(pipeline_start_val),
-                        )
+                        st.info(f"비디오 파일을 찾을 수 없습니다: {video_path}")
 
-                with col_right:
-                    st.markdown("#### TRACE 결과")
-                    if not trace_result:
-                        st.info("오른쪽 버튼을 눌러 TRACE 결과를 생성하세요.")
-                    elif trace_result.get("error"):
-                        st.error(f"추론 실패: {trace_result['error']}")
+        with col_right:
+            st.markdown("#### TRACE 결과")
+            if not os.path.isfile(video_path):
+                st.info(f"비디오 파일을 찾을 수 없습니다: {video_path}")
+            elif not trace_result:
+                st.info("비교 실행 버튼을 눌러 TRACE 결과를 생성하세요.")
+            elif trace_result.get("error"):
+                st.error(f"추론 실패: {trace_result['error']}")
+            else:
+                tz_start = trace_result.get("parsed_start_time")
+                tz_end = trace_result.get("parsed_end_time")
+                tz_raw = json.dumps(trace_result, ensure_ascii=False, indent=2)
+                if tz_start is None or tz_end is None:
+                    st.warning("TRACE 모델이 올바른 시간 구간을 반환하지 않았습니다.")
+                else:
+                    tz_start_val = safe_float(tz_start)
+                    tz_end_val = safe_float(tz_end, tz_start_val + 0.1)
+                    st.write(f"시간: {tz_start_val:.2f}–{tz_end_val:.2f}s")
+                    tz_clip = extract_video_subclip(
+                        video_path,
+                        compare_video_id,
+                        tz_start_val,
+                        tz_end_val,
+                        "trace",
+                    )
+                    if tz_clip:
+                        st.video(tz_clip)
                     else:
-                        tz_start = trace_result.get("parsed_start_time")
-                        tz_end = trace_result.get("parsed_end_time")
-                        tz_raw = json.dumps(trace_result, ensure_ascii=False, indent=2)
-                        if tz_start is None or tz_end is None:
-                            st.warning(
-                                "TRACE 모델이 올바른 시간 구간을 반환하지 않았습니다."
-                            )
-                        else:
-                            tz_start_val = safe_float(tz_start)
-                            tz_end_val = safe_float(tz_end, tz_start_val + 0.1)
-                            st.write(f"시간: {tz_start_val:.2f}–{tz_end_val:.2f}s")
-                            tz_clip = extract_video_subclip(
-                                video_path,
-                                compare_video_id,
-                                tz_start_val,
-                                tz_end_val,
-                                "trace",
-                            )
-                            if tz_clip:
-                                st.video(tz_clip)
-                            else:
-                                st.video(video_path, start_time=int(tz_start_val))
-                        caption_text = trace_result.get("parsed_caption")
-                        if caption_text:
-                            st.write(caption_text)
-                        if tz_raw:
-                            with st.expander("TRACE 원본 출력"):
-                                st.code(tz_raw, language="json")
+                        st.video(video_path, start_time=int(tz_start_val))
+                caption_text = trace_result.get("parsed_caption")
+                if caption_text:
+                    st.write(caption_text)
+                if tz_raw:
+                    with st.expander("TRACE 원본 출력"):
+                        st.code(tz_raw, language="json")

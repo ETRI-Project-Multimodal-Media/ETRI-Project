@@ -13,7 +13,7 @@ try:
 except ImportError:
     SentenceTransformer = None  # type: ignore
 
-from query_utils import dedupe_best, measure_memory, select_top
+from query_utils import dedupe_best, measure_memory, select_top, tokenize
 
 EMBED_MODEL_CACHE: Dict[Tuple[str, str], "SentenceTransformer"] = {}
 
@@ -75,6 +75,9 @@ def rank_with_text_embed(
     if query_bytes is not None:
         text_embed_profile.setdefault("query_embedding", {})["embedding_bytes"] = query_bytes
 
+    query_tokens = tokenize(query)
+    include_tags = len(query_tokens) == 1
+
     # 후보 텍스트 구성
     candidate_payloads: List[Tuple[Dict[str, Any], str, str]] = []
     candidate_texts: List[str] = []
@@ -85,6 +88,12 @@ def rank_with_text_embed(
                 continue
             candidate_payloads.append((seg, field, text))
             candidate_texts.append(text)
+        if include_tags:
+            for tag in seg.get("tags") or []:
+                if not tag:
+                    continue
+                candidate_payloads.append((seg, "tags", tag))
+                candidate_texts.append(tag)
 
     if not candidate_texts:
         return ([], resolved_device, text_embed_profile, query_bytes)

@@ -25,40 +25,41 @@
                     "start_time": 0.0,
                     "end_time": 3.5,
                     "children": [],
-                    "caption": "The video begins with a close-up of a pink, glossy surface, possibly a lip product, as a woman's voice can be heard in the background.",
+                    "caption": "A hand holds up a vibrant pink and white polka dot sticker, its playful design contrasting with the neutral background as a woman's voice can be heard faintly in the background.",
                     "postprocess": {
                       "event_id": 0,
-                      "original_answer": "The video begins with a close-up of a pink, glossy surface, possibly a lip product, as a woman's voice can be heard in the background.",
+                      "original_answer": "A hand holds up a vibrant pink and white polka dot sticker, its playful design contrasting with the neutral background as a woman's voice can be heard faintly in the background.",
                       "result": {
                         "video_id": "IiTYqQKXlg",
                         "event_id": "E_IiTYqQKXlg_0_3.5",
                         "tags": [
-                          "beauty",
-                          "cosmetics",
-                          "makeup"
+                          "object_interaction",
+                          "colorful",
+                          "background"
                         ],
                         "objects": [
                           {
                             "object_id": "O001",
-                            "name": "Lip product",
+                            "name": "pink_and_white_polka_dot_sticker",
                             "attributes": {
-                              "surface": "pink",
-                              "glossy": "yes"
+                              "color": "pink and white",
+                              "design": "polka dot",
+                              "background": "neutral"
                             }
                           }
                         ],
                         "actors": [
                           {
                             "actor_id": "A001",
-                            "name": "Woman",
-                            "ref_object": "",
-                            "role": "speaker",
-                            "entity": "person"
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "holder",
+                            "entity": "human"
                           }
                         ],
                         "event": {
                           "event_id": "E_IiTYqQKXlg_0_3.5",
-                          "name": "Lip product introduction",
+                          "name": "woman_holding_sticker",
                           "time": {
                             "start": "0",
                             "end": "3.5"
@@ -72,15 +73,15 @@
                         },
                         "LOD": {
                           "abstract_topic": [
-                            "beauty"
+                            "object_interaction"
                           ],
-                          "scene_topic": "The video begins with a close-up of a pink, glossy surface, possibly a lip product, as a woman's voice can be heard in the background.",
-                          "summary": "The video begins with a close-up of a pink, glossy surface, possibly a lip product, as a woman's voice can be heard in the background.",
-                          "implications": "Major beauty news event",
+                          "scene_topic": "A woman holds up a colorful sticker, contrasting with the neutral background.",
+                          "summary": "A hand holds up a vibrant pink and white polka dot sticker, its playful design contrasting with the neutral background as a woman's voice can be heard faintly in the background.",
+                          "implications": "Minor visual interest event",
                           "modalities": {
-                            "visual": "The video begins with a close-up of a pink, glossy surface, possibly a lip product, as a woman's voice can be heard in the background.",
+                            "visual": "A hand holds up a vibrant pink and white polka dot sticker, its playful design contrasting with the neutral background as a woman's voice can be heard faintly in the background.",
                             "audio": "woman's voice",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                            "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                           }
                         }
                       }
@@ -91,49 +92,43 @@
                     "start_time": 3.5,
                     "end_time": 5.5,
                     "children": [],
-                    "caption": "A hand reaches out to touch a vibrant pink and white polka dot surface, the sound of a woman's voice saying \"Oh\" can be heard in the background.",
+                    "caption": "A hand reaches out to touch a vibrant pink and purple polka dot surface, the camera zooming in to reveal the intricate details of the pattern.",
                     "postprocess": {
                       "event_id": 5,
-                      "original_answer": "A hand reaches out to touch a vibrant pink and white polka dot surface, the sound of a woman's voice saying \"Oh\" can be heard in the background.",
+                      "original_answer": "A hand reaches out to touch a vibrant pink and purple polka dot surface, the camera zooming in to reveal the intricate details of the pattern.",
                       "result": {
                         "video_id": "IiTYqQKXlg",
-                        "event_id": "E_IiTYqQKXlg_3_5",
+                        "event_id": "E_IiTYqQKXlg_3.5_5.5",
                         "tags": [
                           "hand",
-                          "touch",
                           "polka_dot",
-                          "woman",
-                          "voice"
+                          "surface",
+                          "camera",
+                          "zoom"
                         ],
                         "objects": [
                           {
                             "object_id": "O001",
-                            "name": "polka_dot_surface",
+                            "name": "polka dot surface",
                             "attributes": {
-                              "color": "pink and white",
-                              "pattern": "polka dot"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "hand",
-                            "attributes": {
-                              "body_part": "hand"
+                              "color": "pink and purple",
+                              "pattern": "polka dot",
+                              "details": "intricate"
                             }
                           }
                         ],
                         "actors": [
                           {
                             "actor_id": "A001",
-                            "name": "woman",
-                            "ref_object": "O002",
-                            "role": "actor",
-                            "entity": "human"
+                            "name": "hand",
+                            "ref_object": "O001",
+                            "role": "touching",
+                            "entity": "body part"
                           }
                         ],
                         "event": {
-                          "event_id": "E_IiTYqQKXlg_3_5",
-                          "name": "hand touches polka dot surface",
+                          "event_id": "E_IiTYqQKXlg_3.5_5.5",
+                          "name": "Hand touches polka dot surface",
                           "time": {
                             "start": "3.5",
                             "end": "5.5"
@@ -142,21 +137,20 @@
                             "A001"
                           ],
                           "objects": [
-                            "O001",
-                            "O002"
+                            "O001"
                           ]
                         },
                         "LOD": {
                           "abstract_topic": [
-                            "human interaction"
+                            "visual description"
                           ],
-                          "scene_topic": "A woman's hand touches a vibrant pink and white polka dot surface.",
-                          "summary": "A hand reaches out to touch a vibrant pink and white polka dot surface, the sound of a woman's voice saying \"Oh\" can be heard in the background.",
-                          "implications": "Minor human interaction event",
+                          "scene_topic": "A hand reaches out to touch a vibrant pink and purple polka dot surface, the camera zooming in to reveal the intricate details of the pattern.",
+                          "summary": "A hand reaches out to touch a vibrant pink and purple polka dot surface, the camera zooming in to reveal the intricate details of the pattern.",
+                          "implications": "Visual description of a scene",
                           "modalities": {
-                            "visual": "A hand reaches out to touch a vibrant pink and white polka dot surface.",
-                            "audio": "Woman's voice saying 'Oh'.",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                            "visual": "A hand reaches out to touch a vibrant pink and purple polka dot surface, the camera zooming in to reveal the intricate details of the pattern.",
+                            "audio": "",
+                            "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                           }
                         }
                       }
@@ -165,27 +159,29 @@
                   {
                     "level": 4,
                     "start_time": 5.5,
-                    "end_time": 12.5,
+                    "end_time": 8.5,
                     "children": [],
-                    "caption": "A hand reaches out to pick up a small, pink, heart-shaped object from a surface, as a woman's voice can be heard in the background.",
+                    "caption": "A hand reaches for a small, round pink object on a white surface, as a woman's voice can be heard in the background.",
                     "postprocess": {
                       "event_id": 6,
-                      "original_answer": "A hand reaches out to pick up a small, pink, heart-shaped object from a surface, as a woman's voice can be heard in the background.",
+                      "original_answer": "A hand reaches for a small, round pink object on a white surface, as a woman's voice can be heard in the background.",
                       "result": {
                         "video_id": "IiTYqQKXlg",
-                        "event_id": "E_IiTYqQKXlg_5_12",
+                        "event_id": "E_IiTYqQKXlg_5_8",
                         "tags": [
                           "hand",
                           "object",
-                          "woman"
+                          "woman",
+                          "voice",
+                          "background"
                         ],
                         "objects": [
                           {
                             "object_id": "O001",
-                            "name": "heart-shaped object",
+                            "name": "small, round pink object",
                             "attributes": {
                               "color": "pink",
-                              "shape": "heart-shaped",
+                              "shape": "round",
                               "size": "small"
                             }
                           }
@@ -193,18 +189,18 @@
                         "actors": [
                           {
                             "actor_id": "A001",
-                            "name": "",
+                            "name": "woman",
                             "ref_object": "O001",
-                            "role": "",
-                            "entity": "woman"
+                            "role": "actor",
+                            "entity": "person"
                           }
                         ],
                         "event": {
-                          "event_id": "E_IiTYqQKXlg_5_12",
-                          "name": "",
+                          "event_id": "E_IiTYqQKXlg_5_8",
+                          "name": "A hand reaches for a small, round pink object",
                           "time": {
                             "start": "5.5",
-                            "end": "12.5"
+                            "end": "8.5"
                           },
                           "actors": [
                             "A001"
@@ -217,13 +213,83 @@
                           "abstract_topic": [
                             "human activity"
                           ],
-                          "scene_topic": "A woman's hand picks up a small, pink, heart-shaped object.",
-                          "summary": "A hand reaches out to pick up a small, pink, heart-shaped object from a surface, as a woman's voice can be heard in the background.",
+                          "scene_topic": "A hand reaches for a small, round pink object",
+                          "summary": "A hand reaches for a small, round pink object on a white surface, as a woman's voice can be heard in the background.",
                           "implications": "Minor human activity",
                           "modalities": {
-                            "visual": "A hand reaches out to pick up a small, pink, heart-shaped object from a surface, as a woman's voice can be heard in the background.",
-                            "audio": "woman's voice",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                            "visual": "A hand reaches for a small, round pink object on a white surface, as a woman's voice can be heard in the background.",
+                            "audio": "",
+                            "speech": "I apologize for the brief moment of excitement, followed by a request to subscribe to my channel for more videos."
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "level": 4,
+                    "start_time": 8.5,
+                    "end_time": 12.5,
+                    "children": [],
+                    "caption": "A hand holds up a small, round pink object, possibly a toy, against a light background as a woman speaks, her voice barely audible over the sound of a car engine starting and idling.",
+                    "postprocess": {
+                      "event_id": 7,
+                      "original_answer": "A hand holds up a small, round pink object, possibly a toy, against a light background as a woman speaks, her voice barely audible over the sound of a car engine starting and idling.",
+                      "result": {
+                        "video_id": "IiTYqQKXlg",
+                        "event_id": "E_IiTYqQKXlg_8_12",
+                        "tags": [
+                          "object",
+                          "woman",
+                          "car",
+                          "background"
+                        ],
+                        "objects": [
+                          {
+                            "object_id": "O001",
+                            "name": "small, round pink object",
+                            "attributes": {
+                              "object_type": "toy",
+                              "color": "pink",
+                              "size": "small",
+                              "background": "light"
+                            }
+                          }
+                        ],
+                        "actors": [
+                          {
+                            "actor_id": "A001",
+                            "name": "woman",
+                            "ref_object": "O001",
+                            "role": "speaker",
+                            "entity": "person"
+                          }
+                        ],
+                        "event": {
+                          "event_id": "E_IiTYqQKXlg_8_12",
+                          "name": "Woman holds up a small pink object",
+                          "time": {
+                            "start": "8.5",
+                            "end": "12.5"
+                          },
+                          "actors": [
+                            "A001"
+                          ],
+                          "objects": [
+                            "O001"
+                          ]
+                        },
+                        "LOD": {
+                          "abstract_topic": [
+                            "human activity",
+                            "object manipulation"
+                          ],
+                          "scene_topic": "A woman holds up a small pink object as she speaks.",
+                          "summary": "A hand holds up a small, round pink object, possibly a toy, against a light background as a woman speaks, her voice barely audible over the sound of a car engine starting and idling.",
+                          "implications": "Minor event in a daily life",
+                          "modalities": {
+                            "visual": "A hand holds up a small, round pink object, possibly a toy, against a light background as a woman speaks.",
+                            "audio": "car engine starting and idling; woman speaks",
+                            "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                           }
                         }
                       }
@@ -234,48 +300,43 @@
                     "start_time": 12.5,
                     "end_time": 19.5,
                     "children": [],
-                    "caption": "A pair of hands, adorned with rings and a watch, meticulously arrange colorful, round objects on a pink surface, creating a vibrant and playful pattern.",
+                    "caption": "A pair of hands meticulously arrange colorful, round, and rectangular pieces on a pink surface, creating a vibrant and intricate pattern as a cheerful children's song plays in the background.",
                     "postprocess": {
-                      "event_id": 7,
-                      "original_answer": "A pair of hands, adorned with rings and a watch, meticulously arrange colorful, round objects on a pink surface, creating a vibrant and playful pattern.",
+                      "event_id": 8,
+                      "original_answer": "A pair of hands meticulously arrange colorful, round, and rectangular pieces on a pink surface, creating a vibrant and intricate pattern as a cheerful children's song plays in the background.",
                       "result": {
                         "video_id": "IiTYqQKXlg",
                         "event_id": "E_IiTYqQKXlg_12.5_19.5",
                         "tags": [
                           "art",
-                          "design",
-                          "fashion"
+                          "children",
+                          "colorful",
+                          "pattern",
+                          "song"
                         ],
                         "objects": [
                           {
                             "object_id": "O001",
-                            "name": "hands",
+                            "name": "colorful pieces",
                             "attributes": {
-                              "adorned_with": "rings and a watch",
-                              "colorful_objects": "round",
+                              "shape": "round and rectangular",
+                              "color": "vibrant",
                               "surface": "pink"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "colorful_objects",
-                            "attributes": {
-                              "round": "yes"
                             }
                           }
                         ],
                         "actors": [
                           {
                             "actor_id": "A001",
-                            "name": "pair_of_hands",
+                            "name": "pair of hands",
                             "ref_object": "O001",
-                            "role": "actor",
+                            "role": "arranger",
                             "entity": "human"
                           }
                         ],
                         "event": {
                           "event_id": "E_IiTYqQKXlg_12.5_19.5",
-                          "name": "arranging_objects",
+                          "name": "arranging colorful pieces",
                           "time": {
                             "start": "12.5",
                             "end": "19.5"
@@ -284,77 +345,69 @@
                             "A001"
                           ],
                           "objects": [
-                            "O001",
-                            "O002"
+                            "O001"
                           ]
                         },
                         "LOD": {
                           "abstract_topic": [
-                            "art"
+                            "children's activity"
                           ],
-                          "scene_topic": "A pair of hands, adorned with rings and a watch, meticulously arrange colorful, round objects on a pink surface, creating a vibrant and playful pattern.",
-                          "summary": "A pair of hands, adorned with rings and a watch, meticulously arrange colorful, round objects on a pink surface, creating a vibrant and playful pattern.",
-                          "implications": "Aesthetically pleasing and creative event",
+                          "scene_topic": "A pair of hands meticulously arrange colorful, round, and rectangular pieces on a pink surface, creating a vibrant and intricate pattern as a cheerful children's song plays in the background.",
+                          "summary": "A pair of hands meticulously arrange colorful, round, and rectangular pieces on a pink surface, creating a vibrant and intricate pattern as a cheerful children's song plays in the background.",
+                          "implications": "Major creative, educational event",
                           "modalities": {
-                            "visual": "A pair of hands, adorned with rings and a watch, meticulously arrange colorful, round objects on a pink surface, creating a vibrant and playful pattern.",
-                            "audio": "",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                            "visual": "A pair of hands meticulously arrange colorful, round, and rectangular pieces on a pink surface, creating a vibrant and intricate pattern.",
+                            "audio": "children's song",
+                            "speech": "I apologize for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                           }
                         }
                       }
                     }
                   }
                 ],
-                "caption": "A woman explores and arranges a collection of pink and white polka dot items, including a lip product, a heart-shaped object, and small round objects, while her voice is heard in the background.",
+                "caption": "A person showcases and plays with various pink and colorful objects, including stickers, toys, and puzzle pieces, amidst a background of gentle sounds and a cheerful atmosphere.",
                 "postprocess": {
                   "event_id": 1,
-                  "original_answer": "A woman explores and arranges a collection of pink and white polka dot items, including a lip product, a heart-shaped object, and small round objects, while her voice is heard in the background.",
+                  "original_answer": "A person showcases and plays with various pink and colorful objects, including stickers, toys, and puzzle pieces, amidst a background of gentle sounds and a cheerful atmosphere.",
                   "result": {
                     "video_id": "IiTYqQKXlg",
                     "event_id": "E_IiTYqQKXlg_0_19.5",
                     "tags": [
-                      "beauty",
-                      "cosmetics",
-                      "organization"
+                      "play",
+                      "colorful",
+                      "objects",
+                      "child",
+                      "toy"
                     ],
                     "objects": [
                       {
                         "object_id": "O001",
-                        "name": "lip product",
-                        "attributes": {
-                          "color": "pink",
-                          "shape": "round"
-                        }
+                        "name": "Stickers",
+                        "attributes": {}
                       },
                       {
                         "object_id": "O002",
-                        "name": "heart-shaped object",
-                        "attributes": {
-                          "shape": "heart",
-                          "color": "pink"
-                        }
+                        "name": "Toys",
+                        "attributes": {}
                       },
                       {
                         "object_id": "O003",
-                        "name": "small round objects",
-                        "attributes": {
-                          "shape": "round",
-                          "color": "pink"
-                        }
+                        "name": "Puzzle pieces",
+                        "attributes": {}
                       }
                     ],
                     "actors": [
                       {
                         "actor_id": "A001",
-                        "name": "woman",
+                        "name": "Person",
                         "ref_object": "O001",
-                        "role": "explorer",
-                        "entity": "person"
+                        "role": "Player",
+                        "entity": "Human"
                       }
                     ],
                     "event": {
                       "event_id": "E_IiTYqQKXlg_0_19.5",
-                      "name": "arranging collection",
+                      "name": "Play with colorful objects",
                       "time": {
                         "start": "0",
                         "end": "19.5"
@@ -370,15 +423,15 @@
                     },
                     "LOD": {
                       "abstract_topic": [
-                        "beauty"
+                        "child play"
                       ],
-                      "scene_topic": "A woman arranges a collection of pink and white polka dot items.",
-                      "summary": "A woman explores and arranges a collection of pink and white polka dot items, including a lip product, a heart-shaped object, and small round objects, while her voice is heard in the background.",
-                      "implications": "Minor beauty and organization event",
+                      "scene_topic": "A person plays with colorful objects in a cheerful atmosphere.",
+                      "summary": "A person showcases and plays with various pink and colorful objects, including stickers, toys, and puzzle pieces, amidst a background of gentle sounds and a cheerful atmosphere.",
+                      "implications": "Major entertainment event",
                       "modalities": {
-                        "visual": "A woman explores and arranges a collection of pink and white polka dot items, including a lip product, a heart-shaped object, and small round objects, while her voice is heard in the background.",
-                        "audio": "her voice",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                        "visual": "A person showcases and plays with various pink and colorful objects, including stickers, toys, and puzzle pieces, amidst a background of gentle sounds, amidst a cheerful atmosphere.",
+                        "audio": "",
+                        "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                       }
                     }
                   }
@@ -387,276 +440,220 @@
               {
                 "level": 3,
                 "start_time": 19.5,
-                "end_time": 42.5,
-                "children": [
-                  {
-                    "level": 4,
-                    "start_time": 19.5,
-                    "end_time": 28.5,
-                    "children": [],
-                    "caption": "A hand carefully arranges colorful, geometric blocks on a pink surface, the sound of a child's voice excitedly exclaiming \"Woo!\" in the background.",
-                    "postprocess": {
-                      "event_id": 8,
-                      "original_answer": "A hand carefully arranges colorful, geometric blocks on a pink surface, the sound of a child's voice excitedly exclaiming \"Woo!\" in the background.",
-                      "result": {
-                        "video_id": "IiTYqQKXlg",
-                        "event_id": "E_IiTYqQKXlg_19.5_28.5",
-                        "tags": [
-                          "child",
-                          "blocks",
-                          "colorful",
-                          "geometric",
-                          "pink"
-                        ],
-                        "objects": [
-                          {
-                            "object_id": "O001",
-                            "name": "blocks",
-                            "attributes": {
-                              "colorful": "yes",
-                              "geometric": "yes"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "pink surface",
-                            "attributes": {
-                              "color": "pink"
-                            }
-                          }
-                        ],
-                        "actors": [
-                          {
-                            "actor_id": "A001",
-                            "name": "child",
-                            "ref_object": "O001",
-                            "role": "arranger",
-                            "entity": "child"
-                          }
-                        ],
-                        "event": {
-                          "event_id": "E_IiTYqQKXlg_19.5_28.5",
-                          "name": "blocks arrangement",
-                          "time": {
-                            "start": "19.5",
-                            "end": "28.5"
-                          },
-                          "actors": [
-                            "A001"
-                          ],
-                          "objects": [
-                            "O001",
-                            "O002"
-                          ]
-                        },
-                        "LOD": {
-                          "abstract_topic": [
-                            "child play"
-                          ],
-                          "scene_topic": "A child arranges colorful blocks on a pink surface while excitedly exclaiming 'Woo!'",
-                          "summary": "A hand carefully arranges colorful, geometric blocks on a pink surface, the sound of a child's voice excitedly exclaiming \"Woo!\" in the background.",
-                          "implications": "Minor entertainment event",
-                          "modalities": {
-                            "visual": "A hand carefully arranges colorful, geometric blocks on a pink surface.",
-                            "audio": "child's voice exclaiming 'Woo!'",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
-                          }
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "start_time": 28.5,
-                    "end_time": 42.5,
-                    "children": [],
-                    "caption": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                    "postprocess": {
-                      "event_id": 10,
-                      "original_answer": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                      "result": {
-                        "video_id": "IiTYqQKXlg",
-                        "event_id": "E_IiTYqQKXlg_28.5_42.5",
-                        "tags": [
-                          "children",
-                          "blocks",
-                          "grid",
-                          "colorful",
-                          "pink"
-                        ],
-                        "objects": [
-                          {
-                            "object_id": "O001",
-                            "name": "blocks",
-                            "attributes": {
-                              "colorful": "yes",
-                              "rectangular": "yes",
-                              "grid_pattern": "yes"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "pink_surface",
-                            "attributes": {
-                              "color": "pink"
-                            }
-                          },
-                          {
-                            "object_id": "O003",
-                            "name": "hand",
-                            "attributes": {
-                              "arranging": "yes"
-                            }
-                          }
-                        ],
-                        "actors": [
-                          {
-                            "actor_id": "A001",
-                            "name": "hand",
-                            "ref_object": "O003",
-                            "role": "arranger",
-                            "entity": "human"
-                          }
-                        ],
-                        "event": {
-                          "event_id": "E_IiTYqQKXlg_28.5_42.5",
-                          "name": "arranging blocks",
-                          "time": {
-                            "start": "28.5",
-                            "end": "42.5"
-                          },
-                          "actors": [
-                            "A001"
-                          ],
-                          "objects": [
-                            "O001",
-                            "O002",
-                            "O003"
-                          ]
-                        },
-                        "LOD": {
-                          "abstract_topic": [
-                            "children's activity"
-                          ],
-                          "scene_topic": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                          "summary": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                          "implications": "Major children's development, cognitive skills",
-                          "modalities": {
-                            "visual": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern.",
-                            "audio": "children's song",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
-                          }
-                        }
-                      }
-                    }
-                  }
-                ],
-                "caption": "A child builds with colorful blocks on a pink surface, accompanied by excited commentary and upbeat background music.",
+                "end_time": 28.5,
+                "children": [],
+                "caption": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a woman speaks in the background.",
                 "postprocess": {
                   "event_id": 9,
-                  "original_answer": "A child builds with colorful blocks on a pink surface, accompanied by excited commentary and upbeat background music.",
+                  "original_answer": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a woman speaks in the background.",
                   "result": {
                     "video_id": "IiTYqQKXlg",
-                    "event_id": "E_IiTYqQKXlg_19.5_42.5",
+                    "event_id": "E_IiTYqQKXlg_19.5_28.5",
                     "tags": [
-                      "child",
-                      "blocks",
-                      "play",
-                      "music"
+                      "block_arrangement",
+                      "grid_pattern",
+                      "colorful_blocks",
+                      "pink_surface",
+                      "woman_speaking"
                     ],
                     "objects": [
                       {
                         "object_id": "O001",
-                        "name": "blocks",
+                        "name": "colorful blocks",
                         "attributes": {
-                          "colorful": "",
-                          "building": ""
+                          "colorful": "yes",
+                          "rectangular": "yes",
+                          "arranged": "grid pattern"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "pink surface",
+                        "attributes": {
+                          "color": "pink",
+                          "flat": "yes"
                         }
                       }
                     ],
                     "actors": [
                       {
                         "actor_id": "A001",
-                        "name": "child",
+                        "name": "woman",
                         "ref_object": "O001",
-                        "role": "builder",
+                        "role": "speaker",
                         "entity": "person"
                       }
                     ],
                     "event": {
-                      "event_id": "E_IiTYqQKXlg_19.5_42.5",
-                      "name": "Child builds with blocks",
+                      "event_id": "E_IiTYqQKXlg_19.5_28.5",
+                      "name": "Block arrangement",
                       "time": {
                         "start": "19.5",
+                        "end": "28.5"
+                      },
+                      "actors": [
+                        "A001"
+                      ],
+                      "objects": [
+                        "O001",
+                        "O002"
+                      ]
+                    },
+                    "LOD": {
+                      "abstract_topic": [
+                        "human activity"
+                      ],
+                      "scene_topic": "A woman speaks while arranging colorful blocks on a pink surface.",
+                      "summary": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a woman speaks in the background.",
+                      "implications": "Minor creative activity",
+                      "modalities": {
+                        "visual": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a woman speaks in the background.",
+                        "audio": "woman speaks",
+                        "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "level": 3,
+                "start_time": 28.5,
+                "end_time": 42.5,
+                "children": [],
+                "caption": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
+                "postprocess": {
+                  "event_id": 10,
+                  "original_answer": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
+                  "result": {
+                    "video_id": "IiTYqQKXlg",
+                    "event_id": "E_IiTYqQKXlg_28.5_42.5",
+                    "tags": [
+                      "children",
+                      "blocks",
+                      "grid",
+                      "colorful",
+                      "pink"
+                    ],
+                    "objects": [
+                      {
+                        "object_id": "O001",
+                        "name": "blocks",
+                        "attributes": {
+                          "colorful": "yes",
+                          "rectangular": "yes",
+                          "grid_pattern": "yes"
+                        }
+                      },
+                      {
+                        "object_id": "O002",
+                        "name": "pink_surface",
+                        "attributes": {
+                          "color": "pink"
+                        }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "hand",
+                        "attributes": {
+                          "arranging": "yes"
+                        }
+                      }
+                    ],
+                    "actors": [
+                      {
+                        "actor_id": "A001",
+                        "name": "hand",
+                        "ref_object": "O003",
+                        "role": "arranger",
+                        "entity": "human"
+                      }
+                    ],
+                    "event": {
+                      "event_id": "E_IiTYqQKXlg_28.5_42.5",
+                      "name": "arranging blocks",
+                      "time": {
+                        "start": "28.5",
                         "end": "42.5"
                       },
                       "actors": [
                         "A001"
                       ],
                       "objects": [
-                        "O001"
+                        "O001",
+                        "O002",
+                        "O003"
                       ]
                     },
                     "LOD": {
                       "abstract_topic": [
-                        "child development"
+                        "children's activity"
                       ],
-                      "scene_topic": "A child builds with colorful blocks on a pink surface, accompanied by excited commentary and upbeat background music.",
-                      "summary": "A child builds with colorful blocks on a pink surface, accompanied by excited commentary and upbeat background music.",
-                      "implications": "Early childhood development, creativity, and imagination",
+                      "scene_topic": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
+                      "summary": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
+                      "implications": "Major children's development, cognitive skills",
                       "modalities": {
-                        "visual": "A child builds with colorful blocks on a pink surface.",
-                        "audio": "excited commentary; upbeat background music.",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                        "visual": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern.",
+                        "audio": "children's song",
+                        "speech": "I apologize for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                       }
                     }
                   }
                 }
               }
             ],
-            "caption": "A woman and a child engage in creative play, with the woman arranging polka dot items and the child building with blocks, both accompanied by upbeat background sounds.",
+            "caption": "A person engages in a playful and creative activity, building with colorful blocks while a woman speaks and a children's song plays in the background, creating a cheerful atmosphere.",
             "postprocess": {
               "event_id": 2,
-              "original_answer": "A woman and a child engage in creative play, with the woman arranging polka dot items and the child building with blocks, both accompanied by upbeat background sounds.",
+              "original_answer": "A person engages in a playful and creative activity, building with colorful blocks while a woman speaks and a children's song plays in the background, creating a cheerful atmosphere.",
               "result": {
                 "video_id": "IiTYqQKXlg",
                 "event_id": "E_IiTYqQKXlg_0_42.5",
                 "tags": [
-                  "creative_play",
-                  "childhood",
-                  "play"
+                  "play",
+                  "creativity",
+                  "children",
+                  "blocks",
+                  "music"
                 ],
                 "objects": [
                   {
                     "object_id": "O001",
-                    "name": "polka dot items",
-                    "attributes": {}
+                    "name": "blocks",
+                    "attributes": {
+                      "colorful": "true",
+                      "building": "true"
+                    }
                   },
                   {
                     "object_id": "O002",
-                    "name": "blocks",
+                    "name": "woman",
+                    "attributes": {}
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "children's song",
                     "attributes": {}
                   }
                 ],
                 "actors": [
                   {
                     "actor_id": "A001",
-                    "name": "woman",
+                    "name": "person",
                     "ref_object": "O001",
-                    "role": "arranger",
+                    "role": "builder",
                     "entity": "human"
                   },
                   {
                     "actor_id": "A002",
-                    "name": "child",
+                    "name": "woman",
                     "ref_object": "O002",
-                    "role": "builder",
+                    "role": "speaker",
                     "entity": "human"
                   }
                 ],
                 "event": {
                   "event_id": "E_IiTYqQKXlg_0_42.5",
-                  "name": "Creative Play",
+                  "name": "playful activity",
                   "time": {
                     "start": "0",
                     "end": "42.5"
@@ -667,20 +664,21 @@
                   ],
                   "objects": [
                     "O001",
-                    "O002"
+                    "O002",
+                    "O003"
                   ]
                 },
                 "LOD": {
                   "abstract_topic": [
-                    "childhood development"
+                    "children's activity"
                   ],
-                  "scene_topic": "A woman and a child engage in creative play, with the woman arranging polka dot items and the child building with blocks, both accompanied by upbeat background sounds.",
-                  "summary": "A woman and a child engage in creative play, with the woman arranging polka dot items and the child building with blocks, both accompanied by upbeat background sounds.",
-                  "implications": "Major childhood development event",
+                  "scene_topic": "A person builds with blocks while a woman speaks and a children's song plays.",
+                  "summary": "A person engages in a playful and creative activity, building with colorful blocks while a woman speaks and a children's song plays in the background, creating a cheerful atmosphere.",
+                  "implications": "Major children's development event",
                   "modalities": {
-                    "visual": "A woman and a child engage in creative play, with the woman arranging polka dot items and the child building with blocks.",
-                    "audio": "upbeat background sounds",
-                    "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                    "visual": "A person builds with colorful blocks while a woman speaks.",
+                    "audio": "children's song; woman speaks.",
+                    "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                   }
                 }
               }
@@ -689,410 +687,66 @@
           {
             "level": 2,
             "start_time": 42.5,
-            "end_time": 123.5,
+            "end_time": 72.5,
             "children": [
               {
                 "level": 3,
                 "start_time": 42.5,
-                "end_time": 56.5,
-                "children": [
-                  {
-                    "level": 4,
-                    "start_time": 42.5,
-                    "end_time": 49.5,
-                    "children": [],
-                    "caption": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                    "postprocess": {
-                      "event_id": 11,
-                      "original_answer": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                      "result": {
-                        "video_id": "IiTYqQKXlg",
-                        "event_id": "E_IiTYqQKXlg_42.5_49.5",
-                        "tags": [
-                          "children",
-                          "blocks",
-                          "grid",
-                          "colorful",
-                          "pink"
-                        ],
-                        "objects": [
-                          {
-                            "object_id": "O001",
-                            "name": "blocks",
-                            "attributes": {
-                              "colorful": "yes",
-                              "rectangular": "yes",
-                              "grid_pattern": "yes"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "pink_surface",
-                            "attributes": {
-                              "color": "pink"
-                            }
-                          },
-                          {
-                            "object_id": "O003",
-                            "name": "hand",
-                            "attributes": {
-                              "arranging": "yes"
-                            }
-                          }
-                        ],
-                        "actors": [
-                          {
-                            "actor_id": "A001",
-                            "name": "hand",
-                            "ref_object": "O003",
-                            "role": "arranger",
-                            "entity": "human"
-                          }
-                        ],
-                        "event": {
-                          "event_id": "E_IiTYqQKXlg_42.5_49.5",
-                          "name": "arranging blocks",
-                          "time": {
-                            "start": "42.5",
-                            "end": "49.5"
-                          },
-                          "actors": [
-                            "A001"
-                          ],
-                          "objects": [
-                            "O001",
-                            "O002",
-                            "O003"
-                          ]
-                        },
-                        "LOD": {
-                          "abstract_topic": [
-                            "children's activity"
-                          ],
-                          "scene_topic": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                          "summary": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                          "implications": "Major children's development, cognitive skills",
-                          "modalities": {
-                            "visual": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern.",
-                            "audio": "children's song",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
-                          }
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "start_time": 49.5,
-                    "end_time": 52.5,
-                    "children": [],
-                    "caption": "A hand reaches out to pick up a small, colorful, rectangular block from a pink surface, as a woman's voice can be heard saying \"Oh\" in the background.",
-                    "postprocess": {
-                      "event_id": 14,
-                      "original_answer": "A hand reaches out to pick up a small, colorful, rectangular block from a pink surface, as a woman's voice can be heard saying \"Oh\" in the background.",
-                      "result": {
-                        "video_id": "IiTYqQKXlg",
-                        "event_id": "E_IiTYqQKXlg_49.5_52.5",
-                        "tags": [
-                          "hand",
-                          "block",
-                          "pink",
-                          "woman",
-                          "voice"
-                        ],
-                        "objects": [
-                          {
-                            "object_id": "O001",
-                            "name": "block",
-                            "attributes": {
-                              "color": "colorful",
-                              "shape": "rectangular",
-                              "size": "small"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "pink surface",
-                            "attributes": {
-                              "color": "pink"
-                            }
-                          }
-                        ],
-                        "actors": [
-                          {
-                            "actor_id": "A001",
-                            "name": "woman",
-                            "ref_object": "O002",
-                            "role": "actor",
-                            "entity": "person"
-                          }
-                        ],
-                        "event": {
-                          "event_id": "E_IiTYqQKXlg_49.5_52.5",
-                          "name": "block picking",
-                          "time": {
-                            "start": "49.5",
-                            "end": "52.5"
-                          },
-                          "actors": [
-                            "A001"
-                          ],
-                          "objects": [
-                            "O001",
-                            "O002"
-                          ]
-                        },
-                        "LOD": {
-                          "abstract_topic": [
-                            "human activity"
-                          ],
-                          "scene_topic": "A woman picks up a small, colorful block from a pink surface.",
-                          "summary": "A hand reaches out to pick up a small, colorful, rectangular block from a pink surface, as a woman's voice can be heard saying \"Oh\" in the background.",
-                          "implications": "Minor event in a daily activity",
-                          "modalities": {
-                            "visual": "A hand reaches out to pick up a small, colorful, rectangular block from a pink surface, as a woman's voice can be heard saying 'Oh' in the background.",
-                            "audio": "Woman's voice saying 'Oh'.",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
-                          }
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "level": 4,
-                    "start_time": 52.5,
-                    "end_time": 56.5,
-                    "children": [],
-                    "caption": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                    "postprocess": {
-                      "event_id": 15,
-                      "original_answer": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                      "result": {
-                        "video_id": "IiTYqQKXlg",
-                        "event_id": "E_IiTYqQKXlg_52.5_56.5",
-                        "tags": [
-                          "children",
-                          "blocks",
-                          "grid",
-                          "colorful",
-                          "pink"
-                        ],
-                        "objects": [
-                          {
-                            "object_id": "O001",
-                            "name": "blocks",
-                            "attributes": {
-                              "colorful": "yes",
-                              "rectangular": "yes",
-                              "grid_pattern": "yes"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "pink_surface",
-                            "attributes": {
-                              "color": "pink"
-                            }
-                          },
-                          {
-                            "object_id": "O003",
-                            "name": "hand",
-                            "attributes": {
-                              "arranging": "yes"
-                            }
-                          }
-                        ],
-                        "actors": [
-                          {
-                            "actor_id": "A001",
-                            "name": "hand",
-                            "ref_object": "O003",
-                            "role": "arranger",
-                            "entity": "human"
-                          }
-                        ],
-                        "event": {
-                          "event_id": "E_IiTYqQKXlg_52.5_56.5",
-                          "name": "arranging blocks",
-                          "time": {
-                            "start": "52.5",
-                            "end": "56.5"
-                          },
-                          "actors": [
-                            "A001"
-                          ],
-                          "objects": [
-                            "O001",
-                            "O002",
-                            "O003"
-                          ]
-                        },
-                        "LOD": {
-                          "abstract_topic": [
-                            "children's activity"
-                          ],
-                          "scene_topic": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                          "summary": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
-                          "implications": "Major children's development, cognitive skills",
-                          "modalities": {
-                            "visual": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern.",
-                            "audio": "children's song",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
-                          }
-                        }
-                      }
-                    }
-                  }
-                ],
-                "caption": "A person builds a block structure on a pink surface while a cheerful children's song plays and a woman's voice provides background commentary.",
-                "postprocess": {
-                  "event_id": 12,
-                  "original_answer": "A person builds a block structure on a pink surface while a cheerful children's song plays and a woman's voice provides background commentary.",
-                  "result": {
-                    "video_id": "IiTYqQKXlg",
-                    "event_id": "E_IiTYqQKXlg_42.5_56.5",
-                    "tags": [
-                      "block_structure",
-                      "pink_surface",
-                      "childrens_song",
-                      "background_commentary"
-                    ],
-                    "objects": [
-                      {
-                        "object_id": "O001",
-                        "name": "Block structure",
-                        "attributes": {
-                          "description": "A block structure built on a pink surface"
-                        }
-                      },
-                      {
-                        "object_id": "O002",
-                        "name": "Pink surface",
-                        "attributes": {
-                          "description": "A pink surface"
-                        }
-                      },
-                      {
-                        "object_id": "O003",
-                        "name": "Children's song",
-                        "attributes": {
-                          "description": "A cheerful children's song"
-                        }
-                      },
-                      {
-                        "object_id": "O004",
-                        "name": "Background commentary",
-                        "attributes": {
-                          "description": "A woman's voice providing background commentary"
-                        }
-                      }
-                    ],
-                    "actors": [
-                      {
-                        "actor_id": "A001",
-                        "name": "A person",
-                        "ref_object": "O001",
-                        "role": "builder",
-                        "entity": "person"
-                      }
-                    ],
-                    "event": {
-                      "event_id": "E_IiTYqQKXlg_42.5_56.5",
-                      "name": "Block structure building",
-                      "time": {
-                        "start": "42.5",
-                        "end": "56.5"
-                      },
-                      "actors": [
-                        "A001"
-                      ],
-                      "objects": [
-                        "O001",
-                        "O002",
-                        "O003",
-                        "O004"
-                      ]
-                    },
-                    "LOD": {
-                      "abstract_topic": [
-                        "childrens_content"
-                      ],
-                      "scene_topic": "A person builds a block structure on a pink surface while a cheerful children's song plays and a woman's voice provides background commentary.",
-                      "summary": "A person builds a block structure on a pink surface while a cheerful children's song plays and a woman's voice provides background commentary.",
-                      "implications": "Major childrens_content event",
-                      "modalities": {
-                        "visual": "A person builds a block structure on a pink surface.",
-                        "audio": "children's song; woman's voice commentary",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
-                      }
-                    }
-                  }
-                }
-              },
-              {
-                "level": 3,
-                "start_time": 56.5,
                 "end_time": 72.5,
                 "children": [],
-                "caption": "A hand arranges colorful, rectangular blocks on a pink surface, then picks up a purple block and places it on the pink surface, as cheerful children's music plays in the background.",
+                "caption": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
                 "postprocess": {
-                  "event_id": 16,
-                  "original_answer": "A hand arranges colorful, rectangular blocks on a pink surface, then picks up a purple block and places it on the pink surface, as cheerful children's music plays in the background.",
+                  "event_id": 11,
+                  "original_answer": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
                   "result": {
                     "video_id": "IiTYqQKXlg",
-                    "event_id": "E_IiTYqQKXlg_56_72",
+                    "event_id": "E_IiTYqQKXlg_42.5_72.5",
                     "tags": [
-                      "colorful_blocks",
-                      "childrens_music",
-                      "pink_surface"
+                      "children",
+                      "blocks",
+                      "grid",
+                      "colorful",
+                      "pink"
                     ],
                     "objects": [
                       {
                         "object_id": "O001",
-                        "name": "hand",
+                        "name": "blocks",
                         "attributes": {
-                          "color": "human",
-                          "action": "arranging",
-                          "object": "blocks"
+                          "colorful": "yes",
+                          "rectangular": "yes",
+                          "grid_pattern": "yes"
                         }
                       },
                       {
                         "object_id": "O002",
-                        "name": "blocks",
-                        "attributes": {
-                          "color": "colorful",
-                          "shape": "rectangular"
-                        }
-                      },
-                      {
-                        "object_id": "O003",
-                        "name": "purple_block",
-                        "attributes": {
-                          "color": "purple"
-                        }
-                      },
-                      {
-                        "object_id": "O004",
                         "name": "pink_surface",
                         "attributes": {
                           "color": "pink"
                         }
+                      },
+                      {
+                        "object_id": "O003",
+                        "name": "hand",
+                        "attributes": {
+                          "arranging": "yes"
+                        }
                       }
                     ],
                     "actors": [
                       {
                         "actor_id": "A001",
                         "name": "hand",
-                        "ref_object": "O001",
-                        "role": "actor",
+                        "ref_object": "O003",
+                        "role": "arranger",
                         "entity": "human"
                       }
                     ],
                     "event": {
-                      "event_id": "E_IiTYqQKXlg_56_72",
-                      "name": "arranging_blocks",
+                      "event_id": "E_IiTYqQKXlg_42.5_72.5",
+                      "name": "arranging blocks",
                       "time": {
-                        "start": "56.5",
+                        "start": "42.5",
                         "end": "72.5"
                       },
                       "actors": [
@@ -1101,26 +755,100 @@
                       "objects": [
                         "O001",
                         "O002",
-                        "O003",
-                        "O004"
+                        "O003"
                       ]
                     },
                     "LOD": {
                       "abstract_topic": [
-                        "childrens_content"
+                        "children's activity"
                       ],
-                      "scene_topic": "A hand arranges colorful blocks on a pink surface, then picks up a purple block and places it on the pink surface.",
-                      "summary": "A hand arranges colorful, rectangular blocks on a pink surface, then picks up a purple block and places it on the pink surface, as cheerful children's music plays in the background.",
-                      "implications": "Major children's content event",
+                      "scene_topic": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
+                      "summary": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern as a cheerful children's song plays in the background.",
+                      "implications": "Major children's development, cognitive skills",
                       "modalities": {
-                        "visual": "A hand arranges colorful, rectangular blocks on a pink surface, then picks up a purple block and places it on the pink surface.",
-                        "audio": "cheerful children's music",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                        "visual": "A hand arranges colorful, rectangular blocks on a pink surface, carefully placing them in a grid pattern.",
+                        "audio": "children's song",
+                        "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                       }
                     }
                   }
                 }
-              },
+              }
+            ],
+            "caption": "A person builds a colorful block pattern on a pink surface while a cheerful children's song plays in the background.",
+            "postprocess": {
+              "event_id": 12,
+              "original_answer": "A person builds a colorful block pattern on a pink surface while a cheerful children's song plays in the background.",
+              "result": {
+                "video_id": "IiTYqQKXlg",
+                "event_id": "E_IiTYqQKXlg_42.5_72.5",
+                "tags": [
+                  "colorful_blocks",
+                  "childrens_song",
+                  "pink_surface"
+                ],
+                "objects": [
+                  {
+                    "object_id": "O001",
+                    "name": "Block Pattern",
+                    "attributes": {
+                      "colorful": "yes",
+                      "pattern": "block"
+                    }
+                  },
+                  {
+                    "object_id": "O002",
+                    "name": "Pink Surface",
+                    "attributes": {
+                      "color": "pink"
+                    }
+                  }
+                ],
+                "actors": [
+                  {
+                    "actor_id": "A001",
+                    "name": "Person",
+                    "ref_object": "O001",
+                    "role": "builder",
+                    "entity": "human"
+                  }
+                ],
+                "event": {
+                  "event_id": "E_IiTYqQKXlg_42.5_72.5",
+                  "name": "Block Pattern Building",
+                  "time": {
+                    "start": "42.5",
+                    "end": "72.5"
+                  },
+                  "actors": [
+                    "A001"
+                  ],
+                  "objects": [
+                    "O001",
+                    "O002"
+                  ]
+                },
+                "LOD": {
+                  "abstract_topic": [
+                    "childrens_content"
+                  ],
+                  "scene_topic": "A person builds a colorful block pattern on a pink surface while a cheerful children's song plays in the background.",
+                  "summary": "A person builds a colorful block pattern on a pink surface while a cheerful children's song plays in the background.",
+                  "implications": "Major children's content event",
+                  "modalities": {
+                    "visual": "A person builds a colorful block pattern on a pink surface.",
+                    "audio": "children's song",
+                    "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
+                  }
+                }
+              }
+            }
+          },
+          {
+            "level": 2,
+            "start_time": 72.5,
+            "end_time": 123.5,
+            "children": [
               {
                 "level": 3,
                 "start_time": 72.5,
@@ -1128,7 +856,7 @@
                 "children": [],
                 "caption": "A hand carefully arranges colorful, rectangular blocks on a pink surface, creating a vibrant and playful pattern as a cheerful children's song plays in the background.",
                 "postprocess": {
-                  "event_id": 17,
+                  "event_id": 13,
                   "original_answer": "A hand carefully arranges colorful, rectangular blocks on a pink surface, creating a vibrant and playful pattern as a cheerful children's song plays in the background.",
                   "result": {
                     "video_id": "IiTYqQKXlg",
@@ -1192,7 +920,7 @@
                       "modalities": {
                         "visual": "A hand carefully arranges colorful, rectangular blocks on a pink surface, creating a vibrant and playful pattern.",
                         "audio": "children's song",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                        "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                       }
                     }
                   }
@@ -1208,49 +936,57 @@
                     "start_time": 102.5,
                     "end_time": 105.5,
                     "children": [],
-                    "caption": "A hand carefully places a colorful, pixelated block onto a pink surface, as a woman's voice can be heard saying \"Bye\" in the background.",
+                    "caption": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, rectangular blocks on a pink surface, accompanied by a cheerful children's song.",
                     "postprocess": {
-                      "event_id": 18,
-                      "original_answer": "A hand carefully places a colorful, pixelated block onto a pink surface, as a woman's voice can be heard saying \"Bye\" in the background.",
+                      "event_id": 15,
+                      "original_answer": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, rectangular blocks on a pink surface, accompanied by a cheerful children's song.",
                       "result": {
                         "video_id": "IiTYqQKXlg",
                         "event_id": "E_IiTYqQKXlg_102.5_105.5",
                         "tags": [
-                          "colorful_block",
-                          "pink_surface",
-                          "background_voice"
+                          "children",
+                          "colorful",
+                          "cake",
+                          "blocks",
+                          "pink"
                         ],
                         "objects": [
                           {
                             "object_id": "O001",
-                            "name": "colorful block",
+                            "name": "cake",
                             "attributes": {
-                              "color": "colorful",
-                              "shape": "block",
-                              "size": "pixelated"
+                              "colorful": "true",
+                              "pixelated": "true"
                             }
                           },
                           {
                             "object_id": "O002",
+                            "name": "blocks",
+                            "attributes": {
+                              "colorful": "true",
+                              "rectangular": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
                             "name": "pink surface",
                             "attributes": {
-                              "color": "pink",
-                              "texture": "smooth"
+                              "color": "pink"
                             }
                           }
                         ],
                         "actors": [
                           {
                             "actor_id": "A001",
-                            "name": "woman",
-                            "ref_object": "O001",
-                            "role": "hand",
+                            "name": "person",
+                            "ref_object": "O003",
+                            "role": "arranger",
                             "entity": "human"
                           }
                         ],
                         "event": {
                           "event_id": "E_IiTYqQKXlg_102.5_105.5",
-                          "name": "placing colorful block",
+                          "name": "Children's toy arrangement",
                           "time": {
                             "start": "102.5",
                             "end": "105.5"
@@ -1260,20 +996,21 @@
                           ],
                           "objects": [
                             "O001",
-                            "O002"
+                            "O002",
+                            "O003"
                           ]
                         },
                         "LOD": {
                           "abstract_topic": [
-                            "human activity"
+                            "children's entertainment"
                           ],
-                          "scene_topic": "A woman places a colorful block on a pink surface while saying goodbye.",
-                          "summary": "A hand carefully places a colorful, pixelated block onto a pink surface, as a woman's voice can be heard saying \"Bye\" in the background.",
-                          "implications": "Minor human activity event",
+                          "scene_topic": "A person arranges colorful blocks on a pink surface to a cheerful children's song.",
+                          "summary": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, rectangular blocks on a pink surface, accompanied by a cheerful children's song.",
+                          "implications": "Fun and creative play for children.",
                           "modalities": {
-                            "visual": "A hand carefully places a colorful, pixelated block onto a pink surface, as a woman's voice can be heard saying 'Bye' in the background.",
-                            "audio": "Woman's voice saying 'Bye'",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                            "visual": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, rectangular blocks on a pink surface.",
+                            "audio": "cheerful children's song.",
+                            "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                           }
                         }
                       }
@@ -1284,57 +1021,57 @@
                     "start_time": 105.5,
                     "end_time": 109.5,
                     "children": [],
-                    "caption": "The video transitions from a close-up of a colorful, pixelated object to a person's hands arranging colorful blocks on a table, accompanied by a cheerful children's song.",
+                    "caption": "The video shows a hand arranging colorful, geometric shapes on a pink surface, then cutting them into smaller pieces, possibly for a craft project, as cheerful children's music plays in the background.",
                     "postprocess": {
-                      "event_id": 20,
-                      "original_answer": "The video transitions from a close-up of a colorful, pixelated object to a person's hands arranging colorful blocks on a table, accompanied by a cheerful children's song.",
+                      "event_id": 17,
+                      "original_answer": "The video shows a hand arranging colorful, geometric shapes on a pink surface, then cutting them into smaller pieces, possibly for a craft project, as cheerful children's music plays in the background.",
                       "result": {
                         "video_id": "IiTYqQKXlg",
                         "event_id": "E_IiTYqQKXlg_105_109",
                         "tags": [
+                          "craft",
                           "children",
-                          "colorful",
-                          "blocks",
-                          "table",
-                          "song"
+                          "music",
+                          "art",
+                          "colorful"
                         ],
                         "objects": [
                           {
                             "object_id": "O001",
-                            "name": "colorful, pixelated object",
+                            "name": "hand",
                             "attributes": {
-                              "colorful": "yes",
-                              "pixelated": "yes"
+                              "arranging": "colorful, geometric shapes",
+                              "cutting": "into smaller pieces"
                             }
                           },
                           {
                             "object_id": "O002",
-                            "name": "colorful blocks",
+                            "name": "shapes",
                             "attributes": {
                               "colorful": "yes",
-                              "blocks": "yes"
+                              "geometric": "yes"
                             }
                           },
                           {
                             "object_id": "O003",
-                            "name": "table",
+                            "name": "surface",
                             "attributes": {
-                              "table": "yes"
+                              "color": "pink"
                             }
                           }
                         ],
                         "actors": [
                           {
                             "actor_id": "A001",
-                            "name": "person",
-                            "ref_object": "O002",
-                            "role": "arranger",
+                            "name": "hand",
+                            "ref_object": "O001",
+                            "role": "performer",
                             "entity": "human"
                           }
                         ],
                         "event": {
                           "event_id": "E_IiTYqQKXlg_105_109",
-                          "name": "children's song and block arrangement",
+                          "name": "craft project",
                           "time": {
                             "start": "105.5",
                             "end": "109.5"
@@ -1350,49 +1087,42 @@
                         },
                         "LOD": {
                           "abstract_topic": [
-                            "children's entertainment"
+                            "art",
+                            "children"
                           ],
-                          "scene_topic": "A person arranges colorful blocks on a table to a cheerful children's song.",
-                          "summary": "The video transitions from a close-up of a colorful, pixelated object to a person's hands arranging colorful blocks on a table, accompanied by a cheerful children's song.",
-                          "implications": "A significant event in children's entertainment",
+                          "scene_topic": "A person arranges colorful shapes on a pink surface, then cuts them into smaller pieces.",
+                          "summary": "The video shows a hand arranging colorful, geometric shapes on a pink surface, then cutting them into smaller pieces, possibly for a craft project, as cheerful children's music plays in the background.",
+                          "implications": "Minor creative activity",
                           "modalities": {
-                            "visual": "The video transitions from a close-up of a colorful, pixelated object to a person's hands arranging colorful blocks on a table.",
-                            "audio": "cheerful children's song",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                            "visual": "The video shows a hand arranging colorful, geometric shapes on a pink surface, then cutting them into smaller pieces, possibly for a craft project.",
+                            "audio": "cheerful children's music",
+                            "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                           }
                         }
                       }
                     }
                   }
                 ],
-                "caption": "A person builds with colorful blocks while a woman says goodbye in the background, accompanied by a cheerful children's song.",
+                "caption": "A person creates a colorful craft project, arranging and cutting geometric shapes to a cheerful children's song.",
                 "postprocess": {
-                  "event_id": 19,
-                  "original_answer": "A person builds with colorful blocks while a woman says goodbye in the background, accompanied by a cheerful children's song.",
+                  "event_id": 16,
+                  "original_answer": "A person creates a colorful craft project, arranging and cutting geometric shapes to a cheerful children's song.",
                   "result": {
                     "video_id": "IiTYqQKXlg",
                     "event_id": "E_IiTYqQKXlg_102_109",
                     "tags": [
+                      "craft",
                       "children",
-                      "play",
-                      "goodbye",
-                      "song",
-                      "blocks"
+                      "geometric_shapes",
+                      "colorful",
+                      "cheerful"
                     ],
                     "objects": [
                       {
                         "object_id": "O001",
-                        "name": "colorful blocks",
+                        "name": "craft_project",
                         "attributes": {
-                          "colorful": "yes",
-                          "building": "yes"
-                        }
-                      },
-                      {
-                        "object_id": "O002",
-                        "name": "woman",
-                        "attributes": {
-                          "saying goodbye": "yes"
+                          "description": "colorful craft project with geometric shapes"
                         }
                       }
                     ],
@@ -1401,44 +1131,35 @@
                         "actor_id": "A001",
                         "name": "person",
                         "ref_object": "O001",
-                        "role": "builder",
-                        "entity": "person"
-                      },
-                      {
-                        "actor_id": "A002",
-                        "name": "woman",
-                        "ref_object": "O002",
-                        "role": "saying goodbye",
+                        "role": "creator",
                         "entity": "person"
                       }
                     ],
                     "event": {
                       "event_id": "E_IiTYqQKXlg_102_109",
-                      "name": "A person builds with colorful blocks",
+                      "name": "colorful craft project creation",
                       "time": {
                         "start": "102.5",
                         "end": "109.5"
                       },
                       "actors": [
-                        "A001",
-                        "A002"
+                        "A001"
                       ],
                       "objects": [
-                        "O001",
-                        "O002"
+                        "O001"
                       ]
                     },
                     "LOD": {
                       "abstract_topic": [
-                        "children's activity"
+                        "children's_activity"
                       ],
-                      "scene_topic": "A person builds with colorful blocks while a woman says goodbye in the background, accompanied by a cheerful children's song.",
-                      "summary": "A person builds with colorful blocks while a woman says goodbye in the background, accompanied by a cheerful children's song.",
-                      "implications": "Major children's entertainment event",
+                      "scene_topic": "A person creates a colorful craft project to a cheerful children's song.",
+                      "summary": "A person creates a colorful craft project, arranging and cutting geometric shapes to a cheerful children's song.",
+                      "implications": "Major creative, educational event",
                       "modalities": {
-                        "visual": "A person builds with colorful blocks while a woman says goodbye in the background.",
-                        "audio": "woman says goodbye; cheerful children's song.",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                        "visual": "A person creates a colorful craft project, arranging and cutting geometric shapes.",
+                        "audio": "cheerful children's song",
+                        "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                       }
                     }
                   }
@@ -1454,49 +1175,25 @@
                     "start_time": 109.5,
                     "end_time": 123.5,
                     "children": [],
-                    "caption": "The video shows a hand arranging colorful, geometric shapes on a pink surface, then cutting them into smaller pieces, possibly for a craft project.",
+                    "caption": "The video shows a hand arranging colorful, pixelated blocks on a pink surface, creating a playful and vibrant scene.",
                     "postprocess": {
-                      "event_id": 21,
-                      "original_answer": "The video shows a hand arranging colorful, geometric shapes on a pink surface, then cutting them into smaller pieces, possibly for a craft project.",
+                      "event_id": 18,
+                      "original_answer": "The video shows a hand arranging colorful, pixelated blocks on a pink surface, creating a playful and vibrant scene.",
                       "result": {
                         "video_id": "IiTYqQKXlg",
                         "event_id": "E_IiTYqQKXlg_109_123",
                         "tags": [
-                          "craft",
-                          "geometry",
-                          "color"
+                          "colorful_blocks",
+                          "pixelated",
+                          "playful_scene"
                         ],
                         "objects": [
                           {
                             "object_id": "O001",
-                            "name": "hand",
+                            "name": "blocks",
                             "attributes": {
-                              "body_part": "hand",
-                              "action": "arranging",
-                              "object": "geometric shapes"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "geometric shapes",
-                            "attributes": {
-                              "shape": "colorful",
-                              "material": "unknown"
-                            }
-                          },
-                          {
-                            "object_id": "O003",
-                            "name": "pink surface",
-                            "attributes": {
-                              "color": "pink",
-                              "material": "unknown"
-                            }
-                          },
-                          {
-                            "object_id": "O004",
-                            "name": "cutting tool",
-                            "attributes": {
-                              "type": "unknown"
+                              "colorful": "yes",
+                              "pixelated": "yes"
                             }
                           }
                         ],
@@ -1505,13 +1202,13 @@
                             "actor_id": "A001",
                             "name": "hand",
                             "ref_object": "O001",
-                            "role": "actor",
+                            "role": "arranger",
                             "entity": "human"
                           }
                         ],
                         "event": {
                           "event_id": "E_IiTYqQKXlg_109_123",
-                          "name": "craft project",
+                          "name": "block arrangement",
                           "time": {
                             "start": "109.5",
                             "end": "123.5"
@@ -1520,65 +1217,63 @@
                             "A001"
                           ],
                           "objects": [
-                            "O001",
-                            "O002",
-                            "O003",
-                            "O004"
+                            "O001"
                           ]
                         },
                         "LOD": {
                           "abstract_topic": [
-                            "craft project"
+                            "creative activity"
                           ],
-                          "scene_topic": "A hand arranges colorful shapes on a pink surface, then cuts them into smaller pieces.",
-                          "summary": "The video shows a hand arranging colorful, geometric shapes on a pink surface, then cutting them into smaller pieces, possibly for a craft project.",
-                          "implications": "A craft project is being prepared.",
+                          "scene_topic": "A hand arranges colorful, pixelated blocks on a pink surface.",
+                          "summary": "The video shows a hand arranging colorful, pixelated blocks on a pink surface, creating a playful and vibrant scene.",
+                          "implications": "Creative expression, playfulness",
                           "modalities": {
-                            "visual": "The video shows a hand arranging colorful, geometric shapes on a pink surface, then cutting them into smaller pieces, possibly for a craft project.",
+                            "visual": "The video shows a hand arranging colorful, pixelated blocks on a pink surface, creating a playful and vibrant scene.",
                             "audio": "",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                            "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                           }
                         }
                       }
                     }
                   }
                 ],
-                "caption": "A person creates a colorful and playful design using geometric shapes or pixelated blocks on a pink surface.",
+                "caption": "A person creates a colorful and vibrant scene by arranging pixelated blocks on a pink surface.",
                 "postprocess": {
-                  "event_id": 22,
-                  "original_answer": "A person creates a colorful and playful design using geometric shapes or pixelated blocks on a pink surface.",
+                  "event_id": 19,
+                  "original_answer": "A person creates a colorful and vibrant scene by arranging pixelated blocks on a pink surface.",
                   "result": {
                     "video_id": "IiTYqQKXlg",
                     "event_id": "E_IiTYqQKXlg_109_123",
                     "tags": [
-                      "design",
                       "art",
                       "colorful",
-                      "playful",
-                      "geometric",
-                      "pixelated"
+                      "pixelated",
+                      "blocks",
+                      "pink"
                     ],
                     "objects": [
                       {
                         "object_id": "O001",
-                        "name": "Design",
+                        "name": "Pixelated blocks",
                         "attributes": {
-                          "description": "Colorful and playful design using geometric shapes or pixelated blocks on a pink surface"
+                          "colorful": "yes",
+                          "vibrant": "yes",
+                          "pink_surface": "yes"
                         }
                       }
                     ],
                     "actors": [
                       {
                         "actor_id": "A001",
-                        "name": "Person",
+                        "name": "A person",
                         "ref_object": "O001",
-                        "role": "Creator",
-                        "entity": "Person"
+                        "role": "creator",
+                        "entity": "human"
                       }
                     ],
                     "event": {
                       "event_id": "E_IiTYqQKXlg_109_123",
-                      "name": "Design Creation",
+                      "name": "Pixelated block arrangement",
                       "time": {
                         "start": "109.5",
                         "end": "123.5"
@@ -1594,54 +1289,57 @@
                       "abstract_topic": [
                         "art"
                       ],
-                      "scene_topic": "A person creates a colorful and playful design using geometric shapes or pixelated blocks on a pink surface.",
-                      "summary": "A person creates a colorful and playful design using geometric shapes or pixelated blocks on a pink surface.",
+                      "scene_topic": "A person creates a colorful and vibrant scene by arranging pixelated blocks on a pink surface.",
+                      "summary": "A person creates a colorful and vibrant scene by arranging pixelated blocks on a pink surface.",
                       "implications": "Creative expression",
                       "modalities": {
-                        "visual": "A person creates a colorful and playful design using geometric shapes or pixelated blocks on a pink surface.",
+                        "visual": "A person creates a colorful and vibrant scene by arranging pixelated blocks on a pink surface.",
                         "audio": "",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                        "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                       }
                     }
                   }
                 }
               }
             ],
-            "caption": "A person builds a block structure while a cheerful children's song and commentary play in the background.",
+            "caption": "A person creates a colorful and playful craft project, arranging and cutting geometric shapes to a cheerful children's song.",
             "postprocess": {
-              "event_id": 13,
-              "original_answer": "A person builds a block structure while a cheerful children's song and commentary play in the background.",
+              "event_id": 14,
+              "original_answer": "A person creates a colorful and playful craft project, arranging and cutting geometric shapes to a cheerful children's song.",
               "result": {
                 "video_id": "IiTYqQKXlg",
-                "event_id": "E_IiTYqQKXlg_42.5_123.5",
+                "event_id": "E_IiTYqQKXlg_72_123",
                 "tags": [
-                  "block_structure",
-                  "childrens_song",
-                  "commentary"
+                  "craft",
+                  "children",
+                  "geometric_shapes",
+                  "colorful",
+                  "playful"
                 ],
                 "objects": [
                   {
                     "object_id": "O001",
-                    "name": "Block Structure",
+                    "name": "craft_project",
                     "attributes": {
-                      "description": "A block structure being built"
+                      "description": "colorful and playful craft project",
+                      "shapes": "geometric"
                     }
                   }
                 ],
                 "actors": [
                   {
                     "actor_id": "A001",
-                    "name": "Person",
+                    "name": "person",
                     "ref_object": "O001",
-                    "role": "builder",
-                    "entity": "person"
+                    "role": "creator",
+                    "entity": "human"
                   }
                 ],
                 "event": {
-                  "event_id": "E_IiTYqQKXlg_42.5_123.5",
-                  "name": "Block Structure Building",
+                  "event_id": "E_IiTYqQKXlg_72_123",
+                  "name": "craft_project_creation",
                   "time": {
-                    "start": "42.5",
+                    "start": "72.5",
                     "end": "123.5"
                   },
                   "actors": [
@@ -1653,73 +1351,69 @@
                 },
                 "LOD": {
                   "abstract_topic": [
-                    "childrens_content"
+                    "children_activity"
                   ],
-                  "scene_topic": "A person builds a block structure while a cheerful children's song and commentary play in the background.",
-                  "summary": "A person builds a block structure while a cheerful children's song and commentary play in the background.",
-                  "implications": "Educational content for children",
+                  "scene_topic": "A person creates a colorful and playful craft project to a cheerful children's song.",
+                  "summary": "A person creates a colorful and playful craft project, arranging and cutting geometric shapes to a cheerful children's song.",
+                  "implications": "Major creative, educational event",
                   "modalities": {
-                    "visual": "A person builds a block structure.",
-                    "audio": "Children's song; commentary.",
-                    "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                    "visual": "A person creates a colorful and playful craft project, arranging and cutting geometric shapes.",
+                    "audio": "cheerful children's song",
+                    "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                   }
                 }
               }
             }
           }
         ],
-        "caption": "A woman and child engage in creative play, building and arranging toys to upbeat background sounds, with a cheerful atmosphere.",
+        "caption": "A person engages in a creative and playful activity, building and crafting with colorful blocks to a cheerful children's song, accompanied by a woman's voice in the background.",
         "postprocess": {
           "event_id": 3,
-          "original_answer": "A woman and child engage in creative play, building and arranging toys to upbeat background sounds, with a cheerful atmosphere.",
+          "original_answer": "A person engages in a creative and playful activity, building and crafting with colorful blocks to a cheerful children's song, accompanied by a woman's voice in the background.",
           "result": {
             "video_id": "IiTYqQKXlg",
             "event_id": "E_IiTYqQKXlg_0_123.5",
             "tags": [
-              "creative_play",
-              "childhood",
-              "toy_arrangement",
-              "upbeat_music",
-              "cheerful_atmosphere"
+              "children",
+              "play",
+              "creativity",
+              "blocks",
+              "music"
             ],
             "objects": [
               {
                 "object_id": "O001",
-                "name": "woman",
+                "name": "blocks",
                 "attributes": {
-                  "role": "actor",
-                  "entity": "human"
+                  "colorful": "yes",
+                  "building": "yes",
+                  "crafting": "yes"
                 }
               },
               {
                 "object_id": "O002",
-                "name": "child",
+                "name": "person",
                 "attributes": {
-                  "role": "actor",
-                  "entity": "human"
+                  "engaged": "yes",
+                  "creative": "yes",
+                  "playful": "yes"
                 }
               },
               {
                 "object_id": "O003",
-                "name": "toys",
+                "name": "woman's voice",
                 "attributes": {
-                  "type": "playthings"
+                  "background": "yes",
+                  "cheerful": "yes"
                 }
               }
             ],
             "actors": [
               {
                 "actor_id": "A001",
-                "name": "woman",
-                "ref_object": "O001",
-                "role": "actor",
-                "entity": "human"
-              },
-              {
-                "actor_id": "A002",
-                "name": "child",
+                "name": "person",
                 "ref_object": "O002",
-                "role": "actor",
+                "role": "main",
                 "entity": "human"
               }
             ],
@@ -1731,8 +1425,7 @@
                 "end": "123.5"
               },
               "actors": [
-                "A001",
-                "A002"
+                "A001"
               ],
               "objects": [
                 "O001",
@@ -1742,15 +1435,15 @@
             },
             "LOD": {
               "abstract_topic": [
-                "childhood development"
+                "children's entertainment"
               ],
-              "scene_topic": "A woman and child engage in creative play, building and arranging toys to upbeat background sounds, with a cheerful atmosphere.",
-              "summary": "A woman and child engage in creative play, building and arranging toys to upbeat background sounds, with a cheerful atmosphere.",
-              "implications": "Major childhood development event",
+              "scene_topic": "A person builds and crafts with colorful blocks to a cheerful children's song.",
+              "summary": "A person engages in a creative and playful activity, building and crafting with colorful blocks to a cheerful children's song, accompanied by a woman's voice in the background.",
+              "implications": "Major children's entertainment event",
               "modalities": {
-                "visual": "A woman and child engage in creative play, building and arranging toys.",
-                "audio": "upbeat background sounds; cheerful atmosphere.",
-                "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                "visual": "A person builds and crafts with colorful blocks to a cheerful children's song.",
+                "audio": "children's song; woman's voice.",
+                "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
               }
             }
           }
@@ -1769,215 +1462,54 @@
               {
                 "level": 3,
                 "start_time": 123.5,
-                "end_time": 139.5,
-                "children": [
-                  {
-                    "level": 4,
-                    "start_time": 123.5,
-                    "end_time": 139.5,
-                    "children": [],
-                    "caption": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, pixelated blocks on a pink surface, accompanied by upbeat pop music.",
-                    "postprocess": {
-                      "event_id": 23,
-                      "original_answer": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, pixelated blocks on a pink surface, accompanied by upbeat pop music.",
-                      "result": {
-                        "video_id": "IiTYqQKXlg",
-                        "event_id": "E_IiTYqQKXlg_123_139",
-                        "tags": [
-                          "video_transition",
-                          "colorful",
-                          "pixelated",
-                          "cake",
-                          "blocks",
-                          "pink"
-                        ],
-                        "objects": [
-                          {
-                            "object_id": "O001",
-                            "name": "colorful pixelated cake",
-                            "attributes": {
-                              "colorful": "yes",
-                              "pixelated": "yes"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "colorful pixelated blocks",
-                            "attributes": {
-                              "colorful": "yes",
-                              "pixelated": "yes"
-                            }
-                          },
-                          {
-                            "object_id": "O003",
-                            "name": "pink surface",
-                            "attributes": {
-                              "color": "pink"
-                            }
-                          }
-                        ],
-                        "actors": [
-                          {
-                            "actor_id": "A001",
-                            "name": "person",
-                            "ref_object": "O002",
-                            "role": "arranger",
-                            "entity": "human"
-                          }
-                        ],
-                        "event": {
-                          "event_id": "E_IiTYqQKXlg_123_139",
-                          "name": "video transition",
-                          "time": {
-                            "start": "123.5",
-                            "end": "139.5"
-                          },
-                          "actors": [
-                            "A001"
-                          ],
-                          "objects": [
-                            "O001",
-                            "O002",
-                            "O003"
-                          ]
-                        },
-                        "LOD": {
-                          "abstract_topic": [
-                            "video_transition"
-                          ],
-                          "scene_topic": "A person arranges colorful, pixelated blocks on a pink surface, accompanied by upbeat pop music.",
-                          "summary": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, pixelated blocks on a pink surface, accompanied by upbeat pop music.",
-                          "implications": "Major entertainment, music news event",
-                          "modalities": {
-                            "visual": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, pixelated blocks on a pink surface.",
-                            "audio": "upbeat pop music",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
-                          }
-                        }
-                      }
-                    }
-                  }
-                ],
-                "caption": "A person builds a colorful, pixelated structure using blocks to a lively soundtrack.",
-                "postprocess": {
-                  "event_id": 24,
-                  "original_answer": "A person builds a colorful, pixelated structure using blocks to a lively soundtrack.",
-                  "result": {
-                    "video_id": "IiTYqQKXlg",
-                    "event_id": "E_IiTYqQKXlg_123_139",
-                    "tags": [
-                      "building",
-                      "blocks",
-                      "colorful",
-                      "pixelated",
-                      "structure"
-                    ],
-                    "objects": [
-                      {
-                        "object_id": "O001",
-                        "name": "Block Structure",
-                        "attributes": {
-                          "colorful": "yes",
-                          "pixelated": "yes"
-                        }
-                      }
-                    ],
-                    "actors": [
-                      {
-                        "actor_id": "A001",
-                        "name": "Person",
-                        "ref_object": "O001",
-                        "role": "builder",
-                        "entity": "human"
-                      }
-                    ],
-                    "event": {
-                      "event_id": "E_IiTYqQKXlg_123_139",
-                      "name": "Building a colorful, pixelated structure",
-                      "time": {
-                        "start": "123.5",
-                        "end": "139.5"
-                      },
-                      "actors": [
-                        "A001"
-                      ],
-                      "objects": [
-                        "O001"
-                      ]
-                    },
-                    "LOD": {
-                      "abstract_topic": [
-                        "creative activity"
-                      ],
-                      "scene_topic": "A person builds a colorful, pixelated structure using blocks to a lively soundtrack.",
-                      "summary": "A person builds a colorful, pixelated structure using blocks to a lively soundtrack.",
-                      "implications": "Creative expression, entertainment",
-                      "modalities": {
-                        "visual": "A person builds a colorful, pixelated structure using blocks.",
-                        "audio": "lively soundtrack",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
-                      }
-                    }
-                  }
-                }
-              },
-              {
-                "level": 3,
-                "start_time": 139.5,
                 "end_time": 174.5,
                 "children": [],
-                "caption": "The video shows a hand arranging colorful, pixelated blocks on a pink surface, creating a playful and vibrant scene as a cheerful children's song plays in the background.",
+                "caption": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, pixelated blocks on a pink surface, accompanied by a cheerful children's song.",
                 "postprocess": {
-                  "event_id": 27,
-                  "original_answer": "The video shows a hand arranging colorful, pixelated blocks on a pink surface, creating a playful and vibrant scene as a cheerful children's song plays in the background.",
+                  "event_id": 20,
+                  "original_answer": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, pixelated blocks on a pink surface, accompanied by a cheerful children's song.",
                   "result": {
                     "video_id": "IiTYqQKXlg",
-                    "event_id": "E_IiTYqQKXlg_139_174",
+                    "event_id": "E_IiTYqQKXlg_123_174",
                     "tags": [
-                      "childrens_song",
-                      "colorful_blocks",
-                      "playful_scene",
-                      "vibrant"
+                      "colorful",
+                      "pixelated",
+                      "cake",
+                      "blocks",
+                      "childrens_song"
                     ],
                     "objects": [
                       {
                         "object_id": "O001",
-                        "name": "blocks",
+                        "name": "cake",
                         "attributes": {
-                          "colorful": "true",
-                          "pixelated": "true",
-                          "arranged": "true"
+                          "colorful": "",
+                          "pixelated": ""
                         }
                       },
                       {
                         "object_id": "O002",
-                        "name": "hand",
+                        "name": "blocks",
                         "attributes": {
-                          "arranging": "true"
-                        }
-                      },
-                      {
-                        "object_id": "O003",
-                        "name": "pink_surface",
-                        "attributes": {
-                          "color": "pink"
+                          "colorful": "",
+                          "pixelated": ""
                         }
                       }
                     ],
                     "actors": [
                       {
                         "actor_id": "A001",
-                        "name": "hand",
+                        "name": "",
                         "ref_object": "O002",
-                        "role": "actor",
-                        "entity": "hand"
+                        "role": "",
+                        "entity": ""
                       }
                     ],
                     "event": {
-                      "event_id": "E_IiTYqQKXlg_139_174",
-                      "name": "childrens_song",
+                      "event_id": "E_IiTYqQKXlg_123_174",
+                      "name": "",
                       "time": {
-                        "start": "139.5",
+                        "start": "123.5",
                         "end": "174.5"
                       },
                       "actors": [
@@ -1985,64 +1517,62 @@
                       ],
                       "objects": [
                         "O001",
-                        "O002",
-                        "O003"
+                        "O002"
                       ]
                     },
                     "LOD": {
                       "abstract_topic": [
                         "childrens_content"
                       ],
-                      "scene_topic": "A cheerful children's song plays in the background as a hand arranges colorful blocks on a pink surface.",
-                      "summary": "The video shows a hand arranging colorful, pixelated blocks on a pink surface, creating a playful and vibrant scene as a cheerful children's song plays in the background.",
-                      "implications": "Major children's content event",
+                      "scene_topic": "A person arranges colorful, pixelated blocks on a pink surface, accompanied by a cheerful children's song.",
+                      "summary": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, pixelated blocks on a pink surface, accompanied by a cheerful children's song.",
+                      "implications": "Fun and educational content for children",
                       "modalities": {
-                        "visual": "The video shows a hand arranging colorful, pixelated blocks on a pink surface, creating a playful and vibrant scene.",
-                        "audio": "children's song",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                        "visual": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful, pixelated blocks on a pink surface.",
+                        "audio": "cheerful children's song",
+                        "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                       }
                     }
                   }
                 }
               }
             ],
-            "caption": "A person builds a colorful, pixelated structure to a lively soundtrack, creating a playful and vibrant scene.",
+            "caption": "A person builds with colorful, pixelated blocks to a cheerful soundtrack, transitioning between different musical styles.",
             "postprocess": {
-              "event_id": 25,
-              "original_answer": "A person builds a colorful, pixelated structure to a lively soundtrack, creating a playful and vibrant scene.",
+              "event_id": 21,
+              "original_answer": "A person builds with colorful, pixelated blocks to a cheerful soundtrack, transitioning between different musical styles.",
               "result": {
                 "video_id": "IiTYqQKXlg",
                 "event_id": "E_IiTYqQKXlg_123_174",
                 "tags": [
-                  "art",
+                  "building",
+                  "blocks",
                   "music",
                   "colorful",
-                  "playful",
-                  "vibrant"
+                  "cheerful"
                 ],
                 "objects": [
                   {
                     "object_id": "O001",
-                    "name": "Pixelated Structure",
+                    "name": "blocks",
                     "attributes": {
-                      "colorful": "yes",
-                      "vibrant": "yes",
-                      "playful": "yes"
+                      "colorful": "true",
+                      "pixelated": "true"
                     }
                   }
                 ],
                 "actors": [
                   {
                     "actor_id": "A001",
-                    "name": "Person",
+                    "name": "person",
                     "ref_object": "O001",
                     "role": "builder",
-                    "entity": "human"
+                    "entity": "person"
                   }
                 ],
                 "event": {
                   "event_id": "E_IiTYqQKXlg_123_174",
-                  "name": "Building a colorful, pixelated structure",
+                  "name": "Building with blocks",
                   "time": {
                     "start": "123.5",
                     "end": "174.5"
@@ -2056,15 +1586,15 @@
                 },
                 "LOD": {
                   "abstract_topic": [
-                    "artistic creation"
+                    "creative activity"
                   ],
-                  "scene_topic": "A person builds a colorful, pixelated structure to a lively soundtrack, creating a playful and vibrant scene.",
-                  "summary": "A person builds a colorful, pixelated structure to a lively soundtrack, creating a playful and vibrant scene.",
-                  "implications": "Major creative, artistic event",
+                  "scene_topic": "A person builds with colorful, pixelated blocks to a cheerful soundtrack, transitioning between different musical styles.",
+                  "summary": "A person builds with colorful, pixelated blocks to a cheerful soundtrack, transitioning between different musical styles.",
+                  "implications": "Creative expression, entertainment",
                   "modalities": {
-                    "visual": "A person builds a colorful, pixelated structure to a lively scene.",
-                    "audio": "lively soundtrack",
-                    "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                    "visual": "A person builds with colorful, pixelated blocks.",
+                    "audio": "cheerful soundtrack; different musical styles.",
+                    "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                   }
                 }
               }
@@ -2080,18 +1610,19 @@
                 "start_time": 174.5,
                 "end_time": 188.5,
                 "children": [],
-                "caption": "The video transitions from a close-up of a colorful, pixelated cake to a wider shot, revealing a person's hands arranging colorful blocks on a table, accompanied by cheerful children's music.",
+                "caption": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table, accompanied by a cheerful children's song.",
                 "postprocess": {
-                  "event_id": 28,
-                  "original_answer": "The video transitions from a close-up of a colorful, pixelated cake to a wider shot, revealing a person's hands arranging colorful blocks on a table, accompanied by cheerful children's music.",
+                  "event_id": 23,
+                  "original_answer": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table, accompanied by a cheerful children's song.",
                   "result": {
                     "video_id": "IiTYqQKXlg",
                     "event_id": "E_IiTYqQKXlg_174_188",
                     "tags": [
-                      "video_transition",
-                      "cake",
+                      "children",
+                      "colorful",
                       "blocks",
-                      "childrens_music"
+                      "cake",
+                      "song"
                     ],
                     "objects": [
                       {
@@ -2126,7 +1657,7 @@
                     ],
                     "event": {
                       "event_id": "E_IiTYqQKXlg_174_188",
-                      "name": "video transition",
+                      "name": "children's activity",
                       "time": {
                         "start": "174.5",
                         "end": "188.5"
@@ -2142,15 +1673,15 @@
                     },
                     "LOD": {
                       "abstract_topic": [
-                        "video_transition"
+                        "children's entertainment"
                       ],
-                      "scene_topic": "A person arranges colorful blocks on a table, accompanied by cheerful children's music.",
-                      "summary": "The video transitions from a close-up of a colorful, pixelated cake to a wider shot, revealing a person's hands arranging colorful blocks on a table, accompanied by cheerful children's music.",
-                      "implications": "Major video content event",
+                      "scene_topic": "A person arranges colorful blocks on a table while a cheerful children's song plays.",
+                      "summary": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table, accompanied by a cheerful children's song.",
+                      "implications": "A significant event in a child's life",
                       "modalities": {
-                        "visual": "The video transitions from a close-up of a colorful, pixelated cake to a wider shot, revealing a person's hands arranging colorful blocks on a table.",
-                        "audio": "cheerful children's music",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                        "visual": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table.",
+                        "audio": "cheerful children's song",
+                        "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                       }
                     }
                   }
@@ -2166,23 +1697,26 @@
                     "start_time": 188.5,
                     "end_time": 192.5,
                     "children": [],
-                    "caption": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table, accompanied by upbeat pop music.",
+                    "caption": "The video transitions from a close-up of a colorful, pixelated cake to a woman speaking, as the camera pans out to reveal a person's hands arranging colorful blocks on a table, accompanied by upbeat pop music.",
                     "postprocess": {
-                      "event_id": 30,
-                      "original_answer": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table, accompanied by upbeat pop music.",
+                      "event_id": 25,
+                      "original_answer": "The video transitions from a close-up of a colorful, pixelated cake to a woman speaking, as the camera pans out to reveal a person's hands arranging colorful blocks on a table, accompanied by upbeat pop music.",
                       "result": {
                         "video_id": "IiTYqQKXlg",
                         "event_id": "E_IiTYqQKXlg_188_192",
                         "tags": [
                           "video_transition",
-                          "colorful_cake",
+                          "colorful",
+                          "cake",
+                          "woman",
                           "blocks",
-                          "upbeat_music"
+                          "table",
+                          "pop_music"
                         ],
                         "objects": [
                           {
                             "object_id": "O001",
-                            "name": "colorful_cake",
+                            "name": "colorful cake",
                             "attributes": {
                               "colorful": "true",
                               "pixelated": "true"
@@ -2190,31 +1724,38 @@
                           },
                           {
                             "object_id": "O002",
-                            "name": "colorful_blocks",
+                            "name": "woman",
+                            "attributes": {
+                              "speaking": "true"
+                            }
+                          },
+                          {
+                            "object_id": "O003",
+                            "name": "colorful blocks",
                             "attributes": {
                               "colorful": "true"
                             }
                           },
                           {
-                            "object_id": "O003",
-                            "name": "person's_hands",
+                            "object_id": "O004",
+                            "name": "table",
                             "attributes": {
-                              "arranging_blocks": "true"
+                              "flat": "true"
                             }
                           }
                         ],
                         "actors": [
                           {
                             "actor_id": "A001",
-                            "name": "person",
-                            "ref_object": "O003",
-                            "role": "actor",
-                            "entity": "human"
+                            "name": "woman",
+                            "ref_object": "O002",
+                            "role": "speaker",
+                            "entity": "person"
                           }
                         ],
                         "event": {
                           "event_id": "E_IiTYqQKXlg_188_192",
-                          "name": "video_transition",
+                          "name": "video transition",
                           "time": {
                             "start": "188.5",
                             "end": "192.5"
@@ -2225,20 +1766,21 @@
                           "objects": [
                             "O001",
                             "O002",
-                            "O003"
+                            "O003",
+                            "O004"
                           ]
                         },
                         "LOD": {
                           "abstract_topic": [
                             "video_transition"
                           ],
-                          "scene_topic": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table, accompanied by upbeat pop music.",
-                          "summary": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table, accompanied by upbeat pop music.",
+                          "scene_topic": "The video transitions from a close-up of a colorful, pixelated cake to a woman speaking, as the camera pans out to reveal a person's hands arranging colorful blocks on a table, accompanied by upbeat pop music.",
+                          "summary": "The video transitions from a close-up of a colorful, pixelated cake to a woman speaking, as the camera pans out to reveal a person's hands arranging colorful blocks on a table, accompanied by upbeat pop music.",
                           "implications": "Major video event",
                           "modalities": {
-                            "visual": "The video transitions from a close-up of a colorful, pixelated cake to a person's hands arranging colorful blocks on a table.",
+                            "visual": "The video transitions from a close-up of a colorful, pixelated cake to a woman speaking, as the camera pans out to reveal a person's hands arranging colorful blocks on a table.",
                             "audio": "upbeat pop music",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                            "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                           }
                         }
                       }
@@ -2249,113 +1791,105 @@
                     "start_time": 192.5,
                     "end_time": 198.971767,
                     "children": [],
-                    "caption": "Against a vibrant pink background, the \"Crafting with Crayola\" logo appears, accompanied by a cheerful children's song, as a woman begins to speak.",
+                    "caption": "Against a vibrant pink background, the \"Crafting with Crayola\" YouTube channel logo appears, featuring a playful cartoon character and the channel's name, while a cheerful children's song plays in the background.",
                     "postprocess": {
-                      "event_id": 32,
-                      "original_answer": "Against a vibrant pink background, the \"Crafting with Crayola\" logo appears, accompanied by a cheerful children's song, as a woman begins to speak.",
+                      "event_id": 27,
+                      "original_answer": "Against a vibrant pink background, the \"Crafting with Crayola\" YouTube channel logo appears, featuring a playful cartoon character and the channel's name, while a cheerful children's song plays in the background.",
                       "result": {
                         "video_id": "IiTYqQKXlg",
                         "event_id": "E_IiTYqQKXlg_192.5_198.97",
                         "tags": [
-                          "crafting",
+                          "youtube",
                           "crayola",
-                          "children",
-                          "education",
-                          "art"
+                          "childrens_content",
+                          "cartoon",
+                          "music"
                         ],
                         "objects": [
                           {
                             "object_id": "O001",
-                            "name": "Crafting with Crayola logo",
+                            "name": "Crayola logo",
                             "attributes": {
                               "background_color": "pink",
-                              "background_description": "vibrant"
-                            }
-                          },
-                          {
-                            "object_id": "O002",
-                            "name": "Woman",
-                            "attributes": {
-                              "role": "speaker"
+                              "character": "playful cartoon character",
+                              "channel_name": "Crafting with Crayola",
+                              "song": "cheerful children's song"
                             }
                           }
                         ],
-                        "actors": [
-                          {
-                            "actor_id": "A001",
-                            "name": "Woman",
-                            "ref_object": "O002",
-                            "role": "speaker",
-                            "entity": "person"
-                          }
-                        ],
+                        "actors": [],
                         "event": {
                           "event_id": "E_IiTYqQKXlg_192.5_198.97",
-                          "name": "Crafting with Crayola introduction",
+                          "name": "Crayola logo appearance",
                           "time": {
                             "start": "192.5",
                             "end": "198.97"
                           },
-                          "actors": [
-                            "A001"
-                          ],
+                          "actors": [],
                           "objects": [
-                            "O001",
-                            "O002"
+                            "O001"
                           ]
                         },
                         "LOD": {
                           "abstract_topic": [
-                            "children's education"
+                            "childrens_content",
+                            "branding"
                           ],
-                          "scene_topic": "The 'Crafting with Crayola' logo appears with a cheerful children's song.",
-                          "summary": "Against a vibrant pink background, the \"Crafting with Crayola\" logo appears, accompanied by a cheerful children's song, as a woman begins to speak.",
-                          "implications": "Major education and art event",
+                          "scene_topic": "The 'Crafting with Crayola' YouTube channel logo appears on a pink background.",
+                          "summary": "Against a vibrant pink background, the \"Crafting with Crayola\" YouTube channel logo appears, featuring a playful cartoon character and the channel's name, while a cheerful children's song plays in the background.",
+                          "implications": "Major branding and marketing event",
                           "modalities": {
-                            "visual": "Against a vibrant pink background, the 'Crafting with Crayola' logo appears, as a woman begins to speak.",
-                            "audio": "children's song; cheerful; woman speaks.",
-                            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                            "visual": "Against a vibrant pink background, the 'Crafting with Crayola' YouTube channel logo appears, featuring a playful cartoon character and the channel's name.",
+                            "audio": "children's song",
+                            "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                           }
                         }
                       }
                     }
                   }
                 ],
-                "caption": "A creative activity, \"Crafting with Crayola,\" is introduced, featuring a person building with blocks and a woman welcoming viewers with a cheerful song and logo.",
+                "caption": "The \"Crafting with Crayola\" YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, accompanied by upbeat music and a cheerful logo.",
                 "postprocess": {
-                  "event_id": 31,
-                  "original_answer": "A creative activity, \"Crafting with Crayola,\" is introduced, featuring a person building with blocks and a woman welcoming viewers with a cheerful song and logo.",
+                  "event_id": 26,
+                  "original_answer": "The \"Crafting with Crayola\" YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, accompanied by upbeat music and a cheerful logo.",
                   "result": {
                     "video_id": "IiTYqQKXlg",
                     "event_id": "E_IiTYqQKXlg_188.5_198.97",
                     "tags": [
-                      "creative_activity",
                       "crafting",
                       "crayola",
-                      "blocks",
-                      "song",
-                      "logo"
+                      "colorful_blocks",
+                      "creative_activity",
+                      "youtube_channel"
                     ],
                     "objects": [
                       {
                         "object_id": "O001",
-                        "name": "blocks",
+                        "name": "colorful_blocks",
                         "attributes": {
-                          "type": "building blocks"
+                          "colorful": "yes",
+                          "arranged": "on_table"
                         }
                       },
                       {
                         "object_id": "O002",
-                        "name": "person",
+                        "name": "table",
                         "attributes": {
-                          "role": "builder"
+                          "surface": "flat"
                         }
                       },
                       {
                         "object_id": "O003",
-                        "name": "woman",
+                        "name": "upbeat_music",
                         "attributes": {
-                          "role": "welcomer"
+                          "genre": "pop"
+                        }
+                      },
+                      {
+                        "object_id": "O004",
+                        "name": "cheerful_logo",
+                        "attributes": {
+                          "color": "bright"
                         }
                       }
                     ],
@@ -2363,16 +1897,9 @@
                       {
                         "actor_id": "A001",
                         "name": "person",
-                        "ref_object": "O002",
-                        "role": "builder",
-                        "entity": "person"
-                      },
-                      {
-                        "actor_id": "A002",
-                        "name": "woman",
-                        "ref_object": "O003",
-                        "role": "welcomer",
-                        "entity": "person"
+                        "ref_object": "O001",
+                        "role": "arranger",
+                        "entity": "human"
                       }
                     ],
                     "event": {
@@ -2383,62 +1910,70 @@
                         "end": "198.97"
                       },
                       "actors": [
-                        "A001",
-                        "A002"
+                        "A001"
                       ],
                       "objects": [
                         "O001",
                         "O002",
-                        "O003"
+                        "O003",
+                        "O004"
                       ]
                     },
                     "LOD": {
                       "abstract_topic": [
                         "creative_activity"
                       ],
-                      "scene_topic": "A person builds with blocks while a woman welcomes viewers with a cheerful song and logo.",
-                      "summary": "A creative activity, \"Crafting with Crayola,\" is introduced, featuring a person building with blocks and a woman welcoming viewers with a cheerful song and logo.",
-                      "implications": "Major creative activity event",
+                      "scene_topic": "The 'Crafting with Crayola' YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, accompanied by upbeat music and a cheerful logo.",
+                      "summary": "The \"Crafting with Crayola\" YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, accompanied by upbeat music and a cheerful logo.",
+                      "implications": "Major creative, educational news event",
                       "modalities": {
-                        "visual": "A creative activity, 'Crafting with Crayola,' is introduced, featuring a person building with blocks and a woman welcoming viewers with a logo.",
-                        "audio": "cheerful song",
-                        "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                        "visual": "The \"Crafting with Crayola\" YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, accompanied by a cheerful logo.",
+                        "audio": "upbeat music",
+                        "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                       }
                     }
                   }
                 }
               }
             ],
-            "caption": "A creative activity, \"Crafting with Crayola,\" is introduced, featuring a person building with blocks and a cheerful song, as the video transitions between close-ups of colorful pixelated cake and the creative process.",
+            "caption": "The \"Crafting with Crayola\" YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, set to upbeat music and accompanied by a cheerful logo.",
             "postprocess": {
-              "event_id": 29,
-              "original_answer": "A creative activity, \"Crafting with Crayola,\" is introduced, featuring a person building with blocks and a cheerful song, as the video transitions between close-ups of colorful pixelated cake and the creative process.",
+              "event_id": 24,
+              "original_answer": "The \"Crafting with Crayola\" YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, set to upbeat music and accompanied by a cheerful logo.",
               "result": {
                 "video_id": "IiTYqQKXlg",
                 "event_id": "E_IiTYqQKXlg_174.5_198.97",
                 "tags": [
-                  "creative_activity",
                   "crafting",
                   "crayola",
-                  "building",
-                  "blocks",
-                  "cheerful_song"
+                  "colorful_blocks",
+                  "creative_activity",
+                  "youtube_channel"
                 ],
                 "objects": [
                   {
                     "object_id": "O001",
-                    "name": "blocks",
+                    "name": "colorful_blocks",
                     "attributes": {
-                      "colorful": "true",
-                      "pixelated": "true"
+                      "colorful": "yes",
+                      "blocks": "arranged",
+                      "table": "set"
                     }
                   },
                   {
                     "object_id": "O002",
-                    "name": "cake",
+                    "name": "table",
                     "attributes": {
-                      "colorful": "true",
-                      "pixelated": "true"
+                      "surface": "flat",
+                      "material": "wood"
+                    }
+                  },
+                  {
+                    "object_id": "O003",
+                    "name": "cheerful_logo",
+                    "attributes": {
+                      "color": "bright",
+                      "shape": "iconic"
                     }
                   }
                 ],
@@ -2447,7 +1982,7 @@
                     "actor_id": "A001",
                     "name": "person",
                     "ref_object": "O001",
-                    "role": "builder",
+                    "role": "arranger",
                     "entity": "human"
                   }
                 ],
@@ -2463,47 +1998,61 @@
                   ],
                   "objects": [
                     "O001",
-                    "O002"
+                    "O002",
+                    "O003"
                   ]
                 },
                 "LOD": {
                   "abstract_topic": [
                     "creative_activity"
                   ],
-                  "scene_topic": "A person builds with blocks and sings a cheerful song while transitioning between close-ups of colorful pixelated cake and the creative process.",
-                  "summary": "A creative activity, \"Crafting with Crayola,\" is introduced, featuring a person building with blocks and a cheerful song, as the video transitions between close-ups of colorful pixelated cake and the creative process.",
+                  "scene_topic": "The 'Crafting with Crayola' YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, set to upbeat music and accompanied by a cheerful logo.",
+                  "summary": "The \"Crafting with Crayola\" YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, set to upbeat music and accompanied by a cheerful logo.",
                   "implications": "Major creative, educational news event",
                   "modalities": {
-                    "visual": "A creative activity, featuring a person building with blocks, and a video transitioning between close-ups of colorful pixelated cake and the creative process.",
-                    "audio": "Cheerful song; building sounds.",
-                    "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                    "visual": "The \"Crafting with Crayola\" YouTube channel introduces a creative activity, showcasing a person arranging colorful blocks on a table, set to upbeat music and accompanied by a cheerful logo.",
+                    "audio": "upbeat music; cheerful logo",
+                    "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
                   }
                 }
               }
             }
           }
         ],
-        "caption": "A person engages in a creative activity, \"Crafting with Crayola,\" building a colorful structure to a lively soundtrack, showcasing a playful and vibrant scene.",
+        "caption": "The \"Crafting with Crayola\" YouTube channel presents a creative activity featuring a person building with colorful blocks to an upbeat soundtrack, showcasing a fun and engaging activity.",
         "postprocess": {
-          "event_id": 26,
-          "original_answer": "A person engages in a creative activity, \"Crafting with Crayola,\" building a colorful structure to a lively soundtrack, showcasing a playful and vibrant scene.",
+          "event_id": 22,
+          "original_answer": "The \"Crafting with Crayola\" YouTube channel presents a creative activity featuring a person building with colorful blocks to an upbeat soundtrack, showcasing a fun and engaging activity.",
           "result": {
             "video_id": "IiTYqQKXlg",
             "event_id": "E_IiTYqQKXlg_123_198",
             "tags": [
               "creative_activity",
-              "crafting",
-              "crayola",
-              "playful",
-              "vibrant"
+              "colorful_blocks",
+              "fun",
+              "engaging"
             ],
             "objects": [
               {
                 "object_id": "O001",
-                "name": "Colorful Structure",
+                "name": "Colorful Blocks",
                 "attributes": {
                   "colorful": "yes",
-                  "structure": "building"
+                  "building": "yes"
+                }
+              },
+              {
+                "object_id": "O002",
+                "name": "Person",
+                "attributes": {
+                  "building": "yes"
+                }
+              },
+              {
+                "object_id": "O003",
+                "name": "Upbeat Soundtrack",
+                "attributes": {
+                  "music": "yes"
                 }
               }
             ],
@@ -2511,14 +2060,14 @@
               {
                 "actor_id": "A001",
                 "name": "Person",
-                "ref_object": "O001",
+                "ref_object": "O002",
                 "role": "builder",
                 "entity": "human"
               }
             ],
             "event": {
               "event_id": "E_IiTYqQKXlg_123_198",
-              "name": "Crafting with Crayola",
+              "name": "Creative Activity",
               "time": {
                 "start": "123.5",
                 "end": "198.97"
@@ -2527,69 +2076,64 @@
                 "A001"
               ],
               "objects": [
-                "O001"
+                "O001",
+                "O002",
+                "O003"
               ]
             },
             "LOD": {
               "abstract_topic": [
                 "creative_activity"
               ],
-              "scene_topic": "A person builds a colorful structure to a lively soundtrack.",
-              "summary": "A person engages in a creative activity, \"Crafting with Crayola,\" building a colorful structure to a lively soundtrack, showcasing a playful and vibrant scene.",
-              "implications": "Major creative, entertainment news event",
+              "scene_topic": "The person builds with colorful blocks to an upbeat soundtrack.",
+              "summary": "The \"Crafting with Crayola\" YouTube channel presents a creative activity featuring a person building with colorful blocks to an upbeat soundtrack, showcasing a fun and engaging activity.",
+              "implications": "Major creative activity, entertainment news event",
               "modalities": {
-                "visual": "A person engages in a creative activity, building a colorful structure.",
-                "audio": "'Crafting with Crayola'; lively soundtrack; playful and vibrant scene.",
-                "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+                "visual": "The 'Crafting with Crayola' YouTube channel presents a creative activity featuring a person building with colorful blocks, showcasing a fun and engaging activity.",
+                "audio": "upbeat soundtrack",
+                "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
               }
             }
           }
         }
       }
     ],
-    "caption": "A woman and child, or a person, engage in a creative and playful activity, building and crafting with toys and colors to an upbeat soundtrack, creating a cheerful and vibrant atmosphere.",
+    "caption": "The \"Crafting with Crayola\" YouTube channel features a creative and playful activity where a person builds with colorful blocks to an upbeat soundtrack, accompanied by a woman's voice.",
     "postprocess": {
       "event_id": 4,
-      "original_answer": "A woman and child, or a person, engage in a creative and playful activity, building and crafting with toys and colors to an upbeat soundtrack, creating a cheerful and vibrant atmosphere.",
+      "original_answer": "The \"Crafting with Crayola\" YouTube channel features a creative and playful activity where a person builds with colorful blocks to an upbeat soundtrack, accompanied by a woman's voice.",
       "result": {
         "video_id": "IiTYqQKXlg",
         "event_id": "E_IiTYqQKXlg_0_198.97",
         "tags": [
-          "creative",
-          "playful",
-          "colorful",
-          "upbeat",
-          "cheerful"
+          "crafting",
+          "crayola",
+          "colorful_blocks",
+          "playful_activity",
+          "upbeat_soundtrack"
         ],
         "objects": [
           {
             "object_id": "O001",
-            "name": "toys",
+            "name": "Colorful Blocks",
             "attributes": {
-              "type": "building and crafting",
-              "color": "various"
-            }
-          },
-          {
-            "object_id": "O002",
-            "name": "colors",
-            "attributes": {
-              "type": "art supplies"
+              "colorful": "yes",
+              "buildable": "yes"
             }
           }
         ],
         "actors": [
           {
             "actor_id": "A001",
-            "name": "woman and child",
-            "ref_object": "O001",
-            "role": "builder",
-            "entity": "person"
+            "name": "Woman's Voice",
+            "ref_object": "",
+            "role": "Narrator",
+            "entity": "Person"
           }
         ],
         "event": {
           "event_id": "E_IiTYqQKXlg_0_198.97",
-          "name": "creative play",
+          "name": "Crafting with Crayola",
           "time": {
             "start": "0",
             "end": "198.97"
@@ -2598,21 +2142,20 @@
             "A001"
           ],
           "objects": [
-            "O001",
-            "O002"
+            "O001"
           ]
         },
         "LOD": {
           "abstract_topic": [
-            "creative play"
+            "creative_activity"
           ],
-          "scene_topic": "A woman and child engage in creative and playful activity, building and crafting with toys and colors to an upbeat soundtrack.",
-          "summary": "A woman and child, or a person, engage in a creative and playful activity, building and crafting with toys and colors to an upbeat soundtrack, creating a cheerful and vibrant atmosphere.",
-          "implications": "Major entertainment and education news event",
+          "scene_topic": "A person builds with colorful blocks to an upbeat soundtrack, accompanied by a woman's voice.",
+          "summary": "The \"Crafting with Crayola\" YouTube channel features a creative and playful activity where a person builds with colorful blocks to an upbeat soundtrack, accompanied by a woman's voice.",
+          "implications": "Major creative and educational event",
           "modalities": {
-            "visual": "A woman and child, or a person, engage in a creative and playful activity, building and crafting with toys and colors.",
-            "audio": "upbeat soundtrack",
-            "speech": "The speaker apologizes for a mistake and encourages viewers to subscribe to their channel for more content."
+            "visual": "The 'Crafting with Crayola' YouTube channel features a creative and playful activity where a person builds with colorful blocks to an upbeat soundtrack, accompanied by a woman's voice.",
+            "audio": "woman's voice; upbeat soundtrack",
+            "speech": "The speaker apologizes for a brief moment of excitement, followed by a request to subscribe to their channel for more videos."
           }
         }
       }

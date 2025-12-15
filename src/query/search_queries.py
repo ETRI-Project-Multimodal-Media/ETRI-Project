@@ -91,16 +91,22 @@ def main() -> None:
 
     segments = flatten_segments(tree, video_id, str(args.input))
     query_tokens = tokenize(args.query)
+    single_word_query = len(query_tokens) == 1
 
     matches: List[Dict[str, Any]] = []
     device_used: Optional[str] = None
 
-    if args.mode in {"heuristic", "both"}:
-        matches.extend(rank_with_heuristic(query_tokens, segments, args.threshold, args.top_k))
-
+    text_embed_profile: Dict[str, Dict[str, float]] = {}
     query_embedding_bytes: Optional[int] = None
 
-    if args.mode in {"text_embed", "both"}:
+    run_heuristic = args.mode in {"heuristic", "both"} or (args.mode == "text_embed" and single_word_query)
+
+    if run_heuristic:
+        matches.extend(rank_with_heuristic(query_tokens, segments, args.threshold, args.top_k))
+
+    run_text_embed = args.mode in {"text_embed", "both"} and not single_word_query
+
+    if run_text_embed:
         embed_matches, resolved_device, text_embed_profile, query_embedding_bytes = rank_with_text_embed(
             args.query,
             segments,
