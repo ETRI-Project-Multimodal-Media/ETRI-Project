@@ -1,41 +1,41 @@
 {
-  "query": "animated comedy skit",
+  "query": "female reporter interviewing guests on a MySpace red carpet",
   "input_file": "outputs/postprocess/yCW_-SuVWGo.json",
   "mode": "text_embed",
   "top_k": 3,
   "similarity_threshold": 0.2,
   "device": "cuda",
-  "elapsed_seconds": 6.688009738922119,
-  "current_memory_mib": 1418.46875,
-  "peak_memory_mib": 3268.2109375,
+  "elapsed_seconds": 6.447987794876099,
+  "current_memory_mib": 2164.16796875,
+  "peak_memory_mib": 4015.11328125,
   "match_count": 3,
   "matches": [
     {
       "video_id": "yCW_-SuVWGo",
-      "start_time": 0.0,
-      "end_time": 9.5,
-      "score": 0.5419715642929077,
-      "matched_text": "A man introduces a TV guide or program, possibly an interview or event, featuring a group of men in suits.",
-      "matched_field": "scene_topic",
+      "start_time": 44.5,
+      "end_time": 49.5,
+      "score": 0.8076509833335876,
+      "matched_text": "A woman, holding a microphone, interviews a man in a suit on a red carpet, asking him about his experience at the \"MySpace\" event.",
+      "matched_field": "summary",
       "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
       "score_type": "text_embed"
     },
     {
       "video_id": "yCW_-SuVWGo",
-      "start_time": 19.5,
-      "end_time": 26.5,
-      "score": 0.5350106358528137,
-      "matched_text": "A man gives a speech to an unseen audience, accompanied by a woman.",
-      "matched_field": "scene_topic",
+      "start_time": 44.5,
+      "end_time": 51.5,
+      "score": 0.7986713647842407,
+      "matched_text": "A woman conducts interviews with a man on the red carpet at a film festival, discussing his experience at the \"MySpace\" event and working with a band.",
+      "matched_field": "summary",
       "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
       "score_type": "text_embed"
     },
     {
       "video_id": "yCW_-SuVWGo",
-      "start_time": 34.5,
-      "end_time": 38.5,
-      "score": 0.5209179520606995,
-      "matched_text": "A man discusses the film's success and positive reactions.",
+      "start_time": 51.5,
+      "end_time": 58.5,
+      "score": 0.7657213807106018,
+      "matched_text": "A woman interviews a man on a red carpet at an event.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/yCW_-SuVWGo.json",
       "score_type": "text_embed"
@@ -43,25 +43,25 @@
   ],
   "text_embed_profile": {
     "model_ready": {
-      "elapsed": 5.982129778712988,
-      "current_memory_mib": 1103.08984375,
-      "peak_memory_mib": 3268.2109375
+      "elapsed": 5.770137131214142,
+      "current_memory_mib": 1852.7421875,
+      "peak_memory_mib": 4015.11328125
     },
     "query_embedding": {
-      "elapsed": 0.4641665071249008,
-      "current_memory_mib": 1409.76953125,
-      "peak_memory_mib": 3268.2109375,
+      "elapsed": 0.43742387741804123,
+      "current_memory_mib": 2155.2109375,
+      "peak_memory_mib": 4015.11328125,
       "embedding_bytes": 4096
     },
     "batch_000": {
-      "elapsed": 0.16808611154556274,
-      "current_memory_mib": 1412.31640625,
-      "peak_memory_mib": 3268.2109375
+      "elapsed": 0.17342634126544,
+      "current_memory_mib": 2158.1953125,
+      "peak_memory_mib": 4015.11328125
     },
     "batch_001": {
-      "elapsed": 0.024438682943582535,
-      "current_memory_mib": 1418.46875,
-      "peak_memory_mib": 3268.2109375
+      "elapsed": 0.0245920792222023,
+      "current_memory_mib": 2164.16796875,
+      "peak_memory_mib": 4015.11328125
     }
   },
   "query_embedding_bytes": 4096

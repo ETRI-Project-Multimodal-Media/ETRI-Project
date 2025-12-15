@@ -1,0 +1,68 @@
+{
+  "query": "quiet acoustic interview",
+  "input_file": "outputs/postprocess/-QEfaBLGPQk.json",
+  "mode": "text_embed",
+  "top_k": 3,
+  "similarity_threshold": 0.2,
+  "device": "cuda",
+  "elapsed_seconds": 6.519427299499512,
+  "current_memory_mib": 1409.6953125,
+  "peak_memory_mib": 3262.484375,
+  "match_count": 3,
+  "matches": [
+    {
+      "video_id": "QEfaBLGPQk",
+      "start_time": 0.0,
+      "end_time": 5.5,
+      "score": 0.46076399087905884,
+      "matched_text": "The person plays an electric guitar on a dimly lit stage.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-QEfaBLGPQk.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "QEfaBLGPQk",
+      "start_time": 410.5,
+      "end_time": 433.075333,
+      "score": 0.45104390382766724,
+      "matched_text": "The video transitions from a live performance to a black screen displaying the credits, while a man and a woman speak in the background.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-QEfaBLGPQk.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "QEfaBLGPQk",
+      "start_time": 89.5,
+      "end_time": 107.5,
+      "score": 0.44361311197280884,
+      "matched_text": "The band launches into a lively pop song.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-QEfaBLGPQk.json",
+      "score_type": "text_embed"
+    }
+  ],
+  "text_embed_profile": {
+    "model_ready": {
+      "elapsed": 5.841332495212555,
+      "current_memory_mib": 1099.80078125,
+      "peak_memory_mib": 3262.484375
+    },
+    "query_embedding": {
+      "elapsed": 0.4327663406729698,
+      "current_memory_mib": 1402.390625,
+      "peak_memory_mib": 3262.484375,
+      "embedding_bytes": 4096
+    },
+    "batch_000": {
+      "elapsed": 0.155768983066082,
+      "current_memory_mib": 1403.6328125,
+      "peak_memory_mib": 3262.484375
+    },
+    "batch_001": {
+      "elapsed": 0.04179845750331879,
+      "current_memory_mib": 1409.6953125,
+      "peak_memory_mib": 3262.484375
+    }
+  },
+  "query_embedding_bytes": 4096
+}

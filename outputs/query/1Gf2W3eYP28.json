@@ -1,62 +1,62 @@
 {
-  "query": "host in yellow saree interviewing a man in a suit",
+  "query": "Find the festive reception where women in bright sarees crowd around a blue-clad speaker holding a microphone",
   "input_file": "outputs/postprocess/1Gf2W3eYP28.json",
   "mode": "text_embed",
   "top_k": 3,
   "similarity_threshold": 0.2,
   "device": "cuda",
-  "elapsed_seconds": 7.161092042922974,
-  "current_memory_mib": 1601.69140625,
-  "peak_memory_mib": 3722.79296875,
+  "elapsed_seconds": 6.464130878448486,
+  "current_memory_mib": 1591.125,
+  "peak_memory_mib": 3714.34375,
   "match_count": 3,
   "matches": [
     {
       "video_id": "1Gf2W3eYP28",
-      "start_time": 75.5,
-      "end_time": 83.5,
-      "score": 0.6822189092636108,
-      "matched_text": "A woman in a yellow saree and a man in a suit interact joyfully in a festive setting.",
+      "start_time": 107.5,
+      "end_time": 116.5,
+      "score": 0.7983812689781189,
+      "matched_text": "In a festive room adorned with vibrant decorations, a group of women in traditional attire gather around a woman in a blue saree, who is speaking into a microphone, while a man in a suit stands nearby, possibly giving a speech.",
+      "matched_field": "summary",
+      "file_path": "outputs/postprocess/1Gf2W3eYP28.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "1Gf2W3eYP28",
+      "start_time": 116.5,
+      "end_time": 131.5,
+      "score": 0.6713286638259888,
+      "matched_text": "A group of women gather to celebrate a special occasion, surrounded by festive decorations, lively music, and joyful conversation.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/1Gf2W3eYP28.json",
       "score_type": "text_embed"
     },
     {
       "video_id": "1Gf2W3eYP28",
-      "start_time": 70.5,
+      "start_time": 83.5,
       "end_time": 97.5,
-      "score": 0.6697386503219604,
-      "matched_text": "A woman in a yellow saree smiles radiantly as she interacts with a man in a suit, conveying joy and contentment.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/1Gf2W3eYP28.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "1Gf2W3eYP28",
-      "start_time": 40.5,
-      "end_time": 54.5,
-      "score": 0.6471026539802551,
-      "matched_text": "A woman is interviewed in a well-lit room.",
-      "matched_field": "scene_topic",
+      "score": 0.6560311317443848,
+      "matched_text": "In a festive setting, a woman in a vibrant red saree smiles radiantly as she interacts with a man in a suit, their conversation filled with laughter and joy.",
+      "matched_field": "summary",
       "file_path": "outputs/postprocess/1Gf2W3eYP28.json",
       "score_type": "text_embed"
     }
   ],
   "text_embed_profile": {
     "model_ready": {
-      "elapsed": 6.507400766015053,
-      "current_memory_mib": 1559.546875,
-      "peak_memory_mib": 3722.79296875
+      "elapsed": 5.809286158531904,
+      "current_memory_mib": 1548.97265625,
+      "peak_memory_mib": 3714.34375
     },
     "query_embedding": {
-      "elapsed": 0.4531797766685486,
-      "current_memory_mib": 1598.06640625,
-      "peak_memory_mib": 3722.79296875,
+      "elapsed": 0.46113716065883636,
+      "current_memory_mib": 1588.8046875,
+      "peak_memory_mib": 3714.34375,
       "embedding_bytes": 4096
     },
     "batch_000": {
-      "elapsed": 0.15800988301634789,
-      "current_memory_mib": 1601.69140625,
-      "peak_memory_mib": 3722.79296875
+      "elapsed": 0.15158777311444283,
+      "current_memory_mib": 1590.265625,
+      "peak_memory_mib": 3714.34375
     }
   },
   "query_embedding_bytes": 4096

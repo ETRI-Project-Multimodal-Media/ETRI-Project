@@ -1,0 +1,63 @@
+{
+  "query": "A blue and white design race car speeding around the track",
+  "input_file": "outputs/postprocess/2lJMU_78m7A.json",
+  "mode": "text_embed",
+  "top_k": 3,
+  "similarity_threshold": 0.2,
+  "device": "cuda",
+  "elapsed_seconds": 7.326876401901245,
+  "current_memory_mib": 2169.25,
+  "peak_memory_mib": 4018.8359375,
+  "match_count": 3,
+  "matches": [
+    {
+      "video_id": "2lJMU_78m7A",
+      "start_time": 0.0,
+      "end_time": 6.5,
+      "score": 0.8176639080047607,
+      "matched_text": "A race car speeds around the track, navigating turns.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/2lJMU_78m7A.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "2lJMU_78m7A",
+      "start_time": 24.5,
+      "end_time": 34.5,
+      "score": 0.76088947057724,
+      "matched_text": "A man excitedly describes a racing event as a car speeds around the track.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/2lJMU_78m7A.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "2lJMU_78m7A",
+      "start_time": 6.5,
+      "end_time": 13.5,
+      "score": 0.7571620941162109,
+      "matched_text": "A race car speeds around the track, with the crowd cheering and a commentator describing the action.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/2lJMU_78m7A.json",
+      "score_type": "text_embed"
+    }
+  ],
+  "text_embed_profile": {
+    "model_ready": {
+      "elapsed": 6.763108242303133,
+      "current_memory_mib": 1852.90234375,
+      "peak_memory_mib": 4018.8359375
+    },
+    "query_embedding": {
+      "elapsed": 0.44461194798350334,
+      "current_memory_mib": 2161.5703125,
+      "peak_memory_mib": 4018.8359375,
+      "embedding_bytes": 4096
+    },
+    "batch_000": {
+      "elapsed": 0.07740689441561699,
+      "current_memory_mib": 2169.25,
+      "peak_memory_mib": 4018.8359375
+    }
+  },
+  "query_embedding_bytes": 4096
+}

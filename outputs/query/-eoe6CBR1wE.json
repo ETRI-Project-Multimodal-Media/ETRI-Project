@@ -1,0 +1,68 @@
+{
+  "query": "helicopter desert tour adventure",
+  "input_file": "outputs/postprocess/-eoe6CBR1wE.json",
+  "mode": "text_embed",
+  "top_k": 3,
+  "similarity_threshold": 0.2,
+  "device": "cuda",
+  "elapsed_seconds": 6.990291595458984,
+  "current_memory_mib": 2170.328125,
+  "peak_memory_mib": 4018.45703125,
+  "match_count": 3,
+  "matches": [
+    {
+      "video_id": "eoe6CBR1wE",
+      "start_time": 0.0,
+      "end_time": 56.5,
+      "score": 0.4232950806617737,
+      "matched_text": "A woman documents her daily experiences and plans during her sabbatical in Vegas through a vlog.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-eoe6CBR1wE.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "eoe6CBR1wE",
+      "start_time": 0.0,
+      "end_time": 33.5,
+      "score": 0.4125736355781555,
+      "matched_text": "A woman starts a vlog, introducing her sabbatical in Vegas, and continues to share her experiences with her audience.",
+      "matched_field": "summary",
+      "file_path": "outputs/postprocess/-eoe6CBR1wE.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "eoe6CBR1wE",
+      "start_time": 0.0,
+      "end_time": 433.261133,
+      "score": 0.39865195751190186,
+      "matched_text": "A woman takes a sabbatical in Las Vegas, documenting her experiences and socializing with friends in a lively and festive atmosphere, enjoying good food, conversation, and company.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/-eoe6CBR1wE.json",
+      "score_type": "text_embed"
+    }
+  ],
+  "text_embed_profile": {
+    "model_ready": {
+      "elapsed": 6.234107442200184,
+      "current_memory_mib": 1855.1484375,
+      "peak_memory_mib": 4018.45703125
+    },
+    "query_embedding": {
+      "elapsed": 0.45694975182414055,
+      "current_memory_mib": 2161.05078125,
+      "peak_memory_mib": 4018.45703125,
+      "embedding_bytes": 4096
+    },
+    "batch_000": {
+      "elapsed": 0.2141626514494419,
+      "current_memory_mib": 2169.6640625,
+      "peak_memory_mib": 4018.45703125
+    },
+    "batch_001": {
+      "elapsed": 0.042203936725854874,
+      "current_memory_mib": 2170.328125,
+      "peak_memory_mib": 4018.45703125
+    }
+  },
+  "query_embedding_bytes": 4096
+}

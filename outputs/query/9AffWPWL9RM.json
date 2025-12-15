@@ -1,0 +1,63 @@
+{
+  "query": "A player is flying through the air",
+  "input_file": "outputs/postprocess/9AffWPWL9RM.json",
+  "mode": "text_embed",
+  "top_k": 3,
+  "similarity_threshold": 0.2,
+  "device": "cuda",
+  "elapsed_seconds": 6.705454111099243,
+  "current_memory_mib": 2165.66796875,
+  "peak_memory_mib": 4014.765625,
+  "match_count": 3,
+  "matches": [
+    {
+      "video_id": "9AffWPWL9RM",
+      "start_time": 18.5,
+      "end_time": 32.5,
+      "score": 0.7786972522735596,
+      "matched_text": "The player is running through a grassy field.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/9AffWPWL9RM.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "9AffWPWL9RM",
+      "start_time": 157.5,
+      "end_time": 174.590793,
+      "score": 0.712275505065918,
+      "matched_text": "The player aims at an unseen target from behind a wooden wall.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/9AffWPWL9RM.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "9AffWPWL9RM",
+      "start_time": 101.5,
+      "end_time": 174.590793,
+      "score": 0.6661632061004639,
+      "matched_text": "The player aims their gun at a target while a man's voice is heard in the background.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/9AffWPWL9RM.json",
+      "score_type": "text_embed"
+    }
+  ],
+  "text_embed_profile": {
+    "model_ready": {
+      "elapsed": 6.114070899784565,
+      "current_memory_mib": 1852.89453125,
+      "peak_memory_mib": 4014.765625
+    },
+    "query_embedding": {
+      "elapsed": 0.4728297218680382,
+      "current_memory_mib": 2157.5390625,
+      "peak_memory_mib": 4014.765625,
+      "embedding_bytes": 4096
+    },
+    "batch_000": {
+      "elapsed": 0.07708053290843964,
+      "current_memory_mib": 2165.66796875,
+      "peak_memory_mib": 4014.765625
+    }
+  },
+  "query_embedding_bytes": 4096
+}

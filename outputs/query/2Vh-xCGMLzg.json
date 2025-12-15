@@ -1,0 +1,63 @@
+{
+  "query": "indoor basketball game footage",
+  "input_file": "outputs/postprocess/2Vh-xCGMLzg.json",
+  "mode": "text_embed",
+  "top_k": 3,
+  "similarity_threshold": 0.2,
+  "device": "cuda",
+  "elapsed_seconds": 6.6713197231292725,
+  "current_memory_mib": 1422.6953125,
+  "peak_memory_mib": 3266.6015625,
+  "match_count": 3,
+  "matches": [
+    {
+      "video_id": "2Vh_xCGMLzg",
+      "start_time": 75.5,
+      "end_time": 83.800781,
+      "score": 0.47989189624786377,
+      "matched_text": "The video transitions from a close-up of the \"Mama Eat\" logo to a wider shot of the restaurant, showcasing its modern interior and inviting atmosphere as a woman's voice begins to speak.",
+      "matched_field": "summary",
+      "file_path": "outputs/postprocess/2Vh-xCGMLzg.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "2Vh_xCGMLzg",
+      "start_time": 0.0,
+      "end_time": 3.5,
+      "score": 0.4752979874610901,
+      "matched_text": "The video opens with the Me Gusta Music logo, a stylized 'M' in a circular design, accompanied by a brief, upbeat jingle, before transitioning to a close-up of a person's hand opening a door, revealing a dimly lit hallway.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/2Vh-xCGMLzg.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "2Vh_xCGMLzg",
+      "start_time": 72.5,
+      "end_time": 75.5,
+      "score": 0.4557749927043915,
+      "matched_text": "The video transitions from a close-up of a guitarist's hands playing a bluesy melody to a wide shot of a cityscape at night, where a bright light illuminates the sky, as a man's voice begins to speak.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/2Vh-xCGMLzg.json",
+      "score_type": "text_embed"
+    }
+  ],
+  "text_embed_profile": {
+    "model_ready": {
+      "elapsed": 5.953299086540937,
+      "current_memory_mib": 1102.98046875,
+      "peak_memory_mib": 3266.6015625
+    },
+    "query_embedding": {
+      "elapsed": 0.5354096665978432,
+      "current_memory_mib": 1413.609375,
+      "peak_memory_mib": 3266.6015625,
+      "embedding_bytes": 4096
+    },
+    "batch_000": {
+      "elapsed": 0.1401262767612934,
+      "current_memory_mib": 1422.484375,
+      "peak_memory_mib": 3266.6015625
+    }
+  },
+  "query_embedding_bytes": 4096
+}

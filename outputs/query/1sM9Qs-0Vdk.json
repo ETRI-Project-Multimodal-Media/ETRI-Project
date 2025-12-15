@@ -1,0 +1,63 @@
+{
+  "query": "opening My Little Pony treats at the kitchen table",
+  "input_file": "outputs/postprocess/1sM9Qs-0Vdk.json",
+  "mode": "text_embed",
+  "top_k": 3,
+  "similarity_threshold": 0.2,
+  "device": "cuda",
+  "elapsed_seconds": 6.763947010040283,
+  "current_memory_mib": 2180.546875,
+  "peak_memory_mib": 4017.515625,
+  "match_count": 3,
+  "matches": [
+    {
+      "video_id": "1sM9Qs_0Vdk",
+      "start_time": 76.5,
+      "end_time": 87.5,
+      "score": 0.8149210214614868,
+      "matched_text": "A young girl carefully opens a package of My Little Pony snacks at the kitchen table.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/1sM9Qs-0Vdk.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "1sM9Qs_0Vdk",
+      "start_time": 74.5,
+      "end_time": 144.5,
+      "score": 0.7772290706634521,
+      "matched_text": "A young girl excitedly opens a package of 'My Little Pony' snacks at the kitchen table, as her mother's voice exclaims in the background.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/1sM9Qs-0Vdk.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "1sM9Qs_0Vdk",
+      "start_time": 39.5,
+      "end_time": 54.5,
+      "score": 0.7030171155929565,
+      "matched_text": "A young girl excitedly shows off a box of My Little Pony snacks",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/1sM9Qs-0Vdk.json",
+      "score_type": "text_embed"
+    }
+  ],
+  "text_embed_profile": {
+    "model_ready": {
+      "elapsed": 6.123383227735758,
+      "current_memory_mib": 1853.20703125,
+      "peak_memory_mib": 4017.515625
+    },
+    "query_embedding": {
+      "elapsed": 0.4480503648519516,
+      "current_memory_mib": 2179.22265625,
+      "peak_memory_mib": 4017.515625,
+      "embedding_bytes": 4096
+    },
+    "batch_000": {
+      "elapsed": 0.1494910754263401,
+      "current_memory_mib": 2180.33984375,
+      "peak_memory_mib": 4017.515625
+    }
+  },
+  "query_embedding_bytes": 4096
+}
