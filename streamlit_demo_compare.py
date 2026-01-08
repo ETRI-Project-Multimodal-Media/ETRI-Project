@@ -167,7 +167,7 @@ st.markdown(
 )
 
 st.sidebar.header("기본 설정")
-hf_token = st.sidebar.text_input("HF_TOKEN", "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")
+hf_token = st.sidebar.text_input("HF_TOKEN", os.getenv("HF_TOKEN", ""))
 gpu_id = st.sidebar.text_input("GPU_ID (CUDA_VISIBLE_DEVICES)", "0")
 video_dir = st.sidebar.text_input(
     "VIDEO_DIR (원본 mp4 폴더)", "./data/raw_data/video"
