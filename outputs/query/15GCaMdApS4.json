@@ -1,62 +1,62 @@
 {
-  "query": "The Deutsche Bank logo a stylized 'D' in blue and white fills the frame while electronic music swells in the background",
+  "query": "graph of China’s economy impacting trucking",
   "input_file": "outputs/postprocess/15GCaMdApS4.json",
   "mode": "text_embed",
   "top_k": 3,
   "similarity_threshold": 0.2,
   "device": "cuda",
-  "elapsed_seconds": 7.553392648696899,
-  "current_memory_mib": 1591.3984375,
-  "peak_memory_mib": 3710.66015625,
+  "elapsed_seconds": 6.696021318435669,
+  "current_memory_mib": 2177.5,
+  "peak_memory_mib": 4017.4375,
   "match_count": 3,
   "matches": [
     {
       "video_id": "15GCaMdApS4",
-      "start_time": 100.5,
-      "end_time": 118.816484,
-      "score": 0.9192180633544922,
-      "matched_text": "The Deutsche Bank logo, a stylized \"D\" in blue and white, appears on the screen, accompanied by electronic music.",
-      "matched_field": "summary",
+      "start_time": 26.5,
+      "end_time": 39.5,
+      "score": 0.835594892501831,
+      "matched_text": "The video shows a graph illustrating the growing Chinese economy's impact on trucking.",
+      "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/15GCaMdApS4.json",
       "score_type": "text_embed"
     },
     {
       "video_id": "15GCaMdApS4",
-      "start_time": 94.5,
-      "end_time": 100.5,
-      "score": 0.8150119781494141,
-      "matched_text": "The Deutsche Bank logo, a stylized \"D\" in blue and white, appears on the screen, accompanied by a man's voice explaining that Deutsche Bank is a global investment bank with a focus on corporate and investment banking.",
-      "matched_field": "summary",
+      "start_time": 39.5,
+      "end_time": 47.5,
+      "score": 0.5038782358169556,
+      "matched_text": "The video discusses the increasing profitability of car manufacturers.",
+      "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/15GCaMdApS4.json",
       "score_type": "text_embed"
     },
     {
       "video_id": "15GCaMdApS4",
-      "start_time": 87.5,
-      "end_time": 118.816484,
-      "score": 0.6591706871986389,
-      "matched_text": "A man discusses the significance of understanding financial markets, highlighting the importance of grasping underlying factors, while a logo for Deutsche Bank, a global investment bank, appears on screen.",
-      "matched_field": "summary",
+      "start_time": 22.5,
+      "end_time": 26.5,
+      "score": 0.4657060503959656,
+      "matched_text": "The video transitions from a close-up of a man in a suit to a graphic showing a car driving down a highway, accompanied by a voiceover discussing the growth of the German automotive industry.",
+      "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/15GCaMdApS4.json",
       "score_type": "text_embed"
     }
   ],
   "text_embed_profile": {
     "model_ready": {
-      "elapsed": 6.903866391628981,
-      "current_memory_mib": 1548.7890625,
-      "peak_memory_mib": 3710.66015625
+      "elapsed": 6.108467120677233,
+      "current_memory_mib": 1855.00390625,
+      "peak_memory_mib": 4017.4375
     },
     "query_embedding": {
-      "elapsed": 0.4982718341052532,
-      "current_memory_mib": 1589.41796875,
-      "peak_memory_mib": 3710.66015625,
+      "elapsed": 0.44251081347465515,
+      "current_memory_mib": 2175.54296875,
+      "peak_memory_mib": 4017.4375,
       "embedding_bytes": 4096
     },
     "batch_000": {
-      "elapsed": 0.10915205627679825,
-      "current_memory_mib": 1591.3984375,
-      "peak_memory_mib": 3710.66015625
+      "elapsed": 0.10607549548149109,
+      "current_memory_mib": 2177.5,
+      "peak_memory_mib": 4017.4375
     }
   },
   "query_embedding_bytes": 4096

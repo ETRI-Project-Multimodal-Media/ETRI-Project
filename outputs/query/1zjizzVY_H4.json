@@ -1,30 +1,20 @@
 {
-  "query": "folding third-row seats inside an SUV",
+  "query": "showcasing the exterior of a white Ford pickup truck",
   "input_file": "outputs/postprocess/1zjizzVY_H4.json",
   "mode": "text_embed",
   "top_k": 3,
   "similarity_threshold": 0.2,
   "device": "cuda",
-  "elapsed_seconds": 7.055499076843262,
-  "current_memory_mib": 1590.6640625,
-  "peak_memory_mib": 3712.4296875,
+  "elapsed_seconds": 6.147660255432129,
+  "current_memory_mib": 1588.0,
+  "peak_memory_mib": 3713.1875,
   "match_count": 3,
   "matches": [
     {
       "video_id": "1zjizzVY_H4",
-      "start_time": 114.5,
-      "end_time": 142.013233,
-      "score": 0.4613959789276123,
-      "matched_text": "The camera pans across the interior of a car, showcasing the dashboard with its digital display and various controls, while upbeat pop music plays on the car stereo.",
-      "matched_field": "scene_topic",
-      "file_path": "outputs/postprocess/1zjizzVY_H4.json",
-      "score_type": "text_embed"
-    },
-    {
-      "video_id": "1zjizzVY_H4",
       "start_time": 0.0,
       "end_time": 16.5,
-      "score": 0.45190858840942383,
+      "score": 0.8072471618652344,
       "matched_text": "A white pickup truck is showcased in a lot with other vehicles.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/1zjizzVY_H4.json",
@@ -32,10 +22,20 @@
     },
     {
       "video_id": "1zjizzVY_H4",
-      "start_time": 82.5,
-      "end_time": 114.5,
-      "score": 0.4499567151069641,
-      "matched_text": "A car is showcased in a promotional video, featuring a pop song and highlighting its sleek design and features.",
+      "start_time": 0.0,
+      "end_time": 142.013233,
+      "score": 0.7899641990661621,
+      "matched_text": "A video showcases the sleek design and modern features of a white Ford pickup truck, highlighting its spacious interior, powerful engine, and exterior design, set to upbeat background music.",
+      "matched_field": "scene_topic",
+      "file_path": "outputs/postprocess/1zjizzVY_H4.json",
+      "score_type": "text_embed"
+    },
+    {
+      "video_id": "1zjizzVY_H4",
+      "start_time": 0.0,
+      "end_time": 82.5,
+      "score": 0.7874057292938232,
+      "matched_text": "A video showcases a white pickup truck's sleek design and modern features.",
       "matched_field": "scene_topic",
       "file_path": "outputs/postprocess/1zjizzVY_H4.json",
       "score_type": "text_embed"
@@ -43,20 +43,20 @@
   ],
   "text_embed_profile": {
     "model_ready": {
-      "elapsed": 6.548996884375811,
-      "current_memory_mib": 1546.55859375,
-      "peak_memory_mib": 3712.4296875
+      "elapsed": 5.6434302888810635,
+      "current_memory_mib": 1547.44140625,
+      "peak_memory_mib": 3713.1875
     },
     "query_embedding": {
-      "elapsed": 0.3847048729658127,
-      "current_memory_mib": 1588.83203125,
-      "peak_memory_mib": 3712.4296875,
+      "elapsed": 0.382648803293705,
+      "current_memory_mib": 1587.16015625,
+      "peak_memory_mib": 3713.1875,
       "embedding_bytes": 4096
     },
     "batch_000": {
-      "elapsed": 0.08007164299488068,
-      "current_memory_mib": 1590.609375,
-      "peak_memory_mib": 3712.4296875
+      "elapsed": 0.07994047924876213,
+      "current_memory_mib": 1588.0,
+      "peak_memory_mib": 3713.1875
     }
   },
   "query_embedding_bytes": 4096
