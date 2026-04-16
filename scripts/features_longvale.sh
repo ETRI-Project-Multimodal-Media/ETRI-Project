@@ -4,9 +4,9 @@ export PYTHONPATH=src:$PYTHONPATH
 
 EXTRACT_MODALITY=${1:-all}
 
-GPU_ID=0
+GPU_ID=${2:-0}
 
-DATA_PATH=./data/longvale-annotations-eval.json
+DATA_PATH=./data/example.json
 VIDEO_DIR=./data/raw_data/video_test
 AUDIO_DIR=./data/raw_data/audio_test
 SAVE_DIR=./data/features_model

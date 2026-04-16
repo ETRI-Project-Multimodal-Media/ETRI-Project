@@ -7,7 +7,7 @@
 ```bash
 # Environment 1 for LongVALE
 # 1-1. Tree Construct
-# 1-2. Leaf Node Captioning  
+# 1-2. Leaf Node Captioning
 conda create --name eventtree python=3.10
 conda activate eventtree
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
@@ -29,13 +29,15 @@ pip install cuda-toolkit==12.8.1
 pip install transformers accelerate peft
 pip install decord
 pip install jsonschema
+pip install moviepy==1.0.3
+pip install easydict
 pip install sentence-transformers
 ```
 
 ## Data Setup
-- `annotation.json`, `prompt.json`, (`video.mp4`, `audio.wav`)이 필요합니다. 
-- `annotation.json` 형식은 `data/example.json`와 같으며, video id (YouTube id)와 duration이 필요합니다. 
-- `prompt.json`은 Leaf (LongVALE) 및 Internal (LLaMA3) Node Captioning에 입력되는 프롬프트가 포함되어 있습니다. 
+- `annotation.json`, `prompt.json`, (`video.mp4`, `audio.wav`)이 필요합니다.
+- `annotation.json` 형식은 `data/example.json`와 같으며, video id (YouTube id)와 duration이 필요합니다.
+- `prompt.json`은 Leaf (LongVALE) 및 Internal (LLaMA3) Node Captioning에 입력되는 프롬프트가 포함되어 있습니다.
 
 ```shell
 # Tree Feature Extraction (features_tree)
@@ -68,21 +70,21 @@ data/
     ├── speech_features/{video_id}.npy
     └── speech_asr/{video_id}.json
 ```
-    
+
 `scripts/postprocess.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
 
 ```text
 outputs/
 ├── log.json  # Tree/LongVALE 파이프라인 결과 (SAVE_PATH)
 ├── postprocess/
-│   └── {video_id}.json  
-└── query/               
+│   └── {video_id}.json
+└── query/
     └── example.json
-    
+
 logs/
 └── debug.txt                  # 잘못된 샘플 로그 (DEBUG_LOG)
 ```
-    
+
 ## Checkpoint Setup
 
 | Modality      | Encoder | Checkpoint path                           | Download checkpoint                                                                 |
@@ -93,7 +95,7 @@ logs/
 
 - LongVALE: Download [Vicuna v1.5](https://huggingface.co/lmsys/vicuna-7b-v1.5) and [vtimellm_stage1](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/vtimellm_stage1_mm_projector.bin) weights.
 - LongVALE: Download LongVALE-LLM model from [longvalellm-vicuna-v1-5-7b.tar.gz](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/checkpoints/longvalellm-vicuna-v1-5-7b.tar.gz).
-  
+
 `checkpoints` 디렉터리 구성 예시는 다음과 같습니다.
 
 ```text
@@ -102,7 +104,7 @@ checkpoints/
 ├── BEATs_iter3_plus_AS20K.pt
 ├── openai-whisper-large-v2
 ├── vicuna-7b-v1.5
-├── vtimellm_stage1_mm_projector.bin 
+├── vtimellm_stage1_mm_projector.bin
 └── longvalellm-vicuna-v1-5-7b
     ├── longvale-vicuna-v1-5-7b-stage2-bp
     └── longvale-vicuna-v1-5-7b-stage3-it

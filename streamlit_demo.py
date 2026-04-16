@@ -109,11 +109,11 @@ model_base = st.sidebar.text_input(
 )
 model_stage2 = st.sidebar.text_input(
     "MODEL_STAGE2",
-    "./checkpoints/longvale-vicuna-v1-5-7b-stage2-bp",
+    "./checkpoints/longvale-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage2-bp",
 )
 model_stage3 = st.sidebar.text_input(
     "MODEL_STAGE3",
-    "./checkpoints/longvale-vicuna-v1-5-7b-stage3-it",
+    "./checkpoints/longvale-vicuna-v1-5-7b/longvale-vicuna-v1-5-7b-stage3-it",
 )
 model_mm_mlp = st.sidebar.text_input(
     "MODEL_MM_MLP",
@@ -317,13 +317,13 @@ if st.button("선택한 단계 실행"):
             f'--speech-json-dir \\"{speech_asr_dir}\\" '
             f'--not-json-dir \\"{debug_path}\\"\"'
         )
-             
+
         code, out = run_command(cmd)
         append_log(f"$ {cmd}\n{out}")
         append_log(f"[4] 종료 코드: {code}")
         if code == 0:
             show_postprocess_preview(post_save_dir)
-            
+
     # 5. Query (eventtree-post 환경)
     if query_process:
         append_log("[5] Query 시작 (conda env: eventtree-post)...")
@@ -339,7 +339,7 @@ if st.button("선택한 단계 실행"):
             f'--mode \\"{mode}\\" '
             f'--output \\"{query_save_dir}\\"\"'
         )
-             
+
         code, out = run_command(cmd)
         append_log(f"$ {cmd}\n{out}")
         append_log(f"[5] 종료 코드: {code}")

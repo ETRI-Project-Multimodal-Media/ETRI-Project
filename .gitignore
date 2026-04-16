@@ -1,4 +1,22 @@
 __pycache__/
+*.pyc
+*.pyo
 
-# Large raw video files (do not track in Git)
-data/raw_data/video_test/
+# Python virtual environments
+eventtree-pre/
+eventtree-post/
+
+# Model checkpoints and weights
+checkpoints/
+
+# Data files (raw data, features)
+data/raw_data/
+data/features_model/
+data/features_tree/
+
+# Example data (large JSON files)
+Example/
+
+# Outputs and logs
+outputs/
+logs/
